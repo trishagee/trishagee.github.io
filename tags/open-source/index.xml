@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Open-Source on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/open-source/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Mon, 11 Mar 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>The Coalescing Ring Buffer</title>
+      <link>http://trishagee.github.io/post/the_coalescing_ring_buffer</link>
+      <pubDate>Mon, 11 Mar 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/the_coalescing_ring_buffer</guid>
+      <description>&lt;p&gt;For anyone who is interested in what LMAX is up to, and is still following my blog, have a look at this post about the latest tool they&amp;rsquo;ve open sourced: the &lt;a href=&#34;http://nickzeeb.wordpress.com/2013/03/07/the-coalescing-ring-buffer/&#34;&gt;Coalescing Ring Buffer&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

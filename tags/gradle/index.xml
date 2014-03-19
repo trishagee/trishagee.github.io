@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Gradle on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/gradle/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Sat, 31 Aug 2013 00:00:00 UTC</updated>
+    
+    <item>
+      <title>How to get started with the new MongoDB Java Driver</title>
+      <link>http://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver</link>
+      <pubDate>Sat, 31 Aug 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;second in my short series of blogs&lt;/a&gt; about the new Java driver is now available for your perusal. &amp;nbsp;In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.&lt;br /&gt;&lt;br /&gt;The post also shows that &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; is prettier than &lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt;. &amp;nbsp;Sorry Maven.&lt;br /&gt;&lt;br /&gt;If you are going to play with the new driver, please read all the caveats carefully. &amp;nbsp;I know it looks a bit like the warnings on your prescription medicine, but it serves the same purpose. &amp;nbsp;Short version: the driver is not finished yet, and should not be used in production.&lt;br /&gt;&lt;br /&gt;We really want to hear your experiences with the driver - it is an open source project and &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; is very much driven by the community, we want to hear from you. &amp;nbsp;But only if you say nice things. &amp;nbsp;No, seriously, please tell us if you have problems, if functionality is missing, if your tests fail if you start to use it, etc etc etc.&lt;br /&gt;&lt;br /&gt;Go play.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

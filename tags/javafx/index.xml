@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Javafx on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/javafx/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Tue, 06 Nov 2012 00:00:00 UTC</updated>
+    
+    <item>
+      <title>NightHacking Tour: The LJC</title>
+      <link>http://trishagee.github.io/post/nighthacking_tour_the_ljc</link>
+      <pubDate>Tue, 06 Nov 2012 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/nighthacking_tour_the_ljc</guid>
+      <description>&lt;p&gt;On the same day &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/10/interview-and-hacking-session-with.html&#34;&gt;Stephen Chin came to see me&lt;/a&gt; at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. &amp;nbsp;Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.&lt;br /&gt;&lt;br /&gt;Expect &lt;a href=&#34;http://www.raspberrypi.org/&#34;&gt;Raspberry Pi&lt;/a&gt;s and &lt;a href=&#34;http://www.oracle.com/technetwork/java/javafx/overview/index.html&#34;&gt;JavaFX&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/f2a9XvZNq0o&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

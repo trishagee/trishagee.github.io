@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Training on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/training/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Sun, 04 Sep 2011 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Effective Sketches</title>
+      <link>http://trishagee.github.io/post/effective_sketches</link>
+      <pubDate>Sun, 04 Sep 2011 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/effective_sketches</guid>
+      <description>&lt;p&gt;On Thursday I was at &lt;a href=&#34;http://www.codingthearchitecture.com/2011/09/02/effective_sketches_at_skills_matter.html&#34;&gt;Simon Brown&amp;rsquo;s Effective Sketches&lt;/a&gt; session at &lt;a href=&#34;http://skillsmatter.com/&#34;&gt;Skillsmatter&lt;/a&gt;. &amp;nbsp;Just because my pictures are pretty awesome doesn&amp;rsquo;t mean there&amp;rsquo;s no opportunity for continuous learning.&lt;br /&gt;&lt;br /&gt;The points Simon made in the session really made sense to me, and I wish I could have had something like that as a primer when they taught us UML at university. &amp;nbsp;Without the context of what the diagrams were supposed to mean, to convey, all the boxes and lines made no sense to me back then. &amp;nbsp;I&amp;rsquo;m still not a fan of large chunks of UML because I think the convention sometimes gets in the way of real meaning.&lt;br /&gt;&lt;br /&gt;My take-away points were:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Don&amp;rsquo;t try and squidge everything onto a single diagram. &amp;nbsp;The reason lots of different flavours of architecture diagrams exist (e.g. &lt;a href=&#34;http://www.codingthearchitecture.com/pages/book/logical-view.html&#34;&gt;logical view&lt;/a&gt;, &lt;a href=&#34;http://www.codingthearchitecture.com/pages/book/infrastructure-view.html&#34;&gt;infrastructure view&lt;/a&gt;, etc) is because you have different audiences for each of the diagrams and different things that are important when you&amp;rsquo;re looking at it from one particular angle.&lt;/li&gt;&lt;li&gt;One diagram you particularly need, especially if you are producing a stack of documentation for a system (e.g. you&amp;rsquo;re a consultant presenting findings to the client) is a really &lt;a href=&#34;http://www.codingthearchitecture.com/pages/book/context-view.html&#34;&gt;succinct, summary view&lt;/a&gt; of what the system is actually trying to achieve.&lt;/li&gt;&lt;li&gt;If you&amp;rsquo;re not going to use UML, you should at least agree on consistency and some conventions - for example, does the direction of an arrow represent data flow or dependency?&lt;/li&gt;&lt;li&gt;UML tools make it easier to represent different views of a data model and retain consistency. &amp;nbsp;One diagram is less likely to contradict a different view if your sketching tool points this mistake out to you.&lt;/li&gt;&lt;li&gt;Yes, your code should be self-documenting. &amp;nbsp;But you can&amp;rsquo;t give the code to your business customers or expect your hardware guys to figure out your requirements from it. &amp;nbsp;To pass knowledge around the business it&amp;rsquo;s more efficient to have diagrams representing the shared understanding of the domain.&lt;/li&gt;&lt;li&gt;Architecture diagrams should show the intent and the vision of the system.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;I also used my laptop to take notes for the first time. &amp;nbsp;In the past I&amp;rsquo;ve preferred not to use a laptop, because a) I like pencil and paper and it allows me to &lt;a href=&#34;https://picasaweb.google.com/lh/photo/phq_PRPQOYxViiz4Il6ONDDlgmlkuyHYOu3BaLXdFVg?feat=directlink&#34;&gt;doodle&lt;/a&gt; and b) the temptation to read my e-mail or check facebook is not something I want to succumb to. &amp;nbsp;But &lt;a href=&#34;http://www.codingthearchitecture.com/2011/08/27/using_evernote_for_training_courses.html&#34;&gt;using Evernote&lt;/a&gt; really worked for me, I could annotate the slides with my notes, and it made converting my notes into this post a lot easier.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;PS it has not escaped me that this is one post without a diagram. &amp;nbsp;The irony is not lost on me.&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Certified Scrum Master</title>
+      <link>http://trishagee.github.io/post/certified_scrum_master</link>
+      <pubDate>Thu, 10 Apr 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/certified_scrum_master</guid>
+      <description>&lt;p&gt;Hmm.  I have been so busy trying to think of &amp;ldquo;good&amp;rdquo; things to write here, and not having the time to actually write, that I see it&amp;rsquo;s been 6 months since the last post.&lt;br/&gt;&lt;br/&gt;If anyone is still out there though, I need help.  I need a good Certified Scrum Master course in New York or London, preferably in April or May.  Any suggestions?  The one I wanted to go on was vetoed and now I find it&amp;rsquo;s not running in NY again until Autumn.&lt;br/&gt;&lt;br/&gt;PS Do you think it would be inappropriate to use the term &amp;ldquo;Scrum Mistress&amp;rdquo; on my CV?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

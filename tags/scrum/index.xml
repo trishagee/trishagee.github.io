@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Scrum on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/scrum/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Tue, 24 Feb 2009 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Scrum but...</title>
+      <link>http://trishagee.github.io/post/scrum_but</link>
+      <pubDate>Tue, 24 Feb 2009 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/scrum_but</guid>
+      <description>&lt;p&gt;Having experience &lt;a href=&#34;http://martinfowler.com/bliki/FlaccidScrum.html&#34;&gt;Flaccid Scrum&lt;/a&gt;, I find this article interesting, and agree with most of it.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;d also like to add though, that if you do the scrum practices&amp;nbsp;(story cards, stand ups, retrospectives, etc) but don&amp;rsquo;t buy into the fundamental principals, you will not succeed.&amp;nbsp; And that means everyone on the team, not just the people in charge. &amp;nbsp;In particular, if the team is not empowered, is not committing to the estimates and the iteration plan in its heart, and and does not trust, then you are probably better off using traditional processes.&amp;nbsp; Or just as likely to fail whatever process you use.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Scrum</title>
+      <link>http://trishagee.github.io/post/scrum</link>
+      <pubDate>Wed, 21 May 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/scrum</guid>
+      <description>&lt;p&gt;I think the statement that struck me the most when I was on the Certified Scrum Master course was:&amp;nbsp;&lt;em&gt;the start of the project is when you know the least about what you&amp;rsquo;re doing&lt;/em&gt;.&lt;br /&gt;&lt;br /&gt;Which of course is absolutely true.&lt;br /&gt;&lt;br /&gt;So why do we come up with extensive requirements, detailed design, and fixed plans at this point&amp;nbsp;of time?&amp;nbsp; We haven&amp;rsquo;t put anything into place yet, we haven&amp;rsquo;t played with the code, the customer hasn&amp;rsquo;t seen anything of what we&amp;rsquo;re promising to deliver.&lt;br /&gt;&lt;br /&gt;If we think about it this way, suddenly the waterfall method makes even less sense (assuming people&amp;nbsp;do still like to work this way).&lt;br /&gt;&lt;br /&gt;How many times have you just played with a bit of code, done a prototype, a &amp;ldquo;hello world&amp;rdquo;, knocked up a basic screen, before you can even give your manager some finger-in-the-air estimates?&amp;nbsp; I don&amp;rsquo;t know about you but I&amp;rsquo;m not comfortable unless I have played a bit to get the feel of something before even looking at someone who asks those questions!&lt;br /&gt;&lt;br /&gt;The empirical approach makes a lot more sense to me.&amp;nbsp; So why aren&amp;rsquo;t we doing it more?&amp;nbsp;&amp;nbsp;&lt;br /&gt;&lt;br /&gt;Because it&amp;rsquo;s harder.&amp;nbsp;&amp;nbsp;&lt;br /&gt;&lt;br /&gt;I think it&amp;rsquo;s harder because it works, but I daren&amp;rsquo;t make such a bold claim without having a number of such projects under my own belt, or at the very least digging through the web to find examples.&amp;nbsp; Which frankly I&amp;rsquo;ll leave to you to do, if it matters to you.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Certified Scrum Master</title>
+      <link>http://trishagee.github.io/post/certified_scrum_master</link>
+      <pubDate>Thu, 10 Apr 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/certified_scrum_master</guid>
+      <description>&lt;p&gt;Hmm.  I have been so busy trying to think of &amp;ldquo;good&amp;rdquo; things to write here, and not having the time to actually write, that I see it&amp;rsquo;s been 6 months since the last post.&lt;br/&gt;&lt;br/&gt;If anyone is still out there though, I need help.  I need a good Certified Scrum Master course in New York or London, preferably in April or May.  Any suggestions?  The one I wanted to go on was vetoed and now I find it&amp;rsquo;s not running in NY again until Autumn.&lt;br/&gt;&lt;br/&gt;PS Do you think it would be inappropriate to use the term &amp;ldquo;Scrum Mistress&amp;rdquo; on my CV?&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

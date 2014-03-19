@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>In-Progress on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/in-progress/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Tue, 20 Mar 2007 00:00:00 UTC</updated>
+    
+    <item>
+      <title>QCon: TODO list inspired by the conference</title>
+      <link>http://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference</link>
+      <pubDate>Tue, 20 Mar 2007 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference</guid>
+      <description>&lt;ul&gt;&lt;li&gt;Investigate &lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven 2&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Have a glance at &lt;a href=&#34;http://testng.org/doc/&#34;&gt;TestNG&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Potentially play with &lt;a href=&#34;http://www.jmock.org/&#34;&gt;JMock &lt;/a&gt;for current testing framework&lt;/li&gt;&lt;li&gt;Play with &lt;a href=&#34;http://code.google.com/webtoolkit/&#34;&gt;GWT&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;strike&gt;Sign up for &lt;a href=&#34;http://www.thepragmaticarchitect.com/&#34;&gt;Pragmatic Architect&lt;/a&gt; &lt;a href=&#34;http://hermesjms.com/confluence/display/JSIG/The+Pragmatic+Java+Architect&#34;&gt;event&lt;/a&gt;&lt;/strike&gt;&lt;/li&gt;&lt;li&gt;Check out &lt;a href=&#34;http://www.javablackbelt.com/QuestionnaireDefDisplay.wwa?questPublicId=00137&#34;&gt;JavaBlackBelt&lt;/a&gt; site - what is provided, and what are the feelings of professionals (or, more importantly, recruiters) towards these qualifications?&lt;/li&gt;&lt;li&gt;Look into getting Visual Studio .NET again so you can have a go at GUI development in it.&lt;/li&gt;&lt;li&gt;Go to &lt;a href=&#34;http://technorati.com/&#34;&gt;technorati&lt;/a&gt;. &lt;br/&gt;&lt;/li&gt;&lt;li&gt;Investigate &lt;a href=&#34;http://www.junit.org/&#34;&gt;JUnit&lt;/a&gt; 4 &lt;a href=&#34;http://www.instrumentalservices.com/index.php?option=com_content&amp;task=view&amp;id=45&amp;Itemid=52&#34;&gt;changes/improvements&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>QCon: Initial thoughts</title>
+      <link>http://trishagee.github.io/post/qcon_initial_thoughts</link>
+      <pubDate>Mon, 19 Mar 2007 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/qcon_initial_thoughts</guid>
+      <description>&lt;p class=&#34;MsoNormal&#34;&gt;Things I took out of QCon:&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;  &lt;ul type=&#34;disc&#34;&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;I want to play with &lt;st1:city w:st=&#34;on&#34;&gt;&lt;st1:place w:st=&#34;on&#34;&gt;Ajax&lt;/st1:place&gt;&lt;/st1:city&gt;.&amp;nbsp; Maybe      I&#39;ve &#34;grown out&#34; of front end development but that doesn&#39;t      prevent it from being (potentially) extremely cool&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;&lt;a href=&#34;http://opensource.thoughtworks.com/projects/selenium.html&#34;&gt;Selenium&lt;/a&gt;      looks like a good place to start for automated website testing&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;It can take up to 7 years      to move away from a legacy architecture.&amp;nbsp; Depressing, but at least it      shows it can be done and it&#39;s worth the effort&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;I&#39;m going to become a      &lt;a href=&#34;http://www.scrumalliance.org/CSM_description/&#34;&gt;certified Scrum &lt;s&gt;Master&lt;/s&gt; Mistress&lt;/a&gt;.&amp;nbsp; I believe &lt;a href=&#34;http://en.wikipedia.org/wiki/Agile_software_development&#34;&gt;Agile      &lt;/a&gt;in some form or other is the most efficient way to run software      development, but there are a &lt;st1:place w:st=&#34;on&#34;&gt;LOT&lt;/st1:place&gt; of      lessons to learn in order to get it right.&amp;nbsp; And number one lesson is      you need the right team.&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;/ul&gt;  &lt;p class=&#34;MsoNormal&#34;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

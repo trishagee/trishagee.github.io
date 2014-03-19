@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Java-8 on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/java-8/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Thu, 08 Nov 2012 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 - Introduction to Lambdas Article</title>
+      <link>http://trishagee.github.io/post/java_8__introduction_to_lambdas_article</link>
+      <pubDate>Thu, 08 Nov 2012 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8__introduction_to_lambdas_article</guid>
+      <description>&lt;p&gt;This month&amp;rsquo;s Java Magazine features an article by me, &lt;a href=&#34;https://twitter.com/kittylyst&#34;&gt;Ben Evans&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/karianna&#34;&gt;Martijn Verburg&lt;/a&gt; about the new &lt;a href=&#34;http://openjdk.java.net/projects/lambda/&#34;&gt;lambdas&lt;/a&gt;&amp;nbsp;coming in &lt;a href=&#34;http://jdk8.java.net/&#34;&gt;Java 8&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;The aim of the article is to give an overview to normal, human Java developers, who don&amp;rsquo;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and &lt;a href=&#34;http://jdk8.java.net/lambda/&#34;&gt;try them now&lt;/a&gt;).&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;            &lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; height=&#34;28&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1352311955000&#34; /&gt;                &lt;/td&gt;                &lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;                &lt;/td&gt;             &lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;                  &lt;img alt=&#34;34&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/20121112/data/imgpages/smtn/0035_egfgcb.gif?lm=1352311955000&#34; /&gt;                &lt;/a&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;Exploring Lambda Expressions for the Java Language and the JVM&lt;/span&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
