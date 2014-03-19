@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Mug on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/mug/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Wed, 19 Mar 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Sevilla MUG March Madness</title>
+      <link>http://trishagee.github.io/post/svq_mug_march_madness</link>
+      <pubDate>Wed, 19 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/svq_mug_march_madness</guid>
+      <description>&lt;figure &gt;
+    
+        &lt;img src=&#34;https://lh4.googleusercontent.com/-JVIgox7nGXo/UyjIQYxtiSI/AAAAAAAANc4/JV3lj4xwcgk/w919-h689-no/IMG_20140318_193758.jpg&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/events/166679892/&#34;&gt;Last night&lt;/a&gt; the Sevilla MUG had our
+&lt;a href=&#34;http://www.lczajkowski.com/2014/02/19/march-madness-comes-to-a-city-near-you/&#34;&gt;March Madness&lt;/a&gt; event.  This was our largest event yet,
+with 36 people signed up.  Although the aim of March Madness is to have a MongoDB Engineer at all the user groups this month,
+that&amp;rsquo;s not such a big deal for us as I live here, so this was also the first event where I wasn&amp;rsquo;t the main attraction - &lt;a href=&#34;https://twitter.com/JvrBaena&#34;&gt;Javier&lt;/a&gt; gave a really great talk about the lessons learnt at &lt;a href=&#34;http://es.socialbro.com/&#34;&gt;SocialBro&lt;/a&gt; after using
+MongoDB in production for the last couple of years.&lt;/p&gt;
+
+&lt;p&gt;The slides for my introduction to Replica Sets and Sharding:&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+ &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32480708&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+ And the slides for the main attraction:
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+ &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32464459&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+ &lt;div style=&#34;margin-bottom:5px; font-size:small&#34;&gt; &lt;strong&gt; &lt;a href=&#34;https://www.slideshare
+ .net/fjavierbaena/sevilla-mongo-developers-group-mongodb-cmo-aprendimos-que-la-culpa-era-nuestra&#34; title=&#34;Sevilla Mongo Developers Group
+ - MongoDB: Cómo aprendimos que la culpa era nuestra&#34; target=&#34;_blank&#34;&gt;Cómo aprendimos que la culpa era nuestra&lt;/a&gt;
+ &lt;/strong&gt;from&lt;strong&gt;
+ &lt;a href=&#34;http://www.slideshare.net/fjavierbaena&#34; target=&#34;_blank&#34;&gt; Francisco Javier Baena Ríos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The event went really well, everyone seemed engaged, and our first talk in Spanish seemed to encourage more questions than normal.  We
+were also in a new venue, and although I love the central location of our previous venue and the friendliness of the owners,
+the menu of the new location seemed to be a massive win.&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://lh6.googleusercontent.com/-ESw5r9B24Hs/UyjHcM2M-DI/AAAAAAAANco/hBVhN4IMFew/w919-h689-no/IMG_20140318_220941.jpg&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
