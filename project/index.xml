@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Projects on Trisha Gee </title>
+    <link>http://trishagee.github.io/project/index.xml</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Thu, 20 Mar 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Converting Blogger to Markdown</title>
+      <link>http://trishagee.github.io/project/atom-to-hugo</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/project/atom-to-hugo</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;http://www.blogger.com/&#34;&gt;Blogger&lt;/a&gt; happily for three years or so, since I migrated the blog from &lt;a href=&#34;http://www.livejournal.com/&#34;&gt;LiveJournal&lt;/a&gt; and
+decided to actually invest some
+time writing.  I&amp;rsquo;m happy with it because I just type stuff into Blogger and It Just Works.  I&amp;rsquo;m happy because I can use my Google
+credentials to sign in.  I&amp;rsquo;m happy because now I can pretend my two &lt;a href=&#34;https://plus.google.com/+TrishaGee/&#34;&gt;Google+&lt;/a&gt; accounts exist for a purpose,
+by getting Blogger to automatically share my content there.&lt;/p&gt;
+
+&lt;p&gt;A couple of things have been problematic for the whole time I&amp;rsquo;ve been using it though:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Code looks like crap, no matter what you do.&lt;/li&gt;
+&lt;li&gt;Pictures are awkwardly jammed in to the prose like a geek mingling at a Marketing event.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The first problem I&amp;rsquo;ve tried to solve a number of ways, with custom CSS at a blog- and a post- level.  I was super happy when I
+discovered &lt;a href=&#34;http://gist.github.com&#34;&gt;gist&lt;/a&gt;, it gave me lovely content highlighting without all the nasty CSS.  It&amp;rsquo;s still not ideal in a
+blogger world though,
+as the gist doesn&amp;rsquo;t appear in your WYSIWYG editor, leading you to all sorts of tricks to try not to accidentally delete it. Also I was
+too lazy to migrate old code over, so now my blog is a mish-mash of code styles, particular where I changed global CSS mulitple times,
+leaving old code in a big fat mess.  There&amp;rsquo;s a lesson to be learned there somewhere.&lt;/p&gt;
+
+&lt;p&gt;The second problem, photos, I just gave up on. I decided I would end up wasting too much time trying to make the thing look pretty,
+and I&amp;rsquo;d never get around to posting anything.  So my photos are always dropped randomly into the blogs - it&amp;rsquo;s better than a whole wall of
+prose (probably).&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;ve been happy overall, the main reason being I don&amp;rsquo;t have to maintain anything, I don&amp;rsquo;t have to worry about my web server going
+down, I don&amp;rsquo;t have versions of a blog platform to maintain, patch, upgrade; I can Just Write.&lt;/p&gt;
+
+&lt;p&gt;But last week &lt;a href=&#34;http://spf13.com&#34;&gt;my boss&lt;/a&gt; and &lt;a href=&#34;http://christiankvalheim.com/&#34;&gt;my colleague&lt;/a&gt;  were both on at me to try &lt;a href=&#34;http://spf13.com/project/hugo&#34;&gt;Hugo&lt;/a&gt;,
+a site generator created by my boss.  I was resistent because I do not want to maintain my own blog platform,
+but then Christian explained how I can write my posts in &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;markdown&lt;/a&gt;, use Hugo to generate the content,
+and then host it &lt;a href=&#34;http://pages.github.com/&#34;&gt;github pages&lt;/a&gt;. It sounded relatively painless.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been considering a move to something that supports markdown for a while, for the following reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;These days I write at least half of my posts on the plane, so I use TextEdit to write the content,
+and later paste this into blogger and add formatting.  It would be better if I could write markdown to begin with.&lt;/li&gt;
+&lt;li&gt;Although I&amp;rsquo;ve always disliked wiki-type syntax for documentation, markdown is actually not despicable,
+and lets me add simple formatting easily without getting in my way or breaking my flow.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So I spent a few days playing with &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; to see what it was, how it worked, and whether it was going to help me.  I&amp;rsquo;ve come up with a
+few observations:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo really is lightning fast&lt;/strong&gt;.  If I add a &lt;code&gt;.md&lt;/code&gt; file in the appropriate place, and with the Hugo server running on my local machine
+it will turn this into real HTML in (almost) less time than it takes for me to refresh the browser on the second monitor.  Edits to existing
+ files appear almost instantly, so I can write a post and preview it really easily.  It beats the hell out of blogger&amp;rsquo;s Preview feature,
+ which I always need to use if I&amp;rsquo;m doing anything other than posting simple prose.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s awesome to type my blog in IntelliJ&lt;/strong&gt;.  Do you find yourself trying to use IntelliJ shortcuts in other editors?  The two I
+miss the most when I&amp;rsquo;m not in IntelliJ are Cmd+Y to delete a line, and Ctrl+Shift+J to bring the next line up.  Writing markdown in
+IntelliJ with my usual shortcuts (and the &lt;a href=&#34;http://github.com/nicoulaj/idea-markdown&#34;&gt;markdown plugin&lt;/a&gt;) is really easy and productive.
+Plus, of course, you get IntelliJ&amp;rsquo;s ability to paste from any item in the clipboard history. And I don&amp;rsquo;t have to worry about those
+random intervals when blogger tells me it hasn&amp;rsquo;t saved my content, and I have no idea if I will just lose hours of work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I now own my own content&lt;/strong&gt;.  It never really occurred to me before that all the effort I&amp;rsquo;ve put into three years of regular blogging is
+&lt;em&gt;out there&lt;/em&gt;, on some Google servers somewhere, and I don&amp;rsquo;t have a copy of that material.  That&amp;rsquo;s dumb,
+that doesn&amp;rsquo;t reflect how seriously I take my writing.  Now I have that content here, on my laptop, and it&amp;rsquo;s also backed up in Github,
+both as raw markdown and as generated HTML, and versioned.  Massive massive win.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I have more control over how things are rendered&lt;/strong&gt;, and I can customise the display much more.  This has drawbacks though too,
+as it&amp;rsquo;s exactly this freedom-to-play that I worry will distract me from actual writing.&lt;/p&gt;
+
+&lt;p&gt;As with every project that&amp;rsquo;s worth trying, it wasn&amp;rsquo;t completely without pain.  I followed the (surprisingly excellent) &lt;a href=&#34;http://hugo.spf13.com/overview/introduction&#34;&gt;documentation&lt;/a&gt;,
+as well as &lt;a href=&#34;http://j3ff.com/blog/building-a-site-with-hugo/&#34;&gt;these guidelines&lt;/a&gt;, but I did run into some fiddly bits:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I couldn&amp;rsquo;t quite get my head around the difference between my &lt;a href=&#34;https://github.com/trishagee/trishagee.com&#34;&gt;Hugo project code&lt;/a&gt; and my
+&lt;a href=&#34;https://github.com/trishagee/trishagee.github.io&#34;&gt;actual site content&lt;/a&gt; to begin with: how to put them into
+source control and how to get my site on github pages.  I&amp;rsquo;ve ended up with two projects on github,
+even though the generated code is technically a subtree of the Hugo project.  I think I&amp;rsquo;m happy with that.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m not really sure about the difference between tags, keywords, and topics, if I&amp;rsquo;m honest.  Maybe this is something I&amp;rsquo;ll grow into.&lt;/li&gt;
+&lt;li&gt;I really need to spend some time on the layout and design, I don&amp;rsquo;t want to simply rip off Steve&amp;rsquo;s original layout.  Plus there are
+things I would like to have on the main page which are missing.&lt;/li&gt;
+&lt;li&gt;I needed to convert my old content to the new format&lt;/li&gt;
+&lt;li&gt;Final migration from old to new (incomplete)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To address the last point first, I&amp;rsquo;m not sure yet if I will take the plunge and do full redirection from Blogger to the new github pages
+site (and redirect my domains too), for a while I&amp;rsquo;m going to run both in parallel and see how I feel.&lt;/p&gt;
+
+&lt;p&gt;As for the fourth point, I didn&amp;rsquo;t find a tool for migrating Blogger blogs into markdown that didn&amp;rsquo;t require me to install some other tool
+ or language, and there was nothing that was specifically Hugo-shaped, so I surprised myself and did what every programmer would - I
+ wrote my own. Surprising because I&amp;rsquo;m not normally that sort of person - I like to use tools that other people have written,
+ I like things that Just Work, I spend all my time coding for my job so I can&amp;rsquo;t be bothered to devote extra time to it.  But my recent
+ experiences with &lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt; had convinced me that I could write a simple Groovy parser that would take my exported blog (in Atom XML
+ format)
+  and turn it into a series of markdown files.  And I was right, I could.  So I&amp;rsquo;ve created a new github project,
+  &lt;a href=&#34;https://github.com/trishagee/atom-to-hugo&#34;&gt;atom-to-hugo&lt;/a&gt;.  It&amp;rsquo;s very rough, but a) it works and b) it even has tests.  And documentation.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know what&amp;rsquo;s come over me lately, I&amp;rsquo;ve been a creative, coding machine.&lt;/p&gt;
+
+&lt;p&gt;In summary, I&amp;rsquo;m pretty happy with the new way of working, but it&amp;rsquo;s going to take me a while to get used to it and decide if it&amp;rsquo;s the way
+I want to go.  At the very least, I now have my Blogger content as something markdown-ish.&lt;/p&gt;
+
+&lt;p&gt;But there are a couple of things I miss about Blogger:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I actually like the way it shows the blog archive on the right hand side, split into months and years.  I use that to motivate me to
+blog more if a month looks kinda empty&lt;/li&gt;
+&lt;li&gt;While Google Analytics is definitely more powerful than the simple blogger analytics, I find them an easier way to get a quick insight
+into whether people are reading the blog, and which paths they take to find it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think either of these are showstoppers, I should be able to work around both of them.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

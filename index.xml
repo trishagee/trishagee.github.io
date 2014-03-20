@@ -6,7 +6,121 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 19 Mar 2014 00:00:00 UTC</updated>
+    <updated>Thu, 20 Mar 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Converting Blogger to Markdown</title>
+      <link>http://trishagee.github.io/project/atom-to-hugo</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/project/atom-to-hugo</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;http://www.blogger.com/&#34;&gt;Blogger&lt;/a&gt; happily for three years or so, since I migrated the blog from &lt;a href=&#34;http://www.livejournal.com/&#34;&gt;LiveJournal&lt;/a&gt; and
+decided to actually invest some
+time writing.  I&amp;rsquo;m happy with it because I just type stuff into Blogger and It Just Works.  I&amp;rsquo;m happy because I can use my Google
+credentials to sign in.  I&amp;rsquo;m happy because now I can pretend my two &lt;a href=&#34;https://plus.google.com/+TrishaGee/&#34;&gt;Google+&lt;/a&gt; accounts exist for a purpose,
+by getting Blogger to automatically share my content there.&lt;/p&gt;
+
+&lt;p&gt;A couple of things have been problematic for the whole time I&amp;rsquo;ve been using it though:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Code looks like crap, no matter what you do.&lt;/li&gt;
+&lt;li&gt;Pictures are awkwardly jammed in to the prose like a geek mingling at a Marketing event.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The first problem I&amp;rsquo;ve tried to solve a number of ways, with custom CSS at a blog- and a post- level.  I was super happy when I
+discovered &lt;a href=&#34;http://gist.github.com&#34;&gt;gist&lt;/a&gt;, it gave me lovely content highlighting without all the nasty CSS.  It&amp;rsquo;s still not ideal in a
+blogger world though,
+as the gist doesn&amp;rsquo;t appear in your WYSIWYG editor, leading you to all sorts of tricks to try not to accidentally delete it. Also I was
+too lazy to migrate old code over, so now my blog is a mish-mash of code styles, particular where I changed global CSS mulitple times,
+leaving old code in a big fat mess.  There&amp;rsquo;s a lesson to be learned there somewhere.&lt;/p&gt;
+
+&lt;p&gt;The second problem, photos, I just gave up on. I decided I would end up wasting too much time trying to make the thing look pretty,
+and I&amp;rsquo;d never get around to posting anything.  So my photos are always dropped randomly into the blogs - it&amp;rsquo;s better than a whole wall of
+prose (probably).&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;ve been happy overall, the main reason being I don&amp;rsquo;t have to maintain anything, I don&amp;rsquo;t have to worry about my web server going
+down, I don&amp;rsquo;t have versions of a blog platform to maintain, patch, upgrade; I can Just Write.&lt;/p&gt;
+
+&lt;p&gt;But last week &lt;a href=&#34;http://spf13.com&#34;&gt;my boss&lt;/a&gt; and &lt;a href=&#34;http://christiankvalheim.com/&#34;&gt;my colleague&lt;/a&gt;  were both on at me to try &lt;a href=&#34;http://spf13.com/project/hugo&#34;&gt;Hugo&lt;/a&gt;,
+a site generator created by my boss.  I was resistent because I do not want to maintain my own blog platform,
+but then Christian explained how I can write my posts in &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;markdown&lt;/a&gt;, use Hugo to generate the content,
+and then host it &lt;a href=&#34;http://pages.github.com/&#34;&gt;github pages&lt;/a&gt;. It sounded relatively painless.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been considering a move to something that supports markdown for a while, for the following reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;These days I write at least half of my posts on the plane, so I use TextEdit to write the content,
+and later paste this into blogger and add formatting.  It would be better if I could write markdown to begin with.&lt;/li&gt;
+&lt;li&gt;Although I&amp;rsquo;ve always disliked wiki-type syntax for documentation, markdown is actually not despicable,
+and lets me add simple formatting easily without getting in my way or breaking my flow.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So I spent a few days playing with &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; to see what it was, how it worked, and whether it was going to help me.  I&amp;rsquo;ve come up with a
+few observations:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo really is lightning fast&lt;/strong&gt;.  If I add a &lt;code&gt;.md&lt;/code&gt; file in the appropriate place, and with the Hugo server running on my local machine
+it will turn this into real HTML in (almost) less time than it takes for me to refresh the browser on the second monitor.  Edits to existing
+ files appear almost instantly, so I can write a post and preview it really easily.  It beats the hell out of blogger&amp;rsquo;s Preview feature,
+ which I always need to use if I&amp;rsquo;m doing anything other than posting simple prose.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s awesome to type my blog in IntelliJ&lt;/strong&gt;.  Do you find yourself trying to use IntelliJ shortcuts in other editors?  The two I
+miss the most when I&amp;rsquo;m not in IntelliJ are Cmd+Y to delete a line, and Ctrl+Shift+J to bring the next line up.  Writing markdown in
+IntelliJ with my usual shortcuts (and the &lt;a href=&#34;http://github.com/nicoulaj/idea-markdown&#34;&gt;markdown plugin&lt;/a&gt;) is really easy and productive.
+Plus, of course, you get IntelliJ&amp;rsquo;s ability to paste from any item in the clipboard history. And I don&amp;rsquo;t have to worry about those
+random intervals when blogger tells me it hasn&amp;rsquo;t saved my content, and I have no idea if I will just lose hours of work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I now own my own content&lt;/strong&gt;.  It never really occurred to me before that all the effort I&amp;rsquo;ve put into three years of regular blogging is
+&lt;em&gt;out there&lt;/em&gt;, on some Google servers somewhere, and I don&amp;rsquo;t have a copy of that material.  That&amp;rsquo;s dumb,
+that doesn&amp;rsquo;t reflect how seriously I take my writing.  Now I have that content here, on my laptop, and it&amp;rsquo;s also backed up in Github,
+both as raw markdown and as generated HTML, and versioned.  Massive massive win.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I have more control over how things are rendered&lt;/strong&gt;, and I can customise the display much more.  This has drawbacks though too,
+as it&amp;rsquo;s exactly this freedom-to-play that I worry will distract me from actual writing.&lt;/p&gt;
+
+&lt;p&gt;As with every project that&amp;rsquo;s worth trying, it wasn&amp;rsquo;t completely without pain.  I followed the (surprisingly excellent) &lt;a href=&#34;http://hugo.spf13.com/overview/introduction&#34;&gt;documentation&lt;/a&gt;,
+as well as &lt;a href=&#34;http://j3ff.com/blog/building-a-site-with-hugo/&#34;&gt;these guidelines&lt;/a&gt;, but I did run into some fiddly bits:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I couldn&amp;rsquo;t quite get my head around the difference between my &lt;a href=&#34;https://github.com/trishagee/trishagee.com&#34;&gt;Hugo project code&lt;/a&gt; and my
+&lt;a href=&#34;https://github.com/trishagee/trishagee.github.io&#34;&gt;actual site content&lt;/a&gt; to begin with: how to put them into
+source control and how to get my site on github pages.  I&amp;rsquo;ve ended up with two projects on github,
+even though the generated code is technically a subtree of the Hugo project.  I think I&amp;rsquo;m happy with that.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m not really sure about the difference between tags, keywords, and topics, if I&amp;rsquo;m honest.  Maybe this is something I&amp;rsquo;ll grow into.&lt;/li&gt;
+&lt;li&gt;I really need to spend some time on the layout and design, I don&amp;rsquo;t want to simply rip off Steve&amp;rsquo;s original layout.  Plus there are
+things I would like to have on the main page which are missing.&lt;/li&gt;
+&lt;li&gt;I needed to convert my old content to the new format&lt;/li&gt;
+&lt;li&gt;Final migration from old to new (incomplete)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To address the last point first, I&amp;rsquo;m not sure yet if I will take the plunge and do full redirection from Blogger to the new github pages
+site (and redirect my domains too), for a while I&amp;rsquo;m going to run both in parallel and see how I feel.&lt;/p&gt;
+
+&lt;p&gt;As for the fourth point, I didn&amp;rsquo;t find a tool for migrating Blogger blogs into markdown that didn&amp;rsquo;t require me to install some other tool
+ or language, and there was nothing that was specifically Hugo-shaped, so I surprised myself and did what every programmer would - I
+ wrote my own. Surprising because I&amp;rsquo;m not normally that sort of person - I like to use tools that other people have written,
+ I like things that Just Work, I spend all my time coding for my job so I can&amp;rsquo;t be bothered to devote extra time to it.  But my recent
+ experiences with &lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt; had convinced me that I could write a simple Groovy parser that would take my exported blog (in Atom XML
+ format)
+  and turn it into a series of markdown files.  And I was right, I could.  So I&amp;rsquo;ve created a new github project,
+  &lt;a href=&#34;https://github.com/trishagee/atom-to-hugo&#34;&gt;atom-to-hugo&lt;/a&gt;.  It&amp;rsquo;s very rough, but a) it works and b) it even has tests.  And documentation.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know what&amp;rsquo;s come over me lately, I&amp;rsquo;ve been a creative, coding machine.&lt;/p&gt;
+
+&lt;p&gt;In summary, I&amp;rsquo;m pretty happy with the new way of working, but it&amp;rsquo;s going to take me a while to get used to it and decide if it&amp;rsquo;s the way
+I want to go.  At the very least, I now have my Blogger content as something markdown-ish.&lt;/p&gt;
+
+&lt;p&gt;But there are a couple of things I miss about Blogger:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I actually like the way it shows the blog archive on the right hand side, split into months and years.  I use that to motivate me to
+blog more if a month looks kinda empty&lt;/li&gt;
+&lt;li&gt;While Google Analytics is definitely more powerful than the simple blogger analytics, I find them an easier way to get a quick insight
+into whether people are reading the blog, and which paths they take to find it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think either of these are showstoppers, I should be able to work around both of them.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sevilla MUG March Madness</title>
@@ -167,16 +281,6 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Public Appearances</title>
-      <link>http://trishagee.github.io/post/public_appearances</link>
-      <pubDate>Fri, 20 Dec 2013 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/public_appearances</guid>
-      <description>&lt;p&gt;For blatant self-publicity, I&amp;rsquo;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&amp;rsquo;ve been involved in.&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Presentations and Panels&lt;/h3&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;December 2013&lt;/b&gt;&amp;nbsp;- YOW Melbourne, Brisbane, Sydney: &amp;ldquo;Career Advice for Programmers&amp;rdquo; &amp;amp; &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;23rd Nov 2013&lt;/b&gt;&amp;nbsp;- London Java Community Open Conference: &amp;ldquo;Keynote: Java, the Future, and You&amp;rdquo;, &amp;ldquo;Novice Speaker&amp;rsquo;s Clinic&amp;rdquo;, &amp;ldquo;More Speaker Tips&amp;rdquo;, &amp;ldquo;Career Advice for Programmers&amp;rdquo;, &amp;ldquo;Intro to MongoDB&amp;rdquo;, panel: &amp;ldquo;So you&amp;rsquo;re a senior developer - what next?&amp;rdquo;.&lt;br /&gt;&lt;b&gt;21st Nov 2013&lt;/b&gt; - Virtual JUG: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/11/first-presentation-at-virtual-jug.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;29th Oct 2013&lt;/b&gt;&amp;nbsp;- JAX London: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;br /&gt;&lt;b&gt;28th Oct 2013&lt;/b&gt;&amp;nbsp;- LJC: &amp;ldquo;Speaker&amp;rsquo;s Clinic: Public Speaking for Beginners&amp;rdquo;&lt;br /&gt;&lt;b&gt;28th Oct 2013&lt;/b&gt;&amp;nbsp;- JAX London: &amp;ldquo;A fluent API for Java and MongoDB&amp;rdquo;&lt;br /&gt;&lt;b&gt;18th Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Berlin: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;&lt;b&gt;2nd Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#55&#34;&gt;Top Ten IntelliJ Tips&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;2nd Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#36&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;26th Sep 2013&lt;/b&gt; - JavaOne: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/11/javaone-2013.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;12th Sep 2013&lt;/b&gt;&amp;nbsp;- JavaZone: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/74553077&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;23rd Jul 2013&lt;/b&gt;&amp;nbsp;- JavaOne Shanghai: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;&lt;b&gt;3rd Jul 2013&lt;/b&gt;&amp;nbsp;- TCube Dublin: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;27th Jun 2013&lt;/b&gt;&amp;nbsp;- TTN: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;16th May 2013&lt;/b&gt;&amp;nbsp;- GeeCON: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;10th Apr 2013&lt;/b&gt;&amp;nbsp;- East Anglia MUG: Trisha Gee, an Unconference&lt;br /&gt;&lt;b&gt;9th Apr 2013&lt;/b&gt;&amp;nbsp;- MongoDB UK: &amp;ldquo;Schema Design&amp;rdquo;&lt;br /&gt;&lt;b&gt;&lt;br /&gt;&lt;/b&gt;&lt;b&gt;27th Mar 2013&lt;/b&gt;&amp;nbsp;- DevoxxUK: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;&lt;b&gt;21st Mar 2013&lt;/b&gt; - LJC: &amp;ldquo;&lt;a href=&#34;http://skillsmatter.com/podcast/java-jee/london-java-community-march&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;8th Mar 2013&lt;/b&gt;&amp;nbsp;- QCon London (with Dan North): &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/08/life-on-both-sides-of-interview-table.html&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;4&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Dec 2012&lt;/b&gt;&amp;nbsp;– Webinar: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/webinar-processing-high-volume-data.html&#34;&gt;Financial Markets:&amp;nbsp;Processing High Volume Data Feeds with MongoDB&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;b&gt;29&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;– Webinar: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/11/my-first-official-mongodb-appearance.html&#34;&gt;MongoDB on the JVM&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;24&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;LJC Open Conference: &amp;ldquo;Keynote: The State of Java&amp;rdquo;; Panel: &amp;ldquo;Does Performance Matter?&amp;rdquo;; Panel: &amp;ldquo;The Java Community Process&amp;rdquo;; &amp;ldquo;An Introduction to NoSQL&amp;rdquo;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;15&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Devoxx: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/devoxx-problem-with-women-technical.html&#34;&gt;The Problem With Women: A Technical Approach&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;14&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Devoxx: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/agile-when-agile-goes-well.html&#34;&gt;Agile++: When Agile Goes Well&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;b&gt;17&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;– JAX London: &amp;ldquo;Java Performance Frequently Asked Questions&amp;rdquo;&lt;br /&gt;&lt;b&gt;3&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;CON11338 &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/10/javaone-problem-with-women-technical.html&#34;&gt;A Technical Approach to Women&amp;rdquo;&lt;/a&gt;&lt;br /&gt;&lt;b&gt;3&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne Panel: &amp;ldquo;CON5130&amp;nbsp;&lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=5130&amp;amp;tclass=popup#.UIZb-TfrjPE.blogger&#34;&gt;London Java Community: How to Change the World&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;1&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&amp;nbsp;&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;CON3732 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3732&amp;amp;tclass=popup#.UIZaP5FFnjg.blogger&#34;&gt;Concurrent Programming Using the Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;30&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Sep 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;UGF10467 Why Open Source Your Secrets&amp;rdquo;&lt;br /&gt;&lt;b&gt;23&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Sep 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Strange Loop: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/09/strangeloop-disruptor-workshop-materials.html&#34;&gt;Workshop: Introduction to the Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;br /&gt;&lt;b&gt;18&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;July 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;OSCON:&amp;nbsp;“&lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/proceedings&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;25&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;010 DEV: &amp;ldquo;&lt;a href=&#34;http://010dev.nl/post/social-tech-event-the-disruptor-and-the-perfect-programmer&#34;&gt;The Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;24&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;May 2012&lt;/b&gt; – GOTO Amsterdam: “Concurrent Programming Using The Disruptor”&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;21&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;-23&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;May 2012&lt;/b&gt; – GOTO Copenhagen: “&lt;a href=&#34;http://www.infoq.com/presentations/Disruptor#.UIZa3tb3Bms.blogger&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”,”War Stories”, &amp;ldquo;&lt;a href=&#34;http://www.version2.dk/blog/goto-programming-stars-45578&#34;&gt;Programming with the Stars&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;29&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th &lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Apr 2012&lt;/b&gt; – &lt;a href=&#34;http://www.geekgirlmeetup.co.uk/2012/03/29th-of-april-geekgirlmeetup-is-held-in-london-theme-code-is-queen/&#34;&gt;GirlGeekMeetup London&lt;/a&gt;: “GDC Meet a Mentor”; “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/why-open-source-your-secrets.html&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;”; “Technology in&amp;nbsp;Electronic Trading” (with Annalisa Sarasini); Panel:&amp;nbsp;“Women Only Events – Are We Creating A Girl Ghetto?”&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;7&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Mar 2012&lt;/b&gt; – QCon London: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/06/qcon-london-disruptor-presentation.html&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;7&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Nov 2011&lt;/b&gt; – Devoxx Panel: “&lt;a href=&#34;http://www.blogger.com/&#34;&gt;&lt;span id=&#34;goog_1144118152&#34;&gt;&lt;/span&gt;Why we shouldn&amp;rsquo;t target women&lt;span id=&#34;goog_1144118153&#34;&gt;&lt;/span&gt;&lt;/a&gt;”&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;2&lt;/b&gt;&lt;sup&gt;&lt;b&gt;nd &lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Nov 2011&lt;/b&gt; – JAX London: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/12/video-of-our-jax-london-session.html&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;” (with Mike Barker)&lt;b&gt;&lt;/b&gt;&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;11&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Oct 2011&lt;/b&gt; – LJC: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/10/mike-and-i-debut-our-new-disruptor.html&#34;&gt;Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;”&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;6&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Oct 2011&lt;/b&gt; – JavaOne: “LMAX Disruptor: High-Performance Concurrent Programming Framework” (with Martin Thompson)&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;b&gt;1&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Jun 2011&lt;/b&gt; – LJC: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/09/first-public-appearance-caught-on-video.html&#34;&gt;Introduction to the Java Community Process&lt;/a&gt;”&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Interviews&lt;/h3&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Aug 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/08/interviewed-by-stephen-chin-about.html&#34;&gt;JavaOne 2013 Preview&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://parleys.com/play/516becfbe4b07b9cc6de32c3/chapter0/about&#34;&gt;Devoxx UK&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://shoreditchworks.com/women-tech-city-advice-solutions-sexism&#34;&gt;Top Tips For Working With Techies&lt;/a&gt; (text)&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;&lt;/span&gt;– &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/03/gdl-presents-women-techmakers-with.html&#34;&gt;Google Presents Women Techmakers&lt;/a&gt; (video)&lt;br /&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;/span&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/01/interviewed-at-devoxx.html&#34;&gt;Devoxx&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Jun 2012&lt;/b&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;a href=&#34;https://blogs.oracle.com/java/entry/why_nominate_someone_for_a&#34;&gt;Oracle&amp;rsquo;s Java Blog - Duke&amp;rsquo;s Choice Awards&lt;/a&gt; (text)&lt;/span&gt;&lt;br /&gt;&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/08/interviewed-at-goto-copenhagen.html&#34;&gt;GOTO Copenhagen&lt;/a&gt; (video)&lt;br /&gt;&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/featured-on-bbc-podcast.html&#34;&gt;BBC 5 Live&lt;/a&gt;&amp;nbsp;(podcast)&lt;/div&gt;&lt;/div&gt;&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;Graduate Developer Community&lt;/a&gt;&amp;nbsp;(text)&lt;br /&gt;&lt;b&gt;Mar 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/interviewed-for-infoq-at-qcon-london.html&#34;&gt;InfoQ at QCon London&lt;/a&gt;&amp;nbsp;(video)&lt;br /&gt;&lt;b&gt;Jan 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://blog.eisele.net/2012/01/heroes-of-java-trisha-gee.html&#34;&gt;Heroes of Java&lt;/a&gt;&amp;nbsp;(text)&lt;br /&gt;&lt;b&gt;Nov 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/12/interview-by-oracle-technology-network.html&#34;&gt;Oracle Technology Network at Devoxx&lt;/a&gt;&amp;nbsp;(video)&lt;br /&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Oct 2011&lt;/b&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;a href=&#34;https://blogs.oracle.com/javaspotlight/entry/java_spotlight_episode_51_live&#34;&gt;Java Spotlight: Duke&amp;rsquo;s Choice Winners&lt;/a&gt; (podcast)&lt;/span&gt;&lt;br /&gt;&lt;b&gt;Oct 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/11/more-videos-from-java-one-2011.html&#34;&gt;JavaOne&lt;/a&gt; (video)&lt;br /&gt;&lt;br /&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;h3&gt;Publications&lt;/h3&gt;&lt;/div&gt;&lt;/div&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;- Oracle&amp;rsquo;s Java Magazine: &amp;ldquo;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112/?pg=35&amp;amp;pm=1&amp;amp;u1=friend&#34;&gt;Exploring Lambda Expressions for Java&lt;/a&gt;&amp;ldquo;&lt;br /&gt;&lt;b&gt;Mar 2012&amp;nbsp;&lt;/b&gt;– Oracle&amp;rsquo;s Java Magazine: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/03/java-magazine-intro-to-disruptor-part.html&#34;&gt;Sharing Data Without Contention&lt;/a&gt;”&lt;br /&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;div&gt;&lt;b&gt;May 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://disruptor.googlecode.com/files/Disruptor-1.0.pdf&#34;&gt;Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads&lt;/a&gt;&lt;/div&gt;&lt;/div&gt;&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;/div&gt;&lt;/div&gt;&lt;h1 class=&#34;western&#34;&gt;&lt;/h1&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Spock: Data Driven Testing</title>
       <link>http://trishagee.github.io/post/spock_data_driven_testing</link>
       <pubDate>Fri, 20 Dec 2013 00:00:00 UTC</pubDate>
@@ -187,12 +291,155 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
     </item>
     
     <item>
-      <title>First presentation at the Virtual JUG!</title>
-      <link>http://trishagee.github.io/post/first_presentation_at_the_virtual_jug</link>
-      <pubDate>Fri, 22 Nov 2013 00:00:00 UTC</pubDate>
+      <title>Public Appearances</title>
+      <link>http://trishagee.github.io/presentation/public_appearances</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/first_presentation_at_the_virtual_jug</guid>
-      <description>&lt;p&gt;Yesterday I had the privilege of presenting the very first session for vJUG, a new virtual Java User Group that allows us to span geographies when sharing talks and stories. &amp;nbsp;I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have a local user group to go to. &amp;nbsp;Not to mention cutting travel costs and saving the environment.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: left;&#34;&gt;See the event, and the record of the IRC chat, here:&lt;/div&gt;&lt;div style=&#34;text-align: left;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&amp;nbsp;  &lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/GixwXNlZ7dI&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;br /&gt;The slides are also online, but obviously they&amp;rsquo;re part of the video as well:&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;356&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/28495923&#34; style=&#34;border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&#34; width=&#34;427&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;&lt;div style=&#34;margin-bottom: 5px;&#34;&gt;&lt;strong&gt; &lt;a href=&#34;https://www.slideshare.net/trishagee/design-is-a-process-not-a-document&#34; target=&#34;_blank&#34; title=&#34;Design is a process, not a Document&#34;&gt;Design is a process, not a Document&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/trishagee&#34; target=&#34;_blank&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+      <guid>http://trishagee.github.io/presentation/public_appearances</guid>
+      <description>&lt;p&gt;For blatant self-publicity, I&amp;rsquo;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&amp;rsquo;ve been involved in.&lt;br /&gt;
+&lt;br /&gt;
+&lt;h3&gt;
+Presentations and Panels&lt;/h3&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;7th Mar 2014&lt;/b&gt;&amp;nbsp;- &lt;a href=&#34;http://mechanitis.blogspot.com.es/2014/03/the-joy-of-coding.html&#34;&gt;Joy of Coding&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;6th Mar 2014&lt;/b&gt;&amp;nbsp;- &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2014/03/qcon-london-2014.html&#34;&gt;QCon London&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;11th Feb 2014&lt;/b&gt;&amp;nbsp;- JFokus: &amp;ldquo;What do you mean, Backwards Compatibility?&amp;rdquo;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;December 2013&lt;/b&gt;&amp;nbsp;- YOW Melbourne, Brisbane, Sydney: &amp;ldquo;Career Advice for Programmers&amp;rdquo; &amp;amp; &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;23rd Nov 2013&lt;/b&gt;&amp;nbsp;- London Java Community Open Conference: &amp;ldquo;Keynote: Java, the Future, and You&amp;rdquo;, &amp;ldquo;Novice Speaker&amp;rsquo;s Clinic&amp;rdquo;, &amp;ldquo;More Speaker Tips&amp;rdquo;, &amp;ldquo;Career Advice for Programmers&amp;rdquo;, &amp;ldquo;Intro to MongoDB&amp;rdquo;, panel: &amp;ldquo;So you&amp;rsquo;re a senior developer - what next?&amp;rdquo;.&lt;br /&gt;
+&lt;b&gt;21st Nov 2013&lt;/b&gt; - Virtual JUG: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/11/first-presentation-at-virtual-jug.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;29th Oct 2013&lt;/b&gt;&amp;nbsp;- JAX London: &amp;ldquo;&lt;a href=&#34;http://jaxenter.com/trisha-gee-design-is-a-process-not-an-artefact-49100.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;28th Oct 2013&lt;/b&gt;&amp;nbsp;- LJC: &amp;ldquo;Speaker&amp;rsquo;s Clinic: Public Speaking for Beginners&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;28th Oct 2013&lt;/b&gt;&amp;nbsp;- JAX London: &amp;ldquo;Tutorial: A fluent API for Java and MongoDB&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;18th Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Berlin: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;2nd Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#55&#34;&gt;Top Ten IntelliJ Tips&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;2nd Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#36&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;26th Sep 2013&lt;/b&gt; - JavaOne: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/11/javaone-2013.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;12th Sep 2013&lt;/b&gt;&amp;nbsp;- JavaZone: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/74553077&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;23rd Jul 2013&lt;/b&gt;&amp;nbsp;- JavaOne Shanghai: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;3rd Jul 2013&lt;/b&gt;&amp;nbsp;- TCube Dublin: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;27th Jun 2013&lt;/b&gt;&amp;nbsp;- TTN: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;16th May 2013&lt;/b&gt;&amp;nbsp;- GeeCON: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;10th Apr 2013&lt;/b&gt;&amp;nbsp;- East Anglia MUG: Trisha Gee, an Unconference&lt;br /&gt;
+&lt;b&gt;9th Apr 2013&lt;/b&gt;&amp;nbsp;- MongoDB UK: &amp;ldquo;Schema Design&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
+&lt;b&gt;27th Mar 2013&lt;/b&gt;&amp;nbsp;- DevoxxUK: &amp;ldquo;&lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;21st Mar 2013&lt;/b&gt; - LJC: &amp;ldquo;&lt;a href=&#34;http://skillsmatter.com/podcast/java-jee/london-java-community-march&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;8th Mar 2013&lt;/b&gt;&amp;nbsp;- QCon London (with Dan North): &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/08/life-on-both-sides-of-interview-table.html&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;4&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Dec 2012&lt;/b&gt;&amp;nbsp;– Webinar: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/webinar-processing-high-volume-data.html&#34;&gt;Financial Markets:&amp;nbsp;Processing High Volume Data Feeds with MongoDB&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;b&gt;29&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;– Webinar: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/11/my-first-official-mongodb-appearance.html&#34;&gt;MongoDB on the JVM&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;24&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;LJC Open Conference: &amp;ldquo;Keynote: The State of Java&amp;rdquo;; Panel: &amp;ldquo;Does Performance Matter?&amp;rdquo;; Panel: &amp;ldquo;The Java Community Process&amp;rdquo;; &amp;ldquo;An Introduction to NoSQL&amp;rdquo;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;15&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Devoxx: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/devoxx-problem-with-women-technical.html&#34;&gt;The Problem With Women: A Technical Approach&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;14&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Devoxx: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/agile-when-agile-goes-well.html&#34;&gt;Agile++: When Agile Goes Well&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;div&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;b&gt;17&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;– JAX London: &amp;ldquo;Java Performance Frequently Asked Questions&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;3&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;CON11338 &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/10/javaone-problem-with-women-technical.html&#34;&gt;A Technical Approach to Women&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
+&lt;b&gt;3&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne Panel: &amp;ldquo;CON5130&amp;nbsp;&lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=5130&amp;amp;tclass=popup#.UIZb-TfrjPE.blogger&#34;&gt;London Java Community: How to Change the World&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;1&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&amp;nbsp;&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;CON3732 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3732&amp;amp;tclass=popup#.UIZaP5FFnjg.blogger&#34;&gt;Concurrent Programming Using the Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;30&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Sep 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;UGF10467 Why Open Source Your Secrets&amp;rdquo;&lt;br /&gt;
+&lt;b&gt;23&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Sep 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Strange Loop: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/09/strangeloop-disruptor-workshop-materials.html&#34;&gt;Workshop: Introduction to the Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;br /&gt;
+&lt;b&gt;18&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;July 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;OSCON:&amp;nbsp;“&lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/proceedings&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;25&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;010 DEV: &amp;ldquo;&lt;a href=&#34;http://010dev.nl/post/social-tech-event-the-disruptor-and-the-perfect-programmer&#34;&gt;The Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;24&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
+May 2012&lt;/b&gt; – GOTO Amsterdam:
+“Concurrent Programming Using The Disruptor”&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;21&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;-23&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
+May 2012&lt;/b&gt; – GOTO Copenhagen:
+“&lt;a href=&#34;http://www.infoq.com/presentations/Disruptor#.UIZa3tb3Bms.blogger&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”,”War Stories”, &amp;ldquo;&lt;a href=&#34;http://www.version2.dk/blog/goto-programming-stars-45578&#34;&gt;Programming with the Stars&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;29&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th &lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Apr
+2012&lt;/b&gt; – &lt;a href=&#34;http://www.geekgirlmeetup.co.uk/2012/03/29th-of-april-geekgirlmeetup-is-held-in-london-theme-code-is-queen/&#34;&gt;GirlGeekMeetup London&lt;/a&gt;: “GDC
+Meet a Mentor”; “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/why-open-source-your-secrets.html&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;”; “Technology
+in&amp;nbsp;Electronic
+Trading” (with Annalisa Sarasini); Panel:&amp;nbsp;“Women Only Events – Are We
+Creating A Girl Ghetto?”&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;7&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
+Mar 2012&lt;/b&gt; – QCon London:
+“&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/06/qcon-london-disruptor-presentation.html&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;7&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
+Nov 2011&lt;/b&gt; – Devoxx Panel: “&lt;a href=&#34;http://www.blogger.com/&#34;&gt;&lt;span id=&#34;goog_1144118152&#34;&gt;&lt;/span&gt;Why
+we shouldn&amp;rsquo;t target women&lt;span id=&#34;goog_1144118153&#34;&gt;&lt;/span&gt;&lt;/a&gt;”&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;2&lt;/b&gt;&lt;sup&gt;&lt;b&gt;nd &lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Nov
+2011&lt;/b&gt; – JAX London:
+“&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/12/video-of-our-jax-london-session.html&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;” (with Mike Barker)&lt;b&gt;&lt;/b&gt;&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;11&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
+Oct 2011&lt;/b&gt; – LJC: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/10/mike-and-i-debut-our-new-disruptor.html&#34;&gt;Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;”&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;6&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
+Oct 2011&lt;/b&gt; – JavaOne: “LMAX
+Disruptor: High-Performance Concurrent Programming Framework” (with Martin Thompson)&lt;br /&gt;
+&lt;br /&gt;&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;b&gt;1&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
+Jun 2011&lt;/b&gt; – LJC: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/09/first-public-appearance-caught-on-video.html&#34;&gt;Introduction to the Java Community Process&lt;/a&gt;”&lt;br /&gt;
+&lt;br /&gt;
+&lt;h3&gt;
+Interviews&lt;/h3&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Aug 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/08/interviewed-by-stephen-chin-about.html&#34;&gt;JavaOne 2013 Preview&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://parleys.com/play/516becfbe4b07b9cc6de32c3/chapter0/about&#34;&gt;Devoxx UK&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://shoreditchworks.com/women-tech-city-advice-solutions-sexism&#34;&gt;Top Tips For Working With Techies&lt;/a&gt; (text)&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;&lt;/span&gt;– &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/03/gdl-presents-women-techmakers-with.html&#34;&gt;Google Presents Women Techmakers&lt;/a&gt; (video)&lt;br /&gt;
+&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;/span&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/01/interviewed-at-devoxx.html&#34;&gt;Devoxx&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Jun 2012&lt;/b&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;a href=&#34;https://blogs.oracle.com/java/entry/why_nominate_someone_for_a&#34;&gt;Oracle&amp;rsquo;s Java Blog - Duke&amp;rsquo;s Choice Awards&lt;/a&gt; (text)&lt;/span&gt;&lt;br /&gt;
+&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/08/interviewed-at-goto-copenhagen.html&#34;&gt;GOTO Copenhagen&lt;/a&gt; (video)&lt;br /&gt;
+&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/featured-on-bbc-podcast.html&#34;&gt;BBC 5 Live&lt;/a&gt;&amp;nbsp;(podcast)&lt;/div&gt;
+&lt;/div&gt;
+&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;Graduate Developer Community&lt;/a&gt;&amp;nbsp;(text)&lt;br /&gt;
+&lt;b&gt;Mar 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/interviewed-for-infoq-at-qcon-london.html&#34;&gt;InfoQ at QCon London&lt;/a&gt;&amp;nbsp;(video)&lt;br /&gt;
+&lt;b&gt;Jan 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://blog.eisele.net/2012/01/heroes-of-java-trisha-gee.html&#34;&gt;Heroes of Java&lt;/a&gt;&amp;nbsp;(text)&lt;br /&gt;
+&lt;b&gt;Nov 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/12/interview-by-oracle-technology-network.html&#34;&gt;Oracle Technology Network at Devoxx&lt;/a&gt;&amp;nbsp;(video)&lt;br /&gt;
+&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Oct 2011&lt;/b&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;a href=&#34;https://blogs.oracle.com/javaspotlight/entry/java_spotlight_episode_51_live&#34;&gt;Java Spotlight: Duke&amp;rsquo;s Choice Winners&lt;/a&gt; (podcast)&lt;/span&gt;&lt;br /&gt;
+&lt;b&gt;Oct 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/11/more-videos-from-java-one-2011.html&#34;&gt;JavaOne&lt;/a&gt; (video)&lt;br /&gt;
+&lt;br /&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;h3&gt;
+Publications&lt;/h3&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;b&gt;Jan 2014&lt;/b&gt;&amp;nbsp;- Oracle&amp;rsquo;s Java Magazine: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2014/01/introduction-to-mongodb-and-big-data.html&#34;&gt;Introduction to MongoDB and Big Data&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;- Oracle&amp;rsquo;s Java Magazine: &amp;ldquo;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112/?pg=35&amp;amp;pm=1&amp;amp;u1=friend&#34;&gt;Exploring Lambda Expressions for Java&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
+&lt;b&gt;Mar 2012&amp;nbsp;&lt;/b&gt;– Oracle&amp;rsquo;s Java Magazine: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/03/java-magazine-intro-to-disruptor-part.html&#34;&gt;Sharing Data Without Contention&lt;/a&gt;”&lt;br /&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;div&gt;
+&lt;b&gt;May 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://disruptor.googlecode.com/files/Disruptor-1.0.pdf&#34;&gt;Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads&lt;/a&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;h1 class=&#34;western&#34;&gt;
+&lt;/h1&gt;&lt;/p&gt;
 </description>
     </item>
     
