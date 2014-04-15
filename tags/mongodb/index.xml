@@ -87,6 +87,37 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
     </item>
     
     <item>
+      <title>The New 3.0 Java Driver for MongoDB</title>
+      <link>http://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb</link>
+      <pubDate>Mon, 09 Sep 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb</guid>
+      <description>
+
+&lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Links to more detailed information&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;Introduction to the changes in 3.0&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;How to get started with the 3.0
+not-production-ready snapshot&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Presentations&lt;/h2&gt;
+
+&lt;p&gt;Presentation from GeeCON about the design of the new MongoDB driver.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;iframe frameborder=&#34;0&#34; height=&#34;400&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34;
+src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34;476&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Also available in Chinese:
+&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;356&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; mozallowfullscreen=&#34;&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/24790295&#34; style=&#34;border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&#34; webkitallowfullscreen=&#34;&#34; width=&#34;427&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to get started with the new MongoDB Java Driver</title>
       <link>http://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver</link>
       <pubDate>Sat, 31 Aug 2013 00:00:00 UTC</pubDate>

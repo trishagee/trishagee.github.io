@@ -6,7 +6,34 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 17 Jan 2012 00:00:00 UTC</updated>
+    <updated>Mon, 22 Oct 2012 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Performance Links</title>
+      <link>http://trishagee.github.io/resources/performance_resources</link>
+      <pubDate>Mon, 22 Oct 2012 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/resources/performance_resources</guid>
+      <description>&lt;p&gt;A hastily thrown-together list of some of the places to get more information on how to write performant code.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.kodewerk.com/&#34;&gt;Java Performance Tuning Course&lt;/a&gt; (&lt;a href=&#34;http://kirk.blog-city.com/&#34;&gt;Kirk Pepperdine&lt;/a&gt;,
+Java Champion)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaperformancetuning.com/&#34;&gt;Java Performance Tuning&lt;/a&gt; (Kirk and Jack Shirazi)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.codingthearchitecture.com/tags/nonfunctionalrequirements/&#34;&gt;Non Functional Requirements&lt;/a&gt; (&lt;a href=&#34;http://simonbrown.je/&#34;&gt;Simon Brown&lt;/a&gt;, Coding the Architecture)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://yow.eventer.com/YOW-2011-1004/Tackling-the-Folklore-Surrounding-High-Performance-Computing-by-Martin-Thompson-1026&#34;&gt;Performance Myths&lt;/a&gt; (&lt;a href=&#34;http://mechanical-sympathy.blogspot.co.uk/&#34;&gt;Martin Thompson&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/Understanding-Java-Garbage-Collection&#34;&gt;Understanding Java Garbage Collection&lt;/a&gt; (&lt;a
+href=&#34;https://twitter.com/giltene&#34;&gt;Gil Tene&lt;/a&gt;, Azul)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.azulsystems.com/jHiccup&#34;&gt;JHiccup&lt;/a&gt; for testing how long your system takes to do nothing (also Azul)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://vanillajava.blogspot.co.uk/2012/02/high-performance-libraries-in-java.html&#34;&gt;Vanilla Java - Core Java for simpler,
+faster applications&lt;/a&gt; (Peter Lawrey)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.jclarity.com/friends/&#34;&gt;JClarity Performance Community&lt;/a&gt; (Ben, Martijn,
+Kirk et al)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://bad-concurrency.blogspot.co.uk/2012/10/talk-from-jax-london.html&#34;&gt;We Don&amp;rsquo;t Need No Stinkin&amp;rsquo; Locks&lt;/a&gt; (&lt;a
+href=&#34;http://bad-concurrency.blogspot.co.uk/&#34;&gt;Mike Barker&lt;/a&gt;, LMAX)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Christmas decorations teach me a lesson about troubleshooting</title>

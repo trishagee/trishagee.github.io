@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="">
-<meta name="keywords" content="">
+<meta name="keywords" content="mongodb, java, ">
 
  
 <meta property="og:type" content="article"/>
@@ -21,11 +21,13 @@
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="http://trishagee.github.io/post/the_new_30_java_driver_for_mongodb">
+<meta property="og:url" content="http://localhost:1313/post/the_new_30_java_driver_for_mongodb">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2013-09-09"/>
 <meta property="article:modified_time" content="2013-09-09"/>
 
+<meta property="article:tag" content="mongodb">
+<meta property="article:tag" content="java">
 
 
 
@@ -40,13 +42,13 @@
 
 
 
-    <base href="http://trishagee.github.io/">
+    <base href="http://localhost:1313">
     <title> The New 3.0 Java Driver for MongoDB - trishagee.github.io </title>
-    <link rel="canonical" href="http://trishagee.github.io/post/the_new_30_java_driver_for_mongodb">
+    <link rel="canonical" href="http://localhost:1313/post/the_new_30_java_driver_for_mongodb">
     
 
     <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="http://trishagee.github.io/static/css/style.css">
+<link rel="stylesheet" href="http://localhost:1313/static/css/style.css">
 <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
 <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
@@ -61,21 +63,27 @@
     <nav id="nav">
         <ul id="mainnav">
     <li>
-        <a href="http://trishagee.github.io/post/">
+        <a href="http://localhost:1313/post/">
             <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
             <span> blog </span>
         </a>
     </li>
     <li>
-        <a href="http://trishagee.github.io/project/">
+        <a href="http://localhost:1313/project/">
             <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
             <span> code </span>
         </a>
     </li>
     <li>
-        <a href="http://trishagee.github.io/presentation/">
+        <a href="http://localhost:1313/presentation/">
             <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
             <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="http://localhost:1313/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
         </a>
     </li>
 </ul>
@@ -87,21 +95,21 @@
 
         <div class="dropdown share">
             <ul class="social">
-                <li><a href="https://twitter.com/intent/tweet?status=The%20New%203.0%20Java%20Driver%20for%20MongoDB-http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank"
+                <li><a href="https://twitter.com/intent/tweet?status=The%20New%203.0%20Java%20Driver%20for%20MongoDB-http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank"
                        title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
-                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Join me on Facebook"
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Join me on Facebook"
                        class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
-                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Google+" class="googleplus"><span
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Google+" class="googleplus"><span
                         class="icon icon-google-plus"></span>Google+</a></li>
-                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb&title=The%20New%203.0%20Java%20Driver%20for%20MongoDB&source=spf13"
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb&title=The%20New%203.0%20Java%20Driver%20for%20MongoDB&source=spf13"
                        target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
-                <li><a href="http://del.icio.us/post?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Delicious" class="delicious"><span
+                <li><a href="http://del.icio.us/post?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Delicious" class="delicious"><span
                         class="icon icon-delicious"></span>Delicious</a></li>
-                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Reddit" class="reddit"><span
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="Reddit" class="reddit"><span
                         class="icon icon-reddit"></span>Reddit</a></li>
-                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="StumbleUpon"
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb" target="_blank" title="StumbleUpon"
                        class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
-                <li><a href="http://www.dzone.com/links/add.html?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fthe_new_30_java_driver_for_mongodb&title=The%20New%203.0%20Java%20Driver%20for%20MongoDB" target="_blank" title="DZone"
+                <li><a href="http://www.dzone.com/links/add.html?url=http%3a%2f%2flocalhost%3a1313%2fpost%2fthe_new_30_java_driver_for_mongodb&title=The%20New%203.0%20Java%20Driver%20for%20MongoDB" target="_blank" title="DZone"
                        class="dzone"><span class="icon icon-dzone"></span>DZone</a></li>
             </ul>
             <span class="subcount">sharing is caring</span>
@@ -140,7 +148,26 @@
   <h1 itemprop="name" id="title">The New 3.0 Java Driver for MongoDB</h1>
   <div>
         <article itemprop="articleBody" id="content">
-           <p><h3>Links to more detailed information</h3><br /><ul><li><a href="http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0">Introduction to the changes in 3.0</a></li><li><a href="http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing">How to get started with the 3.0 not-production-ready snapshot</a></li></ul><div><br /></div><br /><h3>Presentations</h3><iframe frameborder="0" height="400" marginheight="0" marginwidth="0" scrolling="no" src="http://www.slideshare.net/slideshow/embed_code/26024765" width="476"></iframe><br />Presentation from GeeCON about the design of the new MongoDB driver.<br /><br />Also available in Chinese:<br /><br /><iframe allowfullscreen="" frameborder="0" height="356" marginheight="0" marginwidth="0" mozallowfullscreen="" scrolling="no" src="http://www.slideshare.net/slideshow/embed_code/24790295" style="border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;" webkitallowfullscreen="" width="427"> </iframe></p>
+           
+
+<h2 id="toc_0">Links to more detailed information</h2>
+
+<ul>
+<li><a href="http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0">Introduction to the changes in 3.0</a></li>
+
+<li><p><a href="http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing">How to get started with the 3.0
+not-production-ready snapshot</a></p>
+
+<h2 id="toc_1">Presentations</h2>
+
+<p>Presentation from GeeCON about the design of the new MongoDB driver.</p></li>
+</ul>
+
+<iframe frameborder="0" height="400" marginheight="0" marginwidth="0" scrolling="no"
+src="http://www.slideshare.net/slideshow/embed_code/26024765" width="476"></iframe>
+
+<p>Also available in Chinese:
+<iframe allowfullscreen="" frameborder="0" height="356" marginheight="0" marginwidth="0" mozallowfullscreen="" scrolling="no" src="http://www.slideshare.net/slideshow/embed_code/24790295" style="border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;" webkitallowfullscreen="" width="427"> </iframe></p>
 
         </article>
   </div>
@@ -160,15 +187,23 @@
     </ul>
     <ul id="tags">
         
+        <li><a href="http://localhost:1313/tags/mongodb">mongodb</a></li>
+        
+        <li><a href="http://localhost:1313/tags/java">java</a></li>
+        
+        <li><a href="http://localhost:1313/tags/links">links</a></li>
+        
+        <li><a href="http://localhost:1313/tags/pages">pages</a></li>
+        
     </ul>
 </div>
 
 <div>
     <section id="prev">
-        &nbsp;<a class="previous" href="http://trishagee.github.io/post/javazone_oslo"><i class="icon-arrow-left"></i> JavaZone, Oslo</a><br>
+        &nbsp;<a class="previous" href="http://localhost:1313/post/javazone_oslo"><i class="icon-arrow-left"></i> JavaZone, Oslo</a><br>
     </section>
     <section id="next">
-        &nbsp;<a class="next" href="http://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver">How to get started with the new MongoDB Java Driver <i class="icon-arrow-right"></i></a>
+        &nbsp;<a class="next" href="http://localhost:1313/post/how_to_get_started_with_the_new_mongodb_java_driver">How to get started with the new MongoDB Java Driver <i class="icon-arrow-right"></i></a>
     </section>
 </div>
 
@@ -182,9 +217,9 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="31">
+<meta itemprop="wordCount" content="36">
 <meta itemprop="datePublished" content="2013-09-09">
-<meta itemprop="url" content="http://trishagee.github.io/post/the_new_30_java_driver_for_mongodb">
+<meta itemprop="url" content="http://localhost:1313/post/the_new_30_java_driver_for_mongodb">
 
 
 <aside id=comments>
@@ -192,7 +227,7 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'trishagee';
-    var disqus_identifier = 'http:\/\/trishagee.github.io\/post\/the_new_30_java_driver_for_mongodb';
+    var disqus_identifier = 'http:\/\/localhost:1313\/post\/the_new_30_java_driver_for_mongodb';
     var disqus_title = 'The New 3.0 Java Driver for MongoDB';
     var disqus_url = 'http:\/\/trishagee.github.io\/post\/the_new_30_java_driver_for_mongodb\/';
 
