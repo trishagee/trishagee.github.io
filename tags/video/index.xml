@@ -6,7 +6,27 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 15 Apr 2014 00:00:00 UTC</updated>
+    <updated>Thu, 17 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Career Advice for Programmers (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers</guid>
+      <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
+by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+&lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
+.com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
+time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
+and this time I think I managed to distill the important points into the (still ridiculously short) time allotted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/career-advice-for-programmers-by-trisha-gee-1380&#34;&gt;See the video here&lt;/a&gt;,
+and please give me any feedback you have.&lt;/p&gt;
+
+&lt;p&gt;I recognise there are many many more topics I could cover, so I&amp;rsquo;d better start making a list.  Suggestions?&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Interviewed by Charles Humble for InfoQ</title>
@@ -19,7 +39,7 @@ I think he brings out the best in me.&lt;/p&gt;
 
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;http://localhost:1313/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -85,21 +105,27 @@ I think he brings out the best in me.&lt;/p&gt;
     
     <item>
       <title>GDL Presents Women Techmakers with Trisha Gee</title>
-      <link>http://trishagee.github.io/post/gdl_presents_women_techmakers_with_trisha_gee</link>
-      <pubDate>Wed, 06 Mar 2013 00:00:00 UTC</pubDate>
+      <link>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/gdl_presents_women_techmakers_with_trisha_gee</guid>
-      <description>&lt;p&gt;I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series, as it moves over to Europe.  In this video I talk about going to Mars, education, planning your career, being a developer, and the impact of technology on our lives.  So, not much&amp;hellip;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&amp;nbsp;  &lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/68bsagK7GEM&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
+      <guid>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee</guid>
+      <description>&lt;p&gt;I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series,
+as it moves over to Europe.  In this video I talk about going to Mars, education, planning your career, being a developer,
+and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/68bsagK7GEM&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;
 </description>
     </item>
     
     <item>
       <title>Interviewed at Devoxx</title>
-      <link>http://trishagee.github.io/post/interviewed_at_devoxx</link>
-      <pubDate>Fri, 11 Jan 2013 00:00:00 UTC</pubDate>
+      <link>http://trishagee.github.io/presentation/interviewed_at_devoxx</link>
+      <pubDate>Sat, 12 Jan 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/interviewed_at_devoxx</guid>
-      <description>&lt;p&gt;Yolande Poirier from &lt;a href=&#34;http://www.oracle.com/technetwork/index.html&#34;&gt;OTN&lt;/a&gt; interviewed me at Devoxx about my new job at 10gen, Women in IT (bet that surprises you), how to be a role model, and Agile. &amp;nbsp;Enjoy.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3544&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3544&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
+      <guid>http://trishagee.github.io/presentation/interviewed_at_devoxx</guid>
+      <description>&lt;p&gt;Yolande Poirier from &lt;a href=&#34;http://www.oracle.com/technetwork/index.html&#34;&gt;OTN&lt;/a&gt; interviewed me at Devoxx about my new job at 10gen,
+Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3544&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3544&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -151,17 +177,6 @@ On Monday, &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Stephen Chin&lt;/a&gt
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/qcon_london_disruptor_presentation_video</guid>
       <description>&lt;p&gt;The &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; presentation I gave at QCon London is now available on the&amp;nbsp;&lt;a href=&#34;http://www.infoq.com/presentations/Concurrent-Programming-Using-The-Disruptor#.T8-KKWLH1R4.blogger&#34;&gt;InfoQ site&lt;/a&gt;. &amp;nbsp;This is the same presentation as the one I gave at &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/03/new-disruptor-presentation-unveiled-to.html&#34;&gt;Skillsmatter in March&lt;/a&gt;, but the questions are different. &amp;nbsp;Plus since I&amp;rsquo;m winging it every time, I probably cover slightly different things or explain some stuff better / worse.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Interviewed for InfoQ at QCon London</title>
-      <link>http://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london</link>
-      <pubDate>Fri, 18 May 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london</guid>
-      <description>&lt;p&gt;I was flattered to be &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-disruptor&#34;&gt;interviewed for InfoQ&lt;/a&gt; at QCon London. It was a fun interview actually,
-and didn&amp;rsquo;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).&lt;/p&gt;
 </description>
     </item>
     

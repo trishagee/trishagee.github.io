@@ -6,7 +6,27 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 15 Apr 2014 00:00:00 UTC</updated>
+    <updated>Thu, 17 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Career Advice for Programmers (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers</guid>
+      <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
+by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+&lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
+.com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
+time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
+and this time I think I managed to distill the important points into the (still ridiculously short) time allotted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/career-advice-for-programmers-by-trisha-gee-1380&#34;&gt;See the video here&lt;/a&gt;,
+and please give me any feedback you have.&lt;/p&gt;
+
+&lt;p&gt;I recognise there are many many more topics I could cover, so I&amp;rsquo;d better start making a list.  Suggestions?&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Interviewed by Charles Humble for InfoQ</title>
@@ -19,161 +39,33 @@ I think he brings out the best in me.&lt;/p&gt;
 
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;http://localhost:1313/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Public Appearances</title>
-      <link>http://trishagee.github.io/presentation/public_appearances</link>
-      <pubDate>Thu, 19 Dec 2013 00:00:00 UTC</pubDate>
+      <title>GDL Presents Women Techmakers with Trisha Gee</title>
+      <link>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/public_appearances</guid>
-      <description>&lt;p&gt;For blatant self-publicity, I&amp;rsquo;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&amp;rsquo;ve been involved in.&lt;br /&gt;
-&lt;br /&gt;
-&lt;h3&gt;
-Presentations and Panels&lt;/h3&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;7th Mar 2014&lt;/b&gt;&amp;nbsp;- &lt;a href=&#34;http://mechanitis.blogspot.com.es/2014/03/the-joy-of-coding.html&#34;&gt;Joy of Coding&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;6th Mar 2014&lt;/b&gt;&amp;nbsp;- &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2014/03/qcon-london-2014.html&#34;&gt;QCon London&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;br /&gt;
-&lt;br /&gt;
-&lt;b&gt;11th Feb 2014&lt;/b&gt;&amp;nbsp;- JFokus: &amp;ldquo;What do you mean, Backwards Compatibility?&amp;rdquo;&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;b&gt;December 2013&lt;/b&gt;&amp;nbsp;- YOW Melbourne, Brisbane, Sydney: &amp;ldquo;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/career-advice-for-programmers-by-trisha-gee-1380&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;rdquo; &amp;amp; &amp;ldquo;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/what-do-you-mean-backwards-compatibility-by-trisha-gee-1398&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
-&lt;b&gt;23rd Nov 2013&lt;/b&gt;&amp;nbsp;- London Java Community Open Conference: &amp;ldquo;Keynote: Java, the Future, and You&amp;rdquo;, &amp;ldquo;Novice Speaker&amp;rsquo;s Clinic&amp;rdquo;, &amp;ldquo;More Speaker Tips&amp;rdquo;, &amp;ldquo;Career Advice for Programmers&amp;rdquo;, &amp;ldquo;Intro to MongoDB&amp;rdquo;, panel: &amp;ldquo;So you&amp;rsquo;re a senior developer - what next?&amp;rdquo;.&lt;br /&gt;
-&lt;b&gt;21st Nov 2013&lt;/b&gt; - Virtual JUG: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/11/first-presentation-at-virtual-jug.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
-&lt;b&gt;29th Oct 2013&lt;/b&gt;&amp;nbsp;- JAX London: &amp;ldquo;&lt;a href=&#34;http://jaxenter.com/trisha-gee-design-is-a-process-not-an-artefact-49100.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;28th Oct 2013&lt;/b&gt;&amp;nbsp;- LJC: &amp;ldquo;Speaker&amp;rsquo;s Clinic: Public Speaking for Beginners&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;28th Oct 2013&lt;/b&gt;&amp;nbsp;- JAX London: &amp;ldquo;Tutorial: A fluent API for Java and MongoDB&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;18th Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Berlin: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;2nd Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#55&#34;&gt;Top Ten IntelliJ Tips&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;2nd Oct 2013&lt;/b&gt;&amp;nbsp;- GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#36&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
-&lt;b&gt;26th Sep 2013&lt;/b&gt; - JavaOne: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/11/javaone-2013.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;12th Sep 2013&lt;/b&gt;&amp;nbsp;- JavaZone: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/74553077&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;br /&gt;
-&lt;b&gt;23rd Jul 2013&lt;/b&gt;&amp;nbsp;- JavaOne Shanghai: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;3rd Jul 2013&lt;/b&gt;&amp;nbsp;- TCube Dublin: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
-&lt;b&gt;27th Jun 2013&lt;/b&gt;&amp;nbsp;- TTN: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
-&lt;b&gt;16th May 2013&lt;/b&gt;&amp;nbsp;- GeeCON: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
-&lt;b&gt;10th Apr 2013&lt;/b&gt;&amp;nbsp;- East Anglia MUG: Trisha Gee, an Unconference&lt;br /&gt;
-&lt;b&gt;9th Apr 2013&lt;/b&gt;&amp;nbsp;- MongoDB UK: &amp;ldquo;Schema Design&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;&lt;br /&gt;&lt;/b&gt;
-&lt;b&gt;27th Mar 2013&lt;/b&gt;&amp;nbsp;- DevoxxUK: &amp;ldquo;&lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;21st Mar 2013&lt;/b&gt; - LJC: &amp;ldquo;&lt;a href=&#34;http://skillsmatter.com/podcast/java-jee/london-java-community-march&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;8th Mar 2013&lt;/b&gt;&amp;nbsp;- QCon London (with Dan North): &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/08/life-on-both-sides-of-interview-table.html&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;
-&lt;b&gt;4&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Dec 2012&lt;/b&gt;&amp;nbsp;– Webinar: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/webinar-processing-high-volume-data.html&#34;&gt;Financial Markets:&amp;nbsp;Processing High Volume Data Feeds with MongoDB&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;div&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;b&gt;29&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;– Webinar: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/11/my-first-official-mongodb-appearance.html&#34;&gt;MongoDB on the JVM&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;24&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;LJC Open Conference: &amp;ldquo;Keynote: The State of Java&amp;rdquo;; Panel: &amp;ldquo;Does Performance Matter?&amp;rdquo;; Panel: &amp;ldquo;The Java Community Process&amp;rdquo;; &amp;ldquo;An Introduction to NoSQL&amp;rdquo;&lt;br /&gt;
-&lt;br /&gt;
-&lt;b&gt;15&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Devoxx: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/devoxx-problem-with-women-technical.html&#34;&gt;The Problem With Women: A Technical Approach&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;14&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Devoxx: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/agile-when-agile-goes-well.html&#34;&gt;Agile++: When Agile Goes Well&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;div&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;b&gt;17&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;– JAX London: &amp;ldquo;Java Performance Frequently Asked Questions&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;3&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;CON11338 &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/10/javaone-problem-with-women-technical.html&#34;&gt;A Technical Approach to Women&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
-&lt;b&gt;3&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne Panel: &amp;ldquo;CON5130&amp;nbsp;&lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=5130&amp;amp;tclass=popup#.UIZb-TfrjPE.blogger&#34;&gt;London Java Community: How to Change the World&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;1&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&amp;nbsp;&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Oct 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;CON3732 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3732&amp;amp;tclass=popup#.UIZaP5FFnjg.blogger&#34;&gt;Concurrent Programming Using the Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;br /&gt;
-&lt;b&gt;30&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Sep 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;JavaOne: &amp;ldquo;UGF10467 Why Open Source Your Secrets&amp;rdquo;&lt;br /&gt;
-&lt;b&gt;23&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;Sep 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;Strange Loop: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/09/strangeloop-disruptor-workshop-materials.html&#34;&gt;Workshop: Introduction to the Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;br /&gt;
-&lt;b&gt;18&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;July 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;OSCON:&amp;nbsp;“&lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/proceedings&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;br /&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;25&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;010 DEV: &amp;ldquo;&lt;a href=&#34;http://010dev.nl/post/social-tech-event-the-disruptor-and-the-perfect-programmer&#34;&gt;The Disruptor&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;24&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
-May 2012&lt;/b&gt; – GOTO Amsterdam:
-“Concurrent Programming Using The Disruptor”&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;21&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;-23&lt;/b&gt;&lt;sup&gt;&lt;b&gt;rd&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
-May 2012&lt;/b&gt; – GOTO Copenhagen:
-“&lt;a href=&#34;http://www.infoq.com/presentations/Disruptor#.UIZa3tb3Bms.blogger&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”,”War Stories”, &amp;ldquo;&lt;a href=&#34;http://www.version2.dk/blog/goto-programming-stars-45578&#34;&gt;Programming with the Stars&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;29&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th &lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Apr
-2012&lt;/b&gt; – &lt;a href=&#34;http://www.geekgirlmeetup.co.uk/2012/03/29th-of-april-geekgirlmeetup-is-held-in-london-theme-code-is-queen/&#34;&gt;GirlGeekMeetup London&lt;/a&gt;: “GDC
-Meet a Mentor”; “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/why-open-source-your-secrets.html&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;”; “Technology
-in&amp;nbsp;Electronic
-Trading” (with Annalisa Sarasini); Panel:&amp;nbsp;“Women Only Events – Are We
-Creating A Girl Ghetto?”&lt;br /&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;7&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
-Mar 2012&lt;/b&gt; – QCon London:
-“&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/06/qcon-london-disruptor-presentation.html&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;br /&gt;
-&lt;br /&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;7&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
-Nov 2011&lt;/b&gt; – Devoxx Panel: “&lt;a href=&#34;http://www.blogger.com/&#34;&gt;&lt;span id=&#34;goog_1144118152&#34;&gt;&lt;/span&gt;Why
-we shouldn&amp;rsquo;t target women&lt;span id=&#34;goog_1144118153&#34;&gt;&lt;/span&gt;&lt;/a&gt;”&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;2&lt;/b&gt;&lt;sup&gt;&lt;b&gt;nd &lt;/b&gt;&lt;/sup&gt;&lt;b&gt;Nov
-2011&lt;/b&gt; – JAX London:
-“&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/12/video-of-our-jax-london-session.html&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;” (with Mike Barker)&lt;b&gt;&lt;/b&gt;&lt;br /&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;11&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
-Oct 2011&lt;/b&gt; – LJC: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/10/mike-and-i-debut-our-new-disruptor.html&#34;&gt;Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;”&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;6&lt;/b&gt;&lt;sup&gt;&lt;b&gt;th&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
-Oct 2011&lt;/b&gt; – JavaOne: “LMAX
-Disruptor: High-Performance Concurrent Programming Framework” (with Martin Thompson)&lt;br /&gt;
-&lt;br /&gt;&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;b&gt;1&lt;/b&gt;&lt;sup&gt;&lt;b&gt;st&lt;/b&gt;&lt;/sup&gt;&lt;b&gt;
-Jun 2011&lt;/b&gt; – LJC: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/09/first-public-appearance-caught-on-video.html&#34;&gt;Introduction to the Java Community Process&lt;/a&gt;”&lt;br /&gt;
-&lt;br /&gt;
-&lt;h3&gt;
-Interviews&lt;/h3&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2014&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Aug 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/08/interviewed-by-stephen-chin-about.html&#34;&gt;JavaOne 2013 Preview&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://parleys.com/play/516becfbe4b07b9cc6de32c3/chapter0/about&#34;&gt;Devoxx UK&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://shoreditchworks.com/women-tech-city-advice-solutions-sexism&#34;&gt;Top Tips For Working With Techies&lt;/a&gt; (text)&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Mar 2013&lt;/b&gt;&amp;nbsp;&lt;/span&gt;– &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/03/gdl-presents-women-techmakers-with.html&#34;&gt;Google Presents Women Techmakers&lt;/a&gt; (video)&lt;br /&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Nov 2012&lt;/b&gt;&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;/span&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/01/interviewed-at-devoxx.html&#34;&gt;Devoxx&lt;/a&gt; (video)&lt;/span&gt;&lt;br /&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Jun 2012&lt;/b&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;a href=&#34;https://blogs.oracle.com/java/entry/why_nominate_someone_for_a&#34;&gt;Oracle&amp;rsquo;s Java Blog - Duke&amp;rsquo;s Choice Awards&lt;/a&gt; (text)&lt;/span&gt;&lt;br /&gt;
-&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/08/interviewed-at-goto-copenhagen.html&#34;&gt;GOTO Copenhagen&lt;/a&gt; (video)&lt;br /&gt;
-&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/featured-on-bbc-podcast.html&#34;&gt;BBC 5 Live&lt;/a&gt;&amp;nbsp;(podcast)&lt;/div&gt;
-&lt;/div&gt;
-&lt;b&gt;May 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;Graduate Developer Community&lt;/a&gt;&amp;nbsp;(text)&lt;br /&gt;
-&lt;b&gt;Mar 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/05/interviewed-for-infoq-at-qcon-london.html&#34;&gt;InfoQ at QCon London&lt;/a&gt;&amp;nbsp;(video)&lt;br /&gt;
-&lt;b&gt;Jan 2012&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://blog.eisele.net/2012/01/heroes-of-java-trisha-gee.html&#34;&gt;Heroes of Java&lt;/a&gt;&amp;nbsp;(text)&lt;br /&gt;
-&lt;b&gt;Nov 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/12/interview-by-oracle-technology-network.html&#34;&gt;Oracle Technology Network at Devoxx&lt;/a&gt;&amp;nbsp;(video)&lt;br /&gt;
-&lt;span class=&#34;Apple-style-span&#34;&gt;&lt;b&gt;Oct 2011&lt;/b&gt;&amp;nbsp;&lt;/span&gt;–&lt;span class=&#34;Apple-style-span&#34;&gt;&amp;nbsp;&lt;a href=&#34;https://blogs.oracle.com/javaspotlight/entry/java_spotlight_episode_51_live&#34;&gt;Java Spotlight: Duke&amp;rsquo;s Choice Winners&lt;/a&gt; (podcast)&lt;/span&gt;&lt;br /&gt;
-&lt;b&gt;Oct 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/11/more-videos-from-java-one-2011.html&#34;&gt;JavaOne&lt;/a&gt; (video)&lt;br /&gt;
-&lt;br /&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;h3&gt;
-Publications&lt;/h3&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;b&gt;Jan 2014&lt;/b&gt;&amp;nbsp;- Oracle&amp;rsquo;s Java Magazine: &amp;ldquo;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2014/01/introduction-to-mongodb-and-big-data.html&#34;&gt;Introduction to MongoDB and Big Data&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;Nov 2012&lt;/b&gt;&amp;nbsp;- Oracle&amp;rsquo;s Java Magazine: &amp;ldquo;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112/?pg=35&amp;amp;pm=1&amp;amp;u1=friend&#34;&gt;Exploring Lambda Expressions for Java&lt;/a&gt;&amp;ldquo;&lt;br /&gt;
-&lt;b&gt;Mar 2012&amp;nbsp;&lt;/b&gt;– Oracle&amp;rsquo;s Java Magazine: “&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/03/java-magazine-intro-to-disruptor-part.html&#34;&gt;Sharing Data Without Contention&lt;/a&gt;”&lt;br /&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;div&gt;
-&lt;b&gt;May 2011&lt;/b&gt;&amp;nbsp;–&amp;nbsp;&lt;a href=&#34;http://disruptor.googlecode.com/files/Disruptor-1.0.pdf&#34;&gt;Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads&lt;/a&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div align=&#34;LEFT&#34; style=&#34;margin-bottom: 0cm;&#34;&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;h1 class=&#34;western&#34;&gt;
-&lt;/h1&gt;&lt;/p&gt;
+      <guid>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee</guid>
+      <description>&lt;p&gt;I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series,
+as it moves over to Europe.  In this video I talk about going to Mars, education, planning your career, being a developer,
+and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/68bsagK7GEM&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interviewed at Devoxx</title>
+      <link>http://trishagee.github.io/presentation/interviewed_at_devoxx</link>
+      <pubDate>Sat, 12 Jan 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/interviewed_at_devoxx</guid>
+      <description>&lt;p&gt;Yolande Poirier from &lt;a href=&#34;http://www.oracle.com/technetwork/index.html&#34;&gt;OTN&lt;/a&gt; interviewed me at Devoxx about my new job at 10gen,
+Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3544&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3544&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -203,6 +95,151 @@ which was pretty cool actually, but meant that it felt more like a lecture and i
 &lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/DCdGlxBbKU4&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;We received some really great feedback on this presentation, and it was brilliant to see a lot of the speakers from JAX there watching us.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>All Public Appearances</title>
+      <link>http://trishagee.github.io/presentation/public_appearances</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/public_appearances</guid>
+      <description>
+
+&lt;p&gt;For blatant self-publicity, I&amp;rsquo;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&amp;rsquo;ve
+been involved in.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Presentations and Panels&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;2014&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - &lt;a href=&#34;/post/the_joy_of_coding&#34;&gt;Joy of Coding&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java,
+MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;6 Mar&lt;/strong&gt; - &lt;a href=&#34;/post/qcon_london_2014&#34;&gt;QCon London&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java,
+MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11 Feb&lt;/strong&gt; - JFokus: &amp;ldquo;What do you mean, Backwards Compatibility?&amp;rdquo;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;2013&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Dec&lt;/strong&gt; - YOW Melbourne, Brisbane, Sydney: &amp;ldquo;&lt;a href=&#34;/presentation/yow_2013_career_advice_for_programmers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;rdquo; &amp;amp;
+&amp;ldquo;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/what-do-you-mean-backwards-compatibility-by-trisha-gee-1398&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;23 Nov&lt;/strong&gt; - London Java Community Open Conference: &amp;ldquo;Keynote: Java, the Future, and You&amp;rdquo;, &amp;ldquo;Novice Speaker&amp;rsquo;s Clinic&amp;rdquo;, &amp;ldquo;More Speaker Tips&amp;rdquo;,
+ &amp;ldquo;Career Advice for Programmers&amp;rdquo;, &amp;ldquo;Intro to MongoDB&amp;rdquo;, panel: &amp;ldquo;So you&amp;rsquo;re a senior developer - what next?&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;21 Nov&lt;/strong&gt; - Virtual JUG: &amp;ldquo;&lt;a href=&#34;/post/first_presentation_at_the_virtual_jug&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;29 Oct&lt;/strong&gt; - JAX London:
+&amp;ldquo;&lt;a href=&#34;http://jaxenter.com/trisha-gee-design-is-a-process-not-an-artefact-49100.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;28 Oct&lt;/strong&gt; - LJC: &amp;ldquo;Speaker&amp;rsquo;s Clinic: Public Speaking for Beginners&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;28 Oct&lt;/strong&gt; - JAX London: &amp;ldquo;Tutorial: A fluent API for Java and MongoDB&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;18 Oct&lt;/strong&gt; - GOTO Berlin: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;2 Oct&lt;/strong&gt; - GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#55&#34;&gt;Top Ten IntelliJ Tips&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;2 Oct&lt;/strong&gt; - GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#36&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;26 Sep&lt;/strong&gt; - JavaOne: &amp;ldquo;&lt;a href=&#34;/post/javaone_2013&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;12 Sep&lt;/strong&gt; - JavaZone: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/74553077&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;23 Jul&lt;/strong&gt; - JavaOne Shanghai: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;3 Jul&lt;/strong&gt; - TCube Dublin: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;27 Jun&lt;/strong&gt; - TTN: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;16 May&lt;/strong&gt; - GeeCON: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10 Apr&lt;/strong&gt; - East Anglia MUG: &amp;ldquo;Trisha Gee, an Unconference&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;9 Apr&lt;/strong&gt; - MongoDB UK: &amp;ldquo;Schema Design&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;27 Mar&lt;/strong&gt; - DevoxxUK:
+&amp;ldquo;&lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;21 Mar&lt;/strong&gt; - LJC:
+&amp;ldquo;&lt;a href=&#34;http://skillsmatter.com/podcast/java-jee/london-java-community-march&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;8 Mar&lt;/strong&gt; - QCon London (with Dan North):
+&amp;ldquo;&lt;a href=&#34;/post/life_on_both_sides_of_the_interview_table&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;2012&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;4 Dec&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;/post/webinar_processing_high_volume_data_feeds_with_mongodb&#34;&gt;Financial Markets: Processing High Volume Data Feeds with MongoDB&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;/post/my_first_official_mongodb_appearance&#34;&gt;MongoDB on the JVM&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;24 Nov&lt;/strong&gt; - LJC Open Conference: &amp;ldquo;Keynote: The State of Java&amp;rdquo;; Panel: &amp;ldquo;Does Performance Matter?&amp;rdquo;; Panel: &amp;ldquo;The Java Community Process&amp;rdquo;; &amp;ldquo;An Introduction to NoSQL&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;15 Nov&lt;/strong&gt; - Devoxx:
+&amp;ldquo;&lt;a href=&#34;/post/devoxx_the_problem_with_women__a_technical_approach&#34;&gt;The Problem With Women: A Technical Approach&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;14 Nov&lt;/strong&gt; - Devoxx: &amp;ldquo;&lt;a href=&#34;/post/agile_when_agile_goes_well&#34;&gt;Agile++: When Agile Goes Well&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;17 Oct&lt;/strong&gt; - JAX London: &amp;ldquo;Java Performance Frequently Asked Questions&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;3 Oct&lt;/strong&gt; - JavaOne:
+&amp;ldquo;CON11338 &lt;a href=&#34;/post/javaone_the_problem_with_women__a_technical_approach&#34;&gt;A Technical Approach to Women&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;3 Oct&lt;/strong&gt; - JavaOne Panel:
+&amp;ldquo;CON5130 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=5130&amp;amp;amp;tclass=popup#.UIZb-TfrjPE.blogger&#34;&gt;London Java Community: How to Change the World&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;1 Oct&lt;/strong&gt; - JavaOne: &amp;ldquo;CON3732 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3732&amp;amp;amp;tclass=popup#.UIZaP5FFnjg.blogger&#34;&gt;Concurrent Programming Using the Disruptor&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;30 Sep&lt;/strong&gt; - JavaOne: &amp;ldquo;UGF10467 Why Open Source Your Secrets&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;23 Sep&lt;/strong&gt; - Strange Loop: &amp;ldquo;&lt;a href=&#34;/post/strangeloop_disruptor_workshop_materials&#34;&gt;Workshop: Introduction to the Disruptor&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;18 July&lt;/strong&gt; - OSCON: &amp;ldquo;&lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/proceedings&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;25 May&lt;/strong&gt; - 010 DEV: &amp;ldquo;&lt;a href=&#34;http://010dev.nl/post/social-tech-event-the-disruptor-and-the-perfect-programmer&#34;&gt;The Disruptor&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;24 May&lt;/strong&gt; - GOTO Amsterdam: “Concurrent Programming Using The Disruptor”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;21-23 May&lt;/strong&gt; - GOTO Copenhagen:
+“&lt;a href=&#34;http://www.infoq.com/presentations/Disruptor#.UIZa3tb3Bms.blogger&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”,”War Stories”,
+&amp;ldquo;&lt;a href=&#34;http://www.version2.dk/blog/goto-programming-stars-45578&#34;&gt;Programming with the Stars&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;29 Apr&lt;/strong&gt; - &lt;a href=&#34;http://www.geekgirlmeetup.co.uk/2012/03/29th-of-april-geekgirlmeetup-is-held-in-london-theme-code-is-queen/&#34;&gt;GirlGeekMeetup London&lt;/a&gt;: “GDC
+Meet a Mentor”; “&lt;a href=&#34;/post/why_open_source_your_secrets&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;”;
+“Technology in Electronic Trading” (with Annalisa Sarasini); Panel: “Women Only Events - Are We Creating A Girl Ghetto?”&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - QCon London: “&lt;a href=&#34;/post/qcon_london_disruptor_presentation_video&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;2011&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;7 Nov&lt;/strong&gt; - Devoxx Panel: “&lt;a href=&#34;/post/why_we_shouldnt_target_women/&#34;&gt;Why we shouldn&amp;rsquo;t target women&lt;/a&gt;”&lt;br /&gt;
+&lt;strong&gt;2 Nov&lt;/strong&gt; - JAX London:
+“&lt;a href=&#34;/post/video_of_our_jax_london_session&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;” (with Mike Barker)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11 Oct&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;/post/mike_and_i_debut_our_new_disruptor_presentation&#34;&gt;Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;”&lt;br /&gt;
+&lt;strong&gt;6 Oct&lt;/strong&gt; - JavaOne: “LMAX Disruptor: High-Performance Concurrent Programming Framework” (with Martin Thompson)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1 Jun&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;/post/first_public_appearance_caught_on_video&#34;&gt;Introduction to the Java Community Process&lt;/a&gt;”&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;Interviews&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Mar 2014&lt;/strong&gt; - &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Aug 2013&lt;/strong&gt; - &lt;a href=&#34;/post/interviewed_by_stephen_chin_about_javaone_2013&#34;&gt;JavaOne 2013 Preview&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://parleys.com/play/516becfbe4b07b9cc6de32c3/chapter0/about&#34;&gt;Devoxx UK&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://shoreditchworks.com/women-tech-city-advice-solutions-sexism&#34;&gt;Top Tips For Working With Techies&lt;/a&gt; (text)&lt;br /&gt;
+&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;/presentation/gdl_presents_women_techmakers_with_trisha_gee/&#34;&gt;Google Presents Women Techmakers&lt;/a&gt;
+(video)&lt;br /&gt;
+&lt;strong&gt;Nov 2012&lt;/strong&gt; - &lt;a href=&#34;/presentation/interviewed_at_devoxx/&#34;&gt;Devoxx&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Jun 2012&lt;/strong&gt; - &lt;a href=&#34;https://blogs.oracle.com/java/entry/why_nominate_someone_for_a&#34;&gt;Oracle&amp;rsquo;s Java Blog - Duke&amp;rsquo;s Choice Awards&lt;/a&gt; (text)&lt;br /&gt;
+&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;/post/interviewed_at_goto_copenhagen&#34;&gt;GOTO Copenhagen&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;/post/featured_on_a_bbc_podcast&#34;&gt;BBC 5 Live&lt;/a&gt; (podcast)&lt;br /&gt;
+&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;Graduate Developer Community&lt;/a&gt; (text)&lt;br /&gt;
+&lt;strong&gt;Mar 2012&lt;/strong&gt; - &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Jan 2012&lt;/strong&gt; - &lt;a href=&#34;http://blog.eisele.net/2012/01/heroes-of-java-trisha-gee.html&#34;&gt;Heroes of Java&lt;/a&gt; (text)&lt;br /&gt;
+&lt;strong&gt;Nov 2011&lt;/strong&gt; - &lt;a href=&#34;/post/interview_by_the_oracle_technology_network_at_devoxx/&#34;&gt;Oracle Technology Network at Devoxx&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Oct 2011&lt;/strong&gt; - &lt;a href=&#34;https://blogs.oracle.com/javaspotlight/entry/java_spotlight_episode_51_live&#34;&gt;Java Spotlight: Duke&amp;rsquo;s Choice Winners&lt;/a&gt;
+(podcast)&lt;br /&gt;
+&lt;strong&gt;Oct 2011&lt;/strong&gt; - &lt;a href=&#34;/post/more_videos_from_java_one_2011&#34;&gt;JavaOne&lt;/a&gt; (video)&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_6&#34;&gt;Publications&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Jan 2014&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
+&amp;ldquo;&lt;a href=&#34;/post/introduction_to_mongodb_and_big_data&#34;&gt;Introduction to MongoDB and Big Data&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;Nov 2012&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
+&amp;ldquo;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112/?pg=35&amp;amp;amp;pm=1&amp;amp;amp;u1=friend&#34;&gt;Exploring Lambda Expressions for Java&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;Mar 2012&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
+&amp;ldquo;&lt;a href=&#34;/post/java_magazine_intro_to_the_disruptor_part_one&#34;&gt;Sharing Data Without Contention&lt;/a&gt;”&lt;br /&gt;
+&lt;strong&gt;May 2011&lt;/strong&gt; - &lt;a href=&#34;http://disruptor.googlecode.com/files/Disruptor-1.0.pdf&#34;&gt;Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_7&#34;&gt;Guest Posts&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Nov 2013&lt;/strong&gt; - O&amp;rsquo;Reilly Programming:
+&lt;a href=&#34;http://programming.oreilly.com/2013/11/technical-tests-youre-doing-it-wrong.html&#34;&gt;Technical Tests: You’re Doing It Wrong, Part 1&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;Nov 2013&lt;/strong&gt; - O&amp;rsquo;Reilly Programming:
+&lt;a href=&#34;http://programming.oreilly.com/2013/12/technical-tests-youre-doing-it-wrong-part-2.html&#34;&gt;Technical Tests: You’re Doing It Wrong, Part 2&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

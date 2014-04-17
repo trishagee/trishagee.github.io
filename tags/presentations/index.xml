@@ -6,7 +6,27 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 16 Apr 2014 00:00:00 UTC</updated>
+    <updated>Thu, 17 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Career Advice for Programmers (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers</guid>
+      <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
+by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+&lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
+.com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
+time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
+and this time I think I managed to distill the important points into the (still ridiculously short) time allotted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/career-advice-for-programmers-by-trisha-gee-1380&#34;&gt;See the video here&lt;/a&gt;,
+and please give me any feedback you have.&lt;/p&gt;
+
+&lt;p&gt;I recognise there are many many more topics I could cover, so I&amp;rsquo;d better start making a list.  Suggestions?&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Upcoming Events 2014</title>
@@ -203,16 +223,6 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/first_public_appearance_caught_on_video</guid>
       <description>&lt;p&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;object width=&#34;320&#34; height=&#34;266&#34; class=&#34;BLOG_video_class&#34; id=&#34;BLOG_video-287f97612eb2190a&#34; classid=&#34;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&#34; codebase=&#34;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;//www.youtube.com/get_player&#34;&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#FFFFFF&#34;&gt;&lt;param name=&#34;allowfullscreen&#34; value=&#34;true&#34;&gt;&lt;param name=&#34;flashvars&#34; value=&#34;flvurl=http://redirector.googlevideo.com/videoplayback?id%3D287f97612eb2190a%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1396950053%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D20ED37B720D3E3058754AA38FB5BF2EFC71B4AA8.7FFBEB86F5896865B7B52EF09DDEABDE4FDF1AC1%26key%3Dck2&amp;amp;iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D287f97612eb2190a%26offsetms%3D5000%26itag%3Dw160%26sigh%3DzHzyKS8xvdgfqY81PzOmfaF842E&amp;amp;autoplay=0&amp;amp;ps=blogger&#34;&gt;&lt;embed src=&#34;//www.youtube.com/get_player&#34; type=&#34;application/x-shockwave-flash&#34; width=&#34;320&#34; height=&#34;266&#34; bgcolor=&#34;#FFFFFF&#34; flashvars=&#34;flvurl=http://redirector.googlevideo.com/videoplayback?id%3D287f97612eb2190a%26itag%3D5%26source%3Dblogger%26app%3Dblogger%26cmo%3Dsensitive_content%253Dyes%26ip%3D0.0.0.0%26ipbits%3D0%26expire%3D1396950053%26sparams%3Did,itag,source,ip,ipbits,expire%26signature%3D20ED37B720D3E3058754AA38FB5BF2EFC71B4AA8.7FFBEB86F5896865B7B52EF09DDEABDE4FDF1AC1%26key%3Dck2&amp;iurl=http://video.google.com/ThumbnailServer2?app%3Dblogger%26contentid%3D287f97612eb2190a%26offsetms%3D5000%26itag%3Dw160%26sigh%3DzHzyKS8xvdgfqY81PzOmfaF842E&amp;autoplay=0&amp;ps=blogger&#34; allowFullScreen=&#34;true&#34; /&gt;&lt;/object&gt;&lt;/div&gt;&lt;br /&gt;Remember a while back I talked about &lt;a href=&#34;http://mechanitis.blogspot.com/2011/05/my-first-public-appearance.html&#34;&gt;my first public appearance&lt;/a&gt;?&lt;br /&gt;&lt;br /&gt;Well, I chased down the video, because I&amp;rsquo;m masochistic, and here it is for you all to enjoy. &amp;nbsp;Pleasingly my mannerisms are slightly less of a camp man trapped in a woman&amp;rsquo;s body, which was my impression the last time I saw myself presenting. &amp;nbsp;It helps that YouTube has made the video so dark you can&amp;rsquo;t see me.&lt;br /&gt;&lt;br /&gt;Slides are &lt;a href=&#34;http://www.slideshare.net/trishagee/introduction-to-the-java-community-process&#34;&gt;available for all to enjoy&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;Special thanks to &lt;a href=&#34;http://www.playfish.com/&#34;&gt;Playfish&lt;/a&gt; for hosting the event - as always, their hospitality was awesome. &amp;nbsp;The fact that they didn&amp;rsquo;t serve wine is probably a Good Thing.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My first public appearance</title>
-      <link>http://trishagee.github.io/post/my_first_public_appearance</link>
-      <pubDate>Mon, 30 May 2011 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/my_first_public_appearance</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&amp;rsquo;m going to be giving a lightning talk on Wednesday at the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/17394725/&#34;&gt;AWS Elastic Beanstalk event&lt;/a&gt;,&amp;nbsp;on&amp;nbsp;the JCP - what it is and what our election to the executive committee means. &amp;nbsp;&lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/17394725/&#34;&gt;Ben and Martin&amp;rsquo;s post&lt;/a&gt;&amp;nbsp;gives a little more background on the subject.&lt;br /&gt;&lt;br /&gt;Another &lt;a href=&#34;http://www.lmaxtrader.co.uk/&#34;&gt;LMAX&lt;/a&gt; LJC member&amp;nbsp;&lt;a href=&#34;http://mikes-tech.blogspot.com/&#34;&gt;Mike&lt;/a&gt; will also be giving a lightning talk, on Project Coin.&lt;br /&gt;&lt;br /&gt;Now all I have to do is write it&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
