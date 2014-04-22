@@ -6,7 +6,22 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 17 Apr 2014 00:00:00 UTC</updated>
+    <updated>Tue, 22 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>What do you mean, Backwards Compatibility? (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_backwards</link>
+      <pubDate>Tue, 22 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_backwards</guid>
+      <description>&lt;p&gt;YOW recorded me, yet again, talking about the adventure that is the design of the new Java Driver for MongoDB.  This is the same talk I
+gave at &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;GeeCON&lt;/a&gt; and &lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;DevoxxUK&lt;/a&gt;,
+with some updates based on our Journey So Far.  In it, I cover the architecture of the new driver and some of our current thoughts
+around where we want the API to go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/what-do-you-mean-backwards-compatibility-by-trisha-gee-1398&#34;&gt;See the video here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Career Advice for Programmers (YOW 2013)</title>
@@ -40,6 +55,28 @@ I think he brings out the best in me.&lt;/p&gt;
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First presentation at the Virtual JUG!</title>
+      <link>http://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug</link>
+      <pubDate>Fri, 22 Nov 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug</guid>
+      <description>&lt;p&gt;Yesterday I had the privilege of presenting the very first session for &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, a new virtual Java User Group that allows us to span
+geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find
+good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have
+a local user group to go to. Not to mention cutting travel costs and saving the environment.&lt;/p&gt;
+
+&lt;p&gt;See the event, and the record of the IRC chat, here:&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/GixwXNlZ7dI&#34;
+width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;The slides are also online, but obviously they&amp;rsquo;re part of the video as well:&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;356&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/28495923&#34; style=&#34;border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&#34; width=&#34;427&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;&lt;div style=&#34;margin-bottom: 5px;&#34;&gt;&lt;strong&gt; &lt;a href=&#34;https://www.slideshare.net/trishagee/design-is-a-process-not-a-document&#34; target=&#34;_blank&#34; title=&#34;Design is a process, not a Document&#34;&gt;Design is a process, not a Document&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/trishagee&#34; target=&#34;_blank&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
 </description>
     </item>
     
@@ -123,7 +160,7 @@ MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/p&gt;
 &lt;h3 id=&#34;toc_2&#34;&gt;2013&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Dec&lt;/strong&gt; - YOW Melbourne, Brisbane, Sydney: &amp;ldquo;&lt;a href=&#34;/presentation/yow_2013_career_advice_for_programmers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;rdquo; &amp;amp;
-&amp;ldquo;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/what-do-you-mean-backwards-compatibility-by-trisha-gee-1398&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+&amp;ldquo;&lt;a href=&#34;/presentation/yow_2013_backwards&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;23 Nov&lt;/strong&gt; - London Java Community Open Conference: &amp;ldquo;Keynote: Java, the Future, and You&amp;rdquo;, &amp;ldquo;Novice Speaker&amp;rsquo;s Clinic&amp;rdquo;, &amp;ldquo;More Speaker Tips&amp;rdquo;,
  &amp;ldquo;Career Advice for Programmers&amp;rdquo;, &amp;ldquo;Intro to MongoDB&amp;rdquo;, panel: &amp;ldquo;So you&amp;rsquo;re a senior developer - what next?&amp;rdquo;&lt;br /&gt;
