@@ -6,7 +6,30 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 22 Apr 2014 00:00:00 UTC</updated>
+    <updated>Wed, 23 Apr 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Nighthacking at Sevilla Java User Group</title>
+      <link>http://trishagee.github.io/post/nighthacking_jug_sevilla</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/nighthacking_jug_sevilla</guid>
+      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
+for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
+and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
+Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is also the first event that we&amp;rsquo;ve had videoed (apologies for the horrible focus at times on the video,
+I&amp;rsquo;m just learning and used to relying heavily on auto-focus).&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/q3OKs08X3oo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thanks very much to Stephen for visiting, and thank you to those who came, you&amp;rsquo;re making me re-think the idea of running events at
+weekends.&lt;/p&gt;
+
+&lt;p&gt;Also there are &lt;a href=&#34;http://www.meetup.com/SVQJUG/photos/all_photos/?photoAlbumId=21306622&#34;&gt;photos on Meetup&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What do you mean, Backwards Compatibility? (YOW 2013)</title>
@@ -327,16 +350,6 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/introduction_to_mongodb_and_big_data</guid>
       <description>&lt;p&gt;I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&amp;rsquo;s good in the &amp;ldquo;Big Data&amp;rdquo; space.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;table border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;&lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1390425195000&#34; height=&#34;28&#34; /&gt;&lt;/td&gt;&lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;&lt;img alt=&#34;51&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/jan_feb_2014/data/imgpages/smtn/0052_vyvpwu.gif?lm=1390425195000&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;MongoDB and Big Data&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Why is it News when a woman becomes CEO?</title>
-      <link>http://trishagee.github.io/post/why_is_it_news_when_a_woman_becomes_ceo</link>
-      <pubDate>Mon, 20 Jan 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/why_is_it_news_when_a_woman_becomes_ceo</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m pleased to see that GM has hired the &amp;ldquo;best person for the job&amp;rdquo; as &lt;a href=&#34;http://www.linkedin.com/today/post/article/20131220221807-281874400-in-hiring-mary-barra-gm-s-board-did-more-than-break-the-mold&#34;&gt;their new CEO&lt;/a&gt;&amp;nbsp;- that does seem like a good idea. &amp;nbsp;I&amp;rsquo;m happy her gender did not get in the way. &amp;nbsp;What makes me uncomfortable is the international news coverage of the decision of this large manufacturer to hire a woman as their CEO - if she were a man (and/or black/gay/disabled) would the headline read &amp;ldquo;The camera loves her. So do employees.&amp;rdquo;?&lt;br /&gt;&lt;br /&gt;But at the root of that is probably the thing I&amp;rsquo;m most unhappy about. &amp;nbsp;What I&amp;rsquo;m not happy about is that it is 2014, halfway through the second decade of the 21st century, and she&amp;rsquo;s the first woman CEO of a car manufacturer. &lt;br /&gt;&lt;br /&gt;I worked at &lt;a href=&#34;http://corporate.ford.com/&#34;&gt;Ford Motor Company&lt;/a&gt; as an undergraduate and, later, a graduate. &amp;nbsp;I basically did my apprenticeship there. I know that over fifteen years ago they were hiring graduates from different disciplines (men and women), they had a women-in-leadership programme (or probably several, as I was only involved in the one for the IT organisation), they had a great maternity package (a great package for adoption too, but only the standard paternity package, ho-hum), on-site creches at the bigger locations, and were actively looking for ways to improve their diversity across the board. &amp;nbsp;They had issues on the plant floor which they were actively working to address, but management did not have a culture of discrimination, to my knowledge. &amp;nbsp;I remember the number of &amp;ldquo;real&amp;rdquo; techies in my IT graduate intake year, not the number of women, probably because the women were better represented than the coders.&lt;br /&gt;&lt;br /&gt;So why has it taken so long for these old, old companies (Ford turned 100 while I was there) to put a woman into a position of leadership? &amp;nbsp;Maybe all these actions are what has, finally, lead to this mold-breaking appointment. &amp;nbsp;Or maybe decades of doing what is supposed to be the right thing is not having any impact at all - Mary Barra&amp;rsquo;s father worked at GM for 39 years, she herself started there as an intern and engineer, and has worked in different areas of the company as she&amp;rsquo;s risen through the ranks. &amp;nbsp;In this day and age, it&amp;rsquo;s probably more unusual to appoint a CEO who worked their way up to that position in that company than it is to appoint a woman - I&amp;rsquo;m not sure how many more there are out there when often it seems the best way to get a promotion now is to switch company.&lt;br /&gt;&lt;br /&gt;I don&amp;rsquo;t know why it took GM so long to appoint a female CEO, I don&amp;rsquo;t know how they managed to be the first of the big automotives. &amp;nbsp;And although I really hate all this &amp;ldquo;Oh wow, a woman CEO&amp;rdquo; news coverage (and I dare not read the comments because I know I&amp;rsquo;ll get angry), I don&amp;rsquo;t know if it&amp;rsquo;s something we need to do, to hold up these positive female role models, or something we should stop doing because all it does is point out how unusual women in leadership are - how news-worthy it is that a big, old organisation has finally joined the 21st century. &amp;nbsp;But the fact that I felt the need to blog about it I think means we still have a lot of work to do in this area.&lt;/p&gt;
 </description>
     </item>
     
