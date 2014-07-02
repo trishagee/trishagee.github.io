@@ -6,7 +6,65 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 20 Mar 2014 00:00:00 UTC</updated>
+    <updated>Wed, 02 Jul 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Readable, Succinct, or Just Plain Short?</title>
+      <link>http://trishagee.github.io/post/short_vs_readable.md</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/short_vs_readable.md</guid>
+      <description>&lt;p&gt;Which is more readable?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version.substring(0, version.indexOf(&#39;-SNAPSHOT&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Given a value of &lt;code&gt;0.109-SNAPSHOT&lt;/code&gt; for &lt;code&gt;version&lt;/code&gt;, they both give the same result.  And I&amp;rsquo;m tempted by the second,
+because it&amp;rsquo;s shorter.  But I&amp;rsquo;m going to go with the first one - not because it&amp;rsquo;s more Java-ish and I&amp;rsquo;m scared of Groovy syntax,
+but because it&amp;rsquo;s easier to understand if/when something goes wrong.&lt;/p&gt;
+
+&lt;p&gt;For example: if &lt;code&gt;version&lt;/code&gt; doesn&amp;rsquo;t conform to the expected pattern, the two code fragments fail in two different ways.  If &lt;code&gt;version&lt;/code&gt;
+doesn&amp;rsquo;t contain &lt;code&gt;-SNAPSHOT&lt;/code&gt;, the first will fail with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;whereas the second will either arbitrarily slice the last 9 characters off the end of whatever the String does contain,
+or if it&amp;rsquo;s too short you&amp;rsquo;ll get something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.ArrayIndexOutOfBoundsException: Negative array index [-10] too large for array size 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you, the developer, see this error (or notice your mangled version number) and look at the failing line of code,
+you&amp;rsquo;ll have two different experiences.  When looking at the second example, if you didn&amp;rsquo;t write it in the first place or if you have a
+memory as shocking as mine, you won&amp;rsquo;t get any clues from that code as to what the &lt;em&gt;purpose&lt;/em&gt; is - you&amp;rsquo;ll see what it does (chop the last
+9 characters off the &lt;code&gt;version&lt;/code&gt; string), but not why.  You can &amp;ldquo;fix&amp;rdquo; the problem by adding an arbitrary 9 characters onto your &lt;code&gt;version&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re looking at the first example, however, you&amp;rsquo;ll see the intent right there - it&amp;rsquo;s trying to chop the string &lt;code&gt;-SNAPSHOT&lt;/code&gt; (and any
+characters that might happen to come after it) off the end of the &lt;code&gt;version&lt;/code&gt; string.  With this line of code,
+if you checked the value of &lt;code&gt;version&lt;/code&gt; and saw it didn&amp;rsquo;t have the correct suffix, you&amp;rsquo;d have a good idea of what the problem is and how
+to solve it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a third way, that potentially keeps the descriptiveness (is that a word?) of the first solution and makes it a bit shorter and
+Groovier:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..&amp;lt;version.indexOf(&#39;-SNAPSHOT&#39;)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You need the less-than sign plonked in there to make it work correctly, which I find a bit jarring,
+but it does work.  It&amp;rsquo;s a little more succinct than the original Java syntax and retains the intent.&lt;/p&gt;
+
+&lt;p&gt;So in conclusion: yes, shorter code is generally better (and often more readable).  But I don&amp;rsquo;t believe in sacrificing code that
+expresses the intent in order to reduce the number of characters used.  We&amp;rsquo;re not living in a memory-poor world any more,
+and code is meant to be read by humans as well as computers.  Let&amp;rsquo;s make our code easy to understand when it goes wrong,
+not simply the shortest way to do something when the stars are all perfectly aligned.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Converting Blogger to Markdown</title>
