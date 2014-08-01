@@ -6,7 +6,34 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 23 Apr 2014 00:00:00 UTC</updated>
+    <updated>Fri, 01 Aug 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Sevilla Java User Group Java 8 Launch Party</title>
+      <link>http://trishagee.github.io/post/svq_java8_launch_party</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/svq_java8_launch_party</guid>
+      <description>&lt;p&gt;Last night at the Sevilla JUG we officially celebrated the launch of &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt; - yay!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t be fooled by the picture, people had more fun than it looks.  Honest.&lt;/p&gt;
+
+&lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (the class we were looking at was &lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Finally, we used the &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; of another of Simon&amp;rsquo;s
+presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
+which is a great source of presentations from international speakers.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Nighthacking at Sevilla Java User Group</title>
@@ -180,16 +207,6 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
       <guid>http://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin</guid>
       <description>&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;270&#34; src=&#34;http://www.youtube.com/embed/c5-jyvVnqT0?fs=1&#34; width=&#34;480&#34;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;
 On Monday, &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Stephen Chin&lt;/a&gt; from Oracle visited me at the &lt;a href=&#34;http://www.10gen.com/&#34;&gt;10gen&lt;/a&gt; offices as part of his &lt;a href=&#34;http://steveonjava.com/nighthacking/&#34;&gt;NightHacking tour&lt;/a&gt;. &amp;nbsp;In the video we talk about my sessions at JavaOne and the &lt;a href=&#34;http://www.devoxx.com/pages/viewpage.action?pageId=6391499&#34;&gt;Agile presentation&lt;/a&gt; I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the &lt;a href=&#34;http://www.mongodb.org/display/DOCS/Java+Tutorial&#34;&gt;MongoDB Java driver&lt;/a&gt;, attempting to showcase &lt;a href=&#34;http://www.gradle.org/&#34;&gt;gradle&lt;/a&gt; at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Java Magazine: Intro to the Disruptor Part One</title>
-      <link>http://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one</link>
-      <pubDate>Thu, 22 Mar 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one</guid>
-      <description>&lt;p&gt;This &lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20120304/?pg=56&amp;amp;pm=1&amp;amp;u1=friend&#34;&gt;month&amp;rsquo;s Java Magazine&lt;/a&gt;&amp;nbsp;features an article by yours truly, which is yet another intro to the Disruptor. &amp;nbsp;It&amp;rsquo;s basically a summary of the stuff I&amp;rsquo;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. &amp;nbsp;If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.&lt;br /&gt;&lt;br /&gt;This is intended as part one of a series, as it&amp;rsquo;s a basic and high-level view&amp;nbsp;with no code examples. &amp;nbsp;In fact, it probably could be used to document the C# version as well as the Java version, although I haven&amp;rsquo;t taken a look at that for a while. &amp;nbsp;Next, I would like to give some more code examples of how you use it - as always, any suggestions welcome.&lt;/p&gt;
 </description>
     </item>
     
