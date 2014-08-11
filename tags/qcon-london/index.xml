@@ -69,22 +69,22 @@
     </item>
     
     <item>
-      <title>QCon: Initial thoughts</title>
-      <link>http://trishagee.github.io/post/qcon_initial_thoughts</link>
-      <pubDate>Mon, 19 Mar 2007 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/qcon_initial_thoughts</guid>
-      <description>&lt;p class=&#34;MsoNormal&#34;&gt;Things I took out of QCon:&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;  &lt;ul type=&#34;disc&#34;&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;I want to play with &lt;st1:city w:st=&#34;on&#34;&gt;&lt;st1:place w:st=&#34;on&#34;&gt;Ajax&lt;/st1:place&gt;&lt;/st1:city&gt;.&amp;nbsp; Maybe      I&#39;ve &#34;grown out&#34; of front end development but that doesn&#39;t      prevent it from being (potentially) extremely cool&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;&lt;a href=&#34;http://opensource.thoughtworks.com/projects/selenium.html&#34;&gt;Selenium&lt;/a&gt;      looks like a good place to start for automated website testing&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;It can take up to 7 years      to move away from a legacy architecture.&amp;nbsp; Depressing, but at least it      shows it can be done and it&#39;s worth the effort&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;I&#39;m going to become a      &lt;a href=&#34;http://www.scrumalliance.org/CSM_description/&#34;&gt;certified Scrum &lt;s&gt;Master&lt;/s&gt; Mistress&lt;/a&gt;.&amp;nbsp; I believe &lt;a href=&#34;http://en.wikipedia.org/wiki/Agile_software_development&#34;&gt;Agile      &lt;/a&gt;in some form or other is the most efficient way to run software      development, but there are a &lt;st1:place w:st=&#34;on&#34;&gt;LOT&lt;/st1:place&gt; of      lessons to learn in order to get it right.&amp;nbsp; And number one lesson is      you need the right team.&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;/ul&gt;  &lt;p class=&#34;MsoNormal&#34;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>QCon London</title>
       <link>http://trishagee.github.io/post/qcon_london</link>
       <pubDate>Mon, 19 Mar 2007 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/qcon_london</guid>
       <description>&lt;p&gt;Last week saw the first &lt;a href=&#34;http://qcon.infoq.com/qcon/conference/&#34;&gt;QCon London&lt;/a&gt; conference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.&lt;br/&gt;&lt;br/&gt;The conference consisted of two days of tutorials followed by three days of talks covering technologies, vendor products, and processes.  In addition there were numerous &amp;ldquo;networking&amp;rdquo; opportunities with plenty of break times to both absorb information and meet other people, plus evening events.&lt;br/&gt;&lt;br/&gt;The conference was both comprehensive and absorbing, and I&amp;rsquo;m hoping to take the next few days to filter through the notes I have taken and present a more succinct version here.  Whether it will be of use to anyone other than myself remains to be seen&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>QCon: Initial thoughts</title>
+      <link>http://trishagee.github.io/post/qcon_initial_thoughts</link>
+      <pubDate>Mon, 19 Mar 2007 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/qcon_initial_thoughts</guid>
+      <description>&lt;p class=&#34;MsoNormal&#34;&gt;Things I took out of QCon:&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;  &lt;ul type=&#34;disc&#34;&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;I want to play with &lt;st1:city w:st=&#34;on&#34;&gt;&lt;st1:place w:st=&#34;on&#34;&gt;Ajax&lt;/st1:place&gt;&lt;/st1:city&gt;.&amp;nbsp; Maybe      I&#39;ve &#34;grown out&#34; of front end development but that doesn&#39;t      prevent it from being (potentially) extremely cool&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;&lt;a href=&#34;http://opensource.thoughtworks.com/projects/selenium.html&#34;&gt;Selenium&lt;/a&gt;      looks like a good place to start for automated website testing&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;It can take up to 7 years      to move away from a legacy architecture.&amp;nbsp; Depressing, but at least it      shows it can be done and it&#39;s worth the effort&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;li style=&#34;&#34; class=&#34;MsoNormal&#34;&gt;I&#39;m going to become a      &lt;a href=&#34;http://www.scrumalliance.org/CSM_description/&#34;&gt;certified Scrum &lt;s&gt;Master&lt;/s&gt; Mistress&lt;/a&gt;.&amp;nbsp; I believe &lt;a href=&#34;http://en.wikipedia.org/wiki/Agile_software_development&#34;&gt;Agile      &lt;/a&gt;in some form or other is the most efficient way to run software      development, but there are a &lt;st1:place w:st=&#34;on&#34;&gt;LOT&lt;/st1:place&gt; of      lessons to learn in order to get it right.&amp;nbsp; And number one lesson is      you need the right team.&lt;o:p&gt;&lt;/o:p&gt;&lt;/li&gt;&lt;/ul&gt;  &lt;p class=&#34;MsoNormal&#34;&gt;&lt;o:p&gt;&lt;/o:p&gt;&lt;/p&gt;
 </description>
     </item>
     
