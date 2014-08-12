@@ -6,7 +6,41 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 23 Apr 2014 00:00:00 UTC</updated>
+    <updated>Tue, 12 Aug 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>What could possibly go wrong? (GOTO Chicago)</title>
+      <link>http://trishagee.github.io/presentation/interview_at_goto_chicago</link>
+      <pubDate>Tue, 12 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/interview_at_goto_chicago</guid>
+      <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving,
+which happens to be the same one I&amp;rsquo;m giving at a number of conferences this year (although of course I&amp;rsquo;m evolving it as I go along).&lt;/p&gt;
+
+&lt;p&gt;The presentation leaves very little time for anything other than coding, as it&amp;rsquo;s quite challenging to create a full app in 50
+minutes, so it was great to have the chance to talk about the motivations for the demo&lt;/p&gt;
+
+&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/sZee7lRAUF4&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+  
+
+&lt;p&gt;The video of the actual talk is also available now:&lt;/p&gt;
+
+&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/kmVnhyWqozA&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;At the beginning it doesn&amp;rsquo;t clearly show the screen, but it does improve.  You can see an earlier version from the
+&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb#anch110035&#34;&gt;Joy of Coding&lt;/a&gt; as well,
+so if something&amp;rsquo;s not clear on one of the videos, hopefully it&amp;rsquo;s better in the other.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/tree/goto-chicago&#34;&gt;code for the Chicago version is on Github&lt;/a&gt;,
+and if you look through the history you can see how it builds up, the same as it does in the demo.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Nighthacking at Sevilla Java User Group</title>
@@ -351,16 +385,6 @@ Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach</guid>
       <description>&lt;p&gt;As well as talking about, you know, &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/agile-when-agile-goes-well.html&#34;&gt;actual work-type-stuff&lt;/a&gt;, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. &amp;nbsp;This went so well at JavaOne that I thought it would be difficult to top. &amp;nbsp;Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.&lt;br /&gt;&lt;br /&gt;I was incredibly impressed with the audience. &amp;nbsp;There were literally hundreds of people, most of them men. &amp;nbsp;To me, it proved once again that the men in this industry are determined to &amp;ldquo;fix&amp;rdquo; this problem of gender imbalance. &amp;nbsp;And they&amp;rsquo;re happy to extend that to improving diversity as a whole, once you highlight the bigger problem. &amp;nbsp;It says to me that this is not naturally a misogynistic industry, where you have to fight against the boys club to get anywhere. &amp;nbsp;It says to me that we are all in this together. &amp;nbsp;After all, in the &amp;ldquo;real&amp;rdquo; world the geeks are still outsiders, and different, so we&amp;rsquo;re used to embracing our different-ness - whether that&amp;rsquo;s because you&amp;rsquo;re the only girl in the room, the only Java developer at a .NET conference, or the only techy at a dinner party.&lt;br /&gt;&lt;br /&gt;Conferences are a self-selecting audience, I know - these are the people who are investing time and money in advancing their careers, or at least encouraging their employers to do. &amp;nbsp;But for the punchline of this session, these are exactly the right people. &amp;nbsp;We need to go out, tell everyone how much we enjoy our jobs; tell kids that programming is cool, and &lt;i&gt;show&lt;/i&gt; them it&amp;rsquo;s fun; mentor other people, and each other, and be a role model. &amp;nbsp;I don&amp;rsquo;t care what gender you are or what colour you are or what your dark secret is - &lt;i&gt;you&lt;/i&gt; are the role model to inspire someone. &lt;br /&gt;&lt;br /&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/p/just-do-something.html&#34;&gt;Just do it&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3513&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3513&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NightHacking Tour: The LJC</title>
-      <link>http://trishagee.github.io/post/nighthacking_tour_the_ljc</link>
-      <pubDate>Tue, 06 Nov 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/nighthacking_tour_the_ljc</guid>
-      <description>&lt;p&gt;On the same day &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/10/interview-and-hacking-session-with.html&#34;&gt;Stephen Chin came to see me&lt;/a&gt; at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. &amp;nbsp;Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.&lt;br /&gt;&lt;br /&gt;Expect &lt;a href=&#34;http://www.raspberrypi.org/&#34;&gt;Raspberry Pi&lt;/a&gt;s and &lt;a href=&#34;http://www.oracle.com/technetwork/java/javafx/overview/index.html&#34;&gt;JavaFX&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/f2a9XvZNq0o&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
