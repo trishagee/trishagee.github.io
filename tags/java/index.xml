@@ -6,7 +6,32 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 01 Aug 2014 00:00:00 UTC</updated>
+    <updated>Thu, 14 Aug 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Getting Started with MongoDB and Java</title>
+      <link>http://trishagee.github.io/post/getting_started_with_mongodb_and_java</link>
+      <pubDate>Thu, 14 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/getting_started_with_mongodb_and_java</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
+developer.&lt;/p&gt;
+
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
+operations using the Java driver:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started with MongoDB and Java, Part 1&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94724924068/getting-started-with-mongodb-and-java-part-ii&#34;&gt;Getting Started with MongoDB and Java, Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is very much aimed at Java/JVM developers who are new to MongoDB, and want to get a feel for how you use it.&lt;/p&gt;
+
+&lt;p&gt;These guides are for the current (2.x) driver. When we release 3.x, we&amp;rsquo;ll release updated guides as well.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
@@ -32,6 +57,28 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fiesta de lanzamiento de Java 8</title>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party</guid>
+      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
+presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -186,27 +233,6 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/java_8__introduction_to_lambdas_article</guid>
       <description>&lt;p&gt;This month&amp;rsquo;s Java Magazine features an article by me, &lt;a href=&#34;https://twitter.com/kittylyst&#34;&gt;Ben Evans&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/karianna&#34;&gt;Martijn Verburg&lt;/a&gt; about the new &lt;a href=&#34;http://openjdk.java.net/projects/lambda/&#34;&gt;lambdas&lt;/a&gt;&amp;nbsp;coming in &lt;a href=&#34;http://jdk8.java.net/&#34;&gt;Java 8&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;The aim of the article is to give an overview to normal, human Java developers, who don&amp;rsquo;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and &lt;a href=&#34;http://jdk8.java.net/lambda/&#34;&gt;try them now&lt;/a&gt;).&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;            &lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; height=&#34;28&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1352311955000&#34; /&gt;                &lt;/td&gt;                &lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;                &lt;/td&gt;             &lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;                  &lt;img alt=&#34;34&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/20121112/data/imgpages/smtn/0035_egfgcb.gif?lm=1352311955000&#34; /&gt;                &lt;/a&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;Exploring Lambda Expressions for the Java Language and the JVM&lt;/span&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>NightHacking Tour: The LJC</title>
-      <link>http://trishagee.github.io/post/nighthacking_tour_the_ljc</link>
-      <pubDate>Tue, 06 Nov 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/nighthacking_tour_the_ljc</guid>
-      <description>&lt;p&gt;On the same day &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/10/interview-and-hacking-session-with.html&#34;&gt;Stephen Chin came to see me&lt;/a&gt; at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. &amp;nbsp;Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.&lt;br /&gt;&lt;br /&gt;Expect &lt;a href=&#34;http://www.raspberrypi.org/&#34;&gt;Raspberry Pi&lt;/a&gt;s and &lt;a href=&#34;http://www.oracle.com/technetwork/java/javafx/overview/index.html&#34;&gt;JavaFX&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/f2a9XvZNq0o&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Interview and Hacking session with Stephen Chin</title>
-      <link>http://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin</link>
-      <pubDate>Wed, 31 Oct 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin</guid>
-      <description>&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;270&#34; src=&#34;http://www.youtube.com/embed/c5-jyvVnqT0?fs=1&#34; width=&#34;480&#34;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;
-On Monday, &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Stephen Chin&lt;/a&gt; from Oracle visited me at the &lt;a href=&#34;http://www.10gen.com/&#34;&gt;10gen&lt;/a&gt; offices as part of his &lt;a href=&#34;http://steveonjava.com/nighthacking/&#34;&gt;NightHacking tour&lt;/a&gt;. &amp;nbsp;In the video we talk about my sessions at JavaOne and the &lt;a href=&#34;http://www.devoxx.com/pages/viewpage.action?pageId=6391499&#34;&gt;Agile presentation&lt;/a&gt; I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the &lt;a href=&#34;http://www.mongodb.org/display/DOCS/Java+Tutorial&#34;&gt;MongoDB Java driver&lt;/a&gt;, attempting to showcase &lt;a href=&#34;http://www.gradle.org/&#34;&gt;gradle&lt;/a&gt; at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!&lt;/p&gt;
 </description>
     </item>
     

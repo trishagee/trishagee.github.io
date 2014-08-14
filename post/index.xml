@@ -6,7 +6,32 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 11 Aug 2014 00:00:00 UTC</updated>
+    <updated>Thu, 14 Aug 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Getting Started with MongoDB and Java</title>
+      <link>http://trishagee.github.io/post/getting_started_with_mongodb_and_java</link>
+      <pubDate>Thu, 14 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/getting_started_with_mongodb_and_java</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
+developer.&lt;/p&gt;
+
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
+operations using the Java driver:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started with MongoDB and Java, Part 1&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94724924068/getting-started-with-mongodb-and-java-part-ii&#34;&gt;Getting Started with MongoDB and Java, Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is very much aimed at Java/JVM developers who are new to MongoDB, and want to get a feel for how you use it.&lt;/p&gt;
+
+&lt;p&gt;These guides are for the current (2.x) driver. When we release 3.x, we&amp;rsquo;ll release updated guides as well.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>...but most of all, it&#39;s fun</title>
@@ -415,16 +440,6 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/sevilla_mug_first_event</guid>
       <description>&lt;p&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-ACbZtH8y3pM/Uurim-7CuNI/AAAAAAAAMfU/iR7aAjV3L_E/s1600/IMG_20140130_191433.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-ACbZtH8y3pM/Uurim-7CuNI/AAAAAAAAMfU/iR7aAjV3L_E/s1600/IMG_20140130_191433.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Last night was the inaugural meeting of the Sevilla MongoDN User Group. &amp;nbsp;An event organised with just over 48 hours notice, in a city where I don&amp;rsquo;t speak the language and where even my best-connected contacts aren&amp;rsquo;t sure they&amp;rsquo;re fully plugged in to the tech scene.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;ll admit, I had some reservations:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;a lightning talk? Will people come all that way for beer and 15 minutes of presentation?&lt;/li&gt;&lt;li&gt;in English? Whilst I&amp;rsquo;m desperately learning Spanish to get closer to presenting in Spanish, at this point I&amp;rsquo;m just not ready and have to hope people want to listen to me ramble in a foreign language&lt;/li&gt;&lt;li&gt;a MUG? Are people interested in joining a group that&amp;rsquo;s solely focussed on one technology, a technology that might not have adoption here or even interest?&lt;/li&gt;&lt;li&gt;two days notice? &amp;nbsp;Are you kidding? &amp;nbsp;I know people here like to figure out their plans at the last minute, but surely this is shooting ourselves in the foot before we even start.&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-ZxzdtnwGKrk/UurinNqIjZI/AAAAAAAAMfQ/HHbZGT9MCV0/s1600/IMG_20140130_192137.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-ZxzdtnwGKrk/UurinNqIjZI/AAAAAAAAMfQ/HHbZGT9MCV0/s1600/IMG_20140130_192137.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;And then last night&amp;hellip; &amp;nbsp;The people&amp;hellip; they came. &amp;nbsp;On time. &amp;nbsp;And with their interesting stories and their varied backgrounds. &amp;nbsp;They listened, they asked questions, they wanted more.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-nU0wPfzI6DE/UuritPmwnDI/AAAAAAAAMfk/R49MwaxAzCk/s1600/IMG_20140130_201313.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-nU0wPfzI6DE/UuritPmwnDI/AAAAAAAAMfk/R49MwaxAzCk/s1600/IMG_20140130_201313.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;What a great event. &amp;nbsp;What an awesome city. &lt;br /&gt;&lt;br /&gt;I can&amp;rsquo;t wait for next month. &lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/--soNKu8wqYU/UurimtUlxPI/AAAAAAAAMfM/wh3q9UV1FLQ/s1600/IMG_20140130_192632.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://1.bp.blogspot.com/--soNKu8wqYU/UurimtUlxPI/AAAAAAAAMfM/wh3q9UV1FLQ/s1600/IMG_20140130_192632.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: left;&#34;&gt;(Slides here, with usual caveats of them being pretty pointless on their own)&lt;/div&gt;&lt;iframe frameborder=&#34;0&#34; height=&#34;300&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/30654613&#34; width=&#34;376&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Introduction to MongoDB and Big Data</title>
-      <link>http://trishagee.github.io/post/introduction_to_mongodb_and_big_data</link>
-      <pubDate>Thu, 23 Jan 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/introduction_to_mongodb_and_big_data</guid>
-      <description>&lt;p&gt;I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&amp;rsquo;s good in the &amp;ldquo;Big Data&amp;rdquo; space.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;table border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;&lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1390425195000&#34; height=&#34;28&#34; /&gt;&lt;/td&gt;&lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;&lt;img alt=&#34;51&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/jan_feb_2014/data/imgpages/smtn/0052_vyvpwu.gif?lm=1390425195000&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;MongoDB and Big Data&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
 </description>
     </item>
     
