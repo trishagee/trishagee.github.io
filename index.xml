@@ -6,7 +6,57 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 14 Aug 2014 00:00:00 UTC</updated>
+    <updated>Tue, 30 Sep 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>JavaOne 2014, Day One</title>
+      <link>http://trishagee.github.io/post/java_one_2014_day_one</link>
+      <pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_one_2014_day_one</guid>
+      <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
+had a great time catching up with interesting people.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=10289&#34;&gt;Superpowered CI with Git - Sarah Goff-Dupont&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+The Continuous Integration we did at LMAX is quite different to what we do at MongoDB, and I was hoping to get some tips on better CI with
+Git, especially given feature branches.  There was a good overview of development process using branch-per-feature,
+ and a comment that it&amp;rsquo;s nearly impossible to do &amp;ldquo;pure&amp;rdquo; CI in this sort of environment.  But there was pragmatic advice on how to manage
+ the process and run automated builds in this environment.&lt;/p&gt;
+
+&lt;p&gt;The take-home point for me is that I&amp;rsquo;m going to investigate &lt;a href=&#34;http://git-scm.com/book/en/Customizing-Git-Git-Hooks&#34;&gt;git hooks&lt;/a&gt; to try and
+  streamline our process and run some fast checks more frequently.&lt;/p&gt;
+
+&lt;p&gt;Also, Sarah showed using &lt;a href=&#34;https://www.hipchat.com&#34;&gt;Hipchat&lt;/a&gt; in anger - I&amp;rsquo;ve now heard this mentioned enough that I&amp;rsquo;m going to look into it more.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276&#34;&gt;Advanced Unit Testing with Spock&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+I&amp;rsquo;ve &lt;a href=&#34;http://localhost:1313/tags/spock/&#34;&gt;spoken before about Spock&lt;/a&gt;, and how much I love it.  The first section of this talk was a recap
+of some of the basics, but the second part went on to some features I either previously ignored or wasn&amp;rsquo;t aware of.  For example, in the
+&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;MongoDB Java Driver&lt;/a&gt;, we do use annotations to denote slower-running tests so we can select which environments to run in,
+but we&amp;rsquo;re not using Spock annotations for this.  I think there&amp;rsquo;s a lot more we could do with both custom annotations like our
+&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/util/src/main/category/Slow.java&#34;&gt;@Slow&lt;/a&gt; annotation,
+Spock&amp;rsquo;s built in annotations like &lt;code&gt;@Issue&lt;/code&gt;, and some others which may not yet be in maven central like &lt;code&gt;@Requires&lt;/code&gt; for running
+language-version tests (&lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/JavaLanguageSpec
+.groovy&#34;&gt;e.g. Java 8 tests&lt;/a&gt;) and &lt;code&gt;@IgnoreRest&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also liked the example of &lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/OldExampleSpec.groovy&#34;&gt;checking the new value against an old
+value&lt;/a&gt;,
+I can totally see this being useful.&lt;/p&gt;
+
+&lt;p&gt;There were other bits and pieces in this talk I&amp;rsquo;d like to dig into in more detail that I think will be very useful for the Java Driver.
+But even more importantly, I learnt how to zoom into my screen so I can use that in my own presentation. Pro presentation top tips.&lt;/p&gt;
+
+&lt;p&gt;Honestly, if you have even minor testing pains, it&amp;rsquo;s worth finding Ken&amp;rsquo;s talks on Spock, they&amp;rsquo;re great! And a source of inspiration for
+better testing, as well as a sneaky way to understand why Groovy is awesome.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JCP Awards and Party&lt;/strong&gt;&lt;br /&gt;
+But it&amp;rsquo;s not all work at these events.  For me, the highlight was the music at at the JCP Awards party.  Firstly,
+we had an award-winning beat-box guy from the UK (sadly I don&amp;rsquo;t remember his name so I can&amp;rsquo;t link to his stuff).  An unusual choice for
+an event like this, but it was a lot of fun. Then there was the live super-band, The Null Pointers, made up of JUG leaders from around the
+world (including &lt;a href=&#34;https://twitter.com/matkar&#34;&gt;@matkar&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/frankgreco&#34;&gt;@frankgreco&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/fguime&#34;&gt;@fguime&lt;/a&gt;. I&amp;rsquo;ll admit,
+ I was a little concerned about this idea, but the guys were fantastic, and it was a lot of fun singing along to Free&amp;rsquo;s Alright Now and
+ Radiohead&amp;rsquo;s Creep. &lt;a href=&#34;https://www.oracle.com/openworld/appreciation-event/index.html&#34;&gt;Aerosmith&lt;/a&gt; is going to have to work hard to compete with that.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Getting Started with MongoDB and Java</title>
@@ -145,6 +195,28 @@ the advantages of being a woman to people who aren&amp;rsquo;t hardcore pioneers
     </item>
     
     <item>
+      <title>Fiesta de lanzamiento de Java 8</title>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party</guid>
+      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
+presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
       <link>http://trishagee.github.io/post/svq_java8_launch_party</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
@@ -168,28 +240,6 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fiesta de lanzamiento de Java 8</title>
-      <link>http://trishagee.github.io/es/post/svq_java8_launch_party</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party</guid>
-      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
-presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -582,54 +632,6 @@ into whether people are reading the blog, and which paths they take to find it.&
 &lt;/ol&gt;
 
 &lt;p&gt;I don&amp;rsquo;t think either of these are showstoppers, I should be able to work around both of them.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sevilla MUG March Madness</title>
-      <link>http://trishagee.github.io/post/svq_mug_march_madness</link>
-      <pubDate>Wed, 19 Mar 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/svq_mug_march_madness</guid>
-      <description>&lt;figure &gt;
-    
-        &lt;img src=&#34;https://lh4.googleusercontent.com/-JVIgox7nGXo/UyjIQYxtiSI/AAAAAAAANc4/JV3lj4xwcgk/w919-h689-no/IMG_20140318_193758.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/events/166679892/&#34;&gt;Last night&lt;/a&gt; the Sevilla MUG had our
-&lt;a href=&#34;http://www.lczajkowski.com/2014/02/19/march-madness-comes-to-a-city-near-you/&#34;&gt;March Madness&lt;/a&gt; event.  This was our largest event yet,
-with 36 people signed up.  Although the aim of March Madness is to have a MongoDB Engineer at all the user groups this month,
-that&amp;rsquo;s not such a big deal for us as I live here, so this was also the first event where I wasn&amp;rsquo;t the main attraction - &lt;a href=&#34;https://twitter.com/JvrBaena&#34;&gt;Javier&lt;/a&gt; gave a really great talk about the lessons learnt at &lt;a href=&#34;http://es.socialbro.com/&#34;&gt;SocialBro&lt;/a&gt; after using
-MongoDB in production for the last couple of years.&lt;/p&gt;
-
-&lt;p&gt;The slides for my introduction to Replica Sets and Sharding:&lt;/p&gt;
-
-&lt;div style=&#34;text-align: center&#34;&gt;
- &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32480708&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
-&lt;/div&gt;
- And the slides for the main attraction:
-
-&lt;div style=&#34;text-align: center&#34;&gt;
- &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32464459&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
- &lt;div style=&#34;margin-bottom:5px; font-size:small&#34;&gt; &lt;strong&gt; &lt;a href=&#34;https://www.slideshare
- .net/fjavierbaena/sevilla-mongo-developers-group-mongodb-cmo-aprendimos-que-la-culpa-era-nuestra&#34; title=&#34;Sevilla Mongo Developers Group
- - MongoDB: Cómo aprendimos que la culpa era nuestra&#34; target=&#34;_blank&#34;&gt;Cómo aprendimos que la culpa era nuestra&lt;/a&gt;
- &lt;/strong&gt;from&lt;strong&gt;
- &lt;a href=&#34;http://www.slideshare.net/fjavierbaena&#34; target=&#34;_blank&#34;&gt; Francisco Javier Baena Ríos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The event went really well, everyone seemed engaged, and our first talk in Spanish seemed to encourage more questions than normal.  We
-were also in a new venue, and although I love the central location of our previous venue and the friendliness of the owners,
-the menu of the new location seemed to be a massive win.&lt;/p&gt;
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://lh6.googleusercontent.com/-ESw5r9B24Hs/UyjHcM2M-DI/AAAAAAAANco/hBVhN4IMFew/w919-h689-no/IMG_20140318_220941.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
 </description>
     </item>
     
