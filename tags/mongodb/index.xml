@@ -6,7 +6,177 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 14 Aug 2014 00:00:00 UTC</updated>
+    <updated>Tue, 07 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Using Groovy to import XML into MongoDB</title>
+      <link>http://trishagee.github.io/post/groovy_import_to_mongodb</link>
+      <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/groovy_import_to_mongodb</guid>
+      <description>
+
+&lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
+Java and MongoDB&lt;/a&gt;.  I also use Groovy during this demo to do the sorts of things Groovy is
+really good at - writing descriptive tests, and creating scripts.&lt;/p&gt;
+
+&lt;p&gt;Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use,
+so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.&lt;/p&gt;
+
+&lt;p&gt;Firstly I want to clarify that this is not my original work - I &lt;strike&gt;stole&lt;/strike&gt; borrowed most of the ideas for the demo from my
+colleague Ross Lawley. In &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/&#34;&gt;this blog post&lt;/a&gt; he goes into detail of how he built
+up an application that
+finds the most popular pub names in the UK.  There&amp;rsquo;s a &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1&#34;&gt;section in there&lt;/a&gt;
+where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it&amp;rsquo;s
+this process that I basically stole, re-worked for coffee shops, and re-wrote for the JVM.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m assuming if you&amp;rsquo;ve worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
+demo is supposed to be all about how easy it is to work with Java, I did &lt;em&gt;not&lt;/em&gt; want to do this. When I wrote the demo I wasn&amp;rsquo;t really all
+that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML,
+which is exactly what I wanted to do. In addition, creating &lt;a href=&#34;http://groovy.codehaus.org/Collections#Collections-Mapsmaps&#34;&gt;Maps&lt;/a&gt; (the
+data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
+&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Goal of the Script&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parse an XML file containing open street map data of all coffee shops.&lt;/li&gt;
+&lt;li&gt;Extract latitude and longitude XML attributes and transform into
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-geojson&#34;&gt;MongoDB GeoJSON&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Perform some basic validation on the coffee shop data from the XML.&lt;/li&gt;
+&lt;li&gt;Insert into MongoDB.&lt;/li&gt;
+&lt;li&gt;Make sure MongoDB knows this contains query-able geolocation data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The script is &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy&#34;&gt;PopulateDatabase.groovy&lt;/a&gt;,
+that link will take you to the version I presented at JavaOne:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Firstly, we need data&lt;/h3&gt;
+
+&lt;p&gt;I used the same service Ross used in his blog post to obtain the XML file containing &amp;ldquo;all&amp;rdquo; coffee shops around the world. Now,
+the open street map data is somewhat&amp;hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
+so I&amp;rsquo;m not sure I really have &lt;em&gt;all&lt;/em&gt; the coffee shops, but I obtained enough data for an interesting demo using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml&#34;&gt;resulting XML file&lt;/a&gt; is in the
+github project, but if you try this yourself you might (in fact, probably will) get different results.&lt;/p&gt;
+
+&lt;p&gt;Each XML record looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;178821166&amp;quot; lat=&amp;quot;40.4167226&amp;quot; lon=&amp;quot;-3.7069112&amp;quot;&amp;gt;
+    &amp;lt;tag k=&amp;quot;amenity&amp;quot; v=&amp;quot;cafe&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;cuisine&amp;quot; v=&amp;quot;coffee_shop&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;name&amp;quot; v=&amp;quot;Chocolatería San Ginés&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wheelchair&amp;quot; v=&amp;quot;limited&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wikipedia&amp;quot; v=&amp;quot;es:Chocolatería San Ginés&amp;quot;/&amp;gt;
+&amp;lt;/node&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each coffee shop has a unique identifier and a latitude and longitude as attributes of a &lt;code&gt;node&lt;/code&gt; element.  Within this node is a series
+of &lt;code&gt;tag&lt;/code&gt; elements, all with &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; attributes. Each coffee shop has a varying number of these attributes,
+and they are not consistent from shop to shop (other than &lt;code&gt;amenity&lt;/code&gt; and &lt;code&gt;cuisine&lt;/code&gt; which we used to select this data).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Initialisation&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Before doing anything else we want to prepare the database.  The assumption of this script is that either the
+collection we want to store the coffee shops in is empty, or full of stale data.  So we&amp;rsquo;re going to use the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;MongoDB Java Driver&lt;/a&gt; to get the collection that we&amp;rsquo;re interested in, and then drop it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s two interesting things to note here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java,
+it doesn&amp;rsquo;t need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the
+&lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;MongoDB GORM Plugin&lt;/a&gt;), but the Java driver works perfectly well.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t need to create &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;databases&lt;/a&gt; or
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt; (collections are
+a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you&amp;rsquo;re interested in,
+and if it doesn&amp;rsquo;t already exist, the server will create them for you.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this example, we&amp;rsquo;re just using the default constructor for the &lt;code&gt;MongoClient&lt;/code&gt;, the class that represents the connection to the database
+server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
+address and port - for more details on this see &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started With MongoDB and Java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
+XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
+Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; tag in the XML.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
+
+Since MongoDB documents are effectively just maps of key-value pairs, we&amp;rsquo;re going to create a Map &lt;code&gt;coffeeShop&lt;/code&gt; that contains the
+document structure that represents the coffee shop that we want to save into the database.  Firstly,
+we initialise this map with the attributes of the &lt;code&gt;node&lt;/code&gt;. Remember these attributes are something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;18464077&amp;quot; lat=&amp;quot;-33.8911183&amp;quot; lon=&amp;quot;151.1958773&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We&amp;rsquo;re going to save the ID as a value for a new field called &lt;code&gt;openStreetMapId&lt;/code&gt;. We need to do something a bit more
+complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{ &#39;location&#39; : { &#39;coordinates&#39;: [&amp;lt;longitude&amp;gt;, &amp;lt;latitude&amp;gt;],
+                 &#39;type&#39;       : &#39;Point&#39; } }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In lines 11-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
+places.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
+
+&lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
+
+Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute, check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
+insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field),
+and if so we simply add this key as the field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
+&lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
+but we don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
+
+Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&gt; Map representing the document we want to save into MongoDB,
+we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
+into the map, but it&amp;rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called &lt;code&gt;name&lt;/code&gt; in &lt;code&gt;coffeeShop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When we want to insert the Map, we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
+but this is easily done by calling the constructor that takes a Map.  Alternatively, there&amp;rsquo;s a Groovy syntax which would effectively do
+the same thing, which you might prefer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collection.insert(coffeeShop as BasicDBObject)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
+
+Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
+we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
+so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; on this field.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
+but its built-in support for XML, really nice Map syntax, and support for closures, makes it the perfect tool for iterating over XML data
+and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Getting Started with MongoDB and Java</title>
@@ -281,16 +451,6 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/it_depends</guid>
       <description>&lt;p&gt;Don&amp;rsquo;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s so frustrating to think that in a world of ones and zeros, people can&amp;rsquo;t give absolute answers and you can&amp;rsquo;t rely on &amp;ldquo;best practice&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s an answer I&amp;rsquo;ve given so many times, especially when someone asks about performance. &amp;nbsp;Well, I&amp;rsquo;ve had my&amp;nbsp;comeuppance. &amp;nbsp;The entire exercise of designing the new Java driver for &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; has been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Which Java version are our users, um, using?&lt;/li&gt;&lt;li&gt;Do people want an asynchronous driver?&lt;/li&gt;&lt;li&gt;How will they want to work with async?&lt;/li&gt;&lt;li&gt;Will they want to use async and synchronous method calls from the same application?&lt;/li&gt;&lt;li&gt;Do people typically use the Java driver directly, or do they use something that wraps it, like &lt;a href=&#34;https://code.google.com/p/morphia/&#34;&gt;Morphia&lt;/a&gt; or &lt;a href=&#34;http://www.springsource.org/spring-data&#34;&gt;Spring Data&lt;/a&gt;?&lt;/li&gt;&lt;li&gt;What&amp;rsquo;s most important for users in terms of performance? &amp;nbsp;Throughput? Latency? Consistent GC profile? Something else?&lt;/li&gt;&lt;li&gt;What sorts of operations are our users doing?&lt;/li&gt;&lt;li&gt;Do people usually update their driver and the server version at the same time?&lt;/li&gt;&lt;li&gt;Is it easier for them to update their driver version than their server version?&lt;/li&gt;&lt;li&gt;Do they use (or will they need) custom encoders and decoders?&lt;/li&gt;&lt;li&gt;When should we deprecate? &amp;nbsp;When should we remove deprecated methods?&lt;/li&gt;&lt;/ul&gt;&amp;hellip;and so on, and so forth.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s such a change from the sort of development I&amp;rsquo;m used to: &amp;ldquo;the business&amp;rdquo; (a business analyst, a customer, a business owner) comes to you with a requirement, you ask a bunch of questions, preferably explaining the trade-offs that come with decisions or approaches, and then you and the team come up with a design and implement it. &amp;nbsp;If you&amp;rsquo;re agile, this is all done in a nice, iterative fashion, which hopefully leads to &amp;ldquo;the business&amp;rdquo; being happy, or at the very least to another series of stories/requirements to work on.&lt;br /&gt;&lt;br /&gt;The problem is that working on a library, particularly an open source library, is a completely different thing. &amp;nbsp;We don&amp;rsquo;t even know who our users are. &amp;nbsp;This statement is true for pretty much any web application, of course, but there at least you can (if you choose) use tools like analytics and &lt;a href=&#34;http://en.wikipedia.org/wiki/A/B_testing&#34;&gt;A/B testing&lt;/a&gt; to figure out what works for your users and what doesn&amp;rsquo;t.&lt;br /&gt;&lt;br /&gt;When your library is used for free by all kinds of different teams and companies, including organisations behind closed doors, you have no idea what&amp;rsquo;s being used, what works, what people like, what people don&amp;rsquo;t like. &amp;nbsp;The most visible feedback you have is when you see blog posts telling everyone how bad your product is.&lt;br /&gt;&lt;br /&gt;This makes the design exercise VERY difficult. &amp;nbsp;Take performance for example. &amp;nbsp;Having come from a high performance, low latency background, I&amp;rsquo;m desperate to have a very extensive suite of automated performance tests (and we do already have some). &amp;nbsp;But how do I design those, when I don&amp;rsquo;t know:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;What operations are typical for our users&lt;/li&gt;&lt;li&gt;Whether our users care more about latency or throughput, or mean latency vs the long tail, or GC pauses, etc&lt;/li&gt;&lt;li&gt;How much data customers tend to punt around&lt;/li&gt;&lt;li&gt;What the hardware or network topology looks like?&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;The number one lesson you learn when performance testing is to make your test environment as similar to production as possible. &amp;nbsp;How can we do that for all our customers?&lt;br /&gt;&lt;br /&gt;Well, we can&amp;rsquo;t. &amp;nbsp;Of course.&lt;br /&gt;&lt;br /&gt;What we can do is offer an easy way for our users to test it for themselves, with their own data, their own hardware, their own use-cases. &amp;nbsp;If we can provide some sort of hook into standard metrics, we could get users to plug into that and do what they needed. &amp;nbsp;In theory, as we get more examples of these standard metrics from a range of users, it will be easier for us to help them diagnose problems. &lt;br /&gt;&lt;br /&gt;What I discovered thinking about this problem is that I was asking the wrong question - it&amp;rsquo;s not &amp;ldquo;how do we test this?&amp;rdquo; but &amp;ldquo;how do we make it as easy as possible for users to test this in a production-like environment?&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;My biggest headache has been backwards compatibility. &amp;nbsp;I&amp;rsquo;ve worked on plenty of systems where we&amp;rsquo;ve provided an API which has to be maintained in a friendly way for those who use it. &amp;nbsp;That&amp;rsquo;s tough enough - you have to be careful to only add methods, not to change signatures or remove them altogether. &amp;nbsp;But when your system is not simply an API to code against, but a library that runs within other people&amp;rsquo;s systems, this problem is even harder. &amp;nbsp;&lt;a href=&#34;http://qconlondon.com/london-2013/presentation/Parallel%20KEYNOTE:%208%20Lines%20of%20Code%20-%20Fleming%20Room%203rd%20Floor&#34;&gt;Greg Young talked at QCon&lt;/a&gt; about this problem from the developer&amp;rsquo;s point of view - every piece of code in your system, even if it&amp;rsquo;s a third party library, is your code. &amp;nbsp;Because you&amp;rsquo;re the one who&amp;rsquo;ll get called at three in the morning if your system falls over with a ConcurrentModificationException in some third party data structure. &lt;br /&gt;&lt;br /&gt;So as library developers, we have to not only provide excellent quality, well tested code, but we also have to let our baby go off and run in strange environments. &amp;nbsp;Ones that might not be running Oracle&amp;rsquo;s Java 1.7, ones that might contain other libraries that could clash with our own. &amp;nbsp;Have you ever looked at all the Maven dependencies in a large project? &amp;nbsp;You can end up with conflicting versions of common libraries (e.g. logging or &lt;a href=&#34;http://en.wikipedia.org/wiki/Dependency_injection&#34;&gt;DI&lt;/a&gt; frameworks) as every library you use pulls in dozens of libraries for itself.&lt;br /&gt;&lt;br /&gt;In our case then, we need to use as few dependencies as possible, and to write nice, clean, modern Java, whilst supporting older versions of Java. &amp;nbsp;What&amp;rsquo;s modern enough? &amp;nbsp;We know that some large organisations take a loooong time to upgrade to the latest versions of Java. &amp;nbsp;We currently support Java 5 and above, as 5 was a big enough change (and is old enough now) to be a good point to draw the line. &amp;nbsp;But what about Java 7, with its shiny new &lt;a href=&#34;http://docs.oracle.com/javase/7/docs/api/java/nio/channels/package-summary.html&#34;&gt;asynchronous channels&lt;/a&gt;? &amp;nbsp;That would be awesome for a driver like ours, an application that exists solely to connect to some server somewhere. &amp;nbsp;What about Java 8, with &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/11/java-8-introduction-to-lambdas-article.html&#34;&gt;lambda goodness&lt;/a&gt; and a very appealing &lt;a href=&#34;http://cr.openjdk.java.net/~briangoetz/lambda/sotc3.html&#34;&gt;Stream interface&lt;/a&gt;, that supports (and encourages) a syntax that looks like it might work well for providing a fluent API for querying, I dunno, databases? &amp;nbsp;How do we make the most out of advances in modern Java, without alienating our existing users?&lt;br /&gt;&lt;br /&gt;And, of course, I haven&amp;rsquo;t even talked about actually changing the API. &amp;nbsp;The existing Java driver doesn&amp;rsquo;t even make use of generics. &amp;nbsp;How can we change our API to provide a more modern-looking interface, without either forcing all our users to make massive changes to their applications (and for what? &amp;nbsp;Their code already works), or adding so many new classes and methods that it becomes very difficult for new users to work out the Best Practice way of interacting with our driver?&lt;br /&gt;&lt;br /&gt;So, what can we do?&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Firstly we have to figure out which questions we have and what possible solutions exist.&lt;/li&gt;&lt;li&gt;Then we have to weigh up the pros and cons of each of the possible solutions.&lt;/li&gt;&lt;li&gt;Ideally we&amp;rsquo;d get feedback early and often from our users, from the community, about the approaches we&amp;rsquo;re taking.&lt;/li&gt;&lt;li&gt;Development would happen in parallel, in a nice, agile, way, to bring the best possible solution for everyone.&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;What this all really means, though, is that the Shiny New Java Driver™ is not ready right now, and will not be ready immediately, despite the fact that we&amp;rsquo;ve already spent some time on its development, and considered all of those questions and more. &amp;nbsp;Right now, we&amp;rsquo;re starting to get feedback from the community - from users, and from committers (or people who would like to be committers). &amp;nbsp;Which means that I get to to go to more conferences and user groups, and talk about our problems when designing the new driver. &amp;nbsp;I&amp;rsquo;m hoping to get two things out of this, apart from more air miles:&lt;br /&gt;&lt;ol&gt;&lt;li&gt;Feedback from the community about our assumptions and the direction we&amp;rsquo;re taking.&lt;/li&gt;&lt;li&gt;Present to the development community some of the lessons we&amp;rsquo;ve learnt/are learning, in the hope that you can use them when approaching the design of your own applications.&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&amp;lt;gratuitous-conference-plug&amp;gt;You&amp;rsquo;ve already seen some of these &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/03/upcoming-events.html&#34;&gt;upcoming events&lt;/a&gt;. &amp;nbsp;But in case you haven&amp;rsquo;t, &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/109032992/&#34;&gt;this Thursday I&amp;rsquo;ll be presenting at Skillsmatter&lt;/a&gt; on how we approached this design problem, and &lt;a href=&#34;http://www.devoxx.com/display/UK13/What+do+you+mean%2C+backwards+compatibility&#34;&gt;again at DevoxxUK next week&lt;/a&gt;.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;If you&amp;rsquo;re more interested in everything MongoDB, and want to get a much better look at what it is, how it works, how to design for it, then come to &lt;a href=&#34;http://www.10gen.com/events/mongodb-london-2013&#34;&gt;MongoDB London&lt;/a&gt;, where I am one of numerous presenters, all going into MongoDB specifics.&amp;lt;/gratuitous-conference-plug&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So&amp;hellip; I&amp;rsquo;m afraid to say that even after this long post, even after bemoaning my own experiences of hearing &amp;ldquo;it depends&amp;rdquo;, I still don&amp;rsquo;t have an answer for you.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But maybe I do. &amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&amp;ldquo;It Depends&amp;rdquo; means &amp;ldquo;you need to get more information in order to answer that question&amp;rdquo;. &amp;nbsp;And it&amp;rsquo;s our job as developers to ask the right questions to gather that information. &amp;nbsp;If the answer is &amp;ldquo;it depends&amp;rdquo;, you&amp;rsquo;re not asking the right question yet, or you&amp;rsquo;re not asking the right people. &amp;nbsp;So dig down, find out why you can&amp;rsquo;t answer the original question, and start iterating through your design process until you have answers that you can act upon.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Easy. &amp;nbsp;Right&amp;hellip;?&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Webinar: Processing High Volume Data Feeds with MongoDB</title>
-      <link>http://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb</link>
-      <pubDate>Wed, 05 Dec 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb</guid>
-      <description>&lt;p&gt;Hot on the heels of my very first &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/11/my-first-official-mongodb-appearance.html&#34;&gt;MongoDB webinar,&lt;/a&gt;&amp;nbsp;I was&amp;hellip; encouraged&amp;hellip; to do another. &amp;nbsp;Here at &lt;a href=&#34;http://www.10gen.com/&#34;&gt;10gen&lt;/a&gt; we&amp;rsquo;ve been running a &lt;a href=&#34;http://www.10gen.com/presentations?application=154&amp;amp;programming_lang=All&amp;amp;speaker=&amp;amp;event=&amp;amp;language=All&#34;&gt;series of webinars&lt;/a&gt; around using MongoDB in the financial services domain. &amp;nbsp;Yesterday was the last in the series, and was presented in association with &lt;a href=&#34;http://www.c24.biz/&#34;&gt;C24&lt;/a&gt;&amp;nbsp;- &lt;a href=&#34;https://twitter.com/jtdavies&#34;&gt;John Davies&lt;/a&gt;, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;0&#34; src=&#34;http://c.gigcount.com/wildfire/IMP/CXNID=2000002.11NXC/bT*xJmx*PTEzNTQ3MDI5OTY3MDMmcHQ9MTM1NDcwMzAwMTcwMSZwPSZkPSZnPTImbz*1YzY5N2U3NzliYTc*ODk3YWExOGFlZjQx/MGYzODA5NiZvZj*w.gif&#34; style=&#34;height: 0px; visibility: hidden; width: 0px;&#34; width=&#34;0&#34; /&gt;&lt;object allowfullscreen=&#34;true&#34; allownetworking=&#34;all&#34; allowscriptaccess=&#34;always&#34; data=&#34;http://www.kaltura.com/index.php/kwidget/wid/1_jiqyo6hd/uiconf_id/48501&#34; height=&#34;330&#34; id=&#34;kaltura_player_1354702995&#34; name=&#34;kaltura_player_1354702995&#34; type=&#34;application/x-shockwave-flash&#34; width=&#34;400&#34;&gt;&lt;param name=&#34;allowScriptAccess&#34; value=&#34;always&#34; /&gt;&lt;param name=&#34;allowNetworking&#34; value=&#34;all&#34; /&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34; /&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#000000&#34; /&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.kaltura.com/index.php/kwidget/wid/1_jiqyo6hd/uiconf_id/48501&#34;/&gt;&lt;param name=&#34;flashVars&#34; value=&#34;&#34;/&gt;&lt;a href=&#34;http://corp.kaltura.com&#34;&gt;video platform&lt;/a&gt;&lt;a href=&#34;http://corp.kaltura.com/video_platform/video_management&#34;&gt;video management&lt;/a&gt;&lt;a href=&#34;http://corp.kaltura.com/solutions/video_solution&#34;&gt;video solutions&lt;/a&gt;&lt;a href=&#34;http://corp.kaltura.com/video_platform/video_publishing&#34;&gt;video player&lt;/a&gt;&lt;/object&gt;&lt;/div&gt;&lt;i&gt;(Slides and webinar &lt;a href=&#34;http://www.10gen.com/presentations/webinar-processing-high-volume-data-feeds-mongodb-fix-fpml-and-swift-association-c24&#34;&gt;available here&lt;/a&gt; - and you&amp;rsquo;re not going deaf, the sound doesn&amp;rsquo;t start until about 3:44 into the video)&lt;/i&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;It was a fun webinar to do, actually - I didn&amp;rsquo;t know anything about &lt;a href=&#34;http://www.c24.biz/io-mongodb.html&#34;&gt;C24&amp;rsquo;s iO&lt;/a&gt; tool, so I learnt quite a lot as I watched John navigate the demo. &amp;nbsp;My background in trying to debug raw &lt;a href=&#34;http://www.fixprotocol.org/FIXimate3.0/&#34;&gt;FIX&lt;/a&gt; messages probably skewed my questions, I was definitely more interested in how to use it as a developer and what it could give me if I were doing production support. &amp;nbsp;It&amp;rsquo;s a dead interesting tool - I know for a fact that many organisations, banks in particular, spend a lot of time translating stuff from one format to another, before making some decision on on what to do with the contents. &amp;nbsp;This tool does all the heavy lifting so you can get on with the interesting stuff, the stuff your business actually needs you to do.&lt;br /&gt;&lt;br /&gt;In addition, as someone with more of an FS background than a &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/10/nosql-is-stupid-name.html&#34;&gt;NoSQL&lt;/a&gt; background, I was very interested to hear how lots of the financial institutions are using &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; already - the combination of not having an enforced schema but supporting structured data, supported by fast execution, makes it a good fit for a lot of the problems they&amp;rsquo;re trying to solve. &amp;nbsp;Yes, it&amp;rsquo;s my job to say nice things about MongoDB, but when businesses are already using it because it makes their lives easier and meets their needs, it gives you a warm fuzzy feeling that the product must be doing something right.&lt;br /&gt;&lt;br /&gt;I enjoyed giving this webinar, I think if I do any more I will suggest pairing on it (we all know two heads are better than one, right?) - it gives you some of the feedback and energy that&amp;rsquo;s hard to get in a darkened room talking to a microphone.&lt;/p&gt;
 </description>
     </item>
     

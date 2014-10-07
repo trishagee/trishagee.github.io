@@ -29,7 +29,9 @@ Git, especially given feature branches.  There was a good overview of developmen
 &lt;p&gt;Also, Sarah showed using &lt;a href=&#34;https://www.hipchat.com&#34;&gt;Hipchat&lt;/a&gt; in anger - I&amp;rsquo;ve now heard this mentioned enough that I&amp;rsquo;m going to look into it more.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276&#34;&gt;Advanced Unit Testing with Spock&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-I&amp;rsquo;ve &lt;a href=&#34;/tags/spock/&#34;&gt;spoken before about Spock&lt;/a&gt;, and how much I love it.  The first section of this talk was a recap
+I&amp;rsquo;ve [spoken before about Spock](&lt;/p&gt;
+
+&lt;p&gt;/tags/spock/), and how much I love it.  The first section of this talk was a recap
 of some of the basics, but the second part went on to some features I either previously ignored or wasn&amp;rsquo;t aware of.  For example, in the
 &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;MongoDB Java Driver&lt;/a&gt;, we do use annotations to denote slower-running tests so we can select which environments to run in,
 but we&amp;rsquo;re not using Spock annotations for this.  I think there&amp;rsquo;s a lot more we could do with both custom annotations like our

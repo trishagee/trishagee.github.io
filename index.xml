@@ -6,7 +6,177 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 30 Sep 2014 00:00:00 UTC</updated>
+    <updated>Tue, 07 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Using Groovy to import XML into MongoDB</title>
+      <link>http://trishagee.github.io/post/groovy_import_to_mongodb</link>
+      <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/groovy_import_to_mongodb</guid>
+      <description>
+
+&lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
+Java and MongoDB&lt;/a&gt;.  I also use Groovy during this demo to do the sorts of things Groovy is
+really good at - writing descriptive tests, and creating scripts.&lt;/p&gt;
+
+&lt;p&gt;Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use,
+so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.&lt;/p&gt;
+
+&lt;p&gt;Firstly I want to clarify that this is not my original work - I &lt;strike&gt;stole&lt;/strike&gt; borrowed most of the ideas for the demo from my
+colleague Ross Lawley. In &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/&#34;&gt;this blog post&lt;/a&gt; he goes into detail of how he built
+up an application that
+finds the most popular pub names in the UK.  There&amp;rsquo;s a &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1&#34;&gt;section in there&lt;/a&gt;
+where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it&amp;rsquo;s
+this process that I basically stole, re-worked for coffee shops, and re-wrote for the JVM.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m assuming if you&amp;rsquo;ve worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
+demo is supposed to be all about how easy it is to work with Java, I did &lt;em&gt;not&lt;/em&gt; want to do this. When I wrote the demo I wasn&amp;rsquo;t really all
+that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML,
+which is exactly what I wanted to do. In addition, creating &lt;a href=&#34;http://groovy.codehaus.org/Collections#Collections-Mapsmaps&#34;&gt;Maps&lt;/a&gt; (the
+data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
+&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Goal of the Script&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parse an XML file containing open street map data of all coffee shops.&lt;/li&gt;
+&lt;li&gt;Extract latitude and longitude XML attributes and transform into
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-geojson&#34;&gt;MongoDB GeoJSON&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Perform some basic validation on the coffee shop data from the XML.&lt;/li&gt;
+&lt;li&gt;Insert into MongoDB.&lt;/li&gt;
+&lt;li&gt;Make sure MongoDB knows this contains query-able geolocation data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The script is &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy&#34;&gt;PopulateDatabase.groovy&lt;/a&gt;,
+that link will take you to the version I presented at JavaOne:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Firstly, we need data&lt;/h3&gt;
+
+&lt;p&gt;I used the same service Ross used in his blog post to obtain the XML file containing &amp;ldquo;all&amp;rdquo; coffee shops around the world. Now,
+the open street map data is somewhat&amp;hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
+so I&amp;rsquo;m not sure I really have &lt;em&gt;all&lt;/em&gt; the coffee shops, but I obtained enough data for an interesting demo using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml&#34;&gt;resulting XML file&lt;/a&gt; is in the
+github project, but if you try this yourself you might (in fact, probably will) get different results.&lt;/p&gt;
+
+&lt;p&gt;Each XML record looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;178821166&amp;quot; lat=&amp;quot;40.4167226&amp;quot; lon=&amp;quot;-3.7069112&amp;quot;&amp;gt;
+    &amp;lt;tag k=&amp;quot;amenity&amp;quot; v=&amp;quot;cafe&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;cuisine&amp;quot; v=&amp;quot;coffee_shop&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;name&amp;quot; v=&amp;quot;Chocolatería San Ginés&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wheelchair&amp;quot; v=&amp;quot;limited&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wikipedia&amp;quot; v=&amp;quot;es:Chocolatería San Ginés&amp;quot;/&amp;gt;
+&amp;lt;/node&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each coffee shop has a unique identifier and a latitude and longitude as attributes of a &lt;code&gt;node&lt;/code&gt; element.  Within this node is a series
+of &lt;code&gt;tag&lt;/code&gt; elements, all with &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; attributes. Each coffee shop has a varying number of these attributes,
+and they are not consistent from shop to shop (other than &lt;code&gt;amenity&lt;/code&gt; and &lt;code&gt;cuisine&lt;/code&gt; which we used to select this data).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Initialisation&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Before doing anything else we want to prepare the database.  The assumption of this script is that either the
+collection we want to store the coffee shops in is empty, or full of stale data.  So we&amp;rsquo;re going to use the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;MongoDB Java Driver&lt;/a&gt; to get the collection that we&amp;rsquo;re interested in, and then drop it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s two interesting things to note here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java,
+it doesn&amp;rsquo;t need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the
+&lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;MongoDB GORM Plugin&lt;/a&gt;), but the Java driver works perfectly well.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t need to create &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;databases&lt;/a&gt; or
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt; (collections are
+a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you&amp;rsquo;re interested in,
+and if it doesn&amp;rsquo;t already exist, the server will create them for you.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this example, we&amp;rsquo;re just using the default constructor for the &lt;code&gt;MongoClient&lt;/code&gt;, the class that represents the connection to the database
+server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
+address and port - for more details on this see &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started With MongoDB and Java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
+XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
+Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; tag in the XML.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
+
+Since MongoDB documents are effectively just maps of key-value pairs, we&amp;rsquo;re going to create a Map &lt;code&gt;coffeeShop&lt;/code&gt; that contains the
+document structure that represents the coffee shop that we want to save into the database.  Firstly,
+we initialise this map with the attributes of the &lt;code&gt;node&lt;/code&gt;. Remember these attributes are something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;18464077&amp;quot; lat=&amp;quot;-33.8911183&amp;quot; lon=&amp;quot;151.1958773&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We&amp;rsquo;re going to save the ID as a value for a new field called &lt;code&gt;openStreetMapId&lt;/code&gt;. We need to do something a bit more
+complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{ &#39;location&#39; : { &#39;coordinates&#39;: [&amp;lt;longitude&amp;gt;, &amp;lt;latitude&amp;gt;],
+                 &#39;type&#39;       : &#39;Point&#39; } }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In lines 11-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
+places.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
+
+&lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
+
+Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute, check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
+insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field),
+and if so we simply add this key as the field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
+&lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
+but we don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
+
+Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&gt; Map representing the document we want to save into MongoDB,
+we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
+into the map, but it&amp;rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called &lt;code&gt;name&lt;/code&gt; in &lt;code&gt;coffeeShop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When we want to insert the Map, we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
+but this is easily done by calling the constructor that takes a Map.  Alternatively, there&amp;rsquo;s a Groovy syntax which would effectively do
+the same thing, which you might prefer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collection.insert(coffeeShop as BasicDBObject)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
+
+Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
+we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
+so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; on this field.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
+but its built-in support for XML, really nice Map syntax, and support for closures, makes it the perfect tool for iterating over XML data
+and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>JavaOne 2014, Day One</title>
@@ -29,7 +199,9 @@ Git, especially given feature branches.  There was a good overview of developmen
 &lt;p&gt;Also, Sarah showed using &lt;a href=&#34;https://www.hipchat.com&#34;&gt;Hipchat&lt;/a&gt; in anger - I&amp;rsquo;ve now heard this mentioned enough that I&amp;rsquo;m going to look into it more.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276&#34;&gt;Advanced Unit Testing with Spock&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-I&amp;rsquo;ve &lt;a href=&#34;/tags/spock/&#34;&gt;spoken before about Spock&lt;/a&gt;, and how much I love it.  The first section of this talk was a recap
+I&amp;rsquo;ve [spoken before about Spock](&lt;/p&gt;
+
+&lt;p&gt;/tags/spock/), and how much I love it.  The first section of this talk was a recap
 of some of the basics, but the second part went on to some features I either previously ignored or wasn&amp;rsquo;t aware of.  For example, in the
 &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;MongoDB Java Driver&lt;/a&gt;, we do use annotations to denote slower-running tests so we can select which environments to run in,
 but we&amp;rsquo;re not using Spock annotations for this.  I think there&amp;rsquo;s a lot more we could do with both custom annotations like our
@@ -199,28 +371,6 @@ the advantages of being a woman to people who aren&amp;rsquo;t hardcore pioneers
     </item>
     
     <item>
-      <title>Fiesta de lanzamiento de Java 8</title>
-      <link>http://trishagee.github.io/es/post/svq_java8_launch_party</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party</guid>
-      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
-presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
       <link>http://trishagee.github.io/post/svq_java8_launch_party</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
@@ -244,6 +394,28 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Fiesta de lanzamiento de Java 8</title>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party</guid>
+      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
+presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -522,120 +694,6 @@ I think he brings out the best in me.&lt;/p&gt;
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Converting Blogger to Markdown</title>
-      <link>http://trishagee.github.io/project/atom-to-hugo</link>
-      <pubDate>Thu, 20 Mar 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/project/atom-to-hugo</guid>
-      <description>&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;http://www.blogger.com/&#34;&gt;Blogger&lt;/a&gt; happily for three years or so, since I migrated the blog from &lt;a href=&#34;http://www.livejournal.com/&#34;&gt;LiveJournal&lt;/a&gt; and
-decided to actually invest some
-time writing.  I&amp;rsquo;m happy with it because I just type stuff into Blogger and It Just Works.  I&amp;rsquo;m happy because I can use my Google
-credentials to sign in.  I&amp;rsquo;m happy because now I can pretend my two &lt;a href=&#34;https://plus.google.com/+TrishaGee/&#34;&gt;Google+&lt;/a&gt; accounts exist for a purpose,
-by getting Blogger to automatically share my content there.&lt;/p&gt;
-
-&lt;p&gt;A couple of things have been problematic for the whole time I&amp;rsquo;ve been using it though:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Code looks like crap, no matter what you do.&lt;/li&gt;
-&lt;li&gt;Pictures are awkwardly jammed in to the prose like a geek mingling at a Marketing event.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;The first problem I&amp;rsquo;ve tried to solve a number of ways, with custom CSS at a blog- and a post- level.  I was super happy when I
-discovered &lt;a href=&#34;http://gist.github.com&#34;&gt;gist&lt;/a&gt;, it gave me lovely content highlighting without all the nasty CSS.  It&amp;rsquo;s still not ideal in a
-blogger world though,
-as the gist doesn&amp;rsquo;t appear in your WYSIWYG editor, leading you to all sorts of tricks to try not to accidentally delete it. Also I was
-too lazy to migrate old code over, so now my blog is a mish-mash of code styles, particular where I changed global CSS mulitple times,
-leaving old code in a big fat mess.  There&amp;rsquo;s a lesson to be learned there somewhere.&lt;/p&gt;
-
-&lt;p&gt;The second problem, photos, I just gave up on. I decided I would end up wasting too much time trying to make the thing look pretty,
-and I&amp;rsquo;d never get around to posting anything.  So my photos are always dropped randomly into the blogs - it&amp;rsquo;s better than a whole wall of
-prose (probably).&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;ve been happy overall, the main reason being I don&amp;rsquo;t have to maintain anything, I don&amp;rsquo;t have to worry about my web server going
-down, I don&amp;rsquo;t have versions of a blog platform to maintain, patch, upgrade; I can Just Write.&lt;/p&gt;
-
-&lt;p&gt;But last week &lt;a href=&#34;http://spf13.com&#34;&gt;my boss&lt;/a&gt; and &lt;a href=&#34;http://christiankvalheim.com/&#34;&gt;my colleague&lt;/a&gt;  were both on at me to try &lt;a href=&#34;http://spf13.com/project/hugo&#34;&gt;Hugo&lt;/a&gt;,
-a site generator created by my boss.  I was resistent because I do not want to maintain my own blog platform,
-but then Christian explained how I can write my posts in &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;markdown&lt;/a&gt;, use Hugo to generate the content,
-and then host it &lt;a href=&#34;http://pages.github.com/&#34;&gt;github pages&lt;/a&gt;. It sounded relatively painless.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been considering a move to something that supports markdown for a while, for the following reasons:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;These days I write at least half of my posts on the plane, so I use TextEdit to write the content,
-and later paste this into blogger and add formatting.  It would be better if I could write markdown to begin with.&lt;/li&gt;
-&lt;li&gt;Although I&amp;rsquo;ve always disliked wiki-type syntax for documentation, markdown is actually not despicable,
-and lets me add simple formatting easily without getting in my way or breaking my flow.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;So I spent a few days playing with &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; to see what it was, how it worked, and whether it was going to help me.  I&amp;rsquo;ve come up with a
-few observations:&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Hugo really is lightning fast&lt;/strong&gt;.  If I add a &lt;code&gt;.md&lt;/code&gt; file in the appropriate place, and with the Hugo server running on my local machine
-it will turn this into real HTML in (almost) less time than it takes for me to refresh the browser on the second monitor.  Edits to existing
- files appear almost instantly, so I can write a post and preview it really easily.  It beats the hell out of blogger&amp;rsquo;s Preview feature,
- which I always need to use if I&amp;rsquo;m doing anything other than posting simple prose.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s awesome to type my blog in IntelliJ&lt;/strong&gt;.  Do you find yourself trying to use IntelliJ shortcuts in other editors?  The two I
-miss the most when I&amp;rsquo;m not in IntelliJ are Cmd+Y to delete a line, and Ctrl+Shift+J to bring the next line up.  Writing markdown in
-IntelliJ with my usual shortcuts (and the &lt;a href=&#34;http://github.com/nicoulaj/idea-markdown&#34;&gt;markdown plugin&lt;/a&gt;) is really easy and productive.
-Plus, of course, you get IntelliJ&amp;rsquo;s ability to paste from any item in the clipboard history. And I don&amp;rsquo;t have to worry about those
-random intervals when blogger tells me it hasn&amp;rsquo;t saved my content, and I have no idea if I will just lose hours of work.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I now own my own content&lt;/strong&gt;.  It never really occurred to me before that all the effort I&amp;rsquo;ve put into three years of regular blogging is
-&lt;em&gt;out there&lt;/em&gt;, on some Google servers somewhere, and I don&amp;rsquo;t have a copy of that material.  That&amp;rsquo;s dumb,
-that doesn&amp;rsquo;t reflect how seriously I take my writing.  Now I have that content here, on my laptop, and it&amp;rsquo;s also backed up in Github,
-both as raw markdown and as generated HTML, and versioned.  Massive massive win.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;I have more control over how things are rendered&lt;/strong&gt;, and I can customise the display much more.  This has drawbacks though too,
-as it&amp;rsquo;s exactly this freedom-to-play that I worry will distract me from actual writing.&lt;/p&gt;
-
-&lt;p&gt;As with every project that&amp;rsquo;s worth trying, it wasn&amp;rsquo;t completely without pain.  I followed the (surprisingly excellent) &lt;a href=&#34;http://hugo.spf13.com/overview/introduction&#34;&gt;documentation&lt;/a&gt;,
-as well as &lt;a href=&#34;http://j3ff.com/blog/building-a-site-with-hugo/&#34;&gt;these guidelines&lt;/a&gt;, but I did run into some fiddly bits:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;I couldn&amp;rsquo;t quite get my head around the difference between my &lt;a href=&#34;https://github.com/trishagee/trishagee.com&#34;&gt;Hugo project code&lt;/a&gt; and my
-&lt;a href=&#34;https://github.com/trishagee/trishagee.github.io&#34;&gt;actual site content&lt;/a&gt; to begin with: how to put them into
-source control and how to get my site on github pages.  I&amp;rsquo;ve ended up with two projects on github,
-even though the generated code is technically a subtree of the Hugo project.  I think I&amp;rsquo;m happy with that.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;m not really sure about the difference between tags, keywords, and topics, if I&amp;rsquo;m honest.  Maybe this is something I&amp;rsquo;ll grow into.&lt;/li&gt;
-&lt;li&gt;I really need to spend some time on the layout and design, I don&amp;rsquo;t want to simply rip off Steve&amp;rsquo;s original layout.  Plus there are
-things I would like to have on the main page which are missing.&lt;/li&gt;
-&lt;li&gt;I needed to convert my old content to the new format&lt;/li&gt;
-&lt;li&gt;Final migration from old to new (incomplete)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;To address the last point first, I&amp;rsquo;m not sure yet if I will take the plunge and do full redirection from Blogger to the new github pages
-site (and redirect my domains too), for a while I&amp;rsquo;m going to run both in parallel and see how I feel.&lt;/p&gt;
-
-&lt;p&gt;As for the fourth point, I didn&amp;rsquo;t find a tool for migrating Blogger blogs into markdown that didn&amp;rsquo;t require me to install some other tool
- or language, and there was nothing that was specifically Hugo-shaped, so I surprised myself and did what every programmer would - I
- wrote my own. Surprising because I&amp;rsquo;m not normally that sort of person - I like to use tools that other people have written,
- I like things that Just Work, I spend all my time coding for my job so I can&amp;rsquo;t be bothered to devote extra time to it.  But my recent
- experiences with &lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt; had convinced me that I could write a simple Groovy parser that would take my exported blog (in Atom XML
- format)
-  and turn it into a series of markdown files.  And I was right, I could.  So I&amp;rsquo;ve created a new github project,
-  &lt;a href=&#34;https://github.com/trishagee/atom-to-hugo&#34;&gt;atom-to-hugo&lt;/a&gt;.  It&amp;rsquo;s very rough, but a) it works and b) it even has tests.  And documentation.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t know what&amp;rsquo;s come over me lately, I&amp;rsquo;ve been a creative, coding machine.&lt;/p&gt;
-
-&lt;p&gt;In summary, I&amp;rsquo;m pretty happy with the new way of working, but it&amp;rsquo;s going to take me a while to get used to it and decide if it&amp;rsquo;s the way
-I want to go.  At the very least, I now have my Blogger content as something markdown-ish.&lt;/p&gt;
-
-&lt;p&gt;But there are a couple of things I miss about Blogger:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;I actually like the way it shows the blog archive on the right hand side, split into months and years.  I use that to motivate me to
-blog more if a month looks kinda empty&lt;/li&gt;
-&lt;li&gt;While Google Analytics is definitely more powerful than the simple blogger analytics, I find them an easier way to get a quick insight
-into whether people are reading the blog, and which paths they take to find it.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;I don&amp;rsquo;t think either of these are showstoppers, I should be able to work around both of them.&lt;/p&gt;
 </description>
     </item>
     
