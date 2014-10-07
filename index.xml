@@ -112,7 +112,7 @@ address and port - for more details on this see &lt;a href=&#34;http://blog.mong
 
 &lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
 XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
-Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; tag in the XML.&lt;/p&gt;
+Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; element in the XML.&lt;/p&gt;
 
 &lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
 
@@ -132,7 +132,7 @@ complicated with the latitude and longitude, since we need to store them as GeoJ
                  &#39;type&#39;       : &#39;Point&#39; } }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In lines 11-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
+&lt;p&gt;In lines 12-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
 places.&lt;/p&gt;
 
 &lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
@@ -141,11 +141,11 @@ places.&lt;/p&gt;
 
 &lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
 
-Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute, check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
-insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field),
-and if so we simply add this key as the field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
+Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute and check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
+insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field). If so we simply add this key as the
+field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
 &lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
-but we don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
+but we also don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
 
 &lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
 
@@ -155,7 +155,7 @@ Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&g
 we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
 into the map, but it&amp;rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called &lt;code&gt;name&lt;/code&gt; in &lt;code&gt;coffeeShop&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;When we want to insert the Map, we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
+&lt;p&gt;When we want to insert the Map we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
 but this is easily done by calling the constructor that takes a Map.  Alternatively, there&amp;rsquo;s a Groovy syntax which would effectively do
 the same thing, which you might prefer:&lt;/p&gt;
 
@@ -168,12 +168,12 @@ the same thing, which you might prefer:&lt;/p&gt;
 
 Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
 we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
-so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; on this field.&lt;/p&gt;
+so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; for this field.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
-but its built-in support for XML, really nice Map syntax, and support for closures, makes it the perfect tool for iterating over XML data
+but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
 and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
 </description>
     </item>
