@@ -6,7 +6,39 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 14 Aug 2014 00:00:00 UTC</updated>
+    <updated>Mon, 20 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
+      <link>http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw</link>
+      <pubDate>Mon, 20 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw</guid>
+      <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
+mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
+where these popular technologies sit in your archtecture, and how they interact with each other.&lt;/p&gt;
+
+&lt;p&gt;The exact code I present has changed a bit over time, but the vJUG has a pretty recent version of the demo:&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MRrSAkEAnZQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The code is &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;available on GitHub&lt;/a&gt;.  You&amp;rsquo;ll see there are a number of different branches for the
+different versions I&amp;rsquo;ve presented. The current one is the JavaOne version.  With all the branches,
+the commits correspond to the user stories in &lt;a href=&#34;http://www.slideshare.net/trishagee/i-want-coffeejavaone&#34;&gt;the slides&lt;/a&gt;,
+so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
+
+&lt;p&gt;This talk has been videod several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
+these older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
+these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For a full list of this and all my presentations, see &lt;a href=&#34;/presentation/public_appearances.md&#34;&gt;Public Appearances&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Getting Started with MongoDB and Java</title>
@@ -34,6 +66,28 @@ operations using the Java driver:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Fiesta de lanzamiento de Java 8</title>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party</guid>
+      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
+presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
       <link>http://trishagee.github.io/post/svq_java8_launch_party</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
@@ -57,28 +111,6 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fiesta de lanzamiento de Java 8</title>
-      <link>http://trishagee.github.io/es/post/svq_java8_launch_party</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party</guid>
-      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
-presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -223,16 +255,6 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/it_depends</guid>
       <description>&lt;p&gt;Don&amp;rsquo;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s so frustrating to think that in a world of ones and zeros, people can&amp;rsquo;t give absolute answers and you can&amp;rsquo;t rely on &amp;ldquo;best practice&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s an answer I&amp;rsquo;ve given so many times, especially when someone asks about performance. &amp;nbsp;Well, I&amp;rsquo;ve had my&amp;nbsp;comeuppance. &amp;nbsp;The entire exercise of designing the new Java driver for &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; has been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Which Java version are our users, um, using?&lt;/li&gt;&lt;li&gt;Do people want an asynchronous driver?&lt;/li&gt;&lt;li&gt;How will they want to work with async?&lt;/li&gt;&lt;li&gt;Will they want to use async and synchronous method calls from the same application?&lt;/li&gt;&lt;li&gt;Do people typically use the Java driver directly, or do they use something that wraps it, like &lt;a href=&#34;https://code.google.com/p/morphia/&#34;&gt;Morphia&lt;/a&gt; or &lt;a href=&#34;http://www.springsource.org/spring-data&#34;&gt;Spring Data&lt;/a&gt;?&lt;/li&gt;&lt;li&gt;What&amp;rsquo;s most important for users in terms of performance? &amp;nbsp;Throughput? Latency? Consistent GC profile? Something else?&lt;/li&gt;&lt;li&gt;What sorts of operations are our users doing?&lt;/li&gt;&lt;li&gt;Do people usually update their driver and the server version at the same time?&lt;/li&gt;&lt;li&gt;Is it easier for them to update their driver version than their server version?&lt;/li&gt;&lt;li&gt;Do they use (or will they need) custom encoders and decoders?&lt;/li&gt;&lt;li&gt;When should we deprecate? &amp;nbsp;When should we remove deprecated methods?&lt;/li&gt;&lt;/ul&gt;&amp;hellip;and so on, and so forth.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s such a change from the sort of development I&amp;rsquo;m used to: &amp;ldquo;the business&amp;rdquo; (a business analyst, a customer, a business owner) comes to you with a requirement, you ask a bunch of questions, preferably explaining the trade-offs that come with decisions or approaches, and then you and the team come up with a design and implement it. &amp;nbsp;If you&amp;rsquo;re agile, this is all done in a nice, iterative fashion, which hopefully leads to &amp;ldquo;the business&amp;rdquo; being happy, or at the very least to another series of stories/requirements to work on.&lt;br /&gt;&lt;br /&gt;The problem is that working on a library, particularly an open source library, is a completely different thing. &amp;nbsp;We don&amp;rsquo;t even know who our users are. &amp;nbsp;This statement is true for pretty much any web application, of course, but there at least you can (if you choose) use tools like analytics and &lt;a href=&#34;http://en.wikipedia.org/wiki/A/B_testing&#34;&gt;A/B testing&lt;/a&gt; to figure out what works for your users and what doesn&amp;rsquo;t.&lt;br /&gt;&lt;br /&gt;When your library is used for free by all kinds of different teams and companies, including organisations behind closed doors, you have no idea what&amp;rsquo;s being used, what works, what people like, what people don&amp;rsquo;t like. &amp;nbsp;The most visible feedback you have is when you see blog posts telling everyone how bad your product is.&lt;br /&gt;&lt;br /&gt;This makes the design exercise VERY difficult. &amp;nbsp;Take performance for example. &amp;nbsp;Having come from a high performance, low latency background, I&amp;rsquo;m desperate to have a very extensive suite of automated performance tests (and we do already have some). &amp;nbsp;But how do I design those, when I don&amp;rsquo;t know:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;What operations are typical for our users&lt;/li&gt;&lt;li&gt;Whether our users care more about latency or throughput, or mean latency vs the long tail, or GC pauses, etc&lt;/li&gt;&lt;li&gt;How much data customers tend to punt around&lt;/li&gt;&lt;li&gt;What the hardware or network topology looks like?&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;The number one lesson you learn when performance testing is to make your test environment as similar to production as possible. &amp;nbsp;How can we do that for all our customers?&lt;br /&gt;&lt;br /&gt;Well, we can&amp;rsquo;t. &amp;nbsp;Of course.&lt;br /&gt;&lt;br /&gt;What we can do is offer an easy way for our users to test it for themselves, with their own data, their own hardware, their own use-cases. &amp;nbsp;If we can provide some sort of hook into standard metrics, we could get users to plug into that and do what they needed. &amp;nbsp;In theory, as we get more examples of these standard metrics from a range of users, it will be easier for us to help them diagnose problems. &lt;br /&gt;&lt;br /&gt;What I discovered thinking about this problem is that I was asking the wrong question - it&amp;rsquo;s not &amp;ldquo;how do we test this?&amp;rdquo; but &amp;ldquo;how do we make it as easy as possible for users to test this in a production-like environment?&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;My biggest headache has been backwards compatibility. &amp;nbsp;I&amp;rsquo;ve worked on plenty of systems where we&amp;rsquo;ve provided an API which has to be maintained in a friendly way for those who use it. &amp;nbsp;That&amp;rsquo;s tough enough - you have to be careful to only add methods, not to change signatures or remove them altogether. &amp;nbsp;But when your system is not simply an API to code against, but a library that runs within other people&amp;rsquo;s systems, this problem is even harder. &amp;nbsp;&lt;a href=&#34;http://qconlondon.com/london-2013/presentation/Parallel%20KEYNOTE:%208%20Lines%20of%20Code%20-%20Fleming%20Room%203rd%20Floor&#34;&gt;Greg Young talked at QCon&lt;/a&gt; about this problem from the developer&amp;rsquo;s point of view - every piece of code in your system, even if it&amp;rsquo;s a third party library, is your code. &amp;nbsp;Because you&amp;rsquo;re the one who&amp;rsquo;ll get called at three in the morning if your system falls over with a ConcurrentModificationException in some third party data structure. &lt;br /&gt;&lt;br /&gt;So as library developers, we have to not only provide excellent quality, well tested code, but we also have to let our baby go off and run in strange environments. &amp;nbsp;Ones that might not be running Oracle&amp;rsquo;s Java 1.7, ones that might contain other libraries that could clash with our own. &amp;nbsp;Have you ever looked at all the Maven dependencies in a large project? &amp;nbsp;You can end up with conflicting versions of common libraries (e.g. logging or &lt;a href=&#34;http://en.wikipedia.org/wiki/Dependency_injection&#34;&gt;DI&lt;/a&gt; frameworks) as every library you use pulls in dozens of libraries for itself.&lt;br /&gt;&lt;br /&gt;In our case then, we need to use as few dependencies as possible, and to write nice, clean, modern Java, whilst supporting older versions of Java. &amp;nbsp;What&amp;rsquo;s modern enough? &amp;nbsp;We know that some large organisations take a loooong time to upgrade to the latest versions of Java. &amp;nbsp;We currently support Java 5 and above, as 5 was a big enough change (and is old enough now) to be a good point to draw the line. &amp;nbsp;But what about Java 7, with its shiny new &lt;a href=&#34;http://docs.oracle.com/javase/7/docs/api/java/nio/channels/package-summary.html&#34;&gt;asynchronous channels&lt;/a&gt;? &amp;nbsp;That would be awesome for a driver like ours, an application that exists solely to connect to some server somewhere. &amp;nbsp;What about Java 8, with &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/11/java-8-introduction-to-lambdas-article.html&#34;&gt;lambda goodness&lt;/a&gt; and a very appealing &lt;a href=&#34;http://cr.openjdk.java.net/~briangoetz/lambda/sotc3.html&#34;&gt;Stream interface&lt;/a&gt;, that supports (and encourages) a syntax that looks like it might work well for providing a fluent API for querying, I dunno, databases? &amp;nbsp;How do we make the most out of advances in modern Java, without alienating our existing users?&lt;br /&gt;&lt;br /&gt;And, of course, I haven&amp;rsquo;t even talked about actually changing the API. &amp;nbsp;The existing Java driver doesn&amp;rsquo;t even make use of generics. &amp;nbsp;How can we change our API to provide a more modern-looking interface, without either forcing all our users to make massive changes to their applications (and for what? &amp;nbsp;Their code already works), or adding so many new classes and methods that it becomes very difficult for new users to work out the Best Practice way of interacting with our driver?&lt;br /&gt;&lt;br /&gt;So, what can we do?&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Firstly we have to figure out which questions we have and what possible solutions exist.&lt;/li&gt;&lt;li&gt;Then we have to weigh up the pros and cons of each of the possible solutions.&lt;/li&gt;&lt;li&gt;Ideally we&amp;rsquo;d get feedback early and often from our users, from the community, about the approaches we&amp;rsquo;re taking.&lt;/li&gt;&lt;li&gt;Development would happen in parallel, in a nice, agile, way, to bring the best possible solution for everyone.&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;What this all really means, though, is that the Shiny New Java Driver™ is not ready right now, and will not be ready immediately, despite the fact that we&amp;rsquo;ve already spent some time on its development, and considered all of those questions and more. &amp;nbsp;Right now, we&amp;rsquo;re starting to get feedback from the community - from users, and from committers (or people who would like to be committers). &amp;nbsp;Which means that I get to to go to more conferences and user groups, and talk about our problems when designing the new driver. &amp;nbsp;I&amp;rsquo;m hoping to get two things out of this, apart from more air miles:&lt;br /&gt;&lt;ol&gt;&lt;li&gt;Feedback from the community about our assumptions and the direction we&amp;rsquo;re taking.&lt;/li&gt;&lt;li&gt;Present to the development community some of the lessons we&amp;rsquo;ve learnt/are learning, in the hope that you can use them when approaching the design of your own applications.&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;&amp;lt;gratuitous-conference-plug&amp;gt;You&amp;rsquo;ve already seen some of these &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/03/upcoming-events.html&#34;&gt;upcoming events&lt;/a&gt;. &amp;nbsp;But in case you haven&amp;rsquo;t, &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/109032992/&#34;&gt;this Thursday I&amp;rsquo;ll be presenting at Skillsmatter&lt;/a&gt; on how we approached this design problem, and &lt;a href=&#34;http://www.devoxx.com/display/UK13/What+do+you+mean%2C+backwards+compatibility&#34;&gt;again at DevoxxUK next week&lt;/a&gt;.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;If you&amp;rsquo;re more interested in everything MongoDB, and want to get a much better look at what it is, how it works, how to design for it, then come to &lt;a href=&#34;http://www.10gen.com/events/mongodb-london-2013&#34;&gt;MongoDB London&lt;/a&gt;, where I am one of numerous presenters, all going into MongoDB specifics.&amp;lt;/gratuitous-conference-plug&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;So&amp;hellip; I&amp;rsquo;m afraid to say that even after this long post, even after bemoaning my own experiences of hearing &amp;ldquo;it depends&amp;rdquo;, I still don&amp;rsquo;t have an answer for you.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;But maybe I do. &amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&amp;ldquo;It Depends&amp;rdquo; means &amp;ldquo;you need to get more information in order to answer that question&amp;rdquo;. &amp;nbsp;And it&amp;rsquo;s our job as developers to ask the right questions to gather that information. &amp;nbsp;If the answer is &amp;ldquo;it depends&amp;rdquo;, you&amp;rsquo;re not asking the right question yet, or you&amp;rsquo;re not asking the right people. &amp;nbsp;So dig down, find out why you can&amp;rsquo;t answer the original question, and start iterating through your design process until you have answers that you can act upon.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;Easy. &amp;nbsp;Right&amp;hellip;?&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Java 8 - Introduction to Lambdas Article</title>
-      <link>http://trishagee.github.io/post/java_8__introduction_to_lambdas_article</link>
-      <pubDate>Thu, 08 Nov 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_8__introduction_to_lambdas_article</guid>
-      <description>&lt;p&gt;This month&amp;rsquo;s Java Magazine features an article by me, &lt;a href=&#34;https://twitter.com/kittylyst&#34;&gt;Ben Evans&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/karianna&#34;&gt;Martijn Verburg&lt;/a&gt; about the new &lt;a href=&#34;http://openjdk.java.net/projects/lambda/&#34;&gt;lambdas&lt;/a&gt;&amp;nbsp;coming in &lt;a href=&#34;http://jdk8.java.net/&#34;&gt;Java 8&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;The aim of the article is to give an overview to normal, human Java developers, who don&amp;rsquo;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and &lt;a href=&#34;http://jdk8.java.net/lambda/&#34;&gt;try them now&lt;/a&gt;).&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;            &lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; height=&#34;28&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1352311955000&#34; /&gt;                &lt;/td&gt;                &lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;                &lt;/td&gt;             &lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;                  &lt;img alt=&#34;34&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/20121112/data/imgpages/smtn/0035_egfgcb.gif?lm=1352311955000&#34; /&gt;                &lt;/a&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;Exploring Lambda Expressions for the Java Language and the JVM&lt;/span&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
 </description>
     </item>
     
