@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Groovy on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/groovy/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Tue, 07 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Using Groovy to import XML into MongoDB</title>
+      <link>http://trishagee.github.io/post/groovy_import_to_mongodb/</link>
+      <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/groovy_import_to_mongodb/</guid>
+      <description>
+
+&lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
+Java and MongoDB&lt;/a&gt;.  I also use Groovy during this demo to do the sorts of things Groovy is
+really good at - writing descriptive tests, and creating scripts.&lt;/p&gt;
+
+&lt;p&gt;Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use,
+so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.&lt;/p&gt;
+
+&lt;p&gt;Firstly I want to clarify that this is not my original work - I &lt;strike&gt;stole&lt;/strike&gt; borrowed most of the ideas for the demo from my
+colleague Ross Lawley. In &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/&#34;&gt;this blog post&lt;/a&gt; he goes into detail of how he built
+up an application that
+finds the most popular pub names in the UK.  There&amp;rsquo;s a &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1&#34;&gt;section in there&lt;/a&gt;
+where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it&amp;rsquo;s
+this process that I basically stole, re-worked for coffee shops, and re-wrote for the JVM.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m assuming if you&amp;rsquo;ve worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
+demo is supposed to be all about how easy it is to work with Java, I did &lt;em&gt;not&lt;/em&gt; want to do this. When I wrote the demo I wasn&amp;rsquo;t really all
+that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML,
+which is exactly what I wanted to do. In addition, creating &lt;a href=&#34;http://groovy.codehaus.org/Collections#Collections-Mapsmaps&#34;&gt;Maps&lt;/a&gt; (the
+data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
+&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Goal of the Script&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parse an XML file containing open street map data of all coffee shops.&lt;/li&gt;
+&lt;li&gt;Extract latitude and longitude XML attributes and transform into
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-geojson&#34;&gt;MongoDB GeoJSON&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Perform some basic validation on the coffee shop data from the XML.&lt;/li&gt;
+&lt;li&gt;Insert into MongoDB.&lt;/li&gt;
+&lt;li&gt;Make sure MongoDB knows this contains query-able geolocation data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The script is &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy&#34;&gt;PopulateDatabase.groovy&lt;/a&gt;,
+that link will take you to the version I presented at JavaOne:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Firstly, we need data&lt;/h3&gt;
+
+&lt;p&gt;I used the same service Ross used in his blog post to obtain the XML file containing &amp;ldquo;all&amp;rdquo; coffee shops around the world. Now,
+the open street map data is somewhat&amp;hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
+so I&amp;rsquo;m not sure I really have &lt;em&gt;all&lt;/em&gt; the coffee shops, but I obtained enough data for an interesting demo using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml&#34;&gt;resulting XML file&lt;/a&gt; is in the
+github project, but if you try this yourself you might (in fact, probably will) get different results.&lt;/p&gt;
+
+&lt;p&gt;Each XML record looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;178821166&amp;quot; lat=&amp;quot;40.4167226&amp;quot; lon=&amp;quot;-3.7069112&amp;quot;&amp;gt;
+    &amp;lt;tag k=&amp;quot;amenity&amp;quot; v=&amp;quot;cafe&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;cuisine&amp;quot; v=&amp;quot;coffee_shop&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;name&amp;quot; v=&amp;quot;Chocolatería San Ginés&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wheelchair&amp;quot; v=&amp;quot;limited&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wikipedia&amp;quot; v=&amp;quot;es:Chocolatería San Ginés&amp;quot;/&amp;gt;
+&amp;lt;/node&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each coffee shop has a unique identifier and a latitude and longitude as attributes of a &lt;code&gt;node&lt;/code&gt; element.  Within this node is a series
+of &lt;code&gt;tag&lt;/code&gt; elements, all with &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; attributes. Each coffee shop has a varying number of these attributes,
+and they are not consistent from shop to shop (other than &lt;code&gt;amenity&lt;/code&gt; and &lt;code&gt;cuisine&lt;/code&gt; which we used to select this data).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Initialisation&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Before doing anything else we want to prepare the database.  The assumption of this script is that either the
+collection we want to store the coffee shops in is empty, or full of stale data.  So we&amp;rsquo;re going to use the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;MongoDB Java Driver&lt;/a&gt; to get the collection that we&amp;rsquo;re interested in, and then drop it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s two interesting things to note here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java,
+it doesn&amp;rsquo;t need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the
+&lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;MongoDB GORM Plugin&lt;/a&gt;), but the Java driver works perfectly well.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t need to create &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;databases&lt;/a&gt; or
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt; (collections are
+a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you&amp;rsquo;re interested in,
+and if it doesn&amp;rsquo;t already exist, the server will create them for you.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this example, we&amp;rsquo;re just using the default constructor for the &lt;code&gt;MongoClient&lt;/code&gt;, the class that represents the connection to the database
+server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
+address and port - for more details on this see &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started With MongoDB and Java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
+XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
+Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; element in the XML.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
+
+Since MongoDB documents are effectively just maps of key-value pairs, we&amp;rsquo;re going to create a Map &lt;code&gt;coffeeShop&lt;/code&gt; that contains the
+document structure that represents the coffee shop that we want to save into the database.  Firstly,
+we initialise this map with the attributes of the &lt;code&gt;node&lt;/code&gt;. Remember these attributes are something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;18464077&amp;quot; lat=&amp;quot;-33.8911183&amp;quot; lon=&amp;quot;151.1958773&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We&amp;rsquo;re going to save the ID as a value for a new field called &lt;code&gt;openStreetMapId&lt;/code&gt;. We need to do something a bit more
+complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{ &#39;location&#39; : { &#39;coordinates&#39;: [&amp;lt;longitude&amp;gt;, &amp;lt;latitude&amp;gt;],
+                 &#39;type&#39;       : &#39;Point&#39; } }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In lines 12-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
+places.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
+
+&lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
+
+Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute and check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
+insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field). If so we simply add this key as the
+field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
+&lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
+but we also don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
+
+Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&gt; Map representing the document we want to save into MongoDB,
+we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
+into the map, but it&amp;rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called &lt;code&gt;name&lt;/code&gt; in &lt;code&gt;coffeeShop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When we want to insert the Map we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
+but this is easily done by calling the constructor that takes a Map.  Alternatively, there&amp;rsquo;s a Groovy syntax which would effectively do
+the same thing, which you might prefer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collection.insert(coffeeShop as BasicDBObject)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
+
+Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
+we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
+so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; for this field.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
+but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
+and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Readable, Succinct, or Just Plain Short?</title>
+      <link>http://trishagee.github.io/post/short_vs_readable.md/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/short_vs_readable.md/</guid>
+      <description>&lt;p&gt;Which is more readable?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version.substring(0, version.indexOf(&#39;-SNAPSHOT&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Given a value of &lt;code&gt;0.109-SNAPSHOT&lt;/code&gt; for &lt;code&gt;version&lt;/code&gt;, they both give the same result.  And I&amp;rsquo;m tempted by the second,
+because it&amp;rsquo;s shorter.  But I&amp;rsquo;m going to go with the first one - not because it&amp;rsquo;s more Java-ish and I&amp;rsquo;m scared of Groovy syntax,
+but because it&amp;rsquo;s easier to understand if/when something goes wrong.&lt;/p&gt;
+
+&lt;p&gt;For example: if &lt;code&gt;version&lt;/code&gt; doesn&amp;rsquo;t conform to the expected pattern, the two code fragments fail in two different ways.  If &lt;code&gt;version&lt;/code&gt;
+doesn&amp;rsquo;t contain &lt;code&gt;-SNAPSHOT&lt;/code&gt;, the first will fail with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;whereas the second will either arbitrarily slice the last 9 characters off the end of whatever the String does contain,
+or if it&amp;rsquo;s too short you&amp;rsquo;ll get something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.ArrayIndexOutOfBoundsException: Negative array index [-10] too large for array size 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you, the developer, see this error (or notice your mangled version number) and look at the failing line of code,
+you&amp;rsquo;ll have two different experiences.  When looking at the second example, if you didn&amp;rsquo;t write it in the first place or if you have a
+memory as shocking as mine, you won&amp;rsquo;t get any clues from that code as to what the &lt;em&gt;purpose&lt;/em&gt; is - you&amp;rsquo;ll see what it does (chop the last
+9 characters off the &lt;code&gt;version&lt;/code&gt; string), but not why.  You can &amp;ldquo;fix&amp;rdquo; the problem by adding an arbitrary 9 characters onto your &lt;code&gt;version&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re looking at the first example, however, you&amp;rsquo;ll see the intent right there - it&amp;rsquo;s trying to chop the string &lt;code&gt;-SNAPSHOT&lt;/code&gt; (and any
+characters that might happen to come after it) off the end of the &lt;code&gt;version&lt;/code&gt; string.  With this line of code,
+if you checked the value of &lt;code&gt;version&lt;/code&gt; and saw it didn&amp;rsquo;t have the correct suffix, you&amp;rsquo;d have a good idea of what the problem is and how
+to solve it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a third way, that potentially keeps the descriptiveness (is that a word?) of the first solution and makes it a bit shorter and
+Groovier:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..&amp;lt;version.indexOf(&#39;-SNAPSHOT&#39;)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You need the less-than sign plonked in there to make it work correctly, which I find a bit jarring,
+but it does work.  It&amp;rsquo;s a little more succinct than the original Java syntax and retains the intent.&lt;/p&gt;
+
+&lt;p&gt;So in conclusion: yes, shorter code is generally better (and often more readable).  But I don&amp;rsquo;t believe in sacrificing code that
+expresses the intent in order to reduce the number of characters used.  We&amp;rsquo;re not living in a memory-poor world any more,
+and code is meant to be read by humans as well as computers.  Let&amp;rsquo;s make our code easy to understand when it goes wrong,
+not simply the shortest way to do something when the stars are all perfectly aligned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Converting Blogger to Markdown</title>
+      <link>http://trishagee.github.io/project/atom-to-hugo/</link>
+      <pubDate>Thu, 20 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/project/atom-to-hugo/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve been using &lt;a href=&#34;http://www.blogger.com/&#34;&gt;Blogger&lt;/a&gt; happily for three years or so, since I migrated the blog from &lt;a href=&#34;http://www.livejournal.com/&#34;&gt;LiveJournal&lt;/a&gt; and
+decided to actually invest some
+time writing.  I&amp;rsquo;m happy with it because I just type stuff into Blogger and It Just Works.  I&amp;rsquo;m happy because I can use my Google
+credentials to sign in.  I&amp;rsquo;m happy because now I can pretend my two &lt;a href=&#34;https://plus.google.com/+TrishaGee/&#34;&gt;Google+&lt;/a&gt; accounts exist for a purpose,
+by getting Blogger to automatically share my content there.&lt;/p&gt;
+
+&lt;p&gt;A couple of things have been problematic for the whole time I&amp;rsquo;ve been using it though:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Code looks like crap, no matter what you do.&lt;/li&gt;
+&lt;li&gt;Pictures are awkwardly jammed in to the prose like a geek mingling at a Marketing event.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The first problem I&amp;rsquo;ve tried to solve a number of ways, with custom CSS at a blog- and a post- level.  I was super happy when I
+discovered &lt;a href=&#34;http://gist.github.com&#34;&gt;gist&lt;/a&gt;, it gave me lovely content highlighting without all the nasty CSS.  It&amp;rsquo;s still not ideal in a
+blogger world though,
+as the gist doesn&amp;rsquo;t appear in your WYSIWYG editor, leading you to all sorts of tricks to try not to accidentally delete it. Also I was
+too lazy to migrate old code over, so now my blog is a mish-mash of code styles, particular where I changed global CSS mulitple times,
+leaving old code in a big fat mess.  There&amp;rsquo;s a lesson to be learned there somewhere.&lt;/p&gt;
+
+&lt;p&gt;The second problem, photos, I just gave up on. I decided I would end up wasting too much time trying to make the thing look pretty,
+and I&amp;rsquo;d never get around to posting anything.  So my photos are always dropped randomly into the blogs - it&amp;rsquo;s better than a whole wall of
+prose (probably).&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;ve been happy overall, the main reason being I don&amp;rsquo;t have to maintain anything, I don&amp;rsquo;t have to worry about my web server going
+down, I don&amp;rsquo;t have versions of a blog platform to maintain, patch, upgrade; I can Just Write.&lt;/p&gt;
+
+&lt;p&gt;But last week &lt;a href=&#34;http://spf13.com&#34;&gt;my boss&lt;/a&gt; and &lt;a href=&#34;http://christiankvalheim.com/&#34;&gt;my colleague&lt;/a&gt;  were both on at me to try &lt;a href=&#34;http://spf13.com/project/hugo&#34;&gt;Hugo&lt;/a&gt;,
+a site generator created by my boss.  I was resistent because I do not want to maintain my own blog platform,
+but then Christian explained how I can write my posts in &lt;a href=&#34;http://daringfireball.net/projects/markdown/&#34;&gt;markdown&lt;/a&gt;, use Hugo to generate the content,
+and then host it &lt;a href=&#34;http://pages.github.com/&#34;&gt;github pages&lt;/a&gt;. It sounded relatively painless.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been considering a move to something that supports markdown for a while, for the following reasons:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;These days I write at least half of my posts on the plane, so I use TextEdit to write the content,
+and later paste this into blogger and add formatting.  It would be better if I could write markdown to begin with.&lt;/li&gt;
+&lt;li&gt;Although I&amp;rsquo;ve always disliked wiki-type syntax for documentation, markdown is actually not despicable,
+and lets me add simple formatting easily without getting in my way or breaking my flow.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So I spent a few days playing with &lt;a href=&#34;http://hugo.spf13.com/&#34;&gt;Hugo&lt;/a&gt; to see what it was, how it worked, and whether it was going to help me.  I&amp;rsquo;ve come up with a
+few observations:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Hugo really is lightning fast&lt;/strong&gt;.  If I add a &lt;code&gt;.md&lt;/code&gt; file in the appropriate place, and with the Hugo server running on my local machine
+it will turn this into real HTML in (almost) less time than it takes for me to refresh the browser on the second monitor.  Edits to existing
+ files appear almost instantly, so I can write a post and preview it really easily.  It beats the hell out of blogger&amp;rsquo;s Preview feature,
+ which I always need to use if I&amp;rsquo;m doing anything other than posting simple prose.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It&amp;rsquo;s awesome to type my blog in IntelliJ&lt;/strong&gt;.  Do you find yourself trying to use IntelliJ shortcuts in other editors?  The two I
+miss the most when I&amp;rsquo;m not in IntelliJ are Cmd+Y to delete a line, and Ctrl+Shift+J to bring the next line up.  Writing markdown in
+IntelliJ with my usual shortcuts (and the &lt;a href=&#34;http://github.com/nicoulaj/idea-markdown&#34;&gt;markdown plugin&lt;/a&gt;) is really easy and productive.
+Plus, of course, you get IntelliJ&amp;rsquo;s ability to paste from any item in the clipboard history. And I don&amp;rsquo;t have to worry about those
+random intervals when blogger tells me it hasn&amp;rsquo;t saved my content, and I have no idea if I will just lose hours of work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I now own my own content&lt;/strong&gt;.  It never really occurred to me before that all the effort I&amp;rsquo;ve put into three years of regular blogging is
+&lt;em&gt;out there&lt;/em&gt;, on some Google servers somewhere, and I don&amp;rsquo;t have a copy of that material.  That&amp;rsquo;s dumb,
+that doesn&amp;rsquo;t reflect how seriously I take my writing.  Now I have that content here, on my laptop, and it&amp;rsquo;s also backed up in Github,
+both as raw markdown and as generated HTML, and versioned.  Massive massive win.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I have more control over how things are rendered&lt;/strong&gt;, and I can customise the display much more.  This has drawbacks though too,
+as it&amp;rsquo;s exactly this freedom-to-play that I worry will distract me from actual writing.&lt;/p&gt;
+
+&lt;p&gt;As with every project that&amp;rsquo;s worth trying, it wasn&amp;rsquo;t completely without pain.  I followed the (surprisingly excellent) &lt;a href=&#34;http://hugo.spf13.com/overview/introduction&#34;&gt;documentation&lt;/a&gt;,
+as well as &lt;a href=&#34;http://j3ff.com/blog/building-a-site-with-hugo/&#34;&gt;these guidelines&lt;/a&gt;, but I did run into some fiddly bits:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I couldn&amp;rsquo;t quite get my head around the difference between my &lt;a href=&#34;https://github.com/trishagee/trishagee.com&#34;&gt;Hugo project code&lt;/a&gt; and my
+&lt;a href=&#34;https://github.com/trishagee/trishagee.github.io&#34;&gt;actual site content&lt;/a&gt; to begin with: how to put them into
+source control and how to get my site on github pages.  I&amp;rsquo;ve ended up with two projects on github,
+even though the generated code is technically a subtree of the Hugo project.  I think I&amp;rsquo;m happy with that.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;m not really sure about the difference between tags, keywords, and topics, if I&amp;rsquo;m honest.  Maybe this is something I&amp;rsquo;ll grow into.&lt;/li&gt;
+&lt;li&gt;I really need to spend some time on the layout and design, I don&amp;rsquo;t want to simply rip off Steve&amp;rsquo;s original layout.  Plus there are
+things I would like to have on the main page which are missing.&lt;/li&gt;
+&lt;li&gt;I needed to convert my old content to the new format&lt;/li&gt;
+&lt;li&gt;Final migration from old to new (incomplete)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;To address the last point first, I&amp;rsquo;m not sure yet if I will take the plunge and do full redirection from Blogger to the new github pages
+site (and redirect my domains too), for a while I&amp;rsquo;m going to run both in parallel and see how I feel.&lt;/p&gt;
+
+&lt;p&gt;As for the fourth point, I didn&amp;rsquo;t find a tool for migrating Blogger blogs into markdown that didn&amp;rsquo;t require me to install some other tool
+ or language, and there was nothing that was specifically Hugo-shaped, so I surprised myself and did what every programmer would - I
+ wrote my own. Surprising because I&amp;rsquo;m not normally that sort of person - I like to use tools that other people have written,
+ I like things that Just Work, I spend all my time coding for my job so I can&amp;rsquo;t be bothered to devote extra time to it.  But my recent
+ experiences with &lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt; had convinced me that I could write a simple Groovy parser that would take my exported blog (in Atom XML
+ format)
+  and turn it into a series of markdown files.  And I was right, I could.  So I&amp;rsquo;ve created a new github project,
+  &lt;a href=&#34;https://github.com/trishagee/atom-to-hugo&#34;&gt;atom-to-hugo&lt;/a&gt;.  It&amp;rsquo;s very rough, but a) it works and b) it even has tests.  And documentation.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t know what&amp;rsquo;s come over me lately, I&amp;rsquo;ve been a creative, coding machine.&lt;/p&gt;
+
+&lt;p&gt;In summary, I&amp;rsquo;m pretty happy with the new way of working, but it&amp;rsquo;s going to take me a while to get used to it and decide if it&amp;rsquo;s the way
+I want to go.  At the very least, I now have my Blogger content as something markdown-ish.&lt;/p&gt;
+
+&lt;p&gt;But there are a couple of things I miss about Blogger:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;I actually like the way it shows the blog archive on the right hand side, split into months and years.  I use that to motivate me to
+blog more if a month looks kinda empty&lt;/li&gt;
+&lt;li&gt;While Google Analytics is definitely more powerful than the simple blogger analytics, I find them an easier way to get a quick insight
+into whether people are reading the blog, and which paths they take to find it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think either of these are showstoppers, I should be able to work around both of them.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock: Data Driven Testing</title>
+      <link>http://trishagee.github.io/post/spock_data_driven_testing/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/spock_data_driven_testing/</guid>
+      <description>&lt;p&gt;In the last two articles on Spock I&amp;rsquo;ve covered &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html&#34;&gt;mocking&lt;/a&gt; and &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-passes-next-test-painless-stubbing.html&#34;&gt;stubbing&lt;/a&gt;.  And I was pretty sold on Spock just based on that.  But for a database driver, there&amp;rsquo;s a killer feature: &amp;nbsp;&lt;a href=&#34;http://docs.spockframework.org/en/latest/data_driven_testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;All developers have a tendency to think of and test the happy path.  Not least of all because that&amp;rsquo;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.  We tend not to ask &amp;ldquo;what happens if they ask to withdraw money when the cash machine has no cash?&amp;rdquo; or &amp;ldquo;what happens when their account balance is zero?&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;With any luck you&amp;rsquo;ll have a test suite covering your happy paths, and probably at least twice as many grumpy paths.  If you&amp;rsquo;re like me, and you like one test to test one thing (and who doesn&amp;rsquo;t?), sometimes your test classes can get quite long as you test various edge cases.  Or, much worse (and I&amp;rsquo;ve done this too) you use a calculation remarkably like the one you&amp;rsquo;re testing to generate test data.  You run your test in a loop with the calculation and lo!  The test passes.  Woohoo?&lt;br /&gt;&lt;br /&gt;Not that long ago I went through a process of re-writing a lot of unit tests that I had written a year or two before - we were about to do a big refactor of the code that generated some important numbers, and we wanted our tests to tell us we hadn&amp;rsquo;t broken anything with the refactor. The only problem was, the tests used a calculation rather similar to the production calculation, and borrowed some constants to create the expected number. &amp;nbsp;I ended up running the tests to find the numbers the test was generating as expected values, and hardcoding those values into the test. It felt dirty, but it was necessary - I wanted to make sure the refactoring didn&amp;rsquo;t change the expected numbers as well as the ones generated by the real code. &amp;nbsp;This is not a process I want to go through ever again.&lt;br /&gt;&lt;br /&gt;When you&amp;rsquo;re testing these sorts of things, you try and think of a few representative cases, code them into your tests, and hope that you&amp;rsquo;ve covered the main areas.  What would be far nicer is if you could shove a whole load of different data into your system-under-test and make sure the results look sane.&lt;br /&gt;&lt;br /&gt;An example from the Java driver is that we had tests that were checking the parsing of the URI - you can initialise your MongoDB settings simply using a String containing the URI.&lt;br /&gt;&lt;br /&gt;The old tests looked like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056046.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/master/src/test/com/mongodb/MongoClientURITest.java&#34;&gt;MongoClientURITest&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Using Spock&amp;rsquo;s data driven testing, we changed this to:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056095.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/driver/src/test/unit/org/mongodb/MongoClientURISpecification.groovy&#34;&gt;MongoClientURISpecification&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Instead of having a separate test for every type of URL that needs parsing, you have a single test and each line in the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section is a new combination of input URL and expected outputs.  Each one of those lines used to be a test.  In fact, some of them probably weren&amp;rsquo;t tests as the ugliness and overhead of adding another copy-paste test seemed like overkill.  But here, in Spock, it&amp;rsquo;s just a case of adding one more line with a new input and set of outputs.&lt;br /&gt;&lt;br /&gt;The major benefit here, to me, is that it&amp;rsquo;s dead easy to add another test for a &amp;ldquo;what if?&amp;rdquo; that occurs to the developer.  You don&amp;rsquo;t have to have yet another test method that someone else is going to wonder &amp;ldquo;what the hell are we testing this for?&amp;rdquo;.  You just add another line which documents another set of expected outputs given the new input.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s easy, it&amp;rsquo;s neat, it&amp;rsquo;s succinct.&lt;br /&gt;&lt;br /&gt;One of the major benefits of this to our team is that we don&amp;rsquo;t argue any more about whether a single test is testing too much.  In the past, we had tests like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056136.js&#34;&gt;&lt;/script&gt; And I can see why we have all those assertions in the same test, because technically these are all the same concept - make sure that each type of WriteConcern creates the correct command document.  I believe these should be one test per line - because each line in the test is testing a different input and output, and I would want to document that in the test name (&amp;ldquo;fsync write concern should have fsync flag in getLastError command&amp;rdquo;, &amp;ldquo;journalled write concern should set j flag to true in getLastError command&amp;rdquo; etc).  Also don&amp;rsquo;t forget that in JUnit, if the first assert fails, the rest of the test is not run.  Therefore you have no idea if this is a failure that affects all write concerns, or just the first one.  You lose the coverage provided by the later asserts.&lt;br /&gt;&lt;br /&gt;But the argument against my viewpoint is then we&amp;rsquo;d have seven different one-line tests.  What a waste of space.&lt;br /&gt;&lt;br /&gt;You could argue for days about the best way to do it, or that this test is a sign of some other smell that needs addressing.  But if you&amp;rsquo;re in a real world project and your aim is to both improve your test coverage and improve the tests themselves, these arguments are getting in the way of progress.  The nice thing about Spock is that you can take these tests that test too much, and turn them into something a bit prettier:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056166.js&#34;&gt;&lt;/script&gt; You might be thinking, what&amp;rsquo;s the advantage over the JUnit way?  Isn&amp;rsquo;t that the same thing but Groovier?  But there&amp;rsquo;s one important difference - all the lines under &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; get run, regardless of whether the test before it passes or fails.  This basically is seven different tests, but takes up the same space as one.&lt;br /&gt;&lt;br /&gt;That&amp;rsquo;s great, but if just one of these lines fails, how do you know which one it was if all seven tests are masquerading as one?  That&amp;rsquo;s where the awesome &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;@Unroll&lt;/span&gt; annotation comes in.  This reports the passing or failing of each line as if it were a separate test.  By default, when you run an unrolled test it will get reported as something like:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;But in the test above we put some magic keywords into the test name: &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;&amp;lsquo;&lt;b&gt;#wc&lt;/b&gt; should return getlasterror document &lt;b&gt;#commandDocument&lt;/b&gt;&amp;lsquo;&lt;/span&gt; - note that these values with &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;#&lt;/span&gt; in front are the same headings from the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section. They&amp;rsquo;ll get replaced by the value being run in the current test:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Yeah, it can be a bit of a mouthful if the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;toString&lt;/span&gt; is hefty, but it does give you an idea of what was being tested, and it&amp;rsquo;s prettier if the inputs have nice succinct string values:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;This, combined with Spock&amp;rsquo;s awesome &lt;a href=&#34;http://hamletdarcy.blogspot.com.es/2009/05/new-power-assertions-in-groovy.html&#34;&gt;power assert&lt;/a&gt;&amp;nbsp;makes it dead simple to see what went wrong when one of these tests fails. &amp;nbsp;Let&amp;rsquo;s take the example of (somehow) the incorrect host being returned for one of the input URIs:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Data driven testing might lead one to over-test the simple things, but the cost of adding another &amp;ldquo;what if?&amp;rdquo; is so low - just another line - and the additional safety you get from trying a different input is rather nice. &amp;nbsp;We&amp;rsquo;ve been using them for parsers and simple generators, where you want to throw in a bunch of inputs to a single method and see what you get out.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m totally sold on this feature, particularly for our type of application (the Java driver does a lot of taking stuff in one shape and turning it into something else). &amp;nbsp;Just in case you want a final example, here&amp;rsquo;s a final one.&lt;br /&gt;&lt;br /&gt;The old way:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057097.js&#34;&gt;&lt;/script&gt; &amp;hellip;and in Spock:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057129.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock passes the next test - Painless Stubbing</title>
+      <link>http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</link>
+      <pubDate>Wed, 10 Jul 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</guid>
+      <description>&lt;p&gt;In the &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html&#34;&gt;last post&lt;/a&gt; I talked about our need for some improved testing tools, our choice of &lt;a href=&#34;https://code.google.com/p/spock/&#34;&gt;Spock&lt;/a&gt; as something to spike, and how mocking looks in Spock.&lt;br /&gt;&lt;br /&gt;As that blog got rather long, I saved the next installment for a separate post.&lt;br /&gt;&lt;br /&gt;Today I want to look at stubbing.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Stubbing&lt;/b&gt;&lt;br /&gt;Mocking is great for checking &lt;i&gt;outputs&lt;/i&gt; - in the example in the last post, we&amp;rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the &lt;code&gt;bsonWriter&lt;/code&gt;.&lt;br /&gt;&lt;br /&gt;Stubbing is great for faking your &lt;i&gt;inputs&lt;/i&gt; (I don&amp;rsquo;t know why this difference never occurred to me before, but&amp;nbsp;&lt;a href=&#34;http://www.devoxx.com/display/UK13/I+hate+writing+unit+tests%2C+how+come+everybody+else+enjoys+it&#34;&gt;Colin&amp;rsquo;s talk at Devoxx UK&lt;/a&gt;&amp;nbsp;made this really clear to me). &lt;br /&gt;&lt;br /&gt;One of the things we need to do in the compatibility layer of the new driver is to wrap all the new style Exceptions that can be thrown by the new architecture layer and turn them into old-style Exceptions, for backwards compatibility purposes. &amp;nbsp;Sometimes testing the exceptional cases is&amp;hellip; challenging. &amp;nbsp;So I opted to do this with Spock.&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5935645.js&#34;&gt;&lt;/script&gt;So here we can use a real &lt;code&gt;DB&lt;/code&gt; class, but with a mock &lt;code&gt;Mongo&lt;/code&gt; that will return us a &amp;ldquo;mock&amp;rdquo; &lt;code&gt;Session&lt;/code&gt;. &amp;nbsp;It&amp;rsquo;s not actually a mock though, it&amp;rsquo;s more of a stub because we want to tell it how to behave when it&amp;rsquo;s called - in this test, we want to force it to throw an &lt;code&gt;org.mongodb.MongoException&lt;/code&gt; whenever &lt;code&gt;execute&lt;/code&gt; is called. &amp;nbsp;It doesn&amp;rsquo;t matter to us what get passed in to the execute method (that&amp;rsquo;s what the underscore means on line 16), what matters is that when it gets called it throws the correct type of Exception.&lt;br /&gt;&lt;br /&gt;Like before, the &lt;code&gt;when&lt;/code&gt;: section shows the bit we&amp;rsquo;re actually trying to test. In this case, we want to call &lt;code&gt;rename&lt;/code&gt;.&lt;br /&gt;&lt;br /&gt;Then finally the &lt;code&gt;then:&lt;/code&gt; section asserts that we received the correct sort of Exception. &amp;nbsp;It&amp;rsquo;s not enormously clear, although I&amp;rsquo;ve kept the full namespace in to try and clarify, but the aim is that any &lt;code&gt;&lt;b&gt;org&lt;/b&gt;.mongodb.MongoException&lt;/code&gt; that gets thrown by the new architecture gets turned into the appropriate &lt;code&gt;&lt;b&gt;com&lt;/b&gt;.mongodb.MongoException&lt;/code&gt;. &amp;nbsp;We&amp;rsquo;re sort of &amp;ldquo;lucky&amp;rdquo; because the old code is in the wrong package structure, and in the new architecture we&amp;rsquo;ve got a chance to fix this and put stuff into the right place.&lt;br /&gt;&lt;br /&gt;Once I&amp;rsquo;d tracked down all the places Exceptions can escape and started writing these sorts of tests to exercise those code paths, not only did I feel more secure that we wouldn&amp;rsquo;t break backwards compatibility by leaking the wrong Exceptions, but we also found our test coverage went up - and more importantly, in the &lt;i&gt;un&lt;/i&gt;happy paths, which are often harder to test.&lt;br /&gt;&lt;br /&gt;I mentioned in the last post that we already did some simple stubbing to help us test the data driver. Why not just keep using that approach?  &lt;br /&gt;&lt;br /&gt;Well, these stubs end up looking like this:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5935655.js&#34;&gt;&lt;/script&gt;Ick.&lt;br /&gt;&lt;br /&gt;And you end up extending them so you can just override the method you&amp;rsquo;re interested in (particularly in the case of forcing a method to throw an exception). &amp;nbsp;Most irritatingly to me, these stubs live away from the actual tests, so you can&amp;rsquo;t easily see what the expected behaviour is. &amp;nbsp;In the Spock test, the expected stubbed behaviour is defined on line 16, the call that will provoke it is on line 19 and the code that checks the expectation is on line 22. &amp;nbsp;It&amp;rsquo;s all within even the smallest monitor&amp;rsquo;s window.&lt;br /&gt;&lt;br /&gt;So stubbing in Spock is painless. &amp;nbsp;Next:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/12/spock-data-driven-testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock is awesome! Seriously Simplified Mocking</title>
+      <link>http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</link>
+      <pubDate>Tue, 09 Jul 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. &amp;nbsp;Ideally, we want the number of dependencies to be zero.&lt;br /&gt;&lt;br /&gt;This is not going to be the case when it comes to testing, however. &amp;nbsp;At the very least, we&amp;rsquo;re going to use JUnit or TestNG (we used testng in the previous version, we&amp;rsquo;ve switched to JUnit for 3.0). &amp;nbsp;Up until recently, we worked hard to eliminate the need for a mocking framework - the driver is not a large application with interacting services, most stuff can be tested either as an integration test or with very simple stubs.&lt;br /&gt;&lt;br /&gt;Recently I was working on the serialisation layer - we&amp;rsquo;re making quite big changes to the model for encoding and decoding between &lt;a href=&#34;http://bsonspec.org/&#34;&gt;BSON&lt;/a&gt; and Java, we&amp;rsquo;re hoping this will simplify our lives but also make things a lot easier for the ODMs (Object-Document Mappers) and third party libraries. &amp;nbsp;At this level, it makes a lot of sense to introduce mocks - I want to ensure particular methods are called on the writer, for example, I don&amp;rsquo;t want to check actual byte values, that&amp;rsquo;s not going to be very helpful for documentation (although there is a level where that is a sensible thing to do).&lt;br /&gt;&lt;br /&gt;We started using &lt;a href=&#34;http://jmock.codehaus.org/&#34;&gt;JMock&lt;/a&gt; to begin with, it&amp;rsquo;s what I&amp;rsquo;ve been using for a while, and it gave us what we wanted - a simple mocking framework (I tried &lt;a href=&#34;https://code.google.com/p/mockito/&#34;&gt;Mockito&lt;/a&gt; too, but I&amp;rsquo;m not so used to the failure messages, so I found it really hard to figure out what was wrong when a test failed). &lt;br /&gt;&lt;br /&gt;I knew from my spies at LMAX that there&amp;rsquo;s some &lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt; test framework called &lt;a href=&#34;https://code.google.com/p/spock/&#34;&gt;Spock&lt;/a&gt; that is awesome, apparently, but I&amp;nbsp;immediately&amp;nbsp;discarded it - I feel very strongly that tests are documentation, and since the users of the Java driver are largely Java developers, I felt like introducing tests in a different language was an added complexity we didn&amp;rsquo;t need.&lt;br /&gt;&lt;br /&gt;Then I went to GeeCON, and my ex-colleague &lt;a href=&#34;https://twitter.com/IsraKaos&#34;&gt;Israel&lt;/a&gt; forced me to go to &lt;a href=&#34;http://geecon.org/speakers/ken-sipe&#34;&gt;the talk on Spock&lt;/a&gt;. &amp;nbsp;And I realised just how wrong I had been. &amp;nbsp;Far from adding complexity, here was a lovely, descriptive way of writing tests. &amp;nbsp;It&amp;rsquo;s flexible, and yet structured enough get you thinking in a way that should create good tests.&lt;br /&gt;&lt;br /&gt;Since we&amp;rsquo;re already using &lt;a href=&#34;http://www.gradle.org/&#34;&gt;gradle&lt;/a&gt;, which is Groovy as well, we decided it was worth a spike to see if Spock would give us any benefits.&lt;br /&gt;&lt;br /&gt;During the spike I converted a selection of our tests to Spock tests to see what it looks like on a &lt;i&gt;real&lt;/i&gt; codebase. &amp;nbsp;I had very specific things I wanted to try out:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Mocking&lt;/li&gt;&lt;li&gt;Stubbing&lt;/li&gt;&lt;li&gt;Data driven testing&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;In the talk I also saw useful annotation like&amp;nbsp;&lt;code&gt;@Requires&lt;/code&gt;, which I&amp;rsquo;m pretty sure we&amp;rsquo;re going to use, but I don&amp;rsquo;t think it&amp;rsquo;s made it into a build yet.&lt;br /&gt;&lt;br /&gt;So, get this, I&amp;rsquo;m going to write a blog post with Actual Code in. &amp;nbsp;Yeah, I know, you all thought I was just a poncy evangelist these days and didn&amp;rsquo;t do any real coding any more.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;First up, Mocking&lt;/b&gt;&lt;br /&gt;So, as I said, I have a number of tests checking that encoding of Java objects works the way we expect. &amp;nbsp; The easiest way to test this is to mock our &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/bson/src/main/org/bson/BSONWriter.java&#34;&gt;BSONWriter&lt;/a&gt; class to ensure that the right interactions are happening against it. &amp;nbsp;This is a nice way to check that when you give an encoder a particular set of data, it gets serialised in the way BSON expects. These tests ended up looking something like this:&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5728846.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;(Yeah, I&amp;rsquo;m still learning Spanish).&lt;br /&gt;&lt;br /&gt;So that&amp;rsquo;s quite nice, my test checks that given a List of Strings, they get serialised correctly. &amp;nbsp;What&amp;rsquo;s not great is some of the setup overhead:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5728883.js&#34;&gt;&lt;/script&gt;Obviously some of the things there are going to be ringing some people&amp;rsquo;s alarm bells, but let&amp;rsquo;s assume for a minute that all decisions were taken carefully and that pros and cons were weighed accordingly.&lt;br /&gt;&lt;br /&gt;So:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Mocking concrete classes is not pretty in JMock, just look at that &lt;code&gt;setUp&lt;/code&gt; method.&lt;/li&gt;&lt;li&gt;We&amp;rsquo;re using the &lt;code&gt;JUnitRuleMockery&lt;/code&gt;, which appears to be Best Practice (and means you&amp;rsquo;re less likely to forget the&amp;nbsp;&lt;code&gt;@RunWith(JMock.class)&lt;/code&gt; annotation), but checkstyle hates it - Public Fields Are Bad as we all know.&lt;/li&gt;&lt;/ul&gt;But it&amp;rsquo;s fine, a small amount of boilerplate for all our tests that involve mocking is an OK price to pay to have some nice tests.&lt;br /&gt;&lt;br /&gt;I converted this test to a Spock test. &amp;nbsp;Groovy purists will notice that it&amp;rsquo;s still very Java-y, and that&amp;rsquo;s intentional - I want these tests, at least at this stage while we&amp;rsquo;re getting used to it, to be familiar to Java programmers, our main audience.&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5728962.js&#34;&gt;&lt;/script&gt; Some initial observations:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;It&amp;rsquo;s a really simple thing, but I like having the&amp;nbsp;&lt;code&gt;@Subject&lt;/code&gt; annotation on the thing you&amp;rsquo;re testing. &amp;nbsp;In theory it should be obvious which of your fields or variables is the subject under test, but in practice that&amp;rsquo;s not always true.&lt;/li&gt;&lt;li&gt;Although it freaks me out as someone who&amp;rsquo;s been doing Java for the last 15 years, I really like the String for method name - although in this case it&amp;rsquo;s the same as the JMock/JUnit equivalent, it gives a lot more flexibility for describing the purpose of this test.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Mocking is painless, with a simple call to &lt;code&gt;Mock()&lt;/code&gt;, even though we&amp;rsquo;re still mocking concrete classes (this is done simply by adding &lt;a href=&#34;http://cglib.sourceforge.net/&#34;&gt;cglib&lt;/a&gt; and &lt;a href=&#34;https://code.google.com/p/objenesis/&#34;&gt;obgenesis&lt;/a&gt; to the dependencies).&lt;/li&gt;&lt;li&gt;I &lt;i&gt;love&lt;/i&gt;&amp;nbsp;that the phases of Spock (&lt;code&gt;setup: when: then:&lt;/code&gt;) document the different parts of the test while also being the useful magic keywords which tell Spock how to run the test. &amp;nbsp;I know other frameworks provide this, but we&amp;rsquo;ve been working with JUnit and I&amp;rsquo;ve been in the habit of commenting my steps with &lt;code&gt;//given //when //then&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;Thanks to Groovy, creation of lists is less boiler plate (line 9). &amp;nbsp;Not a big deal, but just makes it easier to read.&lt;/li&gt;&lt;li&gt;I&amp;rsquo;ve got very used to the way expectations are set up in JMock, but I have to say that &lt;code&gt;1 * bsonWriter.blahblahblah()&lt;/code&gt; is much more readable. &amp;nbsp;&lt;/li&gt;&lt;li&gt;I love that everything after &lt;code&gt;then:&lt;/code&gt; is an assertion, I think it makes it really clear what you expect to happen after you invoke the thing you&amp;rsquo;re testing.&lt;/li&gt;&lt;/ul&gt;So mocking is awesome. &amp;nbsp;What&amp;rsquo;s next?&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-passes-next-test-painless-stubbing.html&#34;&gt;Painless Stubbing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/12/spock-data-driven-testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

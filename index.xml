@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Recent Content on Trisha Gee </title>
-    <link>http://localhost:1313/index.xml/</link>
+    <link>http://trishagee.github.io/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>MongoDB London</title>
-      <link>http://localhost:1313/post/mongodb_london/</link>
+      <link>http://trishagee.github.io/post/mongodb_london/</link>
       <pubDate>Wed, 22 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/mongodb_london/</guid>
+      <guid>http://trishagee.github.io/post/mongodb_london/</guid>
       <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;So, &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is nearly upon us again,
@@ -46,10 +46,10 @@ it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-l
     
     <item>
       <title>Upcoming Events</title>
-      <link>http://localhost:1313/presentation/upcoming_events/</link>
+      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
       <pubDate>Tue, 21 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/upcoming_events/</guid>
+      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
 
@@ -76,10 +76,10 @@ with more of a focus on the MongoDB side. It&amp;rsquo;s going to be really nice
     
     <item>
       <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
-      <link>http://localhost:1313/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
+      <link>http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
       <pubDate>Mon, 20 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
+      <guid>http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
       <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
 mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
 where these popular technologies sit in your archtecture, and how they interact with each other.&lt;/p&gt;
@@ -108,10 +108,10 @@ these initial demos.  If more videos become available I&amp;rsquo;ll add them he
     
     <item>
       <title>Using Groovy to import XML into MongoDB</title>
-      <link>http://localhost:1313/post/groovy_import_to_mongodb/</link>
+      <link>http://trishagee.github.io/post/groovy_import_to_mongodb/</link>
       <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/groovy_import_to_mongodb/</guid>
+      <guid>http://trishagee.github.io/post/groovy_import_to_mongodb/</guid>
       <description>
 
 &lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
@@ -277,44 +277,11 @@ and transforming it into something that can be inserted into a MongoDB collectio
     </item>
     
     <item>
-      <title>JavaOne 2014 Roundup</title>
-      <link>http://localhost:1313/post/java_one_2014_roundup/</link>
-      <pubDate>Fri, 03 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/java_one_2014_roundup/</guid>
-      <description>&lt;p&gt;JavaOne is all over for another year, and although I&amp;rsquo;m very happy to be on a plane home, I&amp;rsquo;m sad that it&amp;rsquo;s over.&lt;/p&gt;
-
-&lt;p&gt;After the &lt;a href=&#34;/java_one_2014_day_one&#34;&gt;first day&lt;/a&gt;, everything happened so fast I didn&amp;rsquo;t get a chance to write further daily updates. But as
-well as the sessions I wrote about then, I also went to:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Gil&amp;rsquo;s excellent session the new collections that he and Martin Thompson have been working on. Technically this happened on the first
-day, but I forgot to write about it as I didn&amp;rsquo;t take any notes I was too busy listening (and trying to decipher the screen). [PHOTO
-NEEDED]. I&amp;rsquo;d be interested to see if there are applications for this in the Java Driver.&lt;/li&gt;
-&lt;li&gt;A good introductory talk to using Gradle in your build system. I wish I&amp;rsquo;d had this talk to show to colleagues to give them a good
-overview of the lifecycle, but now we&amp;rsquo;ve implemented our own build and I&amp;rsquo;m looking for something more advanced.&lt;/li&gt;
-&lt;li&gt;I had the opposite problem in the one JavaFX talk I went to, which required me to jump into the technology at the deep end,
-when what I really wanted was an introductory talk. There were plenty at the conference, although I didn&amp;rsquo;t get a chance to see any
-others, so I&amp;rsquo;m hoping to catch them on Parleys later.&lt;/li&gt;
-&lt;li&gt;The Community Keynote was on the last day&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;My own panels and talks happened after the first day, with:
- - A panel for lambdas Frequently Asked Questions, which was videoed so I hope that will be available some time.
- - A panel between Java Champions/JUG Leaders and Oracle Executives, where we tossed around ideas for improving interaction between the
- community and the money behind Java
- - Yet another version of my What Could Possibly Go Wrong talk.  This talk has been presented several times this year now,
- and I&amp;rsquo;ve been refining it as I went.  This version is the one I am most happy with, with some of the kinks and uncertainties ironed out.
-  The version I gave at the Virtual JUG is pretty close to it, but this JavaOne version will be presented at JAX and GeekOut UK next week.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>JavaOne 2014, Day One</title>
-      <link>http://localhost:1313/post/java_one_2014_day_one/</link>
+      <link>http://trishagee.github.io/post/java_one_2014_day_one/</link>
       <pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/java_one_2014_day_one/</guid>
+      <guid>http://trishagee.github.io/post/java_one_2014_day_one/</guid>
       <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
 had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.&lt;/p&gt;
 
@@ -367,10 +334,10 @@ this presentation, so I&amp;rsquo;m &lt;a href=&#34;http://doodle.com/fvrasw9vrp
     
     <item>
       <title>Getting Started with MongoDB and Java</title>
-      <link>http://localhost:1313/post/getting_started_with_mongodb_and_java/</link>
+      <link>http://trishagee.github.io/post/getting_started_with_mongodb_and_java/</link>
       <pubDate>Thu, 14 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/getting_started_with_mongodb_and_java/</guid>
+      <guid>http://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
       <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
 documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
 developer.&lt;/p&gt;
@@ -391,20 +358,11 @@ operations using the Java driver:&lt;/p&gt;
     </item>
     
     <item>
-      <title>OSCON 2014</title>
-      <link>http://localhost:1313/drafts/oscon_2014.md/</link>
-      <pubDate>Tue, 12 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://localhost:1313/drafts/oscon_2014.md/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>What could possibly go wrong? (GOTO Chicago)</title>
-      <link>http://localhost:1313/presentation/interview_at_goto_chicago/</link>
+      <link>http://trishagee.github.io/presentation/interview_at_goto_chicago/</link>
       <pubDate>Tue, 12 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/interview_at_goto_chicago/</guid>
+      <guid>http://trishagee.github.io/presentation/interview_at_goto_chicago/</guid>
       <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving,
 which happens to be the same one I&amp;rsquo;m giving at a number of conferences this year (although of course I&amp;rsquo;m evolving it as I go along).&lt;/p&gt;
 
@@ -434,25 +392,11 @@ and if you look through the history you can see how it builds up, the same as it
     </item>
     
     <item>
-      <title></title>
-      <link>http://localhost:1313/drafts/we_are_fooling_ourselves.md/</link>
-      <pubDate>Sat, 09 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://localhost:1313/drafts/we_are_fooling_ourselves.md/</guid>
-      <description>&lt;p&gt;we think code is productive because we write lines, we check stuff in, we move cards&lt;/p&gt;
-
-&lt;p&gt;we&amp;rsquo;re fooling ourselves&lt;/p&gt;
-
-&lt;p&gt;it&amp;rsquo;s totally pointless  until someone starts using it, and / or it adds value to the business.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Fiesta de lanzamiento de Java 8</title>
-      <link>http://localhost:1313/es/post/svq_java8_launch_party/</link>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/es/post/svq_java8_launch_party/</guid>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party/</guid>
       <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
@@ -471,10 +415,10 @@ presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&g
     
     <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
-      <link>http://localhost:1313/post/svq_java8_launch_party/</link>
+      <link>http://trishagee.github.io/post/svq_java8_launch_party/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/svq_java8_launch_party/</guid>
+      <guid>http://trishagee.github.io/post/svq_java8_launch_party/</guid>
       <description>&lt;p&gt;Last night at the Sevilla JUG we officially celebrated the launch of &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt; - yay!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
@@ -497,136 +441,11 @@ which is a great source of presentations from international speakers.&lt;/p&gt;
     </item>
     
     <item>
-      <title>White Men Feel Insecure As Well</title>
-      <link>http://localhost:1313/drafts/white-men-feel-insecure-as-well/</link>
-      <pubDate>Tue, 22 Jul 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://localhost:1313/drafts/white-men-feel-insecure-as-well/</guid>
-      <description>&lt;p&gt;I just finished reading 10% happier (LINK NEEDED).  Effectively it&amp;rsquo;s a book about how meditation can change you life (specifically
-career).  I Haven&amp;rsquo;t got as far as actually trying the meditation but yet (other than using it to fall asleep on the plane),
-but what I found most fascinating about the book was reading another person&amp;rsquo;s inner voice.  You know,
-that arsehole who sits inside our head and is constantly on at us about somthing.&lt;/p&gt;
-
-&lt;p&gt;The most interesting thing for me, was this is a white, middle class male, one of that species who has everything going for it.  And he
-suffers from the same thing we hear about from imposter syndrome - I&amp;rsquo;mnot good enough, I don&amp;rsquo;t fit in, it&amp;rsquo;s just an accident I&amp;rsquo;m here,
-someone will find me out.&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t think he&amp;rsquo;s an anomoly.  All the white men I&amp;rsquo;ve spoken to about this (a group taken pretty much exclusively from IT) feel the same
- way, or have at some point earlier in their careers - I have to prove myself, I have no idea how I got here,
- someone&amp;rsquo;s going to find me out.&lt;/p&gt;
-
-&lt;p&gt;The interesting thing about the guy in the book is what he does about this.  Far from letting this arsehole in his head hold him back
-from doing things, it&amp;rsquo;s very much the driving force of his career - it pushes him to take risks, to increase his exposure,
-to say yes to everything, to argue his case, to fight for assignments.&lt;/p&gt;
-
-&lt;p&gt;I think this might point to a problem of the way we try and make this species of white,
-straight, male see things from our point of view.  When we tell them about impostor syndrome, they can be dismissive not because they
-don&amp;rsquo;t understand what it feels like; but because they DO.  They&amp;rsquo;ve been there.  And that&amp;rsquo;s why we get answers like &amp;ldquo;push yourself
-forward&amp;rdquo; and &amp;ldquo;trye harder&amp;rdquo;.  Because this is what works for them, this is how they overcame it.  They don&amp;rsquo;t suffer the same barriers some
- minorities suffer, and they&amp;rsquo;re expected to be confident (to the point of arogance, or even beyond).  They&amp;rsquo;re going to think &amp;ldquo;must try
- harder&amp;rdquo; and expect us to do the same.&lt;/p&gt;
-
-&lt;p&gt;I think the problem is not that they don&amp;rsquo;t understand how we feel.  They don&amp;rsquo;t understand why we don&amp;rsquo;t ACT.  And that&amp;rsquo;s why they think
-it&amp;rsquo;s our problem, not someting their society has imposed upon us.  It&amp;rsquo;s something we&amp;rsquo;re all struggling with.&lt;/p&gt;
-
-&lt;p&gt;Here&amp;rsquo;s my personal tips:
-If someone opens the door for you, take it
-This is what go me presenting in public.  My boss asked if I wanted to co-present with him at JavaOne.  I felt under-prepared,
-I felt like a tiny, stupid minion compared to my ridiculously intelligent boss, but he had confidence in me,
-and this is a direction I wanted to go it, so I did it.  It wasn&amp;rsquo;t my best peformance, but it was my first,
-and once you have that first one under your belt (and on your CV) you&amp;rsquo;ve done the hardest part.&lt;/p&gt;
-
-&lt;p&gt;In the book, the author finds himself being mentored by someone he&amp;rsquo;s admired growing up.  The mentor is a difficult person,
-but by listening to his advice and using that relationship, he not only gets ahead in his career but grows in his own confidence with the
- confidence this mentor has in him.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re in a position to mentor, even if your own job title isn&amp;rsquo;t Empress Of The World (yet), you can make a huge difference to someone
- else&amp;rsquo;s career by giving them hints, passing on what you learnt, showing them you believe in them.&lt;/p&gt;
-
-&lt;p&gt;If it scares you, do it
-In the scenario above, speaking at the largest conference in the world scared the crap out of me.  And that&amp;rsquo;s how I knew it was the right
-thing to do. It was going to be a big step out of my comfort zone, but that&amp;rsquo;s the only way you can grow - by moving out of your comfort
-zone.&lt;/p&gt;
-
-&lt;p&gt;But I realise this is very simplistic advice.  I&amp;rsquo;m (still) learning Spanish, somewhat useful since I live in Spain,
-but speaking it with people who are natives scares the absolute crap out of me.  I can order my cafe con leche,
-I can get taxi drivers to take me where I want.  But I feel unable to join in a fast-flowing conversation amongst my spanish-speaking
-friends or at the JUG/MUG in Spanish.  I have a huge list of &amp;ldquo;reasons&amp;rdquo; as to why I only speak English in these circumstances,
-but I think this main problem is that I&amp;rsquo;m scared of joining in in Spanish. I&amp;rsquo;m not worried about my pronounciation,
-I know it&amp;rsquo;s not great by they&amp;rsquo;ll forgive that, I think I&amp;rsquo;m scared of slowing down the flow (and it will be slooooow).  In this context,
-I can&amp;rsquo;t seem to do the &amp;ldquo;do it cos it scares you&amp;rdquo;.  So I know this advice makes it sound so easy, and I know it&amp;rsquo;s really not that easy.&lt;br /&gt;
-you need some base level of confidence to be able to make that jump, you need colleagues and friends you can rely on,
-you need a safe place to explore ideas before you commit to anything, you need a safety net (even if it&amp;rsquo;s just one in your mind) to
-prepare for the What&amp;rsquo;s The Worst That Could Happen scenario.&lt;/p&gt;
-
-&lt;p&gt;In the book, the guy has this negative thinking spiral that has him ending up in a &amp;ldquo;flop house in Deluth&amp;rdquo; (I don&amp;rsquo;t know what that means,
-maybe cos I&amp;rsquo;m English) as the inevitable conclusion of things that go wrong with his career.  This fear, this worst case scenario,
-gnaws at him constantly and often causes him to make some bad decisions career-wise (or prevents him from making good decisions).  In the
- book, he gets over this with a simple phrase &amp;ldquo;is this helping?&amp;rdquo;.  This is how he fights his urge to over-think and over-worry.  What I
- liked about this is that he doesn&amp;rsquo;t stop worrying, he doesn&amp;rsquo;t stop thinking, but he does have a way to pull the plug when it becomes
- counter-produtive.&lt;/p&gt;
-
-&lt;p&gt;Ask for help
-I dunno about you, but I used to hate asking for help. I used to think it was a sign of weakness,
-it showed I was stupid or not up to the job.  But if you&amp;rsquo;re trying to grow, if you are stepping outside of your comfort zone,
-you are going to need that help - we&amp;rsquo;re not born knowing everything.  And that person you admire, that role model you aspire towards,
-they weren&amp;rsquo;t born that way either, they had to learn things. And it&amp;rsquo;s much better to learn off someone who&amp;rsquo;s already been there than to
-learn the hard way.&lt;/p&gt;
-
-&lt;p&gt;I found pair programming enormously helpful here. Because you&amp;rsquo;re constantly having to talk through what&amp;rsquo;s in your mind,
-you&amp;rsquo;ve got someone right next to you who&amp;rsquo;s job it is to help you be successful, and because you also get the opposite experience - you
-see someone else struggling to solve problems, you see them running into blind alleys and second- and third-guessing themselves.  It&amp;rsquo;s a
-fantastically safe way to explore your limits and grow.  And it&amp;rsquo;s not just useful for learning code, you also find out about that person,
-how they think, and conversation can wander into other areas and suddenly it&amp;rsquo;s safe to ask questions that you woulnd&amp;rsquo;t ask if you had to
-schedule a meeting or write an e-mail or interrupt someone at their desk (this is the same reason I love going to the pub with people
-from work, it&amp;rsquo;s a much safer place to ask for advice).&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s funny though - during the four years or so that I pair-programmed with some of the most talented people I&amp;rsquo;ve ever worked with,
-from so-called &amp;ldquo;juniors&amp;rdquo; to the CTO, I constantly felt like I didn&amp;rsquo;t know enough - you were learning something new every day off your
-pair. And while that can erode your confidence (it&amp;rsquo;s more like it gives you a certain humility), it also gives you a much more realistic
-sense of your abilities - your strengths and weaknesses.  Because people are learning off you too.  You see the areas that you are good
-at, that you understand, as well as the areas where you run around in circles.  And when you leave that environment,
-you&amp;rsquo;re no longer afraid to show your code. Not only am I perfectly happy putting all my code on Github now (it doesn&amp;rsquo;t bother me AT ALL
-that people can read my crappy code, but I completely understand those who do find it intimidating),
-I&amp;rsquo;m happy (well&amp;hellip;) standing up and live-coding in front of an audience of hundreds of people.  Asking for (and giving) help has made me
-a better programmer, and quite the opposite of costing me respect, it has given me the confidence to help others.&lt;/p&gt;
-
-&lt;p&gt;In the book, the author comes to a point in his career where he feels like he&amp;rsquo;s not getting the assignments he wants,
-he worries that others don&amp;rsquo;t see him the way he wants to be seen.  This makes him increasingly unhappy,
-until he schedules some time with his boss to ask him what he can do about it.  I love this section of the book,
-because he struggles with the idea of approaching his boss, then he struggles with how to broach the subject - he doesn&amp;rsquo;t want to seem
-childish and say &amp;ldquo;why aren&amp;rsquo;t you giving me the good assignments, bey-atch&amp;rdquo;.  He uses a great phrase: TODO CHECK &amp;ldquo;I&amp;rsquo;m concerned you don&amp;rsquo;t
-see me as part of the A-Team.  What can I do to change this?&amp;ldquo;.  He lays out out his concern in a blameless way,
-and asks for specific actions that HE can do (he&amp;rsquo;s not asking his boss to do anything) that will help him to proce himself.  The boss guy
-gives him two specific things, and the author writes this on his phone in a place that&amp;rsquo;a always visible - those are the two goals that
-drive his decision-making for the next 6 months.  In 6 months he&amp;rsquo;s in the position he wants to be, and ultimately&amp;hellip; well,
-I won&amp;rsquo;t put in any spoilers.  But here was a white, straight, male asking for advice from his boss,
-that ultimately drive his carer in the direction he wanted it to be in.&lt;/p&gt;
-
-&lt;p&gt;This is something we can all do.  Doesn&amp;rsquo;t have to be your boss, not all bosses are awesome. It can be someone else in your organisation
-who knows how things work, it can be someone at a User Group, someone you know from a previous life,
-friends in the appropirate circles, someone you met at a conference, attendees or speakers.  I have used all of these channels to find
-people to ask for help from, and the advice those mentors gave me has been invaluable to my career.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not a weakness to ask for help, it&amp;rsquo;s a strength.  If you don&amp;rsquo;t get what you need from someone you ask, find someone else.&lt;/p&gt;
-
-&lt;p&gt;And, of course, if someone asks you for help, be nice.  Only arseholes mock those who come to them for help.  if you don&amp;rsquo;t have time to
-help that&amp;rsquo;s totally fine, but try pointing the person to someone/where else.&lt;/p&gt;
-
-&lt;p&gt;So yeah.  This was about being 10% happier, and it&amp;rsquo;s ultimately about how meditation isn&amp;rsquo;t some mumbo-jumbo religious crap.  But if you
-want to know how you can drive your career as a woman, a minority, or even a white, middle-class guy,
-the story is a really interesting exploration of how the voice in our head is the one that&amp;rsquo;s sabotageing us. I think we should be much
-more selective about listening to it.  And I think for those of us who aren&amp;rsquo;t white, middle class, straight men,
-there&amp;rsquo;s really interesting stuff in there about how similar we are in how we think, but how different we can be in what we do.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Readable, Succinct, or Just Plain Short?</title>
-      <link>http://localhost:1313/post/short_vs_readable.md/</link>
+      <link>http://trishagee.github.io/post/short_vs_readable.md/</link>
       <pubDate>Wed, 02 Jul 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/short_vs_readable.md/</guid>
+      <guid>http://trishagee.github.io/post/short_vs_readable.md/</guid>
       <description>&lt;p&gt;Which is more readable?&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;releaseVersion = version.substring(0, version.indexOf(&#39;-SNAPSHOT&#39;))
@@ -681,10 +500,10 @@ not simply the shortest way to do something when the stars are all perfectly ali
     
     <item>
       <title>The Handover</title>
-      <link>http://localhost:1313/post/the_handover.md/</link>
+      <link>http://trishagee.github.io/post/the_handover.md/</link>
       <pubDate>Mon, 30 Jun 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/the_handover.md/</guid>
+      <guid>http://trishagee.github.io/post/the_handover.md/</guid>
       <description>&lt;p&gt;Yesterday I walked into the kitchen to see how lunch was going and my boyfriend handed me a knife,
 a part-chopped hard boiled egg and said &amp;ldquo;finish this, I need to have a shower&amp;rdquo;. As you do. Apparently there were two things that needed
 doing - &amp;ldquo;this&amp;rdquo; needed finishing, and I needed to keep an eye on the fish.&lt;/p&gt;
@@ -793,6 +612,94 @@ like the last one.&lt;/p&gt;
 &lt;p&gt;But first, that wine&amp;hellip;&lt;/p&gt;
 
 &lt;p&gt;&lt;small&gt;&lt;em&gt;No boyfriends or colleagues were harmed in the making of this post.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nighthacking at Sevilla Java User Group</title>
+      <link>http://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
+      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
+for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
+and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
+Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is also the first event that we&amp;rsquo;ve had videoed (apologies for the horrible focus at times on the video,
+I&amp;rsquo;m just learning and used to relying heavily on auto-focus).&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/q3OKs08X3oo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thanks very much to Stephen for visiting, and thank you to those who came, you&amp;rsquo;re making me re-think the idea of running events at
+weekends.&lt;/p&gt;
+
+&lt;p&gt;Also there are &lt;a href=&#34;http://www.meetup.com/SVQJUG/photos/all_photos/?photoAlbumId=21306622&#34;&gt;photos on Meetup&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What do you mean, Backwards Compatibility? (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_backwards/</link>
+      <pubDate>Tue, 22 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_backwards/</guid>
+      <description>&lt;p&gt;YOW recorded me, yet again, talking about the adventure that is the design of the new Java Driver for MongoDB.  This is the same talk I
+gave at &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;GeeCON&lt;/a&gt; and &lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;DevoxxUK&lt;/a&gt;,
+with some updates based on our Journey So Far.  In it, I cover the architecture of the new driver and some of our current thoughts
+around where we want the API to go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/what-do-you-mean-backwards-compatibility-by-trisha-gee-1398&#34;&gt;See the video here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Career Advice for Programmers (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
+      <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
+by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+&lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
+.com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
+time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
+and this time I think I managed to distill the important points into the (still ridiculously short) time allotted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/career-advice-for-programmers-by-trisha-gee-1380&#34;&gt;See the video here&lt;/a&gt;,
+and please give me any feedback you have.&lt;/p&gt;
+
+&lt;p&gt;I recognise there are many many more topics I could cover, so I&amp;rsquo;d better start making a list.  Suggestions?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upcoming Events 2014</title>
+      <link>http://trishagee.github.io/post/upcoming_events_2014/</link>
+      <pubDate>Wed, 16 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/upcoming_events_2014/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while since I updated you on my travel plans, so now I&amp;rsquo;ve had some more conferences confirmed,
+I thought I would pass the information on.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been really lucky to have been selected for some great conferences this year.  I was asked to do a few more,
+and it was genuinely painful to say no to everything, but it seems the laws of space and time cannot be broken,
+and so I&amp;rsquo;ve been forced to select a tiny subset of all the places I&amp;rsquo;d like to go:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;20 May: &lt;a href=&#34;http://gotocon.com/chicago-2014/presentation/HTML5,%20Angular.js,%20Groovy,%20Java,
+%20MongoDB%20all%20together%20-%20what%20could%20possibly%20go%20wrong?&#34;&gt;GOTO Chicago&lt;/a&gt; - I&amp;rsquo;m giving the same live coding presentation from QCon London,
+although knowing me I expect there will be some tweaks, changes, additions, and maybe improvements.&lt;/li&gt;
+&lt;li&gt;22-23 May: In New York City, since I&amp;rsquo;m more or less in the area.  Gimme a shout if you want to meet for a drink.&lt;/li&gt;
+&lt;li&gt;25-28 May: &lt;a href=&#34;http://speakerconf.com/&#34;&gt;SpeakerConf&lt;/a&gt; Barcelona.  And while I&amp;rsquo;m in the area&amp;hellip;&lt;/li&gt;
+&lt;li&gt;29 May: Barcelona JUG - &amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;2-5 June: New York City, probably (wait, am I going to be at home at all??)&lt;/li&gt;
+&lt;li&gt;23 July: &lt;a href=&#34;http://www.oscon.com/oscon2014/public/schedule/detail/35444&#34;&gt;OSCON&lt;/a&gt; - live coding again!&lt;/li&gt;
+&lt;li&gt;28 Sep - 2 Oct: &lt;a href=&#34;http://www.oracle.com/javaone/speakers/index.html#gee&#34;&gt;JavaOne&lt;/a&gt; woohoo!  I love having this opportunity to visit San
+Francisco.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ve got a couple of other events I&amp;rsquo;m still trying to work out the details for, but I think this is 2014 all booked up.&lt;/p&gt;
 </description>
     </item>
     

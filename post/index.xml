@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Posts on Trisha Gee </title>
+    <link>http://trishagee.github.io/post/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Wed, 22 Oct 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>MongoDB London</title>
+      <link>http://trishagee.github.io/post/mongodb_london/</link>
+      <pubDate>Wed, 22 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/mongodb_london/</guid>
+      <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is nearly upon us again,
+and I&amp;rsquo;m dead disappointed I can&amp;rsquo;t make it this year (I&amp;rsquo;m
+&lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;keynoting at GOTO Berlin&lt;/a&gt; instead,
+which I&amp;rsquo;m terrified, I mean, excited, about). The last MongoDB London was really interesting for me - I was fairly new to the company,
+I&amp;rsquo;d been here less than six months, and it was a really great way to go both broad and deep on the technology.&lt;/p&gt;
+
+&lt;p&gt;I was trying to find a blog post where I talked about my experiences, but it looks like I only wrote that In My Mind. In fact,
+I only only wrote two whole lines of notes on the conference.  But 18 months later I clearly remember presentations from my colleagues
+&lt;a href=&#34;http://rosslawley.co.uk/&#34;&gt;Ross&lt;/a&gt; and &lt;a href=&#34;http://derickrethans.nl/&#34;&gt;Derick&lt;/a&gt; demonstrating the geo capabilities in MongoDB,
+presentations which heavily influenced the &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt; I&amp;rsquo;ve been giving
+recently.&lt;/p&gt;
+
+&lt;p&gt;I also remember Eliot&amp;rsquo;s presentation - Eliot is one of those people who totally gets away with breaking the &amp;ldquo;speak in a measured,
+clear fashion&amp;rdquo; presenters rule, he fires fascinating information at you at high speed and it&amp;rsquo;s actually one of the compelling things
+about his talks. If you ever get a chance to see him talk about the product, it&amp;rsquo;s totally worth it.&lt;/p&gt;
+
+&lt;p&gt;Other than that, the most awesome thing about the conference was the chance to meet, and talk to,
+a bunch of different MongoDB people - there are the engineers who work on the product (like me and my colleagues);
+the people leading the way with the technology, like Eliot; and finally, but for me most importantly,
+you get to meet really interesting people who are using MongoDB in ways that you might not even imagine.&lt;/p&gt;
+
+&lt;p&gt;Anyway the point of this sales pitch is, whether you&amp;rsquo;re using MongoDB already or you&amp;rsquo;re keen to find out about it,
+&lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is only going to take a day from your life,
+and you&amp;rsquo;ll learn a bunch of interesting things. And, with a Special Discount Code from me,
+it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-london-2014-registration-13140209721&#34;&gt;Sign up&lt;/a&gt; with code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Groovy to import XML into MongoDB</title>
+      <link>http://trishagee.github.io/post/groovy_import_to_mongodb/</link>
+      <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/groovy_import_to_mongodb/</guid>
+      <description>
+
+&lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
+Java and MongoDB&lt;/a&gt;.  I also use Groovy during this demo to do the sorts of things Groovy is
+really good at - writing descriptive tests, and creating scripts.&lt;/p&gt;
+
+&lt;p&gt;Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use,
+so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.&lt;/p&gt;
+
+&lt;p&gt;Firstly I want to clarify that this is not my original work - I &lt;strike&gt;stole&lt;/strike&gt; borrowed most of the ideas for the demo from my
+colleague Ross Lawley. In &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/&#34;&gt;this blog post&lt;/a&gt; he goes into detail of how he built
+up an application that
+finds the most popular pub names in the UK.  There&amp;rsquo;s a &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1&#34;&gt;section in there&lt;/a&gt;
+where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it&amp;rsquo;s
+this process that I basically stole, re-worked for coffee shops, and re-wrote for the JVM.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m assuming if you&amp;rsquo;ve worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
+demo is supposed to be all about how easy it is to work with Java, I did &lt;em&gt;not&lt;/em&gt; want to do this. When I wrote the demo I wasn&amp;rsquo;t really all
+that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML,
+which is exactly what I wanted to do. In addition, creating &lt;a href=&#34;http://groovy.codehaus.org/Collections#Collections-Mapsmaps&#34;&gt;Maps&lt;/a&gt; (the
+data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
+&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Goal of the Script&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parse an XML file containing open street map data of all coffee shops.&lt;/li&gt;
+&lt;li&gt;Extract latitude and longitude XML attributes and transform into
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-geojson&#34;&gt;MongoDB GeoJSON&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Perform some basic validation on the coffee shop data from the XML.&lt;/li&gt;
+&lt;li&gt;Insert into MongoDB.&lt;/li&gt;
+&lt;li&gt;Make sure MongoDB knows this contains query-able geolocation data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The script is &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy&#34;&gt;PopulateDatabase.groovy&lt;/a&gt;,
+that link will take you to the version I presented at JavaOne:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Firstly, we need data&lt;/h3&gt;
+
+&lt;p&gt;I used the same service Ross used in his blog post to obtain the XML file containing &amp;ldquo;all&amp;rdquo; coffee shops around the world. Now,
+the open street map data is somewhat&amp;hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
+so I&amp;rsquo;m not sure I really have &lt;em&gt;all&lt;/em&gt; the coffee shops, but I obtained enough data for an interesting demo using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml&#34;&gt;resulting XML file&lt;/a&gt; is in the
+github project, but if you try this yourself you might (in fact, probably will) get different results.&lt;/p&gt;
+
+&lt;p&gt;Each XML record looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;178821166&amp;quot; lat=&amp;quot;40.4167226&amp;quot; lon=&amp;quot;-3.7069112&amp;quot;&amp;gt;
+    &amp;lt;tag k=&amp;quot;amenity&amp;quot; v=&amp;quot;cafe&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;cuisine&amp;quot; v=&amp;quot;coffee_shop&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;name&amp;quot; v=&amp;quot;Chocolatería San Ginés&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wheelchair&amp;quot; v=&amp;quot;limited&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wikipedia&amp;quot; v=&amp;quot;es:Chocolatería San Ginés&amp;quot;/&amp;gt;
+&amp;lt;/node&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each coffee shop has a unique identifier and a latitude and longitude as attributes of a &lt;code&gt;node&lt;/code&gt; element.  Within this node is a series
+of &lt;code&gt;tag&lt;/code&gt; elements, all with &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; attributes. Each coffee shop has a varying number of these attributes,
+and they are not consistent from shop to shop (other than &lt;code&gt;amenity&lt;/code&gt; and &lt;code&gt;cuisine&lt;/code&gt; which we used to select this data).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Initialisation&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Before doing anything else we want to prepare the database.  The assumption of this script is that either the
+collection we want to store the coffee shops in is empty, or full of stale data.  So we&amp;rsquo;re going to use the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;MongoDB Java Driver&lt;/a&gt; to get the collection that we&amp;rsquo;re interested in, and then drop it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s two interesting things to note here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java,
+it doesn&amp;rsquo;t need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the
+&lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;MongoDB GORM Plugin&lt;/a&gt;), but the Java driver works perfectly well.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t need to create &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;databases&lt;/a&gt; or
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt; (collections are
+a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you&amp;rsquo;re interested in,
+and if it doesn&amp;rsquo;t already exist, the server will create them for you.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this example, we&amp;rsquo;re just using the default constructor for the &lt;code&gt;MongoClient&lt;/code&gt;, the class that represents the connection to the database
+server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
+address and port - for more details on this see &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started With MongoDB and Java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
+XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
+Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; element in the XML.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
+
+Since MongoDB documents are effectively just maps of key-value pairs, we&amp;rsquo;re going to create a Map &lt;code&gt;coffeeShop&lt;/code&gt; that contains the
+document structure that represents the coffee shop that we want to save into the database.  Firstly,
+we initialise this map with the attributes of the &lt;code&gt;node&lt;/code&gt;. Remember these attributes are something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;18464077&amp;quot; lat=&amp;quot;-33.8911183&amp;quot; lon=&amp;quot;151.1958773&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We&amp;rsquo;re going to save the ID as a value for a new field called &lt;code&gt;openStreetMapId&lt;/code&gt;. We need to do something a bit more
+complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{ &#39;location&#39; : { &#39;coordinates&#39;: [&amp;lt;longitude&amp;gt;, &amp;lt;latitude&amp;gt;],
+                 &#39;type&#39;       : &#39;Point&#39; } }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In lines 12-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
+places.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
+
+&lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
+
+Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute and check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
+insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field). If so we simply add this key as the
+field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
+&lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
+but we also don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
+
+Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&gt; Map representing the document we want to save into MongoDB,
+we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
+into the map, but it&amp;rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called &lt;code&gt;name&lt;/code&gt; in &lt;code&gt;coffeeShop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When we want to insert the Map we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
+but this is easily done by calling the constructor that takes a Map.  Alternatively, there&amp;rsquo;s a Groovy syntax which would effectively do
+the same thing, which you might prefer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collection.insert(coffeeShop as BasicDBObject)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
+
+Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
+we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
+so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; for this field.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
+but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
+and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaOne 2014, Day One</title>
+      <link>http://trishagee.github.io/post/java_one_2014_day_one/</link>
+      <pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_one_2014_day_one/</guid>
+      <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
+had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=10289&#34;&gt;Superpowered CI with Git - Sarah Goff-Dupont&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+The Continuous Integration we did at LMAX is quite different to what we do at MongoDB, and I was hoping to get some tips on better CI with
+Git, especially given feature branches.  There was a good overview of development process using branch-per-feature,
+ and a comment that it&amp;rsquo;s nearly impossible to do &amp;ldquo;pure&amp;rdquo; CI in this sort of environment.  But there was pragmatic advice on how to manage
+ the process and run automated builds in this environment.&lt;/p&gt;
+
+&lt;p&gt;The take-home point for me is that I&amp;rsquo;m going to investigate &lt;a href=&#34;http://git-scm.com/book/en/Customizing-Git-Git-Hooks&#34;&gt;git hooks&lt;/a&gt; to try and
+  streamline our process and run some fast checks more frequently.&lt;/p&gt;
+
+&lt;p&gt;Also, Sarah showed using &lt;a href=&#34;https://www.hipchat.com&#34;&gt;Hipchat&lt;/a&gt; in anger - I&amp;rsquo;ve now heard this mentioned enough that I&amp;rsquo;m going to look into it more.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276&#34;&gt;Advanced Unit Testing with Spock&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+I&amp;rsquo;ve [spoken before about Spock](&lt;/p&gt;
+
+&lt;p&gt;/tags/spock/), and how much I love it.  The first section of this talk was a recap
+of some of the basics, but the second part went on to some features I either previously ignored or wasn&amp;rsquo;t aware of.  For example, in the
+&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;MongoDB Java Driver&lt;/a&gt;, we do use annotations to denote slower-running tests so we can select which environments to run in,
+but we&amp;rsquo;re not using Spock annotations for this.  I think there&amp;rsquo;s a lot more we could do with both custom annotations like our
+&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/util/src/main/category/Slow.java&#34;&gt;@Slow&lt;/a&gt; annotation,
+Spock&amp;rsquo;s built in annotations like &lt;code&gt;@Issue&lt;/code&gt;, and some others which may not yet be in maven central like &lt;code&gt;@Requires&lt;/code&gt; for running
+language-version tests (&lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/JavaLanguageSpec
+.groovy&#34;&gt;e.g. Java 8 tests&lt;/a&gt;) and &lt;code&gt;@IgnoreRest&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also liked the example of &lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/OldExampleSpec.groovy&#34;&gt;checking the new value against an old
+value&lt;/a&gt;,
+I can totally see this being useful.&lt;/p&gt;
+
+&lt;p&gt;There were other bits and pieces in this talk I&amp;rsquo;d like to dig into in more detail that I think will be very useful for the Java Driver.
+But even more importantly, I learnt how to zoom into my screen so I can use that in my own presentation. Pro presentation top tips.&lt;/p&gt;
+
+&lt;p&gt;Honestly, if you have even minor testing pains, it&amp;rsquo;s worth finding Ken&amp;rsquo;s talks on Spock, they&amp;rsquo;re great! And a source of inspiration for
+better testing, as well as a sneaky way to understand why Groovy is awesome.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JCP Awards and Party&lt;/strong&gt;&lt;br /&gt;
+But it&amp;rsquo;s not all work at these events.  For me, the highlight was the music at at the JCP Awards party.  Firstly,
+we had an award-winning beat-box guy from the UK (sadly I don&amp;rsquo;t remember his name so I can&amp;rsquo;t link to his stuff).  An unusual choice for
+an event like this, but it was a lot of fun. Then there was the live super-band, The Null Pointers, made up of JUG leaders from around the
+world (including &lt;a href=&#34;https://twitter.com/matkar&#34;&gt;@matkar&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/frankgreco&#34;&gt;@frankgreco&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/fguime&#34;&gt;@fguime&lt;/a&gt;. I&amp;rsquo;ll admit,
+ I was a little concerned about this idea, but the guys were fantastic, and it was a lot of fun singing along to Free&amp;rsquo;s Alright Now and
+ Radiohead&amp;rsquo;s Creep. &lt;a href=&#34;https://www.oracle.com/openworld/appreciation-event/index.html&#34;&gt;Aerosmith&lt;/a&gt; is going to have to work hard to compete with that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;hellip;and a quick plug&lt;/strong&gt;&lt;br /&gt;
+My &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703&#34;&gt;main presentation is on Thursday&lt;/a&gt;, it&amp;rsquo;s a keyword-tastic live demo of AngularJS, Java &amp;amp; MongoDB.  Something &lt;em&gt;always&lt;/em&gt; goes wrong in
+this presentation, so I&amp;rsquo;m &lt;a href=&#34;http://doodle.com/fvrasw9vrpxyb9dm&#34;&gt;taking bets right now on what that will be&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with MongoDB and Java</title>
+      <link>http://trishagee.github.io/post/getting_started_with_mongodb_and_java/</link>
+      <pubDate>Thu, 14 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
+developer.&lt;/p&gt;
+
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
+operations using the Java driver:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started with MongoDB and Java, Part 1&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94724924068/getting-started-with-mongodb-and-java-part-ii&#34;&gt;Getting Started with MongoDB and Java, Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is very much aimed at Java/JVM developers who are new to MongoDB, and want to get a feel for how you use it.&lt;/p&gt;
+
+&lt;p&gt;These guides are for the current (2.x) driver. When we release 3.x, we&amp;rsquo;ll release updated guides as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sevilla Java User Group Java 8 Launch Party</title>
+      <link>http://trishagee.github.io/post/svq_java8_launch_party/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/svq_java8_launch_party/</guid>
+      <description>&lt;p&gt;Last night at the Sevilla JUG we officially celebrated the launch of &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt; - yay!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t be fooled by the picture, people had more fun than it looks.  Honest.&lt;/p&gt;
+
+&lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (the class we were looking at was &lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Finally, we used the &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; of another of Simon&amp;rsquo;s
+presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
+which is a great source of presentations from international speakers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Readable, Succinct, or Just Plain Short?</title>
+      <link>http://trishagee.github.io/post/short_vs_readable.md/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/short_vs_readable.md/</guid>
+      <description>&lt;p&gt;Which is more readable?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version.substring(0, version.indexOf(&#39;-SNAPSHOT&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Given a value of &lt;code&gt;0.109-SNAPSHOT&lt;/code&gt; for &lt;code&gt;version&lt;/code&gt;, they both give the same result.  And I&amp;rsquo;m tempted by the second,
+because it&amp;rsquo;s shorter.  But I&amp;rsquo;m going to go with the first one - not because it&amp;rsquo;s more Java-ish and I&amp;rsquo;m scared of Groovy syntax,
+but because it&amp;rsquo;s easier to understand if/when something goes wrong.&lt;/p&gt;
+
+&lt;p&gt;For example: if &lt;code&gt;version&lt;/code&gt; doesn&amp;rsquo;t conform to the expected pattern, the two code fragments fail in two different ways.  If &lt;code&gt;version&lt;/code&gt;
+doesn&amp;rsquo;t contain &lt;code&gt;-SNAPSHOT&lt;/code&gt;, the first will fail with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;whereas the second will either arbitrarily slice the last 9 characters off the end of whatever the String does contain,
+or if it&amp;rsquo;s too short you&amp;rsquo;ll get something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.ArrayIndexOutOfBoundsException: Negative array index [-10] too large for array size 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you, the developer, see this error (or notice your mangled version number) and look at the failing line of code,
+you&amp;rsquo;ll have two different experiences.  When looking at the second example, if you didn&amp;rsquo;t write it in the first place or if you have a
+memory as shocking as mine, you won&amp;rsquo;t get any clues from that code as to what the &lt;em&gt;purpose&lt;/em&gt; is - you&amp;rsquo;ll see what it does (chop the last
+9 characters off the &lt;code&gt;version&lt;/code&gt; string), but not why.  You can &amp;ldquo;fix&amp;rdquo; the problem by adding an arbitrary 9 characters onto your &lt;code&gt;version&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re looking at the first example, however, you&amp;rsquo;ll see the intent right there - it&amp;rsquo;s trying to chop the string &lt;code&gt;-SNAPSHOT&lt;/code&gt; (and any
+characters that might happen to come after it) off the end of the &lt;code&gt;version&lt;/code&gt; string.  With this line of code,
+if you checked the value of &lt;code&gt;version&lt;/code&gt; and saw it didn&amp;rsquo;t have the correct suffix, you&amp;rsquo;d have a good idea of what the problem is and how
+to solve it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a third way, that potentially keeps the descriptiveness (is that a word?) of the first solution and makes it a bit shorter and
+Groovier:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..&amp;lt;version.indexOf(&#39;-SNAPSHOT&#39;)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You need the less-than sign plonked in there to make it work correctly, which I find a bit jarring,
+but it does work.  It&amp;rsquo;s a little more succinct than the original Java syntax and retains the intent.&lt;/p&gt;
+
+&lt;p&gt;So in conclusion: yes, shorter code is generally better (and often more readable).  But I don&amp;rsquo;t believe in sacrificing code that
+expresses the intent in order to reduce the number of characters used.  We&amp;rsquo;re not living in a memory-poor world any more,
+and code is meant to be read by humans as well as computers.  Let&amp;rsquo;s make our code easy to understand when it goes wrong,
+not simply the shortest way to do something when the stars are all perfectly aligned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Handover</title>
+      <link>http://trishagee.github.io/post/the_handover.md/</link>
+      <pubDate>Mon, 30 Jun 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/the_handover.md/</guid>
+      <description>&lt;p&gt;Yesterday I walked into the kitchen to see how lunch was going and my boyfriend handed me a knife,
+a part-chopped hard boiled egg and said &amp;ldquo;finish this, I need to have a shower&amp;rdquo;. As you do. Apparently there were two things that needed
+doing - &amp;ldquo;this&amp;rdquo; needed finishing, and I needed to keep an eye on the fish.&lt;/p&gt;
+
+&lt;p&gt;Fine.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve &amp;ldquo;paired&amp;rdquo; with him while we&amp;rsquo;ve made that salad before, and I can tell when a fish is burning.  How hard could it be?&lt;/p&gt;
+
+&lt;p&gt;After I finished chopping the egg and putting it into the salad, I realised I didn&amp;rsquo;t know if that was the last thing that needed to go into
+the salad - when he said &amp;ldquo;finish this&amp;rdquo;, did he mean the whole salad, or just the egg chopping?&lt;/p&gt;
+
+&lt;p&gt;(This blog post will be vaguely about technology at some point.  Probably.)&lt;/p&gt;
+
+&lt;p&gt;After searching for other eggs that might need to be added, and sifting through the salad to see what was already in there,
+I was still unclear about whether it was &amp;ldquo;&lt;a href=&#34;https://www.scrum.org/Resources/Scrum-Glossary/Definition-of-Done&#34;&gt;done&lt;/a&gt;&amp;rdquo; or not, so I
+went to bother my boyfriend in the bathroom (this is not a euphemism).&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;I told you there were only two things left to do&amp;rdquo; he said - it was so clear to him what the steps were to finish,
+that he couldn&amp;rsquo;t understand that there might be hidden assumptions in his handover.  All he wanted was for me to finish chopping the
+(only) egg.  Oh and mix it all up. Of course. When I checked if I was supposed to add the olive oil and the salt, the answer was &amp;ldquo;No,
+I don&amp;rsquo;t trust you to do that&amp;rdquo; (he&amp;rsquo;s right - I&amp;rsquo;m English, I didn&amp;rsquo;t even know you could put salt in a salad
+and certainly have no idea about quantities of olive oil. My Spanish boyfriend is genetically wired to know this stuff).&lt;/p&gt;
+
+&lt;p&gt;Despite the unclear instructions (&amp;ldquo;keep an eye on the fish&amp;rdquo;, if taken literally, could result in me watching it burn - fortunately I knew it
+was secret code for &amp;ldquo;remove it from the heat when it&amp;rsquo;s done&amp;rdquo;) we had a very nice lunch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/HandoverSalad.JPG&#34; alt=&#34;Salmon &amp;amp; Salad&#34; title=&#34;Salmon and Salad&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;There are parallels between this, and what I was struggling with last week (hurrah, we get to the tenuous analogy!).  I&amp;rsquo;ve been trying
+to do my first release for &lt;a href=&#34;https://github.com/mongodb/morphia&#34;&gt;Morphia&lt;/a&gt;, the project I&amp;rsquo;m taking over
+for &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.  I know my colleague was working hard on an automated release script (one click releasing FTW),
+and I know he invested a reasonable amount of time in automating the release process (this is code for &amp;ldquo;I had a bad feeling about this&amp;rdquo;).
+I was going to be the first to try this out without his machine/settings/user. Yay?&lt;/p&gt;
+
+&lt;p&gt;On Friday night Justin gave me some tips of what was involved, finishing with &amp;ldquo;&amp;hellip;and then &lt;code&gt;.gradlew relase&lt;/code&gt; should just work&amp;rdquo;.  Simples.&lt;/p&gt;
+
+&lt;p&gt;Day One: I struggled with the nexus plugin and permissions.&lt;/p&gt;
+
+&lt;p&gt;Day Two: I woke up with one of those ideas that hit you in the night and fixed that.&lt;/p&gt;
+
+&lt;p&gt;Then I spent two days trying to work out why the Git plugin wouldn&amp;rsquo;t let me log in.&lt;/p&gt;
+
+&lt;p&gt;Eventually I realised that for the whole time I hadn&amp;rsquo;t been using the local version of the
+&lt;a href=&#34;https://github.com/evanchooly/github-release-gradle-plugin&#34;&gt;gradle release plugin&lt;/a&gt; like I thought,
+but an older version. When I fixed that&amp;hellip; I spent half a day proving I still had the same issue as before.&lt;/p&gt;
+
+&lt;p&gt;Finally, I commented out the code that wasn&amp;rsquo;t working, hard coded a bunch of values and used an old script to upload the Javadoc (don&amp;rsquo;t
+get me started on how long it took me to find how &lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt; was populating the release number,
+nor do I want to express the pain I felt at having to install Maven after being in love with &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; for the
+last two years).&lt;/p&gt;
+
+&lt;p&gt;Eventually &lt;a href=&#34;https://github.com/mongodb/morphia/releases/tag/r0.108&#34;&gt;release 0.108 of Morphia&lt;/a&gt; went live on Thursday night - huzzah!&lt;/p&gt;
+
+&lt;p&gt;But of course, as a responsible human being, rather than high-fiving myself, cracking open a bottle of wine and knocking off for the
+weekend, next I need to prepare the handover for the next person doing the release. Not least because it&amp;rsquo;s probably going to be me,
+and my memory is shocking.  I have two options:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write a wiki page with the steps needed, manual or automated, including all the local properties that need to be set up as we can&amp;rsquo;t
+have some of these passwords floating around on GitHub.&lt;/li&gt;
+&lt;li&gt;Fix the automated release so it really is one click / command&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In reality, option 2 still needs documentation because of the local properties that are required.&lt;/p&gt;
+
+&lt;p&gt;What I really want to do is crack open that wine.&lt;/p&gt;
+
+&lt;p&gt;But the moral of the story is: handovers are hard.  And essential.  And worse, often the person doing the handing over is doing so
+because they&amp;rsquo;re short on time and, for whatever reason, not responsible for the next phase of the project. Combine this lack of time with
+all the assumptions and implicit knowledge in that person&amp;rsquo;s head, and the information being transferred is likely to be&amp;hellip; less than
+optimal.&lt;/p&gt;
+
+&lt;p&gt;And the handover receiver is now responsible for something they don&amp;rsquo;t have enough knowledge of and they&amp;rsquo;re not even aware of assumptions or
+unknown unknowns. If you&amp;rsquo;re handing over between departments or teams, they might not even have the right tools to find out how to
+progress (Ops teams and testers don&amp;rsquo;t always have access to the code, for example, and if they did might not have the context to find it
+useful).&lt;/p&gt;
+
+&lt;p&gt;There are tools to help ease the pain of handovers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/bliki/PairProgrammingMisconceptions.html&#34;&gt;Pairing&lt;/a&gt;. Pairing might seem expensive (two people at one
+keyboard?? How will they type fast enough?), but the savings in handover time (and increase in your &lt;a href=&#34;http://en.wikipedia
+.org/wiki/Bus_factor&#34;&gt;Bus Factor&lt;/a&gt;) make it completely worthwhile.  Pairing with The Boy in making salad meant at least I knew what the steps and
+ingredients were, I just didn&amp;rsquo;t know what stage we were at. At LMAX, we reduced a lot of our testing backlog by embedding the testers
+in the development team, and pairing with them at the start and at the end of the &lt;a href=&#34;http://martinfowler.com/bliki/UserStory.html&#34;&gt;user stories&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you can&amp;rsquo;t do pairing, code reviews help. I was at least aware of our release plugin as I&amp;rsquo;d seen the original develop in the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;Java
+driver&lt;/a&gt;. If I&amp;rsquo;d been pairing or code reviewing on Morphia,
+I would have been even more aware of what the steps were and what changes had been made for that project.&lt;/li&gt;
+&lt;li&gt;Finally, if good old fashioned talking isn&amp;rsquo;t your thing, documentation is a good start.  And everyone who uses the docs needs to be
+able to update the documentation when they find something wrong, missing, confusing, or just want to annotate it with something useful.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For all of these good practices, really what you want is to remove all possible areas of miscommunication. Computers are logical things,
+ so if you can write down an exact list of steps that need to be done in order to achieve something,
+you might be able to, I dunno, write that in a script, or something. If you
+&lt;a href=&#34;http://www.amazon.com/gp/product/0321601912/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321601912&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=M5DNVR42T66J63VO&#34;&gt;Automate All The Things&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=0321601912&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;, you don&amp;rsquo;t need to have these messy,
+complicated conversations with these messy, complicated people.&lt;/p&gt;
+
+&lt;p&gt;But you knew that already.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m off to try and fix my script. I&amp;rsquo;ve even thought of a way to not need local properties, so maybe next time (or the time after),
+when I have to do a release I&amp;rsquo;ll only have to type a single command. It&amp;rsquo;ll be worth a week or two to implement this if it saves me a week
+like the last one.&lt;/p&gt;
+
+&lt;p&gt;But first, that wine&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;No boyfriends or colleagues were harmed in the making of this post.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nighthacking at Sevilla Java User Group</title>
+      <link>http://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
+      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
+for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
+and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
+Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is also the first event that we&amp;rsquo;ve had videoed (apologies for the horrible focus at times on the video,
+I&amp;rsquo;m just learning and used to relying heavily on auto-focus).&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/q3OKs08X3oo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thanks very much to Stephen for visiting, and thank you to those who came, you&amp;rsquo;re making me re-think the idea of running events at
+weekends.&lt;/p&gt;
+
+&lt;p&gt;Also there are &lt;a href=&#34;http://www.meetup.com/SVQJUG/photos/all_photos/?photoAlbumId=21306622&#34;&gt;photos on Meetup&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upcoming Events 2014</title>
+      <link>http://trishagee.github.io/post/upcoming_events_2014/</link>
+      <pubDate>Wed, 16 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/upcoming_events_2014/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while since I updated you on my travel plans, so now I&amp;rsquo;ve had some more conferences confirmed,
+I thought I would pass the information on.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been really lucky to have been selected for some great conferences this year.  I was asked to do a few more,
+and it was genuinely painful to say no to everything, but it seems the laws of space and time cannot be broken,
+and so I&amp;rsquo;ve been forced to select a tiny subset of all the places I&amp;rsquo;d like to go:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;20 May: &lt;a href=&#34;http://gotocon.com/chicago-2014/presentation/HTML5,%20Angular.js,%20Groovy,%20Java,
+%20MongoDB%20all%20together%20-%20what%20could%20possibly%20go%20wrong?&#34;&gt;GOTO Chicago&lt;/a&gt; - I&amp;rsquo;m giving the same live coding presentation from QCon London,
+although knowing me I expect there will be some tweaks, changes, additions, and maybe improvements.&lt;/li&gt;
+&lt;li&gt;22-23 May: In New York City, since I&amp;rsquo;m more or less in the area.  Gimme a shout if you want to meet for a drink.&lt;/li&gt;
+&lt;li&gt;25-28 May: &lt;a href=&#34;http://speakerconf.com/&#34;&gt;SpeakerConf&lt;/a&gt; Barcelona.  And while I&amp;rsquo;m in the area&amp;hellip;&lt;/li&gt;
+&lt;li&gt;29 May: Barcelona JUG - &amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;2-5 June: New York City, probably (wait, am I going to be at home at all??)&lt;/li&gt;
+&lt;li&gt;23 July: &lt;a href=&#34;http://www.oscon.com/oscon2014/public/schedule/detail/35444&#34;&gt;OSCON&lt;/a&gt; - live coding again!&lt;/li&gt;
+&lt;li&gt;28 Sep - 2 Oct: &lt;a href=&#34;http://www.oracle.com/javaone/speakers/index.html#gee&#34;&gt;JavaOne&lt;/a&gt; woohoo!  I love having this opportunity to visit San
+Francisco.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ve got a couple of other events I&amp;rsquo;m still trying to work out the details for, but I think this is 2014 all booked up.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sevilla MUG March Madness</title>
+      <link>http://trishagee.github.io/post/svq_mug_march_madness/</link>
+      <pubDate>Wed, 19 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/svq_mug_march_madness/</guid>
+      <description>&lt;figure &gt;
+    
+        &lt;img src=&#34;https://lh4.googleusercontent.com/-JVIgox7nGXo/UyjIQYxtiSI/AAAAAAAANc4/JV3lj4xwcgk/w919-h689-no/IMG_20140318_193758.jpg&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/events/166679892/&#34;&gt;Last night&lt;/a&gt; the Sevilla MUG had our
+&lt;a href=&#34;http://www.lczajkowski.com/2014/02/19/march-madness-comes-to-a-city-near-you/&#34;&gt;March Madness&lt;/a&gt; event.  This was our largest event yet,
+with 36 people signed up.  Although the aim of March Madness is to have a MongoDB Engineer at all the user groups this month,
+that&amp;rsquo;s not such a big deal for us as I live here, so this was also the first event where I wasn&amp;rsquo;t the main attraction - &lt;a href=&#34;https://twitter.com/JvrBaena&#34;&gt;Javier&lt;/a&gt; gave a really great talk about the lessons learnt at &lt;a href=&#34;http://es.socialbro.com/&#34;&gt;SocialBro&lt;/a&gt; after using
+MongoDB in production for the last couple of years.&lt;/p&gt;
+
+&lt;p&gt;The slides for my introduction to Replica Sets and Sharding:&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+ &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32480708&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+ And the slides for the main attraction:
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+ &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32464459&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+ &lt;div style=&#34;margin-bottom:5px; font-size:small&#34;&gt; &lt;strong&gt; &lt;a href=&#34;https://www.slideshare
+ .net/fjavierbaena/sevilla-mongo-developers-group-mongodb-cmo-aprendimos-que-la-culpa-era-nuestra&#34; title=&#34;Sevilla Mongo Developers Group
+ - MongoDB: Cómo aprendimos que la culpa era nuestra&#34; target=&#34;_blank&#34;&gt;Cómo aprendimos que la culpa era nuestra&lt;/a&gt;
+ &lt;/strong&gt;from&lt;strong&gt;
+ &lt;a href=&#34;http://www.slideshare.net/fjavierbaena&#34; target=&#34;_blank&#34;&gt; Francisco Javier Baena Ríos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The event went really well, everyone seemed engaged, and our first talk in Spanish seemed to encourage more questions than normal.  We
+were also in a new venue, and although I love the central location of our previous venue and the friendliness of the owners,
+the menu of the new location seemed to be a massive win.&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://lh6.googleusercontent.com/-ESw5r9B24Hs/UyjHcM2M-DI/AAAAAAAANco/hBVhN4IMFew/w919-h689-no/IMG_20140318_220941.jpg&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>QCon London 2014</title>
+      <link>http://trishagee.github.io/post/qcon_london_2014/</link>
+      <pubDate>Tue, 11 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/qcon_london_2014/</guid>
+      <description>&lt;p&gt;Wow. My 4th QCon London.&amp;nbsp; That’s not bad.&amp;nbsp; And every time, it’s a different experience (if you must, see my blogs for&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/03/qcon-day-one.html&#34;&gt;2013&lt;/a&gt;,&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2012/03/qcon-london-2012.html&#34;&gt;2012&lt;/a&gt;, and even 2007 (&lt;a href=&#34;http://mechanitis.blogspot.com.es/2007/03/qcon-initial-thoughts.html&#34;&gt;part 1&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://mechanitis.blogspot.com.es/2007/03/qcon-todo-list-inspired-by-conference.html&#34;&gt;part 2&lt;/a&gt; - how cute was I? &amp;ldquo;agile seems like a jolly good idea; automated testing appears to be important&amp;rdquo;)).&lt;br /&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I can’t even tell you what I did on the first day, I was mostly panicking about my presentation - I was inspired after my trip to New York last month to change my talk at the last (responsible?) minute and do a live coding session, something much more technical than my recent talks.&amp;nbsp; I’ll leave the details for a separate blog post though, when the video comes out.&lt;br /&gt;&lt;br /&gt;The thing that stands out for me from Wednesday though was Damian Conway programming &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway&#39;s_Game_of_Life&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt; in Klingon.&amp;nbsp; Yeah.&amp;nbsp; Just find the video and watch it, the man is a genius.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;333&#34; mozallowfullscreen=&#34;&#34; msallowfullscreen=&#34;&#34; oallowfullscreen=&#34;&#34; src=&#34;https://www.flickr.com/photos/qconpictures/12947751623/player/f7e8167be5&#34; webkitallowfullscreen=&#34;&#34; width=&#34;500&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The Thursday keynote was inspiring too from a totally different point of view - Tim Lister of &lt;a href=&#34;http://www.amazon.com/gp/product/B00DY5A8X2/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B00DY5A8X2&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&#34;&gt;Peopleware&lt;/a&gt;&lt;img alt=&#34;&#34; border=&#34;0&#34; src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=B00DY5A8X2&#34; height=&#34;1&#34; style=&#34;border: none !important; margin: 0px !important;&#34; width=&#34;1&#34; /&gt; fame shared stories from his career, and I came away from that really happy I work as a technologist, but with an increased desire to learn off other amazing people.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;333&#34; mozallowfullscreen=&#34;&#34; msallowfullscreen=&#34;&#34; oallowfullscreen=&#34;&#34; src=&#34;https://www.flickr.com/photos/qconpictures/12966704755/player/7193594b96&#34; webkitallowfullscreen=&#34;&#34; width=&#34;500&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;On Thursday I hosted the&amp;nbsp;&amp;ldquo;&lt;a href=&#34;http://www.flickr.com/photos/qconpictures/sets/72157641948363514/with/12970259753/&#34;&gt;Not Only Java&lt;/a&gt;&amp;ldquo;&amp;nbsp;track - I’m on the programme committee for QCon, and this year we wanted to cover&amp;nbsp;leading edge technologies (as always) but we didn’t want to slice things into strict technology silos [interruption: argh! the person in front of me nearly destroyed my laptop by suddenly moving their chair back! Why do people bother in economy on a morning flight?]. &amp;nbsp;So I wanted the Java track to be more representative of what today’s Java programmers care about - for the programmers of course, but also because I know there are architects and team leads at QCon who might not realise how things have moved on with the language, and how much polyglot programming we do these days.&amp;nbsp;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.com.es/&#34;&gt;Martin&lt;/a&gt; kicked it off with a great history lesson on the progress (or occasionally,&amp;nbsp; lack of it) in Java.&amp;nbsp; He begged us to study and understand Set Theory, to use async design, to think of the users of our APIs, and, most of all, to design nice, clean code.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Next up, &lt;a href=&#34;https://twitter.com/EvaAndreasson&#34;&gt;Eva&lt;/a&gt; took us through the fundamentals of Garbage Collection - this might not seem like a cutting edge subject these days, but it’s one of the most misunderstood subjects for Java programmers.&amp;nbsp; Eva gave us a really great, understandable view of the different types of garbage collectors, how they work, and their pros and cons.&amp;nbsp; She left us with a call to arms to not simply let other people try and solve this problem, but to get stuck in and contribute ourselves, via the &lt;a href=&#34;http://openjdk.java.net/&#34;&gt;OpenJDK&lt;/a&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;333&#34; mozallowfullscreen=&#34;&#34; msallowfullscreen=&#34;&#34; oallowfullscreen=&#34;&#34; src=&#34;https://www.flickr.com/photos/qconpictures/12970531704/player/e2c2f63b43&#34; webkitallowfullscreen=&#34;&#34; width=&#34;500&#34;&gt;&lt;/iframe&gt; &lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;After lunch was my nerve-wracking live coding session, putting together a full stack end-to-end web app using AngularJS, HTML5, Java and MongoDB.&amp;nbsp; It only went wrong twice, and people seemed to like it.&amp;nbsp; I’ll post the video in another blog post as soon as it&amp;rsquo;s publicly available. &amp;nbsp;Code is &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;available on github&lt;/a&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;We’ve been playing with the open spaces idea at QCon.&amp;nbsp; The Java one only had a few people in it, but that gave everyone a chance to speak at least.&amp;nbsp; We covered Java 8 (the Good and the Bad); other JVM languages; and UIs for Java (Javascript or GWT?).&amp;nbsp; And I plugged the work the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; does in London, of course.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;After this &lt;a href=&#34;http://bodil.org/&#34;&gt;Bodil&lt;/a&gt; blew me away creating a My Little Pony game using &lt;a href=&#34;https://rx.codeplex.com/&#34;&gt;RX&lt;/a&gt; in the browser.&amp;nbsp; ‘Nuff said.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Finally, &lt;a href=&#34;https://twitter.com/speakjava&#34;&gt;Simon Ritter&lt;/a&gt; gave us a view of the Java 8&amp;nbsp; features most likely to impact the way Java developers think about software design - lambdas and streams.&amp;nbsp; I thought this was a really great introduction to the concepts if you haven’t seen them before, and with concrete examples that showed how we should be using them. &amp;nbsp;If you&amp;rsquo;re not already looking at lambdas and streams, you should be - even if you&amp;rsquo;re not going to be using Java 8 yet, it&amp;rsquo;s worth getting a heads up on how it&amp;rsquo;s going to impact our programming style.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I’m very pleased with the way the Java track turned out on the day - every speaker was first class, a wide range of topics was covered, and I, for one, learnt something in every presentation.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;To finish off the day, Emma Langman gave an awesome keynote about how people are the messy bit of your system, and how they’re never rational and you shouldn’t expect them to be.&amp;nbsp; I also highly recommend this talk, especially if you’re a techy and you’ve found yourself in some sort of management or team lead position.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Sadly I couldn’t stay for day three of the conference, I had to fly off to the &lt;a href=&#34;http://mechanitis.blogspot.com.es/2014/03/the-joy-of-coding.html&#34;&gt;Joy of Coding&lt;/a&gt; to re-give the live coding presentation there.&amp;nbsp; Because, if you’re going to do something terrifying and doomed to failure, you might as well do it twice.&lt;br /&gt;&lt;br /&gt;QCon is an expensive conference, especially compared to the developer-friendly prices of something like &lt;a href=&#34;http://www.devoxx.co.uk/&#34;&gt;DevoxxUK&lt;/a&gt;, but for getting a big picture of where the industry is, of things you might be missing, for learning hard core technical skills and understanding the important of the fluffy-people-stuff, and finally for meeting a wide range of people from developers to CTOs, I think you&amp;rsquo;d be hard pushed to find something better in London. &amp;nbsp;IMHO (and remember, I did disclose I&amp;rsquo;m on the programme committee). &lt;br /&gt;&lt;br /&gt;And although it&amp;rsquo;s really hard work putting together the programme for a track like this, and although both times I&amp;rsquo;ve said I&amp;rsquo;m Never Doing It Again, when it goes this well it makes you want to do it all over again. &amp;nbsp;After a break. &amp;nbsp;A looong break.&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sparking innovation in an established company</title>
+      <link>http://trishagee.github.io/post/sparking_innovation_in_an_established_company/</link>
+      <pubDate>Mon, 10 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/sparking_innovation_in_an_established_company/</guid>
+      <description>&lt;div class=&#34;p1&#34;&gt;I’ve been running into &lt;a href=&#34;https://corporate.sky.com/&#34;&gt;BSkyB&lt;/a&gt; a bunch this week - firstly I was invited to kick off their innovation tech talks series last Monday, then I kept meeting Sky people (that makes it sound like they’re aliens) at &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon&lt;/a&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;It seems Sky is keen to create/foster a culture of innovation, which is an ambitious goal for such a large company.&amp;nbsp; So I was given a very vague brief for Monday’s presentation (“Can you do something Mongo-ish, maybe a bit of performance and concurrency stuff, and talk about overall best practice?”) I gave them an early view of a presentation I’m working on titled something like “Why do we keep reinventing the wheel?” (anyone who saw me at &lt;a href=&#34;http://www.jfokus.se/&#34;&gt;JFokus&lt;/a&gt; might realise that I cunningly swapped out most of the body of the “What do you mean, backwards compatibility?” talk and tried out this topic instead).&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-4a4pY12N7xM/Ux2KVRwNLpI/AAAAAAAANRw/gVsUg08fwyU/s1600/TrishaSky.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://3.bp.blogspot.com/-4a4pY12N7xM/Ux2KVRwNLpI/AAAAAAAANRw/gVsUg08fwyU/s1600/TrishaSky.jpg&#34; height=&#34;480&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: right;&#34;&gt;Picture courtesy of&amp;nbsp;&lt;a class=&#34;g-profile&#34; href=&#34;https://plus.google.com/111755189375322301397&#34; target=&#34;_blank&#34;&gt;+Russell Miles&lt;/a&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;This was supposed to be a 20 minute intro talk (OK, so I clocked it at 40 minutes in rehearsal) with the rest of the time devoted to questions on any subject I know about, or even anything I have an opinion on.&amp;nbsp; Sounds dangerous, but means I can always move fast on the answers I don’t know in order to cover more ground - cunning, you see?&amp;nbsp; Actually, that sounds like it would be more fun if alcohol were involved.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Anyway.&amp;nbsp; The talk bit of the session took up most of the time, because I had really good questions during the course of the presentation.&amp;nbsp; It’s nice to talk to a much smaller group (there were maybe 30ish people, giving up their free time after work, like an internal user group).&amp;nbsp; But I also had questions on remote working, on creating a culture that’s appealing for developers to come and work in, and on MongoDB.&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;I don’t know how many companies do things like this, or lunchtime brown bags, or something, but I think they’re a great idea.&amp;nbsp; This was a mix of people from different departments, different teams, working on different technologies.&amp;nbsp; It was a good way to get people from across the organisation talking with each other and sharing best practice between teams.&amp;nbsp; Many organisations have people working in their little silo, and we (MongoDB) often find ourselves introducing teams from within the same organisation to each other - there’s no other mechanism for one team to find out about the other.&amp;nbsp; I guess that’s what white-tower architects were supposed to be for - to know what everyone’s up to and make sure people are doing the “right” thing.&amp;nbsp; Given this doesn’t seem to work, what else can we do to share knowledge internally?&amp;nbsp; How else can we get the right people to meet each other?&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Joy of Coding</title>
+      <link>http://trishagee.github.io/post/the_joy_of_coding/</link>
+      <pubDate>Sat, 08 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/the_joy_of_coding/</guid>
+      <description>&lt;p&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-O7Z5io5SP0o/Uxs4eHZsx3I/AAAAAAAANPE/nTBXmPG-9ow/s1600/IMG_20140307_165203.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-O7Z5io5SP0o/Uxs4eHZsx3I/AAAAAAAANPE/nTBXmPG-9ow/s1600/IMG_20140307_165203.jpg&#34; height=&#34;480&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34;&gt;Dick Wall -&amp;nbsp;The Tao, of the Joy, of Coding&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;I’m on a plane (there’s a surprise) on my way back from &lt;a href=&#34;http://joyofcoding.org/&#34;&gt;The Joy of Coding&lt;/a&gt;.&amp;nbsp; It’s the title that attracted me to this conference, and it was a great little one day event with awesome people like Dan North, Erik Meijer and Dick Wall presenting.&amp;nbsp; What I liked about the themes is they were broadly technology agnostic, pulling back to a level which made me remember why I’m a developer. &amp;nbsp;It inspired me to do more research and more thinking, and less panicking and trying to write code.&amp;nbsp; That might seem odd, as someone who goes to as many conferences as I do should get loads more research and thinking time than most developers living under the whip, but I seem to spend so much time bouncing from thing to thing I don’t get space to just sit and think, or to read things in any depth.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The conference organisers made it easy to focus on the bigger things - the venue was great, with a nice space for mingling with people but nooks and corners for doing work or for video conferences.&amp;nbsp; The hotel they chose was one of the best I’ve stayed at - the room had a sauna in it.&amp;nbsp; A sauna!&amp;nbsp; I spent the evening using every toiletry they provided, and moving between the sauna, the steam/shower cabinet and the jacuzzi bath.&amp;nbsp; I won’t pretend I did a lot of thinking, but it was a really awesome way to top of a crazy week, and I feel almost sane.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So if I’m going to leave you with one thing from my experience at the Joy of Coding, it’s to Stop.&amp;nbsp; Stop and think.&amp;nbsp; Stop and ask.&amp;nbsp; Stop and read.&amp;nbsp; What are you doing?&amp;nbsp; Why are you doing it?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;And most of all, do you feel Joy when you’re coding?&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-AObxzgL1rtA/Uxs4ft_YZMI/AAAAAAAANPM/XlRuZ97bRSM/s1600/IMG_20140307_190444.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em; text-align: center;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://3.bp.blogspot.com/-AObxzgL1rtA/Uxs4ft_YZMI/AAAAAAAANPM/XlRuZ97bRSM/s1600/IMG_20140307_190444.jpg&#34; height=&#34;480&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;PS There are some &lt;a href=&#34;http://www.flickr.com/photos/joyofcoding/sets/72157642055047693/&#34;&gt;really great photos&lt;/a&gt; from the conference on Flickr.&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>In my day...</title>
+      <link>http://trishagee.github.io/post/in_my_day/</link>
+      <pubDate>Mon, 03 Mar 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/in_my_day/</guid>
+      <description>&lt;p&gt;Web development has changed a &lt;i&gt;lot&lt;/i&gt;.&lt;br /&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I used to be a web developer. &amp;nbsp;Sort of. &amp;nbsp;Some times I’ve been on the bleeding edge, and others… I remember using JavaScript to call back-end services with an XML payload before people were using the term AJAX, but I also remember working on an enterprise um… “classic”… JSP application only “recently” - in fact that was probably the last job where I did anything that looked like web development.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So this blog post is going to chart the progress of web development through my own experience.&amp;nbsp; Of course, this doesn’t by any means cover the whole spectrum, but I think my experience has been not unusual for a Java programming working through the noughties.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Over the course of my career I moved further away from the UI, because certainly early on the money and status was in “back end”, whatever that means, and not “front end”. &amp;nbsp;Which is ridiculous, really, especially as back then you couldn’t really follow best practices and clean code and test first and all that awesome stuff when doing front end development because none of the browsers played by the rules and frankly if you got it working at all you were a bloody genius. &amp;nbsp;And that’s not even considering the fact that as a “front end” developer you should be thinking about actual real human beings who use your product, and actual real human beings are messy things and understanding them is not (we’re told) traditionally a domain that we developers are naturally proficient in.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Anyway, I digress. &amp;nbsp;This was supposed to be a history lesson. &amp;nbsp;Or a nostalgia trip. &amp;nbsp;Or possibly Ranty Trish waving her walking stick in the air and shouting “You kids don’t know how good you’ve got it these days”. &amp;nbsp;If nothing else, I hope that it makes other “back end” developers like myself appreciate how much things have moved on.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Let’s go back to the olden days, before I’d even graduated: picture a time before smart phones - before phones were even common (I was horribly mocked at university for being poncy enough to have a mobile), before we knew if all this work we were doing to combat the millennium bug was going to stop the end of the world. &amp;nbsp;I was doing my first summer internship at &lt;a href=&#34;http://corporate.ford.com/&#34;&gt;Ford&lt;/a&gt;, and a contractor from Logica (who don&amp;rsquo;t seem to exist any more??) told me that if I was messing around with web pages and HTML (my friends and I had geocities-and-equivalent sites) I should look at this JavaScript thing to make my pages “dynamic”. &amp;nbsp;I didn’t have to just use GIFs to bring my page to life, I could move stuff around on the page. &amp;nbsp;I think I wrote a “you are in a crowded room”-type adventure game, because my background was BASIC and that’s what you do.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Actually I haven’t even mentioned that we were creating these websites to stay in touch with each other. &amp;nbsp;We’d discovered guest books, and used them to write comments and share stories since we’d all moved out of our home town to go to different universities. &amp;nbsp;Man, why didn’t I invent Facebook back then? &amp;nbsp;That’s what we needed.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Anyway.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;A year later, I was back at Ford doing my &lt;a href=&#34;http://en.wikipedia.org/wiki/Sandwich_degree&#34;&gt;sandwich year-in-industry&lt;/a&gt;. &amp;nbsp;The first project I worked during this time was a web-based reporting tool that needed to dynamically display hierarchical data. &amp;nbsp;We chose JavaScript trees to render this data - my year of messing around with my website paid off, and I was able to use my “cutting edge” Javascript skills in a real production environment. &amp;nbsp;Yay? &amp;nbsp;The back end was CGI - I think I was writing in Perl, but don’t tell anyone that. &amp;nbsp;I was learning Java at university, but this was a new language and I don’t think Ford was using it yet.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The next project was a very ambitious one - be the first car manufacturer to &lt;a href=&#34;http://www.brandrepublic.com/news/11990/Ford-Vauxhall-cut-online-car-prices/?HAYILC=RELATED&#34;&gt;sell new cars on the web&lt;/a&gt;. &amp;nbsp;Ford was well ahead of their time - the millennium bug had not killed us all, but people were barely buying books online, never mind spending tens of thousands of pounds on a car they’d never driven. &amp;nbsp;But it wasn’t just ahead of its time from a business point of view, technically it was very advanced too - we used lots of “DHTML” (as we were now calling it), a new-fangled technology called ASP, and we were writing modular, reusable &lt;a href=&#34;http://www.microsoft.com/com/default.mspx&#34;&gt;COM&lt;/a&gt;ponents. &amp;nbsp;We used XSLT to parse the XML from the COM objects, and the ASP figured out whether you were Netscape or Internet Explorer (Firefox wasn’t even a gleam in the inventor’s eye, and forget Chrome, I think we using &lt;a href=&#34;http://www.altavista.com/&#34;&gt;Alta Vista&lt;/a&gt; (whaaaat? AltaVista got bought by Yahoo??) not some new-fangled search engine beginning with G) so it could use the right XSLT to turn the XML into HTML that was readable by the browser you were using. &amp;nbsp;My job was to get the DHTML pages rendering and animating correctly in both IE4 and Netscape 4. &amp;nbsp;That was a lot of fun for me, but also very challenging.&amp;nbsp; And imagine my shock when a few months later I tested the site from the university UNIX machines to find that Netscape rendered it completely differently under UNIX.&amp;nbsp; I learnt a lesson about how important it was to test on different platforms.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;We had some smart Microsoft people helping us out with this project, and, because it was 2000 and the &lt;a href=&#34;http://en.wikipedia.org/wiki/Dot-com_bubble&#34;&gt;dot com crash&lt;/a&gt;&amp;nbsp;hadn’t happened just yet, we also had a lot of young, overpaid, overconfident contractors who believed anything was possible. &amp;nbsp;I learnt a lot during this time, not just about the technology, but also about different approaches to shaping your IT career. &amp;nbsp;And about how much you could earn before you were 25. &amp;nbsp;I was definitely going to be a programmer when I left university the next year.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Yeah, so… I graduated in 2001. &amp;nbsp;If you were around then, you’ll remember that getting a job was a bit more difficult than I had anticipated, especially as these young, overpaid contractors were now desperately grabbing anything they could find. &amp;nbsp;But that’s a story for another day.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I didn’t go back to Ford straight away, I’d “been there and done that”. &amp;nbsp;I worked on the website for &lt;a href=&#34;http://commonpurpose.org.uk/&#34;&gt;Common Purpose&lt;/a&gt;. &amp;nbsp;On the first day, they sat me down with &lt;a href=&#34;http://www.amazon.com/gp/product/1861003625/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1861003625&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&#34;&gt;a book on JSP and Servlets&lt;/a&gt;, and that was my reading material for the next few weeks. &amp;nbsp;If I’d been fresh out of university where we’d been doing Applets, and where I’d written a Swing app on the side for my Dad’s school, this would have been a big mindset change for me. &amp;nbsp;But having worked on the ASPs it wasn’t such a big shift. &amp;nbsp;I did, however, like how JSPs and servlets made the separation between the view and all-of-the-other-logic-stuff a bit clearer - back in ASP-land we’d settled on a convention of dealing with the form data from the previous page in the first part of the ASP, and rendering the new page in the second part. &amp;nbsp;To this day I still don’t know what we should have been doing instead. &amp;nbsp;But in JSP-land it only took me&amp;hellip; I dunno, about 6 months I think, to get the website up and running. &amp;nbsp;The most difficult section was &lt;a href=&#34;http://web.archive.org/web/20021001132257/http://www.commonpurpose.org.uk/home/apply-online.vdf&#34;&gt;registrations&lt;/a&gt;. &amp;nbsp;And yes, I was a graduate, and yes, I was new, but that was a good turnaround for a web application “in those days”.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;In my spare time I used what I’d learnt on &lt;a href=&#34;http://blews-ltb.co.uk/knot.asp&#34;&gt;the blews website&lt;/a&gt;. &amp;nbsp;I even had a section where people could log in and &lt;a href=&#34;http://web.archive.org/web/20050322033948/http://www.blews-ltb.co.uk/photographs/photo.jsp?section=20&#34;&gt;comment on photos&lt;/a&gt;&amp;nbsp;- we had whole conversations on this website. &amp;nbsp;It was a way for me and my friends to stay in touch. &amp;nbsp;If I’d cracked the photo-uploading instead of it being a manual process for me, I would have invented Facebook. &amp;nbsp;If only I’d known….&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The work dried up and there was nothing else for a graduate in the early noughties, so I went back to Ford. &amp;nbsp;My first role back I picked the same technologies we’d been using before - XML, XSLT, only this time we were using JSPs instead of ASP. &amp;nbsp;Our project had a very tight budget and we’d worked out that using open source Java technologies and running the application on one of the many UNIX machines lying around the place was a lot cheaper than the Microsoft solution. &amp;nbsp;I think we were the first team in Ford Europe to pick Java at a time when the recommended approach was Microsoft. &amp;nbsp;We delivered on time and under budget, and Java was the way forward for the department from then on. &amp;nbsp;But on this project I met a guy who would impact my career probably more than he even realises, a guy I’d work with again later. &amp;nbsp;He told me that in Java we no longer used Vector by default, but ArrayList (whaaat? What’s an &lt;a href=&#34;http://docs.oracle.com/javase/7/docs/api/java/util/ArrayList.html&#34;&gt;ArrayList&lt;/a&gt;? I had no idea what the differences were between Java 1.1, which we’d learnt at university, and Java 1.2, which was now standard). &amp;nbsp;And questioned my choice of XML/XSL. &amp;nbsp;Although I’d been learning new technologies and growing, he was the one who made it clear to me that I needed to keep myself ahead of the curve with the technologies I was using, or planned to use, if I wanted to stay relevant and make my life easier.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;On the next project I worked with a genius guy who was definitely keeping ahead of the curve - he was using JavaScript to send small XML payloads to the server (which was coded in Java), and rendering the response in place on the page instead of reloading the whole thing. &amp;nbsp;Mind. &amp;nbsp;Blown. &amp;nbsp;I didn’t even hear the term &lt;a href=&#34;http://en.wikipedia.org/wiki/Ajax_(programming)&#34;&gt;Ajax&lt;/a&gt;&amp;nbsp;until a year or more later. &amp;nbsp;We were fortunate in that this was once again an internal application, so we controlled the browser. &amp;nbsp;This was back in the days when you wanted your users to be on IE5, as this was the only browser that supported this functionality.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The next few projects/jobs I worked on were all more pedestrian variations on the JSP theme - first I learnt &lt;a href=&#34;https://struts.apache.org/release/1.3.x/userGuide/release-notes-1_1.html&#34;&gt;Struts&lt;/a&gt;, which at least made us realise there was a model, a view, and a controller. &amp;nbsp;Then at &lt;a href=&#34;http://web.archive.org/web/20050211061038/http://www.touchclarity.co.uk/&#34;&gt;Touch Clarity&lt;/a&gt; I learnt about &lt;a href=&#34;https://spring.io/blog/2004/03/24/spring-framework-1-0-final-released&#34;&gt;Spring MVC&lt;/a&gt;, which actually put the validation errors next to the boxes which cause the error - by default, without you having to mess around. &amp;nbsp;Spring was a revelation too, a framework that really tried not to get in your way. &amp;nbsp;It was also frustrating because you needed to understand its lifecycle, but it did so much heavy lifting for you, it sped up standard CRUD-app web development enormously.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;A couple of years passed, during which time I was still working on a web application (for an investment bank) but I can’t for the life of me remember what technologies we used (other than Java). &amp;nbsp;I know it was hard to test and I know the tricky stuff was “back end” not “front end”.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;In the next project where I had any control of the technology, I picked Spring since I’d had such a good experience previously. &amp;nbsp;It took 4 developers a couple of months or so to develop an admin application for a trading app. &amp;nbsp;Given the previous timescales I’d worked with, this seemed pretty good. &amp;nbsp;Until a few months later and two other guys on the project produced an admin app for our bank users in a matter of weeks. &amp;nbsp;I can’t remember what they used, maybe &lt;a href=&#34;http://grails.org/&#34;&gt;Grails&lt;/a&gt;? &amp;nbsp;But it was another demonstration of how I really should have been researching the field instead of simply sticking with what I knew, especially when I knew my knowledge was a couple of years out of date.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Fast forward to &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX&lt;/a&gt;, and we were using &lt;a href=&#34;http://en.wikipedia.org/wiki/Google_Web_Toolkit&#34;&gt;GWT&lt;/a&gt;, pre-2.0 - I think this probably feels natural if you’ve been a Swing or AWT developer, but I’m still not convinced it’s a sound web platform (although I know it has improved). &amp;nbsp;It was great because cross-browser was no longer an issue, but it was bad because it separates you from the underlying HTML, which means you can &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/01/gwt-why-verticalpanel-is-evil.html&#34;&gt;seriously mess up without realising&lt;/a&gt;. &amp;nbsp;It’s also hard to use CSS correctly when you don’t have access to all the HTML components.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So we come to more-or-less the present day, as it should be fairly obvious that during the time I’ve been working on the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt;&amp;nbsp;I haven’t done a lot of GUI development. I’m lucky because attending lots of conferences means I see a lot more of the current-trending technologies, but up until a couple of weeks ago I hadn’t had a chance to play with any of them.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So now I’ve been trying &lt;a href=&#34;http://angular.js/&#34;&gt;Angular.js&lt;/a&gt;, &lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;, and &lt;a href=&#34;http://angular-ui.github.io/bootstrap/&#34;&gt;UI Bootstrap&lt;/a&gt;. &amp;nbsp;My goodness. &amp;nbsp;It’s a whole &amp;lsquo;nother world. &amp;nbsp;I’m seeing at conferences and user groups that developers are increasingly polyglot, so maybe there’s no such thing as “just” a Java developer any more, but if you are “just” a Java developer, I think it could be… interesting… to get your head around some of the techniques. &amp;nbsp;Since we don’t have closures, our callbacks are ugly and we tend not to program that way. &amp;nbsp;Async is not something that comes naturally in a Java environment, I believe, although after working that way at LMAX I’m personally sold on it. &amp;nbsp;Old-world JavaScript developers like I am/was might also find it hard to understand you can have clean, testable JavaScript code which Just Works. &amp;nbsp;It didn’t even occur to me to worry about browser compatibility, and my app not only worked on my phone as well as my laptop, but looked really phone-ish and awesome with very minimal effort.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I’m currently on a plane on the way to QCon London where I’m &lt;a href=&#34;http://qconlondon.com/london-2014/presentation/HTML5,%20Angular.js,%20Groovy,%20Java,%20MongoDB%20all%20together%20-%20what%20could%20possibly%20go%20wrong?&#34;&gt;going to demo&lt;/a&gt; this Brave New World of web development (together with a nice Java back end to prove how awesome Java is to work with and, of course, a MongoDB database). &amp;nbsp;So it is not my intention in this post to explore what this new world looks like. &amp;nbsp;But I have seen the Present, and it’s a lot better than the Past. &amp;nbsp;Kids These Days don’t know how good they’ve got it - they’ve never had to struggle, to fight the browser, to hand-craft their JavaScript like we have, or had to work with raw, low-level JSPs and Servlets.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Now things are easier. &amp;nbsp;There are standards, there are libraries, there are best practices and YouTube videos showing you &lt;a href=&#34;http://www.youtube.com/watch?v=i9MHigUZKEM&#34;&gt;how to create apps in 60 minutes&lt;/a&gt;&amp;nbsp;(back in My Day I had to borrow someone else’s browser to use the Internet, and I debated for years the value of spending my own actual money on a Javascript actual paper actual book, which I could not afford). &amp;nbsp;Now, you can get something quite pretty and functionally interesting, working in a lot less time than I realised. &amp;nbsp;But that doesn’t mean the Kids These Days have it easier - it means there is so much more potential. &amp;nbsp;Instead of beating your head against trying to get a specific version of IE to do what you want, instead of having to write separate pages for different browsers (although maybe that still goes on), you can be exploring so much further into the possible, try things that no-one else has done yet. &amp;nbsp;It opens up so many interesting possibilities for apps on all platforms.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Exciting times.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;So next time someone asks me “What is the de facto front-end framework for Java?” I’m going to say HTML5, CSS and JavaScript.&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Should you notice I&#39;m a woman? Should I care?</title>
+      <link>http://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</link>
+      <pubDate>Mon, 10 Feb 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</guid>
+      <description>&lt;p&gt;So, following on from my observations of &lt;a href=&#34;http://mechanitis.blogspot.com/2014/02/so-fosdem.html&#34;&gt;being an outsider&lt;/a&gt; at FOSDEM because I&amp;rsquo;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m going to give specifics, but it&amp;rsquo;s not to name and shame or anything like that, it&amp;rsquo;s just that anonymising it will probably erase some of the subtleties. &amp;nbsp;But I&amp;rsquo;m not telling this to make anyone feel bad, because this is not an oh-poor-me story, this is just the way it goes sometimes and I want to share what it feels like.&lt;br /&gt;&lt;br /&gt;At JFokus (a conference I really enjoyed, where I got a chance to spend time with some awesome people) I was on a panel (well, game-show really) about static vs dynamic languages. &amp;nbsp;Not unusually, I was the only woman on the panel. &amp;nbsp;Also not unusually, one of the reasons I agreed to take part is to do my bit in demonstrating that women have technical knowledge too (in my opinion, it&amp;rsquo;s important where possible to avoid a stage full of white men of a particular age, and I&amp;rsquo;m in a position to be able to do something about that). &amp;nbsp;And, as per usual, I was a bit nervous about this in case the only woman on the panel also turned out to look stupid, but hey, looking stupid is one of the risks of this job.&lt;br /&gt;&lt;br /&gt;During the session, my gender was mentioned twice - once with &amp;ldquo;ladies first&amp;rdquo;, and once to specifically point out that our static-languages team was somehow superior because we had both genders represented (well of course we&amp;rsquo;re better, &lt;i&gt;I&amp;rsquo;m&lt;/i&gt; on the team). Note that neither of these was derogatory at all - both were, in fact, positive towards me, and I wasn&amp;rsquo;t troubled or offended by them. I&amp;rsquo;m used to people noticing and commenting on my gender. &amp;nbsp;I got used to it in the same way you get used to your commute to work, or dealing with merge conflicts - it&amp;rsquo;s something you do, it&amp;rsquo;s not always comfortable, but it&amp;rsquo;s no one&amp;rsquo;s fault and they&amp;rsquo;re not out to get you.&lt;br /&gt;&lt;br /&gt;I didn&amp;rsquo;t really process how the gender-mentions made me feel until after, at which point I was drained from giving yet another new talk that day, as well as the surprisingly physical panel discussion. But afterwards, when I was back in my hotel room packing for yet another plane journey, I was thinking &amp;ldquo;is it normal?&amp;rdquo;. &amp;nbsp;Was it inevitable that someone was going to notice/point out that I&amp;rsquo;m female? &lt;br /&gt;&lt;br /&gt;Was it down to my choice of clothing? &amp;nbsp;I debated long and hard with myself about wearing what was definitely a ridiculously short skirt for a session like that, but in the end I decided I didn&amp;rsquo;t want to wear jeans like everyone else, and wearing tiny skirts is something I find fun. But I did think I&amp;rsquo;d be behind a table and it wouldn&amp;rsquo;t be too obvious. &amp;nbsp;Should I worry that much about what I wear? &amp;nbsp;I used to plan what to wear for work, I used to love dressing up for going out with friends, so over-thinking my clothes for a conference is part of who I am.&lt;br /&gt;&lt;br /&gt;And one of the reasons to wear the skirt is because I&amp;rsquo;ve found myself wearing jeans and t-shirts more than ever. &amp;nbsp;I think the combination of travelling a lot (I &lt;i&gt;hate&lt;/i&gt; packing, so packing a couple of pairs of jeans and a bunch of t-shirts makes life easy) and being part of a tech company where that&amp;rsquo;s basically our uniform has lead to extreme laziness in my clothing choices, and I want to change that. &amp;nbsp;Who wants to look like everyone else? &amp;nbsp;Not me.&lt;br /&gt;&lt;br /&gt;So back in that hotel room, at the end of a long day, knowing I have to get up at 5am the next morning to get on a plane to New York, I felt drained. &amp;nbsp;I felt&amp;hellip; vulnerable? But if I dig down to find out what&amp;rsquo;s really making me feel not-cool, it&amp;rsquo;s not because a couple of people noticed I was a girl. &amp;nbsp;It&amp;rsquo;s because I was tired, because I was on display, because I had been worried about my choice of clothes, because drawing attention to yourself is not terribly British, because I didn&amp;rsquo;t know if my new talk was any good.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s easy to blame impostor syndrome, or something similar. And maybe this is what impostor syndrome feels like. But I&amp;rsquo;m pretty sure every conference speaker, whatever their gender, race, sexual orientation, age, has felt this way. &amp;nbsp;I don&amp;rsquo;t think it&amp;rsquo;s because I have two X chromosomes and I&amp;rsquo;m in a male-dominated environment.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m not really sure what conclusions to draw from this experience. &amp;nbsp;I did want to share it so that other people know what it feels like.&lt;br /&gt;&lt;br /&gt;Possible conclusions:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;When you&amp;rsquo;re tired, it&amp;rsquo;s easy to blame the first thing that springs to mind for your lack of shiny-happy feelings&lt;/li&gt;&lt;li&gt;When you&amp;rsquo;ve got a lot on your plate, seemingly-innocuous (even those driven by positive intentions) comments or actions can increase your stress levels&lt;/li&gt;&lt;li&gt;Don&amp;rsquo;t think too much. &amp;nbsp;It can drive you mad.&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
