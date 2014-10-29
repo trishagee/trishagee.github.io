@@ -96,6 +96,9 @@ different versions I&amp;rsquo;ve presented. The current one is the JavaOne vers
 the commits correspond to the user stories in &lt;a href=&#34;http://www.slideshare.net/trishagee/i-want-coffeejavaone&#34;&gt;the slides&lt;/a&gt;,
 so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 
+&lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
+so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;This talk has been videod several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
 these older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
 these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
