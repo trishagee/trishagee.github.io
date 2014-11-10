@@ -6,7 +6,62 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 20 Oct 2014 00:00:00 UTC</updated>
+    <updated>Mon, 10 Nov 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Staying Ahead of the Curve</title>
+      <link>http://trishagee.github.io/presentation/staying_ahead_of_the_curve/</link>
+      <pubDate>Mon, 10 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/staying_ahead_of_the_curve/</guid>
+      <description>
+
+&lt;p&gt;Last Thursday I gave a keynote at
+&lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;GOTO Berlin&lt;/a&gt; to address the problems
+of deciding how to learn a new technology/framework/process (Spoiler Alert: it&amp;rsquo;s not by putting it into production).&lt;/p&gt;
+
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/41120693&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+
+&lt;p&gt;During the talk I show an example of how &lt;em&gt;not&lt;/em&gt; to &lt;a href=&#34;https://gist.github.com/trishagee/a3e4a54329e94ada2fe2&#34;&gt;implement lambdas&lt;/a&gt;,
+and I also demonstrate a very crude performance test for using &lt;code&gt;parallelStream&lt;/code&gt;. I&amp;rsquo;m not going to link to the performance test as it&amp;rsquo;s
+not a shining example of how to write these sorts of tests, but if you&amp;rsquo;re desperate you&amp;rsquo;ll be able to find it in my Github repo.&lt;/p&gt;
+
+&lt;p&gt;I also talk about how amazing Spock is, so if you&amp;rsquo;re interested you can read more about
+&lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;my experiences with Spock&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This talk was built off an &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
+invest your personal time in.&lt;/p&gt;
+
+&lt;p&gt;The presentation was videoed, and if the video comes online I will post it here. But for now, I&amp;rsquo;ll leave you with this crude decision
+chart and the mind-map of potential ways to play with a technology. Remember, learning to say &lt;em&gt;&amp;ldquo;no&amp;rdquo;&lt;/em&gt; to a technology can be very powerful.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;PS I&amp;rsquo;m thinking of writing a book, &lt;a href=&#34;https://leanpub.com/careeradviceforprogrammers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;. If you&amp;rsquo;re
+interested, let me know (because, you know, I&amp;rsquo;ve got loads of spare time for another project, sigh&amp;hellip;).&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Presentation Abstract&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;We all want to stay ahead of the curve - after all, that&amp;rsquo;s what you go to a conference for. But have you ever considered how being ahead
+of the curve might be dangerous?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Using a new language before you understand it, putting a technology into production so you can learn it,
+abandoning &amp;ldquo;old practices&amp;rdquo; before you&amp;rsquo;ve got the benefit from them… These things are common practice,
+under the guise of Progress and Keeping Up To Date.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;But while we shouldn&amp;rsquo;t be running around like headless chickens chasing the next Shiny New Thing,
+we do need to see to our Continuous Learning and, of course, we should Embrace Change.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;How do we balance these two extremes? And how do we see to our own growth and learning as techies while meeting the needs of our
+project, team and organisation?&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
@@ -322,16 +377,6 @@ or get a good feel of what it was like, watch this video by the awesome &lt;a hr
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/why_open_source_your_secrets/</guid>
       <description>&lt;p&gt;Here&amp;rsquo;s a video of my Open Conference session on the business benefits of open sourcing your software. &amp;nbsp;Given that the conference was at a weekend and had a very intimate feel, I think I was a teeny bit more honest than I usually am. &amp;nbsp;Enjoy.&lt;br /&gt;&lt;br /&gt;&lt;object classid=&#34;clsid:D27CDB6E-AE6D-11cf-96B8-444553540000&#34; height=&#34;310&#34; id=&#34;bplayer&#34; width=&#34;460&#34;&gt;&lt;embed name=&#34;bplayer&#34; src=&#34;http://static.bambuser.com/r/player.swf?vid=2596851&#34; type=&#34;application/x-shockwave-flash&#34; width=&#34;460&#34; height=&#34;310&#34; allowfullscreen=&#34;true&#34; allowscriptaccess=&#34;always&#34; wmode=&#34;opaque&#34;&gt;&lt;/embed&gt;&lt;param name=&#34;movie&#34; value=&#34;http://static.bambuser.com/r/player.swf?vid=2596851&#34;&gt;  &lt;/param&gt;&lt;param name=&#34;allowfullscreen&#34; value=&#34;true&#34;&gt;  &lt;/param&gt;&lt;param name=&#34;allowscriptaccess&#34; value=&#34;always&#34;&gt;  &lt;/param&gt;&lt;param name=&#34;wmode&#34; value=&#34;opaque&#34;&gt;  &lt;/param&gt;&lt;/object&gt; &lt;br /&gt;&lt;div id=&#34;__ss_12967200&#34; style=&#34;width: 425px;&#34;&gt;&lt;strong style=&#34;display: block; margin: 12px 0 4px;&#34;&gt;&lt;a href=&#34;http://www.slideshare.net/trishagee/why-open-source-your-secrets&#34; title=&#34;Why Open Source Your Secrets&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;&lt;/strong&gt;&lt;object height=&#34;355&#34; id=&#34;__sse12967200&#34; width=&#34;425&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=opensourcebenefits-120517043558-phpapp01&amp;stripped_title=why-open-source-your-secrets&amp;userName=trishagee&#34; /&gt; &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt; &lt;param name=&#34;allowScriptAccess&#34; value=&#34;always&#34;/&gt; &lt;param name=&#34;wmode&#34; value=&#34;transparent&#34;/&gt; &lt;embed name=&#34;__sse12967200&#34; src=&#34;http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=opensourcebenefits-120517043558-phpapp01&amp;stripped_title=why-open-source-your-secrets&amp;userName=trishagee&#34; type=&#34;application/x-shockwave-flash&#34; allowscriptaccess=&#34;always&#34; allowfullscreen=&#34;true&#34; wmode=&#34;transparent&#34; width=&#34;425&#34; height=&#34;355&#34;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;br /&gt;&lt;div style=&#34;padding: 5px 0 12px;&#34;&gt;View more &lt;a href=&#34;http://www.slideshare.net/&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/trishagee&#34;&gt;Trisha Gee&lt;/a&gt;.&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>New Disruptor Presentation Unveiled to the LJC!</title>
-      <link>http://trishagee.github.io/post/new_disruptor_presentation_unveiled_to_the_ljc/</link>
-      <pubDate>Wed, 21 Mar 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/new_disruptor_presentation_unveiled_to_the_ljc/</guid>
-      <description>&lt;p&gt;A few weeks ago, I presented my new &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; talk to the &lt;a href=&#34;http://londonjavacommunity.co.uk/&#34;&gt;London Java Community&lt;/a&gt;. &amp;nbsp;Since it was very kindly hosted at Skillsmatter, there is a &lt;a href=&#34;http://skillsmatter.com/podcast/home/the-disruptor/js-3798&#34;&gt;video of the presentation&lt;/a&gt; available, and the slides are below.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;width:425px&#34; id=&#34;__ss_12091737&#34;&gt; &lt;strong style=&#34;display:block;margin:12px 0 4px&#34;&gt;&lt;a href=&#34;http://www.slideshare.net/trishagee/a-users-guide-to-the-disruptor&#34; title=&#34;Concurrent Programming Using the Disruptor&#34; target=&#34;_blank&#34;&gt;Concurrent Programming Using the Disruptor&lt;/a&gt;&lt;/strong&gt; &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/12091737&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt; &lt;div style=&#34;padding:5px 0 12px&#34;&gt; View more &lt;a href=&#34;http://www.slideshare.net/&#34; target=&#34;_blank&#34;&gt;presentations&lt;/a&gt; from &lt;a href=&#34;http://www.slideshare.net/trishagee&#34; target=&#34;_blank&#34;&gt;Trisha Gee&lt;/a&gt; &lt;/div&gt; &lt;/div&gt;&lt;br /&gt;The presentation is a little different to the ones we&amp;rsquo;ve done before. &amp;nbsp;Previously we&amp;rsquo;ve gone into how it works and why it&amp;rsquo;s fast. &amp;nbsp;This time I wanted to step back a little from the internals and show how real developers might actually use it. &amp;nbsp;The example is somewhat contrived, but the idea is to give some hints on how to break your problem down into something that will work with a Disruptor at the heart of it.&lt;br /&gt;&lt;br /&gt;I thought the event went really well. &amp;nbsp;It was a tiny bit &lt;i&gt;completely&lt;/i&gt; intimidating, as there were no lightning talks and I was the only attraction. &amp;nbsp;Seeing over a hundred people turn up after work, before beer, to hear you talk is a humbling experience. &amp;nbsp;Fortunately, I think the audience was perfect for the presentation - they had heard of the Disruptor but hadn&amp;rsquo;t seen anything very detailed about it, so my walkthrough of how you might use it seemed to go down well. &amp;nbsp;I certainly got a lot of very sensible questions (which hopefully I&amp;rsquo;ve remembered to repeat for the benefit of the recording), and people had some good ideas about how and when to use it.&lt;br /&gt;&lt;br /&gt;I ran the same presentation to a different audience at QCon London a week later, I&amp;rsquo;ll post a link to that if/when it becomes available.&lt;/p&gt;
 </description>
     </item>
     

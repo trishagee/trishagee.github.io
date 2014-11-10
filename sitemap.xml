@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://trishagee.github.io/</loc>
-    <lastmod>2014-10-22T00:00:00+00:00</lastmod>
+    <lastmod>2014-11-10T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/presentation/staying_ahead_of_the_curve/</loc>
+    <lastmod>2014-11-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -988,12 +993,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_london/</loc>
+    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
+    <loc>http://trishagee.github.io/post/qcon_london/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   

@@ -103,15 +103,39 @@ it&amp;rsquo;s a topic that comes up again and again:&lt;/p&gt;
 let alone the other JVM languages, HTML5, JavaScript frameworks, NoSQL, Big Data&amp;hellip;. argh!&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Technology, particularly development, seems to move at an ever-increasing pace.  Sure, the Internet makes it a lot easier for us to get access
-to information than in the Olden Days, when people probably had to read papers and books, and physically meet up to share knowledge, but that just makes the sheer volume of information even more overwhelming.&lt;br /&gt;&lt;br /&gt;So how &lt;i&gt;do&lt;/i&gt; you keep on top of all those technologies?&lt;br /&gt;&lt;br /&gt;You don&amp;rsquo;t.&lt;br /&gt;&lt;br /&gt;You can&amp;rsquo;t.  If you devoted yourself to learning the same way you did at university (pfff, well, theoretically you devoted yourself to learning&amp;hellip;), you could still never master every technology out there, and every new language and framework that pops up daily.  Even people who pick a technology stack that&amp;rsquo;s suitable for purpose (let&amp;rsquo;s go with the old favourite Spring/Hibernate combo) can&amp;rsquo;t read every blog post about those technologies and see every conference talk that was ever videoed.  To be the best even at Just Java, you&amp;rsquo;d have to be a master of concurrency, understand garbage collection, have read all revisions of &lt;a href=&#34;http://www.amazon.com/gp/product/0321356683/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321356683&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&#34;&gt;Effective Java&lt;/a&gt;&lt;img alt=&#34;&#34; border=&#34;0&#34; height=&#34;1&#34; src=&#34;http://www.assoc-amazon.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0321356683&#34; style=&#34;border: none !important; margin: 0px !important;&#34; width=&#34;1&#34; /&gt;, know every detail of all versions of Java, including all the changes coming in &lt;a href=&#34;http://jdk8.java.net/&#34;&gt;Java 8&lt;/a&gt;, be aware of all the &lt;a href=&#34;http://jcp.org/en/jsr/stage?listBy=jsr&#34;&gt;JSRs&lt;/a&gt; in progress.  They&amp;rsquo;d have to have read about waterfall development, the &lt;a href=&#34;http://www.amazon.com/gp/product/0201835959/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0201835959&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&#34;&gt;Mythical Man-Month&lt;/a&gt;&lt;img alt=&#34;&#34; border=&#34;0&#34; height=&#34;1&#34; src=&#34;http://www.assoc-amazon.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0201835959&#34; style=&#34;border: none !important; margin: 0px !important;&#34; width=&#34;1&#34; /&gt;, &lt;a href=&#34;http://www.amazon.com/gp/product/0321278658/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321278658&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&#34;&gt;XP&lt;/a&gt;&lt;img alt=&#34;&#34; border=&#34;0&#34; height=&#34;1&#34; src=&#34;http://www.assoc-amazon.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0321278658&#34; style=&#34;border: none !important; margin: 0px !important;&#34; width=&#34;1&#34; /&gt;, &lt;a href=&#34;http://www.amazon.com/gp/product/0130676349/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0130676349&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&#34;&gt;Scrum&lt;/a&gt;&lt;img alt=&#34;&#34; border=&#34;0&#34; height=&#34;1&#34; src=&#34;http://www.assoc-amazon.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=0130676349&#34; style=&#34;border: none !important; margin: 0px !important;&#34; width=&#34;1&#34; /&gt;, Lean, &lt;a href=&#34;http://www.infoq.com/presentations/Leaner-Programmer-Anarchy&#34;&gt;Programmer Anarchy&lt;/a&gt;, so that they could know they are working in the most effective way for the business and team they are in.&lt;br /&gt;&lt;br /&gt;All that as well as working 40 hours a week on the day job.&lt;br /&gt;&lt;br /&gt;So to expect to know the ins and out of all current (and maybe dated) technologies, and all upcoming ones - not knowing which are just fads and which are going to be the Next Big Thing - is impossible.&lt;/p&gt;
+&lt;p&gt;Technology, particularly development, seems to move at an ever-increasing pace.  Sure, the Internet makes it a lot easier for us to get
+access to information than in the Olden Days, when people probably had to read papers and books,
+and physically meet up to share knowledge, but that just makes the sheer volume of information even more overwhelming.&lt;/p&gt;
+
+&lt;p&gt;So how &lt;em&gt;do&lt;/em&gt; you keep on top of all those technologies?&lt;/p&gt;
+
+&lt;p&gt;You don&amp;rsquo;t.&lt;/p&gt;
+
+&lt;p&gt;You can&amp;rsquo;t.  If you devoted yourself to learning the same way you did at university (pfff, well,
+theoretically you devoted yourself to learning&amp;hellip;), you could still never master every technology out there,
+and every new language and framework that pops up daily.  Even people who pick a technology stack that&amp;rsquo;s suitable for purpose (let&amp;rsquo;s go
+with the old favourite Spring/Hibernate combo) can&amp;rsquo;t read every blog post about those technologies and see every conference talk that
+was ever videoed.  To be the best even at Just Java, you&amp;rsquo;d have to be a master of concurrency, understand garbage collection,
+have read all revisions of
+&lt;a href=&#34;http://www.amazon.com/gp/product/0321356683/ref=as_li_tf_tl?ie=UTF8&amp;amp;amp;camp=1789&amp;amp;amp;creative=9325&amp;amp;amp;creativeASIN=0321356683&amp;amp;amp;linkCode=as2&amp;amp;amp;tag=trissramb-20&#34;&gt;Effective Java&lt;/a&gt;,
+know every detail of all versions of Java, including all the changes coming in &lt;a href=&#34;http://jdk8.java.net/&#34;&gt;Java 8&lt;/a&gt;,
+be aware of all the &lt;a href=&#34;http://jcp.org/en/jsr/stage?listBy=jsr&#34;&gt;JSRs&lt;/a&gt; in progress.  They&amp;rsquo;d have to have read about waterfall development,
+the &lt;a href=&#34;http://www.amazon.com/gp/product/0201835959/ref=as_li_tf_tl?ie=UTF8&amp;amp;amp;camp=1789&amp;amp;amp;creative=9325&amp;amp;amp;creativeASIN=0201835959&amp;amp;amp;linkCode=as2&amp;amp;amp;tag=trissramb-20&#34;&gt;Mythical Man-Month&lt;/a&gt;,
+&lt;a href=&#34;http://www.amazon.com/gp/product/0321278658/ref=as_li_tf_tl?ie=UTF8&amp;amp;amp;camp=1789&amp;amp;amp;creative=9325&amp;amp;amp;creativeASIN=0321278658&amp;amp;amp;linkCode=as2&amp;amp;amp;tag=trissramb-20&#34;&gt;XP&lt;/a&gt;,
+&lt;a href=&#34;http://www.amazon.com/gp/product/0130676349/ref=as_li_tf_tl?ie=UTF8&amp;amp;amp;camp=1789&amp;amp;amp;creative=9325&amp;amp;amp;creativeASIN=0130676349&amp;amp;amp;linkCode=as2&amp;amp;amp;tag=trissramb-20&#34;&gt;Scrum&lt;/a&gt;, Lean, &lt;a href=&#34;http://www.infoq.com/presentations/Leaner-Programmer-Anarchy&#34;&gt;Programmer Anarchy&lt;/a&gt;,
+so that they could know they are working in the most effective way for the business and team they are in.&lt;/p&gt;
+
+&lt;p&gt;All that as well as working 40 hours a week on the day job.&lt;/p&gt;
+
+&lt;p&gt;So to expect to know the ins and out of all current (and maybe dated) technologies, and all upcoming ones - not knowing which are just
+fads and which are going to be the Next Big Thing - is impossible.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;But don&amp;rsquo;t you ask candidates how they stay current when you interview them?&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;p&gt;Yes I do. And actually it&amp;rsquo;s their willingness to at least try, and their ability to filter out and select the things to investigate or be
-aware of that interests me, not their deep understanding of Scala when they&amp;rsquo;re working in a JEE environment (for example).&lt;/p&gt;
+aware of that interests me, not their deep understanding of Scala when they&amp;rsquo;re working in a Java EE environment (for example).&lt;/p&gt;
 
 &lt;p&gt;There are two reasons that I can think of to &amp;ldquo;stay ahead of the curve&amp;rdquo;:&lt;/p&gt;
 
@@ -120,43 +144,55 @@ aware of that interests me, not their deep understanding of Scala when they&amp;
 &lt;li&gt;To get your next job&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;If you&amp;rsquo;re aiming for point one, it&amp;rsquo;s a little easier to filter out the noise and focus on what&amp;rsquo;s relevant.  In your place of work, there are going to be hard limits on new stuff you can use.  For example:&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re aiming for point one, it&amp;rsquo;s a little easier to filter out the noise and focus on what&amp;rsquo;s relevant.  In your place of work,
+there are going to be hard limits on new stuff you can use.  For example:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Your systems guys will not allow new languages, even JVM ones, in a production environment.  In which case,
 you don&amp;rsquo;t need to worry about learning them in any detail.&lt;/li&gt;
-&lt;li&gt;Your company has paid a heavy subscription fee for their existing database, therefore they will not be trying out funky &lt;a
-href=&#34;http://mechanitis.blogspot.co.uk/2012/10/nosql-is-stupid-name.html&#34;&gt;NoSQL&lt;/a&gt; solutions.  Fine, you don&amp;rsquo;t have to research them.&lt;/li&gt;
+&lt;li&gt;Your company has paid a heavy subscription fee for their existing database, therefore they will not be trying out funky
+&lt;a href=&#34;/post/nosql_is_a_stupid_name/&#34;&gt;NoSQL&lt;/a&gt; solutions.  Fine, you don&amp;rsquo;t have to research them.&lt;/li&gt;
 &lt;li&gt;You&amp;rsquo;re working on a messaging system with no UI.  In which case, you can let the new JavaScript frameworks rise and fall without
 worrying too much about them.&lt;/li&gt;
 &lt;li&gt;You work for a consultancy that specialises in government work, and documentation is sacred.  So,
 don&amp;rsquo;t worry about going to a bunch of agile/lean conferences, you probably won&amp;rsquo;t be able to sell it to your customers.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Now I&amp;rsquo;m not saying these circumstances apply to everyone.  And I&amp;rsquo;m not suggesting these are necessarily the best situations to be in.  But you can look at your current position and, if you intend to stay there, it might rule out a lot of the technology/process learning that&amp;rsquo;s available.&lt;br /&gt;&lt;br /&gt;Point one suggests good places for research.  For example:&lt;/p&gt;
+&lt;p&gt;Now I&amp;rsquo;m not saying these circumstances apply to everyone. And I&amp;rsquo;m not suggesting these are necessarily the best situations to be in.&lt;br /&gt;
+But you can look at your current position and, if you intend to stay there, it might rule out a lot of the technology/process learning
+that&amp;rsquo;s available.&lt;/p&gt;
+
+&lt;p&gt;Point one suggests good places for research.  For example:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;You&amp;rsquo;re using Spring dependency injection and you don&amp;rsquo;t speak XML fluently.  So you might research Spring wired up via Java and &lt;a
-href=&#34;http://blog.springsource.org/2007/05/14/annotation-driven-dependency-injection-in-spring-21/&#34;&gt;annotations&lt;/a&gt;, or you might look at
+&lt;li&gt;You&amp;rsquo;re using Spring dependency injection and you don&amp;rsquo;t speak XML fluently.  So you might research Spring wired up via Java and
+&lt;a href=&#34;http://blog.springsource.org/2007/05/14/annotation-driven-dependency-injection-in-spring-21/&#34;&gt;annotations&lt;/a&gt;, or you might look at
 &lt;a href=&#34;http://code.google.com/p/google-guice/&#34;&gt;Guice&lt;/a&gt;, or you might do a bit more reading around good practises in XML, or tools you
 can add to your IDE to make your life easier (&lt;a href=&#34;http://www.eclipse.org/&#34;&gt;Eclipse&lt;/a&gt; and
 &lt;a href=&#34;http://www.jetbrains.com/idea/features/xml_editor.html&#34;&gt;IntelliJ&lt;/a&gt; both support XML refactoring).&lt;/li&gt;
-&lt;li&gt;Your &lt;a href=&#34;http://ant.apache.org/&#34;&gt;Ant&lt;/a&gt; scripts are killing you, and you don&amp;rsquo;t know where your library jars should live.  You
-could read a lot more about Ant, you might look into &lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt;,
-&lt;a href=&#34;http://ant.apache.org/ivy/&#34;&gt;Ivy&lt;/a&gt;, and &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; (hint - gradle is awesome if you don&amp;rsquo;t
-like programming in XML).&lt;/li&gt;
+&lt;li&gt;Your &lt;a href=&#34;http://ant.apache.org/&#34;&gt;Ant&lt;/a&gt; scripts are killing you, and you don&amp;rsquo;t know where your library jars should live.  You could read a
+lot more about Ant, you might look into &lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt;, &lt;a href=&#34;http://ant.apache.org/ivy/&#34;&gt;Ivy&lt;/a&gt;,
+and &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; (hint - gradle is awesome if you don&amp;rsquo;t like programming in XML).&lt;/li&gt;
 &lt;li&gt;You spend all your time coercing objects into something &lt;a href=&#34;http://www.hibernate.org/&#34;&gt;Hibernate&lt;/a&gt;-shaped,
 and not actually delivering new functionality.  Maybe you could become a Hibernate guru instead of just poking at it like most of us do,
 or you could investigate different persistence frameworks or mechanisms.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;You get the idea.  If you feel pressured to keep learning and you&amp;rsquo;re not looking for a new job, there&amp;rsquo;s plenty you can be doing within the framework of your day job.  The best thing about this is that you might even be able to persuade your boss that you need to do some or all of this learning on work time, leaving you more time for your kids/spouse/drinking/XBox.&lt;/p&gt;
+&lt;p&gt;You get the idea.  If you feel pressured to keep learning and you&amp;rsquo;re not looking for a new job, there&amp;rsquo;s plenty you can be doing within
+the framework of your day job.  The best thing about this is that you might even be able to persuade your boss that you need to do some
+or all of this learning on work time, leaving you more time for your kids/spouse/drinking/XBox.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;I&amp;rsquo;m really much more motivated to learn skills to find that great new job&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Point two is a bit more tricky.  When you&amp;rsquo;re looking for a new job, it seems like every job description contains all technologies under the sun; it seems like interviewers expect you to be an expert in all sorts of different areas; it&amp;rsquo;s impossible to tell which jobs are good and which are poor, so you apply for everything and try to learn everything to get to the interview.&lt;br /&gt;&lt;br /&gt;Now if you&amp;rsquo;re already at the applying-for-a-new-job stage, you might not actually have time to learn everything under the sun.  And if you&amp;rsquo;re still working at the current place and just looking around to see what&amp;rsquo;s out there, you might not have time to train yourself up on all those great new JavaScript frameworks while doing the day job.&lt;/p&gt;
+&lt;p&gt;Point two is a bit more tricky.  When you&amp;rsquo;re looking for a new job, it seems like every job description contains all technologies under
+the sun; it seems like interviewers expect you to be an expert in all sorts of different areas; it&amp;rsquo;s impossible to tell which jobs are
+good and which are poor, so you apply for everything and try to learn everything to get to the interview.&lt;/p&gt;
+
+&lt;p&gt;Now if you&amp;rsquo;re already at the applying-for-a-new-job stage, you might not actually have time to learn everything under the sun.  And if
+you&amp;rsquo;re still working at the current place and just looking around to see what&amp;rsquo;s out there, you might not have time to train yourself up
+on all those great new JavaScript frameworks while doing the day job.&lt;/p&gt;
 
 &lt;p&gt;How on earth do you pick which things to focus on?&lt;/p&gt;
 
@@ -166,13 +202,44 @@ or you could investigate different persistence frameworks or mechanisms.&lt;/li&
 &lt;p&gt;But what if I&amp;rsquo;m falling behind on technology X and it turns out to be The Next Big Thing?&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Well, by the time it becomes the next big thing, you&amp;rsquo;ll have heard enough about it to know whether or not you care  - either because it interests you or because it&amp;rsquo;s so big you should care.  And by then, there will be plenty of knowledge out there (blogs, courses. conferences, books&amp;hellip;) so you&amp;rsquo;ll be able to pick it up much easier than when it was at the embryonic stage and no-one really knew what to use it for. Java is, what, 17 years old now, and people are still starting to learn it now.  No-one said you had to have coded with Java 1.0 in order to be effective in a Java 8 lambdas world.  In fact, you could argue that those who learnt it early on might be less able to adjust to the current state of play.&lt;br /&gt;&lt;br /&gt;So.  Learn something because it interests you, or it&amp;rsquo;s fun, or you personally can see the value of it. Even the process of learning something new is valuable, even if the thing you learnt is not - it exercises those brain-muscles so they&amp;rsquo;re used to picking up something unfamiliar and playing with it.&lt;/p&gt;
+&lt;p&gt;Well, by the time it becomes the next big thing, you&amp;rsquo;ll have heard enough about it to know whether or not you care  - either because it
+interests you or because it&amp;rsquo;s so big you should care.  And by then, there will be plenty of knowledge out there (blogs,
+courses. conferences, books&amp;hellip;) so you&amp;rsquo;ll be able to pick it up much easier than when it was at the embryonic stage and no-one really
+knew what to use it for. Java is, what, 17 years old now, and people are still starting to learn it now.  No-one said you had to have
+coded with Java 1.0 in order to be effective in a Java 8 lambdas world.  In fact, you could argue that those who learnt it early on
+might be less able to adjust to the current state of play.&lt;/p&gt;
+
+&lt;p&gt;So.  Learn something because it interests you, or it&amp;rsquo;s fun, or you personally can see the value of it. Even the process of learning
+something new is valuable, even if the thing you learnt is not - it exercises those brain-muscles so they&amp;rsquo;re used to picking up
+something unfamiliar and playing with it.&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;But I see a thousand jobs for Scala/HTML5/&amp;lt;insert tech here&amp;gt;! Should I learn that?&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;Have you looked at Scala?  Do you like it?  Do you want to learn a whole new language?  Do you want to spend the next two years of your career working in Scala?  Because if you learn it to find a new job, and you &lt;i&gt;do&lt;/i&gt; find a new Scala job, then you&amp;rsquo;re going to &lt;i&gt;have&lt;/i&gt; to use it, and to continue to learn it. And if you don&amp;rsquo;t really give a crap about Scala, then why bother?  Have you looked at the types of companies that are advertising jobs for Scala?  Do you want to work there?  Again, if not, don&amp;rsquo;t bother.&lt;br /&gt;&lt;br /&gt;In our industry, particularly if you live and work in places like London, New York, Silicon Valley, there are &lt;i&gt;lots&lt;/i&gt; of jobs, even in these Tough Economic Times.  You don&amp;rsquo;t need to take any old job (unless you need a job Right Now, in which case I would advise you take Any Old Job and work on the side to find The Right Job to move to imminently).&lt;br /&gt;&lt;br /&gt;The point is, you&amp;rsquo;re freaking out because there are all these different technologies and all these jobs that are looking for different combinations of all these different skills, and this is a Good Thing.  You&amp;rsquo;ve been looking at it wrong - you think you need to be everything anyone wants, so that someone out there will pick you, like some sort of school sports team selection.  But it&amp;rsquo;s not like that - the selection power is in &lt;i&gt;your&lt;/i&gt; hands.  You can wade through those millions of job postings and find the ones that interest you.  You can invest in becoming skilled at the things you like, the things you enjoy, the things that scratch your intellectual itch, and you can then find a job that matches those skills.  Even better, if you&amp;rsquo;re active in learning those skills, and visible at it (stack overflow, your blog, communities&amp;hellip;), you&amp;rsquo;re going to &lt;a href=&#34;http://java.dzone.com/articles/ghost-who-codes-how-anonymity&#34;&gt;improve your chance of getting a job&lt;/a&gt; in the area that fascinates you.&lt;br /&gt;&lt;br /&gt;You don&amp;rsquo;t have to be good at everything.  Just find the things that interest you, stuff you feel motivated to learn about, and then when you find a job that uses those skills, you know you&amp;rsquo;re in the right place.&lt;br /&gt;&lt;br /&gt;So in fact, there is only one reason to stay ahead of the curve:&lt;/p&gt;
+&lt;p&gt;Have you looked at Scala?  Do you like it?  Do you want to learn a whole new language?  Do you want to spend the next two years of your
+career working in Scala?  Because if you learn it to find a new job, and you &lt;em&gt;do&lt;/em&gt; find a new Scala job,
+then you&amp;rsquo;re going to &lt;em&gt;have&lt;/em&gt; to use it, and to continue to learn it. And if you don&amp;rsquo;t really give a crap about Scala,
+then why bother?  Have you looked at the types of companies that are advertising jobs for Scala?  Do you want to work there?  Again,
+if not, don&amp;rsquo;t bother.&lt;/p&gt;
+
+&lt;p&gt;In our industry, particularly if you live and work in places like London, New York, Silicon Valley, there are &lt;em&gt;lots&lt;/em&gt; of jobs,
+even in these Tough Economic Times.  You don&amp;rsquo;t need to take any old job (unless you need a job Right Now,
+in which case I would advise you take Any Old Job and work on the side to find The Right Job to move to imminently).&lt;/p&gt;
+
+&lt;p&gt;The point is, you&amp;rsquo;re freaking out because there are all these different technologies and all these jobs that are looking for different
+combinations of all these different skills, and this is a Good Thing.  You&amp;rsquo;ve been looking at it wrong - you think you need to be
+everything anyone wants, so that someone out there will pick you, like some sort of school sports team selection.  But it&amp;rsquo;s not like
+that - the selection power is in &lt;em&gt;your&lt;/em&gt; hands.  You can wade through those millions of job postings and find the ones that interest
+you.  You can invest in becoming skilled at the things you like, the things you enjoy, the things that scratch your intellectual itch,
+and you can then find a job that matches those skills.  Even better, if you&amp;rsquo;re active in learning those skills,
+and visible at it (stack overflow, your blog, communities&amp;hellip;), you&amp;rsquo;re going to
+&lt;a href=&#34;http://java.dzone.com/articles/ghost-who-codes-how-anonymity&#34;&gt;improve your chance of getting a job&lt;/a&gt; in the area that fascinates you.&lt;/p&gt;
+
+&lt;p&gt;You don&amp;rsquo;t have to be good at everything.  Just find the things that interest you, stuff you feel motivated to learn about,
+and then when you find a job that uses those skills, you know you&amp;rsquo;re in the right place.&lt;/p&gt;
+
+&lt;p&gt;So in fact, there is only one reason to stay ahead of the curve:&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Because you want to.&lt;/li&gt;
