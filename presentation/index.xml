@@ -6,7 +6,36 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 10 Nov 2014 00:00:00 UTC</updated>
+    <updated>Tue, 11 Nov 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Tue, 11 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10-14 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.be/&#34;&gt;Devoxx, Belgium&lt;/a&gt; - I&amp;rsquo;ll be in the
+&lt;a href=&#34;http://www.devoxx.be/hackergarten#tuesday&#34;&gt;Hackergarten&lt;/a&gt; on Tuesday and Wednesday, and in the BOF (Bird of a Feather)
+&lt;a href=&#34;http://cfp.devoxx.be/2014/talk/JUB-4846/Women_and_female_speakers_in_the_Java_ecosystem_-_How_to_ameliorate_the_current_situation%3F&#34;&gt;&amp;ldquo;Women and female speakers in the Java ecosystem - How to ameliorate the current situation?&amp;rdquo;&lt;/a&gt;
+on Wednesday. I&amp;rsquo;ll be at the conference all week.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;22 Nov&lt;/strong&gt;: &lt;a href=&#34;http://2014.nosql-matters.org/bcn/&#34;&gt;NoSQL Matters, Barcelona&lt;/a&gt; - presenting the
+&lt;a href=&#34;https://2014.nosql-matters.org/bcn/abstracts/#abstract_116695004775&#34;&gt;AngularJS/Java/MongoDB&lt;/a&gt; demo again,
+with more of a focus on the MongoDB side. It&amp;rsquo;s going to be really nice to present so close to home!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;24 Nov&lt;/strong&gt;: Scheduled to speak at the &lt;a href=&#34;http://www.meetup.com/BarcelonaJUG/&#34;&gt;Barcelona JUG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/215362192/&#34;&gt;London Java Community Open Conference, erm, London&lt;/a&gt; - In many ways this is
+my favourite conference of the whole year. &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;Isra&lt;/a&gt; and I are making the trip from Spain just to attend this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1-3 Dec&lt;/strong&gt;: In &lt;em&gt;London&lt;/em&gt;. If you want to meet up, or want me to speak at your company, these are the dates to grab me.&lt;/p&gt;
+
+&lt;p&gt;I currently have nothing planned for 2015, and currently I think I&amp;rsquo;d like it to stay that way for a while.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Staying Ahead of the Curve</title>
@@ -60,35 +89,6 @@ we do need to see to our Continuous Learning and, of course, we should Embrace C
 
 &lt;p&gt;&lt;em&gt;How do we balance these two extremes? And how do we see to our own growth and learning as techies while meeting the needs of our
 project, team and organisation?&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Tue, 21 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;10-14 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.be/&#34;&gt;Devoxx, Belgium&lt;/a&gt; - I&amp;rsquo;ll be in the
-&lt;a href=&#34;http://www.devoxx.be/hackergarten#tuesday&#34;&gt;Hackergarten&lt;/a&gt; on Tuesday and Wednesday, and in the BOF (Bird of a Feather)
-&lt;a href=&#34;http://cfp.devoxx.be/2014/talk/JUB-4846/Women_and_female_speakers_in_the_Java_ecosystem_-_How_to_ameliorate_the_current_situation%3F&#34;&gt;&amp;ldquo;Women and female speakers in the Java ecosystem - How to ameliorate the current situation?&amp;rdquo;&lt;/a&gt;
-on Wednesday. I&amp;rsquo;ll be at the conference all week.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;22 Nov&lt;/strong&gt;: &lt;a href=&#34;http://2014.nosql-matters.org/bcn/&#34;&gt;NoSQL Matters, Barcelona&lt;/a&gt; - presenting the
-&lt;a href=&#34;https://2014.nosql-matters.org/bcn/abstracts/#abstract_116695004775&#34;&gt;AngularJS/Java/MongoDB&lt;/a&gt; demo again,
-with more of a focus on the MongoDB side. It&amp;rsquo;s going to be really nice to present so close to home!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;24 Nov&lt;/strong&gt;: Scheduled to speak at the &lt;a href=&#34;http://www.meetup.com/BarcelonaJUG/&#34;&gt;Barcelona JUG&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/215362192/&#34;&gt;London Java Community Open Conference, erm, London&lt;/a&gt; - In many ways this is
-my favourite conference of the whole year. &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;Isra&lt;/a&gt; and I are making the trip from Spain just to attend this.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1-3 Dec&lt;/strong&gt;: In &lt;em&gt;London&lt;/em&gt;. If you want to meet up, or want me to speak at your company, these are the dates to grab me.&lt;/p&gt;
-
-&lt;p&gt;I currently have nothing planned for 2015, and currently I think I&amp;rsquo;d like it to stay that way for a while.&lt;/p&gt;
 </description>
     </item>
     
