@@ -14,7 +14,9 @@
       <pubDate>Mon, 20 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
-      <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
+      <description>
+
+&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
 mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
 where these popular technologies sit in your archtecture, and how they interact with each other.&lt;/p&gt;
 
@@ -23,7 +25,7 @@ where these popular technologies sit in your archtecture, and how they interact 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MRrSAkEAnZQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;The code is &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;available on GitHub&lt;/a&gt;.  You&amp;rsquo;ll see there are a number of different branches for the
-different versions I&amp;rsquo;ve presented. The current one is the JavaOne version.  With all the branches,
+different versions I&amp;rsquo;ve presented. The current one is the NoSQL Matters version.  With all the branches,
 the commits correspond to the user stories in &lt;a href=&#34;http://www.slideshare.net/trishagee/i-want-coffeejavaone&#34;&gt;the slides&lt;/a&gt;,
 so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 
@@ -39,7 +41,30 @@ these initial demos.  If more videos become available I&amp;rsquo;ll add them he
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Resources&lt;/h3&gt;
+
+&lt;p&gt;These are the main resources I used in creating this talk:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/0596805829/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596805829&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=GAJBJ3MFBCQJ2N53&#34;&gt;REST in Practice&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=0596805829&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important;margin:0px!important;&#34; /&gt; - Fantastic book to get your head into the right place for RESTy web services&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=i9MHigUZKEM&#34;&gt;AngularJS in 60 mins&lt;/a&gt; - a very useful introduction to building simple AngularJS apps&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.oracle.com/geertjan/entry/angularjs_meets_java_ee_7&#34;&gt;AngularJS meets JavaEE&lt;/a&gt; - specifically walks through connecting an
+AngularJS app to a JavaEE back end using NetBeans, but the principals here are the ones I used in the cafelito application&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://angular-ui.github.io/bootstrap/&#34;&gt;UI Bootstrap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://dropwizard.io/&#34;&gt;Dropwizard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/mongodb/morphia/&#34;&gt;Morphia&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gradle.org/&#34;&gt;Gradle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And remember, the &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;application code is available here&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
