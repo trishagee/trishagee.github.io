@@ -10,6 +10,52 @@
     
     <item>
       <title></title>
+      <link>http://trishagee.github.io/drafts/how_to_write_a_cfp/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/drafts/how_to_write_a_cfp/</guid>
+      <description>&lt;p&gt;Title
+It needs a compelling (and ideally, short) title. Conference attendees will likely glance at the timetable and not necessarily read all
+the abstracts - have keywords in the title that will grab the attention. Maybe indicate the level required.  Good examples are things like:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Scala for Java Developers&lt;/li&gt;
+&lt;li&gt;Intro to [Technology X]&lt;/li&gt;
+&lt;li&gt;[Technology X]: Beyond the Basics&lt;/li&gt;
+&lt;li&gt;How [Company Y] scaled to [some insane metric]&lt;/li&gt;
+&lt;li&gt;(Martijn&amp;rsquo;s current talk)&lt;/li&gt;
+&lt;li&gt;6 million transactions a second&lt;/li&gt;
+&lt;li&gt;AngularJS, Java, Groovy, MongoDB working together&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Abstract
+Needs to explain:
+ - Who the talk is aimed at
+ - Vaguely what it&amp;rsquo;s going to cover&lt;/p&gt;
+
+&lt;p&gt;Each conference has a different set of fields to fill in for the talk submissions.  For some, it all has to be in the abstract,
+for others, they&amp;rsquo;ll ask for a behind-the-scenes look at the talk, or a structure of how you&amp;rsquo;re going to present it.  For your talk,
+whether you&amp;rsquo;ve written it yet or not, you&amp;rsquo;ll need to know:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Who is it aimed at?&lt;/li&gt;
+&lt;li&gt;What will they learn?&lt;/li&gt;
+&lt;li&gt;Which buzz words will grab attention?&lt;/li&gt;
+&lt;li&gt;What story will you tell?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Past performance
+ - Get videoed. Even if you&amp;rsquo;re not fantastic, you&amp;rsquo;re miles ahead of an unknown already
+ - Get a named event on your CV. Pair if necessary.
+ - have a blog if you don&amp;rsquo;t have videos
+ - LinkedIn
+ - Twitter
+ - Be linked to A Name: a company, a person, a conference, a user group.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://trishagee.github.io/drafts/more_female_speakers/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
@@ -109,52 +155,6 @@ the type of CfPs that didn&amp;rsquo;t make it.&lt;/p&gt;
  - Ask for mentors
  - Ask for feedback
  - &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; is perfectly acceptable.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://trishagee.github.io/drafts/how_to_write_a_cfp/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/drafts/how_to_write_a_cfp/</guid>
-      <description>&lt;p&gt;Title
-It needs a compelling (and ideally, short) title. Conference attendees will likely glance at the timetable and not necessarily read all
-the abstracts - have keywords in the title that will grab the attention. Maybe indicate the level required.  Good examples are things like:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Scala for Java Developers&lt;/li&gt;
-&lt;li&gt;Intro to [Technology X]&lt;/li&gt;
-&lt;li&gt;[Technology X]: Beyond the Basics&lt;/li&gt;
-&lt;li&gt;How [Company Y] scaled to [some insane metric]&lt;/li&gt;
-&lt;li&gt;(Martijn&amp;rsquo;s current talk)&lt;/li&gt;
-&lt;li&gt;6 million transactions a second&lt;/li&gt;
-&lt;li&gt;AngularJS, Java, Groovy, MongoDB working together&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Abstract
-Needs to explain:
- - Who the talk is aimed at
- - Vaguely what it&amp;rsquo;s going to cover&lt;/p&gt;
-
-&lt;p&gt;Each conference has a different set of fields to fill in for the talk submissions.  For some, it all has to be in the abstract,
-for others, they&amp;rsquo;ll ask for a behind-the-scenes look at the talk, or a structure of how you&amp;rsquo;re going to present it.  For your talk,
-whether you&amp;rsquo;ve written it yet or not, you&amp;rsquo;ll need to know:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Who is it aimed at?&lt;/li&gt;
-&lt;li&gt;What will they learn?&lt;/li&gt;
-&lt;li&gt;Which buzz words will grab attention?&lt;/li&gt;
-&lt;li&gt;What story will you tell?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Past performance
- - Get videoed. Even if you&amp;rsquo;re not fantastic, you&amp;rsquo;re miles ahead of an unknown already
- - Get a named event on your CV. Pair if necessary.
- - have a blog if you don&amp;rsquo;t have videos
- - LinkedIn
- - Twitter
- - Be linked to A Name: a company, a person, a conference, a user group.&lt;/p&gt;
 </description>
     </item>
     
