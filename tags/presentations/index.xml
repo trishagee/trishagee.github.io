@@ -75,9 +75,10 @@ project, team and organisation?&lt;/em&gt;&lt;/p&gt;
 mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
 where these popular technologies sit in your archtecture, and how they interact with each other.&lt;/p&gt;
 
-&lt;p&gt;The exact code I present has changed a bit over time, but the vJUG has a pretty recent version of the demo:&lt;/p&gt;
+&lt;p&gt;The exact code I present has changed a bit over time, the session I did for hack.summit() is the most recent:&lt;/p&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MRrSAkEAnZQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/VyEdy-l5608&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+ 
 
 &lt;p&gt;The code is &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;available on GitHub&lt;/a&gt;.  You&amp;rsquo;ll see there are a number of different branches for the
 different versions I&amp;rsquo;ve presented. The current one is the NoSQL Matters version.  With all the branches,
@@ -92,8 +93,12 @@ these older versions use a different library to talk to MongoDB and (I hope) you
 these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;,
+and a slightly different way of calling the method to get my nearest coffee shop)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
+presentation, and the video uses MongoJack instead of Morphia &amp;amp; shows an even earlier version of the find-my-coffee UI)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt; (only the second time I presented this
+demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
@@ -117,6 +122,8 @@ AngularJS app to a JavaEE back end using NetBeans, but the principals here are t
 &lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ&lt;/a&gt;: there&amp;rsquo;s a free community version of the IDE, but it&amp;rsquo;s not very expensive to upgrade to
+the full version and it will save you so much time and effort.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And remember, the &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;application code is available here&lt;/a&gt;.&lt;/p&gt;

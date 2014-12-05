@@ -230,9 +230,10 @@ it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-l
 mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
 where these popular technologies sit in your archtecture, and how they interact with each other.&lt;/p&gt;
 
-&lt;p&gt;The exact code I present has changed a bit over time, but the vJUG has a pretty recent version of the demo:&lt;/p&gt;
+&lt;p&gt;The exact code I present has changed a bit over time, the session I did for hack.summit() is the most recent:&lt;/p&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MRrSAkEAnZQ&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/VyEdy-l5608&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+ 
 
 &lt;p&gt;The code is &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;available on GitHub&lt;/a&gt;.  You&amp;rsquo;ll see there are a number of different branches for the
 different versions I&amp;rsquo;ve presented. The current one is the NoSQL Matters version.  With all the branches,
@@ -247,8 +248,12 @@ these older versions use a different library to talk to MongoDB and (I hope) you
 these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;,
+and a slightly different way of calling the method to get my nearest coffee shop)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
+presentation, and the video uses MongoJack instead of Morphia &amp;amp; shows an even earlier version of the find-my-coffee UI)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt; (only the second time I presented this
+demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
@@ -272,6 +277,8 @@ AngularJS app to a JavaEE back end using NetBeans, but the principals here are t
 &lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
 &lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ&lt;/a&gt;: there&amp;rsquo;s a free community version of the IDE, but it&amp;rsquo;s not very expensive to upgrade to
+the full version and it will save you so much time and effort.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And remember, the &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;application code is available here&lt;/a&gt;.&lt;/p&gt;
@@ -564,6 +571,28 @@ and if you look through the history you can see how it builds up, the same as it
     </item>
     
     <item>
+      <title>Fiesta de lanzamiento de Java 8</title>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party/</guid>
+      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
+presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
       <link>http://trishagee.github.io/post/svq_java8_launch_party/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
@@ -587,28 +616,6 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fiesta de lanzamiento de Java 8</title>
-      <link>http://trishagee.github.io/es/post/svq_java8_launch_party/</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party/</guid>
-      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
-presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
