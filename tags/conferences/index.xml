@@ -6,7 +6,180 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 11 Nov 2014 00:00:00 UTC</updated>
+    <updated>Tue, 09 Dec 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Improving Speaker Diversity</title>
+      <link>http://trishagee.github.io/post/more_female_speakers/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/more_female_speakers/</guid>
+      <description>
+
+&lt;p&gt;Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically,
+although not limited to, increasing the number of women speakers).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to outline the things I remember being discussed, although as usual we did not find the answer to the problem,
+only identify some issues and explore some options.&lt;/p&gt;
+
+&lt;p&gt;This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and
+posted than if this all goes to die in my drafts folder.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;I don&amp;rsquo;t have anything to say&lt;/strong&gt;&lt;br /&gt;
+This is the very first thing any developer says when you ask them why they haven&amp;rsquo;t thought about presenting at conferences or user
+groups. Turns out, you always have something to say.  For example, our most popular sessions at the Sevilla JUG and MUG are &amp;ldquo;Introduction
+ to&amp;hellip;&amp;ldquo;. You hear from plenty of experts who have travelled the whole road to some pinnacle of excellence,
+ but what many developers need is simply someone a couple of steps ahead of them to lead them forwards.&lt;/p&gt;
+
+&lt;p&gt;You always know more than &lt;em&gt;someone&lt;/em&gt;, you don&amp;rsquo;t need to know everything, and you don&amp;rsquo;t need to know more than everyone&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why should I be role model?&lt;/strong&gt;&lt;br /&gt;
+So many women feel this, and I&amp;rsquo;m completely sympathetic to this view point: I&amp;rsquo;m a woman developer, getting along, happy in my job,
+happy being a programmer, why the hell should I have to stand up and present and blog and be a role model for other women? Men don&amp;rsquo;t have
+to do that. Men can &lt;em&gt;just&lt;/em&gt; be developers.&lt;/p&gt;
+
+&lt;p&gt;In addition, there&amp;rsquo;s the fear that if you &lt;em&gt;do&lt;/em&gt; stand up, become a role model, that somehow people will think you&amp;rsquo;re representing all
+women developers. You&amp;rsquo;ll be worried because you can only represent who you are, what you do, you can&amp;rsquo;t represent a whole gender in a
+single presentation or a single interview.  And the pressure! What if I mess up? What if I say something my gender does not agree with?
+What if I say something that causes my whole gender to be judged?&lt;/p&gt;
+
+&lt;p&gt;Totally understandable fears. Totally true that many people will ask you to be &lt;em&gt;the&lt;/em&gt; woman developer, to answer for all women.  Well,
+that&amp;rsquo;s why I&amp;rsquo;m asking more women to stand up, to be role models - if we all step up, it will no longer just be me, and you,
+and that other one over there. There&amp;rsquo;ll be more of us, more differing voices, we&amp;rsquo;ll stand out less. But we have to stand up first.  And
+in the meantime it&amp;rsquo;s us and our points of view they&amp;rsquo;re listening to. Wouldn&amp;rsquo;t you rather voice your opinion than have someone else speak
+on your behalf? Especially when very few people really can represent you, who you are and what you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What if I can&amp;rsquo;t answer the questions?&lt;/strong&gt;&lt;br /&gt;
+You&amp;rsquo;ll be surprised at what you do know, so people who present run into this less than you&amp;rsquo;d think, even if you&amp;rsquo;re just beginning,
+but just in case here are some tips:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Repeat the question, paraphrasing. Firstly, this ensures you&amp;rsquo;ve actually heard the question correctly. Secondly,
+it allows the whole audience to hear it, and thirdly, but most importantly, it buys you time to think.&lt;/li&gt;
+&lt;li&gt;Be honest - say you don&amp;rsquo;t know, and move on. If you know somewhere that might have the answer,
+point the person to that resource.  But a technical audience actually values the answer &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; more than you think. Especially
+the person who asked the question, it makes them feel really smart!&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;If you don&amp;rsquo;t know, but you think the audience might know, throw it back to them. Either to the person who asked the question,
+if that feels appropriate (especially if this is one of those &amp;ldquo;look how smart I am&amp;rdquo; questions),
+or to the audience as a whole. In conferences in particular, there&amp;rsquo;s a good chance someone there knows the answer.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re genuinely terrified of all questions, say at the start of the presentation that you won&amp;rsquo;t take questions in the talk. Offer
+an alternative, like via Twitter or e-mail, if you can.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;What can conference organisers do?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifically invite the people you want presenting&lt;/strong&gt;&lt;br /&gt;
+Don&amp;rsquo;t just wait for them to submit. If you want more women, more diversity, invite them. And invite them early&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Secure your women presenters early.&lt;/strong&gt;&lt;br /&gt;
+Recognise that there are relatively few women presenters on &amp;ldquo;the circuit&amp;rdquo;, and understand that &lt;em&gt;everyone&lt;/em&gt; wants them to speak at their
+conference. This rare breed, the female technical presenter, gets booked up &lt;em&gt;well&lt;/em&gt; in advance.  They&amp;rsquo;re probably as in-demand as your
+keynote speakers, and can probably devote less time to appearing at conferences than those who have made it to keynote-standard (I&amp;rsquo;m
+making a sweeping generalisation that your techy women have day-jobs as developers and your keynote speakers are either professional
+presenters or at least can argue presenting as a critical part of their job).&lt;/p&gt;
+
+&lt;p&gt;So, you have a limited resource (experienced women presenters) that&amp;rsquo;s in high demand. You need to reach out directly to them,
+invite them, and secure them well in advance of your conference.  Many big conferences, for example JavaOne and QCon,
+will invite speakers six months in advance. If you give women speakers a month&amp;rsquo;s notice before your conference or event,
+they simply are not going to have the space in their schedule at that late notice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Showcase your diversity on your website&lt;/strong&gt;&lt;br /&gt;
+If you haven&amp;rsquo;t already heard of &lt;a href=&#34;http://en.wikipedia.org/wiki/Microaggression_theory&#34;&gt;microaggressions&lt;/a&gt;,
+go and read what that means before you get any further.  There&amp;rsquo;s a very simple thing you
+need to do with your website, whether you&amp;rsquo;ve opened for CFP or you&amp;rsquo;re trying to get attendees to register - make sure the photos on your
+website show the type of diversity you want to encourage.  Only yesterday I was looking at the website of a big conference,
+who I know for a fact are working &lt;em&gt;really&lt;/em&gt; hard to ensure diversity, not just with gender but race, age,
+and where possible in less physically obvious dimensions. The conference is many months off, so the only photo they have on the website
+is a background photo of the exhibition hall from some previous year, crammed full of attendees - white, male attendees,
+as far as it&amp;rsquo;s possible to tell.  It&amp;rsquo;s extremely subtle. You might not even notice, as the photo is behind the headers and text of the
+site. But I noticed. And you can be sure the subconscious of every person who went to the website to either submit a proposal for a
+talk, or is considering asking their employer to pay for the registration, also noticed.  The conscious mind might be able to shrug it
+off.  But the subconscious of a non-white and/or non-male person notices and plants the subtle seed
+of &amp;ldquo;this conference is not for me&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;So, conference and event organisers - if you want more women applying to speak at your conference,
+show more women on your website.  If you want a more diverse audience, show more diverse faces.  If you&amp;rsquo;ve invited your women presenters
+early and secured them early, show their photos on the site - this sends a strong message to other women that their talk proposals will be
+taken seriously.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run warm up nights to try out new speakers&lt;/strong&gt;&lt;br /&gt;
+I know conference organisers get &lt;em&gt;lots&lt;/em&gt; of submissions, and I know it&amp;rsquo;s hard to tell which are going to be good speakers,
+especially if they&amp;rsquo;re new speakers or don&amp;rsquo;t have a video.  If you&amp;rsquo;re genuine about improving the diversity of your speakers,
+run free nights to a) promote your conference and b) try out new speakers.  Probably a good idea to have a new speaker and a known
+speaker to attract the crowd and give newbies a chance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be so damn picky&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New speakers need to be encouraged. Find a way to see their content without just discarding an unknown name.&lt;/li&gt;
+&lt;li&gt;Existing speakers might not have the luxury of creating new content. Many conferences want genuine practitioners,
+not just evangelists, but those people have day jobs and can&amp;rsquo;t be creating a new talk just for your conference.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Leave space for new speakers&lt;/strong&gt;&lt;br /&gt;
+&amp;hellip;and don&amp;rsquo;t just have 7 slots for a pro speaker&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Look at your swag&lt;/strong&gt;&lt;br /&gt;
+Not just guys t-shirts.  One conference gave out cupcakes for example. But it doesn&amp;rsquo;t just have to be handbags and high-heeled shoes,
+just take a quick look and see if your swag is generally useful for techies, or if it leans towards men only. Men only swag (men&amp;rsquo;s
+t-shirts, bottle openers, subtle things like that) subliminally says &amp;ldquo;you don&amp;rsquo;t belong here&amp;rdquo; to the women.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Give feedback&lt;/strong&gt;&lt;br /&gt;
+You can&amp;rsquo;t tell every individual why they were rejected, but you could look at all the rejected submissions and give broad indications of
+the type of CFPs that didn&amp;rsquo;t make it. Maybe write a blog post explaining which sorts of talks didn&amp;rsquo;t make it and why.  This will help
+speakers create content that better fits your conference.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Be specific about what you&amp;rsquo;re looking for&lt;/strong&gt;&lt;br /&gt;
+If you have tracks you&amp;rsquo;re finding content for, put them on the website/CFP, so people know what the topics are. If you have an
+idea that you want 30% beginner material and 30% very advanced, make that clear too. Especially if you want &lt;em&gt;only&lt;/em&gt; beginner or &lt;em&gt;only&lt;/em&gt;
+advanced. People will submit more appropriate talks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Have a beginner&amp;rsquo;s track&lt;/strong&gt;&lt;br /&gt;
+&amp;hellip;not just for the speakers, for the content too. Beginner speakers may be more comfortable presenting &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; talks.&lt;br /&gt;
+Having a beginners track, whether it&amp;rsquo;s for content or speakers, will make newbies feel more included.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;What other things can we try?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;User groups can grow talent&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Practice writing CFPs&lt;/li&gt;
+&lt;li&gt;Help each other&lt;/li&gt;
+&lt;li&gt;Presentation skills&lt;/li&gt;
+&lt;li&gt;Lightning talks, book club, different meetup styles (like fishbowl)&lt;/li&gt;
+&lt;li&gt;Run an open conference to encourage new speakers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Women&amp;rsquo;s user groups are instrumental&lt;/strong&gt;&lt;br /&gt;
+So here&amp;rsquo;s something interesting. I&amp;rsquo;m sceptical of all-women user groups as I feel it separates us from the communities we &lt;em&gt;should&lt;/em&gt; be
+contributing to. But women&amp;rsquo;s user groups can help us to integrate better.  For example, Duchess France helped and encouraged its members
+to submit talks to Devoxx, gave feedback on CFPs before they were submitted, and provided a safe place for the women to practice
+presenting beforehand.  I think this is exactly the sort of thing women&amp;rsquo;s user groups could be fantastic for.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Advice for budding speakers&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Just Do It&lt;/li&gt;
+&lt;li&gt;The more you do it, the more comfortable you&amp;rsquo;ll be&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re a speaker, it can make you feel less of an impostor at a conference - you&amp;rsquo;re not just a woman developer, you&amp;rsquo;re a speaker!&lt;/li&gt;
+&lt;li&gt;Everyone&amp;rsquo;s afraid, it&amp;rsquo;s not just you&lt;/li&gt;
+&lt;li&gt;Every developer wants to learn&lt;/li&gt;
+&lt;li&gt;The audience is on your side&lt;/li&gt;
+&lt;li&gt;Start Small (user groups)&lt;/li&gt;
+&lt;li&gt;Be technical. But you don&amp;rsquo;t have to be super smart&lt;/li&gt;
+&lt;li&gt;Bootstrapping is hard - you haven&amp;rsquo;t presented so you can&amp;rsquo;t get into conferences. Again, user groups can help with this.&lt;/li&gt;
+&lt;li&gt;Pair. Ask a more experienced presenter if you can co-present with them.&lt;/li&gt;
+&lt;li&gt;Ask for mentors&lt;/li&gt;
+&lt;li&gt;Ask for feedback&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; is perfectly acceptable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I appreciate there is &lt;em&gt;so&lt;/em&gt; much more I could have covered, and many topics deserve more depth. But this is the brain dump from the Devoxx
+session, and maybe one day things will be expanded into their own topics.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -251,104 +424,6 @@ MongoDB Java API (in its current, unfinished, state).&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/trishas_world_tour_2013/</guid>
       <description>&lt;p&gt;Quick update on my scheduled events this year. &amp;nbsp;Please feel free to suggest your MUG or JUG or other tech group as somewhere for me to visit on this Grand World Tour if I&amp;rsquo;m in your city.&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;17-21st June - In New York - woohoo! &amp;nbsp;Getting to know &lt;a href=&#34;https://twitter.com/evanchooly&#34;&gt;Justin Lee&lt;/a&gt;, the newest member of the Java team, doing some pair&amp;nbsp;programming&amp;nbsp;(hopefully) and meeting people at the MongoDB Masters&amp;rsquo; Summit on Thursday.&lt;br /&gt;24th June - &lt;a href=&#34;http://www.stacresearch.com/spring2013LON&#34;&gt;STAC Summit&lt;/a&gt;, London - I&amp;rsquo;m not presenting, but I&amp;rsquo;ll be there &amp;ldquo;networking&amp;rdquo; (a.k.a. drinking)&lt;br /&gt;27th June - &lt;a href=&#34;http://thettn.tv/headlines/trisha-gee-27th-june-2013-video.aspx#.UYzlwv35XAE.blogger&#34;&gt;Technology Transformation Network&lt;/a&gt;, London. &amp;nbsp;Tiny bit concerned about this event now (don&amp;rsquo;t tell anyone) because I&amp;rsquo;m hoping to run break out sessions on how to approach design, and I&amp;rsquo;m not sure I can do this alone&amp;hellip;.&lt;br /&gt;1-5th July - In Dublin, hoping to talk to a MUG or JUG while I&amp;rsquo;m there. &amp;nbsp;Invite me!&lt;br /&gt;22-25th July - &lt;a href=&#34;http://www.oracle.com/events/apac/cn/en/javaone/index.html&#34;&gt;JavaOne Shanghai&lt;/a&gt; (CON1148). I&amp;rsquo;ve never been east of Europe before, very exciting.&lt;br /&gt;August - Going to be in Seville (Spain), and a weekend in Madrid.&lt;br /&gt;11-12th Sept - &lt;a href=&#34;http://jz13.java.no/&#34;&gt;JavaZone&lt;/a&gt;, Oslo, hopefully.&lt;br /&gt;16-20th Sept - Hopefully working from the Palo Alto office, so if there&amp;rsquo;re are any events in Silicon Valley or San Francisco that week, I&amp;rsquo;d love to hear about them.&lt;br /&gt;&lt;div&gt;22-26 Sept - &lt;a href=&#34;http://javafx.steveonjava.com/congrats-to-the-1st-javaone-invitees/&#34;&gt;JavaOne&lt;/a&gt;, San Francisco.&lt;br /&gt;30th Sept - 2nd Oct - &lt;a href=&#34;http://gotocon.com/aarhus-2013/presentation/Career%20Advice%20for%20Programmers&#34;&gt;GOTO Aarhus&lt;/a&gt;&lt;br /&gt;17-18th Oct - &lt;a href=&#34;http://gotocon.com/berlin-2013/speakers/&#34;&gt;GOTO Berlin&lt;/a&gt;.&lt;br /&gt;28-30th Oct - &lt;a href=&#34;http://jaxlondon.com/&#34;&gt;JAX London&lt;/a&gt;.&lt;br /&gt;December - &lt;a href=&#34;http://www.yowconference.com.au/index.html&#34;&gt;YOW Melbourne, Brisbane, Sydney&lt;/a&gt; - Australia.  I&amp;rsquo;ve never been to Oz, I can&amp;rsquo;t wait!&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;And that&amp;rsquo;s that. &amp;nbsp;The only two other events I&amp;rsquo;m contemplating this year are Devoxx and the London Java Community Open Conference. &amp;nbsp;I think I&amp;rsquo;m maxed out.&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Summary of GeeCON, Krakow</title>
-      <link>http://trishagee.github.io/post/my_summary_of_geecon_krakow/</link>
-      <pubDate>Wed, 22 May 2013 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
-      <description>
-
-&lt;p&gt;Last week I was in Krakow, Poland for &lt;a href=&#34;http://2013.geecon.org/&#34;&gt;GeeCON&lt;/a&gt;. &amp;nbsp;Which was excellent! &amp;nbsp;I find it really
-interesting that conferences all have their own personalities, that they are not all the same.
-&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-QGi20Kv1QL0/UZyWDc9hzVI/AAAAAAAALj0/ZlJ-1o1rLBk/s1600/2013-05-18+19.35.58.jpg&#34; imageanchor=&#34;1&#34; style=&#34;clear: right; float: right; margin-bottom: 1em; margin-left: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;320&#34; src=&#34;http://2.bp.blogspot.com/-QGi20Kv1QL0/UZyWDc9hzVI/AAAAAAAALj0/ZlJ-1o1rLBk/s320/2013-05-18+19.35.58.jpg&#34; width=&#34;240&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-GeeCON had its own distinct personality. &amp;nbsp;If you&amp;rsquo;re a Java/JVM person based in Poland, I would highly recommend it - more than 90%
-of the attendees were Polish (probably the remainder were largely speakers) so this conference is very much for you. &amp;nbsp;The quality
-of the speakers was really good too, I learnt a lot off many of them.&lt;/p&gt;
-
-&lt;p&gt;From a speaker&amp;rsquo;s point of view, there were some cultural things which took a bit of getting used to. One of the good things was that the
-audience was very keen on asking questions, they were much more interactive than a typical London audience (for example). However,
-I&amp;rsquo;m accustomed to quite short questions, and I found that the audience liked to give a lot of detail in their questions and frequently
-ask more than one at once - this meant that all the speakers really needed to allocate a lot more time for Q &amp;amp; A than expected. One
-of the other things I found unusual was the number of people who would walk in and out of the room during sessions - this wasn&amp;rsquo;t just
-everyone fleeing my session (I hope!), I saw it happen in all the talks, even the keynotes.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;My stuff&lt;/h2&gt;
-
-&lt;p&gt;On the first day I was on a panel about diversity in IT, which was basically about women programmers (again). It was a good panel to be
-on, actually, because there were a range of opinions, including downright disagreement, which made for a more interesting discussion.
-Sadly it left the audience with too little time to contribute though.&lt;/p&gt;
-
-&lt;p&gt;On the second day I was presenting &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;&amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;/a&gt;,
-which elicited a lot of responses from the audience. &amp;nbsp;I think I got the balance right between providing food for thought for any
-Java programmer, and enough of a look into what we&amp;rsquo;re considering for the new MongoDB Java driver,
-that it felt like I satisfied the two audiences - those who are interested in MongoDB with Java,
-and those who&amp;hellip; aren&amp;rsquo;t (yet).&lt;/p&gt;
-
-&lt;p&gt;But it wasn&amp;rsquo;t my experience as a speaker which really made GeeCON for me. &amp;nbsp;For the first time in ages I felt like I learnt
-something as an attendee. &amp;nbsp;I don&amp;rsquo;t know if that&amp;rsquo;s because a) I only had one presentation to prepare so I had time for a lot of
-sessions b) we have some specific problems we&amp;rsquo;re trying to solve on our code right now that we&amp;rsquo;re looking for answers to or c) the
-conference inspired it, but I came out of a lot of sessions excited about things to try.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Testing&lt;/h2&gt;
-
-&lt;p&gt;My first take-away point is to try &lt;a href=&#34;https://code.google.com/p/spock/&#34;&gt;Spock&lt;/a&gt;. I&amp;rsquo;ve been told for ages that I need to give it a
- go, but the session really sold it to me. &amp;nbsp;It seems to have features that will solve specific things we&amp;rsquo;re looking at right now,
- including:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Simplifying mocking&lt;/li&gt;
-&lt;li&gt;Annotating tests with properties (e.g. &lt;code&gt;@Slow&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Running the same test with different sets of data, instead of having to copy-paste the test a bunch of times&lt;/li&gt;
-&lt;li&gt;Reporting of failures, particularly power assert and &lt;code&gt;@Unroll&lt;/code&gt;, make diagnosing failures much simpler.&lt;/li&gt;
-&lt;li&gt;Using BDD terms as keywords (given/when/then) means the tests really do document themselves.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;m totally sold on it. &amp;nbsp;I was concerned, because we&amp;rsquo;re writing an open source Java library and I want the unit/integration tests
-to be understandable to Java developers, and I worried that adding Groovy tests might make the learning curve steeper. &amp;nbsp;But I think
-it&amp;rsquo;s an idea worth playing with.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;Asynchronous IO&lt;/h2&gt;
-
-&lt;p&gt;So one of the things we&amp;rsquo;re working on is trying to figure out the best way to provide an async Java driver. &lt;a href=&#34;http://2013.geecon
-.org/speakers/erik-onnen&#34;&gt;Erik Onnen&lt;/a&gt;&amp;rsquo;s talk around performance network programming on the JVM was really interesting. &amp;nbsp;Most
-usefully, it compared sync to async communication, outlining the pros and cons, and how you can do it on the JVM.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_3&#34;&gt;Build the right thing before you build the thing right&lt;/h2&gt;
-
-&lt;p&gt;The first keynote was about &lt;a href=&#34;http://www.pretotyping.org/&#34;&gt;Pretotyping&lt;/a&gt; - Patrick Copeland from Google was talking
-about ideas and innovators, and blowing away the myth that all it takes to make money is a single great idea. He highlighted how
-really great ideas aren&amp;rsquo;t necessarily successes, and some ideas that sound great don&amp;rsquo;t feel right in practice. Pretotyping is a
-way to test things like:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-pgXRSN4oq0k/UZyVTqpUoFI/AAAAAAAALjk/1evlD4F4nYY/s1600/2013-05-15+10.30.13.jpg&#34; imageanchor=&#34;1&#34; style=&#34;clear: right; float: right;
-margin-bottom: 1em; margin-left: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;240&#34; src=&#34;http://3.bp.blogspot.com/-pgXRSN4oq0k/UZyVTqpUoFI/AAAAAAAALjk/1evlD4F4nYY/s320/2013-05-15+10.30.13.jpg&#34; width=&#34;320&#34;&gt;&lt;/img&gt;&lt;/a&gt;
-&lt;ul&gt;&lt;li&gt;Would you use it / do it?&lt;/li&gt;&lt;li&gt;How would you interact with it?&lt;/li&gt;&lt;li&gt;Is it socially acceptable to use it in the
-circumstances?&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-
-&lt;p&gt;Because it&amp;rsquo;s very low tech, very low effort (think post-its and note pads, not HTML prototypes) it facilitates fast failure (therefore
-reducing the cost).&lt;/p&gt;
-
-&lt;p&gt;The session was videoed, so hopefully it will be available to see. If you&amp;rsquo;re thinking of An Idea, I highly recommend this talk.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;Many users = anthropology, not user experience&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.joelonsoftware.com/&#34;&gt;Joel Spolksy&lt;/a&gt;, the man who inspired me to start this very blog (well,
-earlier incarnations of it) talked about the experiences of growing stack exchange. This was interesting because it was not about
-the technology, but about subtle things you can do to influence user&amp;rsquo;s behaviour - for example, reputation rewards &amp;ldquo;good&amp;rdquo; behaviour,
-and a better reputation means you are trusted to do more on the site.&lt;/p&gt;
-
-&lt;p&gt;This was another inspiring talk if you&amp;rsquo;re interested in creating a product or company.&lt;/p&gt;
-
-&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-P-ejmRc3bsg/UZyUtEyArWI/AAAAAAAALjc/qP2tXp-nZkY/s1600/2013-05-18+20.09.07.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em;
-margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;300&#34; src=&#34;http://4.bp.blogspot.com/-P-ejmRc3bsg/UZyUtEyArWI/AAAAAAAALjc/qP2tXp-nZkY/s400/2013-05-18+20.09.07.jpg&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;As always, I also met a lot of really interesting people who gave me a lot to think about. I&amp;rsquo;ve come back more motivated than ever to work on my various projects.&lt;/p&gt;
-
-&lt;p&gt;So, Krakow is beautiful, and GeeCON is a good learning experience. &amp;nbsp;Go next year if you can!&lt;/p&gt;
 </description>
     </item>
     
