@@ -10,6 +10,20 @@
     
     <item>
       <title></title>
+      <link>http://trishagee.github.io/drafts/release/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/drafts/release/</guid>
+      <description>&lt;p&gt;Things that are open to improvement:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The release plugin stuff in &lt;code&gt;buildSrc&lt;/code&gt; is almost definitely not idiotmatic Groovy/Gradle. Instead, I&amp;rsquo;ve tried to make it readable&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>http://trishagee.github.io/drafts/how_to_write_a_cfp/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>

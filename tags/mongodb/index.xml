@@ -6,7 +6,44 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 22 Oct 2014 00:00:00 UTC</updated>
+    <updated>Wed, 10 Dec 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>New Year, New Adventures</title>
+      <link>http://trishagee.github.io/post/new_year_new_adventures/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/new_year_new_adventures/</guid>
+      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
+called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
+this role were: to learn what it was
+like working for a company that produced a technology product; to discover what impact working in an open source fashion has; and to
+level up my advocacy skills.  I have met all these goals, and more - I met some fantastic people; learnt different approaches to
+software development; discovered my new favourite database for creating applications; moved to Spain; started both a
+&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; and a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;;
+worked to understand the value of community and evangelism, and to help create a strategy for these areas;
+and my evangelism efforts and open source work earned me the &lt;a href=&#34;https://java.net/website/java-champions/bios.html#Gee&#34;&gt;Java Champion&lt;/a&gt; title.
+I&amp;rsquo;m extremely proud of what I&amp;rsquo;ve achieved over this period, and very grateful to MongoDB for giving me these opportunities.&lt;/p&gt;
+
+&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
+this year, you&amp;rsquo;ll know of my love affair with &lt;a href=&#34;https://www.jetbrains.com/idea/whatsnew/&#34;&gt;IntelliJ IDEA&lt;/a&gt;,
+a tool I use daily (even for blogging). Well, now I&amp;rsquo;m joining the team at &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt;,
+where I&amp;rsquo;m going Full Advocate. I &lt;em&gt;hope&lt;/em&gt; this means I get to carry on doing more of what I love - presenting, writing,
+and working on demos to help developers become more productive. I hope this will give me opportunities to stay ahead of the curve in the
+Java/JVM world.&lt;/p&gt;
+
+&lt;p&gt;And yes, in answer to the Most Frequently Asked Question, I am staying in Spain. I&amp;rsquo;ve fallen in love with Sevilla and I&amp;rsquo;m not ready to
+leave yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I shall leave you with my somewhat disasterous &amp;ldquo;Top Ten IntelliJ Tips&amp;rdquo; from GOTO Aarhus, which is worth watching just to see Dan North
+save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>MongoDB London</title>
@@ -54,7 +91,7 @@ it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-l
 
 &lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
 mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
-where these popular technologies sit in your archtecture, and how they interact with each other.&lt;/p&gt;
+where these popular technologies sit in your architecture, and how they interact with each other.&lt;/p&gt;
 
 &lt;p&gt;The exact code I present has changed a bit over time, the session I did for hack.summit() is the most recent:&lt;/p&gt;
 
@@ -69,7 +106,7 @@ so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
 so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk has been videod several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
+&lt;p&gt;This talk has been videoed several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
 these older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
 these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
 
@@ -524,16 +561,6 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/the_30_java_driver__design_goals/</guid>
       <description>&lt;p&gt;I feel slightly like a traitor to my own blog, as I&amp;rsquo;ve written a blog post for Somewhere Else. &amp;nbsp;I&amp;rsquo;ve written about the &lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;design goals for the 3.0 MongoDB Java Driver&lt;/a&gt; in the official MongoDB blog (seems sensible, right?). &amp;nbsp;I&amp;rsquo;m not sure how I feel about cross-posting the entire contents, so I&amp;rsquo;m just linking you to them instead.&lt;br /&gt;&lt;br /&gt;Anyone who&amp;rsquo;s been to my Backwards Compatibility presentation this year might notice something familiar about the content. &amp;nbsp;The talk covers the design goals of the new driver, and this blog post will let you read them in your own time rather than having me fire them at you at 100mph.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>How are you using MongoDB with Java?</title>
-      <link>http://trishagee.github.io/post/how_are_you_using_mongodb_with_java/</link>
-      <pubDate>Thu, 16 May 2013 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/how_are_you_using_mongodb_with_java/</guid>
-      <description>&lt;p&gt;So, like one of my presentations, I have a question for you. &amp;nbsp;Actually, I have more than one question for you. &amp;nbsp;I&amp;rsquo;m not going to bother with survey monkey or whatever, I want to share the answers so please, answers in the comments:&lt;br /&gt;&lt;ol&gt;&lt;li&gt;Are you using the Java driver for MongoDB in your application?&lt;/li&gt;&lt;li&gt;Are you using the Java driver directly, or are you using a third party library like Morphia, Spring Data, the Scala driver, your own abstraction layer, etc?&lt;/li&gt;&lt;li&gt;If you&amp;rsquo;re using a third party library, why did you choose that over using the Java driver directly?&lt;/li&gt;&lt;li&gt;If you&amp;rsquo;re using the Java driver directly, what do you like about it?&amp;nbsp;&lt;/li&gt;&lt;li&gt;If you&amp;rsquo;re using the Java driver directly, are there any areas that give you pain? &amp;nbsp;Areas for improvement?&lt;/li&gt;&lt;li&gt;Which version of Java are you using?&lt;/li&gt;&lt;/ol&gt;&lt;div&gt;Feel free to leave additional information if you have it. &amp;nbsp;And this is a public blog, so if you&amp;rsquo;re really mean I&amp;rsquo;ll just delete your comment. &amp;nbsp;So there.&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

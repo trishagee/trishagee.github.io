@@ -86,7 +86,7 @@ project, team and organisation?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
 mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
-where these popular technologies sit in your archtecture, and how they interact with each other.&lt;/p&gt;
+where these popular technologies sit in your architecture, and how they interact with each other.&lt;/p&gt;
 
 &lt;p&gt;The exact code I present has changed a bit over time, the session I did for hack.summit() is the most recent:&lt;/p&gt;
 
@@ -101,7 +101,7 @@ so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
 so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk has been videod several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
+&lt;p&gt;This talk has been videoed several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
 these older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
 these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
 

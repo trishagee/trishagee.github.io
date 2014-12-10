@@ -6,7 +6,44 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 09 Dec 2014 00:00:00 UTC</updated>
+    <updated>Wed, 10 Dec 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>New Year, New Adventures</title>
+      <link>http://trishagee.github.io/post/new_year_new_adventures/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/new_year_new_adventures/</guid>
+      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
+called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
+this role were: to learn what it was
+like working for a company that produced a technology product; to discover what impact working in an open source fashion has; and to
+level up my advocacy skills.  I have met all these goals, and more - I met some fantastic people; learnt different approaches to
+software development; discovered my new favourite database for creating applications; moved to Spain; started both a
+&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; and a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;;
+worked to understand the value of community and evangelism, and to help create a strategy for these areas;
+and my evangelism efforts and open source work earned me the &lt;a href=&#34;https://java.net/website/java-champions/bios.html#Gee&#34;&gt;Java Champion&lt;/a&gt; title.
+I&amp;rsquo;m extremely proud of what I&amp;rsquo;ve achieved over this period, and very grateful to MongoDB for giving me these opportunities.&lt;/p&gt;
+
+&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
+this year, you&amp;rsquo;ll know of my love affair with &lt;a href=&#34;https://www.jetbrains.com/idea/whatsnew/&#34;&gt;IntelliJ IDEA&lt;/a&gt;,
+a tool I use daily (even for blogging). Well, now I&amp;rsquo;m joining the team at &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt;,
+where I&amp;rsquo;m going Full Advocate. I &lt;em&gt;hope&lt;/em&gt; this means I get to carry on doing more of what I love - presenting, writing,
+and working on demos to help developers become more productive. I hope this will give me opportunities to stay ahead of the curve in the
+Java/JVM world.&lt;/p&gt;
+
+&lt;p&gt;And yes, in answer to the Most Frequently Asked Question, I am staying in Spain. I&amp;rsquo;ve fallen in love with Sevilla and I&amp;rsquo;m not ready to
+leave yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I shall leave you with my somewhat disasterous &amp;ldquo;Top Ten IntelliJ Tips&amp;rdquo; from GOTO Aarhus, which is worth watching just to see Dan North
+save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
     
     <item>
       <title>Improving Speaker Diversity</title>
@@ -876,16 +913,6 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/sparking_innovation_in_an_established_company/</guid>
       <description>&lt;div class=&#34;p1&#34;&gt;I’ve been running into &lt;a href=&#34;https://corporate.sky.com/&#34;&gt;BSkyB&lt;/a&gt; a bunch this week - firstly I was invited to kick off their innovation tech talks series last Monday, then I kept meeting Sky people (that makes it sound like they’re aliens) at &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon&lt;/a&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;It seems Sky is keen to create/foster a culture of innovation, which is an ambitious goal for such a large company.&amp;nbsp; So I was given a very vague brief for Monday’s presentation (“Can you do something Mongo-ish, maybe a bit of performance and concurrency stuff, and talk about overall best practice?”) I gave them an early view of a presentation I’m working on titled something like “Why do we keep reinventing the wheel?” (anyone who saw me at &lt;a href=&#34;http://www.jfokus.se/&#34;&gt;JFokus&lt;/a&gt; might realise that I cunningly swapped out most of the body of the “What do you mean, backwards compatibility?” talk and tried out this topic instead).&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-4a4pY12N7xM/Ux2KVRwNLpI/AAAAAAAANRw/gVsUg08fwyU/s1600/TrishaSky.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://3.bp.blogspot.com/-4a4pY12N7xM/Ux2KVRwNLpI/AAAAAAAANRw/gVsUg08fwyU/s1600/TrishaSky.jpg&#34; height=&#34;480&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: right;&#34;&gt;Picture courtesy of&amp;nbsp;&lt;a class=&#34;g-profile&#34; href=&#34;https://plus.google.com/111755189375322301397&#34; target=&#34;_blank&#34;&gt;+Russell Miles&lt;/a&gt;&amp;nbsp;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;This was supposed to be a 20 minute intro talk (OK, so I clocked it at 40 minutes in rehearsal) with the rest of the time devoted to questions on any subject I know about, or even anything I have an opinion on.&amp;nbsp; Sounds dangerous, but means I can always move fast on the answers I don’t know in order to cover more ground - cunning, you see?&amp;nbsp; Actually, that sounds like it would be more fun if alcohol were involved.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Anyway.&amp;nbsp; The talk bit of the session took up most of the time, because I had really good questions during the course of the presentation.&amp;nbsp; It’s nice to talk to a much smaller group (there were maybe 30ish people, giving up their free time after work, like an internal user group).&amp;nbsp; But I also had questions on remote working, on creating a culture that’s appealing for developers to come and work in, and on MongoDB.&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;I don’t know how many companies do things like this, or lunchtime brown bags, or something, but I think they’re a great idea.&amp;nbsp; This was a mix of people from different departments, different teams, working on different technologies.&amp;nbsp; It was a good way to get people from across the organisation talking with each other and sharing best practice between teams.&amp;nbsp; Many organisations have people working in their little silo, and we (MongoDB) often find ourselves introducing teams from within the same organisation to each other - there’s no other mechanism for one team to find out about the other.&amp;nbsp; I guess that’s what white-tower architects were supposed to be for - to know what everyone’s up to and make sure people are doing the “right” thing.&amp;nbsp; Given this doesn’t seem to work, what else can we do to share knowledge internally?&amp;nbsp; How else can we get the right people to meet each other?&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Joy of Coding</title>
-      <link>http://trishagee.github.io/post/the_joy_of_coding/</link>
-      <pubDate>Sat, 08 Mar 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/the_joy_of_coding/</guid>
-      <description>&lt;p&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-O7Z5io5SP0o/Uxs4eHZsx3I/AAAAAAAANPE/nTBXmPG-9ow/s1600/IMG_20140307_165203.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-O7Z5io5SP0o/Uxs4eHZsx3I/AAAAAAAANPE/nTBXmPG-9ow/s1600/IMG_20140307_165203.jpg&#34; height=&#34;480&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34;&gt;Dick Wall -&amp;nbsp;The Tao, of the Joy, of Coding&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;I’m on a plane (there’s a surprise) on my way back from &lt;a href=&#34;http://joyofcoding.org/&#34;&gt;The Joy of Coding&lt;/a&gt;.&amp;nbsp; It’s the title that attracted me to this conference, and it was a great little one day event with awesome people like Dan North, Erik Meijer and Dick Wall presenting.&amp;nbsp; What I liked about the themes is they were broadly technology agnostic, pulling back to a level which made me remember why I’m a developer. &amp;nbsp;It inspired me to do more research and more thinking, and less panicking and trying to write code.&amp;nbsp; That might seem odd, as someone who goes to as many conferences as I do should get loads more research and thinking time than most developers living under the whip, but I seem to spend so much time bouncing from thing to thing I don’t get space to just sit and think, or to read things in any depth.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The conference organisers made it easy to focus on the bigger things - the venue was great, with a nice space for mingling with people but nooks and corners for doing work or for video conferences.&amp;nbsp; The hotel they chose was one of the best I’ve stayed at - the room had a sauna in it.&amp;nbsp; A sauna!&amp;nbsp; I spent the evening using every toiletry they provided, and moving between the sauna, the steam/shower cabinet and the jacuzzi bath.&amp;nbsp; I won’t pretend I did a lot of thinking, but it was a really awesome way to top of a crazy week, and I feel almost sane.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So if I’m going to leave you with one thing from my experience at the Joy of Coding, it’s to Stop.&amp;nbsp; Stop and think.&amp;nbsp; Stop and ask.&amp;nbsp; Stop and read.&amp;nbsp; What are you doing?&amp;nbsp; Why are you doing it?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;And most of all, do you feel Joy when you’re coding?&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-AObxzgL1rtA/Uxs4ft_YZMI/AAAAAAAANPM/XlRuZ97bRSM/s1600/IMG_20140307_190444.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em; text-align: center;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://3.bp.blogspot.com/-AObxzgL1rtA/Uxs4ft_YZMI/AAAAAAAANPM/XlRuZ97bRSM/s1600/IMG_20140307_190444.jpg&#34; height=&#34;480&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;br /&gt;PS There are some &lt;a href=&#34;http://www.flickr.com/photos/joyofcoding/sets/72157642055047693/&#34;&gt;really great photos&lt;/a&gt; from the conference on Flickr.&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
