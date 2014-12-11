@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://trishagee.github.io/</loc>
-    <lastmod>2014-12-10T00:00:00+00:00</lastmod>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/post/developers_want_to_be_heard/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -953,11 +958,6 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/presentation/public_appearances/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
@@ -969,6 +969,11 @@
   
   <url>
     <loc>http://trishagee.github.io/other-sites/release/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/presentation/public_appearances/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -993,12 +998,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/agile_infection_growing/</loc>
+    <loc>http://trishagee.github.io/post/qcon_bloggers_summary/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_bloggers_summary/</loc>
+    <loc>http://trishagee.github.io/post/agile_infection_growing/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
