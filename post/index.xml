@@ -6,7 +6,106 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 11 Dec 2014 00:00:00 UTC</updated>
+    <updated>Wed, 07 Jan 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>New IntelliJ Tricks I Learnt Today</title>
+      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
+      <description>
+
+&lt;p&gt;Day three of my &lt;a href=&#34;/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
+of IntelliJ, since I&amp;rsquo;m
+already a &amp;ldquo;Power User&amp;rdquo;, to see if there&amp;rsquo;s stuff missing that someone like me might want to see. Firstly, a confession -
+I&amp;rsquo;m not sure I&amp;rsquo;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&amp;rsquo;ve dipped
+into it when I needed to know something, I&amp;rsquo;ve searched for help with specific items, but like many developers, I tend to
+use something first rather than read the documentation first.&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
+and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
+else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s today&amp;rsquo;s list, and feel free to laugh at me and be smug in my direction if you already knew these things (note: I
+have upgraded to IntelliJ 14, and at the time of writing I don&amp;rsquo;t know which of these features are new and which are
+simply previously undiscovered):&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate directly to an action or option&lt;/h3&gt;
+
+&lt;p&gt;Press Shift+Ctrl+A (Windows) or Shift+Cmd+A (Mac) and start typing the name of the thing you want to do, or the setting
+you want to change. I&amp;rsquo;ve found this especially useful now I&amp;rsquo;m back on Windows and I don&amp;rsquo;t have that nice helpful typing
+box on the help menu that will take me straight to the menu item I want.  But what&amp;rsquo;s most useful about this for me today,
+as I&amp;rsquo;m setting up a new profile on a new laptop (more on the new laptop later, if it doesn&amp;rsquo;t defeat me utterly) is that
+from here, you can turn various settings on and off without having to navigate through the settings screen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/action.png&#34; alt=&#34;Navigate to Action&#34; title=&#34;Navigate to Action&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Statement completion&lt;/h3&gt;
+
+&lt;p&gt;I never knew there was a
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-4.Statementcompletion&#34;&gt;shortcut for finishing off a statement&lt;/a&gt;,
+all that Java boilerplate you need to keep the compiler happy - semi colons and curly brackets and everything.  But
+there is, and I can see it being super useful, especially if you&amp;rsquo;re using other bits of IntelliJ code completion to
+create the core of your line of code.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Issue tracker integration&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure loads of people are already using integration with their favourite issue tracker, but I hadn&amp;rsquo;t really thought
+about this as something that I really cared about.  But I was watching the intro videos for YouTrack (not surprisingly
+I&amp;rsquo;ll be using this instead of Jira during my time at JetBrains) and when I saw
+&lt;a href=&#34;https://www.jetbrains.com/youtrack/documentation/&#34;&gt;how the IDE integration worked&lt;/a&gt;, I
+suddenly realised how this small thing can add up to save thousands of keystrokes over time, not to mention saving
+precious navigational seconds and window-switching.&lt;/p&gt;
+
+&lt;p&gt;For me, just the ability to generate at least the start of the commit message is a saving in time, and adds to project
+consistency if all your developers are doing the same thing.  On my last project we only just realised we all quoted the
+Jira issues in subtly different ways.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Settings shortcut keys&lt;/h3&gt;
+
+&lt;p&gt;When I initially started using IntelliJ in anger back in 2008, I was very much a point-and-click type user. Over time,
+pair programming with keyboard-super-users and giving live demos with very limited time available, I&amp;rsquo;ve worked harder
+to become a keyboard-shortcuts person.  With the latest version of IntelliJ, I can&amp;rsquo;t find the tiny icons I use to get to
+the settings window, something that I&amp;rsquo;ve been using a lot as I set up the new IDE instance on the new laptop.  So I bit
+the bullet and learnt the keyboard shortcuts, and it&amp;rsquo;s already saving me a bunch of time (on the rare occasions when the
+aforementioned &amp;ldquo;Navigate to Action&amp;rdquo; fails me).&lt;/p&gt;
+
+&lt;p&gt;Ctrl+Alt+S for the settings dialog (appears to be Cmd + , on the Mac)
+Shift+Ctrl+Alt+S for the project structure dialog (appears to be Cmd + ; on the Mac)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/settings.png&#34; alt=&#34;Settings Shortcuts&#34; title=&#34;Settings Shortcuts&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Yeah.  I can&amp;rsquo;t believe I wasn&amp;rsquo;t already using those either.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Selecting the negative&lt;/h3&gt;
+
+&lt;p&gt;I use completion/suggestions all the time from IntelliJ, I&amp;rsquo;m far too lazy to type everything.  What I didn&amp;rsquo;t realise, is
+that you don&amp;rsquo;t just have to accept the default they give you.  If, for example, IntelliJ suggests a boolean value, you
+can get it to negate that value by selecting it with &amp;ldquo;!&amp;rdquo; instead of enter or tab.  Yes, I know I&amp;rsquo;ve done a horrible job
+of explaining that, but take a look at
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-5.Negatingcompletion&#34;&gt;the documentation&lt;/a&gt;
+and try it, it&amp;rsquo;s quite cool.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Exclude from Autocomplete&lt;/h3&gt;
+
+&lt;p&gt;Speaking of code completion, sometimes IntelliJ is sometimes just a bit too keen to suggest something, and you really
+will never want that value.  In the past, I&amp;rsquo;ve always used &lt;code&gt;Settings -&amp;gt; Editor -&amp;gt; General -&amp;gt; Auto Import&lt;/code&gt; to manage the
+suggestions (the most common one for me is I will never want &lt;code&gt;java.awt.List&lt;/code&gt;, I will almost always want
+&lt;code&gt;java.util.List&lt;/code&gt;).  Well, you don&amp;rsquo;t have to go into settings to do this, you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-9.Excludefromcompletion&#34;&gt;do it from the suggestions themselves&lt;/a&gt; -
+navigate to the item you don&amp;rsquo;t want (in my case, &lt;code&gt;java.awt.List&lt;/code&gt;) and press Alt + Enter, this will give you the option
+of excluding this from the suggestions in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s what I found from just one day of browsing the documentation and setting up my IDE from scratch yet again.
+Maybe I&amp;rsquo;ll promptly forget all these, or maybe they&amp;rsquo;ll be new weapons in my armoury of IDE-fu. Either way, maybe one or
+two people will find this useful.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Developers want to be heard</title>
@@ -906,16 +1005,6 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
     
     
 &lt;/figure&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>QCon London 2014</title>
-      <link>http://trishagee.github.io/post/qcon_london_2014/</link>
-      <pubDate>Tue, 11 Mar 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/qcon_london_2014/</guid>
-      <description>&lt;p&gt;Wow. My 4th QCon London.&amp;nbsp; That’s not bad.&amp;nbsp; And every time, it’s a different experience (if you must, see my blogs for&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/03/qcon-day-one.html&#34;&gt;2013&lt;/a&gt;,&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2012/03/qcon-london-2012.html&#34;&gt;2012&lt;/a&gt;, and even 2007 (&lt;a href=&#34;http://mechanitis.blogspot.com.es/2007/03/qcon-initial-thoughts.html&#34;&gt;part 1&lt;/a&gt; &amp;amp; &lt;a href=&#34;http://mechanitis.blogspot.com.es/2007/03/qcon-todo-list-inspired-by-conference.html&#34;&gt;part 2&lt;/a&gt; - how cute was I? &amp;ldquo;agile seems like a jolly good idea; automated testing appears to be important&amp;rdquo;)).&lt;br /&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I can’t even tell you what I did on the first day, I was mostly panicking about my presentation - I was inspired after my trip to New York last month to change my talk at the last (responsible?) minute and do a live coding session, something much more technical than my recent talks.&amp;nbsp; I’ll leave the details for a separate blog post though, when the video comes out.&lt;br /&gt;&lt;br /&gt;The thing that stands out for me from Wednesday though was Damian Conway programming &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway&#39;s_Game_of_Life&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt; in Klingon.&amp;nbsp; Yeah.&amp;nbsp; Just find the video and watch it, the man is a genius.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;333&#34; mozallowfullscreen=&#34;&#34; msallowfullscreen=&#34;&#34; oallowfullscreen=&#34;&#34; src=&#34;https://www.flickr.com/photos/qconpictures/12947751623/player/f7e8167be5&#34; webkitallowfullscreen=&#34;&#34; width=&#34;500&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The Thursday keynote was inspiring too from a totally different point of view - Tim Lister of &lt;a href=&#34;http://www.amazon.com/gp/product/B00DY5A8X2/ref=as_li_tf_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=B00DY5A8X2&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&#34;&gt;Peopleware&lt;/a&gt;&lt;img alt=&#34;&#34; border=&#34;0&#34; src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=B00DY5A8X2&#34; height=&#34;1&#34; style=&#34;border: none !important; margin: 0px !important;&#34; width=&#34;1&#34; /&gt; fame shared stories from his career, and I came away from that really happy I work as a technologist, but with an increased desire to learn off other amazing people.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;333&#34; mozallowfullscreen=&#34;&#34; msallowfullscreen=&#34;&#34; oallowfullscreen=&#34;&#34; src=&#34;https://www.flickr.com/photos/qconpictures/12966704755/player/7193594b96&#34; webkitallowfullscreen=&#34;&#34; width=&#34;500&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;On Thursday I hosted the&amp;nbsp;&amp;ldquo;&lt;a href=&#34;http://www.flickr.com/photos/qconpictures/sets/72157641948363514/with/12970259753/&#34;&gt;Not Only Java&lt;/a&gt;&amp;ldquo;&amp;nbsp;track - I’m on the programme committee for QCon, and this year we wanted to cover&amp;nbsp;leading edge technologies (as always) but we didn’t want to slice things into strict technology silos [interruption: argh! the person in front of me nearly destroyed my laptop by suddenly moving their chair back! Why do people bother in economy on a morning flight?]. &amp;nbsp;So I wanted the Java track to be more representative of what today’s Java programmers care about - for the programmers of course, but also because I know there are architects and team leads at QCon who might not realise how things have moved on with the language, and how much polyglot programming we do these days.&amp;nbsp;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.com.es/&#34;&gt;Martin&lt;/a&gt; kicked it off with a great history lesson on the progress (or occasionally,&amp;nbsp; lack of it) in Java.&amp;nbsp; He begged us to study and understand Set Theory, to use async design, to think of the users of our APIs, and, most of all, to design nice, clean code.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Next up, &lt;a href=&#34;https://twitter.com/EvaAndreasson&#34;&gt;Eva&lt;/a&gt; took us through the fundamentals of Garbage Collection - this might not seem like a cutting edge subject these days, but it’s one of the most misunderstood subjects for Java programmers.&amp;nbsp; Eva gave us a really great, understandable view of the different types of garbage collectors, how they work, and their pros and cons.&amp;nbsp; She left us with a call to arms to not simply let other people try and solve this problem, but to get stuck in and contribute ourselves, via the &lt;a href=&#34;http://openjdk.java.net/&#34;&gt;OpenJDK&lt;/a&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;333&#34; mozallowfullscreen=&#34;&#34; msallowfullscreen=&#34;&#34; oallowfullscreen=&#34;&#34; src=&#34;https://www.flickr.com/photos/qconpictures/12970531704/player/e2c2f63b43&#34; webkitallowfullscreen=&#34;&#34; width=&#34;500&#34;&gt;&lt;/iframe&gt; &lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;After lunch was my nerve-wracking live coding session, putting together a full stack end-to-end web app using AngularJS, HTML5, Java and MongoDB.&amp;nbsp; It only went wrong twice, and people seemed to like it.&amp;nbsp; I’ll post the video in another blog post as soon as it&amp;rsquo;s publicly available. &amp;nbsp;Code is &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;available on github&lt;/a&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;We’ve been playing with the open spaces idea at QCon.&amp;nbsp; The Java one only had a few people in it, but that gave everyone a chance to speak at least.&amp;nbsp; We covered Java 8 (the Good and the Bad); other JVM languages; and UIs for Java (Javascript or GWT?).&amp;nbsp; And I plugged the work the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; does in London, of course.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;After this &lt;a href=&#34;http://bodil.org/&#34;&gt;Bodil&lt;/a&gt; blew me away creating a My Little Pony game using &lt;a href=&#34;https://rx.codeplex.com/&#34;&gt;RX&lt;/a&gt; in the browser.&amp;nbsp; ‘Nuff said.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Finally, &lt;a href=&#34;https://twitter.com/speakjava&#34;&gt;Simon Ritter&lt;/a&gt; gave us a view of the Java 8&amp;nbsp; features most likely to impact the way Java developers think about software design - lambdas and streams.&amp;nbsp; I thought this was a really great introduction to the concepts if you haven’t seen them before, and with concrete examples that showed how we should be using them. &amp;nbsp;If you&amp;rsquo;re not already looking at lambdas and streams, you should be - even if you&amp;rsquo;re not going to be using Java 8 yet, it&amp;rsquo;s worth getting a heads up on how it&amp;rsquo;s going to impact our programming style.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I’m very pleased with the way the Java track turned out on the day - every speaker was first class, a wide range of topics was covered, and I, for one, learnt something in every presentation.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;To finish off the day, Emma Langman gave an awesome keynote about how people are the messy bit of your system, and how they’re never rational and you shouldn’t expect them to be.&amp;nbsp; I also highly recommend this talk, especially if you’re a techy and you’ve found yourself in some sort of management or team lead position.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Sadly I couldn’t stay for day three of the conference, I had to fly off to the &lt;a href=&#34;http://mechanitis.blogspot.com.es/2014/03/the-joy-of-coding.html&#34;&gt;Joy of Coding&lt;/a&gt; to re-give the live coding presentation there.&amp;nbsp; Because, if you’re going to do something terrifying and doomed to failure, you might as well do it twice.&lt;br /&gt;&lt;br /&gt;QCon is an expensive conference, especially compared to the developer-friendly prices of something like &lt;a href=&#34;http://www.devoxx.co.uk/&#34;&gt;DevoxxUK&lt;/a&gt;, but for getting a big picture of where the industry is, of things you might be missing, for learning hard core technical skills and understanding the important of the fluffy-people-stuff, and finally for meeting a wide range of people from developers to CTOs, I think you&amp;rsquo;d be hard pushed to find something better in London. &amp;nbsp;IMHO (and remember, I did disclose I&amp;rsquo;m on the programme committee). &lt;br /&gt;&lt;br /&gt;And although it&amp;rsquo;s really hard work putting together the programme for a track like this, and although both times I&amp;rsquo;ve said I&amp;rsquo;m Never Doing It Again, when it goes this well it makes you want to do it all over again. &amp;nbsp;After a break. &amp;nbsp;A looong break.&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

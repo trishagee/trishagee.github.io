@@ -6,7 +6,106 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 10 Dec 2014 00:00:00 UTC</updated>
+    <updated>Wed, 07 Jan 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>New IntelliJ Tricks I Learnt Today</title>
+      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
+      <description>
+
+&lt;p&gt;Day three of my &lt;a href=&#34;/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
+of IntelliJ, since I&amp;rsquo;m
+already a &amp;ldquo;Power User&amp;rdquo;, to see if there&amp;rsquo;s stuff missing that someone like me might want to see. Firstly, a confession -
+I&amp;rsquo;m not sure I&amp;rsquo;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&amp;rsquo;ve dipped
+into it when I needed to know something, I&amp;rsquo;ve searched for help with specific items, but like many developers, I tend to
+use something first rather than read the documentation first.&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
+and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
+else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s today&amp;rsquo;s list, and feel free to laugh at me and be smug in my direction if you already knew these things (note: I
+have upgraded to IntelliJ 14, and at the time of writing I don&amp;rsquo;t know which of these features are new and which are
+simply previously undiscovered):&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate directly to an action or option&lt;/h3&gt;
+
+&lt;p&gt;Press Shift+Ctrl+A (Windows) or Shift+Cmd+A (Mac) and start typing the name of the thing you want to do, or the setting
+you want to change. I&amp;rsquo;ve found this especially useful now I&amp;rsquo;m back on Windows and I don&amp;rsquo;t have that nice helpful typing
+box on the help menu that will take me straight to the menu item I want.  But what&amp;rsquo;s most useful about this for me today,
+as I&amp;rsquo;m setting up a new profile on a new laptop (more on the new laptop later, if it doesn&amp;rsquo;t defeat me utterly) is that
+from here, you can turn various settings on and off without having to navigate through the settings screen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/action.png&#34; alt=&#34;Navigate to Action&#34; title=&#34;Navigate to Action&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Statement completion&lt;/h3&gt;
+
+&lt;p&gt;I never knew there was a
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-4.Statementcompletion&#34;&gt;shortcut for finishing off a statement&lt;/a&gt;,
+all that Java boilerplate you need to keep the compiler happy - semi colons and curly brackets and everything.  But
+there is, and I can see it being super useful, especially if you&amp;rsquo;re using other bits of IntelliJ code completion to
+create the core of your line of code.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Issue tracker integration&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure loads of people are already using integration with their favourite issue tracker, but I hadn&amp;rsquo;t really thought
+about this as something that I really cared about.  But I was watching the intro videos for YouTrack (not surprisingly
+I&amp;rsquo;ll be using this instead of Jira during my time at JetBrains) and when I saw
+&lt;a href=&#34;https://www.jetbrains.com/youtrack/documentation/&#34;&gt;how the IDE integration worked&lt;/a&gt;, I
+suddenly realised how this small thing can add up to save thousands of keystrokes over time, not to mention saving
+precious navigational seconds and window-switching.&lt;/p&gt;
+
+&lt;p&gt;For me, just the ability to generate at least the start of the commit message is a saving in time, and adds to project
+consistency if all your developers are doing the same thing.  On my last project we only just realised we all quoted the
+Jira issues in subtly different ways.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Settings shortcut keys&lt;/h3&gt;
+
+&lt;p&gt;When I initially started using IntelliJ in anger back in 2008, I was very much a point-and-click type user. Over time,
+pair programming with keyboard-super-users and giving live demos with very limited time available, I&amp;rsquo;ve worked harder
+to become a keyboard-shortcuts person.  With the latest version of IntelliJ, I can&amp;rsquo;t find the tiny icons I use to get to
+the settings window, something that I&amp;rsquo;ve been using a lot as I set up the new IDE instance on the new laptop.  So I bit
+the bullet and learnt the keyboard shortcuts, and it&amp;rsquo;s already saving me a bunch of time (on the rare occasions when the
+aforementioned &amp;ldquo;Navigate to Action&amp;rdquo; fails me).&lt;/p&gt;
+
+&lt;p&gt;Ctrl+Alt+S for the settings dialog (appears to be Cmd + , on the Mac)
+Shift+Ctrl+Alt+S for the project structure dialog (appears to be Cmd + ; on the Mac)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/settings.png&#34; alt=&#34;Settings Shortcuts&#34; title=&#34;Settings Shortcuts&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Yeah.  I can&amp;rsquo;t believe I wasn&amp;rsquo;t already using those either.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Selecting the negative&lt;/h3&gt;
+
+&lt;p&gt;I use completion/suggestions all the time from IntelliJ, I&amp;rsquo;m far too lazy to type everything.  What I didn&amp;rsquo;t realise, is
+that you don&amp;rsquo;t just have to accept the default they give you.  If, for example, IntelliJ suggests a boolean value, you
+can get it to negate that value by selecting it with &amp;ldquo;!&amp;rdquo; instead of enter or tab.  Yes, I know I&amp;rsquo;ve done a horrible job
+of explaining that, but take a look at
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-5.Negatingcompletion&#34;&gt;the documentation&lt;/a&gt;
+and try it, it&amp;rsquo;s quite cool.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Exclude from Autocomplete&lt;/h3&gt;
+
+&lt;p&gt;Speaking of code completion, sometimes IntelliJ is sometimes just a bit too keen to suggest something, and you really
+will never want that value.  In the past, I&amp;rsquo;ve always used &lt;code&gt;Settings -&amp;gt; Editor -&amp;gt; General -&amp;gt; Auto Import&lt;/code&gt; to manage the
+suggestions (the most common one for me is I will never want &lt;code&gt;java.awt.List&lt;/code&gt;, I will almost always want
+&lt;code&gt;java.util.List&lt;/code&gt;).  Well, you don&amp;rsquo;t have to go into settings to do this, you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-9.Excludefromcompletion&#34;&gt;do it from the suggestions themselves&lt;/a&gt; -
+navigate to the item you don&amp;rsquo;t want (in my case, &lt;code&gt;java.awt.List&lt;/code&gt;) and press Alt + Enter, this will give you the option
+of excluding this from the suggestions in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s what I found from just one day of browsing the documentation and setting up my IDE from scratch yet again.
+Maybe I&amp;rsquo;ll promptly forget all these, or maybe they&amp;rsquo;ll be new weapons in my armoury of IDE-fu. Either way, maybe one or
+two people will find this useful.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>New Year, New Adventures</title>
