@@ -6,7 +6,167 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 07 Jan 2015 00:00:00 UTC</updated>
+    <updated>Fri, 09 Jan 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>New IntelliJ Tricks I Learnt Part 2</title>
+      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</link>
+      <pubDate>Fri, 09 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</guid>
+      <description>
+
+&lt;p&gt;Apparently, I&amp;rsquo;m all about Continuous Learning - after I wrote the
+&lt;a href=&#34;post/stuff_i_learnt_about_intellij&#34;&gt;last post about IntelliJ Tips&lt;/a&gt;, I carried on through my trawl of the documentation
+and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this is all just in the
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Quick+Start&#34;&gt;Quick Start&lt;/a&gt; section!&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s the next batch (although once again I&amp;rsquo;m not sure how many are only applicable to IntelliJ 14).  All shortcuts
+are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
+cases.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate between methods&lt;/h3&gt;
+
+&lt;p&gt;Now I knew you could use the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-2.Structure&#34;&gt;structure thingie&lt;/a&gt;
+(Ctrl+F12) to let you navigate to methods in your class (although I never actually
+use it, it somehow never sticks in my head).  What I did &lt;em&gt;not&lt;/em&gt; know is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-5.Navigatebetweenmethods&#34;&gt;jump between methods&lt;/a&gt;
+using Alt+Up/Down arrows.  This strikes me as being super useful, especially to browse tests.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Refactoring String Fragments&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve wanted this feature so many times, but could never find it or get it to work - did you know you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-4.Stringfragments&#34;&gt;refactor out parts of a
+hardcoded string&lt;/a&gt;
+into variable/field/constant? Select the section of the String you want to extract, and use the normal &amp;ldquo;Extract&amp;hellip;&amp;rdquo;
+shortcuts - e.g. Ctrl+Alt+V to extract it into a variable.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure I&amp;rsquo;ve tried this before and it didn&amp;rsquo;t work.  But I&amp;rsquo;ve tested it and it does!&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Invert Boolean&lt;/h3&gt;
+
+&lt;p&gt;There doesn&amp;rsquo;t seem to be a keyboard shortcut mapped by default, but using &amp;ldquo;Refactor -&amp;gt; Invert Boolean&amp;hellip;&amp;rdquo; (or using
+&lt;a href=&#34;/post/stuff_i_learnt_about_intellij/index.html#toc_0&#34;&gt;our newly discovered&lt;/a&gt; &amp;ldquo;Navigate to Action&amp;rdquo; shortcut of Shift+Ctrl+A and typing &amp;ldquo;Invert&amp;rdquo;) you can tell IntelliJ you want
+a boolean field to mean the &lt;em&gt;opposite&lt;/em&gt; thing, and it will
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-6.Invertboolean&#34;&gt;flip the meaning everywhere&lt;/a&gt;.
+For example, you might have an &lt;code&gt;saved&lt;/code&gt; flag, and you now want it to mean &lt;code&gt;notSaved&lt;/code&gt; - IntelliJ will make sure the
+&lt;code&gt;isSaved&lt;/code&gt; method returns &lt;code&gt;!notSaved&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Magic Refactor Suggestions&lt;/h3&gt;
+
+&lt;p&gt;You don&amp;rsquo;t always know exactly what refactoring operation you want to perform, and IntelliJ is ready to help - it can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-10.Refactorthis&#34;&gt;suggest refactorings available in the current context&lt;/a&gt;
+using the catchy magic incantation Ctrl+Shift+Alt+T.  Seems useful, but I&amp;rsquo;m pretty sure I&amp;rsquo;m not going to remember that
+one.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Highlight implemented/overridden methods&lt;/h3&gt;
+
+&lt;p&gt;I love everything about IntelliJ&amp;rsquo;s ability to find usages of things - finding where methods are called, finding
+implementations of a method, highlighting usages of a field, method or variable&amp;hellip; What I didn&amp;rsquo;t know, is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Find+Usages#FindUsages-6.Highlightimplementedandoverriddenmethods&#34;&gt;highlight the methods that implement or override a specific interface or superclass&lt;/a&gt;.
+For some people, this might not add much, as your little &amp;ldquo;I override something&amp;rdquo; icon&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/override.png&#34; alt=&#34;Overrides Something&#34; title=&#34;Overrides Something&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;combined with the &lt;code&gt;@Override&lt;/code&gt; annotation, might tell you all you need to know. But that only really works if you&amp;rsquo;re implementing a
+a single interface.  If you&amp;rsquo;ve correctly separated your concerns, you might implement several interfaces, and want to know
+which are the methods from a particular one.  That&amp;rsquo;s where Shift+Ctrl+F7 on the &amp;ldquo;extends&amp;rdquo; keyword comes in handy.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Run individual inspection by name&lt;/h3&gt;
+
+&lt;p&gt;I use &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections&#34;&gt;inspections&lt;/a&gt; quite a lot.  They&amp;rsquo;re especially
+useful if you have a codebase that doesn&amp;rsquo;t quite conform to your ideal standards, so you can&amp;rsquo;t yet turn on automated
+checks like checkstyle to break the build when the code doesn&amp;rsquo;t
+conform - there&amp;rsquo;s an initial step where first you need to clean up the code.  Inspections are great, because you can
+have IntelliJ give you little yellow marks to show where things are suboptimal, and aim to check in only files without
+little yellow marks.&lt;/p&gt;
+
+&lt;p&gt;What I didn&amp;rsquo;t know, is that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-6.Runasingleinspection&#34;&gt;run a single inspection&lt;/a&gt;
+on files in any scope.  So if, for example, you wanted to
+make sure that the code you&amp;rsquo;ve touched in this change has no unused bits, like
+unused parameters or unused/untested methods, you could press Shift+Alt+Ctrl+I and type &amp;ldquo;unused&amp;rdquo;. Select the
+&amp;ldquo;Unused Declaration&amp;rdquo; inspection and choose to run this on all uncommitted files.  This will tell you where you can
+clean up your code, and every commit should make your codebase that little bit better.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Saving Power With Highlighting&lt;/h3&gt;
+
+&lt;p&gt;I did not know you could easily &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-7.Highlightinglevelandpowersavemode&#34;&gt;alter the active errors/warnings&lt;/a&gt;,
+and use that to save power.  Quite Interesting.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Auto indent your lines&lt;/h3&gt;
+
+&lt;p&gt;I almost obsessively reformat my code as I go, pressing &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-1.Reformatcode&#34;&gt;Ctrl+Alt+L&lt;/a&gt;
+almost like a muscle twitch. What I&amp;rsquo;ve just discovered, though, is that there&amp;rsquo;s a &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-2.Autoindentlines&#34;&gt;shortcut which will just fix the line
+indentation&lt;/a&gt;,
+which is probably 80% of what I need anyway - Ctrl+Alt+I.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Fix Evil String Concatenation&lt;/h3&gt;
+
+&lt;p&gt;I can&amp;rsquo;t believe I didn&amp;rsquo;t notice this one earlier - do you know how many times I&amp;rsquo;ve gone around and manually changed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;System.out.println(&amp;quot;This thing &amp;quot; + something + &amp;quot; is &amp;quot; + somethingElse);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;System.out.printf(&amp;quot;This thing %s is %s%n&amp;quot;, something, somethingElse);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Do you??? Anyway you don&amp;rsquo;t need to - Alt+Enter inside the params &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Intentions#Intentions-2.Stringconcatenation&#34;&gt;will suggest the replacement and do it for
+you&lt;/a&gt;. Nice.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;VCS Quick Access&lt;/h3&gt;
+
+&lt;p&gt;One of the areas where I &lt;em&gt;definitely&lt;/em&gt; don&amp;rsquo;t use IntelliJ to the best of its abilities is the Git integration.  I&amp;rsquo;ve
+been using &lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt; combined with IntelliJ to do most of my VCS management
+(I&amp;rsquo;m so sorry, I&amp;rsquo;m just not a command line
+person, I need to actually &lt;em&gt;see&lt;/em&gt; it). With the new laptop, I haven&amp;rsquo;t installed SourceTree yet and I&amp;rsquo;m going to try and
+do everything via the IDE.  Previously I used the right-click menu mostly for managing VCS operations, occasionally the
+VCS menu, and did most stuff in the &amp;ldquo;Changes&amp;rdquo; window.  But now I&amp;rsquo;ve discovered Alt+&amp;ldquo;Back Quote&amp;rdquo; (Ctrl+V on the mac) to
+bring up the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Version+Control+Basics#VersionControlBasics-4.VCSoperationsquicklist&#34;&gt;menu of git-shaped operations for this
+context&lt;/a&gt;.
+To stop you having to hunt all over the keyboard to
+find what on earth a &amp;ldquo;Back Quote&amp;rdquo; is, it&amp;rsquo;s &amp;#96;, which on both my UK and US (Windows) keyboards is in the top left
+corner of your keyboard (on the Mac, it&amp;rsquo;s on the bottom left next to the shift, but you shouldn&amp;rsquo;t need it since your
+shortcut is different anyway).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;Amend Commits&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve just discovered that you can commit a change which smushes up into your last commit and fixes it.  I&amp;rsquo;m assuming it commits the
+new changes and (potentially) an updated commit message into the last change.  I really wish I&amp;rsquo;d known about this
+earlier, on a number of occasions in the last few months I&amp;rsquo;ve done this either manually or by doing a rather
+dangerous soft reset.  I will &lt;em&gt;definitely&lt;/em&gt; be using this in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/amend-commit.png&#34; alt=&#34;Amend Commit&#34; title=&#34;Amend Commit&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;The Cursor as a Breakpoint&lt;/h3&gt;
+
+&lt;p&gt;Did you know that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Debugger#Debugger-5.Runtocursor&#34;&gt;use the cursor as a temporary breakpoint&lt;/a&gt;?
+I did not.  Well, now you know.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;Labelling Changes&lt;/h3&gt;
+
+&lt;p&gt;I hope by now none of us developers are doing that icky thing of having &lt;a href=&#34;https://twitter.com/trisha_gee/status/529299964787449856&#34;&gt;&amp;ldquo;Copy of&amp;hellip;&amp;rdquo; and &amp;ldquo;Backup of&amp;hellip;&amp;rdquo; filenames
+and directories&lt;/a&gt; to keep track of our versions.  We&amp;rsquo;re all using a VCS of course.  But if you&amp;rsquo;re being strict about making
+sure that every commit leads to a working build (we all do that, right&amp;hellip;?) then sometimes even distributed file systems
+like git, with its local branches, are too heavyweight for experiments and debugging.&lt;/p&gt;
+
+&lt;p&gt;IntelliJ has Local History, which I personally think you should &lt;em&gt;never&lt;/em&gt; rely on, but has occasionally saved my bacon in
+times of strife.  It also does this really nice thing (automatically) where it labels versions where the tests passed,
+so you&amp;rsquo;ve got some level of confidence that at that point in time, at that revision, things weren&amp;rsquo;t hideously broken.
+At the very least, they must have compiled.  What I did not know is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Local+History#LocalHistory-6.Putlabel&#34;&gt;add your own labels&lt;/a&gt;, so you could
+label some local, non-committed version of the file as &amp;ldquo;feature x works but y doesn&amp;rsquo;t&amp;rdquo; (or probably something much
+shorter).&lt;/p&gt;
+
+&lt;p&gt;I think it looks useful. As I say though, &lt;em&gt;not&lt;/em&gt; a replacement for VCS, but a suppliment.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+So, that&amp;rsquo;s the end of Week One at JetBrains, and already I&amp;rsquo;ve learnt a whole heap of things.  I&amp;rsquo;m sure there&amp;rsquo;s more to
+come, so stay tuned!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>New IntelliJ Tricks I Learnt Today</title>
@@ -957,54 +1117,6 @@ Francisco.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;I&amp;rsquo;ve got a couple of other events I&amp;rsquo;m still trying to work out the details for, but I think this is 2014 all booked up.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Sevilla MUG March Madness</title>
-      <link>http://trishagee.github.io/post/svq_mug_march_madness/</link>
-      <pubDate>Wed, 19 Mar 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/svq_mug_march_madness/</guid>
-      <description>&lt;figure &gt;
-    
-        &lt;img src=&#34;https://lh4.googleusercontent.com/-JVIgox7nGXo/UyjIQYxtiSI/AAAAAAAANc4/JV3lj4xwcgk/w919-h689-no/IMG_20140318_193758.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/events/166679892/&#34;&gt;Last night&lt;/a&gt; the Sevilla MUG had our
-&lt;a href=&#34;http://www.lczajkowski.com/2014/02/19/march-madness-comes-to-a-city-near-you/&#34;&gt;March Madness&lt;/a&gt; event.  This was our largest event yet,
-with 36 people signed up.  Although the aim of March Madness is to have a MongoDB Engineer at all the user groups this month,
-that&amp;rsquo;s not such a big deal for us as I live here, so this was also the first event where I wasn&amp;rsquo;t the main attraction - &lt;a href=&#34;https://twitter.com/JvrBaena&#34;&gt;Javier&lt;/a&gt; gave a really great talk about the lessons learnt at &lt;a href=&#34;http://es.socialbro.com/&#34;&gt;SocialBro&lt;/a&gt; after using
-MongoDB in production for the last couple of years.&lt;/p&gt;
-
-&lt;p&gt;The slides for my introduction to Replica Sets and Sharding:&lt;/p&gt;
-
-&lt;div style=&#34;text-align: center&#34;&gt;
- &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32480708&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
-&lt;/div&gt;
- And the slides for the main attraction:
-
-&lt;div style=&#34;text-align: center&#34;&gt;
- &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32464459&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
- &lt;div style=&#34;margin-bottom:5px; font-size:small&#34;&gt; &lt;strong&gt; &lt;a href=&#34;https://www.slideshare
- .net/fjavierbaena/sevilla-mongo-developers-group-mongodb-cmo-aprendimos-que-la-culpa-era-nuestra&#34; title=&#34;Sevilla Mongo Developers Group
- - MongoDB: Cómo aprendimos que la culpa era nuestra&#34; target=&#34;_blank&#34;&gt;Cómo aprendimos que la culpa era nuestra&lt;/a&gt;
- &lt;/strong&gt;from&lt;strong&gt;
- &lt;a href=&#34;http://www.slideshare.net/fjavierbaena&#34; target=&#34;_blank&#34;&gt; Francisco Javier Baena Ríos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;p&gt;The event went really well, everyone seemed engaged, and our first talk in Spanish seemed to encourage more questions than normal.  We
-were also in a new venue, and although I love the central location of our previous venue and the friendliness of the owners,
-the menu of the new location seemed to be a massive win.&lt;/p&gt;
-
-&lt;figure &gt;
-    
-        &lt;img src=&#34;https://lh6.googleusercontent.com/-ESw5r9B24Hs/UyjHcM2M-DI/AAAAAAAANco/hBVhN4IMFew/w919-h689-no/IMG_20140318_220941.jpg&#34;  /&gt;
-    
-    
-&lt;/figure&gt;
 </description>
     </item>
     
