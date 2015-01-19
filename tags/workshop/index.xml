@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Resources on Trisha Gee </title>
-    <link>http://trishagee.github.io/resources/index.xml/</link>
+      <title>Workshop on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/workshop/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -174,100 +174,6 @@ let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt
 &lt;h2 id=&#34;toc_4&#34;&gt;Emergency Gradle Procedure:&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.gradle.org/&#34;&gt;Download Gradle&lt;/a&gt;&amp;nbsp;or get it off the USB stick&lt;br /&gt;Extract to some suitable location. &amp;nbsp;Mine&amp;rsquo;s in&amp;nbsp;&lt;code&gt;/Library/Tools/gradle/&lt;/code&gt;&lt;br /&gt;Put gradle on your path. &amp;nbsp;On the Mac, that means adding the following line to&amp;nbsp;&lt;code&gt;~/.bash_profile&lt;/code&gt;:&lt;br /&gt;&lt;code&gt;export PATH=&amp;ldquo;/Library/Tools/gradle/bin:$PATH&amp;rdquo;&lt;/code&gt;&lt;br /&gt;&lt;div&gt;&lt;code&gt;&lt;br /&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The New 3.0 Java Driver for MongoDB</title>
-      <link>http://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</link>
-      <pubDate>Mon, 09 Sep 2013 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</guid>
-      <description>
-
-&lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;Links to more detailed information&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;Introduction to the changes in 3.0&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;How to get started with the 3.0
-not-production-ready snapshot&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentation from GeeCON about the design of the new MongoDB driver.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe frameborder=&#34;0&#34; height=&#34;400&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34;
-src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34;476&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Also available in Chinese:
-&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;356&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; mozallowfullscreen=&#34;&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/24790295&#34; style=&#34;border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&#34; webkitallowfullscreen=&#34;&#34; width=&#34;427&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Just Do Something</title>
-      <link>http://trishagee.github.io/resources/just_do_something/</link>
-      <pubDate>Wed, 19 Dec 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/resources/just_do_something/</guid>
-      <description>
-
-&lt;p&gt;As I constantly talk about in my how-to-get-more-women-into-technology talks, we, the developers, the people who do this job,
-need to get out there and tell people what&amp;rsquo;s so great about what we do.&lt;/p&gt;
-
-&lt;p&gt;Some of the initiatives you can get involved in are collected here. Please mail me or get me on twitter (&lt;a href=&#34;https://twitter.com/trisha_gee&#34;&gt;@trisha_gee&lt;/a&gt;) if you want to add
-anything to this list:&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;For Kids&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.devoxx.com/display/4KIDS/Home&#34;&gt;Devoxx For Kids&lt;/a&gt; (contact me or &lt;a href=&#34;https://twitter.com/dhardiker&#34;&gt;Dan Hardiker&lt;/a&gt; if you&amp;rsquo;re interested in the UK)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://youngrewiredstate.org&#34;&gt;Young Rewired State&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.codeclub.org.uk/&#34;&gt;Code Club&lt;/a&gt; - after school coding clubs for kids 9-11&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://appsforgood.org/&#34;&gt;Apps for Good&lt;/a&gt; - young people (11-18) learning to create applications to change their world&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://epik.org.uk/epikwiki/index.php/Main_Page&#34;&gt;EPiK (Encouraging Programming in Kent)&lt;/a&gt; - mentor young people (8-25)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Mentoring&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://graduatedevelopercommunity.wordpress.com/2012/02/18/gdc-meet-a-mentor/&#34;&gt;Meet a Mentor&lt;/a&gt; - mentor undergraduates/graduates in London(ish). Always looking for mentors of any experience level&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;Networking&amp;lt;&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.java.net/jugs/java-user-groups&#34;&gt;JUGs&lt;/a&gt; and other user groups - join a local JUG! There&amp;rsquo;s no better way to meet people who can mentor you, and influence you own peers. Being part of the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;London Java Community&lt;/a&gt; literally changed my life.&lt;/p&gt;
-
-&lt;p&gt;Attend and/or speak at &lt;a href=&#34;http://lanyrd.com/topics/java/&#34;&gt;events and conferences&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Performance Links</title>
-      <link>http://trishagee.github.io/resources/performance_resources/</link>
-      <pubDate>Mon, 22 Oct 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/resources/performance_resources/</guid>
-      <description>&lt;p&gt;A hastily thrown-together list of some of the places to get more information on how to write performant code.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.kodewerk.com/&#34;&gt;Java Performance Tuning Course&lt;/a&gt; (&lt;a href=&#34;http://kirk.blog-city.com/&#34;&gt;Kirk Pepperdine&lt;/a&gt;,
-Java Champion)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.javaperformancetuning.com/&#34;&gt;Java Performance Tuning&lt;/a&gt; (Kirk and Jack Shirazi)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.codingthearchitecture.com/tags/nonfunctionalrequirements/&#34;&gt;Non Functional Requirements&lt;/a&gt; (&lt;a href=&#34;http://simonbrown.je/&#34;&gt;Simon Brown&lt;/a&gt;, Coding the Architecture)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://yow.eventer.com/YOW-2011-1004/Tackling-the-Folklore-Surrounding-High-Performance-Computing-by-Martin-Thompson-1026&#34;&gt;Performance Myths&lt;/a&gt; (&lt;a href=&#34;http://mechanical-sympathy.blogspot.co.uk/&#34;&gt;Martin Thompson&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/Understanding-Java-Garbage-Collection&#34;&gt;Understanding Java Garbage Collection&lt;/a&gt; (&lt;a
-href=&#34;https://twitter.com/giltene&#34;&gt;Gil Tene&lt;/a&gt;, Azul)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.azulsystems.com/jHiccup&#34;&gt;JHiccup&lt;/a&gt; for testing how long your system takes to do nothing (also Azul)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://vanillajava.blogspot.co.uk/2012/02/high-performance-libraries-in-java.html&#34;&gt;Vanilla Java - Core Java for simpler,
-faster applications&lt;/a&gt; (Peter Lawrey)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.jclarity.com/friends/&#34;&gt;JClarity Performance Community&lt;/a&gt; (Ben, Martijn,
-Kirk et al)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://bad-concurrency.blogspot.co.uk/2012/10/talk-from-jax-london.html&#34;&gt;We Don&amp;rsquo;t Need No Stinkin&amp;rsquo; Locks&lt;/a&gt; (&lt;a
-href=&#34;http://bad-concurrency.blogspot.co.uk/&#34;&gt;Mike Barker&lt;/a&gt;, LMAX)&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
