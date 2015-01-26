@@ -6,18 +6,35 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 11 Nov 2014 00:00:00 UTC</updated>
+    <updated>Mon, 26 Jan 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Upcoming Events</title>
       <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Tue, 11 Nov 2014 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m freeeeeeeeeeee!!!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.be/&#34;&gt;QCon London&lt;/a&gt; - I&amp;rsquo;m running a
+&lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;half day tutorial&lt;/a&gt; based on
+&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;the AngularJS/Java/MongoDB live demo&lt;/a&gt;. Sign up if you want to
+code along as I build a mobile-friendly web-app.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code, London&lt;/a&gt; - I&amp;rsquo;ll be running my Public Speaking for Novices
+Clinic for the ladies who code.  Join me if you&amp;rsquo;re even slightly curious about improving your presentation skills.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon London&lt;/a&gt; - New Live Demo! &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger&lt;/a&gt;,
+featuring streams, lambdas, JavaFX and other Java-shaped things.  What Could Possibly Go Wrong (again)?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; -
+&lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt; again, so this had better go well at QCon!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12 May&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago&lt;/a&gt; - I&amp;rsquo;m unveiling yet another new talk, this one is on
+testing using Spock.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve submitted a bunch of other CFPs, and I have some other invitations inflight, but those are currently confirmed.&lt;/p&gt;
 </description>
     </item>
     

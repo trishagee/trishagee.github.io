@@ -6,18 +6,35 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 11 Nov 2014 00:00:00 UTC</updated>
+    <updated>Mon, 26 Jan 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Upcoming Events</title>
       <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Tue, 11 Nov 2014 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 26 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m freeeeeeeeeeee!!!&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.be/&#34;&gt;QCon London&lt;/a&gt; - I&amp;rsquo;m running a
+&lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;half day tutorial&lt;/a&gt; based on
+&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;the AngularJS/Java/MongoDB live demo&lt;/a&gt;. Sign up if you want to
+code along as I build a mobile-friendly web-app.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code, London&lt;/a&gt; - I&amp;rsquo;ll be running my Public Speaking for Novices
+Clinic for the ladies who code.  Join me if you&amp;rsquo;re even slightly curious about improving your presentation skills.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon London&lt;/a&gt; - New Live Demo! &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger&lt;/a&gt;,
+featuring streams, lambdas, JavaFX and other Java-shaped things.  What Could Possibly Go Wrong (again)?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; -
+&lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt; again, so this had better go well at QCon!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12 May&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago&lt;/a&gt; - I&amp;rsquo;m unveiling yet another new talk, this one is on
+testing using Spock.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve submitted a bunch of other CFPs, and I have some other invitations inflight, but those are currently confirmed.&lt;/p&gt;
 </description>
     </item>
     
@@ -98,12 +115,16 @@ different versions I&amp;rsquo;ve presented. The current one is the NoSQL Matter
 the commits correspond to the user stories in &lt;a href=&#34;http://www.slideshare.net/trishagee/i-want-coffeejavaone&#34;&gt;the slides&lt;/a&gt;,
 so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 
+&lt;p&gt;I&amp;rsquo;ve also presented the talk as a series of &lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34;&gt;short, follow-along lessons&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34; target=&#34;_blank&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134070865&amp;type=d&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
 so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk has been videoed several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
-these older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
-these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
+&lt;p&gt;This talk has been videoed several times -
+some older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
+these initial demos.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;,

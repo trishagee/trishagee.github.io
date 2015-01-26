@@ -6,7 +6,249 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 09 Jan 2015 00:00:00 UTC</updated>
+    <updated>Fri, 23 Jan 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Switching to the Surface Pro</title>
+      <link>http://trishagee.github.io/post/surface_pro_3/</link>
+      <pubDate>Fri, 23 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/surface_pro_3/</guid>
+      <description>
+
+&lt;p&gt;Sadly, leaving MpngoDb also meant leaving my macbook air (i should hace thought this job moce through ,ore carefully).
+so i had a tough decision to make - get a new macbpok, or try something else (or reclaim my personal macbook off mu boufriend,
+but thst option conveniently slipped my mind, as who wants to upgrade to a 4 year old piece of hardware?)&lt;/p&gt;
+
+&lt;p&gt;I was very very happy qirh the macbook air - in fact, i bought my persional one after thoughtworks foisted one onto me for my short twnure
+there, and i became addicte tot tje way it felt for typing, to the easy of using the touchpad (and never feeling like i needed
+an exrernal mouse), and, most of all, inloved that it was only marginally heavier tha na &amp;lsquo;arge bottle of water. I coild never go
+back to anotjer portable computer.&lt;/p&gt;
+
+&lt;p&gt;Until someone at the lonodn javabcommunity unconference showed me their Microsoft Surface. At first, I sneered - its windows, amd although
+i actually rarher liked the Nokia Lumia i was given for being anRemarkable Woman, I wasnt reqlly sold  on New World
+Windows. But then, i saw how tjin and light it was, and how nice the screem was.  And the keyboard was detachable,
+and its a tablet. and a laptop. And it has a proper Wdinwos desktpp mode, for installing Real aplicatoons, its not just a Very Expensive
+iPad competitor.  And then? The guy who owned the surface whipped out his stylus, and started drawing pn tje screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;now&lt;/em&gt; im interestewd.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;This device has the capabolity to solve a problem ive been having, and have been trying to address a number o fways: i carry too much stuff around when
+i travel. and i travel a lot.
+  - I bring my laptop, so i csn code while im away, and for presenting from - i can present from the ipad
+if it&amp;rsquo;s just slideware, but ive been giving this live demomwhich needs a rewl IDE.
+ - I bring my ipad - orignally i thought inwould usenthis if i was at a conference and not presenting - i can take norew, wrire blog pots, stay up
+ to date. Turnsnout i usually need rhe laptop too, if only becausen i was supposednto be writing code for tje day job so
+ i needed rhe ide even if i was going to otjer sessions or waiting my turn tonpresent. I tried not bringing the ipad,
+ but the batteryblife on tje laptop was arounf 3-4 hours, which barely cuts it on a european flight, if you include
+ airportnwaiting time, and certainly doesnt lastna trqnsatlantic journey. so i use the ipad for watching stuff on planes
+ and anything that doesn&amp;rsquo;t need an ide, as the batteryblife is (or was, before tje ladt upgrade) much better. and saves precious pjone battery
+  - if i have space, and tjink i might have time for a blog or notes, i&amp;rsquo;ll bring my bamboo tab&amp;rsquo;et.  i know i haven&amp;rsquo;t
+  illustrsted my blognposts for quire a while, and very fww of my presentations have featured my pictures either, but
+  I still optimisitically bring my bamboo tablet with me on many of my journies.  It&amp;rsquo;s not very heavy, so it&amp;rsquo;s not a
+  big deal to bring it, but it;s just another piece of baggage (and another thing to plu in to the limited USB slots on
+  the laptop).&lt;/p&gt;
+
+&lt;p&gt;If I could have one device that:
+ - Was slim and light
+ - Lets me run IntelliJ IDEA
+ - Can be presented from
+ - Lets me easily sketch, preferably with Gimp or a similar tool
+ - Has a decent battery life (needs to last for most of a transatlantic flight)&lt;/p&gt;
+
+&lt;p&gt;With the optional benefits of
+ - Being small enough that when the passenger in front of me smushes his seat back into my space it doesn&amp;rsquo;t snap the
+ laptop screen
+ - Being light enough/tablety enough that I can use it on take off and landing (do you know how much valuable working
+ time is lost on each flight??)&lt;/p&gt;
+
+&lt;p&gt;Then my life would be simpler, and Simpler Is Better.&lt;/p&gt;
+
+&lt;p&gt;Before I discovered the Surface, I very nearly downgraded to the smaller Macbook Air to meet those last two criteria, but
+I was really worried about losing the screen real estate. I hate coding through a letter box.&lt;/p&gt;
+
+&lt;p&gt;So, the Surface intrigued me.  Apart from being Windows, it might meet all my criteria.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Taking the Plunge&lt;/h3&gt;
+
+&lt;p&gt;I played with it a bit in the pub that nivht, and I tried it in fnac to see if i hared the feel of the kayboard.  At the end of
+my time at MongoDB, I switched to working on my (Windows) gaming PC, to see if lsoing all the familiar keyboard shortcuts
+was a problem, to remember how to use Home and End keys instead of Fn and arrows (for some reason, text navigation on
+the Mac was one of my deciding factors for switching to it in the first place), and to see if I remembered how to run things on Windows.&lt;/p&gt;
+
+&lt;p&gt;At the airport (woah, you&amp;rsquo;d never think to find me at one of &lt;em&gt;those&lt;/em&gt;), Dixons was doing a deal on the Surface, and also
+offering a 60 day return-it-if-you-don&amp;rsquo;t-like-it guarantee.  I took the chance, and I bought the i5, 8Gb, 256 Gb option
+(the memory was a bonus, but I always ran out of space on the iPad and the 128Gb Air if I put even half a dozen TV episodes
+on there for watching on the plane).&lt;/p&gt;
+
+&lt;p&gt;I decided to use it as my primary coding machine for my new job, and to evaluate its performance. I&amp;rsquo;d send it back to
+Dixons if I decided I wanted to stick with a Mac (by the way, I&amp;rsquo;d had the Surface just a few hours before my iPad went
+missing, it seems &lt;em&gt;someone&lt;/em&gt; in the house who is not me decided that the iPad was decidedly his now, regardless of the outcome
+of the experiment.  I dunno, some people&amp;hellip;)&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Experience&lt;/h3&gt;
+
+&lt;p&gt;(Insert picture of a chart of your feelings towards the Surface)
+The first week using the thing was pretty rough, and I was pretty certain during that time that I would be wrapping it up
+and sending it back.  But because I thought I would be doing this (and at the point it looked like a refurbished Macbook Air
+was definitely in my future, for free), I had nothing to lose by really trying to use the thing in anger.&lt;/p&gt;
+
+&lt;p&gt;Having a new job was a good excuse for all the setup too, I think making the switch while I was mid-flow in deliverables
+would have been hard, but since I had new software to install and new credentials to set up anyway, the setup cost was
+acceptable.&lt;/p&gt;
+
+&lt;p&gt;Week 1:
+Bear in mind that during this time I&amp;rsquo;m using the Surface as a desktop replacement - I&amp;rsquo;ve got it in my home office and
+I want to use it with a second monitor. I&amp;rsquo;m used to having the bluetooth keyboard and touchpad for the mac, and having the
+laptop on a riser (insert photo of all the technology from that first day).&lt;/p&gt;
+
+&lt;p&gt;Day 1:
+ - I&amp;rsquo;m surprised that the macbook keyboard and touchpad actually do work with the surface.  Great! I can use my old setup!  Only&amp;hellip;
+ - &amp;hellip;yes the machine sees the trackpad, but none of the gestures work, not even scrolling.  However, I do find some drivers from
+ somewhere that give me scrolling support, except&amp;hellip;
+ - &amp;hellip;the trackpad scrolls the wrong way. Not just the wrong way for what I&amp;rsquo;m used to on the mac (and many of us remember that
+ day we had to switch directions when Apple inflicted that update on us, only now we wonder how we ever managed the old way), but
+ the wrong way for the touchpad on the surface.  So I scroll in one direction on the mac trackpad, and in the opposite direction on
+ the surface trackpad.  This is going to mess with my mind
+ - The mac touchpad now supports a light tap as a click, instead of having to press to click - if you haven&amp;rsquo;t used the mac touchpad, you
+ might not know what I mean, as the tap-click is quite common on other laptops. But it was FAR too sensitive, and I kept clicking on
+ everything.  Drove me NUTS
+ - Apple keyboard works.  There&amp;rsquo;s a pleasant surprise!
+ - The resolution on my external monitor looks a bit crappy actually - the screen manages to look jagged and blurry at
+ the same time.  The experience on the second monitor (insert specs here) was definitely better on the Macbook
+ - On the first day, I wrote a note that says &amp;ldquo;function keys don&amp;rsquo;t work, or don&amp;rsquo;t do what they say on the tin&amp;rdquo;. Reading it
+  now I&amp;rsquo;m not sure what that means, as I haven&amp;rsquo;t really stumbled over it since then.  But I just tried pressing the ones that
+  look like screen brightness, and they opened new tabs in Chrome. Which wasn&amp;rsquo;t even open.  That was unexpected. I also miss having
+  volume on the function keys, they were pretty much the only ones I used on the mac. I think I set the defaults of the Surface
+  to use the fucntion keys as F-keys (not search or brightness or whatever) so my shortcuts in IntelliJ worked correctly,
+  but I can&amp;rsquo;t swear to that. I seem to remember doing that on the macbook too.
+ - Obviously adjusting to the Ctrl/Cmd differences, particularly in my IntelliJ shortcuts, was (and still is) tripping me up. But I&amp;rsquo;m
+ OK with this, as even 2 years after switching from Linux to mac for full-time development, I still kept getting the mac shortcuts wrong
+ anyway
+ - I have a note that says &amp;ldquo;function key doesn&amp;rsquo;t do home/end&amp;rdquo; - this is definitely not true right now, so either I
+ changed a setting, or this applies to using the mac keyboard.&lt;/p&gt;
+
+&lt;p&gt;Day 2:
+ - I think I disabled a click setting for the laptop touchpad, there&amp;rsquo;s no need for a tap-to-click when you also have
+ a click on the touchpad.
+ - This right-click thing on the touchpad drives me MENTAL. For whatever reason, I tend to use the lower right part of the
+ touchpad to click, and since the whole right side of the touchpad seems to be mapped to right-click, it means I&amp;rsquo;m almsot
+ always right clicking on things instead of clicking. I looked for a way to turn this off, but it appears there is none.
+ On the mac, I never really used this two-fingers-is-a-right-click feature, because I have a freakishly long middle finger and
+ it was uncomfortable, so I tended to hold down alt to get a right-click. I have wished &lt;strong&gt;every day&lt;/strong&gt; I&amp;rsquo;ve used the surface for
+ an Alt=right-click feature.
+ - Skype didn&amp;rsquo;t work properly. Honestly I can&amp;rsquo;t remember the problems, but I know it was for calls not chat. It&amp;rsquo;s ridiculous
+ that the windows version is worse than the OSX version, given who owns it, but hey. I have used Skype several times, sometimes
+ to call via Skype, sometimes to call a UK phone line. The UK phone call was horrible, but then it always was on the mac too,
+ the other end can never hear me, and on both the surface and the phone it doesn&amp;rsquo;t seem to correctly transmit keypad presses,
+ i.e. when the voicejail system on the other end says &amp;ldquo;press 3 to attempt to speak to a real human&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Day 3:
+ - The pen is really nice.  And I&amp;rsquo;ve played with the handwriting recognition in Evernote, which is surprisingly good.  Actually, I might start
+ using that rather than the screen keyboard - I started writing this post with the screen keyboard, and this is what I got:
+&amp;gt;  I bring my ipad - orignally i thought inwould usenthis if i was at a conference and not presenting - i can take norew, wrire blog pots, stay up
+   to date. Turnsnout i usually need rhe laptop too, if only becausen i was supposednto be writing code for tje day job so
+   i needed rhe ide even if i was going to otjer sessions or waiting my turn tonpresent.&lt;/p&gt;
+
+&lt;p&gt;I think the handwriting recognition is better than my finger positioning.
+ - The screen keyboard is actually pretty nice, and the noises it makes are really cute. Took me a while to work out that
+ you don&amp;rsquo;t get any autocorrect or automatic sentence capitlisation in Desktop mode, but you do if you&amp;rsquo;re running as a tablet.
+ What this basically means is I&amp;rsquo;ve had to install two versions of evernote - the Windows desltop version, because it&amp;rsquo;s good and
+ does everything I want, and &amp;ldquo;Evernote touch&amp;rdquo;, the tablet/phone version, which I had originally installed by accident and immediately
+ uninstalled and replaced with the desktop app, as the tablet app seems to be missing pretty much everything, plus it looks
+ completely difference, and I can&amp;rsquo;t find anything.  I re-installed it though, as if I&amp;rsquo;m going to write notes on-the-move
+with the screen keyboard, I need to use the touch version so my horrible typing errors get fixed.
+ - I expect to be able to scroll touching the screen in Evernote for desktop, but you can&amp;rsquo;t, it&amp;rsquo;s bascially a mouse click. You
+ can scroll in Evernote Touch though, presumably that&amp;rsquo;s been deisgned for it.
+ - I struggle with the onscreen keyboard on this day, but I figure stuff out, including that there&amp;rsquo;s a different button that
+ you have to press if you want the keyboard to not overlay the things you want to look at or do stuff with
+  - Scrolling doesn&amp;rsquo;t work properly in Tweetdeck&lt;/p&gt;
+
+&lt;p&gt;Day 4:
+ - Honestly, did we really used to go to random websites to download software to install? It seems really fraught with danger.
+ I didn&amp;rsquo;t realise how much I&amp;rsquo;d got used to the App Store.&lt;/p&gt;
+
+&lt;p&gt;This has sounded more like a Technology Anonymous rant than a serious review of the surface. Ah well, if anyone can help me with any of
+ my problems, I consider it a win!&lt;/p&gt;
+
+&lt;p&gt;Things that drive me crazy:
+ - The laptop touchpad:
+   &amp;ndash; The scrolling doesn&amp;rsquo;t always work, and isn&amp;rsquo;t always smooth. I Often end up using the arrow keys
+   &amp;ndash; The right click on the right side is &lt;em&gt;insanely&lt;/em&gt; annoying
+   &amp;ndash; To be fair, I don&amp;rsquo;t think the surface has a particularly bad touchpad, I remember that pretty much all laptops before
+   I used the macbook had horrible touchpads.  It&amp;rsquo;s probably pretty good compared to other laptops, it&amp;rsquo;s just really nowhere
+   near as good as the apple touchpads - both the one built into the laptop and the magic external one are excellent.
+ - The mac touchpad.  The backwards scrolling and &lt;em&gt;extreme&lt;/em&gt; click sensitivity was too much, and I stopped using it
+ - Scrolling doesn&amp;rsquo;t work properly in Tweetdeck - if I hover over a column and scroll with the touchpad, it scrolls the column
+ to the left.  Very, very annoying.  I end up using the arrow keys a LOT for scrolling&lt;/p&gt;
+
+&lt;p&gt;Compromises/sacrifices I can take (AKA stuff Microsoft could address to make the Surface and/or Win):
+ - The resolution on the second monitor.  Hated it at first, have got used to it.
+ - Keyboard is not backlit.  This is irritating, but not currently a showstopped. But I have yet to try and use it on
+ an overnight flight yet - I always loved the backlit keyboard on the mac at those times
+ - Remapping the keys.  As per Scott Hanselman&amp;rsquo;s super useful blogpost, I&amp;rsquo;ve remapped the right Alt key to Ins just so
+ my IntelliJ shortcuts don&amp;rsquo;t all have to be remapped
+ - Having a touchscreen monitor, whether it&amp;rsquo;s because your screen is also a tablet, or because you have an actual touchscreen,
+ means your screen &lt;em&gt;always&lt;/em&gt; has fingerprints all over it.  Not cool for my OCD. But irritates me a lot less than expected.
+ - I keep pressing Windows Key + E instead of Ctrl+E (on the mac it was Cmd+e, and the cmd key is obviously in the same place as the windows
+ key).  Thi is very irritating, but at some point my muscle memory will learn.
+ - I have the Desktop and Tablet versions of some apps: Evernote (so I can use the proper version most of the time,
+ but get the benefits of the cleverer screen keyboard in Evernote Touch) and Kindle (so I can use the Desktop
+ version for opening books from Dropbox, and for searching, and all the other useful features from the desktop Kindle app
+ that I used all the time on the mac, and the Tablet version so the font is actually visible when reading as a table, so
+ the books are big enough icons to tap on with your finger).
+ -&lt;/p&gt;
+
+&lt;p&gt;Things I miss about the mac:
+ - Volume on function keys
+ - Battery life indicator - time left in hours.  27% remaining is not too useful, I need to know how many hours that is.
+ - The input box at the top of every help menu - I&amp;rsquo;m super lazy and used this all the time to type in the function I wanted to
+ use, and OSX would highlight where in the menus this feature lived. IntelliJ has its Ctrl+Shift+A shortcut, which does
+ something similar (only better), but for all other apps I end up hunting through menus for the thing I need.&lt;/p&gt;
+
+&lt;p&gt;Things that worked:
+ - The macbook bluetooth keyboard. Sure, the keys are in a different place (espectially as my bluetooth keyboard is
+ Spanish and I purposefully bought a UK keyboard for the Surface), but it does work. I just don&amp;rsquo;t use it as without
+ a separate mouse or touchpad, I might as well use the surface keyboard&lt;/p&gt;
+
+&lt;p&gt;Things I like
+ - Once i got used to the very light touch that is the Surface keyboard, I think I prefer it.  It&amp;rsquo;s a nice feeling -
+ kinda clicky, kinda squishy like laptop keyboards are, but such a short distance to push the keys down it actually feels
+ very low effort, like your brain is able to talk to the computer with minimal resistance.
+ - Windows Key + S opens up the search, which works like the apple spotlight (Cmd+Space). I thought I would really miss
+ this feature, so I&amp;rsquo;m glad there&amp;rsquo;s an equivalent. It hasn&amp;rsquo;t taken long to retrain my muscle memory.
+ - Honestly, getting a full Delete key back on the keyboard is surprisingly pleasing. Fn+Backspace has &lt;em&gt;always&lt;/em&gt; annoyed
+ me, especially in shortcuts in an IDE.&lt;/p&gt;
+
+&lt;p&gt;Things that still need more testing
+ - Battery life: Today I
+   &amp;ndash; used the surface as a tablet and watched 40 minutes of video in the gym
+   &amp;ndash; spent 20 minutes or so sketching (with the pen) an architecture diagram for my boyfriend while we waited in the aiport
+   (yep, that&amp;rsquo;s the sort of relationship we have.  Poor boy.)
+   &amp;ndash; have been using it for 90 minutes on the plane
+   &amp;ndash; &amp;hellip;and I&amp;rsquo;m down to 17%.  I&amp;rsquo;ll be honest, I&amp;rsquo;m pretty disapointed with this.  I&amp;rsquo;m not sure what the specs are supposed to
+   be, and I&amp;rsquo;m fairly certain I could do more to save battery (for example it wasn&amp;rsquo;t in flight mode until I got it onto the plane,
+   and the screen was at normal brightness until about 30 minutes ago when I realised I was under 30% battery).
+   &amp;ndash; I&amp;rsquo;d like to test how long it lasts on a flight from full charge, with some reasonable power-saving settings. But I&amp;rsquo;m worried
+   it won&amp;rsquo;t take me all the way across the Atlantic, and with only a single toy, instead of the laptop/iPad combo, I have
+   no backups for Things To Do when the power is out.
+(2 hours into the flight and 7%)&lt;/p&gt;
+
+&lt;p&gt;Conclusions:
+ - I&amp;rsquo;m not sure it&amp;rsquo;s a solid desktop replacement: the poor resolution on the second monitor, and the fact the second monitor
+ totally throws off the pen use on the tablet make this more of a nice laptop than a great desktop replacement
+ - Battery life is disappointing, but needs investigation
+ - For travelling, I &lt;em&gt;think&lt;/em&gt; this is going to be a great choice
+ - And for encouraging creativity and different modes of working, it&amp;rsquo;s fantastic. I&amp;rsquo;ve sketched more in the last month than
+ the last year, and switching from keyboard to touch screen to pen is really easy and allows you to work in different ways
+  to traditional laptops or desktops.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to keep the Surface (I think). The laptop/tablet combo, with the fantastic stylus support, is worth the sacrifices.
+Although I prefer OSX overall as an OS, Apple has nothing to compete with this hardware right now.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>New IntelliJ Tricks I Learnt Part 2</title>
@@ -1087,36 +1329,6 @@ I&amp;rsquo;m just learning and used to relying heavily on auto-focus).&lt;/p&gt
 weekends.&lt;/p&gt;
 
 &lt;p&gt;Also there are &lt;a href=&#34;http://www.meetup.com/SVQJUG/photos/all_photos/?photoAlbumId=21306622&#34;&gt;photos on Meetup&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events 2014</title>
-      <link>http://trishagee.github.io/post/upcoming_events_2014/</link>
-      <pubDate>Wed, 16 Apr 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/upcoming_events_2014/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s been a while since I updated you on my travel plans, so now I&amp;rsquo;ve had some more conferences confirmed,
-I thought I would pass the information on.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve been really lucky to have been selected for some great conferences this year.  I was asked to do a few more,
-and it was genuinely painful to say no to everything, but it seems the laws of space and time cannot be broken,
-and so I&amp;rsquo;ve been forced to select a tiny subset of all the places I&amp;rsquo;d like to go:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;20 May: &lt;a href=&#34;http://gotocon.com/chicago-2014/presentation/HTML5,%20Angular.js,%20Groovy,%20Java,
-%20MongoDB%20all%20together%20-%20what%20could%20possibly%20go%20wrong?&#34;&gt;GOTO Chicago&lt;/a&gt; - I&amp;rsquo;m giving the same live coding presentation from QCon London,
-although knowing me I expect there will be some tweaks, changes, additions, and maybe improvements.&lt;/li&gt;
-&lt;li&gt;22-23 May: In New York City, since I&amp;rsquo;m more or less in the area.  Gimme a shout if you want to meet for a drink.&lt;/li&gt;
-&lt;li&gt;25-28 May: &lt;a href=&#34;http://speakerconf.com/&#34;&gt;SpeakerConf&lt;/a&gt; Barcelona.  And while I&amp;rsquo;m in the area&amp;hellip;&lt;/li&gt;
-&lt;li&gt;29 May: Barcelona JUG - &amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;2-5 June: New York City, probably (wait, am I going to be at home at all??)&lt;/li&gt;
-&lt;li&gt;23 July: &lt;a href=&#34;http://www.oscon.com/oscon2014/public/schedule/detail/35444&#34;&gt;OSCON&lt;/a&gt; - live coding again!&lt;/li&gt;
-&lt;li&gt;28 Sep - 2 Oct: &lt;a href=&#34;http://www.oracle.com/javaone/speakers/index.html#gee&#34;&gt;JavaOne&lt;/a&gt; woohoo!  I love having this opportunity to visit San
-Francisco.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;ve got a couple of other events I&amp;rsquo;m still trying to work out the details for, but I think this is 2014 all booked up.&lt;/p&gt;
 </description>
     </item>
     

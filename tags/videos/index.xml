@@ -30,12 +30,16 @@ different versions I&amp;rsquo;ve presented. The current one is the NoSQL Matter
 the commits correspond to the user stories in &lt;a href=&#34;http://www.slideshare.net/trishagee/i-want-coffeejavaone&#34;&gt;the slides&lt;/a&gt;,
 so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 
+&lt;p&gt;I&amp;rsquo;ve also presented the talk as a series of &lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34;&gt;short, follow-along lessons&lt;/a&gt;:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34; target=&#34;_blank&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134070865&amp;type=d&#34; &gt;&lt;/a&gt;&lt;/p&gt;
+
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
 so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk has been videoed several times, some of these videos aren&amp;rsquo;t available yet, but there are videos of older versions of this talk -
-these older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
-these initial demos.  If more videos become available I&amp;rsquo;ll add them here.&lt;/p&gt;
+&lt;p&gt;This talk has been videoed several times -
+some older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
+these initial demos.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;,
