@@ -26,7 +26,8 @@ an update on where Java is now and where it looks like it&amp;rsquo;s going in t
 &lt;p&gt;I&amp;rsquo;m just starting to use Java 8 in real life, so this could not have been better timed - I got to ask the guys a bunch
 of questions about the intentions behind some of the Java 8 features, and the current vision for the future.&lt;/p&gt;
 
-&lt;p&gt;[Insert deck]&lt;/p&gt;
+&lt;p&gt;I have a copy of the slides - if members of the user group want them please let me know. I haven&amp;rsquo;t yet had
+clearance to make them publicly available so I&amp;rsquo;m reluctant to post them here.&lt;/p&gt;
 
 &lt;p&gt;My notes from the session:&lt;/p&gt;
 
@@ -69,7 +70,7 @@ Java makes life a lot easier for those who develop the Java language, as they ca
 forward and not be tied down supporting old versions.&lt;/li&gt;
 &lt;li&gt;Either this is the first time I&amp;rsquo;ve heard of &lt;a href=&#34;http://www.oracle.com/technetwork/java/javadb/overview/index.html&#34;&gt;JavaDB&lt;/a&gt;,
 or my memory has completely discarded it. I had no idea what it was.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9&lt;/a&gt; is well under way.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9&lt;/a&gt; is well under way, check out the JEPs.&lt;/li&gt;
 &lt;li&gt;(This is the &lt;a href=&#34;http://openjdk.java.net/jeps/1&#34;&gt;JEP process&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Jigsaw&lt;/a&gt; was explained, and actually I could see myself using it for the project I&amp;rsquo;m working on right now. I had a look
 to see if I could use it via the OpenJDK, but it looks like the groundwork is there, but not the actual modules themselves.&lt;/li&gt;
