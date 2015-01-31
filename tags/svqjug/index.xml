@@ -26,8 +26,8 @@ an update on where Java is now and where it looks like it&amp;rsquo;s going in t
 &lt;p&gt;I&amp;rsquo;m just starting to use Java 8 in real life, so this could not have been better timed - I got to ask the guys a bunch
 of questions about the intentions behind some of the Java 8 features, and the current vision for the future.&lt;/p&gt;
 
-&lt;p&gt;I have a copy of the slides - if members of the user group want them please let me know. I haven&amp;rsquo;t yet had
-clearance to make them publicly available so I&amp;rsquo;m reluctant to post them here.&lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/44036521&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;i&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/2015-java-update-and-roadmap-jug-sevilla&#34; title=&#34;2015 Java update and roadmap, JUG sevilla&#34; target=&#34;_blank&#34;&gt;2015 Java update and roadmap, JUG sevilla&lt;/a&gt; from Georges Saab and Aurelio Garcia-Ribeyro &lt;/i&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;My notes from the session:&lt;/p&gt;
 
@@ -107,7 +107,7 @@ do so, drop me a line:&lt;/p&gt;
 &lt;li&gt;Java EE&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Further Reading:&lt;/p&gt;
+&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;

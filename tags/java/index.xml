@@ -26,8 +26,8 @@ an update on where Java is now and where it looks like it&amp;rsquo;s going in t
 &lt;p&gt;I&amp;rsquo;m just starting to use Java 8 in real life, so this could not have been better timed - I got to ask the guys a bunch
 of questions about the intentions behind some of the Java 8 features, and the current vision for the future.&lt;/p&gt;
 
-&lt;p&gt;I have a copy of the slides - if members of the user group want them please let me know. I haven&amp;rsquo;t yet had
-clearance to make them publicly available so I&amp;rsquo;m reluctant to post them here.&lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/44036521&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;i&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/2015-java-update-and-roadmap-jug-sevilla&#34; title=&#34;2015 Java update and roadmap, JUG sevilla&#34; target=&#34;_blank&#34;&gt;2015 Java update and roadmap, JUG sevilla&lt;/a&gt; from Georges Saab and Aurelio Garcia-Ribeyro &lt;/i&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;My notes from the session:&lt;/p&gt;
 
@@ -107,7 +107,7 @@ do so, drop me a line:&lt;/p&gt;
 &lt;li&gt;Java EE&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;Further Reading:&lt;/p&gt;
+&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;
@@ -334,6 +334,28 @@ operations using the Java driver:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Fiesta de lanzamiento de Java 8</title>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party/</guid>
+      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
+presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
       <link>http://trishagee.github.io/post/svq_java8_launch_party/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
@@ -357,28 +379,6 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fiesta de lanzamiento de Java 8</title>
-      <link>http://trishagee.github.io/es/post/svq_java8_launch_party/</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party/</guid>
-      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
-presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
