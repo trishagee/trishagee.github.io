@@ -307,668 +307,6 @@ we&amp;rsquo;ll replace only the field we want to change:&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</guid>
-      <description>
-
-&lt;h2 id=&#34;toc_0&#34;&gt;Getting started with MongoDB and Java&lt;/h2&gt;
-
-&lt;p&gt;Java is one of the most popular programming languages in the MongoDB Community. For new users, it&amp;rsquo;s important to provide an overview of how to work with the MongoDB Java driver and how to use MongoDB as a Java developer.&lt;/p&gt;
-
-&lt;p&gt;In this post, which is aimed at Java/JVM developers who are new to MongoDB, we&amp;rsquo;re going to give you a guide on how to get started, including:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Installation&lt;/li&gt;
-&lt;li&gt;Setting up your dependencies&lt;/li&gt;
-&lt;li&gt;Connecting&lt;/li&gt;
-&lt;li&gt;What are Collections and Documents?&lt;/li&gt;
-&lt;li&gt;The basics of writing to and reading from the database&lt;/li&gt;
-&lt;li&gt;An overview of some of the JVM libraries&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Installation&lt;/h2&gt;
-
-&lt;p&gt;The installation instructions for MongoDB are &lt;a href=&#34;http://docs.mongodb.org/manual/installation/&#34;&gt;extensively documented&lt;/a&gt;,
-so I&amp;rsquo;m not going to repeat any of that here. If you want to follow along with this &amp;ldquo;getting started&amp;rdquo; guide, you&amp;rsquo;ll want to download the appropriate version of MongoDB and unzip/install it. At the time of writing, the latest version of MongoDB is 2.6.3, which is the version I&amp;rsquo;ll be using.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;A note about security&lt;/h3&gt;
-
-&lt;p&gt;In a real production environment, of course you&amp;rsquo;re going to want to consider authentication. This is something that MongoDB takes seriously and there&amp;rsquo;s a whole section of &lt;a href=&#34;http://docs.mongodb.org/manual/administration/security/&#34;&gt;documentation on security&lt;/a&gt;. But for the purpose of this demonstration, I&amp;rsquo;m going to assume you&amp;rsquo;ve either got that working or you&amp;rsquo;re running in &amp;ldquo;trusted mode&amp;rdquo; (i.e. that you&amp;rsquo;re in a development environment that isn&amp;rsquo;t open to the public).&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Take a look around&lt;/h3&gt;
-
-&lt;p&gt;Once you&amp;rsquo;ve got mongodb installed and started (a process that should only take a few minutes), you can &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/getting-started/#connect-to-a-database&#34;&gt;connect to the MongoDB shell&lt;/a&gt;. Most of the MongoDB technical documentation is written for the shell, so it&amp;rsquo;s always useful to know how to access it, and how use it to troubleshoot problems or prototype solutions.&lt;/p&gt;
-
-&lt;p&gt;When you&amp;rsquo;ve connected, you should see something like&lt;/p&gt;
-
-&lt;pre&gt;MongoDB shell version: 2.6.3
-connecting to: test
-&gt; _ &lt;/pre&gt;
-
-&lt;p&gt;Since you&amp;rsquo;re in the console, let&amp;rsquo;s take it for a spin. Firstly we&amp;rsquo;ll have a
-&lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/getting-started/#select-a-database&#34;&gt;look at all the databases&lt;/a&gt; that are there right now:&lt;/p&gt;
-
-&lt;pre&gt;&gt; show dbs&lt;/pre&gt;
-
-&lt;p&gt;Assuming this is a clean installation, there shouldn&amp;rsquo;t be much to see:&lt;/p&gt;
-
-&lt;pre&gt;&gt; show dbs
-admin (empty)
-local 0.078GB
-&gt; &lt;/pre&gt;
-
-&lt;p&gt;That&amp;rsquo;s great, but &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/getting-started/&#34;&gt;as you can see there&amp;rsquo;s loads of documentation&lt;/a&gt; on how to
-play with MongoDB from the shell. The shell is a really great environment for trying out queries and looking at things from the server point-of-view. However, I promised you Java, so we&amp;rsquo;re going to step away from the shell and get on with connecting via Java.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;Getting started with Java&lt;/h2&gt;
-
-&lt;p&gt;First, you&amp;rsquo;re going to want to set up your project/IDE to use the
-&lt;a href=&#34;http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/#getting-started-with-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt;.
-These days IDEs tend to pick up the correct dependencies through your &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; or
-&lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt; configuration, so I&amp;rsquo;m just going to cover configuring these.&lt;/p&gt;
-
-&lt;p&gt;At the time of writing, the latest version of the Java driver is 2.12.3 - this is designed to work with the MongoDB 2.6 series.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_5&#34;&gt;Gradle&lt;/h3&gt;
-
-&lt;p&gt;You&amp;rsquo;ll need to add the following to your dependencies in build.gradle:&lt;/p&gt;
-
-&lt;p&gt;compile &amp;lsquo;org.mongodb:mongo-java-driver:2.12.3&amp;rsquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_6&#34;&gt;Maven&lt;/h3&gt;
-
-&lt;p&gt;For maven, you&amp;rsquo;ll want:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;dependencies&amp;gt;
-    &amp;lt;dependency&amp;gt;
-        &amp;lt;groupId&amp;gt;org.mongodb&amp;lt;/groupId&amp;gt;
-        &amp;lt;artifactId&amp;gt;mongo-java-driver&amp;lt;/artifactId&amp;gt;
-        &amp;lt;version&amp;gt;2.12.3&amp;lt;/version&amp;gt;
-    &amp;lt;/dependency&amp;gt;
-&amp;lt;/dependencies&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Alternatively, if you&amp;rsquo;re really old-school and like maintaining your dependencies the hard way, you can always &lt;a href=&#34;http://central.maven.org/maven2/org/mongodb/mongo-java-driver/&#34;&gt;download the JAR file&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t already have a project that you want to try with MongoDB, I&amp;rsquo;ve created a
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started&#34;&gt;series of unit tests on github&lt;/a&gt; which you can use to get a feel for working with MongoDB and Java.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_7&#34;&gt;Connecting via Java&lt;/h2&gt;
-
-&lt;p&gt;Assuming you&amp;rsquo;ve resolved your dependencies and you&amp;rsquo;ve set up your project, you&amp;rsquo;re ready to connect to MongoDB from your Java application.&lt;/p&gt;
-
-&lt;p&gt;Since MongoDB is a NoSQL database, you might not be surprised to learn that you don&amp;rsquo;t connect to it via traditional SQL/relational DB methods like JDBC. But it&amp;rsquo;s simple all the same:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/8fa942271a9143e8ff98.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Where I&amp;rsquo;ve put &lt;code&gt;mongodb://localhost:27017&lt;/code&gt;, you&amp;rsquo;ll want to put the address of where you&amp;rsquo;ve installed MongoDB. There&amp;rsquo;s more detailed information on how to create the correct URI, including how to connect to a &lt;a href=&#34;http://docs.mongodb.org/manual/replication/&#34;&gt;Replica Set&lt;/a&gt;, in the &lt;a href=&#34;http://api.mongodb.org/java/2.12/com/mongodb/MongoURI.html&#34;&gt;MongoClientURI documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re connecting to a local instance on the default port, you can simply use:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/047ba5d4a47818e2625c.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Note that this does throw a checked Exception, &lt;code&gt;UnknownHostException&lt;/code&gt;. You&amp;rsquo;ll either have to catch this or declare it, depending upon what your policy is for exception handling.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;MongoClient&lt;/code&gt; is your route in to MongoDB, from this you&amp;rsquo;ll get your database and collections to work with (more on this later). Your instance of &lt;code&gt;MongoClient&lt;/code&gt; (e.g. &lt;code&gt;mongoClient&lt;/code&gt; above) will ordinarily be a singleton in your application. However, if you need to connect via different credentials (different user names and passwords) you&amp;rsquo;ll want a &lt;code&gt;MongoClient&lt;/code&gt; per set of credentials.&lt;/p&gt;
-
-&lt;p&gt;It is important to limit the number of &lt;code&gt;MongoClient&lt;/code&gt; instances in your application, hence why we suggest a singleton - the &lt;code&gt;MongoClient&lt;/code&gt; is effectively the connection pool, so for every new &lt;code&gt;MongoClient&lt;/code&gt;, you are opening a new pool. Using a single &lt;code&gt;MongoClient&lt;/code&gt; (and optionally &lt;a href=&#34;http://api.mongodb.org/java/2.12/com/mongodb/MongoClientOptions.Builder.html&#34;&gt;configuring its settings&lt;/a&gt;) will allow the driver to correctly manage your connections to the server. This &lt;code&gt;MongoClient&lt;/code&gt; singleton is &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java-concurrency/&#34;&gt;safe to be used by multiple threads&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;One final thing you need to be aware of: you want your application to shut down the connections to MongoDB when it finishes running. Always make sure your application or web server calls &lt;code&gt;MongoClient.close()&lt;/code&gt; when it shuts down.&lt;/p&gt;
-
-&lt;p&gt;Try out connecting to MongoDB by getting the test in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise1ConnectingTest.java&#34;&gt;Exercise1ConnectingTest&lt;/a&gt; to pass.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_8&#34;&gt;Where are my tables?&lt;/h3&gt;
-
-&lt;p&gt;MongoDB doesn&amp;rsquo;t have tables, rows, columns, joins etc. There are some new concepts to learn when you&amp;rsquo;re using it, but nothing too challenging.&lt;/p&gt;
-
-&lt;p&gt;While you still have the concept of a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;database&lt;/a&gt;,
-the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-document&#34;&gt;documents&lt;/a&gt; (which we&amp;rsquo;ll cover in more detail later) are stored in
-&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt;, rather than your database being made up of tables of
-data. But it can be helpful to think of documents like rows and collections like tables in a traditional database. And collections can have
-&lt;a href=&#34;http://docs.mongodb.org/manual/core/indexes-introduction/&#34;&gt;indexes&lt;/a&gt; like you&amp;rsquo;d expect.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_9&#34;&gt;Selecting Databases and Collections&lt;/h3&gt;
-
-&lt;p&gt;You&amp;rsquo;re going to want to define which databases and collections you&amp;rsquo;re using in your Java application. If you remember, a few sections ago we used the MongoDB shell to show the databases in your MongoDB instance, and you had an &lt;code&gt;admin&lt;/code&gt; and a &lt;code&gt;local&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Creating and getting a database or collection is extremely easy in MongoDB:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/7f9995d55f3378d4f824.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;You can replace &lt;code&gt;&amp;quot;TheDatabaseName&amp;quot;&lt;/code&gt; with whatever the name of your database is. If the database doesn&amp;rsquo;t already exist, it will be created automatically the first time you insert anything into it, so there&amp;rsquo;s no need for null checks or exception handling on the off-chance the database doesn&amp;rsquo;t exist.&lt;/p&gt;
-
-&lt;p&gt;Getting the collection you want from the database is simple too:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/6a52a1196d6a944ca56f.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Again, replacing &lt;code&gt;&amp;quot;TheCollectionName&amp;quot;&lt;/code&gt; with whatever your collection is called.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re playing along with the test code, you now know enough to get the tests
-in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise2MongoClientTest.java&#34;&gt;Exercise2MongoClientTest&lt;/a&gt; to pass&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_10&#34;&gt;An introduction to documents&lt;/h2&gt;
-
-&lt;p&gt;Something that is, hopefully, becoming clear to you as you work through the examples in this post, is that MongoDB is different from the traditional relational databases you&amp;rsquo;ve used. As I&amp;rsquo;ve mentioned, there are collections, rather than tables, and documents, rather than rows and columns.&lt;/p&gt;
-
-&lt;p&gt;Documents are much more flexible than a traditional row, as you have a dynamic schema rather than an enforced one. You can evolve the document over time without incurring the cost of schema migrations and tedious update scripts. But I&amp;rsquo;m getting ahead of myself.&lt;/p&gt;
-
-&lt;p&gt;Although documents don&amp;rsquo;t look like the tables, columns and rows you&amp;rsquo;re used to, they should look familiar if you&amp;rsquo;ve done anything even remotely JSON-like. Here&amp;rsquo;s an example:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;person = {
-  _id: &amp;quot;jo&amp;quot;,
-  name: &amp;quot;Jo Bloggs&amp;quot;,
-  age: 34,
-  address: {
-    street: &amp;quot;123 Fake St&amp;quot;,
-    city: &amp;quot;Faketon&amp;quot;,
-    state: &amp;quot;MA&amp;quot;,
-    zip: &amp;quot;12345&amp;quot;
-  }
-  books: [ 27464, 747854, ...]
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There are a few interesting things to note:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Like JSON, documents are structures of name/value pairs, and the values can be one of a number of &lt;a href=&#34;http://docs.mongodb.org/manual/reference/bson-types/&#34;&gt;primitive types&lt;/a&gt;, including Strings and various number types.&lt;/li&gt;
-&lt;li&gt;It also supports nested documents - in the example above, &lt;code&gt;address&lt;/code&gt; is a subdocument inside the &lt;code&gt;person&lt;/code&gt; document. Unlike a relational database, where you might store this in a separate table and provide a reference to it, in MongoDB if that data benefits from always being associated with its parent, you can embed it in its parent.&lt;/li&gt;
-&lt;li&gt;You can even store an array of values. The books field in the example above is an array of integers that might represent, for example, IDs of books the person has bought or borrowed.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;You can find out more detailed information about Documents in &lt;a href=&#34;http://docs.mongodb.org/manual/core/document/&#34;&gt;the documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_11&#34;&gt;Creating a document and saving it to the database&lt;/h3&gt;
-
-&lt;p&gt;In Java, if you wanted to create a document like the one above, you&amp;rsquo;d do something like:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/7ced271e6ee5d0bdc0c3.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;At this point, it&amp;rsquo;s really easy to save it into your database:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/5e35e08ea414c5cc38e3.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Note that the first three lines are set-up, and you don&amp;rsquo;t need to re-initialize those every time.&lt;/p&gt;
-
-&lt;p&gt;Now if we look inside MongoDB, we can see that the database has been created:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; show dbs
-Examples  0.078GB
-admin     (empty)
-local     0.078GB
-&amp;gt; _
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;hellip;and we can see the collection has been created as well:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; use Examples
-switched to db Examples
-&amp;gt; show collections
-people
-system.indexes
-&amp;gt; _
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&amp;hellip;finally, we can see the our person, &amp;ldquo;Jo&amp;rdquo;, was inserted:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; db.people.findOne()
-{
-    &amp;quot;_id&amp;quot; : &amp;quot;jo&amp;quot;,
-    &amp;quot;name&amp;quot; : &amp;quot;Jo Bloggs&amp;quot;,
-        &amp;quot;age&amp;quot;: 34,
-    &amp;quot;address&amp;quot; : {
-        &amp;quot;street&amp;quot; : &amp;quot;123 Fake St&amp;quot;,
-        &amp;quot;city&amp;quot; : &amp;quot;Faketon&amp;quot;,
-        &amp;quot;state&amp;quot; : &amp;quot;MA&amp;quot;,
-        &amp;quot;zip&amp;quot; : &amp;quot;12345&amp;quot;
-    },
-    &amp;quot;books&amp;quot; : [
-        27464,
-        747854
-    ]
-}
-&amp;gt; _
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As a Java developer, you can see the similarities between the Document that&amp;rsquo;s stored in MongoDB, and your domain object. In your code, that person would probably be a Person class, with simple primitive fields, an array field, and an Address field.&lt;/p&gt;
-
-&lt;p&gt;So rather than building your &lt;code&gt;DBObject&lt;/code&gt; manually like the above example, you&amp;rsquo;re more likely to be converting your domain object into a DBObject. It&amp;rsquo;s best not to have the MongoDB-specific DBObject class in your domain objects, so you might want to create a PersonAdaptor that converts your Person domain object to a DBObject:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/39e188182f8dc338dcc8.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;As before, once you have the DBObject, you can save this into MongoDB:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/207a33b7b9ddd9033927.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Now you&amp;rsquo;ve got all the basics to get the tests in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java&#34;&gt;Exercise3InsertTest&lt;/a&gt; to pass.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_12&#34;&gt;Getting documents back out again&lt;/h3&gt;
-
-&lt;p&gt;Now you&amp;rsquo;ve saved a Person to the database, and we&amp;rsquo;ve seen it in the database using the shell, you&amp;rsquo;re going to want to get it back out into your Java application. In this post, we&amp;rsquo;re going to cover the very basics of retrieving a document - in a later post we&amp;rsquo;ll cover more complex querying.&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll have guessed by the fact that MongoDB is a NoSQL database that we&amp;rsquo;re not going to be using SQL to query. Instead, we query by example, building up a document that looks like the document we&amp;rsquo;re looking for. So if we wanted to look for the person we saved into the database, &amp;ldquo;Jo Bloggs&amp;rdquo;, we remember that the &lt;code&gt;_id&lt;/code&gt; field had the value of &amp;ldquo;jo&amp;rdquo;, and we create a document that matches this shape:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/b90438178e6c8017d298.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;As you can see, the &lt;code&gt;find&lt;/code&gt; method returns a cursor for the results. Since &lt;code&gt;_id&lt;/code&gt; needs to be unique, we know that if we look for a document with this ID, we will find only one document, and it will be the one we want:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/cd0ec53be89f7125aad7.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Earlier we saw that documents are simply made up of name/value pairs, where the value can be anything from a simple String or primitive, to more complex types like arrays or subdocuments. Therefore in Java, we can more or less treat DBObject as a &lt;code&gt;Map&amp;lt;String,
-Object&amp;gt;&lt;/code&gt;. So if we wanted to look at the fields of the document we got back from the database, we can get them with:&lt;/p&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/7fe954cdd9c5d86874a6.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;Note that you&amp;rsquo;ll need to cast the value to a &lt;code&gt;String&lt;/code&gt;, as the compiler only knows that it&amp;rsquo;s an &lt;code&gt;Object&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re still playing along with the example code, you&amp;rsquo;re now ready to take on all the tests in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise4RetrieveTest.java&#34;&gt;Exercise4RetrieveTest&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_13&#34;&gt;Overview of JVM Libraries&lt;/h2&gt;
-
-&lt;p&gt;So far I&amp;rsquo;ve shown you the basics of the official Java Driver, but you&amp;rsquo;ll notice that it&amp;rsquo;s quite low-level - you have to do a lot of taking things out of your domain objects and poking them into MongoDB-shaped DBObjects, and vice-versa. If this is the level of control you want, then the Java driver makes this easy for you. But if it seems like this is extra work that you shouldn&amp;rsquo;t have to do, there are plenty of other options for you.&lt;/p&gt;
-
-&lt;p&gt;The tools I&amp;rsquo;m about to describe all use the MongoDB Java Driver at their core to interact with MongoDB. They provide a high-level abstraction for converting your domain objects into MongoDB documents, whilst also giving you a way to get to the underlying driver as
-well in case you need to use it at a lower level.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_14&#34;&gt;Morphia&lt;/h3&gt;
-
-&lt;p&gt;Morphia is a really lightweight ODM (Object Document Mapper), so it&amp;rsquo;s similar to
-&lt;a href=&#34;http://en.wikipedia.org/wiki/Object-relational_mapping&#34;&gt;ORMs&lt;/a&gt; like Hibernate. Documents can be in a fairly similar shape to your Java domain objects, so this mapping can be automatic, but Morphia allows you point the mapper in the right direction.&lt;/p&gt;
-
-&lt;p&gt;Morphia is open source, and has contributors from MongoDB. Sample code and documentation can be &lt;a href=&#34;https://github.com/mongodb/morphia/wiki&#34;&gt;found here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_15&#34;&gt;Spring Data&lt;/h3&gt;
-
-&lt;p&gt;Another frequently used ODM is &lt;a href=&#34;http://projects.spring.io/spring-data/&#34;&gt;Spring Data&lt;/a&gt;. This supports traditional relational and non-relational databases, &lt;a href=&#34;http://projects.spring.io/spring-data-mongodb/&#34;&gt;including MongoDB&lt;/a&gt;. If you&amp;rsquo;re already using Spring in your application, this should be a familiar way to work.&lt;/p&gt;
-
-&lt;p&gt;As always with Spring projects, there&amp;rsquo;s a lot of really great documentation, including a
-&lt;a href=&#34;http://spring.io/guides/gs/accessing-data-mongodb/&#34;&gt;Getting Started guide&lt;/a&gt; with example code.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_16&#34;&gt;MongoJack&lt;/h3&gt;
-
-&lt;p&gt;If you&amp;rsquo;re working with web services or something else that supports JSON, and you&amp;rsquo;re using &lt;a href=&#34;http://wiki.fasterxml.com/JacksonHome&#34;&gt;Jackson&lt;/a&gt; to work with this data, it probably seems like a waste to be turning it from this form into a Java object and then into a MongoDB DBObject. But &lt;a href=&#34;http://mongojack.org/&#34;&gt;MongoJack&lt;/a&gt; might make your job easier, as it&amp;rsquo;s designed to map JSON objects directly into MongoDB. Take a look at the &lt;a href=&#34;http://mongojack.org/tutorial.html&#34;&gt;example code and documentation&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_17&#34;&gt;Jongo&lt;/h3&gt;
-
-&lt;p&gt;This is another &lt;a href=&#34;http://wiki.fasterxml.com/JacksonHome&#34;&gt;Jackson&lt;/a&gt;-based ODM, but provides an interesting extra in the form of supporting queries the way you&amp;rsquo;d write them in &lt;a href=&#34;http://docs.mongodb.org/manual/reference/mongo-shell/&#34;&gt;the shell&lt;/a&gt;. Documentation
-and example code is available on &lt;a href=&#34;http://jongo.org/&#34;&gt;the website&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_18&#34;&gt;Grails MongoDB GORM&lt;/h3&gt;
-
-&lt;p&gt;The Grails web application framework also supports its own Object-Relational Mapping (&lt;a href=&#34;http://grails.org/doc/2.4.x/guide/GORM.html&#34;&gt;GORM&lt;/a&gt;), including &lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;support for MongoDB&lt;/a&gt;. More documentation for this plugin &lt;a href=&#34;http://grails.github.io/grails-data-mapping/mongo/manual/index.html&#34;&gt;can be found here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_19&#34;&gt;Casbah&lt;/h3&gt;
-
-&lt;p&gt;This isn&amp;rsquo;t an ODM like the other tools mentioned, but the &lt;a href=&#34;https://github.com/mongodb/casbah&#34;&gt;officially supported Scala driver&lt;/a&gt; for MongoDB. Like the previous libraries, it uses the MongoDB Java Driver under the covers, but it provides a Scala API for application developers to work with. If you like working with Scala but are searching for an async solution, consider &lt;a href=&#34;http://reactivemongo.org/&#34;&gt;ReactiveMongo&lt;/a&gt;, a community-supported driver that provides async and non-blocking operations.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_20&#34;&gt;Other libraries and tools&lt;/h3&gt;
-
-&lt;p&gt;This is far from an extensive list, and I apologise if I&amp;rsquo;ve left a favourite out. But we&amp;rsquo;ve compiled
-&lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/#third-party-frameworks-and-libs&#34;&gt;a list of many more libraries for the JVM&lt;/a&gt;,
-which includes community projects and officially supported drivers.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_21&#34;&gt;Conclusion&lt;/h2&gt;
-
-&lt;p&gt;We&amp;rsquo;ve covered the basics of using MongoDB from Java - we&amp;rsquo;ve touched on what MongoDB is, and you can find out a lot more detailed information about it from &lt;a href=&#34;http://docs.mongodb.org/manual/&#34;&gt;the manual&lt;/a&gt;; we&amp;rsquo;ve
-&lt;a href=&#34;http://docs.mongodb.org/manual/installation/&#34;&gt;installed&lt;/a&gt; it somewhere that lets us play with it; we&amp;rsquo;ve talked a bit about collections and documents, and what these look like in Java; and we&amp;rsquo;ve started inserting things into MongoDB and getting them back out again.&lt;/p&gt;
-
-&lt;p&gt;If you haven&amp;rsquo;t already started playing with the test code, you can find it in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started&#34;&gt;this github repository&lt;/a&gt;. And if you get desperate and look hard enough, you&amp;rsquo;ll even find the answers there too.&lt;/p&gt;
-
-&lt;p&gt;Finally, there are more examples of using the Java Driver in the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/#getting-started-with-java-driver&#34;&gt;Quick Tour&lt;/a&gt;, and there is
-&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/tree/master/src/examples/example&#34;&gt;example code in github&lt;/a&gt;,
-including examples for authentication.&lt;/p&gt;
-
-&lt;p&gt;Try it out, and hopefully you&amp;rsquo;ll see how easy it is to use MongoDB from Java.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://trishagee.github.io/other-sites/release/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/release/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve written a Gradle Plugin that should, theoretically, do the full MongoDB Java Driver release in an automated fashion.  In theory,
-there&amp;rsquo;s a single command that you can run in order to release the Java driver:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=&amp;lt;release version&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;e.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Because the release process integrates with a number of different systems, you have to provide a number of credentials and settings on
-your local machine in order for the process to work correctly.  You&amp;rsquo;ll need:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;~/.gradle/gradle.properties
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;sonatypeUsername=mongodb
-sonatypePassword=[find this in the settings file]
-signing.keyId=
-signing.secretKeyRingFile=
-signing.password=
-github.credentials.username=
-github.credentials.password=[if you have two factor auth on, this is a github access token]&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll also need:
-    ~/.github
-     login=[user name]
-     password=[password]&lt;/p&gt;
-
-&lt;p&gt;or, if you&amp;rsquo;re using two-factor auth,
-    ~/.github
-    oauth=[github access token]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/creating-an-access-token-for-command-line-use/&#34;&gt;More details on creating a github access token&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info on specific settings for the Java Driver release&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s the settings for the whole release process.  However, the release gradle task is actually made up of a number of individual
-steps. Since there are a number of moving parts, and things that could go wrong with each step, these steps can be run individually if
-necessary. The most important one is &lt;code&gt;publish&lt;/code&gt;, all of the others can easily be replaced with a manual process.&lt;/p&gt;
-
-&lt;p&gt;The aim of the following documentation is to:
- - Define what each individual Gradle task is and what it&amp;rsquo;s supposed to do
- - State the requirements or dependencies for each individual task
- - Outline some of the things that could go wrong with the task&lt;/p&gt;
-
-&lt;p&gt;The release steps are, in the order in which they should be executed:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;clean&lt;/code&gt; If running the full release task, a clean will be done first to make sure that everything is cleanly built. This is a standard
-Java task and has not been changed in any way for the release process.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;prepareRelease&lt;/code&gt; Before building or pushing, a number of things are done to put the code/files into the correct state:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
-release versions in these files are stripped of any &amp;lsquo;-SNAPSHOT&amp;rsquo; suffix they might have. If there is no suffix,
-this task should still complete successfully.&lt;/li&gt;
-&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
-as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Release ${releaseVersion}&amp;rdquo;, e.g. &amp;ldquo;Release 3.0.0&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Tag this commit with the release number, e.g. &amp;ldquo;r3.0.0&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Push the changes and the tag to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
-this pushes to your origin.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note that all of these steps are pretty easy to do manually.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
-~/.gradle/gradle.properties
-github.credentials.username=
-github.credentials.password=&lt;/p&gt;
-
-&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew prepareRelease -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The files that need updating as part of the release process are defined in &lt;code&gt;release.gradle&lt;/code&gt;, as &lt;code&gt;filesToUpdate&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ideally, don&amp;rsquo;t have any code changes in your current branch, as these will be committed.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;PrepareReleaseTask.gradle&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git
-integration.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
-&lt;li&gt;If you run this task multiple times, it should not fail, but you will get multiple git commits with the required release number. Make
-sure that you have the correct release number in the files (Mongo.java and build.gradle) and passed in to the command line.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Git: hard reset to the commit you were on before performing the release&lt;/li&gt;
-&lt;li&gt;Git: delete the release tag from local and, if necessary, remote repositories&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;publish&lt;/code&gt; This does the magic of pushing the jar files into Sonatype nexus. This should run on it&amp;rsquo;s own perfectly happily,
-and can pubish both snapshot jars and full release jars.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Will ensure jar files are built for: sources; javadoc; individual module classes; &amp;ldquo;uber&amp;rdquo; jar with the module classes and any classes
-from modules it depends on (e.g. for mongo-java-driver, include core and bson as well) but excluding any dependency jars.&lt;/li&gt;
-&lt;li&gt;Ensures the correct pom.xml is created for each of the artifacts&lt;/li&gt;
-&lt;li&gt;Publishes to the snapshot repo if no release version is defined (this is the default behaviour),
-or the &amp;ldquo;real&amp;rdquo; repo if you pass in a release version.&lt;/li&gt;
-&lt;li&gt;This will also sign the release.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note: The current assumption is that &lt;strong&gt;four&lt;/strong&gt; jars will be published per project, e.g:&lt;/p&gt;
-
-&lt;p&gt;mongo-java-driver-3.0.0-all.jar
-mongo-java-driver-3.0.0-javadoc.jar
-mongo-java-driver-3.0.0-sources.jar
-mongo-java-driver-3.0.0.jar&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this talks to nexus, you need:
-~/.gradle/gradle.properties
-sonatypeUsername=mongodb
-sonatypePassword=[find this in the settings file]&lt;/p&gt;
-
-&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew publish -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you do not define a releaseVersion, it will assume you want to publish the SNAPSHOT.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;Follow the steps to set up GPG/PGP&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;We&amp;rsquo;re using a number of plugins to perform this publish process, and it&amp;rsquo;s all configured in &lt;code&gt;publish.gradle&lt;/code&gt;.  Plugins used:
-     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html&#34;&gt;maven-publish&lt;/a&gt; for defining the publishing process. This creates the correct pom and is responsible for publishing to appropriate
-     repo
-     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/signing_plugin.html&#34;&gt;signing&lt;/a&gt; signs the release
-     &lt;a href=&#34;https://github.com/johnrengelman/shadow&#34;&gt;com.github.johnrengelman.shadow&lt;/a&gt; builds our uber jars&lt;/p&gt;
-
-&lt;p&gt;I know generally we steer clear of comments in our code, but I&amp;rsquo;ve tried to comment the publish file as much as I can,
-as it&amp;rsquo;s not always obvious what&amp;rsquo;s going on.&lt;/p&gt;
-
-&lt;p&gt;There are also specific configuration details in the build.gradle files for each project.  For example,
-driver/build.gradle defines additional values for the pom.xml, and the correct artifact ID.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_6&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Incorrect artifact ID (i.e. the ID for sonatype to identify our jars). This is currently defined in individual project build.gradle
-files, in publishing.publications.mavenJava(MavenPublication).artifactId.  If it&amp;rsquo;s missing, it&amp;rsquo;ll use the project name (e.g. bson).&lt;/li&gt;
-&lt;li&gt;Uber jar might contain too many dependencies or not enough.  As per &lt;a href=&#34;https://github.com/johnrengelman/shadow#filtering-shadow-jar-contents-by-mavenproject-dependency&#34;&gt;the documentation&lt;/a&gt;, Configure it with
- shadowJar {
-     dependencies {
-     }
- }&lt;/li&gt;
-&lt;li&gt;Nexus authentication might fail.  Ensure the credentials are in ~/.gradle/gradle.properties&lt;/li&gt;
-&lt;li&gt;Signing might fail. Ensure you follow the &lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;steps to set up GPG/PGP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Could get confused between snapshot repo and real repo.  &lt;code&gt;publish.gradle&lt;/code&gt; currently assumes that if you passed in releaseVersion,
-you&amp;rsquo;re publish to staging. &lt;a href=&#34;http://forums.gradle.org/gradle/topics/maven_publish_specify_a_repo_as_being_a_snapshot_repo&#34;&gt;See here&lt;/a&gt; for
-more details on why we need an &lt;code&gt;if&lt;/code&gt; statement here.&lt;/li&gt;
-&lt;li&gt;pom.xml might be incorrect.  As per &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N174E5&#34;&gt;the documentation&lt;/a&gt;, this is configured via
- publishing {
-     publications {
-         mavenJava(MavenPublication) {
-             pom.withXml {
-             }
-         }
-     }
- }&lt;/li&gt;
-&lt;li&gt;manifest.mf is incorrect. &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:manifest(groovy.lang.Closure&#34;&gt;As per the documentation&lt;/a&gt;), his is configured in each individual build.gradle file:
-jar {
- manifest.attributes(
-}&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Wrong jar files built/uploaded. This is configured, &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N17478&#34;&gt;as per the documentation&lt;/a&gt;, by declaring the artifacts to publish in&lt;/p&gt;
-
-&lt;p&gt;publishing {
-      publications {
-          mavenJava(MavenPublication) {
-              artifact sourceJar
-              artifact javadocJar
-              artifact shadowJar
-              from components.java
-          }
-      }
-  }&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m unclear where components.java comes from, but it&amp;rsquo;s the magic incantation that uploads the default jar file for a project.  The
-Uber jar is created by applying the shadow plugin, and is included via shadowJar. The sources and javadoc jars are tasks that are
-defined elsewhere in the build file, for example:
-     task sourceJar(type: Jar) {
-         classifier = &amp;lsquo;sources&amp;rsquo;
-         from sourceSets.main.allSource
-     }&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jar file name is incorrect. This is defined via the &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName&#34;&gt;Jar plugin&lt;/a&gt;, and in our case we configure overrides via module build.gradle
-files, e.g.:
-archivesBaseName = &amp;lsquo;mongo-java-driver&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_7&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;a &lt;code&gt;clean&lt;/code&gt; will remove any built artifacts, including pom.xml and manifest files.&lt;/li&gt;
-&lt;li&gt;published artifacts will need to be removed from &lt;a href=&#34;https://oss.sonatype.org/index.html&#34;&gt;Sonatype Nexus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;draftReleaseNotes&lt;/code&gt; Creates a skeleton set of release notes. Although this could run perfectly well alone,
-without any of the other tasks, it does upload the uberjar so if that hasn&amp;rsquo;t previously been built you&amp;rsquo;ll get a file not found exception.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Creates the skeleton of the notes content&lt;/li&gt;
-&lt;li&gt;Pushes to github, so it should be &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;visible as a draft&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Uploads the driver module uber jar (so just a single jar file of all classes) to the release notes. If the release tag has been
-successful, the release notes will also have a tag, a commit, and zips of the source files.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note: these release notes are draft only, and can only be seen by those with the right permissions. When the release is live,
-the release notes will need to be published.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_8&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Needs your github credentials in:
-                                     ~/.github
-                                     either
-                                      login=[user name]
-                                      password=[password]&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;                             or, if you&#39;re using two-factor auth,
-                                 ~/.github
-                                 oauth=[github access token]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew draftReleaseNotes -DreleaseVersion=3.0.0&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_9&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;DraftReleaseNotesTask&lt;/code&gt;.  This uses the &lt;a href=&#34;http://github-api.kohsuke.org/&#34;&gt;Github API for Java&lt;/a&gt;,
-it&amp;rsquo;s this code that requires the credentials in your .github file.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_10&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Missing jar file to upload.  This task does not explictly depend on archives creation, so if &lt;code&gt;shadowJar&lt;/code&gt; or &lt;code&gt;jar&lt;/code&gt; have not been run
-prior to running this task, you might get a file not found exception. The release notes will probably still have been created though.&lt;/li&gt;
-&lt;li&gt;Incorrect jar files attached. The jar files to attach are configured in &lt;code&gt;release.gradle&lt;/code&gt; with the &lt;code&gt;jarFile&lt;/code&gt; property. You can declare
-multiple files here. Use the task name for the task that creates the required artifact, e.g.
- jarFile project(&amp;rsquo;:driver&amp;rsquo;).shadowJar&lt;/li&gt;
-&lt;li&gt;Missing source zips, release tag and/or commit. Possibly the release tag did not get pushed correctly to &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;https://github.com/mongodb/mongo-java-driver/&lt;/a&gt;.&lt;br /&gt;
-Ensure there&amp;rsquo;s a &lt;code&gt;r3.0.0&lt;/code&gt; tag or similar for the release version you&amp;rsquo;re writing the notes for.&lt;/li&gt;
-&lt;li&gt;Release notes are not public. Actually, this is not an error - in order to make the notes publicly visible,
-there&amp;rsquo;s a manual step to publish them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_11&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;releases page&lt;/a&gt; and delete any unwanted draft release notes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;updateToNextVersion&lt;/code&gt; Similar to, but simpler than, prepareRelease - this task gets the code in the right state for the next working
-version.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
-release versions in these files are incremented (e.g. 3.0.0 to 3.0.1) and the &amp;lsquo;-SNAPSHOT&amp;rsquo; added.&lt;/li&gt;
-&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
-as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Updated to next development version: ${newVersion}&amp;ldquo;,
-e.g. &amp;ldquo;Updated to next development version: 3.0.1-SNAPSHOT&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Push the changes to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
-this pushes to your origin.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;toc_12&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
-~/.gradle/gradle.properties
-github.credentials.username=
-github.credentials.password=&lt;/p&gt;
-
-&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew updateToNextVersion -DreleaseVersion=3.0.0&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_13&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;This task is defined in &lt;code&gt;UpdateToNextVersionTask&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git integration.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_14&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
-&lt;li&gt;In theory you can run this multiple times without error - it will keep incrementing the version number (and suffixing &amp;lsquo;-SNAPSHOT&amp;rsquo; to
-it). However, if you specify the same releaseVersion parameter every time, it should error telling you that the version doesn&amp;rsquo;t match
-the version in the build file (as the build file has already been incremented).  This is fine, just do a manual rollback before trying
-again.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_15&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Git: hard reset to the commit you were on before calling this task.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_16&#34;&gt;In Summary&lt;/h2&gt;
-
-&lt;p&gt;There is a magic incantation which is supposed to do the full release. But if any of the steps go wrong,
-you can call the individual tasks alone, and follow the above guide for troubleshooting or rolling back.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info about the current/old Java driver release&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/display/DH/Morphia+Release+Process&#34;&gt;Morphia Release Process&lt;/a&gt; Lots of this new release process was, um,
-borrowed from the updated Morphia release process, so there might be useful information in there to troubleshoot this process too.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_17&#34;&gt;Things that are open to improvement:&lt;/h3&gt;
-
-&lt;p&gt;(AKA let&amp;rsquo;s not call this a TODO list):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The release plugin stuff in &lt;code&gt;buildSrc&lt;/code&gt; is almost definitely not idiotmatic Groovy/Gradle. Instead, I&amp;rsquo;ve tried to make it readable.&lt;/li&gt;
-&lt;li&gt;I think I&amp;rsquo;d prefer, on reflection, to move all the stuff in &lt;code&gt;buildSrc&lt;/code&gt; into gradle scripts instead,
-although that goes against the recommendations, because at least then all the gradle logic would be in the same place.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;ve been encouraged to look at the &lt;a href=&#34;https://github.com/ajoberstar/gradle-git&#34;&gt;gradle-git plugin&lt;/a&gt; instead of JGit, but I haven&amp;rsquo;t had the time.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
@@ -1578,6 +916,668 @@ which includes community projects and officially supported drivers.&lt;/p&gt;
 
 &lt;p&gt;If you haven&amp;rsquo;t already started playing with the test code, you can find it in
 &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/tree/3.0&#34;&gt;this github repository&lt;/a&gt;. And if you get desperate and look hard enough, you&amp;rsquo;ll even find the answers there too.&lt;/p&gt;
+
+&lt;p&gt;Try it out, and hopefully you&amp;rsquo;ll see how easy it is to use MongoDB from Java.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://trishagee.github.io/other-sites/release/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/other-sites/release/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve written a Gradle Plugin that should, theoretically, do the full MongoDB Java Driver release in an automated fashion.  In theory,
+there&amp;rsquo;s a single command that you can run in order to release the Java driver:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=&amp;lt;release version&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;e.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because the release process integrates with a number of different systems, you have to provide a number of credentials and settings on
+your local machine in order for the process to work correctly.  You&amp;rsquo;ll need:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~/.gradle/gradle.properties
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;sonatypeUsername=mongodb
+sonatypePassword=[find this in the settings file]
+signing.keyId=
+signing.secretKeyRingFile=
+signing.password=
+github.credentials.username=
+github.credentials.password=[if you have two factor auth on, this is a github access token]&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll also need:
+    ~/.github
+     login=[user name]
+     password=[password]&lt;/p&gt;
+
+&lt;p&gt;or, if you&amp;rsquo;re using two-factor auth,
+    ~/.github
+    oauth=[github access token]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/creating-an-access-token-for-command-line-use/&#34;&gt;More details on creating a github access token&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info on specific settings for the Java Driver release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s the settings for the whole release process.  However, the release gradle task is actually made up of a number of individual
+steps. Since there are a number of moving parts, and things that could go wrong with each step, these steps can be run individually if
+necessary. The most important one is &lt;code&gt;publish&lt;/code&gt;, all of the others can easily be replaced with a manual process.&lt;/p&gt;
+
+&lt;p&gt;The aim of the following documentation is to:
+ - Define what each individual Gradle task is and what it&amp;rsquo;s supposed to do
+ - State the requirements or dependencies for each individual task
+ - Outline some of the things that could go wrong with the task&lt;/p&gt;
+
+&lt;p&gt;The release steps are, in the order in which they should be executed:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;clean&lt;/code&gt; If running the full release task, a clean will be done first to make sure that everything is cleanly built. This is a standard
+Java task and has not been changed in any way for the release process.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;prepareRelease&lt;/code&gt; Before building or pushing, a number of things are done to put the code/files into the correct state:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
+release versions in these files are stripped of any &amp;lsquo;-SNAPSHOT&amp;rsquo; suffix they might have. If there is no suffix,
+this task should still complete successfully.&lt;/li&gt;
+&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
+as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Release ${releaseVersion}&amp;rdquo;, e.g. &amp;ldquo;Release 3.0.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Tag this commit with the release number, e.g. &amp;ldquo;r3.0.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Push the changes and the tag to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
+this pushes to your origin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note that all of these steps are pretty easy to do manually.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
+~/.gradle/gradle.properties
+github.credentials.username=
+github.credentials.password=&lt;/p&gt;
+
+&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew prepareRelease -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The files that need updating as part of the release process are defined in &lt;code&gt;release.gradle&lt;/code&gt;, as &lt;code&gt;filesToUpdate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ideally, don&amp;rsquo;t have any code changes in your current branch, as these will be committed.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;PrepareReleaseTask.gradle&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git
+integration.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
+&lt;li&gt;If you run this task multiple times, it should not fail, but you will get multiple git commits with the required release number. Make
+sure that you have the correct release number in the files (Mongo.java and build.gradle) and passed in to the command line.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git: hard reset to the commit you were on before performing the release&lt;/li&gt;
+&lt;li&gt;Git: delete the release tag from local and, if necessary, remote repositories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;publish&lt;/code&gt; This does the magic of pushing the jar files into Sonatype nexus. This should run on it&amp;rsquo;s own perfectly happily,
+and can pubish both snapshot jars and full release jars.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Will ensure jar files are built for: sources; javadoc; individual module classes; &amp;ldquo;uber&amp;rdquo; jar with the module classes and any classes
+from modules it depends on (e.g. for mongo-java-driver, include core and bson as well) but excluding any dependency jars.&lt;/li&gt;
+&lt;li&gt;Ensures the correct pom.xml is created for each of the artifacts&lt;/li&gt;
+&lt;li&gt;Publishes to the snapshot repo if no release version is defined (this is the default behaviour),
+or the &amp;ldquo;real&amp;rdquo; repo if you pass in a release version.&lt;/li&gt;
+&lt;li&gt;This will also sign the release.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: The current assumption is that &lt;strong&gt;four&lt;/strong&gt; jars will be published per project, e.g:&lt;/p&gt;
+
+&lt;p&gt;mongo-java-driver-3.0.0-all.jar
+mongo-java-driver-3.0.0-javadoc.jar
+mongo-java-driver-3.0.0-sources.jar
+mongo-java-driver-3.0.0.jar&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this talks to nexus, you need:
+~/.gradle/gradle.properties
+sonatypeUsername=mongodb
+sonatypePassword=[find this in the settings file]&lt;/p&gt;
+
+&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew publish -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you do not define a releaseVersion, it will assume you want to publish the SNAPSHOT.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;Follow the steps to set up GPG/PGP&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;re using a number of plugins to perform this publish process, and it&amp;rsquo;s all configured in &lt;code&gt;publish.gradle&lt;/code&gt;.  Plugins used:
+     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html&#34;&gt;maven-publish&lt;/a&gt; for defining the publishing process. This creates the correct pom and is responsible for publishing to appropriate
+     repo
+     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/signing_plugin.html&#34;&gt;signing&lt;/a&gt; signs the release
+     &lt;a href=&#34;https://github.com/johnrengelman/shadow&#34;&gt;com.github.johnrengelman.shadow&lt;/a&gt; builds our uber jars&lt;/p&gt;
+
+&lt;p&gt;I know generally we steer clear of comments in our code, but I&amp;rsquo;ve tried to comment the publish file as much as I can,
+as it&amp;rsquo;s not always obvious what&amp;rsquo;s going on.&lt;/p&gt;
+
+&lt;p&gt;There are also specific configuration details in the build.gradle files for each project.  For example,
+driver/build.gradle defines additional values for the pom.xml, and the correct artifact ID.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Incorrect artifact ID (i.e. the ID for sonatype to identify our jars). This is currently defined in individual project build.gradle
+files, in publishing.publications.mavenJava(MavenPublication).artifactId.  If it&amp;rsquo;s missing, it&amp;rsquo;ll use the project name (e.g. bson).&lt;/li&gt;
+&lt;li&gt;Uber jar might contain too many dependencies or not enough.  As per &lt;a href=&#34;https://github.com/johnrengelman/shadow#filtering-shadow-jar-contents-by-mavenproject-dependency&#34;&gt;the documentation&lt;/a&gt;, Configure it with
+ shadowJar {
+     dependencies {
+     }
+ }&lt;/li&gt;
+&lt;li&gt;Nexus authentication might fail.  Ensure the credentials are in ~/.gradle/gradle.properties&lt;/li&gt;
+&lt;li&gt;Signing might fail. Ensure you follow the &lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;steps to set up GPG/PGP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Could get confused between snapshot repo and real repo.  &lt;code&gt;publish.gradle&lt;/code&gt; currently assumes that if you passed in releaseVersion,
+you&amp;rsquo;re publish to staging. &lt;a href=&#34;http://forums.gradle.org/gradle/topics/maven_publish_specify_a_repo_as_being_a_snapshot_repo&#34;&gt;See here&lt;/a&gt; for
+more details on why we need an &lt;code&gt;if&lt;/code&gt; statement here.&lt;/li&gt;
+&lt;li&gt;pom.xml might be incorrect.  As per &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N174E5&#34;&gt;the documentation&lt;/a&gt;, this is configured via
+ publishing {
+     publications {
+         mavenJava(MavenPublication) {
+             pom.withXml {
+             }
+         }
+     }
+ }&lt;/li&gt;
+&lt;li&gt;manifest.mf is incorrect. &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:manifest(groovy.lang.Closure&#34;&gt;As per the documentation&lt;/a&gt;), his is configured in each individual build.gradle file:
+jar {
+ manifest.attributes(
+}&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wrong jar files built/uploaded. This is configured, &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N17478&#34;&gt;as per the documentation&lt;/a&gt;, by declaring the artifacts to publish in&lt;/p&gt;
+
+&lt;p&gt;publishing {
+      publications {
+          mavenJava(MavenPublication) {
+              artifact sourceJar
+              artifact javadocJar
+              artifact shadowJar
+              from components.java
+          }
+      }
+  }&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m unclear where components.java comes from, but it&amp;rsquo;s the magic incantation that uploads the default jar file for a project.  The
+Uber jar is created by applying the shadow plugin, and is included via shadowJar. The sources and javadoc jars are tasks that are
+defined elsewhere in the build file, for example:
+     task sourceJar(type: Jar) {
+         classifier = &amp;lsquo;sources&amp;rsquo;
+         from sourceSets.main.allSource
+     }&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Jar file name is incorrect. This is defined via the &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName&#34;&gt;Jar plugin&lt;/a&gt;, and in our case we configure overrides via module build.gradle
+files, e.g.:
+archivesBaseName = &amp;lsquo;mongo-java-driver&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a &lt;code&gt;clean&lt;/code&gt; will remove any built artifacts, including pom.xml and manifest files.&lt;/li&gt;
+&lt;li&gt;published artifacts will need to be removed from &lt;a href=&#34;https://oss.sonatype.org/index.html&#34;&gt;Sonatype Nexus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;draftReleaseNotes&lt;/code&gt; Creates a skeleton set of release notes. Although this could run perfectly well alone,
+without any of the other tasks, it does upload the uberjar so if that hasn&amp;rsquo;t previously been built you&amp;rsquo;ll get a file not found exception.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Creates the skeleton of the notes content&lt;/li&gt;
+&lt;li&gt;Pushes to github, so it should be &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;visible as a draft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Uploads the driver module uber jar (so just a single jar file of all classes) to the release notes. If the release tag has been
+successful, the release notes will also have a tag, a commit, and zips of the source files.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: these release notes are draft only, and can only be seen by those with the right permissions. When the release is live,
+the release notes will need to be published.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Needs your github credentials in:
+                                     ~/.github
+                                     either
+                                      login=[user name]
+                                      password=[password]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                             or, if you&#39;re using two-factor auth,
+                                 ~/.github
+                                 oauth=[github access token]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew draftReleaseNotes -DreleaseVersion=3.0.0&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;DraftReleaseNotesTask&lt;/code&gt;.  This uses the &lt;a href=&#34;http://github-api.kohsuke.org/&#34;&gt;Github API for Java&lt;/a&gt;,
+it&amp;rsquo;s this code that requires the credentials in your .github file.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Missing jar file to upload.  This task does not explictly depend on archives creation, so if &lt;code&gt;shadowJar&lt;/code&gt; or &lt;code&gt;jar&lt;/code&gt; have not been run
+prior to running this task, you might get a file not found exception. The release notes will probably still have been created though.&lt;/li&gt;
+&lt;li&gt;Incorrect jar files attached. The jar files to attach are configured in &lt;code&gt;release.gradle&lt;/code&gt; with the &lt;code&gt;jarFile&lt;/code&gt; property. You can declare
+multiple files here. Use the task name for the task that creates the required artifact, e.g.
+ jarFile project(&amp;rsquo;:driver&amp;rsquo;).shadowJar&lt;/li&gt;
+&lt;li&gt;Missing source zips, release tag and/or commit. Possibly the release tag did not get pushed correctly to &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;https://github.com/mongodb/mongo-java-driver/&lt;/a&gt;.&lt;br /&gt;
+Ensure there&amp;rsquo;s a &lt;code&gt;r3.0.0&lt;/code&gt; tag or similar for the release version you&amp;rsquo;re writing the notes for.&lt;/li&gt;
+&lt;li&gt;Release notes are not public. Actually, this is not an error - in order to make the notes publicly visible,
+there&amp;rsquo;s a manual step to publish them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;releases page&lt;/a&gt; and delete any unwanted draft release notes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;updateToNextVersion&lt;/code&gt; Similar to, but simpler than, prepareRelease - this task gets the code in the right state for the next working
+version.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
+release versions in these files are incremented (e.g. 3.0.0 to 3.0.1) and the &amp;lsquo;-SNAPSHOT&amp;rsquo; added.&lt;/li&gt;
+&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
+as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Updated to next development version: ${newVersion}&amp;ldquo;,
+e.g. &amp;ldquo;Updated to next development version: 3.0.1-SNAPSHOT&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Push the changes to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
+this pushes to your origin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
+~/.gradle/gradle.properties
+github.credentials.username=
+github.credentials.password=&lt;/p&gt;
+
+&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew updateToNextVersion -DreleaseVersion=3.0.0&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_13&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;This task is defined in &lt;code&gt;UpdateToNextVersionTask&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git integration.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_14&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
+&lt;li&gt;In theory you can run this multiple times without error - it will keep incrementing the version number (and suffixing &amp;lsquo;-SNAPSHOT&amp;rsquo; to
+it). However, if you specify the same releaseVersion parameter every time, it should error telling you that the version doesn&amp;rsquo;t match
+the version in the build file (as the build file has already been incremented).  This is fine, just do a manual rollback before trying
+again.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_15&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git: hard reset to the commit you were on before calling this task.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_16&#34;&gt;In Summary&lt;/h2&gt;
+
+&lt;p&gt;There is a magic incantation which is supposed to do the full release. But if any of the steps go wrong,
+you can call the individual tasks alone, and follow the above guide for troubleshooting or rolling back.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info about the current/old Java driver release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/display/DH/Morphia+Release+Process&#34;&gt;Morphia Release Process&lt;/a&gt; Lots of this new release process was, um,
+borrowed from the updated Morphia release process, so there might be useful information in there to troubleshoot this process too.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_17&#34;&gt;Things that are open to improvement:&lt;/h3&gt;
+
+&lt;p&gt;(AKA let&amp;rsquo;s not call this a TODO list):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The release plugin stuff in &lt;code&gt;buildSrc&lt;/code&gt; is almost definitely not idiotmatic Groovy/Gradle. Instead, I&amp;rsquo;ve tried to make it readable.&lt;/li&gt;
+&lt;li&gt;I think I&amp;rsquo;d prefer, on reflection, to move all the stuff in &lt;code&gt;buildSrc&lt;/code&gt; into gradle scripts instead,
+although that goes against the recommendations, because at least then all the gradle logic would be in the same place.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve been encouraged to look at the &lt;a href=&#34;https://github.com/ajoberstar/gradle-git&#34;&gt;gradle-git plugin&lt;/a&gt; instead of JGit, but I haven&amp;rsquo;t had the time.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Getting started with MongoDB and Java&lt;/h2&gt;
+
+&lt;p&gt;Java is one of the most popular programming languages in the MongoDB Community. For new users, it&amp;rsquo;s important to provide an overview of how to work with the MongoDB Java driver and how to use MongoDB as a Java developer.&lt;/p&gt;
+
+&lt;p&gt;In this post, which is aimed at Java/JVM developers who are new to MongoDB, we&amp;rsquo;re going to give you a guide on how to get started, including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Installation&lt;/li&gt;
+&lt;li&gt;Setting up your dependencies&lt;/li&gt;
+&lt;li&gt;Connecting&lt;/li&gt;
+&lt;li&gt;What are Collections and Documents?&lt;/li&gt;
+&lt;li&gt;The basics of writing to and reading from the database&lt;/li&gt;
+&lt;li&gt;An overview of some of the JVM libraries&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;The installation instructions for MongoDB are &lt;a href=&#34;http://docs.mongodb.org/manual/installation/&#34;&gt;extensively documented&lt;/a&gt;,
+so I&amp;rsquo;m not going to repeat any of that here. If you want to follow along with this &amp;ldquo;getting started&amp;rdquo; guide, you&amp;rsquo;ll want to download the appropriate version of MongoDB and unzip/install it. At the time of writing, the latest version of MongoDB is 2.6.3, which is the version I&amp;rsquo;ll be using.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;A note about security&lt;/h3&gt;
+
+&lt;p&gt;In a real production environment, of course you&amp;rsquo;re going to want to consider authentication. This is something that MongoDB takes seriously and there&amp;rsquo;s a whole section of &lt;a href=&#34;http://docs.mongodb.org/manual/administration/security/&#34;&gt;documentation on security&lt;/a&gt;. But for the purpose of this demonstration, I&amp;rsquo;m going to assume you&amp;rsquo;ve either got that working or you&amp;rsquo;re running in &amp;ldquo;trusted mode&amp;rdquo; (i.e. that you&amp;rsquo;re in a development environment that isn&amp;rsquo;t open to the public).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Take a look around&lt;/h3&gt;
+
+&lt;p&gt;Once you&amp;rsquo;ve got mongodb installed and started (a process that should only take a few minutes), you can &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/getting-started/#connect-to-a-database&#34;&gt;connect to the MongoDB shell&lt;/a&gt;. Most of the MongoDB technical documentation is written for the shell, so it&amp;rsquo;s always useful to know how to access it, and how use it to troubleshoot problems or prototype solutions.&lt;/p&gt;
+
+&lt;p&gt;When you&amp;rsquo;ve connected, you should see something like&lt;/p&gt;
+
+&lt;pre&gt;MongoDB shell version: 2.6.3
+connecting to: test
+&gt; _ &lt;/pre&gt;
+
+&lt;p&gt;Since you&amp;rsquo;re in the console, let&amp;rsquo;s take it for a spin. Firstly we&amp;rsquo;ll have a
+&lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/getting-started/#select-a-database&#34;&gt;look at all the databases&lt;/a&gt; that are there right now:&lt;/p&gt;
+
+&lt;pre&gt;&gt; show dbs&lt;/pre&gt;
+
+&lt;p&gt;Assuming this is a clean installation, there shouldn&amp;rsquo;t be much to see:&lt;/p&gt;
+
+&lt;pre&gt;&gt; show dbs
+admin (empty)
+local 0.078GB
+&gt; &lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s great, but &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/getting-started/&#34;&gt;as you can see there&amp;rsquo;s loads of documentation&lt;/a&gt; on how to
+play with MongoDB from the shell. The shell is a really great environment for trying out queries and looking at things from the server point-of-view. However, I promised you Java, so we&amp;rsquo;re going to step away from the shell and get on with connecting via Java.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Getting started with Java&lt;/h2&gt;
+
+&lt;p&gt;First, you&amp;rsquo;re going to want to set up your project/IDE to use the
+&lt;a href=&#34;http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/#getting-started-with-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt;.
+These days IDEs tend to pick up the correct dependencies through your &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; or
+&lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt; configuration, so I&amp;rsquo;m just going to cover configuring these.&lt;/p&gt;
+
+&lt;p&gt;At the time of writing, the latest version of the Java driver is 2.12.3 - this is designed to work with the MongoDB 2.6 series.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Gradle&lt;/h3&gt;
+
+&lt;p&gt;You&amp;rsquo;ll need to add the following to your dependencies in build.gradle:&lt;/p&gt;
+
+&lt;p&gt;compile &amp;lsquo;org.mongodb:mongo-java-driver:2.12.3&amp;rsquo;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Maven&lt;/h3&gt;
+
+&lt;p&gt;For maven, you&amp;rsquo;ll want:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;dependencies&amp;gt;
+    &amp;lt;dependency&amp;gt;
+        &amp;lt;groupId&amp;gt;org.mongodb&amp;lt;/groupId&amp;gt;
+        &amp;lt;artifactId&amp;gt;mongo-java-driver&amp;lt;/artifactId&amp;gt;
+        &amp;lt;version&amp;gt;2.12.3&amp;lt;/version&amp;gt;
+    &amp;lt;/dependency&amp;gt;
+&amp;lt;/dependencies&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Alternatively, if you&amp;rsquo;re really old-school and like maintaining your dependencies the hard way, you can always &lt;a href=&#34;http://central.maven.org/maven2/org/mongodb/mongo-java-driver/&#34;&gt;download the JAR file&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t already have a project that you want to try with MongoDB, I&amp;rsquo;ve created a
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started&#34;&gt;series of unit tests on github&lt;/a&gt; which you can use to get a feel for working with MongoDB and Java.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_7&#34;&gt;Connecting via Java&lt;/h2&gt;
+
+&lt;p&gt;Assuming you&amp;rsquo;ve resolved your dependencies and you&amp;rsquo;ve set up your project, you&amp;rsquo;re ready to connect to MongoDB from your Java application.&lt;/p&gt;
+
+&lt;p&gt;Since MongoDB is a NoSQL database, you might not be surprised to learn that you don&amp;rsquo;t connect to it via traditional SQL/relational DB methods like JDBC. But it&amp;rsquo;s simple all the same:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/8fa942271a9143e8ff98.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Where I&amp;rsquo;ve put &lt;code&gt;mongodb://localhost:27017&lt;/code&gt;, you&amp;rsquo;ll want to put the address of where you&amp;rsquo;ve installed MongoDB. There&amp;rsquo;s more detailed information on how to create the correct URI, including how to connect to a &lt;a href=&#34;http://docs.mongodb.org/manual/replication/&#34;&gt;Replica Set&lt;/a&gt;, in the &lt;a href=&#34;http://api.mongodb.org/java/2.12/com/mongodb/MongoURI.html&#34;&gt;MongoClientURI documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re connecting to a local instance on the default port, you can simply use:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/047ba5d4a47818e2625c.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Note that this does throw a checked Exception, &lt;code&gt;UnknownHostException&lt;/code&gt;. You&amp;rsquo;ll either have to catch this or declare it, depending upon what your policy is for exception handling.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;MongoClient&lt;/code&gt; is your route in to MongoDB, from this you&amp;rsquo;ll get your database and collections to work with (more on this later). Your instance of &lt;code&gt;MongoClient&lt;/code&gt; (e.g. &lt;code&gt;mongoClient&lt;/code&gt; above) will ordinarily be a singleton in your application. However, if you need to connect via different credentials (different user names and passwords) you&amp;rsquo;ll want a &lt;code&gt;MongoClient&lt;/code&gt; per set of credentials.&lt;/p&gt;
+
+&lt;p&gt;It is important to limit the number of &lt;code&gt;MongoClient&lt;/code&gt; instances in your application, hence why we suggest a singleton - the &lt;code&gt;MongoClient&lt;/code&gt; is effectively the connection pool, so for every new &lt;code&gt;MongoClient&lt;/code&gt;, you are opening a new pool. Using a single &lt;code&gt;MongoClient&lt;/code&gt; (and optionally &lt;a href=&#34;http://api.mongodb.org/java/2.12/com/mongodb/MongoClientOptions.Builder.html&#34;&gt;configuring its settings&lt;/a&gt;) will allow the driver to correctly manage your connections to the server. This &lt;code&gt;MongoClient&lt;/code&gt; singleton is &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java-concurrency/&#34;&gt;safe to be used by multiple threads&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One final thing you need to be aware of: you want your application to shut down the connections to MongoDB when it finishes running. Always make sure your application or web server calls &lt;code&gt;MongoClient.close()&lt;/code&gt; when it shuts down.&lt;/p&gt;
+
+&lt;p&gt;Try out connecting to MongoDB by getting the test in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise1ConnectingTest.java&#34;&gt;Exercise1ConnectingTest&lt;/a&gt; to pass.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Where are my tables?&lt;/h3&gt;
+
+&lt;p&gt;MongoDB doesn&amp;rsquo;t have tables, rows, columns, joins etc. There are some new concepts to learn when you&amp;rsquo;re using it, but nothing too challenging.&lt;/p&gt;
+
+&lt;p&gt;While you still have the concept of a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;database&lt;/a&gt;,
+the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-document&#34;&gt;documents&lt;/a&gt; (which we&amp;rsquo;ll cover in more detail later) are stored in
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt;, rather than your database being made up of tables of
+data. But it can be helpful to think of documents like rows and collections like tables in a traditional database. And collections can have
+&lt;a href=&#34;http://docs.mongodb.org/manual/core/indexes-introduction/&#34;&gt;indexes&lt;/a&gt; like you&amp;rsquo;d expect.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;Selecting Databases and Collections&lt;/h3&gt;
+
+&lt;p&gt;You&amp;rsquo;re going to want to define which databases and collections you&amp;rsquo;re using in your Java application. If you remember, a few sections ago we used the MongoDB shell to show the databases in your MongoDB instance, and you had an &lt;code&gt;admin&lt;/code&gt; and a &lt;code&gt;local&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Creating and getting a database or collection is extremely easy in MongoDB:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/7f9995d55f3378d4f824.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;You can replace &lt;code&gt;&amp;quot;TheDatabaseName&amp;quot;&lt;/code&gt; with whatever the name of your database is. If the database doesn&amp;rsquo;t already exist, it will be created automatically the first time you insert anything into it, so there&amp;rsquo;s no need for null checks or exception handling on the off-chance the database doesn&amp;rsquo;t exist.&lt;/p&gt;
+
+&lt;p&gt;Getting the collection you want from the database is simple too:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/6a52a1196d6a944ca56f.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Again, replacing &lt;code&gt;&amp;quot;TheCollectionName&amp;quot;&lt;/code&gt; with whatever your collection is called.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re playing along with the test code, you now know enough to get the tests
+in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise2MongoClientTest.java&#34;&gt;Exercise2MongoClientTest&lt;/a&gt; to pass&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_10&#34;&gt;An introduction to documents&lt;/h2&gt;
+
+&lt;p&gt;Something that is, hopefully, becoming clear to you as you work through the examples in this post, is that MongoDB is different from the traditional relational databases you&amp;rsquo;ve used. As I&amp;rsquo;ve mentioned, there are collections, rather than tables, and documents, rather than rows and columns.&lt;/p&gt;
+
+&lt;p&gt;Documents are much more flexible than a traditional row, as you have a dynamic schema rather than an enforced one. You can evolve the document over time without incurring the cost of schema migrations and tedious update scripts. But I&amp;rsquo;m getting ahead of myself.&lt;/p&gt;
+
+&lt;p&gt;Although documents don&amp;rsquo;t look like the tables, columns and rows you&amp;rsquo;re used to, they should look familiar if you&amp;rsquo;ve done anything even remotely JSON-like. Here&amp;rsquo;s an example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;person = {
+  _id: &amp;quot;jo&amp;quot;,
+  name: &amp;quot;Jo Bloggs&amp;quot;,
+  age: 34,
+  address: {
+    street: &amp;quot;123 Fake St&amp;quot;,
+    city: &amp;quot;Faketon&amp;quot;,
+    state: &amp;quot;MA&amp;quot;,
+    zip: &amp;quot;12345&amp;quot;
+  }
+  books: [ 27464, 747854, ...]
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are a few interesting things to note:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Like JSON, documents are structures of name/value pairs, and the values can be one of a number of &lt;a href=&#34;http://docs.mongodb.org/manual/reference/bson-types/&#34;&gt;primitive types&lt;/a&gt;, including Strings and various number types.&lt;/li&gt;
+&lt;li&gt;It also supports nested documents - in the example above, &lt;code&gt;address&lt;/code&gt; is a subdocument inside the &lt;code&gt;person&lt;/code&gt; document. Unlike a relational database, where you might store this in a separate table and provide a reference to it, in MongoDB if that data benefits from always being associated with its parent, you can embed it in its parent.&lt;/li&gt;
+&lt;li&gt;You can even store an array of values. The books field in the example above is an array of integers that might represent, for example, IDs of books the person has bought or borrowed.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;You can find out more detailed information about Documents in &lt;a href=&#34;http://docs.mongodb.org/manual/core/document/&#34;&gt;the documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;Creating a document and saving it to the database&lt;/h3&gt;
+
+&lt;p&gt;In Java, if you wanted to create a document like the one above, you&amp;rsquo;d do something like:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/7ced271e6ee5d0bdc0c3.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;At this point, it&amp;rsquo;s really easy to save it into your database:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/5e35e08ea414c5cc38e3.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Note that the first three lines are set-up, and you don&amp;rsquo;t need to re-initialize those every time.&lt;/p&gt;
+
+&lt;p&gt;Now if we look inside MongoDB, we can see that the database has been created:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; show dbs
+Examples  0.078GB
+admin     (empty)
+local     0.078GB
+&amp;gt; _
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;hellip;and we can see the collection has been created as well:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; use Examples
+switched to db Examples
+&amp;gt; show collections
+people
+system.indexes
+&amp;gt; _
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&amp;hellip;finally, we can see the our person, &amp;ldquo;Jo&amp;rdquo;, was inserted:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; db.people.findOne()
+{
+    &amp;quot;_id&amp;quot; : &amp;quot;jo&amp;quot;,
+    &amp;quot;name&amp;quot; : &amp;quot;Jo Bloggs&amp;quot;,
+        &amp;quot;age&amp;quot;: 34,
+    &amp;quot;address&amp;quot; : {
+        &amp;quot;street&amp;quot; : &amp;quot;123 Fake St&amp;quot;,
+        &amp;quot;city&amp;quot; : &amp;quot;Faketon&amp;quot;,
+        &amp;quot;state&amp;quot; : &amp;quot;MA&amp;quot;,
+        &amp;quot;zip&amp;quot; : &amp;quot;12345&amp;quot;
+    },
+    &amp;quot;books&amp;quot; : [
+        27464,
+        747854
+    ]
+}
+&amp;gt; _
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As a Java developer, you can see the similarities between the Document that&amp;rsquo;s stored in MongoDB, and your domain object. In your code, that person would probably be a Person class, with simple primitive fields, an array field, and an Address field.&lt;/p&gt;
+
+&lt;p&gt;So rather than building your &lt;code&gt;DBObject&lt;/code&gt; manually like the above example, you&amp;rsquo;re more likely to be converting your domain object into a DBObject. It&amp;rsquo;s best not to have the MongoDB-specific DBObject class in your domain objects, so you might want to create a PersonAdaptor that converts your Person domain object to a DBObject:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/39e188182f8dc338dcc8.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;As before, once you have the DBObject, you can save this into MongoDB:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/207a33b7b9ddd9033927.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Now you&amp;rsquo;ve got all the basics to get the tests in
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java&#34;&gt;Exercise3InsertTest&lt;/a&gt; to pass.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;Getting documents back out again&lt;/h3&gt;
+
+&lt;p&gt;Now you&amp;rsquo;ve saved a Person to the database, and we&amp;rsquo;ve seen it in the database using the shell, you&amp;rsquo;re going to want to get it back out into your Java application. In this post, we&amp;rsquo;re going to cover the very basics of retrieving a document - in a later post we&amp;rsquo;ll cover more complex querying.&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll have guessed by the fact that MongoDB is a NoSQL database that we&amp;rsquo;re not going to be using SQL to query. Instead, we query by example, building up a document that looks like the document we&amp;rsquo;re looking for. So if we wanted to look for the person we saved into the database, &amp;ldquo;Jo Bloggs&amp;rdquo;, we remember that the &lt;code&gt;_id&lt;/code&gt; field had the value of &amp;ldquo;jo&amp;rdquo;, and we create a document that matches this shape:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/b90438178e6c8017d298.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;As you can see, the &lt;code&gt;find&lt;/code&gt; method returns a cursor for the results. Since &lt;code&gt;_id&lt;/code&gt; needs to be unique, we know that if we look for a document with this ID, we will find only one document, and it will be the one we want:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/cd0ec53be89f7125aad7.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Earlier we saw that documents are simply made up of name/value pairs, where the value can be anything from a simple String or primitive, to more complex types like arrays or subdocuments. Therefore in Java, we can more or less treat DBObject as a &lt;code&gt;Map&amp;lt;String,
+Object&amp;gt;&lt;/code&gt;. So if we wanted to look at the fields of the document we got back from the database, we can get them with:&lt;/p&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/7fe954cdd9c5d86874a6.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;Note that you&amp;rsquo;ll need to cast the value to a &lt;code&gt;String&lt;/code&gt;, as the compiler only knows that it&amp;rsquo;s an &lt;code&gt;Object&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re still playing along with the example code, you&amp;rsquo;re now ready to take on all the tests in
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise4RetrieveTest.java&#34;&gt;Exercise4RetrieveTest&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_13&#34;&gt;Overview of JVM Libraries&lt;/h2&gt;
+
+&lt;p&gt;So far I&amp;rsquo;ve shown you the basics of the official Java Driver, but you&amp;rsquo;ll notice that it&amp;rsquo;s quite low-level - you have to do a lot of taking things out of your domain objects and poking them into MongoDB-shaped DBObjects, and vice-versa. If this is the level of control you want, then the Java driver makes this easy for you. But if it seems like this is extra work that you shouldn&amp;rsquo;t have to do, there are plenty of other options for you.&lt;/p&gt;
+
+&lt;p&gt;The tools I&amp;rsquo;m about to describe all use the MongoDB Java Driver at their core to interact with MongoDB. They provide a high-level abstraction for converting your domain objects into MongoDB documents, whilst also giving you a way to get to the underlying driver as
+well in case you need to use it at a lower level.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_14&#34;&gt;Morphia&lt;/h3&gt;
+
+&lt;p&gt;Morphia is a really lightweight ODM (Object Document Mapper), so it&amp;rsquo;s similar to
+&lt;a href=&#34;http://en.wikipedia.org/wiki/Object-relational_mapping&#34;&gt;ORMs&lt;/a&gt; like Hibernate. Documents can be in a fairly similar shape to your Java domain objects, so this mapping can be automatic, but Morphia allows you point the mapper in the right direction.&lt;/p&gt;
+
+&lt;p&gt;Morphia is open source, and has contributors from MongoDB. Sample code and documentation can be &lt;a href=&#34;https://github.com/mongodb/morphia/wiki&#34;&gt;found here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_15&#34;&gt;Spring Data&lt;/h3&gt;
+
+&lt;p&gt;Another frequently used ODM is &lt;a href=&#34;http://projects.spring.io/spring-data/&#34;&gt;Spring Data&lt;/a&gt;. This supports traditional relational and non-relational databases, &lt;a href=&#34;http://projects.spring.io/spring-data-mongodb/&#34;&gt;including MongoDB&lt;/a&gt;. If you&amp;rsquo;re already using Spring in your application, this should be a familiar way to work.&lt;/p&gt;
+
+&lt;p&gt;As always with Spring projects, there&amp;rsquo;s a lot of really great documentation, including a
+&lt;a href=&#34;http://spring.io/guides/gs/accessing-data-mongodb/&#34;&gt;Getting Started guide&lt;/a&gt; with example code.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_16&#34;&gt;MongoJack&lt;/h3&gt;
+
+&lt;p&gt;If you&amp;rsquo;re working with web services or something else that supports JSON, and you&amp;rsquo;re using &lt;a href=&#34;http://wiki.fasterxml.com/JacksonHome&#34;&gt;Jackson&lt;/a&gt; to work with this data, it probably seems like a waste to be turning it from this form into a Java object and then into a MongoDB DBObject. But &lt;a href=&#34;http://mongojack.org/&#34;&gt;MongoJack&lt;/a&gt; might make your job easier, as it&amp;rsquo;s designed to map JSON objects directly into MongoDB. Take a look at the &lt;a href=&#34;http://mongojack.org/tutorial.html&#34;&gt;example code and documentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_17&#34;&gt;Jongo&lt;/h3&gt;
+
+&lt;p&gt;This is another &lt;a href=&#34;http://wiki.fasterxml.com/JacksonHome&#34;&gt;Jackson&lt;/a&gt;-based ODM, but provides an interesting extra in the form of supporting queries the way you&amp;rsquo;d write them in &lt;a href=&#34;http://docs.mongodb.org/manual/reference/mongo-shell/&#34;&gt;the shell&lt;/a&gt;. Documentation
+and example code is available on &lt;a href=&#34;http://jongo.org/&#34;&gt;the website&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_18&#34;&gt;Grails MongoDB GORM&lt;/h3&gt;
+
+&lt;p&gt;The Grails web application framework also supports its own Object-Relational Mapping (&lt;a href=&#34;http://grails.org/doc/2.4.x/guide/GORM.html&#34;&gt;GORM&lt;/a&gt;), including &lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;support for MongoDB&lt;/a&gt;. More documentation for this plugin &lt;a href=&#34;http://grails.github.io/grails-data-mapping/mongo/manual/index.html&#34;&gt;can be found here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_19&#34;&gt;Casbah&lt;/h3&gt;
+
+&lt;p&gt;This isn&amp;rsquo;t an ODM like the other tools mentioned, but the &lt;a href=&#34;https://github.com/mongodb/casbah&#34;&gt;officially supported Scala driver&lt;/a&gt; for MongoDB. Like the previous libraries, it uses the MongoDB Java Driver under the covers, but it provides a Scala API for application developers to work with. If you like working with Scala but are searching for an async solution, consider &lt;a href=&#34;http://reactivemongo.org/&#34;&gt;ReactiveMongo&lt;/a&gt;, a community-supported driver that provides async and non-blocking operations.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_20&#34;&gt;Other libraries and tools&lt;/h3&gt;
+
+&lt;p&gt;This is far from an extensive list, and I apologise if I&amp;rsquo;ve left a favourite out. But we&amp;rsquo;ve compiled
+&lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/#third-party-frameworks-and-libs&#34;&gt;a list of many more libraries for the JVM&lt;/a&gt;,
+which includes community projects and officially supported drivers.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_21&#34;&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;We&amp;rsquo;ve covered the basics of using MongoDB from Java - we&amp;rsquo;ve touched on what MongoDB is, and you can find out a lot more detailed information about it from &lt;a href=&#34;http://docs.mongodb.org/manual/&#34;&gt;the manual&lt;/a&gt;; we&amp;rsquo;ve
+&lt;a href=&#34;http://docs.mongodb.org/manual/installation/&#34;&gt;installed&lt;/a&gt; it somewhere that lets us play with it; we&amp;rsquo;ve talked a bit about collections and documents, and what these look like in Java; and we&amp;rsquo;ve started inserting things into MongoDB and getting them back out again.&lt;/p&gt;
+
+&lt;p&gt;If you haven&amp;rsquo;t already started playing with the test code, you can find it in
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started&#34;&gt;this github repository&lt;/a&gt;. And if you get desperate and look hard enough, you&amp;rsquo;ll even find the answers there too.&lt;/p&gt;
+
+&lt;p&gt;Finally, there are more examples of using the Java Driver in the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/#getting-started-with-java-driver&#34;&gt;Quick Tour&lt;/a&gt;, and there is
+&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/tree/master/src/examples/example&#34;&gt;example code in github&lt;/a&gt;,
+including examples for authentication.&lt;/p&gt;
 
 &lt;p&gt;Try it out, and hopefully you&amp;rsquo;ll see how easy it is to use MongoDB from Java.&lt;/p&gt;
 </description>
