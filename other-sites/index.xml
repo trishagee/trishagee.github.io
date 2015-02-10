@@ -10,346 +10,6 @@
     
     <item>
       <title></title>
-      <link>http://trishagee.github.io/other-sites/release/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/release/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve written a Gradle Plugin that should, theoretically, do the full MongoDB Java Driver release in an automated fashion.  In theory,
-there&amp;rsquo;s a single command that you can run in order to release the Java driver:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=&amp;lt;release version&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;e.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Because the release process integrates with a number of different systems, you have to provide a number of credentials and settings on
-your local machine in order for the process to work correctly.  You&amp;rsquo;ll need:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;~/.gradle/gradle.properties
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;sonatypeUsername=mongodb
-sonatypePassword=[find this in the settings file]
-signing.keyId=
-signing.secretKeyRingFile=
-signing.password=
-github.credentials.username=
-github.credentials.password=[if you have two factor auth on, this is a github access token]&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll also need:
-    ~/.github
-     login=[user name]
-     password=[password]&lt;/p&gt;
-
-&lt;p&gt;or, if you&amp;rsquo;re using two-factor auth,
-    ~/.github
-    oauth=[github access token]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/creating-an-access-token-for-command-line-use/&#34;&gt;More details on creating a github access token&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info on specific settings for the Java Driver release&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s the settings for the whole release process.  However, the release gradle task is actually made up of a number of individual
-steps. Since there are a number of moving parts, and things that could go wrong with each step, these steps can be run individually if
-necessary. The most important one is &lt;code&gt;publish&lt;/code&gt;, all of the others can easily be replaced with a manual process.&lt;/p&gt;
-
-&lt;p&gt;The aim of the following documentation is to:
- - Define what each individual Gradle task is and what it&amp;rsquo;s supposed to do
- - State the requirements or dependencies for each individual task
- - Outline some of the things that could go wrong with the task&lt;/p&gt;
-
-&lt;p&gt;The release steps are, in the order in which they should be executed:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;clean&lt;/code&gt; If running the full release task, a clean will be done first to make sure that everything is cleanly built. This is a standard
-Java task and has not been changed in any way for the release process.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;prepareRelease&lt;/code&gt; Before building or pushing, a number of things are done to put the code/files into the correct state:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
-release versions in these files are stripped of any &amp;lsquo;-SNAPSHOT&amp;rsquo; suffix they might have. If there is no suffix,
-this task should still complete successfully.&lt;/li&gt;
-&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
-as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Release ${releaseVersion}&amp;rdquo;, e.g. &amp;ldquo;Release 3.0.0&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Tag this commit with the release number, e.g. &amp;ldquo;r3.0.0&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Push the changes and the tag to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
-this pushes to your origin.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note that all of these steps are pretty easy to do manually.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
-~/.gradle/gradle.properties
-github.credentials.username=
-github.credentials.password=&lt;/p&gt;
-
-&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew prepareRelease -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The files that need updating as part of the release process are defined in &lt;code&gt;release.gradle&lt;/code&gt;, as &lt;code&gt;filesToUpdate&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ideally, don&amp;rsquo;t have any code changes in your current branch, as these will be committed.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;PrepareReleaseTask.gradle&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git
-integration.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
-&lt;li&gt;If you run this task multiple times, it should not fail, but you will get multiple git commits with the required release number. Make
-sure that you have the correct release number in the files (Mongo.java and build.gradle) and passed in to the command line.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Git: hard reset to the commit you were on before performing the release&lt;/li&gt;
-&lt;li&gt;Git: delete the release tag from local and, if necessary, remote repositories&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;publish&lt;/code&gt; This does the magic of pushing the jar files into Sonatype nexus. This should run on it&amp;rsquo;s own perfectly happily,
-and can pubish both snapshot jars and full release jars.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Will ensure jar files are built for: sources; javadoc; individual module classes; &amp;ldquo;uber&amp;rdquo; jar with the module classes and any classes
-from modules it depends on (e.g. for mongo-java-driver, include core and bson as well) but excluding any dependency jars.&lt;/li&gt;
-&lt;li&gt;Ensures the correct pom.xml is created for each of the artifacts&lt;/li&gt;
-&lt;li&gt;Publishes to the snapshot repo if no release version is defined (this is the default behaviour),
-or the &amp;ldquo;real&amp;rdquo; repo if you pass in a release version.&lt;/li&gt;
-&lt;li&gt;This will also sign the release.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note: The current assumption is that &lt;strong&gt;four&lt;/strong&gt; jars will be published per project, e.g:&lt;/p&gt;
-
-&lt;p&gt;mongo-java-driver-3.0.0-all.jar
-mongo-java-driver-3.0.0-javadoc.jar
-mongo-java-driver-3.0.0-sources.jar
-mongo-java-driver-3.0.0.jar&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this talks to nexus, you need:
-~/.gradle/gradle.properties
-sonatypeUsername=mongodb
-sonatypePassword=[find this in the settings file]&lt;/p&gt;
-
-&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew publish -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you do not define a releaseVersion, it will assume you want to publish the SNAPSHOT.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;Follow the steps to set up GPG/PGP&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;We&amp;rsquo;re using a number of plugins to perform this publish process, and it&amp;rsquo;s all configured in &lt;code&gt;publish.gradle&lt;/code&gt;.  Plugins used:
-     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html&#34;&gt;maven-publish&lt;/a&gt; for defining the publishing process. This creates the correct pom and is responsible for publishing to appropriate
-     repo
-     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/signing_plugin.html&#34;&gt;signing&lt;/a&gt; signs the release
-     &lt;a href=&#34;https://github.com/johnrengelman/shadow&#34;&gt;com.github.johnrengelman.shadow&lt;/a&gt; builds our uber jars&lt;/p&gt;
-
-&lt;p&gt;I know generally we steer clear of comments in our code, but I&amp;rsquo;ve tried to comment the publish file as much as I can,
-as it&amp;rsquo;s not always obvious what&amp;rsquo;s going on.&lt;/p&gt;
-
-&lt;p&gt;There are also specific configuration details in the build.gradle files for each project.  For example,
-driver/build.gradle defines additional values for the pom.xml, and the correct artifact ID.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_6&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Incorrect artifact ID (i.e. the ID for sonatype to identify our jars). This is currently defined in individual project build.gradle
-files, in publishing.publications.mavenJava(MavenPublication).artifactId.  If it&amp;rsquo;s missing, it&amp;rsquo;ll use the project name (e.g. bson).&lt;/li&gt;
-&lt;li&gt;Uber jar might contain too many dependencies or not enough.  As per &lt;a href=&#34;https://github.com/johnrengelman/shadow#filtering-shadow-jar-contents-by-mavenproject-dependency&#34;&gt;the documentation&lt;/a&gt;, Configure it with
- shadowJar {
-     dependencies {
-     }
- }&lt;/li&gt;
-&lt;li&gt;Nexus authentication might fail.  Ensure the credentials are in ~/.gradle/gradle.properties&lt;/li&gt;
-&lt;li&gt;Signing might fail. Ensure you follow the &lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;steps to set up GPG/PGP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Could get confused between snapshot repo and real repo.  &lt;code&gt;publish.gradle&lt;/code&gt; currently assumes that if you passed in releaseVersion,
-you&amp;rsquo;re publish to staging. &lt;a href=&#34;http://forums.gradle.org/gradle/topics/maven_publish_specify_a_repo_as_being_a_snapshot_repo&#34;&gt;See here&lt;/a&gt; for
-more details on why we need an &lt;code&gt;if&lt;/code&gt; statement here.&lt;/li&gt;
-&lt;li&gt;pom.xml might be incorrect.  As per &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N174E5&#34;&gt;the documentation&lt;/a&gt;, this is configured via
- publishing {
-     publications {
-         mavenJava(MavenPublication) {
-             pom.withXml {
-             }
-         }
-     }
- }&lt;/li&gt;
-&lt;li&gt;manifest.mf is incorrect. &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:manifest(groovy.lang.Closure&#34;&gt;As per the documentation&lt;/a&gt;), his is configured in each individual build.gradle file:
-jar {
- manifest.attributes(
-}&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Wrong jar files built/uploaded. This is configured, &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N17478&#34;&gt;as per the documentation&lt;/a&gt;, by declaring the artifacts to publish in&lt;/p&gt;
-
-&lt;p&gt;publishing {
-      publications {
-          mavenJava(MavenPublication) {
-              artifact sourceJar
-              artifact javadocJar
-              artifact shadowJar
-              from components.java
-          }
-      }
-  }&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m unclear where components.java comes from, but it&amp;rsquo;s the magic incantation that uploads the default jar file for a project.  The
-Uber jar is created by applying the shadow plugin, and is included via shadowJar. The sources and javadoc jars are tasks that are
-defined elsewhere in the build file, for example:
-     task sourceJar(type: Jar) {
-         classifier = &amp;lsquo;sources&amp;rsquo;
-         from sourceSets.main.allSource
-     }&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jar file name is incorrect. This is defined via the &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName&#34;&gt;Jar plugin&lt;/a&gt;, and in our case we configure overrides via module build.gradle
-files, e.g.:
-archivesBaseName = &amp;lsquo;mongo-java-driver&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_7&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;a &lt;code&gt;clean&lt;/code&gt; will remove any built artifacts, including pom.xml and manifest files.&lt;/li&gt;
-&lt;li&gt;published artifacts will need to be removed from &lt;a href=&#34;https://oss.sonatype.org/index.html&#34;&gt;Sonatype Nexus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;draftReleaseNotes&lt;/code&gt; Creates a skeleton set of release notes. Although this could run perfectly well alone,
-without any of the other tasks, it does upload the uberjar so if that hasn&amp;rsquo;t previously been built you&amp;rsquo;ll get a file not found exception.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Creates the skeleton of the notes content&lt;/li&gt;
-&lt;li&gt;Pushes to github, so it should be &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;visible as a draft&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Uploads the driver module uber jar (so just a single jar file of all classes) to the release notes. If the release tag has been
-successful, the release notes will also have a tag, a commit, and zips of the source files.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note: these release notes are draft only, and can only be seen by those with the right permissions. When the release is live,
-the release notes will need to be published.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_8&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Needs your github credentials in:
-                                     ~/.github
-                                     either
-                                      login=[user name]
-                                      password=[password]&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;                             or, if you&#39;re using two-factor auth,
-                                 ~/.github
-                                 oauth=[github access token]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew draftReleaseNotes -DreleaseVersion=3.0.0&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_9&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;DraftReleaseNotesTask&lt;/code&gt;.  This uses the &lt;a href=&#34;http://github-api.kohsuke.org/&#34;&gt;Github API for Java&lt;/a&gt;,
-it&amp;rsquo;s this code that requires the credentials in your .github file.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_10&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Missing jar file to upload.  This task does not explictly depend on archives creation, so if &lt;code&gt;shadowJar&lt;/code&gt; or &lt;code&gt;jar&lt;/code&gt; have not been run
-prior to running this task, you might get a file not found exception. The release notes will probably still have been created though.&lt;/li&gt;
-&lt;li&gt;Incorrect jar files attached. The jar files to attach are configured in &lt;code&gt;release.gradle&lt;/code&gt; with the &lt;code&gt;jarFile&lt;/code&gt; property. You can declare
-multiple files here. Use the task name for the task that creates the required artifact, e.g.
- jarFile project(&amp;rsquo;:driver&amp;rsquo;).shadowJar&lt;/li&gt;
-&lt;li&gt;Missing source zips, release tag and/or commit. Possibly the release tag did not get pushed correctly to &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;https://github.com/mongodb/mongo-java-driver/&lt;/a&gt;.&lt;br /&gt;
-Ensure there&amp;rsquo;s a &lt;code&gt;r3.0.0&lt;/code&gt; tag or similar for the release version you&amp;rsquo;re writing the notes for.&lt;/li&gt;
-&lt;li&gt;Release notes are not public. Actually, this is not an error - in order to make the notes publicly visible,
-there&amp;rsquo;s a manual step to publish them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_11&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;releases page&lt;/a&gt; and delete any unwanted draft release notes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;updateToNextVersion&lt;/code&gt; Similar to, but simpler than, prepareRelease - this task gets the code in the right state for the next working
-version.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
-release versions in these files are incremented (e.g. 3.0.0 to 3.0.1) and the &amp;lsquo;-SNAPSHOT&amp;rsquo; added.&lt;/li&gt;
-&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
-as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Updated to next development version: ${newVersion}&amp;ldquo;,
-e.g. &amp;ldquo;Updated to next development version: 3.0.1-SNAPSHOT&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Push the changes to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
-this pushes to your origin.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;toc_12&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
-~/.gradle/gradle.properties
-github.credentials.username=
-github.credentials.password=&lt;/p&gt;
-
-&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew updateToNextVersion -DreleaseVersion=3.0.0&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_13&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;This task is defined in &lt;code&gt;UpdateToNextVersionTask&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git integration.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_14&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
-&lt;li&gt;In theory you can run this multiple times without error - it will keep incrementing the version number (and suffixing &amp;lsquo;-SNAPSHOT&amp;rsquo; to
-it). However, if you specify the same releaseVersion parameter every time, it should error telling you that the version doesn&amp;rsquo;t match
-the version in the build file (as the build file has already been incremented).  This is fine, just do a manual rollback before trying
-again.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_15&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Git: hard reset to the commit you were on before calling this task.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_16&#34;&gt;In Summary&lt;/h2&gt;
-
-&lt;p&gt;There is a magic incantation which is supposed to do the full release. But if any of the steps go wrong,
-you can call the individual tasks alone, and follow the above guide for troubleshooting or rolling back.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info about the current/old Java driver release&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/display/DH/Morphia+Release+Process&#34;&gt;Morphia Release Process&lt;/a&gt; Lots of this new release process was, um,
-borrowed from the updated Morphia release process, so there might be useful information in there to troubleshoot this process too.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_17&#34;&gt;Things that are open to improvement:&lt;/h3&gt;
-
-&lt;p&gt;(AKA let&amp;rsquo;s not call this a TODO list):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The release plugin stuff in &lt;code&gt;buildSrc&lt;/code&gt; is almost definitely not idiotmatic Groovy/Gradle. Instead, I&amp;rsquo;ve tried to make it readable.&lt;/li&gt;
-&lt;li&gt;I think I&amp;rsquo;d prefer, on reflection, to move all the stuff in &lt;code&gt;buildSrc&lt;/code&gt; into gradle scripts instead,
-although that goes against the recommendations, because at least then all the gradle logic would be in the same place.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;ve been encouraged to look at the &lt;a href=&#34;https://github.com/ajoberstar/gradle-git&#34;&gt;gradle-git plugin&lt;/a&gt; instead of JGit, but I haven&amp;rsquo;t had the time.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
@@ -992,6 +652,346 @@ we&amp;rsquo;ll replace only the field we want to change:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/query-documents/&#34;&gt;Query Documents&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/core/crud-introduction/&#34;&gt;CRUD Operations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/indexes/&#34;&gt;Indexes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://trishagee.github.io/other-sites/release/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/other-sites/release/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve written a Gradle Plugin that should, theoretically, do the full MongoDB Java Driver release in an automated fashion.  In theory,
+there&amp;rsquo;s a single command that you can run in order to release the Java driver:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=&amp;lt;release version&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;e.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because the release process integrates with a number of different systems, you have to provide a number of credentials and settings on
+your local machine in order for the process to work correctly.  You&amp;rsquo;ll need:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~/.gradle/gradle.properties
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;sonatypeUsername=mongodb
+sonatypePassword=[find this in the settings file]
+signing.keyId=
+signing.secretKeyRingFile=
+signing.password=
+github.credentials.username=
+github.credentials.password=[if you have two factor auth on, this is a github access token]&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll also need:
+    ~/.github
+     login=[user name]
+     password=[password]&lt;/p&gt;
+
+&lt;p&gt;or, if you&amp;rsquo;re using two-factor auth,
+    ~/.github
+    oauth=[github access token]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/creating-an-access-token-for-command-line-use/&#34;&gt;More details on creating a github access token&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info on specific settings for the Java Driver release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s the settings for the whole release process.  However, the release gradle task is actually made up of a number of individual
+steps. Since there are a number of moving parts, and things that could go wrong with each step, these steps can be run individually if
+necessary. The most important one is &lt;code&gt;publish&lt;/code&gt;, all of the others can easily be replaced with a manual process.&lt;/p&gt;
+
+&lt;p&gt;The aim of the following documentation is to:
+ - Define what each individual Gradle task is and what it&amp;rsquo;s supposed to do
+ - State the requirements or dependencies for each individual task
+ - Outline some of the things that could go wrong with the task&lt;/p&gt;
+
+&lt;p&gt;The release steps are, in the order in which they should be executed:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;clean&lt;/code&gt; If running the full release task, a clean will be done first to make sure that everything is cleanly built. This is a standard
+Java task and has not been changed in any way for the release process.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;prepareRelease&lt;/code&gt; Before building or pushing, a number of things are done to put the code/files into the correct state:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
+release versions in these files are stripped of any &amp;lsquo;-SNAPSHOT&amp;rsquo; suffix they might have. If there is no suffix,
+this task should still complete successfully.&lt;/li&gt;
+&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
+as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Release ${releaseVersion}&amp;rdquo;, e.g. &amp;ldquo;Release 3.0.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Tag this commit with the release number, e.g. &amp;ldquo;r3.0.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Push the changes and the tag to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
+this pushes to your origin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note that all of these steps are pretty easy to do manually.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
+~/.gradle/gradle.properties
+github.credentials.username=
+github.credentials.password=&lt;/p&gt;
+
+&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew prepareRelease -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The files that need updating as part of the release process are defined in &lt;code&gt;release.gradle&lt;/code&gt;, as &lt;code&gt;filesToUpdate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ideally, don&amp;rsquo;t have any code changes in your current branch, as these will be committed.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;PrepareReleaseTask.gradle&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git
+integration.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
+&lt;li&gt;If you run this task multiple times, it should not fail, but you will get multiple git commits with the required release number. Make
+sure that you have the correct release number in the files (Mongo.java and build.gradle) and passed in to the command line.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git: hard reset to the commit you were on before performing the release&lt;/li&gt;
+&lt;li&gt;Git: delete the release tag from local and, if necessary, remote repositories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;publish&lt;/code&gt; This does the magic of pushing the jar files into Sonatype nexus. This should run on it&amp;rsquo;s own perfectly happily,
+and can pubish both snapshot jars and full release jars.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Will ensure jar files are built for: sources; javadoc; individual module classes; &amp;ldquo;uber&amp;rdquo; jar with the module classes and any classes
+from modules it depends on (e.g. for mongo-java-driver, include core and bson as well) but excluding any dependency jars.&lt;/li&gt;
+&lt;li&gt;Ensures the correct pom.xml is created for each of the artifacts&lt;/li&gt;
+&lt;li&gt;Publishes to the snapshot repo if no release version is defined (this is the default behaviour),
+or the &amp;ldquo;real&amp;rdquo; repo if you pass in a release version.&lt;/li&gt;
+&lt;li&gt;This will also sign the release.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: The current assumption is that &lt;strong&gt;four&lt;/strong&gt; jars will be published per project, e.g:&lt;/p&gt;
+
+&lt;p&gt;mongo-java-driver-3.0.0-all.jar
+mongo-java-driver-3.0.0-javadoc.jar
+mongo-java-driver-3.0.0-sources.jar
+mongo-java-driver-3.0.0.jar&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this talks to nexus, you need:
+~/.gradle/gradle.properties
+sonatypeUsername=mongodb
+sonatypePassword=[find this in the settings file]&lt;/p&gt;
+
+&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew publish -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you do not define a releaseVersion, it will assume you want to publish the SNAPSHOT.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;Follow the steps to set up GPG/PGP&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;re using a number of plugins to perform this publish process, and it&amp;rsquo;s all configured in &lt;code&gt;publish.gradle&lt;/code&gt;.  Plugins used:
+     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html&#34;&gt;maven-publish&lt;/a&gt; for defining the publishing process. This creates the correct pom and is responsible for publishing to appropriate
+     repo
+     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/signing_plugin.html&#34;&gt;signing&lt;/a&gt; signs the release
+     &lt;a href=&#34;https://github.com/johnrengelman/shadow&#34;&gt;com.github.johnrengelman.shadow&lt;/a&gt; builds our uber jars&lt;/p&gt;
+
+&lt;p&gt;I know generally we steer clear of comments in our code, but I&amp;rsquo;ve tried to comment the publish file as much as I can,
+as it&amp;rsquo;s not always obvious what&amp;rsquo;s going on.&lt;/p&gt;
+
+&lt;p&gt;There are also specific configuration details in the build.gradle files for each project.  For example,
+driver/build.gradle defines additional values for the pom.xml, and the correct artifact ID.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Incorrect artifact ID (i.e. the ID for sonatype to identify our jars). This is currently defined in individual project build.gradle
+files, in publishing.publications.mavenJava(MavenPublication).artifactId.  If it&amp;rsquo;s missing, it&amp;rsquo;ll use the project name (e.g. bson).&lt;/li&gt;
+&lt;li&gt;Uber jar might contain too many dependencies or not enough.  As per &lt;a href=&#34;https://github.com/johnrengelman/shadow#filtering-shadow-jar-contents-by-mavenproject-dependency&#34;&gt;the documentation&lt;/a&gt;, Configure it with
+ shadowJar {
+     dependencies {
+     }
+ }&lt;/li&gt;
+&lt;li&gt;Nexus authentication might fail.  Ensure the credentials are in ~/.gradle/gradle.properties&lt;/li&gt;
+&lt;li&gt;Signing might fail. Ensure you follow the &lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;steps to set up GPG/PGP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Could get confused between snapshot repo and real repo.  &lt;code&gt;publish.gradle&lt;/code&gt; currently assumes that if you passed in releaseVersion,
+you&amp;rsquo;re publish to staging. &lt;a href=&#34;http://forums.gradle.org/gradle/topics/maven_publish_specify_a_repo_as_being_a_snapshot_repo&#34;&gt;See here&lt;/a&gt; for
+more details on why we need an &lt;code&gt;if&lt;/code&gt; statement here.&lt;/li&gt;
+&lt;li&gt;pom.xml might be incorrect.  As per &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N174E5&#34;&gt;the documentation&lt;/a&gt;, this is configured via
+ publishing {
+     publications {
+         mavenJava(MavenPublication) {
+             pom.withXml {
+             }
+         }
+     }
+ }&lt;/li&gt;
+&lt;li&gt;manifest.mf is incorrect. &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:manifest(groovy.lang.Closure&#34;&gt;As per the documentation&lt;/a&gt;), his is configured in each individual build.gradle file:
+jar {
+ manifest.attributes(
+}&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wrong jar files built/uploaded. This is configured, &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N17478&#34;&gt;as per the documentation&lt;/a&gt;, by declaring the artifacts to publish in&lt;/p&gt;
+
+&lt;p&gt;publishing {
+      publications {
+          mavenJava(MavenPublication) {
+              artifact sourceJar
+              artifact javadocJar
+              artifact shadowJar
+              from components.java
+          }
+      }
+  }&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m unclear where components.java comes from, but it&amp;rsquo;s the magic incantation that uploads the default jar file for a project.  The
+Uber jar is created by applying the shadow plugin, and is included via shadowJar. The sources and javadoc jars are tasks that are
+defined elsewhere in the build file, for example:
+     task sourceJar(type: Jar) {
+         classifier = &amp;lsquo;sources&amp;rsquo;
+         from sourceSets.main.allSource
+     }&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Jar file name is incorrect. This is defined via the &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName&#34;&gt;Jar plugin&lt;/a&gt;, and in our case we configure overrides via module build.gradle
+files, e.g.:
+archivesBaseName = &amp;lsquo;mongo-java-driver&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a &lt;code&gt;clean&lt;/code&gt; will remove any built artifacts, including pom.xml and manifest files.&lt;/li&gt;
+&lt;li&gt;published artifacts will need to be removed from &lt;a href=&#34;https://oss.sonatype.org/index.html&#34;&gt;Sonatype Nexus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;draftReleaseNotes&lt;/code&gt; Creates a skeleton set of release notes. Although this could run perfectly well alone,
+without any of the other tasks, it does upload the uberjar so if that hasn&amp;rsquo;t previously been built you&amp;rsquo;ll get a file not found exception.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Creates the skeleton of the notes content&lt;/li&gt;
+&lt;li&gt;Pushes to github, so it should be &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;visible as a draft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Uploads the driver module uber jar (so just a single jar file of all classes) to the release notes. If the release tag has been
+successful, the release notes will also have a tag, a commit, and zips of the source files.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: these release notes are draft only, and can only be seen by those with the right permissions. When the release is live,
+the release notes will need to be published.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Needs your github credentials in:
+                                     ~/.github
+                                     either
+                                      login=[user name]
+                                      password=[password]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                             or, if you&#39;re using two-factor auth,
+                                 ~/.github
+                                 oauth=[github access token]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew draftReleaseNotes -DreleaseVersion=3.0.0&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;DraftReleaseNotesTask&lt;/code&gt;.  This uses the &lt;a href=&#34;http://github-api.kohsuke.org/&#34;&gt;Github API for Java&lt;/a&gt;,
+it&amp;rsquo;s this code that requires the credentials in your .github file.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Missing jar file to upload.  This task does not explictly depend on archives creation, so if &lt;code&gt;shadowJar&lt;/code&gt; or &lt;code&gt;jar&lt;/code&gt; have not been run
+prior to running this task, you might get a file not found exception. The release notes will probably still have been created though.&lt;/li&gt;
+&lt;li&gt;Incorrect jar files attached. The jar files to attach are configured in &lt;code&gt;release.gradle&lt;/code&gt; with the &lt;code&gt;jarFile&lt;/code&gt; property. You can declare
+multiple files here. Use the task name for the task that creates the required artifact, e.g.
+ jarFile project(&amp;rsquo;:driver&amp;rsquo;).shadowJar&lt;/li&gt;
+&lt;li&gt;Missing source zips, release tag and/or commit. Possibly the release tag did not get pushed correctly to &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;https://github.com/mongodb/mongo-java-driver/&lt;/a&gt;.&lt;br /&gt;
+Ensure there&amp;rsquo;s a &lt;code&gt;r3.0.0&lt;/code&gt; tag or similar for the release version you&amp;rsquo;re writing the notes for.&lt;/li&gt;
+&lt;li&gt;Release notes are not public. Actually, this is not an error - in order to make the notes publicly visible,
+there&amp;rsquo;s a manual step to publish them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;releases page&lt;/a&gt; and delete any unwanted draft release notes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;updateToNextVersion&lt;/code&gt; Similar to, but simpler than, prepareRelease - this task gets the code in the right state for the next working
+version.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
+release versions in these files are incremented (e.g. 3.0.0 to 3.0.1) and the &amp;lsquo;-SNAPSHOT&amp;rsquo; added.&lt;/li&gt;
+&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
+as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Updated to next development version: ${newVersion}&amp;ldquo;,
+e.g. &amp;ldquo;Updated to next development version: 3.0.1-SNAPSHOT&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Push the changes to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
+this pushes to your origin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
+~/.gradle/gradle.properties
+github.credentials.username=
+github.credentials.password=&lt;/p&gt;
+
+&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew updateToNextVersion -DreleaseVersion=3.0.0&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_13&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;This task is defined in &lt;code&gt;UpdateToNextVersionTask&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git integration.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_14&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
+&lt;li&gt;In theory you can run this multiple times without error - it will keep incrementing the version number (and suffixing &amp;lsquo;-SNAPSHOT&amp;rsquo; to
+it). However, if you specify the same releaseVersion parameter every time, it should error telling you that the version doesn&amp;rsquo;t match
+the version in the build file (as the build file has already been incremented).  This is fine, just do a manual rollback before trying
+again.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_15&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git: hard reset to the commit you were on before calling this task.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_16&#34;&gt;In Summary&lt;/h2&gt;
+
+&lt;p&gt;There is a magic incantation which is supposed to do the full release. But if any of the steps go wrong,
+you can call the individual tasks alone, and follow the above guide for troubleshooting or rolling back.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info about the current/old Java driver release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/display/DH/Morphia+Release+Process&#34;&gt;Morphia Release Process&lt;/a&gt; Lots of this new release process was, um,
+borrowed from the updated Morphia release process, so there might be useful information in there to troubleshoot this process too.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_17&#34;&gt;Things that are open to improvement:&lt;/h3&gt;
+
+&lt;p&gt;(AKA let&amp;rsquo;s not call this a TODO list):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The release plugin stuff in &lt;code&gt;buildSrc&lt;/code&gt; is almost definitely not idiotmatic Groovy/Gradle. Instead, I&amp;rsquo;ve tried to make it readable.&lt;/li&gt;
+&lt;li&gt;I think I&amp;rsquo;d prefer, on reflection, to move all the stuff in &lt;code&gt;buildSrc&lt;/code&gt; into gradle scripts instead,
+although that goes against the recommendations, because at least then all the gradle logic would be in the same place.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve been encouraged to look at the &lt;a href=&#34;https://github.com/ajoberstar/gradle-git&#34;&gt;gradle-git plugin&lt;/a&gt; instead of JGit, but I haven&amp;rsquo;t had the time.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
