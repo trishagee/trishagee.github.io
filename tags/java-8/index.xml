@@ -6,7 +6,108 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 08 Nov 2012 00:00:00 UTC</updated>
+    <updated>Mon, 16 Feb 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 in Anger</title>
+      <link>http://trishagee.github.io/presentation/java8_in_anger/</link>
+      <pubDate>Mon, 16 Feb 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/java8_in_anger/</guid>
+      <description>
+
+&lt;p&gt;Content and Resources for my new &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger presentation&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Expect this page to evolve over time as this talk evolves over time.&lt;/p&gt;
+
+&lt;p&gt;Since the talk has only just been created, the only resources available are the code and the articles and videos I used
+to create the talk.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_0&#34;&gt;Project code&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The code demoed is available on the &amp;ldquo;steps&amp;rdquo; branch of my &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;sense repository&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_1&#34;&gt;Java 8 Overview&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://winterbe.com/posts/2014/03/16/java-8-tutorial/&#34;&gt;Java 8 Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=KDGWBWOK2S6FVS6F&#34;&gt;Java 8 in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_2&#34;&gt;Lambdas and Streams&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Lambdas and Streams&lt;/a&gt; by Richard Warburton,  highly recommended&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.adam-bien.com/roller/abien/entry/java_8_from_ordinary_for&#34;&gt;Java 8: From ordinary for-loop to an intstream&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Processing Data with Java SE 8 Streams, Part 1&lt;/a&gt;, by Raoul-Gabriel Urma&lt;/li&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=QF2A5KBWSZALJJIZ&#34;&gt;Java 8 in Action&lt;/a&gt; also by Raoul-Gabriel Urma, and Mario Fusco &amp;amp; Alan Mycroft&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href=&#34;https://github.com/RichardWarburton/lambda-behave&#34;&gt;lambda-behave&lt;/a&gt;, a Java 8 testing framework&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_3&#34;&gt;JavaFX&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784&#34;&gt;Introduction to JavaFX&lt;/a&gt; - invaluable. Short enough to download as PDF and read cover-to-cover.&lt;/li&gt;
+&lt;li&gt;Building serious JavaFX Applications - Adam Bien: &lt;a href=&#34;(https://www.youtube.com/watch?v=gKU7ZeCNbqU&#34;&gt;video presentation&lt;/a&gt;, &lt;a href=&#34;https://github.com/AdamBien/lightfish&#34;&gt;code&lt;/a&gt; and &lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/javafxinteg-2062777.html&#34;&gt;JavaFX Integration Strategies article&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javafx/2/threads/jfxpub-threads.htm&#34;&gt;Concurrency in JavaFX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javafx/2/collections/jfxpub-collections.htm#CIHEJJFH&#34;&gt;Using JavaFX Collections&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javafx/2/api/javafx/fxml/doc-files/introduction_to_fxml.html&#34;&gt;Introduction to FXML&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javafx/2/get_started/fxml_tutorial.htm&#34;&gt;Using FXML to Create a User Interface&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javafx/2/fxml_get_started/fxml_tutorial_intermediate.htm&#34;&gt;Using FXML to create a Table View&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javafx/2/binding/jfxpub-binding.htm&#34;&gt;Using JavaFX properties and binding&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/BinaryWebSocket/binaryWebSocket.html#section4&#34;&gt;Creating Binary WebSocket Connections with Java EE 7 and JavaFX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href=&#34;https://github.com/RichardWarburton/honest-profiler&#34;&gt;honest-profiler&lt;/a&gt;, an Open Source project that uses JavaFX&lt;/li&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;, includes a section on JavaFX&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_4&#34;&gt;Websockets&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html&#34;&gt;JSR-356, Java API for WebSocket&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://java.dzone.com/articles/java-websockets-jsr-356-jetty&#34;&gt;Java WebSockets (JSR-356) on Jetty 9.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.idrsolutions.com/2013/12/websockets-an-introduction/&#34;&gt;Introduction to Websockets&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.oracle.com/arungupta/entry/websocket_client_and_server_endpoint&#34;&gt;Annotated Websocket Clients&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mastertheboss.com/javaee/websockets/websockets-using-encoders-and-decoders&#34;&gt;Websockets: Using encoders and decoders&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/webfolder/technetwork/tutorials/obe/java/BinaryWebSocket/binaryWebSocket.html#section4&#34;&gt;Creating Binary WebSocket Connections with Java EE 7 and JavaFX&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Code: &lt;a href=&#34;https://github.com/jetty-project/embedded-jetty-websocket-examples&#34;&gt;embedded-jetty-websocket-examples&lt;/a&gt; examples of how to create Jetty Websockets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_5&#34;&gt;Date and Time&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Java SE 8 Date and Time&lt;/a&gt; by Ben Evans and Richard Warburton&lt;/li&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=KDGWBWOK2S6FVS6F&#34;&gt;Java 8 in Action&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_6&#34;&gt;Optional&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.voxxed.com/blog/2015/02/defence-java-8s-optional-use/&#34;&gt;In Defence of Java 8&amp;rsquo;s Optional: Why and How to Use It&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_7&#34;&gt;Files&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/essential/io/file.html&#34;&gt;Reading, Writing, and Creating Files&lt;/a&gt; - much simplified since Java 7&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_8&#34;&gt;Microservices&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Martin Fowler on Microservices: &lt;a href=&#34;http://youtu.be/wgdBVIX9ifA&#34;&gt;25 minute video overview&lt;/a&gt; and &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;article&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_9&#34;&gt;Special Thanks To&amp;hellip;&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.com.es/&#34;&gt;Martin Thompson&lt;/a&gt;, &lt;a href=&#34;http://insightfullogic.com/blog/&#34;&gt;Richard Warburton&lt;/a&gt;,
+&lt;a href=&#34;http://www.codingthearchitecture.com/authors/rannett/&#34;&gt;Robert Annett&lt;/a&gt; and &lt;a href=&#34;http://hadihariri.com/&#34;&gt;Hadi Hariri&lt;/a&gt; for
+code reviewing and giving great suggestions. Not all suggestions have been implemented yet, so all errors are my own.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8 - Introduction to Lambdas Article</title>
