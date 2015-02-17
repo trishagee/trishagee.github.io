@@ -29,12 +29,13 @@ to create the talk.&lt;/p&gt;
 &lt;li&gt;The code demoed is available on the &amp;ldquo;steps&amp;rdquo; branch of my &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;sense repository&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_1&#34;&gt;Java 8 Overview&lt;/h4&gt;
+&lt;h4 id=&#34;toc_1&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://winterbe.com/posts/2014/03/16/java-8-tutorial/&#34;&gt;Java 8 Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=KDGWBWOK2S6FVS6F&#34;&gt;Java 8 in Action&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/143024626X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=143024626X&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=R75X5UJWBVYK4SV4&#34;&gt;Beginning Java EE 7&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;toc_2&#34;&gt;Lambdas and Streams&lt;/h4&gt;
