@@ -2,18 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Recent Content on Trisha Gee </title>
-    <link>http://trishagee.github.io/index.xml/</link>
+    <link>http://localhost:1313/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 16 Feb 2015 00:00:00 UTC</updated>
+    <updated>Mon, 23 Feb 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>http://localhost:1313/presentation/upcoming_events/</link>
+      <pubDate>Mon, 23 Feb 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://localhost:1313/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.be/&#34;&gt;QCon London&lt;/a&gt; - I&amp;rsquo;m running a
+&lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;half day tutorial&lt;/a&gt; based on
+&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;the AngularJS/Java/MongoDB live demo&lt;/a&gt;. Sign up if you want to
+code along as I build a mobile-friendly web-app, and you can use the discount code SPEAKGEE100 for £100 off the price.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code, London&lt;/a&gt; - I&amp;rsquo;ll be running my Public Speaking for Novices
+Clinic for the ladies who code.  Join me if you&amp;rsquo;re even slightly curious about improving your presentation skills.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon London&lt;/a&gt; - New Live Demo! &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger&lt;/a&gt;,
+featuring streams, lambdas, JavaFX and other Java-shaped things.  What Could Possibly Go Wrong (again)? (You can use the
+code SPEAKGEE100 for £100 off the registration price for QCon.)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;15 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.eventbrite.com/e/women-techmakers-istanbul-15-tickets-15606349010&#34;&gt;Women Techmakers Istanbul&lt;/a&gt; -
+Building a webapp with AngularJS, Java and MongoDB.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.fr/&#34;&gt;Devoxx France, Paris&lt;/a&gt; - Java 8 in Anger.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/&#34;&gt;Greach, Madrid&lt;/a&gt; - New talk! Is Groovy Better than Java for Testing?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; -
+&lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt; again, so this had better go well at QCon!&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;29-30 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.springio.net/&#34;&gt;Spring I/O, Barcelona&lt;/a&gt; - &lt;a href=&#34;http://www.springio.net/sessions/&#34;&gt;Is Groovy Better than Java for Testing?&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;12 May&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago&lt;/a&gt; - an agile-centric version of my new Groovy vs. Java testing
+talk, &lt;a href=&#34;http://gotocon.com/chicago-2015/presentation/Level%20Up%20Your%20Automated%20Tests&#34;&gt;Level Up Your Automated Tests&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve submitted a bunch of other CFPs, and I have some other invitations in-flight, only the confirmed sessions are
+on this page.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8 in Anger</title>
-      <link>http://trishagee.github.io/presentation/java8_in_anger/</link>
+      <link>http://localhost:1313/presentation/java8_in_anger/</link>
       <pubDate>Mon, 16 Feb 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/java8_in_anger/</guid>
+      <guid>http://localhost:1313/presentation/java8_in_anger/</guid>
       <description>
 
 &lt;p&gt;Content and Resources for my new &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger presentation&lt;/a&gt;.&lt;/p&gt;
@@ -69,6 +110,7 @@ to create the talk.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html&#34;&gt;JSR-356, Java API for WebSocket&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://java.dzone.com/articles/java-websockets-jsr-356-jetty&#34;&gt;Java WebSockets (JSR-356) on Jetty 9.1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.programmingforliving.com/2013/08/jsr-356-java-api-for-websocket-client-api.html&#34;&gt;JSR 356 - Java API for Websocket (Java Client)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.idrsolutions.com/2013/12/websockets-an-introduction/&#34;&gt;Introduction to Websockets&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blogs.oracle.com/arungupta/entry/websocket_client_and_server_endpoint&#34;&gt;Annotated Websocket Clients&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.mastertheboss.com/javaee/websockets/websockets-using-encoders-and-decoders&#34;&gt;Websockets: Using encoders and decoders&lt;/a&gt;&lt;/li&gt;
@@ -111,49 +153,11 @@ code reviewing and giving great suggestions. Not all suggestions have been imple
     </item>
     
     <item>
-      <title>Upcoming Events</title>
-      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Wed, 11 Feb 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.be/&#34;&gt;QCon London&lt;/a&gt; - I&amp;rsquo;m running a
-&lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;half day tutorial&lt;/a&gt; based on
-&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;the AngularJS/Java/MongoDB live demo&lt;/a&gt;. Sign up if you want to
-code along as I build a mobile-friendly web-app, and you can use the discount code SPEAKGEE100 for £100 off the price.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code, London&lt;/a&gt; - I&amp;rsquo;ll be running my Public Speaking for Novices
-Clinic for the ladies who code.  Join me if you&amp;rsquo;re even slightly curious about improving your presentation skills.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon London&lt;/a&gt; - New Live Demo! &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger&lt;/a&gt;,
-featuring streams, lambdas, JavaFX and other Java-shaped things.  What Could Possibly Go Wrong (again)? (You can use the
-code SPEAKGEE100 for £100 off the registration price for QCon.)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.fr/&#34;&gt;Devoxx France, Paris&lt;/a&gt; - Java 8 in Anger.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/&#34;&gt;Greach, Madrid&lt;/a&gt; - New talk! Is Groovy Better than Java for Testing?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; -
-&lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt; again, so this had better go well at QCon!&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;29-30 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.springio.net/&#34;&gt;Spring I/O, Barcelona&lt;/a&gt; - &lt;a href=&#34;http://www.springio.net/sessions/&#34;&gt;Is Groovy Better than Java for Testing?&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;12 May&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago&lt;/a&gt; - an agile-centric version of my new Groovy vs. Java testing
-talk, &lt;a href=&#34;http://gotocon.com/chicago-2015/presentation/Level%20Up%20Your%20Automated%20Tests&#34;&gt;Level Up Your Automated Tests&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve submitted a bunch of other CFPs, and I have some other invitations in-flight, only the confirmed sessions are
-on this page.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>The State of Java</title>
-      <link>http://trishagee.github.io/post/svq_state_of_java_update/</link>
+      <link>http://localhost:1313/post/svq_state_of_java_update/</link>
       <pubDate>Thu, 29 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/svq_state_of_java_update/</guid>
+      <guid>http://localhost:1313/post/svq_state_of_java_update/</guid>
       <description>
 
 &lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
@@ -261,11 +265,254 @@ do so, drop me a line:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Switching to the Surface Pro</title>
+      <link>http://localhost:1313/post/surface_pro_3/</link>
+      <pubDate>Fri, 23 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://localhost:1313/post/surface_pro_3/</guid>
+      <description>
+
+&lt;p&gt;Sadly, leaving MongoDB also meant leaving my MacBook air (I should have thought this job more through more carefully).
+so I had a tough decision to make - get a new MacBook, or try something else (or reclaim my personal MacBook off my
+boyfriend,
+but that option conveniently slipped my mind, as who wants to upgrade to a 4 year old piece of hardware?)&lt;/p&gt;
+
+&lt;p&gt;I was very very happy with the MacBook air - in fact, I bought my personal one after ThoughtWorks foisted one onto me for my short tenure
+there, and I became addicted to the way it felt for typing, to the easy of using the touchpad (and never feeling like I needed
+an external mouse), and, most of all, I loved that it was only marginally heavier than a large bottle of water. I could never go
+back to another portable computer.&lt;/p&gt;
+
+&lt;p&gt;Until someone at the London Java Community unconference showed me their Microsoft Surface. At first, I sneered - its windows, amd although
+I actually rather liked the Nokia Lumia I was given for being anRemarkable Woman, I wasn&amp;rsquo;t really sold  on New World
+Windows. But then, I saw how thin and light it was, and how nice the screen was.  And the keyboard was detachable,
+and its a tablet. and a laptop. And it has a proper Windows Desktop mode, for installing Real applications, its not just a Very Expensive
+iPad competitor.  And then? The guy who owned the surface whipped out his stylus, and started drawing pn tje screen.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;now&lt;/em&gt; im interested.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;This device has the capability to solve a problem ive been having, and have been trying to address a number of ways: I carry too much stuff around when
+I travel. and I travel a lot.
+  - I bring my laptop, so I csn code while im away, and for presenting from - I can present from the iPad
+if it&amp;rsquo;s just slideware, but ive been giving this live demo which needs a real IDE.
+ - I bring my iPad - originally I thought I would use this if I was at a conference and not presenting - I can take notes, write blog pots, stay up
+ to date. Turns out I usually need rhe laptop too, if only because I was supposed to be writing code for the day job so
+ I needed rhe IDE even if I was going to other sessions or waiting my turn to present. I tried not bringing the iPad,
+ but the battery life on tje laptop was around 3-4 hours, which barely cuts it on a european flight, if you include
+ airportnwaiting time, and certainly doesn&amp;rsquo;t lastna trqnsatlantic journey. so I use the iPad for watching stuff on planes
+ and anything that doesn&amp;rsquo;t need an IDE, as the batteryblife is (or was, before tje ladt upgrade) much better. and saves precious pjone battery
+  - if I have space, and tjink I might have time for a blog or notes, I&amp;rsquo;ll bring my bamboo tab&amp;rsquo;et.  I know I haven&amp;rsquo;t
+  illustrsted my blognposts for quire a while, and very fww of my presentations have featured my pictures either, but
+  I still optimisitically bring my bamboo tablet with me on many of my journies.  It&amp;rsquo;s not very heavy, so it&amp;rsquo;s not a
+  big deal to bring it, but it;s just another piece of baggage (and another thing to plu in to the limited USB slots on
+  the laptop).&lt;/p&gt;
+
+&lt;p&gt;If I could have one device that:
+ - Was slim and light
+ - Lets me run IntelliJ IDEA
+ - Can be presented from
+ - Lets me easily sketch, preferably with Gimp or a similar tool
+ - Has a decent battery life (needs to last for most of a transatlantic flight)&lt;/p&gt;
+
+&lt;p&gt;With the optional benefits of
+ - Being small enough that when the passenger in front of me smushes his seat back into my space it doesn&amp;rsquo;t snap the
+ laptop screen
+ - Being light enough/tablety enough that I can use it on take off and landing (do you know how much valuable working
+ time is lost on each flight??)&lt;/p&gt;
+
+&lt;p&gt;Then my life would be simpler, and Simpler Is Better.&lt;/p&gt;
+
+&lt;p&gt;Before I discovered the Surface, I very nearly downgraded to the smaller MacBook Air to meet those last two criteria, but
+I was really worried about losing the screen real estate. I hate coding through a letter box.&lt;/p&gt;
+
+&lt;p&gt;So, the Surface intrigued me.  Apart from being Windows, it might meet all my criteria.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Taking the Plunge&lt;/h3&gt;
+
+&lt;p&gt;I played with it a bit in the pub that nivht, and I tried it in fnac to see if I hared the feel of the kayboard.  At the end of
+my time at MongoDB, I switched to working on my (Windows) gaming PC, to see if lsoing all the familiar keyboard shortcuts
+was a problem, to remember how to use Home and End keys instead of Fn and arrows (for some reason, text navigation on
+the Mac was one of my deciding factors for switching to it in the first place), and to see if I remembered how to run things on Windows.&lt;/p&gt;
+
+&lt;p&gt;At the airport (woah, you&amp;rsquo;d never think to find me at one of &lt;em&gt;those&lt;/em&gt;), Dixons was doing a deal on the Surface, and also
+offering a 60 day return-it-if-you-don&amp;rsquo;t-like-it guarantee.  I took the chance, and I bought the i5, 8Gb, 256 Gb option
+(the memory was a bonus, but I always ran out of space on the iPad and the 128Gb Air if I put even half a dozen TV episodes
+on there for watching on the plane).&lt;/p&gt;
+
+&lt;p&gt;I decIDEd to use it as my primary coding machine for my new job, and to evaluate its performance. I&amp;rsquo;d send it back to
+Dixons if I decIDEd I wanted to stick with a Mac (by the way, I&amp;rsquo;d had the Surface just a few hours before my iPad went
+missing, it seems &lt;em&gt;someone&lt;/em&gt; in the house who is not me decIDEd that the iPad was decIDEdly his now, regardless of the outcome
+of the experiment.  I dunno, some people&amp;hellip;)&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Experience&lt;/h3&gt;
+
+&lt;p&gt;(Insert picture of a chart of your feelings towards the Surface)
+The first week using the thing was pretty rough, and I was pretty certain during that time that I would be wrapping it up
+and sending it back.  But because I thought I would be doing this (and at the point it looked like a refurbished MacBook Air
+was definitely in my future, for free), I had nothing to lose by really trying to use the thing in anger.&lt;/p&gt;
+
+&lt;p&gt;Having a new job was a good excuse for all the setup too, I think making the switch while I was mid-flow in deliverables
+would have been hard, but since I had new software to install and new credentials to set up anyway, the setup cost was
+acceptable.&lt;/p&gt;
+
+&lt;p&gt;Week 1:
+Bear in mind that during this time I&amp;rsquo;m using the Surface as a desktop replacement - I&amp;rsquo;ve got it in my home office and
+I want to use it with a second monitor. I&amp;rsquo;m used to having the bluetooth keyboard and touchpad for the mac, and having the
+laptop on a riser (insert photo of all the technology from that first day).&lt;/p&gt;
+
+&lt;p&gt;Day 1:
+ - I&amp;rsquo;m surprised that the MacBook keyboard and touchpad actually do work with the surface.  Great! I can use my old setup!  Only&amp;hellip;
+ - &amp;hellip;yes the machine sees the trackpad, but none of the gestures work, not even scrolling.  However, I do find some drivers from
+ somewhere that give me scrolling support, except&amp;hellip;
+ - &amp;hellip;the trackpad scrolls the wrong way. Not just the wrong way for what I&amp;rsquo;m used to on the mac (and many of us remember that
+ day we had to switch directions when Apple inflicted that update on us, only now we wonder how we ever managed the old way), but
+ the wrong way for the touchpad on the surface.  So I scroll in one direction on the mac trackpad, and in the opposite direction on
+ the surface trackpad.  This is going to mess with my mind
+ - The mac touchpad now supports a light tap as a click, instead of having to press to click - if you haven&amp;rsquo;t used the mac touchpad, you
+ might not know what I mean, as the tap-click is quite common on other laptops. But it was FAR too sensitive, and I kept clicking on
+ everything.  Drove me NUTS
+ - Apple keyboard works.  There&amp;rsquo;s a pleasant surprise!
+ - The resolution on my external monitor looks a bit crappy actually - the screen manages to look jagged and blurry at
+ the same time.  The experience on the second monitor (insert specs here) was definitely better on the MacBook
+ - On the first day, I wrote a note that says &amp;ldquo;function keys don&amp;rsquo;t work, or don&amp;rsquo;t do what they say on the tin&amp;rdquo;. Reading it
+  now I&amp;rsquo;m not sure what that means, as I haven&amp;rsquo;t really stumbled over it since then.  But I just tried pressing the ones that
+  look like screen brightness, and they opened new tabs in Chrome. Which wasn&amp;rsquo;t even open.  That was unexpected. I also miss having
+  volume on the function keys, they were pretty much the only ones I used on the mac. I think I set the defaults of the Surface
+  to use the fucntion keys as F-keys (not search or brightness or whatever) so my shortcuts in IntelliJ worked correctly,
+  but I can&amp;rsquo;t swear to that. I seem to remember doing that on the MacBook too.
+ - Obviously adjusting to the Ctrl/Cmd differences, particularly in my IntelliJ shortcuts, was (and still is) tripping me up. But I&amp;rsquo;m
+ OK with this, as even 2 years after switching from Linux to mac for full-time development, I still kept getting the mac shortcuts wrong
+ anyway
+ - I have a note that says &amp;ldquo;function key doesn&amp;rsquo;t do home/end&amp;rdquo; - this is definitely not true right now, so either I
+ changed a setting, or this applies to using the mac keyboard.&lt;/p&gt;
+
+&lt;p&gt;Day 2:
+ - I think I disabled a click setting for the laptop touchpad, there&amp;rsquo;s no need for a tap-to-click when you also have
+ a click on the touchpad.
+ - This right-click thing on the touchpad drives me MENTAL. For whatever reason, I tend to use the lower right part of the
+ touchpad to click, and since the whole right sIDE of the touchpad seems to be mapped to right-click, it means I&amp;rsquo;m almsot
+ always right clicking on things instead of clicking. I looked for a way to turn this off, but it appears there is none.
+ On the mac, I never really used this two-fingers-is-a-right-click feature, because I have a freakishly long middle finger and
+ it was uncomfortable, so I tended to hold down alt to get a right-click. I have wished &lt;strong&gt;every day&lt;/strong&gt; I&amp;rsquo;ve used the surface for
+ an Alt=right-click feature.
+ - Skype didn&amp;rsquo;t work properly. Honestly I can&amp;rsquo;t remember the problems, but I know it was for calls not chat. It&amp;rsquo;s ridiculous
+ that the windows version is worse than the OSX version, given who owns it, but hey. I have used Skype several times, sometimes
+ to call via Skype, sometimes to call a UK phone line. The UK phone call was horrible, but then it always was on the mac too,
+ the other end can never hear me, and on both the surface and the phone it doesn&amp;rsquo;t seem to correctly transmit keypad presses,
+ I.e. when the voicejail system on the other end says &amp;ldquo;press 3 to attempt to speak to a real human&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;Day 3:
+ - The pen is really nice.  And I&amp;rsquo;ve played with the handwriting recognition in Evernote, which is surprisingly good.  Actually, I might start
+ using that rather than the screen keyboard - I started writing this post with the screen keyboard, and this is what I got:
+&amp;gt;  I bring my iPad - originally I thought inwould usenthis if I was at a conference and not presenting - I can take norew, wrire blog pots, stay up
+   to date. Turnsnout I usually need rhe laptop too, if only becausen I was supposednto be writing code for tje day job so
+   I needed rhe IDE even if I was going to other sessions or waiting my turn tonpresent.&lt;/p&gt;
+
+&lt;p&gt;I think the handwriting recognition is better than my finger positioning.
+ - The screen keyboard is actually pretty nice, and the noises it makes are really cute. Took me a while to work out that
+ you don&amp;rsquo;t get any autocorrect or automatic sentence capitlisation in Desktop mode, but you do if you&amp;rsquo;re running as a tablet.
+ What this basically means is I&amp;rsquo;ve had to install two versions of evernote - the Windows desltop version, because it&amp;rsquo;s good and
+ does everything I want, and &amp;ldquo;Evernote touch&amp;rdquo;, the tablet/phone version, which I had originally installed by accIDEnt and immediately
+ uninstalled and replaced with the desktop app, as the tablet app seems to be missing pretty much everything, plus it looks
+ completely difference, and I can&amp;rsquo;t find anything.  I re-installed it though, as if I&amp;rsquo;m going to write notes on-the-move
+with the screen keyboard, I need to use the touch version so my horrible typing errors get fixed.
+ - I expect to be able to scroll touching the screen in Evernote for desktop, but you can&amp;rsquo;t, it&amp;rsquo;s bascially a mouse click. You
+ can scroll in Evernote Touch though, presumably that&amp;rsquo;s been deisgned for it.
+ - I struggle with the onscreen keyboard on this day, but I figure stuff out, including that there&amp;rsquo;s a different button that
+ you have to press if you want the keyboard to not overlay the things you want to look at or do stuff with
+  - Scrolling doesn&amp;rsquo;t work properly in Tweetdeck&lt;/p&gt;
+
+&lt;p&gt;Day 4:
+ - Honestly, did we really used to go to random websites to download software to install? It seems really fraught with danger.
+ I didn&amp;rsquo;t realise how much I&amp;rsquo;d got used to the App Store.&lt;/p&gt;
+
+&lt;p&gt;This has sounded more like a Technology Anonymous rant than a serious review of the surface. Ah well, if anyone can help me with any of
+ my problems, I consIDEr it a win!&lt;/p&gt;
+
+&lt;p&gt;Things that drive me crazy:
+ - The laptop touchpad:
+   &amp;ndash; The scrolling doesn&amp;rsquo;t always work, and isn&amp;rsquo;t always smooth. I Often end up using the arrow keys
+   &amp;ndash; The right click on the right sIDE is &lt;em&gt;insanely&lt;/em&gt; annoying
+   &amp;ndash; To be fair, I don&amp;rsquo;t think the surface has a particularly bad touchpad, I remember that pretty much all laptops before
+   I used the MacBook had horrible touchpads.  It&amp;rsquo;s probably pretty good compared to other laptops, it&amp;rsquo;s just really nowhere
+   near as good as the apple touchpads - both the one built into the laptop and the magic external one are excellent.
+ - The mac touchpad.  The backwards scrolling and &lt;em&gt;extreme&lt;/em&gt; click sensitivity was too much, and I stopped using it
+ - Scrolling doesn&amp;rsquo;t work properly in Tweetdeck - if I hover over a column and scroll with the touchpad, it scrolls the column
+ to the left.  Very, very annoying.  I end up using the arrow keys a LOT for scrolling&lt;/p&gt;
+
+&lt;p&gt;Compromises/sacrifices I can take (AKA stuff Microsoft could address to make the Surface and/or Win):
+ - The resolution on the second monitor.  Hated it at first, have got used to it.
+ - Keyboard is not backlit.  This is irritating, but not currently a showstopped. But I have yet to try and use it on
+ an overnight flight yet - I always loved the backlit keyboard on the mac at those times
+ - Remapping the keys.  As per Scott Hanselman&amp;rsquo;s super useful blogpost, I&amp;rsquo;ve remapped the right Alt key to Ins just so
+ my IntelliJ shortcuts don&amp;rsquo;t all have to be remapped
+ - Having a touchscreen monitor, whether it&amp;rsquo;s because your screen is also a tablet, or because you have an actual touchscreen,
+ means your screen &lt;em&gt;always&lt;/em&gt; has fingerprints all over it.  Not cool for my OCD. But irritates me a lot less than expected.
+ - I keep pressing Windows Key + E instead of Ctrl+E (on the mac it was Cmd+e, and the cmd key is obviously in the same place as the windows
+ key).  Thi is very irritating, but at some point my muscle memory will learn.
+ - I have the Desktop and Tablet versions of some apps: Evernote (so I can use the proper version most of the time,
+ but get the benefits of the cleverer screen keyboard in Evernote Touch) and Kindle (so I can use the Desktop
+ version for opening books from Dropbox, and for searching, and all the other useful features from the desktop Kindle app
+ that I used all the time on the mac, and the Tablet version so the font is actually visible when reading as a table, so
+ the books are big enough icons to tap on with your finger).
+ -&lt;/p&gt;
+
+&lt;p&gt;Things I miss about the mac:
+ - Volume on function keys
+ - Battery life indicator - time left in hours.  27% remaining is not too useful, I need to know how many hours that is.
+ - The input box at the top of every help menu - I&amp;rsquo;m super lazy and used this all the time to type in the function I wanted to
+ use, and OSX would highlight where in the menus this feature lived. IntelliJ has its Ctrl+Shift+A shortcut, which does
+ something similar (only better), but for all other apps I end up hunting through menus for the thing I need.&lt;/p&gt;
+
+&lt;p&gt;Things that worked:
+ - The MacBook bluetooth keyboard. Sure, the keys are in a different place (espectially as my bluetooth keyboard is
+ Spanish and I purposefully bought a UK keyboard for the Surface), but it does work. I just don&amp;rsquo;t use it as without
+ a separate mouse or touchpad, I might as well use the surface keyboard&lt;/p&gt;
+
+&lt;p&gt;Things I like
+ - Once I got used to the very light touch that is the Surface keyboard, I think I prefer it.  It&amp;rsquo;s a nice feeling -
+ kinda clicky, kinda squishy like laptop keyboards are, but such a short distance to push the keys down it actually feels
+ very low effort, like your brain is able to talk to the computer with minimal resistance.
+ - Windows Key + S opens up the search, which works like the apple spotlight (Cmd+Space). I thought I would really miss
+ this feature, so I&amp;rsquo;m glad there&amp;rsquo;s an equivalent. It hasn&amp;rsquo;t taken long to retrain my muscle memory.
+ - Honestly, getting a full Delete key back on the keyboard is surprisingly pleasing. Fn+Backspace has &lt;em&gt;always&lt;/em&gt; annoyed
+ me, especially in shortcuts in an IDE.&lt;/p&gt;
+
+&lt;p&gt;Things that still need more testing
+ - Battery life: Today I
+   &amp;ndash; used the surface as a tablet and watched 40 minutes of vIDEo in the gym
+   &amp;ndash; spent 20 minutes or so sketching (with the pen) an architecture diagram for my boyfriend while we waited in the aiport
+   (yep, that&amp;rsquo;s the sort of relationship we have.  Poor boy.)
+   &amp;ndash; have been using it for 90 minutes on the plane
+   &amp;ndash; &amp;hellip;and I&amp;rsquo;m down to 17%.  I&amp;rsquo;ll be honest, I&amp;rsquo;m pretty disapointed with this.  I&amp;rsquo;m not sure what the specs are supposed to
+   be, and I&amp;rsquo;m fairly certain I could do more to save battery (for example it wasn&amp;rsquo;t in flight mode until I got it onto the plane,
+   and the screen was at normal brightness until about 30 minutes ago when I realised I was under 30% battery).
+   &amp;ndash; I&amp;rsquo;d like to test how long it lasts on a flight from full charge, with some reasonable power-saving settings. But I&amp;rsquo;m worried
+   it won&amp;rsquo;t take me all the way across the Atlantic, and with only a single toy, instead of the laptop/iPad combo, I have
+   no backups for Things To Do when the power is out.
+(2 hours into the flight and 7%)&lt;/p&gt;
+
+&lt;p&gt;Conclusions:
+ - I&amp;rsquo;m not sure it&amp;rsquo;s a solid desktop replacement: the poor resolution on the second monitor, and the fact the second monitor
+ totally throws off the pen use on the tablet make this more of a nice laptop than a great desktop replacement
+ - Battery life is disappointing, but needs investigation
+ - For travelling, I &lt;em&gt;think&lt;/em&gt; this is going to be a great choice
+ - And for encouraging creativity and different modes of working, it&amp;rsquo;s fantastic. I&amp;rsquo;ve sketched more in the last month than
+ the last year, and switching from keyboard to touch screen to pen is really easy and allows you to work in different ways
+  to traditional laptops or desktops.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to keep the Surface (I think). The laptop/tablet combo, with the fantastic stylus support, is worth the sacrifices.
+Although I prefer OSX overall as an OS, Apple has nothing to compete with this hardware right now.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</title>
-      <link>http://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</link>
+      <link>http://localhost:1313/resources/angular_java_groovy_mongodb_workshop/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
+      <guid>http://localhost:1313/resources/angular_java_groovy_mongodb_workshop/</guid>
       <description>
 
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
@@ -388,11 +635,138 @@ dependencies should have been downloaded.&lt;/p&gt;
     </item>
     
     <item>
+      <title>The Struggle to Have It All</title>
+      <link>http://localhost:1313/post/having_it_all/</link>
+      <pubDate>Thu, 15 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://localhost:1313/post/having_it_all/</guid>
+      <description>&lt;p&gt;Last night I watched the final episode of Season 5 of Castle (yeah, I&amp;rsquo;m a bit behind).  I love Castle - I heart Nathan
+Filion, I have a secret desire to be a novelist, and I love crime programs and books, so it basically it&amp;rsquo;s the perfect TV
+program for me.&lt;/p&gt;
+
+&lt;p&gt;(If you&amp;rsquo;re further behind on the series, then maybe don&amp;rsquo;t read on in case I spoil something, but I&amp;rsquo;ll try not to be too specific)&lt;/p&gt;
+
+&lt;p&gt;In this episode Kate Beckett basically is put into a position of deciding between her man and her career - she is offered
+a job that will give her a serious career boost, greater visibility, and theoretically provide her with the scope to use
+her skills on cases that are more interesting and have greater impact than the ones she currently works on.  But the job
+is not quite perfect, as it requires a relocation.  This would take her away from her bloke, and presumably the bloke is
+not able to move for her job.&lt;/p&gt;
+
+&lt;p&gt;On the other hand, the relationship with the guy has been going for nearly a year, is going well, and it&amp;rsquo;s the most committed
+Kate has been to a guy (according to hints dropped by her father in the episode).  She&amp;rsquo;s been happy in this relationship.&lt;/p&gt;
+
+&lt;p&gt;The show basically puts her into a position of choosing between her career and her man, and she has to ask herself which
+one she wants more.&lt;/p&gt;
+
+&lt;p&gt;I think many of us, and not just the ladies, have been put into a position of deciding between our job and, well, pretty
+much anything in the rest of our lives. But often our job and our family - be that our actual family (our spouse, kids,
+parents etc) or our boyfriends/girlfriends and friends.&lt;/p&gt;
+
+&lt;p&gt;I can sympathise with her position - I was effectively single for quite a few years in my late twenties / early thirties, which made it
+very easy to focus on career - not because I &lt;em&gt;had&lt;/em&gt; to, or had nothing else, but because I wanted to. I enjoyed it and I
+got a lot out of it.  The first time I got into a more serious relationship, it really did feel like a choice between
+my relationship and my career.  But the real question I knew I needed to answer was: what makes me happy?&lt;/p&gt;
+
+&lt;p&gt;My job certainly gave me a lot of satisfaction, the stuff around the edges of the job (blogging, starting this evangelism
+thing, the LJC, being involved in the JCP) even more so - particularly as they opened up opportunities for travel and
+meeting new, interesting people that being sat at a desk from 9-6 does not always give you.&lt;/p&gt;
+
+&lt;p&gt;But having a partner, someone to share the travels with, someone to tell the stories of what happened at work to, and
+someone to share the rest of my time with, was something I wanted, something that had been missing.  And you can&amp;rsquo;t just
+squeeze that into the few remaining hours of your week, you have to make time for it, invest in it.&lt;/p&gt;
+
+&lt;p&gt;I consciously had to go through all my activities and ask myself for each one: does this directly add to my happiness? The
+ones which required more time and gave less immediate benefit (or a less measurable future benefit) had to go.  Some of
+the others that I enjoyed, like attending user groups, were cut down - you can still get a large chunk of the benefits
+with a smaller investment of time.&lt;/p&gt;
+
+&lt;p&gt;Did I choose a boyfriend over my career? No. My career, surprisingly, still continued - in the direction I wanted, at a
+pace which still satisfied me (and was a much higher pace than I had imagined was required in my mid-thirties). What I
+chose was to value my happiness above anything else.  Not &amp;ldquo;my boyfriend makes me happy so I will ditch everything for him&amp;rdquo;,
+no, I reduced activities that were not obviously adding to my happiness and valued activities with the boyfriend that did
+(note - I have also ditched boyfriends who did not add to my happiness, although sometimes not fast enough).&lt;/p&gt;
+
+&lt;p&gt;Back to Kate Beckett - what is she supposed to do?   The writers have obviously created a situation where she faces a
+distinct either/or choice, she can&amp;rsquo;t reduce in one area to invest in another, she has a binary choice.  And of course,
+this job offer is presented as a once-in-a-lifetime opportunity.  On the other hand, her man is offering her the
+happy-ever-after we&amp;rsquo;re all supposed to desire.&lt;/p&gt;
+
+&lt;p&gt;Firstly, let&amp;rsquo;s clarify two things:
+1) Once in a lifetime opportunities come up much more than you&amp;rsquo;d think. Life is cyclical, you end up in similar situations
+to your past, where you thought you&amp;rsquo;d ended that particular phase of your life.  And if you&amp;rsquo;re right for a particular job,
+role, company, team but the time isn&amp;rsquo;t right, you&amp;rsquo;ll still be right for a job, role, company or team just like that one in
+the future when the time is right.  Don&amp;rsquo;t panic, you don&amp;rsquo;t have to take it NOW NOW NOW just because it will NEVER come up
+again. That particular thing might not come up again, but something that pushes those buttons in you will, because you&amp;rsquo;re that
+sort of person looking for that sort of opportunity, and people see that and value that.
+2) Happily ever after doesn&amp;rsquo;t exist, but that&amp;rsquo;s OK too. You can&amp;rsquo;t make the perfect &amp;ldquo;now&amp;rdquo; last forever, we all change, we
+all grow, and that&amp;rsquo;s a Good Thing.  The best we can do is do the things that make use more-or-less happy now, preferably
+the ones that don&amp;rsquo;t prevent us finding happiness in future (i.e. immediate gratification isn&amp;rsquo;t what I&amp;rsquo;m talking about,
+I&amp;rsquo;m talking about trying to get onto a happiness curve that will, if not always increase, will at least not become a downwards spiral).&lt;/p&gt;
+
+&lt;p&gt;TV and movies want us to believe that life is binary like this, that we have to make choices.  And yet us women have also
+been told we can Have It All - a fantastic, well paid, satisfying career, a loving husband and wonderful family, a perfect
+clean and tidy house, and a sportscar. OK, I added the sportscar, but my forward-thinking girls&amp;rsquo; school told me
+I could be anything I wanted to be, and I want to be the owner of a sportscar.&lt;/p&gt;
+
+&lt;p&gt;So, life&amp;rsquo;s not necessarily rammed with these binary choices that scriptwriters force on our poor heroines, but it&amp;rsquo;s not
+possible to have it all either.  I&amp;rsquo;m so sorry. I think this is a big disapppointment to us generation X-ers, and unacceptable
+to generation Y (although I read the difference between the generations is that X expects to work hard to earn it all,
+and Y expects to just have it all, but I expect that was written by a generation X person).&lt;/p&gt;
+
+&lt;p&gt;Let me tell you a story about having it all.  Once upon a time, when I was young, I moved in with my boyfriend. I enjoyed
+playing house, having my first real place (sharing a house at university doesn&amp;rsquo;t really count). During the first year,
+I was in my final year at university, and although I had lectures, coursework and a final year project, I was at home a
+lot of the time and had time to do the housework type stuff.  It was fun, it was my place and I liked looking after it.
+One thing I did NOT do, having spent two years at university without access to an iron or ironing board, was ironing. I
+never really agreed with the boring chore anyway, so I invested in clothes that didn&amp;rsquo;t need it.  My boyfriend, however,
+wore shirts to work every day.  Shirts that, in my opinion, might was well not have been ironed - my boyfriend knew how to
+iron and did the chore weekly, but not to my rather-too-high standards. I remember thinking &amp;ldquo;what will work colleagues
+think of me?&amp;ldquo;. I expected that they would assume that his girlfriend either couldn&amp;rsquo;t iron or didn&amp;rsquo;t take care of him. This
+thought mortified me for a long time. I thought I could start ironing his shirts just to ease my conscience.  Or teach him
+to iron to my standards. Or I could, maybe, just let go of this issue - it was the 21st century (only just) and people
+surely couldn&amp;rsquo;t expect men&amp;rsquo;s girlfriends to be responsbile for how the man looked. We got a lady to come and do our
+ironing, that fixed the problem.&lt;/p&gt;
+
+&lt;p&gt;After a year or so, I ended up working at Ford motor company.  It was a good job,
+paid well (especially for graduates like me), was relatively local, and was 7.5 hours a day. Because of the unions, we tended
+to actually keep to those hours.  This meant that although now I wasn&amp;rsquo;t at home as much as before, I still had more time
+there than my boyfriend, who worked longer hours and commuted into London. I still had time to keep the flat as clean and
+tidy as I wanted (the boyfriend did help, by the way, before you start thinking he was some sort of lazy monster, it&amp;rsquo;s just
+that I like things really tidy so I would do the extra that made me happy), and to go to the gym after work, and I could still
+pick him up from the station when his train got in. I had it all - a boyfriend, a decent (but boring) job, time at home for my
+own things. The boring job even allowed me time to stay in touch with my best friend who was in Korea at the time (God Bless
+instant messenger) and do all those boring housey things you have to do, like chase the phone company, organise deliveries,
+etc.&lt;/p&gt;
+
+&lt;p&gt;But the job was boring, and I was not happy - I wasn&amp;rsquo;t stretched or challenged, I put all my energies into things like organising my parents&amp;rsquo;
+silver wedding anniversary, buying our first house, arranging (what felt like) all of our get-togethers with friends. I had time
+for friends at home but, with one notable exception, I didn&amp;rsquo;t really have friends like me at work. So I got a new job.&lt;/p&gt;
+
+&lt;p&gt;I LOVED this job - they made me read things, learn about Effective Java, about XP &amp;amp; Agile. It was in London, so I had
+plenty of time on the commute to read all this stuff.  We went out after work for (company paid-for) drinks every Friday
+night. I was hanging out with people a few years older than me, instead of graduates like me and &amp;ldquo;old men&amp;rdquo; - I had found
+a whole generation of people I didn&amp;rsquo;t know were missing from Ford.  I kept going to the gym, more or less, I started running
+at lunchtimes, and I now worked 9-6 and went out for drinks after work at least once a week. It was one of the best times of my life.&lt;/p&gt;
+
+&lt;p&gt;We bought a second property, a flat in London.  Once again, I was in charge of this, chasing the solictor and estate agents
+and mortgage people, making sure everything was in place.  This was much more difficult this time - I no longer had space
+in my work day to just drop everything and hang around on the phone. I no longer remembered to do a lot of these things,
+my brain was taken up with the interesting challenges. I worked on prototypes at home at the weekend, I travelled a bit to
+speak to customers.  I had fun.&lt;/p&gt;
+
+&lt;p&gt;But now we lived our lives split between two homes, and the things we needed always seemed to be at the other home. We
+cleaners for our house, as I had no time or inclination to keep it as clean and tidy as it had once been. And when my boyfriend&amp;rsquo;s
+grandma came to visit our house, she pointed out the extreme lack of Trish toys and activities there. I slept there, but
+ I didn&amp;rsquo;t &lt;em&gt;live&lt;/em&gt; there.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>New IntelliJ Tricks I Learnt Part 2</title>
-      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</link>
+      <link>http://localhost:1313/post/stuff_i_learnt_about_intellij_2/</link>
       <pubDate>Fri, 09 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</guid>
+      <guid>http://localhost:1313/post/stuff_i_learnt_about_intellij_2/</guid>
       <description>
 
 &lt;p&gt;Apparently, I&amp;rsquo;m all about Continuous Learning - after I wrote the
@@ -549,10 +923,10 @@ come, so stay tuned!&lt;/p&gt;
     
     <item>
       <title>New IntelliJ Tricks I Learnt Today</title>
-      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</link>
+      <link>http://localhost:1313/post/stuff_i_learnt_about_intellij/</link>
       <pubDate>Wed, 07 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
+      <guid>http://localhost:1313/post/stuff_i_learnt_about_intellij/</guid>
       <description>
 
 &lt;p&gt;Day three of my &lt;a href=&#34;/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
@@ -648,10 +1022,10 @@ two people will find this useful.&lt;/p&gt;
     
     <item>
       <title>Developers want to be heard</title>
-      <link>http://trishagee.github.io/post/developers_want_to_be_heard/</link>
+      <link>http://localhost:1313/post/developers_want_to_be_heard/</link>
       <pubDate>Thu, 11 Dec 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/developers_want_to_be_heard/</guid>
+      <guid>http://localhost:1313/post/developers_want_to_be_heard/</guid>
       <description>&lt;p&gt;I wrote a &lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;piece for the Java Advent Blog&lt;/a&gt;,
 about how developers aren&amp;rsquo;t just communing with the computer, they also need to feel listened to by real human beings.&lt;/p&gt;
 
@@ -661,10 +1035,10 @@ about how developers aren&amp;rsquo;t just communing with the computer, they als
     
     <item>
       <title>New Year, New Adventures</title>
-      <link>http://trishagee.github.io/post/new_year_new_adventures/</link>
+      <link>http://localhost:1313/post/new_year_new_adventures/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/new_year_new_adventures/</guid>
+      <guid>http://localhost:1313/post/new_year_new_adventures/</guid>
       <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
 called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
 this role were: to learn what it was
@@ -698,10 +1072,10 @@ save me from the curse of the live demo.  Things can only get better from here, 
     
     <item>
       <title>Improving Speaker Diversity</title>
-      <link>http://trishagee.github.io/post/more_female_speakers/</link>
+      <link>http://localhost:1313/post/more_female_speakers/</link>
       <pubDate>Tue, 09 Dec 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/more_female_speakers/</guid>
+      <guid>http://localhost:1313/post/more_female_speakers/</guid>
       <description>
 
 &lt;p&gt;Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically,
@@ -870,11 +1244,118 @@ session, and maybe one day things will be expanded into their own topics.&lt;/p&
     </item>
     
     <item>
-      <title>It&#39;s not waste, it&#39;s learning</title>
-      <link>http://trishagee.github.io/post/its_not_waste_its_learning/</link>
+      <title>Developers want to be heard</title>
+      <link>http://localhost:1313/other-sites/developers_want_to_be_heard/</link>
       <pubDate>Sun, 23 Nov 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/its_not_waste_its_learning/</guid>
+      <guid>http://localhost:1313/other-sites/developers_want_to_be_heard/</guid>
+      <description>&lt;p&gt;How often have you been in this situation?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You&amp;rsquo;re in a meeting with the team, and you&amp;rsquo;re all discussing the implementation of a new feature. The group seems to be converging on a
+design, but there&amp;rsquo;s something about it that feels off, some sort of &amp;ldquo;smell&amp;rdquo;.  You point this out to the team,
+perhaps outlining the specific areas that make you uncomfortable. Maybe you even have an alternative solution. The team lets you have
+your say, but assures you this is The Way.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Or what about this?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A tech lead asks you to fix a bug, and as you work on your implementation, you bounce ideas around periodically just to make sure
+you&amp;rsquo;re on the right track.  Things seem to be OK,
+until it comes to getting your code merged. Now, it becomes clear that your implementation is not what the lead had in
+mind, and there&amp;rsquo;s a frustrating process of back-and-forth while you explain and defend your design decisions
+whilst trying to incorporate the feedback. At the end, the solution doesn&amp;rsquo;t feel like your work,
+and you&amp;rsquo;re not entirely sure what was wrong with your initial implementation - it fixed the problem, passed the tests,
+and met the criteria you personally think are important (readability / scalability / performance /
+stability / time-to-implementation, whatever it is that you value).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;When you speak to women developers, you often hear &amp;ldquo;I feel like I have to work really hard to convince people about my ideas&amp;rdquo; or &amp;ldquo;it&amp;rsquo;s
+taken me a long time to prove my worth&amp;rdquo; or &amp;ldquo;I still don&amp;rsquo;t know how to be seen as a full member of the team&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;And you hear these a lot from women because we &lt;em&gt;ask&lt;/em&gt; women a lot what they don&amp;rsquo;t like about their work,
+since we&amp;rsquo;re (correctly) concerned as an industry about the lack of female developers and the alarming rate at which they leave technical
+roles.&lt;/p&gt;
+
+&lt;p&gt;However, if you ask &lt;em&gt;any&lt;/em&gt; developer you&amp;rsquo;ll hear something similar.  Even very senior, very experienced (very white,
+very male) developers have a lot of frustration trying to convince others that their ideas have value.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not just a Problem With Women.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve been wondering if our problem is that we don&amp;rsquo;t &lt;em&gt;listen&lt;/em&gt;.  When it comes to exchanging
+technical ideas, I think overall we&amp;rsquo;re not good at really listening to each other.  At the very least,
+I think we&amp;rsquo;re bad at making people feel heard.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s think about this for a bit. If we don&amp;rsquo;t listen to developers, if we don&amp;rsquo;t help them to understand why they&amp;rsquo;re wrong,
+or work together to incorporate all ideas into a super-idea that&amp;rsquo;s the best solution, developers will become frustrated.  We&amp;rsquo;re
+knowledge workers, what we bring to the table is our brains, our ideas, our solutions.  If these are persistently not valued,
+we could go one of two ways:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Do it our way anyway. We still think we&amp;rsquo;re right, we haven&amp;rsquo;t been convinced that our idea is not correct,
+or that someone else&amp;rsquo;s is correct (maybe because we didn&amp;rsquo;t listen to them? Maybe because no-one took the time to listen to us and
+explain why we were wrong? Maybe because we &lt;em&gt;were&lt;/em&gt; right and no-one was listening?).&lt;/li&gt;
+&lt;li&gt;Leave. We might join a team where we feel more valued, or we might leave development all together.  At least as a business analyst,
+as a project manager, as a tester, people &lt;em&gt;have&lt;/em&gt; to listen to us: by their very definition the output of those jobs is an input to the
+development team (and other teams).&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Option one leads to rogue code in our application, often not checked by anyone else in the team let alone understood by them,
+because of course we were not &lt;em&gt;allowed&lt;/em&gt; to implement this.  So it&amp;rsquo;s done in secret.  If it works, at worst
+no-one notices.  And at best? You&amp;rsquo;re held up as a hero for actually Getting Something Done. This can&amp;rsquo;t be right,
+we&amp;rsquo;re rewarding the rebel behaviour, not encouraging honest discussion and making people feel included.&lt;/p&gt;
+
+&lt;p&gt;Option two, of course, leads to the team losing a developer. Sometimes you might argue &amp;ldquo;Good Riddance&amp;rdquo;.  But there&amp;rsquo;s such a skills
+shortage, it&amp;rsquo;s so hard (and expensive) to hire developers, and you must have seen something in that developer to hire them in the first
+place, that surely it&amp;rsquo;s cheaper, better, to make them feel welcome, wanted, valued.&lt;/p&gt;
+
+&lt;p&gt;What can we do to listen to each other?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Retrospectives. Done right, these give the team a safe place to discuss things, to ask questions,
+to suggest improvements.  It&amp;rsquo;s not necessarily a place to talk about code or design, but it is a good place to raise issues like the
+ones above, and to suggest ways to address these problems.&lt;/li&gt;
+&lt;li&gt;You could schedule sessions for sharing technical ideas: maybe regular brown bags to help people understand the technologies or
+existing designs; maybe sessions where the architecture or design or principals of a particular area are explored and explained;
+maybe sessions for those who feel unheard to explain in more detail where they&amp;rsquo;re coming from, principals that are important to them.&lt;br /&gt;
+It&amp;rsquo;s important that these sessions are developer-lead, so that everyone has an opportunity to share their ideas.&lt;/li&gt;
+&lt;li&gt;Pair programming. When you&amp;rsquo;re sat together, working together, there&amp;rsquo;s a flow of ideas, information, designs,
+experience. It&amp;rsquo;s not necessarily a case of a more senior person mentoring a less experienced developer,
+all of us have different skills and value different qualities in our implementation - one of you could be obsessive about the tests,
+where the other really cares about readability of the code (for example). When you implement something in a pair,
+you feel ownership of that code, but you feel less personally attached to the code - you created it,
+but you created it from the best of both of you, you had to listen to each other to come to a conclusion and implement it. And if an
+even better idea comes along, great, it just improves the code. And you&amp;rsquo;re constantly learning from the other people you work with,
+and can see the effect of them learning from you.&lt;/li&gt;
+&lt;li&gt;We should value, and coach, more skills than simply technology skills. I don&amp;rsquo;t know why we still seem to have this idea that developers
+are just
+typists communing with the computer - the best developers work well in teams and communicate well with the business and users,&lt;br /&gt;
+the best leaders make everyone in their team more productive.  Sales guys are trained in skills like active listening,
+like communication skills.  More development teams should focus on improving communication skills as a productivity tool.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure there are &lt;em&gt;loads&lt;/em&gt; more options, I just thought of these in ten minutes.  I&amp;rsquo;m sure if you read any books aimed at business people,
+or at growing your career,
+there are loads of tried and tested methods for making people feel heard, for playing nicely with others.&lt;/p&gt;
+
+&lt;p&gt;So we should work harder to listen to each other. Next time you&amp;rsquo;re discussing something with your team, or with your boss,
+try and listen to what they&amp;rsquo;re saying - ask them to clarify things you don&amp;rsquo;t understand (you won&amp;rsquo;t look stupid, and
+developers &lt;em&gt;love&lt;/em&gt; explaining things), and repeat back what you do understand. Request the same respect in return - if you feel your ideas
+aren&amp;rsquo;t being heard, make sure you sit down with someone to talk over your ideas or your doubts in more detail,
+and be firm in making sure the team or that person is hearing what you think you&amp;rsquo;re saying.  We may be wrong, they may be right,
+but we need to understand &lt;em&gt;why&lt;/em&gt; we&amp;rsquo;re wrong, or we&amp;rsquo;ll never learn.&lt;/p&gt;
+
+&lt;p&gt;If we all start listening a bit more, maybe we&amp;rsquo;ll be a bit happier.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s not waste, it&#39;s learning</title>
+      <link>http://localhost:1313/post/its_not_waste_its_learning/</link>
+      <pubDate>Sun, 23 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://localhost:1313/post/its_not_waste_its_learning/</guid>
       <description>&lt;p&gt;In one my my rare weekends at home, I found myself on a pottery course (this is the sort of thing that happens when you&amp;rsquo;re a &amp;ldquo;yes&amp;rdquo; person).&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-1.jpg&#34; alt=&#34;OK, not pottery, horses. The course was on a farm.&#34; title=&#34;OK, not pottery, horses. The course was on a farm.&#34; /&gt;
@@ -958,11 +1439,76 @@ write about it here to remind myself that it is something I want to do. Sometime
     </item>
     
     <item>
+      <title>Crowd Sourced Testing - Be an early adopter</title>
+      <link>http://localhost:1313/drafts/crowd_sourced_testing/</link>
+      <pubDate>Wed, 12 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://localhost:1313/drafts/crowd_sourced_testing/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;TL;DR;&lt;/strong&gt;
+Please try out the (unfinished, unreleased) snapshot version of the 3.x MongoDB Java Driver in your continuous integration environment and
+e-mail me with any errors or unexpected behaviour (or ideally positive feedback) you have, and we&amp;rsquo;ll give you goodies.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;So, it feels like a long time ago that I wrote about the
+&lt;a href=&#34;post/the_30_java_driver__design_goals/&#34;&gt;Design Goals for the new MongoDB Java Driver&lt;/a&gt;, and gave some pointers on
+&lt;a href=&#34;post/how_to_get_started_with_the_new_mongodb_java_driver/&#34;&gt;How to get started&lt;/a&gt;.  Not surprisingly, things have moved on since then,
+and we&amp;rsquo;re ready for very early adopters to start trying out the new driver.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re using the Java Driver, and you have a continuous integration environment where you&amp;rsquo;re running a bunch of automated tests (and
+we&amp;rsquo;re all doing that, right?), then you have the opportunity to &lt;strike&gt;find our first bugs&lt;/strike&gt; provide us with valuable feedback,
+before we release the final version.&lt;/p&gt;
+
+&lt;p&gt;While the new driver will have an updated API, we also aim to preserve backwards compatibility with the existing API.  However,
+we have been deprecating classes and methods in the 2.12 and 2.13 &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;releases&lt;/a&gt; of
+the driver, and many of these classes and methods will be removed in 3.0
+(&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/config/clirr-exclude.yml#L11&#34;&gt;full list here&lt;/a&gt;).  If you&amp;rsquo;re running a 2.12.x
+release without deprecation warnings, you should be able to drop in the new driver and run it.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re using Maven or Gradle, it should be super easy:&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Maven&lt;/h3&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/6183621.js&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Gradle&lt;/h3&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/6183766.js&#34;&gt;&lt;/script&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Old School&lt;/h3&gt;
+
+&lt;p&gt;Download the latest jar from &lt;code&gt;3.0.0-SNAPSHOT&lt;/code&gt; in:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://oss.sonatype.org/content/repositories/snapshots/org/mongodb/mongo-java-driver/&#34;&gt;https://oss.sonatype.org/content/repositories/snapshots/org/mongodb/mongo-java-driver/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;In Summary&lt;/h3&gt;
+
+&lt;p&gt;Please try out the updated Java driver, with the &amp;ldquo;compatible&amp;rdquo; API, and e-mail me (trisha.gee at mongodb.com) with:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(Required) The date you downloaded the driver to test (since the snapshot will be changing daily)&lt;/li&gt;
+&lt;li&gt;(Optional) Any bugs you&amp;rsquo;ve found&lt;/li&gt;
+&lt;li&gt;(Optional) Any unexpected changes in behaviour&lt;/li&gt;
+&lt;li&gt;(Optional) Feedback on the performance (if you have performance tests for example) - whether the performance is better or worse, we want to hear&lt;/li&gt;
+&lt;li&gt;(Optional) Positive feedback (always welcome!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For bugs, either raise a &lt;a href=&#34;http://jira.mongodb.org&#34;&gt;Jira&lt;/a&gt; ticket, or get me to raise one for you, for you so you can track the status of the
+bug.&lt;/p&gt;
+
+&lt;p&gt;And finally, the carrot: if you give us feedback, we&amp;rsquo;ll do something nice for you - either send you swag,
+or promote your team/company/self on our blog or readme or somewhere equally public.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Staying Ahead of the Curve</title>
-      <link>http://trishagee.github.io/presentation/staying_ahead_of_the_curve/</link>
+      <link>http://localhost:1313/presentation/staying_ahead_of_the_curve/</link>
       <pubDate>Mon, 10 Nov 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/staying_ahead_of_the_curve/</guid>
+      <guid>http://localhost:1313/presentation/staying_ahead_of_the_curve/</guid>
       <description>
 
 &lt;p&gt;Last Thursday I gave a keynote at
@@ -1009,339 +1555,6 @@ we do need to see to our Continuous Learning and, of course, we should Embrace C
 
 &lt;p&gt;&lt;em&gt;How do we balance these two extremes? And how do we see to our own growth and learning as techies while meeting the needs of our
 project, team and organisation?&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MongoDB London</title>
-      <link>http://trishagee.github.io/post/mongodb_london/</link>
-      <pubDate>Wed, 22 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/mongodb_london/</guid>
-      <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;So, &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is nearly upon us again,
-and I&amp;rsquo;m dead disappointed I can&amp;rsquo;t make it this year (I&amp;rsquo;m
-&lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;keynoting at GOTO Berlin&lt;/a&gt; instead,
-which I&amp;rsquo;m terrified, I mean, excited, about). The last MongoDB London was really interesting for me - I was fairly new to the company,
-I&amp;rsquo;d been here less than six months, and it was a really great way to go both broad and deep on the technology.&lt;/p&gt;
-
-&lt;p&gt;I was trying to find a blog post where I talked about my experiences, but it looks like I only wrote that In My Mind. In fact,
-I only only wrote two whole lines of notes on the conference.  But 18 months later I clearly remember presentations from my colleagues
-&lt;a href=&#34;http://rosslawley.co.uk/&#34;&gt;Ross&lt;/a&gt; and &lt;a href=&#34;http://derickrethans.nl/&#34;&gt;Derick&lt;/a&gt; demonstrating the geo capabilities in MongoDB,
-presentations which heavily influenced the &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt; I&amp;rsquo;ve been giving
-recently.&lt;/p&gt;
-
-&lt;p&gt;I also remember Eliot&amp;rsquo;s presentation - Eliot is one of those people who totally gets away with breaking the &amp;ldquo;speak in a measured,
-clear fashion&amp;rdquo; presenters rule, he fires fascinating information at you at high speed and it&amp;rsquo;s actually one of the compelling things
-about his talks. If you ever get a chance to see him talk about the product, it&amp;rsquo;s totally worth it.&lt;/p&gt;
-
-&lt;p&gt;Other than that, the most awesome thing about the conference was the chance to meet, and talk to,
-a bunch of different MongoDB people - there are the engineers who work on the product (like me and my colleagues);
-the people leading the way with the technology, like Eliot; and finally, but for me most importantly,
-you get to meet really interesting people who are using MongoDB in ways that you might not even imagine.&lt;/p&gt;
-
-&lt;p&gt;Anyway the point of this sales pitch is, whether you&amp;rsquo;re using MongoDB already or you&amp;rsquo;re keen to find out about it,
-&lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is only going to take a day from your life,
-and you&amp;rsquo;ll learn a bunch of interesting things. And, with a Special Discount Code from me,
-it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-london-2014-registration-13140209721&#34;&gt;Sign up&lt;/a&gt; with code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
-      <link>http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
-      <pubDate>Mon, 20 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
-      <description>
-
-&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
-mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
-where these popular technologies sit in your architecture, and how they interact with each other.&lt;/p&gt;
-
-&lt;p&gt;The exact code I present has changed a bit over time, the session I did for hack.summit() is the most recent:&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/VyEdy-l5608&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
- 
-
-&lt;p&gt;The code is &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;available on GitHub&lt;/a&gt;.  You&amp;rsquo;ll see there are a number of different branches for the
-different versions I&amp;rsquo;ve presented. The current one is the NoSQL Matters version.  With all the branches,
-the commits correspond to the user stories in &lt;a href=&#34;http://www.slideshare.net/trishagee/i-want-coffeejavaone&#34;&gt;the slides&lt;/a&gt;,
-so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve also presented the talk as a series of &lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34;&gt;short, follow-along lessons&lt;/a&gt;. You can get 40% off the price with discount code VDEAL40.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34; target=&#34;_blank&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134070865&amp;type=d&#34; &gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
-so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This talk has been videoed several times -
-some older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
-these initial demos.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;,
-and a slightly different way of calling the method to get my nearest coffee shop)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
-presentation, and the video uses MongoJack instead of Morphia &amp;amp; shows an even earlier version of the find-my-coffee UI)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt; (only the second time I presented this
-demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Resources&lt;/h3&gt;
-
-&lt;p&gt;These are the main resources I used in creating this talk:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/0596805829/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0596805829&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=GAJBJ3MFBCQJ2N53&#34;&gt;REST in Practice&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=0596805829&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important;margin:0px!important;&#34; /&gt; - Fantastic book to get your head into the right place for RESTy web services&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.youtube.com/watch?v=i9MHigUZKEM&#34;&gt;AngularJS in 60 mins&lt;/a&gt; - a very useful introduction to building simple AngularJS apps&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blogs.oracle.com/geertjan/entry/angularjs_meets_java_ee_7&#34;&gt;AngularJS meets JavaEE&lt;/a&gt; - specifically walks through connecting an
-AngularJS app to a JavaEE back end using NetBeans, but the principals here are the ones I used in the cafelito application&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://angularjs.org/&#34;&gt;AngularJS&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://getbootstrap.com/&#34;&gt;Bootstrap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://angular-ui.github.io/bootstrap/&#34;&gt;UI Bootstrap&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://dropwizard.io/&#34;&gt;Dropwizard&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;: remember MongoDB has &lt;a href=&#34;https://university.mongodb.com/&#34;&gt;free online courses&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/mongodb/morphia/&#34;&gt;Morphia&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gradle.org/&#34;&gt;Gradle&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
-and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ&lt;/a&gt;: there&amp;rsquo;s a free community version of the IDE, but it&amp;rsquo;s not very expensive to upgrade to
-the full version and it will save you so much time and effort.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And remember, the &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;application code is available here&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Using Groovy to import XML into MongoDB</title>
-      <link>http://trishagee.github.io/post/groovy_import_to_mongodb/</link>
-      <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/groovy_import_to_mongodb/</guid>
-      <description>
-
-&lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
-Java and MongoDB&lt;/a&gt;.  I also use Groovy during this demo to do the sorts of things Groovy is
-really good at - writing descriptive tests, and creating scripts.&lt;/p&gt;
-
-&lt;p&gt;Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use,
-so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.&lt;/p&gt;
-
-&lt;p&gt;Firstly I want to clarify that this is not my original work - I &lt;strike&gt;stole&lt;/strike&gt; borrowed most of the ideas for the demo from my
-colleague Ross Lawley. In &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/&#34;&gt;this blog post&lt;/a&gt; he goes into detail of how he built
-up an application that
-finds the most popular pub names in the UK.  There&amp;rsquo;s a &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1&#34;&gt;section in there&lt;/a&gt;
-where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it&amp;rsquo;s
-this process that I basically stole, re-worked for coffee shops, and re-wrote for the JVM.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m assuming if you&amp;rsquo;ve worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
-demo is supposed to be all about how easy it is to work with Java, I did &lt;em&gt;not&lt;/em&gt; want to do this. When I wrote the demo I wasn&amp;rsquo;t really all
-that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML,
-which is exactly what I wanted to do. In addition, creating &lt;a href=&#34;http://groovy.codehaus.org/Collections#Collections-Mapsmaps&#34;&gt;Maps&lt;/a&gt; (the
-data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
-&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Goal of the Script&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Parse an XML file containing open street map data of all coffee shops.&lt;/li&gt;
-&lt;li&gt;Extract latitude and longitude XML attributes and transform into
-&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-geojson&#34;&gt;MongoDB GeoJSON&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;Perform some basic validation on the coffee shop data from the XML.&lt;/li&gt;
-&lt;li&gt;Insert into MongoDB.&lt;/li&gt;
-&lt;li&gt;Make sure MongoDB knows this contains query-able geolocation data.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;The script is &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy&#34;&gt;PopulateDatabase.groovy&lt;/a&gt;,
-that link will take you to the version I presented at JavaOne:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;Firstly, we need data&lt;/h3&gt;
-
-&lt;p&gt;I used the same service Ross used in his blog post to obtain the XML file containing &amp;ldquo;all&amp;rdquo; coffee shops around the world. Now,
-the open street map data is somewhat&amp;hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
-so I&amp;rsquo;m not sure I really have &lt;em&gt;all&lt;/em&gt; the coffee shops, but I obtained enough data for an interesting demo using&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml&#34;&gt;resulting XML file&lt;/a&gt; is in the
-github project, but if you try this yourself you might (in fact, probably will) get different results.&lt;/p&gt;
-
-&lt;p&gt;Each XML record looks something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;178821166&amp;quot; lat=&amp;quot;40.4167226&amp;quot; lon=&amp;quot;-3.7069112&amp;quot;&amp;gt;
-    &amp;lt;tag k=&amp;quot;amenity&amp;quot; v=&amp;quot;cafe&amp;quot;/&amp;gt;
-    &amp;lt;tag k=&amp;quot;cuisine&amp;quot; v=&amp;quot;coffee_shop&amp;quot;/&amp;gt;
-    &amp;lt;tag k=&amp;quot;name&amp;quot; v=&amp;quot;Chocolatería San Ginés&amp;quot;/&amp;gt;
-    &amp;lt;tag k=&amp;quot;wheelchair&amp;quot; v=&amp;quot;limited&amp;quot;/&amp;gt;
-    &amp;lt;tag k=&amp;quot;wikipedia&amp;quot; v=&amp;quot;es:Chocolatería San Ginés&amp;quot;/&amp;gt;
-&amp;lt;/node&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Each coffee shop has a unique identifier and a latitude and longitude as attributes of a &lt;code&gt;node&lt;/code&gt; element.  Within this node is a series
-of &lt;code&gt;tag&lt;/code&gt; elements, all with &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; attributes. Each coffee shop has a varying number of these attributes,
-and they are not consistent from shop to shop (other than &lt;code&gt;amenity&lt;/code&gt; and &lt;code&gt;cuisine&lt;/code&gt; which we used to select this data).&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;Initialisation&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Before doing anything else we want to prepare the database.  The assumption of this script is that either the
-collection we want to store the coffee shops in is empty, or full of stale data.  So we&amp;rsquo;re going to use the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;MongoDB Java Driver&lt;/a&gt; to get the collection that we&amp;rsquo;re interested in, and then drop it.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s two interesting things to note here:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java,
-it doesn&amp;rsquo;t need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the
-&lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;MongoDB GORM Plugin&lt;/a&gt;), but the Java driver works perfectly well.&lt;/li&gt;
-&lt;li&gt;You don&amp;rsquo;t need to create &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;databases&lt;/a&gt; or
-&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt; (collections are
-a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you&amp;rsquo;re interested in,
-and if it doesn&amp;rsquo;t already exist, the server will create them for you.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In this example, we&amp;rsquo;re just using the default constructor for the &lt;code&gt;MongoClient&lt;/code&gt;, the class that represents the connection to the database
-server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
-address and port - for more details on this see &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started With MongoDB and Java&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
-XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
-Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; element in the XML.&lt;/p&gt;
-
-&lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
-
-Since MongoDB documents are effectively just maps of key-value pairs, we&amp;rsquo;re going to create a Map &lt;code&gt;coffeeShop&lt;/code&gt; that contains the
-document structure that represents the coffee shop that we want to save into the database.  Firstly,
-we initialise this map with the attributes of the &lt;code&gt;node&lt;/code&gt;. Remember these attributes are something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;18464077&amp;quot; lat=&amp;quot;-33.8911183&amp;quot; lon=&amp;quot;151.1958773&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We&amp;rsquo;re going to save the ID as a value for a new field called &lt;code&gt;openStreetMapId&lt;/code&gt;. We need to do something a bit more
-complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{ &#39;location&#39; : { &#39;coordinates&#39;: [&amp;lt;longitude&amp;gt;, &amp;lt;latitude&amp;gt;],
-                 &#39;type&#39;       : &#39;Point&#39; } }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In lines 12-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
-places.&lt;/p&gt;
-
-&lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
-
-&lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
-
-Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute and check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
-insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field). If so we simply add this key as the
-field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
-&lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
-but we also don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
-
-&lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
-
-Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&gt; Map representing the document we want to save into MongoDB,
-we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
-into the map, but it&amp;rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called &lt;code&gt;name&lt;/code&gt; in &lt;code&gt;coffeeShop&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;When we want to insert the Map we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
-but this is easily done by calling the constructor that takes a Map.  Alternatively, there&amp;rsquo;s a Groovy syntax which would effectively do
-the same thing, which you might prefer:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;collection.insert(coffeeShop as BasicDBObject)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;toc_7&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
-
-Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
-we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
-so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; for this field.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
-
-&lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
-but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
-and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JavaOne 2014, Day One</title>
-      <link>http://trishagee.github.io/post/java_one_2014_day_one/</link>
-      <pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_one_2014_day_one/</guid>
-      <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
-had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=10289&#34;&gt;Superpowered CI with Git - Sarah Goff-Dupont&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-The Continuous Integration we did at LMAX is quite different to what we do at MongoDB, and I was hoping to get some tips on better CI with
-Git, especially given feature branches.  There was a good overview of development process using branch-per-feature,
- and a comment that it&amp;rsquo;s nearly impossible to do &amp;ldquo;pure&amp;rdquo; CI in this sort of environment.  But there was pragmatic advice on how to manage
- the process and run automated builds in this environment.&lt;/p&gt;
-
-&lt;p&gt;The take-home point for me is that I&amp;rsquo;m going to investigate &lt;a href=&#34;http://git-scm.com/book/en/Customizing-Git-Git-Hooks&#34;&gt;git hooks&lt;/a&gt; to try and
-  streamline our process and run some fast checks more frequently.&lt;/p&gt;
-
-&lt;p&gt;Also, Sarah showed using &lt;a href=&#34;https://www.hipchat.com&#34;&gt;Hipchat&lt;/a&gt; in anger - I&amp;rsquo;ve now heard this mentioned enough that I&amp;rsquo;m going to look into it more.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276&#34;&gt;Advanced Unit Testing with Spock&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-I&amp;rsquo;ve [spoken before about Spock](&lt;/p&gt;
-
-&lt;p&gt;/tags/spock/), and how much I love it.  The first section of this talk was a recap
-of some of the basics, but the second part went on to some features I either previously ignored or wasn&amp;rsquo;t aware of.  For example, in the
-&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;MongoDB Java Driver&lt;/a&gt;, we do use annotations to denote slower-running tests so we can select which environments to run in,
-but we&amp;rsquo;re not using Spock annotations for this.  I think there&amp;rsquo;s a lot more we could do with both custom annotations like our
-&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/util/src/main/category/Slow.java&#34;&gt;@Slow&lt;/a&gt; annotation,
-Spock&amp;rsquo;s built in annotations like &lt;code&gt;@Issue&lt;/code&gt;, and some others which may not yet be in maven central like &lt;code&gt;@Requires&lt;/code&gt; for running
-language-version tests (&lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/JavaLanguageSpec
-.groovy&#34;&gt;e.g. Java 8 tests&lt;/a&gt;) and &lt;code&gt;@IgnoreRest&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also liked the example of &lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/OldExampleSpec.groovy&#34;&gt;checking the new value against an old
-value&lt;/a&gt;,
-I can totally see this being useful.&lt;/p&gt;
-
-&lt;p&gt;There were other bits and pieces in this talk I&amp;rsquo;d like to dig into in more detail that I think will be very useful for the Java Driver.
-But even more importantly, I learnt how to zoom into my screen so I can use that in my own presentation. Pro presentation top tips.&lt;/p&gt;
-
-&lt;p&gt;Honestly, if you have even minor testing pains, it&amp;rsquo;s worth finding Ken&amp;rsquo;s talks on Spock, they&amp;rsquo;re great! And a source of inspiration for
-better testing, as well as a sneaky way to understand why Groovy is awesome.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;JCP Awards and Party&lt;/strong&gt;&lt;br /&gt;
-But it&amp;rsquo;s not all work at these events.  For me, the highlight was the music at at the JCP Awards party.  Firstly,
-we had an award-winning beat-box guy from the UK (sadly I don&amp;rsquo;t remember his name so I can&amp;rsquo;t link to his stuff).  An unusual choice for
-an event like this, but it was a lot of fun. Then there was the live super-band, The Null Pointers, made up of JUG leaders from around the
-world (including &lt;a href=&#34;https://twitter.com/matkar&#34;&gt;@matkar&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/frankgreco&#34;&gt;@frankgreco&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/fguime&#34;&gt;@fguime&lt;/a&gt;. I&amp;rsquo;ll admit,
- I was a little concerned about this idea, but the guys were fantastic, and it was a lot of fun singing along to Free&amp;rsquo;s Alright Now and
- Radiohead&amp;rsquo;s Creep. &lt;a href=&#34;https://www.oracle.com/openworld/appreciation-event/index.html&#34;&gt;Aerosmith&lt;/a&gt; is going to have to work hard to compete with that.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&amp;hellip;and a quick plug&lt;/strong&gt;&lt;br /&gt;
-My &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703&#34;&gt;main presentation is on Thursday&lt;/a&gt;, it&amp;rsquo;s a keyword-tastic live demo of AngularJS, Java &amp;amp; MongoDB.  Something &lt;em&gt;always&lt;/em&gt; goes wrong in
-this presentation, so I&amp;rsquo;m &lt;a href=&#34;http://doodle.com/fvrasw9vrpxyb9dm&#34;&gt;taking bets right now on what that will be&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
