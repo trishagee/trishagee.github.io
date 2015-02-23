@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Video on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/video/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Tue, 12 Aug 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>What could possibly go wrong? (GOTO Chicago)</title>
+      <link>http://trishagee.github.io/presentation/interview_at_goto_chicago/</link>
+      <pubDate>Tue, 12 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/interview_at_goto_chicago/</guid>
+      <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving,
+which happens to be the same one I&amp;rsquo;m giving at a number of conferences this year (although of course I&amp;rsquo;m evolving it as I go along).&lt;/p&gt;
+
+&lt;p&gt;The presentation leaves very little time for anything other than coding, as it&amp;rsquo;s quite challenging to create a full app in 50
+minutes, so it was great to have the chance to talk about the motivations for the demo&lt;/p&gt;
+
+&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/sZee7lRAUF4&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+  
+
+&lt;p&gt;The video of the actual talk is also available now:&lt;/p&gt;
+
+&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/kmVnhyWqozA&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
+&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;p&gt;At the beginning it doesn&amp;rsquo;t clearly show the screen, but it does improve.  You can see an earlier version from the
+&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb#anch110035&#34;&gt;Joy of Coding&lt;/a&gt; as well,
+so if something&amp;rsquo;s not clear on one of the videos, hopefully it&amp;rsquo;s better in the other.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/tree/goto-chicago&#34;&gt;code for the Chicago version is on Github&lt;/a&gt;,
+and if you look through the history you can see how it builds up, the same as it does in the demo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nighthacking at Sevilla Java User Group</title>
+      <link>http://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
+      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
+for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
+and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
+Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is also the first event that we&amp;rsquo;ve had videoed (apologies for the horrible focus at times on the video,
+I&amp;rsquo;m just learning and used to relying heavily on auto-focus).&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/q3OKs08X3oo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thanks very much to Stephen for visiting, and thank you to those who came, you&amp;rsquo;re making me re-think the idea of running events at
+weekends.&lt;/p&gt;
+
+&lt;p&gt;Also there are &lt;a href=&#34;http://www.meetup.com/SVQJUG/photos/all_photos/?photoAlbumId=21306622&#34;&gt;photos on Meetup&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What do you mean, Backwards Compatibility? (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_backwards/</link>
+      <pubDate>Tue, 22 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_backwards/</guid>
+      <description>&lt;p&gt;YOW recorded me, yet again, talking about the adventure that is the design of the new Java Driver for MongoDB.  This is the same talk I
+gave at &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;GeeCON&lt;/a&gt; and &lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;DevoxxUK&lt;/a&gt;,
+with some updates based on our Journey So Far.  In it, I cover the architecture of the new driver and some of our current thoughts
+around where we want the API to go.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/what-do-you-mean-backwards-compatibility-by-trisha-gee-1398&#34;&gt;See the video here&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Career Advice for Programmers (YOW 2013)</title>
+      <link>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</link>
+      <pubDate>Thu, 17 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
+      <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
+by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+&lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
+.com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
+time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
+and this time I think I managed to distill the important points into the (still ridiculously short) time allotted.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://yow.eventer.com/yow-2013-1080/career-advice-for-programmers-by-trisha-gee-1380&#34;&gt;See the video here&lt;/a&gt;,
+and please give me any feedback you have.&lt;/p&gt;
+
+&lt;p&gt;I recognise there are many many more topics I could cover, so I&amp;rsquo;d better start making a list.  Suggestions?&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interviewed by Charles Humble for InfoQ</title>
+      <link>http://trishagee.github.io/presentation/infoq-interview-march-2014/</link>
+      <pubDate>Tue, 15 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/infoq-interview-march-2014/</guid>
+      <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&amp;rsquo;s always a pleasure to be interviewed by Charles,
+I think he brings out the best in me.&lt;/p&gt;
+
+&lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>First presentation at the Virtual JUG!</title>
+      <link>http://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</link>
+      <pubDate>Fri, 22 Nov 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</guid>
+      <description>&lt;p&gt;Yesterday I had the privilege of presenting the very first session for &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, a new virtual Java User Group that allows us to span
+geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find
+good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have
+a local user group to go to. Not to mention cutting travel costs and saving the environment.&lt;/p&gt;
+
+&lt;p&gt;See the event, and the record of the IRC chat, here:&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/GixwXNlZ7dI&#34;
+width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;The slides are also online, but obviously they&amp;rsquo;re part of the video as well:&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;356&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/28495923&#34; style=&#34;border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&#34; width=&#34;427&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;&lt;div style=&#34;margin-bottom: 5px;&#34;&gt;&lt;strong&gt; &lt;a href=&#34;https://www.slideshare.net/trishagee/design-is-a-process-not-a-document&#34; target=&#34;_blank&#34; title=&#34;Design is a process, not a Document&#34;&gt;Design is a process, not a Document&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/trishagee&#34; target=&#34;_blank&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Make the Future Java</title>
+      <link>http://trishagee.github.io/post/make_the_future_java/</link>
+      <pubDate>Wed, 09 Oct 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/make_the_future_java/</guid>
+      <description>&lt;p&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/6a9HAO0Pmkc&#34; width=&#34;420&#34;&gt;&lt;/iframe&gt; &lt;br /&gt;&lt;br /&gt;I think this is a nice example of how to showcase technology and make it relevant and exciting for people. &amp;nbsp;Something with this approach could do more for increasing the number of people interested in programming as a career than any of the traditional approaches of getting kids and &amp;ldquo;minorities&amp;rdquo; interested in IT.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interviewed by Stephen Chin about JavaOne 2013</title>
+      <link>http://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</link>
+      <pubDate>Fri, 30 Aug 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
+      <description>&lt;p&gt;Yesterday &lt;a href=&#34;https://twitter.com/steveonjava&#34;&gt;Stephen Chin&lt;/a&gt;, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about &lt;a href=&#34;http://www.oracle.com/javaone/index.html&#34;&gt;JavaOne&lt;/a&gt;, the &lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;new MongoDB Java driver&lt;/a&gt;, and my plans to Change The World.&lt;br /&gt;&lt;br /&gt;It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. &amp;nbsp;There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MdOHjGtITjo?list=PLX8CzqL3ArzXMvt5y8VHXKmr8gDC-xOH_&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Life on both sides of the interview table</title>
+      <link>http://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</link>
+      <pubDate>Thu, 29 Aug 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
+      <description>&lt;p&gt;InfoQ has posted the video of Dan North and I opining on the subject of hiring. &amp;nbsp;Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. &amp;nbsp;We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://www.infoq.com/presentations/job-interview-tips#.UiBS9_WZJyU.blogger&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;It&amp;rsquo;s kind of funny because we talk a lot about hiring at ThoughtWorks (where we both worked, and which has one of the &lt;a href=&#34;http://www.businessinsider.com/hardest-tech-company-job-interviews-2012-8&#34;&gt;toughest interview processes&lt;/a&gt; in the industry) and LMAX, which learnt a lot off ThoughtWorks and shaped its own process for a smaller company that has different goals. &amp;nbsp;Yet neither of us work at those places now. &amp;nbsp;Still, we share stories from many of the places we&amp;rsquo;ve worked (or chose not to work), and if there&amp;rsquo;s one take-home point, it&amp;rsquo;s that hiring (and being hired) is not a simple thing to do well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Summary of GeeCON, Krakow</title>
+      <link>http://trishagee.github.io/post/my_summary_of_geecon_krakow/</link>
+      <pubDate>Wed, 22 May 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
+      <description>
+
+&lt;p&gt;Last week I was in Krakow, Poland for &lt;a href=&#34;http://2013.geecon.org/&#34;&gt;GeeCON&lt;/a&gt;. &amp;nbsp;Which was excellent! &amp;nbsp;I find it really
+interesting that conferences all have their own personalities, that they are not all the same.
+&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-QGi20Kv1QL0/UZyWDc9hzVI/AAAAAAAALj0/ZlJ-1o1rLBk/s1600/2013-05-18+19.35.58.jpg&#34; imageanchor=&#34;1&#34; style=&#34;clear: right; float: right; margin-bottom: 1em; margin-left: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;320&#34; src=&#34;http://2.bp.blogspot.com/-QGi20Kv1QL0/UZyWDc9hzVI/AAAAAAAALj0/ZlJ-1o1rLBk/s320/2013-05-18+19.35.58.jpg&#34; width=&#34;240&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+GeeCON had its own distinct personality. &amp;nbsp;If you&amp;rsquo;re a Java/JVM person based in Poland, I would highly recommend it - more than 90%
+of the attendees were Polish (probably the remainder were largely speakers) so this conference is very much for you. &amp;nbsp;The quality
+of the speakers was really good too, I learnt a lot off many of them.&lt;/p&gt;
+
+&lt;p&gt;From a speaker&amp;rsquo;s point of view, there were some cultural things which took a bit of getting used to. One of the good things was that the
+audience was very keen on asking questions, they were much more interactive than a typical London audience (for example). However,
+I&amp;rsquo;m accustomed to quite short questions, and I found that the audience liked to give a lot of detail in their questions and frequently
+ask more than one at once - this meant that all the speakers really needed to allocate a lot more time for Q &amp;amp; A than expected. One
+of the other things I found unusual was the number of people who would walk in and out of the room during sessions - this wasn&amp;rsquo;t just
+everyone fleeing my session (I hope!), I saw it happen in all the talks, even the keynotes.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;My stuff&lt;/h2&gt;
+
+&lt;p&gt;On the first day I was on a panel about diversity in IT, which was basically about women programmers (again). It was a good panel to be
+on, actually, because there were a range of opinions, including downright disagreement, which made for a more interesting discussion.
+Sadly it left the audience with too little time to contribute though.&lt;/p&gt;
+
+&lt;p&gt;On the second day I was presenting &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;&amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;/a&gt;,
+which elicited a lot of responses from the audience. &amp;nbsp;I think I got the balance right between providing food for thought for any
+Java programmer, and enough of a look into what we&amp;rsquo;re considering for the new MongoDB Java driver,
+that it felt like I satisfied the two audiences - those who are interested in MongoDB with Java,
+and those who&amp;hellip; aren&amp;rsquo;t (yet).&lt;/p&gt;
+
+&lt;p&gt;But it wasn&amp;rsquo;t my experience as a speaker which really made GeeCON for me. &amp;nbsp;For the first time in ages I felt like I learnt
+something as an attendee. &amp;nbsp;I don&amp;rsquo;t know if that&amp;rsquo;s because a) I only had one presentation to prepare so I had time for a lot of
+sessions b) we have some specific problems we&amp;rsquo;re trying to solve on our code right now that we&amp;rsquo;re looking for answers to or c) the
+conference inspired it, but I came out of a lot of sessions excited about things to try.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Testing&lt;/h2&gt;
+
+&lt;p&gt;My first take-away point is to try &lt;a href=&#34;https://code.google.com/p/spock/&#34;&gt;Spock&lt;/a&gt;. I&amp;rsquo;ve been told for ages that I need to give it a
+ go, but the session really sold it to me. &amp;nbsp;It seems to have features that will solve specific things we&amp;rsquo;re looking at right now,
+ including:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Simplifying mocking&lt;/li&gt;
+&lt;li&gt;Annotating tests with properties (e.g. &lt;code&gt;@Slow&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Running the same test with different sets of data, instead of having to copy-paste the test a bunch of times&lt;/li&gt;
+&lt;li&gt;Reporting of failures, particularly power assert and &lt;code&gt;@Unroll&lt;/code&gt;, make diagnosing failures much simpler.&lt;/li&gt;
+&lt;li&gt;Using BDD terms as keywords (given/when/then) means the tests really do document themselves.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;m totally sold on it. &amp;nbsp;I was concerned, because we&amp;rsquo;re writing an open source Java library and I want the unit/integration tests
+to be understandable to Java developers, and I worried that adding Groovy tests might make the learning curve steeper. &amp;nbsp;But I think
+it&amp;rsquo;s an idea worth playing with.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Asynchronous IO&lt;/h2&gt;
+
+&lt;p&gt;So one of the things we&amp;rsquo;re working on is trying to figure out the best way to provide an async Java driver. &lt;a href=&#34;http://2013.geecon
+.org/speakers/erik-onnen&#34;&gt;Erik Onnen&lt;/a&gt;&amp;rsquo;s talk around performance network programming on the JVM was really interesting. &amp;nbsp;Most
+usefully, it compared sync to async communication, outlining the pros and cons, and how you can do it on the JVM.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Build the right thing before you build the thing right&lt;/h2&gt;
+
+&lt;p&gt;The first keynote was about &lt;a href=&#34;http://www.pretotyping.org/&#34;&gt;Pretotyping&lt;/a&gt; - Patrick Copeland from Google was talking
+about ideas and innovators, and blowing away the myth that all it takes to make money is a single great idea. He highlighted how
+really great ideas aren&amp;rsquo;t necessarily successes, and some ideas that sound great don&amp;rsquo;t feel right in practice. Pretotyping is a
+way to test things like:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-pgXRSN4oq0k/UZyVTqpUoFI/AAAAAAAALjk/1evlD4F4nYY/s1600/2013-05-15+10.30.13.jpg&#34; imageanchor=&#34;1&#34; style=&#34;clear: right; float: right;
+margin-bottom: 1em; margin-left: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;240&#34; src=&#34;http://3.bp.blogspot.com/-pgXRSN4oq0k/UZyVTqpUoFI/AAAAAAAALjk/1evlD4F4nYY/s320/2013-05-15+10.30.13.jpg&#34; width=&#34;320&#34;&gt;&lt;/img&gt;&lt;/a&gt;
+&lt;ul&gt;&lt;li&gt;Would you use it / do it?&lt;/li&gt;&lt;li&gt;How would you interact with it?&lt;/li&gt;&lt;li&gt;Is it socially acceptable to use it in the
+circumstances?&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+
+&lt;p&gt;Because it&amp;rsquo;s very low tech, very low effort (think post-its and note pads, not HTML prototypes) it facilitates fast failure (therefore
+reducing the cost).&lt;/p&gt;
+
+&lt;p&gt;The session was videoed, so hopefully it will be available to see. If you&amp;rsquo;re thinking of An Idea, I highly recommend this talk.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Many users = anthropology, not user experience&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.joelonsoftware.com/&#34;&gt;Joel Spolksy&lt;/a&gt;, the man who inspired me to start this very blog (well,
+earlier incarnations of it) talked about the experiences of growing stack exchange. This was interesting because it was not about
+the technology, but about subtle things you can do to influence user&amp;rsquo;s behaviour - for example, reputation rewards &amp;ldquo;good&amp;rdquo; behaviour,
+and a better reputation means you are trusted to do more on the site.&lt;/p&gt;
+
+&lt;p&gt;This was another inspiring talk if you&amp;rsquo;re interested in creating a product or company.&lt;/p&gt;
+
+&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-P-ejmRc3bsg/UZyUtEyArWI/AAAAAAAALjc/qP2tXp-nZkY/s1600/2013-05-18+20.09.07.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em;
+margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;300&#34; src=&#34;http://4.bp.blogspot.com/-P-ejmRc3bsg/UZyUtEyArWI/AAAAAAAALjc/qP2tXp-nZkY/s400/2013-05-18+20.09.07.jpg&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;As always, I also met a lot of really interesting people who gave me a lot to think about. I&amp;rsquo;ve come back more motivated than ever to work on my various projects.&lt;/p&gt;
+
+&lt;p&gt;So, Krakow is beautiful, and GeeCON is a good learning experience. &amp;nbsp;Go next year if you can!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Good overview of the NoSQL hype for Real Developers</title>
+      <link>http://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</link>
+      <pubDate>Mon, 13 May 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
+      <description>&lt;p&gt;Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. &amp;nbsp;Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.&lt;br /&gt;&lt;br /&gt;Skillsmatter recorded the whole thing, as usual, so you can &lt;a href=&#34;http://skillsmatter.com/podcast/nosql/considerations-for-using-nosql-technology-on-your-next-it-project/mh-7167&#34;&gt;watch the presentation for yourself&lt;/a&gt;. &amp;nbsp;I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Devoxx UK 2013</title>
+      <link>http://trishagee.github.io/post/devoxx_uk_2013/</link>
+      <pubDate>Tue, 02 Apr 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/devoxx_uk_2013/</guid>
+      <description>&lt;p&gt;Last week was the first Devoxx UK, bringing the brand from Belgium and, more recently, France. And I think it was a HUGE success.&lt;/p&gt;
+
+&lt;p&gt;Of course, disclaimers first - I was on the programme committee, so I might say that the whole thing was awesome. Although in all
+honesty, even being slightly involved in the organisation of a conference is a lot of work, and you can&amp;rsquo;t wait to see the back of it
+(and I didn&amp;rsquo;t do half as much as some people). Note to self - never speak at a conference you&amp;rsquo;re on the programme committee for,
+it&amp;rsquo;s too much work.&lt;/p&gt;
+
+&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://www.blogger.com/blogger.g?blogID=90440057274722849&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://www.devoxx.com/download/attachments/6392384/DevoxxUK-2013.jpg?version=1&amp;amp;modificationDate=1364404914960&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;480&#34; src=&#34;http://www.devoxx.com/download/attachments/6392384/DevoxxUK-2013.jpg?version=1&amp;amp;modificationDate=1364404914960&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/div&gt;
+
+&lt;p&gt;As a speaker and attendee though, Devoxx was really brilliant - great speakers, interesting content, awesome friendly atmosphere,
+good venue, parties with free drink and good opportunities to speak to people. There were downsides: limited coffee availability,
+no free croissants, um&amp;hellip; I&amp;rsquo;m really struggling to think of anything else, and none of those are show-stoppers (especially when the
+venue is in Islington, so you can step outside and get whatever you want).&lt;br /&gt;&lt;br /&gt;All throughout the run up to the conference we
+kept hearing it was a conference &amp;ldquo;for developers, by developers&amp;rdquo; until I was nearly sick of it. But it was a mantra that kept us
+on track when we were deciding on content, and it really came through on the two days of the conference. Pretty much everyone on
+stage was, or had been, a developer, the talks were a good balance between &amp;ldquo;useful&amp;rdquo; stuff for our day jobs and &amp;ldquo;interesting&amp;rdquo; stuff for
+techies &amp;lt;insert joke about some being &amp;ldquo;useful&amp;rdquo; &lt;i&gt;and&lt;/i&gt; &amp;ldquo;interesting&amp;rdquo;&amp;gt;. The future track excited us with things like like hacking
+on the Raspberry Pi, and the rest of the conference had a good mix of Java SE, EE, methodology and Other Stuff.&lt;/p&gt;
+
+&lt;p&gt;For me, the highlights were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.devoxx.com/display/UK13/Kevlin+Henney&#34;&gt;Kevlin Henney&lt;/a&gt;&amp;rsquo;s keynote, reminding us that Developers Are Human. Who knew?&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.devoxx.com/display/UK13/Sandro+Mancuso&#34;&gt;Sandro Mancuso&lt;/a&gt;&amp;rsquo;s walkthrough of OO principals,
+and how they apply to us in our actual day jobs. Sandro did a good job of taking quite a dry topic,
+that many of us dozed through at university, and showing us why we already use these principals and how understanding them
+will make us better programmers.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.devoxx.com/display/UK13/Mazz+Mosley&#34;&gt;Mazz Mosley&lt;/a&gt; had an entertaining talk about the Dark Side of Agile,
+walking us through the agile practices in The Government and highlighting many of the unanswered questions that teams have after
+switching to agile.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.devoxx.com/display/UK13/Colin+Vipurs&#34;&gt;Colin Vipurs&lt;/a&gt;&amp;rsquo;s talked about Test Driven Development from the trenches -
+he managed to give a good intro for those who might not have done it in practice, but for those who may have been doing it for a while,
+this a) was a good reminder of good practice and b) gave a good insight into why we do it. On top of that,
+he had solid advice on how to write better tests, that we could all take home with us.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.co.uk/&#34;&gt;Martin Thompson&lt;/a&gt; gave the talk I was attempting to give at JAX London last
+year - what is performance and how do we achieve high performance in Java? Where I failed,
+Martin really rocked it.  I&amp;rsquo;ll be leaving that to the professionals.&lt;/li&gt;
+&lt;li&gt;It would be rude of me not to mention this point - what a diverse conference! We had developers of all shapes and sizes,
+from the suits to the mohawks, of all colours, and (by technical conference standards) lots of women. Watch the video below and I think
+you can see it. I was so proud to have been a part of it.&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and meeting everyone. What an awesome conference for networking! Of course, there was a large number of London Java
+Community people there (speaking, volunteering, and attending), and quite a few familiar faces from Devoxx Antwerp - it was brilliant to
+see them in London. But I was also very pleased to run into people I&amp;rsquo;ve worked with in the past, some I haven&amp;rsquo;t see for ages,
+and some I still see regularly. And I met dozens of new, interesting people - you guys really made the conference for me.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I was giving my new presentation,
+&lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;What Do You Mean, Backwards Compatibility?&lt;/a&gt;. In this talk I share
+some of the experiences I&amp;rsquo;ve had in helping to develop the new MongoDB Java driver. This is not really a MongoDB talk,
+although there are some examples from the new driver, it&amp;rsquo;s more a talk about design, and how we as developers make design decisions
+every day, something I don&amp;rsquo;t think we recognise very much. I am hoping to give this presentation a number of times this year,
+so if you missed it there will be another opportunity to see it.&lt;/p&gt;
+
+&lt;p&gt;As usual, my take-away theme from a conference is probably influenced by the sessions I attended,
+so is as much a function of what I think is important right now as it is an indication of what themes are emerging in the industry. But
+I came away from Devoxx feeling like there&amp;rsquo;s a desire to focus on the basics - the OO principals that have been around for years; the
+good design practices that have been written about many times; and, most of all, a reminder that developers have a difficult job - we
+don&amp;rsquo;t simply turn requirements into code, we are constantly doing tricky stuff like system design,
+and even trickier stuff like working with other people.&lt;/p&gt;
+
+&lt;p&gt;I loved Devoxx UK, and I wasn&amp;rsquo;t alone in feeling a bit empty when it was all over. To re-live a tiny amount of the event,
+or get a good feel of what it was like, watch this video by the awesome &lt;a href=&#34;https://twitter.com/royvanrijn&#34;&gt;Roy van Rijn&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;281&#34; mozallowfullscreen=&#34;&#34; src=&#34;http://player.vimeo.com/video/62905094&#34; webkitallowfullscreen=&#34;&#34; width=&#34;500&#34;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://vimeo.com/62905094&#34;&gt;Devoxx UK 2013 - Long mellow version&lt;/a&gt; from &lt;a href=&#34;http://vimeo.com/royvanrijn&#34;&gt;Roy van Rijn&lt;/a&gt; on &lt;a href=&#34;http://vimeo.com/&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As with all Devoxx events, the talks will be available on &lt;a href=&#34;http://www.parleys.com/#home&#34;&gt;Parleys&lt;/a&gt;. If you watch nothing else, watch Kevlin&amp;rsquo;s keynote.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>GDL Presents Women Techmakers with Trisha Gee</title>
+      <link>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</link>
+      <pubDate>Thu, 07 Mar 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
+      <description>&lt;p&gt;I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series,
+as it moves over to Europe.  In this video I talk about going to Mars, education, planning your career, being a developer,
+and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;
+
+&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/68bsagK7GEM&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interviewed at Devoxx</title>
+      <link>http://trishagee.github.io/presentation/interviewed_at_devoxx/</link>
+      <pubDate>Sat, 12 Jan 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/interviewed_at_devoxx/</guid>
+      <description>&lt;p&gt;Yolande Poirier from &lt;a href=&#34;http://www.oracle.com/technetwork/index.html&#34;&gt;OTN&lt;/a&gt; interviewed me at Devoxx about my new job at 10gen,
+Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
+&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3544&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3544&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Devoxx: The Problem with Women - A Technical Approach</title>
+      <link>http://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</link>
+      <pubDate>Tue, 18 Dec 2012 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</guid>
+      <description>&lt;p&gt;As well as talking about, you know, &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/agile-when-agile-goes-well.html&#34;&gt;actual work-type-stuff&lt;/a&gt;, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. &amp;nbsp;This went so well at JavaOne that I thought it would be difficult to top. &amp;nbsp;Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.&lt;br /&gt;&lt;br /&gt;I was incredibly impressed with the audience. &amp;nbsp;There were literally hundreds of people, most of them men. &amp;nbsp;To me, it proved once again that the men in this industry are determined to &amp;ldquo;fix&amp;rdquo; this problem of gender imbalance. &amp;nbsp;And they&amp;rsquo;re happy to extend that to improving diversity as a whole, once you highlight the bigger problem. &amp;nbsp;It says to me that this is not naturally a misogynistic industry, where you have to fight against the boys club to get anywhere. &amp;nbsp;It says to me that we are all in this together. &amp;nbsp;After all, in the &amp;ldquo;real&amp;rdquo; world the geeks are still outsiders, and different, so we&amp;rsquo;re used to embracing our different-ness - whether that&amp;rsquo;s because you&amp;rsquo;re the only girl in the room, the only Java developer at a .NET conference, or the only techy at a dinner party.&lt;br /&gt;&lt;br /&gt;Conferences are a self-selecting audience, I know - these are the people who are investing time and money in advancing their careers, or at least encouraging their employers to do. &amp;nbsp;But for the punchline of this session, these are exactly the right people. &amp;nbsp;We need to go out, tell everyone how much we enjoy our jobs; tell kids that programming is cool, and &lt;i&gt;show&lt;/i&gt; them it&amp;rsquo;s fun; mentor other people, and each other, and be a role model. &amp;nbsp;I don&amp;rsquo;t care what gender you are or what colour you are or what your dark secret is - &lt;i&gt;you&lt;/i&gt; are the role model to inspire someone. &lt;br /&gt;&lt;br /&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/p/just-do-something.html&#34;&gt;Just do it&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3513&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3513&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

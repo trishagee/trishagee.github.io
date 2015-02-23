@@ -1,0 +1,1206 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Posts on Trisha Gee </title>
+    <link>http://trishagee.github.io/post/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Thu, 29 Jan 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>The State of Java</title>
+      <link>http://trishagee.github.io/post/svq_state_of_java_update/</link>
+      <pubDate>Thu, 29 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/svq_state_of_java_update/</guid>
+      <description>
+
+&lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
+find people unusually keen to come and visit us on the pretence of presenting at the Sevilla Java User Group (and please,
+DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
+
+&lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
+an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m just starting to use Java 8 in real life, so this could not have been better timed - I got to ask the guys a bunch
+of questions about the intentions behind some of the Java 8 features, and the current vision for the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/44036521&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;i&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/2015-java-update-and-roadmap-jug-sevilla&#34; title=&#34;2015 Java update and roadmap, JUG sevilla&#34; target=&#34;_blank&#34;&gt;2015 Java update and roadmap, JUG sevilla&lt;/a&gt; from Georges Saab and Aurelio Garcia-Ribeyro &lt;/i&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;My notes from the session:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html&#34;&gt;Lambdas&lt;/a&gt; could be just a syntax change,
+but they could be more than that - they could impact the language, the libraries
+and the JVM. They could have a positive impact on performance, and this work can continue to go on through small
+updates to Java that don&amp;rsquo;t impact the syntax.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; are a pipeline of operations, made possible/easier/more readable by lambdas. The aim is to make operations
+on collections easier and more readable.&lt;/li&gt;
+&lt;li&gt;In the Old World Order, you had to care about &lt;em&gt;how&lt;/em&gt; to perform certain operations. With streams, you don&amp;rsquo;t need to
+tell the computer exactly how it&amp;rsquo;s done, you can simply say what operations you want performed. This makes it easier
+for developers&lt;/li&gt;
+&lt;li&gt;Streams will take all the operations you pass in and perform them in a single pass of the data, so you don&amp;rsquo;t have
+to write multiple loops to perform multiple operations on the same data structure, or tie your brain in knots figuring
+out how to do it in one loop. There are also no intermediate data structures when you use streams.&lt;/li&gt;
+&lt;li&gt;The implementation
+can be optimised under the covers (e.g. not performing the &lt;code&gt;sort&lt;/code&gt; operation if the data is already ordered correctly),
+and the developer doesn&amp;rsquo;t have to worry about it. Java can introduce further optimisations in later releases without
+changing the API or impacting the code a developer has already written.&lt;/li&gt;
+&lt;li&gt;These new features in Java have a focus on readability, since code is much more often read than written.&lt;/li&gt;
+&lt;li&gt;The operations are easier to parallelise, because the developer is no longer dictating the &lt;em&gt;how&lt;/em&gt; - multiple &lt;code&gt;for&lt;/code&gt; loops
+might not be easy to parallelise, but a series of operations can be.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html&#34;&gt;Default methods&lt;/a&gt; and
+new support for &lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html#static&#34;&gt;static methods on interfaces&lt;/a&gt; are interesting.
+I&amp;rsquo;d forgotten you could put static methods on interfaces and I&amp;rsquo;m going to sneak them into my latest project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html&#34;&gt;Nashorn&lt;/a&gt; is here to replace Rhino. Personally I haven&amp;rsquo;t worked in the sort of environment that would need server-side
+JavaScript so this whole area has passed me by somewhat, but seems it might be interesting for Node.js or creating
+a &lt;a href=&#34;http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34;&gt;REPL&lt;/a&gt;
+in JavaScript that you want to run on the JVM.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type&#34;&gt;additional annotation support in Java 8&lt;/a&gt;
+will be useful for &lt;a href=&#34;http://www.oracle.com/technetwork/java/javaee/overview/index.html&#34;&gt;Java EE&lt;/a&gt;.  As this is something I&amp;rsquo;m currently playing
+with (specifically web sockets) I&amp;rsquo;m interested in this, but it seems like it will be a while before this filters into
+the Java EE that&amp;rsquo;s used on a daily basis.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html&#34;&gt;Mission Control and Flight Recorder&lt;/a&gt; - look interesting.  Feel like I should play with them.&lt;/li&gt;
+&lt;li&gt;Many people are skipping straight from Java 6 to 8 - the new language features and improved performance are major driving
+factors&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.java.com/en/download/faq/java_7.xml&#34;&gt;End of public updates of Java 7 in April&lt;/a&gt;. Having libraries that, um&amp;hellip; &lt;em&gt;encourage&lt;/em&gt;&amp;hellip; adoption of the latest version of
+Java makes life a lot easier for those who develop the Java language, as they can concentrate on moving the language
+forward and not be tied down supporting old versions.&lt;/li&gt;
+&lt;li&gt;Either this is the first time I&amp;rsquo;ve heard of &lt;a href=&#34;http://www.oracle.com/technetwork/java/javadb/overview/index.html&#34;&gt;JavaDB&lt;/a&gt;,
+or my memory has completely discarded it. I had no idea what it was.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9&lt;/a&gt; is well under way, check out the JEPs.&lt;/li&gt;
+&lt;li&gt;(This is the &lt;a href=&#34;http://openjdk.java.net/jeps/1&#34;&gt;JEP process&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Jigsaw&lt;/a&gt; was explained, and actually I could see myself using it for the project I&amp;rsquo;m working on right now. I had a look
+to see if I could use it via the OpenJDK, but it looks like the groundwork is there, but not the actual modules themselves.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/tech/g1-intro-jsp-135488.html&#34;&gt;G1 Garbage Collector&lt;/a&gt; is &amp;ldquo;&amp;hellip;the go forward GC&amp;rdquo;, it&amp;rsquo;s the one that&amp;rsquo;s being actively worked on.&lt;/li&gt;
+&lt;li&gt;This is the first I&amp;rsquo;ve heard of &lt;a href=&#34;http://openjdk.java.net/jeps/193&#34;&gt;Enhanced Volatiles&lt;/a&gt;, I&amp;rsquo;m so behind the times!&lt;/li&gt;
+&lt;li&gt;Access to internal packages is going away in Java 9. So
+&lt;a href=&#34;http://www.oracle.com/technetwork/java/faq-sun-packages-142232.html&#34;&gt;don&amp;rsquo;t use any &lt;code&gt;sun.*&lt;/code&gt; packages&lt;/a&gt;.
+Use &lt;a href=&#34;http://java.dzone.com/articles/jdeps-jdk-8-command-line&#34;&gt;jdeps&lt;/a&gt; to identify any
+dependencies in your code that need to change.&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and, looking further ahead than Java 9, we have &lt;a href=&#34;http://openjdk.java.net/jeps/169&#34;&gt;value types&lt;/a&gt; and
+&lt;a href=&#34;http://openjdk.java.net/projects/valhalla/&#34;&gt;Project Valhalla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;a &lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL for Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;possibly a &lt;a href=&#34;http://openjdk.java.net/jeps/198&#34;&gt;lightweight JSON API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and &lt;a href=&#34;http://cr.openjdk.java.net/~psandoz/varhandles/jvmls14-varHandles.pdf&#34;&gt;VarHandles&lt;/a&gt; were also mentioned.&lt;/li&gt;
+&lt;li&gt;Finally, the guys mentioned a &lt;a href=&#34;http://youtu.be/2y5Pv4yN0b0&#34;&gt;talk by Brian Goetz called &amp;ldquo;Stewardship: the Sobering Parts&amp;rdquo;&lt;/a&gt;, which has gone onto my
+to-watch list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_0&#34;&gt;Ideas&lt;/h4&gt;
+
+&lt;p&gt;It became clear throughout the talk there are plenty of ideas that we could explore in later presentations.  If you want to see
+any of the following, add a comment or ping me or &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;IsraKaos&lt;/a&gt; on twitter or Meetup and we&amp;rsquo;ll try and schedule it.&lt;/p&gt;
+
+&lt;p&gt;Similarly, if you can present on any of these topics and want to come to a beautiful, sunny city with amazing food to
+do so, drop me a line:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The OpenJDK&lt;/li&gt;
+&lt;li&gt;The JCP, the purpose, the processes, the people&lt;/li&gt;
+&lt;li&gt;Adopt a JSR, Adopt OpenJDK&lt;/li&gt;
+&lt;li&gt;New Date/Time (JSR310)&lt;/li&gt;
+&lt;li&gt;JavaFX&lt;/li&gt;
+&lt;li&gt;Code optimisation vs Data optimisation (I honestly don&amp;rsquo;t know what this means, but I wrote it down in my notes)&lt;/li&gt;
+&lt;li&gt;Java EE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=KDGWBWOK2S6FVS6F&#34;&gt;Java 8 in Action&lt;/a&gt; has details on other Java 8 features like Date and Time&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt; covers JavaFX too, and highlights some Java 7 features you might like&lt;/li&gt;
+&lt;li&gt;Brian Goetz did a great talk last year, &lt;a href=&#34;https://www.youtube.com/watch?v=MLksirK9nnE&#34;&gt;&amp;ldquo;Lambdas in Java: A peek under the hood&amp;rdquo;&lt;/a&gt;. I had to watch it twice before even half of the info sank in, but it&amp;rsquo;s really interesting.&lt;/li&gt;
+&lt;li&gt;Stephen Colebourne, the guy behind Joda time and the new Date and Time API, has &lt;a href=&#34;http://vimeo.com/87157763&#34;&gt;this talk about the new API&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9 OpenJDK page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New IntelliJ Tricks I Learnt Part 2</title>
+      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</link>
+      <pubDate>Fri, 09 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</guid>
+      <description>
+
+&lt;p&gt;Apparently, I&amp;rsquo;m all about Continuous Learning - after I wrote the
+&lt;a href=&#34;post/stuff_i_learnt_about_intellij&#34;&gt;last post about IntelliJ Tips&lt;/a&gt;, I carried on through my trawl of the documentation
+and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this is all just in the
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Quick+Start&#34;&gt;Quick Start&lt;/a&gt; section!&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s the next batch (although once again I&amp;rsquo;m not sure how many are only applicable to IntelliJ 14).  All shortcuts
+are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
+cases.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate between methods&lt;/h3&gt;
+
+&lt;p&gt;Now I knew you could use the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-2.Structure&#34;&gt;structure thingie&lt;/a&gt;
+(Ctrl+F12) to let you navigate to methods in your class (although I never actually
+use it, it somehow never sticks in my head).  What I did &lt;em&gt;not&lt;/em&gt; know is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-5.Navigatebetweenmethods&#34;&gt;jump between methods&lt;/a&gt;
+using Alt+Up/Down arrows.  This strikes me as being super useful, especially to browse tests.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Refactoring String Fragments&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve wanted this feature so many times, but could never find it or get it to work - did you know you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-4.Stringfragments&#34;&gt;refactor out parts of a
+hardcoded string&lt;/a&gt;
+into variable/field/constant? Select the section of the String you want to extract, and use the normal &amp;ldquo;Extract&amp;hellip;&amp;rdquo;
+shortcuts - e.g. Ctrl+Alt+V to extract it into a variable.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure I&amp;rsquo;ve tried this before and it didn&amp;rsquo;t work.  But I&amp;rsquo;ve tested it and it does!&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Invert Boolean&lt;/h3&gt;
+
+&lt;p&gt;There doesn&amp;rsquo;t seem to be a keyboard shortcut mapped by default, but using &amp;ldquo;Refactor -&amp;gt; Invert Boolean&amp;hellip;&amp;rdquo; (or using
+&lt;a href=&#34;/post/stuff_i_learnt_about_intellij/index.html#toc_0&#34;&gt;our newly discovered&lt;/a&gt; &amp;ldquo;Navigate to Action&amp;rdquo; shortcut of Shift+Ctrl+A and typing &amp;ldquo;Invert&amp;rdquo;) you can tell IntelliJ you want
+a boolean field to mean the &lt;em&gt;opposite&lt;/em&gt; thing, and it will
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-6.Invertboolean&#34;&gt;flip the meaning everywhere&lt;/a&gt;.
+For example, you might have an &lt;code&gt;saved&lt;/code&gt; flag, and you now want it to mean &lt;code&gt;notSaved&lt;/code&gt; - IntelliJ will make sure the
+&lt;code&gt;isSaved&lt;/code&gt; method returns &lt;code&gt;!notSaved&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Magic Refactor Suggestions&lt;/h3&gt;
+
+&lt;p&gt;You don&amp;rsquo;t always know exactly what refactoring operation you want to perform, and IntelliJ is ready to help - it can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-10.Refactorthis&#34;&gt;suggest refactorings available in the current context&lt;/a&gt;
+using the catchy magic incantation Ctrl+Shift+Alt+T.  Seems useful, but I&amp;rsquo;m pretty sure I&amp;rsquo;m not going to remember that
+one.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Highlight implemented/overridden methods&lt;/h3&gt;
+
+&lt;p&gt;I love everything about IntelliJ&amp;rsquo;s ability to find usages of things - finding where methods are called, finding
+implementations of a method, highlighting usages of a field, method or variable&amp;hellip; What I didn&amp;rsquo;t know, is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Find+Usages#FindUsages-6.Highlightimplementedandoverriddenmethods&#34;&gt;highlight the methods that implement or override a specific interface or superclass&lt;/a&gt;.
+For some people, this might not add much, as your little &amp;ldquo;I override something&amp;rdquo; icon&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/override.png&#34; alt=&#34;Overrides Something&#34; title=&#34;Overrides Something&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;combined with the &lt;code&gt;@Override&lt;/code&gt; annotation, might tell you all you need to know. But that only really works if you&amp;rsquo;re implementing a
+a single interface.  If you&amp;rsquo;ve correctly separated your concerns, you might implement several interfaces, and want to know
+which are the methods from a particular one.  That&amp;rsquo;s where Shift+Ctrl+F7 on the &amp;ldquo;extends&amp;rdquo; keyword comes in handy.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Run individual inspection by name&lt;/h3&gt;
+
+&lt;p&gt;I use &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections&#34;&gt;inspections&lt;/a&gt; quite a lot.  They&amp;rsquo;re especially
+useful if you have a codebase that doesn&amp;rsquo;t quite conform to your ideal standards, so you can&amp;rsquo;t yet turn on automated
+checks like checkstyle to break the build when the code doesn&amp;rsquo;t
+conform - there&amp;rsquo;s an initial step where first you need to clean up the code.  Inspections are great, because you can
+have IntelliJ give you little yellow marks to show where things are suboptimal, and aim to check in only files without
+little yellow marks.&lt;/p&gt;
+
+&lt;p&gt;What I didn&amp;rsquo;t know, is that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-6.Runasingleinspection&#34;&gt;run a single inspection&lt;/a&gt;
+on files in any scope.  So if, for example, you wanted to
+make sure that the code you&amp;rsquo;ve touched in this change has no unused bits, like
+unused parameters or unused/untested methods, you could press Shift+Alt+Ctrl+I and type &amp;ldquo;unused&amp;rdquo;. Select the
+&amp;ldquo;Unused Declaration&amp;rdquo; inspection and choose to run this on all uncommitted files.  This will tell you where you can
+clean up your code, and every commit should make your codebase that little bit better.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Saving Power With Highlighting&lt;/h3&gt;
+
+&lt;p&gt;I did not know you could easily &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-7.Highlightinglevelandpowersavemode&#34;&gt;alter the active errors/warnings&lt;/a&gt;,
+and use that to save power.  Quite Interesting.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Auto indent your lines&lt;/h3&gt;
+
+&lt;p&gt;I almost obsessively reformat my code as I go, pressing &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-1.Reformatcode&#34;&gt;Ctrl+Alt+L&lt;/a&gt;
+almost like a muscle twitch. What I&amp;rsquo;ve just discovered, though, is that there&amp;rsquo;s a &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-2.Autoindentlines&#34;&gt;shortcut which will just fix the line
+indentation&lt;/a&gt;,
+which is probably 80% of what I need anyway - Ctrl+Alt+I.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Fix Evil String Concatenation&lt;/h3&gt;
+
+&lt;p&gt;I can&amp;rsquo;t believe I didn&amp;rsquo;t notice this one earlier - do you know how many times I&amp;rsquo;ve gone around and manually changed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;System.out.println(&amp;quot;This thing &amp;quot; + something + &amp;quot; is &amp;quot; + somethingElse);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;System.out.printf(&amp;quot;This thing %s is %s%n&amp;quot;, something, somethingElse);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Do you??? Anyway you don&amp;rsquo;t need to - Alt+Enter inside the params &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Intentions#Intentions-2.Stringconcatenation&#34;&gt;will suggest the replacement and do it for
+you&lt;/a&gt;. Nice.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;VCS Quick Access&lt;/h3&gt;
+
+&lt;p&gt;One of the areas where I &lt;em&gt;definitely&lt;/em&gt; don&amp;rsquo;t use IntelliJ to the best of its abilities is the Git integration.  I&amp;rsquo;ve
+been using &lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt; combined with IntelliJ to do most of my VCS management
+(I&amp;rsquo;m so sorry, I&amp;rsquo;m just not a command line
+person, I need to actually &lt;em&gt;see&lt;/em&gt; it). With the new laptop, I haven&amp;rsquo;t installed SourceTree yet and I&amp;rsquo;m going to try and
+do everything via the IDE.  Previously I used the right-click menu mostly for managing VCS operations, occasionally the
+VCS menu, and did most stuff in the &amp;ldquo;Changes&amp;rdquo; window.  But now I&amp;rsquo;ve discovered Alt+&amp;ldquo;Back Quote&amp;rdquo; (Ctrl+V on the mac) to
+bring up the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Version+Control+Basics#VersionControlBasics-4.VCSoperationsquicklist&#34;&gt;menu of git-shaped operations for this
+context&lt;/a&gt;.
+To stop you having to hunt all over the keyboard to
+find what on earth a &amp;ldquo;Back Quote&amp;rdquo; is, it&amp;rsquo;s &amp;#96;, which on both my UK and US (Windows) keyboards is in the top left
+corner of your keyboard (on the Mac, it&amp;rsquo;s on the bottom left next to the shift, but you shouldn&amp;rsquo;t need it since your
+shortcut is different anyway).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;Amend Commits&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve just discovered that you can commit a change which smushes up into your last commit and fixes it.  I&amp;rsquo;m assuming it commits the
+new changes and (potentially) an updated commit message into the last change.  I really wish I&amp;rsquo;d known about this
+earlier, on a number of occasions in the last few months I&amp;rsquo;ve done this either manually or by doing a rather
+dangerous soft reset.  I will &lt;em&gt;definitely&lt;/em&gt; be using this in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/amend-commit.png&#34; alt=&#34;Amend Commit&#34; title=&#34;Amend Commit&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;The Cursor as a Breakpoint&lt;/h3&gt;
+
+&lt;p&gt;Did you know that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Debugger#Debugger-5.Runtocursor&#34;&gt;use the cursor as a temporary breakpoint&lt;/a&gt;?
+I did not.  Well, now you know.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;Labelling Changes&lt;/h3&gt;
+
+&lt;p&gt;I hope by now none of us developers are doing that icky thing of having &lt;a href=&#34;https://twitter.com/trisha_gee/status/529299964787449856&#34;&gt;&amp;ldquo;Copy of&amp;hellip;&amp;rdquo; and &amp;ldquo;Backup of&amp;hellip;&amp;rdquo; filenames
+and directories&lt;/a&gt; to keep track of our versions.  We&amp;rsquo;re all using a VCS of course.  But if you&amp;rsquo;re being strict about making
+sure that every commit leads to a working build (we all do that, right&amp;hellip;?) then sometimes even distributed file systems
+like git, with its local branches, are too heavyweight for experiments and debugging.&lt;/p&gt;
+
+&lt;p&gt;IntelliJ has Local History, which I personally think you should &lt;em&gt;never&lt;/em&gt; rely on, but has occasionally saved my bacon in
+times of strife.  It also does this really nice thing (automatically) where it labels versions where the tests passed,
+so you&amp;rsquo;ve got some level of confidence that at that point in time, at that revision, things weren&amp;rsquo;t hideously broken.
+At the very least, they must have compiled.  What I did not know is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Local+History#LocalHistory-6.Putlabel&#34;&gt;add your own labels&lt;/a&gt;, so you could
+label some local, non-committed version of the file as &amp;ldquo;feature x works but y doesn&amp;rsquo;t&amp;rdquo; (or probably something much
+shorter).&lt;/p&gt;
+
+&lt;p&gt;I think it looks useful. As I say though, &lt;em&gt;not&lt;/em&gt; a replacement for VCS, but a suppliment.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+So, that&amp;rsquo;s the end of Week One at JetBrains, and already I&amp;rsquo;ve learnt a whole heap of things.  I&amp;rsquo;m sure there&amp;rsquo;s more to
+come, so stay tuned!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New IntelliJ Tricks I Learnt Today</title>
+      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
+      <description>
+
+&lt;p&gt;Day three of my &lt;a href=&#34;/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
+of IntelliJ, since I&amp;rsquo;m
+already a &amp;ldquo;Power User&amp;rdquo;, to see if there&amp;rsquo;s stuff missing that someone like me might want to see. Firstly, a confession -
+I&amp;rsquo;m not sure I&amp;rsquo;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&amp;rsquo;ve dipped
+into it when I needed to know something, I&amp;rsquo;ve searched for help with specific items, but like many developers, I tend to
+use something first rather than read the documentation first.&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
+and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
+else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s today&amp;rsquo;s list, and feel free to laugh at me and be smug in my direction if you already knew these things (note: I
+have upgraded to IntelliJ 14, and at the time of writing I don&amp;rsquo;t know which of these features are new and which are
+simply previously undiscovered):&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate directly to an action or option&lt;/h3&gt;
+
+&lt;p&gt;Press Shift+Ctrl+A (Windows) or Shift+Cmd+A (Mac) and start typing the name of the thing you want to do, or the setting
+you want to change. I&amp;rsquo;ve found this especially useful now I&amp;rsquo;m back on Windows and I don&amp;rsquo;t have that nice helpful typing
+box on the help menu that will take me straight to the menu item I want.  But what&amp;rsquo;s most useful about this for me today,
+as I&amp;rsquo;m setting up a new profile on a new laptop (more on the new laptop later, if it doesn&amp;rsquo;t defeat me utterly) is that
+from here, you can turn various settings on and off without having to navigate through the settings screen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/action.png&#34; alt=&#34;Navigate to Action&#34; title=&#34;Navigate to Action&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Statement completion&lt;/h3&gt;
+
+&lt;p&gt;I never knew there was a
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-4.Statementcompletion&#34;&gt;shortcut for finishing off a statement&lt;/a&gt;,
+all that Java boilerplate you need to keep the compiler happy - semi colons and curly brackets and everything.  But
+there is, and I can see it being super useful, especially if you&amp;rsquo;re using other bits of IntelliJ code completion to
+create the core of your line of code.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Issue tracker integration&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure loads of people are already using integration with their favourite issue tracker, but I hadn&amp;rsquo;t really thought
+about this as something that I really cared about.  But I was watching the intro videos for YouTrack (not surprisingly
+I&amp;rsquo;ll be using this instead of Jira during my time at JetBrains) and when I saw
+&lt;a href=&#34;https://www.youtube.com/watch?v=n2_3Y1jLm5U&#34;&gt;how the IDE integration worked&lt;/a&gt;, I
+suddenly realised how this small thing can add up to save thousands of keystrokes over time, not to mention saving
+precious navigational seconds and window-switching.&lt;/p&gt;
+
+&lt;p&gt;For me, just the ability to generate at least the start of the commit message is a saving in time, and adds to project
+consistency if all your developers are doing the same thing.  On my last project we only just realised we all quoted the
+Jira issues in subtly different ways.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Settings shortcut keys&lt;/h3&gt;
+
+&lt;p&gt;When I initially started using IntelliJ in anger back in 2008, I was very much a point-and-click type user. Over time,
+pair programming with keyboard-super-users and giving live demos with very limited time available, I&amp;rsquo;ve worked harder
+to become a keyboard-shortcuts person.  With the latest version of IntelliJ, I can&amp;rsquo;t find the tiny icons I use to get to
+the settings window, something that I&amp;rsquo;ve been using a lot as I set up the new IDE instance on the new laptop.  So I bit
+the bullet and learnt the keyboard shortcuts, and it&amp;rsquo;s already saving me a bunch of time (on the rare occasions when the
+aforementioned &amp;ldquo;Navigate to Action&amp;rdquo; fails me).&lt;/p&gt;
+
+&lt;p&gt;Ctrl+Alt+S for the settings dialog (appears to be Cmd + , on the Mac)
+Shift+Ctrl+Alt+S for the project structure dialog (appears to be Cmd + ; on the Mac)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/settings.png&#34; alt=&#34;Settings Shortcuts&#34; title=&#34;Settings Shortcuts&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Yeah.  I can&amp;rsquo;t believe I wasn&amp;rsquo;t already using those either.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Selecting the negative&lt;/h3&gt;
+
+&lt;p&gt;I use completion/suggestions all the time from IntelliJ, I&amp;rsquo;m far too lazy to type everything.  What I didn&amp;rsquo;t realise, is
+that you don&amp;rsquo;t just have to accept the default they give you.  If, for example, IntelliJ suggests a boolean value, you
+can get it to negate that value by selecting it with &amp;ldquo;!&amp;rdquo; instead of enter or tab.  Yes, I know I&amp;rsquo;ve done a horrible job
+of explaining that, but take a look at
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-5.Negatingcompletion&#34;&gt;the documentation&lt;/a&gt;
+and try it, it&amp;rsquo;s quite cool.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Exclude from Autocomplete&lt;/h3&gt;
+
+&lt;p&gt;Speaking of code completion, sometimes IntelliJ is sometimes just a bit too keen to suggest something, and you really
+will never want that value.  In the past, I&amp;rsquo;ve always used &lt;code&gt;Settings -&amp;gt; Editor -&amp;gt; General -&amp;gt; Auto Import&lt;/code&gt; to manage the
+suggestions (the most common one for me is I will never want &lt;code&gt;java.awt.List&lt;/code&gt;, I will almost always want
+&lt;code&gt;java.util.List&lt;/code&gt;).  Well, you don&amp;rsquo;t have to go into settings to do this, you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-9.Excludefromcompletion&#34;&gt;do it from the suggestions themselves&lt;/a&gt; -
+navigate to the item you don&amp;rsquo;t want (in my case, &lt;code&gt;java.awt.List&lt;/code&gt;) and press Alt+Enter, this will give you the option
+of excluding this from the suggestions in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s what I found from just one day of browsing the documentation and setting up my IDE from scratch yet again.
+Maybe I&amp;rsquo;ll promptly forget all these, or maybe they&amp;rsquo;ll be new weapons in my armoury of IDE-fu. Either way, maybe one or
+two people will find this useful.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Developers want to be heard</title>
+      <link>http://trishagee.github.io/post/developers_want_to_be_heard/</link>
+      <pubDate>Thu, 11 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/developers_want_to_be_heard/</guid>
+      <description>&lt;p&gt;I wrote a &lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;piece for the Java Advent Blog&lt;/a&gt;,
+about how developers aren&amp;rsquo;t just communing with the computer, they also need to feel listened to by real human beings.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;Read it here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Year, New Adventures</title>
+      <link>http://trishagee.github.io/post/new_year_new_adventures/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/new_year_new_adventures/</guid>
+      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
+called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
+this role were: to learn what it was
+like working for a company that produced a technology product; to discover what impact working in an open source fashion has; and to
+level up my advocacy skills.  I have met all these goals, and more - I met some fantastic people; learnt different approaches to
+software development; discovered my new favourite database for creating applications; moved to Spain; started both a
+&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; and a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;;
+worked to understand the value of community and evangelism, and to help create a strategy for these areas;
+and my evangelism efforts and open source work earned me the &lt;a href=&#34;https://java.net/website/java-champions/bios.html#Gee&#34;&gt;Java Champion&lt;/a&gt; title.
+I&amp;rsquo;m extremely proud of what I&amp;rsquo;ve achieved over this period, and very grateful to MongoDB for giving me these opportunities.&lt;/p&gt;
+
+&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
+this year, you&amp;rsquo;ll know of my love affair with &lt;a href=&#34;https://www.jetbrains.com/idea/whatsnew/&#34;&gt;IntelliJ IDEA&lt;/a&gt;,
+a tool I use daily (even for blogging). Well, now I&amp;rsquo;m joining the team at &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt;,
+where I&amp;rsquo;m going Full Advocate. I &lt;em&gt;hope&lt;/em&gt; this means I get to carry on doing more of what I love - presenting, writing,
+and working on demos to help developers become more productive. I hope this will give me opportunities to stay ahead of the curve in the
+Java/JVM world.&lt;/p&gt;
+
+&lt;p&gt;And yes, in answer to the Most Frequently Asked Question, I am staying in Spain. I&amp;rsquo;ve fallen in love with Sevilla and I&amp;rsquo;m not ready to
+leave yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I shall leave you with my somewhat disasterous &amp;ldquo;Top Ten IntelliJ Tips&amp;rdquo; from GOTO Aarhus, which is worth watching just to see Dan North
+save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improving Speaker Diversity</title>
+      <link>http://trishagee.github.io/post/more_female_speakers/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/more_female_speakers/</guid>
+      <description>
+
+&lt;p&gt;Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically,
+although not limited to, increasing the number of women speakers).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to outline the things I remember being discussed, although as usual we did not find the answer to the problem,
+only identify some issues and explore some options.&lt;/p&gt;
+
+&lt;p&gt;This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and
+posted than if this all goes to die in my drafts folder.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;I don&amp;rsquo;t have anything to say&lt;/strong&gt;&lt;br /&gt;
+This is the very first thing any developer says when you ask them why they haven&amp;rsquo;t thought about presenting at conferences or user
+groups. Turns out, you always have something to say.  For example, our most popular sessions at the Sevilla JUG and MUG are &amp;ldquo;Introduction
+ to&amp;hellip;&amp;ldquo;. You hear from plenty of experts who have travelled the whole road to some pinnacle of excellence,
+ but what many developers need is simply someone a couple of steps ahead of them to lead them forwards.&lt;/p&gt;
+
+&lt;p&gt;You always know more than &lt;em&gt;someone&lt;/em&gt;, you don&amp;rsquo;t need to know everything, and you don&amp;rsquo;t need to know more than everyone&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why should I be role model?&lt;/strong&gt;&lt;br /&gt;
+So many women feel this, and I&amp;rsquo;m completely sympathetic to this view point: I&amp;rsquo;m a woman developer, getting along, happy in my job,
+happy being a programmer, why the hell should I have to stand up and present and blog and be a role model for other women? Men don&amp;rsquo;t have
+to do that. Men can &lt;em&gt;just&lt;/em&gt; be developers.&lt;/p&gt;
+
+&lt;p&gt;In addition, there&amp;rsquo;s the fear that if you &lt;em&gt;do&lt;/em&gt; stand up, become a role model, that somehow people will think you&amp;rsquo;re representing all
+women developers. You&amp;rsquo;ll be worried because you can only represent who you are, what you do, you can&amp;rsquo;t represent a whole gender in a
+single presentation or a single interview.  And the pressure! What if I mess up? What if I say something my gender does not agree with?
+What if I say something that causes my whole gender to be judged?&lt;/p&gt;
+
+&lt;p&gt;Totally understandable fears. Totally true that many people will ask you to be &lt;em&gt;the&lt;/em&gt; woman developer, to answer for all women.  Well,
+that&amp;rsquo;s why I&amp;rsquo;m asking more women to stand up, to be role models - if we all step up, it will no longer just be me, and you,
+and that other one over there. There&amp;rsquo;ll be more of us, more differing voices, we&amp;rsquo;ll stand out less. But we have to stand up first.  And
+in the meantime it&amp;rsquo;s us and our points of view they&amp;rsquo;re listening to. Wouldn&amp;rsquo;t you rather voice your opinion than have someone else speak
+on your behalf? Especially when very few people really can represent you, who you are and what you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What if I can&amp;rsquo;t answer the questions?&lt;/strong&gt;&lt;br /&gt;
+You&amp;rsquo;ll be surprised at what you do know, so people who present run into this less than you&amp;rsquo;d think, even if you&amp;rsquo;re just beginning,
+but just in case here are some tips:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Repeat the question, paraphrasing. Firstly, this ensures you&amp;rsquo;ve actually heard the question correctly. Secondly,
+it allows the whole audience to hear it, and thirdly, but most importantly, it buys you time to think.&lt;/li&gt;
+&lt;li&gt;Be honest - say you don&amp;rsquo;t know, and move on. If you know somewhere that might have the answer,
+point the person to that resource.  But a technical audience actually values the answer &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; more than you think. Especially
+the person who asked the question, it makes them feel really smart!&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;If you don&amp;rsquo;t know, but you think the audience might know, throw it back to them. Either to the person who asked the question,
+if that feels appropriate (especially if this is one of those &amp;ldquo;look how smart I am&amp;rdquo; questions),
+or to the audience as a whole. In conferences in particular, there&amp;rsquo;s a good chance someone there knows the answer.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re genuinely terrified of all questions, say at the start of the presentation that you won&amp;rsquo;t take questions in the talk. Offer
+an alternative, like via Twitter or e-mail, if you can.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;What can conference organisers do?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifically invite the people you want presenting&lt;/strong&gt;&lt;br /&gt;
+Don&amp;rsquo;t just wait for them to submit. If you want more women, more diversity, invite them. And invite them early&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Secure your women presenters early.&lt;/strong&gt;&lt;br /&gt;
+Recognise that there are relatively few women presenters on &amp;ldquo;the circuit&amp;rdquo;, and understand that &lt;em&gt;everyone&lt;/em&gt; wants them to speak at their
+conference. This rare breed, the female technical presenter, gets booked up &lt;em&gt;well&lt;/em&gt; in advance.  They&amp;rsquo;re probably as in-demand as your
+keynote speakers, and can probably devote less time to appearing at conferences than those who have made it to keynote-standard (I&amp;rsquo;m
+making a sweeping generalisation that your techy women have day-jobs as developers and your keynote speakers are either professional
+presenters or at least can argue presenting as a critical part of their job).&lt;/p&gt;
+
+&lt;p&gt;So, you have a limited resource (experienced women presenters) that&amp;rsquo;s in high demand. You need to reach out directly to them,
+invite them, and secure them well in advance of your conference.  Many big conferences, for example JavaOne and QCon,
+will invite speakers six months in advance. If you give women speakers a month&amp;rsquo;s notice before your conference or event,
+they simply are not going to have the space in their schedule at that late notice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Showcase your diversity on your website&lt;/strong&gt;&lt;br /&gt;
+If you haven&amp;rsquo;t already heard of &lt;a href=&#34;http://en.wikipedia.org/wiki/Microaggression_theory&#34;&gt;microaggressions&lt;/a&gt;,
+go and read what that means before you get any further.  There&amp;rsquo;s a very simple thing you
+need to do with your website, whether you&amp;rsquo;ve opened for CFP or you&amp;rsquo;re trying to get attendees to register - make sure the photos on your
+website show the type of diversity you want to encourage.  Only yesterday I was looking at the website of a big conference,
+who I know for a fact are working &lt;em&gt;really&lt;/em&gt; hard to ensure diversity, not just with gender but race, age,
+and where possible in less physically obvious dimensions. The conference is many months off, so the only photo they have on the website
+is a background photo of the exhibition hall from some previous year, crammed full of attendees - white, male attendees,
+as far as it&amp;rsquo;s possible to tell.  It&amp;rsquo;s extremely subtle. You might not even notice, as the photo is behind the headers and text of the
+site. But I noticed. And you can be sure the subconscious of every person who went to the website to either submit a proposal for a
+talk, or is considering asking their employer to pay for the registration, also noticed.  The conscious mind might be able to shrug it
+off.  But the subconscious of a non-white and/or non-male person notices and plants the subtle seed
+of &amp;ldquo;this conference is not for me&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;So, conference and event organisers - if you want more women applying to speak at your conference,
+show more women on your website.  If you want a more diverse audience, show more diverse faces.  If you&amp;rsquo;ve invited your women presenters
+early and secured them early, show their photos on the site - this sends a strong message to other women that their talk proposals will be
+taken seriously.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run warm up nights to try out new speakers&lt;/strong&gt;&lt;br /&gt;
+I know conference organisers get &lt;em&gt;lots&lt;/em&gt; of submissions, and I know it&amp;rsquo;s hard to tell which are going to be good speakers,
+especially if they&amp;rsquo;re new speakers or don&amp;rsquo;t have a video.  If you&amp;rsquo;re genuine about improving the diversity of your speakers,
+run free nights to a) promote your conference and b) try out new speakers.  Probably a good idea to have a new speaker and a known
+speaker to attract the crowd and give newbies a chance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be so damn picky&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New speakers need to be encouraged. Find a way to see their content without just discarding an unknown name.&lt;/li&gt;
+&lt;li&gt;Existing speakers might not have the luxury of creating new content. Many conferences want genuine practitioners,
+not just evangelists, but those people have day jobs and can&amp;rsquo;t be creating a new talk just for your conference.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Leave space for new speakers&lt;/strong&gt;&lt;br /&gt;
+&amp;hellip;and don&amp;rsquo;t just have 7 slots for a pro speaker&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Look at your swag&lt;/strong&gt;&lt;br /&gt;
+Not just guys t-shirts.  One conference gave out cupcakes for example. But it doesn&amp;rsquo;t just have to be handbags and high-heeled shoes,
+just take a quick look and see if your swag is generally useful for techies, or if it leans towards men only. Men only swag (men&amp;rsquo;s
+t-shirts, bottle openers, subtle things like that) subliminally says &amp;ldquo;you don&amp;rsquo;t belong here&amp;rdquo; to the women.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Give feedback&lt;/strong&gt;&lt;br /&gt;
+You can&amp;rsquo;t tell every individual why they were rejected, but you could look at all the rejected submissions and give broad indications of
+the type of CFPs that didn&amp;rsquo;t make it. Maybe write a blog post explaining which sorts of talks didn&amp;rsquo;t make it and why.  This will help
+speakers create content that better fits your conference.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Be specific about what you&amp;rsquo;re looking for&lt;/strong&gt;&lt;br /&gt;
+If you have tracks you&amp;rsquo;re finding content for, put them on the website/CFP, so people know what the topics are. If you have an
+idea that you want 30% beginner material and 30% very advanced, make that clear too. Especially if you want &lt;em&gt;only&lt;/em&gt; beginner or &lt;em&gt;only&lt;/em&gt;
+advanced. People will submit more appropriate talks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Have a beginner&amp;rsquo;s track&lt;/strong&gt;&lt;br /&gt;
+&amp;hellip;not just for the speakers, for the content too. Beginner speakers may be more comfortable presenting &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; talks.&lt;br /&gt;
+Having a beginners track, whether it&amp;rsquo;s for content or speakers, will make newbies feel more included.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;What other things can we try?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;User groups can grow talent&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Practice writing CFPs&lt;/li&gt;
+&lt;li&gt;Help each other&lt;/li&gt;
+&lt;li&gt;Presentation skills&lt;/li&gt;
+&lt;li&gt;Lightning talks, book club, different meetup styles (like fishbowl)&lt;/li&gt;
+&lt;li&gt;Run an open conference to encourage new speakers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Women&amp;rsquo;s user groups are instrumental&lt;/strong&gt;&lt;br /&gt;
+So here&amp;rsquo;s something interesting. I&amp;rsquo;m sceptical of all-women user groups as I feel it separates us from the communities we &lt;em&gt;should&lt;/em&gt; be
+contributing to. But women&amp;rsquo;s user groups can help us to integrate better.  For example, Duchess France helped and encouraged its members
+to submit talks to Devoxx, gave feedback on CFPs before they were submitted, and provided a safe place for the women to practice
+presenting beforehand.  I think this is exactly the sort of thing women&amp;rsquo;s user groups could be fantastic for.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Advice for budding speakers&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Just Do It&lt;/li&gt;
+&lt;li&gt;The more you do it, the more comfortable you&amp;rsquo;ll be&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re a speaker, it can make you feel less of an impostor at a conference - you&amp;rsquo;re not just a woman developer, you&amp;rsquo;re a speaker!&lt;/li&gt;
+&lt;li&gt;Everyone&amp;rsquo;s afraid, it&amp;rsquo;s not just you&lt;/li&gt;
+&lt;li&gt;Every developer wants to learn&lt;/li&gt;
+&lt;li&gt;The audience is on your side&lt;/li&gt;
+&lt;li&gt;Start Small (user groups)&lt;/li&gt;
+&lt;li&gt;Be technical. But you don&amp;rsquo;t have to be super smart&lt;/li&gt;
+&lt;li&gt;Bootstrapping is hard - you haven&amp;rsquo;t presented so you can&amp;rsquo;t get into conferences. Again, user groups can help with this.&lt;/li&gt;
+&lt;li&gt;Pair. Ask a more experienced presenter if you can co-present with them.&lt;/li&gt;
+&lt;li&gt;Ask for mentors&lt;/li&gt;
+&lt;li&gt;Ask for feedback&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; is perfectly acceptable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I appreciate there is &lt;em&gt;so&lt;/em&gt; much more I could have covered, and many topics deserve more depth. But this is the brain dump from the Devoxx
+session, and maybe one day things will be expanded into their own topics.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>It&#39;s not waste, it&#39;s learning</title>
+      <link>http://trishagee.github.io/post/its_not_waste_its_learning/</link>
+      <pubDate>Sun, 23 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/its_not_waste_its_learning/</guid>
+      <description>&lt;p&gt;In one my my rare weekends at home, I found myself on a pottery course (this is the sort of thing that happens when you&amp;rsquo;re a &amp;ldquo;yes&amp;rdquo; person).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-1.jpg&#34; alt=&#34;OK, not pottery, horses. The course was on a farm.&#34; title=&#34;OK, not pottery, horses. The course was on a farm.&#34; /&gt;
+
+&lt;figcaption&gt;OK, not pottery, horses. The course was on a farm.&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a fantastic time on the course, there was something enormously satisfactory and therapeutic about working with my hands,
+on something creative that was for me, and only me.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-2.jpg&#34; alt=&#34;My first bowl&#34; title=&#34;My first bowl&#34; /&gt;
+
+&lt;figcaption&gt;Honestly, I think the one I did in primary school when I was seven was better.&lt;br /&gt;
+And I don&amp;rsquo;t care, because I loved creating it.&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the things that really struck me that day was embracing failure and destruction as part of the creative process.  Let me give you a
+couple of examples:&lt;/p&gt;
+
+&lt;p&gt;The teacher showed us several techniques for creating pottery, one of which was using plaster moulds and very liquid clay to produce more
+complex items (for example, mugs and animal figures).  He told us that when using a new mould,
+the first few items would be useless.  But these &amp;ldquo;failures&amp;rdquo; are an important process for the mould itself.  The
+class was in Spanish, so my understanding was imperfect, but I think it was something to do with the fact that the plaster moulds are
+supposed to absorb water, and therefore I assume at the beginning they absorb far too much and the clay ends up being too dry and brittle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-3.jpg&#34; alt=&#34;Pottery created with moulds&#34; title=&#34;Pottery created with moulds&#34; /&gt;
+
+ &lt;figcaption&gt;Pottery created with moulds&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;The second example was when he showed us why it was so difficult to create a clay plate - bowls, mugs, cups were fine,
+but a plate is difficult as it&amp;rsquo;s flat and the shape doesn&amp;rsquo;t have enough structure for it to have any rigidity  if it&amp;rsquo;s even slightly damp
+(and clay stays damp for a looong time, even in a climate like Seville&amp;rsquo;s). He demonstrated this by cutting straight through the plate
+that he&amp;rsquo;d put into the mould earlier and folding it up, to the collective intake of breath of the whole class - a class of people of a range
+of ages and backgrounds. We seem socially programmed to find destruction of any kind upsetting (which is probably, overall,
+not a bad thing), when the teacher sliced the plate in half to demonstrate how floppy the plate was, we were all disturbed by this waste.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-5.jpg&#34; alt=&#34;My pieces&#34; title=&#34;My pieces&#34; /&gt;
+
+&lt;figcaption&gt;Even when I broke my bowl when preparing it for the kiln, I couldn&amp;rsquo;t bring myself to abandon it - I turned it into a
+candle holder&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;But here&amp;rsquo;s the thing - it&amp;rsquo;s clay.  Clay is mud.  It&amp;rsquo;s from the ground.  Moreover, it&amp;rsquo;s almost completely reusable.  All of the leftover
+clay from our earlier exercises, all of the excess liquid clay from the moulds, all of the pieces that didn&amp;rsquo;t make it,
+it was put aside and saved for later.  It&amp;rsquo;s not a waste.  It&amp;rsquo;s learning.  It&amp;rsquo;s experimenting.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not failure.&lt;/p&gt;
+
+&lt;p&gt;It got me thinking.  If we can be like that about something concrete, something that exists in the real world,
+why aren&amp;rsquo;t we like that about something as ephemeral as code?  Why are we so afraid to throw away code? And don&amp;rsquo;t tell me we&amp;rsquo;re not
+afraid - how many &amp;ldquo;spikes&amp;rdquo; and &amp;ldquo;prototypes&amp;rdquo; have you seen running in production?  Have you read people talking about
+creating code and throwing it away, and thought &amp;ldquo;that sounds nice, but I think I&amp;rsquo;ll stick to just producing useful code&amp;rdquo;? (Note: I&amp;rsquo;m not
+talking about &lt;a href=&#34;http://www.joelonsoftware.com/articles/fog0000000069.html&#34;&gt;throwing away perfectly good production code&lt;/a&gt;,
+nor am I talking about &lt;a href=&#34;http://codesqueeze.com/refactorbation/&#34;&gt;refactorbation&lt;/a&gt;, a term I just discovered and love.
+I&amp;rsquo;m talking about creating for research, spikes, learning etc, and then throwing it away).&lt;/p&gt;
+
+&lt;p&gt;&lt;div style=&#34;text-align:center&#34;&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-6.jpg&#34; alt=&#34;Java&#34; title=&#34;Java&#34; height=&#34;300&#34;&gt;&lt;/img&gt;&lt;/div&gt;
+&lt;figcaption&gt;What?? I needed to carve something into the medallion&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;Coincidentally, I&amp;rsquo;ve been reading &lt;a href=&#34;http://www.amazon.com/gp/product/1477800670/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1477800670&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=5KXFITDLKQQCXD3K&#34;&gt;Build Your Routine, Find Your Focus, and Sharpen Your Creative Mind&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1477800670&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;,
+and there&amp;rsquo;s a section in there that talks about getting into the habit of
+creating just for the sake of creating.  Not for your side projects, not for a client, not even for your portfolio.  Simply to get into
+the habit of creating.  &lt;em&gt;Maybe&lt;/em&gt; some of those ideas, or processes, will come in handy later down the line.  Or maybe,
+like the clay moulds, simply creating something for throwing away actually helps the overall process.&lt;/p&gt;
+
+&lt;p&gt;These experiences have left me with a feeling that I should start getting used to the idea of throwing code away,
+and start creating things for no reason other than the feeling of creating.  It could be like running - in theory I run so I have to
+worry less about my weight and my fitness, but actually I run &lt;em&gt;much&lt;/em&gt; more frequently when I run just for the joy of running. The fitness
+and health are side benefits.&lt;/p&gt;
+
+&lt;p&gt;Maybe we&amp;rsquo;re so reluctant to throw code away precisely because it &lt;em&gt;is&lt;/em&gt; ephemeral.  Maybe with the clay,
+we can see that concrete thing, that mud, being turned into something useful eventually.  With running,
+you can feel the difference in your attitude, in your fitness, maybe see it on the scales. With code, when you delete those characters,
+revert that change, you feel like you lost something, and have nothing to show for that precious time.  When actually you created new
+pathways in your brain, added new memories and learnt new lessons.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not sure I&amp;rsquo;m ready yet to create just for the sake of creating, I think I&amp;rsquo;m just too results-driven. But I&amp;rsquo;m going to
+write about it here to remind myself that it is something I want to do. Sometimes it&amp;rsquo;s the exercise, not the end result.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-7.jpg&#34; alt=&#34;The full haul&#34; title=&#34;The full haul&#34; /&gt;
+
+&lt;figcaption&gt;The final pieces, still needing the kiln to finish the glaze.&lt;/figcaption&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MongoDB London</title>
+      <link>http://trishagee.github.io/post/mongodb_london/</link>
+      <pubDate>Wed, 22 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/mongodb_london/</guid>
+      <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;So, &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is nearly upon us again,
+and I&amp;rsquo;m dead disappointed I can&amp;rsquo;t make it this year (I&amp;rsquo;m
+&lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;keynoting at GOTO Berlin&lt;/a&gt; instead,
+which I&amp;rsquo;m terrified, I mean, excited, about). The last MongoDB London was really interesting for me - I was fairly new to the company,
+I&amp;rsquo;d been here less than six months, and it was a really great way to go both broad and deep on the technology.&lt;/p&gt;
+
+&lt;p&gt;I was trying to find a blog post where I talked about my experiences, but it looks like I only wrote that In My Mind. In fact,
+I only only wrote two whole lines of notes on the conference.  But 18 months later I clearly remember presentations from my colleagues
+&lt;a href=&#34;http://rosslawley.co.uk/&#34;&gt;Ross&lt;/a&gt; and &lt;a href=&#34;http://derickrethans.nl/&#34;&gt;Derick&lt;/a&gt; demonstrating the geo capabilities in MongoDB,
+presentations which heavily influenced the &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt; I&amp;rsquo;ve been giving
+recently.&lt;/p&gt;
+
+&lt;p&gt;I also remember Eliot&amp;rsquo;s presentation - Eliot is one of those people who totally gets away with breaking the &amp;ldquo;speak in a measured,
+clear fashion&amp;rdquo; presenters rule, he fires fascinating information at you at high speed and it&amp;rsquo;s actually one of the compelling things
+about his talks. If you ever get a chance to see him talk about the product, it&amp;rsquo;s totally worth it.&lt;/p&gt;
+
+&lt;p&gt;Other than that, the most awesome thing about the conference was the chance to meet, and talk to,
+a bunch of different MongoDB people - there are the engineers who work on the product (like me and my colleagues);
+the people leading the way with the technology, like Eliot; and finally, but for me most importantly,
+you get to meet really interesting people who are using MongoDB in ways that you might not even imagine.&lt;/p&gt;
+
+&lt;p&gt;Anyway the point of this sales pitch is, whether you&amp;rsquo;re using MongoDB already or you&amp;rsquo;re keen to find out about it,
+&lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is only going to take a day from your life,
+and you&amp;rsquo;ll learn a bunch of interesting things. And, with a Special Discount Code from me,
+it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-london-2014-registration-13140209721&#34;&gt;Sign up&lt;/a&gt; with code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Groovy to import XML into MongoDB</title>
+      <link>http://trishagee.github.io/post/groovy_import_to_mongodb/</link>
+      <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/groovy_import_to_mongodb/</guid>
+      <description>
+
+&lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
+Java and MongoDB&lt;/a&gt;.  I also use Groovy during this demo to do the sorts of things Groovy is
+really good at - writing descriptive tests, and creating scripts.&lt;/p&gt;
+
+&lt;p&gt;Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use,
+so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.&lt;/p&gt;
+
+&lt;p&gt;Firstly I want to clarify that this is not my original work - I &lt;strike&gt;stole&lt;/strike&gt; borrowed most of the ideas for the demo from my
+colleague Ross Lawley. In &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/&#34;&gt;this blog post&lt;/a&gt; he goes into detail of how he built
+up an application that
+finds the most popular pub names in the UK.  There&amp;rsquo;s a &lt;a href=&#34;http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1&#34;&gt;section in there&lt;/a&gt;
+where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it&amp;rsquo;s
+this process that I basically stole, re-worked for coffee shops, and re-wrote for the JVM.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m assuming if you&amp;rsquo;ve worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
+demo is supposed to be all about how easy it is to work with Java, I did &lt;em&gt;not&lt;/em&gt; want to do this. When I wrote the demo I wasn&amp;rsquo;t really all
+that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML,
+which is exactly what I wanted to do. In addition, creating &lt;a href=&#34;http://groovy.codehaus.org/Collections#Collections-Mapsmaps&#34;&gt;Maps&lt;/a&gt; (the
+data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
+&lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Goal of the Script&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Parse an XML file containing open street map data of all coffee shops.&lt;/li&gt;
+&lt;li&gt;Extract latitude and longitude XML attributes and transform into
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-geojson&#34;&gt;MongoDB GeoJSON&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Perform some basic validation on the coffee shop data from the XML.&lt;/li&gt;
+&lt;li&gt;Insert into MongoDB.&lt;/li&gt;
+&lt;li&gt;Make sure MongoDB knows this contains query-able geolocation data.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The script is &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy&#34;&gt;PopulateDatabase.groovy&lt;/a&gt;,
+that link will take you to the version I presented at JavaOne:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Firstly, we need data&lt;/h3&gt;
+
+&lt;p&gt;I used the same service Ross used in his blog post to obtain the XML file containing &amp;ldquo;all&amp;rdquo; coffee shops around the world. Now,
+the open street map data is somewhat&amp;hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
+so I&amp;rsquo;m not sure I really have &lt;em&gt;all&lt;/em&gt; the coffee shops, but I obtained enough data for an interesting demo using&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml&#34;&gt;resulting XML file&lt;/a&gt; is in the
+github project, but if you try this yourself you might (in fact, probably will) get different results.&lt;/p&gt;
+
+&lt;p&gt;Each XML record looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;178821166&amp;quot; lat=&amp;quot;40.4167226&amp;quot; lon=&amp;quot;-3.7069112&amp;quot;&amp;gt;
+    &amp;lt;tag k=&amp;quot;amenity&amp;quot; v=&amp;quot;cafe&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;cuisine&amp;quot; v=&amp;quot;coffee_shop&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;name&amp;quot; v=&amp;quot;Chocolatería San Ginés&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wheelchair&amp;quot; v=&amp;quot;limited&amp;quot;/&amp;gt;
+    &amp;lt;tag k=&amp;quot;wikipedia&amp;quot; v=&amp;quot;es:Chocolatería San Ginés&amp;quot;/&amp;gt;
+&amp;lt;/node&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Each coffee shop has a unique identifier and a latitude and longitude as attributes of a &lt;code&gt;node&lt;/code&gt; element.  Within this node is a series
+of &lt;code&gt;tag&lt;/code&gt; elements, all with &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; attributes. Each coffee shop has a varying number of these attributes,
+and they are not consistent from shop to shop (other than &lt;code&gt;amenity&lt;/code&gt; and &lt;code&gt;cuisine&lt;/code&gt; which we used to select this data).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Initialisation&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Before doing anything else we want to prepare the database.  The assumption of this script is that either the
+collection we want to store the coffee shops in is empty, or full of stale data.  So we&amp;rsquo;re going to use the &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;MongoDB Java Driver&lt;/a&gt; to get the collection that we&amp;rsquo;re interested in, and then drop it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s two interesting things to note here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java,
+it doesn&amp;rsquo;t need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the
+&lt;a href=&#34;http://grails.org/plugin/mongodb&#34;&gt;MongoDB GORM Plugin&lt;/a&gt;), but the Java driver works perfectly well.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t need to create &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-database&#34;&gt;databases&lt;/a&gt; or
+&lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-collection&#34;&gt;collections&lt;/a&gt; (collections are
+a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you&amp;rsquo;re interested in,
+and if it doesn&amp;rsquo;t already exist, the server will create them for you.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this example, we&amp;rsquo;re just using the default constructor for the &lt;code&gt;MongoClient&lt;/code&gt;, the class that represents the connection to the database
+server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
+address and port - for more details on this see &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started With MongoDB and Java&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
+XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
+Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; element in the XML.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
+
+Since MongoDB documents are effectively just maps of key-value pairs, we&amp;rsquo;re going to create a Map &lt;code&gt;coffeeShop&lt;/code&gt; that contains the
+document structure that represents the coffee shop that we want to save into the database.  Firstly,
+we initialise this map with the attributes of the &lt;code&gt;node&lt;/code&gt;. Remember these attributes are something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;node id=&amp;quot;18464077&amp;quot; lat=&amp;quot;-33.8911183&amp;quot; lon=&amp;quot;151.1958773&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We&amp;rsquo;re going to save the ID as a value for a new field called &lt;code&gt;openStreetMapId&lt;/code&gt;. We need to do something a bit more
+complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{ &#39;location&#39; : { &#39;coordinates&#39;: [&amp;lt;longitude&amp;gt;, &amp;lt;latitude&amp;gt;],
+                 &#39;type&#39;       : &#39;Point&#39; } }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In lines 12-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
+places.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
+
+&lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
+
+Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute and check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
+insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field). If so we simply add this key as the
+field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value into the map. This effectively copies the
+&lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
+but we also don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
+
+Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&gt; Map representing the document we want to save into MongoDB,
+we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
+into the map, but it&amp;rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called &lt;code&gt;name&lt;/code&gt; in &lt;code&gt;coffeeShop&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;When we want to insert the Map we need to turn this into a &lt;code&gt;BasicDBObject&lt;/code&gt;, the Java Driver&amp;rsquo;s document type,
+but this is easily done by calling the constructor that takes a Map.  Alternatively, there&amp;rsquo;s a Groovy syntax which would effectively do
+the same thing, which you might prefer:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collection.insert(coffeeShop as BasicDBObject)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
+
+Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
+we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
+so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; for this field.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
+
+&lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
+but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
+and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaOne 2014, Day One</title>
+      <link>http://trishagee.github.io/post/java_one_2014_day_one/</link>
+      <pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_one_2014_day_one/</guid>
+      <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
+had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=10289&#34;&gt;Superpowered CI with Git - Sarah Goff-Dupont&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+The Continuous Integration we did at LMAX is quite different to what we do at MongoDB, and I was hoping to get some tips on better CI with
+Git, especially given feature branches.  There was a good overview of development process using branch-per-feature,
+ and a comment that it&amp;rsquo;s nearly impossible to do &amp;ldquo;pure&amp;rdquo; CI in this sort of environment.  But there was pragmatic advice on how to manage
+ the process and run automated builds in this environment.&lt;/p&gt;
+
+&lt;p&gt;The take-home point for me is that I&amp;rsquo;m going to investigate &lt;a href=&#34;http://git-scm.com/book/en/Customizing-Git-Git-Hooks&#34;&gt;git hooks&lt;/a&gt; to try and
+  streamline our process and run some fast checks more frequently.&lt;/p&gt;
+
+&lt;p&gt;Also, Sarah showed using &lt;a href=&#34;https://www.hipchat.com&#34;&gt;Hipchat&lt;/a&gt; in anger - I&amp;rsquo;ve now heard this mentioned enough that I&amp;rsquo;m going to look into it more.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276&#34;&gt;Advanced Unit Testing with Spock&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
+I&amp;rsquo;ve [spoken before about Spock](&lt;/p&gt;
+
+&lt;p&gt;/tags/spock/), and how much I love it.  The first section of this talk was a recap
+of some of the basics, but the second part went on to some features I either previously ignored or wasn&amp;rsquo;t aware of.  For example, in the
+&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;MongoDB Java Driver&lt;/a&gt;, we do use annotations to denote slower-running tests so we can select which environments to run in,
+but we&amp;rsquo;re not using Spock annotations for this.  I think there&amp;rsquo;s a lot more we could do with both custom annotations like our
+&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/util/src/main/category/Slow.java&#34;&gt;@Slow&lt;/a&gt; annotation,
+Spock&amp;rsquo;s built in annotations like &lt;code&gt;@Issue&lt;/code&gt;, and some others which may not yet be in maven central like &lt;code&gt;@Requires&lt;/code&gt; for running
+language-version tests (&lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/JavaLanguageSpec
+.groovy&#34;&gt;e.g. Java 8 tests&lt;/a&gt;) and &lt;code&gt;@IgnoreRest&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also liked the example of &lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/OldExampleSpec.groovy&#34;&gt;checking the new value against an old
+value&lt;/a&gt;,
+I can totally see this being useful.&lt;/p&gt;
+
+&lt;p&gt;There were other bits and pieces in this talk I&amp;rsquo;d like to dig into in more detail that I think will be very useful for the Java Driver.
+But even more importantly, I learnt how to zoom into my screen so I can use that in my own presentation. Pro presentation top tips.&lt;/p&gt;
+
+&lt;p&gt;Honestly, if you have even minor testing pains, it&amp;rsquo;s worth finding Ken&amp;rsquo;s talks on Spock, they&amp;rsquo;re great! And a source of inspiration for
+better testing, as well as a sneaky way to understand why Groovy is awesome.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;JCP Awards and Party&lt;/strong&gt;&lt;br /&gt;
+But it&amp;rsquo;s not all work at these events.  For me, the highlight was the music at at the JCP Awards party.  Firstly,
+we had an award-winning beat-box guy from the UK (sadly I don&amp;rsquo;t remember his name so I can&amp;rsquo;t link to his stuff).  An unusual choice for
+an event like this, but it was a lot of fun. Then there was the live super-band, The Null Pointers, made up of JUG leaders from around the
+world (including &lt;a href=&#34;https://twitter.com/matkar&#34;&gt;@matkar&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/frankgreco&#34;&gt;@frankgreco&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/fguime&#34;&gt;@fguime&lt;/a&gt;. I&amp;rsquo;ll admit,
+ I was a little concerned about this idea, but the guys were fantastic, and it was a lot of fun singing along to Free&amp;rsquo;s Alright Now and
+ Radiohead&amp;rsquo;s Creep. &lt;a href=&#34;https://www.oracle.com/openworld/appreciation-event/index.html&#34;&gt;Aerosmith&lt;/a&gt; is going to have to work hard to compete with that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&amp;hellip;and a quick plug&lt;/strong&gt;&lt;br /&gt;
+My &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703&#34;&gt;main presentation is on Thursday&lt;/a&gt;, it&amp;rsquo;s a keyword-tastic live demo of AngularJS, Java &amp;amp; MongoDB.  Something &lt;em&gt;always&lt;/em&gt; goes wrong in
+this presentation, so I&amp;rsquo;m &lt;a href=&#34;http://doodle.com/fvrasw9vrpxyb9dm&#34;&gt;taking bets right now on what that will be&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting Started with MongoDB and Java</title>
+      <link>http://trishagee.github.io/post/getting_started_with_mongodb_and_java/</link>
+      <pubDate>Thu, 14 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
+developer.&lt;/p&gt;
+
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
+operations using the Java driver:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started with MongoDB and Java, Part 1&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/94724924068/getting-started-with-mongodb-and-java-part-ii&#34;&gt;Getting Started with MongoDB and Java, Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is very much aimed at Java/JVM developers who are new to MongoDB, and want to get a feel for how you use it.&lt;/p&gt;
+
+&lt;p&gt;These guides are for the current (2.x) driver. When we release 3.x, we&amp;rsquo;ll release updated guides as well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sevilla Java User Group Java 8 Launch Party</title>
+      <link>http://trishagee.github.io/post/svq_java8_launch_party/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/svq_java8_launch_party/</guid>
+      <description>&lt;p&gt;Last night at the Sevilla JUG we officially celebrated the launch of &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt; - yay!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Don&amp;rsquo;t be fooled by the picture, people had more fun than it looks.  Honest.&lt;/p&gt;
+
+&lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (the class we were looking at was &lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Finally, we used the &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; of another of Simon&amp;rsquo;s
+presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
+which is a great source of presentations from international speakers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Readable, Succinct, or Just Plain Short?</title>
+      <link>http://trishagee.github.io/post/short_vs_readable.md/</link>
+      <pubDate>Wed, 02 Jul 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/short_vs_readable.md/</guid>
+      <description>&lt;p&gt;Which is more readable?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version.substring(0, version.indexOf(&#39;-SNAPSHOT&#39;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Given a value of &lt;code&gt;0.109-SNAPSHOT&lt;/code&gt; for &lt;code&gt;version&lt;/code&gt;, they both give the same result.  And I&amp;rsquo;m tempted by the second,
+because it&amp;rsquo;s shorter.  But I&amp;rsquo;m going to go with the first one - not because it&amp;rsquo;s more Java-ish and I&amp;rsquo;m scared of Groovy syntax,
+but because it&amp;rsquo;s easier to understand if/when something goes wrong.&lt;/p&gt;
+
+&lt;p&gt;For example: if &lt;code&gt;version&lt;/code&gt; doesn&amp;rsquo;t conform to the expected pattern, the two code fragments fail in two different ways.  If &lt;code&gt;version&lt;/code&gt;
+doesn&amp;rsquo;t contain &lt;code&gt;-SNAPSHOT&lt;/code&gt;, the first will fail with:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;whereas the second will either arbitrarily slice the last 9 characters off the end of whatever the String does contain,
+or if it&amp;rsquo;s too short you&amp;rsquo;ll get something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;java.lang.ArrayIndexOutOfBoundsException: Negative array index [-10] too large for array size 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When you, the developer, see this error (or notice your mangled version number) and look at the failing line of code,
+you&amp;rsquo;ll have two different experiences.  When looking at the second example, if you didn&amp;rsquo;t write it in the first place or if you have a
+memory as shocking as mine, you won&amp;rsquo;t get any clues from that code as to what the &lt;em&gt;purpose&lt;/em&gt; is - you&amp;rsquo;ll see what it does (chop the last
+9 characters off the &lt;code&gt;version&lt;/code&gt; string), but not why.  You can &amp;ldquo;fix&amp;rdquo; the problem by adding an arbitrary 9 characters onto your &lt;code&gt;version&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re looking at the first example, however, you&amp;rsquo;ll see the intent right there - it&amp;rsquo;s trying to chop the string &lt;code&gt;-SNAPSHOT&lt;/code&gt; (and any
+characters that might happen to come after it) off the end of the &lt;code&gt;version&lt;/code&gt; string.  With this line of code,
+if you checked the value of &lt;code&gt;version&lt;/code&gt; and saw it didn&amp;rsquo;t have the correct suffix, you&amp;rsquo;d have a good idea of what the problem is and how
+to solve it.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s a third way, that potentially keeps the descriptiveness (is that a word?) of the first solution and makes it a bit shorter and
+Groovier:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..&amp;lt;version.indexOf(&#39;-SNAPSHOT&#39;)]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You need the less-than sign plonked in there to make it work correctly, which I find a bit jarring,
+but it does work.  It&amp;rsquo;s a little more succinct than the original Java syntax and retains the intent.&lt;/p&gt;
+
+&lt;p&gt;So in conclusion: yes, shorter code is generally better (and often more readable).  But I don&amp;rsquo;t believe in sacrificing code that
+expresses the intent in order to reduce the number of characters used.  We&amp;rsquo;re not living in a memory-poor world any more,
+and code is meant to be read by humans as well as computers.  Let&amp;rsquo;s make our code easy to understand when it goes wrong,
+not simply the shortest way to do something when the stars are all perfectly aligned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Handover</title>
+      <link>http://trishagee.github.io/post/the_handover.md/</link>
+      <pubDate>Mon, 30 Jun 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/the_handover.md/</guid>
+      <description>&lt;p&gt;Yesterday I walked into the kitchen to see how lunch was going and my boyfriend handed me a knife,
+a part-chopped hard boiled egg and said &amp;ldquo;finish this, I need to have a shower&amp;rdquo;. As you do. Apparently there were two things that needed
+doing - &amp;ldquo;this&amp;rdquo; needed finishing, and I needed to keep an eye on the fish.&lt;/p&gt;
+
+&lt;p&gt;Fine.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve &amp;ldquo;paired&amp;rdquo; with him while we&amp;rsquo;ve made that salad before, and I can tell when a fish is burning.  How hard could it be?&lt;/p&gt;
+
+&lt;p&gt;After I finished chopping the egg and putting it into the salad, I realised I didn&amp;rsquo;t know if that was the last thing that needed to go into
+the salad - when he said &amp;ldquo;finish this&amp;rdquo;, did he mean the whole salad, or just the egg chopping?&lt;/p&gt;
+
+&lt;p&gt;(This blog post will be vaguely about technology at some point.  Probably.)&lt;/p&gt;
+
+&lt;p&gt;After searching for other eggs that might need to be added, and sifting through the salad to see what was already in there,
+I was still unclear about whether it was &amp;ldquo;&lt;a href=&#34;https://www.scrum.org/Resources/Scrum-Glossary/Definition-of-Done&#34;&gt;done&lt;/a&gt;&amp;rdquo; or not, so I
+went to bother my boyfriend in the bathroom (this is not a euphemism).&lt;/p&gt;
+
+&lt;p&gt;&amp;ldquo;I told you there were only two things left to do&amp;rdquo; he said - it was so clear to him what the steps were to finish,
+that he couldn&amp;rsquo;t understand that there might be hidden assumptions in his handover.  All he wanted was for me to finish chopping the
+(only) egg.  Oh and mix it all up. Of course. When I checked if I was supposed to add the olive oil and the salt, the answer was &amp;ldquo;No,
+I don&amp;rsquo;t trust you to do that&amp;rdquo; (he&amp;rsquo;s right - I&amp;rsquo;m English, I didn&amp;rsquo;t even know you could put salt in a salad
+and certainly have no idea about quantities of olive oil. My Spanish boyfriend is genetically wired to know this stuff).&lt;/p&gt;
+
+&lt;p&gt;Despite the unclear instructions (&amp;ldquo;keep an eye on the fish&amp;rdquo;, if taken literally, could result in me watching it burn - fortunately I knew it
+was secret code for &amp;ldquo;remove it from the heat when it&amp;rsquo;s done&amp;rdquo;) we had a very nice lunch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/HandoverSalad.JPG&#34; alt=&#34;Salmon &amp;amp; Salad&#34; title=&#34;Salmon and Salad&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;There are parallels between this, and what I was struggling with last week (hurrah, we get to the tenuous analogy!).  I&amp;rsquo;ve been trying
+to do my first release for &lt;a href=&#34;https://github.com/mongodb/morphia&#34;&gt;Morphia&lt;/a&gt;, the project I&amp;rsquo;m taking over
+for &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.  I know my colleague was working hard on an automated release script (one click releasing FTW),
+and I know he invested a reasonable amount of time in automating the release process (this is code for &amp;ldquo;I had a bad feeling about this&amp;rdquo;).
+I was going to be the first to try this out without his machine/settings/user. Yay?&lt;/p&gt;
+
+&lt;p&gt;On Friday night Justin gave me some tips of what was involved, finishing with &amp;ldquo;&amp;hellip;and then &lt;code&gt;.gradlew relase&lt;/code&gt; should just work&amp;rdquo;.  Simples.&lt;/p&gt;
+
+&lt;p&gt;Day One: I struggled with the nexus plugin and permissions.&lt;/p&gt;
+
+&lt;p&gt;Day Two: I woke up with one of those ideas that hit you in the night and fixed that.&lt;/p&gt;
+
+&lt;p&gt;Then I spent two days trying to work out why the Git plugin wouldn&amp;rsquo;t let me log in.&lt;/p&gt;
+
+&lt;p&gt;Eventually I realised that for the whole time I hadn&amp;rsquo;t been using the local version of the
+&lt;a href=&#34;https://github.com/evanchooly/github-release-gradle-plugin&#34;&gt;gradle release plugin&lt;/a&gt; like I thought,
+but an older version. When I fixed that&amp;hellip; I spent half a day proving I still had the same issue as before.&lt;/p&gt;
+
+&lt;p&gt;Finally, I commented out the code that wasn&amp;rsquo;t working, hard coded a bunch of values and used an old script to upload the Javadoc (don&amp;rsquo;t
+get me started on how long it took me to find how &lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt; was populating the release number,
+nor do I want to express the pain I felt at having to install Maven after being in love with &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; for the
+last two years).&lt;/p&gt;
+
+&lt;p&gt;Eventually &lt;a href=&#34;https://github.com/mongodb/morphia/releases/tag/r0.108&#34;&gt;release 0.108 of Morphia&lt;/a&gt; went live on Thursday night - huzzah!&lt;/p&gt;
+
+&lt;p&gt;But of course, as a responsible human being, rather than high-fiving myself, cracking open a bottle of wine and knocking off for the
+weekend, next I need to prepare the handover for the next person doing the release. Not least because it&amp;rsquo;s probably going to be me,
+and my memory is shocking.  I have two options:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Write a wiki page with the steps needed, manual or automated, including all the local properties that need to be set up as we can&amp;rsquo;t
+have some of these passwords floating around on GitHub.&lt;/li&gt;
+&lt;li&gt;Fix the automated release so it really is one click / command&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;In reality, option 2 still needs documentation because of the local properties that are required.&lt;/p&gt;
+
+&lt;p&gt;What I really want to do is crack open that wine.&lt;/p&gt;
+
+&lt;p&gt;But the moral of the story is: handovers are hard.  And essential.  And worse, often the person doing the handing over is doing so
+because they&amp;rsquo;re short on time and, for whatever reason, not responsible for the next phase of the project. Combine this lack of time with
+all the assumptions and implicit knowledge in that person&amp;rsquo;s head, and the information being transferred is likely to be&amp;hellip; less than
+optimal.&lt;/p&gt;
+
+&lt;p&gt;And the handover receiver is now responsible for something they don&amp;rsquo;t have enough knowledge of and they&amp;rsquo;re not even aware of assumptions or
+unknown unknowns. If you&amp;rsquo;re handing over between departments or teams, they might not even have the right tools to find out how to
+progress (Ops teams and testers don&amp;rsquo;t always have access to the code, for example, and if they did might not have the context to find it
+useful).&lt;/p&gt;
+
+&lt;p&gt;There are tools to help ease the pain of handovers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://martinfowler.com/bliki/PairProgrammingMisconceptions.html&#34;&gt;Pairing&lt;/a&gt;. Pairing might seem expensive (two people at one
+keyboard?? How will they type fast enough?), but the savings in handover time (and increase in your &lt;a href=&#34;http://en.wikipedia
+.org/wiki/Bus_factor&#34;&gt;Bus Factor&lt;/a&gt;) make it completely worthwhile.  Pairing with The Boy in making salad meant at least I knew what the steps and
+ingredients were, I just didn&amp;rsquo;t know what stage we were at. At LMAX, we reduced a lot of our testing backlog by embedding the testers
+in the development team, and pairing with them at the start and at the end of the &lt;a href=&#34;http://martinfowler.com/bliki/UserStory.html&#34;&gt;user stories&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you can&amp;rsquo;t do pairing, code reviews help. I was at least aware of our release plugin as I&amp;rsquo;d seen the original develop in the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;Java
+driver&lt;/a&gt;. If I&amp;rsquo;d been pairing or code reviewing on Morphia,
+I would have been even more aware of what the steps were and what changes had been made for that project.&lt;/li&gt;
+&lt;li&gt;Finally, if good old fashioned talking isn&amp;rsquo;t your thing, documentation is a good start.  And everyone who uses the docs needs to be
+able to update the documentation when they find something wrong, missing, confusing, or just want to annotate it with something useful.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For all of these good practices, really what you want is to remove all possible areas of miscommunication. Computers are logical things,
+ so if you can write down an exact list of steps that need to be done in order to achieve something,
+you might be able to, I dunno, write that in a script, or something. If you
+&lt;a href=&#34;http://www.amazon.com/gp/product/0321601912/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321601912&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=M5DNVR42T66J63VO&#34;&gt;Automate All The Things&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=0321601912&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;, you don&amp;rsquo;t need to have these messy,
+complicated conversations with these messy, complicated people.&lt;/p&gt;
+
+&lt;p&gt;But you knew that already.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m off to try and fix my script. I&amp;rsquo;ve even thought of a way to not need local properties, so maybe next time (or the time after),
+when I have to do a release I&amp;rsquo;ll only have to type a single command. It&amp;rsquo;ll be worth a week or two to implement this if it saves me a week
+like the last one.&lt;/p&gt;
+
+&lt;p&gt;But first, that wine&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;em&gt;No boyfriends or colleagues were harmed in the making of this post.&lt;/em&gt;&lt;/small&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Nighthacking at Sevilla Java User Group</title>
+      <link>http://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
+      <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
+      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
+for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
+and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
+Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This is also the first event that we&amp;rsquo;ve had videoed (apologies for the horrible focus at times on the video,
+I&amp;rsquo;m just learning and used to relying heavily on auto-focus).&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/q3OKs08X3oo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Thanks very much to Stephen for visiting, and thank you to those who came, you&amp;rsquo;re making me re-think the idea of running events at
+weekends.&lt;/p&gt;
+
+&lt;p&gt;Also there are &lt;a href=&#34;http://www.meetup.com/SVQJUG/photos/all_photos/?photoAlbumId=21306622&#34;&gt;photos on Meetup&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
