@@ -973,6 +973,8 @@ write about it here to remind myself that it is something I want to do. Sometime
 &lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;GOTO Berlin&lt;/a&gt; to address the problems
 of deciding how to learn a new technology/framework/process (Spoiler Alert: it&amp;rsquo;s not by putting it into production).&lt;/p&gt;
 
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/qWKf3ROVgrY?list=PLEx5khR4g7PIIBNcNhHOMmOhzxcwI5joG&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/41120693&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%&#34; allowfullscreen&gt; &lt;/iframe&gt; 
 
 &lt;p&gt;During the talk I show an example of how &lt;em&gt;not&lt;/em&gt; to &lt;a href=&#34;https://gist.github.com/trishagee/a3e4a54329e94ada2fe2&#34;&gt;implement lambdas&lt;/a&gt;,
@@ -985,7 +987,7 @@ not a shining example of how to write these sorts of tests, but if you&amp;rsquo
 &lt;p&gt;This talk was built off an &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
 invest your personal time in.&lt;/p&gt;
 
-&lt;p&gt;The presentation was videoed, and if the video comes online I will post it here. But for now, I&amp;rsquo;ll leave you with this crude decision
+&lt;p&gt;I&amp;rsquo;ll leave you with this crude decision
 chart and the mind-map of potential ways to play with a technology. Remember, learning to say &lt;em&gt;&amp;ldquo;no&amp;rdquo;&lt;/em&gt; to a technology can be very powerful.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
