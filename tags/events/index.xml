@@ -6,12 +6,12 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 23 Feb 2015 00:00:00 UTC</updated>
+    <updated>Fri, 27 Feb 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Upcoming Events</title>
       <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Mon, 23 Feb 2015 00:00:00 UTC</pubDate>
+      <pubDate>Fri, 27 Feb 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
@@ -37,15 +37,14 @@ Building a webapp with AngularJS, Java and MongoDB.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/&#34;&gt;Greach, Madrid&lt;/a&gt; - New talk! Is Groovy Better than Java for Testing?&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; -
-&lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt; again, so this had better go well at QCon!&lt;/p&gt;
+&lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;29-30 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.springio.net/&#34;&gt;Spring I/O, Barcelona&lt;/a&gt; - &lt;a href=&#34;http://www.springio.net/sessions/&#34;&gt;Is Groovy Better than Java for Testing?&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;12 May&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago&lt;/a&gt; - an agile-centric version of my new Groovy vs. Java testing
 talk, &lt;a href=&#34;http://gotocon.com/chicago-2015/presentation/Level%20Up%20Your%20Automated%20Tests&#34;&gt;Level Up Your Automated Tests&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;ve submitted a bunch of other CFPs, and I have some other invitations in-flight, only the confirmed sessions are
-on this page.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;10 Jun&lt;/strong&gt;: &lt;a href=&#34;https://qconnewyork.com/&#34;&gt;QCon New York&lt;/a&gt; - &lt;a href=&#34;https://qconnewyork.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
