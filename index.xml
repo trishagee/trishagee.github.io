@@ -6,35 +6,24 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 27 Feb 2015 00:00:00 UTC</updated>
+    <updated>Thu, 05 Mar 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Upcoming Events</title>
       <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Fri, 27 Feb 2015 00:00:00 UTC</pubDate>
+      <pubDate>Thu, 05 Mar 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;2 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.be/&#34;&gt;QCon London&lt;/a&gt; - I&amp;rsquo;m running a
-&lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;half day tutorial&lt;/a&gt; based on
-&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;the AngularJS/Java/MongoDB live demo&lt;/a&gt;. Sign up if you want to
-code along as I build a mobile-friendly web-app, and you can use the discount code SPEAKGEE100 for £100 off the price.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code, London&lt;/a&gt; - I&amp;rsquo;ll be running my Public Speaking for Novices
-Clinic for the ladies who code.  Join me if you&amp;rsquo;re even slightly curious about improving your presentation skills.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon London&lt;/a&gt; - New Live Demo! &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger&lt;/a&gt;,
-featuring streams, lambdas, JavaFX and other Java-shaped things.  What Could Possibly Go Wrong (again)? (You can use the
-code SPEAKGEE100 for £100 off the registration price for QCon.)&lt;/p&gt;
-
 &lt;p&gt;&lt;strong&gt;15 Mar&lt;/strong&gt;: &lt;a href=&#34;https://plus.google.com/u/0/events/c0rtb02v21i2cdj4mq9g5tcitnk&#34;&gt;Women Techmakers Istanbul&lt;/a&gt; -
 Building a webapp with AngularJS, Java and MongoDB.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.fr/&#34;&gt;Devoxx France, Paris&lt;/a&gt; - Java 8 in Anger.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.fr/&#34;&gt;Devoxx France, Paris&lt;/a&gt; - &lt;a href=&#34;http://cfp.devoxx.fr/2015/talk/MLB-2660/Java_8_in_Anger&#34;&gt;Java 8 in Anger&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/&#34;&gt;Greach, Madrid&lt;/a&gt; - New talk! Is Groovy Better than Java for Testing?&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/&#34;&gt;Greach, Madrid&lt;/a&gt; - New talk!
+&lt;a href=&#34;http://greachconf.com/speakers/trisha-gee-is-groovy-better-for-testing-than-java/&#34;&gt;Is Groovy Better than Java for Testing?&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; -
 &lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
@@ -56,17 +45,20 @@ talk, &lt;a href=&#34;http://gotocon.com/chicago-2015/presentation/Level%20Up%20
       <guid>http://trishagee.github.io/presentation/java8_in_anger/</guid>
       <description>
 
-&lt;p&gt;Content and Resources for my new &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger presentation&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Content and resources for my new Java 8 in Anger presentation.&lt;/p&gt;
 
-&lt;p&gt;Expect this page to evolve over time as this talk evolves over time.&lt;/p&gt;
+&lt;p&gt;Currently this page contains the slides for the version presented at
+&lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;QCon London&lt;/a&gt;, and the resources I used to create
+the talk. This page will be updated with more resources (e.g. videos) as and when they become available.&lt;/p&gt;
 
-&lt;p&gt;Since the talk has only just been created, the only resources available are the code and the articles and videos I used
-to create the talk.&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/45473052&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 
 &lt;h4 id=&#34;toc_0&#34;&gt;Project code&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;The code demoed is available on the &amp;ldquo;steps&amp;rdquo; branch of my &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;sense repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The full application code on the master branch branch of my &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;sense repository&lt;/a&gt;.
+This contains some refactorings that have not been demoed yet.&lt;/li&gt;
+&lt;li&gt;The code created on stage at QCon London is on the &lt;a href=&#34;https://github.com/trishagee/sense/tree/qcon&#34;&gt;QCon branch&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h4 id=&#34;toc_1&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
@@ -148,6 +140,18 @@ to create the talk.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.com.es/&#34;&gt;Martin Thompson&lt;/a&gt;, &lt;a href=&#34;http://insightfullogic.com/blog/&#34;&gt;Richard Warburton&lt;/a&gt;,
 &lt;a href=&#34;http://www.codingthearchitecture.com/authors/rannett/&#34;&gt;Robert Annett&lt;/a&gt; and &lt;a href=&#34;http://hadihariri.com/&#34;&gt;Hadi Hariri&lt;/a&gt; for
 code reviewing and giving great suggestions. Not all suggestions have been implemented yet, so all errors are my own.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_10&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Java 9 is just around the corner, and yet many of us developers have yet to use Java 8 features in an application. The
+goal of this presentation is to move beyond slide-sized examples of streams and lambdas, and to show how to build a
+fully working end-to-end application using as few external dependencies as possible, and the latest version of Java.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;In this session, Trisha will build a Java 8 application live. This application will consume a real-time feed of high
+velocity data, contain services that make sense of the data, and present it in a JavaFX dashboard. Along the way, we&amp;rsquo;ll
+encounter Java 8 streams, lambdas, new ways of working with collections, and bump into the new date and time API.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     
