@@ -983,7 +983,17 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
+    <loc>http://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -993,7 +1003,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1004,21 +1019,6 @@
   
   <url>
     <loc>http://trishagee.github.io/other-sites/release/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1043,12 +1043,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_bloggers_summary/</loc>
+    <loc>http://trishagee.github.io/post/agile_infection_growing/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/agile_infection_growing/</loc>
+    <loc>http://trishagee.github.io/post/qcon_bloggers_summary/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
