@@ -8,7 +8,7 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/blind_cfps_2.md/</loc>
+    <loc>http://trishagee.github.io/post/blind_cfps_2/</loc>
     <lastmod>2015-03-12T00:00:00+00:00</lastmod>
   </url>
   
@@ -108,12 +108,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/es/post/svq_java8_launch_party/</loc>
+    <loc>http://trishagee.github.io/post/svq_java8_launch_party/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/svq_java8_launch_party/</loc>
+    <loc>http://trishagee.github.io/es/post/svq_java8_launch_party/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1008,12 +1008,7 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1023,7 +1018,7 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</loc>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1033,7 +1028,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
+    <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1058,12 +1058,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_bloggers_summary/</loc>
+    <loc>http://trishagee.github.io/post/agile_infection_growing/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/agile_infection_growing/</loc>
+    <loc>http://trishagee.github.io/post/qcon_bloggers_summary/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -1083,12 +1083,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_london/</loc>
+    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
+    <loc>http://trishagee.github.io/post/qcon_london/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
