@@ -6,7 +6,84 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 11 Mar 2015 00:00:00 UTC</updated>
+    <updated>Thu, 12 Mar 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Blind CFPs - a Postscript</title>
+      <link>http://trishagee.github.io/post/blind_cfps_2.md/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/blind_cfps_2.md/</guid>
+      <description>
+
+&lt;p&gt;Since publishing &lt;a href=&#34;/post/blind_cfps.md&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
+another post to answer them.&lt;/p&gt;
+
+&lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
+circles in which speakers will refuse to submit if the selection process isn&amp;rsquo;t blind. But what blind CFPs are &lt;em&gt;not&lt;/em&gt;,
+is an answer to &amp;ldquo;How do I get more women speakers at my conference?&amp;rdquo;, especially if the problem is not that the
+women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
+in the conferences I speak at/help organise.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_0&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
+
+&lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
+in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
+select both women or not, when there are nasty comments about your lack of women speakers, you&amp;rsquo;re protected - you did
+the right things, you had a blind CFP, and just not many women made it through that process. Women simply aren&amp;rsquo;t
+writing compelling abstracts and/or aren&amp;rsquo;t picking interesting subjects and/or clearly aren&amp;rsquo;t interested in
+presenting at conferences.&lt;/p&gt;
+
+&lt;p&gt;AAAARRRGGHHHHHH!!!! Anger.&lt;/p&gt;
+
+&lt;p&gt;Protect your arse if you like, that&amp;rsquo;s fine, I see the attacks against organisers and I understand the need to be able to
+say you did the right thing. But notice that once you&amp;rsquo;ve protected yourselves, the blame is back on the
+minorities for not meeting your criteria.&lt;/p&gt;
+
+&lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
+of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_1&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
+a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
+that absolutely called to me - here was the missing piece for a technology that I simply can&amp;rsquo;t get my head around. I
+gave an hour of my life to that talk, each minute I was wondering when this person would get to the bits mentioned
+in the abstract, so I watched it all the way to the end. They never delivered what the abstract promised, and their
+meandering style meant I learnt almost nothing from the talk. That&amp;rsquo;s an hour of my life I&amp;rsquo;ll never get back. Good
+thing I was playing computer games as well at the time, if I&amp;rsquo;d paid money for that I would have been very peeved.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s another weakness in this process - if you go to a number of conferences (like I do) you kinda learn which
+speakers are doing
+which talks.  If I submit my &amp;ldquo;AngularJS, HTML5, Groovy, Java and MongoDB all together - what could possibly go wrong??&amp;rdquo;
+talk to a blind process, if there&amp;rsquo;s anyone on the selection committee who&amp;rsquo;s even vaguely involved in the Java or MongoDB
+spaces, they&amp;rsquo;ll know that&amp;rsquo;s me. And they can Google the talk and decide whether they like it (or with any luck, the
+buzz-word crammed title will do the job and they&amp;rsquo;ll say yes, although probably AngularJS is so 2014).&lt;/p&gt;
+
+&lt;p&gt;An abstract is like your presentation in the same way that your CV is like your ability to do your job - there&amp;rsquo;s a skill
+to writing good abstracts (or CVs), but mastery of that skill does not necessarily mean mastery of the thing it
+represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
+being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_2&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
+
+&lt;p&gt;Yeah, sorry.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve listened to feedback from a bunch of people, and I have learnt more things (thanks everyone!). I am more sold on
+a blind CFP being maybe part of a bigger process. But I do &lt;em&gt;not&lt;/em&gt; believe it fixes the &amp;ldquo;we need more women speakers&amp;rdquo;
+problem, which was the original claim that I wanted to dispute. Conferences have to be &lt;em&gt;much&lt;/em&gt; more active to address
+this issue.&lt;/p&gt;
+
+&lt;p&gt;And I am not sold on an abstract being a fair representation of the quality of a talk. Maybe a more realistic &amp;ldquo;blind&amp;rdquo;
+audition would be to give the talk to an audience, like a user group, who rated the talk:
+the organisers wouldn&amp;rsquo;t watch the talk, but they could use the ratings to decide. Yes, the user group could also
+have biases that affect their rating, but when the speaker gives the talk at the conference, those attendees will also
+have their biases too.&lt;/p&gt;
+
+&lt;p&gt;Blindness is not a realistic option, we just have to keep putting women (and other non-white-straight-men) in front of
+audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Are Blind CFPs Really The Answer?</title>
@@ -14,7 +91,9 @@
       <pubDate>Wed, 11 Mar 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/blind_cfps/</guid>
-      <description>&lt;p&gt;Off the back of &lt;a href=&#34;/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
+      <description>
+
+&lt;p&gt;Off the back of &lt;a href=&#34;/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
 around blind &lt;a href=&#34;http://www.wikicfp.com/cfp/&#34;&gt;CFPs&lt;/a&gt; (Call For Papers - usually to get into a conference you submit to a CFP) for
 conferences. I often hear it said that a blind CFP will fix, or at least improve, the diversity imbalance at conferences.&lt;/p&gt;
 
@@ -179,6 +258,10 @@ the overall ecosystem.&lt;/p&gt;
 &lt;p&gt;Diversity isn&amp;rsquo;t going to accidentally happen when we stop looking at gender and race and other visible you-don&amp;rsquo;t-belong-here
 cues.  Diversity is only going to happen if people fight for it, and if we actively train, mentor, and support those
 trying to break through the barriers.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Postscript&lt;/h3&gt;
+
+&lt;p&gt;I wrote a &lt;a href=&#34;/post/blind_cfps_2.md&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
 </description>
     </item>
     
@@ -1257,64 +1340,6 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Readable, Succinct, or Just Plain Short?</title>
-      <link>http://trishagee.github.io/post/short_vs_readable.md/</link>
-      <pubDate>Wed, 02 Jul 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/short_vs_readable.md/</guid>
-      <description>&lt;p&gt;Which is more readable?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;releaseVersion = version.substring(0, version.indexOf(&#39;-SNAPSHOT&#39;))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;or&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Given a value of &lt;code&gt;0.109-SNAPSHOT&lt;/code&gt; for &lt;code&gt;version&lt;/code&gt;, they both give the same result.  And I&amp;rsquo;m tempted by the second,
-because it&amp;rsquo;s shorter.  But I&amp;rsquo;m going to go with the first one - not because it&amp;rsquo;s more Java-ish and I&amp;rsquo;m scared of Groovy syntax,
-but because it&amp;rsquo;s easier to understand if/when something goes wrong.&lt;/p&gt;
-
-&lt;p&gt;For example: if &lt;code&gt;version&lt;/code&gt; doesn&amp;rsquo;t conform to the expected pattern, the two code fragments fail in two different ways.  If &lt;code&gt;version&lt;/code&gt;
-doesn&amp;rsquo;t contain &lt;code&gt;-SNAPSHOT&lt;/code&gt;, the first will fail with:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;java.lang.StringIndexOutOfBoundsException: String index out of range: -1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;whereas the second will either arbitrarily slice the last 9 characters off the end of whatever the String does contain,
-or if it&amp;rsquo;s too short you&amp;rsquo;ll get something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;java.lang.ArrayIndexOutOfBoundsException: Negative array index [-10] too large for array size 5
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;When you, the developer, see this error (or notice your mangled version number) and look at the failing line of code,
-you&amp;rsquo;ll have two different experiences.  When looking at the second example, if you didn&amp;rsquo;t write it in the first place or if you have a
-memory as shocking as mine, you won&amp;rsquo;t get any clues from that code as to what the &lt;em&gt;purpose&lt;/em&gt; is - you&amp;rsquo;ll see what it does (chop the last
-9 characters off the &lt;code&gt;version&lt;/code&gt; string), but not why.  You can &amp;ldquo;fix&amp;rdquo; the problem by adding an arbitrary 9 characters onto your &lt;code&gt;version&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re looking at the first example, however, you&amp;rsquo;ll see the intent right there - it&amp;rsquo;s trying to chop the string &lt;code&gt;-SNAPSHOT&lt;/code&gt; (and any
-characters that might happen to come after it) off the end of the &lt;code&gt;version&lt;/code&gt; string.  With this line of code,
-if you checked the value of &lt;code&gt;version&lt;/code&gt; and saw it didn&amp;rsquo;t have the correct suffix, you&amp;rsquo;d have a good idea of what the problem is and how
-to solve it.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s a third way, that potentially keeps the descriptiveness (is that a word?) of the first solution and makes it a bit shorter and
-Groovier:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;releaseVersion = version[0..&amp;lt;version.indexOf(&#39;-SNAPSHOT&#39;)]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;You need the less-than sign plonked in there to make it work correctly, which I find a bit jarring,
-but it does work.  It&amp;rsquo;s a little more succinct than the original Java syntax and retains the intent.&lt;/p&gt;
-
-&lt;p&gt;So in conclusion: yes, shorter code is generally better (and often more readable).  But I don&amp;rsquo;t believe in sacrificing code that
-expresses the intent in order to reduce the number of characters used.  We&amp;rsquo;re not living in a memory-poor world any more,
-and code is meant to be read by humans as well as computers.  Let&amp;rsquo;s make our code easy to understand when it goes wrong,
-not simply the shortest way to do something when the stars are all perfectly aligned.&lt;/p&gt;
 </description>
     </item>
     
