@@ -108,12 +108,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/svq_java8_launch_party/</loc>
+    <loc>http://trishagee.github.io/es/post/svq_java8_launch_party/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/es/post/svq_java8_launch_party/</loc>
+    <loc>http://trishagee.github.io/post/svq_java8_launch_party/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -998,22 +998,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://trishagee.github.io/other-sites/release/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1029,6 +1019,16 @@
   
   <url>
     <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1073,22 +1073,22 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference/</loc>
-    <lastmod>2007-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://trishagee.github.io/post/continuing_the_agile_froth/</loc>
     <lastmod>2007-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_london/</loc>
-    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+    <loc>http://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference/</loc>
+    <lastmod>2007-03-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
+    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/post/qcon_london/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
