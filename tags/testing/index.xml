@@ -6,7 +6,25 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 20 Dec 2013 00:00:00 UTC</updated>
+    <updated>Mon, 06 Apr 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Groovy vs Java</title>
+      <link>http://trishagee.github.io/presentation/groovy_vs_java/</link>
+      <pubDate>Mon, 06 Apr 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/groovy_vs_java/</guid>
+      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk. Slides and video will be posted here
+when available.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;
+&lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;#
+&lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Book: &lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests - Jay Fields&lt;/a&gt;
+Video: &lt;a href=&#34;https://vimeo.com/80222114&#34;&gt;Making Java Tests Groovy with Spock - Ken Sipe&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Spock: Data Driven Testing</title>

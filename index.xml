@@ -6,7 +6,25 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 12 Mar 2015 00:00:00 UTC</updated>
+    <updated>Mon, 06 Apr 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Groovy vs Java</title>
+      <link>http://trishagee.github.io/presentation/groovy_vs_java/</link>
+      <pubDate>Mon, 06 Apr 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/groovy_vs_java/</guid>
+      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk. Slides and video will be posted here
+when available.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;
+&lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;#
+&lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Book: &lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests - Jay Fields&lt;/a&gt;
+Video: &lt;a href=&#34;https://vimeo.com/80222114&#34;&gt;Making Java Tests Groovy with Spock - Ken Sipe&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Blind CFPs - a Postscript</title>
@@ -1361,42 +1379,6 @@ we do need to see to our Continuous Learning and, of course, we should Embrace C
 
 &lt;p&gt;&lt;em&gt;How do we balance these two extremes? And how do we see to our own growth and learning as techies while meeting the needs of our
 project, team and organisation?&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>MongoDB London</title>
-      <link>http://trishagee.github.io/post/mongodb_london/</link>
-      <pubDate>Wed, 22 Oct 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/mongodb_london/</guid>
-      <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
-
-&lt;p&gt;So, &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is nearly upon us again,
-and I&amp;rsquo;m dead disappointed I can&amp;rsquo;t make it this year (I&amp;rsquo;m
-&lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;keynoting at GOTO Berlin&lt;/a&gt; instead,
-which I&amp;rsquo;m terrified, I mean, excited, about). The last MongoDB London was really interesting for me - I was fairly new to the company,
-I&amp;rsquo;d been here less than six months, and it was a really great way to go both broad and deep on the technology.&lt;/p&gt;
-
-&lt;p&gt;I was trying to find a blog post where I talked about my experiences, but it looks like I only wrote that In My Mind. In fact,
-I only only wrote two whole lines of notes on the conference.  But 18 months later I clearly remember presentations from my colleagues
-&lt;a href=&#34;http://rosslawley.co.uk/&#34;&gt;Ross&lt;/a&gt; and &lt;a href=&#34;http://derickrethans.nl/&#34;&gt;Derick&lt;/a&gt; demonstrating the geo capabilities in MongoDB,
-presentations which heavily influenced the &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt; I&amp;rsquo;ve been giving
-recently.&lt;/p&gt;
-
-&lt;p&gt;I also remember Eliot&amp;rsquo;s presentation - Eliot is one of those people who totally gets away with breaking the &amp;ldquo;speak in a measured,
-clear fashion&amp;rdquo; presenters rule, he fires fascinating information at you at high speed and it&amp;rsquo;s actually one of the compelling things
-about his talks. If you ever get a chance to see him talk about the product, it&amp;rsquo;s totally worth it.&lt;/p&gt;
-
-&lt;p&gt;Other than that, the most awesome thing about the conference was the chance to meet, and talk to,
-a bunch of different MongoDB people - there are the engineers who work on the product (like me and my colleagues);
-the people leading the way with the technology, like Eliot; and finally, but for me most importantly,
-you get to meet really interesting people who are using MongoDB in ways that you might not even imagine.&lt;/p&gt;
-
-&lt;p&gt;Anyway the point of this sales pitch is, whether you&amp;rsquo;re using MongoDB already or you&amp;rsquo;re keen to find out about it,
-&lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is only going to take a day from your life,
-and you&amp;rsquo;ll learn a bunch of interesting things. And, with a Special Discount Code from me,
-it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-london-2014-registration-13140209721&#34;&gt;Sign up&lt;/a&gt; with code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
 </description>
     </item>
     
