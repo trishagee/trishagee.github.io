@@ -17,12 +17,16 @@
       <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk. Slides and video will be posted here
 when available.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;
-&lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;#
-&lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;&lt;/li&gt;
 
-&lt;p&gt;Book: &lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests - Jay Fields&lt;/a&gt;
-Video: &lt;a href=&#34;https://vimeo.com/80222114&#34;&gt;Making Java Tests Groovy with Spock - Ken Sipe&lt;/a&gt;&lt;/p&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Book: &lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests - Jay Fields&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Video: &lt;a href=&#34;https://vimeo.com/80222114&#34;&gt;Making Java Tests Groovy with Spock - Ken Sipe&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
