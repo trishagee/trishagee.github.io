@@ -14,18 +14,25 @@
       <pubDate>Mon, 06 Apr 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/groovy_vs_java/</guid>
-      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk. Slides and video will be posted here
+      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk. Video will be posted here
 when available.&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;&lt;/li&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/46936375&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+  
 
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;ul&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://spockframework.github.io/spock/docs/1.0/index.html&#34;&gt;Spock Reference Documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Book: &lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests - Jay Fields&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Video: &lt;a href=&#34;https://vimeo.com/80222114&#34;&gt;Making Java Tests Groovy with Spock - Ken Sipe&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Code: &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt; All examples from the talk come from the MongoDB Java driver. Some tests have been improved or dropped over time.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
