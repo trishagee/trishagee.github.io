@@ -6,21 +6,16 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 05 Mar 2015 00:00:00 UTC</updated>
+    <updated>Thu, 16 Apr 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Upcoming Events</title>
       <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Thu, 05 Mar 2015 00:00:00 UTC</pubDate>
+      <pubDate>Thu, 16 Apr 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.devoxx.fr/&#34;&gt;Devoxx France, Paris&lt;/a&gt; - &lt;a href=&#34;http://cfp.devoxx.fr/2015/talk/MLB-2660/Java_8_in_Anger&#34;&gt;Java 8 in Anger&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/&#34;&gt;Greach, Madrid&lt;/a&gt; - New talk!
-&lt;a href=&#34;http://greachconf.com/speakers/trisha-gee-is-groovy-better-for-testing-than-java/&#34;&gt;Is Groovy Better than Java for Testing?&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; -
 &lt;a href=&#34;http://craft-conf.com/2015/#speakers/TrishaGee&#34;&gt;Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
