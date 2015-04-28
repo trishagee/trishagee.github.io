@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Groovy on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/groovy/index.xml/</link>
+    <link>http://trishagee.github.io/tags/groovy/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -14,8 +14,9 @@
       <pubDate>Mon, 06 Apr 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/groovy_vs_java/</guid>
-      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk. Video will be posted here
-when available.&lt;/p&gt;
+      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VK2sMI5B1pY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/46936375&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
   
@@ -48,7 +49,7 @@ when available.&lt;/p&gt;
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
 Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Who is this for?&lt;/h2&gt;
+&lt;h2 id=&#34;who-is-this-for:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Who is this for?&lt;/h2&gt;
 
 &lt;p&gt;This workshop is aimed at Java developers who want to learn more about how
 to rapidly prototype applications using web front-end technologies with JVM back-end technologies. The workshop may be
@@ -61,7 +62,7 @@ but this is &lt;em&gt;not&lt;/em&gt; an introduction to Java and familiarity wit
 
 &lt;p&gt;This is a hands-on workshop, bring a laptop set up according to the following instructions - you will be writing code!&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Overview&lt;/h2&gt;
+&lt;h2 id=&#34;overview:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Overview&lt;/h2&gt;
 
 &lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/klw9pIuTICM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -70,7 +71,7 @@ setup for the workshop.&lt;/p&gt;
 
 &lt;p&gt;The setup instructions below are the same process, so you can copy &amp;amp; paste where appropriate.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Setup&lt;/h2&gt;
+&lt;h2 id=&#34;setup:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Setup&lt;/h2&gt;
 
 &lt;p&gt;I am assuming you already have a version of the Java SDK downloaded. For this workshop, Java 7 or above should work, but
 I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;&gt;download the latest version of Java 8&lt;/a&gt; if you&amp;rsquo;re not already using it.&lt;/p&gt;
@@ -78,7 +79,7 @@ I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/do
 &lt;p&gt;Create a new work area for this tutorial. For the rest of these instructions I&amp;rsquo;ll refer to it as &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;.  I&amp;rsquo;ve put
  mine in &lt;code&gt;~/Projects/workshops/qcon2015&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Installing MongoDB&lt;/h2&gt;
+&lt;h2 id=&#34;installing-mongodb:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Installing MongoDB&lt;/h2&gt;
 
 &lt;p&gt;I&amp;rsquo;m going to be using &lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;MongoDB 3.0.0-rc8&lt;/a&gt;, but version 2.6 will be fine too.&lt;/p&gt;
 
@@ -90,12 +91,12 @@ have a folder at &lt;code&gt;&amp;lt;location&amp;gt;/data&lt;/code&gt;&lt;/p&gt
 
 &lt;p&gt;From the command line, start MongoDB to make sure everything is working.  From the &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt; directory:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_4&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongod --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_5&#34;&gt;Windows:&lt;/h5&gt;
+&lt;h5 id=&#34;windows:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows:&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongod.exe --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
@@ -105,12 +106,12 @@ MongoDB should be running on localhost and port 27017&lt;/p&gt;
 
 &lt;p&gt;Connect to the shell to make sure it&amp;rsquo;s working:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_6&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_7&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;windows-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongo.exe
 &lt;/code&gt;&lt;/pre&gt;
@@ -130,18 +131,18 @@ Questions? Try the support group
 &amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_8&#34;&gt;Creating your project&lt;/h2&gt;
+&lt;h2 id=&#34;creating-your-project:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Creating your project&lt;/h2&gt;
 
 &lt;p&gt;Clone &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;the Cafelito project&lt;/a&gt; into &lt;code&gt;&amp;lt;location&amp;gt;/cafelito&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;In a terminal/command line, navigate to this location, and run:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_9&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./gradlew check
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_10&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;windows-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;gradlew.bat check
 &lt;/code&gt;&lt;/pre&gt;
@@ -157,7 +158,7 @@ the dependencies for you.&lt;/p&gt;
 &lt;p&gt;Feel free to use Eclipse or
 Netbeans (or whatever your favourite IDE is) but I&amp;rsquo;m out of practice using those IDEs and might not be able to help you out as much.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_11&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
+&lt;h2 id=&#34;and-now:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
 
 &lt;p&gt;You should be ready to begin: you have a working instance of MongoDB, a skeleton project that we&amp;rsquo;ll be working with, and all the
 dependencies should have been downloaded.&lt;/p&gt;
@@ -193,7 +194,7 @@ which is exactly what I wanted to do. In addition, creating &lt;a href=&#34;http
 data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
 &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Goal of the Script&lt;/h3&gt;
+&lt;h3 id=&#34;goal-of-the-script:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Goal of the Script&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Parse an XML file containing open street map data of all coffee shops.&lt;/li&gt;
@@ -207,10 +208,10 @@ data structures, not the geographical ones) with Groovy is really easy, and this
 &lt;p&gt;The script is &lt;a href=&#34;https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy&#34;&gt;PopulateDatabase.groovy&lt;/a&gt;,
 that link will take you to the version I presented at JavaOne:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript.png&#34; alt=&#34;PopulateDatabase.groovy&#34; title=&#34;PopulateDatabase.groovy&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;Firstly, we need data&lt;/h3&gt;
+&lt;h3 id=&#34;firstly-we-need-data:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Firstly, we need data&lt;/h3&gt;
 
 &lt;p&gt;I used the same service Ross used in his blog post to obtain the XML file containing &amp;ldquo;all&amp;rdquo; coffee shops around the world. Now,
 the open street map data is somewhat&amp;hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
@@ -237,9 +238,9 @@ github project, but if you try this yourself you might (in fact, probably will) 
 of &lt;code&gt;tag&lt;/code&gt; elements, all with &lt;code&gt;k&lt;/code&gt; and &lt;code&gt;v&lt;/code&gt; attributes. Each coffee shop has a varying number of these attributes,
 and they are not consistent from shop to shop (other than &lt;code&gt;amenity&lt;/code&gt; and &lt;code&gt;cuisine&lt;/code&gt; which we used to select this data).&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;Initialisation&lt;/h3&gt;
+&lt;h3 id=&#34;initialisation:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Initialisation&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript1.png&#34; alt=&#34;Script Initialisation&#34; title=&#34;Script Initialisation&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Before doing anything else we want to prepare the database.  The assumption of this script is that either the
@@ -261,18 +262,18 @@ and if it doesn&amp;rsquo;t already exist, the server will create them for you.&
 server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
 address and port - for more details on this see &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting Started With MongoDB and Java&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
+&lt;h3 id=&#34;turn-the-xml-into-something-mongodb-shaped:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Turn the XML into something MongoDB-shaped&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript2.png&#34; alt=&#34;Parse &amp;amp; Transform XML&#34; title=&#34;Parse &amp;amp; Transform XML&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;So next we&amp;rsquo;re going to use Groovy&amp;rsquo;s &lt;a href=&#34;http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html&#34;&gt;XmlSlurper&lt;/a&gt; to read the open street map
 XML data that we talked about earlier.  To iterate over every node we use: &lt;code&gt;xmlSlurper.node.each&lt;/code&gt;.  For those of you who are new to
 Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &amp;ldquo;node&amp;rdquo; element in the XML.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_4&#34;&gt;Create GeoJSON&lt;/h4&gt;
+&lt;h4 id=&#34;create-geojson:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Create GeoJSON&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript3.png&#34; alt=&#34;Create GeoJSON&#34; title=&#34;Create GeoJSON&#34; /&gt;
 
 Since MongoDB documents are effectively just maps of key-value pairs, we&amp;rsquo;re going to create a Map &lt;code&gt;coffeeShop&lt;/code&gt; that contains the
 document structure that represents the coffee shop that we want to save into the database.  Firstly,
@@ -291,11 +292,11 @@ complicated with the latitude and longitude, since we need to store them as GeoJ
 &lt;p&gt;In lines 12-14 you can see that we create a &lt;code&gt;Map&lt;/code&gt; that looks like the GeoJSON, pulling the &lt;code&gt;lat&lt;/code&gt; and &lt;code&gt;lon&lt;/code&gt; attributes into the appropriate
 places.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_5&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
+&lt;h4 id=&#34;insert-remaining-fields:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Insert Remaining Fields&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript4.png&#34; alt=&#34;Insert Remaining Fields&#34; title=&#34;Insert Remaining Fields&#34; /&gt;
 
-&lt;img src=&#34;/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
+&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript5.png&#34; alt=&#34;Validate Field Name&#34; title=&#34;Validate Field Name&#34; /&gt;
 
 Now for every &lt;code&gt;tag&lt;/code&gt; element in the XML, we get the &lt;code&gt;k&lt;/code&gt; attribute and check if it&amp;rsquo;s a valid field name for MongoDB (it won&amp;rsquo;t let us
 insert fields with a dot in, and we don&amp;rsquo;t want to override our carefully constructed &lt;code&gt;location&lt;/code&gt; field). If so we simply add this key as the
@@ -303,9 +304,9 @@ field and its the matching &lt;code&gt;v&lt;/code&gt; attribute as the value int
 &lt;a href=&#34;http://www.openstreetmap.org/&#34;&gt;OpenStreetMap&lt;/a&gt; key/value data into key/value pairs in the MongoDB document so we don&amp;rsquo;t lose any data,
 but we also don&amp;rsquo;t do anything particularly interesting to transform it.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
+&lt;h4 id=&#34;save-into-mongodb:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Save Into MongoDB&lt;/h4&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript6.png&#34; alt=&#34;Save Into MongoDB&#34; title=&#34;Save Into MongoDB&#34; /&gt;
 
 Finally, once we&amp;rsquo;ve created a simple &lt;code&gt;coffeeShop&lt;/code&gt; Map representing the document we want to save into MongoDB,
 we insert it into MongoDB if the map has a field called &lt;code&gt;name&lt;/code&gt;.  We could have checked this when we were reading the XML and putting it
@@ -318,15 +319,15 @@ the same thing, which you might prefer:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;collection.insert(coffeeShop as BasicDBObject)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
+&lt;h3 id=&#34;tell-mongodb-that-we-want-to-perform-geo-queries-on-this-data:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Tell MongoDB that we want to perform Geo queries on this data&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/GroovyScript7.png&#34; alt=&#34;Add Geo Index&#34; title=&#34;Add Geo Index&#34; /&gt;
 
 Because we&amp;rsquo;re going to do a &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/nearSphere/&#34;&gt;nearSphere&lt;/a&gt; query on this data,
 we need to add a &amp;ldquo;2dsphere&amp;rdquo; index on our location field. We created the &lt;code&gt;location&lt;/code&gt; field as GeoJSON,
 so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; for this field.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;h3 id=&#34;conclusion:ea7c4b40c584dae9473be14c3aef02a6&#34;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
 but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
