@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Conference on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/conference/</link>
+    <link>http://trishagee.github.io/tags/conference/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -76,19 +76,18 @@ which happens to be the same one I&amp;rsquo;m giving at a number of conferences
 &lt;p&gt;The presentation leaves very little time for anything other than coding, as it&amp;rsquo;s quite challenging to create a full app in 50
 minutes, so it was great to have the chance to talk about the motivations for the demo&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/sZee7lRAUF4&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/p&gt;
+  
 
 &lt;p&gt;The video of the actual talk is also available now:&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/kmVnhyWqozA&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-&lt;/p&gt;
 
 &lt;p&gt;At the beginning it doesn&amp;rsquo;t clearly show the screen, but it does improve.  You can see an earlier version from the
 &lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb#anch110035&#34;&gt;Joy of Coding&lt;/a&gt; as well,
@@ -96,162 +95,6 @@ so if something&amp;rsquo;s not clear on one of the videos, hopefully it&amp;rsq
 
 &lt;p&gt;The &lt;a href=&#34;https://github.com/trishagee/cafelito/tree/goto-chicago&#34;&gt;code for the Chicago version is on Github&lt;/a&gt;,
 and if you look through the history you can see how it builds up, the same as it does in the demo.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Android Xtended</title>
-      <link>http://trishagee.github.io/post/androidxtended/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/androidxtended/</guid>
-      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
-calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;You may have noticed that the more I go to conferences, the less I write about them.  I could claim lack of time, but
-the fact is that all my write-ups will be something along the lines of &amp;ldquo;Loved &amp;lt;city&amp;gt;, went to talks that made me
-think, met interesting people, gave a talk or two that seemed to go well&amp;rdquo;. Not sure if people get bored of reading
-that, but I get bored of writing it.&lt;/p&gt;
-
-&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;That&amp;rsquo;s not to say I&amp;rsquo;m bored of conferences. On the contrary - since I work from home, travelling to new places and
-meeting Real Human Beings keeps me sane. Plus conferences are fun.&lt;/p&gt;
-
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
-setup&#34; title=&#34;The setup&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;But I went to a conference on Saturday that makes me feel compelled to write something, and not just because it was
-organised by my two fellow &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla JUG&lt;/a&gt; organisers.
-&lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt; are both doing more Android day-to-day than
-server-side Java, so this is an area they&amp;rsquo;re interested in learning more about. Not content with organising
-Android events every other month, they decided they had so many interesting speakers they wanted to have speaking here
-in Sevilla that they wanted to run a whole day, single track conference, on behalf of &lt;a href=&#34;https://plus.google.com/communities/114997118727600981533&#34;&gt;GDG Sevilla&lt;/a&gt;.
-&lt;a href=&#34;http://www.androidxtended.com/&#34;&gt;Android Xtended&lt;/a&gt; was born.&lt;/p&gt;
-
-&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
- 
-
-&lt;p&gt;As a Java &amp;ldquo;Technical Advocate&amp;rdquo;, I suppose I should keep an eye on what&amp;rsquo;s going on in the Android space, it&amp;rsquo;s quite a
-huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
-of official capacity (I wasn&amp;rsquo;t speaking, manning a booth, organising or sponsoring), so I could just enjoy it.&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Firstly, they roped me into doing registrations. Me! I was concerned my Spanish wasn&amp;rsquo;t up for it, but apparently I only
-needed two words: &amp;ldquo;nombre&amp;rdquo; and &amp;ldquo;talla&amp;rdquo; (for the t-shirt). Oh, and &amp;ldquo;treinta y uno b&amp;rdquo; - there was such demand for the
-conference the initial venue wasn&amp;rsquo;t big enough, so it was being hosted at two sites on the same road. Not
-surprisingly, some turned up to the wrong one.&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Unlike a large number of our &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;/&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; events, all the talks were in Spanish. So feel
-free to ignore my analysis if you like - my Spanish comprehension is pretty good, but sometimes I don&amp;rsquo;t realise when
-I didn&amp;rsquo;t understand something and just make up my own story.&lt;/p&gt;
-
-&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
-alt=&#34;@flipper83&#34; title=&#34;@flipper83&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;A lot of what I&amp;rsquo;ve seen so far in the Android space is Getting Started type material - a lot of tutorials and
-examples that show you how to achieve a particular goal. There seems to be less of an emphasis on areas that
-interest me as an experienced Java person - easy automation of testing, good design practices, craftsmanship etc. Now,
- it may be that because those areas (apart from testing) apply to both back-end Java and Android, there&amp;rsquo;s less of a
- need to re-iterate it in the Android space. Or it may be that I don&amp;rsquo;t see the entry-level Java stuff any more,
- because I don&amp;rsquo;t need it, and I seek out the topics that interest me.&lt;/p&gt;
-
-&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
- alt=&#34;@JMPergar&#34; title=&#34;@JMPergar&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Or it may be that as Android is one of those
- platforms that&amp;rsquo;s a good place to start as a fairly novice developer (because you can write self-contained code with
- a visible UI and get results fairly easily), lots of the focus is on the needs of new developers.  Whatever the
- reason, I had been starting to feel like the Android ecosystem was missing people taking developers beyond that
- initial step of getting something to work and up to the level of creating maintainable code.&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;Android Xtended put my mind at rest. Here was a range of talks that led attendees through the things that will make
-them more effective developers - tools and libraries to use; testing approaches; integration with persistence; clean
-(code) design for the UI; design patterns and domain driven design to simplify your code, and so on. As an employee
-of JetBrains, I was obviously very happy to see both
-&lt;a href=&#34;http://developer.android.com/tools/studio/index.html&#34;&gt;Android Studio&lt;/a&gt; and
-&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; mentioned and used throughout as well.&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;As well as fantastic speakers (they knew their stuff, were clearly practitioners, and all had great individual
-presentation styles), there were three mob-programming sessions.&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;This was an ambitious attempt to not just preach to
-a passive audience, but to involve them in creating real, working code to teach fundamental practices - dependency
-injection, testing and Gradle.  An hour is barely enough time to give a practiced demo of real code, to create
-something collaboratively with an audience of 30 people was a challenge. But I thought it did give people a flavour
-of not just how to use the technologies, but what they were for. I also saw a lot of the audience starting to
-realise the power of refactoring using an IDE - I firmly believe the best way to teach the power of a tool is by
-pair programming or, at least, using the tool in real use cases in front of people.&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;The mob programming was kinda
-like a half day tutorial squished into an hour. I&amp;rsquo;d be interested to hear how the attendees found it. For me, since
-this was a full day conference that cost €10, I thought getting three short tutorials as well as five excellent
-talks was &lt;em&gt;very&lt;/em&gt; good value for money.&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
-  
-
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
-alt=&#34;Interesting...&#34; title=&#34;Interesting...&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;I&amp;rsquo;d be remiss in talking about the conference if I didn&amp;rsquo;t mention the venue.  We were at
-&lt;a href=&#34;http://espaciores.org/&#34;&gt;Espacio RES&lt;/a&gt;, which was pretty easy to get to, and a really nice, airy, comfortable
-space&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
-And they let us rearrange their whole place just for us. The only downside is that it doesn&amp;rsquo;t hold more people, which
-is a shame, and the reason we had to host on two sites (I can&amp;rsquo;t comment on the other site as I stayed
-at RES the whole day, but we&amp;rsquo;re very grateful to &lt;a href=&#34;https://bitnami.com/&#34;&gt;Bitnami&lt;/a&gt; for lending us their offices as well).&lt;/p&gt;
-
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
-
-&lt;p&gt;So, what did I learn?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://espaciores.org/&#34;&gt;Espacio RES&lt;/a&gt; is a really nice space that hopefully we can use more regularly for events&lt;/li&gt;
-&lt;li&gt;It is possible to use Good Practices to write Android code, and Real Developers are doing so for Real Applications&lt;/li&gt;
-&lt;li&gt;There are very talented and expert technical speakers in Spain. I&amp;rsquo;ve been to two conferences in Spain in
-the last month, but as they were all in English I think it puts some people off presenting. It&amp;rsquo;s nice to see Spanish
-talent being showcased, it gives developers here good role models and shows that experts aren&amp;rsquo;t just from outside
-Spain.&lt;/li&gt;
-&lt;li&gt;Sevilla has a very healthy tech scene with people more than happy to give up a Saturday to learn new things. In
-fact, for some set of people, they prefer Saturdays to weekday
-evenings&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
-future&amp;hellip;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
- Saturdays?&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;Android Xtended was a fantastic event, with great speakers and engaged attendees.  I loved how social
- everyone was during the breaks, how people were happy to chat and share stories, even though most of the attendees
- didn&amp;rsquo;t know each other beforehand. It was brilliantly organised, and although I did see how much work went into
- arranging it, you would never believe from how smoothly it went that this two-venue event was organised by just two
- guys. Well done &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;sup id=&#34;footnote1&#34;&gt;1&lt;/sup&gt; Although in my experience Android and &amp;ldquo;pure&amp;rdquo; Java user groups and events tend not to
- overlap much - not sure if that&amp;rsquo;s a function of the relationship between Google and Oracle or just because large cities like
- London tend to split groups along technology lines to keep group and event sizes manageable&lt;/p&gt;
-
-&lt;p&gt;&lt;sup id=&#34;footnote2&#34;&gt;2&lt;/sup&gt; The downside was there are not a lot of places nearby open for coffee at 8am!&lt;/p&gt;
-
-&lt;p&gt;&lt;sup id=&#34;footnote3&#34;&gt;3&lt;/sup&gt; This is completely alien to me as someone who built her career largely in London - you
- do &lt;em&gt;not&lt;/em&gt; host events on a Saturday, except for maybe the annual LJC Open Conference, because many people have a
- long commute into the city. Doing that 5 days a week is plenty, most people don&amp;rsquo;t want to do it on a Saturday as
- well. But they will give up a couple of hours in the evening, as it costs far less in time overall.&lt;/p&gt;
 </description>
     </item>
     
