@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Presentations on Trisha Gee </title>
-    <link>http://trishagee.github.io/presentation/index.xml/</link>
+    <link>http://trishagee.github.io/presentation/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -14,7 +14,7 @@
       <pubDate>Wed, 20 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;http://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should, if I keep it up to date, list my confirmed upcoming events.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;10 Jun&lt;/strong&gt;: &lt;a href=&#34;https://qconnewyork.com/&#34;&gt;QCon New York&lt;/a&gt; - &lt;a href=&#34;https://qconnewyork.com/presentation/java-8-anger&#34;&gt;Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
@@ -73,13 +73,17 @@ this page should, if I keep it up to date, list my confirmed upcoming events.&lt
 Craft Conf, and the resources I used to create
 the talk. This page will be updated with more resources as and when they become available.&lt;/p&gt;
 
-&lt;iframe width=&#34;480&#34; height=&#34;302&#34; src=&#34;http://www.ustream.tv/embed/recorded/61448786?v=3&amp;amp;wmode=direct&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; style=&#34;border: 0px none transparent;&#34;&gt;    &lt;/iframe&gt;
-&lt;br /&gt;&lt;a href=&#34;http://www.ustream.tv&#34; style=&#34;font-size: 12px; line-height: 20px; font-weight: normal; text-align: left;&#34; target=&#34;_blank&#34;&gt;Broadcast live streaming video on Ustream&lt;/a&gt;
+&lt;h4 id=&#34;videos-and-slides:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Videos and slides&lt;/h4&gt;
 
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/46990280&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-  
+&lt;div data-parleys-presentation=&#34;java-8-anger&#34; style=&#34;width:100%;height:300px&#34;&gt;&lt;script type = &#34;text/javascript&#34; 
+src=&#34;//parleys.com/js/parleys-share.js&#34;&gt;&lt;/script&gt;&lt;a href=&#34;https://www.parleys.com/play/java-8-anger&#34;&gt;Watch on Parleys.com&lt;/a&gt;&lt;/div&gt;  
 
-&lt;h4 id=&#34;toc_0&#34;&gt;Project code&lt;/h4&gt;
+&lt;p&gt;&lt;br/&gt;&lt;br/&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/46990280&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.ustream.tv/recorded/61448786&#34;&gt;Version recorded at CraftConf&lt;/a&gt; (not quite as easy to see the code)&lt;/p&gt;
+
+&lt;h4 id=&#34;project-code:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Project code&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;The full application code on the master branch branch of my &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;sense repository&lt;/a&gt;.
@@ -87,7 +91,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;The code created on stage at QCon London is on the &lt;a href=&#34;https://github.com/trishagee/sense/tree/qcon&#34;&gt;QCon branch&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_1&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
+&lt;h4 id=&#34;java-8-java-ee-overview:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://winterbe.com/posts/2014/03/16/java-8-tutorial/&#34;&gt;Java 8 Tutorial&lt;/a&gt;&lt;/li&gt;
@@ -96,7 +100,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/143024626X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=143024626X&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=R75X5UJWBVYK4SV4&#34;&gt;Beginning Java EE 7&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_2&#34;&gt;Lambdas and Streams&lt;/h4&gt;
+&lt;h4 id=&#34;lambdas-and-streams:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Lambdas and Streams&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Lambdas and Streams&lt;/a&gt; by Richard Warburton,  highly recommended&lt;/li&gt;
@@ -106,7 +110,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Code: &lt;a href=&#34;https://github.com/RichardWarburton/lambda-behave&#34;&gt;lambda-behave&lt;/a&gt;, a Java 8 testing framework&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_3&#34;&gt;JavaFX&lt;/h4&gt;
+&lt;h4 id=&#34;javafx:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;JavaFX&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784&#34;&gt;Introduction to JavaFX&lt;/a&gt; - invaluable. Short enough to download as PDF and read cover-to-cover.&lt;/li&gt;
@@ -122,7 +126,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;, includes a section on JavaFX&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_4&#34;&gt;Websockets&lt;/h4&gt;
+&lt;h4 id=&#34;websockets:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Websockets&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html&#34;&gt;JSR-356, Java API for WebSocket&lt;/a&gt;&lt;/li&gt;
@@ -135,7 +139,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Code: &lt;a href=&#34;https://github.com/jetty-project/embedded-jetty-websocket-examples&#34;&gt;embedded-jetty-websocket-examples&lt;/a&gt; examples of how to create Jetty Websockets&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_5&#34;&gt;Date and Time&lt;/h4&gt;
+&lt;h4 id=&#34;date-and-time:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Date and Time&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Java SE 8 Date and Time&lt;/a&gt; by Ben Evans and Richard Warburton&lt;/li&gt;
@@ -143,25 +147,25 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_6&#34;&gt;Optional&lt;/h4&gt;
+&lt;h4 id=&#34;optional:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Optional&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.voxxed.com/blog/2015/02/defence-java-8s-optional-use/&#34;&gt;In Defence of Java 8&amp;rsquo;s Optional: Why and How to Use It&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_7&#34;&gt;Files&lt;/h4&gt;
+&lt;h4 id=&#34;files:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Files&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/essential/io/file.html&#34;&gt;Reading, Writing, and Creating Files&lt;/a&gt; - much simplified since Java 7&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_8&#34;&gt;Microservices&lt;/h4&gt;
+&lt;h4 id=&#34;microservices:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Microservices&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Martin Fowler on Microservices: &lt;a href=&#34;http://youtu.be/wgdBVIX9ifA&#34;&gt;25 minute video overview&lt;/a&gt; and &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;article&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_9&#34;&gt;Special Thanks To&amp;hellip;&lt;/h4&gt;
+&lt;h4 id=&#34;special-thanks-to:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Special Thanks To&amp;hellip;&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.com.es/&#34;&gt;Martin Thompson&lt;/a&gt;, &lt;a href=&#34;http://insightfullogic.com/blog/&#34;&gt;Richard Warburton&lt;/a&gt;,
 &lt;a href=&#34;http://www.codingthearchitecture.com/authors/rannett/&#34;&gt;Robert Annett&lt;/a&gt; and &lt;a href=&#34;http://hadihariri.com/&#34;&gt;Hadi Hariri&lt;/a&gt; for
@@ -169,7 +173,7 @@ code reviewing and giving great suggestions. Not all suggestions have been imple
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;toc_10&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Java 9 is just around the corner, and yet many of us developers have yet to use Java 8 features in an application. The
 goal of this presentation is to move beyond slide-sized examples of streams and lambdas, and to show how to build a
@@ -204,16 +208,16 @@ not a shining example of how to write these sorts of tests, but if you&amp;rsquo
 &lt;p&gt;I also talk about how amazing Spock is, so if you&amp;rsquo;re interested you can read more about
 &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;my experiences with Spock&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk was built off an &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
+&lt;p&gt;This talk was built off an &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
 invest your personal time in.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ll leave you with this crude decision
 chart and the mind-map of potential ways to play with a technology. Remember, learning to say &lt;em&gt;&amp;ldquo;no&amp;rdquo;&lt;/em&gt; to a technology can be very powerful.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;PS I&amp;rsquo;m thinking of writing a book, &lt;a href=&#34;https://leanpub.com/careeradviceforprogrammers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;. If you&amp;rsquo;re
@@ -221,7 +225,7 @@ interested, let me know (because, you know, I&amp;rsquo;ve got loads of spare ti
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Presentation Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;presentation-abstract:42b45ac01f3ccbbe86d46b2593258976&#34;&gt;Presentation Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;We all want to stay ahead of the curve - after all, that&amp;rsquo;s what you go to a conference for. But have you ever considered how being ahead
 of the curve might be dangerous?&lt;/em&gt;&lt;/p&gt;
@@ -265,7 +269,7 @@ so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34; target=&#34;_blank&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134070865&amp;type=d&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
-so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
+so I have a &lt;a href=&#34;http://trishagee.github.io/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This talk has been videoed several times -
 some older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
@@ -275,7 +279,7 @@ these initial demos.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.parleys.com/talk/html5-angularjs-groovy-java-mongodb-together-what-could-possibly-go-wrong&#34;&gt;JavaOne, October 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (the Java back end is similar to the JavaOne version, but UI for getting the nearest coffee shop is slightly different)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oscon.com/open-source-2015/public/content/2015/05/15-html5-angularjs-groovy-java-mongodb-all-together?cmp=tw-prog-na-article-os15_1431727268&#34;&gt;OSCON, July 2014&lt;/a&gt; (uses Morphia)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
+&lt;li&gt;&lt;a href=&#34;http://trishagee.github.io/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
 presentation, and the video uses MongoJack instead of Morphia &amp;amp; shows an even earlier version of the find-my-coffee UI)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt; (only the second time I presented this
 demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&gt;
@@ -283,7 +287,7 @@ demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&g
 
 &lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Resources&lt;/h3&gt;
+&lt;h3 id=&#34;resources:891809574da610a118d95fe52fd3cd80&#34;&gt;Resources&lt;/h3&gt;
 
 &lt;p&gt;These are the main resources I used in creating this talk:&lt;/p&gt;
 
@@ -301,7 +305,7 @@ AngularJS app to a JavaEE back end using NetBeans, but the principals here are t
 &lt;li&gt;&lt;a href=&#34;http://gradle.org/&#34;&gt;Gradle&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ&lt;/a&gt;: there&amp;rsquo;s a free community version of the IDE, but it&amp;rsquo;s not very expensive to upgrade to
 the full version and it will save you so much time and effort.&lt;/li&gt;
 &lt;/ul&gt;
@@ -322,18 +326,19 @@ which happens to be the same one I&amp;rsquo;m giving at a number of conferences
 &lt;p&gt;The presentation leaves very little time for anything other than coding, as it&amp;rsquo;s quite challenging to create a full app in 50
 minutes, so it was great to have the chance to talk about the motivations for the demo&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/sZee7lRAUF4&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-  
+&lt;/p&gt;
 
 &lt;p&gt;The video of the actual talk is also available now:&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/kmVnhyWqozA&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
+&lt;/p&gt;
 
 &lt;p&gt;At the beginning it doesn&amp;rsquo;t clearly show the screen, but it does improve.  You can see an earlier version from the
 &lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb#anch110035&#34;&gt;Joy of Coding&lt;/a&gt; as well,
@@ -366,7 +371,7 @@ around where we want the API to go.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
       <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
-by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+by &lt;a href=&#34;http://trishagee.github.io/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
 &lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
 .com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
 time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
@@ -390,7 +395,7 @@ I think he brings out the best in me.&lt;/p&gt;
 
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;http://trishagee.github.io/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -474,7 +479,7 @@ which was pretty cool actually, but meant that it felt more like a lecture and i
     <item>
       <title>All Public Appearances</title>
       <link>http://trishagee.github.io/presentation/public_appearances/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/public_appearances/</guid>
       <description>
@@ -482,9 +487,9 @@ which was pretty cool actually, but meant that it felt more like a lecture and i
 &lt;p&gt;For blatant self-publicity, I&amp;rsquo;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&amp;rsquo;ve
 been involved in.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Presentations and Panels&lt;/h2&gt;
+&lt;h2 id=&#34;presentations-and-panels:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Presentations and Panels&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;2015&lt;/h3&gt;
+&lt;h3 id=&#34;2015:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2015&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;12 May&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago&lt;/a&gt; - Level Up Your Automated Tests&lt;/p&gt;
 
@@ -495,49 +500,49 @@ been involved in.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/speakers/trisha-gee-is-groovy-better-for-testing-than-java/&#34;&gt;Greach, Madrid&lt;/a&gt; -
 &lt;a href=&#34;presentation/groovy_vs_java/&#34;&gt;&amp;ldquo;Is Groovy Better than Java for Testing?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://cfp.devoxx.fr/2015/talk/MLB-2660/Java_8_in_Anger&#34;&gt;Devoxx France, Paris&lt;/a&gt; - &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;&amp;ldquo;Java 8 in Anger&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://cfp.devoxx.fr/2015/talk/MLB-2660/Java_8_in_Anger&#34;&gt;Devoxx France, Paris&lt;/a&gt; - &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;&amp;ldquo;Java 8 in Anger&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;15 Mar&lt;/strong&gt;: &lt;a href=&#34;https://plus.google.com/u/0/events/c0rtb02v21i2cdj4mq9g5tcitnk&#34;&gt;Women Techmakers Istanbul&lt;/a&gt; -
 &amp;ldquo;Building a webapp with AngularJS, Java and MongoDB&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;2 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;QCon London&lt;/a&gt;:
-&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;Half day tutorial - &amp;ldquo;HTML5, AngularJS, Groovy, Java and MongoDB all together&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;Half day tutorial - &amp;ldquo;HTML5, AngularJS, Groovy, Java and MongoDB all together&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;3 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/events/220346715/&#34;&gt;Ladies Who Code, London&lt;/a&gt;: &amp;ldquo;Public Speaking for Novices&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;QCon London&lt;/a&gt;: &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;&amp;ldquo;Java 8 in Anger&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;QCon London&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;&amp;ldquo;Java 8 in Anger&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;2014&lt;/h3&gt;
+&lt;h3 id=&#34;2014:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2014&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;4 Dec&lt;/strong&gt;: &lt;a href=&#34;https://hacksummit.org/&#34;&gt;hack.summit()&lt;/a&gt;: &lt;a href=&#34;https://www.youtube.com/watch?v=VyEdy-l5608&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java, MongoDB altogether: What could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;2 Dec&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/events/217655562/&#34;&gt;Ladies Who Code&lt;/a&gt;: &amp;ldquo;Working for an Open Source Company&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1 Dec&lt;/strong&gt;:
-&lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/218737076/&#34;&gt;London Java Community&lt;/a&gt;: &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java,
+&lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/218737076/&#34;&gt;London Java Community&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java,
 MongoDB altogether: What could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/215362192/&#34;&gt;London Java Community Open Conference&lt;/a&gt; - &amp;ldquo;Intro to Public
 Speaking for Beginners&amp;rdquo;, &amp;ldquo;Career Advice for Developers&amp;rdquo;, &amp;ldquo;Ask the Experts Panel&amp;rdquo;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;24 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.barcelonajug.org/2014/11/html5-angularjs-groovy-java-and-mongodb.html&#34;&gt;Barcelona JUG&lt;/a&gt;: &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java and MongoDB all together – what could go
+&lt;p&gt;&lt;strong&gt;24 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.barcelonajug.org/2014/11/html5-angularjs-groovy-java-and-mongodb.html&#34;&gt;Barcelona JUG&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java and MongoDB all together – what could go
 wrong?&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;22 Nov&lt;/strong&gt;: &lt;a href=&#34;https://2014.nosql-matters.org/bcn/abstracts/#abstract_116695004775&#34;&gt;NoSQL Matters, Barcelona&lt;/a&gt;:
-&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Building a web application with MongoDB &amp;amp; Java&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Building a web application with MongoDB &amp;amp; Java&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;12 Nov&lt;/strong&gt;: &lt;a href=&#34;http://cfp.devoxx.be/2014/talk/JUB-4846/Women_and_female_speakers_in_the_Java_ecosystem_-_How_to_ameliorate_the_current_situation%3F&#34;&gt;Devoxx, Belgium&lt;/a&gt;:
-&lt;a href=&#34;/post/more_female_speakers&#34;&gt;&amp;ldquo;Women and female speakers in the Java ecosystem - How to ameliorate the current situation?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;&amp;ldquo;Women and female speakers in the Java ecosystem - How to ameliorate the current situation?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;6 Nov&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/berlin-2014&#34;&gt;GOTO Berlin&lt;/a&gt;: &lt;a href=&#34;/presentation/staying_ahead_of_the_curve&#34;&gt;&amp;ldquo;Staying Ahead of the Curve&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;6 Nov&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/berlin-2014&#34;&gt;GOTO Berlin&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/staying_ahead_of_the_curve&#34;&gt;&amp;ldquo;Staying Ahead of the Curve&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;16 Oct&lt;/strong&gt;: &lt;a href=&#34;http://uk.geekout.ee/schedule/pick-the-right-tools-to-improve-your-productivity/&#34;&gt;GeekoutUK&lt;/a&gt;:
-&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Pick the right tools to improve your productivity&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Pick the right tools to improve your productivity&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
 &lt;strong&gt;16 Oct&lt;/strong&gt;: GeekoutUK Community Night: A Guide to IntelliJ Live Templates&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;14 Oct&lt;/strong&gt;: &lt;a href=&#34;http://jaxlondon.com/2014/sessions/rapid-web-application-development-mongodb-and-jvm&#34;&gt;JAX London&lt;/a&gt;: &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Rapid Web Application Development with MongoDB and the JVM&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;14 Oct&lt;/strong&gt;: &lt;a href=&#34;http://jaxlondon.com/2014/sessions/rapid-web-application-development-mongodb-and-jvm&#34;&gt;JAX London&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Rapid Web Application Development with MongoDB and the JVM&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;2 Oct&lt;/strong&gt; - &lt;a href=&#34;http://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703&#34;&gt;JavaOne&lt;/a&gt;: &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;2 Oct&lt;/strong&gt; - &lt;a href=&#34;http://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703&#34;&gt;JavaOne&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
 &lt;strong&gt;1 Oct&lt;/strong&gt; - &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=5898&#34;&gt;JavaOne&lt;/a&gt;: &amp;ldquo;Java Champions and JUG Leaders Meet Oracle Executives&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;30 Sep&lt;/strong&gt; - &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=3374&#34;&gt;JavaOne&lt;/a&gt;: &lt;a href=&#34;https://www.parleys.com/play/543faa9ee4b06e1184ae4235/about&#34;&gt;&amp;ldquo;Lambda Q&amp;amp;A Panel&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
@@ -545,23 +550,23 @@ wrong?&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;23 Jul&lt;/strong&gt; - OSCON: &amp;ldquo;&lt;a href=&#34;http://www.oscon.com/open-source-2015/public/content/2015/05/15-html5-angularjs-groovy-java-mongodb-all-together?cmp=tw-prog-na-article-os15_1431727268&#34;&gt;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;20 May&lt;/strong&gt; - GOTO Chicago: &lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;&amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;20 May&lt;/strong&gt; - GOTO Chicago: &lt;a href=&#34;http://trishagee.github.io/presentation/interview_at_goto_chicago/&#34;&gt;&amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - &lt;a href=&#34;/post/the_joy_of_coding&#34;&gt;Joy of Coding&lt;/a&gt;: &amp;ldquo;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;HTML5, Angular.js, Groovy, Java,
+&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/the_joy_of_coding&#34;&gt;Joy of Coding&lt;/a&gt;: &amp;ldquo;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;HTML5, Angular.js, Groovy, Java,
 MongoDB all together - what could possibly go wrong?&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;6 Mar&lt;/strong&gt; - &lt;a href=&#34;/post/qcon_london_2014&#34;&gt;QCon London&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java,
+&lt;strong&gt;6 Mar&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/qcon_london_2014&#34;&gt;QCon London&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java,
 MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;11 Feb&lt;/strong&gt; - JFokus: &amp;ldquo;What do you mean, Backwards Compatibility?&amp;rdquo;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;2013&lt;/h3&gt;
+&lt;h3 id=&#34;2013:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2013&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;Dec&lt;/strong&gt; - YOW Melbourne, Brisbane, Sydney: &amp;ldquo;&lt;a href=&#34;/presentation/yow_2013_career_advice_for_programmers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;rdquo; &amp;amp;
-&amp;ldquo;&lt;a href=&#34;/presentation/yow_2013_backwards&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Dec&lt;/strong&gt; - YOW Melbourne, Brisbane, Sydney: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;rdquo; &amp;amp;
+&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/presentation/yow_2013_backwards&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;23 Nov&lt;/strong&gt; - London Java Community Open Conference: &amp;ldquo;Keynote: Java, the Future, and You&amp;rdquo;, &amp;ldquo;Novice Speaker&amp;rsquo;s Clinic&amp;rdquo;, &amp;ldquo;More Speaker Tips&amp;rdquo;,
  &amp;ldquo;Career Advice for Programmers&amp;rdquo;, &amp;ldquo;Intro to MongoDB&amp;rdquo;, panel: &amp;ldquo;So you&amp;rsquo;re a senior developer - what next?&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;21 Nov&lt;/strong&gt; - Virtual JUG: &amp;ldquo;&lt;a href=&#34;/post/first_presentation_at_the_virtual_jug&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+&lt;strong&gt;21 Nov&lt;/strong&gt; - Virtual JUG: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/first_presentation_at_the_virtual_jug&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;29 Oct&lt;/strong&gt; - JAX London:
 &amp;ldquo;&lt;a href=&#34;http://jaxenter.com/trisha-gee-design-is-a-process-not-an-artefact-49100.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
@@ -571,7 +576,7 @@ MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/p&gt;
 &lt;strong&gt;2 Oct&lt;/strong&gt; - GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#55&#34;&gt;Top Ten IntelliJ Tips&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;2 Oct&lt;/strong&gt; - GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#36&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;26 Sep&lt;/strong&gt; - JavaOne: &amp;ldquo;&lt;a href=&#34;/post/javaone_2013&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;26 Sep&lt;/strong&gt; - JavaOne: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/javaone_2013&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;12 Sep&lt;/strong&gt; - JavaZone: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/74553077&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;23 Jul&lt;/strong&gt; - JavaOne Shanghai: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
@@ -589,28 +594,28 @@ MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/p&gt;
 &lt;strong&gt;21 Mar&lt;/strong&gt; - LJC:
 &amp;ldquo;&lt;a href=&#34;http://skillsmatter.com/podcast/java-jee/london-java-community-march&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;8 Mar&lt;/strong&gt; - QCon London (with Dan North):
-&amp;ldquo;&lt;a href=&#34;/post/life_on_both_sides_of_the_interview_table&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/life_on_both_sides_of_the_interview_table&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;2012&lt;/h3&gt;
+&lt;h3 id=&#34;2012:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2012&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;4 Dec&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;/post/webinar_processing_high_volume_data_feeds_with_mongodb&#34;&gt;Financial Markets: Processing High Volume Data Feeds with MongoDB&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;4 Dec&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb&#34;&gt;Financial Markets: Processing High Volume Data Feeds with MongoDB&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;/post/my_first_official_mongodb_appearance&#34;&gt;MongoDB on the JVM&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/my_first_official_mongodb_appearance&#34;&gt;MongoDB on the JVM&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;24 Nov&lt;/strong&gt; - LJC Open Conference: &amp;ldquo;Keynote: The State of Java&amp;rdquo;; Panel: &amp;ldquo;Does Performance Matter?&amp;rdquo;; Panel: &amp;ldquo;The Java Community Process&amp;rdquo;; &amp;ldquo;An Introduction to NoSQL&amp;rdquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;15 Nov&lt;/strong&gt; - Devoxx:
-&amp;ldquo;&lt;a href=&#34;/post/devoxx_the_problem_with_women__a_technical_approach&#34;&gt;The Problem With Women: A Technical Approach&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;14 Nov&lt;/strong&gt; - Devoxx: &amp;ldquo;&lt;a href=&#34;/post/agile_when_agile_goes_well&#34;&gt;Agile++: When Agile Goes Well&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach&#34;&gt;The Problem With Women: A Technical Approach&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&lt;strong&gt;14 Nov&lt;/strong&gt; - Devoxx: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/agile_when_agile_goes_well&#34;&gt;Agile++: When Agile Goes Well&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;17 Oct&lt;/strong&gt; - JAX London: &amp;ldquo;Java Performance Frequently Asked Questions&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;3 Oct&lt;/strong&gt; - JavaOne:
-&amp;ldquo;CON11338 &lt;a href=&#34;/post/javaone_the_problem_with_women__a_technical_approach&#34;&gt;A Technical Approach to Women&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&amp;ldquo;CON11338 &lt;a href=&#34;http://trishagee.github.io/post/javaone_the_problem_with_women__a_technical_approach&#34;&gt;A Technical Approach to Women&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;3 Oct&lt;/strong&gt; - JavaOne Panel:
 &amp;ldquo;CON5130 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=5130&amp;amp;amp;tclass=popup#.UIZb-TfrjPE.blogger&#34;&gt;London Java Community: How to Change the World&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;1 Oct&lt;/strong&gt; - JavaOne: &amp;ldquo;CON3732 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3732&amp;amp;amp;tclass=popup#.UIZaP5FFnjg.blogger&#34;&gt;Concurrent Programming Using the Disruptor&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;30 Sep&lt;/strong&gt; - JavaOne: &amp;ldquo;UGF10467 Why Open Source Your Secrets&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;23 Sep&lt;/strong&gt; - Strange Loop: &amp;ldquo;&lt;a href=&#34;/post/strangeloop_disruptor_workshop_materials&#34;&gt;Workshop: Introduction to the Disruptor&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
+&lt;strong&gt;23 Sep&lt;/strong&gt; - Strange Loop: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/strangeloop_disruptor_workshop_materials&#34;&gt;Workshop: Introduction to the Disruptor&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;18 July&lt;/strong&gt; - OSCON: &amp;ldquo;&lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/proceedings&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;/p&gt;
 
@@ -622,56 +627,56 @@ MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/p&gt;
 &amp;ldquo;&lt;a href=&#34;http://www.version2.dk/blog/goto-programming-stars-45578&#34;&gt;Programming with the Stars&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;29 Apr&lt;/strong&gt; - &lt;a href=&#34;http://www.geekgirlmeetup.co.uk/2012/03/29th-of-april-geekgirlmeetup-is-held-in-london-theme-code-is-queen/&#34;&gt;GirlGeekMeetup London&lt;/a&gt;: “GDC
-Meet a Mentor”; “&lt;a href=&#34;/post/why_open_source_your_secrets&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;”;
+Meet a Mentor”; “&lt;a href=&#34;http://trishagee.github.io/post/why_open_source_your_secrets&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;”;
 “Technology in Electronic Trading” (with Annalisa Sarasini); Panel: “Women Only Events - Are We Creating A Girl Ghetto?”&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - QCon London: “&lt;a href=&#34;/post/qcon_london_disruptor_presentation_video&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - QCon London: “&lt;a href=&#34;http://trishagee.github.io/post/qcon_london_disruptor_presentation_video&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;2011&lt;/h3&gt;
+&lt;h3 id=&#34;2011:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2011&lt;/h3&gt;
 
-&lt;p&gt;&lt;strong&gt;7 Nov&lt;/strong&gt; - Devoxx Panel: “&lt;a href=&#34;/post/why_we_shouldnt_target_women/&#34;&gt;Why we shouldn&amp;rsquo;t target women&lt;/a&gt;”&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;7 Nov&lt;/strong&gt; - Devoxx Panel: “&lt;a href=&#34;http://trishagee.github.io/post/why_we_shouldnt_target_women/&#34;&gt;Why we shouldn&amp;rsquo;t target women&lt;/a&gt;”&lt;br /&gt;
 &lt;strong&gt;2 Nov&lt;/strong&gt; - JAX London:
-“&lt;a href=&#34;/post/video_of_our_jax_london_session&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;” (with Mike Barker)&lt;/p&gt;
+“&lt;a href=&#34;http://trishagee.github.io/post/video_of_our_jax_london_session&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;” (with Mike Barker)&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;11 Oct&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;/post/mike_and_i_debut_our_new_disruptor_presentation&#34;&gt;Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;”&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;11 Oct&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation&#34;&gt;Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;”&lt;br /&gt;
 &lt;strong&gt;6 Oct&lt;/strong&gt; - JavaOne: “LMAX Disruptor: High-Performance Concurrent Programming Framework” (with Martin Thompson)&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;1 Jun&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;/post/first_public_appearance_caught_on_video&#34;&gt;Introduction to the Java Community Process&lt;/a&gt;”&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1 Jun&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/first_public_appearance_caught_on_video&#34;&gt;Introduction to the Java Community Process&lt;/a&gt;”&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_6&#34;&gt;Interviews&lt;/h2&gt;
+&lt;h2 id=&#34;interviews:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Interviews&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Mar 2015&lt;/strong&gt; - &lt;a href=&#34;http://codepancake.com/in-the-spotlight-3-trisha-gee/&#34;&gt;In The Spotlight: Trisha Gee&lt;/a&gt; (text)
 &lt;strong&gt;Aug 2014&lt;/strong&gt; - &lt;a href=&#34;http://java.dzone.com/articles/dev-week-trisha-gee&#34;&gt;DZone Dev of the Week&lt;/a&gt; (text)&lt;br /&gt;
 &lt;strong&gt;May 2014&lt;/strong&gt; - &lt;a href=&#34;https://www.youtube.com/watch?v=sZee7lRAUF4&#34;&gt;What Could Possibly Go Wrong? at GOTO Chicago&lt;/a&gt; (video)&lt;br /&gt;
 &lt;strong&gt;Mar 2014&lt;/strong&gt; - &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Aug 2013&lt;/strong&gt; - &lt;a href=&#34;/post/interviewed_by_stephen_chin_about_javaone_2013&#34;&gt;JavaOne 2013 Preview&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Aug 2013&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013&#34;&gt;JavaOne 2013 Preview&lt;/a&gt; (video)&lt;br /&gt;
 &lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://parleys.com/play/516becfbe4b07b9cc6de32c3/chapter0/about&#34;&gt;Devoxx UK&lt;/a&gt; (video)&lt;br /&gt;
 &lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://shoreditchworks.com/women-tech-city-advice-solutions-sexism&#34;&gt;Top Tips For Working With Techies&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;/presentation/gdl_presents_women_techmakers_with_trisha_gee/&#34;&gt;Google Presents Women Techmakers&lt;/a&gt;
+&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/&#34;&gt;Google Presents Women Techmakers&lt;/a&gt;
 (video)&lt;br /&gt;
-&lt;strong&gt;Nov 2012&lt;/strong&gt; - &lt;a href=&#34;/presentation/interviewed_at_devoxx/&#34;&gt;Devoxx&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Nov 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/presentation/interviewed_at_devoxx/&#34;&gt;Devoxx&lt;/a&gt; (video)&lt;br /&gt;
 &lt;strong&gt;Jun 2012&lt;/strong&gt; - &lt;a href=&#34;https://blogs.oracle.com/java/entry/why_nominate_someone_for_a&#34;&gt;Oracle&amp;rsquo;s Java Blog - Duke&amp;rsquo;s Choice Awards&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;/post/interviewed_at_goto_copenhagen&#34;&gt;GOTO Copenhagen&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;/post/featured_on_a_bbc_podcast&#34;&gt;BBC 5 Live&lt;/a&gt; (podcast)&lt;br /&gt;
+&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interviewed_at_goto_copenhagen&#34;&gt;GOTO Copenhagen&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/featured_on_a_bbc_podcast&#34;&gt;BBC 5 Live&lt;/a&gt; (podcast)&lt;br /&gt;
 &lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;Graduate Developer Community&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;Mar 2012&lt;/strong&gt; - &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Mar 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interviewed_for_infoq_at_qcon_london&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;br /&gt;
 &lt;strong&gt;Jan 2012&lt;/strong&gt; - &lt;a href=&#34;http://blog.eisele.net/2012/01/heroes-of-java-trisha-gee.html&#34;&gt;Heroes of Java&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;Nov 2011&lt;/strong&gt; - &lt;a href=&#34;/post/interview_by_the_oracle_technology_network_at_devoxx/&#34;&gt;Oracle Technology Network at Devoxx&lt;/a&gt; (video)&lt;br /&gt;
+&lt;strong&gt;Nov 2011&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/&#34;&gt;Oracle Technology Network at Devoxx&lt;/a&gt; (video)&lt;br /&gt;
 &lt;strong&gt;Oct 2011&lt;/strong&gt; - &lt;a href=&#34;https://blogs.oracle.com/javaspotlight/entry/java_spotlight_episode_51_live&#34;&gt;Java Spotlight: Duke&amp;rsquo;s Choice Winners&lt;/a&gt;
 (podcast)&lt;br /&gt;
-&lt;strong&gt;Oct 2011&lt;/strong&gt; - &lt;a href=&#34;/post/more_videos_from_java_one_2011&#34;&gt;JavaOne&lt;/a&gt; (video)&lt;/p&gt;
+&lt;strong&gt;Oct 2011&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/more_videos_from_java_one_2011&#34;&gt;JavaOne&lt;/a&gt; (video)&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_7&#34;&gt;Publications&lt;/h2&gt;
+&lt;h2 id=&#34;publications:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Publications&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Jan 2014&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
-&amp;ldquo;&lt;a href=&#34;/post/introduction_to_mongodb_and_big_data&#34;&gt;Introduction to MongoDB and Big Data&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
+&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/introduction_to_mongodb_and_big_data&#34;&gt;Introduction to MongoDB and Big Data&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;Nov 2012&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
 &amp;ldquo;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112/?pg=35&amp;amp;amp;pm=1&amp;amp;amp;u1=friend&#34;&gt;Exploring Lambda Expressions for Java&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
 &lt;strong&gt;Mar 2012&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
-&amp;ldquo;&lt;a href=&#34;/post/java_magazine_intro_to_the_disruptor_part_one&#34;&gt;Sharing Data Without Contention&lt;/a&gt;”&lt;br /&gt;
+&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one&#34;&gt;Sharing Data Without Contention&lt;/a&gt;”&lt;br /&gt;
 &lt;strong&gt;May 2011&lt;/strong&gt; - &lt;a href=&#34;http://disruptor.googlecode.com/files/Disruptor-1.0.pdf&#34;&gt;Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_8&#34;&gt;Guest Posts&lt;/h2&gt;
+&lt;h2 id=&#34;guest-posts:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Guest Posts&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Aug 2014&lt;/strong&gt; - MongoDB Blog: &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting started with MongoDB and Java, Part 1&lt;/a&gt;&lt;br /&gt;
 &lt;strong&gt;Aug 2014&lt;/strong&gt; - MongoDB Blog: &lt;a href=&#34;http://blog.mongodb.org/post/94724924068/getting-started-with-mongodb-and-java-part-ii&#34;&gt;Getting started with MongoDB and Java, Part 2&lt;/a&gt;&lt;br /&gt;
