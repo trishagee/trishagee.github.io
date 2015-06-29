@@ -6,7 +6,415 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 22 May 2015 00:00:00 UTC</updated>
+    <updated>Fri, 26 Jun 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Level Up Your Automated Tests</title>
+      <link>http://trishagee.github.io/presentation/level_up_your_automated_tests/</link>
+      <pubDate>Fri, 26 Jun 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/level_up_your_automated_tests/</guid>
+      <description>
+
+&lt;p&gt;I presented a new talk at &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago 2015&lt;/a&gt;
+about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+Spock in MongoDB, but this is a more process/agile/people perspective, not a
+technical look at the merits of one language over another.&lt;/p&gt;
+
+&lt;p&gt;Slides available below.  As always, the slides are not super-useful out of
+context, but they do contain my conclusions (also note that due to a technology
+fail, my hand-drawn style is even more hand-drawn than usual).&lt;/p&gt;
+
+&lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
+
+&lt;p&gt;I sadly did not have a lot of time for questions during the presentation, but
+thanks to the wonders of modern technology, I have a list of unanswered
+questions which I will attempt to address here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Is testing to find out your system works? Or is it so you know when your
+system is broken?&lt;/strong&gt;&lt;br /&gt;
+Excellent question. I would expect that if you have a system that&amp;rsquo;s in
+production (which is probably the large majority of the projects we work on),
+we can assume the system is working, for some definition of working.
+Automated testing is particularly good at catching when your system stops
+doing the things you thought it was doing when you wrote the tests (which
+may, or may not, mean the system is genuinely &amp;ldquo;broken&amp;rdquo;). Regression testing is
+to find out when your system is no longer doing what you expect, and automated tests are
+really good for this.&lt;/p&gt;
+
+&lt;p&gt;But testing can also make sure you implement code that behaves the way you
+expect, especially if you write the tests first.  Automated tests can be used
+to determine that your code is complete, according to some pre-agreed
+specification (in this case, the automated tests you wrote up front).&lt;/p&gt;
+
+&lt;p&gt;So I guess what I&amp;rsquo;m trying to say is, when you first write the tests you
+have tests that, when they pass, proves the system works (&lt;em&gt;assuming&lt;/em&gt; your
+tests are testing the right things and/or not giving you false positives).
+Subsequent passes show that you haven&amp;rsquo;t broken anything.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At what level do &amp;ldquo;tests documenting code&amp;rdquo; actually become useful? And who
+is/should the documentation be targeted to?&lt;/strong&gt;&lt;br /&gt;
+In the presentation, my case study is the MongoDB Java Driver.  Our users
+were Java programmers, who were going to be coding using our driver.  So in
+this example, it makes a lot of sense to document the code using a language
+that our users understood.  We started with Java, and ended up using Groovy
+because it was also understandable for our users and a bit more succinct.&lt;/p&gt;
+
+&lt;p&gt;On a previous project we had different types of tests.  The unit and system
+tests documented what the expected behaviour was at the class or module
+level, and was aimed at developers in the team.  The acceptance tests were
+written in Java, but in a &lt;a href=&#34;https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/&#34;&gt;friendly DSL-style way&lt;/a&gt;. These were usually
+written by a triad of tester, business analyst and developer, and documented to all
+these guys and girls what the top-level behaviour should be. Our audience here
+was fairly technical though, so there was no need to go to the extent of trying
+to write English-language-style tests, they were readable enough for a
+reasonably techy (but non-programmer) audience. These were not designed to be
+read by &amp;ldquo;the business&amp;rdquo; - us developers might use
+them to answer questions about the behaviour of the system, but they didn&amp;rsquo;t
+document it in a way that just anyone could understand.&lt;/p&gt;
+
+&lt;p&gt;These are two different approaches for two different-sized
+team/organisations, with different users. So I guess in summary the answer is
+&amp;ldquo;it depends&amp;rdquo;.  But at the very least, developers on your own team should be
+able to read your tests and understand what the expected behaviour of the
+code is.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How do you become a team champion? I.e. get authority and acceptance that
+people listen to you?&lt;/strong&gt;&lt;br /&gt;
+In my case, it was just by accident - I happened to care about the tests
+being green and also being useful, so I moaned at people until it happened. But
+it&amp;rsquo;s not just about nagging, you get more buy-in if other people see you
+doing the right things the right way, and it&amp;rsquo;s not too painful for them to
+follow your example.&lt;/p&gt;
+
+&lt;p&gt;There are going to be things that you care about that you&amp;rsquo;ll never get other
+people to care about, and this will be different from team to team. You have
+two choices here - if you care that much, and it bothers you that much, you
+have to do it yourself (often on your own time, especially if your boss
+doesn&amp;rsquo;t buy into it). Or, you have to let it go - when it comes to quality,
+there are so many things you could care about that it might be more
+beneficial to drop one cause and pick another that you can get people to care
+about.&lt;/p&gt;
+
+&lt;p&gt;For example, I wanted us to use &lt;code&gt;assertThat&lt;/code&gt; instead of &lt;code&gt;assertFalse&lt;/code&gt; (or
+true, or equals, or whatever).  I tried to demo the advantages (as I saw
+them) of my approach to the team, and tried to push this in code reviews, but
+in the end the other developers weren&amp;rsquo;t sold on the benefits, and
+from my point of view the benefits weren&amp;rsquo;t big enough to force the issue.
+Those of us who cared, used &lt;code&gt;assertThat&lt;/code&gt;. For the rest, I was just happy
+people were writing and maintaining tests.&lt;/p&gt;
+
+&lt;p&gt;So, pick your battles. You&amp;rsquo;ll be surprised at how many people do get on board
+with things.  I thought implementing checkstyle and setting draconian
+formatting standards was going to be a tough battle, but in the end people
+were just happy to have &lt;em&gt;any&lt;/em&gt; standards, especially when they were enforced
+by the build.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you report test, style, coverage, etc failures separately? Why?&lt;/strong&gt;&lt;br /&gt;
+We didn&amp;rsquo;t fail on coverage.  Enforcing a coverage percentage is a really good
+way to end up with crappy tests, like for getters/setters and constructors
+(by the way, if there&amp;rsquo;s enough logic in your constructor that it &lt;em&gt;needs&lt;/em&gt; a
+test, You&amp;rsquo;re Doing It Wrong).&lt;/p&gt;
+
+&lt;p&gt;Generally different types of failures are found by different tools, so for
+this reason alone they will be reported separately - for example, checkstyle
+will fail the build if it doesn&amp;rsquo;t conform to our style standards, codenarc
+fails it for Groovy style failures, and Gradle will run the tests in a
+different task to these two.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s actually important, though, is time-to-failure.  For checkstyle, for
+example, it will fail on something silly like curly braces in the wrong place.
+You want this to fail within seconds, so you can fix the silly mistake
+quickly. Ideally you&amp;rsquo;d have IntelliJ (perhaps) run your checks before it even
+makes it into your CI environment. Compiler errors should, of course, fail
+things before you run a test, short-running tests should fail before
+long-running tests.  Basically, the easier it is to fix the problem, the
+sooner you want to know, I guess.&lt;/p&gt;
+
+&lt;p&gt;Our build was relatively small and not too complex, so actually we ran all
+our types of tests (integration and unit, both Groovy and Java) in a single
+task, because this turned out to be much quicker in Gradle (in our case) than
+splitting things up into a simple pipeline.&lt;/p&gt;
+
+&lt;p&gt;You might have a reason to report stuff separately, but for me it&amp;rsquo;s much more
+important to understand how fast I need to be aware of a particular type of
+failure.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sometimes I find myself modifying code design and architecture to enable
+testing. How can I avoid damaging design?&lt;/strong&gt;&lt;br /&gt;
+This is a great question, and a common one too. The short answer is: &lt;em&gt;in
+general&lt;/em&gt; writing code that&amp;rsquo;s easier to test leads to a cleaner design anyway
+(for example, dependency injection at that appropriate places). If you find
+you need to rip your design apart to test it, there&amp;rsquo;s a smell there somewhere
+ - either your design isn&amp;rsquo;t following SOLID principals, or you&amp;rsquo;re trying to
+test the wrong things.&lt;/p&gt;
+
+&lt;p&gt;Of course, the common example here is testing private methods - how do you test
+these without exposing secrets&lt;sup&gt;1&lt;/sup&gt;? I think for me, if it&amp;rsquo;s important
+enough
+ to be tested
+it&amp;rsquo;s important enough to be exposed in some way - it might belong in some
+sort of util or helper (right now I&amp;rsquo;m not going to go into whether utils or
+helpers are, in themselves a smell), in a smaller class that only
+provides this sort of functionality, or simply a protected method. Or, if
+you&amp;rsquo;re testing with Groovy, you can access private methods anyway so this
+becomes a moot point (i.e. your testing framework may be limiting you).&lt;/p&gt;
+
+&lt;p&gt;In another story from LMAX, we found we had created methods just for testing. It seemed a
+bit wrong to have these methods only available for testing, but later on down
+the line, we needed access to many of these methods In Real Life (well, from
+our Admin app), so our testing had &amp;ldquo;found&amp;rdquo; a missing feature. When we came
+to implement it, it was pretty easy as we&amp;rsquo;d already done most of it for
+testing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My co-workers often point to a lack of end-to-end testing as the reason why
+ a lot of bugs get out to production even though they don&amp;rsquo;t have much unit
+ tests nor integration tests. What, in your experience, is a good balance
+ between unit tests, integration tests and end-to-end testing?&lt;/strong&gt;&lt;br /&gt;
+Hmm, sounds to me like &amp;ldquo;lack of tests&amp;rdquo; is your problem!&lt;/p&gt;
+
+&lt;p&gt;This is a big (and contentious!) topic.  &lt;a href=&#34;http://martinfowler.com/bliki/TestPyramid.html&#34;&gt;Martin Fowler has written about it&lt;/a&gt;, Google wrote something I
+completely disagree with (so I&amp;rsquo;m not even going to link to it,
+but you&amp;rsquo;ll find references in the links in this paragraph), and my
+ex-colleague Adrian &lt;a href=&#34;https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/&#34;&gt;talks about what we, at LMAX, meant by end-to-end tests&lt;/a&gt;. I
+hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more out there too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
+I cover this in
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+short version is, I did a week-long spike to investigate whether Spock would
+make testing easier for us, showed the pros and cons to the whole team, and
+then led by example writing tests that (I thought) were more readable than
+what we had before and, probably most importantly, much easier to write than
+what we were previously doing. I basically got buy-in by showing how much
+easier it was for us to use the tool than even JUnit (which we were all
+familiar with). It did help that we were already using Gradle, so we already
+had a development dependency on Groovy. It also helped that adding Spock made
+no changes to the dependencies of the final Jar, which was very important.&lt;/p&gt;
+
+&lt;p&gt;Over time, further buy-in (certainly from management) came when the new tests
+started catching more errors - usually regressions in our code or regressions in
+the server&amp;rsquo;s overnight builds. I don&amp;rsquo;t think it was Spock specifically
+that caught more problems - I think it was writing more tests, and
+better tests, that caught the issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can we do data driven style tests in frameworks like junit or cucumber?&lt;/strong&gt;&lt;br /&gt;
+I don&amp;rsquo;t think you can in JUnit (although maybe there&amp;rsquo;s something out there). I
+believe someone told me you can do it in
+&lt;a href=&#34;http://testng.org/doc/index.html&#34;&gt;TestNG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Are there drawbacks to having tests that only run in ci? I.e I have Java 8
+on my machine, but the test requires Java 7&lt;/strong&gt;&lt;br /&gt;
+Yes, definitely - the drawback is Time.  You have to commit your code to a
+branch that is being checked by CI and wait for CI to finish before you find
+the error.&lt;/p&gt;
+
+&lt;p&gt;In practice, we found very little that was different between Java
+7 and 8, for example, but this is a valid concern (otherwise you wouldn&amp;rsquo;t be
+testing a complex matrix of dependencies at all).&lt;/p&gt;
+
+&lt;p&gt;In our case, our Java 6 driver used Netty for async capabilities, as the
+stuff we were using from Java 7 wasn&amp;rsquo;t available. This was clearly a
+different code path that wasn&amp;rsquo;t tested by us locally as we were all running
+Java 8. Probably more importantly for us is we were testing against at least
+3 different major versions of the server, which all supported different
+features (and had different APIs).  I would often find I&amp;rsquo;d broken the tests
+for version 2.2 as I&amp;rsquo;d only been running it on 2.6, and had forgotten to
+either turn off the new tests for the old server versions, or didn&amp;rsquo;t realise
+the new functionality wouldn&amp;rsquo;t work there.&lt;/p&gt;
+
+&lt;p&gt;So the main drawback is time - it takes a lot longer to find out about these
+errors.  There are a few ways to get around this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Commit often!! And to a branch that&amp;rsquo;s actually going to be run by CI&lt;/li&gt;
+&lt;li&gt;Make your build as fast as possible, so you get failures fast (you
+should be doing this anyway)&lt;/li&gt;
+&lt;li&gt;You could set up virtual machines locally or somewhere cloudy to run these
+configurations before committing, but that sounds kinda painful (and to my
+mind defeats a lot of the point of CI).&lt;/li&gt;
+&lt;li&gt;I set up Travis on my fork of the project, so I could have that running a
+different version of Java and MongoDB when I committed to my own fork - I&amp;rsquo;d
+be able to see some errors before they made it into the &amp;ldquo;real&amp;rdquo; project.&lt;/li&gt;
+&lt;li&gt;If you can, you probably want these specific tests run first so they can
+fail fast. E.g. if you&amp;rsquo;re running a Java 6 &amp;amp; MongoDB 2.2 configuration on
+CI, run those tests that only work in that environment first.  Would
+probably need some Gradle magic, and/or might need you to separate these
+into a different set of folders.  The advantage of this approach though is
+if you set up some aliases on your local machine you could sanity check
+&lt;em&gt;just&lt;/em&gt; these special cases before checking in. For example, I had aliases to
+start MongoDB versions/configurations from a single command, and to set
+JAVA_HOME to whichever version I wanted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you have any tips for unit tests that pass on dev machines but not on
+Jenkins because it&amp;rsquo;s not as powerful as our own machines? E.g. Synchronous
+calls timeout on the Jenkins builds intermittently.&lt;/strong&gt;&lt;br /&gt;
+Erk! Yes, not uncommon. No, not really. We had our timeouts set longer than I
+would have liked to prevent these sorts of errors, and they still
+intermittently failed. You can also set some sort of retry on the test, and
+get your build system to re-run those that fail to see if they pass later.
+It&amp;rsquo;s kinda nasty though.&lt;/p&gt;
+
+&lt;p&gt;At LMAX they were able to take testing seriously enough to &lt;a href=&#34;https://www.symphonious.net/2015/06/24/end-to-end-tests-lmax-update/&#34;&gt;really invest in
+their testing
+architecture&lt;/a&gt;, and, of course, this is The Correct Answer. Just
+often very difficult to sell.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you ask where are tests and dev asks if code is correct? And you say yes.
+Then dev asks why you&amp;rsquo;re delaying shipping value, how do you manage that?&lt;/strong&gt;&lt;br /&gt;
+These are my opinions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your code is &lt;em&gt;not&lt;/em&gt; complete without tests that show me it&amp;rsquo;s complete.&lt;/li&gt;
+&lt;li&gt;Your code might do what you think it&amp;rsquo;s supposed to do right now, but given
+Shared Code Ownership, anyone can come in and change it at any time, you
+want tests in place to make sure they don&amp;rsquo;t change it to break what you
+thought it did&lt;/li&gt;
+&lt;li&gt;The tests are not so much to show it works right now, the tests are to
+show it continues to work in future&lt;/li&gt;
+&lt;li&gt;Having automated tests &lt;em&gt;will&lt;/em&gt; speed you up in future. You can refactor
+more safely, you can fix bugs and know almost immediately if you broke
+something, you can read from the test what the author of the code thought
+the code should do, getting you up to speed faster.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t know you&amp;rsquo;re shipping value without tests - you&amp;rsquo;re only shipping
+code (to be honest, you never know if you&amp;rsquo;re shipping value until much later
+on when you also analyse if people are even using the feature).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Testing almost never slows you down in the long run. Show me the bits of your
+code base which are poorly tested, and I bet I can show you the bits of your
+code base that frequently have bugs (either because the code is not really
+doing what the author thinks, or because subsequent changes break things in
+subtle ways).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you say code is hard to understand and dev asks if you seriously don&amp;rsquo;t
+understand the code, how do you explain you mean easy to understand without
+thinking rather than &amp;lsquo;can I compile this in my head&amp;rsquo;?&lt;/strong&gt;&lt;br /&gt;
+I have zero problem with saying &amp;ldquo;I&amp;rsquo;m too stupid to understand this code, and
+I expect you&amp;rsquo;re much smarter than me for writing it. Can you please write it
+in a way so that a less smart person like myself won&amp;rsquo;t trample all over your
+beautiful code at a later date through lack of understanding?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;By definition, code should be easy to understand by someone who&amp;rsquo;s not the
+author. If someone who is not the author says the code is hard to understand,
+then the code is hard to understand. This is not negotiable. This is what
+code reviews or pair programming should address.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is effective nagging like? (Whether or not you get what you want)&lt;/strong&gt;&lt;br /&gt;
+Mmm, good question. Off the top of my head:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t make the people who are the target of the nagging feel stupid -
+they&amp;rsquo;ll get defensive. If necessary, take the burden of &amp;ldquo;stupidity&amp;rdquo; on
+yourself. E.g. &amp;ldquo;I&amp;rsquo;m just not smart enough to be able to tell if this test is
+failing because the test is bad or because the code is bad. Can you walk me
+through it and help me fix it?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Do &lt;em&gt;at least&lt;/em&gt; your fair share of the work, if not more. When I wanted to
+get the code to a state where we could fail style errors, I fixed 99% of the
+problems, and delegated the handful of remaining ones that I just didn&amp;rsquo;t
+have the context to fix. In the face of three errors to fix each, the team
+could hardly say &amp;ldquo;no&amp;rdquo; after I&amp;rsquo;d fixed over 6000.&lt;/li&gt;
+&lt;li&gt;Explain &lt;em&gt;why&lt;/em&gt; things need to be done. Developers are adults and don&amp;rsquo;t want
+to be treated like children. Give them a good reason and they&amp;rsquo;ll follow the
+rules. The few times I didn&amp;rsquo;t have good reasons, I could not get the team
+to do what I wanted.&lt;/li&gt;
+&lt;li&gt;Find carrots and sticks that work.  At LMAX, a short e-mail at the start
+of the day summarising the errors that had happened overnight, who seemed to
+be responsible, and whether they looked like real errors or
+intermittencies, was enough to get people to fix their problems&lt;sup&gt;2&lt;/sup&gt; -
+they didn&amp;rsquo;t like to look bad, but they also had enough information to get right
+on it, they didn&amp;rsquo;t have to wade through all the build info.  On occasion,
+when people were ignoring this, I&amp;rsquo;d turn up to work with bags of chocolate
+that I&amp;rsquo;d bought with my own money, offering chocolate bars to anyone who
+fixed up the tests. I was random with my carrot offerings so people didn&amp;rsquo;t
+game the system.&lt;/li&gt;
+&lt;li&gt;Give up if it&amp;rsquo;s not working. If you&amp;rsquo;ve tried to phrase the &amp;ldquo;why&amp;rdquo; in a
+number of ways, if you&amp;rsquo;ve tried to show examples of the benefits, if you&amp;rsquo;ve
+tried to work the results you want into a process, but it&amp;rsquo;s still not
+getting done, just accept the fact that this isn&amp;rsquo;t working for the team.
+Move on to something else, or find a new angle.
+&lt;br/&gt;&lt;br/&gt;
+&lt;sup&gt;1&lt;/sup&gt; I had a colleague at LMAX who was  working with a hypothesis that
+All Private Methods Were Evil - they were clearly only sharable within
+single class, so provided no reuse elsewhere, and if you have the same bit
+of code being called multiple times from within the same class (but it&amp;rsquo;s
+not valuable elsewhere) then maybe your design is wrong. I&amp;rsquo;m still
+pondering this specific hypothesis 4 years on, and I admit I see its pros
+and cons.&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt; This worked so well that this process was automated by
+one of the guys and turned into a tool called AutoTrish, which as far as I
+know is still used at LMAX.  Dave Farley talks about it in some of his
+&lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;resources:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;My talk that specifically looks at the
+&lt;a href=&#34;presentation/groovy_vs_java/&#34;&gt;advantages of Spock over JUnit&lt;/a&gt;, plus some
+Spock-specific resources.&lt;/li&gt;
+&lt;li&gt;I &lt;em&gt;love&lt;/em&gt; Jay Fields book
+&lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests&lt;/a&gt; - if I
+could have made the whole team read this before moving to Spock, we might
+have stuck with JUnit.&lt;/li&gt;
+&lt;li&gt;Go read everything Adrian Sutton has written about testing at LMAX. If not
+everything, definitely &lt;a href=&#34;https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/&#34;&gt;Abstraction by
+DSL&lt;/a&gt;
+and
+&lt;a href=&#34;https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/&#34;&gt;Making End-to-End Tests Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you can&amp;rsquo;t make it all the way through Dave Farley and Jez Humble&amp;rsquo;s
+excellent &lt;a href=&#34;http://www.amazon
+.com/gp/product/0321601912/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789
+&amp;creative=9325&amp;creativeASIN=0321601912&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId
+=I7ZAO2TETBFJIPHL&#34;&gt;Continuous Delivery book&lt;/a&gt;, do take a look at one of
+Dave&amp;rsquo;s presentations on the subject, for example &lt;a href=&#34;http://www.infoq.com/presentations/cd-success&#34;&gt;The Rationale for Continuous
+Delivery&lt;/a&gt; or &lt;a href=&#34;http://www.infoq.com/presentations/technology-practice-continuous-delivery&#34;&gt;The Process,
+Technology and Practice of Continuous
+Delivery&lt;/a&gt; - my own talk was
+around testing, but I&amp;rsquo;m working off the assumption that you&amp;rsquo;re &lt;em&gt;at least&lt;/em&gt;
+running some sort of Continuous Integration, if not Continuous Delivery.&lt;/li&gt;
+&lt;li&gt;Martin Fowler has loads of &lt;a href=&#34;http://martinfowler.com/tags/testing.html&#34;&gt;interesting and useful articles on
+testing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;abstract:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
+and c) write readable tests?&lt;/p&gt;
+
+&lt;p&gt;Trisha will talk about her experiences of working in a team that wanted to
+build quality into their new software version without a painful overhead -
+without a QA / Testing team, without putting in place any formal processes,
+without slavishly improving the coverage percentage.&lt;/p&gt;
+
+&lt;p&gt;The team had been writing automated tests and running them in a continuous
+integration environment, but they were simply writing tests as another tick
+box to check, there to verify the developer had done what the developer had
+aimed to do. The team needed to move to a model where tests provided more
+than this. The tests needed to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Demonstrate that the library code was meeting the requirements&lt;/li&gt;
+&lt;li&gt;Document in a readable fashion what those requirements were, and what should happen under non-happy-path situations&lt;/li&gt;
+&lt;li&gt;Provide enough coverage so a developer could confidently refactor the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This talk will cover how the team selected a new testing framework (Spock, a
+framework written in Groovy that can be used to test JVM code) to aid with
+this effort, and how they evaluated whether this tool would meet the team’s
+needs. And now, two years after starting to use Spock, Trisha can talk
+about how both the tool and the shift in the focus of the purpose of tests
+has affected the quality of the code. And, interestingly, the happiness
+of the developers.&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java at 20</title>
@@ -1239,179 +1647,6 @@ leave yet.&lt;/p&gt;
 save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Improving Speaker Diversity</title>
-      <link>http://trishagee.github.io/post/more_female_speakers/</link>
-      <pubDate>Tue, 09 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/more_female_speakers/</guid>
-      <description>
-
-&lt;p&gt;Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically,
-although not limited to, increasing the number of women speakers).&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to outline the things I remember being discussed, although as usual we did not find the answer to the problem,
-only identify some issues and explore some options.&lt;/p&gt;
-
-&lt;p&gt;This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and
-posted than if this all goes to die in my drafts folder.&lt;/p&gt;
-
-&lt;h3 id=&#34;firstly-what-stops-people-from-stepping-up-to-speak:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;I don&amp;rsquo;t have anything to say&lt;/strong&gt;&lt;br /&gt;
-This is the very first thing any developer says when you ask them why they haven&amp;rsquo;t thought about presenting at conferences or user
-groups. Turns out, you always have something to say.  For example, our most popular sessions at the Sevilla JUG and MUG are &amp;ldquo;Introduction
- to&amp;hellip;&amp;ldquo;. You hear from plenty of experts who have travelled the whole road to some pinnacle of excellence,
- but what many developers need is simply someone a couple of steps ahead of them to lead them forwards.&lt;/p&gt;
-
-&lt;p&gt;You always know more than &lt;em&gt;someone&lt;/em&gt;, you don&amp;rsquo;t need to know everything, and you don&amp;rsquo;t need to know more than everyone&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Why should I be role model?&lt;/strong&gt;&lt;br /&gt;
-So many women feel this, and I&amp;rsquo;m completely sympathetic to this view point: I&amp;rsquo;m a woman developer, getting along, happy in my job,
-happy being a programmer, why the hell should I have to stand up and present and blog and be a role model for other women? Men don&amp;rsquo;t have
-to do that. Men can &lt;em&gt;just&lt;/em&gt; be developers.&lt;/p&gt;
-
-&lt;p&gt;In addition, there&amp;rsquo;s the fear that if you &lt;em&gt;do&lt;/em&gt; stand up, become a role model, that somehow people will think you&amp;rsquo;re representing all
-women developers. You&amp;rsquo;ll be worried because you can only represent who you are, what you do, you can&amp;rsquo;t represent a whole gender in a
-single presentation or a single interview.  And the pressure! What if I mess up? What if I say something my gender does not agree with?
-What if I say something that causes my whole gender to be judged?&lt;/p&gt;
-
-&lt;p&gt;Totally understandable fears. Totally true that many people will ask you to be &lt;em&gt;the&lt;/em&gt; woman developer, to answer for all women.  Well,
-that&amp;rsquo;s why I&amp;rsquo;m asking more women to stand up, to be role models - if we all step up, it will no longer just be me, and you,
-and that other one over there. There&amp;rsquo;ll be more of us, more differing voices, we&amp;rsquo;ll stand out less. But we have to stand up first.  And
-in the meantime it&amp;rsquo;s us and our points of view they&amp;rsquo;re listening to. Wouldn&amp;rsquo;t you rather voice your opinion than have someone else speak
-on your behalf? Especially when very few people really can represent you, who you are and what you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What if I can&amp;rsquo;t answer the questions?&lt;/strong&gt;&lt;br /&gt;
-You&amp;rsquo;ll be surprised at what you do know, so people who present run into this less than you&amp;rsquo;d think, even if you&amp;rsquo;re just beginning,
-but just in case here are some tips:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Repeat the question, paraphrasing. Firstly, this ensures you&amp;rsquo;ve actually heard the question correctly. Secondly,
-it allows the whole audience to hear it, and thirdly, but most importantly, it buys you time to think.&lt;/li&gt;
-&lt;li&gt;Be honest - say you don&amp;rsquo;t know, and move on. If you know somewhere that might have the answer,
-point the person to that resource.  But a technical audience actually values the answer &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; more than you think. Especially
-the person who asked the question, it makes them feel really smart!&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;If you don&amp;rsquo;t know, but you think the audience might know, throw it back to them. Either to the person who asked the question,
-if that feels appropriate (especially if this is one of those &amp;ldquo;look how smart I am&amp;rdquo; questions),
-or to the audience as a whole. In conferences in particular, there&amp;rsquo;s a good chance someone there knows the answer.&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re genuinely terrified of all questions, say at the start of the presentation that you won&amp;rsquo;t take questions in the talk. Offer
-an alternative, like via Twitter or e-mail, if you can.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;what-can-conference-organisers-do:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What can conference organisers do?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifically invite the people you want presenting&lt;/strong&gt;&lt;br /&gt;
-Don&amp;rsquo;t just wait for them to submit. If you want more women, more diversity, invite them. And invite them early&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Secure your women presenters early.&lt;/strong&gt;&lt;br /&gt;
-Recognise that there are relatively few women presenters on &amp;ldquo;the circuit&amp;rdquo;, and understand that &lt;em&gt;everyone&lt;/em&gt; wants them to speak at their
-conference. This rare breed, the female technical presenter, gets booked up &lt;em&gt;well&lt;/em&gt; in advance.  They&amp;rsquo;re probably as in-demand as your
-keynote speakers, and can probably devote less time to appearing at conferences than those who have made it to keynote-standard (I&amp;rsquo;m
-making a sweeping generalisation that your techy women have day-jobs as developers and your keynote speakers are either professional
-presenters or at least can argue presenting as a critical part of their job).&lt;/p&gt;
-
-&lt;p&gt;So, you have a limited resource (experienced women presenters) that&amp;rsquo;s in high demand. You need to reach out directly to them,
-invite them, and secure them well in advance of your conference.  Many big conferences, for example JavaOne and QCon,
-will invite speakers six months in advance. If you give women speakers a month&amp;rsquo;s notice before your conference or event,
-they simply are not going to have the space in their schedule at that late notice.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Showcase your diversity on your website&lt;/strong&gt;&lt;br /&gt;
-If you haven&amp;rsquo;t already heard of &lt;a href=&#34;http://en.wikipedia.org/wiki/Microaggression_theory&#34;&gt;microaggressions&lt;/a&gt;,
-go and read what that means before you get any further.  There&amp;rsquo;s a very simple thing you
-need to do with your website, whether you&amp;rsquo;ve opened for CFP or you&amp;rsquo;re trying to get attendees to register - make sure the photos on your
-website show the type of diversity you want to encourage.  Only yesterday I was looking at the website of a big conference,
-who I know for a fact are working &lt;em&gt;really&lt;/em&gt; hard to ensure diversity, not just with gender but race, age,
-and where possible in less physically obvious dimensions. The conference is many months off, so the only photo they have on the website
-is a background photo of the exhibition hall from some previous year, crammed full of attendees - white, male attendees,
-as far as it&amp;rsquo;s possible to tell.  It&amp;rsquo;s extremely subtle. You might not even notice, as the photo is behind the headers and text of the
-site. But I noticed. And you can be sure the subconscious of every person who went to the website to either submit a proposal for a
-talk, or is considering asking their employer to pay for the registration, also noticed.  The conscious mind might be able to shrug it
-off.  But the subconscious of a non-white and/or non-male person notices and plants the subtle seed
-of &amp;ldquo;this conference is not for me&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;So, conference and event organisers - if you want more women applying to speak at your conference,
-show more women on your website.  If you want a more diverse audience, show more diverse faces.  If you&amp;rsquo;ve invited your women presenters
-early and secured them early, show their photos on the site - this sends a strong message to other women that their talk proposals will be
-taken seriously.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Run warm up nights to try out new speakers&lt;/strong&gt;&lt;br /&gt;
-I know conference organisers get &lt;em&gt;lots&lt;/em&gt; of submissions, and I know it&amp;rsquo;s hard to tell which are going to be good speakers,
-especially if they&amp;rsquo;re new speakers or don&amp;rsquo;t have a video.  If you&amp;rsquo;re genuine about improving the diversity of your speakers,
-run free nights to a) promote your conference and b) try out new speakers.  Probably a good idea to have a new speaker and a known
-speaker to attract the crowd and give newbies a chance.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be so damn picky&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;New speakers need to be encouraged. Find a way to see their content without just discarding an unknown name.&lt;/li&gt;
-&lt;li&gt;Existing speakers might not have the luxury of creating new content. Many conferences want genuine practitioners,
-not just evangelists, but those people have day jobs and can&amp;rsquo;t be creating a new talk just for your conference.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Leave space for new speakers&lt;/strong&gt;&lt;br /&gt;
-&amp;hellip;and don&amp;rsquo;t just have 7 slots for a pro speaker&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Look at your swag&lt;/strong&gt;&lt;br /&gt;
-Not just guys t-shirts.  One conference gave out cupcakes for example. But it doesn&amp;rsquo;t just have to be handbags and high-heeled shoes,
-just take a quick look and see if your swag is generally useful for techies, or if it leans towards men only. Men only swag (men&amp;rsquo;s
-t-shirts, bottle openers, subtle things like that) subliminally says &amp;ldquo;you don&amp;rsquo;t belong here&amp;rdquo; to the women.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Give feedback&lt;/strong&gt;&lt;br /&gt;
-You can&amp;rsquo;t tell every individual why they were rejected, but you could look at all the rejected submissions and give broad indications of
-the type of CFPs that didn&amp;rsquo;t make it. Maybe write a blog post explaining which sorts of talks didn&amp;rsquo;t make it and why.  This will help
-speakers create content that better fits your conference.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Be specific about what you&amp;rsquo;re looking for&lt;/strong&gt;&lt;br /&gt;
-If you have tracks you&amp;rsquo;re finding content for, put them on the website/CFP, so people know what the topics are. If you have an
-idea that you want 30% beginner material and 30% very advanced, make that clear too. Especially if you want &lt;em&gt;only&lt;/em&gt; beginner or &lt;em&gt;only&lt;/em&gt;
-advanced. People will submit more appropriate talks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Have a beginner&amp;rsquo;s track&lt;/strong&gt;&lt;br /&gt;
-&amp;hellip;not just for the speakers, for the content too. Beginner speakers may be more comfortable presenting &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; talks.&lt;br /&gt;
-Having a beginners track, whether it&amp;rsquo;s for content or speakers, will make newbies feel more included.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-other-things-can-we-try:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What other things can we try?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;User groups can grow talent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Practice writing CFPs&lt;/li&gt;
-&lt;li&gt;Help each other&lt;/li&gt;
-&lt;li&gt;Presentation skills&lt;/li&gt;
-&lt;li&gt;Lightning talks, book club, different meetup styles (like fishbowl)&lt;/li&gt;
-&lt;li&gt;Run an open conference to encourage new speakers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Women&amp;rsquo;s user groups are instrumental&lt;/strong&gt;&lt;br /&gt;
-So here&amp;rsquo;s something interesting. I&amp;rsquo;m sceptical of all-women user groups as I feel it separates us from the communities we &lt;em&gt;should&lt;/em&gt; be
-contributing to. But women&amp;rsquo;s user groups can help us to integrate better.  For example, Duchess France helped and encouraged its members
-to submit talks to Devoxx, gave feedback on CFPs before they were submitted, and provided a safe place for the women to practice
-presenting beforehand.  I think this is exactly the sort of thing women&amp;rsquo;s user groups could be fantastic for.&lt;/p&gt;
-
-&lt;h3 id=&#34;advice-for-budding-speakers:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Advice for budding speakers&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Just Do It&lt;/li&gt;
-&lt;li&gt;The more you do it, the more comfortable you&amp;rsquo;ll be&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re a speaker, it can make you feel less of an impostor at a conference - you&amp;rsquo;re not just a woman developer, you&amp;rsquo;re a speaker!&lt;/li&gt;
-&lt;li&gt;Everyone&amp;rsquo;s afraid, it&amp;rsquo;s not just you&lt;/li&gt;
-&lt;li&gt;Every developer wants to learn&lt;/li&gt;
-&lt;li&gt;The audience is on your side&lt;/li&gt;
-&lt;li&gt;Start Small (user groups)&lt;/li&gt;
-&lt;li&gt;Be technical. But you don&amp;rsquo;t have to be super smart&lt;/li&gt;
-&lt;li&gt;Bootstrapping is hard - you haven&amp;rsquo;t presented so you can&amp;rsquo;t get into conferences. Again, user groups can help with this.&lt;/li&gt;
-&lt;li&gt;Pair. Ask a more experienced presenter if you can co-present with them.&lt;/li&gt;
-&lt;li&gt;Ask for mentors&lt;/li&gt;
-&lt;li&gt;Ask for feedback&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; is perfectly acceptable.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I appreciate there is &lt;em&gt;so&lt;/em&gt; much more I could have covered, and many topics deserve more depth. But this is the brain dump from the Devoxx
-session, and maybe one day things will be expanded into their own topics.&lt;/p&gt;
 </description>
     </item>
     

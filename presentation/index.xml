@@ -6,7 +6,415 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 20 May 2015 00:00:00 UTC</updated>
+    <updated>Fri, 26 Jun 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Level Up Your Automated Tests</title>
+      <link>http://trishagee.github.io/presentation/level_up_your_automated_tests/</link>
+      <pubDate>Fri, 26 Jun 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/level_up_your_automated_tests/</guid>
+      <description>
+
+&lt;p&gt;I presented a new talk at &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago 2015&lt;/a&gt;
+about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+Spock in MongoDB, but this is a more process/agile/people perspective, not a
+technical look at the merits of one language over another.&lt;/p&gt;
+
+&lt;p&gt;Slides available below.  As always, the slides are not super-useful out of
+context, but they do contain my conclusions (also note that due to a technology
+fail, my hand-drawn style is even more hand-drawn than usual).&lt;/p&gt;
+
+&lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
+
+&lt;p&gt;I sadly did not have a lot of time for questions during the presentation, but
+thanks to the wonders of modern technology, I have a list of unanswered
+questions which I will attempt to address here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Is testing to find out your system works? Or is it so you know when your
+system is broken?&lt;/strong&gt;&lt;br /&gt;
+Excellent question. I would expect that if you have a system that&amp;rsquo;s in
+production (which is probably the large majority of the projects we work on),
+we can assume the system is working, for some definition of working.
+Automated testing is particularly good at catching when your system stops
+doing the things you thought it was doing when you wrote the tests (which
+may, or may not, mean the system is genuinely &amp;ldquo;broken&amp;rdquo;). Regression testing is
+to find out when your system is no longer doing what you expect, and automated tests are
+really good for this.&lt;/p&gt;
+
+&lt;p&gt;But testing can also make sure you implement code that behaves the way you
+expect, especially if you write the tests first.  Automated tests can be used
+to determine that your code is complete, according to some pre-agreed
+specification (in this case, the automated tests you wrote up front).&lt;/p&gt;
+
+&lt;p&gt;So I guess what I&amp;rsquo;m trying to say is, when you first write the tests you
+have tests that, when they pass, proves the system works (&lt;em&gt;assuming&lt;/em&gt; your
+tests are testing the right things and/or not giving you false positives).
+Subsequent passes show that you haven&amp;rsquo;t broken anything.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At what level do &amp;ldquo;tests documenting code&amp;rdquo; actually become useful? And who
+is/should the documentation be targeted to?&lt;/strong&gt;&lt;br /&gt;
+In the presentation, my case study is the MongoDB Java Driver.  Our users
+were Java programmers, who were going to be coding using our driver.  So in
+this example, it makes a lot of sense to document the code using a language
+that our users understood.  We started with Java, and ended up using Groovy
+because it was also understandable for our users and a bit more succinct.&lt;/p&gt;
+
+&lt;p&gt;On a previous project we had different types of tests.  The unit and system
+tests documented what the expected behaviour was at the class or module
+level, and was aimed at developers in the team.  The acceptance tests were
+written in Java, but in a &lt;a href=&#34;https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/&#34;&gt;friendly DSL-style way&lt;/a&gt;. These were usually
+written by a triad of tester, business analyst and developer, and documented to all
+these guys and girls what the top-level behaviour should be. Our audience here
+was fairly technical though, so there was no need to go to the extent of trying
+to write English-language-style tests, they were readable enough for a
+reasonably techy (but non-programmer) audience. These were not designed to be
+read by &amp;ldquo;the business&amp;rdquo; - us developers might use
+them to answer questions about the behaviour of the system, but they didn&amp;rsquo;t
+document it in a way that just anyone could understand.&lt;/p&gt;
+
+&lt;p&gt;These are two different approaches for two different-sized
+team/organisations, with different users. So I guess in summary the answer is
+&amp;ldquo;it depends&amp;rdquo;.  But at the very least, developers on your own team should be
+able to read your tests and understand what the expected behaviour of the
+code is.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How do you become a team champion? I.e. get authority and acceptance that
+people listen to you?&lt;/strong&gt;&lt;br /&gt;
+In my case, it was just by accident - I happened to care about the tests
+being green and also being useful, so I moaned at people until it happened. But
+it&amp;rsquo;s not just about nagging, you get more buy-in if other people see you
+doing the right things the right way, and it&amp;rsquo;s not too painful for them to
+follow your example.&lt;/p&gt;
+
+&lt;p&gt;There are going to be things that you care about that you&amp;rsquo;ll never get other
+people to care about, and this will be different from team to team. You have
+two choices here - if you care that much, and it bothers you that much, you
+have to do it yourself (often on your own time, especially if your boss
+doesn&amp;rsquo;t buy into it). Or, you have to let it go - when it comes to quality,
+there are so many things you could care about that it might be more
+beneficial to drop one cause and pick another that you can get people to care
+about.&lt;/p&gt;
+
+&lt;p&gt;For example, I wanted us to use &lt;code&gt;assertThat&lt;/code&gt; instead of &lt;code&gt;assertFalse&lt;/code&gt; (or
+true, or equals, or whatever).  I tried to demo the advantages (as I saw
+them) of my approach to the team, and tried to push this in code reviews, but
+in the end the other developers weren&amp;rsquo;t sold on the benefits, and
+from my point of view the benefits weren&amp;rsquo;t big enough to force the issue.
+Those of us who cared, used &lt;code&gt;assertThat&lt;/code&gt;. For the rest, I was just happy
+people were writing and maintaining tests.&lt;/p&gt;
+
+&lt;p&gt;So, pick your battles. You&amp;rsquo;ll be surprised at how many people do get on board
+with things.  I thought implementing checkstyle and setting draconian
+formatting standards was going to be a tough battle, but in the end people
+were just happy to have &lt;em&gt;any&lt;/em&gt; standards, especially when they were enforced
+by the build.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you report test, style, coverage, etc failures separately? Why?&lt;/strong&gt;&lt;br /&gt;
+We didn&amp;rsquo;t fail on coverage.  Enforcing a coverage percentage is a really good
+way to end up with crappy tests, like for getters/setters and constructors
+(by the way, if there&amp;rsquo;s enough logic in your constructor that it &lt;em&gt;needs&lt;/em&gt; a
+test, You&amp;rsquo;re Doing It Wrong).&lt;/p&gt;
+
+&lt;p&gt;Generally different types of failures are found by different tools, so for
+this reason alone they will be reported separately - for example, checkstyle
+will fail the build if it doesn&amp;rsquo;t conform to our style standards, codenarc
+fails it for Groovy style failures, and Gradle will run the tests in a
+different task to these two.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s actually important, though, is time-to-failure.  For checkstyle, for
+example, it will fail on something silly like curly braces in the wrong place.
+You want this to fail within seconds, so you can fix the silly mistake
+quickly. Ideally you&amp;rsquo;d have IntelliJ (perhaps) run your checks before it even
+makes it into your CI environment. Compiler errors should, of course, fail
+things before you run a test, short-running tests should fail before
+long-running tests.  Basically, the easier it is to fix the problem, the
+sooner you want to know, I guess.&lt;/p&gt;
+
+&lt;p&gt;Our build was relatively small and not too complex, so actually we ran all
+our types of tests (integration and unit, both Groovy and Java) in a single
+task, because this turned out to be much quicker in Gradle (in our case) than
+splitting things up into a simple pipeline.&lt;/p&gt;
+
+&lt;p&gt;You might have a reason to report stuff separately, but for me it&amp;rsquo;s much more
+important to understand how fast I need to be aware of a particular type of
+failure.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sometimes I find myself modifying code design and architecture to enable
+testing. How can I avoid damaging design?&lt;/strong&gt;&lt;br /&gt;
+This is a great question, and a common one too. The short answer is: &lt;em&gt;in
+general&lt;/em&gt; writing code that&amp;rsquo;s easier to test leads to a cleaner design anyway
+(for example, dependency injection at that appropriate places). If you find
+you need to rip your design apart to test it, there&amp;rsquo;s a smell there somewhere
+ - either your design isn&amp;rsquo;t following SOLID principals, or you&amp;rsquo;re trying to
+test the wrong things.&lt;/p&gt;
+
+&lt;p&gt;Of course, the common example here is testing private methods - how do you test
+these without exposing secrets&lt;sup&gt;1&lt;/sup&gt;? I think for me, if it&amp;rsquo;s important
+enough
+ to be tested
+it&amp;rsquo;s important enough to be exposed in some way - it might belong in some
+sort of util or helper (right now I&amp;rsquo;m not going to go into whether utils or
+helpers are, in themselves a smell), in a smaller class that only
+provides this sort of functionality, or simply a protected method. Or, if
+you&amp;rsquo;re testing with Groovy, you can access private methods anyway so this
+becomes a moot point (i.e. your testing framework may be limiting you).&lt;/p&gt;
+
+&lt;p&gt;In another story from LMAX, we found we had created methods just for testing. It seemed a
+bit wrong to have these methods only available for testing, but later on down
+the line, we needed access to many of these methods In Real Life (well, from
+our Admin app), so our testing had &amp;ldquo;found&amp;rdquo; a missing feature. When we came
+to implement it, it was pretty easy as we&amp;rsquo;d already done most of it for
+testing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My co-workers often point to a lack of end-to-end testing as the reason why
+ a lot of bugs get out to production even though they don&amp;rsquo;t have much unit
+ tests nor integration tests. What, in your experience, is a good balance
+ between unit tests, integration tests and end-to-end testing?&lt;/strong&gt;&lt;br /&gt;
+Hmm, sounds to me like &amp;ldquo;lack of tests&amp;rdquo; is your problem!&lt;/p&gt;
+
+&lt;p&gt;This is a big (and contentious!) topic.  &lt;a href=&#34;http://martinfowler.com/bliki/TestPyramid.html&#34;&gt;Martin Fowler has written about it&lt;/a&gt;, Google wrote something I
+completely disagree with (so I&amp;rsquo;m not even going to link to it,
+but you&amp;rsquo;ll find references in the links in this paragraph), and my
+ex-colleague Adrian &lt;a href=&#34;https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/&#34;&gt;talks about what we, at LMAX, meant by end-to-end tests&lt;/a&gt;. I
+hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more out there too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
+I cover this in
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+short version is, I did a week-long spike to investigate whether Spock would
+make testing easier for us, showed the pros and cons to the whole team, and
+then led by example writing tests that (I thought) were more readable than
+what we had before and, probably most importantly, much easier to write than
+what we were previously doing. I basically got buy-in by showing how much
+easier it was for us to use the tool than even JUnit (which we were all
+familiar with). It did help that we were already using Gradle, so we already
+had a development dependency on Groovy. It also helped that adding Spock made
+no changes to the dependencies of the final Jar, which was very important.&lt;/p&gt;
+
+&lt;p&gt;Over time, further buy-in (certainly from management) came when the new tests
+started catching more errors - usually regressions in our code or regressions in
+the server&amp;rsquo;s overnight builds. I don&amp;rsquo;t think it was Spock specifically
+that caught more problems - I think it was writing more tests, and
+better tests, that caught the issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can we do data driven style tests in frameworks like junit or cucumber?&lt;/strong&gt;&lt;br /&gt;
+I don&amp;rsquo;t think you can in JUnit (although maybe there&amp;rsquo;s something out there). I
+believe someone told me you can do it in
+&lt;a href=&#34;http://testng.org/doc/index.html&#34;&gt;TestNG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Are there drawbacks to having tests that only run in ci? I.e I have Java 8
+on my machine, but the test requires Java 7&lt;/strong&gt;&lt;br /&gt;
+Yes, definitely - the drawback is Time.  You have to commit your code to a
+branch that is being checked by CI and wait for CI to finish before you find
+the error.&lt;/p&gt;
+
+&lt;p&gt;In practice, we found very little that was different between Java
+7 and 8, for example, but this is a valid concern (otherwise you wouldn&amp;rsquo;t be
+testing a complex matrix of dependencies at all).&lt;/p&gt;
+
+&lt;p&gt;In our case, our Java 6 driver used Netty for async capabilities, as the
+stuff we were using from Java 7 wasn&amp;rsquo;t available. This was clearly a
+different code path that wasn&amp;rsquo;t tested by us locally as we were all running
+Java 8. Probably more importantly for us is we were testing against at least
+3 different major versions of the server, which all supported different
+features (and had different APIs).  I would often find I&amp;rsquo;d broken the tests
+for version 2.2 as I&amp;rsquo;d only been running it on 2.6, and had forgotten to
+either turn off the new tests for the old server versions, or didn&amp;rsquo;t realise
+the new functionality wouldn&amp;rsquo;t work there.&lt;/p&gt;
+
+&lt;p&gt;So the main drawback is time - it takes a lot longer to find out about these
+errors.  There are a few ways to get around this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Commit often!! And to a branch that&amp;rsquo;s actually going to be run by CI&lt;/li&gt;
+&lt;li&gt;Make your build as fast as possible, so you get failures fast (you
+should be doing this anyway)&lt;/li&gt;
+&lt;li&gt;You could set up virtual machines locally or somewhere cloudy to run these
+configurations before committing, but that sounds kinda painful (and to my
+mind defeats a lot of the point of CI).&lt;/li&gt;
+&lt;li&gt;I set up Travis on my fork of the project, so I could have that running a
+different version of Java and MongoDB when I committed to my own fork - I&amp;rsquo;d
+be able to see some errors before they made it into the &amp;ldquo;real&amp;rdquo; project.&lt;/li&gt;
+&lt;li&gt;If you can, you probably want these specific tests run first so they can
+fail fast. E.g. if you&amp;rsquo;re running a Java 6 &amp;amp; MongoDB 2.2 configuration on
+CI, run those tests that only work in that environment first.  Would
+probably need some Gradle magic, and/or might need you to separate these
+into a different set of folders.  The advantage of this approach though is
+if you set up some aliases on your local machine you could sanity check
+&lt;em&gt;just&lt;/em&gt; these special cases before checking in. For example, I had aliases to
+start MongoDB versions/configurations from a single command, and to set
+JAVA_HOME to whichever version I wanted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you have any tips for unit tests that pass on dev machines but not on
+Jenkins because it&amp;rsquo;s not as powerful as our own machines? E.g. Synchronous
+calls timeout on the Jenkins builds intermittently.&lt;/strong&gt;&lt;br /&gt;
+Erk! Yes, not uncommon. No, not really. We had our timeouts set longer than I
+would have liked to prevent these sorts of errors, and they still
+intermittently failed. You can also set some sort of retry on the test, and
+get your build system to re-run those that fail to see if they pass later.
+It&amp;rsquo;s kinda nasty though.&lt;/p&gt;
+
+&lt;p&gt;At LMAX they were able to take testing seriously enough to &lt;a href=&#34;https://www.symphonious.net/2015/06/24/end-to-end-tests-lmax-update/&#34;&gt;really invest in
+their testing
+architecture&lt;/a&gt;, and, of course, this is The Correct Answer. Just
+often very difficult to sell.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you ask where are tests and dev asks if code is correct? And you say yes.
+Then dev asks why you&amp;rsquo;re delaying shipping value, how do you manage that?&lt;/strong&gt;&lt;br /&gt;
+These are my opinions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your code is &lt;em&gt;not&lt;/em&gt; complete without tests that show me it&amp;rsquo;s complete.&lt;/li&gt;
+&lt;li&gt;Your code might do what you think it&amp;rsquo;s supposed to do right now, but given
+Shared Code Ownership, anyone can come in and change it at any time, you
+want tests in place to make sure they don&amp;rsquo;t change it to break what you
+thought it did&lt;/li&gt;
+&lt;li&gt;The tests are not so much to show it works right now, the tests are to
+show it continues to work in future&lt;/li&gt;
+&lt;li&gt;Having automated tests &lt;em&gt;will&lt;/em&gt; speed you up in future. You can refactor
+more safely, you can fix bugs and know almost immediately if you broke
+something, you can read from the test what the author of the code thought
+the code should do, getting you up to speed faster.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t know you&amp;rsquo;re shipping value without tests - you&amp;rsquo;re only shipping
+code (to be honest, you never know if you&amp;rsquo;re shipping value until much later
+on when you also analyse if people are even using the feature).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Testing almost never slows you down in the long run. Show me the bits of your
+code base which are poorly tested, and I bet I can show you the bits of your
+code base that frequently have bugs (either because the code is not really
+doing what the author thinks, or because subsequent changes break things in
+subtle ways).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you say code is hard to understand and dev asks if you seriously don&amp;rsquo;t
+understand the code, how do you explain you mean easy to understand without
+thinking rather than &amp;lsquo;can I compile this in my head&amp;rsquo;?&lt;/strong&gt;&lt;br /&gt;
+I have zero problem with saying &amp;ldquo;I&amp;rsquo;m too stupid to understand this code, and
+I expect you&amp;rsquo;re much smarter than me for writing it. Can you please write it
+in a way so that a less smart person like myself won&amp;rsquo;t trample all over your
+beautiful code at a later date through lack of understanding?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;By definition, code should be easy to understand by someone who&amp;rsquo;s not the
+author. If someone who is not the author says the code is hard to understand,
+then the code is hard to understand. This is not negotiable. This is what
+code reviews or pair programming should address.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is effective nagging like? (Whether or not you get what you want)&lt;/strong&gt;&lt;br /&gt;
+Mmm, good question. Off the top of my head:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t make the people who are the target of the nagging feel stupid -
+they&amp;rsquo;ll get defensive. If necessary, take the burden of &amp;ldquo;stupidity&amp;rdquo; on
+yourself. E.g. &amp;ldquo;I&amp;rsquo;m just not smart enough to be able to tell if this test is
+failing because the test is bad or because the code is bad. Can you walk me
+through it and help me fix it?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Do &lt;em&gt;at least&lt;/em&gt; your fair share of the work, if not more. When I wanted to
+get the code to a state where we could fail style errors, I fixed 99% of the
+problems, and delegated the handful of remaining ones that I just didn&amp;rsquo;t
+have the context to fix. In the face of three errors to fix each, the team
+could hardly say &amp;ldquo;no&amp;rdquo; after I&amp;rsquo;d fixed over 6000.&lt;/li&gt;
+&lt;li&gt;Explain &lt;em&gt;why&lt;/em&gt; things need to be done. Developers are adults and don&amp;rsquo;t want
+to be treated like children. Give them a good reason and they&amp;rsquo;ll follow the
+rules. The few times I didn&amp;rsquo;t have good reasons, I could not get the team
+to do what I wanted.&lt;/li&gt;
+&lt;li&gt;Find carrots and sticks that work.  At LMAX, a short e-mail at the start
+of the day summarising the errors that had happened overnight, who seemed to
+be responsible, and whether they looked like real errors or
+intermittencies, was enough to get people to fix their problems&lt;sup&gt;2&lt;/sup&gt; -
+they didn&amp;rsquo;t like to look bad, but they also had enough information to get right
+on it, they didn&amp;rsquo;t have to wade through all the build info.  On occasion,
+when people were ignoring this, I&amp;rsquo;d turn up to work with bags of chocolate
+that I&amp;rsquo;d bought with my own money, offering chocolate bars to anyone who
+fixed up the tests. I was random with my carrot offerings so people didn&amp;rsquo;t
+game the system.&lt;/li&gt;
+&lt;li&gt;Give up if it&amp;rsquo;s not working. If you&amp;rsquo;ve tried to phrase the &amp;ldquo;why&amp;rdquo; in a
+number of ways, if you&amp;rsquo;ve tried to show examples of the benefits, if you&amp;rsquo;ve
+tried to work the results you want into a process, but it&amp;rsquo;s still not
+getting done, just accept the fact that this isn&amp;rsquo;t working for the team.
+Move on to something else, or find a new angle.
+&lt;br/&gt;&lt;br/&gt;
+&lt;sup&gt;1&lt;/sup&gt; I had a colleague at LMAX who was  working with a hypothesis that
+All Private Methods Were Evil - they were clearly only sharable within
+single class, so provided no reuse elsewhere, and if you have the same bit
+of code being called multiple times from within the same class (but it&amp;rsquo;s
+not valuable elsewhere) then maybe your design is wrong. I&amp;rsquo;m still
+pondering this specific hypothesis 4 years on, and I admit I see its pros
+and cons.&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt; This worked so well that this process was automated by
+one of the guys and turned into a tool called AutoTrish, which as far as I
+know is still used at LMAX.  Dave Farley talks about it in some of his
+&lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;resources:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;My talk that specifically looks at the
+&lt;a href=&#34;presentation/groovy_vs_java/&#34;&gt;advantages of Spock over JUnit&lt;/a&gt;, plus some
+Spock-specific resources.&lt;/li&gt;
+&lt;li&gt;I &lt;em&gt;love&lt;/em&gt; Jay Fields book
+&lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests&lt;/a&gt; - if I
+could have made the whole team read this before moving to Spock, we might
+have stuck with JUnit.&lt;/li&gt;
+&lt;li&gt;Go read everything Adrian Sutton has written about testing at LMAX. If not
+everything, definitely &lt;a href=&#34;https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/&#34;&gt;Abstraction by
+DSL&lt;/a&gt;
+and
+&lt;a href=&#34;https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/&#34;&gt;Making End-to-End Tests Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you can&amp;rsquo;t make it all the way through Dave Farley and Jez Humble&amp;rsquo;s
+excellent &lt;a href=&#34;http://www.amazon
+.com/gp/product/0321601912/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789
+&amp;creative=9325&amp;creativeASIN=0321601912&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId
+=I7ZAO2TETBFJIPHL&#34;&gt;Continuous Delivery book&lt;/a&gt;, do take a look at one of
+Dave&amp;rsquo;s presentations on the subject, for example &lt;a href=&#34;http://www.infoq.com/presentations/cd-success&#34;&gt;The Rationale for Continuous
+Delivery&lt;/a&gt; or &lt;a href=&#34;http://www.infoq.com/presentations/technology-practice-continuous-delivery&#34;&gt;The Process,
+Technology and Practice of Continuous
+Delivery&lt;/a&gt; - my own talk was
+around testing, but I&amp;rsquo;m working off the assumption that you&amp;rsquo;re &lt;em&gt;at least&lt;/em&gt;
+running some sort of Continuous Integration, if not Continuous Delivery.&lt;/li&gt;
+&lt;li&gt;Martin Fowler has loads of &lt;a href=&#34;http://martinfowler.com/tags/testing.html&#34;&gt;interesting and useful articles on
+testing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;abstract:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
+and c) write readable tests?&lt;/p&gt;
+
+&lt;p&gt;Trisha will talk about her experiences of working in a team that wanted to
+build quality into their new software version without a painful overhead -
+without a QA / Testing team, without putting in place any formal processes,
+without slavishly improving the coverage percentage.&lt;/p&gt;
+
+&lt;p&gt;The team had been writing automated tests and running them in a continuous
+integration environment, but they were simply writing tests as another tick
+box to check, there to verify the developer had done what the developer had
+aimed to do. The team needed to move to a model where tests provided more
+than this. The tests needed to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Demonstrate that the library code was meeting the requirements&lt;/li&gt;
+&lt;li&gt;Document in a readable fashion what those requirements were, and what should happen under non-happy-path situations&lt;/li&gt;
+&lt;li&gt;Provide enough coverage so a developer could confidently refactor the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This talk will cover how the team selected a new testing framework (Spock, a
+framework written in Groovy that can be used to test JVM code) to aid with
+this effort, and how they evaluated whether this tool would meet the team’s
+needs. And now, two years after starting to use Spock, Trisha can talk
+about how both the tool and the shift in the focus of the purpose of tests
+has affected the quality of the code. And, interestingly, the happiness
+of the developers.&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -475,219 +883,6 @@ which was pretty cool actually, but meant that it felt more like a lecture and i
 &lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/DCdGlxBbKU4&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;We received some really great feedback on this presentation, and it was brilliant to see a lot of the speakers from JAX there watching us.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>All Public Appearances</title>
-      <link>http://trishagee.github.io/presentation/public_appearances/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/public_appearances/</guid>
-      <description>
-
-&lt;p&gt;For blatant self-publicity, I&amp;rsquo;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&amp;rsquo;ve
-been involved in.&lt;/p&gt;
-
-&lt;h2 id=&#34;presentations-and-panels:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Presentations and Panels&lt;/h2&gt;
-
-&lt;h3 id=&#34;2015:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2015&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;12 May&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago&lt;/a&gt; - Level Up Your Automated Tests&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;29-30 Apr&lt;/strong&gt;: &lt;a href=&#34;http://www.springio.net/&#34;&gt;Spring I/O, Barcelona&lt;/a&gt; - Is Groovy Better than Java for Testing?&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;22-24 Apr&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2015&#34;&gt;Craft Conf, Budapest&lt;/a&gt; - &lt;a href=&#34;http://www.ustream.tv/recorded/61448786&#34;&gt;Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;10-11 Apr&lt;/strong&gt;: &lt;a href=&#34;http://greachconf.com/speakers/trisha-gee-is-groovy-better-for-testing-than-java/&#34;&gt;Greach, Madrid&lt;/a&gt; -
-&lt;a href=&#34;presentation/groovy_vs_java/&#34;&gt;&amp;ldquo;Is Groovy Better than Java for Testing?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8-10 Apr&lt;/strong&gt;: &lt;a href=&#34;http://cfp.devoxx.fr/2015/talk/MLB-2660/Java_8_in_Anger&#34;&gt;Devoxx France, Paris&lt;/a&gt; - &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;&amp;ldquo;Java 8 in Anger&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;15 Mar&lt;/strong&gt;: &lt;a href=&#34;https://plus.google.com/u/0/events/c0rtb02v21i2cdj4mq9g5tcitnk&#34;&gt;Women Techmakers Istanbul&lt;/a&gt; -
-&amp;ldquo;Building a webapp with AngularJS, Java and MongoDB&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;QCon London&lt;/a&gt;:
-&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;Half day tutorial - &amp;ldquo;HTML5, AngularJS, Groovy, Java and MongoDB all together&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;3 Mar&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/events/220346715/&#34;&gt;Ladies Who Code, London&lt;/a&gt;: &amp;ldquo;Public Speaking for Novices&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;4 Mar&lt;/strong&gt;: &lt;a href=&#34;http://qconlondon.com/presentation/java-8-anger&#34;&gt;QCon London&lt;/a&gt;: &lt;a href=&#34;http://www.infoq.com/presentations/java8-tutorial&#34;&gt;&amp;ldquo;Java 8 in Anger&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;2014:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2014&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;4 Dec&lt;/strong&gt;: &lt;a href=&#34;https://hacksummit.org/&#34;&gt;hack.summit()&lt;/a&gt;: &lt;a href=&#34;https://www.youtube.com/watch?v=VyEdy-l5608&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java, MongoDB altogether: What could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2 Dec&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/events/217655562/&#34;&gt;Ladies Who Code&lt;/a&gt;: &amp;ldquo;Working for an Open Source Company&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1 Dec&lt;/strong&gt;:
-&lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/218737076/&#34;&gt;London Java Community&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java,
-MongoDB altogether: What could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/215362192/&#34;&gt;London Java Community Open Conference&lt;/a&gt; - &amp;ldquo;Intro to Public
-Speaking for Beginners&amp;rdquo;, &amp;ldquo;Career Advice for Developers&amp;rdquo;, &amp;ldquo;Ask the Experts Panel&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;24 Nov&lt;/strong&gt;: &lt;a href=&#34;http://www.barcelonajug.org/2014/11/html5-angularjs-groovy-java-and-mongodb.html&#34;&gt;Barcelona JUG&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, AngularJS, Groovy, Java and MongoDB all together – what could go
-wrong?&amp;rdquo;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;22 Nov&lt;/strong&gt;: &lt;a href=&#34;https://2014.nosql-matters.org/bcn/abstracts/#abstract_116695004775&#34;&gt;NoSQL Matters, Barcelona&lt;/a&gt;:
-&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Building a web application with MongoDB &amp;amp; Java&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;12 Nov&lt;/strong&gt;: &lt;a href=&#34;http://cfp.devoxx.be/2014/talk/JUB-4846/Women_and_female_speakers_in_the_Java_ecosystem_-_How_to_ameliorate_the_current_situation%3F&#34;&gt;Devoxx, Belgium&lt;/a&gt;:
-&lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;&amp;ldquo;Women and female speakers in the Java ecosystem - How to ameliorate the current situation?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;6 Nov&lt;/strong&gt;: &lt;a href=&#34;http://gotocon.com/berlin-2014&#34;&gt;GOTO Berlin&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/staying_ahead_of_the_curve&#34;&gt;&amp;ldquo;Staying Ahead of the Curve&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;16 Oct&lt;/strong&gt;: &lt;a href=&#34;http://uk.geekout.ee/schedule/pick-the-right-tools-to-improve-your-productivity/&#34;&gt;GeekoutUK&lt;/a&gt;:
-&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Pick the right tools to improve your productivity&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;16 Oct&lt;/strong&gt;: GeekoutUK Community Night: A Guide to IntelliJ Live Templates&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;14 Oct&lt;/strong&gt;: &lt;a href=&#34;http://jaxlondon.com/2014/sessions/rapid-web-application-development-mongodb-and-jvm&#34;&gt;JAX London&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;Rapid Web Application Development with MongoDB and the JVM&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;2 Oct&lt;/strong&gt; - &lt;a href=&#34;http://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703&#34;&gt;JavaOne&lt;/a&gt;: &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;&amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;1 Oct&lt;/strong&gt; - &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=5898&#34;&gt;JavaOne&lt;/a&gt;: &amp;ldquo;Java Champions and JUG Leaders Meet Oracle Executives&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;30 Sep&lt;/strong&gt; - &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=3374&#34;&gt;JavaOne&lt;/a&gt;: &lt;a href=&#34;https://www.parleys.com/play/543faa9ee4b06e1184ae4235/about&#34;&gt;&amp;ldquo;Lambda Q&amp;amp;A Panel&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;18 Sep&lt;/strong&gt; - vJUG: &amp;ldquo;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;23 Jul&lt;/strong&gt; - OSCON: &amp;ldquo;&lt;a href=&#34;http://www.oscon.com/open-source-2015/public/content/2015/05/15-html5-angularjs-groovy-java-mongodb-all-together?cmp=tw-prog-na-article-os15_1431727268&#34;&gt;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;20 May&lt;/strong&gt; - GOTO Chicago: &lt;a href=&#34;http://trishagee.github.io/presentation/interview_at_goto_chicago/&#34;&gt;&amp;ldquo;HTML5, Angular.js, Groovy, Java, MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/the_joy_of_coding&#34;&gt;Joy of Coding&lt;/a&gt;: &amp;ldquo;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;HTML5, Angular.js, Groovy, Java,
-MongoDB all together - what could possibly go wrong?&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;6 Mar&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/qcon_london_2014&#34;&gt;QCon London&lt;/a&gt;: &amp;ldquo;HTML5, Angular.js, Groovy, Java,
-MongoDB all together - what could possibly go wrong?&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;11 Feb&lt;/strong&gt; - JFokus: &amp;ldquo;What do you mean, Backwards Compatibility?&amp;rdquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;2013:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2013&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Dec&lt;/strong&gt; - YOW Melbourne, Brisbane, Sydney: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;rdquo; &amp;amp;
-&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/presentation/yow_2013_backwards&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;23 Nov&lt;/strong&gt; - London Java Community Open Conference: &amp;ldquo;Keynote: Java, the Future, and You&amp;rdquo;, &amp;ldquo;Novice Speaker&amp;rsquo;s Clinic&amp;rdquo;, &amp;ldquo;More Speaker Tips&amp;rdquo;,
- &amp;ldquo;Career Advice for Programmers&amp;rdquo;, &amp;ldquo;Intro to MongoDB&amp;rdquo;, panel: &amp;ldquo;So you&amp;rsquo;re a senior developer - what next?&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;21 Nov&lt;/strong&gt; - Virtual JUG: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/first_presentation_at_the_virtual_jug&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;29 Oct&lt;/strong&gt; - JAX London:
-&amp;ldquo;&lt;a href=&#34;http://jaxenter.com/trisha-gee-design-is-a-process-not-an-artefact-49100.html&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;28 Oct&lt;/strong&gt; - LJC: &amp;ldquo;Speaker&amp;rsquo;s Clinic: Public Speaking for Beginners&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;28 Oct&lt;/strong&gt; - JAX London: &amp;ldquo;Tutorial: A fluent API for Java and MongoDB&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;18 Oct&lt;/strong&gt; - GOTO Berlin: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;2 Oct&lt;/strong&gt; - GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#55&#34;&gt;Top Ten IntelliJ Tips&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;2 Oct&lt;/strong&gt; - GOTO Aarhus: &amp;ldquo;&lt;a href=&#34;http://gotocon.com/video#36&#34;&gt;Career Advice for Programmers&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;26 Sep&lt;/strong&gt; - JavaOne: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/javaone_2013&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;12 Sep&lt;/strong&gt; - JavaZone: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/74553077&#34;&gt;Design is a Process, not a Document&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;23 Jul&lt;/strong&gt; - JavaOne Shanghai: &amp;ldquo;What do you mean, backwards compatibility?&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;3 Jul&lt;/strong&gt; - TCube Dublin: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;27 Jun&lt;/strong&gt; - TTN: &amp;ldquo;Design is a Process, not a Document&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;16 May&lt;/strong&gt; - GeeCON: &amp;ldquo;&lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;10 Apr&lt;/strong&gt; - East Anglia MUG: &amp;ldquo;Trisha Gee, an Unconference&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;9 Apr&lt;/strong&gt; - MongoDB UK: &amp;ldquo;Schema Design&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;27 Mar&lt;/strong&gt; - DevoxxUK:
-&amp;ldquo;&lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;21 Mar&lt;/strong&gt; - LJC:
-&amp;ldquo;&lt;a href=&#34;http://skillsmatter.com/podcast/java-jee/london-java-community-march&#34;&gt;What do you mean, backwards compatibility?&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;8 Mar&lt;/strong&gt; - QCon London (with Dan North):
-&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/life_on_both_sides_of_the_interview_table&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;h3 id=&#34;2012:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2012&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;4 Dec&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb&#34;&gt;Financial Markets: Processing High Volume Data Feeds with MongoDB&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;29 Nov&lt;/strong&gt; - Webinar: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/my_first_official_mongodb_appearance&#34;&gt;MongoDB on the JVM&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;24 Nov&lt;/strong&gt; - LJC Open Conference: &amp;ldquo;Keynote: The State of Java&amp;rdquo;; Panel: &amp;ldquo;Does Performance Matter?&amp;rdquo;; Panel: &amp;ldquo;The Java Community Process&amp;rdquo;; &amp;ldquo;An Introduction to NoSQL&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;15 Nov&lt;/strong&gt; - Devoxx:
-&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach&#34;&gt;The Problem With Women: A Technical Approach&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;14 Nov&lt;/strong&gt; - Devoxx: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/agile_when_agile_goes_well&#34;&gt;Agile++: When Agile Goes Well&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;17 Oct&lt;/strong&gt; - JAX London: &amp;ldquo;Java Performance Frequently Asked Questions&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;3 Oct&lt;/strong&gt; - JavaOne:
-&amp;ldquo;CON11338 &lt;a href=&#34;http://trishagee.github.io/post/javaone_the_problem_with_women__a_technical_approach&#34;&gt;A Technical Approach to Women&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;3 Oct&lt;/strong&gt; - JavaOne Panel:
-&amp;ldquo;CON5130 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=5130&amp;amp;amp;tclass=popup#.UIZb-TfrjPE.blogger&#34;&gt;London Java Community: How to Change the World&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;1 Oct&lt;/strong&gt; - JavaOne: &amp;ldquo;CON3732 &lt;a href=&#34;https://oracleus.activeevents.com/connect/sessionDetail.ww?SESSION_ID=3732&amp;amp;amp;tclass=popup#.UIZaP5FFnjg.blogger&#34;&gt;Concurrent Programming Using the Disruptor&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;30 Sep&lt;/strong&gt; - JavaOne: &amp;ldquo;UGF10467 Why Open Source Your Secrets&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;23 Sep&lt;/strong&gt; - Strange Loop: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/strangeloop_disruptor_workshop_materials&#34;&gt;Workshop: Introduction to the Disruptor&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;18 July&lt;/strong&gt; - OSCON: &amp;ldquo;&lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/proceedings&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;25 May&lt;/strong&gt; - 010 DEV: &amp;ldquo;&lt;a href=&#34;http://010dev.nl/post/social-tech-event-the-disruptor-and-the-perfect-programmer&#34;&gt;The Disruptor&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;24 May&lt;/strong&gt; - GOTO Amsterdam: “Concurrent Programming Using The Disruptor”&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;21-23 May&lt;/strong&gt; - GOTO Copenhagen:
-“&lt;a href=&#34;http://www.infoq.com/presentations/Disruptor#.UIZa3tb3Bms.blogger&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”,”War Stories”,
-&amp;ldquo;&lt;a href=&#34;http://www.version2.dk/blog/goto-programming-stars-45578&#34;&gt;Programming with the Stars&lt;/a&gt;&amp;ldquo;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;29 Apr&lt;/strong&gt; - &lt;a href=&#34;http://www.geekgirlmeetup.co.uk/2012/03/29th-of-april-geekgirlmeetup-is-held-in-london-theme-code-is-queen/&#34;&gt;GirlGeekMeetup London&lt;/a&gt;: “GDC
-Meet a Mentor”; “&lt;a href=&#34;http://trishagee.github.io/post/why_open_source_your_secrets&#34;&gt;Why Open Source Your Secrets&lt;/a&gt;”;
-“Technology in Electronic Trading” (with Annalisa Sarasini); Panel: “Women Only Events - Are We Creating A Girl Ghetto?”&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;7 Mar&lt;/strong&gt; - QCon London: “&lt;a href=&#34;http://trishagee.github.io/post/qcon_london_disruptor_presentation_video&#34;&gt;Concurrent Programming Using The Disruptor&lt;/a&gt;”&lt;/p&gt;
-
-&lt;h3 id=&#34;2011:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;2011&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;7 Nov&lt;/strong&gt; - Devoxx Panel: “&lt;a href=&#34;http://trishagee.github.io/post/why_we_shouldnt_target_women/&#34;&gt;Why we shouldn&amp;rsquo;t target women&lt;/a&gt;”&lt;br /&gt;
-&lt;strong&gt;2 Nov&lt;/strong&gt; - JAX London:
-“&lt;a href=&#34;http://trishagee.github.io/post/video_of_our_jax_london_session&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;” (with Mike Barker)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;11 Oct&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation&#34;&gt;Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;”&lt;br /&gt;
-&lt;strong&gt;6 Oct&lt;/strong&gt; - JavaOne: “LMAX Disruptor: High-Performance Concurrent Programming Framework” (with Martin Thompson)&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;1 Jun&lt;/strong&gt; - LJC: &amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/first_public_appearance_caught_on_video&#34;&gt;Introduction to the Java Community Process&lt;/a&gt;”&lt;/p&gt;
-
-&lt;h2 id=&#34;interviews:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Interviews&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Mar 2015&lt;/strong&gt; - &lt;a href=&#34;http://codepancake.com/in-the-spotlight-3-trisha-gee/&#34;&gt;In The Spotlight: Trisha Gee&lt;/a&gt; (text)
-&lt;strong&gt;Aug 2014&lt;/strong&gt; - &lt;a href=&#34;http://java.dzone.com/articles/dev-week-trisha-gee&#34;&gt;DZone Dev of the Week&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;May 2014&lt;/strong&gt; - &lt;a href=&#34;https://www.youtube.com/watch?v=sZee7lRAUF4&#34;&gt;What Could Possibly Go Wrong? at GOTO Chicago&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Mar 2014&lt;/strong&gt; - &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Aug 2013&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013&#34;&gt;JavaOne 2013 Preview&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://parleys.com/play/516becfbe4b07b9cc6de32c3/chapter0/about&#34;&gt;Devoxx UK&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://shoreditchworks.com/women-tech-city-advice-solutions-sexism&#34;&gt;Top Tips For Working With Techies&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;Mar 2013&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/&#34;&gt;Google Presents Women Techmakers&lt;/a&gt;
-(video)&lt;br /&gt;
-&lt;strong&gt;Nov 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/presentation/interviewed_at_devoxx/&#34;&gt;Devoxx&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Jun 2012&lt;/strong&gt; - &lt;a href=&#34;https://blogs.oracle.com/java/entry/why_nominate_someone_for_a&#34;&gt;Oracle&amp;rsquo;s Java Blog - Duke&amp;rsquo;s Choice Awards&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interviewed_at_goto_copenhagen&#34;&gt;GOTO Copenhagen&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/featured_on_a_bbc_podcast&#34;&gt;BBC 5 Live&lt;/a&gt; (podcast)&lt;br /&gt;
-&lt;strong&gt;May 2012&lt;/strong&gt; - &lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;Graduate Developer Community&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;Mar 2012&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interviewed_for_infoq_at_qcon_london&#34;&gt;InfoQ at QCon London&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Jan 2012&lt;/strong&gt; - &lt;a href=&#34;http://blog.eisele.net/2012/01/heroes-of-java-trisha-gee.html&#34;&gt;Heroes of Java&lt;/a&gt; (text)&lt;br /&gt;
-&lt;strong&gt;Nov 2011&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/&#34;&gt;Oracle Technology Network at Devoxx&lt;/a&gt; (video)&lt;br /&gt;
-&lt;strong&gt;Oct 2011&lt;/strong&gt; - &lt;a href=&#34;https://blogs.oracle.com/javaspotlight/entry/java_spotlight_episode_51_live&#34;&gt;Java Spotlight: Duke&amp;rsquo;s Choice Winners&lt;/a&gt;
-(podcast)&lt;br /&gt;
-&lt;strong&gt;Oct 2011&lt;/strong&gt; - &lt;a href=&#34;http://trishagee.github.io/post/more_videos_from_java_one_2011&#34;&gt;JavaOne&lt;/a&gt; (video)&lt;/p&gt;
-
-&lt;h2 id=&#34;publications:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Publications&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Jan 2014&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
-&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/introduction_to_mongodb_and_big_data&#34;&gt;Introduction to MongoDB and Big Data&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;Nov 2012&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
-&amp;ldquo;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112/?pg=35&amp;amp;amp;pm=1&amp;amp;amp;u1=friend&#34;&gt;Exploring Lambda Expressions for Java&lt;/a&gt;&amp;rdquo;&lt;br /&gt;
-&lt;strong&gt;Mar 2012&lt;/strong&gt; - Oracle&amp;rsquo;s Java Magazine:
-&amp;ldquo;&lt;a href=&#34;http://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one&#34;&gt;Sharing Data Without Contention&lt;/a&gt;”&lt;br /&gt;
-&lt;strong&gt;May 2011&lt;/strong&gt; - &lt;a href=&#34;http://disruptor.googlecode.com/files/Disruptor-1.0.pdf&#34;&gt;Disruptor: High performance alternative to bounded queues for exchanging data between concurrent threads&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;guest-posts:5b05046b8e355e99e916bfc103eda7bd&#34;&gt;Guest Posts&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;Aug 2014&lt;/strong&gt; - MongoDB Blog: &lt;a href=&#34;http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i&#34;&gt;Getting started with MongoDB and Java, Part 1&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;Aug 2014&lt;/strong&gt; - MongoDB Blog: &lt;a href=&#34;http://blog.mongodb.org/post/94724924068/getting-started-with-mongodb-and-java-part-ii&#34;&gt;Getting started with MongoDB and Java, Part 2&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;Nov 2013&lt;/strong&gt; - O&amp;rsquo;Reilly Programming:
-&lt;a href=&#34;http://programming.oreilly.com/2013/11/technical-tests-youre-doing-it-wrong.html&#34;&gt;Technical Tests: You’re Doing It Wrong, Part 1&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;Nov 2013&lt;/strong&gt; - O&amp;rsquo;Reilly Programming:
-&lt;a href=&#34;http://programming.oreilly.com/2013/12/technical-tests-youre-doing-it-wrong-part-2.html&#34;&gt;Technical Tests: You’re Doing It Wrong, Part 2&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;Aug 2013&lt;/strong&gt; - MongoDB Blog: &lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;The MongoDB Java Driver 3.0&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;Aug 2013&lt;/strong&gt; - MongoDB Blog: &lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;The MongoDB Java Driver 3.0: What&amp;rsquo;s changing&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
