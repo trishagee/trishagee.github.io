@@ -6,7 +6,353 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 22 May 2015 00:00:00 UTC</updated>
+    <updated>Thu, 02 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>My Path To Evangelism</title>
+      <link>http://trishagee.github.io/post/becoming_an_evangelist/</link>
+      <pubDate>Thu, 02 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/becoming_an_evangelist/</guid>
+      <description>&lt;p&gt;So, I get asked a lot about how I got into technical advocacy /
+evangelism&lt;sup&gt;1&lt;/sup&gt;,
+so it seems like the most cost-effective way to answer this question is to
+write a post about it. Warning: it&amp;rsquo;s a long one!&lt;/p&gt;
+
+&lt;p&gt;Firstly, let me caveat this (I always have caveats, don&amp;rsquo;t I?) with, &amp;ldquo;this is
+my personal experience&amp;rdquo;.  There may be other ways to get into this role.&lt;/p&gt;
+
+&lt;p&gt;Any long-time readers of the blog (I love you guys!!) will
+know that I started blogging before I did any of this
+running-around-the-world-speaking-at-conferences lark.  I started blogging
+for a number of reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Even &amp;ldquo;back then&amp;rdquo; (probably around 2007), it was definitely an advantage to
+have something external to the day job to differentiate you from other job
+candidates.  I didn&amp;rsquo;t feel comfortable with open source, Stack Overflow
+wasn&amp;rsquo;t invented yet (and even if it had been, I&amp;rsquo;m not sure I would have felt
+knowledgeable enough to answer questions), and most of what I had learnt in
+order to level-up my skills
+was via blogs like &lt;a href=&#34;http://www.joelonsoftware.com/&#34;&gt;Joel Spolsky&amp;rsquo;s&lt;/a&gt; and
+&lt;a href=&#34;http://randsinrepose.com/&#34;&gt;Rands in Repose&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I really enjoyed writing. One of the (many) things I had wanted to be
+&amp;ldquo;when I grew up&amp;rdquo; was a writer or a journalist. I didn&amp;rsquo;t take that path
+because I thought if I did I would be Poor Forever.  However, if I started
+practising my writing in a blog, I would learn to find my voice, and have
+something to show book publishers if I ever did get around to writing a
+book, like I had always wanted to do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If  you&amp;rsquo;ve ever started a blog, you know the problem is thinking of things to
+write about. I generally documented things I&amp;rsquo;d had difficulty getting
+working, because a) if I had trouble with the existing documentation, other
+people would too and b) I have a memory like a goldfish, so it would be
+useful for me if nothing else. But it took me years to really take the blog
+seriously.&lt;/p&gt;
+
+&lt;p&gt;At the end of 2008, I joined the
+&lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;London Java Community&lt;/a&gt;, largely
+because I had returned to London from a year working in New York, and a) I needed a new job (during
+the height of the crisis, when my recent experience was all financial
+markets!) and b) although I had friends in London, I needed to rebuild my
+social networks, and I was using meetup.com to do this. I tried lots of other
+meetup groups, but like many geeks, I found it hard to connect to people
+without the common ground of tech or code to talk about.&lt;/p&gt;
+
+&lt;p&gt;Eventually I ended up working for &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX Exchange&lt;/a&gt;, and
+because we were always looking
+for keen, bright developers, I started getting much more involved in the LJC
+so that I could help us hire people I actually wanted to work with. During
+this time, people like &lt;a href=&#34;https://twitter.com/karianna&#34;&gt;Martijn&lt;/a&gt;,
+&lt;a href=&#34;https://twitter.com/kittylyst&#34;&gt;Ben&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/jr0cket&#34;&gt;John&lt;/a&gt;
+and, of course, &lt;a href=&#34;https://twitter.com/bcrecworks&#34;&gt;Barry&lt;/a&gt; were
+encouraging me, consciously or not, to do a bit of technical presenting. I saw
+a lot of different talks there, some from professional evangelists from
+vendors, but many from &amp;ldquo;ordinary&amp;rdquo; developers like me. It made me think that
+a) I should do this (awesome for your profile/career etc) and b) I &lt;em&gt;could&lt;/em&gt;
+do this.&lt;/p&gt;
+
+&lt;p&gt;Of course, I saw very few women presenting (I do remember an
+awesome presentation from &lt;a href=&#34;https://twitter.com/fabianenardon&#34;&gt;Fabiane&lt;/a&gt;) and
+also very few women members. Many members
+assumed I was a recruiter, even before I started trying to chat to people
+to, well, recruit them for LMAX. In the first 2 minutes of meeting someone,
+if they didn&amp;rsquo;t ask me directly if I was in recruitment or HR, I would always
+make it clear that I was a Java developer. It was tedious but something I
+just got used to. Interestingly, once it was clear I was a Java person,
+people seemed to accept that and just treat me like any other techie.&lt;/p&gt;
+
+&lt;p&gt;I think this is one of the reasons I decided to start doing presentations - I
+could a) show my own technical credentials, so I would spend less time having
+these tiresome conversations (which, by the way, seems to have worked) and
+b) make it more normal to see women techies, hopefully minimising the number
+times other women faced the same assumptions (I&amp;rsquo;m not sure if this worked or
+not, as I only have my own experiences to look at).&lt;/p&gt;
+
+&lt;p&gt;But these thoughts were only floating around my mind, I didn&amp;rsquo;t actually
+&lt;em&gt;do&lt;/em&gt; anything.  During this time, while working at LMAX, it seemed like there were lots of
+things I &lt;em&gt;could&lt;/em&gt; blog about, or talk about, but I never really got round to it.
+Plus, I wasn&amp;rsquo;t really sure what I was allowed to talk about and what I shouldn&amp;rsquo;t be
+talking about. So apparently during these two years I only wrote a total of 6
+posts, and I never did a single presentation at the LJC.&lt;/p&gt;
+
+&lt;p&gt;However, I really wanted to do presenting and have time/inspiration for the
+blog, so I chose to leave LMAX and join
+&lt;a href=&#34;http://www.thoughtworks.com/&#34;&gt;ThoughtWorks&lt;/a&gt; - they were looking for
+consultants and I knew this was a company that valued blogging and
+presenting, and I&amp;rsquo;d had some exposure to their guys through the LJC and,
+years before, I&amp;rsquo;d seen them speaking at
+&lt;a href=&#34;http://mechanitis.blogspot.com.es/2007/03/qcon-london.html&#34;&gt;QCon London&lt;/a&gt;,
+which had actually been my initial inspiration for blogging.
+I told LMAX that was why I was leaving, and off I went.&lt;/p&gt;
+
+&lt;p&gt;So it&amp;rsquo;s 2011, and I&amp;rsquo;ve joined ThoughtWorks. I revived the blog while I was
+unassigned to a project, I invested that time in porting the blog to a
+more sensible platform, and trying to write a blog a day. Again, I picked
+topics I could comfortably talk about - I spoke about my experiences as a
+&lt;a href=&#34;http://trishagee.github.io/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
+time&lt;/a&gt; (sometimes people will be arsey
+with beginners, but in reality many real human beings can&amp;rsquo;t tell you you&amp;rsquo;re
+wrong when you&amp;rsquo;re just talking about your own experiences), and despite my
+original intent to blog with zero gender identity (I was genuinely afraid
+that if I wrote about tech subjects and I was wrong, or very junior, I would
+give women programmers a bad name) I decided to blog about &amp;ldquo;the women in
+technology subject&amp;rdquo;. Again, here I went for my personal opinion/experiences,
+for which only mean people can criticise you (mean people are easier to
+ignore than correct people :) )&lt;/p&gt;
+
+&lt;p&gt;I was also fortunate enough to meet &lt;a href=&#34;http://martinfowler.com/&#34;&gt;Martin Fowler&lt;/a&gt;
+in person while he was over
+in London. We were talking over drinks (this is London, after all) about the
+women in technology thing (ThoughtWorks are really big on this subject, and
+determined to do something positive in this area), and I was complaining about
+the lack of women at a particular conference. He asked me if I had submitted
+a talk for the conference.  Me?? Of course not! I&amp;rsquo;m not ready for that! I&amp;rsquo;ve
+got nothing to talk about. I haven&amp;rsquo;t been given permission to do this, or
+guidance on how to do it. I haven&amp;rsquo;t even presented at the user group yet. But
+it did make me think - I said I wanted to present, so what was stopping me?
+Did I need someone to guide me through it, to assign it to me as a task? It
+was going to be up to me to make this happen. And if Martin Fowler, who
+had just met me 5 minutes beforehand, thinks I&amp;rsquo;m ready to do this, then who&amp;rsquo;s
+to tell me I&amp;rsquo;m not? What&amp;rsquo;s the worst that could happen?&lt;/p&gt;
+
+&lt;p&gt;Of course life then got in the way - I was assigned to a couple of projects,
+so the blogging stopped. I was interested in attending or
+speaking at conferences, but wasn&amp;rsquo;t going to have anything ThoughtWorksy to
+talk about for quite a while. And now, because I was commuting to my assigned
+project, I had very little time even for the LJC.&lt;/p&gt;
+
+&lt;p&gt;At this point, LMAX called
+to let me know that the talk they&amp;rsquo;d done at QCon San Francisco,
+&lt;a href=&#34;http://www.infoq.com/presentations/LMAX&#34;&gt;&amp;ldquo;How to Do 100K TPS at Less than 1ms Latency&amp;rdquo;&lt;/a&gt; had been
+enormously popular, and they were open sourcing
+&lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;The Disruptor&lt;/a&gt; and wanted to do
+some evangelism around this - did I want to come back and help a) do
+evangelism and b) co-ordinate the company&amp;rsquo;s evangelism?  Yes, yes I did. So,
+after just 3 months, I quit TW and went back to LMAX&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Back at LMAX, I started to take evangelism more seriously.&lt;/p&gt;
+
+&lt;p&gt;I tried to blog every week - I set aside Sundays for blogging (at the time
+I was, fortunately for my particular choices, single and not overburdened
+with a social life outside of the LJC). I wasn&amp;rsquo;t going to sit all alone in my
+tiny flat, so I&amp;rsquo;d go to the pub with my shiny new Macbook Air, bought
+specially for blogging (thanks ThoughtWorks, you spoiled me - I needed a mac
+after I&amp;rsquo;d invested 3 months getting to grips with the one you gave me) and
+write &lt;em&gt;something&lt;/em&gt;. It wasn&amp;rsquo;t always amazing, but I&amp;rsquo;d do something. During the
+week, when ideas came to me, I&amp;rsquo;d make a note of the title in the blogging
+tool so that when Sunday came I&amp;rsquo;d pick one and go with it.  Early on it was
+fairly easy - we&amp;rsquo;d released a white paper on the Disruptor, but I found it
+hard to understand what it really meant, so I spent Sundays writing shorter
+articles breaking down how it worked and how to use it. I needed a LOT of
+help from &lt;a href=&#34;http://www.real-logic.co.uk/about.html&#34;&gt;Martin Thompson&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/mikeb2701&#34;&gt;Mike
+Barker&lt;/a&gt; to understand it, but they were patient
+with me (plus I think they were happy that &lt;em&gt;someone&lt;/em&gt; was writing this and it
+didn&amp;rsquo;t
+have to be them). They took the heavier, more complicated subjects and I
+pitched my stuff at developers like myself. When I ran out of Disruptor
+stuff, I moved on to the topics I had in the backlog - I generally had more
+ideas for blogs than time to blog, so I ended up with quite a long list to
+pick from. The key is to make a note of it at the time you think of it, and
+not try and think of a topic when you sit down with time to blog.&lt;/p&gt;
+
+&lt;p&gt;I coordinated our events and publicised them on the new LMAX blog I&amp;rsquo;d created.
+&lt;a href=&#34;https://twitter.com/davefarley77&#34;&gt;Dave Farley&lt;/a&gt; was often presenting on
+something Continuous Delivery related since
+&lt;a href=&#34;http://amzn.to/1NyUQ53&#34;&gt;his book&lt;/a&gt; had been released, and Martin was talking
+about hardcore concurrency stuff.&lt;/p&gt;
+
+&lt;p&gt;Mike and I got even more involved in the LJC, not just to recruit people.  We
+got involved in the JCP and OpenJDK - since LMAX was doing cutting edge
+technology stuff with Java, we wanted to see where the language was going
+and influence it too if possible.&lt;/p&gt;
+
+&lt;p&gt;Martijn must&amp;rsquo;ve got fed up my lack of drive in the presenting area, as he
+pretty much forced me to do my first presentation.  In a
+nice way! But he told me I was ready, he checked my content before I did it,
+and I did a short talk on the JCP.&lt;/p&gt;
+
+&lt;p&gt;At this point, my plan was to spend this first year of presenting doing short
+talks at the JUG, maybe work my way up to a longer talk by the end of the year, or maybe
+the following year, then the year after that to submit to conferences.&lt;/p&gt;
+
+&lt;p&gt;Well, with amazing mentors like mine, that didn&amp;rsquo;t happen. Martin Thompson was
+due to
+give a talk at JavaOne at the end of that year (still 2011), and I was lucky
+enough to get a ticket at the last minute (we won the &lt;a href=&#34;https://www.java.net/dukeschoice/2011&#34;&gt;Duke&amp;rsquo;s Choice Award
+for Innovative Programming Framework&lt;/a&gt;,
+and LMAX was awesome enough to let me have the ticket to the
+conference to receive the award, since the evangelism efforts and blogging
+had had a direct influence on us winning this award). Martin
+asked if I wanted to co-present with him. Of course this was terrifying! I
+hadn&amp;rsquo;t even done a full length talk at the LJC, I had barely even been to a
+conference, let alone presented at the largest Java conference In The World!
+So I said yes. These opportunities do not come up every week. It&amp;rsquo;s a talk
+Martin had given various times before, he would be there to pick up the slack
+if I freaked out, and I knew this material, I&amp;rsquo;d been blogging about it and
+answering questions for the last 6 months.&lt;/p&gt;
+
+&lt;p&gt;It really was as terrifying as I thought.  But.  It went well. I answered
+difficult questions. We got great feedback.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
+was an important milestone in my evangelism career.  Not only
+did I get to put this presentation on my CV, I got to meet a lot of people in
+this network: Martin introduced me to a lot of high performance specialists;
+Martijn and Ben introduced me to people involved in the JCP, to other Java
+User Group leaders, and we somehow got in to the O&amp;rsquo;Reilly party -
+I finally got to meet a book publisher and get one step closer to my dream
+of writing a book. I also met the ladies behind &lt;a href=&#34;http://jduchess.org/&#34;&gt;Duchess&lt;/a&gt;,
+and they introduced me to
+&lt;a href=&#34;https://twitter.com/Stephan007&#34;&gt;Stephan&lt;/a&gt; who runs Devoxx. This turned out
+to be an important step in turning an idea I had for a panel into a Devoxx
+reality.&lt;/p&gt;
+
+&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;http://trishagee.github.io/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
+with Mike&lt;/a&gt;, and at
+&lt;a href=&#34;http://trishagee.github.io/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
+largely thanks to the contacts I
+had made and the prestige of having a JavaOne talk under my belt.  So I went
+from basically zero at the start of that year (my blog had been dormant for
+years and I had no experience presenting) to having a blog with thousands of
+hits a month and being an &amp;ldquo;international conference speaker&amp;rdquo;. In many ways I
+got lucky, because the Disruptor was a really interesting, technical topic
+that is in an area developers feel they should understand (high performance).
+But I believe it was more a) determination to make this work, even if it
+meant using my own time to write blogs and prepare presentations and b)
+fantastic mentors who pushed me to do it and opened up their networks to me,
+that facilitated this rapid rise.&lt;/p&gt;
+
+&lt;p&gt;Honestly, after that things were a lot easier - I had the experience
+presenting at conferences, I had Martin and Martijn suggesting conferences to
+me (and introducing me to the right people where appropriate), which got me
+into the QCon/GOTO loop and into OSCON. With videos of my presentations
+availble, combined with the reach of my blog, I also had people approaching
+me to do other events, like user groups in the cities I was visiting, and
+conferences I had never heard of.  I think it helped that I&amp;rsquo;m a woman,
+because conferences are always actively looking to increase their diversity
+(whatever it might seem like at times!), but I think that anyone could follow
+these sorts of steps with a similar outcome.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not going to talk much about my career after that, because really that&amp;rsquo;s
+the tipping point - after that it was more of the same, really. I will say
+that I left LMAX because the pressure to be a full time developer &lt;em&gt;and&lt;/em&gt; do
+advocacy is hard, especially when you&amp;rsquo;re no longer single and you don&amp;rsquo;t have
+the spare time you used to have. I joined
+&lt;a href=&#34;https://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; because they were well known for
+understanding the technical community, and because they were looking for an
+evangelist who would continue to be an engineer (although not for 40 hours a
+week every week). I think they might have hired me without the previous
+experience, but the blogging and presenting experience was a big selling
+point for the guy who became my boss.  I eventually left
+them for &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt; because you learn, over
+time, what your sweet spots are as an advocate/educator, and what your
+interests are. After two years of MongoDB, I knew I really wanted to focus
+on Java and the JVM, and JetBrains is a much better fit for that. I&amp;rsquo;m pretty
+certain I would &lt;em&gt;not&lt;/em&gt; have got this job without a) having the
+conference-presenting experience and therefore b) being known to the team
+already through the conference circuit.&lt;/p&gt;
+
+&lt;p&gt;Well. That was a massive post. That&amp;rsquo;s why I&amp;rsquo;ve been putting off
+writing this for ages. That&amp;rsquo;s just my own story, I have another post in my
+head about the challenges that face you on trying to sell the value of
+evangelism/advocacy to your organisation (and maybe some suggestions). But
+that&amp;rsquo;s for another day.&lt;/p&gt;
+
+&lt;p&gt;In closing, I shall try to leave you with take-away points that I hope will
+be helpful if you either want to become a technical advocate, or are interested
+in just some aspects, like writing or presenting:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Join a user group.  I cannot, &lt;em&gt;cannot&lt;/em&gt; stress how important the LJC was to
+my career. If you do nothing else, this is the one thing that can help you.
+You will meet people who will inspire you or give you the kick up the
+backside you need. Try to remember that many of these people, like me, were
+developers like you before they became bloggers/authors/speakers. If they
+can, you can. These people also have networks, and whether you like it or
+not, it really is not what you know but who you know (but don&amp;rsquo;t let that put
+you off - meeting the right people can be easier than becoming some sort of
+super-expert!)&lt;/li&gt;
+&lt;li&gt;Present at the user group. Preferably get them to video it - you can use
+this in submissions to conferences, if it&amp;rsquo;s not a blind CFP they will like to
+see examples of your style. Having an example, even one that you think isn&amp;rsquo;t
+awesome, is much, much better than having nothing at all. (Also, and this is
+not a blog post about becoming a better speaker, but do watch your own
+videos - it&amp;rsquo;s &lt;em&gt;insanely&lt;/em&gt; painful the first few times, but it gets easier and
+will help you to improve).&lt;/li&gt;
+&lt;li&gt;Be prepared to commit your own time to this. I blogged and prepared talks
+at weekends, even for companies that valued evangelism. I gave up evenings
+to attend the user group.  This will be
+especially important in the early days when you probably have a day job too.
+This investment should pay off, either your company will learn to see the
+value of it and give you more time (having developers attend and speak at the
+LJC was enormously successful for recruitment for LMAX), or you will get a
+job better suited to what you want to do.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t have to have something awesome to talk about. I got lucky with
+the Disruptor, true. But our most in-demand topics at the Sevilla Java User
+Group are &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; topics, especially for things that are
+no-longer cutting edge - not all developers were early adopters, and now they
+need an overview of &amp;ldquo;why NoSQL&amp;rdquo; or &amp;ldquo;what&amp;rsquo;s Docker&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t have to be awesome. Your blog doesn&amp;rsquo;t have to be perfect English
+(especially if you&amp;rsquo;re not a native). It just needs to clearly describe the
+thing you&amp;rsquo;re trying to explain. You don&amp;rsquo;t
+have to be &lt;a href=&#34;http://www.infoq.com/author/Damian-Conway&#34;&gt;Damian Conway&lt;/a&gt;(one of
+my favourite presenters) when you speak - in my experience, a presenter
+can get away with either &lt;em&gt;only&lt;/em&gt; great content or &lt;em&gt;only&lt;/em&gt; great delivery, you
+actually don&amp;rsquo;t need both. I&amp;rsquo;ve been to conferences where presenters haven&amp;rsquo;t
+really had either - you have to start somewhere, and audiences are
+surprisingly forgiving (especially at user groups).&lt;/li&gt;
+&lt;li&gt;Find mentors. Listen to them. You might not even meet them, you can watch
+what they do. But I&amp;rsquo;d encourage you to find real human beings who are a step
+or two closer to where you want to be. Talk to them, let them know what you
+want. And let them bully you into doing scary things.&lt;/li&gt;
+&lt;li&gt;Be yourself. Figure out your strengths and interests, and play to them. I
+was scared of being a woman developer on show, via the blog or via
+conferences, but it turns out to be an advantage. I was afraid that because
+I&amp;rsquo;m not Martin Thompson I can&amp;rsquo;t possibly talk about difficult technical
+subjects. But I don&amp;rsquo;t have to be him, I can be me - I can explain things to
+the level that I need to understand them, so other developers like me can
+catch up with me. We don&amp;rsquo;t need to all be genius-level.&lt;/li&gt;
+&lt;li&gt;Do things that scare you. The terrifying things are the things that got me
+the furthest.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I hope this helps someone.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;Evangelism / Technical Advocacy - I use these terms fairly
+interchangeably. Evangelism was the common name some years back, but many
+are uncomfortable with the religious overtones, so instead prefer Advocacy.&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt; This is why I often talk about being at ThoughtWorks for a
+minute and a half - I really loved a lot of things about the company, but what
+I really wanted to do was offered to me in a company I already knew, where I
+could get going straight away without any ramp up&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java at 20</title>
@@ -1400,62 +1746,6 @@ so all we need to do is call &lt;code&gt;createIndex&lt;/code&gt; for this field
 &lt;p&gt;So that&amp;rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
 but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
 and transforming it into something that can be inserted into a MongoDB collection.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JavaOne 2014, Day One</title>
-      <link>http://trishagee.github.io/post/java_one_2014_day_one/</link>
-      <pubDate>Tue, 30 Sep 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_one_2014_day_one/</guid>
-      <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
-had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=10289&#34;&gt;Superpowered CI with Git - Sarah Goff-Dupont&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-The Continuous Integration we did at LMAX is quite different to what we do at MongoDB, and I was hoping to get some tips on better CI with
-Git, especially given feature branches.  There was a good overview of development process using branch-per-feature,
- and a comment that it&amp;rsquo;s nearly impossible to do &amp;ldquo;pure&amp;rdquo; CI in this sort of environment.  But there was pragmatic advice on how to manage
- the process and run automated builds in this environment.&lt;/p&gt;
-
-&lt;p&gt;The take-home point for me is that I&amp;rsquo;m going to investigate &lt;a href=&#34;http://git-scm.com/book/en/Customizing-Git-Git-Hooks&#34;&gt;git hooks&lt;/a&gt; to try and
-  streamline our process and run some fast checks more frequently.&lt;/p&gt;
-
-&lt;p&gt;Also, Sarah showed using &lt;a href=&#34;https://www.hipchat.com&#34;&gt;Hipchat&lt;/a&gt; in anger - I&amp;rsquo;ve now heard this mentioned enough that I&amp;rsquo;m going to look into it more.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276&#34;&gt;Advanced Unit Testing with Spock&lt;/a&gt;&lt;/strong&gt;&lt;br /&gt;
-I&amp;rsquo;ve [spoken before about Spock](&lt;/p&gt;
-
-&lt;p&gt;/tags/spock/), and how much I love it.  The first section of this talk was a recap
-of some of the basics, but the second part went on to some features I either previously ignored or wasn&amp;rsquo;t aware of.  For example, in the
-&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;MongoDB Java Driver&lt;/a&gt;, we do use annotations to denote slower-running tests so we can select which environments to run in,
-but we&amp;rsquo;re not using Spock annotations for this.  I think there&amp;rsquo;s a lot more we could do with both custom annotations like our
-&lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/util/src/main/category/Slow.java&#34;&gt;@Slow&lt;/a&gt; annotation,
-Spock&amp;rsquo;s built in annotations like &lt;code&gt;@Issue&lt;/code&gt;, and some others which may not yet be in maven central like &lt;code&gt;@Requires&lt;/code&gt; for running
-language-version tests (&lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/JavaLanguageSpec
-.groovy&#34;&gt;e.g. Java 8 tests&lt;/a&gt;) and &lt;code&gt;@IgnoreRest&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also liked the example of &lt;a href=&#34;https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/OldExampleSpec.groovy&#34;&gt;checking the new value against an old
-value&lt;/a&gt;,
-I can totally see this being useful.&lt;/p&gt;
-
-&lt;p&gt;There were other bits and pieces in this talk I&amp;rsquo;d like to dig into in more detail that I think will be very useful for the Java Driver.
-But even more importantly, I learnt how to zoom into my screen so I can use that in my own presentation. Pro presentation top tips.&lt;/p&gt;
-
-&lt;p&gt;Honestly, if you have even minor testing pains, it&amp;rsquo;s worth finding Ken&amp;rsquo;s talks on Spock, they&amp;rsquo;re great! And a source of inspiration for
-better testing, as well as a sneaky way to understand why Groovy is awesome.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;JCP Awards and Party&lt;/strong&gt;&lt;br /&gt;
-But it&amp;rsquo;s not all work at these events.  For me, the highlight was the music at at the JCP Awards party.  Firstly,
-we had an award-winning beat-box guy from the UK (sadly I don&amp;rsquo;t remember his name so I can&amp;rsquo;t link to his stuff).  An unusual choice for
-an event like this, but it was a lot of fun. Then there was the live super-band, The Null Pointers, made up of JUG leaders from around the
-world (including &lt;a href=&#34;https://twitter.com/matkar&#34;&gt;@matkar&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/frankgreco&#34;&gt;@frankgreco&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/fguime&#34;&gt;@fguime&lt;/a&gt;. I&amp;rsquo;ll admit,
- I was a little concerned about this idea, but the guys were fantastic, and it was a lot of fun singing along to Free&amp;rsquo;s Alright Now and
- Radiohead&amp;rsquo;s Creep. &lt;a href=&#34;https://www.oracle.com/openworld/appreciation-event/index.html&#34;&gt;Aerosmith&lt;/a&gt; is going to have to work hard to compete with that.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;&amp;hellip;and a quick plug&lt;/strong&gt;&lt;br /&gt;
-My &lt;a href=&#34;https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703&#34;&gt;main presentation is on Thursday&lt;/a&gt;, it&amp;rsquo;s a keyword-tastic live demo of AngularJS, Java &amp;amp; MongoDB.  Something &lt;em&gt;always&lt;/em&gt; goes wrong in
-this presentation, so I&amp;rsquo;m &lt;a href=&#34;http://doodle.com/fvrasw9vrpxyb9dm&#34;&gt;taking bets right now on what that will be&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
