@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Java on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/java/</link>
+    <link>http://trishagee.github.io/tags/java/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -131,7 +131,7 @@ dependencies in your code that need to change.&lt;/li&gt;
 to-watch list.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;ideas:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Ideas&lt;/h4&gt;
+&lt;h4 id=&#34;toc_0&#34;&gt;Ideas&lt;/h4&gt;
 
 &lt;p&gt;It became clear throughout the talk there are plenty of ideas that we could explore in later presentations.  If you want to see
 any of the following, add a comment or ping me or &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;IsraKaos&lt;/a&gt; on twitter or Meetup and we&amp;rsquo;ll try and schedule it.&lt;/p&gt;
@@ -149,7 +149,7 @@ do so, drop me a line:&lt;/p&gt;
 &lt;li&gt;Java EE&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;further-reading:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Further Reading&lt;/h4&gt;
+&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;
@@ -173,7 +173,7 @@ do so, drop me a line:&lt;/p&gt;
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
 Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;
 
-&lt;h2 id=&#34;who-is-this-for:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Who is this for?&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Who is this for?&lt;/h2&gt;
 
 &lt;p&gt;This workshop is aimed at Java developers who want to learn more about how
 to rapidly prototype applications using web front-end technologies with JVM back-end technologies. The workshop may be
@@ -186,7 +186,7 @@ but this is &lt;em&gt;not&lt;/em&gt; an introduction to Java and familiarity wit
 
 &lt;p&gt;This is a hands-on workshop, bring a laptop set up according to the following instructions - you will be writing code!&lt;/p&gt;
 
-&lt;h2 id=&#34;overview:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Overview&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Overview&lt;/h2&gt;
 
 &lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/klw9pIuTICM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -195,7 +195,7 @@ setup for the workshop.&lt;/p&gt;
 
 &lt;p&gt;The setup instructions below are the same process, so you can copy &amp;amp; paste where appropriate.&lt;/p&gt;
 
-&lt;h2 id=&#34;setup:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Setup&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Setup&lt;/h2&gt;
 
 &lt;p&gt;I am assuming you already have a version of the Java SDK downloaded. For this workshop, Java 7 or above should work, but
 I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;&gt;download the latest version of Java 8&lt;/a&gt; if you&amp;rsquo;re not already using it.&lt;/p&gt;
@@ -203,7 +203,7 @@ I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/do
 &lt;p&gt;Create a new work area for this tutorial. For the rest of these instructions I&amp;rsquo;ll refer to it as &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;.  I&amp;rsquo;ve put
  mine in &lt;code&gt;~/Projects/workshops/qcon2015&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;installing-mongodb:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Installing MongoDB&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Installing MongoDB&lt;/h2&gt;
 
 &lt;p&gt;I&amp;rsquo;m going to be using &lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;MongoDB 3.0.0-rc8&lt;/a&gt;, but version 2.6 will be fine too.&lt;/p&gt;
 
@@ -215,12 +215,12 @@ have a folder at &lt;code&gt;&amp;lt;location&amp;gt;/data&lt;/code&gt;&lt;/p&gt
 
 &lt;p&gt;From the command line, start MongoDB to make sure everything is working.  From the &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt; directory:&lt;/p&gt;
 
-&lt;h5 id=&#34;linux-osx:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;toc_4&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongod --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;windows:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows:&lt;/h5&gt;
+&lt;h5 id=&#34;toc_5&#34;&gt;Windows:&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongod.exe --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
@@ -230,12 +230,12 @@ MongoDB should be running on localhost and port 27017&lt;/p&gt;
 
 &lt;p&gt;Connect to the shell to make sure it&amp;rsquo;s working:&lt;/p&gt;
 
-&lt;h5 id=&#34;linux-osx-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;toc_6&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;windows-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;toc_7&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongo.exe
 &lt;/code&gt;&lt;/pre&gt;
@@ -255,18 +255,18 @@ Questions? Try the support group
 &amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;creating-your-project:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Creating your project&lt;/h2&gt;
+&lt;h2 id=&#34;toc_8&#34;&gt;Creating your project&lt;/h2&gt;
 
 &lt;p&gt;Clone &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;the Cafelito project&lt;/a&gt; into &lt;code&gt;&amp;lt;location&amp;gt;/cafelito&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;In a terminal/command line, navigate to this location, and run:&lt;/p&gt;
 
-&lt;h5 id=&#34;linux-osx-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;toc_9&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./gradlew check
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;windows-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;toc_10&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;gradlew.bat check
 &lt;/code&gt;&lt;/pre&gt;
@@ -282,7 +282,7 @@ the dependencies for you.&lt;/p&gt;
 &lt;p&gt;Feel free to use Eclipse or
 Netbeans (or whatever your favourite IDE is) but I&amp;rsquo;m out of practice using those IDEs and might not be able to help you out as much.&lt;/p&gt;
 
-&lt;h2 id=&#34;and-now:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
+&lt;h2 id=&#34;toc_11&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
 
 &lt;p&gt;You should be ready to begin: you have a working instance of MongoDB, a skeleton project that we&amp;rsquo;ll be working with, and all the
 dependencies should have been downloaded.&lt;/p&gt;
@@ -316,7 +316,7 @@ so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34; target=&#34;_blank&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134070865&amp;type=d&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
-so I have a &lt;a href=&#34;http://trishagee.github.io/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
+so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This talk has been videoed several times -
 some older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
@@ -326,7 +326,7 @@ these initial demos.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.parleys.com/talk/html5-angularjs-groovy-java-mongodb-together-what-could-possibly-go-wrong&#34;&gt;JavaOne, October 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (the Java back end is similar to the JavaOne version, but UI for getting the nearest coffee shop is slightly different)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oscon.com/open-source-2015/public/content/2015/05/15-html5-angularjs-groovy-java-mongodb-all-together?cmp=tw-prog-na-article-os15_1431727268&#34;&gt;OSCON, July 2014&lt;/a&gt; (uses Morphia)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://trishagee.github.io/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
+&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
 presentation, and the video uses MongoJack instead of Morphia &amp;amp; shows an even earlier version of the find-my-coffee UI)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt; (only the second time I presented this
 demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&gt;
@@ -334,7 +334,7 @@ demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&g
 
 &lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;resources:891809574da610a118d95fe52fd3cd80&#34;&gt;Resources&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Resources&lt;/h3&gt;
 
 &lt;p&gt;These are the main resources I used in creating this talk:&lt;/p&gt;
 
@@ -352,7 +352,7 @@ AngularJS app to a JavaEE back end using NetBeans, but the principals here are t
 &lt;li&gt;&lt;a href=&#34;http://gradle.org/&#34;&gt;Gradle&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ&lt;/a&gt;: there&amp;rsquo;s a free community version of the IDE, but it&amp;rsquo;s not very expensive to upgrade to
 the full version and it will save you so much time and effort.&lt;/li&gt;
 &lt;/ul&gt;
@@ -498,7 +498,7 @@ weekends.&lt;/p&gt;
 
 &lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
 
-&lt;h2 id=&#34;links-to-more-detailed-information:901be61e6414e68f905421f5878b1fac&#34;&gt;Links to more detailed information&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Links to more detailed information&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;Introduction to the changes in 3.0&lt;/a&gt;&lt;/li&gt;
@@ -506,7 +506,7 @@ weekends.&lt;/p&gt;
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;How to get started with the 3.0
 not-production-ready snapshot&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;presentations:901be61e6414e68f905421f5878b1fac&#34;&gt;Presentations&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Presentations&lt;/h2&gt;
 
 &lt;p&gt;Presentation from GeeCON about the design of the new MongoDB driver.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;

@@ -23,8 +23,8 @@
 <meta property="og:image:height" content="" />
 <meta property="og:url" content="http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="0001-01-01"/>
-<meta property="article:modified_time" content="0001-01-01"/>
+<meta property="article:published_time" content="2008-01-01"/>
+<meta property="article:modified_time" content="2008-01-01"/>
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-    <base href="http://trishagee.github.io/">
+    <base href="http://trishagee.github.io">
     <title>  - trishagee.github.io </title>
     <link rel="canonical" href="http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/">
     
@@ -148,7 +148,7 @@
         <article itemprop="articleBody" id="content">
            
 
-<h2 id="getting-started-with-mongodb-and-java:8ebc29c020ad9980cc96c2abf13489c4">Getting started with MongoDB and Java</h2>
+<h2 id="toc_0">Getting started with MongoDB and Java</h2>
 
 <p>Java is one of the most popular programming languages in the MongoDB Community. For new users, it&rsquo;s important to provide an overview of how to work with the MongoDB Java driver and how to use MongoDB as a Java developer.</p>
 
@@ -163,16 +163,16 @@
 <li>An overview of some of the JVM libraries</li>
 </ul>
 
-<h2 id="installation:8ebc29c020ad9980cc96c2abf13489c4">Installation</h2>
+<h2 id="toc_1">Installation</h2>
 
 <p>The installation instructions for MongoDB are <a href="http://docs.mongodb.org/manual/installation/">extensively documented</a>,
 so I&rsquo;m not going to repeat any of that here. If you want to follow along with this &ldquo;getting started&rdquo; guide, you&rsquo;ll want to download the appropriate version of MongoDB and unzip/install it. At the time of writing, the latest version of MongoDB is 2.6.3, which is the version I&rsquo;ll be using.</p>
 
-<h3 id="a-note-about-security:8ebc29c020ad9980cc96c2abf13489c4">A note about security</h3>
+<h3 id="toc_2">A note about security</h3>
 
 <p>In a real production environment, of course you&rsquo;re going to want to consider authentication. This is something that MongoDB takes seriously and there&rsquo;s a whole section of <a href="http://docs.mongodb.org/manual/administration/security/">documentation on security</a>. But for the purpose of this demonstration, I&rsquo;m going to assume you&rsquo;ve either got that working or you&rsquo;re running in &ldquo;trusted mode&rdquo; (i.e. that you&rsquo;re in a development environment that isn&rsquo;t open to the public).</p>
 
-<h3 id="take-a-look-around:8ebc29c020ad9980cc96c2abf13489c4">Take a look around</h3>
+<h3 id="toc_3">Take a look around</h3>
 
 <p>Once you&rsquo;ve got mongodb installed and started (a process that should only take a few minutes), you can <a href="http://docs.mongodb.org/manual/tutorial/getting-started/#connect-to-a-database">connect to the MongoDB shell</a>. Most of the MongoDB technical documentation is written for the shell, so it&rsquo;s always useful to know how to access it, and how use it to troubleshoot problems or prototype solutions.</p>
 
@@ -197,7 +197,7 @@ local 0.078GB
 <p>That&rsquo;s great, but <a href="http://docs.mongodb.org/manual/tutorial/getting-started/">as you can see there&rsquo;s loads of documentation</a> on how to
 play with MongoDB from the shell. The shell is a really great environment for trying out queries and looking at things from the server point-of-view. However, I promised you Java, so we&rsquo;re going to step away from the shell and get on with connecting via Java.</p>
 
-<h2 id="getting-started-with-java:8ebc29c020ad9980cc96c2abf13489c4">Getting started with Java</h2>
+<h2 id="toc_4">Getting started with Java</h2>
 
 <p>First, you&rsquo;re going to want to set up your project/IDE to use the
 <a href="http://docs.mongodb.org/ecosystem/tutorial/getting-started-with-java-driver/#getting-started-with-java-driver">MongoDB Java Driver</a>.
@@ -206,13 +206,13 @@ These days IDEs tend to pick up the correct dependencies through your <a href="h
 
 <p>At the time of writing, the latest version of the Java driver is 3.0 - this is designed to work with the MongoDB 2.8 series.</p>
 
-<h3 id="gradle:8ebc29c020ad9980cc96c2abf13489c4">Gradle</h3>
+<h3 id="toc_5">Gradle</h3>
 
 <p>You&rsquo;ll need to add the following to your dependencies in build.gradle:</p>
 
 <p>compile &lsquo;org.mongodb:mongo-java-driver:3.0.0&rsquo;</p>
 
-<h3 id="maven:8ebc29c020ad9980cc96c2abf13489c4">Maven</h3>
+<h3 id="toc_6">Maven</h3>
 
 <p>For maven, you&rsquo;ll want:</p>
 
@@ -230,7 +230,7 @@ These days IDEs tend to pick up the correct dependencies through your <a href="h
 <p>If you don&rsquo;t already have a project that you want to try with MongoDB, I&rsquo;ve created a
 <a href="https://github.com/trishagee/mongodb-getting-started/tree/3.0">series of unit tests on github</a> which you can use to get a feel for working with MongoDB and the new Java driver.</p>
 
-<h2 id="connecting-via-java:8ebc29c020ad9980cc96c2abf13489c4">Connecting via Java</h2>
+<h2 id="toc_7">Connecting via Java</h2>
 
 <p>Assuming you&rsquo;ve resolved your dependencies and you&rsquo;ve set up your project, you&rsquo;re ready to connect to MongoDB from your Java application.</p>
 
@@ -254,7 +254,7 @@ These days IDEs tend to pick up the correct dependencies through your <a href="h
 
 <p>Try out connecting to MongoDB by getting the test in <a href="https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise1ConnectingTest.java">Exercise1ConnectingTest</a> to pass.</p>
 
-<h3 id="where-are-my-tables:8ebc29c020ad9980cc96c2abf13489c4">Where are my tables?</h3>
+<h3 id="toc_8">Where are my tables?</h3>
 
 <p>MongoDB doesn&rsquo;t have tables, rows, columns, joins etc. There are some new concepts to learn when you&rsquo;re using it, but nothing too challenging.</p>
 
@@ -264,7 +264,7 @@ the <a href="http://docs.mongodb.org/manual/reference/glossary/#term-document">d
 data. But it can be helpful to think of documents like rows and collections like tables in a traditional database. And collections can have
 <a href="http://docs.mongodb.org/manual/core/indexes-introduction/">indexes</a> like you&rsquo;d expect.</p>
 
-<h3 id="selecting-databases-and-collections:8ebc29c020ad9980cc96c2abf13489c4">Selecting Databases and Collections</h3>
+<h3 id="toc_9">Selecting Databases and Collections</h3>
 
 <p>You&rsquo;re going to want to define which databases and collections you&rsquo;re using in your Java application. If you remember, a few sections ago we used the MongoDB shell to show the databases in your MongoDB instance, and you had an <code>admin</code> and a <code>local</code>.</p>
 
@@ -285,7 +285,7 @@ data. But it can be helpful to think of documents like rows and collections like
 <p>If you&rsquo;re playing along with the test code, you now know enough to get the tests
 in <a href="https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise2MongoClientTest.java">Exercise2MongoClientTest</a> to pass</p>
 
-<h2 id="an-introduction-to-documents:8ebc29c020ad9980cc96c2abf13489c4">An Introduction to documents</h2>
+<h2 id="toc_10">An Introduction to documents</h2>
 
 <p>Something that is, hopefully, becoming clear to you as you work through the examples in this post, is that MongoDB is different from the traditional relational databases you&rsquo;ve used. As I&rsquo;ve mentioned, there are collections, rather than tables, and documents, rather than rows and columns.</p>
 
@@ -317,7 +317,7 @@ in <a href="https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/te
 
 <p>You can find out more detailed information about Documents in <a href="http://docs.mongodb.org/manual/core/document/">the documentation</a>.</p>
 
-<h3 id="creating-a-document-and-saving-it-to-the-database:8ebc29c020ad9980cc96c2abf13489c4">Creating a document and saving it to the database</h3>
+<h3 id="toc_11">Creating a document and saving it to the database</h3>
 
 <p>In Java, if you wanted to create a document like the one above, you&rsquo;d do something like:</p>
 
@@ -404,7 +404,7 @@ system.indexes
 <p>Now you&rsquo;ve got all the basics to get the tests in
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java">Exercise3InsertTest</a> to pass.</p>
 
-<h3 id="getting-documents-back-out-again:8ebc29c020ad9980cc96c2abf13489c4">Getting documents back out again</h3>
+<h3 id="toc_12">Getting documents back out again</h3>
 
 <p>Now you&rsquo;ve saved a Person to the database, and we&rsquo;ve seen it in the database using the shell, you&rsquo;re going to want to get it back out into your Java application. In this post, we&rsquo;re going to cover the very basics of retrieving a document - in a later post we&rsquo;ll cover more complex querying.</p>
 
@@ -435,51 +435,51 @@ Integer age = jo.getInteger(&quot;age&quot;);
 <p>If you&rsquo;re still playing along with the example code, you&rsquo;re now ready to take on all the tests in
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise4RetrieveTest.java">Exercise4RetrieveTest</a></p>
 
-<h2 id="overview-of-jvm-libraries:8ebc29c020ad9980cc96c2abf13489c4">Overview of JVM Libraries</h2>
+<h2 id="toc_13">Overview of JVM Libraries</h2>
 
 <p>So far I&rsquo;ve shown you the basics of the official Java Driver, but you&rsquo;ll notice that it&rsquo;s quite low-level - you have to do a lot of taking things out of your domain objects and poking them into MongoDB-shaped Documents, and vice-versa. If this is the level of control you want, then the Java driver makes this easy for you. But if it seems like this is extra work that you shouldn&rsquo;t have to do, there are plenty of other options for you.</p>
 
 <p>The tools I&rsquo;m about to describe all use the MongoDB Java Driver at their core to interact with MongoDB. They provide a high-level abstraction for converting your domain objects into MongoDB documents, whilst also giving you a way to get to the underlying driver as
 well in case you need to use it at a lower level.</p>
 
-<h3 id="morphia:8ebc29c020ad9980cc96c2abf13489c4">Morphia</h3>
+<h3 id="toc_14">Morphia</h3>
 
 <p>Morphia is a really lightweight ODM (Object Document Mapper), so it&rsquo;s similar to
 <a href="http://en.wikipedia.org/wiki/Object-relational_mapping">ORMs</a> like Hibernate. Documents can be in a fairly similar shape to your Java domain objects, so this mapping can be automatic, but Morphia allows you point the mapper in the right direction.</p>
 
 <p>Morphia is open source, and has contributors from MongoDB. Sample code and documentation can be <a href="https://github.com/mongodb/morphia/wiki">found here</a>.</p>
 
-<h3 id="spring-data:8ebc29c020ad9980cc96c2abf13489c4">Spring Data</h3>
+<h3 id="toc_15">Spring Data</h3>
 
 <p>Another frequently used ODM is <a href="http://projects.spring.io/spring-data/">Spring Data</a>. This supports traditional relational and non-relational databases, <a href="http://projects.spring.io/spring-data-mongodb/">including MongoDB</a>. If you&rsquo;re already using Spring in your application, this should be a familiar way to work.</p>
 
 <p>As always with Spring projects, there&rsquo;s a lot of really great documentation, including a
 <a href="http://spring.io/guides/gs/accessing-data-mongodb/">Getting Started guide</a> with example code.</p>
 
-<h3 id="mongojack:8ebc29c020ad9980cc96c2abf13489c4">MongoJack</h3>
+<h3 id="toc_16">MongoJack</h3>
 
 <p>If you&rsquo;re working with web services or something else that supports JSON, and you&rsquo;re using <a href="http://wiki.fasterxml.com/JacksonHome">Jackson</a> to work with this data, it probably seems like a waste to be turning it from this form into a Java object and then into a MongoDB Document. But <a href="http://mongojack.org/">MongoJack</a> might make your job easier, as it&rsquo;s designed to map JSON objects directly into MongoDB. Take a look at the <a href="http://mongojack.org/tutorial.html">example code and documentation</a>.</p>
 
-<h3 id="jongo:8ebc29c020ad9980cc96c2abf13489c4">Jongo</h3>
+<h3 id="toc_17">Jongo</h3>
 
 <p>This is another <a href="http://wiki.fasterxml.com/JacksonHome">Jackson</a>-based ODM, but provides an interesting extra in the form of supporting queries the way you&rsquo;d write them in <a href="http://docs.mongodb.org/manual/reference/mongo-shell/">the shell</a>. Documentation
 and example code is available on <a href="http://jongo.org/">the website</a>.</p>
 
-<h3 id="grails-mongodb-gorm:8ebc29c020ad9980cc96c2abf13489c4">Grails MongoDB GORM</h3>
+<h3 id="toc_18">Grails MongoDB GORM</h3>
 
 <p>The Grails web application framework also supports its own Object-Relational Mapping (<a href="http://grails.org/doc/2.4.x/guide/GORM.html">GORM</a>), including <a href="http://grails.org/plugin/mongodb">support for MongoDB</a>. More documentation for this plugin <a href="http://grails.github.io/grails-data-mapping/mongo/manual/index.html">can be found here</a>.</p>
 
-<h3 id="casbah:8ebc29c020ad9980cc96c2abf13489c4">Casbah</h3>
+<h3 id="toc_19">Casbah</h3>
 
 <p>This isn&rsquo;t an ODM like the other tools mentioned, but the <a href="https://github.com/mongodb/casbah">officially supported Scala driver</a> for MongoDB. Like the previous libraries, it uses the MongoDB Java Driver under the covers, but it provides a Scala API for application developers to work with. If you like working with Scala but are searching for an async solution, consider <a href="http://reactivemongo.org/">ReactiveMongo</a>, a community-supported driver that provides async and non-blocking operations.</p>
 
-<h3 id="other-libraries-and-tools:8ebc29c020ad9980cc96c2abf13489c4">Other libraries and tools</h3>
+<h3 id="toc_20">Other libraries and tools</h3>
 
 <p>This is far from an extensive list, and I apologise if I&rsquo;ve left a favourite out. But we&rsquo;ve compiled
 <a href="http://docs.mongodb.org/ecosystem/drivers/java/#third-party-frameworks-and-libs">a list of many more libraries for the JVM</a>,
 which includes community projects and officially supported drivers.</p>
 
-<h2 id="conclusion:8ebc29c020ad9980cc96c2abf13489c4">Conclusion</h2>
+<h2 id="toc_21">Conclusion</h2>
 
 <p>We&rsquo;ve covered the basics of using MongoDB from Java - we&rsquo;ve touched on what MongoDB is, and you can find out a lot more detailed information about it from <a href="http://docs.mongodb.org/manual/">the manual</a>; we&rsquo;ve
 <a href="http://docs.mongodb.org/manual/installation/">installed</a> it somewhere that lets us play with it; we&rsquo;ve talked a bit about collections and documents, and what these look like in Java; and we&rsquo;ve started inserting things into MongoDB and getting them back out again.</p>
@@ -499,7 +499,7 @@ which includes community projects and officially supported drivers.</p>
 
 <div>
     <section id="datecount">
-        <h4 id="date"> Mon Jan 1, 0001 </h4>
+        <h4 id="date"> Tue Jan 1, 2008 </h4>
         <h5 id="wc"> 2700 Words </h5>
     </section>
     <ul id="categories">
@@ -512,10 +512,10 @@ which includes community projects and officially supported drivers.</p>
 
 <div>
     <section id="prev">
-        &nbsp;<a class="previous" href="http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/"><i class="icon-arrow-left"></i> </a><br>
+        &nbsp;<a class="previous" href="http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/"><i class="icon-arrow-left"></i> </a><br>
     </section>
     <section id="next">
-        &nbsp;<a class="next" href="http://trishagee.github.io/other-sites/getting-started-with-gradle/"> <i class="icon-arrow-right"></i></a>
+        &nbsp;<a class="next" href="http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/"> <i class="icon-arrow-right"></i></a>
     </section>
 </div>
 
@@ -533,7 +533,7 @@ which includes community projects and officially supported drivers.</p>
 </aside>
 
 <meta itemprop="wordCount" content="2684">
-<meta itemprop="datePublished" content="0001-01-01">
+<meta itemprop="datePublished" content="2008-01-01">
 <meta itemprop="url" content="http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/">
 
 
