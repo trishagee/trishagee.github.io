@@ -6,7 +6,22 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 12 Aug 2014 00:00:00 UTC</updated>
+    <updated>Sat, 18 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Interviewed by InfoQ</title>
+      <link>http://trishagee.github.io/post/interviewed_for_infoq/</link>
+      <pubDate>Sat, 18 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/interviewed_for_infoq/</guid>
+      <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
+interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
+but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
+of the JCP, and the future of Java.&lt;/p&gt;
+
+&lt;p&gt;Video and the transcript are &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-java-eco-system&#34;&gt;available on InfoQ&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What could possibly go wrong? (GOTO Chicago)</title>
@@ -375,16 +390,6 @@ and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;
       <description>&lt;p&gt;Yolande Poirier from &lt;a href=&#34;http://www.oracle.com/technetwork/index.html&#34;&gt;OTN&lt;/a&gt; interviewed me at Devoxx about my new job at 10gen,
 Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
 &lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3544&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3544&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Devoxx: The Problem with Women - A Technical Approach</title>
-      <link>http://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</link>
-      <pubDate>Tue, 18 Dec 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</guid>
-      <description>&lt;p&gt;As well as talking about, you know, &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/agile-when-agile-goes-well.html&#34;&gt;actual work-type-stuff&lt;/a&gt;, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. &amp;nbsp;This went so well at JavaOne that I thought it would be difficult to top. &amp;nbsp;Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.&lt;br /&gt;&lt;br /&gt;I was incredibly impressed with the audience. &amp;nbsp;There were literally hundreds of people, most of them men. &amp;nbsp;To me, it proved once again that the men in this industry are determined to &amp;ldquo;fix&amp;rdquo; this problem of gender imbalance. &amp;nbsp;And they&amp;rsquo;re happy to extend that to improving diversity as a whole, once you highlight the bigger problem. &amp;nbsp;It says to me that this is not naturally a misogynistic industry, where you have to fight against the boys club to get anywhere. &amp;nbsp;It says to me that we are all in this together. &amp;nbsp;After all, in the &amp;ldquo;real&amp;rdquo; world the geeks are still outsiders, and different, so we&amp;rsquo;re used to embracing our different-ness - whether that&amp;rsquo;s because you&amp;rsquo;re the only girl in the room, the only Java developer at a .NET conference, or the only techy at a dinner party.&lt;br /&gt;&lt;br /&gt;Conferences are a self-selecting audience, I know - these are the people who are investing time and money in advancing their careers, or at least encouraging their employers to do. &amp;nbsp;But for the punchline of this session, these are exactly the right people. &amp;nbsp;We need to go out, tell everyone how much we enjoy our jobs; tell kids that programming is cool, and &lt;i&gt;show&lt;/i&gt; them it&amp;rsquo;s fun; mentor other people, and each other, and be a role model. &amp;nbsp;I don&amp;rsquo;t care what gender you are or what colour you are or what your dark secret is - &lt;i&gt;you&lt;/i&gt; are the role model to inspire someone. &lt;br /&gt;&lt;br /&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/p/just-do-something.html&#34;&gt;Just do it&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3513&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3513&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     

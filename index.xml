@@ -6,7 +6,22 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 02 Jul 2015 00:00:00 UTC</updated>
+    <updated>Sat, 18 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Interviewed by InfoQ</title>
+      <link>http://trishagee.github.io/post/interviewed_for_infoq/</link>
+      <pubDate>Sat, 18 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/interviewed_for_infoq/</guid>
+      <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
+interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
+but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
+of the JCP, and the future of Java.&lt;/p&gt;
+
+&lt;p&gt;Video and the transcript are &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-java-eco-system&#34;&gt;available on InfoQ&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>My Path To Evangelism</title>
@@ -1943,19 +1958,6 @@ of excluding this from the suggestions in the future.&lt;/p&gt;
 &lt;p&gt;That&amp;rsquo;s what I found from just one day of browsing the documentation and setting up my IDE from scratch yet again.
 Maybe I&amp;rsquo;ll promptly forget all these, or maybe they&amp;rsquo;ll be new weapons in my armoury of IDE-fu. Either way, maybe one or
 two people will find this useful.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Developers want to be heard</title>
-      <link>http://trishagee.github.io/post/developers_want_to_be_heard/</link>
-      <pubDate>Thu, 11 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/developers_want_to_be_heard/</guid>
-      <description>&lt;p&gt;I wrote a &lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;piece for the Java Advent Blog&lt;/a&gt;,
-about how developers aren&amp;rsquo;t just communing with the computer, they also need to feel listened to by real human beings.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;Read it here&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
