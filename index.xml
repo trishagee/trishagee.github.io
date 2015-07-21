@@ -61,6 +61,12 @@ though the lesson didn&amp;rsquo;t cover Streams at all. We wanted to understand
 parallel.&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;p&gt;Of course, I also snuck in some demos of &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&amp;rsquo;s&lt;/a&gt; awesomeness, including
+its magical support for creating lambdas and turning things into (and from) method references.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8mooc/ReplaceWithMethodReferenceMac.gif&#34; alt=&#34;Converting code to Java 8&#34; title=&#34;Converting code to Java 8&#34; /&gt;
+&lt;/p&gt;
+
 &lt;p&gt;It was a great, collaborative session, with most people getting a chance to demonstrate their code (if they wanted
 to!). And at the end we had solutions to the five exercise problems and had discussed all the areas people wanted
 more clarity on.&lt;/p&gt;
