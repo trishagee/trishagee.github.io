@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Testing on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/testing/index.xml/</link>
+    <link>http://trishagee.github.io/tags/testing/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -19,7 +19,7 @@
 &lt;p&gt;I presented a new talk at &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago 2015&lt;/a&gt;
 about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
 talk covers the same case study as
-&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.&lt;/p&gt;
 
@@ -29,7 +29,7 @@ fail, my hand-drawn style is even more hand-drawn than usual).&lt;/p&gt;
 
 &lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Questions&lt;/h2&gt;
+&lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
 
 &lt;p&gt;I sadly did not have a lot of time for questions during the presentation, but
 thanks to the wonders of modern technology, I have a list of unanswered
@@ -185,7 +185,7 @@ hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more o
 
 &lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
 I cover this in
-&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
 short version is, I did a week-long spike to investigate whether Spock would
 make testing easier for us, showed the pros and cons to the whole team, and
 then led by example writing tests that (I thought) were more readable than
@@ -352,7 +352,7 @@ know is still used at LMAX.  Dave Farley talks about it in some of his
 &lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;resources:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;My talk that specifically looks at the
@@ -384,7 +384,7 @@ testing&lt;/a&gt;.&lt;/li&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
 and c) write readable tests?&lt;/p&gt;

@@ -1,12 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Recent Content on Trisha Gee </title>
-    <link>http://trishagee.github.io/index.xml/</link>
+      <title> on Trisha Gee </title>
+    <link>http://trishagee.github.io/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Sat, 18 Jul 2015 00:00:00 UTC</updated>
+    <updated>Tue, 21 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 MOOC - Session 1 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session1/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session1/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&amp;rsquo;re
+feeling very smart!) help people who may be struggling (or might not have watched the videos).&lt;/p&gt;
+
+&lt;p&gt;Last night we had the first session which went really well. We had a small-ish group, about half of whom had
+completed the homework and the quiz (for the first lesson) and half had not. We worked through the homework exercises
+together, saw how there were multiple solutions for each problem, and explored how to balance conciseness with
+longer, more descriptive code.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;First offline session for lesson 1 of the lambdas and streams mooc &lt;a href=&#34;https://twitter.com/hashtag/java8?src=hash&#34;&gt;#java8&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/40gradosAlaSombra?src=hash&#34;&gt;#40gradosAlaSombra&lt;/a&gt; &lt;a href=&#34;http://t.co/hJgPrLl3C5&#34;&gt;pic.twitter.com/hJgPrLl3C5&lt;/a&gt;&lt;/p&gt;&amp;mdash; SVQ JUG (@SVQJUG) &lt;a href=&#34;https://twitter.com/SVQJUG/status/623199430158778368&#34;&gt;July 20, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;On the whole people thought the videos for the course were very clear and well-explained, although we also went
+through how to run the videos at 1.5 speed, as most people wanted to run through them faster! I thought the pace of the
+videos was especially good for those who aren&amp;rsquo;t so comfortable with listening in English, and it&amp;rsquo;s easy to add
+subtitles and speed it up if you feel comfortable with the material.&lt;/p&gt;
+
+&lt;p&gt;The first lesson covers lambdas, and their use in some of the new Java 8 methods (specifically on collections, but
+&lt;em&gt;not&lt;/em&gt; streams).&lt;/p&gt;
+
+&lt;p&gt;The areas we discussed most, the ones that needed more clarity were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html&#34;&gt;Functional Interfaces&lt;/a&gt;:
+what does &lt;a href=&#34;https://dzone.com/articles/introduction-functional-1&#34;&gt;Single Abstract Method (SAM)&lt;/a&gt; really mean? Also, we
+were interested in the &amp;ldquo;exception&amp;rdquo; of methods declared on &lt;code&gt;Object&lt;/code&gt; as well as an interface (e.g. &lt;code&gt;equals()&lt;/code&gt;), but we
+came
+to the conclusion that it was easier to simply think of looking for only one method without any form of
+implementation at all - methods defined on &lt;code&gt;Object&lt;/code&gt; must have an implementation, since &lt;code&gt;Object&lt;/code&gt; is not an
+abstract class or interface.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;: we looked at
+examples of the three types that aren&amp;rsquo;t constructor references, what they look like in lambda form and how they
+differ. Method references are&amp;hellip; not difficult to understand, but do look a bit awkward in the code if you&amp;rsquo;re not
+used to them, and can be confusing as all your types, parameters and return values disappear.&lt;/li&gt;
+&lt;li&gt;Parallel execution: The first lesson talks a lot about how lambdas are here to make parallelisation and
+concurrency easier for developers, so obviously there was a question about how the code in the homework examples would
+be executed in a multi-CPU environment. I assumed (although I&amp;rsquo;m waiting for clarification) that methods like
+&lt;code&gt;removeIf&lt;/code&gt; are not parallelised, since in the case of Streams you have to explicitly state you want to go parallel.
+We also talked a bit about
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#parallel--&#34;&gt;parallel()&lt;/a&gt; and
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#parallelStream--&#34;&gt;parallelStream()&lt;/a&gt;, even
+though the lesson didn&amp;rsquo;t cover Streams at all. We wanted to understand a bit more about the pros and cons of going
+parallel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It was a great, collaborative session, with most people getting a chance to demonstrate their code (if they wanted
+to!). And at the end we had solutions to the five exercise problems and had discussed all the areas people wanted
+more clarity on.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Interviewed by InfoQ</title>
@@ -126,7 +185,7 @@ I told LMAX that was why I was leaving, and off I went.&lt;/p&gt;
 unassigned to a project, I invested that time in porting the blog to a
 more sensible platform, and trying to write a blog a day. Again, I picked
 topics I could comfortably talk about - I spoke about my experiences as a
-&lt;a href=&#34;/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
+&lt;a href=&#34;http://trishagee.github.io/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
 time&lt;/a&gt; (sometimes people will be arsey
 with beginners, but in reality many real human beings can&amp;rsquo;t tell you you&amp;rsquo;re
 wrong when you&amp;rsquo;re just talking about your own experiences), and despite my
@@ -231,7 +290,7 @@ answering questions for the last 6 months.&lt;/p&gt;
 &lt;p&gt;It really was as terrifying as I thought.  But.  It went well. I answered
 difficult questions. We got great feedback.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
 was an important milestone in my evangelism career.  Not only
 did I get to put this presentation on my CV, I got to meet a lot of people in
 this network: Martin introduced me to a lot of high performance specialists;
@@ -244,9 +303,9 @@ and they introduced me to
 to be an important step in turning an idea I had for a panel into a Devoxx
 reality.&lt;/p&gt;
 
-&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
+&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;http://trishagee.github.io/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
 with Mike&lt;/a&gt;, and at
-&lt;a href=&#34;/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
+&lt;a href=&#34;http://trishagee.github.io/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
 largely thanks to the contacts I
 had made and the prestige of having a JavaOne talk under my belt.  So I went
 from basically zero at the start of that year (my blog had been dormant for
@@ -375,7 +434,7 @@ could get going straight away without any ramp up&lt;/p&gt;
       <pubDate>Tue, 30 Jun 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;http://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;7-8 Sep&lt;/strong&gt;: &lt;a href=&#34;http://swancon.co.uk/#speakers&#34;&gt;Swansea Con&lt;/a&gt; - &lt;a href=&#34;http://swancon.co.uk/schedule/#session-7&#34;&gt;Level Up Your
@@ -401,7 +460,7 @@ newest family member.&lt;/p&gt;
 &lt;p&gt;I presented a new talk at &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago 2015&lt;/a&gt;
 about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
 talk covers the same case study as
-&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.&lt;/p&gt;
 
@@ -411,7 +470,7 @@ fail, my hand-drawn style is even more hand-drawn than usual).&lt;/p&gt;
 
 &lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Questions&lt;/h2&gt;
+&lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
 
 &lt;p&gt;I sadly did not have a lot of time for questions during the presentation, but
 thanks to the wonders of modern technology, I have a list of unanswered
@@ -567,7 +626,7 @@ hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more o
 
 &lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
 I cover this in
-&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
 short version is, I did a week-long spike to investigate whether Spock would
 make testing easier for us, showed the pros and cons to the whole team, and
 then led by example writing tests that (I thought) were more readable than
@@ -734,7 +793,7 @@ know is still used at LMAX.  Dave Farley talks about it in some of his
 &lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;resources:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;My talk that specifically looks at the
@@ -766,7 +825,7 @@ testing&lt;/a&gt;.&lt;/li&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
 and c) write readable tests?&lt;/p&gt;
@@ -816,7 +875,7 @@ of the developers.&lt;/i&gt;&lt;/p&gt;
       <pubDate>Thu, 21 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/android_xtended/</guid>
-      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
+      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
 calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;You may have noticed that the more I go to conferences, the less I write about them.  I could claim lack of time, but
@@ -824,12 +883,12 @@ the fact is that all my write-ups will be something along the lines of &amp;ldqu
 think, met interesting people, gave a talk or two that seemed to go well&amp;rdquo;. Not sure if people get bored of reading
 that, but I get bored of writing it.&lt;/p&gt;
 
-&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
+&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;That&amp;rsquo;s not to say I&amp;rsquo;m bored of conferences. On the contrary - since I work from home, travelling to new places and
 meeting Real Human Beings keeps me sane. Plus conferences are fun.&lt;/p&gt;
 
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
 setup&#34; title=&#34;The setup&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;But I went to a conference on Saturday that makes me feel compelled to write something, and not just because it was
@@ -840,27 +899,27 @@ Android events every other month, they decided they had so many interesting spea
 in Sevilla that they wanted to run a whole day, single track conference, on behalf of &lt;a href=&#34;https://plus.google.com/communities/114997118727600981533&#34;&gt;GDG Sevilla&lt;/a&gt;.
 &lt;a href=&#34;http://www.androidxtended.com/&#34;&gt;Android Xtended&lt;/a&gt; was born.&lt;/p&gt;
 
-&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
+&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
  
 
 &lt;p&gt;As a Java &amp;ldquo;Technical Advocate&amp;rdquo;, I suppose I should keep an eye on what&amp;rsquo;s going on in the Android space, it&amp;rsquo;s quite a
-huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
+huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
 of official capacity (I wasn&amp;rsquo;t speaking, manning a booth, organising or sponsoring), so I could just enjoy it.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Firstly, they roped me into doing registrations. Me! I was concerned my Spanish wasn&amp;rsquo;t up for it, but apparently I only
 needed two words: &amp;ldquo;nombre&amp;rdquo; and &amp;ldquo;talla&amp;rdquo; (for the t-shirt). Oh, and &amp;ldquo;treinta y uno b&amp;rdquo; - there was such demand for the
 conference the initial venue wasn&amp;rsquo;t big enough, so it was being hosted at two sites on the same road. Not
 surprisingly, some turned up to the wrong one.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Unlike a large number of our &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;/&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; events, all the talks were in Spanish. So feel
 free to ignore my analysis if you like - my Spanish comprehension is pretty good, but sometimes I don&amp;rsquo;t realise when
 I didn&amp;rsquo;t understand something and just make up my own story.&lt;/p&gt;
 
-&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
+&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
 alt=&#34;@flipper83&#34; title=&#34;@flipper83&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;A lot of what I&amp;rsquo;ve seen so far in the Android space is Getting Started type material - a lot of tutorials and
@@ -870,7 +929,7 @@ interest me as an experienced Java person - easy automation of testing, good des
  need to re-iterate it in the Android space. Or it may be that I don&amp;rsquo;t see the entry-level Java stuff any more,
  because I don&amp;rsquo;t need it, and I seek out the topics that interest me.&lt;/p&gt;
 
-&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
+&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
  alt=&#34;@JMPergar&#34; title=&#34;@JMPergar&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Or it may be that as Android is one of those
@@ -879,7 +938,7 @@ interest me as an experienced Java person - easy automation of testing, good des
  reason, I had been starting to feel like the Android ecosystem was missing people taking developers beyond that
  initial step of getting something to work and up to the level of creating maintainable code.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Android Xtended put my mind at rest. Here was a range of talks that led attendees through the things that will make
 them more effective developers - tools and libraries to use; testing approaches; integration with persistence; clean
@@ -888,12 +947,12 @@ of JetBrains, I was obviously very happy to see both
 &lt;a href=&#34;http://developer.android.com/tools/studio/index.html&#34;&gt;Android Studio&lt;/a&gt; and
 &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; mentioned and used throughout as well.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;As well as fantastic speakers (they knew their stuff, were clearly practitioners, and all had great individual
 presentation styles), there were three mob-programming sessions.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;This was an ambitious attempt to not just preach to
 a passive audience, but to involve them in creating real, working code to teach fundamental practices - dependency
@@ -903,27 +962,27 @@ of not just how to use the technologies, but what they were for. I also saw a lo
 realise the power of refactoring using an IDE - I firmly believe the best way to teach the power of a tool is by
 pair programming or, at least, using the tool in real use cases in front of people.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;The mob programming was kinda
 like a half day tutorial squished into an hour. I&amp;rsquo;d be interested to hear how the attendees found it. For me, since
 this was a full day conference that cost €10, I thought getting three short tutorials as well as five excellent
 talks was &lt;em&gt;very&lt;/em&gt; good value for money.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
   
 
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
 alt=&#34;Interesting...&#34; title=&#34;Interesting...&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;I&amp;rsquo;d be remiss in talking about the conference if I didn&amp;rsquo;t mention the venue.  We were at
 &lt;a href=&#34;http://espaciores.org/&#34;&gt;Espacio RES&lt;/a&gt;, which was pretty easy to get to, and a really nice, airy, comfortable
-space&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+space&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
 And they let us rearrange their whole place just for us. The only downside is that it doesn&amp;rsquo;t hold more people, which
 is a shame, and the reason we had to host on two sites (I can&amp;rsquo;t comment on the other site as I stayed
 at RES the whole day, but we&amp;rsquo;re very grateful to &lt;a href=&#34;https://bitnami.com/&#34;&gt;Bitnami&lt;/a&gt; for lending us their offices as well).&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;So, what did I learn?&lt;/p&gt;
 
@@ -936,11 +995,11 @@ talent being showcased, it gives developers here good role models and shows that
 Spain.&lt;/li&gt;
 &lt;li&gt;Sevilla has a very healthy tech scene with people more than happy to give up a Saturday to learn new things. In
 fact, for some set of people, they prefer Saturdays to weekday
-evenings&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
+evenings&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
 future&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
  Saturdays?&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Android Xtended was a fantastic event, with great speakers and engaged attendees.  I loved how social
@@ -949,7 +1008,7 @@ future&amp;hellip;&lt;/li&gt;
  arranging it, you would never believe from how smoothly it went that this two-venue event was organised by just two
  guys. Well done &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt;!&lt;/p&gt;
 
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1004,7 +1063,7 @@ future&amp;hellip;&lt;/li&gt;
       <guid>http://trishagee.github.io/post/blind_cfps_2/</guid>
       <description>
 
-&lt;p&gt;Since publishing &lt;a href=&#34;/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
+&lt;p&gt;Since publishing &lt;a href=&#34;http://trishagee.github.io/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
 another post to answer them.&lt;/p&gt;
 
 &lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
@@ -1013,7 +1072,7 @@ is an answer to &amp;ldquo;How do I get more women speakers at my conference?&am
 women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
 in the conferences I speak at/help organise.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_0&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
+&lt;h4 id=&#34;you-re-missing-the-point-of-blind-cfps:43f099050d27fb0647d57b33c7259595&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
 
 &lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
 in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
@@ -1031,7 +1090,7 @@ minorities for not meeting your criteria.&lt;/p&gt;
 &lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
 of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_1&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
+&lt;h4 id=&#34;an-abstract-is-not-a-representation-of-your-talk:43f099050d27fb0647d57b33c7259595&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
 
 &lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
 a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
@@ -1053,7 +1112,7 @@ to writing good abstracts (or CVs), but mastery of that skill does not necessari
 represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
 being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_2&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
+&lt;h4 id=&#34;for-goodness-sake-trisha-the-postscript-is-nearly-longer-than-the-original-post:43f099050d27fb0647d57b33c7259595&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
 
 &lt;p&gt;Yeah, sorry.&lt;/p&gt;
 
@@ -1081,7 +1140,7 @@ audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
       <guid>http://trishagee.github.io/post/blind_cfps/</guid>
       <description>
 
-&lt;p&gt;Off the back of &lt;a href=&#34;/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
+&lt;p&gt;Off the back of &lt;a href=&#34;http://trishagee.github.io/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
 around blind &lt;a href=&#34;http://www.wikicfp.com/cfp/&#34;&gt;CFPs&lt;/a&gt; (Call For Papers - usually to get into a conference you submit to a CFP) for
 conferences. I often hear it said that a blind CFP will fix, or at least improve, the diversity imbalance at conferences.&lt;/p&gt;
 
@@ -1187,10 +1246,10 @@ because I have two X chromosomes, I found half of those just now, in less than t
 &lt;li&gt;Put the faces of the women you do want to have speak (or the women on your programme committee, or both) on your
 website - showing these women sends the message that this conference is for women. It should also impact the diversity
 of your attendees.&lt;/li&gt;
-&lt;li&gt;Reach out to specific women speakers and ask them to present. &lt;a href=&#34;/post/more_female_speakers&#34;&gt;I&amp;rsquo;ve talked about this before&lt;/a&gt;,
+&lt;li&gt;Reach out to specific women speakers and ask them to present. &lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;I&amp;rsquo;ve talked about this before&lt;/a&gt;,
 women speakers are few and far between, and a) they get
 booked in advance and b) are busy enough not to have to (or want to) submit via a CFP process.&lt;/li&gt;
-&lt;li&gt;There are &lt;a href=&#34;/post/more_female_speakers&#34;&gt;more ideas here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;There are &lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;more ideas here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And there&amp;rsquo;s more - you don&amp;rsquo;t just have to drain the pool dry of known competent speakers-who-tick-some-diversity-box. With
@@ -1247,9 +1306,9 @@ the overall ecosystem.&lt;/p&gt;
 cues.  Diversity is only going to happen if people fight for it, and if we actively train, mentor, and support those
 trying to break through the barriers.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Postscript&lt;/h3&gt;
+&lt;h3 id=&#34;postscript:db2f562112b18dc104706e916c34cc92&#34;&gt;Postscript&lt;/h3&gt;
 
-&lt;p&gt;I wrote a &lt;a href=&#34;/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
+&lt;p&gt;I wrote a &lt;a href=&#34;http://trishagee.github.io/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
 </description>
     </item>
     
@@ -1349,7 +1408,7 @@ of us tell our different tales, we have a better view of the whole ecosystem (an
 Craft Conf, and the resources I used to create
 the talk. This page will be updated with more resources as and when they become available.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_0&#34;&gt;Videos and slides&lt;/h4&gt;
+&lt;h4 id=&#34;videos-and-slides:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Videos and slides&lt;/h4&gt;
 
 &lt;div data-parleys-presentation=&#34;java-8-anger&#34; style=&#34;width:100%;height:300px&#34;&gt;&lt;script type = &#34;text/javascript&#34; 
 src=&#34;//parleys.com/js/parleys-share.js&#34;&gt;&lt;/script&gt;&lt;a href=&#34;https://www.parleys.com/play/java-8-anger&#34;&gt;Watch on Parleys.com&lt;/a&gt;&lt;/div&gt;  
@@ -1361,7 +1420,7 @@ src=&#34;//parleys.com/js/parleys-share.js&#34;&gt;&lt;/script&gt;&lt;a href=&#3
 &lt;a href=&#34;http://www.infoq.com/presentations/java8-tutorial&#34;&gt;First ever version! QCon London&lt;/a&gt; (code has been
 simplified a little since then)&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_1&#34;&gt;Project code&lt;/h4&gt;
+&lt;h4 id=&#34;project-code:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Project code&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;The full application code on the master branch branch of my &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;sense repository&lt;/a&gt;.
@@ -1369,7 +1428,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;The code created on stage at QCon London is on the &lt;a href=&#34;https://github.com/trishagee/sense/tree/qcon&#34;&gt;QCon branch&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_2&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
+&lt;h4 id=&#34;java-8-java-ee-overview:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://winterbe.com/posts/2014/03/16/java-8-tutorial/&#34;&gt;Java 8 Tutorial&lt;/a&gt;&lt;/li&gt;
@@ -1378,7 +1437,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/143024626X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=143024626X&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=R75X5UJWBVYK4SV4&#34;&gt;Beginning Java EE 7&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_3&#34;&gt;Lambdas and Streams&lt;/h4&gt;
+&lt;h4 id=&#34;lambdas-and-streams:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Lambdas and Streams&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Lambdas and Streams&lt;/a&gt; by Richard Warburton,  highly recommended&lt;/li&gt;
@@ -1388,7 +1447,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Code: &lt;a href=&#34;https://github.com/RichardWarburton/lambda-behave&#34;&gt;lambda-behave&lt;/a&gt;, a Java 8 testing framework&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_4&#34;&gt;JavaFX&lt;/h4&gt;
+&lt;h4 id=&#34;javafx:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;JavaFX&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784&#34;&gt;Introduction to JavaFX&lt;/a&gt; - invaluable. Short enough to download as PDF and read cover-to-cover.&lt;/li&gt;
@@ -1404,7 +1463,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;, includes a section on JavaFX&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_5&#34;&gt;Websockets&lt;/h4&gt;
+&lt;h4 id=&#34;websockets:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Websockets&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html&#34;&gt;JSR-356, Java API for WebSocket&lt;/a&gt;&lt;/li&gt;
@@ -1417,7 +1476,7 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Code: &lt;a href=&#34;https://github.com/jetty-project/embedded-jetty-websocket-examples&#34;&gt;embedded-jetty-websocket-examples&lt;/a&gt; examples of how to create Jetty Websockets&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_6&#34;&gt;Date and Time&lt;/h4&gt;
+&lt;h4 id=&#34;date-and-time:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Date and Time&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Java SE 8 Date and Time&lt;/a&gt; by Ben Evans and Richard Warburton&lt;/li&gt;
@@ -1425,25 +1484,25 @@ This contains some refactorings that have not been demoed yet.&lt;/li&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_7&#34;&gt;Optional&lt;/h4&gt;
+&lt;h4 id=&#34;optional:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Optional&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.voxxed.com/blog/2015/02/defence-java-8s-optional-use/&#34;&gt;In Defence of Java 8&amp;rsquo;s Optional: Why and How to Use It&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_8&#34;&gt;Files&lt;/h4&gt;
+&lt;h4 id=&#34;files:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Files&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/essential/io/file.html&#34;&gt;Reading, Writing, and Creating Files&lt;/a&gt; - much simplified since Java 7&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_9&#34;&gt;Microservices&lt;/h4&gt;
+&lt;h4 id=&#34;microservices:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Microservices&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Martin Fowler on Microservices: &lt;a href=&#34;http://youtu.be/wgdBVIX9ifA&#34;&gt;25 minute video overview&lt;/a&gt; and &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;article&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_10&#34;&gt;Special Thanks To&amp;hellip;&lt;/h4&gt;
+&lt;h4 id=&#34;special-thanks-to:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Special Thanks To&amp;hellip;&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.com.es/&#34;&gt;Martin Thompson&lt;/a&gt;, &lt;a href=&#34;http://insightfullogic.com/blog/&#34;&gt;Richard Warburton&lt;/a&gt;,
 &lt;a href=&#34;http://www.codingthearchitecture.com/authors/rannett/&#34;&gt;Robert Annett&lt;/a&gt; and &lt;a href=&#34;http://hadihariri.com/&#34;&gt;Hadi Hariri&lt;/a&gt; for
@@ -1451,7 +1510,7 @@ code reviewing and giving great suggestions. Not all suggestions have been imple
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;toc_11&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Java 9 is just around the corner, and yet many of us developers have yet to use Java 8 features in an application. The
 goal of this presentation is to move beyond slide-sized examples of streams and lambdas, and to show how to build a
@@ -1544,7 +1603,7 @@ dependencies in your code that need to change.&lt;/li&gt;
 to-watch list.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_0&#34;&gt;Ideas&lt;/h4&gt;
+&lt;h4 id=&#34;ideas:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Ideas&lt;/h4&gt;
 
 &lt;p&gt;It became clear throughout the talk there are plenty of ideas that we could explore in later presentations.  If you want to see
 any of the following, add a comment or ping me or &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;IsraKaos&lt;/a&gt; on twitter or Meetup and we&amp;rsquo;ll try and schedule it.&lt;/p&gt;
@@ -1562,7 +1621,7 @@ do so, drop me a line:&lt;/p&gt;
 &lt;li&gt;Java EE&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
+&lt;h4 id=&#34;further-reading:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Further Reading&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;
@@ -1586,7 +1645,7 @@ do so, drop me a line:&lt;/p&gt;
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
 Sign up with code SPEAKGEE100 for Â£100 off the price!&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Who is this for?&lt;/h2&gt;
+&lt;h2 id=&#34;who-is-this-for:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Who is this for?&lt;/h2&gt;
 
 &lt;p&gt;This workshop is aimed at Java developers who want to learn more about how
 to rapidly prototype applications using web front-end technologies with JVM back-end technologies. The workshop may be
@@ -1599,7 +1658,7 @@ but this is &lt;em&gt;not&lt;/em&gt; an introduction to Java and familiarity wit
 
 &lt;p&gt;This is a hands-on workshop, bring a laptop set up according to the following instructions - you will be writing code!&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Overview&lt;/h2&gt;
+&lt;h2 id=&#34;overview:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Overview&lt;/h2&gt;
 
 &lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/klw9pIuTICM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -1608,7 +1667,7 @@ setup for the workshop.&lt;/p&gt;
 
 &lt;p&gt;The setup instructions below are the same process, so you can copy &amp;amp; paste where appropriate.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Setup&lt;/h2&gt;
+&lt;h2 id=&#34;setup:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Setup&lt;/h2&gt;
 
 &lt;p&gt;I am assuming you already have a version of the Java SDK downloaded. For this workshop, Java 7 or above should work, but
 I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;&gt;download the latest version of Java 8&lt;/a&gt; if you&amp;rsquo;re not already using it.&lt;/p&gt;
@@ -1616,7 +1675,7 @@ I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/do
 &lt;p&gt;Create a new work area for this tutorial. For the rest of these instructions I&amp;rsquo;ll refer to it as &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;.  I&amp;rsquo;ve put
  mine in &lt;code&gt;~/Projects/workshops/qcon2015&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Installing MongoDB&lt;/h2&gt;
+&lt;h2 id=&#34;installing-mongodb:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Installing MongoDB&lt;/h2&gt;
 
 &lt;p&gt;I&amp;rsquo;m going to be using &lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;MongoDB 3.0.0-rc8&lt;/a&gt;, but version 2.6 will be fine too.&lt;/p&gt;
 
@@ -1628,12 +1687,12 @@ have a folder at &lt;code&gt;&amp;lt;location&amp;gt;/data&lt;/code&gt;&lt;/p&gt
 
 &lt;p&gt;From the command line, start MongoDB to make sure everything is working.  From the &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt; directory:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_4&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongod --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_5&#34;&gt;Windows:&lt;/h5&gt;
+&lt;h5 id=&#34;windows:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows:&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongod.exe --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
@@ -1643,12 +1702,12 @@ MongoDB should be running on localhost and port 27017&lt;/p&gt;
 
 &lt;p&gt;Connect to the shell to make sure it&amp;rsquo;s working:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_6&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_7&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;windows-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongo.exe
 &lt;/code&gt;&lt;/pre&gt;
@@ -1668,18 +1727,18 @@ Questions? Try the support group
 &amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_8&#34;&gt;Creating your project&lt;/h2&gt;
+&lt;h2 id=&#34;creating-your-project:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Creating your project&lt;/h2&gt;
 
 &lt;p&gt;Clone &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;the Cafelito project&lt;/a&gt; into &lt;code&gt;&amp;lt;location&amp;gt;/cafelito&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;In a terminal/command line, navigate to this location, and run:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_9&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./gradlew check
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_10&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;windows-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;gradlew.bat check
 &lt;/code&gt;&lt;/pre&gt;
@@ -1695,7 +1754,7 @@ the dependencies for you.&lt;/p&gt;
 &lt;p&gt;Feel free to use Eclipse or
 Netbeans (or whatever your favourite IDE is) but I&amp;rsquo;m out of practice using those IDEs and might not be able to help you out as much.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_11&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
+&lt;h2 id=&#34;and-now:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
 
 &lt;p&gt;You should be ready to begin: you have a working instance of MongoDB, a skeleton project that we&amp;rsquo;ll be working with, and all the
 dependencies should have been downloaded.&lt;/p&gt;
@@ -1719,7 +1778,7 @@ and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this
 are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
 cases.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Navigate between methods&lt;/h3&gt;
+&lt;h3 id=&#34;navigate-between-methods:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Navigate between methods&lt;/h3&gt;
 
 &lt;p&gt;Now I knew you could use the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-2.Structure&#34;&gt;structure thingie&lt;/a&gt;
 (Ctrl+F12) to let you navigate to methods in your class (although I never actually
@@ -1727,7 +1786,7 @@ use it, it somehow never sticks in my head).  What I did &lt;em&gt;not&lt;/em&gt
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-5.Navigatebetweenmethods&#34;&gt;jump between methods&lt;/a&gt;
 using Alt+Up/Down arrows.  This strikes me as being super useful, especially to browse tests.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;Refactoring String Fragments&lt;/h3&gt;
+&lt;h3 id=&#34;refactoring-string-fragments:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Refactoring String Fragments&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve wanted this feature so many times, but could never find it or get it to work - did you know you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-4.Stringfragments&#34;&gt;refactor out parts of a
 hardcoded string&lt;/a&gt;
@@ -1736,37 +1795,37 @@ shortcuts - e.g. Ctrl+Alt+V to extract it into a variable.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m sure I&amp;rsquo;ve tried this before and it didn&amp;rsquo;t work.  But I&amp;rsquo;ve tested it and it does!&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;Invert Boolean&lt;/h3&gt;
+&lt;h3 id=&#34;invert-boolean:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Invert Boolean&lt;/h3&gt;
 
 &lt;p&gt;There doesn&amp;rsquo;t seem to be a keyboard shortcut mapped by default, but using &amp;ldquo;Refactor -&amp;gt; Invert Boolean&amp;hellip;&amp;rdquo; (or using
-&lt;a href=&#34;/post/stuff_i_learnt_about_intellij/index.html#toc_0&#34;&gt;our newly discovered&lt;/a&gt; &amp;ldquo;Navigate to Action&amp;rdquo; shortcut of Shift+Ctrl+A and typing &amp;ldquo;Invert&amp;rdquo;) you can tell IntelliJ you want
+&lt;a href=&#34;http://trishagee.github.io/post/stuff_i_learnt_about_intellij/index.html#toc_0&#34;&gt;our newly discovered&lt;/a&gt; &amp;ldquo;Navigate to Action&amp;rdquo; shortcut of Shift+Ctrl+A and typing &amp;ldquo;Invert&amp;rdquo;) you can tell IntelliJ you want
 a boolean field to mean the &lt;em&gt;opposite&lt;/em&gt; thing, and it will
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-6.Invertboolean&#34;&gt;flip the meaning everywhere&lt;/a&gt;.
 For example, you might have an &lt;code&gt;saved&lt;/code&gt; flag, and you now want it to mean &lt;code&gt;notSaved&lt;/code&gt; - IntelliJ will make sure the
 &lt;code&gt;isSaved&lt;/code&gt; method returns &lt;code&gt;!notSaved&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Magic Refactor Suggestions&lt;/h3&gt;
+&lt;h3 id=&#34;magic-refactor-suggestions:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Magic Refactor Suggestions&lt;/h3&gt;
 
 &lt;p&gt;You don&amp;rsquo;t always know exactly what refactoring operation you want to perform, and IntelliJ is ready to help - it can
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-10.Refactorthis&#34;&gt;suggest refactorings available in the current context&lt;/a&gt;
 using the catchy magic incantation Ctrl+Shift+Alt+T.  Seems useful, but I&amp;rsquo;m pretty sure I&amp;rsquo;m not going to remember that
 one.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;Highlight implemented/overridden methods&lt;/h3&gt;
+&lt;h3 id=&#34;highlight-implemented-overridden-methods:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Highlight implemented/overridden methods&lt;/h3&gt;
 
 &lt;p&gt;I love everything about IntelliJ&amp;rsquo;s ability to find usages of things - finding where methods are called, finding
 implementations of a method, highlighting usages of a field, method or variable&amp;hellip; What I didn&amp;rsquo;t know, is that you can
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Find+Usages#FindUsages-6.Highlightimplementedandoverriddenmethods&#34;&gt;highlight the methods that implement or override a specific interface or superclass&lt;/a&gt;.
 For some people, this might not add much, as your little &amp;ldquo;I override something&amp;rdquo; icon&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/override.png&#34; alt=&#34;Overrides Something&#34; title=&#34;Overrides Something&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/stuff_i_learnt_about_intellij/override.png&#34; alt=&#34;Overrides Something&#34; title=&#34;Overrides Something&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;combined with the &lt;code&gt;@Override&lt;/code&gt; annotation, might tell you all you need to know. But that only really works if you&amp;rsquo;re implementing a
 a single interface.  If you&amp;rsquo;ve correctly separated your concerns, you might implement several interfaces, and want to know
 which are the methods from a particular one.  That&amp;rsquo;s where Shift+Ctrl+F7 on the &amp;ldquo;extends&amp;rdquo; keyword comes in handy.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;Run individual inspection by name&lt;/h3&gt;
+&lt;h3 id=&#34;run-individual-inspection-by-name:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Run individual inspection by name&lt;/h3&gt;
 
 &lt;p&gt;I use &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections&#34;&gt;inspections&lt;/a&gt; quite a lot.  They&amp;rsquo;re especially
 useful if you have a codebase that doesn&amp;rsquo;t quite conform to your ideal standards, so you can&amp;rsquo;t yet turn on automated
@@ -1782,19 +1841,19 @@ unused parameters or unused/untested methods, you could press Shift+Alt+Ctrl+I a
 &amp;ldquo;Unused Declaration&amp;rdquo; inspection and choose to run this on all uncommitted files.  This will tell you where you can
 clean up your code, and every commit should make your codebase that little bit better.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;Saving Power With Highlighting&lt;/h3&gt;
+&lt;h3 id=&#34;saving-power-with-highlighting:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Saving Power With Highlighting&lt;/h3&gt;
 
 &lt;p&gt;I did not know you could easily &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-7.Highlightinglevelandpowersavemode&#34;&gt;alter the active errors/warnings&lt;/a&gt;,
 and use that to save power.  Quite Interesting.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;Auto indent your lines&lt;/h3&gt;
+&lt;h3 id=&#34;auto-indent-your-lines:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Auto indent your lines&lt;/h3&gt;
 
 &lt;p&gt;I almost obsessively reformat my code as I go, pressing &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-1.Reformatcode&#34;&gt;Ctrl+Alt+L&lt;/a&gt;
 almost like a muscle twitch. What I&amp;rsquo;ve just discovered, though, is that there&amp;rsquo;s a &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-2.Autoindentlines&#34;&gt;shortcut which will just fix the line
 indentation&lt;/a&gt;,
 which is probably 80% of what I need anyway - Ctrl+Alt+I.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Fix Evil String Concatenation&lt;/h3&gt;
+&lt;h3 id=&#34;fix-evil-string-concatenation:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Fix Evil String Concatenation&lt;/h3&gt;
 
 &lt;p&gt;I can&amp;rsquo;t believe I didn&amp;rsquo;t notice this one earlier - do you know how many times I&amp;rsquo;ve gone around and manually changed:&lt;/p&gt;
 
@@ -1809,7 +1868,7 @@ which is probably 80% of what I need anyway - Ctrl+Alt+I.&lt;/p&gt;
 &lt;p&gt;Do you??? Anyway you don&amp;rsquo;t need to - Alt+Enter inside the params &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Intentions#Intentions-2.Stringconcatenation&#34;&gt;will suggest the replacement and do it for
 you&lt;/a&gt;. Nice.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_9&#34;&gt;VCS Quick Access&lt;/h3&gt;
+&lt;h3 id=&#34;vcs-quick-access:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;VCS Quick Access&lt;/h3&gt;
 
 &lt;p&gt;One of the areas where I &lt;em&gt;definitely&lt;/em&gt; don&amp;rsquo;t use IntelliJ to the best of its abilities is the Git integration.  I&amp;rsquo;ve
 been using &lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt; combined with IntelliJ to do most of my VCS management
@@ -1824,22 +1883,22 @@ find what on earth a &amp;ldquo;Back Quote&amp;rdquo; is, it&amp;rsquo;s &amp;#9
 corner of your keyboard (on the Mac, it&amp;rsquo;s on the bottom left next to the shift, but you shouldn&amp;rsquo;t need it since your
 shortcut is different anyway).&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_10&#34;&gt;Amend Commits&lt;/h3&gt;
+&lt;h3 id=&#34;amend-commits:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Amend Commits&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve just discovered that you can commit a change which smushes up into your last commit and fixes it.  I&amp;rsquo;m assuming it commits the
 new changes and (potentially) an updated commit message into the last change.  I really wish I&amp;rsquo;d known about this
 earlier, on a number of occasions in the last few months I&amp;rsquo;ve done this either manually or by doing a rather
 dangerous soft reset.  I will &lt;em&gt;definitely&lt;/em&gt; be using this in the future.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/amend-commit.png&#34; alt=&#34;Amend Commit&#34; title=&#34;Amend Commit&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/stuff_i_learnt_about_intellij/amend-commit.png&#34; alt=&#34;Amend Commit&#34; title=&#34;Amend Commit&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;toc_11&#34;&gt;The Cursor as a Breakpoint&lt;/h3&gt;
+&lt;h3 id=&#34;the-cursor-as-a-breakpoint:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;The Cursor as a Breakpoint&lt;/h3&gt;
 
 &lt;p&gt;Did you know that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Debugger#Debugger-5.Runtocursor&#34;&gt;use the cursor as a temporary breakpoint&lt;/a&gt;?
 I did not.  Well, now you know.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_12&#34;&gt;Labelling Changes&lt;/h3&gt;
+&lt;h3 id=&#34;labelling-changes:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Labelling Changes&lt;/h3&gt;
 
 &lt;p&gt;I hope by now none of us developers are doing that icky thing of having &lt;a href=&#34;https://twitter.com/trisha_gee/status/529299964787449856&#34;&gt;&amp;ldquo;Copy of&amp;hellip;&amp;rdquo; and &amp;ldquo;Backup of&amp;hellip;&amp;rdquo; filenames
 and directories&lt;/a&gt; to keep track of our versions.  We&amp;rsquo;re all using a VCS of course.  But if you&amp;rsquo;re being strict about making
@@ -1859,105 +1918,6 @@ shorter).&lt;/p&gt;
 &lt;p&gt;&lt;br/&gt;
 So, that&amp;rsquo;s the end of Week One at JetBrains, and already I&amp;rsquo;ve learnt a whole heap of things.  I&amp;rsquo;m sure there&amp;rsquo;s more to
 come, so stay tuned!&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>New IntelliJ Tricks I Learnt Today</title>
-      <link>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</link>
-      <pubDate>Wed, 07 Jan 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
-      <description>
-
-&lt;p&gt;Day three of my &lt;a href=&#34;/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
-of IntelliJ, since I&amp;rsquo;m
-already a &amp;ldquo;Power User&amp;rdquo;, to see if there&amp;rsquo;s stuff missing that someone like me might want to see. Firstly, a confession -
-I&amp;rsquo;m not sure I&amp;rsquo;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&amp;rsquo;ve dipped
-into it when I needed to know something, I&amp;rsquo;ve searched for help with specific items, but like many developers, I tend to
-use something first rather than read the documentation first.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
-and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
-else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;
-
-&lt;p&gt;So here&amp;rsquo;s today&amp;rsquo;s list, and feel free to laugh at me and be smug in my direction if you already knew these things (note: I
-have upgraded to IntelliJ 14, and at the time of writing I don&amp;rsquo;t know which of these features are new and which are
-simply previously undiscovered):&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Navigate directly to an action or option&lt;/h3&gt;
-
-&lt;p&gt;Press Shift+Ctrl+A (Windows) or Shift+Cmd+A (Mac) and start typing the name of the thing you want to do, or the setting
-you want to change. I&amp;rsquo;ve found this especially useful now I&amp;rsquo;m back on Windows and I don&amp;rsquo;t have that nice helpful typing
-box on the help menu that will take me straight to the menu item I want.  But what&amp;rsquo;s most useful about this for me today,
-as I&amp;rsquo;m setting up a new profile on a new laptop (more on the new laptop later, if it doesn&amp;rsquo;t defeat me utterly) is that
-from here, you can turn various settings on and off without having to navigate through the settings screen:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/action.png&#34; alt=&#34;Navigate to Action&#34; title=&#34;Navigate to Action&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;Statement completion&lt;/h3&gt;
-
-&lt;p&gt;I never knew there was a
-&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-4.Statementcompletion&#34;&gt;shortcut for finishing off a statement&lt;/a&gt;,
-all that Java boilerplate you need to keep the compiler happy - semi colons and curly brackets and everything.  But
-there is, and I can see it being super useful, especially if you&amp;rsquo;re using other bits of IntelliJ code completion to
-create the core of your line of code.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;Issue tracker integration&lt;/h3&gt;
-
-&lt;p&gt;I&amp;rsquo;m sure loads of people are already using integration with their favourite issue tracker, but I hadn&amp;rsquo;t really thought
-about this as something that I really cared about.  But I was watching the intro videos for YouTrack (not surprisingly
-I&amp;rsquo;ll be using this instead of Jira during my time at JetBrains) and when I saw
-&lt;a href=&#34;https://www.youtube.com/watch?v=n2_3Y1jLm5U&#34;&gt;how the IDE integration worked&lt;/a&gt;, I
-suddenly realised how this small thing can add up to save thousands of keystrokes over time, not to mention saving
-precious navigational seconds and window-switching.&lt;/p&gt;
-
-&lt;p&gt;For me, just the ability to generate at least the start of the commit message is a saving in time, and adds to project
-consistency if all your developers are doing the same thing.  On my last project we only just realised we all quoted the
-Jira issues in subtly different ways.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Settings shortcut keys&lt;/h3&gt;
-
-&lt;p&gt;When I initially started using IntelliJ in anger back in 2008, I was very much a point-and-click type user. Over time,
-pair programming with keyboard-super-users and giving live demos with very limited time available, I&amp;rsquo;ve worked harder
-to become a keyboard-shortcuts person.  With the latest version of IntelliJ, I can&amp;rsquo;t find the tiny icons I use to get to
-the settings window, something that I&amp;rsquo;ve been using a lot as I set up the new IDE instance on the new laptop.  So I bit
-the bullet and learnt the keyboard shortcuts, and it&amp;rsquo;s already saving me a bunch of time (on the rare occasions when the
-aforementioned &amp;ldquo;Navigate to Action&amp;rdquo; fails me).&lt;/p&gt;
-
-&lt;p&gt;Ctrl+Alt+S for the settings dialog (appears to be Cmd + , on the Mac)
-Shift+Ctrl+Alt+S for the project structure dialog (appears to be Cmd + ; on the Mac)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/settings.png&#34; alt=&#34;Settings Shortcuts&#34; title=&#34;Settings Shortcuts&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Yeah.  I can&amp;rsquo;t believe I wasn&amp;rsquo;t already using those either.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;Selecting the negative&lt;/h3&gt;
-
-&lt;p&gt;I use completion/suggestions all the time from IntelliJ, I&amp;rsquo;m far too lazy to type everything.  What I didn&amp;rsquo;t realise, is
-that you don&amp;rsquo;t just have to accept the default they give you.  If, for example, IntelliJ suggests a boolean value, you
-can get it to negate that value by selecting it with &amp;ldquo;!&amp;rdquo; instead of enter or tab.  Yes, I know I&amp;rsquo;ve done a horrible job
-of explaining that, but take a look at
-&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-5.Negatingcompletion&#34;&gt;the documentation&lt;/a&gt;
-and try it, it&amp;rsquo;s quite cool.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_5&#34;&gt;Exclude from Autocomplete&lt;/h3&gt;
-
-&lt;p&gt;Speaking of code completion, sometimes IntelliJ is sometimes just a bit too keen to suggest something, and you really
-will never want that value.  In the past, I&amp;rsquo;ve always used &lt;code&gt;Settings -&amp;gt; Editor -&amp;gt; General -&amp;gt; Auto Import&lt;/code&gt; to manage the
-suggestions (the most common one for me is I will never want &lt;code&gt;java.awt.List&lt;/code&gt;, I will almost always want
-&lt;code&gt;java.util.List&lt;/code&gt;).  Well, you don&amp;rsquo;t have to go into settings to do this, you can
-&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-9.Excludefromcompletion&#34;&gt;do it from the suggestions themselves&lt;/a&gt; -
-navigate to the item you don&amp;rsquo;t want (in my case, &lt;code&gt;java.awt.List&lt;/code&gt;) and press Alt+Enter, this will give you the option
-of excluding this from the suggestions in the future.&lt;/p&gt;
-
-&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
-
-&lt;p&gt;That&amp;rsquo;s what I found from just one day of browsing the documentation and setting up my IDE from scratch yet again.
-Maybe I&amp;rsquo;ll promptly forget all these, or maybe they&amp;rsquo;ll be new weapons in my armoury of IDE-fu. Either way, maybe one or
-two people will find this useful.&lt;/p&gt;
 </description>
     </item>
     

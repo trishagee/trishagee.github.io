@@ -2,11 +2,70 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Svqjug on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/svqjug/index.xml/</link>
+    <link>http://trishagee.github.io/tags/svqjug/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 29 Jan 2015 00:00:00 UTC</updated>
+    <updated>Tue, 21 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 MOOC - Session 1 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session1/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session1/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&amp;rsquo;re
+feeling very smart!) help people who may be struggling (or might not have watched the videos).&lt;/p&gt;
+
+&lt;p&gt;Last night we had the first session which went really well. We had a small-ish group, about half of whom had
+completed the homework and the quiz (for the first lesson) and half had not. We worked through the homework exercises
+together, saw how there were multiple solutions for each problem, and explored how to balance conciseness with
+longer, more descriptive code.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;First offline session for lesson 1 of the lambdas and streams mooc &lt;a href=&#34;https://twitter.com/hashtag/java8?src=hash&#34;&gt;#java8&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/40gradosAlaSombra?src=hash&#34;&gt;#40gradosAlaSombra&lt;/a&gt; &lt;a href=&#34;http://t.co/hJgPrLl3C5&#34;&gt;pic.twitter.com/hJgPrLl3C5&lt;/a&gt;&lt;/p&gt;&amp;mdash; SVQ JUG (@SVQJUG) &lt;a href=&#34;https://twitter.com/SVQJUG/status/623199430158778368&#34;&gt;July 20, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;On the whole people thought the videos for the course were very clear and well-explained, although we also went
+through how to run the videos at 1.5 speed, as most people wanted to run through them faster! I thought the pace of the
+videos was especially good for those who aren&amp;rsquo;t so comfortable with listening in English, and it&amp;rsquo;s easy to add
+subtitles and speed it up if you feel comfortable with the material.&lt;/p&gt;
+
+&lt;p&gt;The first lesson covers lambdas, and their use in some of the new Java 8 methods (specifically on collections, but
+&lt;em&gt;not&lt;/em&gt; streams).&lt;/p&gt;
+
+&lt;p&gt;The areas we discussed most, the ones that needed more clarity were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html&#34;&gt;Functional Interfaces&lt;/a&gt;:
+what does &lt;a href=&#34;https://dzone.com/articles/introduction-functional-1&#34;&gt;Single Abstract Method (SAM)&lt;/a&gt; really mean? Also, we
+were interested in the &amp;ldquo;exception&amp;rdquo; of methods declared on &lt;code&gt;Object&lt;/code&gt; as well as an interface (e.g. &lt;code&gt;equals()&lt;/code&gt;), but we
+came
+to the conclusion that it was easier to simply think of looking for only one method without any form of
+implementation at all - methods defined on &lt;code&gt;Object&lt;/code&gt; must have an implementation, since &lt;code&gt;Object&lt;/code&gt; is not an
+abstract class or interface.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;: we looked at
+examples of the three types that aren&amp;rsquo;t constructor references, what they look like in lambda form and how they
+differ. Method references are&amp;hellip; not difficult to understand, but do look a bit awkward in the code if you&amp;rsquo;re not
+used to them, and can be confusing as all your types, parameters and return values disappear.&lt;/li&gt;
+&lt;li&gt;Parallel execution: The first lesson talks a lot about how lambdas are here to make parallelisation and
+concurrency easier for developers, so obviously there was a question about how the code in the homework examples would
+be executed in a multi-CPU environment. I assumed (although I&amp;rsquo;m waiting for clarification) that methods like
+&lt;code&gt;removeIf&lt;/code&gt; are not parallelised, since in the case of Streams you have to explicitly state you want to go parallel.
+We also talked a bit about
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#parallel--&#34;&gt;parallel()&lt;/a&gt; and
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#parallelStream--&#34;&gt;parallelStream()&lt;/a&gt;, even
+though the lesson didn&amp;rsquo;t cover Streams at all. We wanted to understand a bit more about the pros and cons of going
+parallel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It was a great, collaborative session, with most people getting a chance to demonstrate their code (if they wanted
+to!). And at the end we had solutions to the five exercise problems and had discussed all the areas people wanted
+more clarity on.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>The State of Java</title>
@@ -89,7 +148,7 @@ dependencies in your code that need to change.&lt;/li&gt;
 to-watch list.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_0&#34;&gt;Ideas&lt;/h4&gt;
+&lt;h4 id=&#34;ideas:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Ideas&lt;/h4&gt;
 
 &lt;p&gt;It became clear throughout the talk there are plenty of ideas that we could explore in later presentations.  If you want to see
 any of the following, add a comment or ping me or &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;IsraKaos&lt;/a&gt; on twitter or Meetup and we&amp;rsquo;ll try and schedule it.&lt;/p&gt;
@@ -107,7 +166,7 @@ do so, drop me a line:&lt;/p&gt;
 &lt;li&gt;Java EE&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
+&lt;h4 id=&#34;further-reading:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Further Reading&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;

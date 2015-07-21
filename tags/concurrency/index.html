@@ -40,11 +40,11 @@
 
 
 
-    <base href="http://trishagee.github.io">
+    <base href="http://trishagee.github.io/">
     <title> Concurrency - trishagee.github.io </title>
     <link rel="canonical" href="http://trishagee.github.io/tags/concurrency/">
     
-    <link href="http://trishagee.github.io/tags/concurrency/index.xml/" rel="alternate" type="application/rss+xml" title="Concurrency"/>
+    <link href="http://trishagee.github.io/tags/concurrency/index.xml" rel="alternate" type="application/rss+xml" title="Concurrency"/>
     
 
     <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -153,7 +153,7 @@
       <div class="post-meta">Fri, Oct 21, 2011 - 500 Words </div>
     </header>
 
-    Last Tuesday&nbsp;Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&rsquo;s Guide to Hardcore Concurrency. &nbsp;This was a preview of the talk we&rsquo;ll be doing at JAX London on the 2nd November.A video of the session is available, as are the slides. &nbsp;I promise not to say &ldquo;so&rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?).I thought the session went really really well.
+    Last Tuesday&nbsp;Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&rsquo;s Guide to Hardcore Concurrency. &nbsp;This was a preview of the talk we&rsquo;ll be doing at JAX London on the 2nd November. A video of the session is available, as are the slides. &nbsp;I promise not to say &ldquo;so&rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?).
     <footer>
         <a href='http://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/'><nobr>Read more →</nobr></a>
     </footer>
@@ -166,7 +166,7 @@
       <div class="post-meta">Tue, Aug 30, 2011 - 600 Words </div>
     </header>
 
-    Martin recently announced version 2.0 of the Disruptor&nbsp;- basically there have been so many changes since we first open-sourced it that it&rsquo;s time to mark that officially. &nbsp;His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&rsquo;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.In the old worldThis is an example of a configuration of the Disruptor (specifically a diamond configuration).
+    Martin recently announced version 2.0 of the Disruptor&nbsp;- basically there have been so many changes since we first open-sourced it that it&rsquo;s time to mark that officially. &nbsp;His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&rsquo;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.
     <footer>
         <a href='http://trishagee.github.io/post/disruptor_20__all_change_please/'><nobr>Read more →</nobr></a>
     </footer>
@@ -179,7 +179,7 @@
       <div class="post-meta">Sun, Aug 7, 2011 - 1400 Words </div>
     </header>
 
-    My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject. I guess I don&rsquo;t have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don&rsquo;t really get, I&rsquo;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.
+    My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject. I guess I don&rsquo;t have the deep background knowledge required to fully understand.
     <footer>
         <a href='http://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/'><nobr>Read more →</nobr></a>
     </footer>
@@ -192,7 +192,7 @@
       <div class="post-meta">Fri, Jul 22, 2011 - 1300 Words </div>
     </header>
 
-    We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even Martin&rsquo;s blog title. &nbsp;It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. &nbsp;Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.Comp Sci 101One of the things I love about working at LMAX is all that stuff I learnt at university and in my A Level Computing actually means something.
+    We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even Martin&rsquo;s blog title. &nbsp;It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it. We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. &nbsp;Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.
     <footer>
         <a href='http://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/'><nobr>Read more →</nobr></a>
     </footer>
@@ -202,10 +202,10 @@
         <article class="post">
     <header>
       <h2><a href='http://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/'> Dissecting the Disruptor: Why it&#39;s so fast (part one) - Locks Are Bad</a> </h2>
-      <div class="post-meta">Sat, Jul 16, 2011 - 2200 Words </div>
+      <div class="post-meta">Sat, Jul 16, 2011 - 2300 Words </div>
     </header>
 
-    Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. &nbsp;This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;.I&rsquo;m working up to answering that. &nbsp;I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;.These questions do go hand in hand, however, because I can&rsquo;t talk about why it&rsquo;s fast without saying what it does, and I can&rsquo;t talk about what it is without saying why it is that way.So I&rsquo;m trapped in a circular dependency.
+    Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. &nbsp;This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;. I&rsquo;m working up to answering that. &nbsp;I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;. These questions do go hand in hand, however, because I can&rsquo;t talk about why it&rsquo;s fast without saying what it does, and I can&rsquo;t talk about what it is without saying why it is that way.
     <footer>
         <a href='http://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/'><nobr>Read more →</nobr></a>
     </footer>
@@ -218,7 +218,7 @@
       <div class="post-meta">Sun, Jul 10, 2011 - 1200 Words </div>
     </header>
 
-    So now I&rsquo;ve covered the ring buffer itself, reading from it and writing to it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. &nbsp;I&rsquo;ve talked about consumers in a simple situation. &nbsp;Multiple consumers can get a little more involved. &nbsp;We&rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
+    So now I&rsquo;ve covered the ring buffer itself, reading from it and writing to it. Logically the next thing to do is to wire everything up together. I talked about multiple producers - they have the producer barrier to keep them in order and under control. &nbsp;I&rsquo;ve talked about consumers in a simple situation. &nbsp;Multiple consumers can get a little more involved. &nbsp;We&rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
     <footer>
         <a href='http://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/'><nobr>Read more →</nobr></a>
     </footer>
@@ -231,7 +231,7 @@
       <div class="post-meta">Mon, Jul 4, 2011 - 1600 Words </div>
     </header>
 
-    This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.ProducerBarriersThe Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.
+    This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place. The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work. ProducerBarriers The Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.
     <footer>
         <a href='http://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/'><nobr>Read more →</nobr></a>
     </footer>
@@ -244,7 +244,7 @@
       <div class="post-meta">Tue, Jun 28, 2011 - 700 Words </div>
     </header>
 
-    The next in the series of understanding the Disruptor pattern developed at LMAX.After the last post we all understand ring buffers and how awesome they are. &nbsp;Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.ConsumerBarriers and ConsumersI&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run. &nbsp;Assuming that some magic has populated it: how do you read something from the ring buffer?
+    The next in the series of understanding the Disruptor pattern developed at LMAX. After the last post we all understand ring buffers and how awesome they are. &nbsp;Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor. ConsumerBarriers and Consumers I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run. &nbsp;Assuming that some magic has populated it: how do you read something from the ring buffer?
     <footer>
         <a href='http://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/'><nobr>Read more →</nobr></a>
     </footer>
