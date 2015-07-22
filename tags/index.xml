@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title> on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Wed, 22 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Code Reviews 1</title>
+      <link>http://trishagee.github.io/other-sites/code_reviews1/</link>
+      <pubDate>Wed, 22 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/other-sites/code_reviews1/</guid>
+      <description>
+
+&lt;p&gt;Let&amp;rsquo;s talk about code reviews. If you take only a few seconds to search for information about code reviews, you&amp;rsquo;ll
+see a lot of information about why code reviews are a Good Thing (for example,
+&lt;a href=&#34;http://blog.codinghorror.com/code-reviews-just-do-it/&#34;&gt;this article by Jeff Atwood&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;You also see a lot of documentation on how to use Code Review tools like our very own
+&lt;a href=&#34;https://www.jetbrains.com/upsource/&#34;&gt;Upsource&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;What you don&amp;rsquo;t see so much of, is a guide to things to look for when you&amp;rsquo;re reviewing someone else&amp;rsquo;s code.&lt;/p&gt;
+
+&lt;p&gt;Probably the reason there&amp;rsquo;s no definitive article on what to be looking for is: there are a &lt;em&gt;lot&lt;/em&gt;
+of different things to consider. And, like any other set of requirements (functional or non-functional), individual
+organisations will have different priorities for each aspect.&lt;/p&gt;
+
+&lt;p&gt;Since this is a big topic to cover, the aim of this article is to outline just some of the things a reviewer could be
+looking out for when performing a code review. Deciding on the priority of each aspect and checking them
+consistently is a sufficiently complex subject to be an article in its own right.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-do-you-look-for-when-you-re-reviewing-someone-else-s-code:cd9fea566ab5046299e94562e7428608&#34;&gt;What do you look for when you&amp;rsquo;re reviewing someone else&amp;rsquo;s code?&lt;/h3&gt;
+
+&lt;p&gt;It doesn&amp;rsquo;t matter how you&amp;rsquo;re reviewing code: via a tool like Upsource or Github pull requests; during someone else&amp;rsquo;s
+walkthrough or demo of their code; sitting down with a colleague and checking through their changes; even looking
+at code on StackOverflow. Whatever the situation, some things are easier to comment on than others. Some examples:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Formatting&lt;/strong&gt;: Where are the spaces and line breaks? Are they using tabs or spaces? How are the curly braces laid
+out?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Style&lt;/strong&gt;: Are the variables/parameters declared as final? Are method variables defined close to the code where
+they&amp;rsquo;re used or at the start of the method?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Naming&lt;/strong&gt;: Do the field/constant/variable/param/class names conform to standards? Are the names overly short?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Test coverage&lt;/strong&gt;: Is there a test for this code?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These are all valid things to check to ensure the code is consistent with the rest of your codebase, to make it
+easier for team members to understand - you want to reduce context switching between different areas of code and
+reduce &lt;a href=&#34;https://en.wikipedia.org/wiki/Cognitive_load&#34;&gt;cognitive load&lt;/a&gt;, so the more consistent your code looks, the
+better.&lt;/p&gt;
+
+&lt;p&gt;However, having humans check these is probably not the best use of time and resources in your organisation.  Although
+a code review process that checks these kinds of properties will improve the overall quality of your code, many of
+these checks can be
+automated. This takes a little bit of work up-front, but pays off very quickly.  Tools like
+&lt;a href=&#34;http://checkstyle.sourceforge.net/&#34;&gt;Checkstyle&lt;/a&gt;,
+&lt;a href=&#34;http://findbugs.sourceforge.net/&#34;&gt;FindBugs&lt;/a&gt;,
+&lt;a href=&#34;http://pmd.sourceforge.net/&#34;&gt;PMD&lt;/a&gt;,
+&lt;a href=&#34;http://codenarc.sourceforge.net/&#34;&gt;CodeNarc&lt;/a&gt;,
+&lt;a href=&#34;http://emma.sourceforge.net/&#34;&gt;Emma&lt;/a&gt;,
+&lt;a href=&#34;http://cobertura.sourceforge.net/&#34;&gt;Cobertura&lt;/a&gt;,
+&lt;a href=&#34;http://www.eclemma.org/jacoco/&#34;&gt;JaCoCo&lt;/a&gt; and
+&lt;a href=&#34;http://www.sonarqube.org/&#34;&gt;SonarQube&lt;/a&gt; can, especially when combined, check that your code is
+consistently formatted, that standards
+around naming and the use of the final keyword are followed, and that common bugs caused by simple
+programming errors are found. You can even run
+&lt;a href=&#34;https://www.jetbrains.com/idea/help/running-inspections-offline.html&#34;&gt;IntelliJ IDEA&amp;rsquo;s inspections from the command line&lt;/a&gt;,
+so you don&amp;rsquo;t have to rely on all team members having the same inspections running in their IDE.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-should-you-look-for:cd9fea566ab5046299e94562e7428608&#34;&gt;What should you look for?&lt;/h3&gt;
+
+&lt;p&gt;So far we&amp;rsquo;ve just talked about what it&amp;rsquo;s easy to look for, and that you should consider using tools other than code
+review to check these automatically.&lt;/p&gt;
+
+&lt;p&gt;What sort of things are humans really good for? What can we spot in a code review that we can&amp;rsquo;t delegate to a tool?&lt;/p&gt;
+
+&lt;p&gt;It turns out there&amp;rsquo;s a surprisingly large number of things. This is certainly not an exhaustive list, nor will
+we go into any one of them in great detail here. Instead, this should be the start of a conversation in your
+organisation about which things you currently look for in a code review, and what, perhaps, you &lt;em&gt;should&lt;/em&gt; be looking for.&lt;/p&gt;
+
+&lt;h4 id=&#34;design:cd9fea566ab5046299e94562e7428608&#34;&gt;Design&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How does the new code fit with the overall architecture?&lt;/li&gt;
+&lt;li&gt;Does the code follow &lt;a href=&#34;https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)&#34;&gt;SOLID principles&lt;/a&gt;,
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Domain-driven_design&#34;&gt;Domain Driven Design&lt;/a&gt; and/or other design paradigms the team
+favours?&lt;/li&gt;
+&lt;li&gt;What &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_design_pattern&#34;&gt;design patterns&lt;/a&gt; are used in the new code? Are these
+appropriate?&lt;/li&gt;
+&lt;li&gt;If the codebase has a mix of standards or design styles, does this new code follow the current practices? Is the
+code migrating in the correct direction, or does it follow the example of older code that is due to be phased out?&lt;/li&gt;
+&lt;li&gt;Is the code in the right place? For example, if the code is related to Orders, is it in the Order Service?&lt;/li&gt;
+&lt;li&gt;Could the new code have reused something in the existing code? Does the new code provide something
+we can reuse in the existing code? Does the new code introduce duplication? If so, should it be refactored to a more
+reusable pattern, or is this acceptable at this stage?&lt;/li&gt;
+&lt;li&gt;Is the code over-engineered? Does it build for reusability that isn&amp;rsquo;t required now? How does the team balance
+considerations of reusability with &lt;a href=&#34;https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it&#34;&gt;YAGNI&lt;/a&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;readability-maintainability:cd9fea566ab5046299e94562e7428608&#34;&gt;Readability &amp;amp; Maintainability&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Do the names (of fields, variables, parameters, methods and classes) actually reflect the thing they represent?&lt;/li&gt;
+&lt;li&gt;Can I understand what the code does by reading it?&lt;/li&gt;
+&lt;li&gt;Can I understand what the tests do?&lt;/li&gt;
+&lt;li&gt;Do the tests cover a good subset of cases? Do they cover happy paths and exceptional cases? Are there cases that
+haven&amp;rsquo;t been considered?&lt;/li&gt;
+&lt;li&gt;Are the exception error messages understandable?&lt;/li&gt;
+&lt;li&gt;Are confusing sections of code either documented, commented, or covered by understandable tests (according to team
+preference)?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;functionality:cd9fea566ab5046299e94562e7428608&#34;&gt;Functionality&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Does the code actually do what it was supposed to do? If there are automated tests to ensure correctness of the
+code, do the tests really test the code meets the agreed requirements?&lt;/li&gt;
+&lt;li&gt;Does the code look like it contains subtle bugs, like using the wrong variable for a check, or accidentally using
+an &lt;code&gt;and&lt;/code&gt; instead of an &lt;code&gt;or&lt;/code&gt;?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;have-you-thought-about:cd9fea566ab5046299e94562e7428608&#34;&gt;Have you thought about&amp;hellip;?&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Are there potential security problems with the code?&lt;/li&gt;
+&lt;li&gt;Are there regulatory requirements that need to be met?&lt;/li&gt;
+&lt;li&gt;For areas that are not covered with automated performance tests, does the new code introduce avoidable performance
+issues, like unnecessary calls to a database or remote service?&lt;/li&gt;
+&lt;li&gt;Does the author need to create public documentation, or change existing help files?&lt;/li&gt;
+&lt;li&gt;Have user-facing messages been checked for correctness?&lt;/li&gt;
+&lt;li&gt;Are there obvious errors that will stop this working in production? Is the code going to accidentally point at
+the test database, or is there a hardcoded stub that should be swapped out for a real service?&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What makes &amp;ldquo;good&amp;rdquo; code is a topic that every developer has an opinion on. We&amp;rsquo;d love to hear from you in the comments
+if you have things to add to our list.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
