@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content=" : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://trishagee.github.io/drafts/java_8/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="0001-01-01"/>
+<meta property="article:modified_time" content="0001-01-01"/>
+
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content=" : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="http://trishagee.github.io/">
+    <title>  - trishagee.github.io </title>
+    <link rel="canonical" href="http://trishagee.github.io/drafts/java_8/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=-http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f&title=&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://del.icio.us/post?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f" target="_blank" title="Delicious" class="delicious"><span
+                        class="icon icon-delicious"></span>Delicious</a></li>
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+                <li><a href="http://www.dzone.com/links/add.html?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fjava_8%2f&title=" target="_blank" title="DZone"
+                       class="dzone"><span class="icon icon-dzone"></span>DZone</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title"></h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           
+
+<p>I&rsquo;ve been giving a presentation showing &ldquo;Java 8 in Anger&rdquo; - no, it&rsquo;s not that the most recent release of Java has me
+particularly enraged, &ldquo;in anger&rdquo; is (apparently) a British phrase meaning &ldquo;in practice&rdquo; or &ldquo;in the real world&rdquo;.</p>
+
+<p>The aim of this talk is to demo, with live code, how to use some of the Java 8 features like Lambda Expressions and
+the Streams API to solve some of the coding problems you might come across in your day job as a developer.</p>
+
+<p>I&rsquo;m not going to transcribe the whole talk for this article, it probably works best (if you&rsquo;re interested) to
+watch the video instead. What I do want to do is to use the application from the presentation to explore some
+specific Java 8 features in more detail. If you&rsquo;re interested in the wider context, I&rsquo;ve got
+<a href="http://trishagee.github.io/presentation/java8_in_anger/">links to the videos and source code</a> on my blog.</p>
+
+<h3 id="method-references-and-new-methods-in-java-8:d169180f3a40e9c29149c257bc7fd971">Method References and New Methods in Java 8</h3>
+
+<p>The first section where we start using some of the new methods available in Java 8 is when we&rsquo;re building up a
+leaderboard of top tweeters. This leaderboard will be a table of the Twitter users who have tweeted the most, in
+descending order.</p>
+
+<p><img src="/static/images/java8/leaderboard.png" alt="Twitter Leaderboard" title="Twitter Leaderboard" />
+</p>
+
+<p>We store every Twitter handle we see in as a key in a <code>Map</code>, and for
+the value we have a <code>TwitterUser</code> (an object to represent this particular user). When we
+see a new Twitter handle, we want to create a <code>TwitterUser</code> for this person and store it in the map, keyed against
+this Twitter handle.</p>
+
+<p>Pre-Java-8, we&rsquo;d write something like this:</p>
+
+<pre><code>private final Map&lt;String, TwitterUser&gt; allTwitterUsers = new HashMap&lt;&gt;();
+
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.get(twitterHandle);
+    if (twitterUser == null) {
+        twitterUser = new TwitterUser(twitterHandle);
+        allTwitterUsers.put(twitterHandle, twitterUser);
+    }
+    // then do stuff...
+}
+</code></pre>
+
+<p>But Java 8 has not only given us lambdas and streams, it&rsquo;s added new methods to some of our favourite classes.  <code>Map</code>
+now has a <code>computeIfAbsent()</code> method which allows you to define what to do if an item doesn&rsquo;t exist in the map.</p>
+
+<pre><code>private final Map&lt;String, TwitterUser&gt; allTwitterUsers = new HashMap&lt;&gt;();
+
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, 
+                                                              TwitterUser::new);
+    // then do stuff...
+}
+</code></pre>
+
+<p>This does the same thing as the first example and is clearly far fewer lines of code, especially as it also makes use
+of <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html">Method References</a>, which usually work
+out to be even shorter than lambda expressions. As a long-term Java programmer with limited exposure to other
+languages, although this may be shorter, learning to write code this way is going to take me a while to get used to.</p>
+
+<p>Fortunately for me and my old-school Java approach, <a href="www.jetbrains.com/idea/">IntelliJ IDEA</a> can help me get to
+grips with the new syntax. When I first came to Java 8, I found it more understandable (although <em>much</em> more code)
+to call these sorts of methods using an anonymous inner class rather than a lambda expression or a method reference.
+IntelliJ IDEA can help create this anonymous inner class and convert it into something more Java 8-ish:</p>
+
+<p><img src="/static/images/java8/ReplaceWithMethodReference.gif" alt="Convert to method reference" title="Convert to method reference" />
+</p>
+
+<p>Method references are going to take me a while to grasp instinctively, but I am starting to see how the succinct
+syntax could be more expressive, once I get used to it - <code>computeifAbsent()</code> is going to call a constructor on
+<code>TwitterUser</code> to create a new user if one doesn&rsquo;t already exist in the map.</p>
+
+<h3 id="streams:d169180f3a40e9c29149c257bc7fd971">Streams</h3>
+
+<p>Next we need to increment the number of times we&rsquo;ve seen
+this <code>TwitterUser</code>, and then figure out how this impacts our leaderboard of tweeters. We can use the
+<a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams API</a> to
+turn our map of all Twitter users into a list of the top ten Tweeters.</p>
+
+<p>First we need to sort our <code>TwitterUsers</code> according to the number of times they&rsquo;ve tweeted.
+There&rsquo;s a <code>sorted()</code> method on <code>Stream</code> which takes a <code>Comparator</code>, so it seems logical to use this.</p>
+
+<pre><code>public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, TwitterUser::new);
+    twitterUser.incrementCount();
+
+    allTwitterUsers.values().stream()
+                   .sorted(new Comparator&lt;TwitterUser&gt;() {
+                       @Override
+                       public int compare(TwitterUser o1, TwitterUser o2) {
+                           return o2.getNumberOfTweets() - o1.getNumberOfTweets();
+                       }
+                   });
+}
+</code></pre>
+
+<p>In the past, I&rsquo;ve always found comparators a little hard to work with - I&rsquo;m never quite sure if I&rsquo;m supposed to be
+subtracting the first object from the second, or vice versa.  Fortunately, once again Java 8 makes things a little
+easier. You can use the new <code>Comparator.comparing()</code> method, which you can combine with a method reference to state
+which method on <code>TwitterUser</code> you want to sort by</p>
+
+<pre><code>allTwitterUsers.values().stream()
+               .sorted(Comparator.comparing(TwitterUser::getNumberOfTweets));
+</code></pre>
+
+<p>For a leaderboard which shows the most active tweeters at the top, we need to sort in descending order, which is also
+simple and descriptive using this method</p>
+
+<pre><code>allTwitterUsers.values().stream()
+               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed());
+</code></pre>
+
+<p>Note that I&rsquo;ve added a static import for <code>comparing</code> to make the code a bit shorter.</p>
+
+<p>So we&rsquo;ve sorted all the values in the map, now we need to just get the top ten. Since we&rsquo;re using Streams, it&rsquo;s easy
+to chain together all the operations we want to perform on our collection, so we add a call to <code>limit</code></p>
+
+<pre><code>allTwitterUsers.values().stream()
+               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+               .limit(10);
+</code></pre>
+
+<p>So far all we&rsquo;ve done is build up a recipe for the operations we want to perform, we need to somehow execute all of
+these. Streams have intermediate operations which return a <code>Stream</code> so that we can perform further operations (for
+example, both <code>sorted()</code> and <code>limit()</code> above), and terminal operations which will return some concrete value. In this
+case, what we want is a new list with these top ten tweeters. Telling the <code>collect</code> method to put the results
+into a <code>List</code> will do just this</p>
+
+<pre><code>List&lt;TwitterUser&gt; topTen = allTwitterUsers.values().stream()
+                                          .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+                                          .limit(10)
+                                          .collect(Collectors.toList());
+</code></pre>
+
+<p>With this set of stream operations, we&rsquo;re effectively querying our map of all users. If we were querying a
+database instead of a map, we might have written something like:</p>
+
+<pre><code>SELECT * from TwitterUsers
+ORDER BY numberOfTweets DESC
+LIMIT 10
+</code></pre>
+
+<p>This is how we built the whole operation:</p>
+
+<p><img src="/static/images/java8/Streams.gif" alt="Using Streams" title="Using Streams" />
+</p>
+
+<h3 id="creating-our-own-streams:d169180f3a40e9c29149c257bc7fd971">Creating our own Streams</h3>
+
+<p>Another part of this application requires a bar chart, where each bar corresponds to a minute in time over a period
+of ten minutes.</p>
+
+<p><img src="/static/images/java8/bar-chart.png" alt="Bar Chart Widget" title="Bar Chart Widget" />
+</p>
+
+<p>When the application starts for the first time, each of these bars needs to be set to an initial value of zero.</p>
+
+<p>This is not an unusual situation - we&rsquo;ve probably all written code that has to loop for some number of iterations and
+initialise some value.  We would probably usually do it using something like this:</p>
+
+<pre><code>public HappinessChartData() {
+    int nowMinute = LocalDateTime.now().getMinute();
+
+    for (int i = nowMinute; i &lt; nowMinute + 10; i++) {
+        initialiseBarToZero(i);
+    }
+}
+</code></pre>
+
+<p>Here we also use a very small part of the new
+<a href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html">Date &amp; Time API</a>.  In the Java 8 world, we
+have more options for iterating over values.  In this case, we can create our own <code>IntStream</code> from a range of
+values and perform some operation for each of these values.</p>
+
+<pre><code>public HappinessChartData() {
+    int nowMinute = LocalDateTime.now().getMinute();
+
+    IntStream.range(nowMinute, nowMinute + 10)
+             .forEach(value -&gt; initialiseBarToZero(value));
+}
+</code></pre>
+
+<p>We can use a lambda expression to specify what to do with each of the values.  As before, we can also
+simplify this lambda expression to a method reference.</p>
+
+<pre><code>    IntStream.range(nowMinute, nowMinute + 10)
+             .forEach(this::initialiseBarToZero);
+</code></pre>
+
+<p>This method of iterating is marginally less code, and, once we get used to the new syntax, arguably more readable.
+The performance of the two methods is not the same, however, so you&rsquo;ll have to decide which method to use based on
+your team&rsquo;s preferences for syntax and the performance requirements of your application.</p>
+
+<p><img src="/static/images/java8/CreateStream.gif" alt="Create a Stream" title="Create a Stream" />
+</p>
+
+<h3 id="file-handling-in-java-8:d169180f3a40e9c29149c257bc7fd971">File Handling in Java 8</h3>
+
+<p>Java 7 introduced some really nice features for file handling. Working with files has become even
+more intuitive when you combine these Java 7 features with streams.</p>
+
+<p>In this example, we&rsquo;re parsing a file which contains Tweets recorded from the Twitter firehose.  Each line contains a
+different tweet, and what we want to do is filter out the noise (there are lines that contain only the single String
+&ldquo;OK&rdquo; as a response from Twitter) and then publish the remaining tweets via websockets.</p>
+
+<pre><code>    try (Stream&lt;String&gt; lines = Files.lines(filePath)) {
+        lines.filter(s -&gt; !s.equals(&quot;OK&quot;))
+             .forEach(tweetsEndpoint::onMessage);
+    } catch (IOException e) {
+        //error handling here
+    }
+</code></pre>
+
+<p>Here, I&rsquo;m not tempted to show the Java 6 version of the code, as the Java 8 version is much simpler.  The first line
+uses <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html">try-with-resources</a>
+to obtain a strea, of <code>Strings</code>, one string per line in our file.  Then we use the <code>filter()</code>
+method to exclude the lines that aren&rsquo;t tweets, and finally publish all the remaining tweets via our websocket
+server endpoint.</p>
+
+<p><img src="/static/images/java8/Java7And8.gif" alt="File handling with Java 8" title="File handling with Java 8" />
+</p>
+
+<h3 id="advanced-streams-and-more-collectors:d169180f3a40e9c29149c257bc7fd971">Advanced Streams and More Collectors</h3>
+
+<p>The last part of the application that I&rsquo;d like to show you in more depth, is the mood analyser.  The aim of
+this small service is to take a single Tweet and figure out the mood of that Tweet in a very rough fashion.  It will
+generally decide if a single Tweet is &ldquo;happy&rdquo;, &ldquo;sad&rdquo;, or &ldquo;happy <em>and</em> sad&rdquo;, and return a comma separated String of
+the mood in upper case. So for example:</p>
+
+<blockquote>
+<p>Today was a great day!</p>
+</blockquote>
+
+<p>would be classified as &ldquo;HAPPY&rdquo;,</p>
+
+<blockquote>
+<p>I&rsquo;m irritated I have to work tomorrow</p>
+</blockquote>
+
+<p>would be &ldquo;SAD&rdquo;, and</p>
+
+<blockquote>
+<p>The start of this week was fantastic, but today sucks</p>
+</blockquote>
+
+<p>contains both good and bad news, so would be &ldquo;HAPPY,SAD&rdquo;.</p>
+
+<p>If I had an automated system for applying moods to Twitter messages, I&rsquo;d be retired on a beach
+somewhere, this kind of analysis is very much in demand.  In my application, I settle instead for a very crude method
+of classifying the messages - we&rsquo;re going to parse the message and look for words that might imply &ldquo;happy&rdquo; or &ldquo;sad&rdquo;.</p>
+
+<p>We start with a <code>Map</code>, which maps words to their associated mood (represented as an enum).  Something like:</p>
+
+<pre><code>[&quot;happy&quot;: HAPPY,
+ &quot;fantastic&quot;: HAPPY,
+ &quot;awesome&quot;: HAPPY,
+ ...
+ &quot;sad&quot;: SAD,
+ &quot;terrible&quot;: SAD,
+ &quot;sucks&quot;: SAD]
+</code></pre>
+
+<p>There are a number of approaches to this problem, this is not a definitive answer. I will demonstrate
+with my selected method how you can chain together stream operations to get the output that you need.</p>
+
+<p>Firstly, we create a stream where each item is a word in the original Twitter message.  We use <code>String</code>&rsquo;s <code>split()</code>
+method to create an array of words, and use <code>Stream.of()</code> to turn this into a <code>Stream</code> of <code>Strings</code>.</p>
+
+<pre><code>Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+</code></pre>
+
+<p>Next, we&rsquo;re going to convert all these words to lowercase, as our map of words to moods only has lowercase keys.</p>
+
+<pre><code>Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+      .map(String::toLowerCase)
+</code></pre>
+
+<p>The <code>map()</code> method takes one value and turns it into another.  In this case, we want to turn a <code>String</code> value like
+&ldquo;Awesome&rdquo; into its lowercase version, &ldquo;awesome&rdquo;.  It&rsquo;s easy pass in String&rsquo;s <code>toLowerCase()</code> method as a method
+reference to do the conversion.</p>
+
+<p>Now we have a string in the correct case, we can search our map of words-to-moods for the mood that corresponds to
+this word.</p>
+
+<pre><code>Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&gt; WORD_TO_MOOD.get(lowerCaseWord))
+</code></pre>
+
+<p>Not every word is going to have a corresponding mood in the map, so we&rsquo;re only going to pass non-null moods to the
+next step of the pipeline</p>
+
+<pre><code>Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&gt; mood != null)
+</code></pre>
+
+<p>Now what I have is a <code>Mood</code>, an enum value of either <code>HAPPY</code> or <code>SAD</code>. Our requirements state that for each tweet, we
+need to return one of &ldquo;HAPPY&rdquo;, &ldquo;SAD&rdquo;, or &ldquo;HAPPY,SAD&rdquo;. We don&rsquo;t need an indication of whether there are multiple happy
+words or sad words in the same tweet, so we only need one instance of each mood. This is easily done by requiring the
+stream to contain only distinct values.</p>
+
+<pre><code>Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&gt; mood != null)
+      .distinct()
+</code></pre>
+
+<p>According to our requirements, we need to convert our enum value to a String</p>
+
+<pre><code>Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&gt; mood != null)
+      .distinct()
+      .map((mood) -&gt; mood.name())
+</code></pre>
+
+<p>And finally, we want to merge together all the moods found for this message into a comma separated string of moods.
+In our previous Stream example, we used <code>Collectors.toList()</code> to return a <code>List</code>
+of <code>TwitterUsers</code>. This time, we&rsquo;re going to use another built in collector, <code>Collectors.joining()</code> and give it the
+characters we want to use to separate our results. <code>joining()</code> will return a <code>String</code> of your results, separated by
+your chosen delimiter. Which means that now in Java 8 we can easily create comma separated strings without having to
+iterate over a list and figure out if we&rsquo;re supposed to be putting a comma after this item or not.</p>
+
+<pre><code>Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&gt; mood != null)
+      .distinct()
+      .map((mood) -&gt; mood.name())
+      .collect(Collectors.joining(&quot;,&quot;));
+</code></pre>
+
+<p>Finally, let&rsquo;s simplify the lambdas to method references where possible, and turn this into a method we can use</p>
+
+<pre><code>public static String identifyMood(String twitterMessage) {
+    return Stream.of(twitterMessage.split(&quot;\\s+&quot;))
+                 .map(String::toLowerCase)
+                 .map(WORD_TO_MOOD::get)
+                 .filter(mood -&gt; mood != null)
+                 .distinct()
+                 .map(Enum::name)
+                 .collect(joining(&quot;,&quot;));
+}
+</code></pre>
+
+<p>If we called <code>identifyMood</code> with the message &ldquo;Yesterday I was sad sad sad, but today is awesome&rdquo;, we&rsquo;ll get the
+String &ldquo;SAD,HAPPY&rdquo; in return.</p>
+
+<p><img src="/static/images/java8/AdvancedStreams.gif" alt="Advanced Streams" title="Advanced Streams" />
+</p>
+
+<p>With this example we have seen how you can chain multiple operations to perform fairly complex processing, with limited
+lines of code.</p>
+
+<h3 id="summary:d169180f3a40e9c29149c257bc7fd971">Summary</h3>
+
+<p>Java 8 is more than just a bit of extra syntax to learn, or a couple of new methods that might be useful.
+It can change the way we approach solving common problems. With lambda expressions, streams and some of the other
+new methods in Java 8, you can use easily perform common operations (for example, <code>computeIfAbsent()</code> and <code>joining()</code>),
+and you gain a new set of tools, particularly in manipulating data sets.</p>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Mon Jan 1, 0001 </h4>
+        <h5 id="wc"> 2300 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;<a class="previous" href="http://trishagee.github.io/drafts/how_to_write_a_cfp/"><i class="icon-arrow-left"></i> </a><br>
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/"> <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion, a MongoDB Master, and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="2220">
+<meta itemprop="datePublished" content="0001-01-01">
+<meta itemprop="url" content="http://trishagee.github.io/drafts/java_8/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'http:\/\/trishagee.github.io\/drafts\/java_8\/';
+    var disqus_title = '';
+    var disqus_url = 'http:\/\/trishagee.github.io\/drafts\/java_8\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+

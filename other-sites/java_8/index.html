@@ -147,7 +147,64 @@
   <h1 itemprop="name" id="title">Java 8</h1>
   <div>
         <article itemprop="articleBody" id="content">
-           
+           <p>I&rsquo;ve been giving a presentation showing &ldquo;Java 8 in Anger&rdquo; - no, it&rsquo;s not that the most recent release of Java has me
+particularly enraged, &ldquo;in anger&rdquo; is (apparently) a British phrase meaning &ldquo;in practice&rdquo; or &ldquo;in the real world&rdquo;.</p>
+
+<p>The aim of this talk is to demo, with live code, how to use some of the Java 8 features like Lambda Expressions and
+the Streams API to solve some of the coding problems you might come across in your day job as a developer.</p>
+
+<p>I&rsquo;m not going to transcribe the whole talk for this article, it probably works best (if you&rsquo;re interested) for you to
+watch the video instead. What I do want to do is to take the time to explore some specific sections in a bit more
+detail. If you&rsquo;re interested in the wider context, I&rsquo;ve got
+<a href="http://trishagee.github.io/presentation/java8_in_anger/">links to the videos and source code</a> on my blog.</p>
+
+<p>The first section where we start using some of the new methods available in Java 8 is when we&rsquo;re building up a
+leaderboard of top tweeters. We store every Twitter handle we see in a map, and for
+the value associated with that key, we have a TwitterUser (an object to represent this particular user). Now, when we
+see a new Twitter handle, we want to create a new TwitterUser for this person and store it in the map, keyed against
+this Twitter handle.</p>
+
+<p>Pre-Java-8, we&rsquo;d write something like this to do this:</p>
+
+<pre><code>private final Map&lt;String, TwitterUser&gt; allTwitterUsers = new HashMap&lt;&gt;();
+
+@Override
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.get(twitterHandle);
+    if (twitterUser == null) {
+        twitterUser = new TwitterUser(twitterHandle);
+        allTwitterUsers.put(twitterHandle, twitterUser);
+    }
+    // then do stuff...
+}
+</code></pre>
+
+<p>But Java 8 has not only given us lambdas and streams, it&rsquo;s added new methods to some of our favourite classes.  <code>Map</code>
+now has a <code>computeIfAbsent</code> method which allows you to define what to do if an item doesn&rsquo;t exist in the <code>Map</code>:</p>
+
+<pre><code>private final Map&lt;String, TwitterUser&gt; allTwitterUsers = new HashMap&lt;&gt;();
+
+@Override
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, TwitterUser::new);
+    // then do stuff...
+}
+</code></pre>
+
+<p>This is clearly far fewer lines of code, especially as it also makes use of
+<a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html">Method References</a>, which usually work
+out to be even shorter than lambda expressions. Now, I don&rsquo;t know about you, but as a long-term Java programmer with
+limited exposure to other languages, while this may be shorter, learning to write code this way is going to take a
+bit of getting used to.</p>
+
+<p>Fortunately for me and my old-school Java approach, IntelliJ IDEA can help me get to grips with the new syntax. When
+I first came to Java 8, I found it more understandable (although <em>much</em> more code) to call these sorts of methods
+using an anonymous inner class rather than a lambda expression or a method reference.  IntelliJ IDEA can help both
+create this anonymous inner class and convert it into something much more Java 8-ish:</p>
+
+<p><img src="/static/images/java8/ReplaceWithMethodReference.gif" alt="Convert to method reference" title="Convert to method reference" />
+</p>
+
         </article>
   </div>
 </section>
@@ -159,7 +216,7 @@
 <div>
     <section id="datecount">
         <h4 id="date"> Thu Jul 23, 2015 </h4>
-        <h5 id="wc"> 100 Words </h5>
+        <h5 id="wc"> 500 Words </h5>
     </section>
     <ul id="categories">
         
@@ -193,7 +250,7 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="487">
 <meta itemprop="datePublished" content="2015-07-23">
 <meta itemprop="url" content="http://localhost:1313/other-sites/java_8/">
 
