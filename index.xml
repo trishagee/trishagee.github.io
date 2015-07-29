@@ -9,6 +9,377 @@
     <updated>Thu, 23 Jul 2015 00:00:00 UTC</updated>
     
     <item>
+      <title>Java 8</title>
+      <link>http://trishagee.github.io/post/java_8/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve been giving a presentation showing &amp;ldquo;Java 8 in Anger&amp;rdquo; - no, it&amp;rsquo;s not that the most recent release of Java has me
+particularly enraged, &amp;ldquo;in anger&amp;rdquo; is (apparently) a British phrase meaning &amp;ldquo;in practice&amp;rdquo; or &amp;ldquo;in the real world&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;The aim of this talk is to demo, with live code, how to use some of the Java 8 features like Lambda Expressions and
+the Streams API to solve some of the coding problems you might come across in your day job as a developer.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not going to transcribe the whole talk for this article, it probably works best (if you&amp;rsquo;re interested) to
+watch the video instead. What I do want to do is to use the application from the presentation to explore some
+specific Java 8 features in more detail. If you&amp;rsquo;re interested in the wider context, I&amp;rsquo;ve got
+&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;links to the videos and source code&lt;/a&gt; on my blog.&lt;/p&gt;
+
+&lt;h3 id=&#34;method-references-and-new-methods-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Method References and New Methods in Java 8&lt;/h3&gt;
+
+&lt;p&gt;The first section where we start using some of the new methods available in Java 8 is when we&amp;rsquo;re building up a
+leaderboard of top tweeters. This leaderboard will be a table of the Twitter users who have tweeted the most, in
+descending order.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/leaderboard.png&#34; alt=&#34;Twitter Leaderboard&#34; title=&#34;Twitter Leaderboard&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We store every Twitter handle we see in as a key in a &lt;code&gt;Map&lt;/code&gt;, and for
+the value we have a &lt;code&gt;TwitterUser&lt;/code&gt; (an object to represent this particular user). When we
+see a new Twitter handle, we want to create a &lt;code&gt;TwitterUser&lt;/code&gt; for this person and store it in the map, keyed against
+this Twitter handle.&lt;/p&gt;
+
+&lt;p&gt;Pre-Java-8, we&amp;rsquo;d write something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
+
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.get(twitterHandle);
+    if (twitterUser == null) {
+        twitterUser = new TwitterUser(twitterHandle);
+        allTwitterUsers.put(twitterHandle, twitterUser);
+    }
+    // then do stuff...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But Java 8 has not only given us lambdas and streams, it&amp;rsquo;s added new methods to some of our favourite classes.  &lt;code&gt;Map&lt;/code&gt;
+now has a &lt;code&gt;computeIfAbsent()&lt;/code&gt; method which allows you to define what to do if an item doesn&amp;rsquo;t exist in the map.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
+
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, 
+                                                              TwitterUser::new);
+    // then do stuff...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This does the same thing as the first example and is clearly far fewer lines of code, especially as it also makes use
+of &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;, which usually work
+out to be even shorter than lambda expressions. As a long-term Java programmer with limited exposure to other
+languages, although this may be shorter, learning to write code this way is going to take me a while to get used to.&lt;/p&gt;
+
+&lt;p&gt;Fortunately for me and my old-school Java approach, &lt;a href=&#34;www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; can help me get to
+grips with the new syntax. When I first came to Java 8, I found it more understandable (although &lt;em&gt;much&lt;/em&gt; more code)
+to call these sorts of methods using an anonymous inner class rather than a lambda expression or a method reference.
+IntelliJ IDEA can help create this anonymous inner class and convert it into something more Java 8-ish:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/ReplaceWithMethodReference.gif&#34; alt=&#34;Convert to method reference&#34; title=&#34;Convert to method reference&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Method references are going to take me a while to grasp instinctively, but I am starting to see how the succinct
+syntax could be more expressive, once I get used to it - &lt;code&gt;computeifAbsent()&lt;/code&gt; is going to call a constructor on
+&lt;code&gt;TwitterUser&lt;/code&gt; to create a new user if one doesn&amp;rsquo;t already exist in the map.&lt;/p&gt;
+
+&lt;h3 id=&#34;streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Streams&lt;/h3&gt;
+
+&lt;p&gt;Next we need to increment the number of times we&amp;rsquo;ve seen
+this &lt;code&gt;TwitterUser&lt;/code&gt;, and then figure out how this impacts our leaderboard of tweeters. We can use the
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams API&lt;/a&gt; to
+turn our map of all Twitter users into a list of the top ten Tweeters.&lt;/p&gt;
+
+&lt;p&gt;First we need to sort our &lt;code&gt;TwitterUsers&lt;/code&gt; according to the number of times they&amp;rsquo;ve tweeted.
+There&amp;rsquo;s a &lt;code&gt;sorted()&lt;/code&gt; method on &lt;code&gt;Stream&lt;/code&gt; which takes a &lt;code&gt;Comparator&lt;/code&gt;, so it seems logical to use this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, TwitterUser::new);
+    twitterUser.incrementCount();
+
+    allTwitterUsers.values().stream()
+                   .sorted(new Comparator&amp;lt;TwitterUser&amp;gt;() {
+                       @Override
+                       public int compare(TwitterUser o1, TwitterUser o2) {
+                           return o2.getNumberOfTweets() - o1.getNumberOfTweets();
+                       }
+                   });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the past, I&amp;rsquo;ve always found comparators a little hard to work with - I&amp;rsquo;m never quite sure if I&amp;rsquo;m supposed to be
+subtracting the first object from the second, or vice versa.  Fortunately, once again Java 8 makes things a little
+easier. You can use the new &lt;code&gt;Comparator.comparing()&lt;/code&gt; method, which you can combine with a method reference to state
+which method on &lt;code&gt;TwitterUser&lt;/code&gt; you want to sort by&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
+               .sorted(Comparator.comparing(TwitterUser::getNumberOfTweets));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For a leaderboard which shows the most active tweeters at the top, we need to sort in descending order, which is also
+simple and descriptive using this method&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
+               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that I&amp;rsquo;ve added a static import for &lt;code&gt;comparing&lt;/code&gt; to make the code a bit shorter.&lt;/p&gt;
+
+&lt;p&gt;So we&amp;rsquo;ve sorted all the values in the map, now we need to just get the top ten. Since we&amp;rsquo;re using Streams, it&amp;rsquo;s easy
+to chain together all the operations we want to perform on our collection, so we add a call to &lt;code&gt;limit&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
+               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+               .limit(10);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So far all we&amp;rsquo;ve done is build up a recipe for the operations we want to perform, we need to somehow execute all of
+these. Streams have intermediate operations which return a &lt;code&gt;Stream&lt;/code&gt; so that we can perform further operations (for
+example, both &lt;code&gt;sorted()&lt;/code&gt; and &lt;code&gt;limit()&lt;/code&gt; above), and terminal operations which will return some concrete value. In this
+case, what we want is a new list with these top ten tweeters. Telling the &lt;code&gt;collect&lt;/code&gt; method to put the results
+into a &lt;code&gt;List&lt;/code&gt; will do just this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;TwitterUser&amp;gt; topTen = allTwitterUsers.values().stream()
+                                          .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+                                          .limit(10)
+                                          .collect(Collectors.toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With this set of stream operations, we&amp;rsquo;re effectively querying our map of all users. If we were querying a
+database instead of a map, we might have written something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT * from TwitterUsers
+ORDER BY numberOfTweets DESC
+LIMIT 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is how we built the whole operation:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Streams.gif&#34; alt=&#34;Using Streams&#34; title=&#34;Using Streams&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-our-own-streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Creating our own Streams&lt;/h3&gt;
+
+&lt;p&gt;Another part of this application requires a bar chart, where each bar corresponds to a minute in time over a period
+of ten minutes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/bar-chart.png&#34; alt=&#34;Bar Chart Widget&#34; title=&#34;Bar Chart Widget&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;When the application starts for the first time, each of these bars needs to be set to an initial value of zero.&lt;/p&gt;
+
+&lt;p&gt;This is not an unusual situation - we&amp;rsquo;ve probably all written code that has to loop for some number of iterations and
+initialise some value.  We would probably usually do it using something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
+    int nowMinute = LocalDateTime.now().getMinute();
+
+    for (int i = nowMinute; i &amp;lt; nowMinute + 10; i++) {
+        initialiseBarToZero(i);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here we also use a very small part of the new
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Date &amp;amp; Time API&lt;/a&gt;.  In the Java 8 world, we
+have more options for iterating over values.  In this case, we can create our own &lt;code&gt;IntStream&lt;/code&gt; from a range of
+values and perform some operation for each of these values.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
+    int nowMinute = LocalDateTime.now().getMinute();
+
+    IntStream.range(nowMinute, nowMinute + 10)
+             .forEach(value -&amp;gt; initialiseBarToZero(value));
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can use a lambda expression to specify what to do with each of the values.  As before, we can also
+simplify this lambda expression to a method reference.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    IntStream.range(nowMinute, nowMinute + 10)
+             .forEach(this::initialiseBarToZero);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This method of iterating is marginally less code, and, once we get used to the new syntax, arguably more readable.
+The performance of the two methods is not the same, however, so you&amp;rsquo;ll have to decide which method to use based on
+your team&amp;rsquo;s preferences for syntax and the performance requirements of your application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/CreateStream.gif&#34; alt=&#34;Create a Stream&#34; title=&#34;Create a Stream&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;file-handling-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;File Handling in Java 8&lt;/h3&gt;
+
+&lt;p&gt;Java 7 introduced some really nice features for file handling. Working with files has become even
+more intuitive when you combine these Java 7 features with streams.&lt;/p&gt;
+
+&lt;p&gt;In this example, we&amp;rsquo;re parsing a file which contains Tweets recorded from the Twitter firehose.  Each line contains a
+different tweet, and what we want to do is filter out the noise (there are lines that contain only the single String
+&amp;ldquo;OK&amp;rdquo; as a response from Twitter) and then publish the remaining tweets via websockets.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    try (Stream&amp;lt;String&amp;gt; lines = Files.lines(filePath)) {
+        lines.filter(s -&amp;gt; !s.equals(&amp;quot;OK&amp;quot;))
+             .forEach(tweetsEndpoint::onMessage);
+    } catch (IOException e) {
+        //error handling here
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, I&amp;rsquo;m not tempted to show the Java 6 version of the code, as the Java 8 version is much simpler.  The first line
+uses &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html&#34;&gt;try-with-resources&lt;/a&gt;
+to obtain a strea, of &lt;code&gt;Strings&lt;/code&gt;, one string per line in our file.  Then we use the &lt;code&gt;filter()&lt;/code&gt;
+method to exclude the lines that aren&amp;rsquo;t tweets, and finally publish all the remaining tweets via our websocket
+server endpoint.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Java7And8.gif&#34; alt=&#34;File handling with Java 8&#34; title=&#34;File handling with Java 8&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;advanced-streams-and-more-collectors:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Advanced Streams and More Collectors&lt;/h3&gt;
+
+&lt;p&gt;The last part of the application that I&amp;rsquo;d like to show you in more depth, is the mood analyser.  The aim of
+this small service is to take a single Tweet and figure out the mood of that Tweet in a very rough fashion.  It will
+generally decide if a single Tweet is &amp;ldquo;happy&amp;rdquo;, &amp;ldquo;sad&amp;rdquo;, or &amp;ldquo;happy &lt;em&gt;and&lt;/em&gt; sad&amp;rdquo;, and return a comma separated String of
+the mood in upper case. So for example:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Today was a great day!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;would be classified as &amp;ldquo;HAPPY&amp;rdquo;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m irritated I have to work tomorrow&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;would be &amp;ldquo;SAD&amp;rdquo;, and&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The start of this week was fantastic, but today sucks&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;contains both good and bad news, so would be &amp;ldquo;HAPPY,SAD&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;If I had an automated system for applying moods to Twitter messages, I&amp;rsquo;d be retired on a beach
+somewhere, this kind of analysis is very much in demand.  In my application, I settle instead for a very crude method
+of classifying the messages - we&amp;rsquo;re going to parse the message and look for words that might imply &amp;ldquo;happy&amp;rdquo; or &amp;ldquo;sad&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;We start with a &lt;code&gt;Map&lt;/code&gt;, which maps words to their associated mood (represented as an enum).  Something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;happy&amp;quot;: HAPPY,
+ &amp;quot;fantastic&amp;quot;: HAPPY,
+ &amp;quot;awesome&amp;quot;: HAPPY,
+ ...
+ &amp;quot;sad&amp;quot;: SAD,
+ &amp;quot;terrible&amp;quot;: SAD,
+ &amp;quot;sucks&amp;quot;: SAD]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are a number of approaches to this problem, this is not a definitive answer. I will demonstrate
+with my selected method how you can chain together stream operations to get the output that you need.&lt;/p&gt;
+
+&lt;p&gt;Firstly, we create a stream where each item is a word in the original Twitter message.  We use &lt;code&gt;String&lt;/code&gt;&amp;rsquo;s &lt;code&gt;split()&lt;/code&gt;
+method to create an array of words, and use &lt;code&gt;Stream.of()&lt;/code&gt; to turn this into a &lt;code&gt;Stream&lt;/code&gt; of &lt;code&gt;Strings&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, we&amp;rsquo;re going to convert all these words to lowercase, as our map of words to moods only has lowercase keys.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;map()&lt;/code&gt; method takes one value and turns it into another.  In this case, we want to turn a &lt;code&gt;String&lt;/code&gt; value like
+&amp;ldquo;Awesome&amp;rdquo; into its lowercase version, &amp;ldquo;awesome&amp;rdquo;.  It&amp;rsquo;s easy pass in String&amp;rsquo;s &lt;code&gt;toLowerCase()&lt;/code&gt; method as a method
+reference to do the conversion.&lt;/p&gt;
+
+&lt;p&gt;Now we have a string in the correct case, we can search our map of words-to-moods for the mood that corresponds to
+this word.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Not every word is going to have a corresponding mood in the map, so we&amp;rsquo;re only going to pass non-null moods to the
+next step of the pipeline&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now what I have is a &lt;code&gt;Mood&lt;/code&gt;, an enum value of either &lt;code&gt;HAPPY&lt;/code&gt; or &lt;code&gt;SAD&lt;/code&gt;. Our requirements state that for each tweet, we
+need to return one of &amp;ldquo;HAPPY&amp;rdquo;, &amp;ldquo;SAD&amp;rdquo;, or &amp;ldquo;HAPPY,SAD&amp;rdquo;. We don&amp;rsquo;t need an indication of whether there are multiple happy
+words or sad words in the same tweet, so we only need one instance of each mood. This is easily done by requiring the
+stream to contain only distinct values.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+      .distinct()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;According to our requirements, we need to convert our enum value to a String&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+      .distinct()
+      .map((mood) -&amp;gt; mood.name())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And finally, we want to merge together all the moods found for this message into a comma separated string of moods.
+In our previous Stream example, we used &lt;code&gt;Collectors.toList()&lt;/code&gt; to return a &lt;code&gt;List&lt;/code&gt;
+of &lt;code&gt;TwitterUsers&lt;/code&gt;. This time, we&amp;rsquo;re going to use another built in collector, &lt;code&gt;Collectors.joining()&lt;/code&gt; and give it the
+characters we want to use to separate our results. &lt;code&gt;joining()&lt;/code&gt; will return a &lt;code&gt;String&lt;/code&gt; of your results, separated by
+your chosen delimiter. Which means that now in Java 8 we can easily create comma separated strings without having to
+iterate over a list and figure out if we&amp;rsquo;re supposed to be putting a comma after this item or not.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+      .distinct()
+      .map((mood) -&amp;gt; mood.name())
+      .collect(Collectors.joining(&amp;quot;,&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, let&amp;rsquo;s simplify the lambdas to method references where possible, and turn this into a method we can use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public static String identifyMood(String twitterMessage) {
+    return Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+                 .map(String::toLowerCase)
+                 .map(WORD_TO_MOOD::get)
+                 .filter(mood -&amp;gt; mood != null)
+                 .distinct()
+                 .map(Enum::name)
+                 .collect(joining(&amp;quot;,&amp;quot;));
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If we called &lt;code&gt;identifyMood&lt;/code&gt; with the message &amp;ldquo;Yesterday I was sad sad sad, but today is awesome&amp;rdquo;, we&amp;rsquo;ll get the
+String &amp;ldquo;SAD,HAPPY&amp;rdquo; in return.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/AdvancedStreams.gif&#34; alt=&#34;Advanced Streams&#34; title=&#34;Advanced Streams&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;With this example we have seen how you can chain multiple operations to perform fairly complex processing, with limited
+lines of code.&lt;/p&gt;
+
+&lt;h3 id=&#34;summary:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;Java 8 is more than just a bit of extra syntax to learn, or a couple of new methods that might be useful.
+It can change the way we approach solving common problems. With lambda expressions, streams and some of the other
+new methods in Java 8, you can use easily perform common operations (for example, &lt;code&gt;computeIfAbsent()&lt;/code&gt; and &lt;code&gt;joining()&lt;/code&gt;),
+and you gain a new set of tools, particularly in manipulating data sets.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>The Extraordinary Team Of Developers</title>
       <link>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
@@ -1709,118 +2080,6 @@ fully working end-to-end application using as few external dependencies as possi
 &lt;p&gt;&lt;em&gt;In this session, Trisha will build a Java 8 application live. This application will consume a real-time feed of high
 velocity data, contain services that make sense of the data, and present it in a JavaFX dashboard. Along the way, we&amp;rsquo;ll
 encounter Java 8 streams, lambdas, new ways of working with collections, and bump into the new date and time API.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The State of Java</title>
-      <link>http://trishagee.github.io/post/svq_state_of_java_update/</link>
-      <pubDate>Thu, 29 Jan 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/svq_state_of_java_update/</guid>
-      <description>
-
-&lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
-find people unusually keen to come and visit us on the pretence of presenting at the Sevilla Java User Group (and please,
-DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
-
-&lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
-an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m just starting to use Java 8 in real life, so this could not have been better timed - I got to ask the guys a bunch
-of questions about the intentions behind some of the Java 8 features, and the current vision for the future.&lt;/p&gt;
-
-&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/44036521&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
-&lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;i&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/2015-java-update-and-roadmap-jug-sevilla&#34; title=&#34;2015 Java update and roadmap, JUG sevilla&#34; target=&#34;_blank&#34;&gt;2015 Java update and roadmap, JUG sevilla&lt;/a&gt; from Georges Saab and Aurelio Garcia-Ribeyro &lt;/i&gt;&lt;/div&gt;&lt;/p&gt;
-
-&lt;p&gt;My notes from the session:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html&#34;&gt;Lambdas&lt;/a&gt; could be just a syntax change,
-but they could be more than that - they could impact the language, the libraries
-and the JVM. They could have a positive impact on performance, and this work can continue to go on through small
-updates to Java that don&amp;rsquo;t impact the syntax.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; are a pipeline of operations, made possible/easier/more readable by lambdas. The aim is to make operations
-on collections easier and more readable.&lt;/li&gt;
-&lt;li&gt;In the Old World Order, you had to care about &lt;em&gt;how&lt;/em&gt; to perform certain operations. With streams, you don&amp;rsquo;t need to
-tell the computer exactly how it&amp;rsquo;s done, you can simply say what operations you want performed. This makes it easier
-for developers&lt;/li&gt;
-&lt;li&gt;Streams will take all the operations you pass in and perform them in a single pass of the data, so you don&amp;rsquo;t have
-to write multiple loops to perform multiple operations on the same data structure, or tie your brain in knots figuring
-out how to do it in one loop. There are also no intermediate data structures when you use streams.&lt;/li&gt;
-&lt;li&gt;The implementation
-can be optimised under the covers (e.g. not performing the &lt;code&gt;sort&lt;/code&gt; operation if the data is already ordered correctly),
-and the developer doesn&amp;rsquo;t have to worry about it. Java can introduce further optimisations in later releases without
-changing the API or impacting the code a developer has already written.&lt;/li&gt;
-&lt;li&gt;These new features in Java have a focus on readability, since code is much more often read than written.&lt;/li&gt;
-&lt;li&gt;The operations are easier to parallelise, because the developer is no longer dictating the &lt;em&gt;how&lt;/em&gt; - multiple &lt;code&gt;for&lt;/code&gt; loops
-might not be easy to parallelise, but a series of operations can be.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html&#34;&gt;Default methods&lt;/a&gt; and
-new support for &lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html#static&#34;&gt;static methods on interfaces&lt;/a&gt; are interesting.
-I&amp;rsquo;d forgotten you could put static methods on interfaces and I&amp;rsquo;m going to sneak them into my latest project.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html&#34;&gt;Nashorn&lt;/a&gt; is here to replace Rhino. Personally I haven&amp;rsquo;t worked in the sort of environment that would need server-side
-JavaScript so this whole area has passed me by somewhat, but seems it might be interesting for Node.js or creating
-a &lt;a href=&#34;http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34;&gt;REPL&lt;/a&gt;
-in JavaScript that you want to run on the JVM.&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type&#34;&gt;additional annotation support in Java 8&lt;/a&gt;
-will be useful for &lt;a href=&#34;http://www.oracle.com/technetwork/java/javaee/overview/index.html&#34;&gt;Java EE&lt;/a&gt;.  As this is something I&amp;rsquo;m currently playing
-with (specifically web sockets) I&amp;rsquo;m interested in this, but it seems like it will be a while before this filters into
-the Java EE that&amp;rsquo;s used on a daily basis.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html&#34;&gt;Mission Control and Flight Recorder&lt;/a&gt; - look interesting.  Feel like I should play with them.&lt;/li&gt;
-&lt;li&gt;Many people are skipping straight from Java 6 to 8 - the new language features and improved performance are major driving
-factors&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.java.com/en/download/faq/java_7.xml&#34;&gt;End of public updates of Java 7 in April&lt;/a&gt;. Having libraries that, um&amp;hellip; &lt;em&gt;encourage&lt;/em&gt;&amp;hellip; adoption of the latest version of
-Java makes life a lot easier for those who develop the Java language, as they can concentrate on moving the language
-forward and not be tied down supporting old versions.&lt;/li&gt;
-&lt;li&gt;Either this is the first time I&amp;rsquo;ve heard of &lt;a href=&#34;http://www.oracle.com/technetwork/java/javadb/overview/index.html&#34;&gt;JavaDB&lt;/a&gt;,
-or my memory has completely discarded it. I had no idea what it was.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9&lt;/a&gt; is well under way, check out the JEPs.&lt;/li&gt;
-&lt;li&gt;(This is the &lt;a href=&#34;http://openjdk.java.net/jeps/1&#34;&gt;JEP process&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Jigsaw&lt;/a&gt; was explained, and actually I could see myself using it for the project I&amp;rsquo;m working on right now. I had a look
-to see if I could use it via the OpenJDK, but it looks like the groundwork is there, but not the actual modules themselves.&lt;/li&gt;
-&lt;li&gt;The &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/tech/g1-intro-jsp-135488.html&#34;&gt;G1 Garbage Collector&lt;/a&gt; is &amp;ldquo;&amp;hellip;the go forward GC&amp;rdquo;, it&amp;rsquo;s the one that&amp;rsquo;s being actively worked on.&lt;/li&gt;
-&lt;li&gt;This is the first I&amp;rsquo;ve heard of &lt;a href=&#34;http://openjdk.java.net/jeps/193&#34;&gt;Enhanced Volatiles&lt;/a&gt;, I&amp;rsquo;m so behind the times!&lt;/li&gt;
-&lt;li&gt;Access to internal packages is going away in Java 9. So
-&lt;a href=&#34;http://www.oracle.com/technetwork/java/faq-sun-packages-142232.html&#34;&gt;don&amp;rsquo;t use any &lt;code&gt;sun.*&lt;/code&gt; packages&lt;/a&gt;.
-Use &lt;a href=&#34;http://java.dzone.com/articles/jdeps-jdk-8-command-line&#34;&gt;jdeps&lt;/a&gt; to identify any
-dependencies in your code that need to change.&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and, looking further ahead than Java 9, we have &lt;a href=&#34;http://openjdk.java.net/jeps/169&#34;&gt;value types&lt;/a&gt; and
-&lt;a href=&#34;http://openjdk.java.net/projects/valhalla/&#34;&gt;Project Valhalla&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;a &lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL for Java&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;possibly a &lt;a href=&#34;http://openjdk.java.net/jeps/198&#34;&gt;lightweight JSON API&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and &lt;a href=&#34;http://cr.openjdk.java.net/~psandoz/varhandles/jvmls14-varHandles.pdf&#34;&gt;VarHandles&lt;/a&gt; were also mentioned.&lt;/li&gt;
-&lt;li&gt;Finally, the guys mentioned a &lt;a href=&#34;http://youtu.be/2y5Pv4yN0b0&#34;&gt;talk by Brian Goetz called &amp;ldquo;Stewardship: the Sobering Parts&amp;rdquo;&lt;/a&gt;, which has gone onto my
-to-watch list.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;ideas:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Ideas&lt;/h4&gt;
-
-&lt;p&gt;It became clear throughout the talk there are plenty of ideas that we could explore in later presentations.  If you want to see
-any of the following, add a comment or ping me or &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;IsraKaos&lt;/a&gt; on twitter or Meetup and we&amp;rsquo;ll try and schedule it.&lt;/p&gt;
-
-&lt;p&gt;Similarly, if you can present on any of these topics and want to come to a beautiful, sunny city with amazing food to
-do so, drop me a line:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The OpenJDK&lt;/li&gt;
-&lt;li&gt;The JCP, the purpose, the processes, the people&lt;/li&gt;
-&lt;li&gt;Adopt a JSR, Adopt OpenJDK&lt;/li&gt;
-&lt;li&gt;New Date/Time (JSR310)&lt;/li&gt;
-&lt;li&gt;JavaFX&lt;/li&gt;
-&lt;li&gt;Code optimisation vs Data optimisation (I honestly don&amp;rsquo;t know what this means, but I wrote it down in my notes)&lt;/li&gt;
-&lt;li&gt;Java EE&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;further-reading:aa7b1625222cbc3d2fec1ade4af1aaa0&#34;&gt;Further Reading&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=KDGWBWOK2S6FVS6F&#34;&gt;Java 8 in Action&lt;/a&gt; has details on other Java 8 features like Date and Time&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt; covers JavaFX too, and highlights some Java 7 features you might like&lt;/li&gt;
-&lt;li&gt;Brian Goetz did a great talk last year, &lt;a href=&#34;https://www.youtube.com/watch?v=MLksirK9nnE&#34;&gt;&amp;ldquo;Lambdas in Java: A peek under the hood&amp;rdquo;&lt;/a&gt;. I had to watch it twice before even half of the info sank in, but it&amp;rsquo;s really interesting.&lt;/li&gt;
-&lt;li&gt;Stephen Colebourne, the guy behind Joda time and the new Date and Time API, has &lt;a href=&#34;http://vimeo.com/87157763&#34;&gt;this talk about the new API&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9 OpenJDK page&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

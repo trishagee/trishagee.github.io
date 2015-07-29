@@ -6,7 +6,378 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 21 Jul 2015 00:00:00 UTC</updated>
+    <updated>Thu, 23 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8</title>
+      <link>http://trishagee.github.io/post/java_8/</link>
+      <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve been giving a presentation showing &amp;ldquo;Java 8 in Anger&amp;rdquo; - no, it&amp;rsquo;s not that the most recent release of Java has me
+particularly enraged, &amp;ldquo;in anger&amp;rdquo; is (apparently) a British phrase meaning &amp;ldquo;in practice&amp;rdquo; or &amp;ldquo;in the real world&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;The aim of this talk is to demo, with live code, how to use some of the Java 8 features like Lambda Expressions and
+the Streams API to solve some of the coding problems you might come across in your day job as a developer.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not going to transcribe the whole talk for this article, it probably works best (if you&amp;rsquo;re interested) to
+watch the video instead. What I do want to do is to use the application from the presentation to explore some
+specific Java 8 features in more detail. If you&amp;rsquo;re interested in the wider context, I&amp;rsquo;ve got
+&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;links to the videos and source code&lt;/a&gt; on my blog.&lt;/p&gt;
+
+&lt;h3 id=&#34;method-references-and-new-methods-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Method References and New Methods in Java 8&lt;/h3&gt;
+
+&lt;p&gt;The first section where we start using some of the new methods available in Java 8 is when we&amp;rsquo;re building up a
+leaderboard of top tweeters. This leaderboard will be a table of the Twitter users who have tweeted the most, in
+descending order.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/leaderboard.png&#34; alt=&#34;Twitter Leaderboard&#34; title=&#34;Twitter Leaderboard&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;We store every Twitter handle we see in as a key in a &lt;code&gt;Map&lt;/code&gt;, and for
+the value we have a &lt;code&gt;TwitterUser&lt;/code&gt; (an object to represent this particular user). When we
+see a new Twitter handle, we want to create a &lt;code&gt;TwitterUser&lt;/code&gt; for this person and store it in the map, keyed against
+this Twitter handle.&lt;/p&gt;
+
+&lt;p&gt;Pre-Java-8, we&amp;rsquo;d write something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
+
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.get(twitterHandle);
+    if (twitterUser == null) {
+        twitterUser = new TwitterUser(twitterHandle);
+        allTwitterUsers.put(twitterHandle, twitterUser);
+    }
+    // then do stuff...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But Java 8 has not only given us lambdas and streams, it&amp;rsquo;s added new methods to some of our favourite classes.  &lt;code&gt;Map&lt;/code&gt;
+now has a &lt;code&gt;computeIfAbsent()&lt;/code&gt; method which allows you to define what to do if an item doesn&amp;rsquo;t exist in the map.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
+
+public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, 
+                                                              TwitterUser::new);
+    // then do stuff...
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This does the same thing as the first example and is clearly far fewer lines of code, especially as it also makes use
+of &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;, which usually work
+out to be even shorter than lambda expressions. As a long-term Java programmer with limited exposure to other
+languages, although this may be shorter, learning to write code this way is going to take me a while to get used to.&lt;/p&gt;
+
+&lt;p&gt;Fortunately for me and my old-school Java approach, &lt;a href=&#34;www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; can help me get to
+grips with the new syntax. When I first came to Java 8, I found it more understandable (although &lt;em&gt;much&lt;/em&gt; more code)
+to call these sorts of methods using an anonymous inner class rather than a lambda expression or a method reference.
+IntelliJ IDEA can help create this anonymous inner class and convert it into something more Java 8-ish:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/ReplaceWithMethodReference.gif&#34; alt=&#34;Convert to method reference&#34; title=&#34;Convert to method reference&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Method references are going to take me a while to grasp instinctively, but I am starting to see how the succinct
+syntax could be more expressive, once I get used to it - &lt;code&gt;computeifAbsent()&lt;/code&gt; is going to call a constructor on
+&lt;code&gt;TwitterUser&lt;/code&gt; to create a new user if one doesn&amp;rsquo;t already exist in the map.&lt;/p&gt;
+
+&lt;h3 id=&#34;streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Streams&lt;/h3&gt;
+
+&lt;p&gt;Next we need to increment the number of times we&amp;rsquo;ve seen
+this &lt;code&gt;TwitterUser&lt;/code&gt;, and then figure out how this impacts our leaderboard of tweeters. We can use the
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams API&lt;/a&gt; to
+turn our map of all Twitter users into a list of the top ten Tweeters.&lt;/p&gt;
+
+&lt;p&gt;First we need to sort our &lt;code&gt;TwitterUsers&lt;/code&gt; according to the number of times they&amp;rsquo;ve tweeted.
+There&amp;rsquo;s a &lt;code&gt;sorted()&lt;/code&gt; method on &lt;code&gt;Stream&lt;/code&gt; which takes a &lt;code&gt;Comparator&lt;/code&gt;, so it seems logical to use this.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public void onMessage(String twitterHandle) {
+    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, TwitterUser::new);
+    twitterUser.incrementCount();
+
+    allTwitterUsers.values().stream()
+                   .sorted(new Comparator&amp;lt;TwitterUser&amp;gt;() {
+                       @Override
+                       public int compare(TwitterUser o1, TwitterUser o2) {
+                           return o2.getNumberOfTweets() - o1.getNumberOfTweets();
+                       }
+                   });
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;In the past, I&amp;rsquo;ve always found comparators a little hard to work with - I&amp;rsquo;m never quite sure if I&amp;rsquo;m supposed to be
+subtracting the first object from the second, or vice versa.  Fortunately, once again Java 8 makes things a little
+easier. You can use the new &lt;code&gt;Comparator.comparing()&lt;/code&gt; method, which you can combine with a method reference to state
+which method on &lt;code&gt;TwitterUser&lt;/code&gt; you want to sort by&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
+               .sorted(Comparator.comparing(TwitterUser::getNumberOfTweets));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For a leaderboard which shows the most active tweeters at the top, we need to sort in descending order, which is also
+simple and descriptive using this method&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
+               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that I&amp;rsquo;ve added a static import for &lt;code&gt;comparing&lt;/code&gt; to make the code a bit shorter.&lt;/p&gt;
+
+&lt;p&gt;So we&amp;rsquo;ve sorted all the values in the map, now we need to just get the top ten. Since we&amp;rsquo;re using Streams, it&amp;rsquo;s easy
+to chain together all the operations we want to perform on our collection, so we add a call to &lt;code&gt;limit&lt;/code&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
+               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+               .limit(10);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So far all we&amp;rsquo;ve done is build up a recipe for the operations we want to perform, we need to somehow execute all of
+these. Streams have intermediate operations which return a &lt;code&gt;Stream&lt;/code&gt; so that we can perform further operations (for
+example, both &lt;code&gt;sorted()&lt;/code&gt; and &lt;code&gt;limit()&lt;/code&gt; above), and terminal operations which will return some concrete value. In this
+case, what we want is a new list with these top ten tweeters. Telling the &lt;code&gt;collect&lt;/code&gt; method to put the results
+into a &lt;code&gt;List&lt;/code&gt; will do just this&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;TwitterUser&amp;gt; topTen = allTwitterUsers.values().stream()
+                                          .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+                                          .limit(10)
+                                          .collect(Collectors.toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With this set of stream operations, we&amp;rsquo;re effectively querying our map of all users. If we were querying a
+database instead of a map, we might have written something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT * from TwitterUsers
+ORDER BY numberOfTweets DESC
+LIMIT 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is how we built the whole operation:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Streams.gif&#34; alt=&#34;Using Streams&#34; title=&#34;Using Streams&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-our-own-streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Creating our own Streams&lt;/h3&gt;
+
+&lt;p&gt;Another part of this application requires a bar chart, where each bar corresponds to a minute in time over a period
+of ten minutes.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/bar-chart.png&#34; alt=&#34;Bar Chart Widget&#34; title=&#34;Bar Chart Widget&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;When the application starts for the first time, each of these bars needs to be set to an initial value of zero.&lt;/p&gt;
+
+&lt;p&gt;This is not an unusual situation - we&amp;rsquo;ve probably all written code that has to loop for some number of iterations and
+initialise some value.  We would probably usually do it using something like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
+    int nowMinute = LocalDateTime.now().getMinute();
+
+    for (int i = nowMinute; i &amp;lt; nowMinute + 10; i++) {
+        initialiseBarToZero(i);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here we also use a very small part of the new
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Date &amp;amp; Time API&lt;/a&gt;.  In the Java 8 world, we
+have more options for iterating over values.  In this case, we can create our own &lt;code&gt;IntStream&lt;/code&gt; from a range of
+values and perform some operation for each of these values.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
+    int nowMinute = LocalDateTime.now().getMinute();
+
+    IntStream.range(nowMinute, nowMinute + 10)
+             .forEach(value -&amp;gt; initialiseBarToZero(value));
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We can use a lambda expression to specify what to do with each of the values.  As before, we can also
+simplify this lambda expression to a method reference.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    IntStream.range(nowMinute, nowMinute + 10)
+             .forEach(this::initialiseBarToZero);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This method of iterating is marginally less code, and, once we get used to the new syntax, arguably more readable.
+The performance of the two methods is not the same, however, so you&amp;rsquo;ll have to decide which method to use based on
+your team&amp;rsquo;s preferences for syntax and the performance requirements of your application.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/CreateStream.gif&#34; alt=&#34;Create a Stream&#34; title=&#34;Create a Stream&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;file-handling-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;File Handling in Java 8&lt;/h3&gt;
+
+&lt;p&gt;Java 7 introduced some really nice features for file handling. Working with files has become even
+more intuitive when you combine these Java 7 features with streams.&lt;/p&gt;
+
+&lt;p&gt;In this example, we&amp;rsquo;re parsing a file which contains Tweets recorded from the Twitter firehose.  Each line contains a
+different tweet, and what we want to do is filter out the noise (there are lines that contain only the single String
+&amp;ldquo;OK&amp;rdquo; as a response from Twitter) and then publish the remaining tweets via websockets.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    try (Stream&amp;lt;String&amp;gt; lines = Files.lines(filePath)) {
+        lines.filter(s -&amp;gt; !s.equals(&amp;quot;OK&amp;quot;))
+             .forEach(tweetsEndpoint::onMessage);
+    } catch (IOException e) {
+        //error handling here
+    }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, I&amp;rsquo;m not tempted to show the Java 6 version of the code, as the Java 8 version is much simpler.  The first line
+uses &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html&#34;&gt;try-with-resources&lt;/a&gt;
+to obtain a strea, of &lt;code&gt;Strings&lt;/code&gt;, one string per line in our file.  Then we use the &lt;code&gt;filter()&lt;/code&gt;
+method to exclude the lines that aren&amp;rsquo;t tweets, and finally publish all the remaining tweets via our websocket
+server endpoint.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Java7And8.gif&#34; alt=&#34;File handling with Java 8&#34; title=&#34;File handling with Java 8&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;advanced-streams-and-more-collectors:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Advanced Streams and More Collectors&lt;/h3&gt;
+
+&lt;p&gt;The last part of the application that I&amp;rsquo;d like to show you in more depth, is the mood analyser.  The aim of
+this small service is to take a single Tweet and figure out the mood of that Tweet in a very rough fashion.  It will
+generally decide if a single Tweet is &amp;ldquo;happy&amp;rdquo;, &amp;ldquo;sad&amp;rdquo;, or &amp;ldquo;happy &lt;em&gt;and&lt;/em&gt; sad&amp;rdquo;, and return a comma separated String of
+the mood in upper case. So for example:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Today was a great day!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;would be classified as &amp;ldquo;HAPPY&amp;rdquo;,&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;I&amp;rsquo;m irritated I have to work tomorrow&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;would be &amp;ldquo;SAD&amp;rdquo;, and&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The start of this week was fantastic, but today sucks&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;contains both good and bad news, so would be &amp;ldquo;HAPPY,SAD&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;If I had an automated system for applying moods to Twitter messages, I&amp;rsquo;d be retired on a beach
+somewhere, this kind of analysis is very much in demand.  In my application, I settle instead for a very crude method
+of classifying the messages - we&amp;rsquo;re going to parse the message and look for words that might imply &amp;ldquo;happy&amp;rdquo; or &amp;ldquo;sad&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;We start with a &lt;code&gt;Map&lt;/code&gt;, which maps words to their associated mood (represented as an enum).  Something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;happy&amp;quot;: HAPPY,
+ &amp;quot;fantastic&amp;quot;: HAPPY,
+ &amp;quot;awesome&amp;quot;: HAPPY,
+ ...
+ &amp;quot;sad&amp;quot;: SAD,
+ &amp;quot;terrible&amp;quot;: SAD,
+ &amp;quot;sucks&amp;quot;: SAD]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;There are a number of approaches to this problem, this is not a definitive answer. I will demonstrate
+with my selected method how you can chain together stream operations to get the output that you need.&lt;/p&gt;
+
+&lt;p&gt;Firstly, we create a stream where each item is a word in the original Twitter message.  We use &lt;code&gt;String&lt;/code&gt;&amp;rsquo;s &lt;code&gt;split()&lt;/code&gt;
+method to create an array of words, and use &lt;code&gt;Stream.of()&lt;/code&gt; to turn this into a &lt;code&gt;Stream&lt;/code&gt; of &lt;code&gt;Strings&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Next, we&amp;rsquo;re going to convert all these words to lowercase, as our map of words to moods only has lowercase keys.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The &lt;code&gt;map()&lt;/code&gt; method takes one value and turns it into another.  In this case, we want to turn a &lt;code&gt;String&lt;/code&gt; value like
+&amp;ldquo;Awesome&amp;rdquo; into its lowercase version, &amp;ldquo;awesome&amp;rdquo;.  It&amp;rsquo;s easy pass in String&amp;rsquo;s &lt;code&gt;toLowerCase()&lt;/code&gt; method as a method
+reference to do the conversion.&lt;/p&gt;
+
+&lt;p&gt;Now we have a string in the correct case, we can search our map of words-to-moods for the mood that corresponds to
+this word.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Not every word is going to have a corresponding mood in the map, so we&amp;rsquo;re only going to pass non-null moods to the
+next step of the pipeline&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now what I have is a &lt;code&gt;Mood&lt;/code&gt;, an enum value of either &lt;code&gt;HAPPY&lt;/code&gt; or &lt;code&gt;SAD&lt;/code&gt;. Our requirements state that for each tweet, we
+need to return one of &amp;ldquo;HAPPY&amp;rdquo;, &amp;ldquo;SAD&amp;rdquo;, or &amp;ldquo;HAPPY,SAD&amp;rdquo;. We don&amp;rsquo;t need an indication of whether there are multiple happy
+words or sad words in the same tweet, so we only need one instance of each mood. This is easily done by requiring the
+stream to contain only distinct values.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+      .distinct()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;According to our requirements, we need to convert our enum value to a String&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+      .distinct()
+      .map((mood) -&amp;gt; mood.name())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And finally, we want to merge together all the moods found for this message into a comma separated string of moods.
+In our previous Stream example, we used &lt;code&gt;Collectors.toList()&lt;/code&gt; to return a &lt;code&gt;List&lt;/code&gt;
+of &lt;code&gt;TwitterUsers&lt;/code&gt;. This time, we&amp;rsquo;re going to use another built in collector, &lt;code&gt;Collectors.joining()&lt;/code&gt; and give it the
+characters we want to use to separate our results. &lt;code&gt;joining()&lt;/code&gt; will return a &lt;code&gt;String&lt;/code&gt; of your results, separated by
+your chosen delimiter. Which means that now in Java 8 we can easily create comma separated strings without having to
+iterate over a list and figure out if we&amp;rsquo;re supposed to be putting a comma after this item or not.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+      .map(String::toLowerCase)
+      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
+      .filter(mood -&amp;gt; mood != null)
+      .distinct()
+      .map((mood) -&amp;gt; mood.name())
+      .collect(Collectors.joining(&amp;quot;,&amp;quot;));
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Finally, let&amp;rsquo;s simplify the lambdas to method references where possible, and turn this into a method we can use&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;public static String identifyMood(String twitterMessage) {
+    return Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
+                 .map(String::toLowerCase)
+                 .map(WORD_TO_MOOD::get)
+                 .filter(mood -&amp;gt; mood != null)
+                 .distinct()
+                 .map(Enum::name)
+                 .collect(joining(&amp;quot;,&amp;quot;));
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If we called &lt;code&gt;identifyMood&lt;/code&gt; with the message &amp;ldquo;Yesterday I was sad sad sad, but today is awesome&amp;rdquo;, we&amp;rsquo;ll get the
+String &amp;ldquo;SAD,HAPPY&amp;rdquo; in return.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/AdvancedStreams.gif&#34; alt=&#34;Advanced Streams&#34; title=&#34;Advanced Streams&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;With this example we have seen how you can chain multiple operations to perform fairly complex processing, with limited
+lines of code.&lt;/p&gt;
+
+&lt;h3 id=&#34;summary:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;Java 8 is more than just a bit of extra syntax to learn, or a couple of new methods that might be useful.
+It can change the way we approach solving common problems. With lambda expressions, streams and some of the other
+new methods in Java 8, you can use easily perform common operations (for example, &lt;code&gt;computeIfAbsent()&lt;/code&gt; and &lt;code&gt;joining()&lt;/code&gt;),
+and you gain a new set of tools, particularly in manipulating data sets.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8 MOOC - Session 1 Summary</title>
@@ -1532,94 +1903,6 @@ presenting beforehand.  I think this is exactly the sort of thing women&amp;rsqu
 
 &lt;p&gt;I appreciate there is &lt;em&gt;so&lt;/em&gt; much more I could have covered, and many topics deserve more depth. But this is the brain dump from the Devoxx
 session, and maybe one day things will be expanded into their own topics.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>It&#39;s not waste, it&#39;s learning</title>
-      <link>http://trishagee.github.io/post/its_not_waste_its_learning/</link>
-      <pubDate>Sun, 23 Nov 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/its_not_waste_its_learning/</guid>
-      <description>&lt;p&gt;In one my my rare weekends at home, I found myself on a pottery course (this is the sort of thing that happens when you&amp;rsquo;re a &amp;ldquo;yes&amp;rdquo; person).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/its_not_waste_its_learning/pottery-1.jpg&#34; alt=&#34;OK, not pottery, horses. The course was on a farm.&#34; title=&#34;OK, not pottery, horses. The course was on a farm.&#34; /&gt;
-
-&lt;figcaption&gt;OK, not pottery, horses. The course was on a farm.&lt;/figcaption&gt;&lt;/p&gt;
-
-&lt;p&gt;I had a fantastic time on the course, there was something enormously satisfactory and therapeutic about working with my hands,
-on something creative that was for me, and only me.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/its_not_waste_its_learning/pottery-2.jpg&#34; alt=&#34;My first bowl&#34; title=&#34;My first bowl&#34; /&gt;
-
-&lt;figcaption&gt;Honestly, I think the one I did in primary school when I was seven was better.&lt;br /&gt;
-And I don&amp;rsquo;t care, because I loved creating it.&lt;/figcaption&gt;&lt;/p&gt;
-
-&lt;p&gt;One of the things that really struck me that day was embracing failure and destruction as part of the creative process.  Let me give you a
-couple of examples:&lt;/p&gt;
-
-&lt;p&gt;The teacher showed us several techniques for creating pottery, one of which was using plaster moulds and very liquid clay to produce more
-complex items (for example, mugs and animal figures).  He told us that when using a new mould,
-the first few items would be useless.  But these &amp;ldquo;failures&amp;rdquo; are an important process for the mould itself.  The
-class was in Spanish, so my understanding was imperfect, but I think it was something to do with the fact that the plaster moulds are
-supposed to absorb water, and therefore I assume at the beginning they absorb far too much and the clay ends up being too dry and brittle.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/its_not_waste_its_learning/pottery-3.jpg&#34; alt=&#34;Pottery created with moulds&#34; title=&#34;Pottery created with moulds&#34; /&gt;
-
- &lt;figcaption&gt;Pottery created with moulds&lt;/figcaption&gt;&lt;/p&gt;
-
-&lt;p&gt;The second example was when he showed us why it was so difficult to create a clay plate - bowls, mugs, cups were fine,
-but a plate is difficult as it&amp;rsquo;s flat and the shape doesn&amp;rsquo;t have enough structure for it to have any rigidity  if it&amp;rsquo;s even slightly damp
-(and clay stays damp for a looong time, even in a climate like Seville&amp;rsquo;s). He demonstrated this by cutting straight through the plate
-that he&amp;rsquo;d put into the mould earlier and folding it up, to the collective intake of breath of the whole class - a class of people of a range
-of ages and backgrounds. We seem socially programmed to find destruction of any kind upsetting (which is probably, overall,
-not a bad thing), when the teacher sliced the plate in half to demonstrate how floppy the plate was, we were all disturbed by this waste.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/its_not_waste_its_learning/pottery-5.jpg&#34; alt=&#34;My pieces&#34; title=&#34;My pieces&#34; /&gt;
-
-&lt;figcaption&gt;Even when I broke my bowl when preparing it for the kiln, I couldn&amp;rsquo;t bring myself to abandon it - I turned it into a
-candle holder&lt;/figcaption&gt;&lt;/p&gt;
-
-&lt;p&gt;But here&amp;rsquo;s the thing - it&amp;rsquo;s clay.  Clay is mud.  It&amp;rsquo;s from the ground.  Moreover, it&amp;rsquo;s almost completely reusable.  All of the leftover
-clay from our earlier exercises, all of the excess liquid clay from the moulds, all of the pieces that didn&amp;rsquo;t make it,
-it was put aside and saved for later.  It&amp;rsquo;s not a waste.  It&amp;rsquo;s learning.  It&amp;rsquo;s experimenting.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not failure.&lt;/p&gt;
-
-&lt;p&gt;It got me thinking.  If we can be like that about something concrete, something that exists in the real world,
-why aren&amp;rsquo;t we like that about something as ephemeral as code?  Why are we so afraid to throw away code? And don&amp;rsquo;t tell me we&amp;rsquo;re not
-afraid - how many &amp;ldquo;spikes&amp;rdquo; and &amp;ldquo;prototypes&amp;rdquo; have you seen running in production?  Have you read people talking about
-creating code and throwing it away, and thought &amp;ldquo;that sounds nice, but I think I&amp;rsquo;ll stick to just producing useful code&amp;rdquo;? (Note: I&amp;rsquo;m not
-talking about &lt;a href=&#34;http://www.joelonsoftware.com/articles/fog0000000069.html&#34;&gt;throwing away perfectly good production code&lt;/a&gt;,
-nor am I talking about &lt;a href=&#34;http://codesqueeze.com/refactorbation/&#34;&gt;refactorbation&lt;/a&gt;, a term I just discovered and love.
-I&amp;rsquo;m talking about creating for research, spikes, learning etc, and then throwing it away).&lt;/p&gt;
-
-&lt;p&gt;&lt;div style=&#34;text-align:center&#34;&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/its_not_waste_its_learning/pottery-6.jpg&#34; alt=&#34;Java&#34; title=&#34;Java&#34; height=&#34;300&#34;&gt;&lt;/img&gt;&lt;/div&gt;
-&lt;figcaption&gt;What?? I needed to carve something into the medallion&lt;/figcaption&gt;&lt;/p&gt;
-
-&lt;p&gt;Coincidentally, I&amp;rsquo;ve been reading &lt;a href=&#34;http://www.amazon.com/gp/product/1477800670/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1477800670&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=5KXFITDLKQQCXD3K&#34;&gt;Build Your Routine, Find Your Focus, and Sharpen Your Creative Mind&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1477800670&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;,
-and there&amp;rsquo;s a section in there that talks about getting into the habit of
-creating just for the sake of creating.  Not for your side projects, not for a client, not even for your portfolio.  Simply to get into
-the habit of creating.  &lt;em&gt;Maybe&lt;/em&gt; some of those ideas, or processes, will come in handy later down the line.  Or maybe,
-like the clay moulds, simply creating something for throwing away actually helps the overall process.&lt;/p&gt;
-
-&lt;p&gt;These experiences have left me with a feeling that I should start getting used to the idea of throwing code away,
-and start creating things for no reason other than the feeling of creating.  It could be like running - in theory I run so I have to
-worry less about my weight and my fitness, but actually I run &lt;em&gt;much&lt;/em&gt; more frequently when I run just for the joy of running. The fitness
-and health are side benefits.&lt;/p&gt;
-
-&lt;p&gt;Maybe we&amp;rsquo;re so reluctant to throw code away precisely because it &lt;em&gt;is&lt;/em&gt; ephemeral.  Maybe with the clay,
-we can see that concrete thing, that mud, being turned into something useful eventually.  With running,
-you can feel the difference in your attitude, in your fitness, maybe see it on the scales. With code, when you delete those characters,
-revert that change, you feel like you lost something, and have nothing to show for that precious time.  When actually you created new
-pathways in your brain, added new memories and learnt new lessons.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not sure I&amp;rsquo;m ready yet to create just for the sake of creating, I think I&amp;rsquo;m just too results-driven. But I&amp;rsquo;m going to
-write about it here to remind myself that it is something I want to do. Sometimes it&amp;rsquo;s the exercise, not the end result.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/its_not_waste_its_learning/pottery-7.jpg&#34; alt=&#34;The full haul&#34; title=&#34;The full haul&#34; /&gt;
-
-&lt;figcaption&gt;The final pieces, still needing the kiln to finish the glaze.&lt;/figcaption&gt;&lt;/p&gt;
 </description>
     </item>
     
