@@ -23,377 +23,6 @@ you should not be looking at).&lt;/p&gt;
     </item>
     
     <item>
-      <title>Java 8</title>
-      <link>http://trishagee.github.io/post/java_8/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_8/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve been giving a presentation showing &amp;ldquo;Java 8 in Anger&amp;rdquo; - no, it&amp;rsquo;s not that the most recent release of Java has me
-particularly enraged, &amp;ldquo;in anger&amp;rdquo; is (apparently) a British phrase meaning &amp;ldquo;in practice&amp;rdquo; or &amp;ldquo;in the real world&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;The aim of this talk is to demo, with live code, how to use some of the Java 8 features like Lambda Expressions and
-the Streams API to solve some of the coding problems you might come across in your day job as a developer.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not going to transcribe the whole talk for this article, it probably works best (if you&amp;rsquo;re interested) to
-watch the video instead. What I do want to do is to use the application from the presentation to explore some
-specific Java 8 features in more detail. If you&amp;rsquo;re interested in the wider context, I&amp;rsquo;ve got
-&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;links to the videos and source code&lt;/a&gt; on my blog.&lt;/p&gt;
-
-&lt;h3 id=&#34;method-references-and-new-methods-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Method References and New Methods in Java 8&lt;/h3&gt;
-
-&lt;p&gt;The first section where we start using some of the new methods available in Java 8 is when we&amp;rsquo;re building up a
-leaderboard of top tweeters. This leaderboard will be a table of the Twitter users who have tweeted the most, in
-descending order.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/leaderboard.png&#34; alt=&#34;Twitter Leaderboard&#34; title=&#34;Twitter Leaderboard&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;We store every Twitter handle we see in as a key in a &lt;code&gt;Map&lt;/code&gt;, and for
-the value we have a &lt;code&gt;TwitterUser&lt;/code&gt; (an object to represent this particular user). When we
-see a new Twitter handle, we want to create a &lt;code&gt;TwitterUser&lt;/code&gt; for this person and store it in the map, keyed against
-this Twitter handle.&lt;/p&gt;
-
-&lt;p&gt;Pre-Java-8, we&amp;rsquo;d write something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
-
-public void onMessage(String twitterHandle) {
-    TwitterUser twitterUser = allTwitterUsers.get(twitterHandle);
-    if (twitterUser == null) {
-        twitterUser = new TwitterUser(twitterHandle);
-        allTwitterUsers.put(twitterHandle, twitterUser);
-    }
-    // then do stuff...
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But Java 8 has not only given us lambdas and streams, it&amp;rsquo;s added new methods to some of our favourite classes.  &lt;code&gt;Map&lt;/code&gt;
-now has a &lt;code&gt;computeIfAbsent()&lt;/code&gt; method which allows you to define what to do if an item doesn&amp;rsquo;t exist in the map.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
-
-public void onMessage(String twitterHandle) {
-    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, 
-                                                              TwitterUser::new);
-    // then do stuff...
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This does the same thing as the first example and is clearly far fewer lines of code, especially as it also makes use
-of &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;, which usually work
-out to be even shorter than lambda expressions. As a long-term Java programmer with limited exposure to other
-languages, although this may be shorter, learning to write code this way is going to take me a while to get used to.&lt;/p&gt;
-
-&lt;p&gt;Fortunately for me and my old-school Java approach, &lt;a href=&#34;www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; can help me get to
-grips with the new syntax. When I first came to Java 8, I found it more understandable (although &lt;em&gt;much&lt;/em&gt; more code)
-to call these sorts of methods using an anonymous inner class rather than a lambda expression or a method reference.
-IntelliJ IDEA can help create this anonymous inner class and convert it into something more Java 8-ish:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/ReplaceWithMethodReference.gif&#34; alt=&#34;Convert to method reference&#34; title=&#34;Convert to method reference&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Method references are going to take me a while to grasp instinctively, but I am starting to see how the succinct
-syntax could be more expressive, once I get used to it - &lt;code&gt;computeifAbsent()&lt;/code&gt; is going to call a constructor on
-&lt;code&gt;TwitterUser&lt;/code&gt; to create a new user if one doesn&amp;rsquo;t already exist in the map.&lt;/p&gt;
-
-&lt;h3 id=&#34;streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Streams&lt;/h3&gt;
-
-&lt;p&gt;Next we need to increment the number of times we&amp;rsquo;ve seen
-this &lt;code&gt;TwitterUser&lt;/code&gt;, and then figure out how this impacts our leaderboard of tweeters. We can use the
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams API&lt;/a&gt; to
-turn our map of all Twitter users into a list of the top ten Tweeters.&lt;/p&gt;
-
-&lt;p&gt;First we need to sort our &lt;code&gt;TwitterUsers&lt;/code&gt; according to the number of times they&amp;rsquo;ve tweeted.
-There&amp;rsquo;s a &lt;code&gt;sorted()&lt;/code&gt; method on &lt;code&gt;Stream&lt;/code&gt; which takes a &lt;code&gt;Comparator&lt;/code&gt;, so it seems logical to use this.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public void onMessage(String twitterHandle) {
-    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, TwitterUser::new);
-    twitterUser.incrementCount();
-
-    allTwitterUsers.values().stream()
-                   .sorted(new Comparator&amp;lt;TwitterUser&amp;gt;() {
-                       @Override
-                       public int compare(TwitterUser o1, TwitterUser o2) {
-                           return o2.getNumberOfTweets() - o1.getNumberOfTweets();
-                       }
-                   });
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the past, I&amp;rsquo;ve always found comparators a little hard to work with - I&amp;rsquo;m never quite sure if I&amp;rsquo;m supposed to be
-subtracting the first object from the second, or vice versa.  Fortunately, once again Java 8 makes things a little
-easier. You can use the new &lt;code&gt;Comparator.comparing()&lt;/code&gt; method, which you can combine with a method reference to state
-which method on &lt;code&gt;TwitterUser&lt;/code&gt; you want to sort by&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(Comparator.comparing(TwitterUser::getNumberOfTweets));
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For a leaderboard which shows the most active tweeters at the top, we need to sort in descending order, which is also
-simple and descriptive using this method&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed());
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note that I&amp;rsquo;ve added a static import for &lt;code&gt;comparing&lt;/code&gt; to make the code a bit shorter.&lt;/p&gt;
-
-&lt;p&gt;So we&amp;rsquo;ve sorted all the values in the map, now we need to just get the top ten. Since we&amp;rsquo;re using Streams, it&amp;rsquo;s easy
-to chain together all the operations we want to perform on our collection, so we add a call to &lt;code&gt;limit&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
-               .limit(10);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So far all we&amp;rsquo;ve done is build up a recipe for the operations we want to perform, we need to somehow execute all of
-these. Streams have intermediate operations which return a &lt;code&gt;Stream&lt;/code&gt; so that we can perform further operations (for
-example, both &lt;code&gt;sorted()&lt;/code&gt; and &lt;code&gt;limit()&lt;/code&gt; above), and terminal operations which will return some concrete value. In this
-case, what we want is a new list with these top ten tweeters. Telling the &lt;code&gt;collect&lt;/code&gt; method to put the results
-into a &lt;code&gt;List&lt;/code&gt; will do just this&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;List&amp;lt;TwitterUser&amp;gt; topTen = allTwitterUsers.values().stream()
-                                          .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
-                                          .limit(10)
-                                          .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;With this set of stream operations, we&amp;rsquo;re effectively querying our map of all users. If we were querying a
-database instead of a map, we might have written something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT * from TwitterUsers
-ORDER BY numberOfTweets DESC
-LIMIT 10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is how we built the whole operation:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Streams.gif&#34; alt=&#34;Using Streams&#34; title=&#34;Using Streams&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-our-own-streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Creating our own Streams&lt;/h3&gt;
-
-&lt;p&gt;Another part of this application requires a bar chart, where each bar corresponds to a minute in time over a period
-of ten minutes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/bar-chart.png&#34; alt=&#34;Bar Chart Widget&#34; title=&#34;Bar Chart Widget&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;When the application starts for the first time, each of these bars needs to be set to an initial value of zero.&lt;/p&gt;
-
-&lt;p&gt;This is not an unusual situation - we&amp;rsquo;ve probably all written code that has to loop for some number of iterations and
-initialise some value.  We would probably usually do it using something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
-    int nowMinute = LocalDateTime.now().getMinute();
-
-    for (int i = nowMinute; i &amp;lt; nowMinute + 10; i++) {
-        initialiseBarToZero(i);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here we also use a very small part of the new
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Date &amp;amp; Time API&lt;/a&gt;.  In the Java 8 world, we
-have more options for iterating over values.  In this case, we can create our own &lt;code&gt;IntStream&lt;/code&gt; from a range of
-values and perform some operation for each of these values.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
-    int nowMinute = LocalDateTime.now().getMinute();
-
-    IntStream.range(nowMinute, nowMinute + 10)
-             .forEach(value -&amp;gt; initialiseBarToZero(value));
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We can use a lambda expression to specify what to do with each of the values.  As before, we can also
-simplify this lambda expression to a method reference.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    IntStream.range(nowMinute, nowMinute + 10)
-             .forEach(this::initialiseBarToZero);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This method of iterating is marginally less code, and, once we get used to the new syntax, arguably more readable.
-The performance of the two methods is not the same, however, so you&amp;rsquo;ll have to decide which method to use based on
-your team&amp;rsquo;s preferences for syntax and the performance requirements of your application.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/CreateStream.gif&#34; alt=&#34;Create a Stream&#34; title=&#34;Create a Stream&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;file-handling-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;File Handling in Java 8&lt;/h3&gt;
-
-&lt;p&gt;Java 7 introduced some really nice features for file handling. Working with files has become even
-more intuitive when you combine these Java 7 features with streams.&lt;/p&gt;
-
-&lt;p&gt;In this example, we&amp;rsquo;re parsing a file which contains Tweets recorded from the Twitter firehose.  Each line contains a
-different tweet, and what we want to do is filter out the noise (there are lines that contain only the single String
-&amp;ldquo;OK&amp;rdquo; as a response from Twitter) and then publish the remaining tweets via websockets.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    try (Stream&amp;lt;String&amp;gt; lines = Files.lines(filePath)) {
-        lines.filter(s -&amp;gt; !s.equals(&amp;quot;OK&amp;quot;))
-             .forEach(tweetsEndpoint::onMessage);
-    } catch (IOException e) {
-        //error handling here
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here, I&amp;rsquo;m not tempted to show the Java 6 version of the code, as the Java 8 version is much simpler.  The first line
-uses &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html&#34;&gt;try-with-resources&lt;/a&gt;
-to obtain a strea, of &lt;code&gt;Strings&lt;/code&gt;, one string per line in our file.  Then we use the &lt;code&gt;filter()&lt;/code&gt;
-method to exclude the lines that aren&amp;rsquo;t tweets, and finally publish all the remaining tweets via our websocket
-server endpoint.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Java7And8.gif&#34; alt=&#34;File handling with Java 8&#34; title=&#34;File handling with Java 8&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;advanced-streams-and-more-collectors:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Advanced Streams and More Collectors&lt;/h3&gt;
-
-&lt;p&gt;The last part of the application that I&amp;rsquo;d like to show you in more depth, is the mood analyser.  The aim of
-this small service is to take a single Tweet and figure out the mood of that Tweet in a very rough fashion.  It will
-generally decide if a single Tweet is &amp;ldquo;happy&amp;rdquo;, &amp;ldquo;sad&amp;rdquo;, or &amp;ldquo;happy &lt;em&gt;and&lt;/em&gt; sad&amp;rdquo;, and return a comma separated String of
-the mood in upper case. So for example:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Today was a great day!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;would be classified as &amp;ldquo;HAPPY&amp;rdquo;,&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I&amp;rsquo;m irritated I have to work tomorrow&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;would be &amp;ldquo;SAD&amp;rdquo;, and&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The start of this week was fantastic, but today sucks&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;contains both good and bad news, so would be &amp;ldquo;HAPPY,SAD&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;If I had an automated system for applying moods to Twitter messages, I&amp;rsquo;d be retired on a beach
-somewhere, this kind of analysis is very much in demand.  In my application, I settle instead for a very crude method
-of classifying the messages - we&amp;rsquo;re going to parse the message and look for words that might imply &amp;ldquo;happy&amp;rdquo; or &amp;ldquo;sad&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;We start with a &lt;code&gt;Map&lt;/code&gt;, which maps words to their associated mood (represented as an enum).  Something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[&amp;quot;happy&amp;quot;: HAPPY,
- &amp;quot;fantastic&amp;quot;: HAPPY,
- &amp;quot;awesome&amp;quot;: HAPPY,
- ...
- &amp;quot;sad&amp;quot;: SAD,
- &amp;quot;terrible&amp;quot;: SAD,
- &amp;quot;sucks&amp;quot;: SAD]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There are a number of approaches to this problem, this is not a definitive answer. I will demonstrate
-with my selected method how you can chain together stream operations to get the output that you need.&lt;/p&gt;
-
-&lt;p&gt;Firstly, we create a stream where each item is a word in the original Twitter message.  We use &lt;code&gt;String&lt;/code&gt;&amp;rsquo;s &lt;code&gt;split()&lt;/code&gt;
-method to create an array of words, and use &lt;code&gt;Stream.of()&lt;/code&gt; to turn this into a &lt;code&gt;Stream&lt;/code&gt; of &lt;code&gt;Strings&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next, we&amp;rsquo;re going to convert all these words to lowercase, as our map of words to moods only has lowercase keys.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;map()&lt;/code&gt; method takes one value and turns it into another.  In this case, we want to turn a &lt;code&gt;String&lt;/code&gt; value like
-&amp;ldquo;Awesome&amp;rdquo; into its lowercase version, &amp;ldquo;awesome&amp;rdquo;.  It&amp;rsquo;s easy pass in String&amp;rsquo;s &lt;code&gt;toLowerCase()&lt;/code&gt; method as a method
-reference to do the conversion.&lt;/p&gt;
-
-&lt;p&gt;Now we have a string in the correct case, we can search our map of words-to-moods for the mood that corresponds to
-this word.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Not every word is going to have a corresponding mood in the map, so we&amp;rsquo;re only going to pass non-null moods to the
-next step of the pipeline&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now what I have is a &lt;code&gt;Mood&lt;/code&gt;, an enum value of either &lt;code&gt;HAPPY&lt;/code&gt; or &lt;code&gt;SAD&lt;/code&gt;. Our requirements state that for each tweet, we
-need to return one of &amp;ldquo;HAPPY&amp;rdquo;, &amp;ldquo;SAD&amp;rdquo;, or &amp;ldquo;HAPPY,SAD&amp;rdquo;. We don&amp;rsquo;t need an indication of whether there are multiple happy
-words or sad words in the same tweet, so we only need one instance of each mood. This is easily done by requiring the
-stream to contain only distinct values.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-      .distinct()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;According to our requirements, we need to convert our enum value to a String&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-      .distinct()
-      .map((mood) -&amp;gt; mood.name())
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And finally, we want to merge together all the moods found for this message into a comma separated string of moods.
-In our previous Stream example, we used &lt;code&gt;Collectors.toList()&lt;/code&gt; to return a &lt;code&gt;List&lt;/code&gt;
-of &lt;code&gt;TwitterUsers&lt;/code&gt;. This time, we&amp;rsquo;re going to use another built in collector, &lt;code&gt;Collectors.joining()&lt;/code&gt; and give it the
-characters we want to use to separate our results. &lt;code&gt;joining()&lt;/code&gt; will return a &lt;code&gt;String&lt;/code&gt; of your results, separated by
-your chosen delimiter. Which means that now in Java 8 we can easily create comma separated strings without having to
-iterate over a list and figure out if we&amp;rsquo;re supposed to be putting a comma after this item or not.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-      .distinct()
-      .map((mood) -&amp;gt; mood.name())
-      .collect(Collectors.joining(&amp;quot;,&amp;quot;));
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, let&amp;rsquo;s simplify the lambdas to method references where possible, and turn this into a method we can use&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public static String identifyMood(String twitterMessage) {
-    return Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-                 .map(String::toLowerCase)
-                 .map(WORD_TO_MOOD::get)
-                 .filter(mood -&amp;gt; mood != null)
-                 .distinct()
-                 .map(Enum::name)
-                 .collect(joining(&amp;quot;,&amp;quot;));
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If we called &lt;code&gt;identifyMood&lt;/code&gt; with the message &amp;ldquo;Yesterday I was sad sad sad, but today is awesome&amp;rdquo;, we&amp;rsquo;ll get the
-String &amp;ldquo;SAD,HAPPY&amp;rdquo; in return.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/AdvancedStreams.gif&#34; alt=&#34;Advanced Streams&#34; title=&#34;Advanced Streams&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;With this example we have seen how you can chain multiple operations to perform fairly complex processing, with limited
-lines of code.&lt;/p&gt;
-
-&lt;h3 id=&#34;summary:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;Java 8 is more than just a bit of extra syntax to learn, or a couple of new methods that might be useful.
-It can change the way we approach solving common problems. With lambda expressions, streams and some of the other
-new methods in Java 8, you can use easily perform common operations (for example, &lt;code&gt;computeIfAbsent()&lt;/code&gt; and &lt;code&gt;joining()&lt;/code&gt;),
-and you gain a new set of tools, particularly in manipulating data sets.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Java 8 MOOC - Session 1 Summary</title>
       <link>http://trishagee.github.io/post/java_8_mooc_session1/</link>
       <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
@@ -1744,6 +1373,179 @@ leave yet.&lt;/p&gt;
 save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Improving Speaker Diversity</title>
+      <link>http://trishagee.github.io/post/more_female_speakers/</link>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/more_female_speakers/</guid>
+      <description>
+
+&lt;p&gt;Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically,
+although not limited to, increasing the number of women speakers).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to outline the things I remember being discussed, although as usual we did not find the answer to the problem,
+only identify some issues and explore some options.&lt;/p&gt;
+
+&lt;p&gt;This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and
+posted than if this all goes to die in my drafts folder.&lt;/p&gt;
+
+&lt;h3 id=&#34;firstly-what-stops-people-from-stepping-up-to-speak:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;I don&amp;rsquo;t have anything to say&lt;/strong&gt;&lt;br /&gt;
+This is the very first thing any developer says when you ask them why they haven&amp;rsquo;t thought about presenting at conferences or user
+groups. Turns out, you always have something to say.  For example, our most popular sessions at the Sevilla JUG and MUG are &amp;ldquo;Introduction
+ to&amp;hellip;&amp;ldquo;. You hear from plenty of experts who have travelled the whole road to some pinnacle of excellence,
+ but what many developers need is simply someone a couple of steps ahead of them to lead them forwards.&lt;/p&gt;
+
+&lt;p&gt;You always know more than &lt;em&gt;someone&lt;/em&gt;, you don&amp;rsquo;t need to know everything, and you don&amp;rsquo;t need to know more than everyone&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Why should I be role model?&lt;/strong&gt;&lt;br /&gt;
+So many women feel this, and I&amp;rsquo;m completely sympathetic to this view point: I&amp;rsquo;m a woman developer, getting along, happy in my job,
+happy being a programmer, why the hell should I have to stand up and present and blog and be a role model for other women? Men don&amp;rsquo;t have
+to do that. Men can &lt;em&gt;just&lt;/em&gt; be developers.&lt;/p&gt;
+
+&lt;p&gt;In addition, there&amp;rsquo;s the fear that if you &lt;em&gt;do&lt;/em&gt; stand up, become a role model, that somehow people will think you&amp;rsquo;re representing all
+women developers. You&amp;rsquo;ll be worried because you can only represent who you are, what you do, you can&amp;rsquo;t represent a whole gender in a
+single presentation or a single interview.  And the pressure! What if I mess up? What if I say something my gender does not agree with?
+What if I say something that causes my whole gender to be judged?&lt;/p&gt;
+
+&lt;p&gt;Totally understandable fears. Totally true that many people will ask you to be &lt;em&gt;the&lt;/em&gt; woman developer, to answer for all women.  Well,
+that&amp;rsquo;s why I&amp;rsquo;m asking more women to stand up, to be role models - if we all step up, it will no longer just be me, and you,
+and that other one over there. There&amp;rsquo;ll be more of us, more differing voices, we&amp;rsquo;ll stand out less. But we have to stand up first.  And
+in the meantime it&amp;rsquo;s us and our points of view they&amp;rsquo;re listening to. Wouldn&amp;rsquo;t you rather voice your opinion than have someone else speak
+on your behalf? Especially when very few people really can represent you, who you are and what you want.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What if I can&amp;rsquo;t answer the questions?&lt;/strong&gt;&lt;br /&gt;
+You&amp;rsquo;ll be surprised at what you do know, so people who present run into this less than you&amp;rsquo;d think, even if you&amp;rsquo;re just beginning,
+but just in case here are some tips:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Repeat the question, paraphrasing. Firstly, this ensures you&amp;rsquo;ve actually heard the question correctly. Secondly,
+it allows the whole audience to hear it, and thirdly, but most importantly, it buys you time to think.&lt;/li&gt;
+&lt;li&gt;Be honest - say you don&amp;rsquo;t know, and move on. If you know somewhere that might have the answer,
+point the person to that resource.  But a technical audience actually values the answer &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; more than you think. Especially
+the person who asked the question, it makes them feel really smart!&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;If you don&amp;rsquo;t know, but you think the audience might know, throw it back to them. Either to the person who asked the question,
+if that feels appropriate (especially if this is one of those &amp;ldquo;look how smart I am&amp;rdquo; questions),
+or to the audience as a whole. In conferences in particular, there&amp;rsquo;s a good chance someone there knows the answer.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re genuinely terrified of all questions, say at the start of the presentation that you won&amp;rsquo;t take questions in the talk. Offer
+an alternative, like via Twitter or e-mail, if you can.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;what-can-conference-organisers-do:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What can conference organisers do?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Specifically invite the people you want presenting&lt;/strong&gt;&lt;br /&gt;
+Don&amp;rsquo;t just wait for them to submit. If you want more women, more diversity, invite them. And invite them early&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Secure your women presenters early.&lt;/strong&gt;&lt;br /&gt;
+Recognise that there are relatively few women presenters on &amp;ldquo;the circuit&amp;rdquo;, and understand that &lt;em&gt;everyone&lt;/em&gt; wants them to speak at their
+conference. This rare breed, the female technical presenter, gets booked up &lt;em&gt;well&lt;/em&gt; in advance.  They&amp;rsquo;re probably as in-demand as your
+keynote speakers, and can probably devote less time to appearing at conferences than those who have made it to keynote-standard (I&amp;rsquo;m
+making a sweeping generalisation that your techy women have day-jobs as developers and your keynote speakers are either professional
+presenters or at least can argue presenting as a critical part of their job).&lt;/p&gt;
+
+&lt;p&gt;So, you have a limited resource (experienced women presenters) that&amp;rsquo;s in high demand. You need to reach out directly to them,
+invite them, and secure them well in advance of your conference.  Many big conferences, for example JavaOne and QCon,
+will invite speakers six months in advance. If you give women speakers a month&amp;rsquo;s notice before your conference or event,
+they simply are not going to have the space in their schedule at that late notice.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Showcase your diversity on your website&lt;/strong&gt;&lt;br /&gt;
+If you haven&amp;rsquo;t already heard of &lt;a href=&#34;http://en.wikipedia.org/wiki/Microaggression_theory&#34;&gt;microaggressions&lt;/a&gt;,
+go and read what that means before you get any further.  There&amp;rsquo;s a very simple thing you
+need to do with your website, whether you&amp;rsquo;ve opened for CFP or you&amp;rsquo;re trying to get attendees to register - make sure the photos on your
+website show the type of diversity you want to encourage.  Only yesterday I was looking at the website of a big conference,
+who I know for a fact are working &lt;em&gt;really&lt;/em&gt; hard to ensure diversity, not just with gender but race, age,
+and where possible in less physically obvious dimensions. The conference is many months off, so the only photo they have on the website
+is a background photo of the exhibition hall from some previous year, crammed full of attendees - white, male attendees,
+as far as it&amp;rsquo;s possible to tell.  It&amp;rsquo;s extremely subtle. You might not even notice, as the photo is behind the headers and text of the
+site. But I noticed. And you can be sure the subconscious of every person who went to the website to either submit a proposal for a
+talk, or is considering asking their employer to pay for the registration, also noticed.  The conscious mind might be able to shrug it
+off.  But the subconscious of a non-white and/or non-male person notices and plants the subtle seed
+of &amp;ldquo;this conference is not for me&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;So, conference and event organisers - if you want more women applying to speak at your conference,
+show more women on your website.  If you want a more diverse audience, show more diverse faces.  If you&amp;rsquo;ve invited your women presenters
+early and secured them early, show their photos on the site - this sends a strong message to other women that their talk proposals will be
+taken seriously.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Run warm up nights to try out new speakers&lt;/strong&gt;&lt;br /&gt;
+I know conference organisers get &lt;em&gt;lots&lt;/em&gt; of submissions, and I know it&amp;rsquo;s hard to tell which are going to be good speakers,
+especially if they&amp;rsquo;re new speakers or don&amp;rsquo;t have a video.  If you&amp;rsquo;re genuine about improving the diversity of your speakers,
+run free nights to a) promote your conference and b) try out new speakers.  Probably a good idea to have a new speaker and a known
+speaker to attract the crowd and give newbies a chance.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be so damn picky&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New speakers need to be encouraged. Find a way to see their content without just discarding an unknown name.&lt;/li&gt;
+&lt;li&gt;Existing speakers might not have the luxury of creating new content. Many conferences want genuine practitioners,
+not just evangelists, but those people have day jobs and can&amp;rsquo;t be creating a new talk just for your conference.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Leave space for new speakers&lt;/strong&gt;&lt;br /&gt;
+&amp;hellip;and don&amp;rsquo;t just have 7 slots for a pro speaker&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Look at your swag&lt;/strong&gt;&lt;br /&gt;
+Not just guys t-shirts.  One conference gave out cupcakes for example. But it doesn&amp;rsquo;t just have to be handbags and high-heeled shoes,
+just take a quick look and see if your swag is generally useful for techies, or if it leans towards men only. Men only swag (men&amp;rsquo;s
+t-shirts, bottle openers, subtle things like that) subliminally says &amp;ldquo;you don&amp;rsquo;t belong here&amp;rdquo; to the women.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Give feedback&lt;/strong&gt;&lt;br /&gt;
+You can&amp;rsquo;t tell every individual why they were rejected, but you could look at all the rejected submissions and give broad indications of
+the type of CFPs that didn&amp;rsquo;t make it. Maybe write a blog post explaining which sorts of talks didn&amp;rsquo;t make it and why.  This will help
+speakers create content that better fits your conference.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Be specific about what you&amp;rsquo;re looking for&lt;/strong&gt;&lt;br /&gt;
+If you have tracks you&amp;rsquo;re finding content for, put them on the website/CFP, so people know what the topics are. If you have an
+idea that you want 30% beginner material and 30% very advanced, make that clear too. Especially if you want &lt;em&gt;only&lt;/em&gt; beginner or &lt;em&gt;only&lt;/em&gt;
+advanced. People will submit more appropriate talks.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Have a beginner&amp;rsquo;s track&lt;/strong&gt;&lt;br /&gt;
+&amp;hellip;not just for the speakers, for the content too. Beginner speakers may be more comfortable presenting &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; talks.&lt;br /&gt;
+Having a beginners track, whether it&amp;rsquo;s for content or speakers, will make newbies feel more included.&lt;/p&gt;
+
+&lt;h3 id=&#34;what-other-things-can-we-try:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What other things can we try?&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;User groups can grow talent&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Practice writing CFPs&lt;/li&gt;
+&lt;li&gt;Help each other&lt;/li&gt;
+&lt;li&gt;Presentation skills&lt;/li&gt;
+&lt;li&gt;Lightning talks, book club, different meetup styles (like fishbowl)&lt;/li&gt;
+&lt;li&gt;Run an open conference to encourage new speakers&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Women&amp;rsquo;s user groups are instrumental&lt;/strong&gt;&lt;br /&gt;
+So here&amp;rsquo;s something interesting. I&amp;rsquo;m sceptical of all-women user groups as I feel it separates us from the communities we &lt;em&gt;should&lt;/em&gt; be
+contributing to. But women&amp;rsquo;s user groups can help us to integrate better.  For example, Duchess France helped and encouraged its members
+to submit talks to Devoxx, gave feedback on CFPs before they were submitted, and provided a safe place for the women to practice
+presenting beforehand.  I think this is exactly the sort of thing women&amp;rsquo;s user groups could be fantastic for.&lt;/p&gt;
+
+&lt;h3 id=&#34;advice-for-budding-speakers:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Advice for budding speakers&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Just Do It&lt;/li&gt;
+&lt;li&gt;The more you do it, the more comfortable you&amp;rsquo;ll be&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re a speaker, it can make you feel less of an impostor at a conference - you&amp;rsquo;re not just a woman developer, you&amp;rsquo;re a speaker!&lt;/li&gt;
+&lt;li&gt;Everyone&amp;rsquo;s afraid, it&amp;rsquo;s not just you&lt;/li&gt;
+&lt;li&gt;Every developer wants to learn&lt;/li&gt;
+&lt;li&gt;The audience is on your side&lt;/li&gt;
+&lt;li&gt;Start Small (user groups)&lt;/li&gt;
+&lt;li&gt;Be technical. But you don&amp;rsquo;t have to be super smart&lt;/li&gt;
+&lt;li&gt;Bootstrapping is hard - you haven&amp;rsquo;t presented so you can&amp;rsquo;t get into conferences. Again, user groups can help with this.&lt;/li&gt;
+&lt;li&gt;Pair. Ask a more experienced presenter if you can co-present with them.&lt;/li&gt;
+&lt;li&gt;Ask for mentors&lt;/li&gt;
+&lt;li&gt;Ask for feedback&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; is perfectly acceptable.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I appreciate there is &lt;em&gt;so&lt;/em&gt; much more I could have covered, and many topics deserve more depth. But this is the brain dump from the Devoxx
+session, and maybe one day things will be expanded into their own topics.&lt;/p&gt;
 </description>
     </item>
     
