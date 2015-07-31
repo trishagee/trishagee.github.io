@@ -6,7 +6,225 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 23 Jul 2015 00:00:00 UTC</updated>
+    <updated>Thu, 30 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>CR</title>
+      <link>http://trishagee.github.io/drafts/code_review_2/</link>
+      <pubDate>Thu, 30 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/drafts/code_review_2/</guid>
+      <description>
+
+&lt;p&gt;In the last post we talked about a wide variety of things you could look for
+in a code review.  Now we&amp;rsquo;ll focus on one area: what to look for in the
+test code.&lt;/p&gt;
+
+&lt;p&gt;This article assumes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your team already writes automated tests for code.&lt;/li&gt;
+&lt;li&gt;The tests are regularly run in a Continuous Integration (CI) environment.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In this post we&amp;rsquo;ll cover some of the things a reviewer could be thinking
+about when looking at the tests in a code review.&lt;/p&gt;
+
+&lt;h3 id=&#34;are-there-tests-for-this-new-amended-code:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are there tests for this new/amended code?&lt;/h3&gt;
+
+&lt;p&gt;It would be rare that new code, whether a bug fix or new feature, wouldn&amp;rsquo;t
+need a new or updated test to cover it. Even changes for &amp;ldquo;non-functional&amp;rdquo;
+reasons like performance can frequently be proved via a test. If there are no
+tests included in the code review, as a reviewer the first question you
+should ask is &amp;ldquo;why not?&amp;rdquo;.&lt;/p&gt;
+
+&lt;h3 id=&#34;do-the-tests-at-least-cover-confusing-or-complicated-sections-of-code:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Do the tests at least cover confusing or complicated sections of code?&lt;/h3&gt;
+
+&lt;p&gt;One step beyond simply &amp;ldquo;is there a test?&amp;rdquo;, is to answer the question &amp;ldquo;is the
+important code actually covered by at least one test?&amp;ldquo;.&lt;/p&gt;
+
+&lt;p&gt;Checking test coverage is certainly something we should be automating. But we
+can do more than just check for specific percentages in our coverage, we can
+use coverage tools to ensure the &lt;em&gt;correct&lt;/em&gt; areas of code are covered.&lt;/p&gt;
+
+&lt;p&gt;Consider this for example:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/CodeReviewChanges.png&#34; alt=&#34;New lines of code&#34; title=&#34;New lines of code&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;You can check the coverage report for the new lines of code (which should be easy to identify, especially if you&amp;rsquo;re
+using a tool like Upsource) to make sure it&amp;rsquo;s adequately covered&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/CodeReviewCoverage.png&#34; alt=&#34;Code coverage&#34; title=&#34;Code coverage&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;In this example above, the reviewer may ask the author to
+add a test to cover the case where the &lt;code&gt;if&lt;/code&gt; on line 303 evaluates to true - the coverage tool is marking lines
+304-306 with red to show they aren&amp;rsquo;t tested.&lt;/p&gt;
+
+&lt;p&gt;100% test coverage is an unrealistic goal for pretty much any team, so the
+numbers coming out of your coverage tool might not be as valuable as insights
+into which specific areas are covered.&lt;/p&gt;
+
+&lt;p&gt;In particular, you want to check that all logic branches are covered, and
+that complex areas of code are covered.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/CodeReviewLogicCoverage.png&#34; alt=&#34;Code coverage for logic&#34; title=&#34;Code coverage for logic&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;can-i-understand-the-tests:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Can I understand the tests?&lt;/h3&gt;
+
+&lt;p&gt;Having tests that provide adequate coverage is one thing, but if I, as a human, can&amp;rsquo;t understand the tests, they have
+limited use - what happens when they break? It&amp;rsquo;ll be hard to know how to fix them.&lt;/p&gt;
+
+&lt;p&gt;Consider the following:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/HardToReadTest.png&#34; alt=&#34;Hard to read test&#34; title=&#34;Hard to read test&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a fairly simple test, but I&amp;rsquo;m not entirely sure what it&amp;rsquo;s testing. Is it
+testing the &lt;code&gt;save&lt;/code&gt; method? Or &lt;code&gt;getMyLongId&lt;/code&gt;? And why does it need to do the
+same thing twice?&lt;/p&gt;
+
+&lt;p&gt;The intent behind the test might be clearer as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/ClearerTest.png&#34; alt=&#34;More descriptive test&#34; title=&#34;More descriptive test&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The specific steps you take in order to clarify a test&amp;rsquo;s purpose
+will depend upon your language, libraries, team and personal preferences.
+This example demonstrates that by choosing clearer names, inlining constants and even adding
+comments, an author can make a test more readable by developers other than
+him- or herself.&lt;/p&gt;
+
+&lt;h3 id=&#34;do-the-tests-match-the-requirements:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Do the tests match the requirements?&lt;/h3&gt;
+
+&lt;p&gt;Here&amp;rsquo;s an area that really requires human expertise. Whether the requirements
+being met by the code under review are encoded in some formal document,
+on a piece of card in a user story, or contained in a bug raised by a user,
+the code being reviewed should relate to some initial requirement.&lt;/p&gt;
+
+&lt;p&gt;The reviewer should locate the original requirements and see if:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The tests, whether they&amp;rsquo;re unit, end-to-end, or something else, match the
+requirements. For example, if the requirements are &amp;ldquo;should allow the special
+characters &amp;lsquo;#&amp;rsquo;, &amp;lsquo;!&amp;rsquo; and &amp;lsquo;&amp;amp;&amp;rsquo; in the password field&amp;rdquo;, there should be a test
+using these values in the password field. If the test uses different special characters,
+then it&amp;rsquo;s not proving the code meets the criteria.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The tests cover all the criteria mentioned. In our example of
+special characters, the requirements might go on to say &amp;ldquo;&amp;hellip;and give the
+user an error message if other special characters are used&amp;rdquo;. Here, the
+reviewer should be checking there&amp;rsquo;s a test for what happens when an invalid
+character is used.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;can-you-the-reviewer-think-of-cases-that-are-not-covered-by-the-existing-tests:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Can you, the reviewer, think of cases that are not covered by the existing tests?&lt;/h3&gt;
+
+&lt;p&gt;Often our requirements aren&amp;rsquo;t clearly specified. Under these circumstances, the reviewer should think of edge
+cases that weren&amp;rsquo;t covered in the original bug/issue/story.&lt;/p&gt;
+
+&lt;p&gt;If our new features is, for example, &amp;ldquo;Give the user the ability to log on to the system&amp;rdquo;, the reviewer could
+be thinking &amp;ldquo;What happens if the user enters null for the username?&amp;rdquo;,
+or &amp;ldquo;What sort of error occurs if the user doesn&amp;rsquo;t exist in the system?&amp;rdquo;. If
+these tests exist in the code being reviewed, then the reviewer has
+increased confidence that the code itself handles these circumstances. If the
+tests for these exceptional cases don&amp;rsquo;t exist, then the reviewer has to go
+through the code to see if they have been handled.&lt;/p&gt;
+
+&lt;p&gt;If the code exists but the tests don&amp;rsquo;t, it&amp;rsquo;s up to your team to decide what
+your policies are - do you make the author add those tests? Or are you satisfied that the code review proved the
+edge cases were covered?&lt;/p&gt;
+
+&lt;h3 id=&#34;are-there-tests-to-document-the-limitations-of-the-code:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are there tests to document the limitations of the code?&lt;/h3&gt;
+
+&lt;p&gt;As a reviewer, it&amp;rsquo;s often possible to see limitations in the code being
+reviewed.  These limitations are sometimes intentional - for example, a batch
+process that can only handle a maximum of 1000 items per batch.&lt;/p&gt;
+
+&lt;p&gt;One approach to documenting these intentional limitations would be to
+explicitly test them.  In our example above, we might have a test that
+proves that some sort of exception is thrown if your batch size is bigger
+than 1000.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not mandatory to express these limitations in an automated test, but if
+an author has written a test that shows the limits of what they&amp;rsquo;ve
+implemented, having a test implies these limits are intentional (and documented)
+and not merely an oversight.&lt;/p&gt;
+
+&lt;h3 id=&#34;are-the-tests-in-the-code-review-the-right-type-level:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are the tests in the code review the right type/level?&lt;/h3&gt;
+
+&lt;p&gt;For example, is the author doing expensive integration tests where a unit
+test might suffice? Have they written performance micro-benchmarks that will
+not run effectively or in a consistent fashion in the CI environment?&lt;/p&gt;
+
+&lt;p&gt;Ideally your automated tests will run as quickly as possible, which means
+that expensive end-to-end tests may not be required to check all types of
+features.  A method that performs some mathematical function, or boolean
+logic check, seems like a good candidate for a method-level unit test.&lt;/p&gt;
+
+&lt;h3 id=&#34;are-there-security-tests-that-need-to-be-written:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are there security tests that need to be written?&lt;/h3&gt;
+
+&lt;p&gt;Security is one area that code reviews can really benefit. We&amp;rsquo;ll do a whole
+post on security later, but on the testing topic, we can write tests for
+a number of common problems.  For example, if we were writing the log-in code
+above, we might want to also write a test that shows that we cannot enter
+the protected area of the site (or call protected API methods) without first
+authenticating.&lt;/p&gt;
+
+&lt;h3 id=&#34;performance-tests:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Performance Tests&lt;/h3&gt;
+
+&lt;p&gt;In the previous post I talked about performance as being an area a reviewer
+might be examining. Automated performance tests are obviously another type of
+test that I could have explored in this article, but I will leave discussion
+of these types of tests for a later article about looking specifically at performance
+aspects in a code review.&lt;/p&gt;
+
+&lt;h3 id=&#34;reviewers-can-write-tests-too:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Reviewers can write tests too.&lt;/h3&gt;
+
+&lt;p&gt;Different organisations have different approaches to code reviews - sometimes
+it&amp;rsquo;s very clear that the author is responsible for making all the code
+changes required, sometimes it&amp;rsquo;s more collaborative with the reviewer
+committing suggestions to the code themselves.&lt;/p&gt;
+
+&lt;p&gt;Whichever approach you take, as a reviewer you may find that writing some
+additional tests to poke at the code in the review can be very valuable for
+understanding that code, in the same way that firing up the UI and playing
+with a new feature is valuable. Some methods and code review tools make it easier to experiment with the code than
+others. It&amp;rsquo;s in the team&amp;rsquo;s interest to make it as easy as possible to view and play with the code
+in a code review.&lt;/p&gt;
+
+&lt;p&gt;It may be valuable to submit the additional tests as part of the review, but
+equally it may not be necessary, for example if experimentation has given me,
+the reviewer, satisfactory answers to my questions.&lt;/p&gt;
+
+&lt;h3 id=&#34;in-summary:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;In Summary&lt;/h3&gt;
+
+&lt;p&gt;There are many advantages to performing a code review, no matter how you approach the process in your organisation.
+It&amp;rsquo;s possible to use code reviews to find potential problems with the code &lt;em&gt;before&lt;/em&gt; it is integrated into the main
+code base, while it&amp;rsquo;s still inexpensive to fix and the context is still in the developer&amp;rsquo;s head.&lt;/p&gt;
+
+&lt;p&gt;As a code reviewer, you should be checking
+that the original developer has put some thought into the ways his or her
+code could be used, under which conditions it might break, and dealt with
+edge cases, preferably &amp;ldquo;documenting&amp;rdquo; the expected behaviour (both under
+normal use and exceptional circumstances) with automated tests. The tests can give you an idea
+of what the code is supposed to do, and, if they pass, prove that it does
+just that.&lt;/p&gt;
+
+&lt;p&gt;If the reviewer checks for the existence of tests and checks the correctness of
+the tests, as a team you can have pretty high confidence that the code works.
+Moreover, if these tests are run regularly in a CI environment, you can see
+that the code &lt;em&gt;continues&lt;/em&gt; to work - they provide automated regression
+checking. If code reviewers place a high value on having good quality
+tests for the code they are reviewing, the value of this code review
+continues long after the reviewer presses the &amp;ldquo;Accept&amp;rdquo; button.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/Approve.png&#34; alt=&#34;Accept&#34; title=&#34;Accept&#34; /&gt;
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8</title>

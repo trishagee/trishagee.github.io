@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content=", ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="CR : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://trishagee.github.io/drafts/code_review_2/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2015-07-30"/>
+<meta property="article:modified_time" content="2015-07-30"/>
+
+<meta property="article:tag" content="">
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content="CR : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="http://trishagee.github.io/">
+    <title> CR - trishagee.github.io </title>
+    <link rel="canonical" href="http://trishagee.github.io/drafts/code_review_2/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=CR-http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f&title=CR&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://del.icio.us/post?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f" target="_blank" title="Delicious" class="delicious"><span
+                        class="icon icon-delicious"></span>Delicious</a></li>
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+                <li><a href="http://www.dzone.com/links/add.html?url=http%3a%2f%2ftrishagee.github.io%2fdrafts%2fcode_review_2%2f&title=CR" target="_blank" title="DZone"
+                       class="dzone"><span class="icon icon-dzone"></span>DZone</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">CR</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           
+
+<p>In the last post we talked about a wide variety of things you could look for
+in a code review.  Now we&rsquo;ll focus on one area: what to look for in the
+test code.</p>
+
+<p>This article assumes:</p>
+
+<ul>
+<li>Your team already writes automated tests for code.</li>
+<li>The tests are regularly run in a Continuous Integration (CI) environment.</li>
+</ul>
+
+<p>In this post we&rsquo;ll cover some of the things a reviewer could be thinking
+about when looking at the tests in a code review.</p>
+
+<h3 id="are-there-tests-for-this-new-amended-code:e49bb25edf62b34017ea72c340f0c27c">Are there tests for this new/amended code?</h3>
+
+<p>It would be rare that new code, whether a bug fix or new feature, wouldn&rsquo;t
+need a new or updated test to cover it. Even changes for &ldquo;non-functional&rdquo;
+reasons like performance can frequently be proved via a test. If there are no
+tests included in the code review, as a reviewer the first question you
+should ask is &ldquo;why not?&rdquo;.</p>
+
+<h3 id="do-the-tests-at-least-cover-confusing-or-complicated-sections-of-code:e49bb25edf62b34017ea72c340f0c27c">Do the tests at least cover confusing or complicated sections of code?</h3>
+
+<p>One step beyond simply &ldquo;is there a test?&rdquo;, is to answer the question &ldquo;is the
+important code actually covered by at least one test?&ldquo;.</p>
+
+<p>Checking test coverage is certainly something we should be automating. But we
+can do more than just check for specific percentages in our coverage, we can
+use coverage tools to ensure the <em>correct</em> areas of code are covered.</p>
+
+<p>Consider this for example:</p>
+
+<p><img src="/static/images/code-review/CodeReviewChanges.png" alt="New lines of code" title="New lines of code" />
+</p>
+
+<p>You can check the coverage report for the new lines of code (which should be easy to identify, especially if you&rsquo;re
+using a tool like Upsource) to make sure it&rsquo;s adequately covered</p>
+
+<p><img src="/static/images/code-review/CodeReviewCoverage.png" alt="Code coverage" title="Code coverage" />
+</p>
+
+<p>In this example above, the reviewer may ask the author to
+add a test to cover the case where the <code>if</code> on line 303 evaluates to true - the coverage tool is marking lines
+304-306 with red to show they aren&rsquo;t tested.</p>
+
+<p>100% test coverage is an unrealistic goal for pretty much any team, so the
+numbers coming out of your coverage tool might not be as valuable as insights
+into which specific areas are covered.</p>
+
+<p>In particular, you want to check that all logic branches are covered, and
+that complex areas of code are covered.</p>
+
+<p><img src="/static/images/code-review/CodeReviewLogicCoverage.png" alt="Code coverage for logic" title="Code coverage for logic" />
+</p>
+
+<h3 id="can-i-understand-the-tests:e49bb25edf62b34017ea72c340f0c27c">Can I understand the tests?</h3>
+
+<p>Having tests that provide adequate coverage is one thing, but if I, as a human, can&rsquo;t understand the tests, they have
+limited use - what happens when they break? It&rsquo;ll be hard to know how to fix them.</p>
+
+<p>Consider the following:</p>
+
+<p><img src="/static/images/code-review/HardToReadTest.png" alt="Hard to read test" title="Hard to read test" />
+</p>
+
+<p>It&rsquo;s a fairly simple test, but I&rsquo;m not entirely sure what it&rsquo;s testing. Is it
+testing the <code>save</code> method? Or <code>getMyLongId</code>? And why does it need to do the
+same thing twice?</p>
+
+<p>The intent behind the test might be clearer as:</p>
+
+<p><img src="/static/images/code-review/ClearerTest.png" alt="More descriptive test" title="More descriptive test" />
+</p>
+
+<p>The specific steps you take in order to clarify a test&rsquo;s purpose
+will depend upon your language, libraries, team and personal preferences.
+This example demonstrates that by choosing clearer names, inlining constants and even adding
+comments, an author can make a test more readable by developers other than
+him- or herself.</p>
+
+<h3 id="do-the-tests-match-the-requirements:e49bb25edf62b34017ea72c340f0c27c">Do the tests match the requirements?</h3>
+
+<p>Here&rsquo;s an area that really requires human expertise. Whether the requirements
+being met by the code under review are encoded in some formal document,
+on a piece of card in a user story, or contained in a bug raised by a user,
+the code being reviewed should relate to some initial requirement.</p>
+
+<p>The reviewer should locate the original requirements and see if:</p>
+
+<ol>
+<li><p>The tests, whether they&rsquo;re unit, end-to-end, or something else, match the
+requirements. For example, if the requirements are &ldquo;should allow the special
+characters &lsquo;#&rsquo;, &lsquo;!&rsquo; and &lsquo;&amp;&rsquo; in the password field&rdquo;, there should be a test
+using these values in the password field. If the test uses different special characters,
+then it&rsquo;s not proving the code meets the criteria.</p></li>
+
+<li><p>The tests cover all the criteria mentioned. In our example of
+special characters, the requirements might go on to say &ldquo;&hellip;and give the
+user an error message if other special characters are used&rdquo;. Here, the
+reviewer should be checking there&rsquo;s a test for what happens when an invalid
+character is used.</p></li>
+</ol>
+
+<h3 id="can-you-the-reviewer-think-of-cases-that-are-not-covered-by-the-existing-tests:e49bb25edf62b34017ea72c340f0c27c">Can you, the reviewer, think of cases that are not covered by the existing tests?</h3>
+
+<p>Often our requirements aren&rsquo;t clearly specified. Under these circumstances, the reviewer should think of edge
+cases that weren&rsquo;t covered in the original bug/issue/story.</p>
+
+<p>If our new features is, for example, &ldquo;Give the user the ability to log on to the system&rdquo;, the reviewer could
+be thinking &ldquo;What happens if the user enters null for the username?&rdquo;,
+or &ldquo;What sort of error occurs if the user doesn&rsquo;t exist in the system?&rdquo;. If
+these tests exist in the code being reviewed, then the reviewer has
+increased confidence that the code itself handles these circumstances. If the
+tests for these exceptional cases don&rsquo;t exist, then the reviewer has to go
+through the code to see if they have been handled.</p>
+
+<p>If the code exists but the tests don&rsquo;t, it&rsquo;s up to your team to decide what
+your policies are - do you make the author add those tests? Or are you satisfied that the code review proved the
+edge cases were covered?</p>
+
+<h3 id="are-there-tests-to-document-the-limitations-of-the-code:e49bb25edf62b34017ea72c340f0c27c">Are there tests to document the limitations of the code?</h3>
+
+<p>As a reviewer, it&rsquo;s often possible to see limitations in the code being
+reviewed.  These limitations are sometimes intentional - for example, a batch
+process that can only handle a maximum of 1000 items per batch.</p>
+
+<p>One approach to documenting these intentional limitations would be to
+explicitly test them.  In our example above, we might have a test that
+proves that some sort of exception is thrown if your batch size is bigger
+than 1000.</p>
+
+<p>It&rsquo;s not mandatory to express these limitations in an automated test, but if
+an author has written a test that shows the limits of what they&rsquo;ve
+implemented, having a test implies these limits are intentional (and documented)
+and not merely an oversight.</p>
+
+<h3 id="are-the-tests-in-the-code-review-the-right-type-level:e49bb25edf62b34017ea72c340f0c27c">Are the tests in the code review the right type/level?</h3>
+
+<p>For example, is the author doing expensive integration tests where a unit
+test might suffice? Have they written performance micro-benchmarks that will
+not run effectively or in a consistent fashion in the CI environment?</p>
+
+<p>Ideally your automated tests will run as quickly as possible, which means
+that expensive end-to-end tests may not be required to check all types of
+features.  A method that performs some mathematical function, or boolean
+logic check, seems like a good candidate for a method-level unit test.</p>
+
+<h3 id="are-there-security-tests-that-need-to-be-written:e49bb25edf62b34017ea72c340f0c27c">Are there security tests that need to be written?</h3>
+
+<p>Security is one area that code reviews can really benefit. We&rsquo;ll do a whole
+post on security later, but on the testing topic, we can write tests for
+a number of common problems.  For example, if we were writing the log-in code
+above, we might want to also write a test that shows that we cannot enter
+the protected area of the site (or call protected API methods) without first
+authenticating.</p>
+
+<h3 id="performance-tests:e49bb25edf62b34017ea72c340f0c27c">Performance Tests</h3>
+
+<p>In the previous post I talked about performance as being an area a reviewer
+might be examining. Automated performance tests are obviously another type of
+test that I could have explored in this article, but I will leave discussion
+of these types of tests for a later article about looking specifically at performance
+aspects in a code review.</p>
+
+<h3 id="reviewers-can-write-tests-too:e49bb25edf62b34017ea72c340f0c27c">Reviewers can write tests too.</h3>
+
+<p>Different organisations have different approaches to code reviews - sometimes
+it&rsquo;s very clear that the author is responsible for making all the code
+changes required, sometimes it&rsquo;s more collaborative with the reviewer
+committing suggestions to the code themselves.</p>
+
+<p>Whichever approach you take, as a reviewer you may find that writing some
+additional tests to poke at the code in the review can be very valuable for
+understanding that code, in the same way that firing up the UI and playing
+with a new feature is valuable. Some methods and code review tools make it easier to experiment with the code than
+others. It&rsquo;s in the team&rsquo;s interest to make it as easy as possible to view and play with the code
+in a code review.</p>
+
+<p>It may be valuable to submit the additional tests as part of the review, but
+equally it may not be necessary, for example if experimentation has given me,
+the reviewer, satisfactory answers to my questions.</p>
+
+<h3 id="in-summary:e49bb25edf62b34017ea72c340f0c27c">In Summary</h3>
+
+<p>There are many advantages to performing a code review, no matter how you approach the process in your organisation.
+It&rsquo;s possible to use code reviews to find potential problems with the code <em>before</em> it is integrated into the main
+code base, while it&rsquo;s still inexpensive to fix and the context is still in the developer&rsquo;s head.</p>
+
+<p>As a code reviewer, you should be checking
+that the original developer has put some thought into the ways his or her
+code could be used, under which conditions it might break, and dealt with
+edge cases, preferably &ldquo;documenting&rdquo; the expected behaviour (both under
+normal use and exceptional circumstances) with automated tests. The tests can give you an idea
+of what the code is supposed to do, and, if they pass, prove that it does
+just that.</p>
+
+<p>If the reviewer checks for the existence of tests and checks the correctness of
+the tests, as a team you can have pretty high confidence that the code works.
+Moreover, if these tests are run regularly in a CI environment, you can see
+that the code <em>continues</em> to work - they provide automated regression
+checking. If code reviewers place a high value on having good quality
+tests for the code they are reviewing, the value of this code review
+continues long after the reviewer presses the &ldquo;Accept&rdquo; button.</p>
+
+<p><img src="/static/images/code-review/Approve.png" alt="Accept" title="Accept" />
+</p>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Thu Jul 30, 2015 </h4>
+        <h5 id="wc"> 1600 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+        <li><a href="http://trishagee.github.io//tags/"></a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;<a class="previous" href="http://trishagee.github.io/post/java_8_mooc_session2/"><i class="icon-arrow-left"></i> Java 8 MOOC - Session 2 Summary</a><br>
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="http://trishagee.github.io/post/code_reviews_1/">What to look for in a Code Review <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion, a MongoDB Master, and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="1589">
+<meta itemprop="datePublished" content="2015-07-30">
+<meta itemprop="url" content="http://trishagee.github.io/drafts/code_review_2/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'http:\/\/trishagee.github.io\/drafts\/code_review_2\/';
+    var disqus_title = 'CR';
+    var disqus_url = 'http:\/\/trishagee.github.io\/post\/code_review_2';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+

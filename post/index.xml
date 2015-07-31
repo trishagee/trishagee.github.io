@@ -6,7 +6,196 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 27 Jul 2015 00:00:00 UTC</updated>
+    <updated>Fri, 31 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 MOOC - Session 2 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session2/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session2/</guid>
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
+is working towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+to share knowledge between people who are doing the course.&lt;/p&gt;
+
+&lt;p&gt;The second week&amp;rsquo;s lesson was about
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; - how you can use the
+new stream API to transform data. There was also a whole section on
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;, which initially seemed like
+rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rather more than I originally thought.&lt;/p&gt;
+
+&lt;p&gt;In the meetup session, we talked about:&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;&lt;/strong&gt;: we were pretty
+comfortable,
+I think, with using &lt;code&gt;Optional&lt;/code&gt; to
+prevent a &lt;code&gt;NullPointerException&lt;/code&gt;. What we weren&amp;rsquo;t so clear on were the examples of
+&lt;code&gt;filter()&lt;/code&gt; and &lt;code&gt;map()&lt;/code&gt; - if you were getting your &lt;code&gt;Optional&lt;/code&gt; values from a stream, why wouldn&amp;rsquo;t you do the map and the
+filter on the stream first? For example, why do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s -&amp;gt; s.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;when you could map and filter in the stream to get the first non-empty value? That certainly seems like an
+interesting question in relation to streams.&lt;/p&gt;
+
+&lt;p&gt;I can see &lt;code&gt;Optional&lt;/code&gt; being more useful when other APIs fully
+support Java 8 and return &lt;code&gt;Optional&lt;/code&gt; values, then you can perform additional operations on return values.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That terminal operation&amp;rsquo;s not actually terminal??&lt;/strong&gt;: We ran into this a couple of times in our examples in the
+session, one example is the code above (let&amp;rsquo;s copy it down here so we can look at it more closely):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Isn&amp;rsquo;t &lt;code&gt;findFirst()&lt;/code&gt; a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html#StreamOps&#34;&gt;terminal operation&lt;/a&gt;? How
+can you carry on doing more operations on that?&lt;/p&gt;
+
+&lt;p&gt;The answer is, of course, that the return type of the terminal operation can also lead to further operations.  The
+above is actually:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Optional&amp;lt;String&amp;gt; result = list.stream()
+                              .findFirst();
+result.map(String::trim)
+      .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+      .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our terminal operation returns an optional, which allows you to do further operations. Another example of this
+confusion:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .collect(toList())
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, &lt;code&gt;collect()&lt;/code&gt; is a terminal operation, but it returns a list, which also allows &lt;code&gt;forEach()&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;String&amp;gt; results = list.stream()
+                           .map(String::toLowerCase)
+                           .collect(toList());
+results.forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So be aware that just because it&amp;rsquo;s called a terminal operation, doesn&amp;rsquo;t mean you can&amp;rsquo;t perform other operations on
+the returned value.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parallel/sequential/parallel&lt;/strong&gt;: there had been a question in the previous week about why you could write code like
+this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .parallel()
+    .map(String::trim)
+    .sequential()
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .parallel()
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and whether that would let you dictate which sections of the stream were parallel and which were to be processed in
+serial.  Lesson two set the lesson straight, declaring &amp;ldquo;the last operator wins&amp;rdquo; - meaning &lt;em&gt;all&lt;/em&gt; of the above code will
+be run as a parallel stream. I can&amp;rsquo;t find any documentation for this, I&amp;rsquo;ll edit this post if I locate it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#unordered--&#34;&gt;Unordered&lt;/a&gt;&lt;/strong&gt;: &amp;ldquo;Why
+would you ever want your stream to be unordered?&amp;rdquo; - the answer is that &lt;code&gt;unordered()&lt;/code&gt; &lt;a href=&#34;http://stackoverflow.com/a/21350234/653519&#34;&gt;doesn&amp;rsquo;t turn
+your sorted collection into one with no order&lt;/a&gt;, it just says that when
+this code is executed, the order of elements doesn&amp;rsquo;t matter.  This might make processing faster on a parallel stream,
+but as a group we figured it would probably be pointless on a sequential stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Efficiency optimisations and order of stream operations&lt;/strong&gt;: We had a &lt;em&gt;long&lt;/em&gt; conversation about the order in which you
+perform
+operations in a stream. The MOOC (in fact, most documentation around Streams) tells us that a) streams are
+&lt;a href=&#34;http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;lazy&lt;/a&gt;, and
+not evaluated until a terminal operator is encountered and b) this enables optimisation of the operations in the
+stream.  That lead to a discussion about the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The filter operation should result in less items to process in the stream. Given that the &lt;code&gt;map()&lt;/code&gt; operation doesn&amp;rsquo;t
+change anything that &lt;code&gt;filter()&lt;/code&gt; relies on, will this code be optimised somehow under the covers so that the filter
+is actually executed first? Or are optimisations still going to respect the order of operations on a stream?&lt;/p&gt;
+
+&lt;p&gt;Our case is actually a very specific case, because a) the &lt;code&gt;map()&lt;/code&gt; returns the same type as the params passed in (i.e.
+it doesn&amp;rsquo;t map a &lt;code&gt;String&lt;/code&gt; to an &lt;code&gt;int&lt;/code&gt;) and b) the &lt;code&gt;map()&lt;/code&gt; doesn&amp;rsquo;t change the characteristic the &lt;code&gt;filter()&lt;/code&gt; is
+looking at (i.e. length). But generally speaking, you can&amp;rsquo;t expect these conditions to be true - in fact I bet in a
+large number of cases they are &lt;em&gt;not&lt;/em&gt; true. So pipeline operations are &lt;a href=&#34;http://stackoverflow.com/a/22056258/653519&#34;&gt;performed in the order in which they are
+written&lt;/a&gt;, meaning that our &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;filter&lt;/code&gt; will not be re-ordered into
+a more efficient order.&lt;/p&gt;
+
+&lt;p&gt;A good rule of thumb seems to be to do filtering as early in the stream as possible - that way you can potentially
+cut down the number of items you process in each step of the stream. Therefore our code would probably be better as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .map(String::toLowerCase)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;strong&gt;Flat Map&lt;/strong&gt;: what&amp;hellip;?
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-&#34;&gt;&lt;code&gt;flatMap()&lt;/code&gt;&lt;/a&gt;
+is one of those methods that makes total sense once you get the hang of it, and you don&amp;rsquo;t
+understand why it was so confusing. But the first time you encounter it, it&amp;rsquo;s confusing - how is &lt;code&gt;flatMap()&lt;/code&gt;
+different to &lt;code&gt;map()&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;flatMap&lt;/code&gt; is used to squish (for example) a stream of streams into just a simple stream. It&amp;rsquo;s like turning a
+2-dimensional array into a single dimension so that you can iterate over all the items without needing nested
+for-loops. There&amp;rsquo;s &lt;a href=&#34;http://stackoverflow.com/a/22384132/653519&#34;&gt;an example on StackOverflow&lt;/a&gt;, and some more examples
+in answer to &lt;a href=&#34;http://stackoverflow.com/questions/26684562/java-8-map-and-flatmap-methods&#34;&gt;this question&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparators&lt;/strong&gt;: We&amp;rsquo;ve probably all written comparators at some point, it&amp;rsquo;s probably one of those examples where we
+really did use anonymous inner classes &amp;ldquo;in the olden days&amp;rdquo; and were looking forward to replacing them with lambdas.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(new Comparator&amp;lt;String&amp;gt;() {
+          @Override
+          public int compare(String o1, String o2) {
+              return ???;
+          }
+      })
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sadly, using a lambda still doesn&amp;rsquo;t answer the question &amp;ldquo;do I minus o1 from o2, or o2 from o1?&amp;rdquo;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted((o1, o2) -&amp;gt; ??? )
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But there&amp;rsquo;s yet another new method in Java 8 here that can save us, one that is not nearly as well publicised as it
+should be. There&amp;rsquo;s a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparing-java.util.function.Function-&#34;&gt;&lt;code&gt;Comparator.comparing()&lt;/code&gt;&lt;/a&gt;
+that you can use to really easily define what to compare on. The JavaDoc and signature looks kinda confusing, but
+this is one of those places where method references suddenly make loads of sense:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(comparingInt(String::length))
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Here we&amp;rsquo;re actually using the &lt;code&gt;comparingInt&lt;/code&gt; method as we&amp;rsquo;re going to compare on a primitive value). Personally this
+is one of my favourite new features in Java 8.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223910762/&#34;&gt;last session on Java 8 - Lambdas and Streams&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What to look for in a Code Review</title>
@@ -1373,179 +1562,6 @@ leave yet.&lt;/p&gt;
 save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Improving Speaker Diversity</title>
-      <link>http://trishagee.github.io/post/more_female_speakers/</link>
-      <pubDate>Tue, 09 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/more_female_speakers/</guid>
-      <description>
-
-&lt;p&gt;Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically,
-although not limited to, increasing the number of women speakers).&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to outline the things I remember being discussed, although as usual we did not find the answer to the problem,
-only identify some issues and explore some options.&lt;/p&gt;
-
-&lt;p&gt;This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and
-posted than if this all goes to die in my drafts folder.&lt;/p&gt;
-
-&lt;h3 id=&#34;firstly-what-stops-people-from-stepping-up-to-speak:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;I don&amp;rsquo;t have anything to say&lt;/strong&gt;&lt;br /&gt;
-This is the very first thing any developer says when you ask them why they haven&amp;rsquo;t thought about presenting at conferences or user
-groups. Turns out, you always have something to say.  For example, our most popular sessions at the Sevilla JUG and MUG are &amp;ldquo;Introduction
- to&amp;hellip;&amp;ldquo;. You hear from plenty of experts who have travelled the whole road to some pinnacle of excellence,
- but what many developers need is simply someone a couple of steps ahead of them to lead them forwards.&lt;/p&gt;
-
-&lt;p&gt;You always know more than &lt;em&gt;someone&lt;/em&gt;, you don&amp;rsquo;t need to know everything, and you don&amp;rsquo;t need to know more than everyone&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Why should I be role model?&lt;/strong&gt;&lt;br /&gt;
-So many women feel this, and I&amp;rsquo;m completely sympathetic to this view point: I&amp;rsquo;m a woman developer, getting along, happy in my job,
-happy being a programmer, why the hell should I have to stand up and present and blog and be a role model for other women? Men don&amp;rsquo;t have
-to do that. Men can &lt;em&gt;just&lt;/em&gt; be developers.&lt;/p&gt;
-
-&lt;p&gt;In addition, there&amp;rsquo;s the fear that if you &lt;em&gt;do&lt;/em&gt; stand up, become a role model, that somehow people will think you&amp;rsquo;re representing all
-women developers. You&amp;rsquo;ll be worried because you can only represent who you are, what you do, you can&amp;rsquo;t represent a whole gender in a
-single presentation or a single interview.  And the pressure! What if I mess up? What if I say something my gender does not agree with?
-What if I say something that causes my whole gender to be judged?&lt;/p&gt;
-
-&lt;p&gt;Totally understandable fears. Totally true that many people will ask you to be &lt;em&gt;the&lt;/em&gt; woman developer, to answer for all women.  Well,
-that&amp;rsquo;s why I&amp;rsquo;m asking more women to stand up, to be role models - if we all step up, it will no longer just be me, and you,
-and that other one over there. There&amp;rsquo;ll be more of us, more differing voices, we&amp;rsquo;ll stand out less. But we have to stand up first.  And
-in the meantime it&amp;rsquo;s us and our points of view they&amp;rsquo;re listening to. Wouldn&amp;rsquo;t you rather voice your opinion than have someone else speak
-on your behalf? Especially when very few people really can represent you, who you are and what you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What if I can&amp;rsquo;t answer the questions?&lt;/strong&gt;&lt;br /&gt;
-You&amp;rsquo;ll be surprised at what you do know, so people who present run into this less than you&amp;rsquo;d think, even if you&amp;rsquo;re just beginning,
-but just in case here are some tips:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Repeat the question, paraphrasing. Firstly, this ensures you&amp;rsquo;ve actually heard the question correctly. Secondly,
-it allows the whole audience to hear it, and thirdly, but most importantly, it buys you time to think.&lt;/li&gt;
-&lt;li&gt;Be honest - say you don&amp;rsquo;t know, and move on. If you know somewhere that might have the answer,
-point the person to that resource.  But a technical audience actually values the answer &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; more than you think. Especially
-the person who asked the question, it makes them feel really smart!&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;If you don&amp;rsquo;t know, but you think the audience might know, throw it back to them. Either to the person who asked the question,
-if that feels appropriate (especially if this is one of those &amp;ldquo;look how smart I am&amp;rdquo; questions),
-or to the audience as a whole. In conferences in particular, there&amp;rsquo;s a good chance someone there knows the answer.&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re genuinely terrified of all questions, say at the start of the presentation that you won&amp;rsquo;t take questions in the talk. Offer
-an alternative, like via Twitter or e-mail, if you can.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;what-can-conference-organisers-do:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What can conference organisers do?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifically invite the people you want presenting&lt;/strong&gt;&lt;br /&gt;
-Don&amp;rsquo;t just wait for them to submit. If you want more women, more diversity, invite them. And invite them early&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Secure your women presenters early.&lt;/strong&gt;&lt;br /&gt;
-Recognise that there are relatively few women presenters on &amp;ldquo;the circuit&amp;rdquo;, and understand that &lt;em&gt;everyone&lt;/em&gt; wants them to speak at their
-conference. This rare breed, the female technical presenter, gets booked up &lt;em&gt;well&lt;/em&gt; in advance.  They&amp;rsquo;re probably as in-demand as your
-keynote speakers, and can probably devote less time to appearing at conferences than those who have made it to keynote-standard (I&amp;rsquo;m
-making a sweeping generalisation that your techy women have day-jobs as developers and your keynote speakers are either professional
-presenters or at least can argue presenting as a critical part of their job).&lt;/p&gt;
-
-&lt;p&gt;So, you have a limited resource (experienced women presenters) that&amp;rsquo;s in high demand. You need to reach out directly to them,
-invite them, and secure them well in advance of your conference.  Many big conferences, for example JavaOne and QCon,
-will invite speakers six months in advance. If you give women speakers a month&amp;rsquo;s notice before your conference or event,
-they simply are not going to have the space in their schedule at that late notice.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Showcase your diversity on your website&lt;/strong&gt;&lt;br /&gt;
-If you haven&amp;rsquo;t already heard of &lt;a href=&#34;http://en.wikipedia.org/wiki/Microaggression_theory&#34;&gt;microaggressions&lt;/a&gt;,
-go and read what that means before you get any further.  There&amp;rsquo;s a very simple thing you
-need to do with your website, whether you&amp;rsquo;ve opened for CFP or you&amp;rsquo;re trying to get attendees to register - make sure the photos on your
-website show the type of diversity you want to encourage.  Only yesterday I was looking at the website of a big conference,
-who I know for a fact are working &lt;em&gt;really&lt;/em&gt; hard to ensure diversity, not just with gender but race, age,
-and where possible in less physically obvious dimensions. The conference is many months off, so the only photo they have on the website
-is a background photo of the exhibition hall from some previous year, crammed full of attendees - white, male attendees,
-as far as it&amp;rsquo;s possible to tell.  It&amp;rsquo;s extremely subtle. You might not even notice, as the photo is behind the headers and text of the
-site. But I noticed. And you can be sure the subconscious of every person who went to the website to either submit a proposal for a
-talk, or is considering asking their employer to pay for the registration, also noticed.  The conscious mind might be able to shrug it
-off.  But the subconscious of a non-white and/or non-male person notices and plants the subtle seed
-of &amp;ldquo;this conference is not for me&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;So, conference and event organisers - if you want more women applying to speak at your conference,
-show more women on your website.  If you want a more diverse audience, show more diverse faces.  If you&amp;rsquo;ve invited your women presenters
-early and secured them early, show their photos on the site - this sends a strong message to other women that their talk proposals will be
-taken seriously.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Run warm up nights to try out new speakers&lt;/strong&gt;&lt;br /&gt;
-I know conference organisers get &lt;em&gt;lots&lt;/em&gt; of submissions, and I know it&amp;rsquo;s hard to tell which are going to be good speakers,
-especially if they&amp;rsquo;re new speakers or don&amp;rsquo;t have a video.  If you&amp;rsquo;re genuine about improving the diversity of your speakers,
-run free nights to a) promote your conference and b) try out new speakers.  Probably a good idea to have a new speaker and a known
-speaker to attract the crowd and give newbies a chance.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be so damn picky&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;New speakers need to be encouraged. Find a way to see their content without just discarding an unknown name.&lt;/li&gt;
-&lt;li&gt;Existing speakers might not have the luxury of creating new content. Many conferences want genuine practitioners,
-not just evangelists, but those people have day jobs and can&amp;rsquo;t be creating a new talk just for your conference.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Leave space for new speakers&lt;/strong&gt;&lt;br /&gt;
-&amp;hellip;and don&amp;rsquo;t just have 7 slots for a pro speaker&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Look at your swag&lt;/strong&gt;&lt;br /&gt;
-Not just guys t-shirts.  One conference gave out cupcakes for example. But it doesn&amp;rsquo;t just have to be handbags and high-heeled shoes,
-just take a quick look and see if your swag is generally useful for techies, or if it leans towards men only. Men only swag (men&amp;rsquo;s
-t-shirts, bottle openers, subtle things like that) subliminally says &amp;ldquo;you don&amp;rsquo;t belong here&amp;rdquo; to the women.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Give feedback&lt;/strong&gt;&lt;br /&gt;
-You can&amp;rsquo;t tell every individual why they were rejected, but you could look at all the rejected submissions and give broad indications of
-the type of CFPs that didn&amp;rsquo;t make it. Maybe write a blog post explaining which sorts of talks didn&amp;rsquo;t make it and why.  This will help
-speakers create content that better fits your conference.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Be specific about what you&amp;rsquo;re looking for&lt;/strong&gt;&lt;br /&gt;
-If you have tracks you&amp;rsquo;re finding content for, put them on the website/CFP, so people know what the topics are. If you have an
-idea that you want 30% beginner material and 30% very advanced, make that clear too. Especially if you want &lt;em&gt;only&lt;/em&gt; beginner or &lt;em&gt;only&lt;/em&gt;
-advanced. People will submit more appropriate talks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Have a beginner&amp;rsquo;s track&lt;/strong&gt;&lt;br /&gt;
-&amp;hellip;not just for the speakers, for the content too. Beginner speakers may be more comfortable presenting &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; talks.&lt;br /&gt;
-Having a beginners track, whether it&amp;rsquo;s for content or speakers, will make newbies feel more included.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-other-things-can-we-try:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What other things can we try?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;User groups can grow talent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Practice writing CFPs&lt;/li&gt;
-&lt;li&gt;Help each other&lt;/li&gt;
-&lt;li&gt;Presentation skills&lt;/li&gt;
-&lt;li&gt;Lightning talks, book club, different meetup styles (like fishbowl)&lt;/li&gt;
-&lt;li&gt;Run an open conference to encourage new speakers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Women&amp;rsquo;s user groups are instrumental&lt;/strong&gt;&lt;br /&gt;
-So here&amp;rsquo;s something interesting. I&amp;rsquo;m sceptical of all-women user groups as I feel it separates us from the communities we &lt;em&gt;should&lt;/em&gt; be
-contributing to. But women&amp;rsquo;s user groups can help us to integrate better.  For example, Duchess France helped and encouraged its members
-to submit talks to Devoxx, gave feedback on CFPs before they were submitted, and provided a safe place for the women to practice
-presenting beforehand.  I think this is exactly the sort of thing women&amp;rsquo;s user groups could be fantastic for.&lt;/p&gt;
-
-&lt;h3 id=&#34;advice-for-budding-speakers:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Advice for budding speakers&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Just Do It&lt;/li&gt;
-&lt;li&gt;The more you do it, the more comfortable you&amp;rsquo;ll be&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re a speaker, it can make you feel less of an impostor at a conference - you&amp;rsquo;re not just a woman developer, you&amp;rsquo;re a speaker!&lt;/li&gt;
-&lt;li&gt;Everyone&amp;rsquo;s afraid, it&amp;rsquo;s not just you&lt;/li&gt;
-&lt;li&gt;Every developer wants to learn&lt;/li&gt;
-&lt;li&gt;The audience is on your side&lt;/li&gt;
-&lt;li&gt;Start Small (user groups)&lt;/li&gt;
-&lt;li&gt;Be technical. But you don&amp;rsquo;t have to be super smart&lt;/li&gt;
-&lt;li&gt;Bootstrapping is hard - you haven&amp;rsquo;t presented so you can&amp;rsquo;t get into conferences. Again, user groups can help with this.&lt;/li&gt;
-&lt;li&gt;Pair. Ask a more experienced presenter if you can co-present with them.&lt;/li&gt;
-&lt;li&gt;Ask for mentors&lt;/li&gt;
-&lt;li&gt;Ask for feedback&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; is perfectly acceptable.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I appreciate there is &lt;em&gt;so&lt;/em&gt; much more I could have covered, and many topics deserve more depth. But this is the brain dump from the Devoxx
-session, and maybe one day things will be expanded into their own topics.&lt;/p&gt;
 </description>
     </item>
     

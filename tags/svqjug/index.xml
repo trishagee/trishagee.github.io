@@ -6,7 +6,196 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 21 Jul 2015 00:00:00 UTC</updated>
+    <updated>Fri, 31 Jul 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 MOOC - Session 2 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session2/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session2/</guid>
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
+is working towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+to share knowledge between people who are doing the course.&lt;/p&gt;
+
+&lt;p&gt;The second week&amp;rsquo;s lesson was about
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; - how you can use the
+new stream API to transform data. There was also a whole section on
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;, which initially seemed like
+rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rather more than I originally thought.&lt;/p&gt;
+
+&lt;p&gt;In the meetup session, we talked about:&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;&lt;/strong&gt;: we were pretty
+comfortable,
+I think, with using &lt;code&gt;Optional&lt;/code&gt; to
+prevent a &lt;code&gt;NullPointerException&lt;/code&gt;. What we weren&amp;rsquo;t so clear on were the examples of
+&lt;code&gt;filter()&lt;/code&gt; and &lt;code&gt;map()&lt;/code&gt; - if you were getting your &lt;code&gt;Optional&lt;/code&gt; values from a stream, why wouldn&amp;rsquo;t you do the map and the
+filter on the stream first? For example, why do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s -&amp;gt; s.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;when you could map and filter in the stream to get the first non-empty value? That certainly seems like an
+interesting question in relation to streams.&lt;/p&gt;
+
+&lt;p&gt;I can see &lt;code&gt;Optional&lt;/code&gt; being more useful when other APIs fully
+support Java 8 and return &lt;code&gt;Optional&lt;/code&gt; values, then you can perform additional operations on return values.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That terminal operation&amp;rsquo;s not actually terminal??&lt;/strong&gt;: We ran into this a couple of times in our examples in the
+session, one example is the code above (let&amp;rsquo;s copy it down here so we can look at it more closely):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Isn&amp;rsquo;t &lt;code&gt;findFirst()&lt;/code&gt; a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html#StreamOps&#34;&gt;terminal operation&lt;/a&gt;? How
+can you carry on doing more operations on that?&lt;/p&gt;
+
+&lt;p&gt;The answer is, of course, that the return type of the terminal operation can also lead to further operations.  The
+above is actually:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Optional&amp;lt;String&amp;gt; result = list.stream()
+                              .findFirst();
+result.map(String::trim)
+      .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+      .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our terminal operation returns an optional, which allows you to do further operations. Another example of this
+confusion:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .collect(toList())
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, &lt;code&gt;collect()&lt;/code&gt; is a terminal operation, but it returns a list, which also allows &lt;code&gt;forEach()&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;String&amp;gt; results = list.stream()
+                           .map(String::toLowerCase)
+                           .collect(toList());
+results.forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So be aware that just because it&amp;rsquo;s called a terminal operation, doesn&amp;rsquo;t mean you can&amp;rsquo;t perform other operations on
+the returned value.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parallel/sequential/parallel&lt;/strong&gt;: there had been a question in the previous week about why you could write code like
+this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .parallel()
+    .map(String::trim)
+    .sequential()
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .parallel()
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and whether that would let you dictate which sections of the stream were parallel and which were to be processed in
+serial.  Lesson two set the lesson straight, declaring &amp;ldquo;the last operator wins&amp;rdquo; - meaning &lt;em&gt;all&lt;/em&gt; of the above code will
+be run as a parallel stream. I can&amp;rsquo;t find any documentation for this, I&amp;rsquo;ll edit this post if I locate it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#unordered--&#34;&gt;Unordered&lt;/a&gt;&lt;/strong&gt;: &amp;ldquo;Why
+would you ever want your stream to be unordered?&amp;rdquo; - the answer is that &lt;code&gt;unordered()&lt;/code&gt; &lt;a href=&#34;http://stackoverflow.com/a/21350234/653519&#34;&gt;doesn&amp;rsquo;t turn
+your sorted collection into one with no order&lt;/a&gt;, it just says that when
+this code is executed, the order of elements doesn&amp;rsquo;t matter.  This might make processing faster on a parallel stream,
+but as a group we figured it would probably be pointless on a sequential stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Efficiency optimisations and order of stream operations&lt;/strong&gt;: We had a &lt;em&gt;long&lt;/em&gt; conversation about the order in which you
+perform
+operations in a stream. The MOOC (in fact, most documentation around Streams) tells us that a) streams are
+&lt;a href=&#34;http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;lazy&lt;/a&gt;, and
+not evaluated until a terminal operator is encountered and b) this enables optimisation of the operations in the
+stream.  That lead to a discussion about the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The filter operation should result in less items to process in the stream. Given that the &lt;code&gt;map()&lt;/code&gt; operation doesn&amp;rsquo;t
+change anything that &lt;code&gt;filter()&lt;/code&gt; relies on, will this code be optimised somehow under the covers so that the filter
+is actually executed first? Or are optimisations still going to respect the order of operations on a stream?&lt;/p&gt;
+
+&lt;p&gt;Our case is actually a very specific case, because a) the &lt;code&gt;map()&lt;/code&gt; returns the same type as the params passed in (i.e.
+it doesn&amp;rsquo;t map a &lt;code&gt;String&lt;/code&gt; to an &lt;code&gt;int&lt;/code&gt;) and b) the &lt;code&gt;map()&lt;/code&gt; doesn&amp;rsquo;t change the characteristic the &lt;code&gt;filter()&lt;/code&gt; is
+looking at (i.e. length). But generally speaking, you can&amp;rsquo;t expect these conditions to be true - in fact I bet in a
+large number of cases they are &lt;em&gt;not&lt;/em&gt; true. So pipeline operations are &lt;a href=&#34;http://stackoverflow.com/a/22056258/653519&#34;&gt;performed in the order in which they are
+written&lt;/a&gt;, meaning that our &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;filter&lt;/code&gt; will not be re-ordered into
+a more efficient order.&lt;/p&gt;
+
+&lt;p&gt;A good rule of thumb seems to be to do filtering as early in the stream as possible - that way you can potentially
+cut down the number of items you process in each step of the stream. Therefore our code would probably be better as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .map(String::toLowerCase)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;strong&gt;Flat Map&lt;/strong&gt;: what&amp;hellip;?
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-&#34;&gt;&lt;code&gt;flatMap()&lt;/code&gt;&lt;/a&gt;
+is one of those methods that makes total sense once you get the hang of it, and you don&amp;rsquo;t
+understand why it was so confusing. But the first time you encounter it, it&amp;rsquo;s confusing - how is &lt;code&gt;flatMap()&lt;/code&gt;
+different to &lt;code&gt;map()&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;flatMap&lt;/code&gt; is used to squish (for example) a stream of streams into just a simple stream. It&amp;rsquo;s like turning a
+2-dimensional array into a single dimension so that you can iterate over all the items without needing nested
+for-loops. There&amp;rsquo;s &lt;a href=&#34;http://stackoverflow.com/a/22384132/653519&#34;&gt;an example on StackOverflow&lt;/a&gt;, and some more examples
+in answer to &lt;a href=&#34;http://stackoverflow.com/questions/26684562/java-8-map-and-flatmap-methods&#34;&gt;this question&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparators&lt;/strong&gt;: We&amp;rsquo;ve probably all written comparators at some point, it&amp;rsquo;s probably one of those examples where we
+really did use anonymous inner classes &amp;ldquo;in the olden days&amp;rdquo; and were looking forward to replacing them with lambdas.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(new Comparator&amp;lt;String&amp;gt;() {
+          @Override
+          public int compare(String o1, String o2) {
+              return ???;
+          }
+      })
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sadly, using a lambda still doesn&amp;rsquo;t answer the question &amp;ldquo;do I minus o1 from o2, or o2 from o1?&amp;rdquo;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted((o1, o2) -&amp;gt; ??? )
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But there&amp;rsquo;s yet another new method in Java 8 here that can save us, one that is not nearly as well publicised as it
+should be. There&amp;rsquo;s a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparing-java.util.function.Function-&#34;&gt;&lt;code&gt;Comparator.comparing()&lt;/code&gt;&lt;/a&gt;
+that you can use to really easily define what to compare on. The JavaDoc and signature looks kinda confusing, but
+this is one of those places where method references suddenly make loads of sense:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(comparingInt(String::length))
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Here we&amp;rsquo;re actually using the &lt;code&gt;comparingInt&lt;/code&gt; method as we&amp;rsquo;re going to compare on a primitive value). Personally this
+is one of my favourite new features in Java 8.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223910762/&#34;&gt;last session on Java 8 - Lambdas and Streams&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8 MOOC - Session 1 Summary</title>

@@ -3,8 +3,18 @@
   
   <url>
     <loc>http://trishagee.github.io/</loc>
-    <lastmod>2015-07-27T00:00:00+00:00</lastmod>
+    <lastmod>2015-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/post/java_8_mooc_session2/</loc>
+    <lastmod>2015-07-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/drafts/code_review_2/</loc>
+    <lastmod>2015-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1098,17 +1108,25 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_london/</loc>
-    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>http://trishagee.github.io/post/qcon_london/</loc>
+    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/drafts/code_review_design/</loc>
+  </url>
+  
+  <url>
     <loc>http://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/drafts/intellij-writing-good-tests/</loc>
   </url>
   
   <url>
@@ -1117,10 +1135,6 @@
   
   <url>
     <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
   </url>
   
   <url>
@@ -1133,6 +1147,10 @@
   
   <url>
     <loc>http://trishagee.github.io/other-sites/release/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
   </url>
   
   <url>
