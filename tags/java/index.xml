@@ -6,7 +6,143 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 31 Jul 2015 00:00:00 UTC</updated>
+    <updated>Tue, 04 Aug 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 MOOC - Session 3 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session3/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session3/</guid>
+      <description>&lt;p&gt;Last night was the final get-together to discuss the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
+event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
+we had attendees from earlier sessions plus new people too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The aim of this session was to talk about Lesson 3, but also to wrap up the course as a whole: to talk about what we
+liked and what we would have improved (about both the course itself and our user group events).&lt;/p&gt;
+
+&lt;p&gt;As in the previous &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
+discussion areas:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findAny--&#34;&gt;findAny()&lt;/a&gt;
+vs &lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findFirst--&#34;&gt;findFirst()&lt;/a&gt;&lt;/strong&gt;: Why do we
+need both of these methods, and when would you use them?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;findFirst()&lt;/code&gt; is the deterministic version, which will return you the first element in the Stream (according to
+encounter order - see the section on
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;Ordering in the documentation&lt;/a&gt;).
+So, regardless of whether you run the operation in parallel or serial, if you&amp;rsquo;re looking for &amp;ldquo;A&amp;rdquo; and use &lt;code&gt;findFirst&lt;/code&gt;
+with this list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;you&amp;rsquo;ll get the element at index 3 - the first &amp;ldquo;A&amp;rdquo; in the list.&lt;/p&gt;
+
+&lt;p&gt;But &lt;code&gt;findAny()&lt;/code&gt; is non-deterministic, so will return you any element that matches your criteria - it could return the
+element at index 3, or the one at position 6. Realistically, if the stream is on an ordered collection like a list,
+when you run &lt;code&gt;findAny&lt;/code&gt; on a sequential stream, I expect it will return the same result as &lt;code&gt;findFirst&lt;/code&gt;.  The real
+use-case for &lt;code&gt;findAny&lt;/code&gt; is when you&amp;rsquo;re running this on a parallel stream. Let&amp;rsquo;s take the above list, and assume that
+when you run this on a parallel stream it&amp;rsquo;s processed by two separate threads:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;,    // processed by thread 1 
+ &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]     // processed by thread 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible that thread 2 finds its &amp;ldquo;A&amp;rdquo; (the one at position 6) before thread 1 finds the one at position 3, so
+this will be value that&amp;rsquo;s returned. By configuring the Stream to return any one of the values that matches the
+criteria, you can potentially execute the operation faster when running in parallel.&lt;/p&gt;
+
+&lt;p&gt;If &lt;code&gt;findAny&lt;/code&gt; is (potentially) faster in parallel and (probably) returns the same value as &lt;code&gt;findFirst&lt;/code&gt; when running in
+serial, why not use that all the time?  Well, there are times when you really do want the first item. If you have a
+list of DVDs ordered by year the film was released, and you want to find the original &amp;ldquo;King Kong&amp;rdquo; (for
+example), you&amp;rsquo;ll want &lt;code&gt;findFirst&lt;/code&gt; to find the one released in 1933, not the one that was released in 1976 or the
+one from 2005.&lt;/p&gt;
+
+&lt;p&gt;Plus, &lt;code&gt;findFirst&lt;/code&gt; is not always going to be slower than &lt;code&gt;findAny&lt;/code&gt;, even in parallel.  Going back to our list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trying to &lt;code&gt;findFirst&lt;/code&gt; or &lt;code&gt;findAny&lt;/code&gt; for &amp;ldquo;H&amp;rdquo; could be the same performance for both methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collectors&lt;/strong&gt;: Maybe it&amp;rsquo;s just me who doesn&amp;rsquo;t really see the big picture for collectors.  I&amp;rsquo;m perfectly content with
+the built in collectors like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toList())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toSet())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s easy to see what they do, and work out when you need to use them.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m also very happy to have discovered &lt;code&gt;joining&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.joining(&amp;quot;,&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;a super-useful way to create Comma Separated Values (CSVs) that I use in my
+&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Where things get a bit murky for me is where we start chaining up collectors:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.mapping(...).combiner().andThen(...).apply(...))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(it should be obvious from my lack of clear example that I&amp;rsquo;m not 100% certain under which circumstances these are
+useful).&lt;/p&gt;
+
+&lt;p&gt;As a group, we think the chained collectors are kinda ugly - not because we&amp;rsquo;re against chaining (we like Streams),
+but maybe because it&amp;rsquo;s another chain inside a param to a chain.&lt;/p&gt;
+
+&lt;p&gt;We think this is an area where some good, solid examples and a bit of daily use will make it much clearer to
+developers. We hope.&lt;/p&gt;
+
+&lt;p&gt;Related to this, the course didn&amp;rsquo;t go into creating your own collectors at all. My personal (under-informed) opinion
+is that I guess most developers should be able to use either the out-of-the-box collectors (&lt;code&gt;toList&lt;/code&gt; etc) or use the
+collector chaining to build what they need. If you need a custom collector, perhaps you haven&amp;rsquo;t considered everything
+that&amp;rsquo;s already available to you. But as a group, we decided we would have liked to see this topic anyway so that we
+could get a deeper understanding of what collectors are and how they work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exercises for lesson 3:&lt;/strong&gt; Well. What can we say? I really hope there are people reading this who haven&amp;rsquo;t finished
+the course yet, because the Sevilla Java User group would like to say to you: don&amp;rsquo;t despair, the lesson 3 exercises
+are &lt;em&gt;substantially&lt;/em&gt; harder than those for lessons 1 and 2. Honestly, the whole group considered it less of a learning
+curve and more of a massive cliff to climb.&lt;/p&gt;
+
+&lt;p&gt;I mean, it was great to have something so challenging to end on, but it probably would have been less ego-destroying
+if we could have got up to that level gradually instead of having it sprung on us.&lt;/p&gt;
+
+&lt;p&gt;The good thing about Part 2 of the lesson 3 exercises was that we had three very different answers to discuss
+in the group. None of us were super happy with any of them, but we could see definite pros and cons of each approach,
+and that&amp;rsquo;s something you really want to learn in a course like this.&lt;/p&gt;
+
+&lt;p&gt;It was also really great to have a rough performance test to run on your own computer, so that you could really see
+the impact of your choices on the performance of the stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For more info&lt;/strong&gt;&lt;br /&gt;
+I&amp;rsquo;m going to add a shameless plug to a friend&amp;rsquo;s book here. I&amp;rsquo;ve been reading a lot about Java 8 for this course, for
+my &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to skill. My favourite book for getting to
+grips with lambdas and streams
+is &lt;a href=&#34;http://www.amazon.com/gp/product/B00J3B3J3C/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00J3B3J3C&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=IX6U2YT4FADY4JY6&#34;&gt;Java 8 Lambdas: Pragmatic Functional Programming&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=B00J3B3J3C&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+by &lt;a href=&#34;https://twitter.com/RichardWarburto&#34;&gt;Richard Warburton&lt;/a&gt;. This book also contains more info about collectors too,
+so maybe some of our questions around how to use these in more complex situation are answered in here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In Summary&lt;/strong&gt;&lt;br /&gt;
+We really enjoyed the MOOC, and the sessions to get together to discuss it. We particularly liked that the meetups
+were a safe place to ask questions and discuss alternative solutions, and that we weren&amp;rsquo;t expected to be genius-level
+experts in order to participate fully.&lt;/p&gt;
+
+&lt;p&gt;If/when Oracle re-runs the MOOC, if you didn&amp;rsquo;t get a chance to take part this time I highly recommend signing up.
+And if you can find (or run) a local meetup to discuss it, it makes the experience much more fun.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8 MOOC - Session 2 Summary</title>
@@ -739,37 +875,6 @@ weekends.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/spock_data_driven_testing/</guid>
       <description>&lt;p&gt;In the last two articles on Spock I&amp;rsquo;ve covered &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html&#34;&gt;mocking&lt;/a&gt; and &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-passes-next-test-painless-stubbing.html&#34;&gt;stubbing&lt;/a&gt;.  And I was pretty sold on Spock just based on that.  But for a database driver, there&amp;rsquo;s a killer feature: &amp;nbsp;&lt;a href=&#34;http://docs.spockframework.org/en/latest/data_driven_testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;All developers have a tendency to think of and test the happy path.  Not least of all because that&amp;rsquo;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.  We tend not to ask &amp;ldquo;what happens if they ask to withdraw money when the cash machine has no cash?&amp;rdquo; or &amp;ldquo;what happens when their account balance is zero?&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;With any luck you&amp;rsquo;ll have a test suite covering your happy paths, and probably at least twice as many grumpy paths.  If you&amp;rsquo;re like me, and you like one test to test one thing (and who doesn&amp;rsquo;t?), sometimes your test classes can get quite long as you test various edge cases.  Or, much worse (and I&amp;rsquo;ve done this too) you use a calculation remarkably like the one you&amp;rsquo;re testing to generate test data.  You run your test in a loop with the calculation and lo!  The test passes.  Woohoo?&lt;br /&gt;&lt;br /&gt;Not that long ago I went through a process of re-writing a lot of unit tests that I had written a year or two before - we were about to do a big refactor of the code that generated some important numbers, and we wanted our tests to tell us we hadn&amp;rsquo;t broken anything with the refactor. The only problem was, the tests used a calculation rather similar to the production calculation, and borrowed some constants to create the expected number. &amp;nbsp;I ended up running the tests to find the numbers the test was generating as expected values, and hardcoding those values into the test. It felt dirty, but it was necessary - I wanted to make sure the refactoring didn&amp;rsquo;t change the expected numbers as well as the ones generated by the real code. &amp;nbsp;This is not a process I want to go through ever again.&lt;br /&gt;&lt;br /&gt;When you&amp;rsquo;re testing these sorts of things, you try and think of a few representative cases, code them into your tests, and hope that you&amp;rsquo;ve covered the main areas.  What would be far nicer is if you could shove a whole load of different data into your system-under-test and make sure the results look sane.&lt;br /&gt;&lt;br /&gt;An example from the Java driver is that we had tests that were checking the parsing of the URI - you can initialise your MongoDB settings simply using a String containing the URI.&lt;br /&gt;&lt;br /&gt;The old tests looked like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056046.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/master/src/test/com/mongodb/MongoClientURITest.java&#34;&gt;MongoClientURITest&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Using Spock&amp;rsquo;s data driven testing, we changed this to:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056095.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/driver/src/test/unit/org/mongodb/MongoClientURISpecification.groovy&#34;&gt;MongoClientURISpecification&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Instead of having a separate test for every type of URL that needs parsing, you have a single test and each line in the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section is a new combination of input URL and expected outputs.  Each one of those lines used to be a test.  In fact, some of them probably weren&amp;rsquo;t tests as the ugliness and overhead of adding another copy-paste test seemed like overkill.  But here, in Spock, it&amp;rsquo;s just a case of adding one more line with a new input and set of outputs.&lt;br /&gt;&lt;br /&gt;The major benefit here, to me, is that it&amp;rsquo;s dead easy to add another test for a &amp;ldquo;what if?&amp;rdquo; that occurs to the developer.  You don&amp;rsquo;t have to have yet another test method that someone else is going to wonder &amp;ldquo;what the hell are we testing this for?&amp;rdquo;.  You just add another line which documents another set of expected outputs given the new input.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s easy, it&amp;rsquo;s neat, it&amp;rsquo;s succinct.&lt;br /&gt;&lt;br /&gt;One of the major benefits of this to our team is that we don&amp;rsquo;t argue any more about whether a single test is testing too much.  In the past, we had tests like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056136.js&#34;&gt;&lt;/script&gt; And I can see why we have all those assertions in the same test, because technically these are all the same concept - make sure that each type of WriteConcern creates the correct command document.  I believe these should be one test per line - because each line in the test is testing a different input and output, and I would want to document that in the test name (&amp;ldquo;fsync write concern should have fsync flag in getLastError command&amp;rdquo;, &amp;ldquo;journalled write concern should set j flag to true in getLastError command&amp;rdquo; etc).  Also don&amp;rsquo;t forget that in JUnit, if the first assert fails, the rest of the test is not run.  Therefore you have no idea if this is a failure that affects all write concerns, or just the first one.  You lose the coverage provided by the later asserts.&lt;br /&gt;&lt;br /&gt;But the argument against my viewpoint is then we&amp;rsquo;d have seven different one-line tests.  What a waste of space.&lt;br /&gt;&lt;br /&gt;You could argue for days about the best way to do it, or that this test is a sign of some other smell that needs addressing.  But if you&amp;rsquo;re in a real world project and your aim is to both improve your test coverage and improve the tests themselves, these arguments are getting in the way of progress.  The nice thing about Spock is that you can take these tests that test too much, and turn them into something a bit prettier:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056166.js&#34;&gt;&lt;/script&gt; You might be thinking, what&amp;rsquo;s the advantage over the JUnit way?  Isn&amp;rsquo;t that the same thing but Groovier?  But there&amp;rsquo;s one important difference - all the lines under &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; get run, regardless of whether the test before it passes or fails.  This basically is seven different tests, but takes up the same space as one.&lt;br /&gt;&lt;br /&gt;That&amp;rsquo;s great, but if just one of these lines fails, how do you know which one it was if all seven tests are masquerading as one?  That&amp;rsquo;s where the awesome &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;@Unroll&lt;/span&gt; annotation comes in.  This reports the passing or failing of each line as if it were a separate test.  By default, when you run an unrolled test it will get reported as something like:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;But in the test above we put some magic keywords into the test name: &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;&amp;lsquo;&lt;b&gt;#wc&lt;/b&gt; should return getlasterror document &lt;b&gt;#commandDocument&lt;/b&gt;&amp;lsquo;&lt;/span&gt; - note that these values with &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;#&lt;/span&gt; in front are the same headings from the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section. They&amp;rsquo;ll get replaced by the value being run in the current test:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Yeah, it can be a bit of a mouthful if the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;toString&lt;/span&gt; is hefty, but it does give you an idea of what was being tested, and it&amp;rsquo;s prettier if the inputs have nice succinct string values:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;This, combined with Spock&amp;rsquo;s awesome &lt;a href=&#34;http://hamletdarcy.blogspot.com.es/2009/05/new-power-assertions-in-groovy.html&#34;&gt;power assert&lt;/a&gt;&amp;nbsp;makes it dead simple to see what went wrong when one of these tests fails. &amp;nbsp;Let&amp;rsquo;s take the example of (somehow) the incorrect host being returned for one of the input URIs:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Data driven testing might lead one to over-test the simple things, but the cost of adding another &amp;ldquo;what if?&amp;rdquo; is so low - just another line - and the additional safety you get from trying a different input is rather nice. &amp;nbsp;We&amp;rsquo;ve been using them for parsers and simple generators, where you want to throw in a bunch of inputs to a single method and see what you get out.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m totally sold on this feature, particularly for our type of application (the Java driver does a lot of taking stuff in one shape and turning it into something else). &amp;nbsp;Just in case you want a final example, here&amp;rsquo;s a final one.&lt;br /&gt;&lt;br /&gt;The old way:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057097.js&#34;&gt;&lt;/script&gt; &amp;hellip;and in Spock:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057129.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The New 3.0 Java Driver for MongoDB</title>
-      <link>http://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</link>
-      <pubDate>Mon, 09 Sep 2013 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</guid>
-      <description>
-
-&lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
-
-&lt;h2 id=&#34;links-to-more-detailed-information:901be61e6414e68f905421f5878b1fac&#34;&gt;Links to more detailed information&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;Introduction to the changes in 3.0&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;How to get started with the 3.0
-not-production-ready snapshot&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;presentations:901be61e6414e68f905421f5878b1fac&#34;&gt;Presentations&lt;/h2&gt;
-
-&lt;p&gt;Presentation from GeeCON about the design of the new MongoDB driver.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;iframe frameborder=&#34;0&#34; height=&#34;400&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34;
-src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34;476&#34;&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Also available in Chinese:
-&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;356&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; mozallowfullscreen=&#34;&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/24790295&#34; style=&#34;border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&#34; webkitallowfullscreen=&#34;&#34; width=&#34;427&#34;&gt; &lt;/iframe&gt;&lt;/p&gt;
 </description>
     </item>
     

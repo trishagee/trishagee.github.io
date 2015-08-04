@@ -332,23 +332,23 @@ easier. You can use the new &lt;code&gt;Comparator.comparing()&lt;/code&gt; meth
 which method on &lt;code&gt;TwitterUser&lt;/code&gt; you want to sort by&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(Comparator.comparing(TwitterUser::getNumberOfTweets));
+               .sorted(comparingInt(TwitterUser::getNumberOfTweets))
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;For a leaderboard which shows the most active tweeters at the top, we need to sort in descending order, which is also
 simple and descriptive using this method&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed());
+               .sorted(comparingInt(TwitterUser::getNumberOfTweets).reversed())
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Note that I&amp;rsquo;ve added a static import for &lt;code&gt;comparing&lt;/code&gt; to make the code a bit shorter.&lt;/p&gt;
+&lt;p&gt;Note that I&amp;rsquo;ve added a static import for &lt;code&gt;comparingInt&lt;/code&gt; to make the code a bit shorter.&lt;/p&gt;
 
 &lt;p&gt;So we&amp;rsquo;ve sorted all the values in the map, now we need to just get the top ten. Since we&amp;rsquo;re using Streams, it&amp;rsquo;s easy
 to chain together all the operations we want to perform on our collection, so we add a call to &lt;code&gt;limit&lt;/code&gt;&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+               .sorted(comparingInt(TwitterUser::getNumberOfTweets).reversed())
                .limit(10);
 &lt;/code&gt;&lt;/pre&gt;
 
@@ -359,7 +359,7 @@ case, what we want is a new list with these top ten tweeters. Telling the &lt;co
 into a &lt;code&gt;List&lt;/code&gt; will do just this&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;List&amp;lt;TwitterUser&amp;gt; topTen = allTwitterUsers.values().stream()
-                                          .sorted(comparing(TwitterUser::getNumberOfTweets).reversed())
+                                          .sorted(comparingInt(TwitterUser::getNumberOfTweets).reversed())
                                           .limit(10)
                                           .collect(Collectors.toList());
 &lt;/code&gt;&lt;/pre&gt;

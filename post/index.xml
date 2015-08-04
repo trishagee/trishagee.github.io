@@ -6,7 +6,143 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 31 Jul 2015 00:00:00 UTC</updated>
+    <updated>Tue, 04 Aug 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 MOOC - Session 3 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session3/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session3/</guid>
+      <description>&lt;p&gt;Last night was the final get-together to discuss the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
+event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
+we had attendees from earlier sessions plus new people too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The aim of this session was to talk about Lesson 3, but also to wrap up the course as a whole: to talk about what we
+liked and what we would have improved (about both the course itself and our user group events).&lt;/p&gt;
+
+&lt;p&gt;As in the previous &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
+discussion areas:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findAny--&#34;&gt;findAny()&lt;/a&gt;
+vs &lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findFirst--&#34;&gt;findFirst()&lt;/a&gt;&lt;/strong&gt;: Why do we
+need both of these methods, and when would you use them?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;findFirst()&lt;/code&gt; is the deterministic version, which will return you the first element in the Stream (according to
+encounter order - see the section on
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;Ordering in the documentation&lt;/a&gt;).
+So, regardless of whether you run the operation in parallel or serial, if you&amp;rsquo;re looking for &amp;ldquo;A&amp;rdquo; and use &lt;code&gt;findFirst&lt;/code&gt;
+with this list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;you&amp;rsquo;ll get the element at index 3 - the first &amp;ldquo;A&amp;rdquo; in the list.&lt;/p&gt;
+
+&lt;p&gt;But &lt;code&gt;findAny()&lt;/code&gt; is non-deterministic, so will return you any element that matches your criteria - it could return the
+element at index 3, or the one at position 6. Realistically, if the stream is on an ordered collection like a list,
+when you run &lt;code&gt;findAny&lt;/code&gt; on a sequential stream, I expect it will return the same result as &lt;code&gt;findFirst&lt;/code&gt;.  The real
+use-case for &lt;code&gt;findAny&lt;/code&gt; is when you&amp;rsquo;re running this on a parallel stream. Let&amp;rsquo;s take the above list, and assume that
+when you run this on a parallel stream it&amp;rsquo;s processed by two separate threads:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;,    // processed by thread 1 
+ &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]     // processed by thread 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible that thread 2 finds its &amp;ldquo;A&amp;rdquo; (the one at position 6) before thread 1 finds the one at position 3, so
+this will be value that&amp;rsquo;s returned. By configuring the Stream to return any one of the values that matches the
+criteria, you can potentially execute the operation faster when running in parallel.&lt;/p&gt;
+
+&lt;p&gt;If &lt;code&gt;findAny&lt;/code&gt; is (potentially) faster in parallel and (probably) returns the same value as &lt;code&gt;findFirst&lt;/code&gt; when running in
+serial, why not use that all the time?  Well, there are times when you really do want the first item. If you have a
+list of DVDs ordered by year the film was released, and you want to find the original &amp;ldquo;King Kong&amp;rdquo; (for
+example), you&amp;rsquo;ll want &lt;code&gt;findFirst&lt;/code&gt; to find the one released in 1933, not the one that was released in 1976 or the
+one from 2005.&lt;/p&gt;
+
+&lt;p&gt;Plus, &lt;code&gt;findFirst&lt;/code&gt; is not always going to be slower than &lt;code&gt;findAny&lt;/code&gt;, even in parallel.  Going back to our list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trying to &lt;code&gt;findFirst&lt;/code&gt; or &lt;code&gt;findAny&lt;/code&gt; for &amp;ldquo;H&amp;rdquo; could be the same performance for both methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collectors&lt;/strong&gt;: Maybe it&amp;rsquo;s just me who doesn&amp;rsquo;t really see the big picture for collectors.  I&amp;rsquo;m perfectly content with
+the built in collectors like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toList())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toSet())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s easy to see what they do, and work out when you need to use them.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m also very happy to have discovered &lt;code&gt;joining&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.joining(&amp;quot;,&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;a super-useful way to create Comma Separated Values (CSVs) that I use in my
+&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Where things get a bit murky for me is where we start chaining up collectors:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.mapping(...).combiner().andThen(...).apply(...))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(it should be obvious from my lack of clear example that I&amp;rsquo;m not 100% certain under which circumstances these are
+useful).&lt;/p&gt;
+
+&lt;p&gt;As a group, we think the chained collectors are kinda ugly - not because we&amp;rsquo;re against chaining (we like Streams),
+but maybe because it&amp;rsquo;s another chain inside a param to a chain.&lt;/p&gt;
+
+&lt;p&gt;We think this is an area where some good, solid examples and a bit of daily use will make it much clearer to
+developers. We hope.&lt;/p&gt;
+
+&lt;p&gt;Related to this, the course didn&amp;rsquo;t go into creating your own collectors at all. My personal (under-informed) opinion
+is that I guess most developers should be able to use either the out-of-the-box collectors (&lt;code&gt;toList&lt;/code&gt; etc) or use the
+collector chaining to build what they need. If you need a custom collector, perhaps you haven&amp;rsquo;t considered everything
+that&amp;rsquo;s already available to you. But as a group, we decided we would have liked to see this topic anyway so that we
+could get a deeper understanding of what collectors are and how they work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exercises for lesson 3:&lt;/strong&gt; Well. What can we say? I really hope there are people reading this who haven&amp;rsquo;t finished
+the course yet, because the Sevilla Java User group would like to say to you: don&amp;rsquo;t despair, the lesson 3 exercises
+are &lt;em&gt;substantially&lt;/em&gt; harder than those for lessons 1 and 2. Honestly, the whole group considered it less of a learning
+curve and more of a massive cliff to climb.&lt;/p&gt;
+
+&lt;p&gt;I mean, it was great to have something so challenging to end on, but it probably would have been less ego-destroying
+if we could have got up to that level gradually instead of having it sprung on us.&lt;/p&gt;
+
+&lt;p&gt;The good thing about Part 2 of the lesson 3 exercises was that we had three very different answers to discuss
+in the group. None of us were super happy with any of them, but we could see definite pros and cons of each approach,
+and that&amp;rsquo;s something you really want to learn in a course like this.&lt;/p&gt;
+
+&lt;p&gt;It was also really great to have a rough performance test to run on your own computer, so that you could really see
+the impact of your choices on the performance of the stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For more info&lt;/strong&gt;&lt;br /&gt;
+I&amp;rsquo;m going to add a shameless plug to a friend&amp;rsquo;s book here. I&amp;rsquo;ve been reading a lot about Java 8 for this course, for
+my &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to skill. My favourite book for getting to
+grips with lambdas and streams
+is &lt;a href=&#34;http://www.amazon.com/gp/product/B00J3B3J3C/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00J3B3J3C&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=IX6U2YT4FADY4JY6&#34;&gt;Java 8 Lambdas: Pragmatic Functional Programming&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=B00J3B3J3C&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+by &lt;a href=&#34;https://twitter.com/RichardWarburto&#34;&gt;Richard Warburton&lt;/a&gt;. This book also contains more info about collectors too,
+so maybe some of our questions around how to use these in more complex situation are answered in here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In Summary&lt;/strong&gt;&lt;br /&gt;
+We really enjoyed the MOOC, and the sessions to get together to discuss it. We particularly liked that the meetups
+were a safe place to ask questions and discuss alternative solutions, and that we weren&amp;rsquo;t expected to be genius-level
+experts in order to participate fully.&lt;/p&gt;
+
+&lt;p&gt;If/when Oracle re-runs the MOOC, if you didn&amp;rsquo;t get a chance to take part this time I highly recommend signing up.
+And if you can find (or run) a local meetup to discuss it, it makes the experience much more fun.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8 MOOC - Session 2 Summary</title>
@@ -1525,43 +1661,6 @@ two people will find this useful.&lt;/p&gt;
 about how developers aren&amp;rsquo;t just communing with the computer, they also need to feel listened to by real human beings.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;Read it here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>New Year, New Adventures</title>
-      <link>http://trishagee.github.io/post/new_year_new_adventures/</link>
-      <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/new_year_new_adventures/</guid>
-      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;http://trishagee.github.io/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
-called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
-this role were: to learn what it was
-like working for a company that produced a technology product; to discover what impact working in an open source fashion has; and to
-level up my advocacy skills.  I have met all these goals, and more - I met some fantastic people; learnt different approaches to
-software development; discovered my new favourite database for creating applications; moved to Spain; started both a
-&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; and a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;;
-worked to understand the value of community and evangelism, and to help create a strategy for these areas;
-and my evangelism efforts and open source work earned me the &lt;a href=&#34;https://java.net/website/java-champions/bios.html#Gee&#34;&gt;Java Champion&lt;/a&gt; title.
-I&amp;rsquo;m extremely proud of what I&amp;rsquo;ve achieved over this period, and very grateful to MongoDB for giving me these opportunities.&lt;/p&gt;
-
-&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
-this year, you&amp;rsquo;ll know of my love affair with &lt;a href=&#34;https://www.jetbrains.com/idea/whatsnew/&#34;&gt;IntelliJ IDEA&lt;/a&gt;,
-a tool I use daily (even for blogging). Well, now I&amp;rsquo;m joining the team at &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt;,
-where I&amp;rsquo;m going Full Advocate. I &lt;em&gt;hope&lt;/em&gt; this means I get to carry on doing more of what I love - presenting, writing,
-and working on demos to help developers become more productive. I hope this will give me opportunities to stay ahead of the curve in the
-Java/JVM world.&lt;/p&gt;
-
-&lt;p&gt;And yes, in answer to the Most Frequently Asked Question, I am staying in Spain. I&amp;rsquo;ve fallen in love with Sevilla and I&amp;rsquo;m not ready to
-leave yet.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;I shall leave you with my somewhat disasterous &amp;ldquo;Top Ten IntelliJ Tips&amp;rdquo; from GOTO Aarhus, which is worth watching just to see Dan North
-save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
