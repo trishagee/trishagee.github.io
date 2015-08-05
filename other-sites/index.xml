@@ -762,77 +762,6 @@ we&amp;rsquo;ll replace only the field we want to change:&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://trishagee.github.io/other-sites/getting-started-with-gradle/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/getting-started-with-gradle/</guid>
-      <description>
-
-&lt;h1 id=&#34;new-gradle-project:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;New Gradle Project&lt;/h1&gt;
-
-&lt;p&gt;File -&amp;gt; New Project
-Gradle. Tick create content roots&lt;/p&gt;
-
-&lt;p&gt;Gradle will build (bottom status bar)
-When this is done, you&amp;rsquo;ll get your source/main/java / test&lt;/p&gt;
-
-&lt;p&gt;If you open build.gradle, you might get the suggestion to add the sources.&lt;br /&gt;
-Apply this suggestion, it changes gradle-wrapper.properties to get gradle to
-download sources as well as jar files. Super useful for debugging (althugh
-without sources intellij&amp;rsquo;s decompiler will give you an approsimation)&lt;/p&gt;
-
-&lt;p&gt;Open the gradle window, and you can see the tasks you can run. By default
-you&amp;rsquo;ll get a gradle file with the java plugin, and this will give you the
-tasks you expect for a java project - clean, build, test, etc.&lt;/p&gt;
-
-&lt;p&gt;Open &amp;ldquo;verification&amp;rdquo; and run check - this would compile any classes and run
-any tests. THere&amp;rsquo;s nothing to do for this project as it&amp;rsquo;s new, but you should
- get a Build Successful in the Run window, showing that gradle is configured
- correctly.&lt;/p&gt;
-
-&lt;p&gt;Gradle painlessly handles your project dependencies. By default,
-IntelliJ has included JUnit. You can see IntelliJ puts the downloaded
-dependencies under external depdencies in the Project window.&lt;/p&gt;
-
-&lt;p&gt;You can change your gradle settings by pressing the settings button in the
-gradle window. For example, you might want to enable offline mode, if you do
-work in places without internet connection (planes and trains for example).&lt;/p&gt;
-
-&lt;h2 id=&#34;adding-more-dependencies:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Adding more dependencies&lt;/h2&gt;
-
-&lt;p&gt;You might prefer the shorter notation for dependencies, so I&amp;rsquo;ve changed the
-default JUnit dep to use this notation.  Add new dependencies into the
-dependencies section of the build file:&lt;/p&gt;
-
-&lt;p&gt;(e.g. guava)&lt;/p&gt;
-
-&lt;p&gt;When you&amp;rsquo;ve done this, you need to get IntelliJ to fetch the new dependency.
-Do this by clicking &amp;ldquo;refresh all gradle projects&amp;rdquo;&lt;/p&gt;
-
-&lt;p&gt;You should see the new depdency in the external libraries.&lt;/p&gt;
-
-&lt;p&gt;Note - gradle dependencies will appear in the project dependencies, but if
-you add a dependency in here it will not be added to the gradle build. Any
-dependencies here will be lost on sync?&lt;/p&gt;
-
-&lt;p&gt;?? Where do you see gradle dependency tree?&lt;/p&gt;
-
-&lt;h1 id=&#34;open-existing-project:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Open Existing Project&lt;/h1&gt;
-
-&lt;p&gt;##&lt;/p&gt;
-
-&lt;h2 id=&#34;multi-module-projects:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Multi module projects&lt;/h2&gt;
-
-&lt;h1 id=&#34;if-your-intellij-project-doesn-t-look-the-way-you-expect:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;If your intellij project doesn&amp;rsquo;t look the way you expect&lt;/h1&gt;
-
-&lt;h2 id=&#34;checking-source-configuration:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Checking source configuration&lt;/h2&gt;
-
-&lt;h2 id=&#34;idea-plugin-provided-source:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;idea plugin (provided source)&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
       <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
@@ -1444,6 +1373,77 @@ we&amp;rsquo;ll replace only the field we want to change:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/core/crud-introduction/&#34;&gt;CRUD Operations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/indexes/&#34;&gt;Indexes&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://trishagee.github.io/other-sites/getting-started-with-gradle/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/other-sites/getting-started-with-gradle/</guid>
+      <description>
+
+&lt;h1 id=&#34;new-gradle-project:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;New Gradle Project&lt;/h1&gt;
+
+&lt;p&gt;File -&amp;gt; New Project
+Gradle. Tick create content roots&lt;/p&gt;
+
+&lt;p&gt;Gradle will build (bottom status bar)
+When this is done, you&amp;rsquo;ll get your source/main/java / test&lt;/p&gt;
+
+&lt;p&gt;If you open build.gradle, you might get the suggestion to add the sources.&lt;br /&gt;
+Apply this suggestion, it changes gradle-wrapper.properties to get gradle to
+download sources as well as jar files. Super useful for debugging (althugh
+without sources intellij&amp;rsquo;s decompiler will give you an approsimation)&lt;/p&gt;
+
+&lt;p&gt;Open the gradle window, and you can see the tasks you can run. By default
+you&amp;rsquo;ll get a gradle file with the java plugin, and this will give you the
+tasks you expect for a java project - clean, build, test, etc.&lt;/p&gt;
+
+&lt;p&gt;Open &amp;ldquo;verification&amp;rdquo; and run check - this would compile any classes and run
+any tests. THere&amp;rsquo;s nothing to do for this project as it&amp;rsquo;s new, but you should
+ get a Build Successful in the Run window, showing that gradle is configured
+ correctly.&lt;/p&gt;
+
+&lt;p&gt;Gradle painlessly handles your project dependencies. By default,
+IntelliJ has included JUnit. You can see IntelliJ puts the downloaded
+dependencies under external depdencies in the Project window.&lt;/p&gt;
+
+&lt;p&gt;You can change your gradle settings by pressing the settings button in the
+gradle window. For example, you might want to enable offline mode, if you do
+work in places without internet connection (planes and trains for example).&lt;/p&gt;
+
+&lt;h2 id=&#34;adding-more-dependencies:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Adding more dependencies&lt;/h2&gt;
+
+&lt;p&gt;You might prefer the shorter notation for dependencies, so I&amp;rsquo;ve changed the
+default JUnit dep to use this notation.  Add new dependencies into the
+dependencies section of the build file:&lt;/p&gt;
+
+&lt;p&gt;(e.g. guava)&lt;/p&gt;
+
+&lt;p&gt;When you&amp;rsquo;ve done this, you need to get IntelliJ to fetch the new dependency.
+Do this by clicking &amp;ldquo;refresh all gradle projects&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;You should see the new depdency in the external libraries.&lt;/p&gt;
+
+&lt;p&gt;Note - gradle dependencies will appear in the project dependencies, but if
+you add a dependency in here it will not be added to the gradle build. Any
+dependencies here will be lost on sync?&lt;/p&gt;
+
+&lt;p&gt;?? Where do you see gradle dependency tree?&lt;/p&gt;
+
+&lt;h1 id=&#34;open-existing-project:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Open Existing Project&lt;/h1&gt;
+
+&lt;p&gt;##&lt;/p&gt;
+
+&lt;h2 id=&#34;multi-module-projects:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Multi module projects&lt;/h2&gt;
+
+&lt;h1 id=&#34;if-your-intellij-project-doesn-t-look-the-way-you-expect:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;If your intellij project doesn&amp;rsquo;t look the way you expect&lt;/h1&gt;
+
+&lt;h2 id=&#34;checking-source-configuration:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;Checking source configuration&lt;/h2&gt;
+
+&lt;h2 id=&#34;idea-plugin-provided-source:55e90a6646360e54eb90e2d0309e7e75&#34;&gt;idea plugin (provided source)&lt;/h2&gt;
 </description>
     </item>
     
