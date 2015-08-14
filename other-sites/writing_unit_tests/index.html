@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content=", ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="Writing Unit Tests : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://trishagee.github.io/other-sites/writing_unit_tests/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2015-08-13"/>
+<meta property="article:modified_time" content="2015-08-13"/>
+
+<meta property="article:tag" content="">
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content="Writing Unit Tests : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="http://trishagee.github.io/">
+    <title> Writing Unit Tests - trishagee.github.io </title>
+    <link rel="canonical" href="http://trishagee.github.io/other-sites/writing_unit_tests/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=Writing%20Unit%20Tests-http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f&title=Writing%20Unit%20Tests&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://del.icio.us/post?url=http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f" target="_blank" title="Delicious" class="delicious"><span
+                        class="icon icon-delicious"></span>Delicious</a></li>
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+                <li><a href="http://www.dzone.com/links/add.html?url=http%3a%2f%2ftrishagee.github.io%2fother-sites%2fwriting_unit_tests%2f&title=Writing%20Unit%20Tests" target="_blank" title="DZone"
+                       class="dzone"><span class="icon icon-dzone"></span>DZone</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">Writing Unit Tests</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           
+
+<h2 id="writing-tests-first:712ebbab297ad400669b7de2d6c9ac0d">Writing tests first</h2>
+
+<p>Whether you like to write your tests before writing production code, or like to create the tests afterwards, IntelliJ
+IDEA makes it easy to create and run unit tests. In this tutorial we&rsquo;re going to show examples of how to write tests
+first (Test Driven Design - TDD).</p>
+
+<p>In this tutorial, we&rsquo;ve used Gradle as our build tool, and have created the project as a Gradle project in IntelliJ
+IDEA, so the build file already contains the dependency on JUnit 4.</p>
+
+<p><img src="/static/images/intellij-testing/build.gradle.png" alt="gradle" title="gradle" />
+</p>
+
+<p>If you&rsquo;re not using Gradle and don&rsquo;t already have JUnit 4 on the classpath, follow the instructions on <a href="https://www.jetbrains.com/idea/help/configuring-testing-libraries.html">how to add a
+test library to the classpath</a>.</p>
+
+<h3 id="creating-your-test-location:712ebbab297ad400669b7de2d6c9ac0d">Creating your test location</h3>
+
+<p>If you don&rsquo;t already have tests, or did not select &ldquo;Create directories for empty content roots&rdquo; when creating
+the project, you
+might not have an appropriate location for your tests. Therefore the first thing you need to do is create this.
+Because in this example we&rsquo;re using Gradle as the build tool, we&rsquo;re therefore following the standard Maven/Gradle
+directory structure.</p>
+
+<ol>
+<li>Right click on the location you want to create your test folder. For example, [project root]/src.</li>
+<li>Select New -&gt; Directory</li>
+<li>Type the name of the test directory. You can even create subdirectories with this single command. For example, you
+can enter <code>test/java</code> to create a &ldquo;test&rdquo; directory with another directory &ldquo;java&rdquo; inside it.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/1CreateDirectory.gif" alt="Create" title="Create" />
+</p>
+
+<p>If you&rsquo;re working within a standard structure, e.g. Gradle or Maven, you should notice the directory coloured with
+a green background, denoting that IntelliJ IDEA knows this is a test directory. If this is not the case:</p>
+
+<ol>
+<li>Right click on the test directory</li>
+<li>Select Mark Directory As -&gt; Test Sources Root</li>
+<li>The directory should be coloured green.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/2MarkAsTest.gif" alt="Create" title="Create" />
+</p>
+
+<h3 id="creating-your-test-package:712ebbab297ad400669b7de2d6c9ac0d">Creating your test package</h3>
+
+<p>Once you have a top-level test directory, you might need to create the correct package for your tests:</p>
+
+<ol>
+<li>Right click on your test directory and select New -&gt; Package</li>
+<li>As with the directory, you can create sub-package structures if you need to, for example <code>com.project.package</code></li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/3CreatePackage.gif" alt="Create" title="Create" />
+</p>
+
+<h3 id="creating-your-first-test:712ebbab297ad400669b7de2d6c9ac0d">Creating your first test</h3>
+
+<p>Given that we&rsquo;re writing our tests first without necessarily having the classes we&rsquo;re testing available to us yet,
+we&rsquo;ll create our first test via project panel.</p>
+
+<ol>
+<li>Right click on the package you want to create the test in and select New -&gt; Java Class.</li>
+<li>Enter the test name - given we&rsquo;re testing using JUnit, this will likely be [Something]Test</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/4CreateTest.gif" alt="Create" title="Create" />
+</p>
+
+<p>Now we have a test class, we can start adding individual tests.</p>
+
+<ol>
+<li>With the cursor placed somewhere inside the class&rsquo;s curly braces, press Ctrl + Enter (Alt + Ins).</li>
+<li>Select &ldquo;Test Method&rdquo; from the Generate menu and select &ldquo;JUnit 4&rdquo; as the framework.</li>
+<li>This will create a test method with the default template, allowing you to fill in the details of the test.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/5CreateTestMethod.gif" alt="Create" title="Create" />
+</p>
+
+<p>If you want to alter the default template</p>
+
+<ol>
+<li>Press Ctrl + Enter (Alt + Ins).</li>
+<li>Use the mouse or arrow keys to highlight &ldquo;Test Method&rdquo; from the Generate menu, and press the right arrow to bring
+up a menu which says &ldquo;Edit Template&rdquo;. Select this.</li>
+<li>You can now change the default template for a test method according to your preferences.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/6ChangeTemplate.gif" alt="Create" title="Create" />
+</p>
+
+<h3 id="writing-the-test-body:712ebbab297ad400669b7de2d6c9ac0d">Writing the test body</h3>
+
+<p>It may seem counter-intuitive to write test code for classes and methods that don&rsquo;t exist, but IntelliJ IDEA makes
+this straightforward whilst keeping the compiler happy.</p>
+
+<ol>
+<li>IntelliJ IDEA can create classes for you if they don&rsquo;t already exist.  So if you write your tests describing what
+you want to achieve, pressing Alt + Enter on any classes that don&rsquo;t exist will give you the option of having IntelliJ
+IDEA create them for you. This will give you a minimum implementation that keeps the compiler happy.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/7CreateClass.gif" alt="Create" title="Create" />
+</p>
+
+<ol>
+<li>Similarly, IntelliJ IDEA can create missing methods for you with minimal implementations, again you can use Alt +
+Enter to do this.</li>
+<li>As always, you can use IntelliJ IDEA&rsquo;s refactoring tools to create variables to store results in</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/8CreateMethod.gif" alt="Create" title="Create" />
+</p>
+
+<ol>
+<li>And as usual, IntelliJ IDEA will import the most appropriate classes for you, if the correct libraries are on the
+classpath.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/9Imports.gif" alt="Create" title="Create" />
+</p>
+
+<h3 id="running-the-tests:712ebbab297ad400669b7de2d6c9ac0d">Running the tests</h3>
+
+<p>When following a TDD approach, typically you go through a cycle of Red-Green-Refactor.  You&rsquo;ll run a test, see it
+fail (go red), implement the simplest code to make the test pass (go green), and then if necessary
+refactor the code so your test stays green and your code is sufficiently simple and elegant.</p>
+
+<p>The first step in this cycle is to run the test and see it fail.</p>
+
+<p>Given that we&rsquo;ve used IntelliJ IDEA&rsquo;s features to create the simplest empty implementation of the method we&rsquo;re testing,
+we do not expect our test to pass.</p>
+
+<ol>
+<li>From inside the test, press Ctrl + Shift + F10 to run this individual test</li>
+<li>The results will be shown in the run dialog. The test name will have an icon next to it - either red for an
+exception, or yellow for an assertion that fails. For either failures, a message stating what went wrong is also shown.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/10RunFailingTests.gif" alt="Create" title="Create" />
+</p>
+
+<h3 id="implementing-the-code:712ebbab297ad400669b7de2d6c9ac0d">Implementing the code</h3>
+
+<p>The next step is to make the tests pass, which means implementing the simplest thing that works.</p>
+
+<ol>
+<li>You can navigate to the code being tested using the usual methods - clicking through on the method name, pressing
+command + alt + b while the cursor is on the method name, or pressing cmd + shift+ t to switch between the test and
+the production code.</li>
+<li>Make change to the method to make the test pass.  Often with TDD, the simplest thing that works might be
+hardcoding your expected value. We will see later how iterating over this process will lead to more realistic
+production code.</li>
+<li>Re-run the test, using Shift + F10 to re-run the last test you ran.</li>
+<li>See the test pass - the icon next to the test method should go green. If it does not, make the required changes
+until the test passes.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/11MakeTestsPass.gif" alt="Create" title="Create" />
+</p>
+
+<h3 id="iterate:712ebbab297ad400669b7de2d6c9ac0d">Iterate</h3>
+
+<p>Developing code is an iterative process. When following a TDD-style approach, this is even more true. In order to
+drive out more complex behaviour, we add tests for other cases.</p>
+
+<ol>
+<li>In your test class, use Ctrl + enter again to create a new test method.</li>
+<li>Pick a second test case that specifies more requirements of the method you&rsquo;re testing. Remember that you can use
+IntelliJ IDEA&rsquo;s features to create classes and methods to keep the compiler happy.</li>
+<li>Run this second test case, showing that it fails for the correct reason.</li>
+<li>Change the code in the method being tested to make this test pass.</li>
+<li>Re-run both the tests by pressing Ctrl + Shift + F10 inside the test class, not inside a single method, and see
+that both tests now pass. If either test fails, make the changes needed to the code to ensure the tests pass.</li>
+</ol>
+
+<p><img src="/static/images/intellij-testing/12AddMoreTests.gif" alt="Create" title="Create" />
+</p>
+
+<h3 id="summary:712ebbab297ad400669b7de2d6c9ac0d">Summary</h3>
+
+<p>Writing your first test in a test-first style takes a small amount of setup - creating the test class, creating the
+test methods, and then creating empty implementations of the code that will eventually become production code. But
+IntelliJ IDEA automates a lot of this initial setup.</p>
+
+<p>As you iterate through the process, creating tests and then making the changes required to get those tests to pass,
+you build up a comprehensive suite of tests for your required functionality, and the simplest solution that will meet
+these requirements.  And IntelliJ IDEA is designed to make this process as painless as possible.</p>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Thu Aug 13, 2015 </h4>
+        <h5 id="wc"> 1300 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+        <li><a href="http://trishagee.github.io//tags/"></a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="http://trishagee.github.io/post/java_8_mooc_session3/">Java 8 MOOC - Session 3 Summary <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion, a MongoDB Master, and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="1222">
+<meta itemprop="datePublished" content="2015-08-13">
+<meta itemprop="url" content="http://trishagee.github.io/other-sites/writing_unit_tests/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'http:\/\/trishagee.github.io\/other-sites\/writing_unit_tests\/';
+    var disqus_title = 'Writing Unit Tests';
+    var disqus_url = 'http:\/\/trishagee.github.io\/post\/writing_unit_tests';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+

@@ -6,7 +6,208 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 04 Aug 2015 00:00:00 UTC</updated>
+    <updated>Thu, 13 Aug 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Writing Unit Tests</title>
+      <link>http://trishagee.github.io/other-sites/writing_unit_tests/</link>
+      <pubDate>Thu, 13 Aug 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/other-sites/writing_unit_tests/</guid>
+      <description>
+
+&lt;h2 id=&#34;writing-tests-first:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Writing tests first&lt;/h2&gt;
+
+&lt;p&gt;Whether you like to write your tests before writing production code, or like to create the tests afterwards, IntelliJ
+IDEA makes it easy to create and run unit tests. In this tutorial we&amp;rsquo;re going to show examples of how to write tests
+first (Test Driven Design - TDD).&lt;/p&gt;
+
+&lt;p&gt;In this tutorial, we&amp;rsquo;ve used Gradle as our build tool, and have created the project as a Gradle project in IntelliJ
+IDEA, so the build file already contains the dependency on JUnit 4.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/build.gradle.png&#34; alt=&#34;gradle&#34; title=&#34;gradle&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re not using Gradle and don&amp;rsquo;t already have JUnit 4 on the classpath, follow the instructions on &lt;a href=&#34;https://www.jetbrains.com/idea/help/configuring-testing-libraries.html&#34;&gt;how to add a
+test library to the classpath&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-your-test-location:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Creating your test location&lt;/h3&gt;
+
+&lt;p&gt;If you don&amp;rsquo;t already have tests, or did not select &amp;ldquo;Create directories for empty content roots&amp;rdquo; when creating
+the project, you
+might not have an appropriate location for your tests. Therefore the first thing you need to do is create this.
+Because in this example we&amp;rsquo;re using Gradle as the build tool, we&amp;rsquo;re therefore following the standard Maven/Gradle
+directory structure.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Right click on the location you want to create your test folder. For example, [project root]/src.&lt;/li&gt;
+&lt;li&gt;Select New -&amp;gt; Directory&lt;/li&gt;
+&lt;li&gt;Type the name of the test directory. You can even create subdirectories with this single command. For example, you
+can enter &lt;code&gt;test/java&lt;/code&gt; to create a &amp;ldquo;test&amp;rdquo; directory with another directory &amp;ldquo;java&amp;rdquo; inside it.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/1CreateDirectory.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re working within a standard structure, e.g. Gradle or Maven, you should notice the directory coloured with
+a green background, denoting that IntelliJ IDEA knows this is a test directory. If this is not the case:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Right click on the test directory&lt;/li&gt;
+&lt;li&gt;Select Mark Directory As -&amp;gt; Test Sources Root&lt;/li&gt;
+&lt;li&gt;The directory should be coloured green.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/2MarkAsTest.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-your-test-package:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Creating your test package&lt;/h3&gt;
+
+&lt;p&gt;Once you have a top-level test directory, you might need to create the correct package for your tests:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Right click on your test directory and select New -&amp;gt; Package&lt;/li&gt;
+&lt;li&gt;As with the directory, you can create sub-package structures if you need to, for example &lt;code&gt;com.project.package&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/3CreatePackage.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;creating-your-first-test:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Creating your first test&lt;/h3&gt;
+
+&lt;p&gt;Given that we&amp;rsquo;re writing our tests first without necessarily having the classes we&amp;rsquo;re testing available to us yet,
+we&amp;rsquo;ll create our first test via project panel.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Right click on the package you want to create the test in and select New -&amp;gt; Java Class.&lt;/li&gt;
+&lt;li&gt;Enter the test name - given we&amp;rsquo;re testing using JUnit, this will likely be [Something]Test&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/4CreateTest.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Now we have a test class, we can start adding individual tests.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;With the cursor placed somewhere inside the class&amp;rsquo;s curly braces, press Ctrl + Enter (Alt + Ins).&lt;/li&gt;
+&lt;li&gt;Select &amp;ldquo;Test Method&amp;rdquo; from the Generate menu and select &amp;ldquo;JUnit 4&amp;rdquo; as the framework.&lt;/li&gt;
+&lt;li&gt;This will create a test method with the default template, allowing you to fill in the details of the test.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/5CreateTestMethod.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you want to alter the default template&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Press Ctrl + Enter (Alt + Ins).&lt;/li&gt;
+&lt;li&gt;Use the mouse or arrow keys to highlight &amp;ldquo;Test Method&amp;rdquo; from the Generate menu, and press the right arrow to bring
+up a menu which says &amp;ldquo;Edit Template&amp;rdquo;. Select this.&lt;/li&gt;
+&lt;li&gt;You can now change the default template for a test method according to your preferences.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/6ChangeTemplate.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;writing-the-test-body:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Writing the test body&lt;/h3&gt;
+
+&lt;p&gt;It may seem counter-intuitive to write test code for classes and methods that don&amp;rsquo;t exist, but IntelliJ IDEA makes
+this straightforward whilst keeping the compiler happy.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;IntelliJ IDEA can create classes for you if they don&amp;rsquo;t already exist.  So if you write your tests describing what
+you want to achieve, pressing Alt + Enter on any classes that don&amp;rsquo;t exist will give you the option of having IntelliJ
+IDEA create them for you. This will give you a minimum implementation that keeps the compiler happy.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/7CreateClass.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Similarly, IntelliJ IDEA can create missing methods for you with minimal implementations, again you can use Alt +
+Enter to do this.&lt;/li&gt;
+&lt;li&gt;As always, you can use IntelliJ IDEA&amp;rsquo;s refactoring tools to create variables to store results in&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/8CreateMethod.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;And as usual, IntelliJ IDEA will import the most appropriate classes for you, if the correct libraries are on the
+classpath.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/9Imports.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;running-the-tests:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Running the tests&lt;/h3&gt;
+
+&lt;p&gt;When following a TDD approach, typically you go through a cycle of Red-Green-Refactor.  You&amp;rsquo;ll run a test, see it
+fail (go red), implement the simplest code to make the test pass (go green), and then if necessary
+refactor the code so your test stays green and your code is sufficiently simple and elegant.&lt;/p&gt;
+
+&lt;p&gt;The first step in this cycle is to run the test and see it fail.&lt;/p&gt;
+
+&lt;p&gt;Given that we&amp;rsquo;ve used IntelliJ IDEA&amp;rsquo;s features to create the simplest empty implementation of the method we&amp;rsquo;re testing,
+we do not expect our test to pass.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;From inside the test, press Ctrl + Shift + F10 to run this individual test&lt;/li&gt;
+&lt;li&gt;The results will be shown in the run dialog. The test name will have an icon next to it - either red for an
+exception, or yellow for an assertion that fails. For either failures, a message stating what went wrong is also shown.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/10RunFailingTests.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;implementing-the-code:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Implementing the code&lt;/h3&gt;
+
+&lt;p&gt;The next step is to make the tests pass, which means implementing the simplest thing that works.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;You can navigate to the code being tested using the usual methods - clicking through on the method name, pressing
+command + alt + b while the cursor is on the method name, or pressing cmd + shift+ t to switch between the test and
+the production code.&lt;/li&gt;
+&lt;li&gt;Make change to the method to make the test pass.  Often with TDD, the simplest thing that works might be
+hardcoding your expected value. We will see later how iterating over this process will lead to more realistic
+production code.&lt;/li&gt;
+&lt;li&gt;Re-run the test, using Shift + F10 to re-run the last test you ran.&lt;/li&gt;
+&lt;li&gt;See the test pass - the icon next to the test method should go green. If it does not, make the required changes
+until the test passes.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/11MakeTestsPass.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;iterate:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Iterate&lt;/h3&gt;
+
+&lt;p&gt;Developing code is an iterative process. When following a TDD-style approach, this is even more true. In order to
+drive out more complex behaviour, we add tests for other cases.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;In your test class, use Ctrl + enter again to create a new test method.&lt;/li&gt;
+&lt;li&gt;Pick a second test case that specifies more requirements of the method you&amp;rsquo;re testing. Remember that you can use
+IntelliJ IDEA&amp;rsquo;s features to create classes and methods to keep the compiler happy.&lt;/li&gt;
+&lt;li&gt;Run this second test case, showing that it fails for the correct reason.&lt;/li&gt;
+&lt;li&gt;Change the code in the method being tested to make this test pass.&lt;/li&gt;
+&lt;li&gt;Re-run both the tests by pressing Ctrl + Shift + F10 inside the test class, not inside a single method, and see
+that both tests now pass. If either test fails, make the changes needed to the code to ensure the tests pass.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/12AddMoreTests.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;summary:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Summary&lt;/h3&gt;
+
+&lt;p&gt;Writing your first test in a test-first style takes a small amount of setup - creating the test class, creating the
+test methods, and then creating empty implementations of the code that will eventually become production code. But
+IntelliJ IDEA automates a lot of this initial setup.&lt;/p&gt;
+
+&lt;p&gt;As you iterate through the process, creating tests and then making the changes required to get those tests to pass,
+you build up a comprehensive suite of tests for your required functionality, and the simplest solution that will meet
+these requirements.  And IntelliJ IDEA is designed to make this process as painless as possible.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
@@ -334,224 +535,6 @@ is one of my favourite new features in Java 8.&lt;/p&gt;
 
 &lt;p&gt;&lt;br/&gt;
 Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223910762/&#34;&gt;last session on Java 8 - Lambdas and Streams&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>CR</title>
-      <link>http://trishagee.github.io/drafts/code_review_2/</link>
-      <pubDate>Thu, 30 Jul 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/drafts/code_review_2/</guid>
-      <description>
-
-&lt;p&gt;In the last post we talked about a wide variety of things you could look for
-in a code review.  Now we&amp;rsquo;ll focus on one area: what to look for in the
-test code.&lt;/p&gt;
-
-&lt;p&gt;This article assumes:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Your team already writes automated tests for code.&lt;/li&gt;
-&lt;li&gt;The tests are regularly run in a Continuous Integration (CI) environment.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;In this post we&amp;rsquo;ll cover some of the things a reviewer could be thinking
-about when looking at the tests in a code review.&lt;/p&gt;
-
-&lt;h3 id=&#34;are-there-tests-for-this-new-amended-code:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are there tests for this new/amended code?&lt;/h3&gt;
-
-&lt;p&gt;It would be rare that new code, whether a bug fix or new feature, wouldn&amp;rsquo;t
-need a new or updated test to cover it. Even changes for &amp;ldquo;non-functional&amp;rdquo;
-reasons like performance can frequently be proved via a test. If there are no
-tests included in the code review, as a reviewer the first question you
-should ask is &amp;ldquo;why not?&amp;rdquo;.&lt;/p&gt;
-
-&lt;h3 id=&#34;do-the-tests-at-least-cover-confusing-or-complicated-sections-of-code:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Do the tests at least cover confusing or complicated sections of code?&lt;/h3&gt;
-
-&lt;p&gt;One step beyond simply &amp;ldquo;is there a test?&amp;rdquo;, is to answer the question &amp;ldquo;is the
-important code actually covered by at least one test?&amp;ldquo;.&lt;/p&gt;
-
-&lt;p&gt;Checking test coverage is certainly something we should be automating. But we
-can do more than just check for specific percentages in our coverage, we can
-use coverage tools to ensure the &lt;em&gt;correct&lt;/em&gt; areas of code are covered.&lt;/p&gt;
-
-&lt;p&gt;Consider this for example:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/CodeReviewChanges.png&#34; alt=&#34;New lines of code&#34; title=&#34;New lines of code&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;You can check the coverage report for the new lines of code (which should be easy to identify, especially if you&amp;rsquo;re
-using a tool like Upsource) to make sure it&amp;rsquo;s adequately covered&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/CodeReviewCoverage.png&#34; alt=&#34;Code coverage&#34; title=&#34;Code coverage&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;In this example above, the reviewer may ask the author to
-add a test to cover the case where the &lt;code&gt;if&lt;/code&gt; on line 303 evaluates to true - the coverage tool is marking lines
-304-306 with red to show they aren&amp;rsquo;t tested.&lt;/p&gt;
-
-&lt;p&gt;100% test coverage is an unrealistic goal for pretty much any team, so the
-numbers coming out of your coverage tool might not be as valuable as insights
-into which specific areas are covered.&lt;/p&gt;
-
-&lt;p&gt;In particular, you want to check that all logic branches are covered, and
-that complex areas of code are covered.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/CodeReviewLogicCoverage.png&#34; alt=&#34;Code coverage for logic&#34; title=&#34;Code coverage for logic&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;can-i-understand-the-tests:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Can I understand the tests?&lt;/h3&gt;
-
-&lt;p&gt;Having tests that provide adequate coverage is one thing, but if I, as a human, can&amp;rsquo;t understand the tests, they have
-limited use - what happens when they break? It&amp;rsquo;ll be hard to know how to fix them.&lt;/p&gt;
-
-&lt;p&gt;Consider the following:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/HardToReadTest.png&#34; alt=&#34;Hard to read test&#34; title=&#34;Hard to read test&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a fairly simple test, but I&amp;rsquo;m not entirely sure what it&amp;rsquo;s testing. Is it
-testing the &lt;code&gt;save&lt;/code&gt; method? Or &lt;code&gt;getMyLongId&lt;/code&gt;? And why does it need to do the
-same thing twice?&lt;/p&gt;
-
-&lt;p&gt;The intent behind the test might be clearer as:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/ClearerTest.png&#34; alt=&#34;More descriptive test&#34; title=&#34;More descriptive test&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;The specific steps you take in order to clarify a test&amp;rsquo;s purpose
-will depend upon your language, libraries, team and personal preferences.
-This example demonstrates that by choosing clearer names, inlining constants and even adding
-comments, an author can make a test more readable by developers other than
-him- or herself.&lt;/p&gt;
-
-&lt;h3 id=&#34;do-the-tests-match-the-requirements:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Do the tests match the requirements?&lt;/h3&gt;
-
-&lt;p&gt;Here&amp;rsquo;s an area that really requires human expertise. Whether the requirements
-being met by the code under review are encoded in some formal document,
-on a piece of card in a user story, or contained in a bug raised by a user,
-the code being reviewed should relate to some initial requirement.&lt;/p&gt;
-
-&lt;p&gt;The reviewer should locate the original requirements and see if:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;The tests, whether they&amp;rsquo;re unit, end-to-end, or something else, match the
-requirements. For example, if the requirements are &amp;ldquo;should allow the special
-characters &amp;lsquo;#&amp;rsquo;, &amp;lsquo;!&amp;rsquo; and &amp;lsquo;&amp;amp;&amp;rsquo; in the password field&amp;rdquo;, there should be a test
-using these values in the password field. If the test uses different special characters,
-then it&amp;rsquo;s not proving the code meets the criteria.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The tests cover all the criteria mentioned. In our example of
-special characters, the requirements might go on to say &amp;ldquo;&amp;hellip;and give the
-user an error message if other special characters are used&amp;rdquo;. Here, the
-reviewer should be checking there&amp;rsquo;s a test for what happens when an invalid
-character is used.&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;can-you-the-reviewer-think-of-cases-that-are-not-covered-by-the-existing-tests:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Can you, the reviewer, think of cases that are not covered by the existing tests?&lt;/h3&gt;
-
-&lt;p&gt;Often our requirements aren&amp;rsquo;t clearly specified. Under these circumstances, the reviewer should think of edge
-cases that weren&amp;rsquo;t covered in the original bug/issue/story.&lt;/p&gt;
-
-&lt;p&gt;If our new features is, for example, &amp;ldquo;Give the user the ability to log on to the system&amp;rdquo;, the reviewer could
-be thinking &amp;ldquo;What happens if the user enters null for the username?&amp;rdquo;,
-or &amp;ldquo;What sort of error occurs if the user doesn&amp;rsquo;t exist in the system?&amp;rdquo;. If
-these tests exist in the code being reviewed, then the reviewer has
-increased confidence that the code itself handles these circumstances. If the
-tests for these exceptional cases don&amp;rsquo;t exist, then the reviewer has to go
-through the code to see if they have been handled.&lt;/p&gt;
-
-&lt;p&gt;If the code exists but the tests don&amp;rsquo;t, it&amp;rsquo;s up to your team to decide what
-your policies are - do you make the author add those tests? Or are you satisfied that the code review proved the
-edge cases were covered?&lt;/p&gt;
-
-&lt;h3 id=&#34;are-there-tests-to-document-the-limitations-of-the-code:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are there tests to document the limitations of the code?&lt;/h3&gt;
-
-&lt;p&gt;As a reviewer, it&amp;rsquo;s often possible to see limitations in the code being
-reviewed.  These limitations are sometimes intentional - for example, a batch
-process that can only handle a maximum of 1000 items per batch.&lt;/p&gt;
-
-&lt;p&gt;One approach to documenting these intentional limitations would be to
-explicitly test them.  In our example above, we might have a test that
-proves that some sort of exception is thrown if your batch size is bigger
-than 1000.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not mandatory to express these limitations in an automated test, but if
-an author has written a test that shows the limits of what they&amp;rsquo;ve
-implemented, having a test implies these limits are intentional (and documented)
-and not merely an oversight.&lt;/p&gt;
-
-&lt;h3 id=&#34;are-the-tests-in-the-code-review-the-right-type-level:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are the tests in the code review the right type/level?&lt;/h3&gt;
-
-&lt;p&gt;For example, is the author doing expensive integration tests where a unit
-test might suffice? Have they written performance micro-benchmarks that will
-not run effectively or in a consistent fashion in the CI environment?&lt;/p&gt;
-
-&lt;p&gt;Ideally your automated tests will run as quickly as possible, which means
-that expensive end-to-end tests may not be required to check all types of
-features.  A method that performs some mathematical function, or boolean
-logic check, seems like a good candidate for a method-level unit test.&lt;/p&gt;
-
-&lt;h3 id=&#34;are-there-security-tests-that-need-to-be-written:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Are there security tests that need to be written?&lt;/h3&gt;
-
-&lt;p&gt;Security is one area that code reviews can really benefit. We&amp;rsquo;ll do a whole
-post on security later, but on the testing topic, we can write tests for
-a number of common problems.  For example, if we were writing the log-in code
-above, we might want to also write a test that shows that we cannot enter
-the protected area of the site (or call protected API methods) without first
-authenticating.&lt;/p&gt;
-
-&lt;h3 id=&#34;performance-tests:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Performance Tests&lt;/h3&gt;
-
-&lt;p&gt;In the previous post I talked about performance as being an area a reviewer
-might be examining. Automated performance tests are obviously another type of
-test that I could have explored in this article, but I will leave discussion
-of these types of tests for a later article about looking specifically at performance
-aspects in a code review.&lt;/p&gt;
-
-&lt;h3 id=&#34;reviewers-can-write-tests-too:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;Reviewers can write tests too.&lt;/h3&gt;
-
-&lt;p&gt;Different organisations have different approaches to code reviews - sometimes
-it&amp;rsquo;s very clear that the author is responsible for making all the code
-changes required, sometimes it&amp;rsquo;s more collaborative with the reviewer
-committing suggestions to the code themselves.&lt;/p&gt;
-
-&lt;p&gt;Whichever approach you take, as a reviewer you may find that writing some
-additional tests to poke at the code in the review can be very valuable for
-understanding that code, in the same way that firing up the UI and playing
-with a new feature is valuable. Some methods and code review tools make it easier to experiment with the code than
-others. It&amp;rsquo;s in the team&amp;rsquo;s interest to make it as easy as possible to view and play with the code
-in a code review.&lt;/p&gt;
-
-&lt;p&gt;It may be valuable to submit the additional tests as part of the review, but
-equally it may not be necessary, for example if experimentation has given me,
-the reviewer, satisfactory answers to my questions.&lt;/p&gt;
-
-&lt;h3 id=&#34;in-summary:e49bb25edf62b34017ea72c340f0c27c&#34;&gt;In Summary&lt;/h3&gt;
-
-&lt;p&gt;There are many advantages to performing a code review, no matter how you approach the process in your organisation.
-It&amp;rsquo;s possible to use code reviews to find potential problems with the code &lt;em&gt;before&lt;/em&gt; it is integrated into the main
-code base, while it&amp;rsquo;s still inexpensive to fix and the context is still in the developer&amp;rsquo;s head.&lt;/p&gt;
-
-&lt;p&gt;As a code reviewer, you should be checking
-that the original developer has put some thought into the ways his or her
-code could be used, under which conditions it might break, and dealt with
-edge cases, preferably &amp;ldquo;documenting&amp;rdquo; the expected behaviour (both under
-normal use and exceptional circumstances) with automated tests. The tests can give you an idea
-of what the code is supposed to do, and, if they pass, prove that it does
-just that.&lt;/p&gt;
-
-&lt;p&gt;If the reviewer checks for the existence of tests and checks the correctness of
-the tests, as a team you can have pretty high confidence that the code works.
-Moreover, if these tests are run regularly in a CI environment, you can see
-that the code &lt;em&gt;continues&lt;/em&gt; to work - they provide automated regression
-checking. If code reviewers place a high value on having good quality
-tests for the code they are reviewing, the value of this code review
-continues long after the reviewer presses the &amp;ldquo;Accept&amp;rdquo; button.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/code-review/Approve.png&#34; alt=&#34;Accept&#34; title=&#34;Accept&#34; /&gt;
-&lt;/p&gt;
 </description>
     </item>
     
@@ -988,139 +971,6 @@ an individual, add to the mix?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;Daniel and Trisha will share stories of individuals and teams who have made an impact (both good and bad!) and offer
   suggestions for steps we, as individuals, can take to level up our teams.&lt;/em&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Code Reviews 1</title>
-      <link>http://trishagee.github.io/other-sites/code_reviews1/</link>
-      <pubDate>Wed, 22 Jul 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/code_reviews1/</guid>
-      <description>
-
-&lt;p&gt;Let&amp;rsquo;s talk about code reviews. If you take only a few seconds to search for information about code reviews, you&amp;rsquo;ll
-see a lot of information about why code reviews are a Good Thing (for example,
-&lt;a href=&#34;http://blog.codinghorror.com/code-reviews-just-do-it/&#34;&gt;this article by Jeff Atwood&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;You also see a lot of documentation on how to use Code Review tools like our very own
-&lt;a href=&#34;https://www.jetbrains.com/upsource/&#34;&gt;Upsource&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;What you don&amp;rsquo;t see so much of, is a guide to things to look for when you&amp;rsquo;re reviewing someone else&amp;rsquo;s code.&lt;/p&gt;
-
-&lt;p&gt;Probably the reason there&amp;rsquo;s no definitive article on what to be looking for is: there are a &lt;em&gt;lot&lt;/em&gt;
-of different things to consider. And, like any other set of requirements (functional or non-functional), individual
-organisations will have different priorities for each aspect.&lt;/p&gt;
-
-&lt;p&gt;Since this is a big topic to cover, the aim of this article is to outline just some of the things a reviewer could be
-looking out for when performing a code review. Deciding on the priority of each aspect and checking them
-consistently is a sufficiently complex subject to be an article in its own right.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-do-you-look-for-when-you-re-reviewing-someone-else-s-code:cd9fea566ab5046299e94562e7428608&#34;&gt;What do you look for when you&amp;rsquo;re reviewing someone else&amp;rsquo;s code?&lt;/h3&gt;
-
-&lt;p&gt;It doesn&amp;rsquo;t matter how you&amp;rsquo;re reviewing code: via a tool like Upsource or Github pull requests; during someone else&amp;rsquo;s
-walkthrough or demo of their code; sitting down with a colleague and checking through their changes; even looking
-at code on StackOverflow. Whatever the situation, some things are easier to comment on than others. Some examples:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Formatting&lt;/strong&gt;: Where are the spaces and line breaks? Are they using tabs or spaces? How are the curly braces laid
-out?&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Style&lt;/strong&gt;: Are the variables/parameters declared as final? Are method variables defined close to the code where
-they&amp;rsquo;re used or at the start of the method?&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Naming&lt;/strong&gt;: Do the field/constant/variable/param/class names conform to standards? Are the names overly short?&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Test coverage&lt;/strong&gt;: Is there a test for this code?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;These are all valid things to check to ensure the code is consistent with the rest of your codebase, to make it
-easier for team members to understand - you want to reduce context switching between different areas of code and
-reduce &lt;a href=&#34;https://en.wikipedia.org/wiki/Cognitive_load&#34;&gt;cognitive load&lt;/a&gt;, so the more consistent your code looks, the
-better.&lt;/p&gt;
-
-&lt;p&gt;However, having humans check these is probably not the best use of time and resources in your organisation.  Although
-a code review process that checks these kinds of properties will improve the overall quality of your code, many of
-these checks can be
-automated. This takes a little bit of work up-front, but pays off very quickly.  Tools like
-&lt;a href=&#34;http://checkstyle.sourceforge.net/&#34;&gt;Checkstyle&lt;/a&gt;,
-&lt;a href=&#34;http://findbugs.sourceforge.net/&#34;&gt;FindBugs&lt;/a&gt;,
-&lt;a href=&#34;http://pmd.sourceforge.net/&#34;&gt;PMD&lt;/a&gt;,
-&lt;a href=&#34;http://codenarc.sourceforge.net/&#34;&gt;CodeNarc&lt;/a&gt;,
-&lt;a href=&#34;http://emma.sourceforge.net/&#34;&gt;Emma&lt;/a&gt;,
-&lt;a href=&#34;http://cobertura.sourceforge.net/&#34;&gt;Cobertura&lt;/a&gt;,
-&lt;a href=&#34;http://www.eclemma.org/jacoco/&#34;&gt;JaCoCo&lt;/a&gt; and
-&lt;a href=&#34;http://www.sonarqube.org/&#34;&gt;SonarQube&lt;/a&gt; can, especially when combined, check that your code is
-consistently formatted, that standards
-around naming and the use of the final keyword are followed, and that common bugs caused by simple
-programming errors are found. You can even run
-&lt;a href=&#34;https://www.jetbrains.com/idea/help/running-inspections-offline.html&#34;&gt;IntelliJ IDEA&amp;rsquo;s inspections from the command line&lt;/a&gt;,
-so you don&amp;rsquo;t have to rely on all team members having the same inspections running in their IDE.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-should-you-look-for:cd9fea566ab5046299e94562e7428608&#34;&gt;What should you look for?&lt;/h3&gt;
-
-&lt;p&gt;So far we&amp;rsquo;ve just talked about what it&amp;rsquo;s easy to look for, and that you should consider using tools other than code
-review to check these automatically.&lt;/p&gt;
-
-&lt;p&gt;What sort of things are humans really good for? What can we spot in a code review that we can&amp;rsquo;t delegate to a tool?&lt;/p&gt;
-
-&lt;p&gt;It turns out there&amp;rsquo;s a surprisingly large number of things. This is certainly not an exhaustive list, nor will
-we go into any one of them in great detail here. Instead, this should be the start of a conversation in your
-organisation about which things you currently look for in a code review, and what, perhaps, you &lt;em&gt;should&lt;/em&gt; be looking for.&lt;/p&gt;
-
-&lt;h4 id=&#34;design:cd9fea566ab5046299e94562e7428608&#34;&gt;Design&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;How does the new code fit with the overall architecture?&lt;/li&gt;
-&lt;li&gt;Does the code follow &lt;a href=&#34;https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)&#34;&gt;SOLID principles&lt;/a&gt;,
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Domain-driven_design&#34;&gt;Domain Driven Design&lt;/a&gt; and/or other design paradigms the team
-favours?&lt;/li&gt;
-&lt;li&gt;What &lt;a href=&#34;https://en.wikipedia.org/wiki/Software_design_pattern&#34;&gt;design patterns&lt;/a&gt; are used in the new code? Are these
-appropriate?&lt;/li&gt;
-&lt;li&gt;If the codebase has a mix of standards or design styles, does this new code follow the current practices? Is the
-code migrating in the correct direction, or does it follow the example of older code that is due to be phased out?&lt;/li&gt;
-&lt;li&gt;Is the code in the right place? For example, if the code is related to Orders, is it in the Order Service?&lt;/li&gt;
-&lt;li&gt;Could the new code have reused something in the existing code? Does the new code provide something
-we can reuse in the existing code? Does the new code introduce duplication? If so, should it be refactored to a more
-reusable pattern, or is this acceptable at this stage?&lt;/li&gt;
-&lt;li&gt;Is the code over-engineered? Does it build for reusability that isn&amp;rsquo;t required now? How does the team balance
-considerations of reusability with &lt;a href=&#34;https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it&#34;&gt;YAGNI&lt;/a&gt;?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;readability-maintainability:cd9fea566ab5046299e94562e7428608&#34;&gt;Readability &amp;amp; Maintainability&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Do the names (of fields, variables, parameters, methods and classes) actually reflect the thing they represent?&lt;/li&gt;
-&lt;li&gt;Can I understand what the code does by reading it?&lt;/li&gt;
-&lt;li&gt;Can I understand what the tests do?&lt;/li&gt;
-&lt;li&gt;Do the tests cover a good subset of cases? Do they cover happy paths and exceptional cases? Are there cases that
-haven&amp;rsquo;t been considered?&lt;/li&gt;
-&lt;li&gt;Are the exception error messages understandable?&lt;/li&gt;
-&lt;li&gt;Are confusing sections of code either documented, commented, or covered by understandable tests (according to team
-preference)?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;functionality:cd9fea566ab5046299e94562e7428608&#34;&gt;Functionality&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Does the code actually do what it was supposed to do? If there are automated tests to ensure correctness of the
-code, do the tests really test the code meets the agreed requirements?&lt;/li&gt;
-&lt;li&gt;Does the code look like it contains subtle bugs, like using the wrong variable for a check, or accidentally using
-an &lt;code&gt;and&lt;/code&gt; instead of an &lt;code&gt;or&lt;/code&gt;?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;have-you-thought-about:cd9fea566ab5046299e94562e7428608&#34;&gt;Have you thought about&amp;hellip;?&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Are there potential security problems with the code?&lt;/li&gt;
-&lt;li&gt;Are there regulatory requirements that need to be met?&lt;/li&gt;
-&lt;li&gt;For areas that are not covered with automated performance tests, does the new code introduce avoidable performance
-issues, like unnecessary calls to a database or remote service?&lt;/li&gt;
-&lt;li&gt;Does the author need to create public documentation, or change existing help files?&lt;/li&gt;
-&lt;li&gt;Have user-facing messages been checked for correctness?&lt;/li&gt;
-&lt;li&gt;Are there obvious errors that will stop this working in production? Is the code going to accidentally point at
-the test database, or is there a hardcoded stub that should be swapped out for a real service?&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;What makes &amp;ldquo;good&amp;rdquo; code is a topic that every developer has an opinion on. We&amp;rsquo;d love to hear from you in the comments
-if you have things to add to our list.&lt;/p&gt;
 </description>
     </item>
     
@@ -2088,7 +1938,7 @@ pair programming or, at least, using the tool in real use cases in front of peop
 
 &lt;p&gt;The mob programming was kinda
 like a half day tutorial squished into an hour. I&amp;rsquo;d be interested to hear how the attendees found it. For me, since
-this was a full day conference that cost €10, I thought getting three short tutorials as well as five excellent
+this was a full day conference that cost &amp;euro;10, I thought getting three short tutorials as well as five excellent
 talks was &lt;em&gt;very&lt;/em&gt; good value for money.&lt;/p&gt;
 
 &lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
@@ -2174,6 +2024,83 @@ future&amp;hellip;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Code: &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt; All examples from the talk come from the MongoDB Java driver. Some tests have been improved or dropped over time.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blind CFPs - a Postscript</title>
+      <link>http://trishagee.github.io/post/blind_cfps_2/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/blind_cfps_2/</guid>
+      <description>
+
+&lt;p&gt;Since publishing &lt;a href=&#34;http://trishagee.github.io/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
+another post to answer them.&lt;/p&gt;
+
+&lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
+circles in which speakers will refuse to submit if the selection process isn&amp;rsquo;t blind. But what blind CFPs are &lt;em&gt;not&lt;/em&gt;,
+is an answer to &amp;ldquo;How do I get more women speakers at my conference?&amp;rdquo;, especially if the problem is not that the
+women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
+in the conferences I speak at/help organise.&lt;/p&gt;
+
+&lt;h4 id=&#34;you-re-missing-the-point-of-blind-cfps:43f099050d27fb0647d57b33c7259595&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
+
+&lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
+in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
+select both women or not, when there are nasty comments about your lack of women speakers, you&amp;rsquo;re protected - you did
+the right things, you had a blind CFP, and just not many women made it through that process. Women simply aren&amp;rsquo;t
+writing compelling abstracts and/or aren&amp;rsquo;t picking interesting subjects and/or clearly aren&amp;rsquo;t interested in
+presenting at conferences.&lt;/p&gt;
+
+&lt;p&gt;AAAARRRGGHHHHHH!!!! Anger.&lt;/p&gt;
+
+&lt;p&gt;Protect your arse if you like, that&amp;rsquo;s fine, I see the attacks against organisers and I understand the need to be able to
+say you did the right thing. But notice that once you&amp;rsquo;ve protected yourselves, the blame is back on the
+minorities for not meeting your criteria.&lt;/p&gt;
+
+&lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
+of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
+
+&lt;h4 id=&#34;an-abstract-is-not-a-representation-of-your-talk:43f099050d27fb0647d57b33c7259595&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
+a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
+that absolutely called to me - here was the missing piece for a technology that I simply can&amp;rsquo;t get my head around. I
+gave an hour of my life to that talk, each minute I was wondering when this person would get to the bits mentioned
+in the abstract, so I watched it all the way to the end. They never delivered what the abstract promised, and their
+meandering style meant I learnt almost nothing from the talk. That&amp;rsquo;s an hour of my life I&amp;rsquo;ll never get back. Good
+thing I was playing computer games as well at the time, if I&amp;rsquo;d paid money for that I would have been very peeved.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s another weakness in this process - if you go to a number of conferences (like I do) you kinda learn which
+speakers are doing
+which talks.  If I submit my &amp;ldquo;AngularJS, HTML5, Groovy, Java and MongoDB all together - what could possibly go wrong??&amp;rdquo;
+talk to a blind process, if there&amp;rsquo;s anyone on the selection committee who&amp;rsquo;s even vaguely involved in the Java or MongoDB
+spaces, they&amp;rsquo;ll know that&amp;rsquo;s me. And they can Google the talk and decide whether they like it (or with any luck, the
+buzz-word crammed title will do the job and they&amp;rsquo;ll say yes, although probably AngularJS is so 2014).&lt;/p&gt;
+
+&lt;p&gt;An abstract is like your presentation in the same way that your CV is like your ability to do your job - there&amp;rsquo;s a skill
+to writing good abstracts (or CVs), but mastery of that skill does not necessarily mean mastery of the thing it
+represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
+being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
+
+&lt;h4 id=&#34;for-goodness-sake-trisha-the-postscript-is-nearly-longer-than-the-original-post:43f099050d27fb0647d57b33c7259595&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
+
+&lt;p&gt;Yeah, sorry.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve listened to feedback from a bunch of people, and I have learnt more things (thanks everyone!). I am more sold on
+a blind CFP being maybe part of a bigger process. But I do &lt;em&gt;not&lt;/em&gt; believe it fixes the &amp;ldquo;we need more women speakers&amp;rdquo;
+problem, which was the original claim that I wanted to dispute. Conferences have to be &lt;em&gt;much&lt;/em&gt; more active to address
+this issue.&lt;/p&gt;
+
+&lt;p&gt;And I am not sold on an abstract being a fair representation of the quality of a talk. Maybe a more realistic &amp;ldquo;blind&amp;rdquo;
+audition would be to give the talk to an audience, like a user group, who rated the talk:
+the organisers wouldn&amp;rsquo;t watch the talk, but they could use the ratings to decide. Yes, the user group could also
+have biases that affect their rating, but when the speaker gives the talk at the conference, those attendees will also
+have their biases too.&lt;/p&gt;
+
+&lt;p&gt;Blindness is not a realistic option, we just have to keep putting women (and other non-white-straight-men) in front of
+audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
 </description>
     </item>
     

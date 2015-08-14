@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://trishagee.github.io/</loc>
-    <lastmod>2015-08-04T00:00:00+00:00</lastmod>
+    <lastmod>2015-08-13T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/writing_unit_tests/</loc>
+    <lastmod>2015-08-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -15,11 +20,6 @@
   <url>
     <loc>http://trishagee.github.io/post/java_8_mooc_session2/</loc>
     <lastmod>2015-07-31T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/drafts/code_review_2/</loc>
-    <lastmod>2015-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -35,11 +35,6 @@
   <url>
     <loc>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/code_reviews1/</loc>
-    <lastmod>2015-07-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1123,11 +1118,11 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/drafts/code_review_design/</loc>
+    <loc>http://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
+    <loc>http://trishagee.github.io/drafts/code_review_design/</loc>
   </url>
   
   <url>
@@ -1135,11 +1130,7 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
   </url>
   
   <url>
@@ -1147,11 +1138,15 @@
   </url>
   
   <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
+  </url>
+  
+  <url>
     <loc>http://trishagee.github.io/other-sites/release/</loc>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
   </url>
   
   <url>
