@@ -6,208 +6,7 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 13 Aug 2015 00:00:00 UTC</updated>
-    
-    <item>
-      <title>Writing Unit Tests</title>
-      <link>http://trishagee.github.io/other-sites/writing_unit_tests/</link>
-      <pubDate>Thu, 13 Aug 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/writing_unit_tests/</guid>
-      <description>
-
-&lt;h2 id=&#34;writing-tests-first:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Writing tests first&lt;/h2&gt;
-
-&lt;p&gt;Whether you like to write your tests before writing production code, or like to create the tests afterwards, IntelliJ
-IDEA makes it easy to create and run unit tests. In this tutorial we&amp;rsquo;re going to show examples of how to write tests
-first (Test Driven Design - TDD).&lt;/p&gt;
-
-&lt;p&gt;In this tutorial, we&amp;rsquo;ve used Gradle as our build tool, and have created the project as a Gradle project in IntelliJ
-IDEA, so the build file already contains the dependency on JUnit 4.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/build.gradle.png&#34; alt=&#34;gradle&#34; title=&#34;gradle&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re not using Gradle and don&amp;rsquo;t already have JUnit 4 on the classpath, follow the instructions on &lt;a href=&#34;https://www.jetbrains.com/idea/help/configuring-testing-libraries.html&#34;&gt;how to add a
-test library to the classpath&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-your-test-location:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Creating your test location&lt;/h3&gt;
-
-&lt;p&gt;If you don&amp;rsquo;t already have tests, or did not select &amp;ldquo;Create directories for empty content roots&amp;rdquo; when creating
-the project, you
-might not have an appropriate location for your tests. Therefore the first thing you need to do is create this.
-Because in this example we&amp;rsquo;re using Gradle as the build tool, we&amp;rsquo;re therefore following the standard Maven/Gradle
-directory structure.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Right click on the location you want to create your test folder. For example, [project root]/src.&lt;/li&gt;
-&lt;li&gt;Select New -&amp;gt; Directory&lt;/li&gt;
-&lt;li&gt;Type the name of the test directory. You can even create subdirectories with this single command. For example, you
-can enter &lt;code&gt;test/java&lt;/code&gt; to create a &amp;ldquo;test&amp;rdquo; directory with another directory &amp;ldquo;java&amp;rdquo; inside it.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/1CreateDirectory.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re working within a standard structure, e.g. Gradle or Maven, you should notice the directory coloured with
-a green background, denoting that IntelliJ IDEA knows this is a test directory. If this is not the case:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Right click on the test directory&lt;/li&gt;
-&lt;li&gt;Select Mark Directory As -&amp;gt; Test Sources Root&lt;/li&gt;
-&lt;li&gt;The directory should be coloured green.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/2MarkAsTest.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-your-test-package:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Creating your test package&lt;/h3&gt;
-
-&lt;p&gt;Once you have a top-level test directory, you might need to create the correct package for your tests:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Right click on your test directory and select New -&amp;gt; Package&lt;/li&gt;
-&lt;li&gt;As with the directory, you can create sub-package structures if you need to, for example &lt;code&gt;com.project.package&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/3CreatePackage.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-your-first-test:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Creating your first test&lt;/h3&gt;
-
-&lt;p&gt;Given that we&amp;rsquo;re writing our tests first without necessarily having the classes we&amp;rsquo;re testing available to us yet,
-we&amp;rsquo;ll create our first test via project panel.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Right click on the package you want to create the test in and select New -&amp;gt; Java Class.&lt;/li&gt;
-&lt;li&gt;Enter the test name - given we&amp;rsquo;re testing using JUnit, this will likely be [Something]Test&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/4CreateTest.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Now we have a test class, we can start adding individual tests.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;With the cursor placed somewhere inside the class&amp;rsquo;s curly braces, press Ctrl + Enter (Alt + Ins).&lt;/li&gt;
-&lt;li&gt;Select &amp;ldquo;Test Method&amp;rdquo; from the Generate menu and select &amp;ldquo;JUnit 4&amp;rdquo; as the framework.&lt;/li&gt;
-&lt;li&gt;This will create a test method with the default template, allowing you to fill in the details of the test.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/5CreateTestMethod.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;If you want to alter the default template&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Press Ctrl + Enter (Alt + Ins).&lt;/li&gt;
-&lt;li&gt;Use the mouse or arrow keys to highlight &amp;ldquo;Test Method&amp;rdquo; from the Generate menu, and press the right arrow to bring
-up a menu which says &amp;ldquo;Edit Template&amp;rdquo;. Select this.&lt;/li&gt;
-&lt;li&gt;You can now change the default template for a test method according to your preferences.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/6ChangeTemplate.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;writing-the-test-body:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Writing the test body&lt;/h3&gt;
-
-&lt;p&gt;It may seem counter-intuitive to write test code for classes and methods that don&amp;rsquo;t exist, but IntelliJ IDEA makes
-this straightforward whilst keeping the compiler happy.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;IntelliJ IDEA can create classes for you if they don&amp;rsquo;t already exist.  So if you write your tests describing what
-you want to achieve, pressing Alt + Enter on any classes that don&amp;rsquo;t exist will give you the option of having IntelliJ
-IDEA create them for you. This will give you a minimum implementation that keeps the compiler happy.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/7CreateClass.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Similarly, IntelliJ IDEA can create missing methods for you with minimal implementations, again you can use Alt +
-Enter to do this.&lt;/li&gt;
-&lt;li&gt;As always, you can use IntelliJ IDEA&amp;rsquo;s refactoring tools to create variables to store results in&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/8CreateMethod.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;And as usual, IntelliJ IDEA will import the most appropriate classes for you, if the correct libraries are on the
-classpath.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/9Imports.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;running-the-tests:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Running the tests&lt;/h3&gt;
-
-&lt;p&gt;When following a TDD approach, typically you go through a cycle of Red-Green-Refactor.  You&amp;rsquo;ll run a test, see it
-fail (go red), implement the simplest code to make the test pass (go green), and then if necessary
-refactor the code so your test stays green and your code is sufficiently simple and elegant.&lt;/p&gt;
-
-&lt;p&gt;The first step in this cycle is to run the test and see it fail.&lt;/p&gt;
-
-&lt;p&gt;Given that we&amp;rsquo;ve used IntelliJ IDEA&amp;rsquo;s features to create the simplest empty implementation of the method we&amp;rsquo;re testing,
-we do not expect our test to pass.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;From inside the test, press Ctrl + Shift + F10 to run this individual test&lt;/li&gt;
-&lt;li&gt;The results will be shown in the run dialog. The test name will have an icon next to it - either red for an
-exception, or yellow for an assertion that fails. For either failures, a message stating what went wrong is also shown.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/10RunFailingTests.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;implementing-the-code:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Implementing the code&lt;/h3&gt;
-
-&lt;p&gt;The next step is to make the tests pass, which means implementing the simplest thing that works.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;You can navigate to the code being tested using the usual methods - clicking through on the method name, pressing
-command + alt + b while the cursor is on the method name, or pressing cmd + shift+ t to switch between the test and
-the production code.&lt;/li&gt;
-&lt;li&gt;Make change to the method to make the test pass.  Often with TDD, the simplest thing that works might be
-hardcoding your expected value. We will see later how iterating over this process will lead to more realistic
-production code.&lt;/li&gt;
-&lt;li&gt;Re-run the test, using Shift + F10 to re-run the last test you ran.&lt;/li&gt;
-&lt;li&gt;See the test pass - the icon next to the test method should go green. If it does not, make the required changes
-until the test passes.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/11MakeTestsPass.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;iterate:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Iterate&lt;/h3&gt;
-
-&lt;p&gt;Developing code is an iterative process. When following a TDD-style approach, this is even more true. In order to
-drive out more complex behaviour, we add tests for other cases.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;In your test class, use Ctrl + enter again to create a new test method.&lt;/li&gt;
-&lt;li&gt;Pick a second test case that specifies more requirements of the method you&amp;rsquo;re testing. Remember that you can use
-IntelliJ IDEA&amp;rsquo;s features to create classes and methods to keep the compiler happy.&lt;/li&gt;
-&lt;li&gt;Run this second test case, showing that it fails for the correct reason.&lt;/li&gt;
-&lt;li&gt;Change the code in the method being tested to make this test pass.&lt;/li&gt;
-&lt;li&gt;Re-run both the tests by pressing Ctrl + Shift + F10 inside the test class, not inside a single method, and see
-that both tests now pass. If either test fails, make the changes needed to the code to ensure the tests pass.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/intellij-testing/12AddMoreTests.gif&#34; alt=&#34;Create&#34; title=&#34;Create&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;summary:712ebbab297ad400669b7de2d6c9ac0d&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;Writing your first test in a test-first style takes a small amount of setup - creating the test class, creating the
-test methods, and then creating empty implementations of the code that will eventually become production code. But
-IntelliJ IDEA automates a lot of this initial setup.&lt;/p&gt;
-
-&lt;p&gt;As you iterate through the process, creating tests and then making the changes required to get those tests to pass,
-you build up a comprehensive suite of tests for your required functionality, and the simplest solution that will meet
-these requirements.  And IntelliJ IDEA is designed to make this process as painless as possible.&lt;/p&gt;
-</description>
-    </item>
+    <updated>Tue, 04 Aug 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
@@ -549,377 +348,6 @@ reviews&lt;/a&gt; (and some of the things
 you should not be looking at).&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d love to get feedback in the comments for the post of things that you look for in code reviews.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Java 8</title>
-      <link>http://trishagee.github.io/drafts/java_8/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/drafts/java_8/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve been giving a presentation showing &amp;ldquo;Java 8 in Anger&amp;rdquo; - no, it&amp;rsquo;s not that the most recent release of Java has me
-particularly enraged, &amp;ldquo;in anger&amp;rdquo; is (apparently) a British phrase meaning &amp;ldquo;in practice&amp;rdquo; or &amp;ldquo;in the real world&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;The aim of this talk is to demo, with live code, how to use some of the Java 8 features like Lambda Expressions and
-the Streams API to solve some of the coding problems you might come across in your day job as a developer.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not going to transcribe the whole talk for this article, it probably works best (if you&amp;rsquo;re interested) to
-watch the video instead. What I do want to do is to use the application from the presentation to explore some
-specific Java 8 features in more detail. If you&amp;rsquo;re interested in the wider context, I&amp;rsquo;ve got
-&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;links to the videos and source code&lt;/a&gt; on my blog.&lt;/p&gt;
-
-&lt;h3 id=&#34;method-references-and-new-methods-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Method References and New Methods in Java 8&lt;/h3&gt;
-
-&lt;p&gt;The first section where we start using some of the new methods available in Java 8 is when we&amp;rsquo;re building up a
-leaderboard of top tweeters. This leaderboard will be a table of the Twitter users who have tweeted the most, in
-descending order.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/leaderboard.png&#34; alt=&#34;Twitter Leaderboard&#34; title=&#34;Twitter Leaderboard&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;We store every Twitter handle we see in as a key in a &lt;code&gt;Map&lt;/code&gt;, and for
-the value we have a &lt;code&gt;TwitterUser&lt;/code&gt; (an object to represent this particular user). When we
-see a new Twitter handle, we want to create a &lt;code&gt;TwitterUser&lt;/code&gt; for this person and store it in the map, keyed against
-this Twitter handle.&lt;/p&gt;
-
-&lt;p&gt;Pre-Java-8, we&amp;rsquo;d write something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
-
-public void onMessage(String twitterHandle) {
-    TwitterUser twitterUser = allTwitterUsers.get(twitterHandle);
-    if (twitterUser == null) {
-        twitterUser = new TwitterUser(twitterHandle);
-        allTwitterUsers.put(twitterHandle, twitterUser);
-    }
-    // then do stuff...
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But Java 8 has not only given us lambdas and streams, it&amp;rsquo;s added new methods to some of our favourite classes.  &lt;code&gt;Map&lt;/code&gt;
-now has a &lt;code&gt;computeIfAbsent()&lt;/code&gt; method which allows you to define what to do if an item doesn&amp;rsquo;t exist in the map.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;private final Map&amp;lt;String, TwitterUser&amp;gt; allTwitterUsers = new HashMap&amp;lt;&amp;gt;();
-
-public void onMessage(String twitterHandle) {
-    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, 
-                                                              TwitterUser::new);
-    // then do stuff...
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This does the same thing as the first example and is clearly far fewer lines of code, especially as it also makes use
-of &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;, which usually work
-out to be even shorter than lambda expressions. As a long-term Java programmer with limited exposure to other
-languages, although this may be shorter, learning to write code this way is going to take me a while to get used to.&lt;/p&gt;
-
-&lt;p&gt;Fortunately for me and my old-school Java approach, &lt;a href=&#34;www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; can help me get to
-grips with the new syntax. When I first came to Java 8, I found it more understandable (although &lt;em&gt;much&lt;/em&gt; more code)
-to call these sorts of methods using an anonymous inner class rather than a lambda expression or a method reference.
-IntelliJ IDEA can help create this anonymous inner class and convert it into something more Java 8-ish:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/ReplaceWithMethodReference.gif&#34; alt=&#34;Convert to method reference&#34; title=&#34;Convert to method reference&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Method references are going to take me a while to grasp instinctively, but I am starting to see how the succinct
-syntax could be more expressive, once I get used to it - &lt;code&gt;computeifAbsent()&lt;/code&gt; is going to call a constructor on
-&lt;code&gt;TwitterUser&lt;/code&gt; to create a new user if one doesn&amp;rsquo;t already exist in the map.&lt;/p&gt;
-
-&lt;h3 id=&#34;streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Streams&lt;/h3&gt;
-
-&lt;p&gt;Next we need to increment the number of times we&amp;rsquo;ve seen
-this &lt;code&gt;TwitterUser&lt;/code&gt;, and then figure out how this impacts our leaderboard of tweeters. We can use the
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams API&lt;/a&gt; to
-turn our map of all Twitter users into a list of the top ten Tweeters.&lt;/p&gt;
-
-&lt;p&gt;First we need to sort our &lt;code&gt;TwitterUsers&lt;/code&gt; according to the number of times they&amp;rsquo;ve tweeted.
-There&amp;rsquo;s a &lt;code&gt;sorted()&lt;/code&gt; method on &lt;code&gt;Stream&lt;/code&gt; which takes a &lt;code&gt;Comparator&lt;/code&gt;, so it seems logical to use this.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public void onMessage(String twitterHandle) {
-    TwitterUser twitterUser = allTwitterUsers.computeIfAbsent(twitterHandle, TwitterUser::new);
-    twitterUser.incrementCount();
-
-    allTwitterUsers.values().stream()
-                   .sorted(new Comparator&amp;lt;TwitterUser&amp;gt;() {
-                       @Override
-                       public int compare(TwitterUser o1, TwitterUser o2) {
-                           return o2.getNumberOfTweets() - o1.getNumberOfTweets();
-                       }
-                   });
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the past, I&amp;rsquo;ve always found comparators a little hard to work with - I&amp;rsquo;m never quite sure if I&amp;rsquo;m supposed to be
-subtracting the first object from the second, or vice versa.  Fortunately, once again Java 8 makes things a little
-easier. You can use the new &lt;code&gt;Comparator.comparing()&lt;/code&gt; method, which you can combine with a method reference to state
-which method on &lt;code&gt;TwitterUser&lt;/code&gt; you want to sort by&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(comparingInt(TwitterUser::getNumberOfTweets))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For a leaderboard which shows the most active tweeters at the top, we need to sort in descending order, which is also
-simple and descriptive using this method&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(comparingInt(TwitterUser::getNumberOfTweets).reversed())
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Note that I&amp;rsquo;ve added a static import for &lt;code&gt;comparingInt&lt;/code&gt; to make the code a bit shorter.&lt;/p&gt;
-
-&lt;p&gt;So we&amp;rsquo;ve sorted all the values in the map, now we need to just get the top ten. Since we&amp;rsquo;re using Streams, it&amp;rsquo;s easy
-to chain together all the operations we want to perform on our collection, so we add a call to &lt;code&gt;limit&lt;/code&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;allTwitterUsers.values().stream()
-               .sorted(comparingInt(TwitterUser::getNumberOfTweets).reversed())
-               .limit(10);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So far all we&amp;rsquo;ve done is build up a recipe for the operations we want to perform, we need to somehow execute all of
-these. Streams have intermediate operations which return a &lt;code&gt;Stream&lt;/code&gt; so that we can perform further operations (for
-example, both &lt;code&gt;sorted()&lt;/code&gt; and &lt;code&gt;limit()&lt;/code&gt; above), and terminal operations which will return some concrete value. In this
-case, what we want is a new list with these top ten tweeters. Telling the &lt;code&gt;collect&lt;/code&gt; method to put the results
-into a &lt;code&gt;List&lt;/code&gt; will do just this&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;List&amp;lt;TwitterUser&amp;gt; topTen = allTwitterUsers.values().stream()
-                                          .sorted(comparingInt(TwitterUser::getNumberOfTweets).reversed())
-                                          .limit(10)
-                                          .collect(Collectors.toList());
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;With this set of stream operations, we&amp;rsquo;re effectively querying our map of all users. If we were querying a
-database instead of a map, we might have written something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;SELECT * from TwitterUsers
-ORDER BY numberOfTweets DESC
-LIMIT 10
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This is how we built the whole operation:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Streams.gif&#34; alt=&#34;Using Streams&#34; title=&#34;Using Streams&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;creating-our-own-streams:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Creating our own Streams&lt;/h3&gt;
-
-&lt;p&gt;Another part of this application requires a bar chart, where each bar corresponds to a minute in time over a period
-of ten minutes.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/bar-chart.png&#34; alt=&#34;Bar Chart Widget&#34; title=&#34;Bar Chart Widget&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;When the application starts for the first time, each of these bars needs to be set to an initial value of zero.&lt;/p&gt;
-
-&lt;p&gt;This is not an unusual situation - we&amp;rsquo;ve probably all written code that has to loop for some number of iterations and
-initialise some value.  We would probably usually do it using something like this:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
-    int nowMinute = LocalDateTime.now().getMinute();
-
-    for (int i = nowMinute; i &amp;lt; nowMinute + 10; i++) {
-        initialiseBarToZero(i);
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here we also use a very small part of the new
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Date &amp;amp; Time API&lt;/a&gt;.  In the Java 8 world, we
-have more options for iterating over values.  In this case, we can create our own &lt;code&gt;IntStream&lt;/code&gt; from a range of
-values and perform some operation for each of these values.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public HappinessChartData() {
-    int nowMinute = LocalDateTime.now().getMinute();
-
-    IntStream.range(nowMinute, nowMinute + 10)
-             .forEach(value -&amp;gt; initialiseBarToZero(value));
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;We can use a lambda expression to specify what to do with each of the values.  As before, we can also
-simplify this lambda expression to a method reference.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    IntStream.range(nowMinute, nowMinute + 10)
-             .forEach(this::initialiseBarToZero);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This method of iterating is marginally less code, and, once we get used to the new syntax, arguably more readable.
-The performance of the two methods is not the same, however, so you&amp;rsquo;ll have to decide which method to use based on
-your team&amp;rsquo;s preferences for syntax and the performance requirements of your application.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/CreateStream.gif&#34; alt=&#34;Create a Stream&#34; title=&#34;Create a Stream&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;file-handling-in-java-8:d169180f3a40e9c29149c257bc7fd971&#34;&gt;File Handling in Java 8&lt;/h3&gt;
-
-&lt;p&gt;Java 7 introduced some really nice features for file handling. Working with files has become even
-more intuitive when you combine these Java 7 features with streams.&lt;/p&gt;
-
-&lt;p&gt;In this example, we&amp;rsquo;re parsing a file which contains Tweets recorded from the Twitter firehose.  Each line contains a
-different tweet, and what we want to do is filter out the noise (there are lines that contain only the single String
-&amp;ldquo;OK&amp;rdquo; as a response from Twitter) and then publish the remaining tweets via websockets.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;    try (Stream&amp;lt;String&amp;gt; lines = Files.lines(filePath)) {
-        lines.filter(s -&amp;gt; !s.equals(&amp;quot;OK&amp;quot;))
-             .forEach(tweetsEndpoint::onMessage);
-    } catch (IOException e) {
-        //error handling here
-    }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here, I&amp;rsquo;m not tempted to show the Java 6 version of the code, as the Java 8 version is much simpler.  The first line
-uses &lt;a href=&#34;https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html&#34;&gt;try-with-resources&lt;/a&gt;
-to obtain a strea, of &lt;code&gt;Strings&lt;/code&gt;, one string per line in our file.  Then we use the &lt;code&gt;filter()&lt;/code&gt;
-method to exclude the lines that aren&amp;rsquo;t tweets, and finally publish all the remaining tweets via our websocket
-server endpoint.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/Java7And8.gif&#34; alt=&#34;File handling with Java 8&#34; title=&#34;File handling with Java 8&#34; /&gt;
-&lt;/p&gt;
-
-&lt;h3 id=&#34;advanced-streams-and-more-collectors:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Advanced Streams and More Collectors&lt;/h3&gt;
-
-&lt;p&gt;The last part of the application that I&amp;rsquo;d like to show you in more depth, is the mood analyser.  The aim of
-this small service is to take a single Tweet and figure out the mood of that Tweet in a very rough fashion.  It will
-generally decide if a single Tweet is &amp;ldquo;happy&amp;rdquo;, &amp;ldquo;sad&amp;rdquo;, or &amp;ldquo;happy &lt;em&gt;and&lt;/em&gt; sad&amp;rdquo;, and return a comma separated String of
-the mood in upper case. So for example:&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Today was a great day!&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;would be classified as &amp;ldquo;HAPPY&amp;rdquo;,&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;I&amp;rsquo;m irritated I have to work tomorrow&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;would be &amp;ldquo;SAD&amp;rdquo;, and&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The start of this week was fantastic, but today sucks&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;contains both good and bad news, so would be &amp;ldquo;HAPPY,SAD&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;If I had an automated system for applying moods to Twitter messages, I&amp;rsquo;d be retired on a beach
-somewhere, this kind of analysis is very much in demand.  In my application, I settle instead for a very crude method
-of classifying the messages - we&amp;rsquo;re going to parse the message and look for words that might imply &amp;ldquo;happy&amp;rdquo; or &amp;ldquo;sad&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;We start with a &lt;code&gt;Map&lt;/code&gt;, which maps words to their associated mood (represented as an enum).  Something like:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[&amp;quot;happy&amp;quot;: HAPPY,
- &amp;quot;fantastic&amp;quot;: HAPPY,
- &amp;quot;awesome&amp;quot;: HAPPY,
- ...
- &amp;quot;sad&amp;quot;: SAD,
- &amp;quot;terrible&amp;quot;: SAD,
- &amp;quot;sucks&amp;quot;: SAD]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;There are a number of approaches to this problem, this is not a definitive answer. I will demonstrate
-with my selected method how you can chain together stream operations to get the output that you need.&lt;/p&gt;
-
-&lt;p&gt;Firstly, we create a stream where each item is a word in the original Twitter message.  We use &lt;code&gt;String&lt;/code&gt;&amp;rsquo;s &lt;code&gt;split()&lt;/code&gt;
-method to create an array of words, and use &lt;code&gt;Stream.of()&lt;/code&gt; to turn this into a &lt;code&gt;Stream&lt;/code&gt; of &lt;code&gt;Strings&lt;/code&gt;.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Next, we&amp;rsquo;re going to convert all these words to lowercase, as our map of words to moods only has lowercase keys.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The &lt;code&gt;map()&lt;/code&gt; method takes one value and turns it into another.  In this case, we want to turn a &lt;code&gt;String&lt;/code&gt; value like
-&amp;ldquo;Awesome&amp;rdquo; into its lowercase version, &amp;ldquo;awesome&amp;rdquo;.  It&amp;rsquo;s easy pass in String&amp;rsquo;s &lt;code&gt;toLowerCase()&lt;/code&gt; method as a method
-reference to do the conversion.&lt;/p&gt;
-
-&lt;p&gt;Now we have a string in the correct case, we can search our map of words-to-moods for the mood that corresponds to
-this word.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Not every word is going to have a corresponding mood in the map, so we&amp;rsquo;re only going to pass non-null moods to the
-next step of the pipeline&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now what I have is a &lt;code&gt;Mood&lt;/code&gt;, an enum value of either &lt;code&gt;HAPPY&lt;/code&gt; or &lt;code&gt;SAD&lt;/code&gt;. Our requirements state that for each tweet, we
-need to return one of &amp;ldquo;HAPPY&amp;rdquo;, &amp;ldquo;SAD&amp;rdquo;, or &amp;ldquo;HAPPY,SAD&amp;rdquo;. We don&amp;rsquo;t need an indication of whether there are multiple happy
-words or sad words in the same tweet, so we only need one instance of each mood. This is easily done by requiring the
-stream to contain only distinct values.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-      .distinct()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;According to our requirements, we need to convert our enum value to a String&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-      .distinct()
-      .map((mood) -&amp;gt; mood.name())
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And finally, we want to merge together all the moods found for this message into a comma separated string of moods.
-In our previous Stream example, we used &lt;code&gt;Collectors.toList()&lt;/code&gt; to return a &lt;code&gt;List&lt;/code&gt;
-of &lt;code&gt;TwitterUsers&lt;/code&gt;. This time, we&amp;rsquo;re going to use another built in collector, &lt;code&gt;Collectors.joining()&lt;/code&gt; and give it the
-characters we want to use to separate our results. &lt;code&gt;joining()&lt;/code&gt; will return a &lt;code&gt;String&lt;/code&gt; of your results, separated by
-your chosen delimiter. Which means that now in Java 8 we can easily create comma separated strings without having to
-iterate over a list and figure out if we&amp;rsquo;re supposed to be putting a comma after this item or not.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-      .map(String::toLowerCase)
-      .map((lowerCaseWord) -&amp;gt; WORD_TO_MOOD.get(lowerCaseWord))
-      .filter(mood -&amp;gt; mood != null)
-      .distinct()
-      .map((mood) -&amp;gt; mood.name())
-      .collect(Collectors.joining(&amp;quot;,&amp;quot;));
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Finally, let&amp;rsquo;s simplify the lambdas to method references where possible, and turn this into a method we can use&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;public static String identifyMood(String twitterMessage) {
-    return Stream.of(twitterMessage.split(&amp;quot;\\s+&amp;quot;))
-                 .map(String::toLowerCase)
-                 .map(WORD_TO_MOOD::get)
-                 .filter(mood -&amp;gt; mood != null)
-                 .distinct()
-                 .map(Enum::name)
-                 .collect(joining(&amp;quot;,&amp;quot;));
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If we called &lt;code&gt;identifyMood&lt;/code&gt; with the message &amp;ldquo;Yesterday I was sad sad sad, but today is awesome&amp;rdquo;, we&amp;rsquo;ll get the
-String &amp;ldquo;SAD,HAPPY&amp;rdquo; in return.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8/AdvancedStreams.gif&#34; alt=&#34;Advanced Streams&#34; title=&#34;Advanced Streams&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;With this example we have seen how you can chain multiple operations to perform fairly complex processing, with limited
-lines of code.&lt;/p&gt;
-
-&lt;h3 id=&#34;summary:d169180f3a40e9c29149c257bc7fd971&#34;&gt;Summary&lt;/h3&gt;
-
-&lt;p&gt;Java 8 is more than just a bit of extra syntax to learn, or a couple of new methods that might be useful.
-It can change the way we approach solving common problems. With lambda expressions, streams and some of the other
-new methods in Java 8, you can use easily perform common operations (for example, &lt;code&gt;computeIfAbsent()&lt;/code&gt; and &lt;code&gt;joining()&lt;/code&gt;),
-and you gain a new set of tools, particularly in manipulating data sets.&lt;/p&gt;
 </description>
     </item>
     
@@ -2101,6 +1529,268 @@ have their biases too.&lt;/p&gt;
 
 &lt;p&gt;Blindness is not a realistic option, we just have to keep putting women (and other non-white-straight-men) in front of
 audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Are Blind CFPs Really The Answer?</title>
+      <link>http://trishagee.github.io/post/blind_cfps/</link>
+      <pubDate>Wed, 11 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/blind_cfps/</guid>
+      <description>
+
+&lt;p&gt;Off the back of &lt;a href=&#34;http://trishagee.github.io/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
+around blind &lt;a href=&#34;http://www.wikicfp.com/cfp/&#34;&gt;CFPs&lt;/a&gt; (Call For Papers - usually to get into a conference you submit to a CFP) for
+conferences. I often hear it said that a blind CFP will fix, or at least improve, the diversity imbalance at conferences.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t believe this.&lt;/p&gt;
+
+&lt;p&gt;Firstly, I should caveat this with: this is going to be a blog post based on my experiences and chats with people, and I
+have zero science to back this up. Sorry. But I do have some numbers.&lt;/p&gt;
+
+&lt;p&gt;There are a couple of London conferences that I won&amp;rsquo;t name (because I haven&amp;rsquo;t asked their permission not because they&amp;rsquo;ve
+done anything wrong) that in some years have received only 2 from around 200 (or more) submissions from women. These
+conferences have accepted 100% of the submissions from women, and then been open to criticism for not having enough women
+speakers.&lt;/p&gt;
+
+&lt;p&gt;A blind CFP to remove unconscious bias from the selection committee might have resulted in zero women speakers.&lt;/p&gt;
+
+&lt;p&gt;Now I know the next argument is that advertising a blind CFP might encourage a wider diversity of speakers to apply. This
+does seem to work in some parts of the industry (I&amp;rsquo;ve been talking to women from tech scenes that don&amp;rsquo;t intersect with mine
+and I&amp;rsquo;m starting to see that we have different problems in different segments of the wider development world). But for my
+world, which is largely Java, with some forays into Agile, NoSQL, Open Source, and Enterprise, the women I speak to
+aren&amp;rsquo;t scared they&amp;rsquo;ll be discriminated against if they put their name on a CFP. Besides, they don&amp;rsquo;t have anything to
+lose by submitting and being rejected. They&amp;rsquo;re more afraid they&amp;rsquo;ll be accepted, and then they&amp;rsquo;ll have to give a
+presentation! No, the women I&amp;rsquo;ve spoken to in my world don&amp;rsquo;t submit because they don&amp;rsquo;t feel ready, they don&amp;rsquo;t think they
+have anything to talk about, and they&amp;rsquo;re worried about the sorts of questions they&amp;rsquo;ll get asked when they&amp;rsquo;re standing up
+there. Those fears aren&amp;rsquo;t allayed by having a blind CFP.&lt;/p&gt;
+
+&lt;p&gt;If there are any fears of being judged as a woman, it&amp;rsquo;s when we&amp;rsquo;re standing up in front of people at the conference, and
+no amount of blindness during the CFP process is going to make us feel better about that.&lt;/p&gt;
+
+&lt;p&gt;For me, personally, I find the idea of a blind CFP terrifying:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Firstly, if you have such a problem with judging people based on race or gender that you have to anonymise the
+selection process, I&amp;rsquo;m not sure I want to speak at your conference where my gender will be blatantly on show.&lt;/li&gt;
+&lt;li&gt;Secondly, when I was starting out as a speaker, I was new to writing titles and abstracts and expected that they would
+not be good enough to get in. With a blind CFP I would never find out why as I could never ask for feedback on my
+anonymous abstract. As a novice speaker, I expected my gender would help me be selected, not hinder.&lt;/li&gt;
+&lt;li&gt;Thirdly, as an experienced speaker I know my abstract-writing has not really improved, but I know my presenting has,
+and I know there are videos of me out there doing a good job as a presenter, &lt;em&gt;this&lt;/em&gt; is my audition tape.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When I was starting out as a speaker, I knew there weren&amp;rsquo;t enough women presenters around. And although I hate the idea
+of positive discrimination and hate the idea that men might think I got into my position merely because I&amp;rsquo;m female, I knew
+that being a woman made me stand out in all those submissions. And I knew that enough conferences would take a chance on
+me, if only to improve their diversity, and that&amp;rsquo;s all I needed to bootstrap my speaking career - once I had spoken at
+enough conferences, once I had videos of me doing that, I would find it much easier to get into the next conferences.
+And that&amp;rsquo;s worked. And now, as an experienced (female) speaker, I fear blind CFPs as they won&amp;rsquo;t know who I am or what I&amp;rsquo;m
+capable of.&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s my opinion as a female speaker. But I&amp;rsquo;ve also been fortunate enough to be on the programme committee for a couple
+of conferences, and after three years or so of speaking at conferences I know a &lt;em&gt;lot&lt;/em&gt; of conference organisers.  Let&amp;rsquo;s
+assume you&amp;rsquo;re &amp;ldquo;merely&amp;rdquo; trying to build the best conference you can around your subject whilst not discriminating against
+anyone (i.e. let&amp;rsquo;s assume you&amp;rsquo;re not going out of your way to actively promote diversity). How can you do this when you only
+have abstracts and titles to go on?&lt;/p&gt;
+
+&lt;p&gt;I am aware of the &lt;a href=&#34;http://www.nber.org/papers/w5903&#34;&gt;studies around blind auditions for orchestras&lt;/a&gt;. And I understand
+how tempting it is to try to apply that to our world, since it has had an effect on the number of women in orchestras
+(but let&amp;rsquo;s not get too excited here, we&amp;rsquo;re talking about an increase from 5% to 25% over thirty years&amp;hellip;). I think
+blind auditions would work really well for coding - we can look at just the code, without knowing anything about the
+physical body behind the code, and figure out if that person is good enough for us. We could even do blind pair
+programming, using screen sharing and chat (actually that&amp;rsquo;s a great idea, I think I&amp;rsquo;ll patent that!). Because
+the thing you&amp;rsquo;ve anonymised (the code) is the output you really care about in a programming job. If you communicate via
+chat you can even measure someone&amp;rsquo;s communication skills without judging them physically, another vital skill for
+being part of a team.&lt;/p&gt;
+
+&lt;p&gt;But a talk abstract is &lt;em&gt;not&lt;/em&gt; the output we&amp;rsquo;re looking for.  Sure, a good title and abstract will attract attendees to the
+conference and bums on seats in the actual talk. But the output you&amp;rsquo;re looking for is the presenter - their style, their
+approach to the topic, their ability to hold attention, their ability to impart information. We&amp;rsquo;re not always looking
+for the same things either, an interesting topic presented nervously but logically is fine, as is an entertaining
+presenter reminding us of fundamentals we already know (and any other combination of strengths and weaknesses). An abstract
+can&amp;rsquo;t tell you how good the presentation is going to be. Evaluating a presentation on a blind abstract would be like
+evaluating those musicians on a couple of paragraphs explaining what they&amp;rsquo;re going to play and how they&amp;rsquo;re going to
+try to make you feel when they play it - the words could sound great, but the musician might not even be able to play
+the instrument.&lt;/p&gt;
+
+&lt;p&gt;The best audition you can have as a presenter is to, well, present. Videos, audio clips, even screencasts. But the
+problem with presenting is that it&amp;rsquo;s so freaking obvious that you&amp;rsquo;re a woman (or other variation on
+non-white-straight-male).  If you can&amp;rsquo;t objectively evaluate a presentation without taking away the presenter&amp;rsquo;s
+physical body (for colour
+or gender or whatever), then you&amp;rsquo;ve got real problems. Your audience is going to be faced with that physical body for an
+hour of their life, and you can bet they&amp;rsquo;ll be judging them too.  You want to be damned sure that you&amp;rsquo;ve selected a
+competent presenter, and you&amp;rsquo;ll need to stand by that choice. Saying &amp;ldquo;oh, well, they didn&amp;rsquo;t seem boring in their
+abstract&amp;rdquo; is not going to make the audience feel like you did a good job of the selection.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s another point about non-blind selection processes, other than the process allowing you to select on presentation
+ability rather than abstract-writing ability: you can be more active in promoting diversity. I am against &amp;ldquo;affirmative
+action&amp;rdquo;, but if the proportion of women submitting presentations is lower than the proportion of women in the field, there&amp;rsquo;s
+something missing.  Here are some of the things you can do if you identify a lack of a certain demographic - as usual,
+I&amp;rsquo;m going to use &amp;ldquo;women&amp;rdquo;, but you could equally argue this for any demographic, even not-enough-C#-developers or
+too-many-startups-not-enough-enterprise:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reach out to relevant user groups and communities asking them to submit.  In London for example, there&amp;rsquo;s &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/women-who-code-london/&#34;&gt;Women Who Code&lt;/a&gt;, &lt;a href=&#34;http://london.girlgeekdinners.com/&#34;&gt;Girl Geek Dinners&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/PyLadiesLondon/&#34;&gt;PyLadies&lt;/a&gt;, &lt;a href=&#34;http://www.meetup.com/Rails-Girls-London/&#34;&gt;Rails Girls&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/Women-in-Data/&#34;&gt;Women in Data&lt;/a&gt;,
+&lt;a href=&#34;http://www.geekgirlmeetup.co.uk/&#34;&gt;Girl Geek Meetup&lt;/a&gt;, &lt;a href=&#34;http://www.meetup.com/WIGJMeetup/&#34;&gt;Women in Games Jobs&lt;/a&gt;,
+&lt;a href=&#34;http://girlsintechuk.com/community/&#34;&gt;Girls in Tech&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/Geek-Girls-Unite-London/&#34;&gt;Girl Geeks Unite&lt;/a&gt;, and a
+&lt;a href=&#34;http://witi.meetup.com/cities/gb/17/london/&#34;&gt;whole host of women techies meetups&lt;/a&gt; &amp;hellip; And don&amp;rsquo;t think I psychically
+know about all those
+because I have two X chromosomes, I found half of those just now, in less than two minutes, by Googling
+&amp;ldquo;Girl Geeks London&amp;rdquo; and &amp;ldquo;Women Tech London&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Put the faces of the women you do want to have speak (or the women on your programme committee, or both) on your
+website - showing these women sends the message that this conference is for women. It should also impact the diversity
+of your attendees.&lt;/li&gt;
+&lt;li&gt;Reach out to specific women speakers and ask them to present. &lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;I&amp;rsquo;ve talked about this before&lt;/a&gt;,
+women speakers are few and far between, and a) they get
+booked in advance and b) are busy enough not to have to (or want to) submit via a CFP process.&lt;/li&gt;
+&lt;li&gt;There are &lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;more ideas here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And there&amp;rsquo;s more - you don&amp;rsquo;t just have to drain the pool dry of known competent speakers-who-tick-some-diversity-box. With
+a non-blind process you can actively improve the submissions you do have, assuming you&amp;rsquo;re not one of the conferences
+suffering from a complete lack of submissions from those people. For example, if you&amp;rsquo;re looking to increase the number of women
+presenting at your conference, if you have women submitting but they don&amp;rsquo;t quite meet your criteria (maybe the abstract
+is weak, the title isn&amp;rsquo;t catchy, or maybe the presenter simply isn&amp;rsquo;t quite ready yet) you, as the conference organiser, are
+in the perfect position to mentor these people: you can help them re-write their abstracts; you can offer them mentoring
+and training for presenting. If there&amp;rsquo;s no record of them presenting but you&amp;rsquo;re interested in evaluating their ability,
+you can set them up with a user group to present at - as a conference organiser, you have the network contacts that
+new speakers might not. You can run sessions aimed at people who have never done public speaking (I&amp;rsquo;ve run a session
+like this four times now, at the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; and at Ladies Who Code -
+I had &lt;em&gt;over 70&lt;/em&gt; RSVPs for the last London Ladies Who Code session, twice the number of the last LJC session,
+so there are plenty of women interested in breaking into this field, who are looking for training, who don&amp;rsquo;t feel ready
+to present yet).&lt;/p&gt;
+
+&lt;p&gt;So, what are my points?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A blind process of selection can be applied to something where the output you&amp;rsquo;re selecting for can be effectively
+anonymised: music auditions, code, technical writing, etc.&lt;/li&gt;
+&lt;li&gt;A blind process where you select based on criteria that are not the end result will only be effective
+if it&amp;rsquo;s the selection process is biased, or if submissions to the selection process are lower
+from discriminated-against-groups because they fear a biased selection process.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For those conferences that are getting very tiny numbers of submissions from women (I&amp;rsquo;m picking women as the example
+but you can pick any group you want), a blind process could lead to even fewer selected women speakers. Instead of
+switching to a blind process, you&amp;rsquo;re probably going to want to check:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the messaging around your conference (remember masculine words like rock star, ninja, competitive, hardcore,
+challenging etc &lt;a href=&#34;http://www.tum.de/en/about-tum/news/press-releases/short/article/31438/&#34;&gt;put women off applying to jobs&lt;/a&gt;, the same probably applies to technical conferences)&lt;/li&gt;
+&lt;li&gt;subliminal messages on your website/info (one of the conferences I mentioned, for example, sent out a couple of emails
+containing photos of previous years&amp;rsquo; conferences which happened to only show men - this was not even representative of
+the conference, but it can have an unexpectedly big effect on the subconscious)&lt;/li&gt;
+&lt;li&gt;have you showcased the diversity of the conference, or previous years&amp;rsquo; conferences, with photos, interviews, testamonials?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A non-blind submission process allows you to be more active in promoting diversity - instead of hoping that the
+submissions are representative of the diversity in your community, and that selecting the most interesting talks
+will naturally lead to improved diversity, with a non-blind process you can track exactly how many women are submitting,
+address problems in this area early and offer mentoring to those who aren&amp;rsquo;t quite ready yet. Remember that &lt;a href=&#34;https://hbr.org/2014/08/why-women-dont-apply-for-jobs-unless-theyre-100-qualified/0-qualified/&#34;&gt;women
+only apply for jobs they feel 100% qualified for&lt;/a&gt;
+and take fewer chances, they might need that extra push.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, no. I don&amp;rsquo;t believe that implementing a blind CFP will address the lack of diversity in conference speakers. I
+know it helps in some circles, but I personally think that conference selection committees should a) be much better at
+identifying their own biases and actively attempting to overcome them b) be active in improving the diversity of
+their conference, and c) be offering feedback and mentoring to those who are not quite ready yet in order to improve
+the overall ecosystem.&lt;/p&gt;
+
+&lt;p&gt;Diversity isn&amp;rsquo;t going to accidentally happen when we stop looking at gender and race and other visible you-don&amp;rsquo;t-belong-here
+cues.  Diversity is only going to happen if people fight for it, and if we actively train, mentor, and support those
+trying to break through the barriers.&lt;/p&gt;
+
+&lt;h3 id=&#34;postscript:db2f562112b18dc104706e916c34cc92&#34;&gt;Postscript&lt;/h3&gt;
+
+&lt;p&gt;I wrote a &lt;a href=&#34;http://trishagee.github.io/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m so tired of it all</title>
+      <link>http://trishagee.github.io/post/i_am_so_tired_of_it_all/</link>
+      <pubDate>Tue, 10 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/i_am_so_tired_of_it_all/</guid>
+      <description>&lt;p&gt;We work so hard to promote equality, to fight for the rights of people who are not middle-class
+white men, and time and again it just feels like we&amp;rsquo;re not getting anywhere.  &lt;a href=&#34;http://www.internationalwomensday.com/&#34;&gt;International Women&amp;rsquo;s
+Day&lt;/a&gt; highlights the issues that face women all around the world, and make our
+women-in-tech problem
+look like a genuine &lt;a href=&#34;https://twitter.com/hashtag/firstworldproblems&#34;&gt;First World Problem&lt;/a&gt;, and yet we can&amp;rsquo;t even get that right.&lt;/p&gt;
+
+&lt;p&gt;I nearly gave up. This weekend I thought, fuck it. I&amp;rsquo;ve done my bit. Personally, I&amp;rsquo;ve been through the phase in my
+career where being a woman was a disadvantage and somehow arrived out the other side - in my position, in my job, it&amp;rsquo;s
+an advantage, and I don&amp;rsquo;t need to change anything to improve things for my career. I&amp;rsquo;m going to carry on doing my job to the best
+of my ability, but I&amp;rsquo;m no longer going to let this diversity thing drain my energy - nothing ever seems to make a difference anyway.&lt;/p&gt;
+
+&lt;p&gt;Over the last year, four (white, middle-class, English-speaking) men who I know well, who
+I have seen by their actions are champions of women in technology, who have personally mentored
+me in some way or another, have been accused of not thinking about women techies, not encouraging them - have
+been accused of sexism.&lt;/p&gt;
+
+&lt;p&gt;This third year of being on the programme committee for QCon, I could see we had achieved far more to promote diversity
+than ever before, but it was &lt;em&gt;so&lt;/em&gt; much work to get that far, and there&amp;rsquo;s still &lt;em&gt;so much&lt;/em&gt; more to do.&lt;/p&gt;
+
+&lt;p&gt;Another conference I have great affection for which has never previously suffered badly from a lack of women speakers
+received practically
+zero submissions for full conference talks from women this year. The submissions that did come in were from the usual
+suspects, the speakers who one calls upon when desperately trying to shore up the gender diversity of your speaker line-up.&lt;/p&gt;
+
+&lt;p&gt;The Sevilla Java User Group, which I started, with my money, which I present at regularly, has had &lt;em&gt;zero&lt;/em&gt; female
+developers attend who were not previously friends. Apparently the impact of visible female role models is far smaller than
+I imagined.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s so much work.&lt;/p&gt;
+
+&lt;p&gt;And it&amp;rsquo;s thankless.&lt;/p&gt;
+
+&lt;p&gt;For the men who support the women, they get attacked by both sides - by women, for not
+doing enough, or sometimes for simply being privileged white men, by men and women for fighting for something that
+doesn&amp;rsquo;t impact them, and by men for betraying their gender.&lt;/p&gt;
+
+&lt;p&gt;For the women, it&amp;rsquo;s the same but more so: some women accuse us of not doing enough, some women sneer at what we&amp;rsquo;re doing,
+telling us we already have equality, men and women think you&amp;rsquo;re in it just to improve your own life, and the men, well,
+many men genuinely don&amp;rsquo;t understand the problems (and it&amp;rsquo;s exhausting to explain), and some are outright hostile.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s fantastic to find men allies.  I don&amp;rsquo;t know about anyone else, but at this stage in my career I&amp;rsquo;m surrounded by men
+who are all allies. And I can honestly say that any professional struggles I&amp;rsquo;ve had in recent years I can see are suffered
+by my colleagues of the opposite sex, so I know they&amp;rsquo;re not because of my gender.&lt;/p&gt;
+
+&lt;p&gt;Maybe it&amp;rsquo;s only fair that our male allies suffer the same way we do, even though they get even less out of fighting our battles
+than we do. Maybe it&amp;rsquo;s fair that they are attacked by both genders, and have to put up with unfair, unjust
+criticism and accusations. After all, look at some of the vile, hate-filled messages thrown at women leading the charge -
+that&amp;rsquo;s abuse. Some of these women fear for their lives.  I couldn&amp;rsquo;t live that life, and I despair that we live in a
+society that can&amp;rsquo;t seem to prevent that.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m a bit burnt out. So my friends are finding it tough. But this is a marathon, not a sprint.  And I never did this
+for me anyway. I care about diversity because it matters. I try to change the gender balance specifically, because that&amp;rsquo;s an area I
+might be able to impact, one I have a chance of understanding. I care about equality, about justice, because
+it matters. And I do my tiny part to try and drown out the hate, the anger, the &amp;ldquo;get back into the kitchen, woman&amp;rdquo;
+because those things make me feel sick, because &amp;ldquo;you can be whoever you want to be&amp;rdquo; shouldn&amp;rsquo;t be a lie, shouldn&amp;rsquo;t come
+with caveats.&lt;/p&gt;
+
+&lt;p&gt;Maybe I don&amp;rsquo;t have the time or energy for large-scale revolutions, but I will carry on trying to make a small difference:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;By trying to be a role model for anyone who can relate to me, whatever their colour, gender, or sexual orientation&lt;/li&gt;
+&lt;li&gt;By being visible as a woman techie, who does woman techie things, who&amp;rsquo;s also a human being.&lt;/li&gt;
+&lt;li&gt;By calling out (quietly and personally, at least at first) where I see things that might give the wrong message: e.g.
+e-mailing conference organisers to point out they only have white men in their line up; private messaging people to
+let them know their comments could be taken the wrong way; pointing out to user group leaders that their meetup
+page shows only men at their events.&lt;/li&gt;
+&lt;li&gt;By continuing to give an honest view of what it&amp;rsquo;s like to be a female Java developer, especially if these
+experiences are different to those of other women - one woman&amp;rsquo;s view does not represent every woman&amp;rsquo;s view, if more
+of us tell our different tales, we have a better view of the whole ecosystem (and its inhabitants).&lt;/li&gt;
+&lt;li&gt;By sharing not only the negatives, but the many positives of working in such a varied and rapidly changing profession.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am tired of fighting, however tiny my efforts are. But I&amp;rsquo;m more tired of inequality.&lt;/p&gt;
 </description>
     </item>
     
