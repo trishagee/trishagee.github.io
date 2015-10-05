@@ -2,16 +2,16 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Drafts on Trisha Gee </title>
-    <link>http://trishagee.github.io/drafts/index.xml/</link>
+    <link>http://trishagee.github.io/drafts/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 01 Jan 2008 00:00:00 UTC</updated>
+    <updated>Mon, 01 Jan 0001 00:00:00 UTC</updated>
     
     <item>
       <title></title>
       <link>http://trishagee.github.io/drafts/code_review_design/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/drafts/code_review_design/</guid>
       <description>&lt;p&gt;While it&amp;rsquo;s great to know that the code does what it is supposed to do, this
@@ -23,7 +23,7 @@ that code. This will be addressed in this post&lt;/p&gt;
     <item>
       <title></title>
       <link>http://trishagee.github.io/drafts/how_to_write_a_cfp/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/drafts/how_to_write_a_cfp/</guid>
       <description>&lt;p&gt;Title

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Slides on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/slides/index.xml/</link>
+    <link>http://trishagee.github.io/tags/slides/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -22,7 +22,10 @@ of deciding how to learn a new technology/framework/process (Spoiler Alert: it&a
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/qWKf3ROVgrY?list=PLEx5khR4g7PIIBNcNhHOMmOhzxcwI5joG&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/41120693&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/41120693&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%&#34; allowfullscreen&gt; &lt;/iframe&gt;
+ 
+
+&lt;p&gt;I presented a shorter, more succinct version of this talk at &lt;a href=&#34;https://vimeo.com/139726208&#34;&gt;The Lead Developer&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;During the talk I show an example of how &lt;em&gt;not&lt;/em&gt; to &lt;a href=&#34;https://gist.github.com/trishagee/a3e4a54329e94ada2fe2&#34;&gt;implement lambdas&lt;/a&gt;,
 and I also demonstrate a very crude performance test for using &lt;code&gt;parallelStream&lt;/code&gt;. I&amp;rsquo;m not going to link to the performance test as it&amp;rsquo;s
@@ -31,16 +34,16 @@ not a shining example of how to write these sorts of tests, but if you&amp;rsquo
 &lt;p&gt;I also talk about how amazing Spock is, so if you&amp;rsquo;re interested you can read more about
 &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;my experiences with Spock&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk was built off an &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
+&lt;p&gt;This talk was built off an &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
 invest your personal time in.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ll leave you with this crude decision
 chart and the mind-map of potential ways to play with a technology. Remember, learning to say &lt;em&gt;&amp;ldquo;no&amp;rdquo;&lt;/em&gt; to a technology can be very powerful.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;PS I&amp;rsquo;m thinking of writing a book, &lt;a href=&#34;https://leanpub.com/careeradviceforprogrammers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;. If you&amp;rsquo;re
@@ -48,7 +51,7 @@ interested, let me know (because, you know, I&amp;rsquo;ve got loads of spare ti
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Presentation Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;presentation-abstract:42b45ac01f3ccbbe86d46b2593258976&#34;&gt;Presentation Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;We all want to stay ahead of the curve - after all, that&amp;rsquo;s what you go to a conference for. But have you ever considered how being ahead
 of the curve might be dangerous?&lt;/em&gt;&lt;/p&gt;
