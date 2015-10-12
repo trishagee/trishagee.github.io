@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title> on Trisha Gee </title>
-    <link>http://trishagee.github.io/</link>
+      <title>Recent Content on Trisha Gee </title>
+    <link>http://trishagee.github.io/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -19,13 +19,13 @@
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
 we had attendees from earlier sessions plus new people too.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The aim of this session was to talk about Lesson 3, but also to wrap up the course as a whole: to talk about what we
 liked and what we would have improved (about both the course itself and our user group events).&lt;/p&gt;
 
-&lt;p&gt;As in the previous &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
+&lt;p&gt;As in the previous &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
 discussion areas:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findAny--&#34;&gt;findAny()&lt;/a&gt;
@@ -89,7 +89,7 @@ the built in collectors like:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;a super-useful way to create Comma Separated Values (CSVs) that I use in my
-&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Where things get a bit murky for me is where we start chaining up collectors:&lt;/p&gt;
 
@@ -132,7 +132,7 @@ the impact of your choices on the performance of the stream.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;For more info&lt;/strong&gt;&lt;br /&gt;
 I&amp;rsquo;m going to add a shameless plug to a friend&amp;rsquo;s book here. I&amp;rsquo;ve been reading a lot about Java 8 for this course, for
-my &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to speed. My favourite book for getting to
+my &lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to speed. My favourite book for getting to
 grips with lambdas and streams
 is &lt;a href=&#34;http://www.amazon.com/gp/product/B00J3B3J3C/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00J3B3J3C&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=IX6U2YT4FADY4JY6&#34;&gt;Java 8 Lambdas: Pragmatic Functional Programming&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=B00J3B3J3C&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 by &lt;a href=&#34;https://twitter.com/RichardWarburto&#34;&gt;Richard Warburton&lt;/a&gt;. This book also contains more info about collectors too,
@@ -154,7 +154,7 @@ And if you can find (or run) a local meetup to discuss it, it makes the experien
       <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/java_8_mooc_session2/</guid>
-      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
@@ -381,7 +381,7 @@ src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;abstract:55bdc67688424da8fd656071ea3cbd85&#34;&gt;Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Rock stars are dead. Ninjas are banished. There are simply too many trashed hotel rooms, dead bodies and failed
 projects. The age of the individual superhero coder is over.&lt;/em&gt;&lt;/p&gt;
@@ -458,7 +458,7 @@ parallel.&lt;/li&gt;
 &lt;p&gt;Of course, I also snuck in some demos of &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&amp;rsquo;s&lt;/a&gt; awesomeness, including
 its magical support for creating lambdas and turning things into (and from) method references.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8mooc/ReplaceWithMethodReferenceMac.gif&#34; alt=&#34;Converting code to Java 8&#34; title=&#34;Converting code to Java 8&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/ReplaceWithMethodReferenceMac.gif&#34; alt=&#34;Converting code to Java 8&#34; title=&#34;Converting code to Java 8&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;It was a great, collaborative session, with most people getting a chance to demonstrate their code (if they wanted
@@ -585,7 +585,7 @@ I told LMAX that was why I was leaving, and off I went.&lt;/p&gt;
 unassigned to a project, I invested that time in porting the blog to a
 more sensible platform, and trying to write a blog a day. Again, I picked
 topics I could comfortably talk about - I spoke about my experiences as a
-&lt;a href=&#34;http://trishagee.github.io/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
+&lt;a href=&#34;/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
 time&lt;/a&gt; (sometimes people will be arsey
 with beginners, but in reality many real human beings can&amp;rsquo;t tell you you&amp;rsquo;re
 wrong when you&amp;rsquo;re just talking about your own experiences), and despite my
@@ -690,7 +690,7 @@ answering questions for the last 6 months.&lt;/p&gt;
 &lt;p&gt;It really was as terrifying as I thought.  But.  It went well. I answered
 difficult questions. We got great feedback.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
 was an important milestone in my evangelism career.  Not only
 did I get to put this presentation on my CV, I got to meet a lot of people in
 this network: Martin introduced me to a lot of high performance specialists;
@@ -703,9 +703,9 @@ and they introduced me to
 to be an important step in turning an idea I had for a panel into a Devoxx
 reality.&lt;/p&gt;
 
-&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;http://trishagee.github.io/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
+&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
 with Mike&lt;/a&gt;, and at
-&lt;a href=&#34;http://trishagee.github.io/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
+&lt;a href=&#34;/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
 largely thanks to the contacts I
 had made and the prestige of having a JavaOne talk under my belt.  So I went
 from basically zero at the start of that year (my blog had been dormant for
@@ -834,7 +834,7 @@ could get going straight away without any ramp up&lt;/p&gt;
       <pubDate>Tue, 30 Jun 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;http://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;7-8 Sep&lt;/strong&gt;: &lt;a href=&#34;http://swancon.co.uk/#speakers&#34;&gt;Swansea Con&lt;/a&gt; - &lt;a href=&#34;http://swancon.co.uk/schedule/#session-7&#34;&gt;Level Up Your
@@ -860,17 +860,17 @@ newest family member.&lt;/p&gt;
 &lt;p&gt;I presented a new talk at &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago 2015&lt;/a&gt;
 about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
 talk covers the same case study as
-&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.&lt;/p&gt;
 
-&lt;p&gt;Slides available below.  As always, the slides are not super-useful out of
-context, but they do contain my conclusions (also note that due to a technology
-fail, my hand-drawn style is even more hand-drawn than usual).&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D-xra_X9Nwg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Slides available below.  (note that due to a technology fail, my hand-drawn style is even more hand-drawn than usual).&lt;/p&gt;
 
 &lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
 
-&lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Questions&lt;/h2&gt;
 
 &lt;p&gt;I sadly did not have a lot of time for questions during the presentation, but
 thanks to the wonders of modern technology, I have a list of unanswered
@@ -1026,7 +1026,7 @@ hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more o
 
 &lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
 I cover this in
-&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
 short version is, I did a week-long spike to investigate whether Spock would
 make testing easier for us, showed the pros and cons to the whole team, and
 then led by example writing tests that (I thought) were more readable than
@@ -1193,7 +1193,7 @@ know is still used at LMAX.  Dave Farley talks about it in some of his
 &lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;resources:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;My talk that specifically looks at the
@@ -1225,7 +1225,7 @@ testing&lt;/a&gt;.&lt;/li&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;abstract:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
 and c) write readable tests?&lt;/p&gt;
@@ -1275,7 +1275,7 @@ of the developers.&lt;/i&gt;&lt;/p&gt;
       <pubDate>Thu, 21 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/android_xtended/</guid>
-      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
+      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
 calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;You may have noticed that the more I go to conferences, the less I write about them.  I could claim lack of time, but
@@ -1283,12 +1283,12 @@ the fact is that all my write-ups will be something along the lines of &amp;ldqu
 think, met interesting people, gave a talk or two that seemed to go well&amp;rdquo;. Not sure if people get bored of reading
 that, but I get bored of writing it.&lt;/p&gt;
 
-&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
+&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;That&amp;rsquo;s not to say I&amp;rsquo;m bored of conferences. On the contrary - since I work from home, travelling to new places and
 meeting Real Human Beings keeps me sane. Plus conferences are fun.&lt;/p&gt;
 
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
 setup&#34; title=&#34;The setup&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;But I went to a conference on Saturday that makes me feel compelled to write something, and not just because it was
@@ -1299,27 +1299,27 @@ Android events every other month, they decided they had so many interesting spea
 in Sevilla that they wanted to run a whole day, single track conference, on behalf of &lt;a href=&#34;https://plus.google.com/communities/114997118727600981533&#34;&gt;GDG Sevilla&lt;/a&gt;.
 &lt;a href=&#34;http://www.androidxtended.com/&#34;&gt;Android Xtended&lt;/a&gt; was born.&lt;/p&gt;
 
-&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
+&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
  
 
 &lt;p&gt;As a Java &amp;ldquo;Technical Advocate&amp;rdquo;, I suppose I should keep an eye on what&amp;rsquo;s going on in the Android space, it&amp;rsquo;s quite a
-huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
+huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
 of official capacity (I wasn&amp;rsquo;t speaking, manning a booth, organising or sponsoring), so I could just enjoy it.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Firstly, they roped me into doing registrations. Me! I was concerned my Spanish wasn&amp;rsquo;t up for it, but apparently I only
 needed two words: &amp;ldquo;nombre&amp;rdquo; and &amp;ldquo;talla&amp;rdquo; (for the t-shirt). Oh, and &amp;ldquo;treinta y uno b&amp;rdquo; - there was such demand for the
 conference the initial venue wasn&amp;rsquo;t big enough, so it was being hosted at two sites on the same road. Not
 surprisingly, some turned up to the wrong one.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Unlike a large number of our &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;/&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; events, all the talks were in Spanish. So feel
 free to ignore my analysis if you like - my Spanish comprehension is pretty good, but sometimes I don&amp;rsquo;t realise when
 I didn&amp;rsquo;t understand something and just make up my own story.&lt;/p&gt;
 
-&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
+&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
 alt=&#34;@flipper83&#34; title=&#34;@flipper83&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;A lot of what I&amp;rsquo;ve seen so far in the Android space is Getting Started type material - a lot of tutorials and
@@ -1329,7 +1329,7 @@ interest me as an experienced Java person - easy automation of testing, good des
  need to re-iterate it in the Android space. Or it may be that I don&amp;rsquo;t see the entry-level Java stuff any more,
  because I don&amp;rsquo;t need it, and I seek out the topics that interest me.&lt;/p&gt;
 
-&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
+&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
  alt=&#34;@JMPergar&#34; title=&#34;@JMPergar&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Or it may be that as Android is one of those
@@ -1338,7 +1338,7 @@ interest me as an experienced Java person - easy automation of testing, good des
  reason, I had been starting to feel like the Android ecosystem was missing people taking developers beyond that
  initial step of getting something to work and up to the level of creating maintainable code.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Android Xtended put my mind at rest. Here was a range of talks that led attendees through the things that will make
 them more effective developers - tools and libraries to use; testing approaches; integration with persistence; clean
@@ -1347,12 +1347,12 @@ of JetBrains, I was obviously very happy to see both
 &lt;a href=&#34;http://developer.android.com/tools/studio/index.html&#34;&gt;Android Studio&lt;/a&gt; and
 &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; mentioned and used throughout as well.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;As well as fantastic speakers (they knew their stuff, were clearly practitioners, and all had great individual
 presentation styles), there were three mob-programming sessions.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;This was an ambitious attempt to not just preach to
 a passive audience, but to involve them in creating real, working code to teach fundamental practices - dependency
@@ -1362,27 +1362,27 @@ of not just how to use the technologies, but what they were for. I also saw a lo
 realise the power of refactoring using an IDE - I firmly believe the best way to teach the power of a tool is by
 pair programming or, at least, using the tool in real use cases in front of people.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;The mob programming was kinda
 like a half day tutorial squished into an hour. I&amp;rsquo;d be interested to hear how the attendees found it. For me, since
 this was a full day conference that cost &amp;euro;10, I thought getting three short tutorials as well as five excellent
 talks was &lt;em&gt;very&lt;/em&gt; good value for money.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
   
 
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
 alt=&#34;Interesting...&#34; title=&#34;Interesting...&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;I&amp;rsquo;d be remiss in talking about the conference if I didn&amp;rsquo;t mention the venue.  We were at
 &lt;a href=&#34;http://espaciores.org/&#34;&gt;Espacio RES&lt;/a&gt;, which was pretty easy to get to, and a really nice, airy, comfortable
-space&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+space&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
 And they let us rearrange their whole place just for us. The only downside is that it doesn&amp;rsquo;t hold more people, which
 is a shame, and the reason we had to host on two sites (I can&amp;rsquo;t comment on the other site as I stayed
 at RES the whole day, but we&amp;rsquo;re very grateful to &lt;a href=&#34;https://bitnami.com/&#34;&gt;Bitnami&lt;/a&gt; for lending us their offices as well).&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;So, what did I learn?&lt;/p&gt;
 
@@ -1395,11 +1395,11 @@ talent being showcased, it gives developers here good role models and shows that
 Spain.&lt;/li&gt;
 &lt;li&gt;Sevilla has a very healthy tech scene with people more than happy to give up a Saturday to learn new things. In
 fact, for some set of people, they prefer Saturdays to weekday
-evenings&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
+evenings&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
 future&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
  Saturdays?&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Android Xtended was a fantastic event, with great speakers and engaged attendees.  I loved how social
@@ -1408,7 +1408,7 @@ future&amp;hellip;&lt;/li&gt;
  arranging it, you would never believe from how smoothly it went that this two-venue event was organised by just two
  guys. Well done &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt;!&lt;/p&gt;
 
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1463,7 +1463,7 @@ future&amp;hellip;&lt;/li&gt;
       <guid>http://trishagee.github.io/post/blind_cfps_2/</guid>
       <description>
 
-&lt;p&gt;Since publishing &lt;a href=&#34;http://trishagee.github.io/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
+&lt;p&gt;Since publishing &lt;a href=&#34;/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
 another post to answer them.&lt;/p&gt;
 
 &lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
@@ -1472,7 +1472,7 @@ is an answer to &amp;ldquo;How do I get more women speakers at my conference?&am
 women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
 in the conferences I speak at/help organise.&lt;/p&gt;
 
-&lt;h4 id=&#34;you-re-missing-the-point-of-blind-cfps:43f099050d27fb0647d57b33c7259595&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
+&lt;h4 id=&#34;toc_0&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
 
 &lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
 in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
@@ -1490,7 +1490,7 @@ minorities for not meeting your criteria.&lt;/p&gt;
 &lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
 of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
 
-&lt;h4 id=&#34;an-abstract-is-not-a-representation-of-your-talk:43f099050d27fb0647d57b33c7259595&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
+&lt;h4 id=&#34;toc_1&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
 
 &lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
 a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
@@ -1512,7 +1512,7 @@ to writing good abstracts (or CVs), but mastery of that skill does not necessari
 represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
 being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
 
-&lt;h4 id=&#34;for-goodness-sake-trisha-the-postscript-is-nearly-longer-than-the-original-post:43f099050d27fb0647d57b33c7259595&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
+&lt;h4 id=&#34;toc_2&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
 
 &lt;p&gt;Yeah, sorry.&lt;/p&gt;
 
@@ -1540,7 +1540,7 @@ audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
       <guid>http://trishagee.github.io/post/blind_cfps/</guid>
       <description>
 
-&lt;p&gt;Off the back of &lt;a href=&#34;http://trishagee.github.io/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
+&lt;p&gt;Off the back of &lt;a href=&#34;/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
 around blind &lt;a href=&#34;http://www.wikicfp.com/cfp/&#34;&gt;CFPs&lt;/a&gt; (Call For Papers - usually to get into a conference you submit to a CFP) for
 conferences. I often hear it said that a blind CFP will fix, or at least improve, the diversity imbalance at conferences.&lt;/p&gt;
 
@@ -1646,10 +1646,10 @@ because I have two X chromosomes, I found half of those just now, in less than t
 &lt;li&gt;Put the faces of the women you do want to have speak (or the women on your programme committee, or both) on your
 website - showing these women sends the message that this conference is for women. It should also impact the diversity
 of your attendees.&lt;/li&gt;
-&lt;li&gt;Reach out to specific women speakers and ask them to present. &lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;I&amp;rsquo;ve talked about this before&lt;/a&gt;,
+&lt;li&gt;Reach out to specific women speakers and ask them to present. &lt;a href=&#34;/post/more_female_speakers&#34;&gt;I&amp;rsquo;ve talked about this before&lt;/a&gt;,
 women speakers are few and far between, and a) they get
 booked in advance and b) are busy enough not to have to (or want to) submit via a CFP process.&lt;/li&gt;
-&lt;li&gt;There are &lt;a href=&#34;http://trishagee.github.io/post/more_female_speakers&#34;&gt;more ideas here&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;There are &lt;a href=&#34;/post/more_female_speakers&#34;&gt;more ideas here&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;And there&amp;rsquo;s more - you don&amp;rsquo;t just have to drain the pool dry of known competent speakers-who-tick-some-diversity-box. With
@@ -1706,9 +1706,9 @@ the overall ecosystem.&lt;/p&gt;
 cues.  Diversity is only going to happen if people fight for it, and if we actively train, mentor, and support those
 trying to break through the barriers.&lt;/p&gt;
 
-&lt;h3 id=&#34;postscript:db2f562112b18dc104706e916c34cc92&#34;&gt;Postscript&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Postscript&lt;/h3&gt;
 
-&lt;p&gt;I wrote a &lt;a href=&#34;http://trishagee.github.io/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
+&lt;p&gt;I wrote a &lt;a href=&#34;/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
 </description>
     </item>
     
