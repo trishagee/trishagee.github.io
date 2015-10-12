@@ -54,17 +54,5 @@ whether you&amp;rsquo;ve written it yet or not, you&amp;rsquo;ll need to know:&l
 </description>
     </item>
     
-    <item>
-      <title></title>
-      <link>http://trishagee.github.io/drafts/code_review_design/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/drafts/code_review_design/</guid>
-      <description>&lt;p&gt;While it&amp;rsquo;s great to know that the code does what it is supposed to do, this
-focus on tests does not necessarily address the design or architecture of
-that code. This will be addressed in this post&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>

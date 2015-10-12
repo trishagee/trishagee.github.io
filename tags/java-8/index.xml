@@ -40,8 +40,15 @@ simplified a little since then)&lt;/li&gt;
 
 &lt;h4 id=&#34;toc_2&#34;&gt;More details&lt;/h4&gt;
 
-&lt;p&gt;I wrote &lt;a href=&#34;https://community.oracle.com/docs/DOC-920950&#34;&gt;an article&lt;/a&gt; for Oracle Technology Network in which I go into
-some of the interesting code sections in more detail. It also shows more clearly some of the features of
+&lt;p&gt;You can follow my tutorial on &amp;ldquo;Building Java 8 Applications with Microservices&amp;rdquo;, which is a deep dive into
+the code I write in the presentation - 3 hours of material where I go into each section in a lot more detail:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/link?id=/zztT3fScng&amp;offerid=163217.2348574&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Ftitle%2F9780134312187&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134312187&amp;type=d&#34; &gt;&lt;/a&gt;&lt;IMG border=0 width=1 height=1 src=&#34;http://ad.linksynergy.com/fs-bin/show?id=/zztT3fScng&amp;bids=163217.2348574&amp;type=2&amp;subid=0&#34; &gt;&lt;/p&gt;
+
+&lt;p&gt;Alternatively, you can &lt;a href=&#34;https://www.safaribooksonline.com/library/view/building-java-8/9780134312170/&#34;&gt;watch this tutorial&lt;/a&gt; with a Safari Books Online subscription.&lt;/p&gt;
+
+&lt;p&gt;I also wrote &lt;a href=&#34;https://community.oracle.com/docs/DOC-920950&#34;&gt;an article&lt;/a&gt; for Oracle Technology Network in which I go
+into some of the interesting code sections in more detail. It also shows more clearly some of the features of
 IntelliJ IDEA that make the transition to Java 8 a bit easier for developers.&lt;/p&gt;
 
 &lt;h4 id=&#34;toc_3&#34;&gt;Project code&lt;/h4&gt;
