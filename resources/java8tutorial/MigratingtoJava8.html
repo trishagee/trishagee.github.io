@@ -1,6 +1,5 @@
-
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<!-- saved from url=(0092)http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html -->
+<!-- saved from url=(0103)http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d23129e377 -->
 <html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><title>Migrating to Java 8</title><link rel="stylesheet" href="./MigratingtoJava8-ver2_files/styles.min.css"><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main.build" src="./MigratingtoJava8-ver2_files/main.build.js"></script><style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
 .en-markup-crop-options {
     top: 18px !important;
@@ -14,48 +13,47 @@
 .en-markup-crop-options div div:first-of-type {
     margin-left: 0px !important;
 }
-</style></head><body data-id="Migrating_to_Java_8"><div class="wrapper"><section class="panel _nav"><header class="panel__header"><div class="container"><form class="search-box"><label for="search-box__input" class="search-box__label"><input type="text" class="search-box__input" id="search-box__input" placeholder="Search IntelliJ IDEA Help" autocomplete="off"></label><div class="search-box__clear" title="Clear"></div></form></div></header><nav class="panel__content"><div class="container _nav"><menu class="nav-tree"><ul class="nav-tree__list"><li class="nav-tree__item _branch _opened"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId202.html" class="nav-tree__link">How-to</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"><li class="nav-tree__item _branch _opened"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/application_gevelopment_guidelines.html" class="nav-tree__link">Languages and Frameworks</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"><li class="nav-tree__item _branch _opened"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Java_SE.html" class="nav-tree__link">Java SE</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"><li class="nav-tree__item _active _opened _branch"><a href="./MigratingtoJava8-ver2_files/MigratingtoJava8-ver2.html" class="nav-tree__link">Migrating to Java 8</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"></ul></li></ul></li></ul></li></ul></li></ul></menu></div><div class="container _footer panel__footer"><p><a href="mailto:webmaster@jetbrains.com">Send feedback</a></p></div></nav><div class="menu-spinner" style="display: none;"></div></section><main class="panel _main"><header class="panel__header _fixed"><div class="container"><h3>IntelliJ IDEA 15.0 Help</h3><div class="panel__header-placeholder">/<strong>Migrating to Java 8</strong></div><div class="shortcuts-switcher"><label for="switch-shortcuts">Keymap:</label><label class="select _shortcuts" style="width: 135px;"><span class="select__button"><span class="select__text">Default (Mac OS X 10.5+)</span></span><select id="switch-shortcuts" class="select _shortcuts select__input" height="1"><option data-group="primary" value="default" selected="">Default (Windows/Linux)</option><option data-group="primary" value="default_for_gnome">GNOME</option><option data-group="primary" value="default_for_kde">KDE</option><option data-group="primary" value="default_for_xwin">XWindow</option><option data-group="primary" value="emacs">Emacs</option><option data-group="primary" value="jbuilder">JBuilder</option><option data-group="primary" value="visual_studio">Visual Studio</option><option data-group="primary" value="netbeans_6.5">NetBeans 6.5</option><option data-group="primary" value="eclipse">Eclipse</option><option data-group="secondary" value="mac_os_x_10.5_">Default (Mac OS X 10.5+)</option><option data-group="secondary" value="mac_os_x">OS X</option><option data-group="secondary" value="eclipse_mac_os_x">OS X Eclipse</option><option data-group="secondary" value="intellij_idea_classic_os_x">IntelliJ IDEA Classic (OS X)</option><option data-group="secondary" value="xcode">Xcode</option><option data-group="secondary" value="visual_studio">Visual Studio</option><option data-group="secondary" value="resharper">ReSharper</option><option data-group="secondary" value="resharper_osx">ReSharper OSX</option><option data-group="secondary" value="emacs">Emacs</option></select></label></div><div class="panel-trigger"></div></div><div class="content-spinner"><div class="content-spinner__item"></div><div class="content-spinner__item"></div><div class="content-spinner__item"></div><div class="content-spinner__item"></div><div class="content-spinner__item"></div></div></header><div class="panel__header _emulator" style="height: 28px;"></div><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="true"><div class="navigation-links _top"><a class="navigation-links__prev" href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Java_SE.html">Java SE</a><a class="navigation-links__next" href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId10000001.html">Java EE</a></div><h1>Migrating to Java 8</h1><p>Keeping your code up to date with the latest versions of languages and libraries is a challenging task.
-    Fortunately, IntelliJ IDEA can make this easier, with inspections to guide your efforts, automatic fixes, and
-    the usual refactoring tools.
-</p><p>
-    <a href="http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html" data-bypass="yes"><span>Java SE 8</span></a>
-    is the largest change in the language, at least since Java 5, if not in the history of Java. Java 8
-    brings entire new concepts to the language, like lambda expressions, and adds new methods to classes that
-    developers have been using comfortably for years. In addition, there are new ways of doing things, including the
-    new
-    <a href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html" data-bypass="yes"><span>Date and Time API</span></a>,
-    and an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html" data-bypass="yes"><span>Optional</span></a>
-    type to help with null-safety.
-</p><p>In this tutorial we're going to show how IntelliJ IDEA can help you transition your code from Java 6 (or 7) to Java
-    8, using code examples to show what help is available and when you may, or may not, choose to use new features.
-</p><p>This tutorial assumes the following prerequisites:
-</p><ul class="list _bullet"><li class="list__item">You already have an IntelliJ IDEA project for an existing codebase.</li></ul>
-    <p></p><p>On this page:</p><ul><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e33">Approaching the problem</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e51">Initial setup</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e68">Configuring and running language level migration inspections</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e132">Lambda expressions</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e221">Impact of applying lambda expressions</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e282">New Collection Methods</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e334">Streams API - foreach</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e379">Streams API - collect</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e421">Impact of replacing foreach with Streams</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25411e477">Summary</a></li></ul><a name="d25411e33"></a><a name="dynaProc0"></a><section class="procedure-steps"><h2>Approaching the problem</h2><p>
-    </p><p>The sheer number of options and features that IntelliJ IDEA has available might be overwhelming,
-        especially when tackling a problem as big as trying to migrate a whole codebase (or even just a module
-        or package) to a new version. As with most software development problems, it pays to approach this in an
-        iterative fashion.
-    </p>
+</style></head><body data-id="Migrating_to_Java_8"><div class="wrapper"><section class="panel _nav"><header class="panel__header"><div class="container"><form class="search-box"><label for="search-box__input" class="search-box__label"><input type="text" class="search-box__input" id="search-box__input" placeholder="Search IntelliJ IDEA Help" autocomplete="off"></label><div class="search-box__clear" title="Clear"></div></form></div></header><nav class="panel__content"><div class="container _nav"><menu class="nav-tree"><ul class="nav-tree__list"><li class="nav-tree__item _branch _opened"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId202.html" class="nav-tree__link">How-to</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"><li class="nav-tree__item _branch _opened"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/application_gevelopment_guidelines.html" class="nav-tree__link">Languages and Frameworks</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"><li class="nav-tree__item _branch _opened"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Java_SE.html" class="nav-tree__link">Java SE</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"><li class="nav-tree__item _active _opened _branch"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html" class="nav-tree__link">Migrating to Java 8</a><div class="nav-tree__item-expander"></div><ul class="nav-tree__list"></ul></li></ul></li></ul></li></ul></li></ul></menu></div><div class="container _footer panel__footer"><p><a href="mailto:webmaster@jetbrains.com">Send feedback</a></p></div></nav><div class="menu-spinner" style="display: none;"></div></section><main class="panel _main"><header class="panel__header _fixed"><div class="container"><h3>IntelliJ IDEA 15.0 Help</h3><div class="panel__header-placeholder">/<strong>Migrating to Java 8</strong></div><div class="shortcuts-switcher"><label for="switch-shortcuts">Keymap:</label><label class="select _shortcuts" style="width: 135px;"><span class="select__button"><span class="select__text">Default (Mac OS X 10.5+)</span></span><select id="switch-shortcuts" class="select _shortcuts select__input" height="1"><option data-group="primary" value="default" selected="">Default (Windows/Linux)</option><option data-group="primary" value="default_for_gnome">GNOME</option><option data-group="primary" value="default_for_kde">KDE</option><option data-group="primary" value="default_for_xwin">XWindow</option><option data-group="primary" value="emacs">Emacs</option><option data-group="primary" value="jbuilder">JBuilder</option><option data-group="primary" value="visual_studio">Visual Studio</option><option data-group="primary" value="netbeans_6.5">NetBeans 6.5</option><option data-group="primary" value="eclipse">Eclipse</option><option data-group="secondary" value="mac_os_x_10.5_">Default (Mac OS X 10.5+)</option><option data-group="secondary" value="mac_os_x">OS X</option><option data-group="secondary" value="eclipse_mac_os_x">OS X Eclipse</option><option data-group="secondary" value="intellij_idea_classic_os_x">IntelliJ IDEA Classic (OS X)</option><option data-group="secondary" value="xcode">Xcode</option><option data-group="secondary" value="visual_studio">Visual Studio</option><option data-group="secondary" value="resharper">ReSharper</option><option data-group="secondary" value="resharper_osx">ReSharper OSX</option><option data-group="secondary" value="emacs">Emacs</option></select></label></div><div class="panel-trigger"></div></div><div class="content-spinner"><div class="content-spinner__item"></div><div class="content-spinner__item"></div><div class="content-spinner__item"></div><div class="content-spinner__item"></div><div class="content-spinner__item"></div></div></header><div class="panel__header _emulator" style="height: 28px;"></div><section class="panel__content"><div class="container"><article class="article" data-shortcut-switcher="true"><div class="navigation-links _top"><a class="navigation-links__prev" href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Java_SE.html">Java SE</a><a class="navigation-links__next" href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId10000001.html">Java EE</a></div><h1>Migrating to Java 8</h1><p>Keeping your code up to date with the latest versions of languages and libraries is a challenging task.
+        Fortunately, IntelliJ IDEA can make this easier, with inspections to guide your efforts, automatic fixes, and
+        the usual refactoring tools.
+    </p><p>
+        <a href="http://www.oracle.com/technetwork/java/javase/8-whats-new-2157071.html" data-bypass="yes"><span>Java SE 8</span></a>
+        brings entire new concepts to the language, like lambda expressions, and adds new methods to classes that
+        developers have been using comfortably for years. In addition, there are new ways of doing things, including the
+        new
+        <a href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html" data-bypass="yes"><span>Date and Time API</span></a>,
+        and an <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html" data-bypass="yes"><span>Optional</span></a>
+        type to help with null-safety.
+    </p><p>In this tutorial we're going to show how IntelliJ IDEA can help you transition your code from Java 6 (or 7) to Java
+        8, using code examples to show what help is available and when you may, or may not, choose to use new features.
+    </p><p>This tutorial assumes the following prerequisites:
+        </p><ul class="list _bullet"><li class="list__item">You already have an IntelliJ IDEA project for an existing codebase.</li></ul>
+    <p></p><p>On this page:</p><ul><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e33">Approaching the problem</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e51">Initial setup</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e68">Configuring and running language level migration inspections</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e132">Lambda expressions</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e221">Impact of applying lambda expressions</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e282">New Collection Methods</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e332">Streams API - foreach</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e377">Streams API - collect</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e434">Impact of replacing foreach with Streams</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e490">New Date and Time API</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e590">Impact of migrating to the new Date and Time API</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e603">Using Optional</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e699">Impact of migrating to Optional</a></li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/Migrating_to_Java_8.html#d25133e744">Summary</a></li></ul><a name="d25133e33"></a><a name="dynaProc0"></a><section class="procedure-steps"><h2>Approaching the problem</h2><p>
+            </p><p>The sheer number of options and features that IntelliJ IDEA has available might be overwhelming,
+                especially when tackling a problem as big as trying to migrate a whole codebase (or even just a module
+                or package) to a new version. As with most software development problems, it pays to approach this in an
+                iterative fashion.
+            </p>
         <p></p><ol class="list _decimal"><li class="list__item">Pick a small number of changes to implement.</li><li class="list__item">Pick a section of the codebase to apply them to.</li><li class="list__item">Apply the changes in batches, running your project tests frequently and checking in to your VCS system
             when the tests are green.
         </li></ol><p class="procIntro">
-        </p><p>To this end, this tutorial will group changes into sections rather than assume a Big Bang approach.</p>
-        <p></p></section><a name="d25411e51"></a><a name="dynaProc1"></a><section class="procedure-steps"><h2>Initial setup</h2><ol class="list _decimal"><li class="list__item">Make sure you're compiling with a Java 8 SDK. If you're not,
-        <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId324.html"><span>change your SDK</span></a>
-        to the latest version of Java 8.
-    </li><li class="list__item">In the <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId2273.html"><span>project settings</span></a>, you should set your language level to "8.0 - Lambdas,
-        type annotations".
-    </li></ol><p class="procIntro">
-    </p><p>If you are compiling the code in a CI environment, you'll need to ensure the new code is compiled using
-        Java 8 there as well. Configuring this is beyond the scope of this tutorial.
-    </p>
-        <p></p></section><a name="d25411e68"></a><a name="dynaProc2"></a><section class="procedure-steps"><h2>Configuring and running language level migration inspections</h2><p>
-    </p><p>Your project may already make use of inspections to encourage a certain level
-        of consistency and quality in the code. To focus purely on just making changes related to upgrading to
-        Java 8, we're going to create a new inspection profile.
-    </p>
+            </p><p>To this end, this tutorial will group changes into sections rather than assume a Big Bang approach.</p>
+        <p></p></section><a name="d25133e51"></a><a name="dynaProc1"></a><section class="procedure-steps"><h2>Initial setup</h2><ol class="list _decimal"><li class="list__item">Make sure you're compiling with a Java 8 SDK. If you're not,
+            <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId324.html"><span>change your SDK</span></a>
+            to the latest version of Java 8.
+        </li><li class="list__item">In the <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId2273.html"><span>project settings</span></a>, you should set your language level to "8.0 - Lambdas,
+            type annotations".
+        </li></ol><p class="procIntro">
+            </p><p>If you are compiling the code in a CI environment, you'll need to ensure the new code is compiled using
+                Java 8 there as well. Configuring this is beyond the scope of this tutorial.
+            </p>
+        <p></p></section><a name="d25133e68"></a><a name="dynaProc2"></a><section class="procedure-steps"><h2>Configuring and running language level migration inspections</h2><p>
+            </p><p>Your project may already make use of inspections to encourage a certain level
+                of consistency and quality in the code. To focus purely on just making changes related to upgrading to
+                Java 8, we're going to create a new inspection profile.
+            </p>
         <p></p><ol class="list _decimal"><li class="list__item">Navigate to the
-            <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId701.html"><span>inspections settings</span></a>..
+            <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId701.html"><span>inspections settings</span></a>.
         </li><li class="list__item">
             <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId703.html"><span>Create a new inspection profile</span></a>
             called "Java8".
@@ -71,43 +69,43 @@
             These inspections will show us areas in your code where you may be able to use the following Java 8
             features:
             <ul class="list _ul"><li class="list__item">
-                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" data-bypass="yes"><span>Lambda expressions</span></a>
-            </li><li class="list__item">
-                <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html" data-bypass="yes"><span>Method references</span></a>
-            </li><li class="list__item">New
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html" data-bypass="yes"><span>Collection</span></a>
-                methods
-            </li><li class="list__item">
-                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" data-bypass="yes"><span>Streams API</span></a>
-            </li></ul>
+                    <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" data-bypass="yes"><span>Lambda expressions</span></a>
+                </li><li class="list__item">
+                    <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html" data-bypass="yes"><span>Method references</span></a>
+                </li><li class="list__item">New
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html" data-bypass="yes"><span>Collection</span></a>
+                    methods
+                </li><li class="list__item">
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" data-bypass="yes"><span>Streams API</span></a>
+                </li></ul>
         </li><li class="list__item">Click OK to save these settings to the "Java8" profile and close the settings window.</li><li class="list__item"><a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId713.html"><span>Run the inspections</span></a>, selecting the "Java8" profile and the scope to run
             the inspections on. If your project is small, that might be the whole codebase, but more likely you will
             want to select a module or package to start with.
         </li></ol><p class="procIntro">
-        </p><p>
-            Once
-            <span class="control">Analyse code</span>
-            has finished running, you'll see a set of results in the
-            <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId2345.html"><span>Inspection Tool Window</span></a>.
-        </p>
-        <p></p></section><a name="d25411e132"></a><a name="dynaProc3"></a><section class="procedure-steps"><h2>Lambda expressions</h2><p>
-    </p><p>The inspections will show you places where you can convert code automatically to use lambda expressions.
-        There are a number of places you might typically discover this in your existing code, for example when
-        you create anonymous inner classes for:
-    </p><ul class="list _ul"><li class="list__item">
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html" data-bypass="yes"><span>Runnable</span></a>,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html" data-bypass="yes"><span>Callable</span></a>
-    </li><li class="list__item">
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html" data-bypass="yes"><span>Comparator</span></a>
-    </li><li class="list__item">
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileFilter.html" data-bypass="yes"><span>FileFilter</span></a>,
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/PathMatcher.html" data-bypass="yes"><span>PathMatcher</span></a>
-    </li><li class="list__item">
-        <a href="http://docs.oracle.com/javase/8/javafx/api/toc.htm" data-bypass="yes"><span>EventHandler</span></a>
-    </li><li class="list__item">Third party interfaces like
-        <a href="http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/base/Predicate.html" data-bypass="yes"><span>Guava's Predicate</span></a>
-    </li></ul>
-        <p></p>
+            </p><p>
+                Once
+                <span class="control">Analyse code</span>
+                has finished running, you'll see a set of results in the
+                <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId2345.html"><span>Inspection Tool Window</span></a>.
+            </p>
+        <p></p></section><a name="d25133e132"></a><a name="dynaProc3"></a><section class="procedure-steps"><h2>Lambda expressions</h2><p>
+            </p><p>The inspections will show you places where you can convert code automatically to use lambda expressions.
+                There are a number of places you might typically discover this in your existing code, for example when
+                you create anonymous inner classes for:
+                </p><ul class="list _ul"><li class="list__item">
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/Runnable.html" data-bypass="yes"><span>Runnable</span></a>,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Callable.html" data-bypass="yes"><span>Callable</span></a>
+                    </li><li class="list__item">
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html" data-bypass="yes"><span>Comparator</span></a>
+                    </li><li class="list__item">
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/io/FileFilter.html" data-bypass="yes"><span>FileFilter</span></a>,
+                        <a href="https://docs.oracle.com/javase/8/docs/api/java/nio/file/PathMatcher.html" data-bypass="yes"><span>PathMatcher</span></a>
+                    </li><li class="list__item">
+                        <a href="http://docs.oracle.com/javase/8/javafx/api/toc.htm" data-bypass="yes"><span>EventHandler</span></a>
+                    </li><li class="list__item">Third party interfaces like
+                        <a href="http://docs.guava-libraries.googlecode.com/git/javadoc/com/google/common/base/Predicate.html" data-bypass="yes"><span>Guava's Predicate</span></a>
+                    </li></ul>
+            <p></p>
         <p></p><ol class="list _decimal"><li class="list__item">In the <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId2345.html"><span>Inspection Tool Window</span></a>, you should see results grouped under "Java
             language level migration aids". Under this heading, you may see "Anonymous type can be replaced with
             lambda". Open up this heading to see all the sections of the code where IntelliJ IDEA has detected you can
@@ -117,49 +115,50 @@
             <code class="code" data-lang="Java">Runnable</code>
             anonymous inner class:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">executorService</span><span class="o">.</span><span class="na">scheduleAtFixedRate</span><span class="o">(</span><span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
-                <span class="nd">@Override</span>
-                <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-                <span class="n">getDs</span><span class="o">().</span><span class="na">save</span><span class="o">(</span><span class="k">new</span> <span class="n">CappedPic</span><span class="o">(</span><span class="n">title</span><span class="o">));</span>
-                <span class="o">}</span>
-                <span class="o">},</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">500</span><span class="o">,</span> <span class="n">MILLISECONDS</span><span class="o">);</span>
-            </code></div>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">getDs</span><span class="o">().</span><span class="na">save</span><span class="o">(</span><span class="k">new</span> <span class="n">CappedPic</span><span class="o">(</span><span class="n">title</span><span class="o">));</span>
+    <span class="o">}</span>
+<span class="o">},</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">500</span><span class="o">,</span> <span class="n">MILLISECONDS</span><span class="o">);</span>
+</code></div>
         </li><li class="list__item">Many inspections suggest a fix that can be applied, and "Anonymous type can be replaced with
             lambda" does have a suggested resolution. To apply the fix, either:
             <ul class="list _ul"><li class="list__item">Click on the
-                <span class="control">Problem Resolution</span>
-                in the right of the inspection window, in our case this is
-                <span class="control">Replace with lambda</span>.
-            </li><li class="list__item">Press <kbd data-default="Alt+Enter" data-default_for_gnome="Alt+Enter" data-default_for_kde="Alt+Enter" data-default_for_xwin="Alt+Enter" data-emacs="Alt+Enter" data-jbuilder="Alt+Enter" data-visual_studio="Alt+Enter" data-netbeans_6.5="N/A" data-eclipse="Alt+Enter" data-mac_os_x_10.5_="⌥⏎" data-mac_os_x="⌥⏎" data-eclipse_mac_os_x="⌘1" data-intellij_idea_classic_os_x="N/A" data-xcode="N/A" data-resharper="N/A" data-resharper_osx="N/A" class="">⌥⏎</kbd> on the grey code in the editor and select
-                <span class="control">Replace with lambda</span>.
-            </li></ul>
+                    <span class="control">Problem Resolution</span>
+                    in the right of the inspection window, in our case this is
+                    <span class="control">Replace with lambda</span>.
+                </li><li class="list__item">Or press <kbd data-default="Alt+Enter" data-default_for_gnome="Alt+Enter" data-default_for_kde="Alt+Enter" data-default_for_xwin="Alt+Enter" data-emacs="Alt+Enter" data-jbuilder="Alt+Enter" data-visual_studio="Alt+Enter" data-netbeans_6.5="N/A" data-eclipse="Alt+Enter" data-mac_os_x_10.5_="⌥⏎" data-mac_os_x="⌥⏎" data-eclipse_mac_os_x="⌘1" data-intellij_idea_classic_os_x="N/A" data-xcode="N/A" data-resharper="N/A" data-resharper_osx="N/A" class="">⌥⏎</kbd> on the grey code in the editor and select
+                    <span class="control">Replace with lambda</span>.
+                </li></ul>
         </li><li class="list__item">IntelliJ IDEA will then automatically change the code above to use a lambda expression:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">executorService</span><span class="o">.</span><span class="na">scheduleAtFixedRate</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="n">getDs</span><span class="o">().</span><span class="na">save</span><span class="o">(</span><span class="k">new</span> <span class="n">CappedPic</span><span class="o">(</span><span class="n">title</span><span class="o">)),</span> <span class="mi">0</span><span class="o">,</span> <span class="mi">500</span><span class="o">,</span> <span class="n">MILLISECONDS</span><span class="o">);</span></code></div>
         </li></ol><p class="procIntro">
-        </p><p>
-            You'll notice that lambda expressions can state very little in terms of type information. Here, the fact
-            that this lambda represents an implementation of
-            <code class="code" data-lang="Java">Runnable</code>
-            all but disappears. IntelliJ IDEA will provide you with information about the type of the lambda expression
-            via the lambda icon in the left gutter:
-        </p><figure><img alt="ij_java_8_lambda_gutter_icon" width="914" height="70" src="./MigratingtoJava8-ver2_files/ij_java_8_lambda_gutter_icon.png"></figure>
-        Hovering over this will tell you the type, and clicking lets you navigate to the declaration.
+            </p><p>
+                You'll notice that lambda expressions can state very little in terms of type information. Here, the fact
+                that this lambda represents an implementation of
+                <code class="code" data-lang="Java">Runnable</code>
+                all but disappears. IntelliJ IDEA will provide you with information about the type of the lambda expression
+                via the lambda icon in the left gutter:
+                </p><figure><img alt="ij_java_8_lambda_gutter_icon" width="914" height="70" src="./MigratingtoJava8-ver2_files/ij_java_8_lambda_gutter_icon.png"></figure>
+                Hovering over this will tell you the type, and clicking lets you navigate to the declaration.
+            <p></p>
+        <p></p></section><a name="d25133e221"></a><h2>Impact of applying lambda expressions</h2>
+        <p>
+            You should be able to automatically apply this fix to all places where anonymous inner classes are found
+            in your codebase without impacting the functionality in your system. Applying the change will generally
+            also improve the readability of your code, removing lines of boilerplate like in the example above.
+        </p>
+        <p>
+            However, you may want to check each individual change, as:
+            </p><ul class="list _ul"><li class="list__item">Larger anonymous inner classes may not be very readable in a lambda form.</li><li class="list__item">There may be additional changes and improvements you can make.</li></ul>
         <p></p>
-        <p></p></section><a name="d25411e221"></a><h2>Impact of applying lambda expressions</h2>
-    <p>You should be able to automatically apply this fix to all places where anonymous inner classes are found
-        in your codebase without impacting the functionality in your system. Applying the change will generally
-        also improve the readability of your code, removing lines of boilerplate like in the example above.
-    </p>
-    <p>
-        However, you may want to check each individual change, as:
-    </p><ul class="list _ul"><li class="list__item">Larger anonymous inner classes may not be very readable in a lambda form.</li><li class="list__item">There may be additional changes and improvements you can make.</li></ul>
-    <p></p>
-    <p>Let's address both points with an example.</p>
-    <p>We might be using a
-        <code class="code" data-lang="Java">Runnable</code>
-        to group a specific set of assertions in our test:
-    </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
-        <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
+        <p>Let's address both points with an example.</p>
+        <p>We might be using a
+            <code class="code" data-lang="Java">Runnable</code>
+            to group a specific set of assertions in our test:
+            </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Runnable</span><span class="o">()</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
         <span class="n">datastoreProvider</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">database</span><span class="o">);</span>
         <span class="n">Assert</span><span class="o">.</span><span class="na">assertNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">1</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
         <span class="n">Assert</span><span class="o">.</span><span class="na">assertNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">3</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
@@ -169,70 +168,68 @@
         <span class="n">Assert</span><span class="o">.</span><span class="na">assertNotNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">4</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
         <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"Should find 1 friend"</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">foundUser</span><span class="o">.</span><span class="na">friends</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
         <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"Should find the right friend"</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="n">foundUser</span><span class="o">.</span><span class="na">friends</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">id</span><span class="o">);</span>
-        <span class="o">}</span>
-        <span class="o">};</span>
-    </code></div>
-    <p></p>
-    <p>
-        Converting this to a lambda results in:
-    </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>
-        <span class="n">datastoreProvider</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">database</span><span class="o">);</span>
-        <span class="n">Assert</span><span class="o">.</span><span class="na">assertNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">1</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
-        <span class="n">Assert</span><span class="o">.</span><span class="na">assertNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">3</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">};</span>
+</code></div>
+        <p></p>
+        <p>
+            Converting this to a lambda results in:
+            </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>
+    <span class="n">datastoreProvider</span><span class="o">.</span><span class="na">register</span><span class="o">(</span><span class="n">database</span><span class="o">);</span>
+    <span class="n">Assert</span><span class="o">.</span><span class="na">assertNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">1</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
+    <span class="n">Assert</span><span class="o">.</span><span class="na">assertNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">3</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
 
-        <span class="n">User</span> <span class="n">foundUser</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">2</span><span class="o">).</span><span class="na">get</span><span class="o">();</span>
-        <span class="n">Assert</span><span class="o">.</span><span class="na">assertNotNull</span><span class="o">(</span><span class="n">foundUser</span><span class="o">);</span>
-        <span class="n">Assert</span><span class="o">.</span><span class="na">assertNotNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">4</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
-        <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"Should find 1 friend"</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">foundUser</span><span class="o">.</span><span class="na">friends</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
-        <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"Should find the right friend"</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="n">foundUser</span><span class="o">.</span><span class="na">friends</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">id</span><span class="o">);</span>
-        <span class="o">};</span>
-    </code></div>
-    This is not much shorter, nor does it impact readability much.
-    <p></p>
-    <p>In cases like these, you may choose to use IntelliJ IDEA's extract method to pull these
-        lines into a single method instead:
-    </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>
-        <span class="n">assertUserMatchesSpecification</span><span class="o">(</span><span class="n">database</span><span class="o">,</span> <span class="n">datastoreProvider</span><span class="o">);</span>
-        <span class="o">};</span>
-    </code></div>
-    <p></p>
-    <p>The second reason to check all your lambda conversions is that some lambdas can be further simplified.
-        This last example is one of them - IntelliJ IDEA will show the curly braces in grey, and
-        pressing <kbd data-default="Alt+Enter" data-default_for_gnome="Alt+Enter" data-default_for_kde="Alt+Enter" data-default_for_xwin="Alt+Enter" data-emacs="Alt+Enter" data-jbuilder="Alt+Enter" data-visual_studio="Alt+Enter" data-netbeans_6.5="N/A" data-eclipse="Alt+Enter" data-mac_os_x_10.5_="⌥⏎" data-mac_os_x="⌥⏎" data-eclipse_mac_os_x="⌘1" data-intellij_idea_classic_os_x="N/A" data-xcode="N/A" data-resharper="N/A" data-resharper_osx="N/A" class="">⌥⏎</kbd> with the cursor on the braces will pop up the suggested
-        change
-        <span class="control">Statement lambda can be replaced with expression lambda</span>:
-    </p>
-    <p></p><figure><img alt="ij_java_8_statement_lambda_can_be_replaced" width="536" height="62" src="./MigratingtoJava8-ver2_files/ij_java_8_statement_lambda_can_be_replaced.png"></figure><p></p>
-    <p>Accepting this change will result in:
-    </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertUserMatchesSpecification</span><span class="o">(</span><span class="n">database</span><span class="o">,</span> <span class="n">datastoreProvider</span><span class="o">);</span></code></div>
-    <p></p>
-    <p>Once you've changed your anonymous inner classes to lambdas and made any manual adjustments you might want
-        to make, like extracting methods or reformatting the code, run all your tests to make sure everything still
-        works. If so, commit these changes to VCS. Once you've done this, you'll be ready to move to the next step.
-    </p>
-    <a name="d25411e282"></a><a name="dynaProc4"></a><section class="procedure-steps"><h2>New collection methods</h2><p>
-    </p><p>
-        Java 8 introduced a new way of working with collections of data, through the Streams API. What's less
-        well known is that many of the
-        <code class="code" data-lang="Java">Collection</code>
-        classes we're used to working
-        with have new methods on them that are not via the Streams API. For example,
-        <code class="code" data-lang="Java">java.util.Iterable</code>
-        has a
-        <code class="code" data-lang="Java">forEach</code>
-        method that lets you pass in a lambda that represents an operation to run on every element in
-        the Iterable. IntelliJ IDEA's inspections will highlight areas where you can use this and other new
-        methods.
-    </p>
+    <span class="n">User</span> <span class="n">foundUser</span> <span class="o">=</span> <span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">2</span><span class="o">).</span><span class="na">get</span><span class="o">();</span>
+    <span class="n">Assert</span><span class="o">.</span><span class="na">assertNotNull</span><span class="o">(</span><span class="n">foundUser</span><span class="o">);</span>
+    <span class="n">Assert</span><span class="o">.</span><span class="na">assertNotNull</span><span class="o">(</span><span class="n">database</span><span class="o">.</span><span class="na">find</span><span class="o">(</span><span class="n">User</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="s">"id"</span><span class="o">,</span> <span class="mi">4</span><span class="o">).</span><span class="na">get</span><span class="o">());</span>
+    <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"Should find 1 friend"</span><span class="o">,</span> <span class="mi">1</span><span class="o">,</span> <span class="n">foundUser</span><span class="o">.</span><span class="na">friends</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+    <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="s">"Should find the right friend"</span><span class="o">,</span> <span class="mi">4</span><span class="o">,</span> <span class="n">foundUser</span><span class="o">.</span><span class="na">friends</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">).</span><span class="na">id</span><span class="o">);</span>
+<span class="o">};</span>
+</code></div>
+            This is not much shorter, nor does it impact readability much.
+        <p></p>
+        <p>In cases like these, you may choose to use IntelliJ IDEA's extract method to pull these
+            lines into a single method instead:
+            </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="o">{</span>
+    <span class="n">assertUserMatchesSpecification</span><span class="o">(</span><span class="n">database</span><span class="o">,</span> <span class="n">datastoreProvider</span><span class="o">);</span>
+<span class="o">};</span>
+</code></div>
+        <p></p>
+        <p>The second reason to check all your lambda conversions is that some lambdas can be further simplified.
+            This last example is one of them - IntelliJ IDEA will show the curly braces in grey, and
+            pressing <kbd data-default="Alt+Enter" data-default_for_gnome="Alt+Enter" data-default_for_kde="Alt+Enter" data-default_for_xwin="Alt+Enter" data-emacs="Alt+Enter" data-jbuilder="Alt+Enter" data-visual_studio="Alt+Enter" data-netbeans_6.5="N/A" data-eclipse="Alt+Enter" data-mac_os_x_10.5_="⌥⏎" data-mac_os_x="⌥⏎" data-eclipse_mac_os_x="⌘1" data-intellij_idea_classic_os_x="N/A" data-xcode="N/A" data-resharper="N/A" data-resharper_osx="N/A" class="">⌥⏎</kbd> with the cursor on the braces will pop up the suggested
+            change
+            <span class="control">Statement lambda can be replaced with expression lambda</span>:
+        </p>
+        <p></p><figure><img alt="ij_java_8_statement_lambda_can_be_replaced" width="536" height="62" src="./MigratingtoJava8-ver2_files/ij_java_8_statement_lambda_can_be_replaced.png"></figure><p></p>
+        <p>Accepting this change will result in:
+            </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Runnable</span> <span class="n">runnable</span> <span class="o">=</span> <span class="o">()</span> <span class="o">-&gt;</span> <span class="n">assertUserMatchesSpecification</span><span class="o">(</span><span class="n">database</span><span class="o">,</span> <span class="n">datastoreProvider</span><span class="o">);</span></code></div>
+        <p></p>
+        <p>Once you've changed your anonymous inner classes to lambdas and made any manual adjustments you might want
+            to make, like extracting methods or reformatting the code, run all your tests to make sure everything still
+            works. If so, commit these changes to VCS. Once you've done this, you'll be ready to move to the next step.
+        </p>
+    <a name="d25133e282"></a><a name="dynaProc4"></a><section class="procedure-steps"><h2>New collection methods</h2><p>
+            </p><p>
+                Java 8 introduced a new way of working with collections of data, through the Streams API. What's less
+                well known is that many of the
+                <code class="code" data-lang="Java">Collection</code>
+                classes we're used to working
+                with have new methods on them that are not via the Streams API. For example,
+                <code class="code" data-lang="Java">java.util.Iterable</code>
+                has a
+                <code class="code" data-lang="Java">forEach</code>
+                method that lets you pass in a lambda that represents an operation to run on every element.
+                IntelliJ IDEA's inspections will highlight areas where you can use this and other new methods.
+            </p>
         <p></p><ol class="list _decimal"><li class="list__item">Back in the <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId2345.html"><span>Inspection Tool Window</span></a>, you should see "foreach can be collapsed
             with stream api" under "Java language level migration aids". You may not realise when you're going
             through all the inspections, but not all of these fixes will use the Streams API (more on Streams later).
             For example:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="k">for</span> <span class="o">(</span><span class="n">Class</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Annotation</span> <span class="o">&gt;</span> <span class="n">annotation</span> <span class="o">:</span> <span class="n">INTERESTING_ANNOTATIONS</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">addAnnotation</span><span class="o">(</span><span class="n">annotation</span><span class="o">);</span>
-                <span class="o">}</span>
-            </code></div>
-        </li><li class="list__item">
+    <span class="n">addAnnotation</span><span class="o">(</span><span class="n">annotation</span><span class="o">);</span>
+<span class="o">}</span>
+</code></div>
             IntelliJ IDEA suggests "Can be replaced with foreach call". Applying this inspection gives us:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">INTERESTING_ANNOTATIONS</span><span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="k">this</span><span class="o">::</span><span class="n">addAnnotation</span><span class="o">);</span></code></div>
             Note that IntelliJ IDEA has applied all simplifications it could, going as far as using a
@@ -255,42 +252,42 @@
             list, it calls
             <code class="code" data-lang="Java">addAnnotation</code>
             with the item.
-        </p></section><a name="d25411e334"></a><a name="dynaProc5"></a><section class="procedure-steps"><h2>Streams API - foreach</h2><p>
-    </p><p>
-        IntelliJ IDEA's inspections will suggest using the
-        <code class="code" data-lang="Java">forEach</code> on
-        <code class="code" data-lang="Java">Iterable</code>
-        where appropriate, but it will also the new Streams API where this
-        is a better choice.
-    </p>
-        <p>
-            The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" data-bypass="yes"><span>Streams API</span></a>
-            is a powerful tool for querying and manipulating data, and using it could significantly change and
-            simplify the code you write. For this tutorial, we're going to look at some of the simplest use
-            cases to get you started. Once you're more comfortable using this style of coding, you may then want
-            to use its capabilities further.
-        </p>
+        </p></section><a name="d25133e332"></a><a name="dynaProc5"></a><section class="procedure-steps"><h2>Streams API - foreach</h2><p>
+            </p><p>
+                IntelliJ IDEA's inspections will suggest using the
+                <code class="code" data-lang="Java">forEach</code> on
+                <code class="code" data-lang="Java">Iterable</code>
+                where appropriate, but it will also the new Streams API where this
+                is a better choice.
+            </p>
+            <p>
+                The <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" data-bypass="yes"><span>Streams API</span></a>
+                is a powerful tool for querying and manipulating data, and using it could significantly change and
+                simplify the code you write. For this tutorial, we're going to look at some of the simplest use
+                cases to get you started. Once you're more comfortable using this style of coding, you may then want
+                to use its capabilities further.
+            </p>
         <p></p><ol class="list _decimal"><li class="list__item">What does the Streams API give us that we can't simply get from using a
             <code class="code" data-lang="Java">forEach</code> method? Let's look at an example that's a slightly more complicated for loop than
             the previous one:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addAllBooksToLibrary</span><span class="o">(</span><span class="n">Set</span><span class="o">&lt;</span><span class="n">Book</span><span class="o">&gt;</span> <span class="n">books</span><span class="o">)</span> <span class="o">{</span>
-                <span class="k">for</span> <span class="o">(</span><span class="n">Book</span> <span class="n">book</span><span class="o">:</span> <span class="n">books</span><span class="o">)</span> <span class="o">{</span>
-                <span class="k">if</span> <span class="o">(</span><span class="n">book</span><span class="o">.</span><span class="na">isInPrint</span><span class="o">())</span> <span class="o">{</span>
-                <span class="n">library</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">book</span><span class="o">);</span>
-                <span class="o">}</span>
-                <span class="o">}</span>
-                <span class="o">}</span>
-            </code></div>
+    <span class="k">for</span> <span class="o">(</span><span class="n">Book</span> <span class="n">book</span><span class="o">:</span> <span class="n">books</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">book</span><span class="o">.</span><span class="na">isInPrint</span><span class="o">())</span> <span class="o">{</span>
+            <span class="n">library</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">book</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></div>
             Firstly the loop body checks some condition, then does something with the items that pass that condition.
         </li><li class="list__item">
             Selecting the fix
             <span class="control">Replace with forEach</span> will use the Streams API to do the same thing:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">addAllBooksToLibrary</span><span class="o">(</span><span class="n">Set</span> <span class="o">&lt;</span><span class="n">Book</span><span class="o">&gt;</span> <span class="n">books</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">books</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
-                <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">book</span> <span class="o">-&gt;</span> <span class="n">book</span><span class="o">.</span><span class="na">isInPrint</span><span class="o">())</span>
-                <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">library</span><span class="o">::</span><span class="n">add</span><span class="o">);</span>
-                <span class="o">}</span>
-            </code></div>
+    <span class="n">books</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
+         <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">book</span> <span class="o">-&gt;</span> <span class="n">book</span><span class="o">.</span><span class="na">isInPrint</span><span class="o">())</span>
+         <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">library</span><span class="o">::</span><span class="n">add</span><span class="o">);</span>
+<span class="o">}</span>
+</code></div>
             In this case, IntelliJ IDEA has selected a method reference for the
             <code class="code" data-lang="Java">forEach</code>
             parameter. For filter, IntelliJ IDEA has used a lambda, but will suggest in the editor that this particular
@@ -298,30 +295,32 @@
             <figure><img alt="ij_java_8_can_be_replaced_with_method_ref" width="535" height="102" src="./MigratingtoJava8-ver2_files/ij_java_8_can_be_replaced_with_method_ref.png"></figure>
         </li><li class="list__item">Applying this fix gives:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">books</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
-                <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">Book</span><span class="o">::</span><span class="n">isInPrint</span><span class="o">)</span>
-                <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">library</span><span class="o">::</span><span class="n">add</span><span class="o">);</span>
-            </code></div>
-        </li></ol></section><a name="d25411e379"></a><a name="dynaProc6"></a><section class="procedure-steps"><h2>Streams API - collect</h2><p>
-    </p><p>Instead of "can be replaced with foreach" call you might see "can be replaced with collect call". This is
-        very similar to the above example, but instead of calling a
-        <code class="code" data-lang="Java">forEach</code>
-        method at the end of the stream and performing some operation, this will use the Stream's collect
-        method to put all the results from the Stream operation into a new
-        <code class="code" data-lang="Java">Collection</code>. It's very common to see a for loop that iterates over some collection,
-        performs some sort of filtering or manipulating, and outputs the results into a new collection, and
-        that's the sort of code this inspection will identify and migrate to using the Streams API.
-    </p>
+     <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">Book</span><span class="o">::</span><span class="n">isInPrint</span><span class="o">)</span>
+     <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">library</span><span class="o">::</span><span class="n">add</span><span class="o">);</span>
+</code></div>
+        </li></ol></section><a name="d25133e377"></a><a name="dynaProc6"></a><section class="procedure-steps"><h2>Streams API - collect</h2><p>
+            </p><p>Instead of "can be replaced with foreach" call you might see "can be replaced with collect call". This is
+                very similar to the above example, but instead of calling a
+                <code class="code" data-lang="Java">forEach</code>
+                method at the end of the stream and performing some operation, this will use the stream's collect
+                method to put all the results from the stream operation into a new
+                <code class="code" data-lang="Java">Collection</code>. It's very common to see a
+                <code class="code" data-lang="Java">for</code>
+                loop that iterates over some collection,
+                performs some sort of filtering or manipulating, and outputs the results into a new collection, and
+                that's the sort of code this inspection will identify and migrate to using the Streams API.
+            </p>
         <p></p><ol class="list _decimal"><li class="list__item">
             In the <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId2345.html"><span>Inspection Tool Window</span></a>, you should see "foreach can be replaced with
             collect call" under "Java language level migration aids". Selecting one of these inspection results will
             show you a for loop that might look something like:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">List</span> <span class="o">&lt;</span><span class="n">Key</span><span class="o">&gt;</span> <span class="n">keys</span> <span class="o">=</span> <span class="o">....</span>
 
-                <span class="n">List</span> <span class="o">&lt;</span><span class="n">Key</span><span class="o">.</span><span class="na">Id</span><span class="o">&gt;</span> <span class="n">objIds</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Key</span><span class="o">.</span><span class="na">Id</span><span class="o">&gt;();</span>
-                <span class="k">for</span> <span class="o">(</span><span class="n">Key</span> <span class="n">key</span> <span class="o">:</span> <span class="n">keys</span><span class="o">)</span> <span class="o">{</span>
-                <span class="n">objIds</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
-                <span class="o">}</span>
-            </code></div>
+<span class="n">List</span> <span class="o">&lt;</span><span class="n">Key</span><span class="o">.</span><span class="na">Id</span><span class="o">&gt;</span> <span class="n">objIds</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Key</span><span class="o">.</span><span class="na">Id</span><span class="o">&gt;();</span>
+<span class="k">for</span> <span class="o">(</span><span class="n">Key</span> <span class="n">key</span> <span class="o">:</span> <span class="n">keys</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">objIds</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">key</span><span class="o">.</span><span class="na">getId</span><span class="o">());</span>
+<span class="o">}</span>
+</code></div>
             Here, we're looping over a list of Key objects, getting the Id from each of these objects, and putting them
             all into a separate collection of objIds.
         </li><li class="list__item">Apply the
@@ -330,113 +329,361 @@
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">List</span><span class="o">&lt;</span><span class="n">Key</span><span class="o">.</span><span class="na">Id</span><span class="o">&gt;</span> <span class="n">objIds</span> <span class="o">=</span> <span class="n">keys</span><span class="o">.</span><span class="na">stream</span><span class="o">().</span><span class="na">map</span><span class="o">(</span><span class="n">Key</span><span class="o">::</span><span class="n">getId</span><span class="o">).</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">());</span></code></div>
         </li><li class="list__item">Reformat this code so that you can see more clearly all the Stream operations:
             <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">List</span><span class="o">&lt;</span><span class="n">Key</span><span class="o">.</span><span class="na">Id</span><span class="o">&gt;</span> <span class="n">objIds</span> <span class="o">=</span> <span class="n">keys</span><span class="o">.</span><span class="na">stream</span><span class="o">()</span>
-                <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">Key</span><span class="o">::</span><span class="n">getId</span><span class="o">)</span>
-                <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">());</span>
-            </code></div>
-            This does exactly the same thing the original code did - takes a collection of Keys, "maps" each Key to its
-            Id, and collects those into a new list, objIds.
+                          <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">Key</span><span class="o">::</span><span class="n">getId</span><span class="o">)</span>
+                          <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="n">Collectors</span><span class="o">.</span><span class="na">toList</span><span class="o">());</span>
+</code></div>
+            This does exactly the same thing the original code did - takes a collection of
+            <code class="code" data-lang="Java">Key</code>s, "maps" each
+            <code class="code" data-lang="Java">Key</code>
+            to its
+            <code class="code" data-lang="Java">Id</code>, and collects those into a new list,
+            <code class="code" data-lang="Java">objIds</code>.
         </li></ol><p class="procIntro">
-        </p><p>Like the
-            <code class="code" data-lang="Java">foreach</code>
-            example, IntelliJ IDEA can work out if a filter needs applying to a collect statement as
-            well as maps, so it can cleverly turn many of your complex loops into a set of Stream operations.
+            </p><p>Like the
+                <code class="code" data-lang="Java">forEach</code>
+                example, IntelliJ IDEA can work out if a filter needs applying to a collect statement as
+                well as maps, so it can cleverly turn many of your complex loops into a set of Stream operations.
+            </p>
+        <p></p></section><a name="d25133e434"></a><h2>Impact of replacing foreach with streams</h2>
+        <p>
+            It may be tempting to run these inspections and simply apply all fixes automatically. When it comes to
+            converting your code to use new methods on Collections or Streams, a little care should be taken. The
+            IDE will ensure that
+            your code works the same way it used to, but you need to check that your code remains readable and
+            understandable after applying the changes. If you and your team are using Java 8 features for the first
+            time, some of the new code will be very unfamiliar and probably unclear. Take the time to look at each
+            change individually and check you're happy you understand the new code before going ahead.
         </p>
-        <p></p></section><a name="d25411e421"></a><h2>Impact of replacing foreach with streams</h2>
-    <p>
-        It may be tempting to run these inspections and simply apply all fixes automatically. When it comes to
-        converting your code
-        to use new methods on Collections or Streams, a little care should be taken. The IDE will ensure that
-        your code works the same way it used to, but you need to check that your code remains readable and
-        understandable after applying the changes. If you and your team are using Java 8 features for the first
-        time, some of the new code will be very unfamiliar and probably unclear. Take the time to look at each
-        change individually and check you're happy you understand the new code before going ahead.
-    </p>
-    <p>
-        Like with lambdas, a good rule of thumb is to start with small sections of code - short for loops that
-        translate into two or less stream operations, preferably with single-line lambdas. As you become more
-        familiar with the methods, then you may want to tackle more complex code.
-    </p>
-    <p>Let's look at an example:</p>
-    <p>
-        IntelliJ IDEA suggests that this code:
-    </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="k">for</span> <span class="o">(</span><span class="n">Entry</span><span class="o">&lt;</span><span class="n">Class</span> <span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Annotation</span><span class="o">&gt;,</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Annotation</span><span class="o">&gt;&gt;</span> <span class="n">e</span> <span class="o">:</span> <span class="n">getAnnotations</span><span class="o">().</span><span class="na">entrySet</span><span class="o">())</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">().</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+        <p>
+            Like with lambdas, a good rule of thumb is to start with small sections of code - short for loops that
+            translate into two or fewer stream operations, preferably with single-line lambdas. As you become more
+            familiar with the methods, then you may want to tackle more complex code.
+        </p>
+        <p>Let's look at an example:</p>
+        <p>
+            IntelliJ IDEA suggests that this code:
+            </p><div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="k">for</span> <span class="o">(</span><span class="n">Entry</span><span class="o">&lt;</span><span class="n">Class</span> <span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Annotation</span><span class="o">&gt;,</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">Annotation</span><span class="o">&gt;&gt;</span> <span class="n">e</span> <span class="o">:</span> <span class="n">getAnnotations</span><span class="o">().</span><span class="na">entrySet</span><span class="o">())</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">().</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
         <span class="k">for</span> <span class="o">(</span><span class="n">Annotation</span> <span class="n">annotation</span><span class="o">:</span> <span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">())</span> <span class="o">{</span>
-        <span class="n">destination</span><span class="o">.</span><span class="na">addAnnotation</span><span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">getKey</span><span class="o">(),</span> <span class="n">annotation</span><span class="o">);</span>
+            <span class="n">destination</span><span class="o">.</span><span class="na">addAnnotation</span><span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">getKey</span><span class="o">(),</span> <span class="n">annotation</span><span class="o">);</span>
         <span class="o">}</span>
-        <span class="o">}</span>
-        <span class="o">}</span>
-    </code></div>
-    Can be converted to this code:
-    <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">getAnnotations</span><span class="o">().</span><span class="na">entrySet</span><span class="o">()</span>
-        <span class="o">.</span><span class="na">stream</span><span class="o">()</span>
-        <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">e</span> <span class="o">-&gt;</span> <span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">().</span><span class="na">isEmpty</span><span class="o">())</span>
-        <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">e</span> <span class="o">-&gt;</span> <span class="o">{</span>
-        <span class="k">for</span> <span class="o">(</span><span class="n">Annotation</span> <span class="n">annotation</span><span class="o">:</span> <span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">())</span> <span class="o">{</span>
-        <span class="n">destination</span><span class="o">.</span><span class="na">addAnnotation</span><span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">getKey</span><span class="o">(),</span> <span class="n">annotation</span><span class="o">);</span>
-        <span class="o">}</span>
-        <span class="o">});</span>
-    </code></div>
-    Setting aside the fact that the original code is challenging to understand to begin with, you may choose not
-    to apply the changes for a number of reasons:
-    <ul class="list _ul"><li class="list__item">Despite refactoring away the outer-loop, there's still a for loop inside the
-        <code class="code" data-lang="Java">forEach</code> method. This suggests
-        that there may be a different way to structure the stream call, perhaps using
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-" data-bypass="yes"><span>flatMap</span></a>.
-    </li><li class="list__item">The
-        <code class="code" data-lang="Java">destination.addAnnotation</code>
-        method suggests that there may be a way to restructure this to use a
-        <code class="code" data-lang="Java">collect</code>
-        call rather than a
-        <code class="code" data-lang="Java">forEach</code>.
-    </li><li class="list__item">It's arguably not easier to understand than the original code.</li></ul>
-    However, you may choose to accept this change for the following reasons:
-    <ul class="list _ul"><li class="list__item">This is a complex piece of code that is iterating through and manipulating data in a collection,
-        therefore a move towards the Streams API is a move in the right direction. It can be further
-        refactored or improved later when the team's developers are more familiar with the way Streams
-        work.
-    </li><li class="list__item">In the new code the
-        <code class="code" data-lang="Java">if</code>
-        condition has been moved into a
-        <code class="code" data-lang="Java">filter</code>
-        call, making clearer what purpose this section of the code is.
-    </li></ul>
-    Apart from the options "keep the code" and "apply the changes", there's a third option: refactor the old
-    code to something more readable, even if it doesn't use Java 8. This might be a good piece of code to
-    make a note of to refactor later, rather than trying to tackle all the code's problems while simply
-    trying to adopt more Java 8 conventions.
-    <p></p>
-    <a name="d25411e477"></a><h2>Summary</h2>
-    <p>
-        IntelliJ IDEA's Inspections, in particular those around language migration, can help identify areas in your
-        code that can be refactored to use Java 8 features, and even apply those fixes automatically.
-    </p>
-    <p>
-        It's valuable to look at the updated code if you've applied these fixes automatically, to check it
-        doesn't make your code harder to understand, and to help you become familiar with the new features.
-    </p>
-    <p>
-        This tutorial barely scratches the surface of the subject of migrating your code. We've covered
-        <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" data-bypass="yes"><span>Lambda expressions</span></a>,
-        <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html" data-bypass="yes"><span>method references</span></a>, some new methods on
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html" data-bypass="yes"><span>Collection</span></a> and
-        introduced the new
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" data-bypass="yes"><span>Streams API</span></a>. Not
-        only can these features give you much more power and readability when you learn more about them, but
-        there are other features that we did not cover. For example, you could use the "Use of obsolete Date-Time
-        API" inspection to find places to use the new
-        <a href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html" data-bypass="yes"><span>Date and Time API</span></a>.
-        Or you can use the various inspections
-        that check for the use of
-        <code class="code" data-lang="Java">null</code>
-        in the code to point you towards areas that might benefit from using the new
-        <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html" data-bypass="yes"><span>Optional</span></a> type.
-    </p>
-    <p>
-        In summary, there are plenty of new features in Java 8 designed to make life easier for programmers - to
-        make code more readable, and to make it easier to perform complex operations on data structures.
-        IntelliJ IDEA of course not only supports these features, but helps developers make use of them, including
-        migrating existing code and providing help and suggestions in the editor to guide you as you use them.
-    </p>
+    <span class="o">}</span>
+<span class="o">}</span> 
+</code></div>
+            Can be converted to this code:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">getAnnotations</span><span class="o">().</span><span class="na">entrySet</span><span class="o">()</span>
+                <span class="o">.</span><span class="na">stream</span><span class="o">()</span>
+                <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">e</span> <span class="o">-&gt;</span> <span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">()</span> <span class="o">!=</span> <span class="kc">null</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">().</span><span class="na">isEmpty</span><span class="o">())</span>
+                <span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">e</span> <span class="o">-&gt;</span> <span class="o">{</span>
+                    <span class="k">for</span> <span class="o">(</span><span class="n">Annotation</span> <span class="n">annotation</span><span class="o">:</span> <span class="n">e</span><span class="o">.</span><span class="na">getValue</span><span class="o">())</span> <span class="o">{</span>
+                        <span class="n">destination</span><span class="o">.</span><span class="na">addAnnotation</span><span class="o">(</span><span class="n">e</span><span class="o">.</span><span class="na">getKey</span><span class="o">(),</span> <span class="n">annotation</span><span class="o">);</span>
+                    <span class="o">}</span>
+                <span class="o">});</span>
+</code></div>
+            Setting aside the fact that the original code is challenging to understand to begin with, you may choose not
+            to apply the changes for a number of reasons:
+            <ul class="list _ul"><li class="list__item">Despite refactoring away the outer-loop, there's still a for loop inside the
+                    <code class="code" data-lang="Java">forEach</code> method. This suggests
+                    that there may be a different way to structure the stream call, perhaps using
+                    <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-" data-bypass="yes"><span>flatMap</span></a>.
+                </li><li class="list__item">The
+                    <code class="code" data-lang="Java">destination.addAnnotation</code>
+                    method suggests that there may be a way to restructure this to use a
+                    <code class="code" data-lang="Java">collect</code>
+                    call rather than a
+                    <code class="code" data-lang="Java">forEach</code>.
+                </li><li class="list__item">It's arguably not easier to understand than the original code.</li></ul>
+            However, you may choose to accept this change for the following reasons:
+            <ul class="list _ul"><li class="list__item">This is a complex piece of code that is iterating through and manipulating data in a collection,
+                    therefore a move towards the Streams API is a move in the right direction. It can be further
+                    refactored or improved later when the team's developers are more familiar with the way Streams
+                    work.
+                </li><li class="list__item">In the new code the
+                    <code class="code" data-lang="Java">if</code>
+                    condition has been moved into a
+                    <code class="code" data-lang="Java">filter</code>
+                    call, making clearer what purpose this section of the code is.
+                </li></ul>
+            Apart from the options "keep the code" and "apply the changes", there's a third option: refactor the old
+            code to something more readable, even if it doesn't use Java 8. This might be a good piece of code to
+            make a note of to refactor later, rather than trying to tackle all the code's problems while simply
+            trying to adopt more Java 8 conventions.
+        <p></p>
+    <a name="d25133e490"></a><a name="dynaProc7"></a><section class="procedure-steps"><h2>New date and time API</h2><p>
+            </p><p>
+                The inspections we've selected for our "Java8" profile help us to locate places where we can use
+                lambda expressions, new methods on Collections and the Streams API, and will apply fixes
+                automatically to those places.  There are plenty of other new features in Java 8, and in the
+                following sections we'll highlight some features of IntelliJ IDEA that may help you use these too.
+            </p>
+            <p>
+                In this section, we'll look at locating places that may benefit from using the new
+                <a href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html" data-bypass="yes"><span>Date and Time API</span></a>
+                instead of
+                <code class="code" data-lang="Java">java.util.Date</code> and
+                <code class="code" data-lang="Java">java.util.Calendar</code>.
+            </p>
+        <p></p><ol class="list _decimal"><li class="list__item">You'll need to enable a new inspection to locate uses of the old Date and Time API.
+            <figure><img alt="ij_java_8_date_time_inspection" width="382" height="265" src="./MigratingtoJava8-ver2_files/ij_java_8_date_time_inspection.png"></figure>
+            Note that although many methods have been deprecated on
+            <code class="code" data-lang="Java">java.util.Date</code> for some time, the class itself is not deprecated, so if you use it in your
+            code you will not receive deprecation warnings. That's why this inspection is useful to locate usages.
+        </li><li class="list__item">
+            <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId713.html"><span>Run the inspection</span></a>. You should see a list of results that looks something like
+            this:
+            <figure><img alt="ij_java_8_date_time_inspection_results" width="449" height="356" src="./MigratingtoJava8-ver2_files/ij_java_8_date_time_inspection_results.png"></figure>
+        </li><li class="list__item">
+            Unlike the earlier inspections, these do not have suggested fixes as they will require you and your team
+            to evaluate the use of the old classes and decide how to migrate them to the new API.  If you have a
+            <code class="code" data-lang="Java">Date</code>
+            field that represents a single date without a time, for example:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">HotelBooking</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">Hotel</span> <span class="n">hotel</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">Date</span> <span class="n">checkInDate</span><span class="o">;</span>
+    <span class="kd">private</span> <span class="kd">final</span> <span class="n">Date</span> <span class="n">checkOutDate</span><span class="o">;</span>
 
-    <div class="last-modified">Last modified: 9 November 2015 </div></article><div id="disqus_thread"></div></div></section></main></div><script data-main="http://helpserver.labs.intellij.net:8080/help-app/js/main.build" src="./MigratingtoJava8-ver2_files/require.js"></script><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>
+    <span class="c1">// constructor, getters and setters...</span>
+<span class="o">}</span>
+</code></div>
+            you may choose to replace this with a
+            <code class="code" data-lang="Java">LocalDate</code>. This can be done via the context menu
+            <span class="control">Refactor | Type Migration...</span>
+            or via <kbd data-default="Ctrl+Shift+F6" data-default_for_gnome="Ctrl+Shift+F6" data-default_for_kde="Ctrl+Shift+F6" data-default_for_xwin="Ctrl+Shift+F6" data-emacs="Ctrl+Shift+F6" data-jbuilder="Ctrl+Shift+F6" data-visual_studio="Ctrl+Shift+F6" data-netbeans_6.5="N/A" data-eclipse="Ctrl+Shift+F6" data-mac_os_x_10.5_="⇧⌘F6" data-mac_os_x="⇧⌘F6" data-eclipse_mac_os_x="N/A" data-intellij_idea_classic_os_x="N/A" data-xcode="N/A" data-resharper="N/A" data-resharper_osx="N/A" class="">⇧⌘F6</kbd>.  Type LocalDate in the popup and select
+            <code class="code" data-lang="Java">java.time.LocalDate</code>.   When you press enter, this will change the type of this field and
+            getters and setters.  You may still need to address compilation errors where the field, getters or
+            setters are used.
+        </li><li class="list__item">
+            For fields that are both date and time, you may choose to migrate these to
+            <code class="code" data-lang="Java">java.time.LocalDateTime</code>. For
+            fields that are only time,
+            <code class="code" data-lang="Java">java.time.LocalTime</code>
+            may be appropriate.
+        </li><li class="list__item">
+            If you were setting the original values with a new
+            <code class="code" data-lang="Java">Date</code>, knowing that this is the equivalent to the date and time right now:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">booking</span><span class="o">.</span><span class="na">setCheckInDate</span><span class="o">(</span><span class="k">new</span> <span class="n">Date</span><span class="o">());</span></code></div>
+            you can instead use the
+            <code class="code" data-lang="Java">now()</code>
+            method:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">booking</span><span class="o">.</span><span class="na">setCheckInDate</span><span class="o">(</span><span class="n">LocalDate</span><span class="o">.</span><span class="na">now</span><span class="o">());</span></code></div>
+        </li><li class="list__item">
+            A common and readable way to set a value for
+            <code class="code" data-lang="Java">java.util.Date</code>
+            was to use
+            <code class="code" data-lang="Java">java.text.SimpleDateFormat</code>. You
+            might see code that looks something like:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">SimpleDateFormat</span> <span class="n">format</span> <span class="o">=</span> <span class="k">new</span> <span class="n">SimpleDateFormat</span><span class="o">(</span><span class="s">"yyyy-MM-dd"</span><span class="o">);</span>
+<span class="n">booking</span><span class="o">.</span><span class="na">setCheckInDate</span><span class="o">(</span><span class="n">format</span><span class="o">.</span><span class="na">parse</span><span class="o">(</span><span class="s">"2017-03-02"</span><span class="o">));</span>
+            
+</code></div>
+            If this check in date has been migrated to a
+            <code class="code" data-lang="Java">LocalDate</code>, you can easily set this to the specific date without the use of a formatter:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">booking</span><span class="o">.</span><span class="na">setCheckInDate</span><span class="o">(</span><span class="n">LocalDate</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="mi">2017</span><span class="o">,</span> <span class="mi">3</span><span class="o">,</span> <span class="mi">2</span><span class="o">));</span></code></div>
+        </li></ol><p class="procIntro">
+            </p><p>
+                These examples barely scratch the surface of the changes you may want or need to do in order to fully
+                utilise the new date and time features in Java 8. Take a look at the
+                <a href="http://docs.oracle.com/javase/tutorial/datetime/TOC.html" data-bypass="yes"><span>tutorial provided by Oracle</span></a>
+                for more information on the new API features and how to use them.
+            </p>
+        <p></p></section><a name="d25133e590"></a><h2>Impact of migrating to the new date and time API</h2>
+        <p>
+            Updating your code to use the new Date and Time API requires much more manual intervention than
+            migrating anonymous inner classes to Lambda Expressions and loops to the Streams API. IntelliJ IDEA will
+            help you see how much and where you use the old
+            <code class="code" data-lang="Java">java.util.Date</code> and
+            <code class="code" data-lang="Java">java.util.Calendar</code>
+            classes, which will help you understand the
+            scope of the migration. IntelliJ IDEA's refactoring tools can help you migrate these types if necessary.
+            However, you will need to have a strategy on how to approach each of the changes, which new types you
+            want to use, and how to use these correctly. This is not a change you can apply automatically.
+        </p>
+    <a name="d25133e603"></a><a name="dynaProc8"></a><section class="procedure-steps"><h2>Using optional</h2><p>
+            </p><p>
+                The last Java 8 feature we'll look at is the new
+                <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html" data-bypass="yes"><span>Optional</span></a>
+                type.
+                <code class="code" data-lang="Java">java.util.Optional</code>
+                gives you a way to handle null values, and a way to specify if a method call is expected to return a
+                null value or not. Like Date and Time, IntelliJ IDEA's features will help you to identify areas of your
+                code that might benefit from using the
+                <code class="code" data-lang="Java">Optional</code>
+                type.
+            </p>
+        <p></p><ol class="list _decimal"><li class="list__item">There are a number of inspections that look for the use nulls in Java code, these can be useful for
+            identifying areas that may benefit from using
+            <code class="code" data-lang="Java">Optional</code>.
+            We'll look at enabling just two of these inspections for simplicity:
+            <figure><img alt="ij_java_8_null_inspections" width="363" height="473" src="./MigratingtoJava8-ver2_files/ij_java_8_null_inspections.png"></figure>
+        </li><li class="list__item">
+            <a href="http://localhost:63342/IDEA%20Family%20Products%20Help%20v2/preview/topicId713.html"><span>Run the code analysis</span></a>. You should see a list of results that looks something like
+            this:
+            <figure><img alt="ij_java_8_null_inspection_results" width="427" height="321" src="./MigratingtoJava8-ver2_files/ij_java_8_null_inspection_results.png"></figure>
+        </li><li class="list__item">
+            If you see "Assignment to null" for fields, you may want to consider turning this field into an
+            <code class="code" data-lang="Java">Optional</code>.
+            For example, in the code below, the line where offset is assigned will be flagged:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="kd">private</span> <span class="n">Integer</span> <span class="n">offset</span><span class="o">;</span>
+
+<span class="c1">// code....</span>
+
+<span class="kd">public</span> <span class="n">Builder</span> <span class="nf">offset</span><span class="o">(</span><span class="kt">int</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">offset</span> <span class="o">=</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">value</span> <span class="o">:</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="c1">// more code...</span>
+</code></div>
+            That's because in another method, the code checks to see if this value has been set before doing
+            something with it:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="k">if</span> <span class="o">(</span><span class="n">offset</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="na">skip</span><span class="o">(</span><span class="n">offset</span><span class="o">);</span>
+<span class="o">}</span>
+</code></div>
+            In this case, null is a valid value for offset - it indicates this has not been set, and
+            therefore shouldn't be used.  You may wish to change the field into an
+            <code class="code" data-lang="Java">Optional</code>
+            of
+            <code class="code" data-lang="Java">Integer</code>
+            via
+            <kbd data-default="Ctrl+Shift+F6" data-default_for_gnome="Ctrl+Shift+F6" data-default_for_kde="Ctrl+Shift+F6" data-default_for_xwin="Ctrl+Shift+F6" data-emacs="Ctrl+Shift+F6" data-jbuilder="Ctrl+Shift+F6" data-visual_studio="Ctrl+Shift+F6" data-netbeans_6.5="N/A" data-eclipse="Ctrl+Shift+F6" data-mac_os_x_10.5_="⇧⌘F6" data-mac_os_x="⇧⌘F6" data-eclipse_mac_os_x="N/A" data-intellij_idea_classic_os_x="N/A" data-xcode="N/A" data-resharper="N/A" data-resharper_osx="N/A" class="">⇧⌘F6</kbd>, and alter the way the value is set:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="kd">private</span> <span class="n">Optional</span><span class="o">&lt;</span><span class="n">Integer</span><span class="o">&gt;</span> <span class="n">offset</span><span class="o">;</span>
+
+<span class="c1">// code...</span>
+
+<span class="kd">public</span> <span class="n">Builder</span> <span class="nf">offset</span><span class="o">(</span><span class="kt">int</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">offset</span> <span class="o">=</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="n">Optional</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">value</span><span class="o">)</span> <span class="o">:</span> <span class="n">Optional</span><span class="o">.</span><span class="na">empty</span><span class="o">();</span>
+    <span class="k">return</span> <span class="k">this</span><span class="o">;</span>
+<span class="o">}</span>
+
+<span class="c1">// more code...</span>
+</code></div>
+            Then you can use the methods on
+            <code class="code" data-lang="Java">Optional</code>
+            instead of performing null-checks.  The simplest
+            solution is:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="k">if</span> <span class="o">(</span><span class="n">offset</span><span class="o">.</span><span class="na">isPresent</span><span class="o">())</span> <span class="o">{</span>
+    <span class="n">cursor</span><span class="o">.</span><span class="na">skip</span><span class="o">(</span><span class="n">offset</span><span class="o">);</span>
+<span class="o">}</span>
+</code></div>
+            But it's much more elegant to use a Lambda Expression to define what to do with the value:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">offset</span><span class="o">.</span><span class="na">ifPresent</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="n">cursor</span><span class="o">.</span><span class="na">skip</span><span class="o">(</span><span class="n">offset</span><span class="o">));</span></code></div>
+        </li><li class="list__item">
+            The inspections also indicate places where a method returns null.  If you have a method that can return a
+            null value, the code that calls this method should check if it returned null and take
+            appropriate action. It's easy to forget to do this though, especially if the developer isn't aware
+            the method can return a null. Changing these methods to return an
+            <code class="code" data-lang="Java">Optional</code>
+            makes it much more explicit this might not return a value.  For example, maybe our inspections flagged this
+            method as returning a null value:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="kd">public</span> <span class="n">Customer</span> <span class="nf">findFirst</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">customers</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">customers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></div>
+            We could alter this method to return an
+            <code class="code" data-lang="Java">Optional</code>
+            of
+            <code class="code" data-lang="Java">Customer</code>:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="kd">public</span> <span class="n">Optional</span><span class="o">&lt;</span><span class="n">Customer</span><span class="o">&gt;</span> <span class="nf">findFirst</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">customers</span><span class="o">.</span><span class="na">isEmpty</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">Optional</span><span class="o">.</span><span class="na">empty</span><span class="o">();</span>
+    <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">Optional</span><span class="o">.</span><span class="na">ofNullable</span><span class="o">(</span><span class="n">customers</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="mi">0</span><span class="o">));</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></div>
+        </li><li class="list__item">
+            You'll need to change the code that calls these methods to deal with the
+            <code class="code" data-lang="Java">Optional</code>
+            type. This might be
+            the correct place to make a decision about what to do if the value does not exist.  In the example
+            above, perhaps the code that calls the
+            <code class="code" data-lang="Java">findFirst</code>
+            method used to look like this:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Customer</span> <span class="n">firstCustomer</span> <span class="o">=</span> <span class="n">customerDao</span><span class="o">.</span><span class="na">findFirst</span><span class="o">();</span>
+<span class="k">if</span> <span class="o">(</span><span class="n">firstCustomer</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">throw</span> <span class="k">new</span> <span class="n">CustomerNotFoundException</span><span class="o">();</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="n">firstCustomer</span><span class="o">.</span><span class="na">setNewOffer</span><span class="o">(</span><span class="n">offer</span><span class="o">);</span>
+<span class="o">}</span>
+</code></div>
+            But we're now returning an
+            <code class="code" data-lang="Java">Optional</code>, we can eliminate the null check:
+            <div class="code-block" data-lang="Java"><code class="code-block__wrapper"><span class="n">Optional</span><span class="o">&lt;</span><span class="n">Customer</span><span class="o">&gt;</span> <span class="n">firstCustomer</span> <span class="o">=</span> <span class="n">customerDao</span><span class="o">.</span><span class="na">findFirst</span><span class="o">();</span>
+<span class="n">firstCustomer</span><span class="o">.</span><span class="na">orElseThrow</span><span class="o">(()</span> <span class="o">-&gt;</span> <span class="k">new</span> <span class="n">CustomerNotFoundException</span><span class="o">())</span>
+             <span class="o">.</span><span class="na">setNewOffer</span><span class="o">(</span><span class="n">offer</span><span class="o">);</span>
+            
+</code></div>
+        </li></ol></section><a name="d25133e699"></a><h2>Impact of migrating to optional</h2>
+        <p>
+            Changing a field type to
+            <code class="code" data-lang="Java">Optional</code>
+            can have a big impact, and it's not easy to do everything automatically.  To start with, try to keep the
+            use of
+            <code class="code" data-lang="Java">Optional</code>
+            inside the class - if you can change the field to an
+            <code class="code" data-lang="Java">Optional</code>
+            try not expose this via getters and setters, this will let you do a more gradual migration.
+        </p>
+        <p>
+            Changing method return types to
+            <code class="code" data-lang="Java">Optional</code>
+            has an even bigger impact, and you may see these changes ripple
+            through your codebase in an unexpected way.  Applying this approach to all values that can be null could
+            result in
+            <code class="code" data-lang="Java">Optional</code>
+            variables and fields all over the code, with multiple places to performing
+            <code class="code" data-lang="Java">isPresent</code>
+            checks or using the
+            <code class="code" data-lang="Java">Optional</code>
+            methods to perform an action or throw an appropriate exception.
+        </p>
+        <p>
+            Remember that the goal of using the new features in Java 8 is to simplify the code and aid readability,
+            so limit the scope of the changes to small sections of the code and check that using
+            <code class="code" data-lang="Java">Optional</code>
+            is making your code easier to understand, not more difficult to maintain.
+        </p>
+        <p>
+            IntelliJ IDEA's inspections will identify possible places for change, and the refactoring tools can help
+            apply these changes, but refactoring to
+            <code class="code" data-lang="Java">Optional</code>
+            has a large impact and you and your team should identify a strategy for which areas to change and how to
+            approach these changes.  You can even use the suggested fix of "Annotate field [fieldName] as @Nullable"
+            to mark those fields that are candidates for migrating to
+            <code class="code" data-lang="Java">Optional</code>, in order to take a step in that direction with a smaller impact on the code.
+        </p>
+    <a name="d25133e744"></a><h2>Summary</h2>
+        <p>
+            IntelliJ IDEA's Inspections, in particular those around language migration, can help identify areas in your
+            code that can be refactored to use Java 8 features, and even apply those fixes automatically.
+        </p>
+        <p>
+            If you have applied the fixes automatically, it's valuable to look at the updated code to check it
+            isn't harder to understand, and to help you become familiar with the new features.
+        </p>
+        <p>
+            This tutorial gave some pointers on how to migrate your code. We've covered
+            <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html" data-bypass="yes"><span>lambda expressions</span></a>
+            and
+            <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html" data-bypass="yes"><span>method references</span></a>, some new methods on
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html" data-bypass="yes"><span>Collection</span></a>,
+            introduced the
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html" data-bypass="yes"><span>Streams API</span></a>,
+            shown how IntelliJ IDEA can help you use the new
+            <a href="http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html" data-bypass="yes"><span>Date and Time API</span></a>
+            and looked at how to identify places that might benefit from using the new
+            <a href="https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html" data-bypass="yes"><span>Optional</span></a> type.
+        </p>
+        <p>
+            There are plenty of new features in Java 8 designed to make life easier for programmers - to
+            make code more readable, and to make it easier to perform complex operations on data structures.
+            IntelliJ IDEA of course not only supports these features, but helps developers make use of them, including
+            migrating existing code and providing help and suggestions in the editor to guide you as you use them.
+        </p>
+
+    <div class="last-modified">Last modified: 10 November 2015 </div></article><div id="disqus_thread"></div></div></section></main></div><script data-main="http://helpserver.labs.intellij.net:8080/help-app/js/main.build" src="./MigratingtoJava8-ver2_files/require.js"></script><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{(function() { for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; if (typeof(lastpass_f.lpsubmitorig2)=='object'){ continue;}lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ if (typeof(d.innerText) != 'undefined') { d.innerText=i.toString(); } else { d.textContent=i.toString(); } } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }})()}catch(e){}</script></body></html>
