@@ -6,20 +6,24 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 13 Nov 2015 00:00:00 UTC</updated>
+    <updated>Mon, 28 Mar 2016 00:00:00 UTC</updated>
     
     <item>
       <title>Upcoming Events</title>
       <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Fri, 13 Nov 2015 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 28 Mar 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;http://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;26-29 Apr 2016&lt;/strong&gt;: &lt;a href=&#34;http://craft-conf.com/2016/&#34;&gt;Craft Conf, Budapest&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;26-29 Apr 2016&lt;/strong&gt;: &lt;a href=&#34;https://craft-conf.com/2016#speakers/TrishaGee&#34;&gt;Craft Conf, Budapest&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;11-13 May 2016&lt;/strong&gt;: &lt;a href=&#34;http://agilemanchester.net/2016/keynotes/&#34;&gt;Agile Manchester - Keynote&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;12 May 2016&lt;/strong&gt;: &lt;a href=&#34;http://agilemanchester.net/2016/sessions/index.php?session=102&#34;&gt;Agile Manchester - Keynote&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;8-10 Jun 2016&lt;/strong&gt;: &lt;a href=&#34;http://cfp.devoxx.co.uk/2016/speaker/trisha_gee&#34;&gt;DevoxxUK - Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;13-15 Jun 2016&lt;/strong&gt;: &lt;a href=&#34;https://qconnewyork.com/ny2016/speakers&#34;&gt;QCon New York - Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -82,22 +86,23 @@ an individual, add to the mix?&lt;/em&gt;&lt;/p&gt;
       <guid>http://trishagee.github.io/presentation/level_up_your_automated_tests/</guid>
       <description>
 
-&lt;p&gt;I presented a new talk at &lt;a href=&#34;http://gotocon.com/chicago-2015&#34;&gt;GOTO Chicago 2015&lt;/a&gt;
-about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
+&lt;p&gt;This presentation is about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
 talk covers the same case study as
 &lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.&lt;/p&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D-xra_X9Nwg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3fEnq6JuwuI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Slides available below.  (note that due to a technology fail, my hand-drawn style is even more hand-drawn than usual).&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/zUhtb6nqz7IgdO&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
-&lt;iframe src=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+&lt;h3 id=&#34;other-videos:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Other Videos&lt;/h3&gt;
+
+&lt;p&gt;First version: &lt;a href=&#34;https://www.youtube.com/watch?v=D-xra_X9Nwg&#34;&gt;GOTO Chicago&lt;/a&gt; ( &lt;a href=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34;&gt;slides&lt;/a&gt;)&lt;/p&gt;
 
 &lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
 
-&lt;p&gt;I sadly did not have a lot of time for questions during the presentation, but
+&lt;p&gt;I sadly do not have a lot of time for questions during the presentation, but
 thanks to the wonders of modern technology, I have a list of unanswered
 questions which I will attempt to address here.&lt;/p&gt;
 
@@ -522,18 +527,19 @@ of the developers.&lt;/i&gt;&lt;/p&gt;
 
 &lt;p&gt;Content and resources for my new Java 8 in Anger presentation.&lt;/p&gt;
 
-&lt;p&gt;This page embeds the latest video of this talk (DevoxxUK), links to other material I&amp;rsquo;ve published on this topic,  and
-to the resources I used to create the code.&lt;/p&gt;
+&lt;p&gt;This page embeds the latest video of this talk (for the vJUG), links to other material I&amp;rsquo;ve published on this topic,&lt;br /&gt;
+and to the resources I used to create the code.&lt;/p&gt;
 
 &lt;h4 id=&#34;videos:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Videos&lt;/h4&gt;
 
-&lt;div data-parleys-presentation=&#34;java-8-anger-1&#34; style=&#34;width:100%;height:300px&#34;&gt;&lt;script type = &#34;text/javascript&#34; src=&#34;//parleys.com/js/parleys-share.js&#34;&gt;&lt;/script&gt;&lt;a href=&#34;https://www.parleys.com/play/java-8-anger-1&#34;&gt;Watch on Parleys.com&lt;/a&gt;&lt;/div&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/6_06zcDisNg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
 
 &lt;h4 id=&#34;other-videos:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Other videos&lt;/h4&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.parleys.com/play/java-8-anger-1&#34;&gt;Devoxx UK&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/java8-examples&#34;&gt;QCon New York&lt;/a&gt; (in this version, you get to see what happens
 when it goes wrong&amp;hellip;)&lt;br /&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.parleys.com/play/java-8-anger&#34;&gt;Devoxx France&lt;/a&gt;&lt;br /&gt;&lt;/li&gt;
