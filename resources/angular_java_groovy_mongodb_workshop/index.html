@@ -47,7 +47,7 @@
 
 
 
-    <base href="http://trishagee.github.io/">
+    <base href="http://trishagee.github.io">
     <title> Workshop: AngularJS, HTML5, Groovy, Java and MongoDB - trishagee.github.io </title>
     <link rel="canonical" href="http://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/">
     
@@ -158,7 +158,7 @@
 <p>Setup required for the <a href="http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together">AngularJS/HTML5/Groovy/Java/MongoDB tutorial</a> for QCon London 2015.
 Sign up with code SPEAKGEE100 for £100 off the price!</p>
 
-<h2 id="who-is-this-for:c3884e8aa27c5b71cf8845e1ec680695">Who is this for?</h2>
+<h2 id="toc_0">Who is this for?</h2>
 
 <p>This workshop is aimed at Java developers who want to learn more about how
 to rapidly prototype applications using web front-end technologies with JVM back-end technologies. The workshop may be
@@ -171,7 +171,7 @@ but this is <em>not</em> an introduction to Java and familiarity with server-sid
 
 <p>This is a hands-on workshop, bring a laptop set up according to the following instructions - you will be writing code!</p>
 
-<h2 id="overview:c3884e8aa27c5b71cf8845e1ec680695">Overview</h2>
+<h2 id="toc_1">Overview</h2>
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/klw9pIuTICM" frameborder="0" allowfullscreen></iframe>
 
@@ -180,7 +180,7 @@ setup for the workshop.</p>
 
 <p>The setup instructions below are the same process, so you can copy &amp; paste where appropriate.</p>
 
-<h2 id="setup:c3884e8aa27c5b71cf8845e1ec680695">Setup</h2>
+<h2 id="toc_2">Setup</h2>
 
 <p>I am assuming you already have a version of the Java SDK downloaded. For this workshop, Java 7 or above should work, but
 I recommend you <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">download the latest version of Java 8</a> if you&rsquo;re not already using it.</p>
@@ -188,7 +188,7 @@ I recommend you <a href="http://www.oracle.com/technetwork/java/javase/downloads
 <p>Create a new work area for this tutorial. For the rest of these instructions I&rsquo;ll refer to it as <code>&lt;location&gt;</code>.  I&rsquo;ve put
  mine in <code>~/Projects/workshops/qcon2015</code></p>
 
-<h2 id="installing-mongodb:c3884e8aa27c5b71cf8845e1ec680695">Installing MongoDB</h2>
+<h2 id="toc_3">Installing MongoDB</h2>
 
 <p>I&rsquo;m going to be using <a href="http://www.mongodb.org/downloads">MongoDB 3.0.0-rc8</a>, but version 2.6 will be fine too.</p>
 
@@ -200,12 +200,12 @@ have a folder at <code>&lt;location&gt;/data</code></p>
 
 <p>From the command line, start MongoDB to make sure everything is working.  From the <code>&lt;location&gt;</code> directory:</p>
 
-<h5 id="linux-osx:c3884e8aa27c5b71cf8845e1ec680695">Linux/OSX</h5>
+<h5 id="toc_4">Linux/OSX</h5>
 
 <pre><code>./mongodb/bin/mongod --dbpath data
 </code></pre>
 
-<h5 id="windows:c3884e8aa27c5b71cf8845e1ec680695">Windows:</h5>
+<h5 id="toc_5">Windows:</h5>
 
 <pre><code>monogdb\bin\mongod.exe --dbpath data
 </code></pre>
@@ -215,12 +215,12 @@ MongoDB should be running on localhost and port 27017</p>
 
 <p>Connect to the shell to make sure it&rsquo;s working:</p>
 
-<h5 id="linux-osx-1:c3884e8aa27c5b71cf8845e1ec680695">Linux/OSX</h5>
+<h5 id="toc_6">Linux/OSX</h5>
 
 <pre><code>./mongodb/bin/mongo
 </code></pre>
 
-<h5 id="windows-1:c3884e8aa27c5b71cf8845e1ec680695">Windows</h5>
+<h5 id="toc_7">Windows</h5>
 
 <pre><code>monogdb\bin\mongo.exe
 </code></pre>
@@ -240,18 +240,18 @@ Questions? Try the support group
 &gt;
 </code></pre>
 
-<h2 id="creating-your-project:c3884e8aa27c5b71cf8845e1ec680695">Creating your project</h2>
+<h2 id="toc_8">Creating your project</h2>
 
 <p>Clone <a href="https://github.com/trishagee/cafelito">the Cafelito project</a> into <code>&lt;location&gt;/cafelito</code></p>
 
 <p>In a terminal/command line, navigate to this location, and run:</p>
 
-<h5 id="linux-osx-2:c3884e8aa27c5b71cf8845e1ec680695">Linux/OSX</h5>
+<h5 id="toc_9">Linux/OSX</h5>
 
 <pre><code>./gradlew check
 </code></pre>
 
-<h5 id="windows-2:c3884e8aa27c5b71cf8845e1ec680695">Windows</h5>
+<h5 id="toc_10">Windows</h5>
 
 <pre><code>gradlew.bat check
 </code></pre>
@@ -267,7 +267,7 @@ the dependencies for you.</p>
 <p>Feel free to use Eclipse or
 Netbeans (or whatever your favourite IDE is) but I&rsquo;m out of practice using those IDEs and might not be able to help you out as much.</p>
 
-<h2 id="and-now:c3884e8aa27c5b71cf8845e1ec680695">And now&hellip;</h2>
+<h2 id="toc_11">And now&hellip;</h2>
 
 <p>You should be ready to begin: you have a working instance of MongoDB, a skeleton project that we&rsquo;ll be working with, and all the
 dependencies should have been downloaded.</p>
@@ -290,19 +290,19 @@ dependencies should have been downloaded.</p>
     </ul>
     <ul id="tags">
         
-        <li><a href="http://trishagee.github.io//tags/java">java</a></li>
+        <li><a href="http://trishagee.github.io/tags/java">java</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/mongodb">mongodb</a></li>
+        <li><a href="http://trishagee.github.io/tags/mongodb">mongodb</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/groovy">groovy</a></li>
+        <li><a href="http://trishagee.github.io/tags/groovy">groovy</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/spock">spock</a></li>
+        <li><a href="http://trishagee.github.io/tags/spock">spock</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/html5">html5</a></li>
+        <li><a href="http://trishagee.github.io/tags/html5">html5</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/tutorial">tutorial</a></li>
+        <li><a href="http://trishagee.github.io/tags/tutorial">tutorial</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/workshop">workshop</a></li>
+        <li><a href="http://trishagee.github.io/tags/workshop">workshop</a></li>
         
     </ul>
 </div>
