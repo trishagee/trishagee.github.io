@@ -6,7 +6,120 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 28 Mar 2016 00:00:00 UTC</updated>
+    <updated>Fri, 03 Jun 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Applying Java 8 Idioms to Existing Code</title>
+      <link>http://trishagee.github.io/presentation/refactoring_to_java_8/</link>
+      <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/refactoring_to_java_8/</guid>
+      <description>
+
+&lt;ul&gt;
+&lt;li&gt;Understand how to improve performance with your Java code using Java 8 language features.&lt;/li&gt;
+&lt;li&gt;Learn hands on techniques to discover and implement common Java 8 refactorings.&lt;/li&gt;
+&lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.&lt;/p&gt;
+
+&lt;p&gt;In this presentation, Trisha will:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Highlight the performance benefits of using Java 8 - after all, you’ll probably have to persuade &amp;ldquo;The Management&amp;rdquo; that tampering with
+existing code is worthwhile&lt;/li&gt;
+&lt;li&gt;Demonstrate how to identify areas of code that can be updated to use Java 8 features, and how to pick which changes will give you the
+most benefit&lt;/li&gt;
+&lt;li&gt;Demonstrate how to automatically refactor your code to make use of features like lambdas and streams&lt;/li&gt;
+&lt;li&gt;Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
+
+&lt;p&gt;[Slides]&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Performance&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Lambda Expressions&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;http://medianetwork.oracle.com/video/player/2623576348001&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_4&#34;&gt;Streams&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;https://www.infoq.com/presentations/java8-stream-performance&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&#34;&gt;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&lt;/a&gt; - Angelika Langer&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Again, the for-loop is faster that the sequential stream operation, but the difference on an ArrayList is not nearly as significant as
+it was on an array.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You will find that there is no measurable difference any more between for-loop and sequential stream if the functionality is heavily cpu
+ bound.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for
+performance reasons; you do it because you like the functional programming style.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of
+overhead that is involved in going parallel and how (well or poorly) it is overcompensated (on this particular platform).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;With this in mind it is fair to say that the performance model of streams is not a trivial one&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;you need to benchmark a lot in order to find out for a given context whether going parallel is worth doing or not.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t
+expect miracles. Also, don’t guess; instead, benchmark a lot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&#34;&gt;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&lt;/a&gt;
+(interesting comparison of different iteration styles)
+Also shows that things like boxing might add more cost than streams (but that you don&amp;rsquo;t realise you&amp;rsquo;re boxing)
+Maybe could take these test and run with the unboxed feature from the blog below?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.codefx.org/java/stream-performance/&#34;&gt;http://blog.codefx.org/java/stream-performance/&lt;/a&gt; - some interesting benchmarks based on Angelika Langer&amp;rsquo;s article&lt;br /&gt;
+&lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;http://blog.codefx.org/java/stream-performance-your-ideas/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Date and Time&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Benchmarking&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://openjdk.java.net/projects/code-tools/jmh/&#34;&gt;http://openjdk.java.net/projects/code-tools/jmh/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin&#34;&gt;https://github.com/artyushov/idea-jmh-plugin&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://java-performance.info/jmh/&#34;&gt;http://java-performance.info/jmh/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -1708,88 +1821,6 @@ trying to break through the barriers.&lt;/p&gt;
 &lt;h3 id=&#34;toc_0&#34;&gt;Postscript&lt;/h3&gt;
 
 &lt;p&gt;I wrote a &lt;a href=&#34;/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>I&#39;m so tired of it all</title>
-      <link>http://trishagee.github.io/post/i_am_so_tired_of_it_all/</link>
-      <pubDate>Tue, 10 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/i_am_so_tired_of_it_all/</guid>
-      <description>&lt;p&gt;We work so hard to promote equality, to fight for the rights of people who are not middle-class
-white men, and time and again it just feels like we&amp;rsquo;re not getting anywhere.  &lt;a href=&#34;http://www.internationalwomensday.com/&#34;&gt;International Women&amp;rsquo;s
-Day&lt;/a&gt; highlights the issues that face women all around the world, and make our
-women-in-tech problem
-look like a genuine &lt;a href=&#34;https://twitter.com/hashtag/firstworldproblems&#34;&gt;First World Problem&lt;/a&gt;, and yet we can&amp;rsquo;t even get that right.&lt;/p&gt;
-
-&lt;p&gt;I nearly gave up. This weekend I thought, fuck it. I&amp;rsquo;ve done my bit. Personally, I&amp;rsquo;ve been through the phase in my
-career where being a woman was a disadvantage and somehow arrived out the other side - in my position, in my job, it&amp;rsquo;s
-an advantage, and I don&amp;rsquo;t need to change anything to improve things for my career. I&amp;rsquo;m going to carry on doing my job to the best
-of my ability, but I&amp;rsquo;m no longer going to let this diversity thing drain my energy - nothing ever seems to make a difference anyway.&lt;/p&gt;
-
-&lt;p&gt;Over the last year, four (white, middle-class, English-speaking) men who I know well, who
-I have seen by their actions are champions of women in technology, who have personally mentored
-me in some way or another, have been accused of not thinking about women techies, not encouraging them - have
-been accused of sexism.&lt;/p&gt;
-
-&lt;p&gt;This third year of being on the programme committee for QCon, I could see we had achieved far more to promote diversity
-than ever before, but it was &lt;em&gt;so&lt;/em&gt; much work to get that far, and there&amp;rsquo;s still &lt;em&gt;so much&lt;/em&gt; more to do.&lt;/p&gt;
-
-&lt;p&gt;Another conference I have great affection for which has never previously suffered badly from a lack of women speakers
-received practically
-zero submissions for full conference talks from women this year. The submissions that did come in were from the usual
-suspects, the speakers who one calls upon when desperately trying to shore up the gender diversity of your speaker line-up.&lt;/p&gt;
-
-&lt;p&gt;The Sevilla Java User Group, which I started, with my money, which I present at regularly, has had &lt;em&gt;zero&lt;/em&gt; female
-developers attend who were not previously friends. Apparently the impact of visible female role models is far smaller than
-I imagined.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s so much work.&lt;/p&gt;
-
-&lt;p&gt;And it&amp;rsquo;s thankless.&lt;/p&gt;
-
-&lt;p&gt;For the men who support the women, they get attacked by both sides - by women, for not
-doing enough, or sometimes for simply being privileged white men, by men and women for fighting for something that
-doesn&amp;rsquo;t impact them, and by men for betraying their gender.&lt;/p&gt;
-
-&lt;p&gt;For the women, it&amp;rsquo;s the same but more so: some women accuse us of not doing enough, some women sneer at what we&amp;rsquo;re doing,
-telling us we already have equality, men and women think you&amp;rsquo;re in it just to improve your own life, and the men, well,
-many men genuinely don&amp;rsquo;t understand the problems (and it&amp;rsquo;s exhausting to explain), and some are outright hostile.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s fantastic to find men allies.  I don&amp;rsquo;t know about anyone else, but at this stage in my career I&amp;rsquo;m surrounded by men
-who are all allies. And I can honestly say that any professional struggles I&amp;rsquo;ve had in recent years I can see are suffered
-by my colleagues of the opposite sex, so I know they&amp;rsquo;re not because of my gender.&lt;/p&gt;
-
-&lt;p&gt;Maybe it&amp;rsquo;s only fair that our male allies suffer the same way we do, even though they get even less out of fighting our battles
-than we do. Maybe it&amp;rsquo;s fair that they are attacked by both genders, and have to put up with unfair, unjust
-criticism and accusations. After all, look at some of the vile, hate-filled messages thrown at women leading the charge -
-that&amp;rsquo;s abuse. Some of these women fear for their lives.  I couldn&amp;rsquo;t live that life, and I despair that we live in a
-society that can&amp;rsquo;t seem to prevent that.&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;m a bit burnt out. So my friends are finding it tough. But this is a marathon, not a sprint.  And I never did this
-for me anyway. I care about diversity because it matters. I try to change the gender balance specifically, because that&amp;rsquo;s an area I
-might be able to impact, one I have a chance of understanding. I care about equality, about justice, because
-it matters. And I do my tiny part to try and drown out the hate, the anger, the &amp;ldquo;get back into the kitchen, woman&amp;rdquo;
-because those things make me feel sick, because &amp;ldquo;you can be whoever you want to be&amp;rdquo; shouldn&amp;rsquo;t be a lie, shouldn&amp;rsquo;t come
-with caveats.&lt;/p&gt;
-
-&lt;p&gt;Maybe I don&amp;rsquo;t have the time or energy for large-scale revolutions, but I will carry on trying to make a small difference:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;By trying to be a role model for anyone who can relate to me, whatever their colour, gender, or sexual orientation&lt;/li&gt;
-&lt;li&gt;By being visible as a woman techie, who does woman techie things, who&amp;rsquo;s also a human being.&lt;/li&gt;
-&lt;li&gt;By calling out (quietly and personally, at least at first) where I see things that might give the wrong message: e.g.
-e-mailing conference organisers to point out they only have white men in their line up; private messaging people to
-let them know their comments could be taken the wrong way; pointing out to user group leaders that their meetup
-page shows only men at their events.&lt;/li&gt;
-&lt;li&gt;By continuing to give an honest view of what it&amp;rsquo;s like to be a female Java developer, especially if these
-experiences are different to those of other women - one woman&amp;rsquo;s view does not represent every woman&amp;rsquo;s view, if more
-of us tell our different tales, we have a better view of the whole ecosystem (and its inhabitants).&lt;/li&gt;
-&lt;li&gt;By sharing not only the negatives, but the many positives of working in such a varied and rapidly changing profession.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I am tired of fighting, however tiny my efforts are. But I&amp;rsquo;m more tired of inequality.&lt;/p&gt;
 </description>
     </item>
     
