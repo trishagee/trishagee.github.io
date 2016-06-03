@@ -6,122 +6,7 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 03 Jun 2016 00:00:00 UTC</updated>
-    
-    <item>
-      <title>Applying Java 8 Idioms to Existing Code</title>
-      <link>http://trishagee.github.io/presentation/refactoring_to_java_8/</link>
-      <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/refactoring_to_java_8/</guid>
-      <description>
-
-&lt;h2 id=&#34;toc_0&#34;&gt;Key Takeaways&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Understand how to improve performance with your Java code using Java 8 language features.&lt;/li&gt;
-&lt;li&gt;Learn hands on techniques to discover and implement common Java 8 refactorings.&lt;/li&gt;
-&lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.&lt;/p&gt;
-
-&lt;p&gt;In this presentation, Trisha will:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Highlight the performance benefits of using Java 8 - after all, you’ll probably have to persuade &amp;ldquo;The Management&amp;rdquo; that tampering with
-existing code is worthwhile&lt;/li&gt;
-&lt;li&gt;Demonstrate how to identify areas of code that can be updated to use Java 8 features, and how to pick which changes will give you the
-most benefit&lt;/li&gt;
-&lt;li&gt;Demonstrate how to automatically refactor your code to make use of features like lambdas and streams&lt;/li&gt;
-&lt;li&gt;Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;The talk&lt;/h2&gt;
-
-&lt;p&gt;[Slides]&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_3&#34;&gt;Performance&lt;/h2&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;Lambda Expressions&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;http://medianetwork.oracle.com/video/player/2623576348001&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&lt;/a&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;toc_5&#34;&gt;Streams&lt;/h4&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;https://www.infoq.com/presentations/java8-stream-performance&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&#34;&gt;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&lt;/a&gt; - Angelika Langer&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Again, the for-loop is faster that the sequential stream operation, but the difference on an ArrayList is not nearly as significant as
-it was on an array.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;You will find that there is no measurable difference any more between for-loop and sequential stream if the functionality is heavily cpu
- bound.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for
-performance reasons; you do it because you like the functional programming style.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of
-overhead that is involved in going parallel and how (well or poorly) it is overcompensated (on this particular platform).&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;With this in mind it is fair to say that the performance model of streams is not a trivial one&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;hellip;you need to benchmark a lot in order to find out for a given context whether going parallel is worth doing or not.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t
-expect miracles. Also, don’t guess; instead, benchmark a lot.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&#34;&gt;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&lt;/a&gt;
-(interesting comparison of different iteration styles)
-Also shows that things like boxing might add more cost than streams (but that you don&amp;rsquo;t realise you&amp;rsquo;re boxing)
-Maybe could take these test and run with the unboxed feature from the blog below?&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://blog.codefx.org/java/stream-performance/&#34;&gt;http://blog.codefx.org/java/stream-performance/&lt;/a&gt; - some interesting benchmarks based on Angelika Langer&amp;rsquo;s article&lt;br /&gt;
-&lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;http://blog.codefx.org/java/stream-performance-your-ideas/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_6&#34;&gt;Date and Time&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_7&#34;&gt;Benchmarking&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://openjdk.java.net/projects/code-tools/jmh/&#34;&gt;http://openjdk.java.net/projects/code-tools/jmh/&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin&#34;&gt;https://github.com/artyushov/idea-jmh-plugin&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://java-performance.info/jmh/&#34;&gt;http://java-performance.info/jmh/&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
+    <updated>Tue, 04 Aug 2015 00:00:00 UTC</updated>
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
@@ -896,6 +781,28 @@ operations using the Java driver:&lt;/p&gt;
     </item>
     
     <item>
+      <title>Fiesta de lanzamiento de Java 8</title>
+      <link>http://trishagee.github.io/es/post/svq_java8_launch_party/</link>
+      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party/</guid>
+      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
+presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
       <link>http://trishagee.github.io/post/svq_java8_launch_party/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
@@ -919,28 +826,6 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Fiesta de lanzamiento de Java 8</title>
-      <link>http://trishagee.github.io/es/post/svq_java8_launch_party/</link>
-      <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/es/post/svq_java8_launch_party/</guid>
-      <description>&lt;p&gt;Anoche, a la Sevilla JUG, hemos celebrado el lanzamiento de &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt;!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
-&lt;/p&gt;
-
-&lt;p&gt;Si te perdiste el sesion, o si quieres leer/mirar los materiales, estan aqui:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/lambda-streams-java-8&#34;&gt;The Main Presentation&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/happy-mappy&#34;&gt;Trisha&amp;rsquo;s real-life lambda code&lt;/a&gt; (&lt;code&gt;TweetDecorator&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;Y usamos el &lt;a href=&#34;http://www.slideshare.net/SimonRitter/javase8-55thingsv2-sritter&#34;&gt;slide deck&lt;/a&gt; de Simon Ritter, de esta
-presentation: &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&gt;55 New Features in Java SE 8&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
@@ -984,6 +869,16 @@ weekends.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/introduction_to_mongodb_and_big_data/</guid>
       <description>&lt;p&gt;I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&amp;rsquo;s good in the &amp;ldquo;Big Data&amp;rdquo; space.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;table border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;&lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1390425195000&#34; height=&#34;28&#34; /&gt;&lt;/td&gt;&lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;&lt;img alt=&#34;51&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/jan_feb_2014/data/imgpages/smtn/0052_vyvpwu.gif?lm=1390425195000&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;MongoDB and Big Data&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock: Data Driven Testing</title>
+      <link>http://trishagee.github.io/post/spock_data_driven_testing/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/spock_data_driven_testing/</guid>
+      <description>&lt;p&gt;In the last two articles on Spock I&amp;rsquo;ve covered &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html&#34;&gt;mocking&lt;/a&gt; and &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-passes-next-test-painless-stubbing.html&#34;&gt;stubbing&lt;/a&gt;.  And I was pretty sold on Spock just based on that.  But for a database driver, there&amp;rsquo;s a killer feature: &amp;nbsp;&lt;a href=&#34;http://docs.spockframework.org/en/latest/data_driven_testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;All developers have a tendency to think of and test the happy path.  Not least of all because that&amp;rsquo;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.  We tend not to ask &amp;ldquo;what happens if they ask to withdraw money when the cash machine has no cash?&amp;rdquo; or &amp;ldquo;what happens when their account balance is zero?&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;With any luck you&amp;rsquo;ll have a test suite covering your happy paths, and probably at least twice as many grumpy paths.  If you&amp;rsquo;re like me, and you like one test to test one thing (and who doesn&amp;rsquo;t?), sometimes your test classes can get quite long as you test various edge cases.  Or, much worse (and I&amp;rsquo;ve done this too) you use a calculation remarkably like the one you&amp;rsquo;re testing to generate test data.  You run your test in a loop with the calculation and lo!  The test passes.  Woohoo?&lt;br /&gt;&lt;br /&gt;Not that long ago I went through a process of re-writing a lot of unit tests that I had written a year or two before - we were about to do a big refactor of the code that generated some important numbers, and we wanted our tests to tell us we hadn&amp;rsquo;t broken anything with the refactor. The only problem was, the tests used a calculation rather similar to the production calculation, and borrowed some constants to create the expected number. &amp;nbsp;I ended up running the tests to find the numbers the test was generating as expected values, and hardcoding those values into the test. It felt dirty, but it was necessary - I wanted to make sure the refactoring didn&amp;rsquo;t change the expected numbers as well as the ones generated by the real code. &amp;nbsp;This is not a process I want to go through ever again.&lt;br /&gt;&lt;br /&gt;When you&amp;rsquo;re testing these sorts of things, you try and think of a few representative cases, code them into your tests, and hope that you&amp;rsquo;ve covered the main areas.  What would be far nicer is if you could shove a whole load of different data into your system-under-test and make sure the results look sane.&lt;br /&gt;&lt;br /&gt;An example from the Java driver is that we had tests that were checking the parsing of the URI - you can initialise your MongoDB settings simply using a String containing the URI.&lt;br /&gt;&lt;br /&gt;The old tests looked like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056046.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/master/src/test/com/mongodb/MongoClientURITest.java&#34;&gt;MongoClientURITest&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Using Spock&amp;rsquo;s data driven testing, we changed this to:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056095.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/driver/src/test/unit/org/mongodb/MongoClientURISpecification.groovy&#34;&gt;MongoClientURISpecification&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Instead of having a separate test for every type of URL that needs parsing, you have a single test and each line in the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section is a new combination of input URL and expected outputs.  Each one of those lines used to be a test.  In fact, some of them probably weren&amp;rsquo;t tests as the ugliness and overhead of adding another copy-paste test seemed like overkill.  But here, in Spock, it&amp;rsquo;s just a case of adding one more line with a new input and set of outputs.&lt;br /&gt;&lt;br /&gt;The major benefit here, to me, is that it&amp;rsquo;s dead easy to add another test for a &amp;ldquo;what if?&amp;rdquo; that occurs to the developer.  You don&amp;rsquo;t have to have yet another test method that someone else is going to wonder &amp;ldquo;what the hell are we testing this for?&amp;rdquo;.  You just add another line which documents another set of expected outputs given the new input.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s easy, it&amp;rsquo;s neat, it&amp;rsquo;s succinct.&lt;br /&gt;&lt;br /&gt;One of the major benefits of this to our team is that we don&amp;rsquo;t argue any more about whether a single test is testing too much.  In the past, we had tests like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056136.js&#34;&gt;&lt;/script&gt; And I can see why we have all those assertions in the same test, because technically these are all the same concept - make sure that each type of WriteConcern creates the correct command document.  I believe these should be one test per line - because each line in the test is testing a different input and output, and I would want to document that in the test name (&amp;ldquo;fsync write concern should have fsync flag in getLastError command&amp;rdquo;, &amp;ldquo;journalled write concern should set j flag to true in getLastError command&amp;rdquo; etc).  Also don&amp;rsquo;t forget that in JUnit, if the first assert fails, the rest of the test is not run.  Therefore you have no idea if this is a failure that affects all write concerns, or just the first one.  You lose the coverage provided by the later asserts.&lt;br /&gt;&lt;br /&gt;But the argument against my viewpoint is then we&amp;rsquo;d have seven different one-line tests.  What a waste of space.&lt;br /&gt;&lt;br /&gt;You could argue for days about the best way to do it, or that this test is a sign of some other smell that needs addressing.  But if you&amp;rsquo;re in a real world project and your aim is to both improve your test coverage and improve the tests themselves, these arguments are getting in the way of progress.  The nice thing about Spock is that you can take these tests that test too much, and turn them into something a bit prettier:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056166.js&#34;&gt;&lt;/script&gt; You might be thinking, what&amp;rsquo;s the advantage over the JUnit way?  Isn&amp;rsquo;t that the same thing but Groovier?  But there&amp;rsquo;s one important difference - all the lines under &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; get run, regardless of whether the test before it passes or fails.  This basically is seven different tests, but takes up the same space as one.&lt;br /&gt;&lt;br /&gt;That&amp;rsquo;s great, but if just one of these lines fails, how do you know which one it was if all seven tests are masquerading as one?  That&amp;rsquo;s where the awesome &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;@Unroll&lt;/span&gt; annotation comes in.  This reports the passing or failing of each line as if it were a separate test.  By default, when you run an unrolled test it will get reported as something like:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;But in the test above we put some magic keywords into the test name: &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;&amp;lsquo;&lt;b&gt;#wc&lt;/b&gt; should return getlasterror document &lt;b&gt;#commandDocument&lt;/b&gt;&amp;lsquo;&lt;/span&gt; - note that these values with &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;#&lt;/span&gt; in front are the same headings from the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section. They&amp;rsquo;ll get replaced by the value being run in the current test:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Yeah, it can be a bit of a mouthful if the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;toString&lt;/span&gt; is hefty, but it does give you an idea of what was being tested, and it&amp;rsquo;s prettier if the inputs have nice succinct string values:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;This, combined with Spock&amp;rsquo;s awesome &lt;a href=&#34;http://hamletdarcy.blogspot.com.es/2009/05/new-power-assertions-in-groovy.html&#34;&gt;power assert&lt;/a&gt;&amp;nbsp;makes it dead simple to see what went wrong when one of these tests fails. &amp;nbsp;Let&amp;rsquo;s take the example of (somehow) the incorrect host being returned for one of the input URIs:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Data driven testing might lead one to over-test the simple things, but the cost of adding another &amp;ldquo;what if?&amp;rdquo; is so low - just another line - and the additional safety you get from trying a different input is rather nice. &amp;nbsp;We&amp;rsquo;ve been using them for parsers and simple generators, where you want to throw in a bunch of inputs to a single method and see what you get out.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m totally sold on this feature, particularly for our type of application (the Java driver does a lot of taking stuff in one shape and turning it into something else). &amp;nbsp;Just in case you want a final example, here&amp;rsquo;s a final one.&lt;br /&gt;&lt;br /&gt;The old way:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057097.js&#34;&gt;&lt;/script&gt; &amp;hellip;and in Spock:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057129.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
 </description>
     </item>
     
