@@ -10,10 +10,10 @@
     
     <item>
       <title></title>
-      <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</link>
+      <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</guid>
+      <guid>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</guid>
       <description>
 
 &lt;p&gt;In the last article [link needed], we covered the basics of installing and connecting to MongoDB via a Java application. In this post, I&amp;rsquo;ll give an introduction to CRUD (Create, Read, Update, Delete) operations using the Java driver. As in the previous article, if you want to follow along and code as we go, you can use these tips to get the tests in the &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started&#34;&gt;Getting Started project&lt;/a&gt; to go green.&lt;/p&gt;
@@ -22,14 +22,14 @@
 
 &lt;p&gt;In the last article [link needed], we introduced &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-document&#34;&gt;documents&lt;/a&gt; and how to
 create them from Java and insert them into MongoDB, so I&amp;rsquo;m not going to repeat that here. But if you want a reminder, or simply want to skip to playing with the code, you can take a look at
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java&#34;&gt;Exercise3InsertTest&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java&#34;&gt;Exercise3InsertTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;Querying&lt;/h2&gt;
 
 &lt;p&gt;Putting stuff in the database is all well and good, but you&amp;rsquo;ll probably want to query the database to get data from it.&lt;/p&gt;
 
 &lt;p&gt;In the last article we covered some basics on using &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/db.collection.find/&#34;&gt;find()&lt;/a&gt; to get
-data from the database. We also showed an example in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise4RetrieveTest.java&#34;&gt;Exercise4RetrieveTest&lt;/a&gt;. But MongoDB supports more than simply getting a single document by ID or getting all the documents in a
+data from the database. We also showed an example in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise4RetrieveTest.java&#34;&gt;Exercise4RetrieveTest&lt;/a&gt;. But MongoDB supports more than simply getting a single document by ID or getting all the documents in a
 collection. As I mentioned, you can query by example, building up a &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/query-documents/&#34;&gt;query document&lt;/a&gt; that looks a similar shape to the one you want.&lt;/p&gt;
 
 &lt;p&gt;For the following examples I&amp;rsquo;m going to assume a document which looks something like this:&lt;/p&gt;
@@ -50,19 +50,15 @@ collection. As I mentioned, you can query by example, building up a &lt;a href=&
 
 &lt;p&gt;To recap, you can easily get a document back from the database using the unique ID:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBCursor cursor = collection.find(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;theId&amp;quot;));
+&lt;pre&gt;&lt;code&gt;MongoCursor&amp;lt;Document&amp;gt; cursor = collection.find(new Document(&amp;quot;_id&amp;quot;, &amp;quot;theId&amp;quot;)).iterator();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/11b4e539612ce5262321.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;&amp;hellip;and you get the values out of the document (represented as a &lt;code&gt;Document&lt;/code&gt;) using a &lt;code&gt;Map&lt;/code&gt;-like syntax:&lt;/p&gt;
 
-&lt;p&gt;&amp;hellip;and you get the values out of the document (represented as a &lt;code&gt;DBObject&lt;/code&gt;) using a &lt;code&gt;Map&lt;/code&gt;-like syntax:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(String) cursor.one().get(&amp;quot;name&amp;quot;)
+&lt;pre&gt;&lt;code&gt;collection.find(new Document(&amp;quot;_id&amp;quot;, &amp;quot;theId&amp;quot;)).first().getString(&amp;quot;name&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/ebf354f8de25663eae79.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;In the above example, because you&amp;rsquo;ve queried by ID (and you knew that ID existed), you can be sure that the cursor has a single document that matches the query.  Therefore you can use &lt;code&gt;cursor.one()&lt;/code&gt; to get it.&lt;/p&gt;
+&lt;p&gt;In the above example, because you&amp;rsquo;ve queried by ID (and you knew that ID existed), you can be sure that the cursor has a single document that matches the query.  Therefore you can use &lt;code&gt;first()&lt;/code&gt; to get it.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_3&#34;&gt;Find all documents matching some criteria&lt;/h3&gt;
 
@@ -70,65 +66,55 @@ collection. As I mentioned, you can query by example, building up a &lt;a href=&
 
 &lt;p&gt;In this case, you can create a query document that has the criteria you want:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;));
+&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;))
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/d82e26bea5fccfa9cbee.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;You can find out the number of results you&amp;rsquo;re going to get by calling count:&lt;/p&gt;
 
-&lt;p&gt;You can find out the number of results:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;results.size();
+&lt;pre&gt;&lt;code&gt;long numberOfResults = collection.count(new Document(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/c1328cfbc6618fad0c4c.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;and you can, naturally, iterate over your cursor:&lt;/p&gt;
 
-&lt;p&gt;and you can, naturally, iterate over them:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;for (DBObject result : results) {
+&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;));
+for (Document result : results) {
     // do something with each result
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/bd7bc1f865a6a0303cd2.js&#34;&gt;&lt;/script&gt;
-
 &lt;p&gt;&lt;strong&gt;A note on batching&lt;/strong&gt;
-The cursor will fetch results in batches from the database, so if you run a query that matches a lot of documents, you don&amp;rsquo;t have to worry that every document is loaded into memory immediately.  For most queries, the &lt;a href=&#34;http://docs.mongodb.org/manual/core/cursors/#cursor-batches&#34;&gt;first batch returned will be 101 documents&lt;/a&gt;. But as you iterate over the cursor, the driver will automatically fetch further batches from the server.  So you don&amp;rsquo;t have to worry about managing batching in your application. But you do need to be aware that if you iterate over the whole of the cursor (for example to put it into a &lt;code&gt;List&lt;/code&gt;), you will end up fetching all the results and putting them in memory.&lt;/p&gt;
+The driver will fetch results in batches from the database, so if you run a query that matches a lot of documents, you don&amp;rsquo;t have to worry that every document is loaded into memory immediately.  For most queries, the &lt;a href=&#34;http://docs.mongodb.org/manual/core/cursors/#cursor-batches&#34;&gt;first batch returned will be 101 documents&lt;/a&gt;. But as you iterate over the cursor, the driver will automatically fetch further batches from the server.  So you don&amp;rsquo;t have to worry about managing batching in your application. But you do need to be aware that if you iterate over the whole of the cursor (for example to put it into a &lt;code&gt;List&lt;/code&gt;), you will end up fetching all the results and putting them in memory.&lt;/p&gt;
 
-&lt;p&gt;You can get started with &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise5SimpleQueryTest.java&#34;&gt;Exercise5SimpleQueryTest&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can get started with &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise5SimpleQueryTest.java&#34;&gt;Exercise5SimpleQueryTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_4&#34;&gt;Selecting Fields&lt;/h3&gt;
 
-&lt;p&gt;Generally speaking, you will read entire documents from MongoDB most of the time. However, you can choose to return just the fields that you care about (for example, you might have a large document and not need all the values). You do this by passing a second parameter into the &lt;code&gt;find&lt;/code&gt; method that&amp;rsquo;s another &lt;code&gt;DBObject&lt;/code&gt; defining the fields you want to
-return. In this example, we&amp;rsquo;ll search for people called &amp;ldquo;Smith&amp;rdquo;, and return only the &lt;code&gt;name&lt;/code&gt; field. To do this we pass in a &lt;code&gt;DBObject&lt;/code&gt; representing &lt;code&gt;{name: 1}&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Generally speaking, you will read entire documents from MongoDB most of the time. However, you can choose to return just the fields that you care about
+(for example, you might have a large document and not need all the values). You do this by passing the details of the fields to select via the &lt;code&gt;projection&lt;/code&gt; method.
+In this example, we&amp;rsquo;ll search for people called &amp;ldquo;Smith&amp;rdquo;, and return only the &lt;code&gt;name&lt;/code&gt; field. To do this we pass in a &lt;code&gt;Document&lt;/code&gt; representing &lt;code&gt;{name: 1}&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;),
-                                   new BasicDBObject(&amp;quot;name&amp;quot;, 1));
+&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Object&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;))
+                                       .projection(new Document(&amp;quot;name&amp;quot;, 1));
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/440cdf337eadd99c9e04.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;You can also use this method to exclude fields from the results. Maybe we might want to exclude an unnecessary subdocument
 from the results - let&amp;rsquo;s say we want to find everyone called &amp;ldquo;Smith&amp;rdquo;, but we don&amp;rsquo;t want to return the &lt;code&gt;address&lt;/code&gt;.  We do this by
 passing in a zero for this field name, i.e. &lt;code&gt;{address: 0}&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;),
-                                   new BasicDBObject(&amp;quot;address&amp;quot;, 0));
+&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Object&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;))
+                                       .projection(new Document(&amp;quot;address&amp;quot;, 0));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/66759199d1459563ad7f.js&#34;&gt;&lt;/script&gt;
-
 &lt;p&gt;With this information, you&amp;rsquo;re ready to tackle
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise6SelectFieldsTest.java&#34;&gt;Exercise6SelectFieldsTest&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise6SelectFieldsTest.java&#34;&gt;Exercise6SelectFieldsTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_5&#34;&gt;Query Operators&lt;/h3&gt;
 
 &lt;p&gt;As I mentioned in the previous article, your fields can be one of a number of types, including numeric.  This means that you can do queries for numeric values as well.  Let&amp;rsquo;s assume, for example, that our person has a &lt;code&gt;numberOfOrders&lt;/code&gt; field, and we wanted to find everyone who had ordered more than, let&amp;rsquo;s say, 10 items.  You can do this using the
 &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/gt/#op._S_gt&#34;&gt;$gt&lt;/a&gt; operator:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;numberOfOrders&amp;quot;, new BasicDBObject(&amp;quot;$gt&amp;quot;, 10)));
+&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;numberOfOrders&amp;quot;, new Document(&amp;quot;$gt&amp;quot;, 10)));
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/3ee81da8e419aca9944b.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;Note that you have to create a further subdocument containing the &lt;code&gt;$gt&lt;/code&gt; condition to use this operator.  All of the query operators &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/&#34;&gt;are
 documented&lt;/a&gt;, and work in a similar way to this example.&lt;/p&gt;
@@ -136,15 +122,13 @@ documented&lt;/a&gt;, and work in a similar way to this example.&lt;/p&gt;
 &lt;p&gt;You might be wondering what terrible things could happen if you try to perform some sort of numeric comparison on a field that is a String, since the database supports any type of value in any of the fields (and in Java the values are Objects so you don&amp;rsquo;t get the benefit of type
 safety).  So, what happens if you do this?&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, new BasicDBObject(&amp;quot;$gt&amp;quot;, 10)));
+&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, new Document(&amp;quot;$gt&amp;quot;, 10)));
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/8bb1e706a5d351a295b1.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;The answer is you get zero results (assuming all your documents contain names that are Strings), and you don&amp;rsquo;t get any errors. The flexible nature of the document schema allows you to mix and match types and query without error.&lt;/p&gt;
 
 &lt;p&gt;You can use this technique to get the test in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise7QueryOperatorsTest.java&#34;&gt;Exercise7QueryOperatorsTest&lt;/a&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise7QueryOperatorsTest.java&#34;&gt;Exercise7QueryOperatorsTest&lt;/a&gt;
 to go green - it&amp;rsquo;s a bit of a daft example, but you get the idea.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_6&#34;&gt;Querying Subdocuments&lt;/h3&gt;
@@ -153,11 +137,9 @@ to go green - it&amp;rsquo;s a bit of a daft example, but you get the idea.&lt;/
 subdocument&lt;/a&gt; - for example, with our person document, we might want to find everyone who lives in the same city.  We can use
 &lt;a href=&#34;http://docs.mongodb.org/manual/core/document/#document-dot-notation&#34;&gt;dot notation&lt;/a&gt; like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBObject findLondoners = new BasicDBObject(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;);
-collection.find(findLondoners));
+&lt;pre&gt;&lt;code&gt;Document findLondoners = new Document(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;);
+collection.find(findLondoners);
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/cd7537b07a8d10e3350c.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;We&amp;rsquo;re not going to use this technique in a query test, but we will use it later when we&amp;rsquo;re doing updates.&lt;/p&gt;
 
@@ -165,19 +147,17 @@ collection.find(findLondoners));
 
 &lt;p&gt;I mentioned earlier that you can iterate over a cursor, and that the driver will fetch results in batches.  However, you can also use the familiar-looking &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/cursor.skip/&#34;&gt;skip()&lt;/a&gt; and
 &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/cursor.limit/&#34;&gt;limit()&lt;/a&gt; methods.  You can use these to fix up the test in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise8SkipAndLimitTest.java&#34;&gt;Exercise8SkipAndLimitTest&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise8SkipAndLimitTest.java&#34;&gt;Exercise8SkipAndLimitTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_8&#34;&gt;A last note on querying: Indexes&lt;/h3&gt;
 
 &lt;p&gt;Like a traditional database, you can add indexes onto the database to improve the speed of regular queries.  There&amp;rsquo;s extensive
 &lt;a href=&#34;http://docs.mongodb.org/manual/indexes/&#34;&gt;documentation on indexes&lt;/a&gt; which you can read at your own leisure.  However, it is worth pointing out that, if necessary, you can programmatically create indexes via the Java driver, using &lt;code&gt;createIndexes&lt;/code&gt;.  For example:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.createIndex(new BasicDBObject(&amp;quot;fieldToIndex&amp;quot;, 1));
+&lt;pre&gt;&lt;code&gt;collection.createIndex(new Document(&amp;quot;fieldToIndex&amp;quot;, 1));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/e866e162f66ae7c38c6e.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;There is a very simple example for creating an index in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise9IndexTest.java&#34;&gt;Exercise9IndexTest&lt;/a&gt;,
+&lt;p&gt;There is a very simple example for creating an index in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise9IndexTest.java&#34;&gt;Exercise9IndexTest&lt;/a&gt;,
 but indexes are a full topic on their own, and the purpose of this part of the tutorial is to merely make you aware of their existence rather than provide a comprehensive tutorial on their purpose and uses.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_9&#34;&gt;Updating values&lt;/h2&gt;
@@ -211,85 +191,73 @@ application or the user; then you save the updated document to the database.&lt;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Maybe Jo goes into witness protection and needs to change his/her name.  Assuming we&amp;rsquo;ve got &lt;code&gt;jo&lt;/code&gt; populated in a &lt;code&gt;DBObject&lt;/code&gt;, we can make the appropriate changes to the document and save it into the database:&lt;/p&gt;
+&lt;p&gt;Maybe Jo goes into witness protection and needs to change his/her name.  Assuming we&amp;rsquo;ve got &lt;code&gt;jo&lt;/code&gt; populated in a &lt;code&gt;Document&lt;/code&gt;, we can make the appropriate changes to the document and save it into the database:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;DBObject jo =                                       // get the document representing jo
-jo.put(&amp;quot;name&amp;quot;, &amp;quot;Jo In Disguise&amp;quot;);                   // replace the old name with the new one
-collection.update(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),   // find jo by ID
-                  jo);                              // set the document in the DB to the new document for Jo
+&lt;pre&gt;&lt;code&gt;    Document jo =                                       // get the document representing jo
+    jo.put(&amp;quot;name&amp;quot;, &amp;quot;Jo In Disguise&amp;quot;);                   // replace the old name with the new one
+    collection.replaceOne(new Document(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),    // find jo by ID
+                          jo);                          // set the document in the DB to the new document for Jo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/6248d507a3882da9bf52.js&#34;&gt;&lt;/script&gt;
-
 &lt;p&gt;You can make a start with
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise10UpdateByReplacementTest.java&#34;&gt;Exercise10UpdateByReplacementTest&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise10ReplaceTest.java&#34;&gt;Exercise10ReplaceTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_11&#34;&gt;Update Operators: Change a field&lt;/h3&gt;
 
 &lt;p&gt;But sometimes you won&amp;rsquo;t have the whole document to replace the old one, sometimes you just want to update a single field in whichever document matched your criteria.&lt;/p&gt;
 
-&lt;p&gt;Let&amp;rsquo;s imagine that we only want to change Jo&amp;rsquo;s phone number, and we don&amp;rsquo;t have a &lt;code&gt;DBObject&lt;/code&gt; with all of Jo&amp;rsquo;s details but we do have the ID of the document.  If we use the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update/set/&#34;&gt;$set&lt;/a&gt; operator,
+&lt;p&gt;Let&amp;rsquo;s imagine that we only want to change Jo&amp;rsquo;s phone number, and we don&amp;rsquo;t have a &lt;code&gt;Document&lt;/code&gt; with all of Jo&amp;rsquo;s details but we do have the ID of the document.  If we use the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update/set/&#34;&gt;$set&lt;/a&gt; operator,
 we&amp;rsquo;ll replace only the field we want to change:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.update(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),
-                  new BasicDBObject(&amp;quot;$set&amp;quot;, new BasicDBObject(&amp;quot;phone&amp;quot;, &amp;quot;5559874321&amp;quot;)));
+&lt;pre&gt;&lt;code&gt;collection.updateOne(new Document(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),
+                     new Document(&amp;quot;$set&amp;quot;, new Document(&amp;quot;phone&amp;quot;, &amp;quot;5559874321&amp;quot;)));
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;script src=&#34;https://gist.github.com/trishagee/d31af4fddd650e791195.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;There are a number of &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update-field/&#34;&gt;other operators&lt;/a&gt; for performing updates on documents, for example &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update/inc/#up._S_inc&#34;&gt;$inc&lt;/a&gt; which will increment a numeric field by a given amount.&lt;/p&gt;
 
-&lt;p&gt;Now you can do &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise11UpdateAFieldTest.java&#34;&gt;Exercise11UpdateAFieldTest&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now you can do &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise11UpdateAFieldTest.java&#34;&gt;Exercise11UpdateAFieldTest&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_12&#34;&gt;Update Multiple&lt;/h3&gt;
+&lt;h3 id=&#34;toc_12&#34;&gt;Update Multiple Documents&lt;/h3&gt;
 
 &lt;p&gt;As I mentioned earlier, by default the &lt;code&gt;update&lt;/code&gt; operation updates the first document it finds and no more.  You can, however, set the &lt;code&gt;multi&lt;/code&gt; flag on &lt;code&gt;update&lt;/code&gt; to update everything.&lt;/p&gt;
 
 &lt;p&gt;So maybe we want to update everyone in the database to have a country field, and for now we&amp;rsquo;re going to assume all the current people are in the UK:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.update(new BasicDBObject(),
-                  new BasicDBObject(&amp;quot;$set&amp;quot;, new BasicDBObject(&amp;quot;country&amp;quot;, &amp;quot;UK&amp;quot;)), false, true);
+&lt;pre&gt;&lt;code&gt;collection.updateMany(new Document(),
+                      new Document(&amp;quot;$set&amp;quot;, new Document(&amp;quot;country&amp;quot;, &amp;quot;UK&amp;quot;)));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/9467f0a4aa19ce855a8c.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;The query parameter is an empty document which finds everything; the second boolean (set to &lt;code&gt;true&lt;/code&gt;) is the flag that says to update all the values which were found.&lt;/p&gt;
+&lt;p&gt;We call the &lt;code&gt;updateMany&lt;/code&gt; method to update everything that matches a given query, and in this case the query parameter is an empty document which finds everything.&lt;/p&gt;
 
 &lt;p&gt;Now we&amp;rsquo;ve learnt enough to complete the two tests in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise12UpdateMultipleDocumentsTest.java&#34;&gt;Exercise12UpdateMultipleDocumentsTest&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise12UpdateMultipleDocumentsTest.java&#34;&gt;Exercise12UpdateMultipleDocumentsTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_13&#34;&gt;Upsert&lt;/h3&gt;
 
 &lt;p&gt;Finally, the last thing to mention when updating documents is Upsert (Update-or-Insert).  This will search for a document matching the criteria and either: update it if it&amp;rsquo;s there; or insert it into the database if it wasn&amp;rsquo;t.&lt;/p&gt;
 
-&lt;p&gt;Like &amp;ldquo;update multiple&amp;rdquo;, you define an upsert operation with a magic boolean.  It shouldn&amp;rsquo;t come as a surprise to find it&amp;rsquo;s the first boolean param in the update statement (since &amp;ldquo;multi&amp;rdquo; was the second):&lt;/p&gt;
+&lt;p&gt;You define an upsert operation with additional update options:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.update(query, personDocument, true, false);
+&lt;pre&gt;&lt;code&gt;collection.updateOne(query, detailsOfUpdate, new UpdateOptions().upsert(true));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/0ac3546c4be61a48d0fb.js&#34;&gt;&lt;/script&gt;
-
 &lt;p&gt;Now you know everything you need to complete the test in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise13UpsertTest.java&#34;&gt;Exercise13UpsertTest&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise13UpsertTest.java&#34;&gt;Exercise13UpsertTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_14&#34;&gt;Removing from the database&lt;/h2&gt;
 
 &lt;p&gt;Finally the D in CRUD - Delete.  The syntax of a remove should look familiar now we&amp;rsquo;ve got this far, you pass a document that represents your selection criteria into the remove method.  So if we wanted to delete &lt;code&gt;jo&lt;/code&gt; from our database, we&amp;rsquo;d do:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.remove(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;));
+&lt;pre&gt;&lt;code&gt;collection.deleteOne(new Document(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/23ee8cc8bec4354a1227.js&#34;&gt;&lt;/script&gt;
+&lt;p&gt;If we wanted to remove everyone who lives in London, we&amp;rsquo;d need to do:&lt;/p&gt;
 
-&lt;p&gt;Unlike &lt;code&gt;update&lt;/code&gt;, if the query matches more than one document, all those documents will be deleted (something to be aware of!). If we wanted to remove everyone who lives in London, we&amp;rsquo;d need to do:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;collection.remove(new BasicDBObject(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;));
+&lt;pre&gt;&lt;code&gt;collection.deleteMany(new Document(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;script src=&#34;https://gist.github.com/trishagee/3d5d8a0b8bc97da91a7d.js&#34;&gt;&lt;/script&gt;
-
-&lt;p&gt;That&amp;rsquo;s all there is to remove, you&amp;rsquo;re ready to finish off
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise14RemoveTest.java&#34;&gt;Exercise14RemoveTest&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s all there is to delete, you&amp;rsquo;re ready to finish off
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise14RemoveTest.java&#34;&gt;Exercise14RemoveTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_15&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -301,6 +269,346 @@ we&amp;rsquo;ll replace only the field we want to change:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/query-documents/&#34;&gt;Query Documents&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/core/crud-introduction/&#34;&gt;CRUD Operations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/indexes/&#34;&gt;Indexes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://trishagee.github.io/other-sites/release/</link>
+      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/other-sites/release/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve written a Gradle Plugin that should, theoretically, do the full MongoDB Java Driver release in an automated fashion.  In theory,
+there&amp;rsquo;s a single command that you can run in order to release the Java driver:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=&amp;lt;release version&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;e.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because the release process integrates with a number of different systems, you have to provide a number of credentials and settings on
+your local machine in order for the process to work correctly.  You&amp;rsquo;ll need:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~/.gradle/gradle.properties
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;sonatypeUsername=mongodb
+sonatypePassword=[find this in the settings file]
+signing.keyId=
+signing.secretKeyRingFile=
+signing.password=
+github.credentials.username=
+github.credentials.password=[if you have two factor auth on, this is a github access token]&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ll also need:
+    ~/.github
+     login=[user name]
+     password=[password]&lt;/p&gt;
+
+&lt;p&gt;or, if you&amp;rsquo;re using two-factor auth,
+    ~/.github
+    oauth=[github access token]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/creating-an-access-token-for-command-line-use/&#34;&gt;More details on creating a github access token&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info on specific settings for the Java Driver release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s the settings for the whole release process.  However, the release gradle task is actually made up of a number of individual
+steps. Since there are a number of moving parts, and things that could go wrong with each step, these steps can be run individually if
+necessary. The most important one is &lt;code&gt;publish&lt;/code&gt;, all of the others can easily be replaced with a manual process.&lt;/p&gt;
+
+&lt;p&gt;The aim of the following documentation is to:
+ - Define what each individual Gradle task is and what it&amp;rsquo;s supposed to do
+ - State the requirements or dependencies for each individual task
+ - Outline some of the things that could go wrong with the task&lt;/p&gt;
+
+&lt;p&gt;The release steps are, in the order in which they should be executed:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;clean&lt;/code&gt; If running the full release task, a clean will be done first to make sure that everything is cleanly built. This is a standard
+Java task and has not been changed in any way for the release process.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;prepareRelease&lt;/code&gt; Before building or pushing, a number of things are done to put the code/files into the correct state:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
+release versions in these files are stripped of any &amp;lsquo;-SNAPSHOT&amp;rsquo; suffix they might have. If there is no suffix,
+this task should still complete successfully.&lt;/li&gt;
+&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
+as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Release ${releaseVersion}&amp;rdquo;, e.g. &amp;ldquo;Release 3.0.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Tag this commit with the release number, e.g. &amp;ldquo;r3.0.0&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Push the changes and the tag to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
+this pushes to your origin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note that all of these steps are pretty easy to do manually.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
+~/.gradle/gradle.properties
+github.credentials.username=
+github.credentials.password=&lt;/p&gt;
+
+&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew prepareRelease -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The files that need updating as part of the release process are defined in &lt;code&gt;release.gradle&lt;/code&gt;, as &lt;code&gt;filesToUpdate&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ideally, don&amp;rsquo;t have any code changes in your current branch, as these will be committed.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;PrepareReleaseTask.gradle&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git
+integration.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
+&lt;li&gt;If you run this task multiple times, it should not fail, but you will get multiple git commits with the required release number. Make
+sure that you have the correct release number in the files (Mongo.java and build.gradle) and passed in to the command line.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git: hard reset to the commit you were on before performing the release&lt;/li&gt;
+&lt;li&gt;Git: delete the release tag from local and, if necessary, remote repositories&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;publish&lt;/code&gt; This does the magic of pushing the jar files into Sonatype nexus. This should run on it&amp;rsquo;s own perfectly happily,
+and can pubish both snapshot jars and full release jars.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Will ensure jar files are built for: sources; javadoc; individual module classes; &amp;ldquo;uber&amp;rdquo; jar with the module classes and any classes
+from modules it depends on (e.g. for mongo-java-driver, include core and bson as well) but excluding any dependency jars.&lt;/li&gt;
+&lt;li&gt;Ensures the correct pom.xml is created for each of the artifacts&lt;/li&gt;
+&lt;li&gt;Publishes to the snapshot repo if no release version is defined (this is the default behaviour),
+or the &amp;ldquo;real&amp;rdquo; repo if you pass in a release version.&lt;/li&gt;
+&lt;li&gt;This will also sign the release.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: The current assumption is that &lt;strong&gt;four&lt;/strong&gt; jars will be published per project, e.g:&lt;/p&gt;
+
+&lt;p&gt;mongo-java-driver-3.0.0-all.jar
+mongo-java-driver-3.0.0-javadoc.jar
+mongo-java-driver-3.0.0-sources.jar
+mongo-java-driver-3.0.0.jar&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this talks to nexus, you need:
+~/.gradle/gradle.properties
+sonatypeUsername=mongodb
+sonatypePassword=[find this in the settings file]&lt;/p&gt;
+
+&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew publish -DreleaseVersion=3.0.0
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If you do not define a releaseVersion, it will assume you want to publish the SNAPSHOT.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;Follow the steps to set up GPG/PGP&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;We&amp;rsquo;re using a number of plugins to perform this publish process, and it&amp;rsquo;s all configured in &lt;code&gt;publish.gradle&lt;/code&gt;.  Plugins used:
+     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html&#34;&gt;maven-publish&lt;/a&gt; for defining the publishing process. This creates the correct pom and is responsible for publishing to appropriate
+     repo
+     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/signing_plugin.html&#34;&gt;signing&lt;/a&gt; signs the release
+     &lt;a href=&#34;https://github.com/johnrengelman/shadow&#34;&gt;com.github.johnrengelman.shadow&lt;/a&gt; builds our uber jars&lt;/p&gt;
+
+&lt;p&gt;I know generally we steer clear of comments in our code, but I&amp;rsquo;ve tried to comment the publish file as much as I can,
+as it&amp;rsquo;s not always obvious what&amp;rsquo;s going on.&lt;/p&gt;
+
+&lt;p&gt;There are also specific configuration details in the build.gradle files for each project.  For example,
+driver/build.gradle defines additional values for the pom.xml, and the correct artifact ID.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Incorrect artifact ID (i.e. the ID for sonatype to identify our jars). This is currently defined in individual project build.gradle
+files, in publishing.publications.mavenJava(MavenPublication).artifactId.  If it&amp;rsquo;s missing, it&amp;rsquo;ll use the project name (e.g. bson).&lt;/li&gt;
+&lt;li&gt;Uber jar might contain too many dependencies or not enough.  As per &lt;a href=&#34;https://github.com/johnrengelman/shadow#filtering-shadow-jar-contents-by-mavenproject-dependency&#34;&gt;the documentation&lt;/a&gt;, Configure it with
+ shadowJar {
+     dependencies {
+     }
+ }&lt;/li&gt;
+&lt;li&gt;Nexus authentication might fail.  Ensure the credentials are in ~/.gradle/gradle.properties&lt;/li&gt;
+&lt;li&gt;Signing might fail. Ensure you follow the &lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;steps to set up GPG/PGP&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Could get confused between snapshot repo and real repo.  &lt;code&gt;publish.gradle&lt;/code&gt; currently assumes that if you passed in releaseVersion,
+you&amp;rsquo;re publish to staging. &lt;a href=&#34;http://forums.gradle.org/gradle/topics/maven_publish_specify_a_repo_as_being_a_snapshot_repo&#34;&gt;See here&lt;/a&gt; for
+more details on why we need an &lt;code&gt;if&lt;/code&gt; statement here.&lt;/li&gt;
+&lt;li&gt;pom.xml might be incorrect.  As per &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N174E5&#34;&gt;the documentation&lt;/a&gt;, this is configured via
+ publishing {
+     publications {
+         mavenJava(MavenPublication) {
+             pom.withXml {
+             }
+         }
+     }
+ }&lt;/li&gt;
+&lt;li&gt;manifest.mf is incorrect. &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:manifest(groovy.lang.Closure&#34;&gt;As per the documentation&lt;/a&gt;), his is configured in each individual build.gradle file:
+jar {
+ manifest.attributes(
+}&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Wrong jar files built/uploaded. This is configured, &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N17478&#34;&gt;as per the documentation&lt;/a&gt;, by declaring the artifacts to publish in&lt;/p&gt;
+
+&lt;p&gt;publishing {
+      publications {
+          mavenJava(MavenPublication) {
+              artifact sourceJar
+              artifact javadocJar
+              artifact shadowJar
+              from components.java
+          }
+      }
+  }&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m unclear where components.java comes from, but it&amp;rsquo;s the magic incantation that uploads the default jar file for a project.  The
+Uber jar is created by applying the shadow plugin, and is included via shadowJar. The sources and javadoc jars are tasks that are
+defined elsewhere in the build file, for example:
+     task sourceJar(type: Jar) {
+         classifier = &amp;lsquo;sources&amp;rsquo;
+         from sourceSets.main.allSource
+     }&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Jar file name is incorrect. This is defined via the &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName&#34;&gt;Jar plugin&lt;/a&gt;, and in our case we configure overrides via module build.gradle
+files, e.g.:
+archivesBaseName = &amp;lsquo;mongo-java-driver&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a &lt;code&gt;clean&lt;/code&gt; will remove any built artifacts, including pom.xml and manifest files.&lt;/li&gt;
+&lt;li&gt;published artifacts will need to be removed from &lt;a href=&#34;https://oss.sonatype.org/index.html&#34;&gt;Sonatype Nexus&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;draftReleaseNotes&lt;/code&gt; Creates a skeleton set of release notes. Although this could run perfectly well alone,
+without any of the other tasks, it does upload the uberjar so if that hasn&amp;rsquo;t previously been built you&amp;rsquo;ll get a file not found exception.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Creates the skeleton of the notes content&lt;/li&gt;
+&lt;li&gt;Pushes to github, so it should be &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;visible as a draft&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Uploads the driver module uber jar (so just a single jar file of all classes) to the release notes. If the release tag has been
+successful, the release notes will also have a tag, a commit, and zips of the source files.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: these release notes are draft only, and can only be seen by those with the right permissions. When the release is live,
+the release notes will need to be published.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Needs your github credentials in:
+                                     ~/.github
+                                     either
+                                      login=[user name]
+                                      password=[password]&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                             or, if you&#39;re using two-factor auth,
+                                 ~/.github
+                                 oauth=[github access token]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew draftReleaseNotes -DreleaseVersion=3.0.0&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;DraftReleaseNotesTask&lt;/code&gt;.  This uses the &lt;a href=&#34;http://github-api.kohsuke.org/&#34;&gt;Github API for Java&lt;/a&gt;,
+it&amp;rsquo;s this code that requires the credentials in your .github file.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Missing jar file to upload.  This task does not explictly depend on archives creation, so if &lt;code&gt;shadowJar&lt;/code&gt; or &lt;code&gt;jar&lt;/code&gt; have not been run
+prior to running this task, you might get a file not found exception. The release notes will probably still have been created though.&lt;/li&gt;
+&lt;li&gt;Incorrect jar files attached. The jar files to attach are configured in &lt;code&gt;release.gradle&lt;/code&gt; with the &lt;code&gt;jarFile&lt;/code&gt; property. You can declare
+multiple files here. Use the task name for the task that creates the required artifact, e.g.
+ jarFile project(&amp;rsquo;:driver&amp;rsquo;).shadowJar&lt;/li&gt;
+&lt;li&gt;Missing source zips, release tag and/or commit. Possibly the release tag did not get pushed correctly to &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;https://github.com/mongodb/mongo-java-driver/&lt;/a&gt;.&lt;br /&gt;
+Ensure there&amp;rsquo;s a &lt;code&gt;r3.0.0&lt;/code&gt; tag or similar for the release version you&amp;rsquo;re writing the notes for.&lt;/li&gt;
+&lt;li&gt;Release notes are not public. Actually, this is not an error - in order to make the notes publicly visible,
+there&amp;rsquo;s a manual step to publish them.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;releases page&lt;/a&gt; and delete any unwanted draft release notes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;code&gt;updateToNextVersion&lt;/code&gt; Similar to, but simpler than, prepareRelease - this task gets the code in the right state for the next working
+version.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
+release versions in these files are incremented (e.g. 3.0.0 to 3.0.1) and the &amp;lsquo;-SNAPSHOT&amp;rsquo; added.&lt;/li&gt;
+&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
+as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Updated to next development version: ${newVersion}&amp;ldquo;,
+e.g. &amp;ldquo;Updated to next development version: 3.0.1-SNAPSHOT&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Push the changes to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
+this pushes to your origin.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;Requirements&lt;/h3&gt;
+
+&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
+~/.gradle/gradle.properties
+github.credentials.username=
+github.credentials.password=&lt;/p&gt;
+
+&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew updateToNextVersion -DreleaseVersion=3.0.0&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_13&#34;&gt;Code&lt;/h3&gt;
+
+&lt;p&gt;This task is defined in &lt;code&gt;UpdateToNextVersionTask&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git integration.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_14&#34;&gt;Possible errors&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
+&lt;li&gt;In theory you can run this multiple times without error - it will keep incrementing the version number (and suffixing &amp;lsquo;-SNAPSHOT&amp;rsquo; to
+it). However, if you specify the same releaseVersion parameter every time, it should error telling you that the version doesn&amp;rsquo;t match
+the version in the build file (as the build file has already been incremented).  This is fine, just do a manual rollback before trying
+again.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_15&#34;&gt;Rollback&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Git: hard reset to the commit you were on before calling this task.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_16&#34;&gt;In Summary&lt;/h2&gt;
+
+&lt;p&gt;There is a magic incantation which is supposed to do the full release. But if any of the steps go wrong,
+you can call the individual tasks alone, and follow the above guide for troubleshooting or rolling back.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info about the current/old Java driver release&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/display/DH/Morphia+Release+Process&#34;&gt;Morphia Release Process&lt;/a&gt; Lots of this new release process was, um,
+borrowed from the updated Morphia release process, so there might be useful information in there to troubleshoot this process too.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_17&#34;&gt;Things that are open to improvement:&lt;/h3&gt;
+
+&lt;p&gt;(AKA let&amp;rsquo;s not call this a TODO list):&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The release plugin stuff in &lt;code&gt;buildSrc&lt;/code&gt; is almost definitely not idiotmatic Groovy/Gradle. Instead, I&amp;rsquo;ve tried to make it readable.&lt;/li&gt;
+&lt;li&gt;I think I&amp;rsquo;d prefer, on reflection, to move all the stuff in &lt;code&gt;buildSrc&lt;/code&gt; into gradle scripts instead,
+although that goes against the recommendations, because at least then all the gradle logic would be in the same place.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve been encouraged to look at the &lt;a href=&#34;https://github.com/ajoberstar/gradle-git&#34;&gt;gradle-git plugin&lt;/a&gt; instead of JGit, but I haven&amp;rsquo;t had the time.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -700,10 +1008,10 @@ including examples for authentication.&lt;/p&gt;
     
     <item>
       <title></title>
-      <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</link>
+      <link>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</link>
       <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</guid>
+      <guid>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</guid>
       <description>
 
 &lt;p&gt;In the last article [link needed], we covered the basics of installing and connecting to MongoDB via a Java application. In this post, I&amp;rsquo;ll give an introduction to CRUD (Create, Read, Update, Delete) operations using the Java driver. As in the previous article, if you want to follow along and code as we go, you can use these tips to get the tests in the &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started&#34;&gt;Getting Started project&lt;/a&gt; to go green.&lt;/p&gt;
@@ -712,14 +1020,14 @@ including examples for authentication.&lt;/p&gt;
 
 &lt;p&gt;In the last article [link needed], we introduced &lt;a href=&#34;http://docs.mongodb.org/manual/reference/glossary/#term-document&#34;&gt;documents&lt;/a&gt; and how to
 create them from Java and insert them into MongoDB, so I&amp;rsquo;m not going to repeat that here. But if you want a reminder, or simply want to skip to playing with the code, you can take a look at
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java&#34;&gt;Exercise3InsertTest&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java&#34;&gt;Exercise3InsertTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;Querying&lt;/h2&gt;
 
 &lt;p&gt;Putting stuff in the database is all well and good, but you&amp;rsquo;ll probably want to query the database to get data from it.&lt;/p&gt;
 
 &lt;p&gt;In the last article we covered some basics on using &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/db.collection.find/&#34;&gt;find()&lt;/a&gt; to get
-data from the database. We also showed an example in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise4RetrieveTest.java&#34;&gt;Exercise4RetrieveTest&lt;/a&gt;. But MongoDB supports more than simply getting a single document by ID or getting all the documents in a
+data from the database. We also showed an example in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise4RetrieveTest.java&#34;&gt;Exercise4RetrieveTest&lt;/a&gt;. But MongoDB supports more than simply getting a single document by ID or getting all the documents in a
 collection. As I mentioned, you can query by example, building up a &lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/query-documents/&#34;&gt;query document&lt;/a&gt; that looks a similar shape to the one you want.&lt;/p&gt;
 
 &lt;p&gt;For the following examples I&amp;rsquo;m going to assume a document which looks something like this:&lt;/p&gt;
@@ -740,15 +1048,19 @@ collection. As I mentioned, you can query by example, building up a &lt;a href=&
 
 &lt;p&gt;To recap, you can easily get a document back from the database using the unique ID:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;MongoCursor&amp;lt;Document&amp;gt; cursor = collection.find(new Document(&amp;quot;_id&amp;quot;, &amp;quot;theId&amp;quot;)).iterator();
+&lt;pre&gt;&lt;code&gt;DBCursor cursor = collection.find(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;theId&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&amp;hellip;and you get the values out of the document (represented as a &lt;code&gt;Document&lt;/code&gt;) using a &lt;code&gt;Map&lt;/code&gt;-like syntax:&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/11b4e539612ce5262321.js&#34;&gt;&lt;/script&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.find(new Document(&amp;quot;_id&amp;quot;, &amp;quot;theId&amp;quot;)).first().getString(&amp;quot;name&amp;quot;)
+&lt;p&gt;&amp;hellip;and you get the values out of the document (represented as a &lt;code&gt;DBObject&lt;/code&gt;) using a &lt;code&gt;Map&lt;/code&gt;-like syntax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(String) cursor.one().get(&amp;quot;name&amp;quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;In the above example, because you&amp;rsquo;ve queried by ID (and you knew that ID existed), you can be sure that the cursor has a single document that matches the query.  Therefore you can use &lt;code&gt;first()&lt;/code&gt; to get it.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/ebf354f8de25663eae79.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;In the above example, because you&amp;rsquo;ve queried by ID (and you knew that ID existed), you can be sure that the cursor has a single document that matches the query.  Therefore you can use &lt;code&gt;cursor.one()&lt;/code&gt; to get it.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_3&#34;&gt;Find all documents matching some criteria&lt;/h3&gt;
 
@@ -756,55 +1068,65 @@ collection. As I mentioned, you can query by example, building up a &lt;a href=&
 
 &lt;p&gt;In this case, you can create a query document that has the criteria you want:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;))
+&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;You can find out the number of results you&amp;rsquo;re going to get by calling count:&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/d82e26bea5fccfa9cbee.js&#34;&gt;&lt;/script&gt;
 
-&lt;pre&gt;&lt;code&gt;long numberOfResults = collection.count(new Document(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;));
+&lt;p&gt;You can find out the number of results:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;results.size();
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;and you can, naturally, iterate over your cursor:&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/c1328cfbc6618fad0c4c.js&#34;&gt;&lt;/script&gt;
 
-&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;The name I want to find&amp;quot;));
-for (Document result : results) {
+&lt;p&gt;and you can, naturally, iterate over them:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for (DBObject result : results) {
     // do something with each result
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;strong&gt;A note on batching&lt;/strong&gt;
-The driver will fetch results in batches from the database, so if you run a query that matches a lot of documents, you don&amp;rsquo;t have to worry that every document is loaded into memory immediately.  For most queries, the &lt;a href=&#34;http://docs.mongodb.org/manual/core/cursors/#cursor-batches&#34;&gt;first batch returned will be 101 documents&lt;/a&gt;. But as you iterate over the cursor, the driver will automatically fetch further batches from the server.  So you don&amp;rsquo;t have to worry about managing batching in your application. But you do need to be aware that if you iterate over the whole of the cursor (for example to put it into a &lt;code&gt;List&lt;/code&gt;), you will end up fetching all the results and putting them in memory.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/bd7bc1f865a6a0303cd2.js&#34;&gt;&lt;/script&gt;
 
-&lt;p&gt;You can get started with &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise5SimpleQueryTest.java&#34;&gt;Exercise5SimpleQueryTest&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A note on batching&lt;/strong&gt;
+The cursor will fetch results in batches from the database, so if you run a query that matches a lot of documents, you don&amp;rsquo;t have to worry that every document is loaded into memory immediately.  For most queries, the &lt;a href=&#34;http://docs.mongodb.org/manual/core/cursors/#cursor-batches&#34;&gt;first batch returned will be 101 documents&lt;/a&gt;. But as you iterate over the cursor, the driver will automatically fetch further batches from the server.  So you don&amp;rsquo;t have to worry about managing batching in your application. But you do need to be aware that if you iterate over the whole of the cursor (for example to put it into a &lt;code&gt;List&lt;/code&gt;), you will end up fetching all the results and putting them in memory.&lt;/p&gt;
+
+&lt;p&gt;You can get started with &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise5SimpleQueryTest.java&#34;&gt;Exercise5SimpleQueryTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_4&#34;&gt;Selecting Fields&lt;/h3&gt;
 
-&lt;p&gt;Generally speaking, you will read entire documents from MongoDB most of the time. However, you can choose to return just the fields that you care about
-(for example, you might have a large document and not need all the values). You do this by passing the details of the fields to select via the &lt;code&gt;projection&lt;/code&gt; method.
-In this example, we&amp;rsquo;ll search for people called &amp;ldquo;Smith&amp;rdquo;, and return only the &lt;code&gt;name&lt;/code&gt; field. To do this we pass in a &lt;code&gt;Document&lt;/code&gt; representing &lt;code&gt;{name: 1}&lt;/code&gt;:&lt;/p&gt;
+&lt;p&gt;Generally speaking, you will read entire documents from MongoDB most of the time. However, you can choose to return just the fields that you care about (for example, you might have a large document and not need all the values). You do this by passing a second parameter into the &lt;code&gt;find&lt;/code&gt; method that&amp;rsquo;s another &lt;code&gt;DBObject&lt;/code&gt; defining the fields you want to
+return. In this example, we&amp;rsquo;ll search for people called &amp;ldquo;Smith&amp;rdquo;, and return only the &lt;code&gt;name&lt;/code&gt; field. To do this we pass in a &lt;code&gt;DBObject&lt;/code&gt; representing &lt;code&gt;{name: 1}&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Object&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;))
-                                       .projection(new Document(&amp;quot;name&amp;quot;, 1));
+&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;),
+                                   new BasicDBObject(&amp;quot;name&amp;quot;, 1));
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/440cdf337eadd99c9e04.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;You can also use this method to exclude fields from the results. Maybe we might want to exclude an unnecessary subdocument
 from the results - let&amp;rsquo;s say we want to find everyone called &amp;ldquo;Smith&amp;rdquo;, but we don&amp;rsquo;t want to return the &lt;code&gt;address&lt;/code&gt;.  We do this by
 passing in a zero for this field name, i.e. &lt;code&gt;{address: 0}&lt;/code&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Object&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;))
-                                       .projection(new Document(&amp;quot;address&amp;quot;, 0));
+&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, &amp;quot;Smith&amp;quot;),
+                                   new BasicDBObject(&amp;quot;address&amp;quot;, 0));
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;script src=&#34;https://gist.github.com/trishagee/66759199d1459563ad7f.js&#34;&gt;&lt;/script&gt;
+
 &lt;p&gt;With this information, you&amp;rsquo;re ready to tackle
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise6SelectFieldsTest.java&#34;&gt;Exercise6SelectFieldsTest&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise6SelectFieldsTest.java&#34;&gt;Exercise6SelectFieldsTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_5&#34;&gt;Query Operators&lt;/h3&gt;
 
 &lt;p&gt;As I mentioned in the previous article, your fields can be one of a number of types, including numeric.  This means that you can do queries for numeric values as well.  Let&amp;rsquo;s assume, for example, that our person has a &lt;code&gt;numberOfOrders&lt;/code&gt; field, and we wanted to find everyone who had ordered more than, let&amp;rsquo;s say, 10 items.  You can do this using the
 &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/gt/#op._S_gt&#34;&gt;$gt&lt;/a&gt; operator:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;numberOfOrders&amp;quot;, new Document(&amp;quot;$gt&amp;quot;, 10)));
+&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;numberOfOrders&amp;quot;, new BasicDBObject(&amp;quot;$gt&amp;quot;, 10)));
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/3ee81da8e419aca9944b.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;Note that you have to create a further subdocument containing the &lt;code&gt;$gt&lt;/code&gt; condition to use this operator.  All of the query operators &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/query/&#34;&gt;are
 documented&lt;/a&gt;, and work in a similar way to this example.&lt;/p&gt;
@@ -812,13 +1134,15 @@ documented&lt;/a&gt;, and work in a similar way to this example.&lt;/p&gt;
 &lt;p&gt;You might be wondering what terrible things could happen if you try to perform some sort of numeric comparison on a field that is a String, since the database supports any type of value in any of the fields (and in Java the values are Objects so you don&amp;rsquo;t get the benefit of type
 safety).  So, what happens if you do this?&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;FindFluent&amp;lt;Document&amp;gt; results = collection.find(new Document(&amp;quot;name&amp;quot;, new Document(&amp;quot;$gt&amp;quot;, 10)));
+&lt;pre&gt;&lt;code&gt;DBCursor results = collection.find(new BasicDBObject(&amp;quot;name&amp;quot;, new BasicDBObject(&amp;quot;$gt&amp;quot;, 10)));
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/8bb1e706a5d351a295b1.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;The answer is you get zero results (assuming all your documents contain names that are Strings), and you don&amp;rsquo;t get any errors. The flexible nature of the document schema allows you to mix and match types and query without error.&lt;/p&gt;
 
 &lt;p&gt;You can use this technique to get the test in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise7QueryOperatorsTest.java&#34;&gt;Exercise7QueryOperatorsTest&lt;/a&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise7QueryOperatorsTest.java&#34;&gt;Exercise7QueryOperatorsTest&lt;/a&gt;
 to go green - it&amp;rsquo;s a bit of a daft example, but you get the idea.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_6&#34;&gt;Querying Subdocuments&lt;/h3&gt;
@@ -827,9 +1151,11 @@ to go green - it&amp;rsquo;s a bit of a daft example, but you get the idea.&lt;/
 subdocument&lt;/a&gt; - for example, with our person document, we might want to find everyone who lives in the same city.  We can use
 &lt;a href=&#34;http://docs.mongodb.org/manual/core/document/#document-dot-notation&#34;&gt;dot notation&lt;/a&gt; like this:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;Document findLondoners = new Document(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;);
-collection.find(findLondoners);
+&lt;pre&gt;&lt;code&gt;DBObject findLondoners = new BasicDBObject(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;);
+collection.find(findLondoners));
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/cd7537b07a8d10e3350c.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;We&amp;rsquo;re not going to use this technique in a query test, but we will use it later when we&amp;rsquo;re doing updates.&lt;/p&gt;
 
@@ -837,17 +1163,19 @@ collection.find(findLondoners);
 
 &lt;p&gt;I mentioned earlier that you can iterate over a cursor, and that the driver will fetch results in batches.  However, you can also use the familiar-looking &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/cursor.skip/&#34;&gt;skip()&lt;/a&gt; and
 &lt;a href=&#34;http://docs.mongodb.org/manual/reference/method/cursor.limit/&#34;&gt;limit()&lt;/a&gt; methods.  You can use these to fix up the test in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise8SkipAndLimitTest.java&#34;&gt;Exercise8SkipAndLimitTest&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise8SkipAndLimitTest.java&#34;&gt;Exercise8SkipAndLimitTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_8&#34;&gt;A last note on querying: Indexes&lt;/h3&gt;
 
 &lt;p&gt;Like a traditional database, you can add indexes onto the database to improve the speed of regular queries.  There&amp;rsquo;s extensive
 &lt;a href=&#34;http://docs.mongodb.org/manual/indexes/&#34;&gt;documentation on indexes&lt;/a&gt; which you can read at your own leisure.  However, it is worth pointing out that, if necessary, you can programmatically create indexes via the Java driver, using &lt;code&gt;createIndexes&lt;/code&gt;.  For example:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.createIndex(new Document(&amp;quot;fieldToIndex&amp;quot;, 1));
+&lt;pre&gt;&lt;code&gt;collection.createIndex(new BasicDBObject(&amp;quot;fieldToIndex&amp;quot;, 1));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;There is a very simple example for creating an index in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise9IndexTest.java&#34;&gt;Exercise9IndexTest&lt;/a&gt;,
+&lt;script src=&#34;https://gist.github.com/trishagee/e866e162f66ae7c38c6e.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;There is a very simple example for creating an index in &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise9IndexTest.java&#34;&gt;Exercise9IndexTest&lt;/a&gt;,
 but indexes are a full topic on their own, and the purpose of this part of the tutorial is to merely make you aware of their existence rather than provide a comprehensive tutorial on their purpose and uses.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_9&#34;&gt;Updating values&lt;/h2&gt;
@@ -881,73 +1209,85 @@ application or the user; then you save the updated document to the database.&lt;
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;Maybe Jo goes into witness protection and needs to change his/her name.  Assuming we&amp;rsquo;ve got &lt;code&gt;jo&lt;/code&gt; populated in a &lt;code&gt;Document&lt;/code&gt;, we can make the appropriate changes to the document and save it into the database:&lt;/p&gt;
+&lt;p&gt;Maybe Jo goes into witness protection and needs to change his/her name.  Assuming we&amp;rsquo;ve got &lt;code&gt;jo&lt;/code&gt; populated in a &lt;code&gt;DBObject&lt;/code&gt;, we can make the appropriate changes to the document and save it into the database:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;    Document jo =                                       // get the document representing jo
-    jo.put(&amp;quot;name&amp;quot;, &amp;quot;Jo In Disguise&amp;quot;);                   // replace the old name with the new one
-    collection.replaceOne(new Document(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),    // find jo by ID
-                          jo);                          // set the document in the DB to the new document for Jo
+&lt;pre&gt;&lt;code&gt;DBObject jo =                                       // get the document representing jo
+jo.put(&amp;quot;name&amp;quot;, &amp;quot;Jo In Disguise&amp;quot;);                   // replace the old name with the new one
+collection.update(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),   // find jo by ID
+                  jo);                              // set the document in the DB to the new document for Jo
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;script src=&#34;https://gist.github.com/trishagee/6248d507a3882da9bf52.js&#34;&gt;&lt;/script&gt;
+
 &lt;p&gt;You can make a start with
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise10ReplaceTest.java&#34;&gt;Exercise10ReplaceTest&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise10UpdateByReplacementTest.java&#34;&gt;Exercise10UpdateByReplacementTest&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_11&#34;&gt;Update Operators: Change a field&lt;/h3&gt;
 
 &lt;p&gt;But sometimes you won&amp;rsquo;t have the whole document to replace the old one, sometimes you just want to update a single field in whichever document matched your criteria.&lt;/p&gt;
 
-&lt;p&gt;Let&amp;rsquo;s imagine that we only want to change Jo&amp;rsquo;s phone number, and we don&amp;rsquo;t have a &lt;code&gt;Document&lt;/code&gt; with all of Jo&amp;rsquo;s details but we do have the ID of the document.  If we use the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update/set/&#34;&gt;$set&lt;/a&gt; operator,
+&lt;p&gt;Let&amp;rsquo;s imagine that we only want to change Jo&amp;rsquo;s phone number, and we don&amp;rsquo;t have a &lt;code&gt;DBObject&lt;/code&gt; with all of Jo&amp;rsquo;s details but we do have the ID of the document.  If we use the &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update/set/&#34;&gt;$set&lt;/a&gt; operator,
 we&amp;rsquo;ll replace only the field we want to change:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.updateOne(new Document(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),
-                     new Document(&amp;quot;$set&amp;quot;, new Document(&amp;quot;phone&amp;quot;, &amp;quot;5559874321&amp;quot;)));
+&lt;pre&gt;&lt;code&gt;collection.update(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;),
+                  new BasicDBObject(&amp;quot;$set&amp;quot;, new BasicDBObject(&amp;quot;phone&amp;quot;, &amp;quot;5559874321&amp;quot;)));
 &lt;/code&gt;&lt;/pre&gt;
+
+&lt;script src=&#34;https://gist.github.com/trishagee/d31af4fddd650e791195.js&#34;&gt;&lt;/script&gt;
 
 &lt;p&gt;There are a number of &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update-field/&#34;&gt;other operators&lt;/a&gt; for performing updates on documents, for example &lt;a href=&#34;http://docs.mongodb.org/manual/reference/operator/update/inc/#up._S_inc&#34;&gt;$inc&lt;/a&gt; which will increment a numeric field by a given amount.&lt;/p&gt;
 
-&lt;p&gt;Now you can do &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise11UpdateAFieldTest.java&#34;&gt;Exercise11UpdateAFieldTest&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Now you can do &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise11UpdateAFieldTest.java&#34;&gt;Exercise11UpdateAFieldTest&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_12&#34;&gt;Update Multiple Documents&lt;/h3&gt;
+&lt;h3 id=&#34;toc_12&#34;&gt;Update Multiple&lt;/h3&gt;
 
 &lt;p&gt;As I mentioned earlier, by default the &lt;code&gt;update&lt;/code&gt; operation updates the first document it finds and no more.  You can, however, set the &lt;code&gt;multi&lt;/code&gt; flag on &lt;code&gt;update&lt;/code&gt; to update everything.&lt;/p&gt;
 
 &lt;p&gt;So maybe we want to update everyone in the database to have a country field, and for now we&amp;rsquo;re going to assume all the current people are in the UK:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.updateMany(new Document(),
-                      new Document(&amp;quot;$set&amp;quot;, new Document(&amp;quot;country&amp;quot;, &amp;quot;UK&amp;quot;)));
+&lt;pre&gt;&lt;code&gt;collection.update(new BasicDBObject(),
+                  new BasicDBObject(&amp;quot;$set&amp;quot;, new BasicDBObject(&amp;quot;country&amp;quot;, &amp;quot;UK&amp;quot;)), false, true);
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;We call the &lt;code&gt;updateMany&lt;/code&gt; method to update everything that matches a given query, and in this case the query parameter is an empty document which finds everything.&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/9467f0a4aa19ce855a8c.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;The query parameter is an empty document which finds everything; the second boolean (set to &lt;code&gt;true&lt;/code&gt;) is the flag that says to update all the values which were found.&lt;/p&gt;
 
 &lt;p&gt;Now we&amp;rsquo;ve learnt enough to complete the two tests in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise12UpdateMultipleDocumentsTest.java&#34;&gt;Exercise12UpdateMultipleDocumentsTest&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise12UpdateMultipleDocumentsTest.java&#34;&gt;Exercise12UpdateMultipleDocumentsTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;toc_13&#34;&gt;Upsert&lt;/h3&gt;
 
 &lt;p&gt;Finally, the last thing to mention when updating documents is Upsert (Update-or-Insert).  This will search for a document matching the criteria and either: update it if it&amp;rsquo;s there; or insert it into the database if it wasn&amp;rsquo;t.&lt;/p&gt;
 
-&lt;p&gt;You define an upsert operation with additional update options:&lt;/p&gt;
+&lt;p&gt;Like &amp;ldquo;update multiple&amp;rdquo;, you define an upsert operation with a magic boolean.  It shouldn&amp;rsquo;t come as a surprise to find it&amp;rsquo;s the first boolean param in the update statement (since &amp;ldquo;multi&amp;rdquo; was the second):&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.updateOne(query, detailsOfUpdate, new UpdateOptions().upsert(true));
+&lt;pre&gt;&lt;code&gt;collection.update(query, personDocument, true, false);
 &lt;/code&gt;&lt;/pre&gt;
 
+&lt;script src=&#34;https://gist.github.com/trishagee/0ac3546c4be61a48d0fb.js&#34;&gt;&lt;/script&gt;
+
 &lt;p&gt;Now you know everything you need to complete the test in
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise13UpsertTest.java&#34;&gt;Exercise13UpsertTest&lt;/a&gt;&lt;/p&gt;
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise13UpsertTest.java&#34;&gt;Exercise13UpsertTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_14&#34;&gt;Removing from the database&lt;/h2&gt;
 
 &lt;p&gt;Finally the D in CRUD - Delete.  The syntax of a remove should look familiar now we&amp;rsquo;ve got this far, you pass a document that represents your selection criteria into the remove method.  So if we wanted to delete &lt;code&gt;jo&lt;/code&gt; from our database, we&amp;rsquo;d do:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.deleteOne(new Document(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;));
+&lt;pre&gt;&lt;code&gt;collection.remove(new BasicDBObject(&amp;quot;_id&amp;quot;, &amp;quot;jo&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;If we wanted to remove everyone who lives in London, we&amp;rsquo;d need to do:&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/23ee8cc8bec4354a1227.js&#34;&gt;&lt;/script&gt;
 
-&lt;pre&gt;&lt;code&gt;collection.deleteMany(new Document(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;));
+&lt;p&gt;Unlike &lt;code&gt;update&lt;/code&gt;, if the query matches more than one document, all those documents will be deleted (something to be aware of!). If we wanted to remove everyone who lives in London, we&amp;rsquo;d need to do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collection.remove(new BasicDBObject(&amp;quot;address.city&amp;quot;, &amp;quot;London&amp;quot;));
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;That&amp;rsquo;s all there is to delete, you&amp;rsquo;re ready to finish off
-&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/3.0/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise14RemoveTest.java&#34;&gt;Exercise14RemoveTest&lt;/a&gt;&lt;/p&gt;
+&lt;script src=&#34;https://gist.github.com/trishagee/3d5d8a0b8bc97da91a7d.js&#34;&gt;&lt;/script&gt;
+
+&lt;p&gt;That&amp;rsquo;s all there is to remove, you&amp;rsquo;re ready to finish off
+&lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise14RemoveTest.java&#34;&gt;Exercise14RemoveTest&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_15&#34;&gt;Conclusion&lt;/h2&gt;
 
@@ -1311,346 +1651,6 @@ which includes community projects and officially supported drivers.&lt;/p&gt;
 &lt;a href=&#34;https://github.com/trishagee/mongodb-getting-started/tree/3.0&#34;&gt;this github repository&lt;/a&gt;. And if you get desperate and look hard enough, you&amp;rsquo;ll even find the answers there too.&lt;/p&gt;
 
 &lt;p&gt;Try it out, and hopefully you&amp;rsquo;ll see how easy it is to use MongoDB from Java.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://trishagee.github.io/other-sites/release/</link>
-      <pubDate>Tue, 01 Jan 2008 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/other-sites/release/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve written a Gradle Plugin that should, theoretically, do the full MongoDB Java Driver release in an automated fashion.  In theory,
-there&amp;rsquo;s a single command that you can run in order to release the Java driver:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=&amp;lt;release version&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;e.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew release -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Because the release process integrates with a number of different systems, you have to provide a number of credentials and settings on
-your local machine in order for the process to work correctly.  You&amp;rsquo;ll need:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;~/.gradle/gradle.properties
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;sonatypeUsername=mongodb
-sonatypePassword=[find this in the settings file]
-signing.keyId=
-signing.secretKeyRingFile=
-signing.password=
-github.credentials.username=
-github.credentials.password=[if you have two factor auth on, this is a github access token]&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ll also need:
-    ~/.github
-     login=[user name]
-     password=[password]&lt;/p&gt;
-
-&lt;p&gt;or, if you&amp;rsquo;re using two-factor auth,
-    ~/.github
-    oauth=[github access token]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://help.github.com/articles/creating-an-access-token-for-command-line-use/&#34;&gt;More details on creating a github access token&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info on specific settings for the Java Driver release&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s the settings for the whole release process.  However, the release gradle task is actually made up of a number of individual
-steps. Since there are a number of moving parts, and things that could go wrong with each step, these steps can be run individually if
-necessary. The most important one is &lt;code&gt;publish&lt;/code&gt;, all of the others can easily be replaced with a manual process.&lt;/p&gt;
-
-&lt;p&gt;The aim of the following documentation is to:
- - Define what each individual Gradle task is and what it&amp;rsquo;s supposed to do
- - State the requirements or dependencies for each individual task
- - Outline some of the things that could go wrong with the task&lt;/p&gt;
-
-&lt;p&gt;The release steps are, in the order in which they should be executed:&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;clean&lt;/code&gt; If running the full release task, a clean will be done first to make sure that everything is cleanly built. This is a standard
-Java task and has not been changed in any way for the release process.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;prepareRelease&lt;/code&gt; Before building or pushing, a number of things are done to put the code/files into the correct state:&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
-release versions in these files are stripped of any &amp;lsquo;-SNAPSHOT&amp;rsquo; suffix they might have. If there is no suffix,
-this task should still complete successfully.&lt;/li&gt;
-&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
-as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Release ${releaseVersion}&amp;rdquo;, e.g. &amp;ldquo;Release 3.0.0&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Tag this commit with the release number, e.g. &amp;ldquo;r3.0.0&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Push the changes and the tag to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
-this pushes to your origin.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note that all of these steps are pretty easy to do manually.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
-~/.gradle/gradle.properties
-github.credentials.username=
-github.credentials.password=&lt;/p&gt;
-
-&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew prepareRelease -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The files that need updating as part of the release process are defined in &lt;code&gt;release.gradle&lt;/code&gt;, as &lt;code&gt;filesToUpdate&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Ideally, don&amp;rsquo;t have any code changes in your current branch, as these will be committed.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;PrepareReleaseTask.gradle&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git
-integration.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
-&lt;li&gt;If you run this task multiple times, it should not fail, but you will get multiple git commits with the required release number. Make
-sure that you have the correct release number in the files (Mongo.java and build.gradle) and passed in to the command line.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Git: hard reset to the commit you were on before performing the release&lt;/li&gt;
-&lt;li&gt;Git: delete the release tag from local and, if necessary, remote repositories&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;publish&lt;/code&gt; This does the magic of pushing the jar files into Sonatype nexus. This should run on it&amp;rsquo;s own perfectly happily,
-and can pubish both snapshot jars and full release jars.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Will ensure jar files are built for: sources; javadoc; individual module classes; &amp;ldquo;uber&amp;rdquo; jar with the module classes and any classes
-from modules it depends on (e.g. for mongo-java-driver, include core and bson as well) but excluding any dependency jars.&lt;/li&gt;
-&lt;li&gt;Ensures the correct pom.xml is created for each of the artifacts&lt;/li&gt;
-&lt;li&gt;Publishes to the snapshot repo if no release version is defined (this is the default behaviour),
-or the &amp;ldquo;real&amp;rdquo; repo if you pass in a release version.&lt;/li&gt;
-&lt;li&gt;This will also sign the release.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note: The current assumption is that &lt;strong&gt;four&lt;/strong&gt; jars will be published per project, e.g:&lt;/p&gt;
-
-&lt;p&gt;mongo-java-driver-3.0.0-all.jar
-mongo-java-driver-3.0.0-javadoc.jar
-mongo-java-driver-3.0.0-sources.jar
-mongo-java-driver-3.0.0.jar&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this talks to nexus, you need:
-~/.gradle/gradle.properties
-sonatypeUsername=mongodb
-sonatypePassword=[find this in the settings file]&lt;/p&gt;
-
-&lt;p&gt;Needs a release version defined, it will do a check to make sure you have this.  E.g.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;./gradlew publish -DreleaseVersion=3.0.0
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you do not define a releaseVersion, it will assume you want to publish the SNAPSHOT.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;Follow the steps to set up GPG/PGP&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;We&amp;rsquo;re using a number of plugins to perform this publish process, and it&amp;rsquo;s all configured in &lt;code&gt;publish.gradle&lt;/code&gt;.  Plugins used:
-     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html&#34;&gt;maven-publish&lt;/a&gt; for defining the publishing process. This creates the correct pom and is responsible for publishing to appropriate
-     repo
-     &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/signing_plugin.html&#34;&gt;signing&lt;/a&gt; signs the release
-     &lt;a href=&#34;https://github.com/johnrengelman/shadow&#34;&gt;com.github.johnrengelman.shadow&lt;/a&gt; builds our uber jars&lt;/p&gt;
-
-&lt;p&gt;I know generally we steer clear of comments in our code, but I&amp;rsquo;ve tried to comment the publish file as much as I can,
-as it&amp;rsquo;s not always obvious what&amp;rsquo;s going on.&lt;/p&gt;
-
-&lt;p&gt;There are also specific configuration details in the build.gradle files for each project.  For example,
-driver/build.gradle defines additional values for the pom.xml, and the correct artifact ID.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_6&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Incorrect artifact ID (i.e. the ID for sonatype to identify our jars). This is currently defined in individual project build.gradle
-files, in publishing.publications.mavenJava(MavenPublication).artifactId.  If it&amp;rsquo;s missing, it&amp;rsquo;ll use the project name (e.g. bson).&lt;/li&gt;
-&lt;li&gt;Uber jar might contain too many dependencies or not enough.  As per &lt;a href=&#34;https://github.com/johnrengelman/shadow#filtering-shadow-jar-contents-by-mavenproject-dependency&#34;&gt;the documentation&lt;/a&gt;, Configure it with
- shadowJar {
-     dependencies {
-     }
- }&lt;/li&gt;
-&lt;li&gt;Nexus authentication might fail.  Ensure the credentials are in ~/.gradle/gradle.properties&lt;/li&gt;
-&lt;li&gt;Signing might fail. Ensure you follow the &lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH#JavaDriverReleaseProcess-SetupGPG/PGP&#34;&gt;steps to set up GPG/PGP&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Could get confused between snapshot repo and real repo.  &lt;code&gt;publish.gradle&lt;/code&gt; currently assumes that if you passed in releaseVersion,
-you&amp;rsquo;re publish to staging. &lt;a href=&#34;http://forums.gradle.org/gradle/topics/maven_publish_specify_a_repo_as_being_a_snapshot_repo&#34;&gt;See here&lt;/a&gt; for
-more details on why we need an &lt;code&gt;if&lt;/code&gt; statement here.&lt;/li&gt;
-&lt;li&gt;pom.xml might be incorrect.  As per &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N174E5&#34;&gt;the documentation&lt;/a&gt;, this is configured via
- publishing {
-     publications {
-         mavenJava(MavenPublication) {
-             pom.withXml {
-             }
-         }
-     }
- }&lt;/li&gt;
-&lt;li&gt;manifest.mf is incorrect. &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:manifest(groovy.lang.Closure&#34;&gt;As per the documentation&lt;/a&gt;), his is configured in each individual build.gradle file:
-jar {
- manifest.attributes(
-}&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Wrong jar files built/uploaded. This is configured, &lt;a href=&#34;http://www.gradle.org/docs/current/userguide/publishing_maven.html#N17478&#34;&gt;as per the documentation&lt;/a&gt;, by declaring the artifacts to publish in&lt;/p&gt;
-
-&lt;p&gt;publishing {
-      publications {
-          mavenJava(MavenPublication) {
-              artifact sourceJar
-              artifact javadocJar
-              artifact shadowJar
-              from components.java
-          }
-      }
-  }&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m unclear where components.java comes from, but it&amp;rsquo;s the magic incantation that uploads the default jar file for a project.  The
-Uber jar is created by applying the shadow plugin, and is included via shadowJar. The sources and javadoc jars are tasks that are
-defined elsewhere in the build file, for example:
-     task sourceJar(type: Jar) {
-         classifier = &amp;lsquo;sources&amp;rsquo;
-         from sourceSets.main.allSource
-     }&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Jar file name is incorrect. This is defined via the &lt;a href=&#34;http://www.gradle.org/docs/current/dsl/org.gradle.api.tasks.bundling.Jar.html#org.gradle.api.tasks.bundling.Jar:baseName&#34;&gt;Jar plugin&lt;/a&gt;, and in our case we configure overrides via module build.gradle
-files, e.g.:
-archivesBaseName = &amp;lsquo;mongo-java-driver&amp;rsquo;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_7&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;a &lt;code&gt;clean&lt;/code&gt; will remove any built artifacts, including pom.xml and manifest files.&lt;/li&gt;
-&lt;li&gt;published artifacts will need to be removed from &lt;a href=&#34;https://oss.sonatype.org/index.html&#34;&gt;Sonatype Nexus&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;draftReleaseNotes&lt;/code&gt; Creates a skeleton set of release notes. Although this could run perfectly well alone,
-without any of the other tasks, it does upload the uberjar so if that hasn&amp;rsquo;t previously been built you&amp;rsquo;ll get a file not found exception.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Creates the skeleton of the notes content&lt;/li&gt;
-&lt;li&gt;Pushes to github, so it should be &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;visible as a draft&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Uploads the driver module uber jar (so just a single jar file of all classes) to the release notes. If the release tag has been
-successful, the release notes will also have a tag, a commit, and zips of the source files.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;Note: these release notes are draft only, and can only be seen by those with the right permissions. When the release is live,
-the release notes will need to be published.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_8&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Needs your github credentials in:
-                                     ~/.github
-                                     either
-                                      login=[user name]
-                                      password=[password]&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;                             or, if you&#39;re using two-factor auth,
-                                 ~/.github
-                                 oauth=[github access token]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew draftReleaseNotes -DreleaseVersion=3.0.0&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_9&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;The behaviour of this task is defined in &lt;code&gt;DraftReleaseNotesTask&lt;/code&gt;.  This uses the &lt;a href=&#34;http://github-api.kohsuke.org/&#34;&gt;Github API for Java&lt;/a&gt;,
-it&amp;rsquo;s this code that requires the credentials in your .github file.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_10&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Missing jar file to upload.  This task does not explictly depend on archives creation, so if &lt;code&gt;shadowJar&lt;/code&gt; or &lt;code&gt;jar&lt;/code&gt; have not been run
-prior to running this task, you might get a file not found exception. The release notes will probably still have been created though.&lt;/li&gt;
-&lt;li&gt;Incorrect jar files attached. The jar files to attach are configured in &lt;code&gt;release.gradle&lt;/code&gt; with the &lt;code&gt;jarFile&lt;/code&gt; property. You can declare
-multiple files here. Use the task name for the task that creates the required artifact, e.g.
- jarFile project(&amp;rsquo;:driver&amp;rsquo;).shadowJar&lt;/li&gt;
-&lt;li&gt;Missing source zips, release tag and/or commit. Possibly the release tag did not get pushed correctly to &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/&#34;&gt;https://github.com/mongodb/mongo-java-driver/&lt;/a&gt;.&lt;br /&gt;
-Ensure there&amp;rsquo;s a &lt;code&gt;r3.0.0&lt;/code&gt; tag or similar for the release version you&amp;rsquo;re writing the notes for.&lt;/li&gt;
-&lt;li&gt;Release notes are not public. Actually, this is not an error - in order to make the notes publicly visible,
-there&amp;rsquo;s a manual step to publish them.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_11&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/releases&#34;&gt;releases page&lt;/a&gt; and delete any unwanted draft release notes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;code&gt;updateToNextVersion&lt;/code&gt; Similar to, but simpler than, prepareRelease - this task gets the code in the right state for the next working
-version.&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;Update the version number in the appropriate files. In the case of the Java driver, this is &lt;code&gt;build.gradle&lt;/code&gt; and &lt;code&gt;Mongo.java&lt;/code&gt;. The
-release versions in these files are incremented (e.g. 3.0.0 to 3.0.1) and the &amp;lsquo;-SNAPSHOT&amp;rsquo; added.&lt;/li&gt;
-&lt;li&gt;Check all changed files into git. You should make sure you don&amp;rsquo;t have any changes outstanding before running this,
-as they&amp;rsquo;ll get checked in as well. The commit comment will be &amp;ldquo;Updated to next development version: ${newVersion}&amp;ldquo;,
-e.g. &amp;ldquo;Updated to next development version: 3.0.1-SNAPSHOT&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Push the changes to the remote. This seems to push to the default remote, so if you&amp;rsquo;re working on your own fork,
-this pushes to your origin.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;toc_12&#34;&gt;Requirements&lt;/h3&gt;
-
-&lt;p&gt;Because this task pushes to a git remote, you&amp;rsquo;ll need github credentials:
-~/.gradle/gradle.properties
-github.credentials.username=
-github.credentials.password=&lt;/p&gt;
-
-&lt;p&gt;Uses the release version you give as an argument, e.g. ./gradlew updateToNextVersion -DreleaseVersion=3.0.0&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_13&#34;&gt;Code&lt;/h3&gt;
-
-&lt;p&gt;This task is defined in &lt;code&gt;UpdateToNextVersionTask&lt;/code&gt;.  It uses &lt;a href=&#34;http://wiki.eclipse.org/JGit/&#34;&gt;JGit&lt;/a&gt; for the git integration.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_14&#34;&gt;Possible errors&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Problems authenticating to github. [link to github troubleshooting required]&lt;/li&gt;
-&lt;li&gt;In theory you can run this multiple times without error - it will keep incrementing the version number (and suffixing &amp;lsquo;-SNAPSHOT&amp;rsquo; to
-it). However, if you specify the same releaseVersion parameter every time, it should error telling you that the version doesn&amp;rsquo;t match
-the version in the build file (as the build file has already been incremented).  This is fine, just do a manual rollback before trying
-again.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_15&#34;&gt;Rollback&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Git: hard reset to the commit you were on before calling this task.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_16&#34;&gt;In Summary&lt;/h2&gt;
-
-&lt;p&gt;There is a magic incantation which is supposed to do the full release. But if any of the steps go wrong,
-you can call the individual tasks alone, and follow the above guide for troubleshooting or rolling back.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/pages/viewpage.action?title=Java+Driver+Release+Process&amp;amp;spaceKey=DH&#34;&gt;More info about the current/old Java driver release&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://wiki.mongodb.com/display/DH/Morphia+Release+Process&#34;&gt;Morphia Release Process&lt;/a&gt; Lots of this new release process was, um,
-borrowed from the updated Morphia release process, so there might be useful information in there to troubleshoot this process too.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_17&#34;&gt;Things that are open to improvement:&lt;/h3&gt;
-
-&lt;p&gt;(AKA let&amp;rsquo;s not call this a TODO list):&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;The release plugin stuff in &lt;code&gt;buildSrc&lt;/code&gt; is almost definitely not idiotmatic Groovy/Gradle. Instead, I&amp;rsquo;ve tried to make it readable.&lt;/li&gt;
-&lt;li&gt;I think I&amp;rsquo;d prefer, on reflection, to move all the stuff in &lt;code&gt;buildSrc&lt;/code&gt; into gradle scripts instead,
-although that goes against the recommendations, because at least then all the gradle logic would be in the same place.&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;ve been encouraged to look at the &lt;a href=&#34;https://github.com/ajoberstar/gradle-git&#34;&gt;gradle-git plugin&lt;/a&gt; instead of JGit, but I haven&amp;rsquo;t had the time.&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

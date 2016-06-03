@@ -6,7 +6,122 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 22 Oct 2012 00:00:00 UTC</updated>
+    <updated>Fri, 03 Jun 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Applying Java 8 Idioms to Existing Code</title>
+      <link>http://trishagee.github.io/presentation/refactoring_to_java_8/</link>
+      <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/refactoring_to_java_8/</guid>
+      <description>
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Key Takeaways&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Understand how to improve performance with your Java code using Java 8 language features.&lt;/li&gt;
+&lt;li&gt;Learn hands on techniques to discover and implement common Java 8 refactorings.&lt;/li&gt;
+&lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.&lt;/p&gt;
+
+&lt;p&gt;In this presentation, Trisha will:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Highlight the performance benefits of using Java 8 - after all, you’ll probably have to persuade &amp;ldquo;The Management&amp;rdquo; that tampering with
+existing code is worthwhile&lt;/li&gt;
+&lt;li&gt;Demonstrate how to identify areas of code that can be updated to use Java 8 features, and how to pick which changes will give you the
+most benefit&lt;/li&gt;
+&lt;li&gt;Demonstrate how to automatically refactor your code to make use of features like lambdas and streams&lt;/li&gt;
+&lt;li&gt;Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;The talk&lt;/h2&gt;
+
+&lt;p&gt;[Slides]&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Performance&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Lambda Expressions&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;http://medianetwork.oracle.com/video/player/2623576348001&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_5&#34;&gt;Streams&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;https://www.infoq.com/presentations/java8-stream-performance&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&#34;&gt;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&lt;/a&gt; - Angelika Langer&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Again, the for-loop is faster that the sequential stream operation, but the difference on an ArrayList is not nearly as significant as
+it was on an array.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;You will find that there is no measurable difference any more between for-loop and sequential stream if the functionality is heavily cpu
+ bound.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for
+performance reasons; you do it because you like the functional programming style.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of
+overhead that is involved in going parallel and how (well or poorly) it is overcompensated (on this particular platform).&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;With this in mind it is fair to say that the performance model of streams is not a trivial one&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;you need to benchmark a lot in order to find out for a given context whether going parallel is worth doing or not.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t
+expect miracles. Also, don’t guess; instead, benchmark a lot.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&#34;&gt;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&lt;/a&gt;
+(interesting comparison of different iteration styles)
+Also shows that things like boxing might add more cost than streams (but that you don&amp;rsquo;t realise you&amp;rsquo;re boxing)
+Maybe could take these test and run with the unboxed feature from the blog below?&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://blog.codefx.org/java/stream-performance/&#34;&gt;http://blog.codefx.org/java/stream-performance/&lt;/a&gt; - some interesting benchmarks based on Angelika Langer&amp;rsquo;s article&lt;br /&gt;
+&lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;http://blog.codefx.org/java/stream-performance-your-ideas/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Date and Time&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Benchmarking&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://openjdk.java.net/projects/code-tools/jmh/&#34;&gt;http://openjdk.java.net/projects/code-tools/jmh/&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin&#34;&gt;https://github.com/artyushov/idea-jmh-plugin&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;http://java-performance.info/jmh/&#34;&gt;http://java-performance.info/jmh/&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Performance Links</title>
