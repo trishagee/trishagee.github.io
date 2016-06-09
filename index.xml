@@ -39,21 +39,28 @@ most benefit&lt;/li&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
 
-&lt;p&gt;[Slides]&lt;/p&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/IuHXuQmu0WONv&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Performance&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Background&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Lambda Expressions&lt;/h3&gt;
+&lt;p&gt;Article: &lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8&lt;/a&gt;&lt;br /&gt;
+Article: &lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;Five Java 8 Features You Won&amp;rsquo;t Be Able to Live Without&lt;/a&gt;&lt;br /&gt;
+Video and Research: &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;Building a Java 8 Application&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;http://medianetwork.oracle.com/video/player/2623576348001&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;http://www.oracle.com/technetwork/java/jvmls2013kuksen-2014088.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Performance&lt;/h2&gt;
 
-&lt;h4 id=&#34;toc_4&#34;&gt;Streams&lt;/h4&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Lambda Expressions&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;https://www.infoq.com/presentations/java8-stream-performance&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Video: &lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;Lambda Performance&lt;/a&gt; and &lt;a href=&#34;http://www.oracle
+.com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;talk slides&lt;/a&gt;&lt;br /&gt;
+Article: &lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;Java 8 Lambdas - A Peek Under the Hood&lt;/a&gt;
+Video: &lt;a href=&#34;https://youtu.be/MLksirK9nnE&#34;&gt;Lambdas in Java: A Peek under the Hood - Brian Goetz&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&#34;&gt;https://jaxenter.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&lt;/a&gt; - Angelika Langer&lt;/p&gt;
+&lt;h4 id=&#34;toc_5&#34;&gt;Streams&lt;/h4&gt;
+
+&lt;p&gt;Video: &lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;Let’s Get to the Rapids: Java 8 Stream Performance&lt;/a&gt;&lt;br /&gt;
+Article: &lt;a href=&#34;https://jaxenter
+.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html&#34;&gt;Java performance tutorial: How fast are the Java 8 streams? - Angelika Langer&lt;/a&gt; Notable Quotes:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;Again, the for-loop is faster that the sequential stream operation, but the difference on an ArrayList is not nearly as significant as
@@ -100,24 +107,29 @@ overhead that is involved in going parallel and how (well or poorly) it is overc
 expect miracles. Also, don’t guess; instead, benchmark a lot.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&#34;&gt;http://blog.takipi.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&lt;/a&gt;
-(interesting comparison of different iteration styles)
-Also shows that things like boxing might add more cost than streams (but that you don&amp;rsquo;t realise you&amp;rsquo;re boxing)
-Maybe could take these test and run with the unboxed feature from the blog below?&lt;/p&gt;
+&lt;p&gt;Article: &lt;a href=&#34;http://blog.takipi
+.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/&#34;&gt;Benchmark: How Misusing Streams Can Make Your Code 5 Times Slower&lt;/a&gt; -
+interesting comparison of different iteration styles.  Also shows that things like boxing might add more cost than streams (but that you
+don&amp;rsquo;t realise you&amp;rsquo;re boxing)&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://blog.codefx.org/java/stream-performance/&#34;&gt;http://blog.codefx.org/java/stream-performance/&lt;/a&gt; - some interesting benchmarks based on Angelika Langer&amp;rsquo;s article&lt;br /&gt;
-&lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;http://blog.codefx.org/java/stream-performance-your-ideas/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Article: &lt;a href=&#34;http://blog.codefx.org/java/stream-performance/&#34;&gt;Stream Performance&lt;/a&gt; - some interesting benchmarks based on Angelika Langer&amp;rsquo;s
+article&lt;br /&gt;
+Article: &lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;Follow up on Stream Performance&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;Date and Time&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;Date and Time&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Article: &lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;Benchmarking&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Benchmarking&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://openjdk.java.net/projects/code-tools/jmh/&#34;&gt;http://openjdk.java.net/projects/code-tools/jmh/&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin&#34;&gt;https://github.com/artyushov/idea-jmh-plugin&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;http://java-performance.info/jmh/&#34;&gt;http://java-performance.info/jmh/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I used a bunch of techniques to produce the benchmarks on the talk.  I&amp;rsquo;d like to summarise them more thoroughly when I get a chance, but
+for now here&amp;rsquo;s my background reading:&lt;/p&gt;
+
+&lt;p&gt;Article: [Avoiding Benchmarking Pitfalls on the JVM}(&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;Tool: &lt;a href=&#34;http://openjdk.java.net/projects/code-tools/jmh/&#34;&gt;JMH&lt;/a&gt;&lt;br /&gt;
+Tool: &lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin0    
+Article: [Introduction to JMH](http://java-performance.info/jmh/&#34;&gt;IntelliJ JMH Plugin&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
