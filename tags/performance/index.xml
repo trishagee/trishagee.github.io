@@ -125,7 +125,7 @@ Article: &lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ide
 &lt;p&gt;I used a bunch of techniques to produce the benchmarks on the talk.  I&amp;rsquo;d like to summarise them more thoroughly when I get a chance, but
 for now here&amp;rsquo;s my background reading:&lt;/p&gt;
 
-&lt;p&gt;Article: [Avoiding Benchmarking Pitfalls on the JVM}(&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;Article: &lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;Avoiding Benchmarking Pitfalls on the JVM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Tool: &lt;a href=&#34;http://openjdk.java.net/projects/code-tools/jmh/&#34;&gt;JMH&lt;/a&gt;&lt;br /&gt;
 Tool: &lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin0    
