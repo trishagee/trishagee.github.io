@@ -41,22 +41,32 @@ most benefit&lt;/li&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/IuHXuQmu0WONv&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
 
+&lt;p&gt;The IntelliJ-specific features of some of the refactoring shown are covered in my
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt; tutorial.&lt;/p&gt;
+
 &lt;h2 id=&#34;toc_2&#34;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;Article: &lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;Five Java 8 Features You Won&amp;rsquo;t Be Able to Live Without&lt;/a&gt;&lt;br /&gt;
 Video and Research: &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;Building a Java 8 Application&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Performance&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Code&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;Lambda Expressions&lt;/h3&gt;
+&lt;p&gt;The project we&amp;rsquo;re refactoring is &lt;a href=&#34;https://github.com/mongodb/morphia&#34;&gt;Morphia&lt;/a&gt;. You can see the &amp;ldquo;after&amp;rdquo; of the chosen refactorings on the
+ &lt;a href=&#34;https://github.com/trishagee/morphia/tree/r2j8&#34;&gt;r2j8&lt;/a&gt; branch.&lt;/p&gt;
+
+&lt;p&gt;The performance tests that were written and run specifically for this talk are in the &lt;a href=&#34;https://github.com/trishagee/j8-morphia-perf-tests&#34;&gt;j8-morphia-perf-tests repository&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Performance&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Lambda Expressions&lt;/h3&gt;
 
 &lt;p&gt;Video: &lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;Lambda Performance&lt;/a&gt; and &lt;a href=&#34;http://www.oracle
 .com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;talk slides&lt;/a&gt;&lt;br /&gt;
-Article: &lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;Java 8 Lambdas - A Peek Under the Hood&lt;/a&gt;
+Article: &lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;Java 8 Lambdas - A Peek Under the Hood&lt;/a&gt;&lt;br /&gt;
 Video: &lt;a href=&#34;https://youtu.be/MLksirK9nnE&#34;&gt;Lambdas in Java: A Peek under the Hood - Brian Goetz&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_5&#34;&gt;Streams&lt;/h4&gt;
+&lt;h4 id=&#34;toc_6&#34;&gt;Streams&lt;/h4&gt;
 
 &lt;p&gt;Video: &lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;Let’s Get to the Rapids: Java 8 Stream Performance&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://jaxenter
@@ -67,40 +77,40 @@ Article: &lt;a href=&#34;https://jaxenter
 it was on an array.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;You will find that there is no measurable difference any more between for-loop and sequential stream if the functionality is heavily cpu
  bound.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for
 performance reasons; you do it because you like the functional programming style.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of
 overhead that is involved in going parallel and how (well or poorly) it is overcompensated (on this particular platform).&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;With this in mind it is fair to say that the performance model of streams is not a trivial one&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;&amp;hellip;you need to benchmark a lot in order to find out for a given context whether going parallel is worth doing or not.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;&amp;hellip;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t
@@ -116,11 +126,11 @@ don&amp;rsquo;t realise you&amp;rsquo;re boxing)&lt;/p&gt;
 article&lt;br /&gt;
 Article: &lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;Follow up on Stream Performance&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;Date and Time&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Date and Time&lt;/h3&gt;
 
 &lt;p&gt;Article: &lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;Benchmarking&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Benchmarking&lt;/h3&gt;
 
 &lt;p&gt;I used a bunch of techniques to produce the benchmarks on the talk.  I&amp;rsquo;d like to summarise them more thoroughly when I get a chance, but
 for now here&amp;rsquo;s my background reading:&lt;/p&gt;
@@ -128,8 +138,8 @@ for now here&amp;rsquo;s my background reading:&lt;/p&gt;
 &lt;p&gt;Article: &lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html&#34;&gt;Avoiding Benchmarking Pitfalls on the JVM&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Tool: &lt;a href=&#34;http://openjdk.java.net/projects/code-tools/jmh/&#34;&gt;JMH&lt;/a&gt;&lt;br /&gt;
-Tool: &lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin0    
-Article: [Introduction to JMH](http://java-performance.info/jmh/&#34;&gt;IntelliJ JMH Plugin&lt;/a&gt;&lt;/p&gt;
+Tool: &lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin&#34;&gt;IntelliJ JMH Plugin&lt;/a&gt;&lt;br /&gt;
+Article: &lt;a href=&#34;http://java-performance.info/jmh/&#34;&gt;Introduction to JMH&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

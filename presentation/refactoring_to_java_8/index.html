@@ -104,14 +104,10 @@
                         class="icon icon-google-plus"></span>Google+</a></li>
                 <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f&title=Applying%20Java%208%20Idioms%20to%20Existing%20Code&source=spf13"
                        target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
-                <li><a href="http://del.icio.us/post?url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank" title="Delicious" class="delicious"><span
-                        class="icon icon-delicious"></span>Delicious</a></li>
                 <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank" title="Reddit" class="reddit"><span
                         class="icon icon-reddit"></span>Reddit</a></li>
                 <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank" title="StumbleUpon"
                        class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
-                <li><a href="http://www.dzone.com/links/add.html?url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f&title=Applying%20Java%208%20Idioms%20to%20Existing%20Code" target="_blank" title="DZone"
-                       class="dzone"><span class="icon icon-dzone"></span>DZone</a></li>
             </ul>
             <span class="subcount">sharing is caring</span>
         </div>
@@ -176,22 +172,32 @@ most benefit</li>
 
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/IuHXuQmu0WONv" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> 
 
+<p>The IntelliJ-specific features of some of the refactoring shown are covered in my
+<a href="https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html">Migrating to Java 8</a> tutorial.</p>
+
 <h2 id="toc_2">Background</h2>
 
 <p>Article: <a href="https://dzone.com/articles/why-java-8-1">Why Java 8</a><br />
 Article: <a href="https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/">Five Java 8 Features You Won&rsquo;t Be Able to Live Without</a><br />
 Video and Research: <a href="/presentation/java8_in_anger/">Building a Java 8 Application</a></p>
 
-<h2 id="toc_3">Performance</h2>
+<h2 id="toc_3">Code</h2>
 
-<h3 id="toc_4">Lambda Expressions</h3>
+<p>The project we&rsquo;re refactoring is <a href="https://github.com/mongodb/morphia">Morphia</a>. You can see the &ldquo;after&rdquo; of the chosen refactorings on the
+ <a href="https://github.com/trishagee/morphia/tree/r2j8">r2j8</a> branch.</p>
+
+<p>The performance tests that were written and run specifically for this talk are in the <a href="https://github.com/trishagee/j8-morphia-perf-tests">j8-morphia-perf-tests repository</a></p>
+
+<h2 id="toc_4">Performance</h2>
+
+<h3 id="toc_5">Lambda Expressions</h3>
 
 <p>Video: <a href="http://medianetwork.oracle.com/video/player/2623576348001">Lambda Performance</a> and <a href="http://www.oracle
 .com/technetwork/java/jvmls2013kuksen-2014088.pdf">talk slides</a><br />
-Article: <a href="https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood">Java 8 Lambdas - A Peek Under the Hood</a>
+Article: <a href="https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood">Java 8 Lambdas - A Peek Under the Hood</a><br />
 Video: <a href="https://youtu.be/MLksirK9nnE">Lambdas in Java: A Peek under the Hood - Brian Goetz</a></p>
 
-<h4 id="toc_5">Streams</h4>
+<h4 id="toc_6">Streams</h4>
 
 <p>Video: <a href="https://www.infoq.com/presentations/java8-stream-performance">Let’s Get to the Rapids: Java 8 Stream Performance</a><br />
 Article: <a href="https://jaxenter
@@ -202,40 +208,40 @@ Article: <a href="https://jaxenter
 it was on an array.</p>
 </blockquote>
 
-<p>&hellip;</p>
+<p>&nbsp;</p>
 
 <blockquote>
 <p>You will find that there is no measurable difference any more between for-loop and sequential stream if the functionality is heavily cpu
  bound.</p>
 </blockquote>
 
-<p>&hellip;</p>
+<p>&nbsp;</p>
 
 <blockquote>
 <p>The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for
 performance reasons; you do it because you like the functional programming style.</p>
 </blockquote>
 
-<p>&hellip;</p>
+<p>&nbsp;</p>
 
 <blockquote>
 <p>The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of
 overhead that is involved in going parallel and how (well or poorly) it is overcompensated (on this particular platform).</p>
 </blockquote>
 
-<p>&hellip;</p>
+<p>&nbsp;</p>
 
 <blockquote>
 <p>With this in mind it is fair to say that the performance model of streams is not a trivial one</p>
 </blockquote>
 
-<p>&hellip;</p>
+<p>&nbsp;</p>
 
 <blockquote>
 <p>&hellip;you need to benchmark a lot in order to find out for a given context whether going parallel is worth doing or not.</p>
 </blockquote>
 
-<p>&hellip;</p>
+<p>&nbsp;</p>
 
 <blockquote>
 <p>The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t
@@ -251,11 +257,11 @@ don&rsquo;t realise you&rsquo;re boxing)</p>
 article<br />
 Article: <a href="http://blog.codefx.org/java/stream-performance-your-ideas/">Follow up on Stream Performance</a></p>
 
-<h3 id="toc_6">Date and Time</h3>
+<h3 id="toc_7">Date and Time</h3>
 
 <p>Article: <a href="http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/">JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)</a></p>
 
-<h3 id="toc_7">Benchmarking</h3>
+<h3 id="toc_8">Benchmarking</h3>
 
 <p>I used a bunch of techniques to produce the benchmarks on the talk.  I&rsquo;d like to summarise them more thoroughly when I get a chance, but
 for now here&rsquo;s my background reading:</p>
@@ -263,8 +269,8 @@ for now here&rsquo;s my background reading:</p>
 <p>Article: <a href="http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html">Avoiding Benchmarking Pitfalls on the JVM</a></p>
 
 <p>Tool: <a href="http://openjdk.java.net/projects/code-tools/jmh/">JMH</a><br />
-Tool: <a href="https://github.com/artyushov/idea-jmh-plugin0    
-Article: [Introduction to JMH](http://java-performance.info/jmh/">IntelliJ JMH Plugin</a></p>
+Tool: <a href="https://github.com/artyushov/idea-jmh-plugin">IntelliJ JMH Plugin</a><br />
+Article: <a href="http://java-performance.info/jmh/">Introduction to JMH</a></p>
 
         </article>
   </div>
@@ -277,7 +283,7 @@ Article: [Introduction to JMH](http://java-performance.info/jmh/">IntelliJ JMH P
 <div>
     <section id="datecount">
         <h4 id="date"> Fri Jun 3, 2016 </h4>
-        <h5 id="wc"> 700 Words </h5>
+        <h5 id="wc"> 800 Words </h5>
     </section>
     <ul id="categories">
         
@@ -315,7 +321,7 @@ Article: [Introduction to JMH](http://java-performance.info/jmh/">IntelliJ JMH P
 
 </aside>
 
-<meta itemprop="wordCount" content="651">
+<meta itemprop="wordCount" content="710">
 <meta itemprop="datePublished" content="2016-06-03">
 <meta itemprop="url" content="http://trishagee.github.io/presentation/refactoring_to_java_8/">
 
