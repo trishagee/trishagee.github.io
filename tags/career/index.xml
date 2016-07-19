@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Career on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/career/index.xml/</link>
+    <link>http://trishagee.github.io/tags/career/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -111,7 +111,7 @@ I told LMAX that was why I was leaving, and off I went.&lt;/p&gt;
 unassigned to a project, I invested that time in porting the blog to a
 more sensible platform, and trying to write a blog a day. Again, I picked
 topics I could comfortably talk about - I spoke about my experiences as a
-&lt;a href=&#34;/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
+&lt;a href=&#34;http://trishagee.github.io/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
 time&lt;/a&gt; (sometimes people will be arsey
 with beginners, but in reality many real human beings can&amp;rsquo;t tell you you&amp;rsquo;re
 wrong when you&amp;rsquo;re just talking about your own experiences), and despite my
@@ -216,7 +216,7 @@ answering questions for the last 6 months.&lt;/p&gt;
 &lt;p&gt;It really was as terrifying as I thought.  But.  It went well. I answered
 difficult questions. We got great feedback.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
 was an important milestone in my evangelism career.  Not only
 did I get to put this presentation on my CV, I got to meet a lot of people in
 this network: Martin introduced me to a lot of high performance specialists;
@@ -229,9 +229,9 @@ and they introduced me to
 to be an important step in turning an idea I had for a panel into a Devoxx
 reality.&lt;/p&gt;
 
-&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
+&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;http://trishagee.github.io/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
 with Mike&lt;/a&gt;, and at
-&lt;a href=&#34;/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
+&lt;a href=&#34;http://trishagee.github.io/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
 largely thanks to the contacts I
 had made and the prestige of having a JavaOne talk under my belt.  So I went
 from basically zero at the start of that year (my blog had been dormant for
@@ -360,7 +360,7 @@ could get going straight away without any ramp up&lt;/p&gt;
       <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/new_year_new_adventures/</guid>
-      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
+      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;http://trishagee.github.io/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
 called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
 this role were: to learn what it was
 like working for a company that produced a technology product; to discover what impact working in an open source fashion has; and to
@@ -371,7 +371,7 @@ worked to understand the value of community and evangelism, and to help create a
 and my evangelism efforts and open source work earned me the &lt;a href=&#34;https://java.net/website/java-champions/bios.html#Gee&#34;&gt;Java Champion&lt;/a&gt; title.
 I&amp;rsquo;m extremely proud of what I&amp;rsquo;ve achieved over this period, and very grateful to MongoDB for giving me these opportunities.&lt;/p&gt;
 
-&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
+&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
 this year, you&amp;rsquo;ll know of my love affair with &lt;a href=&#34;https://www.jetbrains.com/idea/whatsnew/&#34;&gt;IntelliJ IDEA&lt;/a&gt;,
 a tool I use daily (even for blogging). Well, now I&amp;rsquo;m joining the team at &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt;,
 where I&amp;rsquo;m going Full Advocate. I &lt;em&gt;hope&lt;/em&gt; this means I get to carry on doing more of what I love - presenting, writing,
@@ -381,7 +381,7 @@ Java/JVM world.&lt;/p&gt;
 &lt;p&gt;And yes, in answer to the Most Frequently Asked Question, I am staying in Spain. I&amp;rsquo;ve fallen in love with Sevilla and I&amp;rsquo;m not ready to
 leave yet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I shall leave you with my somewhat disasterous &amp;ldquo;Top Ten IntelliJ Tips&amp;rdquo; from GOTO Aarhus, which is worth watching just to see Dan North
@@ -417,7 +417,7 @@ not a shining example of how to write these sorts of tests, but if you&amp;rsquo
 &lt;p&gt;I also talk about how amazing Spock is, so if you&amp;rsquo;re interested you can read more about
 &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;my experiences with Spock&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk was built off an &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
+&lt;p&gt;This talk was built off an &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
 invest your personal time in.&lt;/p&gt;
 
 &lt;p&gt;EDIT: The talk has been updated for 2016 and the Agile aspects emphasised in a version presented at Agile Manchester.&lt;/p&gt;
@@ -427,10 +427,10 @@ invest your personal time in.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll leave you with this crude decision
 chart and the mind-map of potential ways to play with a technology. Remember, learning to say &lt;em&gt;&amp;ldquo;no&amp;rdquo;&lt;/em&gt; to a technology can be very powerful.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;PS I&amp;rsquo;m thinking of writing a book, &lt;a href=&#34;https://leanpub.com/careeradviceforprogrammers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;. If you&amp;rsquo;re
@@ -438,7 +438,7 @@ interested, let me know (because, you know, I&amp;rsquo;ve got loads of spare ti
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Presentation Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;presentation-abstract:42b45ac01f3ccbbe86d46b2593258976&#34;&gt;Presentation Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;We all want to stay ahead of the curve - after all, that&amp;rsquo;s what you go to a conference for. But have you ever considered how being ahead
 of the curve might be dangerous?&lt;/em&gt;&lt;/p&gt;
@@ -462,7 +462,7 @@ project, team and organisation?&lt;/em&gt;&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
       <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
-by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+by &lt;a href=&#34;http://trishagee.github.io/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
 &lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
 .com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
 time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
@@ -551,7 +551,7 @@ there are going to be hard limits on new stuff you can use.  For example:&lt;/p&
 &lt;li&gt;Your systems guys will not allow new languages, even JVM ones, in a production environment.  In which case,
 you don&amp;rsquo;t need to worry about learning them in any detail.&lt;/li&gt;
 &lt;li&gt;Your company has paid a heavy subscription fee for their existing database, therefore they will not be trying out funky
-&lt;a href=&#34;/post/nosql_is_a_stupid_name/&#34;&gt;NoSQL&lt;/a&gt; solutions.  Fine, you don&amp;rsquo;t have to research them.&lt;/li&gt;
+&lt;a href=&#34;http://trishagee.github.io/post/nosql_is_a_stupid_name/&#34;&gt;NoSQL&lt;/a&gt; solutions.  Fine, you don&amp;rsquo;t have to research them.&lt;/li&gt;
 &lt;li&gt;You&amp;rsquo;re working on a messaging system with no UI.  In which case, you can let the new JavaScript frameworks rise and fall without
 worrying too much about them.&lt;/li&gt;
 &lt;li&gt;You work for a consultancy that specialises in government work, and documentation is sacred.  So,
@@ -683,9 +683,9 @@ It&amp;rsquo;s not fair, true.  But it&amp;rsquo;s the way humans are. I&amp;rsq
 and I need to get back to that as soon as I can.  When I get CVs in batches of up to 12, as I regularly do,
 I&amp;rsquo;m not free to spend more than 10 minutes going through all of them.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;The Easy Stuff&lt;/h2&gt;
+&lt;h2 id=&#34;the-easy-stuff:c476b38b973eb46db0bf5518dad84c74&#34;&gt;The Easy Stuff&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;You must be able to spell&lt;/h3&gt;
+&lt;h3 id=&#34;you-must-be-able-to-spell:c476b38b973eb46db0bf5518dad84c74&#34;&gt;You must be able to spell&lt;/h3&gt;
 
 &lt;p&gt;You really must.  There are things called Spell Checkers and they are amazing.  Some of these new-fangled pieces of software even show
 you your errors in this cool squiggly red underline in your document.&lt;/p&gt;
@@ -693,12 +693,12 @@ you your errors in this cool squiggly red underline in your document.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;m reading your CV in Open Office, and if I see red squigglies under words that aren&amp;rsquo;t technologies or acronyms I&amp;rsquo;m going to wonder how
 good your attention to detail is.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;You must use capital letters in the appropriate places&lt;/h3&gt;
+&lt;h3 id=&#34;you-must-use-capital-letters-in-the-appropriate-places:c476b38b973eb46db0bf5518dad84c74&#34;&gt;You must use capital letters in the appropriate places&lt;/h3&gt;
 
 &lt;p&gt;It&amp;rsquo;s traditional to start a sentence with a capital.  It&amp;rsquo;s also traditional to use a capital &amp;ldquo;I&amp;rdquo; not &amp;ldquo;i&amp;rdquo; when referring to oneself. We&amp;rsquo;re
 not 14 years old, we&amp;rsquo;re not writing an SMS to our mates.  We&amp;rsquo;re applying for a proper job paying proper money.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Correct grammar is appreciated&lt;/h3&gt;
+&lt;h3 id=&#34;correct-grammar-is-appreciated:c476b38b973eb46db0bf5518dad84c74&#34;&gt;Correct grammar is appreciated&lt;/h3&gt;
 
 &lt;p&gt;Whether you&amp;rsquo;re a native English-speaker or not, you need to get someone else who is a native English-speaker to check the prose in your
 CV to see if it scans correctly. For me, it&amp;rsquo;s not about being prejudiced against you because you&amp;rsquo;re not a natural author,
@@ -707,9 +707,9 @@ choice of words or simple comma placement is off, I&amp;rsquo;ll have to read th
 me up and ruin my flow.  I want to get a good feel for you from reading your CV, so if I stumble a few times I&amp;rsquo;m not going to feel like
 I connected with you.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;Harder and fluffier&lt;/h2&gt;
+&lt;h2 id=&#34;harder-and-fluffier:c476b38b973eb46db0bf5518dad84c74&#34;&gt;Harder and fluffier&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;I don&amp;rsquo;t care which versions of Spring you&amp;rsquo;ve worked with&lt;/h3&gt;
+&lt;h3 id=&#34;i-don-t-care-which-versions-of-spring-you-ve-worked-with:c476b38b973eb46db0bf5518dad84c74&#34;&gt;I don&amp;rsquo;t care which versions of Spring you&amp;rsquo;ve worked with&lt;/h3&gt;
 
 &lt;p&gt;I know you need a checklist of technologies on your CV so it gets past the non-technical recruitment agents and get picked up via
 automated searches.  This is a bigger problem with our industry than one I want to tackle right now.  So I&amp;rsquo;ll let you off having
@@ -723,7 +723,7 @@ or at least those you&amp;rsquo;re happiest with at the top.  Alternatively put 
 
 &lt;p&gt;Often I will completely ignore this section because I&amp;rsquo;m more interested in your ability to learn and your passion for what you do.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;I want to know about your passions&lt;/h3&gt;
+&lt;h3 id=&#34;i-want-to-know-about-your-passions:c476b38b973eb46db0bf5518dad84c74&#34;&gt;I want to know about your passions&lt;/h3&gt;
 
 &lt;p&gt;In the old days I used to fast forward to your hobbies and interests, but these days we&amp;rsquo;re encouraged not to put those on the CV in case
 you&amp;rsquo;re judged against them.  Which seems like political correctness gone crazy, but then when you think about it you can infer a lot
@@ -735,7 +735,7 @@ a car and can drive - OK, it&amp;rsquo;s a dumb example, but you get the idea.&l
 contributions to open source software; your involvement in a Java User Group (or other extra-curricular activity).  I&amp;rsquo;m not going to
 discard you if you don&amp;rsquo;t have any of these things, but if you do it&amp;rsquo;s definitely extra brownie points for you.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;I want to know if you worship at the altar of technology, or if you&amp;rsquo;re business-value driven&lt;/h3&gt;
+&lt;h3 id=&#34;i-want-to-know-if-you-worship-at-the-altar-of-technology-or-if-you-re-business-value-driven:c476b38b973eb46db0bf5518dad84c74&#34;&gt;I want to know if you worship at the altar of technology, or if you&amp;rsquo;re business-value driven&lt;/h3&gt;
 
 &lt;p&gt;Either of these things is fine - we need people who are very business-focussed and people who are rabid about technology,
 as well as all those in between, to build a good team.  Another axis of interest is people/process - are you passionate about people,
@@ -772,7 +772,7 @@ to provide quick feedback to the business.&lt;/p&gt;
 &lt;p&gt;I don&amp;rsquo;t really care about the specific technologies you used, the fact that you mentioned web-based and database gives me enough of a
 feel.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Sometimes prospective employers really do stalk you&lt;/h3&gt;
+&lt;h3 id=&#34;sometimes-prospective-employers-really-do-stalk-you:c476b38b973eb46db0bf5518dad84c74&#34;&gt;Sometimes prospective employers really do stalk you&lt;/h3&gt;
 
 &lt;p&gt;Personally I think claims that prospective employers will check every facet of your web presence are somewhat over-exaggerated.  If I
 barely have 60 seconds to read your CV, I&amp;rsquo;m not going to check you out on Facebook, my life is too short.&lt;/p&gt;
@@ -787,7 +787,7 @@ to see if there&amp;rsquo;s an extra dimension in your profile which will tip me
 &lt;p&gt;So be aware of your web presence, particularly something that is aimed at your professional image like LinkedIn,
 and make sure it represents you the way you want it to.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_9&#34;&gt;In Conclusion&lt;/h2&gt;
+&lt;h2 id=&#34;in-conclusion:c476b38b973eb46db0bf5518dad84c74&#34;&gt;In Conclusion&lt;/h2&gt;
 
 &lt;p&gt;This post might be simply a good way to increase my own workload - every CV I get from now on may be an automatic pass,
 and then I have to call all of you before I can start weeding you out.&lt;/p&gt;

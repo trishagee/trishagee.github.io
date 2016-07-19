@@ -41,7 +41,7 @@
 
 
 
-    <base href="http://trishagee.github.io">
+    <base href="http://trishagee.github.io/">
     <title> New IntelliJ Tricks I Learnt Part 2 - trishagee.github.io </title>
     <link rel="canonical" href="http://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/">
     
@@ -154,7 +154,7 @@ and, of course, discovered a load more things I didn&rsquo;t know.  And this is 
 are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
 cases.</p>
 
-<h3 id="toc_0">Navigate between methods</h3>
+<h3 id="navigate-between-methods:c33c28c3818118510a814dfc68ca3ba2">Navigate between methods</h3>
 
 <p>Now I knew you could use the <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-2.Structure">structure thingie</a>
 (Ctrl+F12) to let you navigate to methods in your class (although I never actually
@@ -162,7 +162,7 @@ use it, it somehow never sticks in my head).  What I did <em>not</em> know is th
 <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-5.Navigatebetweenmethods">jump between methods</a>
 using Alt+Up/Down arrows.  This strikes me as being super useful, especially to browse tests.</p>
 
-<h3 id="toc_1">Refactoring String Fragments</h3>
+<h3 id="refactoring-string-fragments:c33c28c3818118510a814dfc68ca3ba2">Refactoring String Fragments</h3>
 
 <p>I&rsquo;ve wanted this feature so many times, but could never find it or get it to work - did you know you can <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-4.Stringfragments">refactor out parts of a
 hardcoded string</a>
@@ -171,7 +171,7 @@ shortcuts - e.g. Ctrl+Alt+V to extract it into a variable.</p>
 
 <p>I&rsquo;m sure I&rsquo;ve tried this before and it didn&rsquo;t work.  But I&rsquo;ve tested it and it does!</p>
 
-<h3 id="toc_2">Invert Boolean</h3>
+<h3 id="invert-boolean:c33c28c3818118510a814dfc68ca3ba2">Invert Boolean</h3>
 
 <p>There doesn&rsquo;t seem to be a keyboard shortcut mapped by default, but using &ldquo;Refactor -&gt; Invert Boolean&hellip;&rdquo; (or using
 <a href="/post/stuff_i_learnt_about_intellij/index.html#toc_0">our newly discovered</a> &ldquo;Navigate to Action&rdquo; shortcut of Shift+Ctrl+A and typing &ldquo;Invert&rdquo;) you can tell IntelliJ you want
@@ -180,14 +180,14 @@ a boolean field to mean the <em>opposite</em> thing, and it will
 For example, you might have an <code>saved</code> flag, and you now want it to mean <code>notSaved</code> - IntelliJ will make sure the
 <code>isSaved</code> method returns <code>!notSaved</code>.</p>
 
-<h3 id="toc_3">Magic Refactor Suggestions</h3>
+<h3 id="magic-refactor-suggestions:c33c28c3818118510a814dfc68ca3ba2">Magic Refactor Suggestions</h3>
 
 <p>You don&rsquo;t always know exactly what refactoring operation you want to perform, and IntelliJ is ready to help - it can
 <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-10.Refactorthis">suggest refactorings available in the current context</a>
 using the catchy magic incantation Ctrl+Shift+Alt+T.  Seems useful, but I&rsquo;m pretty sure I&rsquo;m not going to remember that
 one.</p>
 
-<h3 id="toc_4">Highlight implemented/overridden methods</h3>
+<h3 id="highlight-implemented-overridden-methods:c33c28c3818118510a814dfc68ca3ba2">Highlight implemented/overridden methods</h3>
 
 <p>I love everything about IntelliJ&rsquo;s ability to find usages of things - finding where methods are called, finding
 implementations of a method, highlighting usages of a field, method or variable&hellip; What I didn&rsquo;t know, is that you can
@@ -201,7 +201,7 @@ For some people, this might not add much, as your little &ldquo;I override somet
 a single interface.  If you&rsquo;ve correctly separated your concerns, you might implement several interfaces, and want to know
 which are the methods from a particular one.  That&rsquo;s where Shift+Ctrl+F7 on the &ldquo;extends&rdquo; keyword comes in handy.</p>
 
-<h3 id="toc_5">Run individual inspection by name</h3>
+<h3 id="run-individual-inspection-by-name:c33c28c3818118510a814dfc68ca3ba2">Run individual inspection by name</h3>
 
 <p>I use <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections">inspections</a> quite a lot.  They&rsquo;re especially
 useful if you have a codebase that doesn&rsquo;t quite conform to your ideal standards, so you can&rsquo;t yet turn on automated
@@ -217,19 +217,19 @@ unused parameters or unused/untested methods, you could press Shift+Alt+Ctrl+I a
 &ldquo;Unused Declaration&rdquo; inspection and choose to run this on all uncommitted files.  This will tell you where you can
 clean up your code, and every commit should make your codebase that little bit better.</p>
 
-<h3 id="toc_6">Saving Power With Highlighting</h3>
+<h3 id="saving-power-with-highlighting:c33c28c3818118510a814dfc68ca3ba2">Saving Power With Highlighting</h3>
 
 <p>I did not know you could easily <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-7.Highlightinglevelandpowersavemode">alter the active errors/warnings</a>,
 and use that to save power.  Quite Interesting.</p>
 
-<h3 id="toc_7">Auto indent your lines</h3>
+<h3 id="auto-indent-your-lines:c33c28c3818118510a814dfc68ca3ba2">Auto indent your lines</h3>
 
 <p>I almost obsessively reformat my code as I go, pressing <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-1.Reformatcode">Ctrl+Alt+L</a>
 almost like a muscle twitch. What I&rsquo;ve just discovered, though, is that there&rsquo;s a <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-2.Autoindentlines">shortcut which will just fix the line
 indentation</a>,
 which is probably 80% of what I need anyway - Ctrl+Alt+I.</p>
 
-<h3 id="toc_8">Fix Evil String Concatenation</h3>
+<h3 id="fix-evil-string-concatenation:c33c28c3818118510a814dfc68ca3ba2">Fix Evil String Concatenation</h3>
 
 <p>I can&rsquo;t believe I didn&rsquo;t notice this one earlier - do you know how many times I&rsquo;ve gone around and manually changed:</p>
 
@@ -244,7 +244,7 @@ which is probably 80% of what I need anyway - Ctrl+Alt+I.</p>
 <p>Do you??? Anyway you don&rsquo;t need to - Alt+Enter inside the params <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Intentions#Intentions-2.Stringconcatenation">will suggest the replacement and do it for
 you</a>. Nice.</p>
 
-<h3 id="toc_9">VCS Quick Access</h3>
+<h3 id="vcs-quick-access:c33c28c3818118510a814dfc68ca3ba2">VCS Quick Access</h3>
 
 <p>One of the areas where I <em>definitely</em> don&rsquo;t use IntelliJ to the best of its abilities is the Git integration.  I&rsquo;ve
 been using <a href="http://www.sourcetreeapp.com/">SourceTree</a> combined with IntelliJ to do most of my VCS management
@@ -259,7 +259,7 @@ find what on earth a &ldquo;Back Quote&rdquo; is, it&rsquo;s &#96;, which on bot
 corner of your keyboard (on the Mac, it&rsquo;s on the bottom left next to the shift, but you shouldn&rsquo;t need it since your
 shortcut is different anyway).</p>
 
-<h3 id="toc_10">Amend Commits</h3>
+<h3 id="amend-commits:c33c28c3818118510a814dfc68ca3ba2">Amend Commits</h3>
 
 <p>I&rsquo;ve just discovered that you can commit a change which smushes up into your last commit and fixes it.  I&rsquo;m assuming it commits the
 new changes and (potentially) an updated commit message into the last change.  I really wish I&rsquo;d known about this
@@ -269,12 +269,12 @@ dangerous soft reset.  I will <em>definitely</em> be using this in the future.</
 <p><img src="/static/images/stuff_i_learnt_about_intellij/amend-commit.png" alt="Amend Commit" title="Amend Commit" />
 </p>
 
-<h3 id="toc_11">The Cursor as a Breakpoint</h3>
+<h3 id="the-cursor-as-a-breakpoint:c33c28c3818118510a814dfc68ca3ba2">The Cursor as a Breakpoint</h3>
 
 <p>Did you know that you can <a href="https://confluence.jetbrains.com/display/IntelliJIDEA/Debugger#Debugger-5.Runtocursor">use the cursor as a temporary breakpoint</a>?
 I did not.  Well, now you know.</p>
 
-<h3 id="toc_12">Labelling Changes</h3>
+<h3 id="labelling-changes:c33c28c3818118510a814dfc68ca3ba2">Labelling Changes</h3>
 
 <p>I hope by now none of us developers are doing that icky thing of having <a href="https://twitter.com/trisha_gee/status/529299964787449856">&ldquo;Copy of&hellip;&rdquo; and &ldquo;Backup of&hellip;&rdquo; filenames
 and directories</a> to keep track of our versions.  We&rsquo;re all using a VCS of course.  But if you&rsquo;re being strict about making
@@ -313,7 +313,7 @@ come, so stay tuned!</p>
     </ul>
     <ul id="tags">
         
-        <li><a href="http://trishagee.github.io/tags/intellij">intellij</a></li>
+        <li><a href="http://trishagee.github.io//tags/intellij">intellij</a></li>
         
     </ul>
 </div>
