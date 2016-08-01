@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Presentations on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/presentations/</link>
+    <link>http://trishagee.github.io/tags/presentations/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -64,7 +64,7 @@ not a shining example of how to write these sorts of tests, but if you&amp;rsquo
 &lt;p&gt;I also talk about how amazing Spock is, so if you&amp;rsquo;re interested you can read more about
 &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;my experiences with Spock&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk was built off an &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
+&lt;p&gt;This talk was built off an &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
 invest your personal time in.&lt;/p&gt;
 
 &lt;p&gt;EDIT: The talk has been updated for 2016 and the Agile aspects emphasised in a version presented at Agile Manchester.&lt;/p&gt;
@@ -74,10 +74,10 @@ invest your personal time in.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll leave you with this crude decision
 chart and the mind-map of potential ways to play with a technology. Remember, learning to say &lt;em&gt;&amp;ldquo;no&amp;rdquo;&lt;/em&gt; to a technology can be very powerful.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;PS I&amp;rsquo;m thinking of writing a book, &lt;a href=&#34;https://leanpub.com/careeradviceforprogrammers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;. If you&amp;rsquo;re
@@ -85,7 +85,7 @@ interested, let me know (because, you know, I&amp;rsquo;ve got loads of spare ti
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;presentation-abstract:42b45ac01f3ccbbe86d46b2593258976&#34;&gt;Presentation Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Presentation Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;We all want to stay ahead of the curve - after all, that&amp;rsquo;s what you go to a conference for. But have you ever considered how being ahead
 of the curve might be dangerous?&lt;/em&gt;&lt;/p&gt;
@@ -129,7 +129,7 @@ so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34; target=&#34;_blank&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134070865&amp;type=d&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
-so I have a &lt;a href=&#34;http://trishagee.github.io/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
+so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This talk has been videoed several times -
 some older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
@@ -139,7 +139,7 @@ these initial demos.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.parleys.com/talk/html5-angularjs-groovy-java-mongodb-together-what-could-possibly-go-wrong&#34;&gt;JavaOne, October 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (the Java back end is similar to the JavaOne version, but UI for getting the nearest coffee shop is slightly different)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oscon.com/open-source-2015/public/content/2015/05/15-html5-angularjs-groovy-java-mongodb-all-together?cmp=tw-prog-na-article-os15_1431727268&#34;&gt;OSCON, July 2014&lt;/a&gt; (uses Morphia)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://trishagee.github.io/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
+&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
 presentation, and the video uses MongoJack instead of Morphia &amp;amp; shows an even earlier version of the find-my-coffee UI)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt; (only the second time I presented this
 demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&gt;
@@ -147,7 +147,7 @@ demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&g
 
 &lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;resources:891809574da610a118d95fe52fd3cd80&#34;&gt;Resources&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Resources&lt;/h3&gt;
 
 &lt;p&gt;These are the main resources I used in creating this talk:&lt;/p&gt;
 
@@ -165,7 +165,7 @@ AngularJS app to a JavaEE back end using NetBeans, but the principals here are t
 &lt;li&gt;&lt;a href=&#34;http://gradle.org/&#34;&gt;Gradle&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ&lt;/a&gt;: there&amp;rsquo;s a free community version of the IDE, but it&amp;rsquo;s not very expensive to upgrade to
 the full version and it will save you so much time and effort.&lt;/li&gt;
 &lt;/ul&gt;
@@ -196,7 +196,7 @@ around where we want the API to go.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
       <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
-by &lt;a href=&#34;http://trishagee.github.io/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
 &lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
 .com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
 time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
@@ -245,8 +245,45 @@ Francisco.&lt;/li&gt;
       <pubDate>Wed, 19 Mar 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>http://trishagee.github.io/post/svq_mug_march_madness/</guid>
-      <description>&lt;p&gt;
-&lt;figure &lt;/p&gt;
+      <description>&lt;figure &gt;
+    
+        &lt;img src=&#34;https://lh4.googleusercontent.com/-JVIgox7nGXo/UyjIQYxtiSI/AAAAAAAANc4/JV3lj4xwcgk/w919-h689-no/IMG_20140318_193758.jpg&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/events/166679892/&#34;&gt;Last night&lt;/a&gt; the Sevilla MUG had our
+&lt;a href=&#34;http://www.lczajkowski.com/2014/02/19/march-madness-comes-to-a-city-near-you/&#34;&gt;March Madness&lt;/a&gt; event.  This was our largest event yet,
+with 36 people signed up.  Although the aim of March Madness is to have a MongoDB Engineer at all the user groups this month,
+that&amp;rsquo;s not such a big deal for us as I live here, so this was also the first event where I wasn&amp;rsquo;t the main attraction - &lt;a href=&#34;https://twitter.com/JvrBaena&#34;&gt;Javier&lt;/a&gt; gave a really great talk about the lessons learnt at &lt;a href=&#34;http://es.socialbro.com/&#34;&gt;SocialBro&lt;/a&gt; after using
+MongoDB in production for the last couple of years.&lt;/p&gt;
+
+&lt;p&gt;The slides for my introduction to Replica Sets and Sharding:&lt;/p&gt;
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+ &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32480708&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;/div&gt;
+ And the slides for the main attraction:
+
+&lt;div style=&#34;text-align: center&#34;&gt;
+ &lt;iframe src=&#34;http://www.slideshare.net/slideshow/embed_code/32464459&#34; width=&#34;427&#34; height=&#34;356&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+ &lt;div style=&#34;margin-bottom:5px; font-size:small&#34;&gt; &lt;strong&gt; &lt;a href=&#34;https://www.slideshare
+ .net/fjavierbaena/sevilla-mongo-developers-group-mongodb-cmo-aprendimos-que-la-culpa-era-nuestra&#34; title=&#34;Sevilla Mongo Developers Group
+ - MongoDB: Cómo aprendimos que la culpa era nuestra&#34; target=&#34;_blank&#34;&gt;Cómo aprendimos que la culpa era nuestra&lt;/a&gt;
+ &lt;/strong&gt;from&lt;strong&gt;
+ &lt;a href=&#34;http://www.slideshare.net/fjavierbaena&#34; target=&#34;_blank&#34;&gt; Francisco Javier Baena Ríos&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The event went really well, everyone seemed engaged, and our first talk in Spanish seemed to encourage more questions than normal.  We
+were also in a new venue, and although I love the central location of our previous venue and the friendliness of the owners,
+the menu of the new location seemed to be a massive win.&lt;/p&gt;
+
+&lt;figure &gt;
+    
+        &lt;img src=&#34;https://lh6.googleusercontent.com/-ESw5r9B24Hs/UyjHcM2M-DI/AAAAAAAANco/hBVhN4IMFew/w919-h689-no/IMG_20140318_220941.jpg&#34;  /&gt;
+    
+    
+&lt;/figure&gt;
 </description>
     </item>
     

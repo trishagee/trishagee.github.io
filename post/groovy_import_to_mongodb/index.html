@@ -43,7 +43,7 @@
 
 
 
-    <base href="http://trishagee.github.io/">
+    <base href="http://trishagee.github.io">
     <title> Using Groovy to import XML into MongoDB - trishagee.github.io </title>
     <link rel="canonical" href="http://trishagee.github.io/post/groovy_import_to_mongodb/">
     
@@ -168,7 +168,7 @@ which is exactly what I wanted to do. In addition, creating <a href="http://groo
 data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
 <a href="http://www.mongodb.org/">MongoDB</a>.</p>
 
-<h3 id="goal-of-the-script:ea7c4b40c584dae9473be14c3aef02a6">Goal of the Script</h3>
+<h3 id="toc_0">Goal of the Script</h3>
 
 <ul>
 <li>Parse an XML file containing open street map data of all coffee shops.</li>
@@ -185,7 +185,7 @@ that link will take you to the version I presented at JavaOne:</p>
 <p><img src="/static/images/GroovyScript.png" alt="PopulateDatabase.groovy" title="PopulateDatabase.groovy" />
 </p>
 
-<h3 id="firstly-we-need-data:ea7c4b40c584dae9473be14c3aef02a6">Firstly, we need data</h3>
+<h3 id="toc_1">Firstly, we need data</h3>
 
 <p>I used the same service Ross used in his blog post to obtain the XML file containing &ldquo;all&rdquo; coffee shops around the world. Now,
 the open street map data is somewhat&hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
@@ -212,7 +212,7 @@ github project, but if you try this yourself you might (in fact, probably will) 
 of <code>tag</code> elements, all with <code>k</code> and <code>v</code> attributes. Each coffee shop has a varying number of these attributes,
 and they are not consistent from shop to shop (other than <code>amenity</code> and <code>cuisine</code> which we used to select this data).</p>
 
-<h3 id="initialisation:ea7c4b40c584dae9473be14c3aef02a6">Initialisation</h3>
+<h3 id="toc_2">Initialisation</h3>
 
 <p><img src="/static/images/GroovyScript1.png" alt="Script Initialisation" title="Script Initialisation" />
 </p>
@@ -236,7 +236,7 @@ and if it doesn&rsquo;t already exist, the server will create them for you.</li>
 server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
 address and port - for more details on this see <a href="http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i">Getting Started With MongoDB and Java</a>.</p>
 
-<h3 id="turn-the-xml-into-something-mongodb-shaped:ea7c4b40c584dae9473be14c3aef02a6">Turn the XML into something MongoDB-shaped</h3>
+<h3 id="toc_3">Turn the XML into something MongoDB-shaped</h3>
 
 <p><img src="/static/images/GroovyScript2.png" alt="Parse &amp; Transform XML" title="Parse &amp; Transform XML" />
 </p>
@@ -245,7 +245,7 @@ address and port - for more details on this see <a href="http://blog.mongodb.org
 XML data that we talked about earlier.  To iterate over every node we use: <code>xmlSlurper.node.each</code>.  For those of you who are new to
 Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &ldquo;node&rdquo; element in the XML.</p>
 
-<h4 id="create-geojson:ea7c4b40c584dae9473be14c3aef02a6">Create GeoJSON</h4>
+<h4 id="toc_4">Create GeoJSON</h4>
 
 <p><img src="/static/images/GroovyScript3.png" alt="Create GeoJSON" title="Create GeoJSON" />
 
@@ -266,7 +266,7 @@ complicated with the latitude and longitude, since we need to store them as GeoJ
 <p>In lines 12-14 you can see that we create a <code>Map</code> that looks like the GeoJSON, pulling the <code>lat</code> and <code>lon</code> attributes into the appropriate
 places.</p>
 
-<h4 id="insert-remaining-fields:ea7c4b40c584dae9473be14c3aef02a6">Insert Remaining Fields</h4>
+<h4 id="toc_5">Insert Remaining Fields</h4>
 
 <p><img src="/static/images/GroovyScript4.png" alt="Insert Remaining Fields" title="Insert Remaining Fields" />
 
@@ -278,7 +278,7 @@ field and its the matching <code>v</code> attribute as the value into the map. T
 <a href="http://www.openstreetmap.org/">OpenStreetMap</a> key/value data into key/value pairs in the MongoDB document so we don&rsquo;t lose any data,
 but we also don&rsquo;t do anything particularly interesting to transform it.</p>
 
-<h4 id="save-into-mongodb:ea7c4b40c584dae9473be14c3aef02a6">Save Into MongoDB</h4>
+<h4 id="toc_6">Save Into MongoDB</h4>
 
 <p><img src="/static/images/GroovyScript6.png" alt="Save Into MongoDB" title="Save Into MongoDB" />
 
@@ -293,7 +293,7 @@ the same thing, which you might prefer:</p>
 <pre><code>collection.insert(coffeeShop as BasicDBObject)
 </code></pre>
 
-<h3 id="tell-mongodb-that-we-want-to-perform-geo-queries-on-this-data:ea7c4b40c584dae9473be14c3aef02a6">Tell MongoDB that we want to perform Geo queries on this data</h3>
+<h3 id="toc_7">Tell MongoDB that we want to perform Geo queries on this data</h3>
 
 <p><img src="/static/images/GroovyScript7.png" alt="Add Geo Index" title="Add Geo Index" />
 
@@ -301,7 +301,7 @@ Because we&rsquo;re going to do a <a href="http://docs.mongodb.org/manual/refere
 we need to add a &ldquo;2dsphere&rdquo; index on our location field. We created the <code>location</code> field as GeoJSON,
 so all we need to do is call <code>createIndex</code> for this field.</p>
 
-<h3 id="conclusion:ea7c4b40c584dae9473be14c3aef02a6">Conclusion</h3>
+<h3 id="toc_8">Conclusion</h3>
 
 <p>So that&rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
 but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
@@ -325,11 +325,11 @@ and transforming it into something that can be inserted into a MongoDB collectio
     </ul>
     <ul id="tags">
         
-        <li><a href="http://trishagee.github.io//tags/groovy">groovy</a></li>
+        <li><a href="http://trishagee.github.io/tags/groovy">groovy</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/mongodb">mongodb</a></li>
+        <li><a href="http://trishagee.github.io/tags/mongodb">mongodb</a></li>
         
-        <li><a href="http://trishagee.github.io//tags/demo">demo</a></li>
+        <li><a href="http://trishagee.github.io/tags/demo">demo</a></li>
         
     </ul>
 </div>
@@ -346,7 +346,7 @@ and transforming it into something that can be inserted into a MongoDB collectio
 <div>
     <section id="author">
         <h4>About the Author:</h4>
-        Trisha is a Java Champion, a MongoDB Master, and a leader of the
+        Trisha is a Java Champion and a leader of the
         Sevilla Java User Group. She works for
         <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
         to do what she loves. She believes we
