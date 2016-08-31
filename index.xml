@@ -6,7 +6,67 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 01 Aug 2016 00:00:00 UTC</updated>
+    <updated>Wed, 31 Aug 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Code Review Matters and Manners</title>
+      <link>http://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
+      <description>
+
+&lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
+supporting material.&lt;/p&gt;
+
+&lt;h2 id=&#34;abstract:56b95afc30988b1465887042c61e6c3e&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;A code review is basically a technical discussion which should lead to improvements in the code and/or sharing
+knowledge in a team. As with any conversation, it should have substance and form.&lt;/p&gt;
+
+&lt;p&gt;What’s involved in a good code review? What kind of problems do we want to spot and address? Trisha Gee will talk
+about things a reviewer may consider when looking at changes:  what potential issues to look for; why certain
+patterns may be harmful; and, of course, what NOT to look at.&lt;/p&gt;
+
+&lt;p&gt;But when it comes to commenting on someone’s work, it may be hard to find the right words to convey a useful message
+without offending the authors - after all, this is something that they worked hard on. Maria Khalusova will share
+some observations, thoughts and practical tricks on how to give and receive feedback without turning a code review
+into a battlefield.&lt;/p&gt;
+
+&lt;h2 id=&#34;more-information:56b95afc30988b1465887042c61e6c3e&#34;&gt;More Information&lt;/h2&gt;
+
+&lt;h3 id=&#34;books:56b95afc30988b1465887042c61e6c3e&#34;&gt;Books&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;What to Look for in a Code Review&lt;/a&gt; - Trisha Gee (free!)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/gp/product/0735619670/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0735619670&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=4f2f97b38b1e19961a4425340aef003b&#34;&gt;Code Complete: A Practical Handbook of Software Construction, Second Edition&lt;/a&gt;&lt;img src=&#34;//ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=am2&amp;o=1&amp;a=0735619670&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt; - Steve McConnell&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/gp/product/0132350882/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0132350882&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=86afa947570d6d5c8d03f7c4d495c449&#34;&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/a&gt;&lt;img src=&#34;//ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=am2&amp;o=1&amp;a=0132350882&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt; - Robert C. Martin&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;articles:56b95afc30988b1465887042c61e6c3e&#34;&gt;Articles&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;What to look for in a Code Review&lt;/a&gt;, the article that started all of this.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/03/what-to-look-for-in-a-code-review-tests/&#34;&gt;What to look for in a Code Review: Tests&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/06/what-to-look-for-in-a-code-review-performance/&#34;&gt;What to look for in a Code Review: Performance&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/20/what-to-look-for-in-a-code-review-data-structures/&#34;&gt;What to look for in a Code Review: Data Structures&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/31/what-to-look-for-in-a-code-review-solid-principles-2/&#34;&gt;What to look for in a Code Review: SOLID Principles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/10/05/what-to-look-for-in-a-code-review-security/&#34;&gt;What to look for in a Code Review: Security&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/10/19/what-to-look-for-in-a-code-review-upsource-quick-wins/&#34;&gt;What to look for in a Code Review: Upsource Quick Wins&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2016/08/03/what-to-look-for-in-java-8-code/&#34;&gt;What to look for in: Java 8 code&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.codinghorror.com/code-reviews-just-do-it/&#34;&gt;Code Reviews: Just Do It&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.fullstory.com/what-we-learned-from-google-code-reviews-arent-just-for-catching-bugs-b125a13aa292#.mktgod79l&#34;&gt;What we learned from Google: code reviews aren’t just for catching bugs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.infragistics.com/community/blogs/erikdietrich/archive/2016/06/29/the-human-cost-of-tech-debt.aspx&#34;&gt;The Human Cost of Tech Debt&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://spin.atomicobject.com/2016/06/21/pick-battles-software-team/&#34;&gt;How to Pick Your Battles on a Software Team&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;and-of-course:56b95afc30988b1465887042c61e6c3e&#34;&gt;And, of course&amp;hellip;&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;You can &lt;a href=&#34;https://www.jetbrains.com/upsource/&#34;&gt;download Upsource&lt;/a&gt;, it&amp;rsquo;s free for up to 10 users.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>A Year? Really?</title>
@@ -1640,83 +1700,6 @@ future&amp;hellip;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Code: &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt; All examples from the talk come from the MongoDB Java driver. Some tests have been improved or dropped over time.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Blind CFPs - a Postscript</title>
-      <link>http://trishagee.github.io/post/blind_cfps_2/</link>
-      <pubDate>Thu, 12 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/blind_cfps_2/</guid>
-      <description>
-
-&lt;p&gt;Since publishing &lt;a href=&#34;http://trishagee.github.io/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
-another post to answer them.&lt;/p&gt;
-
-&lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
-circles in which speakers will refuse to submit if the selection process isn&amp;rsquo;t blind. But what blind CFPs are &lt;em&gt;not&lt;/em&gt;,
-is an answer to &amp;ldquo;How do I get more women speakers at my conference?&amp;rdquo;, especially if the problem is not that the
-women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
-in the conferences I speak at/help organise.&lt;/p&gt;
-
-&lt;h4 id=&#34;you-re-missing-the-point-of-blind-cfps:43f099050d27fb0647d57b33c7259595&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
-
-&lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
-in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
-select both women or not, when there are nasty comments about your lack of women speakers, you&amp;rsquo;re protected - you did
-the right things, you had a blind CFP, and just not many women made it through that process. Women simply aren&amp;rsquo;t
-writing compelling abstracts and/or aren&amp;rsquo;t picking interesting subjects and/or clearly aren&amp;rsquo;t interested in
-presenting at conferences.&lt;/p&gt;
-
-&lt;p&gt;AAAARRRGGHHHHHH!!!! Anger.&lt;/p&gt;
-
-&lt;p&gt;Protect your arse if you like, that&amp;rsquo;s fine, I see the attacks against organisers and I understand the need to be able to
-say you did the right thing. But notice that once you&amp;rsquo;ve protected yourselves, the blame is back on the
-minorities for not meeting your criteria.&lt;/p&gt;
-
-&lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
-of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
-
-&lt;h4 id=&#34;an-abstract-is-not-a-representation-of-your-talk:43f099050d27fb0647d57b33c7259595&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
-
-&lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
-a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
-that absolutely called to me - here was the missing piece for a technology that I simply can&amp;rsquo;t get my head around. I
-gave an hour of my life to that talk, each minute I was wondering when this person would get to the bits mentioned
-in the abstract, so I watched it all the way to the end. They never delivered what the abstract promised, and their
-meandering style meant I learnt almost nothing from the talk. That&amp;rsquo;s an hour of my life I&amp;rsquo;ll never get back. Good
-thing I was playing computer games as well at the time, if I&amp;rsquo;d paid money for that I would have been very peeved.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s another weakness in this process - if you go to a number of conferences (like I do) you kinda learn which
-speakers are doing
-which talks.  If I submit my &amp;ldquo;AngularJS, HTML5, Groovy, Java and MongoDB all together - what could possibly go wrong??&amp;rdquo;
-talk to a blind process, if there&amp;rsquo;s anyone on the selection committee who&amp;rsquo;s even vaguely involved in the Java or MongoDB
-spaces, they&amp;rsquo;ll know that&amp;rsquo;s me. And they can Google the talk and decide whether they like it (or with any luck, the
-buzz-word crammed title will do the job and they&amp;rsquo;ll say yes, although probably AngularJS is so 2014).&lt;/p&gt;
-
-&lt;p&gt;An abstract is like your presentation in the same way that your CV is like your ability to do your job - there&amp;rsquo;s a skill
-to writing good abstracts (or CVs), but mastery of that skill does not necessarily mean mastery of the thing it
-represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
-being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
-
-&lt;h4 id=&#34;for-goodness-sake-trisha-the-postscript-is-nearly-longer-than-the-original-post:43f099050d27fb0647d57b33c7259595&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
-
-&lt;p&gt;Yeah, sorry.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve listened to feedback from a bunch of people, and I have learnt more things (thanks everyone!). I am more sold on
-a blind CFP being maybe part of a bigger process. But I do &lt;em&gt;not&lt;/em&gt; believe it fixes the &amp;ldquo;we need more women speakers&amp;rdquo;
-problem, which was the original claim that I wanted to dispute. Conferences have to be &lt;em&gt;much&lt;/em&gt; more active to address
-this issue.&lt;/p&gt;
-
-&lt;p&gt;And I am not sold on an abstract being a fair representation of the quality of a talk. Maybe a more realistic &amp;ldquo;blind&amp;rdquo;
-audition would be to give the talk to an audience, like a user group, who rated the talk:
-the organisers wouldn&amp;rsquo;t watch the talk, but they could use the ratings to decide. Yes, the user group could also
-have biases that affect their rating, but when the speaker gives the talk at the conference, those attendees will also
-have their biases too.&lt;/p&gt;
-
-&lt;p&gt;Blindness is not a realistic option, we just have to keep putting women (and other non-white-straight-men) in front of
-audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
 </description>
     </item>
     
