@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Wcpgw on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/wcpgw/index.xml/</link>
+    <link>http://trishagee.github.io/tags/wcpgw/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -20,18 +20,19 @@ which happens to be the same one I&amp;rsquo;m giving at a number of conferences
 &lt;p&gt;The presentation leaves very little time for anything other than coding, as it&amp;rsquo;s quite challenging to create a full app in 50
 minutes, so it was great to have the chance to talk about the motivations for the demo&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/sZee7lRAUF4&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-  
+&lt;/p&gt;
 
 &lt;p&gt;The video of the actual talk is also available now:&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/kmVnhyWqozA&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
+&lt;/p&gt;
 
 &lt;p&gt;At the beginning it doesn&amp;rsquo;t clearly show the screen, but it does improve.  You can see an earlier version from the
 &lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb#anch110035&#34;&gt;Joy of Coding&lt;/a&gt; as well,
