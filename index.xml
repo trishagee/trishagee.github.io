@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Recent Content on Trisha Gee </title>
-    <link>http://localhost:1313/index.xml/</link>
+    <link>http://trishagee.github.io/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>JavaZone 2016</title>
-      <link>http://localhost:1313/post/javazone_2016/</link>
+      <link>http://trishagee.github.io/post/javazone_2016/</link>
       <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/javazone_2016/</guid>
+      <guid>http://trishagee.github.io/post/javazone_2016/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been a while since I wrote a conference write up.  The short version of &amp;ldquo;why&amp;rdquo; is because I got a bit bored of doing it.  Plus, I
 found I was attending conferences as a speaker &amp;ldquo;on the circuit&amp;rdquo;, and my experience of hanging out, catching up with my friends, chatting
  to other attendees to see what they&amp;rsquo;re up to and so forth, didn&amp;rsquo;t seem as useful to share with people who might want to find out
@@ -123,10 +123,10 @@ by the conference organisers.&lt;/li&gt;
     
     <item>
       <title>Code Review Matters and Manners</title>
-      <link>http://localhost:1313/presentation/code_review_matters_and_manners/</link>
+      <link>http://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/code_review_matters_and_manners/</guid>
+      <guid>http://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
       <description>
 
 &lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
@@ -189,10 +189,10 @@ into a battlefield.&lt;/p&gt;
     
     <item>
       <title>A Year? Really?</title>
-      <link>http://localhost:1313/post/what_a_year.md/</link>
+      <link>http://trishagee.github.io/post/what_a_year.md/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/what_a_year.md/</guid>
+      <guid>http://trishagee.github.io/post/what_a_year.md/</guid>
       <description>&lt;p&gt;So I came to the blog to update my &lt;a href=&#34;//presentation/upcoming_events/&#34;&gt;upcoming events&lt;/a&gt; (at least something stays up to date) only to find
 it&amp;rsquo;s been nearly a year since I last blogged!  This is terrible!&lt;/p&gt;
 
@@ -229,10 +229,10 @@ things, including &lt;a href=&#34;/post/why_the_customer_isnt_always_right/&#34;
     
     <item>
       <title>Upcoming Events</title>
-      <link>http://localhost:1313/presentation/upcoming_events/</link>
+      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
       <pubDate>Tue, 19 Jul 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/upcoming_events/</guid>
+      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
@@ -245,10 +245,10 @@ this page should list my confirmed upcoming events.&lt;/p&gt;
     
     <item>
       <title>Applying Java 8 Idioms to Existing Code</title>
-      <link>http://localhost:1313/presentation/refactoring_to_java_8/</link>
+      <link>http://trishagee.github.io/presentation/refactoring_to_java_8/</link>
       <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/refactoring_to_java_8/</guid>
+      <guid>http://trishagee.github.io/presentation/refactoring_to_java_8/</guid>
       <description>
 
 &lt;ul&gt;
@@ -396,10 +396,10 @@ Article: &lt;a href=&#34;http://zeroturnaround.com/rebellabs/java-8-best-practic
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
-      <link>http://localhost:1313/post/java_8_mooc_session3/</link>
+      <link>http://trishagee.github.io/post/java_8_mooc_session3/</link>
       <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/java_8_mooc_session3/</guid>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session3/</guid>
       <description>&lt;p&gt;Last night was the final get-together to discuss the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
@@ -536,10 +536,10 @@ And if you can find (or run) a local meetup to discuss it, it makes the experien
     
     <item>
       <title>Java 8 MOOC - Session 2 Summary</title>
-      <link>http://localhost:1313/post/java_8_mooc_session2/</link>
+      <link>http://trishagee.github.io/post/java_8_mooc_session2/</link>
       <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/java_8_mooc_session2/</guid>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session2/</guid>
       <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
@@ -725,10 +725,10 @@ Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/22
     
     <item>
       <title>What to look for in a Code Review</title>
-      <link>http://localhost:1313/post/code_reviews_1/</link>
+      <link>http://trishagee.github.io/post/code_reviews_1/</link>
       <pubDate>Mon, 27 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/code_reviews_1/</guid>
+      <guid>http://trishagee.github.io/post/code_reviews_1/</guid>
       <description>&lt;p&gt;I wrote a post for the JetBrains Upsource blog about some of the &lt;a href=&#34;http://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;things you should be looking for when you do code
 reviews&lt;/a&gt; (and some of the things
 you should not be looking at).&lt;/p&gt;
@@ -739,10 +739,10 @@ you should not be looking at).&lt;/p&gt;
     
     <item>
       <title>The Extraordinary Team Of Developers</title>
-      <link>http://localhost:1313/presentation/the_extraordinary_team_of_developers/</link>
+      <link>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/the_extraordinary_team_of_developers/</guid>
+      <guid>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</guid>
       <description>
 
 &lt;p&gt;Daniel Bryant and I did a keynote at Devoxx UK about how individuals can add something to a team to make the team
@@ -790,10 +790,10 @@ an individual, add to the mix?&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>Java 8 MOOC - Session 1 Summary</title>
-      <link>http://localhost:1313/post/java_8_mooc_session1/</link>
+      <link>http://trishagee.github.io/post/java_8_mooc_session1/</link>
       <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/java_8_mooc_session1/</guid>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session1/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
@@ -855,10 +855,10 @@ more clarity on.&lt;/p&gt;
     
     <item>
       <title>Interviewed by InfoQ</title>
-      <link>http://localhost:1313/post/interviewed_for_infoq/</link>
+      <link>http://trishagee.github.io/post/interviewed_for_infoq/</link>
       <pubDate>Sat, 18 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/interviewed_for_infoq/</guid>
+      <guid>http://trishagee.github.io/post/interviewed_for_infoq/</guid>
       <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
 interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
 but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
@@ -870,10 +870,10 @@ of the JCP, and the future of Java.&lt;/p&gt;
     
     <item>
       <title>My Path To Evangelism</title>
-      <link>http://localhost:1313/post/becoming_an_evangelist/</link>
+      <link>http://trishagee.github.io/post/becoming_an_evangelist/</link>
       <pubDate>Thu, 02 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/becoming_an_evangelist/</guid>
+      <guid>http://trishagee.github.io/post/becoming_an_evangelist/</guid>
       <description>&lt;p&gt;So, I get asked a lot about how I got into technical advocacy /
 evangelism&lt;sup&gt;1&lt;/sup&gt;,
 so it seems like the most cost-effective way to answer this question is to
@@ -1216,10 +1216,10 @@ could get going straight away without any ramp up&lt;/p&gt;
     
     <item>
       <title>Level Up Your Automated Tests</title>
-      <link>http://localhost:1313/presentation/level_up_your_automated_tests/</link>
+      <link>http://trishagee.github.io/presentation/level_up_your_automated_tests/</link>
       <pubDate>Fri, 26 Jun 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/presentation/level_up_your_automated_tests/</guid>
+      <guid>http://trishagee.github.io/presentation/level_up_your_automated_tests/</guid>
       <description>
 
 &lt;p&gt;This presentation is about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
@@ -1625,10 +1625,10 @@ of the developers.&lt;/i&gt;&lt;/p&gt;
     
     <item>
       <title>Java at 20</title>
-      <link>http://localhost:1313/post/java_at_20/</link>
+      <link>http://trishagee.github.io/post/java_at_20/</link>
       <pubDate>Fri, 22 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/java_at_20/</guid>
+      <guid>http://trishagee.github.io/post/java_at_20/</guid>
       <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
  No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;
@@ -1637,10 +1637,10 @@ of the developers.&lt;/i&gt;&lt;/p&gt;
     
     <item>
       <title>Android Xtended</title>
-      <link>http://localhost:1313/post/android_xtended/</link>
+      <link>http://trishagee.github.io/post/android_xtended/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://localhost:1313/post/android_xtended/</guid>
+      <guid>http://trishagee.github.io/post/android_xtended/</guid>
       <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
 calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
 

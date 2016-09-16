@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="reference, ui, css, ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="CSS for Developers: Horizontal Layout Using CSS : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://trishagee.github.io/post/css_for_developers_horizontal_layout_using_css/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2011-01-17"/>
+<meta property="article:modified_time" content="2011-01-17"/>
+
+<meta property="article:tag" content="reference">
+<meta property="article:tag" content="ui">
+<meta property="article:tag" content="css">
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content="CSS for Developers: Horizontal Layout Using CSS : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="http://trishagee.github.io">
+    <title> CSS for Developers: Horizontal Layout Using CSS - trishagee.github.io </title>
+    <link rel="canonical" href="http://trishagee.github.io/post/css_for_developers_horizontal_layout_using_css/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=CSS%20for%20Developers%3a%20Horizontal%20Layout%20Using%20CSS-http%3a%2f%2ftrishagee.github.io%2fpost%2fcss_for_developers_horizontal_layout_using_css%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fpost%2fcss_for_developers_horizontal_layout_using_css%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fcss_for_developers_horizontal_layout_using_css%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fpost%2fcss_for_developers_horizontal_layout_using_css%2f&title=CSS%20for%20Developers%3a%20Horizontal%20Layout%20Using%20CSS&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fcss_for_developers_horizontal_layout_using_css%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fcss_for_developers_horizontal_layout_using_css%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">CSS for Developers: Horizontal Layout Using CSS</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           <p>I&rsquo;m a Java Developer. &nbsp;But I&rsquo;m also a Web Developer. &nbsp;Web Developers have been so badly maligned over the last decade or so that I always feel wary (and sometimes slightly ashamed) admitting this. &nbsp;There&rsquo;s some sort of assumption that Web Developers (and Front End Developers) aren&rsquo;t real programmers. Similarly, &ldquo;real&rdquo; developers don&rsquo;t like to be tainted by coming into contact with that nasty &ldquo;front end stuff&rdquo; in case someone mistakes them for a designer.<br /><div><br /></div><div>Trust me, no-one is going to mistake a Java Developer for a designer. &nbsp;For a start, when designers wear geeky glasses it&rsquo;s ironic. &nbsp;Or chic. &nbsp;Or something.</div><div><br /></div><div>But developers will be forced to do something around the front end at some point in their lives. &nbsp;Even if it&rsquo;s because they&rsquo;re sick of manually kicking off some process and want to give the users a big red button to press instead.</div><div><br /></div><div>So, as much to compensate for my own goldfish-like brain as anything else, I&rsquo;m going to make a note of some of the CSS stuff I&rsquo;ve used or found helpful during my mad scramblings to get the <a href="http://www.lmaxtrader.co.uk/">LMAX Trader</a> user interface to a) look the way we wanted b) perform fast enough so our <a href="http://www.infoq.com/presentations/LMAX">awesome back end performance</a> wasn&rsquo;t totally invisible to the retail user and c) Not Suck Too Badly in Internet Explorer.</div><div><br /></div><div><h3>Part One: Horizontal Layout (or: There&rsquo;s No Excuse For Tables Any More)</h3></div><div>You may (or may not) have heard that using tables for layout is a Bad Thing. &nbsp;But to be fair, most of us don&rsquo;t care. &nbsp;I&rsquo;ve done it myself, it&rsquo;s usually the quickest way to lay stuff out on the page, especially if you&rsquo;re new to HTML / CSS and/or short on time. &nbsp;There are loads of arguments all over the web as to why this is a bad thing, but the reasons I didn&rsquo;t want tables on the <a href="http://www.lmaxtrader.co.uk/">LMAX</a> UI was a) we saw the performance improve by a really simple replacement of tables with divs and b) given the amount the UI was mutating, divs positioned with CSS was going to allow us a much quicker turnaround for the umpteenth re-design of the UI (ideally the upshot of this would be letting the designers mess with the CSS when they changed their minds and leave us developers out of it).</div><div><br /></div><div>Anyway let&rsquo;s assume Tables Are Bad. &nbsp;Tables are only for tabular data, not for layout. &nbsp;In my world.<br /><br /></div><div><h4>1.1 Simple Horizontal Layout Using Inline</h4></div><div>The most common use of tables for layout is where you put elements side by side - the default behaviour of divs is that they lay out underneath each other.</div><div><br /></div><div>However it&rsquo;s pretty easy to get divs to behave this way too, and using divs has some advantages over using tables.</div><div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/_7adQd_YVgmQ/TTQhm7XQHTI/AAAAAAAAH7c/3JE1vQBCbgw/s1600/Screen+shot+2011-01-14+at+17.14.37.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="http://2.bp.blogspot.com/_7adQd_YVgmQ/TTQhm7XQHTI/AAAAAAAAH7c/3JE1vQBCbgw/s640/Screen+shot+2011-01-14+at+17.14.37.png" width="640" /></a></div></div><blockquote><pre><code>&lt;html&gt;<br />&lt;head&gt;<br />    &lt;title&gt;Horizontal flow&lt;/title&gt;<br />    &lt;style type=&ldquo;text/css&rdquo;&gt;<br />        #left {<br />            background-color: cyan;<br />            display: inline;<br />        }<br />        #center {<br />            background-color: yellow;<br />            display: inline;<br />        }<br />        #right {<br />            background-color: red;<br />            display: inline;<br />        }<br />    &lt;/style&gt;<br />&lt;/head&gt;<br /><br />&lt;body&gt;<br />&lt;div id=&ldquo;container&rdquo;&gt;<br />    &lt;div id=&ldquo;left&rdquo;&gt;Left&lt;/div&gt;<br />    &lt;div id=&ldquo;center&rdquo;&gt;Center&lt;/div&gt;<br />    &lt;div id=&ldquo;right&rdquo;&gt;Right&lt;/div&gt;<br />&lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</code></pre></blockquote>The first option is to use <code style="font-size: 12px;">display: inline</code>. &nbsp;This will lay div elements next to each other, similar to a <code style="font-size: 12px;">span</code>. &nbsp;This is the simplest way to get divs to appear side-by-side.<br /><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">The disadvantage of this technique, however, is that inline elements can&rsquo;t be sized the same way as standard divs. &nbsp;By default they contract to fit the content.</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;">The screenshot above is from Chrome on the mac - you&rsquo;ll notice by default the elements have some spacing between them. &nbsp;Reducing the margin/borders on the elements doesn&rsquo;t seem to eliminate this, so that&rsquo;s something else you might need to consider if you use this mechanism to display elements side-by-side.</div><div class="separator" style="clear: both; text-align: left;"><br /></div><div class="separator" style="clear: both; text-align: left;"></div><div><h4>1.2 Simple Horizontal Layout Using Floats</h4></div><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/_7adQd_YVgmQ/TTQh06-qxcI/AAAAAAAAH7g/5zKQIsKeEdk/s1600/Screen+shot+2011-01-17+at+10.57.25.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="http://4.bp.blogspot.com/_7adQd_YVgmQ/TTQh06-qxcI/AAAAAAAAH7g/5zKQIsKeEdk/s640/Screen+shot+2011-01-17+at+10.57.25.png" width="640" /></a></div><div><blockquote><pre><code><br />&lt;html&gt;<br />&lt;head&gt;<br />    &lt;title&gt;Horizontal flow&lt;/title&gt;<br />    &lt;style type=&ldquo;text/css&rdquo;&gt;<br />        #left {<br />            background-color: cyan;<br />            float: left;<br />        }<br />        #center {<br />            background-color: yellow;<br />            float: left;<br />        }<br />        #right {<br />            background-color: red;<br />            float: left;<br />        }<br />    &lt;/style&gt;<br />&lt;/head&gt;<br /><br />&lt;body&gt;<br />&lt;div id=&ldquo;container&rdquo;&gt;<br />    &lt;div id=&ldquo;left&rdquo;&gt;Left&lt;/div&gt;<br />    &lt;div id=&ldquo;center&rdquo;&gt;Center&lt;/div&gt;<br />    &lt;div id=&ldquo;right&rdquo;&gt;Right&lt;/div&gt;<br />&lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;<br /></code></pre></blockquote></div><div>Similar to using inline, floating a div will do the following:<br /><ol><li>Make it shrink to fit the content</li><li>Lay it out side-by-side with any sibling floating divs.</li></ol>You&rsquo;ll want to apply padding, margins, height, width and whatever else to make it appear less rubbish.<br /><div><h4><br class="Apple-interchange-newline" />1.3 Wrapping Horizontal Layout</h4></div><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/_7adQd_YVgmQ/TTQkOi9uxMI/AAAAAAAAH7k/FWxavDriCp0/s1600/Screen+shot+2011-01-17+at+11.12.36.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="400" src="http://3.bp.blogspot.com/_7adQd_YVgmQ/TTQkOi9uxMI/AAAAAAAAH7k/FWxavDriCp0/s640/Screen+shot+2011-01-17+at+11.12.36.png" width="640" /></a></div><div><blockquote><pre><code><br />&lt;html&gt;<br />&lt;head&gt;<br />    &lt;title&gt;Horizontal flow&lt;/title&gt;<br />    &lt;style type=&ldquo;text/css&rdquo;&gt;<br />        #left {<br />            background-color: cyan;<br />            width: 50%;<br />            float: left;<br />        }<br />        #center {<br />            background-color: yellow;<br />            width: 50%;<br />            float: left;<br />        }<br />        #right {<br />            background-color: red;<br />            width: 50%;<br />            float: left;<br />        }<br />    &lt;/style&gt;<br />&lt;/head&gt;<br /><br />&lt;body&gt;<br />&lt;div id=&ldquo;container&rdquo;&gt;<br />    &lt;div id=&ldquo;left&rdquo;&gt;Left&lt;/div&gt;<br />    &lt;div id=&ldquo;center&rdquo;&gt;Center&lt;/div&gt;<br />    &lt;div id=&ldquo;right&rdquo;&gt;Right&lt;/div&gt;<br />&lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;<br /></code></pre></blockquote></div>The advantage you have using divs over tables is that you can get the browser to work out how the elements should flow. &nbsp;Tables require you to determine exactly how many cells appear on each row, but with divs you can determine a width for each element and have the browser work out whether to show it on a new line or not. &nbsp;This will work with both percentage and pixel widths. <br /><ul><li>If you want a more table-like structure where you know exactly how many elements should appear on each line, use a percentage of the screen with. &nbsp;</li><li>If you know the width of each element, you should set a pixel width on the elements and have the browser work out how many to show per line.</li></ul><br />The next CSS post will go over floating behaviour in a little more detail.</div></p>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Mon Jan 17, 2011 </h4>
+        <h5 id="wc"> 900 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+        <li><a href="http://trishagee.github.io/tags/reference">reference</a></li>
+        
+        <li><a href="http://trishagee.github.io/tags/ui">ui</a></li>
+        
+        <li><a href="http://trishagee.github.io/tags/css">css</a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;<a class="previous" href="http://trishagee.github.io/post/fogbugs_and_kiln_world_tour/"><i class="icon-arrow-left"></i> FogBugs and Kiln World Tour</a><br>
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="http://trishagee.github.io/post/live_at_last/">Live at Last <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="847">
+<meta itemprop="datePublished" content="2011-01-17">
+<meta itemprop="url" content="http://trishagee.github.io/post/css_for_developers_horizontal_layout_using_css/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'http:\/\/trishagee.github.io\/post\/css_for_developers_horizontal_layout_using_css\/';
+    var disqus_title = 'CSS for Developers: Horizontal Layout Using CSS';
+    var disqus_url = 'http:\/\/trishagee.github.io\/post\/css_for_developers_horizontal_layout_using_css\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+

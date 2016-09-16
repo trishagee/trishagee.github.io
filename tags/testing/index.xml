@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Testing on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/testing/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Fri, 26 Jun 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Level Up Your Automated Tests</title>
+      <link>http://trishagee.github.io/presentation/level_up_your_automated_tests/</link>
+      <pubDate>Fri, 26 Jun 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/level_up_your_automated_tests/</guid>
+      <description>
+
+&lt;p&gt;This presentation is about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+Spock in MongoDB, but this is a more process/agile/people perspective, not a
+technical look at the merits of one language over another.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/3fEnq6JuwuI&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/zUhtb6nqz7IgdO&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Other Videos&lt;/h3&gt;
+
+&lt;p&gt;First version: &lt;a href=&#34;https://www.youtube.com/watch?v=D-xra_X9Nwg&#34;&gt;GOTO Chicago&lt;/a&gt; ( &lt;a href=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34;&gt;slides&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Questions&lt;/h2&gt;
+
+&lt;p&gt;I sadly do not have a lot of time for questions during the presentation, but
+thanks to the wonders of modern technology, I have a list of unanswered
+questions which I will attempt to address here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Is testing to find out your system works? Or is it so you know when your
+system is broken?&lt;/strong&gt;&lt;br /&gt;
+Excellent question. I would expect that if you have a system that&amp;rsquo;s in
+production (which is probably the large majority of the projects we work on),
+we can assume the system is working, for some definition of working.
+Automated testing is particularly good at catching when your system stops
+doing the things you thought it was doing when you wrote the tests (which
+may, or may not, mean the system is genuinely &amp;ldquo;broken&amp;rdquo;). Regression testing is
+to find out when your system is no longer doing what you expect, and automated tests are
+really good for this.&lt;/p&gt;
+
+&lt;p&gt;But testing can also make sure you implement code that behaves the way you
+expect, especially if you write the tests first.  Automated tests can be used
+to determine that your code is complete, according to some pre-agreed
+specification (in this case, the automated tests you wrote up front).&lt;/p&gt;
+
+&lt;p&gt;So I guess what I&amp;rsquo;m trying to say is, when you first write the tests you
+have tests that, when they pass, proves the system works (&lt;em&gt;assuming&lt;/em&gt; your
+tests are testing the right things and/or not giving you false positives).
+Subsequent passes show that you haven&amp;rsquo;t broken anything.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;At what level do &amp;ldquo;tests documenting code&amp;rdquo; actually become useful? And who
+is/should the documentation be targeted to?&lt;/strong&gt;&lt;br /&gt;
+In the presentation, my case study is the MongoDB Java Driver.  Our users
+were Java programmers, who were going to be coding using our driver.  So in
+this example, it makes a lot of sense to document the code using a language
+that our users understood.  We started with Java, and ended up using Groovy
+because it was also understandable for our users and a bit more succinct.&lt;/p&gt;
+
+&lt;p&gt;On a previous project we had different types of tests.  The unit and system
+tests documented what the expected behaviour was at the class or module
+level, and was aimed at developers in the team.  The acceptance tests were
+written in Java, but in a &lt;a href=&#34;https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/&#34;&gt;friendly DSL-style way&lt;/a&gt;. These were usually
+written by a triad of tester, business analyst and developer, and documented to all
+these guys and girls what the top-level behaviour should be. Our audience here
+was fairly technical though, so there was no need to go to the extent of trying
+to write English-language-style tests, they were readable enough for a
+reasonably techy (but non-programmer) audience. These were not designed to be
+read by &amp;ldquo;the business&amp;rdquo; - us developers might use
+them to answer questions about the behaviour of the system, but they didn&amp;rsquo;t
+document it in a way that just anyone could understand.&lt;/p&gt;
+
+&lt;p&gt;These are two different approaches for two different-sized
+team/organisations, with different users. So I guess in summary the answer is
+&amp;ldquo;it depends&amp;rdquo;.  But at the very least, developers on your own team should be
+able to read your tests and understand what the expected behaviour of the
+code is.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How do you become a team champion? I.e. get authority and acceptance that
+people listen to you?&lt;/strong&gt;&lt;br /&gt;
+In my case, it was just by accident - I happened to care about the tests
+being green and also being useful, so I moaned at people until it happened. But
+it&amp;rsquo;s not just about nagging, you get more buy-in if other people see you
+doing the right things the right way, and it&amp;rsquo;s not too painful for them to
+follow your example.&lt;/p&gt;
+
+&lt;p&gt;There are going to be things that you care about that you&amp;rsquo;ll never get other
+people to care about, and this will be different from team to team. You have
+two choices here - if you care that much, and it bothers you that much, you
+have to do it yourself (often on your own time, especially if your boss
+doesn&amp;rsquo;t buy into it). Or, you have to let it go - when it comes to quality,
+there are so many things you could care about that it might be more
+beneficial to drop one cause and pick another that you can get people to care
+about.&lt;/p&gt;
+
+&lt;p&gt;For example, I wanted us to use &lt;code&gt;assertThat&lt;/code&gt; instead of &lt;code&gt;assertFalse&lt;/code&gt; (or
+true, or equals, or whatever).  I tried to demo the advantages (as I saw
+them) of my approach to the team, and tried to push this in code reviews, but
+in the end the other developers weren&amp;rsquo;t sold on the benefits, and
+from my point of view the benefits weren&amp;rsquo;t big enough to force the issue.
+Those of us who cared, used &lt;code&gt;assertThat&lt;/code&gt;. For the rest, I was just happy
+people were writing and maintaining tests.&lt;/p&gt;
+
+&lt;p&gt;So, pick your battles. You&amp;rsquo;ll be surprised at how many people do get on board
+with things.  I thought implementing checkstyle and setting draconian
+formatting standards was going to be a tough battle, but in the end people
+were just happy to have &lt;em&gt;any&lt;/em&gt; standards, especially when they were enforced
+by the build.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you report test, style, coverage, etc failures separately? Why?&lt;/strong&gt;&lt;br /&gt;
+We didn&amp;rsquo;t fail on coverage.  Enforcing a coverage percentage is a really good
+way to end up with crappy tests, like for getters/setters and constructors
+(by the way, if there&amp;rsquo;s enough logic in your constructor that it &lt;em&gt;needs&lt;/em&gt; a
+test, You&amp;rsquo;re Doing It Wrong).&lt;/p&gt;
+
+&lt;p&gt;Generally different types of failures are found by different tools, so for
+this reason alone they will be reported separately - for example, checkstyle
+will fail the build if it doesn&amp;rsquo;t conform to our style standards, codenarc
+fails it for Groovy style failures, and Gradle will run the tests in a
+different task to these two.&lt;/p&gt;
+
+&lt;p&gt;What&amp;rsquo;s actually important, though, is time-to-failure.  For checkstyle, for
+example, it will fail on something silly like curly braces in the wrong place.
+You want this to fail within seconds, so you can fix the silly mistake
+quickly. Ideally you&amp;rsquo;d have IntelliJ (perhaps) run your checks before it even
+makes it into your CI environment. Compiler errors should, of course, fail
+things before you run a test, short-running tests should fail before
+long-running tests.  Basically, the easier it is to fix the problem, the
+sooner you want to know, I guess.&lt;/p&gt;
+
+&lt;p&gt;Our build was relatively small and not too complex, so actually we ran all
+our types of tests (integration and unit, both Groovy and Java) in a single
+task, because this turned out to be much quicker in Gradle (in our case) than
+splitting things up into a simple pipeline.&lt;/p&gt;
+
+&lt;p&gt;You might have a reason to report stuff separately, but for me it&amp;rsquo;s much more
+important to understand how fast I need to be aware of a particular type of
+failure.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sometimes I find myself modifying code design and architecture to enable
+testing. How can I avoid damaging design?&lt;/strong&gt;&lt;br /&gt;
+This is a great question, and a common one too. The short answer is: &lt;em&gt;in
+general&lt;/em&gt; writing code that&amp;rsquo;s easier to test leads to a cleaner design anyway
+(for example, dependency injection at that appropriate places). If you find
+you need to rip your design apart to test it, there&amp;rsquo;s a smell there somewhere
+ - either your design isn&amp;rsquo;t following SOLID principals, or you&amp;rsquo;re trying to
+test the wrong things.&lt;/p&gt;
+
+&lt;p&gt;Of course, the common example here is testing private methods - how do you test
+these without exposing secrets&lt;sup&gt;1&lt;/sup&gt;? I think for me, if it&amp;rsquo;s important
+enough
+ to be tested
+it&amp;rsquo;s important enough to be exposed in some way - it might belong in some
+sort of util or helper (right now I&amp;rsquo;m not going to go into whether utils or
+helpers are, in themselves a smell), in a smaller class that only
+provides this sort of functionality, or simply a protected method. Or, if
+you&amp;rsquo;re testing with Groovy, you can access private methods anyway so this
+becomes a moot point (i.e. your testing framework may be limiting you).&lt;/p&gt;
+
+&lt;p&gt;In another story from LMAX, we found we had created methods just for testing. It seemed a
+bit wrong to have these methods only available for testing, but later on down
+the line, we needed access to many of these methods In Real Life (well, from
+our Admin app), so our testing had &amp;ldquo;found&amp;rdquo; a missing feature. When we came
+to implement it, it was pretty easy as we&amp;rsquo;d already done most of it for
+testing.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;My co-workers often point to a lack of end-to-end testing as the reason why
+ a lot of bugs get out to production even though they don&amp;rsquo;t have much unit
+ tests nor integration tests. What, in your experience, is a good balance
+ between unit tests, integration tests and end-to-end testing?&lt;/strong&gt;&lt;br /&gt;
+Hmm, sounds to me like &amp;ldquo;lack of tests&amp;rdquo; is your problem!&lt;/p&gt;
+
+&lt;p&gt;This is a big (and contentious!) topic.  &lt;a href=&#34;http://martinfowler.com/bliki/TestPyramid.html&#34;&gt;Martin Fowler has written about it&lt;/a&gt;, Google wrote something I
+completely disagree with (so I&amp;rsquo;m not even going to link to it,
+but you&amp;rsquo;ll find references in the links in this paragraph), and my
+ex-colleague Adrian &lt;a href=&#34;https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/&#34;&gt;talks about what we, at LMAX, meant by end-to-end tests&lt;/a&gt;. I
+hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more out there too.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
+I cover this in
+&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+short version is, I did a week-long spike to investigate whether Spock would
+make testing easier for us, showed the pros and cons to the whole team, and
+then led by example writing tests that (I thought) were more readable than
+what we had before and, probably most importantly, much easier to write than
+what we were previously doing. I basically got buy-in by showing how much
+easier it was for us to use the tool than even JUnit (which we were all
+familiar with). It did help that we were already using Gradle, so we already
+had a development dependency on Groovy. It also helped that adding Spock made
+no changes to the dependencies of the final Jar, which was very important.&lt;/p&gt;
+
+&lt;p&gt;Over time, further buy-in (certainly from management) came when the new tests
+started catching more errors - usually regressions in our code or regressions in
+the server&amp;rsquo;s overnight builds. I don&amp;rsquo;t think it was Spock specifically
+that caught more problems - I think it was writing more tests, and
+better tests, that caught the issues.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Can we do data driven style tests in frameworks like junit or cucumber?&lt;/strong&gt;&lt;br /&gt;
+I don&amp;rsquo;t think you can in JUnit (although maybe there&amp;rsquo;s something out there). I
+believe someone told me you can do it in
+&lt;a href=&#34;http://testng.org/doc/index.html&#34;&gt;TestNG&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Are there drawbacks to having tests that only run in ci? I.e I have Java 8
+on my machine, but the test requires Java 7&lt;/strong&gt;&lt;br /&gt;
+Yes, definitely - the drawback is Time.  You have to commit your code to a
+branch that is being checked by CI and wait for CI to finish before you find
+the error.&lt;/p&gt;
+
+&lt;p&gt;In practice, we found very little that was different between Java
+7 and 8, for example, but this is a valid concern (otherwise you wouldn&amp;rsquo;t be
+testing a complex matrix of dependencies at all).&lt;/p&gt;
+
+&lt;p&gt;In our case, our Java 6 driver used Netty for async capabilities, as the
+stuff we were using from Java 7 wasn&amp;rsquo;t available. This was clearly a
+different code path that wasn&amp;rsquo;t tested by us locally as we were all running
+Java 8. Probably more importantly for us is we were testing against at least
+3 different major versions of the server, which all supported different
+features (and had different APIs).  I would often find I&amp;rsquo;d broken the tests
+for version 2.2 as I&amp;rsquo;d only been running it on 2.6, and had forgotten to
+either turn off the new tests for the old server versions, or didn&amp;rsquo;t realise
+the new functionality wouldn&amp;rsquo;t work there.&lt;/p&gt;
+
+&lt;p&gt;So the main drawback is time - it takes a lot longer to find out about these
+errors.  There are a few ways to get around this:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Commit often!! And to a branch that&amp;rsquo;s actually going to be run by CI&lt;/li&gt;
+&lt;li&gt;Make your build as fast as possible, so you get failures fast (you
+should be doing this anyway)&lt;/li&gt;
+&lt;li&gt;You could set up virtual machines locally or somewhere cloudy to run these
+configurations before committing, but that sounds kinda painful (and to my
+mind defeats a lot of the point of CI).&lt;/li&gt;
+&lt;li&gt;I set up Travis on my fork of the project, so I could have that running a
+different version of Java and MongoDB when I committed to my own fork - I&amp;rsquo;d
+be able to see some errors before they made it into the &amp;ldquo;real&amp;rdquo; project.&lt;/li&gt;
+&lt;li&gt;If you can, you probably want these specific tests run first so they can
+fail fast. E.g. if you&amp;rsquo;re running a Java 6 &amp;amp; MongoDB 2.2 configuration on
+CI, run those tests that only work in that environment first.  Would
+probably need some Gradle magic, and/or might need you to separate these
+into a different set of folders.  The advantage of this approach though is
+if you set up some aliases on your local machine you could sanity check
+&lt;em&gt;just&lt;/em&gt; these special cases before checking in. For example, I had aliases to
+start MongoDB versions/configurations from a single command, and to set
+JAVA_HOME to whichever version I wanted.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Do you have any tips for unit tests that pass on dev machines but not on
+Jenkins because it&amp;rsquo;s not as powerful as our own machines? E.g. Synchronous
+calls timeout on the Jenkins builds intermittently.&lt;/strong&gt;&lt;br /&gt;
+Erk! Yes, not uncommon. No, not really. We had our timeouts set longer than I
+would have liked to prevent these sorts of errors, and they still
+intermittently failed. You can also set some sort of retry on the test, and
+get your build system to re-run those that fail to see if they pass later.
+It&amp;rsquo;s kinda nasty though.&lt;/p&gt;
+
+&lt;p&gt;At LMAX they were able to take testing seriously enough to &lt;a href=&#34;https://www.symphonious.net/2015/06/24/end-to-end-tests-lmax-update/&#34;&gt;really invest in
+their testing
+architecture&lt;/a&gt;, and, of course, this is The Correct Answer. Just
+often very difficult to sell.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you ask where are tests and dev asks if code is correct? And you say yes.
+Then dev asks why you&amp;rsquo;re delaying shipping value, how do you manage that?&lt;/strong&gt;&lt;br /&gt;
+These are my opinions:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Your code is &lt;em&gt;not&lt;/em&gt; complete without tests that show me it&amp;rsquo;s complete.&lt;/li&gt;
+&lt;li&gt;Your code might do what you think it&amp;rsquo;s supposed to do right now, but given
+Shared Code Ownership, anyone can come in and change it at any time, you
+want tests in place to make sure they don&amp;rsquo;t change it to break what you
+thought it did&lt;/li&gt;
+&lt;li&gt;The tests are not so much to show it works right now, the tests are to
+show it continues to work in future&lt;/li&gt;
+&lt;li&gt;Having automated tests &lt;em&gt;will&lt;/em&gt; speed you up in future. You can refactor
+more safely, you can fix bugs and know almost immediately if you broke
+something, you can read from the test what the author of the code thought
+the code should do, getting you up to speed faster.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t know you&amp;rsquo;re shipping value without tests - you&amp;rsquo;re only shipping
+code (to be honest, you never know if you&amp;rsquo;re shipping value until much later
+on when you also analyse if people are even using the feature).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Testing almost never slows you down in the long run. Show me the bits of your
+code base which are poorly tested, and I bet I can show you the bits of your
+code base that frequently have bugs (either because the code is not really
+doing what the author thinks, or because subsequent changes break things in
+subtle ways).&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;If you say code is hard to understand and dev asks if you seriously don&amp;rsquo;t
+understand the code, how do you explain you mean easy to understand without
+thinking rather than &amp;lsquo;can I compile this in my head&amp;rsquo;?&lt;/strong&gt;&lt;br /&gt;
+I have zero problem with saying &amp;ldquo;I&amp;rsquo;m too stupid to understand this code, and
+I expect you&amp;rsquo;re much smarter than me for writing it. Can you please write it
+in a way so that a less smart person like myself won&amp;rsquo;t trample all over your
+beautiful code at a later date through lack of understanding?&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;By definition, code should be easy to understand by someone who&amp;rsquo;s not the
+author. If someone who is not the author says the code is hard to understand,
+then the code is hard to understand. This is not negotiable. This is what
+code reviews or pair programming should address.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is effective nagging like? (Whether or not you get what you want)&lt;/strong&gt;&lt;br /&gt;
+Mmm, good question. Off the top of my head:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Don&amp;rsquo;t make the people who are the target of the nagging feel stupid -
+they&amp;rsquo;ll get defensive. If necessary, take the burden of &amp;ldquo;stupidity&amp;rdquo; on
+yourself. E.g. &amp;ldquo;I&amp;rsquo;m just not smart enough to be able to tell if this test is
+failing because the test is bad or because the code is bad. Can you walk me
+through it and help me fix it?&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Do &lt;em&gt;at least&lt;/em&gt; your fair share of the work, if not more. When I wanted to
+get the code to a state where we could fail style errors, I fixed 99% of the
+problems, and delegated the handful of remaining ones that I just didn&amp;rsquo;t
+have the context to fix. In the face of three errors to fix each, the team
+could hardly say &amp;ldquo;no&amp;rdquo; after I&amp;rsquo;d fixed over 6000.&lt;/li&gt;
+&lt;li&gt;Explain &lt;em&gt;why&lt;/em&gt; things need to be done. Developers are adults and don&amp;rsquo;t want
+to be treated like children. Give them a good reason and they&amp;rsquo;ll follow the
+rules. The few times I didn&amp;rsquo;t have good reasons, I could not get the team
+to do what I wanted.&lt;/li&gt;
+&lt;li&gt;Find carrots and sticks that work.  At LMAX, a short e-mail at the start
+of the day summarising the errors that had happened overnight, who seemed to
+be responsible, and whether they looked like real errors or
+intermittencies, was enough to get people to fix their problems&lt;sup&gt;2&lt;/sup&gt; -
+they didn&amp;rsquo;t like to look bad, but they also had enough information to get right
+on it, they didn&amp;rsquo;t have to wade through all the build info.  On occasion,
+when people were ignoring this, I&amp;rsquo;d turn up to work with bags of chocolate
+that I&amp;rsquo;d bought with my own money, offering chocolate bars to anyone who
+fixed up the tests. I was random with my carrot offerings so people didn&amp;rsquo;t
+game the system.&lt;/li&gt;
+&lt;li&gt;Give up if it&amp;rsquo;s not working. If you&amp;rsquo;ve tried to phrase the &amp;ldquo;why&amp;rdquo; in a
+number of ways, if you&amp;rsquo;ve tried to show examples of the benefits, if you&amp;rsquo;ve
+tried to work the results you want into a process, but it&amp;rsquo;s still not
+getting done, just accept the fact that this isn&amp;rsquo;t working for the team.
+Move on to something else, or find a new angle.
+&lt;br/&gt;&lt;br/&gt;
+&lt;sup&gt;1&lt;/sup&gt; I had a colleague at LMAX who was  working with a hypothesis that
+All Private Methods Were Evil - they were clearly only sharable within
+single class, so provided no reuse elsewhere, and if you have the same bit
+of code being called multiple times from within the same class (but it&amp;rsquo;s
+not valuable elsewhere) then maybe your design is wrong. I&amp;rsquo;m still
+pondering this specific hypothesis 4 years on, and I admit I see its pros
+and cons.&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt; This worked so well that this process was automated by
+one of the guys and turned into a tool called AutoTrish, which as far as I
+know is still used at LMAX.  Dave Farley talks about it in some of his
+&lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;My talk that specifically looks at the
+&lt;a href=&#34;presentation/groovy_vs_java/&#34;&gt;advantages of Spock over JUnit&lt;/a&gt;, plus some
+Spock-specific resources.&lt;/li&gt;
+&lt;li&gt;I &lt;em&gt;love&lt;/em&gt; Jay Fields book
+&lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests&lt;/a&gt; - if I
+could have made the whole team read this before moving to Spock, we might
+have stuck with JUnit.&lt;/li&gt;
+&lt;li&gt;Go read everything Adrian Sutton has written about testing at LMAX. If not
+everything, definitely &lt;a href=&#34;https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/&#34;&gt;Abstraction by
+DSL&lt;/a&gt;
+and
+&lt;a href=&#34;https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/&#34;&gt;Making End-to-End Tests Work&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;If you can&amp;rsquo;t make it all the way through Dave Farley and Jez Humble&amp;rsquo;s
+excellent &lt;a href=&#34;http://www.amazon
+.com/gp/product/0321601912/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;camp=1789
+&amp;creative=9325&amp;creativeASIN=0321601912&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId
+=I7ZAO2TETBFJIPHL&#34;&gt;Continuous Delivery book&lt;/a&gt;, do take a look at one of
+Dave&amp;rsquo;s presentations on the subject, for example &lt;a href=&#34;http://www.infoq.com/presentations/cd-success&#34;&gt;The Rationale for Continuous
+Delivery&lt;/a&gt; or &lt;a href=&#34;http://www.infoq.com/presentations/technology-practice-continuous-delivery&#34;&gt;The Process,
+Technology and Practice of Continuous
+Delivery&lt;/a&gt; - my own talk was
+around testing, but I&amp;rsquo;m working off the assumption that you&amp;rsquo;re &lt;em&gt;at least&lt;/em&gt;
+running some sort of Continuous Integration, if not Continuous Delivery.&lt;/li&gt;
+&lt;li&gt;Martin Fowler has loads of &lt;a href=&#34;http://martinfowler.com/tags/testing.html&#34;&gt;interesting and useful articles on
+testing&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
+and c) write readable tests?&lt;/p&gt;
+
+&lt;p&gt;Trisha will talk about her experiences of working in a team that wanted to
+build quality into their new software version without a painful overhead -
+without a QA / Testing team, without putting in place any formal processes,
+without slavishly improving the coverage percentage.&lt;/p&gt;
+
+&lt;p&gt;The team had been writing automated tests and running them in a continuous
+integration environment, but they were simply writing tests as another tick
+box to check, there to verify the developer had done what the developer had
+aimed to do. The team needed to move to a model where tests provided more
+than this. The tests needed to:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Demonstrate that the library code was meeting the requirements&lt;/li&gt;
+&lt;li&gt;Document in a readable fashion what those requirements were, and what should happen under non-happy-path situations&lt;/li&gt;
+&lt;li&gt;Provide enough coverage so a developer could confidently refactor the code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This talk will cover how the team selected a new testing framework (Spock, a
+framework written in Groovy that can be used to test JVM code) to aid with
+this effort, and how they evaluated whether this tool would meet the team’s
+needs. And now, two years after starting to use Spock, Trisha can talk
+about how both the tool and the shift in the focus of the purpose of tests
+has affected the quality of the code. And, interestingly, the happiness
+of the developers.&lt;/i&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Groovy vs Java</title>
+      <link>http://trishagee.github.io/presentation/groovy_vs_java/</link>
+      <pubDate>Mon, 06 Apr 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/groovy_vs_java/</guid>
+      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VK2sMI5B1pY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/46936375&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
+  
+
+&lt;ul&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://spockframework.github.io/spock/docs/1.0/index.html&#34;&gt;Spock Reference Documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Book: &lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests - Jay Fields&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Video: &lt;a href=&#34;https://vimeo.com/80222114&#34;&gt;Making Java Tests Groovy with Spock - Ken Sipe&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Code: &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt; All examples from the talk come from the MongoDB Java driver. Some tests have been improved or dropped over time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock: Data Driven Testing</title>
+      <link>http://trishagee.github.io/post/spock_data_driven_testing/</link>
+      <pubDate>Fri, 20 Dec 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/spock_data_driven_testing/</guid>
+      <description>&lt;p&gt;In the last two articles on Spock I&amp;rsquo;ve covered &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html&#34;&gt;mocking&lt;/a&gt; and &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-passes-next-test-painless-stubbing.html&#34;&gt;stubbing&lt;/a&gt;.  And I was pretty sold on Spock just based on that.  But for a database driver, there&amp;rsquo;s a killer feature: &amp;nbsp;&lt;a href=&#34;http://docs.spockframework.org/en/latest/data_driven_testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;All developers have a tendency to think of and test the happy path.  Not least of all because that&amp;rsquo;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.  We tend not to ask &amp;ldquo;what happens if they ask to withdraw money when the cash machine has no cash?&amp;rdquo; or &amp;ldquo;what happens when their account balance is zero?&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;With any luck you&amp;rsquo;ll have a test suite covering your happy paths, and probably at least twice as many grumpy paths.  If you&amp;rsquo;re like me, and you like one test to test one thing (and who doesn&amp;rsquo;t?), sometimes your test classes can get quite long as you test various edge cases.  Or, much worse (and I&amp;rsquo;ve done this too) you use a calculation remarkably like the one you&amp;rsquo;re testing to generate test data.  You run your test in a loop with the calculation and lo!  The test passes.  Woohoo?&lt;br /&gt;&lt;br /&gt;Not that long ago I went through a process of re-writing a lot of unit tests that I had written a year or two before - we were about to do a big refactor of the code that generated some important numbers, and we wanted our tests to tell us we hadn&amp;rsquo;t broken anything with the refactor. The only problem was, the tests used a calculation rather similar to the production calculation, and borrowed some constants to create the expected number. &amp;nbsp;I ended up running the tests to find the numbers the test was generating as expected values, and hardcoding those values into the test. It felt dirty, but it was necessary - I wanted to make sure the refactoring didn&amp;rsquo;t change the expected numbers as well as the ones generated by the real code. &amp;nbsp;This is not a process I want to go through ever again.&lt;br /&gt;&lt;br /&gt;When you&amp;rsquo;re testing these sorts of things, you try and think of a few representative cases, code them into your tests, and hope that you&amp;rsquo;ve covered the main areas.  What would be far nicer is if you could shove a whole load of different data into your system-under-test and make sure the results look sane.&lt;br /&gt;&lt;br /&gt;An example from the Java driver is that we had tests that were checking the parsing of the URI - you can initialise your MongoDB settings simply using a String containing the URI.&lt;br /&gt;&lt;br /&gt;The old tests looked like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056046.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/master/src/test/com/mongodb/MongoClientURITest.java&#34;&gt;MongoClientURITest&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Using Spock&amp;rsquo;s data driven testing, we changed this to:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056095.js&#34;&gt;&lt;/script&gt; (See &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/driver/src/test/unit/org/mongodb/MongoClientURISpecification.groovy&#34;&gt;MongoClientURISpecification&lt;/a&gt;)&lt;br /&gt;&lt;br /&gt;Instead of having a separate test for every type of URL that needs parsing, you have a single test and each line in the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section is a new combination of input URL and expected outputs.  Each one of those lines used to be a test.  In fact, some of them probably weren&amp;rsquo;t tests as the ugliness and overhead of adding another copy-paste test seemed like overkill.  But here, in Spock, it&amp;rsquo;s just a case of adding one more line with a new input and set of outputs.&lt;br /&gt;&lt;br /&gt;The major benefit here, to me, is that it&amp;rsquo;s dead easy to add another test for a &amp;ldquo;what if?&amp;rdquo; that occurs to the developer.  You don&amp;rsquo;t have to have yet another test method that someone else is going to wonder &amp;ldquo;what the hell are we testing this for?&amp;rdquo;.  You just add another line which documents another set of expected outputs given the new input.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s easy, it&amp;rsquo;s neat, it&amp;rsquo;s succinct.&lt;br /&gt;&lt;br /&gt;One of the major benefits of this to our team is that we don&amp;rsquo;t argue any more about whether a single test is testing too much.  In the past, we had tests like:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056136.js&#34;&gt;&lt;/script&gt; And I can see why we have all those assertions in the same test, because technically these are all the same concept - make sure that each type of WriteConcern creates the correct command document.  I believe these should be one test per line - because each line in the test is testing a different input and output, and I would want to document that in the test name (&amp;ldquo;fsync write concern should have fsync flag in getLastError command&amp;rdquo;, &amp;ldquo;journalled write concern should set j flag to true in getLastError command&amp;rdquo; etc).  Also don&amp;rsquo;t forget that in JUnit, if the first assert fails, the rest of the test is not run.  Therefore you have no idea if this is a failure that affects all write concerns, or just the first one.  You lose the coverage provided by the later asserts.&lt;br /&gt;&lt;br /&gt;But the argument against my viewpoint is then we&amp;rsquo;d have seven different one-line tests.  What a waste of space.&lt;br /&gt;&lt;br /&gt;You could argue for days about the best way to do it, or that this test is a sign of some other smell that needs addressing.  But if you&amp;rsquo;re in a real world project and your aim is to both improve your test coverage and improve the tests themselves, these arguments are getting in the way of progress.  The nice thing about Spock is that you can take these tests that test too much, and turn them into something a bit prettier:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8056166.js&#34;&gt;&lt;/script&gt; You might be thinking, what&amp;rsquo;s the advantage over the JUnit way?  Isn&amp;rsquo;t that the same thing but Groovier?  But there&amp;rsquo;s one important difference - all the lines under &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; get run, regardless of whether the test before it passes or fails.  This basically is seven different tests, but takes up the same space as one.&lt;br /&gt;&lt;br /&gt;That&amp;rsquo;s great, but if just one of these lines fails, how do you know which one it was if all seven tests are masquerading as one?  That&amp;rsquo;s where the awesome &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;@Unroll&lt;/span&gt; annotation comes in.  This reports the passing or failing of each line as if it were a separate test.  By default, when you run an unrolled test it will get reported as something like:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-zFO5Jwl5upA/UrRgIlxq3SI/AAAAAAAAMBQ/c6WG-FhP_P4/s1600/Unroll1.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;But in the test above we put some magic keywords into the test name: &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;&amp;lsquo;&lt;b&gt;#wc&lt;/b&gt; should return getlasterror document &lt;b&gt;#commandDocument&lt;/b&gt;&amp;lsquo;&lt;/span&gt; - note that these values with &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;#&lt;/span&gt; in front are the same headings from the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;where:&lt;/span&gt; section. They&amp;rsquo;ll get replaced by the value being run in the current test:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-2KnezQJM7R4/UrRgyNH_SHI/AAAAAAAAMBY/5TEwt2o691E/s1600/Unroll2.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Yeah, it can be a bit of a mouthful if the &lt;span style=&#34;font-family: Courier New, Courier, monospace;&#34;&gt;toString&lt;/span&gt; is hefty, but it does give you an idea of what was being tested, and it&amp;rsquo;s prettier if the inputs have nice succinct string values:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-E7X8nOwjOQI/UrRiGPse7cI/AAAAAAAAMBk/7Y1-MvPvUxk/s1600/Unroll3.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;This, combined with Spock&amp;rsquo;s awesome &lt;a href=&#34;http://hamletdarcy.blogspot.com.es/2009/05/new-power-assertions-in-groovy.html&#34;&gt;power assert&lt;/a&gt;&amp;nbsp;makes it dead simple to see what went wrong when one of these tests fails. &amp;nbsp;Let&amp;rsquo;s take the example of (somehow) the incorrect host being returned for one of the input URIs:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-Uoemw3QA594/UrRiQoYr_II/AAAAAAAAMBs/wJQBQa8XhOM/s1600/Unroll4.tiff&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Data driven testing might lead one to over-test the simple things, but the cost of adding another &amp;ldquo;what if?&amp;rdquo; is so low - just another line - and the additional safety you get from trying a different input is rather nice. &amp;nbsp;We&amp;rsquo;ve been using them for parsers and simple generators, where you want to throw in a bunch of inputs to a single method and see what you get out.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m totally sold on this feature, particularly for our type of application (the Java driver does a lot of taking stuff in one shape and turning it into something else). &amp;nbsp;Just in case you want a final example, here&amp;rsquo;s a final one.&lt;br /&gt;&lt;br /&gt;The old way:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057097.js&#34;&gt;&lt;/script&gt; &amp;hellip;and in Spock:&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/8057129.js&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock passes the next test - Painless Stubbing</title>
+      <link>http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</link>
+      <pubDate>Wed, 10 Jul 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</guid>
+      <description>&lt;p&gt;In the &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html&#34;&gt;last post&lt;/a&gt; I talked about our need for some improved testing tools, our choice of &lt;a href=&#34;https://code.google.com/p/spock/&#34;&gt;Spock&lt;/a&gt; as something to spike, and how mocking looks in Spock.&lt;br /&gt;&lt;br /&gt;As that blog got rather long, I saved the next installment for a separate post.&lt;br /&gt;&lt;br /&gt;Today I want to look at stubbing.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Stubbing&lt;/b&gt;&lt;br /&gt;Mocking is great for checking &lt;i&gt;outputs&lt;/i&gt; - in the example in the last post, we&amp;rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the &lt;code&gt;bsonWriter&lt;/code&gt;.&lt;br /&gt;&lt;br /&gt;Stubbing is great for faking your &lt;i&gt;inputs&lt;/i&gt; (I don&amp;rsquo;t know why this difference never occurred to me before, but&amp;nbsp;&lt;a href=&#34;http://www.devoxx.com/display/UK13/I+hate+writing+unit+tests%2C+how+come+everybody+else+enjoys+it&#34;&gt;Colin&amp;rsquo;s talk at Devoxx UK&lt;/a&gt;&amp;nbsp;made this really clear to me). &lt;br /&gt;&lt;br /&gt;One of the things we need to do in the compatibility layer of the new driver is to wrap all the new style Exceptions that can be thrown by the new architecture layer and turn them into old-style Exceptions, for backwards compatibility purposes. &amp;nbsp;Sometimes testing the exceptional cases is&amp;hellip; challenging. &amp;nbsp;So I opted to do this with Spock.&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5935645.js&#34;&gt;&lt;/script&gt;So here we can use a real &lt;code&gt;DB&lt;/code&gt; class, but with a mock &lt;code&gt;Mongo&lt;/code&gt; that will return us a &amp;ldquo;mock&amp;rdquo; &lt;code&gt;Session&lt;/code&gt;. &amp;nbsp;It&amp;rsquo;s not actually a mock though, it&amp;rsquo;s more of a stub because we want to tell it how to behave when it&amp;rsquo;s called - in this test, we want to force it to throw an &lt;code&gt;org.mongodb.MongoException&lt;/code&gt; whenever &lt;code&gt;execute&lt;/code&gt; is called. &amp;nbsp;It doesn&amp;rsquo;t matter to us what get passed in to the execute method (that&amp;rsquo;s what the underscore means on line 16), what matters is that when it gets called it throws the correct type of Exception.&lt;br /&gt;&lt;br /&gt;Like before, the &lt;code&gt;when&lt;/code&gt;: section shows the bit we&amp;rsquo;re actually trying to test. In this case, we want to call &lt;code&gt;rename&lt;/code&gt;.&lt;br /&gt;&lt;br /&gt;Then finally the &lt;code&gt;then:&lt;/code&gt; section asserts that we received the correct sort of Exception. &amp;nbsp;It&amp;rsquo;s not enormously clear, although I&amp;rsquo;ve kept the full namespace in to try and clarify, but the aim is that any &lt;code&gt;&lt;b&gt;org&lt;/b&gt;.mongodb.MongoException&lt;/code&gt; that gets thrown by the new architecture gets turned into the appropriate &lt;code&gt;&lt;b&gt;com&lt;/b&gt;.mongodb.MongoException&lt;/code&gt;. &amp;nbsp;We&amp;rsquo;re sort of &amp;ldquo;lucky&amp;rdquo; because the old code is in the wrong package structure, and in the new architecture we&amp;rsquo;ve got a chance to fix this and put stuff into the right place.&lt;br /&gt;&lt;br /&gt;Once I&amp;rsquo;d tracked down all the places Exceptions can escape and started writing these sorts of tests to exercise those code paths, not only did I feel more secure that we wouldn&amp;rsquo;t break backwards compatibility by leaking the wrong Exceptions, but we also found our test coverage went up - and more importantly, in the &lt;i&gt;un&lt;/i&gt;happy paths, which are often harder to test.&lt;br /&gt;&lt;br /&gt;I mentioned in the last post that we already did some simple stubbing to help us test the data driver. Why not just keep using that approach?  &lt;br /&gt;&lt;br /&gt;Well, these stubs end up looking like this:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5935655.js&#34;&gt;&lt;/script&gt;Ick.&lt;br /&gt;&lt;br /&gt;And you end up extending them so you can just override the method you&amp;rsquo;re interested in (particularly in the case of forcing a method to throw an exception). &amp;nbsp;Most irritatingly to me, these stubs live away from the actual tests, so you can&amp;rsquo;t easily see what the expected behaviour is. &amp;nbsp;In the Spock test, the expected stubbed behaviour is defined on line 16, the call that will provoke it is on line 19 and the code that checks the expectation is on line 22. &amp;nbsp;It&amp;rsquo;s all within even the smallest monitor&amp;rsquo;s window.&lt;br /&gt;&lt;br /&gt;So stubbing in Spock is painless. &amp;nbsp;Next:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/12/spock-data-driven-testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spock is awesome! Seriously Simplified Mocking</title>
+      <link>http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</link>
+      <pubDate>Tue, 09 Jul 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</guid>
+      <description>&lt;p&gt;We&amp;rsquo;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. &amp;nbsp;Ideally, we want the number of dependencies to be zero.&lt;br /&gt;&lt;br /&gt;This is not going to be the case when it comes to testing, however. &amp;nbsp;At the very least, we&amp;rsquo;re going to use JUnit or TestNG (we used testng in the previous version, we&amp;rsquo;ve switched to JUnit for 3.0). &amp;nbsp;Up until recently, we worked hard to eliminate the need for a mocking framework - the driver is not a large application with interacting services, most stuff can be tested either as an integration test or with very simple stubs.&lt;br /&gt;&lt;br /&gt;Recently I was working on the serialisation layer - we&amp;rsquo;re making quite big changes to the model for encoding and decoding between &lt;a href=&#34;http://bsonspec.org/&#34;&gt;BSON&lt;/a&gt; and Java, we&amp;rsquo;re hoping this will simplify our lives but also make things a lot easier for the ODMs (Object-Document Mappers) and third party libraries. &amp;nbsp;At this level, it makes a lot of sense to introduce mocks - I want to ensure particular methods are called on the writer, for example, I don&amp;rsquo;t want to check actual byte values, that&amp;rsquo;s not going to be very helpful for documentation (although there is a level where that is a sensible thing to do).&lt;br /&gt;&lt;br /&gt;We started using &lt;a href=&#34;http://jmock.codehaus.org/&#34;&gt;JMock&lt;/a&gt; to begin with, it&amp;rsquo;s what I&amp;rsquo;ve been using for a while, and it gave us what we wanted - a simple mocking framework (I tried &lt;a href=&#34;https://code.google.com/p/mockito/&#34;&gt;Mockito&lt;/a&gt; too, but I&amp;rsquo;m not so used to the failure messages, so I found it really hard to figure out what was wrong when a test failed). &lt;br /&gt;&lt;br /&gt;I knew from my spies at LMAX that there&amp;rsquo;s some &lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt; test framework called &lt;a href=&#34;https://code.google.com/p/spock/&#34;&gt;Spock&lt;/a&gt; that is awesome, apparently, but I&amp;nbsp;immediately&amp;nbsp;discarded it - I feel very strongly that tests are documentation, and since the users of the Java driver are largely Java developers, I felt like introducing tests in a different language was an added complexity we didn&amp;rsquo;t need.&lt;br /&gt;&lt;br /&gt;Then I went to GeeCON, and my ex-colleague &lt;a href=&#34;https://twitter.com/IsraKaos&#34;&gt;Israel&lt;/a&gt; forced me to go to &lt;a href=&#34;http://geecon.org/speakers/ken-sipe&#34;&gt;the talk on Spock&lt;/a&gt;. &amp;nbsp;And I realised just how wrong I had been. &amp;nbsp;Far from adding complexity, here was a lovely, descriptive way of writing tests. &amp;nbsp;It&amp;rsquo;s flexible, and yet structured enough get you thinking in a way that should create good tests.&lt;br /&gt;&lt;br /&gt;Since we&amp;rsquo;re already using &lt;a href=&#34;http://www.gradle.org/&#34;&gt;gradle&lt;/a&gt;, which is Groovy as well, we decided it was worth a spike to see if Spock would give us any benefits.&lt;br /&gt;&lt;br /&gt;During the spike I converted a selection of our tests to Spock tests to see what it looks like on a &lt;i&gt;real&lt;/i&gt; codebase. &amp;nbsp;I had very specific things I wanted to try out:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Mocking&lt;/li&gt;&lt;li&gt;Stubbing&lt;/li&gt;&lt;li&gt;Data driven testing&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;In the talk I also saw useful annotation like&amp;nbsp;&lt;code&gt;@Requires&lt;/code&gt;, which I&amp;rsquo;m pretty sure we&amp;rsquo;re going to use, but I don&amp;rsquo;t think it&amp;rsquo;s made it into a build yet.&lt;br /&gt;&lt;br /&gt;So, get this, I&amp;rsquo;m going to write a blog post with Actual Code in. &amp;nbsp;Yeah, I know, you all thought I was just a poncy evangelist these days and didn&amp;rsquo;t do any real coding any more.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;First up, Mocking&lt;/b&gt;&lt;br /&gt;So, as I said, I have a number of tests checking that encoding of Java objects works the way we expect. &amp;nbsp; The easiest way to test this is to mock our &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver/blob/3.0.x/bson/src/main/org/bson/BSONWriter.java&#34;&gt;BSONWriter&lt;/a&gt; class to ensure that the right interactions are happening against it. &amp;nbsp;This is a nice way to check that when you give an encoder a particular set of data, it gets serialised in the way BSON expects. These tests ended up looking something like this:&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5728846.js&#34;&gt;&lt;/script&gt;&lt;/div&gt;(Yeah, I&amp;rsquo;m still learning Spanish).&lt;br /&gt;&lt;br /&gt;So that&amp;rsquo;s quite nice, my test checks that given a List of Strings, they get serialised correctly. &amp;nbsp;What&amp;rsquo;s not great is some of the setup overhead:&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5728883.js&#34;&gt;&lt;/script&gt;Obviously some of the things there are going to be ringing some people&amp;rsquo;s alarm bells, but let&amp;rsquo;s assume for a minute that all decisions were taken carefully and that pros and cons were weighed accordingly.&lt;br /&gt;&lt;br /&gt;So:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Mocking concrete classes is not pretty in JMock, just look at that &lt;code&gt;setUp&lt;/code&gt; method.&lt;/li&gt;&lt;li&gt;We&amp;rsquo;re using the &lt;code&gt;JUnitRuleMockery&lt;/code&gt;, which appears to be Best Practice (and means you&amp;rsquo;re less likely to forget the&amp;nbsp;&lt;code&gt;@RunWith(JMock.class)&lt;/code&gt; annotation), but checkstyle hates it - Public Fields Are Bad as we all know.&lt;/li&gt;&lt;/ul&gt;But it&amp;rsquo;s fine, a small amount of boilerplate for all our tests that involve mocking is an OK price to pay to have some nice tests.&lt;br /&gt;&lt;br /&gt;I converted this test to a Spock test. &amp;nbsp;Groovy purists will notice that it&amp;rsquo;s still very Java-y, and that&amp;rsquo;s intentional - I want these tests, at least at this stage while we&amp;rsquo;re getting used to it, to be familiar to Java programmers, our main audience.&lt;br /&gt;&lt;br /&gt;&lt;script src=&#34;https://gist.github.com/trishagee/5728962.js&#34;&gt;&lt;/script&gt; Some initial observations:&lt;br /&gt;&lt;ul&gt;&lt;li&gt;It&amp;rsquo;s a really simple thing, but I like having the&amp;nbsp;&lt;code&gt;@Subject&lt;/code&gt; annotation on the thing you&amp;rsquo;re testing. &amp;nbsp;In theory it should be obvious which of your fields or variables is the subject under test, but in practice that&amp;rsquo;s not always true.&lt;/li&gt;&lt;li&gt;Although it freaks me out as someone who&amp;rsquo;s been doing Java for the last 15 years, I really like the String for method name - although in this case it&amp;rsquo;s the same as the JMock/JUnit equivalent, it gives a lot more flexibility for describing the purpose of this test.&lt;/li&gt;&lt;/ul&gt;&lt;ul&gt;&lt;li&gt;Mocking is painless, with a simple call to &lt;code&gt;Mock()&lt;/code&gt;, even though we&amp;rsquo;re still mocking concrete classes (this is done simply by adding &lt;a href=&#34;http://cglib.sourceforge.net/&#34;&gt;cglib&lt;/a&gt; and &lt;a href=&#34;https://code.google.com/p/objenesis/&#34;&gt;obgenesis&lt;/a&gt; to the dependencies).&lt;/li&gt;&lt;li&gt;I &lt;i&gt;love&lt;/i&gt;&amp;nbsp;that the phases of Spock (&lt;code&gt;setup: when: then:&lt;/code&gt;) document the different parts of the test while also being the useful magic keywords which tell Spock how to run the test. &amp;nbsp;I know other frameworks provide this, but we&amp;rsquo;ve been working with JUnit and I&amp;rsquo;ve been in the habit of commenting my steps with &lt;code&gt;//given //when //then&lt;/code&gt;.&lt;/li&gt;&lt;li&gt;Thanks to Groovy, creation of lists is less boiler plate (line 9). &amp;nbsp;Not a big deal, but just makes it easier to read.&lt;/li&gt;&lt;li&gt;I&amp;rsquo;ve got very used to the way expectations are set up in JMock, but I have to say that &lt;code&gt;1 * bsonWriter.blahblahblah()&lt;/code&gt; is much more readable. &amp;nbsp;&lt;/li&gt;&lt;li&gt;I love that everything after &lt;code&gt;then:&lt;/code&gt; is an assertion, I think it makes it really clear what you expect to happen after you invoke the thing you&amp;rsquo;re testing.&lt;/li&gt;&lt;/ul&gt;So mocking is awesome. &amp;nbsp;What&amp;rsquo;s next?&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2013/07/spock-passes-next-test-painless-stubbing.html&#34;&gt;Painless Stubbing&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;http://mechanitis.blogspot.com.es/2013/12/spock-data-driven-testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Christmas decorations teach me a lesson about troubleshooting</title>
+      <link>http://trishagee.github.io/post/christmas_decorations_teach_me_a_lesson_about_troubleshooting/</link>
+      <pubDate>Tue, 17 Jan 2012 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/christmas_decorations_teach_me_a_lesson_about_troubleshooting/</guid>
+      <description>&lt;p&gt;And now, after an absence of several weeks, you get to see how long it takes me to write some of these posts.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-_IL9JCpG-YI/TxUujcWyp3I/AAAAAAAAIvg/uMQCtOKGPcs/s1600/DSC_0037.JPG&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;267&#34; src=&#34;http://2.bp.blogspot.com/-_IL9JCpG-YI/TxUujcWyp3I/AAAAAAAAIvg/uMQCtOKGPcs/s400/DSC_0037.JPG&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;I was putting up the Christmas decorations one Saturday when my worst fear was realised&lt;sup&gt;1&lt;/sup&gt; - one of my three strings of lights was not working.&lt;br /&gt;&lt;br /&gt;The first two went up fine. &amp;nbsp;The third lit up when I plugged it in, and in less than a second went out. &amp;nbsp;Curses. &amp;nbsp;This is not what I wanted, this was supposed to be a short exercise in making my tiny little flat look festive.&lt;br /&gt;&lt;br /&gt;So I set about the tedious task of starting from the end closest to the plug and replacing every bulb, one by one, with a spare one to see if it magically lit up again. &amp;nbsp;When it doesn&amp;rsquo;t, you take the spare back out and replace it with the original bulb. &amp;nbsp;I remember my parents going through this ritual every Christmas, the tediousness of this activity is more memorable than the fleeting joy of shinies.&lt;br /&gt;&lt;br /&gt;While I was doing this, my mind was back on the job I&amp;rsquo;d been doing at work the previous week - battling an Internet Explorer 7 performance problem. &amp;nbsp;We have automated performance tests which give us an indication of the load time for our application in Chrome and IE, and some time in the previous couple of weeks our IE performance had significantly degraded in the development code. &amp;nbsp;Due to a number of too-boring-to-explain-here circumstances, the last known good revision was four days and nearly 250 revisions earlier than the first revision that showed the performance problem.&lt;br /&gt;&lt;br /&gt;Since we couldn&amp;rsquo;t see anything to indicate it was an environmental problem, the logical next step was to pinpoint the revision which caused the problem, so we could either fix it or get performance gains from somewhere else in the system.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-gnC5YOnp9-8/TxUy6Y0I72I/AAAAAAAAIvo/bDlg30_CMvA/s1600/revisions1.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;88&#34; src=&#34;http://3.bp.blogspot.com/-gnC5YOnp9-8/TxUy6Y0I72I/AAAAAAAAIvo/bDlg30_CMvA/s320/revisions1.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;The most obvious way to do this, given there were no obvious suspects, is with a binary search of the revisions. &amp;nbsp;Our last known good revision was 081, our first poor performing one was 240. &amp;nbsp;So the thing to do is to check revision 160, see if it falls on the poor or good performance side.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-NyxMETVmxrM/TxUy6uuKWuI/AAAAAAAAIvs/HG9HdBMMZfE/s1600/revisions2.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;88&#34; src=&#34;http://2.bp.blogspot.com/-NyxMETVmxrM/TxUy6uuKWuI/AAAAAAAAIvs/HG9HdBMMZfE/s320/revisions2.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;If 160 proves to be a poor performer, check revision 120&amp;hellip;.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-LEjXqVBWAxM/TxUy7Ipt3UI/AAAAAAAAIv4/U4gq2gIrgzs/s1600/revisions3.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;88&#34; src=&#34;http://4.bp.blogspot.com/-LEjXqVBWAxM/TxUy7Ipt3UI/AAAAAAAAIv4/U4gq2gIrgzs/s320/revisions3.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&amp;hellip;if 160 is fine, test revision 200&amp;hellip;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-a4pDFa23AS8/TxUy8AZZL6I/AAAAAAAAIv8/YGX5b314ZPA/s1600/revisions4.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;88&#34; src=&#34;http://3.bp.blogspot.com/-a4pDFa23AS8/TxUy8AZZL6I/AAAAAAAAIv8/YGX5b314ZPA/s320/revisions4.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&amp;hellip;and keep splitting the revisions by half until you find the suspect.&lt;br /&gt;&lt;br /&gt;So of course that&amp;rsquo;s what I want to do with my stupid Christmas lights. &amp;nbsp;I do not want to sequentially check each light bulb, that has a worst-case number-of-bulbs-tried = n, where n is the number of bulbs (probably a couple of hundred, although it felt like several thousand). &amp;nbsp;So, in computer speak, O(n). &amp;nbsp;The binary search algorithm is O(log n). &amp;nbsp;At university, this Big Oh had no context for me. &amp;nbsp;But when you&amp;rsquo;ve taken 10 minutes to get a quarter of the way through your Christmas lights, and you diagnosed your IE performance problems&amp;hellip; well, actually it took days. &amp;nbsp;But the point is, a binary search for the missing bulb would definitely have been a Good Thing.&lt;br /&gt;&lt;br /&gt;I know you&amp;rsquo;re dying to know if I tracked down the problem in Internet Explorer - I did. &amp;nbsp;What&amp;rsquo;s the worst case when you&amp;rsquo;re doing a binary search? &amp;nbsp;It&amp;rsquo;s when the thing you&amp;rsquo;re looking for is veeeery close to either your start point or your end point. &lt;br /&gt;&lt;br /&gt;The revision number I was after was number 237. &amp;nbsp;Sigh.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-TKU7fyVqnxs/TxUzePYv0eI/AAAAAAAAIwI/ewwyYBPE8no/s1600/revisions5.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;88&#34; src=&#34;http://3.bp.blogspot.com/-TKU7fyVqnxs/TxUzePYv0eI/AAAAAAAAIwI/ewwyYBPE8no/s320/revisions5.png&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;And my Christmas tree lights? &amp;nbsp;Well, through the boredom I remembered that modern lights are in sections, so they have a sort of built-in binary search - well, limited segments will go dark if a single bulb is out - which allows you to narrow down your problem area. &amp;nbsp;Since the whole string was out, I figured something else was probably wrong.&lt;br /&gt;&lt;br /&gt;Turned out the plug had come out of the socket.&lt;br /&gt;&lt;br /&gt;So:&lt;br /&gt;&lt;b&gt;Lesson 1&lt;/b&gt;: Theoretical computer science does have a place when you care about how long something takes. &amp;nbsp;When it&amp;rsquo;s you feeling the pain, you&amp;rsquo;ll do anything to make it stop.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;Lesson 2&lt;/b&gt;: When diagnosing a problem you will always biased towards what you think it is, in the face of actual evidence. &amp;nbsp;I was afraid I would have to search the whole set of lights for a blown bulb, so that&amp;rsquo;s the problem I was looking for when the lights failed. &amp;nbsp;In actual fact it was a problem with a much simpler solution.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;sup&gt;1&lt;/sup&gt; - OK, &amp;ldquo;worst fear&amp;rdquo; in this very limited context only - it&amp;rsquo;s not like I lie awake at night in July afraid that one of the bulbs on my Christmas lights has blown.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

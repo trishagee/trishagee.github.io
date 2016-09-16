@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Svqjug on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/svqjug/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Tue, 04 Aug 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Java 8 MOOC - Session 3 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session3/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session3/</guid>
+      <description>&lt;p&gt;Last night was the final get-together to discuss the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
+event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
+we had attendees from earlier sessions plus new people too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The aim of this session was to talk about Lesson 3, but also to wrap up the course as a whole: to talk about what we
+liked and what we would have improved (about both the course itself and our user group events).&lt;/p&gt;
+
+&lt;p&gt;As in the previous &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
+discussion areas:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findAny--&#34;&gt;findAny()&lt;/a&gt;
+vs &lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findFirst--&#34;&gt;findFirst()&lt;/a&gt;&lt;/strong&gt;: Why do we
+need both of these methods, and when would you use them?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;findFirst()&lt;/code&gt; is the deterministic version, which will return you the first element in the Stream (according to
+encounter order - see the section on
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;Ordering in the documentation&lt;/a&gt;).
+So, regardless of whether you run the operation in parallel or serial, if you&amp;rsquo;re looking for &amp;ldquo;A&amp;rdquo; and use &lt;code&gt;findFirst&lt;/code&gt;
+with this list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;you&amp;rsquo;ll get the element at index 3 - the first &amp;ldquo;A&amp;rdquo; in the list.&lt;/p&gt;
+
+&lt;p&gt;But &lt;code&gt;findAny()&lt;/code&gt; is non-deterministic, so will return you any element that matches your criteria - it could return the
+element at index 3, or the one at position 6. Realistically, if the stream is on an ordered collection like a list,
+when you run &lt;code&gt;findAny&lt;/code&gt; on a sequential stream, I expect it will return the same result as &lt;code&gt;findFirst&lt;/code&gt;.  The real
+use-case for &lt;code&gt;findAny&lt;/code&gt; is when you&amp;rsquo;re running this on a parallel stream. Let&amp;rsquo;s take the above list, and assume that
+when you run this on a parallel stream it&amp;rsquo;s processed by two separate threads:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;,    // processed by thread 1 
+ &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]     // processed by thread 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible that thread 2 finds its &amp;ldquo;A&amp;rdquo; (the one at position 6) before thread 1 finds the one at position 3, so
+this will be value that&amp;rsquo;s returned. By configuring the Stream to return any one of the values that matches the
+criteria, you can potentially execute the operation faster when running in parallel.&lt;/p&gt;
+
+&lt;p&gt;If &lt;code&gt;findAny&lt;/code&gt; is (potentially) faster in parallel and (probably) returns the same value as &lt;code&gt;findFirst&lt;/code&gt; when running in
+serial, why not use that all the time?  Well, there are times when you really do want the first item. If you have a
+list of DVDs ordered by year the film was released, and you want to find the original &amp;ldquo;King Kong&amp;rdquo; (for
+example), you&amp;rsquo;ll want &lt;code&gt;findFirst&lt;/code&gt; to find the one released in 1933, not the one that was released in 1976 or the
+one from 2005.&lt;/p&gt;
+
+&lt;p&gt;Plus, &lt;code&gt;findFirst&lt;/code&gt; is not always going to be slower than &lt;code&gt;findAny&lt;/code&gt;, even in parallel.  Going back to our list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trying to &lt;code&gt;findFirst&lt;/code&gt; or &lt;code&gt;findAny&lt;/code&gt; for &amp;ldquo;H&amp;rdquo; could be the same performance for both methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collectors&lt;/strong&gt;: Maybe it&amp;rsquo;s just me who doesn&amp;rsquo;t really see the big picture for collectors.  I&amp;rsquo;m perfectly content with
+the built in collectors like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toList())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toSet())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s easy to see what they do, and work out when you need to use them.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m also very happy to have discovered &lt;code&gt;joining&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.joining(&amp;quot;,&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;a super-useful way to create Comma Separated Values (CSVs) that I use in my
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Where things get a bit murky for me is where we start chaining up collectors:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.mapping(...).combiner().andThen(...).apply(...))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(it should be obvious from my lack of clear example that I&amp;rsquo;m not 100% certain under which circumstances these are
+useful).&lt;/p&gt;
+
+&lt;p&gt;As a group, we think the chained collectors are kinda ugly - not because we&amp;rsquo;re against chaining (we like Streams),
+but maybe because it&amp;rsquo;s another chain inside a param to a chain.&lt;/p&gt;
+
+&lt;p&gt;We think this is an area where some good, solid examples and a bit of daily use will make it much clearer to
+developers. We hope.&lt;/p&gt;
+
+&lt;p&gt;Related to this, the course didn&amp;rsquo;t go into creating your own collectors at all. My personal (under-informed) opinion
+is that I guess most developers should be able to use either the out-of-the-box collectors (&lt;code&gt;toList&lt;/code&gt; etc) or use the
+collector chaining to build what they need. If you need a custom collector, perhaps you haven&amp;rsquo;t considered everything
+that&amp;rsquo;s already available to you. But as a group, we decided we would have liked to see this topic anyway so that we
+could get a deeper understanding of what collectors are and how they work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exercises for lesson 3:&lt;/strong&gt; Well. What can we say? I really hope there are people reading this who haven&amp;rsquo;t finished
+the course yet, because the Sevilla Java User group would like to say to you: don&amp;rsquo;t despair, the lesson 3 exercises
+are &lt;em&gt;substantially&lt;/em&gt; harder than those for lessons 1 and 2. Honestly, the whole group considered it less of a learning
+curve and more of a massive cliff to climb.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://herbookthoughts.reads-it.com/wp-content/uploads/2014/06/d6a1143f571184db25f94613edd43b40af6d3a629221aba00d9efdcfef5efd84.jpg&#34; alt=&#34;I have no idea what I am doing&#34; title=&#34;I have no idea 
+what I am doing&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I mean, it was great to have something so challenging to end on, but it probably would have been less ego-destroying
+if we could have got up to that level gradually instead of having it sprung on us.&lt;/p&gt;
+
+&lt;p&gt;The good thing about Part 2 of the lesson 3 exercises was that we had three very different answers to discuss
+in the group. None of us were super happy with any of them, but we could see definite pros and cons of each approach,
+and that&amp;rsquo;s something you really want to learn in a course like this.&lt;/p&gt;
+
+&lt;p&gt;It was also really great to have a rough performance test to run on your own computer, so that you could really see
+the impact of your choices on the performance of the stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For more info&lt;/strong&gt;&lt;br /&gt;
+I&amp;rsquo;m going to add a shameless plug to a friend&amp;rsquo;s book here. I&amp;rsquo;ve been reading a lot about Java 8 for this course, for
+my &lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to speed. My favourite book for getting to
+grips with lambdas and streams
+is &lt;a href=&#34;http://www.amazon.com/gp/product/B00J3B3J3C/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00J3B3J3C&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=IX6U2YT4FADY4JY6&#34;&gt;Java 8 Lambdas: Pragmatic Functional Programming&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=B00J3B3J3C&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+by &lt;a href=&#34;https://twitter.com/RichardWarburto&#34;&gt;Richard Warburton&lt;/a&gt;. This book also contains more info about collectors too,
+so maybe some of our questions around how to use these in more complex situation are answered in here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In Summary&lt;/strong&gt;&lt;br /&gt;
+We really enjoyed the MOOC, and the sessions to get together to discuss it. We particularly liked that the meetups
+were a safe place to ask questions and discuss alternative solutions, and that we weren&amp;rsquo;t expected to be genius-level
+experts in order to participate fully.&lt;/p&gt;
+
+&lt;p&gt;If/when Oracle re-runs the MOOC, if you didn&amp;rsquo;t get a chance to take part this time I highly recommend signing up.
+And if you can find (or run) a local meetup to discuss it, it makes the experience much more fun.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Java 8 MOOC - Session 2 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session2/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session2/</guid>
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
+is working towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+to share knowledge between people who are doing the course.&lt;/p&gt;
+
+&lt;p&gt;The second week&amp;rsquo;s lesson was about
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; - how you can use the
+new stream API to transform data. There was also a whole section on
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;, which initially seemed like
+rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rather more than I originally thought.&lt;/p&gt;
+
+&lt;p&gt;In the meetup session, we talked about:&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;&lt;/strong&gt;: we were pretty
+comfortable,
+I think, with using &lt;code&gt;Optional&lt;/code&gt; to
+prevent a &lt;code&gt;NullPointerException&lt;/code&gt;. What we weren&amp;rsquo;t so clear on were the examples of
+&lt;code&gt;filter()&lt;/code&gt; and &lt;code&gt;map()&lt;/code&gt; - if you were getting your &lt;code&gt;Optional&lt;/code&gt; values from a stream, why wouldn&amp;rsquo;t you do the map and the
+filter on the stream first? For example, why do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s -&amp;gt; s.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;when you could map and filter in the stream to get the first non-empty value? That certainly seems like an
+interesting question in relation to streams.&lt;/p&gt;
+
+&lt;p&gt;I can see &lt;code&gt;Optional&lt;/code&gt; being more useful when other APIs fully
+support Java 8 and return &lt;code&gt;Optional&lt;/code&gt; values, then you can perform additional operations on return values.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That terminal operation&amp;rsquo;s not actually terminal??&lt;/strong&gt;: We ran into this a couple of times in our examples in the
+session, one example is the code above (let&amp;rsquo;s copy it down here so we can look at it more closely):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Isn&amp;rsquo;t &lt;code&gt;findFirst()&lt;/code&gt; a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html#StreamOps&#34;&gt;terminal operation&lt;/a&gt;? How
+can you carry on doing more operations on that?&lt;/p&gt;
+
+&lt;p&gt;The answer is, of course, that the return type of the terminal operation can also lead to further operations.  The
+above is actually:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Optional&amp;lt;String&amp;gt; result = list.stream()
+                              .findFirst();
+result.map(String::trim)
+      .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+      .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our terminal operation returns an optional, which allows you to do further operations. Another example of this
+confusion:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .collect(toList())
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, &lt;code&gt;collect()&lt;/code&gt; is a terminal operation, but it returns a list, which also allows &lt;code&gt;forEach()&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;String&amp;gt; results = list.stream()
+                           .map(String::toLowerCase)
+                           .collect(toList());
+results.forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So be aware that just because it&amp;rsquo;s called a terminal operation, doesn&amp;rsquo;t mean you can&amp;rsquo;t perform other operations on
+the returned value.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parallel/sequential/parallel&lt;/strong&gt;: there had been a question in the previous week about why you could write code like
+this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .parallel()
+    .map(String::trim)
+    .sequential()
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .parallel()
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and whether that would let you dictate which sections of the stream were parallel and which were to be processed in
+serial.  Lesson two set the lesson straight, declaring &amp;ldquo;the last operator wins&amp;rdquo; - meaning &lt;em&gt;all&lt;/em&gt; of the above code will
+be run as a parallel stream. I can&amp;rsquo;t find any documentation for this, I&amp;rsquo;ll edit this post if I locate it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#unordered--&#34;&gt;Unordered&lt;/a&gt;&lt;/strong&gt;: &amp;ldquo;Why
+would you ever want your stream to be unordered?&amp;rdquo; - the answer is that &lt;code&gt;unordered()&lt;/code&gt; &lt;a href=&#34;http://stackoverflow.com/a/21350234/653519&#34;&gt;doesn&amp;rsquo;t turn
+your sorted collection into one with no order&lt;/a&gt;, it just says that when
+this code is executed, the order of elements doesn&amp;rsquo;t matter.  This might make processing faster on a parallel stream,
+but as a group we figured it would probably be pointless on a sequential stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Efficiency optimisations and order of stream operations&lt;/strong&gt;: We had a &lt;em&gt;long&lt;/em&gt; conversation about the order in which you
+perform
+operations in a stream. The MOOC (in fact, most documentation around Streams) tells us that a) streams are
+&lt;a href=&#34;http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;lazy&lt;/a&gt;, and
+not evaluated until a terminal operator is encountered and b) this enables optimisation of the operations in the
+stream.  That lead to a discussion about the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The filter operation should result in less items to process in the stream. Given that the &lt;code&gt;map()&lt;/code&gt; operation doesn&amp;rsquo;t
+change anything that &lt;code&gt;filter()&lt;/code&gt; relies on, will this code be optimised somehow under the covers so that the filter
+is actually executed first? Or are optimisations still going to respect the order of operations on a stream?&lt;/p&gt;
+
+&lt;p&gt;Our case is actually a very specific case, because a) the &lt;code&gt;map()&lt;/code&gt; returns the same type as the params passed in (i.e.
+it doesn&amp;rsquo;t map a &lt;code&gt;String&lt;/code&gt; to an &lt;code&gt;int&lt;/code&gt;) and b) the &lt;code&gt;map()&lt;/code&gt; doesn&amp;rsquo;t change the characteristic the &lt;code&gt;filter()&lt;/code&gt; is
+looking at (i.e. length). But generally speaking, you can&amp;rsquo;t expect these conditions to be true - in fact I bet in a
+large number of cases they are &lt;em&gt;not&lt;/em&gt; true. So pipeline operations are &lt;a href=&#34;http://stackoverflow.com/a/22056258/653519&#34;&gt;performed in the order in which they are
+written&lt;/a&gt;, meaning that our &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;filter&lt;/code&gt; will not be re-ordered into
+a more efficient order.&lt;/p&gt;
+
+&lt;p&gt;A good rule of thumb seems to be to do filtering as early in the stream as possible - that way you can potentially
+cut down the number of items you process in each step of the stream. Therefore our code would probably be better as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .map(String::toLowerCase)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;strong&gt;Flat Map&lt;/strong&gt;: what&amp;hellip;?
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-&#34;&gt;&lt;code&gt;flatMap()&lt;/code&gt;&lt;/a&gt;
+is one of those methods that makes total sense once you get the hang of it, and you don&amp;rsquo;t
+understand why it was so confusing. But the first time you encounter it, it&amp;rsquo;s confusing - how is &lt;code&gt;flatMap()&lt;/code&gt;
+different to &lt;code&gt;map()&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;flatMap&lt;/code&gt; is used to squish (for example) a stream of streams into just a simple stream. It&amp;rsquo;s like turning a
+2-dimensional array into a single dimension so that you can iterate over all the items without needing nested
+for-loops. There&amp;rsquo;s &lt;a href=&#34;http://stackoverflow.com/a/22384132/653519&#34;&gt;an example on StackOverflow&lt;/a&gt;, and some more examples
+in answer to &lt;a href=&#34;http://stackoverflow.com/questions/26684562/java-8-map-and-flatmap-methods&#34;&gt;this question&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparators&lt;/strong&gt;: We&amp;rsquo;ve probably all written comparators at some point, it&amp;rsquo;s probably one of those examples where we
+really did use anonymous inner classes &amp;ldquo;in the olden days&amp;rdquo; and were looking forward to replacing them with lambdas.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(new Comparator&amp;lt;String&amp;gt;() {
+          @Override
+          public int compare(String o1, String o2) {
+              return ???;
+          }
+      })
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sadly, using a lambda still doesn&amp;rsquo;t answer the question &amp;ldquo;do I minus o1 from o2, or o2 from o1?&amp;rdquo;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted((o1, o2) -&amp;gt; ??? )
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But there&amp;rsquo;s yet another new method in Java 8 here that can save us, one that is not nearly as well publicised as it
+should be. There&amp;rsquo;s a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparing-java.util.function.Function-&#34;&gt;&lt;code&gt;Comparator.comparing()&lt;/code&gt;&lt;/a&gt;
+that you can use to really easily define what to compare on. The JavaDoc and signature looks kinda confusing, but
+this is one of those places where method references suddenly make loads of sense:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(comparingInt(String::length))
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Here we&amp;rsquo;re actually using the &lt;code&gt;comparingInt&lt;/code&gt; method as we&amp;rsquo;re going to compare on a primitive value). Personally this
+is one of my favourite new features in Java 8.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223910762/&#34;&gt;last session on Java 8 - Lambdas and Streams&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Java 8 MOOC - Session 1 Summary</title>
+      <link>http://trishagee.github.io/post/java_8_mooc_session1/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/java_8_mooc_session1/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&amp;rsquo;re
+feeling very smart!) help people who may be struggling (or might not have watched the videos).&lt;/p&gt;
+
+&lt;p&gt;Last night we had the first session which went really well. We had a small-ish group, about half of whom had
+completed the homework and the quiz (for the first lesson) and half had not. We worked through the homework exercises
+together, saw how there were multiple solutions for each problem, and explored how to balance conciseness with
+longer, more descriptive code.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;First offline session for lesson 1 of the lambdas and streams mooc &lt;a href=&#34;https://twitter.com/hashtag/java8?src=hash&#34;&gt;#java8&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/40gradosAlaSombra?src=hash&#34;&gt;#40gradosAlaSombra&lt;/a&gt; &lt;a href=&#34;http://t.co/hJgPrLl3C5&#34;&gt;pic.twitter.com/hJgPrLl3C5&lt;/a&gt;&lt;/p&gt;&amp;mdash; SVQ JUG (@SVQJUG) &lt;a href=&#34;https://twitter.com/SVQJUG/status/623199430158778368&#34;&gt;July 20, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;On the whole people thought the videos for the course were very clear and well-explained, although we also went
+through how to run the videos at 1.5 speed, as most people wanted to run through them faster! I thought the pace of the
+videos was especially good for those who aren&amp;rsquo;t so comfortable with listening in English, and it&amp;rsquo;s easy to add
+subtitles and speed it up if you feel comfortable with the material.&lt;/p&gt;
+
+&lt;p&gt;The first lesson covers lambdas, and their use in some of the new Java 8 methods (specifically on collections, but
+&lt;em&gt;not&lt;/em&gt; streams).&lt;/p&gt;
+
+&lt;p&gt;The areas we discussed most, the ones that needed more clarity were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html&#34;&gt;Functional Interfaces&lt;/a&gt;:
+what does &lt;a href=&#34;https://dzone.com/articles/introduction-functional-1&#34;&gt;Single Abstract Method (SAM)&lt;/a&gt; really mean? Also, we
+were interested in the &amp;ldquo;exception&amp;rdquo; of methods declared on &lt;code&gt;Object&lt;/code&gt; as well as an interface (e.g. &lt;code&gt;equals()&lt;/code&gt;), but we
+came
+to the conclusion that it was easier to simply think of looking for only one method without any form of
+implementation at all - methods defined on &lt;code&gt;Object&lt;/code&gt; must have an implementation, since &lt;code&gt;Object&lt;/code&gt; is not an
+abstract class or interface.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;: we looked at
+examples of the three types that aren&amp;rsquo;t constructor references, what they look like in lambda form and how they
+differ. Method references are&amp;hellip; not difficult to understand, but do look a bit awkward in the code if you&amp;rsquo;re not
+used to them, and can be confusing as all your types, parameters and return values disappear.&lt;/li&gt;
+&lt;li&gt;Parallel execution: The first lesson talks a lot about how lambdas are here to make parallelisation and
+concurrency easier for developers, so obviously there was a question about how the code in the homework examples would
+be executed in a multi-CPU environment. I assumed (although I&amp;rsquo;m waiting for clarification) that methods like
+&lt;code&gt;removeIf&lt;/code&gt; are not parallelised, since in the case of Streams you have to explicitly state you want to go parallel.
+We also talked a bit about
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#parallel--&#34;&gt;parallel()&lt;/a&gt; and
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#parallelStream--&#34;&gt;parallelStream()&lt;/a&gt;, even
+though the lesson didn&amp;rsquo;t cover Streams at all. We wanted to understand a bit more about the pros and cons of going
+parallel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, I also snuck in some demos of &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&amp;rsquo;s&lt;/a&gt; awesomeness, including
+its magical support for creating lambdas and turning things into (and from) method references.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/ReplaceWithMethodReferenceMac.gif&#34; alt=&#34;Converting code to Java 8&#34; title=&#34;Converting code to Java 8&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It was a great, collaborative session, with most people getting a chance to demonstrate their code (if they wanted
+to!). And at the end we had solutions to the five exercise problems and had discussed all the areas people wanted
+more clarity on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The State of Java</title>
+      <link>http://trishagee.github.io/post/svq_state_of_java_update/</link>
+      <pubDate>Thu, 29 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/post/svq_state_of_java_update/</guid>
+      <description>
+
+&lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
+find people unusually keen to come and visit us on the pretence of presenting at the Sevilla Java User Group (and please,
+DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
+
+&lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
+an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m just starting to use Java 8 in real life, so this could not have been better timed - I got to ask the guys a bunch
+of questions about the intentions behind some of the Java 8 features, and the current vision for the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/44036521&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;i&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/2015-java-update-and-roadmap-jug-sevilla&#34; title=&#34;2015 Java update and roadmap, JUG sevilla&#34; target=&#34;_blank&#34;&gt;2015 Java update and roadmap, JUG sevilla&lt;/a&gt; from Georges Saab and Aurelio Garcia-Ribeyro &lt;/i&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;My notes from the session:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html&#34;&gt;Lambdas&lt;/a&gt; could be just a syntax change,
+but they could be more than that - they could impact the language, the libraries
+and the JVM. They could have a positive impact on performance, and this work can continue to go on through small
+updates to Java that don&amp;rsquo;t impact the syntax.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; are a pipeline of operations, made possible/easier/more readable by lambdas. The aim is to make operations
+on collections easier and more readable.&lt;/li&gt;
+&lt;li&gt;In the Old World Order, you had to care about &lt;em&gt;how&lt;/em&gt; to perform certain operations. With streams, you don&amp;rsquo;t need to
+tell the computer exactly how it&amp;rsquo;s done, you can simply say what operations you want performed. This makes it easier
+for developers&lt;/li&gt;
+&lt;li&gt;Streams will take all the operations you pass in and perform them in a single pass of the data, so you don&amp;rsquo;t have
+to write multiple loops to perform multiple operations on the same data structure, or tie your brain in knots figuring
+out how to do it in one loop. There are also no intermediate data structures when you use streams.&lt;/li&gt;
+&lt;li&gt;The implementation
+can be optimised under the covers (e.g. not performing the &lt;code&gt;sort&lt;/code&gt; operation if the data is already ordered correctly),
+and the developer doesn&amp;rsquo;t have to worry about it. Java can introduce further optimisations in later releases without
+changing the API or impacting the code a developer has already written.&lt;/li&gt;
+&lt;li&gt;These new features in Java have a focus on readability, since code is much more often read than written.&lt;/li&gt;
+&lt;li&gt;The operations are easier to parallelise, because the developer is no longer dictating the &lt;em&gt;how&lt;/em&gt; - multiple &lt;code&gt;for&lt;/code&gt; loops
+might not be easy to parallelise, but a series of operations can be.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html&#34;&gt;Default methods&lt;/a&gt; and
+new support for &lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html#static&#34;&gt;static methods on interfaces&lt;/a&gt; are interesting.
+I&amp;rsquo;d forgotten you could put static methods on interfaces and I&amp;rsquo;m going to sneak them into my latest project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html&#34;&gt;Nashorn&lt;/a&gt; is here to replace Rhino. Personally I haven&amp;rsquo;t worked in the sort of environment that would need server-side
+JavaScript so this whole area has passed me by somewhat, but seems it might be interesting for Node.js or creating
+a &lt;a href=&#34;http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34;&gt;REPL&lt;/a&gt;
+in JavaScript that you want to run on the JVM.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type&#34;&gt;additional annotation support in Java 8&lt;/a&gt;
+will be useful for &lt;a href=&#34;http://www.oracle.com/technetwork/java/javaee/overview/index.html&#34;&gt;Java EE&lt;/a&gt;.  As this is something I&amp;rsquo;m currently playing
+with (specifically web sockets) I&amp;rsquo;m interested in this, but it seems like it will be a while before this filters into
+the Java EE that&amp;rsquo;s used on a daily basis.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html&#34;&gt;Mission Control and Flight Recorder&lt;/a&gt; - look interesting.  Feel like I should play with them.&lt;/li&gt;
+&lt;li&gt;Many people are skipping straight from Java 6 to 8 - the new language features and improved performance are major driving
+factors&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.java.com/en/download/faq/java_7.xml&#34;&gt;End of public updates of Java 7 in April&lt;/a&gt;. Having libraries that, um&amp;hellip; &lt;em&gt;encourage&lt;/em&gt;&amp;hellip; adoption of the latest version of
+Java makes life a lot easier for those who develop the Java language, as they can concentrate on moving the language
+forward and not be tied down supporting old versions.&lt;/li&gt;
+&lt;li&gt;Either this is the first time I&amp;rsquo;ve heard of &lt;a href=&#34;http://www.oracle.com/technetwork/java/javadb/overview/index.html&#34;&gt;JavaDB&lt;/a&gt;,
+or my memory has completely discarded it. I had no idea what it was.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9&lt;/a&gt; is well under way, check out the JEPs.&lt;/li&gt;
+&lt;li&gt;(This is the &lt;a href=&#34;http://openjdk.java.net/jeps/1&#34;&gt;JEP process&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Jigsaw&lt;/a&gt; was explained, and actually I could see myself using it for the project I&amp;rsquo;m working on right now. I had a look
+to see if I could use it via the OpenJDK, but it looks like the groundwork is there, but not the actual modules themselves.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/tech/g1-intro-jsp-135488.html&#34;&gt;G1 Garbage Collector&lt;/a&gt; is &amp;ldquo;&amp;hellip;the go forward GC&amp;rdquo;, it&amp;rsquo;s the one that&amp;rsquo;s being actively worked on.&lt;/li&gt;
+&lt;li&gt;This is the first I&amp;rsquo;ve heard of &lt;a href=&#34;http://openjdk.java.net/jeps/193&#34;&gt;Enhanced Volatiles&lt;/a&gt;, I&amp;rsquo;m so behind the times!&lt;/li&gt;
+&lt;li&gt;Access to internal packages is going away in Java 9. So
+&lt;a href=&#34;http://www.oracle.com/technetwork/java/faq-sun-packages-142232.html&#34;&gt;don&amp;rsquo;t use any &lt;code&gt;sun.*&lt;/code&gt; packages&lt;/a&gt;.
+Use &lt;a href=&#34;http://java.dzone.com/articles/jdeps-jdk-8-command-line&#34;&gt;jdeps&lt;/a&gt; to identify any
+dependencies in your code that need to change.&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and, looking further ahead than Java 9, we have &lt;a href=&#34;http://openjdk.java.net/jeps/169&#34;&gt;value types&lt;/a&gt; and
+&lt;a href=&#34;http://openjdk.java.net/projects/valhalla/&#34;&gt;Project Valhalla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;a &lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL for Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;possibly a &lt;a href=&#34;http://openjdk.java.net/jeps/198&#34;&gt;lightweight JSON API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and &lt;a href=&#34;http://cr.openjdk.java.net/~psandoz/varhandles/jvmls14-varHandles.pdf&#34;&gt;VarHandles&lt;/a&gt; were also mentioned.&lt;/li&gt;
+&lt;li&gt;Finally, the guys mentioned a &lt;a href=&#34;http://youtu.be/2y5Pv4yN0b0&#34;&gt;talk by Brian Goetz called &amp;ldquo;Stewardship: the Sobering Parts&amp;rdquo;&lt;/a&gt;, which has gone onto my
+to-watch list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_0&#34;&gt;Ideas&lt;/h4&gt;
+
+&lt;p&gt;It became clear throughout the talk there are plenty of ideas that we could explore in later presentations.  If you want to see
+any of the following, add a comment or ping me or &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;IsraKaos&lt;/a&gt; on twitter or Meetup and we&amp;rsquo;ll try and schedule it.&lt;/p&gt;
+
+&lt;p&gt;Similarly, if you can present on any of these topics and want to come to a beautiful, sunny city with amazing food to
+do so, drop me a line:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The OpenJDK&lt;/li&gt;
+&lt;li&gt;The JCP, the purpose, the processes, the people&lt;/li&gt;
+&lt;li&gt;Adopt a JSR, Adopt OpenJDK&lt;/li&gt;
+&lt;li&gt;New Date/Time (JSR310)&lt;/li&gt;
+&lt;li&gt;JavaFX&lt;/li&gt;
+&lt;li&gt;Code optimisation vs Data optimisation (I honestly don&amp;rsquo;t know what this means, but I wrote it down in my notes)&lt;/li&gt;
+&lt;li&gt;Java EE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=KDGWBWOK2S6FVS6F&#34;&gt;Java 8 in Action&lt;/a&gt; has details on other Java 8 features like Date and Time&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt; covers JavaFX too, and highlights some Java 7 features you might like&lt;/li&gt;
+&lt;li&gt;Brian Goetz did a great talk last year, &lt;a href=&#34;https://www.youtube.com/watch?v=MLksirK9nnE&#34;&gt;&amp;ldquo;Lambdas in Java: A peek under the hood&amp;rdquo;&lt;/a&gt;. I had to watch it twice before even half of the info sank in, but it&amp;rsquo;s really interesting.&lt;/li&gt;
+&lt;li&gt;Stephen Colebourne, the guy behind Joda time and the new Date and Time API, has &lt;a href=&#34;http://vimeo.com/87157763&#34;&gt;this talk about the new API&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9 OpenJDK page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="java, disruptor, lmax, disruptor-docs, concurrency, ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="Dissecting the Disruptor: Why it&#39;s so fast (part one) - Locks Are Bad : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="http://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2011-07-16"/>
+<meta property="article:modified_time" content="2011-07-16"/>
+
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="disruptor">
+<meta property="article:tag" content="lmax">
+<meta property="article:tag" content="disruptor-docs">
+<meta property="article:tag" content="concurrency">
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content="Dissecting the Disruptor: Why it&#39;s so fast (part one) - Locks Are Bad : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="http://trishagee.github.io">
+    <title> Dissecting the Disruptor: Why it&#39;s so fast (part one) - Locks Are Bad - trishagee.github.io </title>
+    <link rel="canonical" href="http://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=Dissecting%20the%20Disruptor%3a%20Why%20it%27s%20so%20fast%20%28part%20one%29%20-%20Locks%20Are%20Bad-http%3a%2f%2ftrishagee.github.io%2fpost%2fdissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fpost%2fdissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fdissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fpost%2fdissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad%2f&title=Dissecting%20the%20Disruptor%3a%20Why%20it%27s%20so%20fast%20%28part%20one%29%20-%20Locks%20Are%20Bad&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fdissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fdissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">Dissecting the Disruptor: Why it&#39;s so fast (part one) - Locks Are Bad</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           <p>Martin Fowler has written a <a href="http://martinfowler.com/articles/lmax.html"><span id="goog_1736243820"></span>really good article<span id="goog_1736243821"></span></a> describing not only <a href="http://code.google.com/p/disruptor/">the Disruptor</a>, but also how it fits into the architecture at <a href="http://www.lmaxtrader.co.uk/">LMAX</a>. &nbsp;This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;.<br /><br />I&rsquo;m working up to answering that. &nbsp;I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;.<br /><br />These questions do go hand in hand, however, because I can&rsquo;t talk about why it&rsquo;s fast without saying what it does, and I can&rsquo;t talk about what it is without saying why it is that way.<br /><br />So I&rsquo;m trapped in a circular dependency. &nbsp;A circular dependency of blogging.<br /><br />To break the dependency, I&rsquo;m going to answer question one with the simplest answer, and with any luck I&rsquo;ll come back to it in a later post if it still needs explanation:&nbsp;the Disruptor is a way to pass information between threads.<br /><br />As a developer, already my alarm bells are going off because the word &ldquo;thread&rdquo; was just mentioned, which means this is about concurrency, and Concurrency Is Hard.<br /><br /><b>Concurrency 101</b><br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-jFd0nHVAUzA/Th6pstBr8rI/AAAAAAAAIH4/_eCHINrgH50/s1600/ThreadContention.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="231" src="http://3.bp.blogspot.com/-jFd0nHVAUzA/Th6pstBr8rI/AAAAAAAAIH4/_eCHINrgH50/s400/ThreadContention.png" width="400" /></a></div><br />Imagine two threads are trying to change the same value. <br /><br /><i>Case One:</i> Thread 1 gets there first:<br /><ol><li>The value changes to &ldquo;blah&rdquo;</li><li>Then the value changes to &ldquo;blahy&rdquo; when Thread 2 gets there.</li></ol><div><i>Case Two:</i> Thread 2 gets there first:</div><div><ol><li>The value changes to &ldquo;fluffy&rdquo;</li><li>Then the value changes to &ldquo;blah&rdquo; when Thread 1 gets there.</li></ol><div><i>Case Three:</i> Thread 1 interrupts Thread 2:</div></div><div><ol><li>Thread 2 gets the value &ldquo;fluff&rdquo; and stores it as <code>myValue</code></li><li>Thread 1 goes in and updates value to &ldquo;blah&rdquo;</li><li>Then Thread 2 wakes up and sets the value to &ldquo;fluffy&rdquo;.</li></ol><div>Case Three is probably the only one which is definitely wrong, unless you think the naive approach to wiki editing is OK (<a href="http://code.google.com/">Google Code</a> Wiki, I&rsquo;m looking at you&hellip;). &nbsp;In the other two cases it&rsquo;s all about intentions and predictability. &nbsp;Thread 2 might not care what&rsquo;s in <code>value</code>, the intention might be to append &ldquo;y&rdquo; to whatever is in there regardless. &nbsp;In this circumstance, cases one and two are both correct.<br /><br /></div></div><div></div><div>But if Thread 2 only wanted to change &ldquo;fluff&rdquo; to &ldquo;fluffy&rdquo;, then both cases two and three are incorrect.</div><div></div><div>Assuming that Thread 2 wants to set the value to &ldquo;fluffy&rdquo;, there are some different approaches to solving the problem.<br /><br /></div><div></div><div><b>Approach One: Pessimistic locking</b><br /><b><br /></b></div><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-2A7ebRJ1z5g/Th6t4t2AO8I/AAAAAAAAIH8/gAYXlVq86-s/s1600/ConcurrencyPessimisticLocking.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="257" src="http://4.bp.blogspot.com/-2A7ebRJ1z5g/Th6t4t2AO8I/AAAAAAAAIH8/gAYXlVq86-s/s400/ConcurrencyPessimisticLocking.png" width="400" /></a></div><div>(Does the &ldquo;No Entry&rdquo; sign make sense to people who don&rsquo;t drive in Britain?)<br /><br />The terms pessimistic and optimistic locking seem to be more commonly used when talking about database reads and writes, but the principal applies to getting a lock on an object.<br /><br /></div><div></div><div>Thread 2 grabs a lock on <code>Entry</code> as soon as it knows it needs it and stops anything from setting it. Then it does its thing, sets the value, and lets everything else carry on.<br /><br /></div><div></div><div>You can imagine this gets quite expensive, with threads hanging around all over the place trying to get hold of objects and being blocked. &nbsp;The more threads you have, the more chance that things are going to grind to a halt.<br /><br /></div><div><b>Approach Two: Optimistic locking</b></div><div class="separator" style="clear: both; text-align: center;"></div><div><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-MC3Zia0u-LI/TiGrA4AEKKI/AAAAAAAAIIo/7q-x9sSJYR4/s1600/ConcurrencyOptimisticLocking.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="252" src="http://2.bp.blogspot.com/-MC3Zia0u-LI/TiGrA4AEKKI/AAAAAAAAIIo/7q-x9sSJYR4/s400/ConcurrencyOptimisticLocking.png" width="400" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"></div>In this case Thread 2 will only lock <code>Entry</code> when it needs to write to it. &nbsp;In order to make this work, it needs to check if <code>Entry</code> has changed since it first looked at it. &nbsp;If Thread 1 came in and changed the value to &ldquo;blah&rdquo; after Thread 2 had read the value, Thread 2 couldn&rsquo;t write &ldquo;fluffy&rdquo; to the <code>Entry</code> and trample all over the change from Thread 1. &nbsp;Thread 2 could either re-try (go back, read the value, and append &ldquo;y&rdquo; onto the end of the new value), which you would do if Thread 2 didn&rsquo;t care what the value it was changing was; or it could throw an exception or return some sort of failed update flag if it was expecting to change &ldquo;fluff&rdquo; to &ldquo;fluffy&rdquo;. &nbsp;An example of this latter case might be if you have two users trying to update a Wiki page, and you tell the user on the other end of Thread 2 they&rsquo;ll need to load the new changes from Thread 1 and then reapply their changes.<br /><br /></div><div></div><div><b>Potential Problem: Deadlock</b></div><div>Locking can lead to all sorts of issues, for example deadlock. &nbsp;Imagine two threads that need access to two resources to do whatever they need to do:<br /><br /></div><div></div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-sDyHhoLnwxw/Th60id1KUEI/AAAAAAAAIIE/_ru21J5fklI/s1600/ConcurrencyDeadlock.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="240" src="http://2.bp.blogspot.com/-sDyHhoLnwxw/Th60id1KUEI/AAAAAAAAIIE/_ru21J5fklI/s400/ConcurrencyDeadlock.png" width="400" /></a></div><div><br />If you&rsquo;ve used an over-zealous locking technique, both threads are going to sit there forever waiting for the other one to release its lock on the resource. &nbsp;That&rsquo;s when you reboot <strike>Windows</strike> your computer.<br /><br /><b>Definite Problem: Locks are sloooow&hellip;</b><br />The thing about locks is that they need the operating system to arbitrate the argument. &nbsp;The threads are like siblings squabbling over a toy, and the OS kernel is the parent that decides which one gets it. It&rsquo;s like when you run to your Dad to tell him your sister has nicked the <a href="http://www.amazon.com/Transformers-Power-Bots-Optimus-Prime/dp/B003A6CK0O?ie=UTF8&amp;tag=trissramb-20&amp;link_code=btl&amp;camp=213689&amp;creative=392969" target="_blank">Transformer</a><img alt="" border="0" height="1" src="http://www.assoc-amazon.com/e/ir?t=trissramb-20&amp;l=btl&amp;camp=213689&amp;creative=392969&amp;o=1&amp;a=B003A6CK0O" style="border: none !important; margin: 0px !important; padding: 0px !important;" width="1" /> when you wanted to play with it - he&rsquo;s got bigger things to worry about than you two fighting, and he might finish off loading the dishwasher and putting on the laundry before settling the argument. &nbsp;If you draw attention to yourself with a lock, not only does it take time to get the operating system to arbitrate, the OS might decide the CPU has better things to do than servicing your thread.<br /><br />The Disruptor paper talks about an experiment we did. &nbsp;The test calls a function incrementing a 64-bit counter in a loop 500 million times. &nbsp;For a single thread with no locking, the test takes 300ms. &nbsp;If you add a lock (and this is for a single thread, no contention, and no additional complexity other than the lock) the test takes&nbsp;10,000ms. &nbsp;That&rsquo;s, like, two orders of magnitude slower. &nbsp;Even more astounding, if you add a second thread (which logic suggests should take maybe half the time of the single thread with a lock) it takes&nbsp;224,000ms. &nbsp;Incrementing a counter 500 million times takes nearly a <i>thousand </i>times longer when you split it over two threads instead of running it on one with no lock.<br /><br /><b>Concurrency Is Hard and Locks Are Bad</b><br />I&rsquo;m just touching the surface of the problem, and obviously I&rsquo;m using very simple examples. &nbsp;But the point is, if your code is meant to work in a multi-threaded environment, your job as a developer just got a lot more difficult:<br /><ul><li><b>Naive code can have unintended consequences.</b>&nbsp; Case Three above is an example of how things can go horribly wrong if you don&rsquo;t realise you have multiple threads accessing and writing to the same data.</li><li><b>Selfish code is going to slow your system down.</b>&nbsp; Using locks to protect your code from the problem in Case Three can lead to things like deadlock or simply poor performance.</li></ul>This is why many organisations have some sort of concurrency problems in their interview process (certainly for Java interviews). &nbsp;Unfortunately it&rsquo;s very easy to learn how to answer the questions without really understanding the problem, or possible solutions to it.<br /><br /><b>How does the Disruptor address these issues?</b><br />For a start, it doesn&rsquo;t use locks. &nbsp;At all.<br /><br />Instead, where we need to make sure that operations are thread-safe (specifically, updating the next available sequence number in the case of <a href="http://mechanitis.blogspot.com/2011/07/dissecting-disruptor-writing-to-ring.html">multiple producers</a>), we use a <a href="http://en.wikipedia.org/wiki/Compare-and-swap">CAS </a>(Compare And Swap/Set) operation. &nbsp;This is a CPU-level instruction, and in my mind it works a bit like optimistic locking - the CPU goes to update a value, but if the value it&rsquo;s changing it from is not the one it expects, the operation fails because clearly something else got in there first.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-j7wPAJe3YuE/TiFBp0XCn6I/AAAAAAAAIIM/FrketUYEsFY/s1600/ConcurrencyCAS.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="170" src="http://4.bp.blogspot.com/-j7wPAJe3YuE/TiFBp0XCn6I/AAAAAAAAIIM/FrketUYEsFY/s320/ConcurrencyCAS.png" width="320" /></a></div><br />Note this could be two different cores rather than two separate CPUs.<br /><br />CAS operations are much cheaper than locks because they don&rsquo;t involve the operating system, they go straight to the CPU. &nbsp;But they&rsquo;re not cost-free - in the experiment I mentioned above, where a lock-free thread takes 300ms and a thread with a lock takes 10,000ms, a single thread using CAS takes 5,700ms. &nbsp;So it takes less time than using a lock, but more time than a single thread that doesn&rsquo;t worry about contention at all.<br /><br />Back to the Disruptor - I talked about the <a href="http://code.google.com/p/disruptor/source/browse/trunk/code/src/main/com/lmax/disruptor/ClaimStrategy.java">ClaimStrategy</a> when I <a href="http://mechanitis.blogspot.com/2011/07/dissecting-disruptor-writing-to-ring.html">went over the producers</a>. &nbsp;In the code you&rsquo;ll see two strategies, a <code>SingleThreadedStrategy</code> and a <code>MultiThreadedStrategy</code>. &nbsp;You could argue, why not just use the multi-threaded one with only a single producer? &nbsp;Surely it can handle that case? &nbsp;And it can. &nbsp;But the multi-threaded one uses an <a href="http://download.oracle.com/javase/6/docs/api/java/util/concurrent/atomic/AtomicLong.html">AtomicLong</a> (Java&rsquo;s way of providing CAS operations), and the single-threaded one uses a simple long with no locks and no CAS. &nbsp;This means the single-threaded claim strategy is as fast as possible, given that it knows there is only one producer and therefore no contention on the sequence number.<br /><br />I know what you&rsquo;re thinking: turning one single number into an AtomicLong can&rsquo;t possibly have been the only thing that is the secret to the Disruptor&rsquo;s speed. And of course, it&rsquo;s not - otherwise this wouldn&rsquo;t be called &ldquo;Why it&rsquo;s so fast (part <i>one</i>)&ldquo;.<br /><br />But this is an important point - there&rsquo;s only one place in the code where multiple threads might be trying to update the same value. &nbsp;Only one place in the whole of this complicated data-structure-slash-framework. &nbsp;And that&rsquo;s the secret. &nbsp;Remember everything has its own sequence number? &nbsp;If you only have one producer then every sequence number in the system is only ever written to by one thread. That means there is no contention. &nbsp;No need for locks. &nbsp;No need even for CAS. &nbsp;The only sequence number that is ever written to by more than one thread is the one on the <code>ClaimStrategy</code> if there is more than one producer.<br /><br />This is also why each variable in the <code>Entry</code> <a href="http://mechanitis.blogspot.com/2011/07/dissecting-disruptor-wiring-up.html">can only be written to by one consumer</a>. &nbsp;It ensures there&rsquo;s no write contention, therefore no need for locks or CAS.<br /><br /><b>Back to why queues aren&rsquo;t up to the job</b><br />So you start to see why queues, which may implemented as a ring buffer under the covers, still can&rsquo;t match the performance of the Disruptor. &nbsp;The queue, and the&nbsp;<a href="http://en.wikipedia.org/wiki/Circular_buffer">basic ring buffer</a>, only has two pointers - one to the front of the queue and one to the end:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-9yewqxZu37M/TiGdFiaCj6I/AAAAAAAAIIU/bF4fxONwB_8/s1600/QueueMultiple.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="130" src="http://4.bp.blogspot.com/-9yewqxZu37M/TiGdFiaCj6I/AAAAAAAAIIU/bF4fxONwB_8/s400/QueueMultiple.png" width="400" /></a></div><br />If more than one producer wants to place something on the queue, the tail pointer will be a point of contention as more than one thing wants to write to it. &nbsp;If there&rsquo;s more than one consumer, then the head pointer is contended, because this is not just a read operation but a write, as the pointer is updated when the item is consumed from the queue.<br /><br />But wait, I hear you cry foul! &nbsp;Because we already knew this, so queues are usually single producer and single consumer (or at least they are in all the queue comparisons in our performance tests).<br /><br />There&rsquo;s another thing to bear in mind with queues/buffers. &nbsp;The whole point is to provide a place for things to hang out between producers and consumers, to help buffer bursts of messages from one to the other. &nbsp;This means the buffer is usually full (the producer is out-pacing the consumer) or empty (the consumer is out-pacing the producer). &nbsp;It&rsquo;s rare that the producer and consumer will be so evenly-matched that the buffer has items in it but the producers and consumers are keeping pace with each other.<br /><br />So this is how things really look. &nbsp;An empty queue:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-_-lU_Ey7mi4/TiGmx5Ja2jI/AAAAAAAAIIg/gQOZ8f76mLM/s1600/QueueEmpty.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="173" src="http://1.bp.blogspot.com/-_-lU_Ey7mi4/TiGmx5Ja2jI/AAAAAAAAIIg/gQOZ8f76mLM/s400/QueueEmpty.png" width="400" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"></div><br />&hellip;and a full queue:<br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-ARPMAbYKnoE/TiGm4hgxeDI/AAAAAAAAIIk/xMl4ItVob2U/s1600/QueueFull.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="178" src="http://3.bp.blogspot.com/-ARPMAbYKnoE/TiGm4hgxeDI/AAAAAAAAIIk/xMl4ItVob2U/s400/QueueFull.png" width="400" /></a></div><br /><div class="separator" style="clear: both; text-align: center;"></div>The queue needs a size so that it can tell the difference between empty and full. &nbsp;Or, if it doesn&rsquo;t, it might determine that based on the contents of that entry, in which case reading an entry will require a write to erase it or mark it as consumed. <br /><br />Whichever implementation is chosen, there&rsquo;s quite a bit of contention around the tail, head and size variables, or the entry itself if a consume operation also includes a write to remove it.<br /><br />On top of this, these three variables are often in the same <a href="http://en.wikipedia.org/wiki/CPU_cache">cache line</a>, leading to <a href="http://en.wikipedia.org/wiki/False_sharing">false sharing</a>. &nbsp;So, not only do you have to worry about the producer and the consumer both causing a write to the size variable (or the entry), updating the tail pointer could lead to a cache-miss when the head pointer is updated because they&rsquo;re sat in the same place. &nbsp;I&rsquo;m going to duck out of going into that in detail because this post is quite long enough as it is.<br /><br />So this is what we mean when we talk about &ldquo;Teasing Apart the Concerns&rdquo; or a queue&rsquo;s &ldquo;conflated concerns&rdquo;. &nbsp;By giving everything its own sequence number and by allowing only one consumer to write to each variable in the <code>Entry</code>, the only case the Disruptor needs to manage contention is where more than one producer is writing to the ring buffer.<br /><br /><b>In summary</b><br />The Disruptor a number of advantages over traditional approaches:<br /><ol><li>No contention = no locks = it&rsquo;s very fast.</li><li>Having everything track its own sequence number allows multiple producers and multiple consumers to use the same data structure.</li><li>Tracking sequence numbers at each individual place (ring buffer, claim strategy, producers and consumers), plus the <a href="http://code.google.com/p/disruptor/source/browse/trunk/code/src/main/com/lmax/disruptor/RingBuffer.java">magic cache line padding</a>, means no false sharing and no unexpected contention.</li></ol><div>EDIT: Note that version 2.0 of the Disruptor uses different names to the ones in this article. &nbsp;Please see <a href="http://mechanitis.blogspot.com/2011/08/disruptor-20-all-change-please.html">my summary of the changes</a> if you are confused about class names.</div></div></p>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Sat Jul 16, 2011 </h4>
+        <h5 id="wc"> 2200 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+        <li><a href="http://trishagee.github.io/tags/java">java</a></li>
+        
+        <li><a href="http://trishagee.github.io/tags/disruptor">disruptor</a></li>
+        
+        <li><a href="http://trishagee.github.io/tags/lmax">lmax</a></li>
+        
+        <li><a href="http://trishagee.github.io/tags/disruptor-docs">disruptor-docs</a></li>
+        
+        <li><a href="http://trishagee.github.io/tags/concurrency">concurrency</a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;<a class="previous" href="http://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/"><i class="icon-arrow-left"></i> Dissecting the Disruptor: Why it&#39;s so fast (part two) - Magic cache line padding</a><br>
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="http://trishagee.github.io/post/in_answer_to_one_of_the_search_terms_which_led_to_my_blog/">In answer to one of the search terms which led to my blog... <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="2159">
+<meta itemprop="datePublished" content="2011-07-16">
+<meta itemprop="url" content="http://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'http:\/\/trishagee.github.io\/post\/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad\/';
+    var disqus_title = 'Dissecting the Disruptor: Why it\x27s so fast (part one) - Locks Are Bad';
+    var disqus_url = 'http:\/\/trishagee.github.io\/post\/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+
