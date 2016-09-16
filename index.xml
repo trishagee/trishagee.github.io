@@ -1,25 +1,138 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title> on Trisha Gee </title>
-    <link>http://trishagee.github.io/</link>
+      <title>Recent Content on Trisha Gee </title>
+    <link>http://localhost:1313/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 31 Aug 2016 00:00:00 UTC</updated>
+    <updated>Fri, 16 Sep 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>JavaZone 2016</title>
+      <link>http://localhost:1313/post/javazone_2016/</link>
+      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://localhost:1313/post/javazone_2016/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while since I wrote a conference write up.  The short version of &amp;ldquo;why&amp;rdquo; is because I got a bit bored of doing it.  Plus, I
+found I was attending conferences as a speaker &amp;ldquo;on the circuit&amp;rdquo;, and my experience of hanging out, catching up with my friends, chatting
+ to other attendees to see what they&amp;rsquo;re up to and so forth, didn&amp;rsquo;t seem as useful to share with people who might want to find out
+ whether a conference is worth attending from a content or atmosphere point of view.&lt;/p&gt;
+
+&lt;p&gt;But I feel compelled to blog about &lt;a href=&#34;https://2016.javazone.no/&#34;&gt;JavaZone&lt;/a&gt;. I presented there back in &lt;a href=&#34;/post/javazone_oslo&#34;&gt;2013&lt;/a&gt;, but every year since then haven&amp;rsquo;t
+made it for one reason or another (the fact that it&amp;rsquo;s near my birthday in no way impacts my scheduling…).  I made the effort this year, and
+I&amp;rsquo;m so pleased.  Now I&amp;rsquo;ve been to many more conferences, of various sizes, various themes, all around the world, and I can definitely
+state that JavaZone is up there as one of the best conferences around.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The content is great, JavaZone manages to attract a lot of great speakers who can present on topics that range from &lt;a href=&#34;https://vimeo.com/181814364&#34;&gt;deeply
+technical&lt;/a&gt; to &lt;a href=&#34;https://vimeo.com/181925281&#34;&gt;more theoretical&lt;/a&gt; to concepts
+&lt;a href=&#34;https://vimeo.com/182087729&#34;&gt;beyond just code and syntax&lt;/a&gt;.  They also really make an effort to encourage local presenters, and to offer
+the option of lightning talks. I love this from the point of view of encouraging more from the community to get involved and present themselves, but also because you get more novel content - experience reports from developers deep in the trenches; teams who can tell you what they&amp;rsquo;ve found trying to implement things that we hear about at conferences; and other things from the point of view of real developers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.45.36-coffee.jpg&#34; alt=&#34;Food and fantastic coffee&#34; title=&#34;Food and fantastic coffee&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The food is fantastic, and available all day.  I made half of a promise to myself not to rate conferences on the quality of the food
+after I had a glimpse at how insanely hard it is for conference organisers to balance the requirements of keeping ticket costs low,
+using an adequate venue in an accessible location, and providing some sort of catering through the day.  Especially when venues
+themselves often restrict this.  I don&amp;rsquo;t know how JavaZone do it, but now I&amp;rsquo;m aware of all these issues, I&amp;rsquo;m even more impressed at the
+variety and quality of their food.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.46.02-robots.jpg&#34; alt=&#34;Robots&#34; title=&#34;Robots&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The venue.  The location in the centre of Oslo is nice, often conference venues are out of town, making them hard to get to or, if
+you&amp;rsquo;re staying near there, terribly isolated.  One of the reasons to travel to a conference is to see the city, and you get a chance to
+do that at JavaZone. So it&amp;rsquo;s central, easy to get to, with plenty of great hotels nearby.  The venue itself also nicely laid out, with
+presentation rooms circling a central exhibition space.  Which leads me to&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 09.46.18-exhibition.jpg&#34; alt=&#34;Exhibition&#34; title=&#34;The Exhibition&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The exhibition space is brilliant.  Because it&amp;rsquo;s central, most people spend their time between sessions in the exhibition hall.  As
+an exhibitor (JetBrains had a stand there), this is obviously useful to us, but as an attendee it’s nice to know there&amp;rsquo;s a place to go
+to hang out where other people will also be hanging out.  Especially when the vibe of the hall was so much fun, so energetic.  And the
+stands themselves were impressive: some bribing us with excellent coffee; several with lego areas inviting you to sit down and play;
+interactive VR headsets; modern and retro gaming centres (curses, I forgot to take a photo); interactive quizzes and games… As for us,
+we had a sofa, and I loved that, it felt welcoming and relaxed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.45.20-games.jpg&#34; alt=&#34;Games&#34; title=&#34;Exhibition&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Everyone is really friendly.  The crew and JUG people were easy to spot and friendly if you needed help. All attendees and speakers
+were happy to strike up conversations short and long, on a variety of topics. People smiled.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s a big conference, there are a lot of attendees, but it doesn&amp;rsquo;t feel big and daunting.  Instead, you get the benefit of 8 tracks
+of varied content, but don&amp;rsquo;t feel lost in the crowd.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 09.39.20-overflow.jpg&#34; alt=&#34;Overflow Room&#34; title=&#34;Overflow Room&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The overflow room is the best thing I&amp;rsquo;ve ever seen at a conference, and I&amp;rsquo;m seriously wondering if I can set up something similar at
+home (on a much smaller scale!) to let me skim content from multiple talks when I&amp;rsquo;m doing research, or maybe just something to have
+half an eye on while I&amp;rsquo;m entertaining the minion.&lt;/li&gt;
+&lt;li&gt;It was, from my point of view as an attendee and speaker, incredibly well organised.  It felt smooth, and touches like the big
+monitors flashing up relevant information was really nice.  I also loved that the video production quality and presentation of the
+stages and so forth was really professional.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.46.36-stacks-coffee.jpg&#34; alt=&#34;Plenty of caffeine for the developers&#34; title=&#34;Plenty of caffeine for the developers&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I personally think it&amp;rsquo;s brilliant that the &lt;a href=&#34;https://vimeo.com/album/4133413&#34;&gt;videos are online&lt;/a&gt; really soon after you&amp;rsquo;ve presented.
+Sometimes as a speaker you might want a delay on the video - conferences may be more likely to accept your talk if it&amp;rsquo;s not already widely available.  For me though,
+especially when giving a new talk like we did here, it&amp;rsquo;s nice to be able to see the video so soon afterwards, to see how it went and
+learn from it.  For speakers just starting on their presenting career, it&amp;rsquo;s also great - you have a video to use in your &amp;ldquo;portfolio&amp;rdquo; to
+help you get your talk(s) accepted at other conferences.&lt;/li&gt;
+&lt;li&gt;And I can&amp;rsquo;t leave this without mentioning diversity.  Now that I&amp;rsquo;m a world-weary veteran of conferences, I&amp;rsquo;m fairly blind to gender
+balance unless I specifically look, or something out of the ordinary catches my attention.  I don&amp;rsquo;t know what the percentages were, but
+I noticed so many women at the conference, women who were clearly professionals attending the conference and not hired booth babes or
+staff of some other kind.  It was obvious and pleasing.  I&amp;rsquo;m not sure how the other women attendees felt, if it was their first
+conference maybe they still noticed there were fewer women than men, but the difference to me was that whichever direction I looked
+in, there was at least &lt;em&gt;one&lt;/em&gt; woman, usually more. I don&amp;rsquo;t know if there are more women developers in Up North, or if it&amp;rsquo;s just a
+conference that somehow appeals more to women than other conferences. I&amp;rsquo;d be interested to find out if any special measures were taken
+by the conference organisers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now I know a bit more about conferences and how they work behind the scenes, I&amp;rsquo;m astounded at JavaZone.  It feels like  a lot of money has been spent getting it really right, and/or they&amp;rsquo;ve worked really hard to get the absolute most out of what budget they have.&lt;/p&gt;
+
+&lt;p&gt;If I had to really hunt for a downside, it&amp;rsquo;s that all the free alcohol was beer and not wine.  Yep, a complaint about free beer.  But knowing how expensive wine is in Norway, I&amp;rsquo;m not at all surprised.  Plus, moaning about the exact type of free alcohol available seems churlish at best.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 16.28.07-jetbrains.jpg&#34; alt=&#34;The JatBrains stand&#34; title=&#34;The JetBrains stand&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you do get a chance to go to JavaZone as an attendee or speaker, I highly recommend it.  I hope to be going again.&lt;/p&gt;
+
+&lt;p&gt;PS In case you&amp;rsquo;re interested, we were presenting a new talk,
+&lt;a href=&#34;presentation/code_review_matters_and_manners&#34;&gt;Code Review Matters and Manners&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Code Review Matters and Manners</title>
-      <link>http://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
+      <link>http://localhost:1313/presentation/code_review_matters_and_manners/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
+      <guid>http://localhost:1313/presentation/code_review_matters_and_manners/</guid>
       <description>
 
 &lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
 supporting material.&lt;/p&gt;
 
-&lt;h2 id=&#34;abstract:56b95afc30988b1465887042c61e6c3e&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;A code review is basically a technical discussion which should lead to improvements in the code and/or sharing
 knowledge in a team. As with any conversation, it should have substance and form.&lt;/p&gt;
@@ -33,9 +146,15 @@ without offending the authors - after all, this is something that they worked ha
 some observations, thoughts and practical tricks on how to give and receive feedback without turning a code review
 into a battlefield.&lt;/p&gt;
 
-&lt;h2 id=&#34;more-information:56b95afc30988b1465887042c61e6c3e&#34;&gt;More Information&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
 
-&lt;h3 id=&#34;books:56b95afc30988b1465887042c61e6c3e&#34;&gt;Books&lt;/h3&gt;
+&lt;iframe src=&#34;https://player.vimeo.com/video/182087729&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/7wG1iGAnGsQ4F6&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;More Information&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Books&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;What to Look for in a Code Review&lt;/a&gt; - Trisha Gee (free!)&lt;/li&gt;
@@ -43,7 +162,7 @@ into a battlefield.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/gp/product/0132350882/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0132350882&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=86afa947570d6d5c8d03f7c4d495c449&#34;&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/a&gt;&lt;img src=&#34;//ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=am2&amp;o=1&amp;a=0132350882&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt; - Robert C. Martin&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;articles:56b95afc30988b1465887042c61e6c3e&#34;&gt;Articles&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Articles&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;What to look for in a Code Review&lt;/a&gt;, the article that started all of this.&lt;/li&gt;
@@ -60,7 +179,7 @@ into a battlefield.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://spin.atomicobject.com/2016/06/21/pick-battles-software-team/&#34;&gt;How to Pick Your Battles on a Software Team&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;and-of-course:56b95afc30988b1465887042c61e6c3e&#34;&gt;And, of course&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;And, of course&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You can &lt;a href=&#34;https://www.jetbrains.com/upsource/&#34;&gt;download Upsource&lt;/a&gt;, it&amp;rsquo;s free for up to 10 users.&lt;/li&gt;
@@ -70,10 +189,10 @@ into a battlefield.&lt;/p&gt;
     
     <item>
       <title>A Year? Really?</title>
-      <link>http://trishagee.github.io/post/what_a_year.md/</link>
+      <link>http://localhost:1313/post/what_a_year.md/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/what_a_year.md/</guid>
+      <guid>http://localhost:1313/post/what_a_year.md/</guid>
       <description>&lt;p&gt;So I came to the blog to update my &lt;a href=&#34;//presentation/upcoming_events/&#34;&gt;upcoming events&lt;/a&gt; (at least something stays up to date) only to find
 it&amp;rsquo;s been nearly a year since I last blogged!  This is terrible!&lt;/p&gt;
 
@@ -84,13 +203,13 @@ I don&amp;rsquo;t write any more.&lt;/p&gt;
 &lt;p&gt;So I&amp;rsquo;m going to cheat.  Here&amp;rsquo;s the stuff I&amp;rsquo;ve written in the last 12 months.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;A whole series of articles off the back of last year&amp;rsquo;s &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;Java 8 in Anger&lt;/a&gt; talk:
+&lt;li&gt;A whole series of articles off the back of last year&amp;rsquo;s &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;Java 8 in Anger&lt;/a&gt; talk:
 &lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;Five Java 8 Features That You Won’t Be Able to Live Without&lt;/a&gt;,
 &lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8?&lt;/a&gt;, and &lt;a href=&#34;https://community.oracle.com/docs/DOC-920950&#34;&gt;Java SE 8 in Practice&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;A tutorial on &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;TDD in IntelliJ IDEA&lt;/a&gt;. I have video
 clips to turn this into a screencast as well, but that&amp;rsquo;s Yet Another thing I didn&amp;rsquo;t get around to.&lt;/li&gt;
 &lt;li&gt;A tutorial on how IntelliJ IDEA helps you &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;migrate code to Java 8&lt;/a&gt;.  This evolved into the other thing I&amp;rsquo;ve been working on this year, my latest live demo
-presentation, &lt;a href=&#34;http://trishagee.github.io/presentation/refactoring_to_java_8/&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
+presentation, &lt;a href=&#34;/presentation/refactoring_to_java_8/&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;A whole series of blog posts on &lt;a href=&#34;https://blog.jetbrains.com/upsource/category/practices/&#34;&gt;&amp;ldquo;What to look for in a code review&amp;rdquo;&lt;/a&gt;. This was fun and satisfying to write.&lt;/li&gt;
 &lt;li&gt;&amp;hellip;which got &lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;turned into a book&lt;/a&gt;. Yes, I&amp;rsquo;m finally the author of a book!&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/idea/2016/07/java-8-top-tips/&#34;&gt;Java 8 Top Tips&lt;/a&gt;, with a bunch of IntelliJ-specific tips&lt;/li&gt;
@@ -103,22 +222,21 @@ and Team City&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Oh yeah, and I had a baby.  I&amp;rsquo;m contemplating blogging about being a working parent, but I&amp;rsquo;m a bit concerned that Of Course a woman is
 going to blog about Being A Mother, when previously I just blogged about&amp;hellip; well, come to think about it I blogged about all sorts of
-things, including &lt;a href=&#34;http://trishagee.github.io/post/why_the_customer_isnt_always_right/&#34;&gt;haircuts&lt;/a&gt; and
-&lt;a href=&#34;http://trishagee.github.io/post/what_my_hangovers_can_teach_you_about_agile/&#34;&gt;hangovers&lt;/a&gt;, so I guess I could probably get away with it.&lt;/p&gt;
+things, including &lt;a href=&#34;/post/why_the_customer_isnt_always_right/&#34;&gt;haircuts&lt;/a&gt; and
+&lt;a href=&#34;/post/what_my_hangovers_can_teach_you_about_agile/&#34;&gt;hangovers&lt;/a&gt;, so I guess I could probably get away with it.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Upcoming Events</title>
-      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
+      <link>http://localhost:1313/presentation/upcoming_events/</link>
       <pubDate>Tue, 19 Jul 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;http://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+      <guid>http://localhost:1313/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;7-8 Sep 2016&lt;/strong&gt;: &lt;a href=&#34;https://2016.javazone.no/program/code-review-matters-and-manners&#34;&gt;JavaZone, Oslo - Code Review Matters and Manners&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;18-22 Sep 2016&lt;/strong&gt;: &lt;a href=&#34;https://www.oracle.com/javaone/speakers.html#gee&#34;&gt;JavaOne, San Francisco - Refactoring to Java 8, Java Council Live&lt;/a&gt;&lt;br /&gt;
+&lt;p&gt;&lt;strong&gt;18-22 Sep 2016&lt;/strong&gt;: &lt;a href=&#34;https://www.oracle.com/javaone/speakers.html#gee&#34;&gt;JavaOne, San Francisco - Refactoring to Java 8, Java Council Live&lt;/a&gt;&lt;br /&gt;
 &lt;strong&gt;30 Sep - 1 Oct 2016&lt;/strong&gt;: &lt;a href=&#34;http://www.lambda.world/speakers/&#34;&gt;Lambda World, Cadiz - Java 8 in Anger&lt;/a&gt;&lt;br /&gt;
 &lt;strong&gt;7-11 Nov&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.be/&#34;&gt;DevoxxBE, Antwerp - Refactoring to Java 8&lt;/a&gt;&lt;br /&gt;
 &lt;strong&gt;1-9 Dec&lt;/strong&gt;: &lt;a href=&#34;http://melbourne.yowconference.com.au/speakers/&#34;&gt;YOW! Melbourne, Brisbane, Sydney - Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
@@ -127,10 +245,10 @@ this page should list my confirmed upcoming events.&lt;/p&gt;
     
     <item>
       <title>Applying Java 8 Idioms to Existing Code</title>
-      <link>http://trishagee.github.io/presentation/refactoring_to_java_8/</link>
+      <link>http://localhost:1313/presentation/refactoring_to_java_8/</link>
       <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/refactoring_to_java_8/</guid>
+      <guid>http://localhost:1313/presentation/refactoring_to_java_8/</guid>
       <description>
 
 &lt;ul&gt;
@@ -139,7 +257,7 @@ this page should list my confirmed upcoming events.&lt;/p&gt;
 &lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;abstract:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.&lt;/p&gt;
 
@@ -154,7 +272,7 @@ most benefit&lt;/li&gt;
 &lt;li&gt;Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;the-talk:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;The talk&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/xPhKtRN9aOsHZd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
@@ -163,29 +281,29 @@ most benefit&lt;/li&gt;
 
 &lt;p&gt;InfoQ have a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in the talk&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;background:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Background&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;Article: &lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;Five Java 8 Features You Won&amp;rsquo;t Be Able to Live Without&lt;/a&gt;&lt;br /&gt;
-Video and Research: &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;Building a Java 8 Application&lt;/a&gt;&lt;/p&gt;
+Video and Research: &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;Building a Java 8 Application&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;code:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Code&lt;/h2&gt;
 
 &lt;p&gt;The project we&amp;rsquo;re refactoring is &lt;a href=&#34;https://github.com/mongodb/morphia&#34;&gt;Morphia&lt;/a&gt;. You can see the &amp;ldquo;after&amp;rdquo; of the chosen refactorings on the
  &lt;a href=&#34;https://github.com/trishagee/morphia/tree/r2j8&#34;&gt;r2j8&lt;/a&gt; branch.&lt;/p&gt;
 
 &lt;p&gt;The performance tests that were written and run specifically for this talk are in the &lt;a href=&#34;https://github.com/trishagee/j8-morphia-perf-tests&#34;&gt;j8-morphia-perf-tests repository&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;performance:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Performance&lt;/h2&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;Performance&lt;/h2&gt;
 
-&lt;h3 id=&#34;lambda-expressions:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Lambda Expressions&lt;/h3&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;Lambda Expressions&lt;/h3&gt;
 
 &lt;p&gt;Video: &lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;Lambda Performance&lt;/a&gt; and &lt;a href=&#34;http://www.oracle
 .com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;talk slides&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;Java 8 Lambdas - A Peek Under the Hood&lt;/a&gt;&lt;br /&gt;
 Video: &lt;a href=&#34;https://youtu.be/MLksirK9nnE&#34;&gt;Lambdas in Java: A Peek under the Hood - Brian Goetz&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;streams:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Streams&lt;/h4&gt;
+&lt;h4 id=&#34;toc_6&#34;&gt;Streams&lt;/h4&gt;
 
 &lt;p&gt;Video: &lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;Let’s Get to the Rapids: Java 8 Stream Performance&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://jaxenter
@@ -245,11 +363,11 @@ don&amp;rsquo;t realise you&amp;rsquo;re boxing)&lt;/p&gt;
 article&lt;br /&gt;
 Article: &lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;Follow up on Stream Performance&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;date-and-time:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Date and Time&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Date and Time&lt;/h3&gt;
 
 &lt;p&gt;Article: &lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;benchmarking:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Benchmarking&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Benchmarking&lt;/h3&gt;
 
 &lt;p&gt;I used a bunch of techniques to produce the benchmarks on the talk.  I&amp;rsquo;d like to summarise them more thoroughly when I get a chance, but
 for now here&amp;rsquo;s my background reading:&lt;/p&gt;
@@ -260,7 +378,7 @@ for now here&amp;rsquo;s my background reading:&lt;/p&gt;
 Tool: &lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin&#34;&gt;IntelliJ JMH Plugin&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;http://java-performance.info/jmh/&#34;&gt;Introduction to JMH&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;best-practice:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;&amp;ldquo;Best Practice&amp;rdquo;&lt;/h2&gt;
+&lt;h2 id=&#34;toc_9&#34;&gt;&amp;ldquo;Best Practice&amp;rdquo;&lt;/h2&gt;
 
 &lt;p&gt;I dislike the term &amp;ldquo;Best Practice&amp;rdquo; as it implies a &amp;ldquo;one size fits all&amp;rdquo; approach, and I believe that our job is to
 make difficult decisions based on various pros and cons and differing situations.  However, here I will collect
@@ -278,22 +396,22 @@ Article: &lt;a href=&#34;http://zeroturnaround.com/rebellabs/java-8-best-practic
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
-      <link>http://trishagee.github.io/post/java_8_mooc_session3/</link>
+      <link>http://localhost:1313/post/java_8_mooc_session3/</link>
       <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_8_mooc_session3/</guid>
+      <guid>http://localhost:1313/post/java_8_mooc_session3/</guid>
       <description>&lt;p&gt;Last night was the final get-together to discuss the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
 we had attendees from earlier sessions plus new people too.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;The aim of this session was to talk about Lesson 3, but also to wrap up the course as a whole: to talk about what we
 liked and what we would have improved (about both the course itself and our user group events).&lt;/p&gt;
 
-&lt;p&gt;As in the previous &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
+&lt;p&gt;As in the previous &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
 discussion areas:&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findAny--&#34;&gt;findAny()&lt;/a&gt;
@@ -357,7 +475,7 @@ the built in collectors like:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;a super-useful way to create Comma Separated Values (CSVs) that I use in my
-&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Where things get a bit murky for me is where we start chaining up collectors:&lt;/p&gt;
 
@@ -400,7 +518,7 @@ the impact of your choices on the performance of the stream.&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;For more info&lt;/strong&gt;&lt;br /&gt;
 I&amp;rsquo;m going to add a shameless plug to a friend&amp;rsquo;s book here. I&amp;rsquo;ve been reading a lot about Java 8 for this course, for
-my &lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to speed. My favourite book for getting to
+my &lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to speed. My favourite book for getting to
 grips with lambdas and streams
 is &lt;a href=&#34;http://www.amazon.com/gp/product/B00J3B3J3C/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00J3B3J3C&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=IX6U2YT4FADY4JY6&#34;&gt;Java 8 Lambdas: Pragmatic Functional Programming&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=B00J3B3J3C&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 by &lt;a href=&#34;https://twitter.com/RichardWarburto&#34;&gt;Richard Warburton&lt;/a&gt;. This book also contains more info about collectors too,
@@ -418,11 +536,11 @@ And if you can find (or run) a local meetup to discuss it, it makes the experien
     
     <item>
       <title>Java 8 MOOC - Session 2 Summary</title>
-      <link>http://trishagee.github.io/post/java_8_mooc_session2/</link>
+      <link>http://localhost:1313/post/java_8_mooc_session2/</link>
       <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_8_mooc_session2/</guid>
-      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;http://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
+      <guid>http://localhost:1313/post/java_8_mooc_session2/</guid>
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
@@ -607,10 +725,10 @@ Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/22
     
     <item>
       <title>What to look for in a Code Review</title>
-      <link>http://trishagee.github.io/post/code_reviews_1/</link>
+      <link>http://localhost:1313/post/code_reviews_1/</link>
       <pubDate>Mon, 27 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/code_reviews_1/</guid>
+      <guid>http://localhost:1313/post/code_reviews_1/</guid>
       <description>&lt;p&gt;I wrote a post for the JetBrains Upsource blog about some of the &lt;a href=&#34;http://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;things you should be looking for when you do code
 reviews&lt;/a&gt; (and some of the things
 you should not be looking at).&lt;/p&gt;
@@ -621,10 +739,10 @@ you should not be looking at).&lt;/p&gt;
     
     <item>
       <title>The Extraordinary Team Of Developers</title>
-      <link>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</link>
+      <link>http://localhost:1313/presentation/the_extraordinary_team_of_developers/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</guid>
+      <guid>http://localhost:1313/presentation/the_extraordinary_team_of_developers/</guid>
       <description>
 
 &lt;p&gt;Daniel Bryant and I did a keynote at Devoxx UK about how individuals can add something to a team to make the team
@@ -649,7 +767,7 @@ src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;abstract:55bdc67688424da8fd656071ea3cbd85&#34;&gt;Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Rock stars are dead. Ninjas are banished. There are simply too many trashed hotel rooms, dead bodies and failed
 projects. The age of the individual superhero coder is over.&lt;/em&gt;&lt;/p&gt;
@@ -672,10 +790,10 @@ an individual, add to the mix?&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>Java 8 MOOC - Session 1 Summary</title>
-      <link>http://trishagee.github.io/post/java_8_mooc_session1/</link>
+      <link>http://localhost:1313/post/java_8_mooc_session1/</link>
       <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_8_mooc_session1/</guid>
+      <guid>http://localhost:1313/post/java_8_mooc_session1/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
@@ -726,7 +844,7 @@ parallel.&lt;/li&gt;
 &lt;p&gt;Of course, I also snuck in some demos of &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&amp;rsquo;s&lt;/a&gt; awesomeness, including
 its magical support for creating lambdas and turning things into (and from) method references.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/java8mooc/ReplaceWithMethodReferenceMac.gif&#34; alt=&#34;Converting code to Java 8&#34; title=&#34;Converting code to Java 8&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/ReplaceWithMethodReferenceMac.gif&#34; alt=&#34;Converting code to Java 8&#34; title=&#34;Converting code to Java 8&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;It was a great, collaborative session, with most people getting a chance to demonstrate their code (if they wanted
@@ -737,10 +855,10 @@ more clarity on.&lt;/p&gt;
     
     <item>
       <title>Interviewed by InfoQ</title>
-      <link>http://trishagee.github.io/post/interviewed_for_infoq/</link>
+      <link>http://localhost:1313/post/interviewed_for_infoq/</link>
       <pubDate>Sat, 18 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/interviewed_for_infoq/</guid>
+      <guid>http://localhost:1313/post/interviewed_for_infoq/</guid>
       <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
 interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
 but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
@@ -752,10 +870,10 @@ of the JCP, and the future of Java.&lt;/p&gt;
     
     <item>
       <title>My Path To Evangelism</title>
-      <link>http://trishagee.github.io/post/becoming_an_evangelist/</link>
+      <link>http://localhost:1313/post/becoming_an_evangelist/</link>
       <pubDate>Thu, 02 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/becoming_an_evangelist/</guid>
+      <guid>http://localhost:1313/post/becoming_an_evangelist/</guid>
       <description>&lt;p&gt;So, I get asked a lot about how I got into technical advocacy /
 evangelism&lt;sup&gt;1&lt;/sup&gt;,
 so it seems like the most cost-effective way to answer this question is to
@@ -853,7 +971,7 @@ I told LMAX that was why I was leaving, and off I went.&lt;/p&gt;
 unassigned to a project, I invested that time in porting the blog to a
 more sensible platform, and trying to write a blog a day. Again, I picked
 topics I could comfortably talk about - I spoke about my experiences as a
-&lt;a href=&#34;http://trishagee.github.io/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
+&lt;a href=&#34;/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
 time&lt;/a&gt; (sometimes people will be arsey
 with beginners, but in reality many real human beings can&amp;rsquo;t tell you you&amp;rsquo;re
 wrong when you&amp;rsquo;re just talking about your own experiences), and despite my
@@ -958,7 +1076,7 @@ answering questions for the last 6 months.&lt;/p&gt;
 &lt;p&gt;It really was as terrifying as I thought.  But.  It went well. I answered
 difficult questions. We got great feedback.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://trishagee.github.io/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
+&lt;p&gt;&lt;a href=&#34;/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
 was an important milestone in my evangelism career.  Not only
 did I get to put this presentation on my CV, I got to meet a lot of people in
 this network: Martin introduced me to a lot of high performance specialists;
@@ -971,9 +1089,9 @@ and they introduced me to
 to be an important step in turning an idea I had for a panel into a Devoxx
 reality.&lt;/p&gt;
 
-&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;http://trishagee.github.io/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
+&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
 with Mike&lt;/a&gt;, and at
-&lt;a href=&#34;http://trishagee.github.io/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
+&lt;a href=&#34;/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
 largely thanks to the contacts I
 had made and the prestige of having a JavaOne talk under my belt.  So I went
 from basically zero at the start of that year (my blog had been dormant for
@@ -1098,15 +1216,15 @@ could get going straight away without any ramp up&lt;/p&gt;
     
     <item>
       <title>Level Up Your Automated Tests</title>
-      <link>http://trishagee.github.io/presentation/level_up_your_automated_tests/</link>
+      <link>http://localhost:1313/presentation/level_up_your_automated_tests/</link>
       <pubDate>Fri, 26 Jun 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/level_up_your_automated_tests/</guid>
+      <guid>http://localhost:1313/presentation/level_up_your_automated_tests/</guid>
       <description>
 
 &lt;p&gt;This presentation is about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
 talk covers the same case study as
-&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.&lt;/p&gt;
 
@@ -1114,11 +1232,11 @@ technical look at the merits of one language over another.&lt;/p&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/zUhtb6nqz7IgdO&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
-&lt;h3 id=&#34;other-videos:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Other Videos&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Other Videos&lt;/h3&gt;
 
 &lt;p&gt;First version: &lt;a href=&#34;https://www.youtube.com/watch?v=D-xra_X9Nwg&#34;&gt;GOTO Chicago&lt;/a&gt; ( &lt;a href=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34;&gt;slides&lt;/a&gt;)&lt;/p&gt;
 
-&lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Questions&lt;/h2&gt;
 
 &lt;p&gt;I sadly do not have a lot of time for questions during the presentation, but
 thanks to the wonders of modern technology, I have a list of unanswered
@@ -1274,7 +1392,7 @@ hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more o
 
 &lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
 I cover this in
-&lt;a href=&#34;http://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
 short version is, I did a week-long spike to investigate whether Spock would
 make testing easier for us, showed the pros and cons to the whole team, and
 then led by example writing tests that (I thought) were more readable than
@@ -1441,7 +1559,7 @@ know is still used at LMAX.  Dave Farley talks about it in some of his
 &lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;resources:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;My talk that specifically looks at the
@@ -1473,7 +1591,7 @@ testing&lt;/a&gt;.&lt;/li&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;abstract:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
 and c) write readable tests?&lt;/p&gt;
@@ -1507,10 +1625,10 @@ of the developers.&lt;/i&gt;&lt;/p&gt;
     
     <item>
       <title>Java at 20</title>
-      <link>http://trishagee.github.io/post/java_at_20/</link>
+      <link>http://localhost:1313/post/java_at_20/</link>
       <pubDate>Fri, 22 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/java_at_20/</guid>
+      <guid>http://localhost:1313/post/java_at_20/</guid>
       <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
  No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;
@@ -1519,11 +1637,11 @@ of the developers.&lt;/i&gt;&lt;/p&gt;
     
     <item>
       <title>Android Xtended</title>
-      <link>http://trishagee.github.io/post/android_xtended/</link>
+      <link>http://localhost:1313/post/android_xtended/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/android_xtended/</guid>
-      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
+      <guid>http://localhost:1313/post/android_xtended/</guid>
+      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
 calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;You may have noticed that the more I go to conferences, the less I write about them.  I could claim lack of time, but
@@ -1531,12 +1649,12 @@ the fact is that all my write-ups will be something along the lines of &amp;ldqu
 think, met interesting people, gave a talk or two that seemed to go well&amp;rdquo;. Not sure if people get bored of reading
 that, but I get bored of writing it.&lt;/p&gt;
 
-&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
+&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;That&amp;rsquo;s not to say I&amp;rsquo;m bored of conferences. On the contrary - since I work from home, travelling to new places and
 meeting Real Human Beings keeps me sane. Plus conferences are fun.&lt;/p&gt;
 
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
 setup&#34; title=&#34;The setup&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;But I went to a conference on Saturday that makes me feel compelled to write something, and not just because it was
@@ -1547,27 +1665,27 @@ Android events every other month, they decided they had so many interesting spea
 in Sevilla that they wanted to run a whole day, single track conference, on behalf of &lt;a href=&#34;https://plus.google.com/communities/114997118727600981533&#34;&gt;GDG Sevilla&lt;/a&gt;.
 &lt;a href=&#34;http://www.androidxtended.com/&#34;&gt;Android Xtended&lt;/a&gt; was born.&lt;/p&gt;
 
-&lt;div&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
+&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
  
 
 &lt;p&gt;As a Java &amp;ldquo;Technical Advocate&amp;rdquo;, I suppose I should keep an eye on what&amp;rsquo;s going on in the Android space, it&amp;rsquo;s quite a
-huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
+huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
 of official capacity (I wasn&amp;rsquo;t speaking, manning a booth, organising or sponsoring), so I could just enjoy it.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Firstly, they roped me into doing registrations. Me! I was concerned my Spanish wasn&amp;rsquo;t up for it, but apparently I only
 needed two words: &amp;ldquo;nombre&amp;rdquo; and &amp;ldquo;talla&amp;rdquo; (for the t-shirt). Oh, and &amp;ldquo;treinta y uno b&amp;rdquo; - there was such demand for the
 conference the initial venue wasn&amp;rsquo;t big enough, so it was being hosted at two sites on the same road. Not
 surprisingly, some turned up to the wrong one.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Unlike a large number of our &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;/&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; events, all the talks were in Spanish. So feel
 free to ignore my analysis if you like - my Spanish comprehension is pretty good, but sometimes I don&amp;rsquo;t realise when
 I didn&amp;rsquo;t understand something and just make up my own story.&lt;/p&gt;
 
-&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
+&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
 alt=&#34;@flipper83&#34; title=&#34;@flipper83&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;A lot of what I&amp;rsquo;ve seen so far in the Android space is Getting Started type material - a lot of tutorials and
@@ -1577,7 +1695,7 @@ interest me as an experienced Java person - easy automation of testing, good des
  need to re-iterate it in the Android space. Or it may be that I don&amp;rsquo;t see the entry-level Java stuff any more,
  because I don&amp;rsquo;t need it, and I seek out the topics that interest me.&lt;/p&gt;
 
-&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
+&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
  alt=&#34;@JMPergar&#34; title=&#34;@JMPergar&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Or it may be that as Android is one of those
@@ -1586,7 +1704,7 @@ interest me as an experienced Java person - easy automation of testing, good des
  reason, I had been starting to feel like the Android ecosystem was missing people taking developers beyond that
  initial step of getting something to work and up to the level of creating maintainable code.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;Android Xtended put my mind at rest. Here was a range of talks that led attendees through the things that will make
 them more effective developers - tools and libraries to use; testing approaches; integration with persistence; clean
@@ -1595,12 +1713,12 @@ of JetBrains, I was obviously very happy to see both
 &lt;a href=&#34;http://developer.android.com/tools/studio/index.html&#34;&gt;Android Studio&lt;/a&gt; and
 &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; mentioned and used throughout as well.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;As well as fantastic speakers (they knew their stuff, were clearly practitioners, and all had great individual
 presentation styles), there were three mob-programming sessions.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;This was an ambitious attempt to not just preach to
 a passive audience, but to involve them in creating real, working code to teach fundamental practices - dependency
@@ -1610,27 +1728,27 @@ of not just how to use the technologies, but what they were for. I also saw a lo
 realise the power of refactoring using an IDE - I firmly believe the best way to teach the power of a tool is by
 pair programming or, at least, using the tool in real use cases in front of people.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;The mob programming was kinda
 like a half day tutorial squished into an hour. I&amp;rsquo;d be interested to hear how the attendees found it. For me, since
 this was a full day conference that cost &amp;euro;10, I thought getting three short tutorials as well as five excellent
 talks was &lt;em&gt;very&lt;/em&gt; good value for money.&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
   
 
-&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
 alt=&#34;Interesting...&#34; title=&#34;Interesting...&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;I&amp;rsquo;d be remiss in talking about the conference if I didn&amp;rsquo;t mention the venue.  We were at
 &lt;a href=&#34;http://espaciores.org/&#34;&gt;Espacio RES&lt;/a&gt;, which was pretty easy to get to, and a really nice, airy, comfortable
-space&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+space&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
 And they let us rearrange their whole place just for us. The only downside is that it doesn&amp;rsquo;t hold more people, which
 is a shame, and the reason we had to host on two sites (I can&amp;rsquo;t comment on the other site as I stayed
 at RES the whole day, but we&amp;rsquo;re very grateful to &lt;a href=&#34;https://bitnami.com/&#34;&gt;Bitnami&lt;/a&gt; for lending us their offices as well).&lt;/p&gt;
 
-&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
 
 &lt;p&gt;So, what did I learn?&lt;/p&gt;
 
@@ -1643,11 +1761,11 @@ talent being showcased, it gives developers here good role models and shows that
 Spain.&lt;/li&gt;
 &lt;li&gt;Sevilla has a very healthy tech scene with people more than happy to give up a Saturday to learn new things. In
 fact, for some set of people, they prefer Saturdays to weekday
-evenings&lt;sup&gt;&lt;a href=&#34;http://trishagee.github.io/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
+evenings&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
 future&amp;hellip;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
  Saturdays?&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;p&gt;Android Xtended was a fantastic event, with great speakers and engaged attendees.  I loved how social
@@ -1656,7 +1774,7 @@ future&amp;hellip;&lt;/li&gt;
  arranging it, you would never believe from how smoothly it went that this two-venue event was organised by just two
  guys. Well done &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt;!&lt;/p&gt;
 
-&lt;p&gt;&lt;div&gt;&lt;img src=&#34;http://trishagee.github.io/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -1670,36 +1788,6 @@ future&amp;hellip;&lt;/li&gt;
  do &lt;em&gt;not&lt;/em&gt; host events on a Saturday, except for maybe the annual LJC Open Conference, because many people have a
  long commute into the city. Doing that 5 days a week is plenty, most people don&amp;rsquo;t want to do it on a Saturday as
  well. But they will give up a couple of hours in the evening, as it costs far less in time overall.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Groovy vs Java</title>
-      <link>http://trishagee.github.io/presentation/groovy_vs_java/</link>
-      <pubDate>Mon, 06 Apr 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/groovy_vs_java/</guid>
-      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VK2sMI5B1pY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/46936375&#34; width=&#34;476&#34; height=&#34;400&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34;&gt;&lt;/iframe&gt;
-  
-
-&lt;ul&gt;
-&lt;li&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;Mocking in Spock&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/&#34;&gt;Stubbing in Spock&lt;/a&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Blog: &lt;a href=&#34;http://trishagee.github.io/post/spock_data_driven_testing/&#34;&gt;Data Driven Testing in Spock&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://spockframework.github.io/spock/docs/1.0/index.html&#34;&gt;Spock Reference Documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Book: &lt;a href=&#34;https://leanpub.com/wewut&#34;&gt;Working Effectively With Unit Tests - Jay Fields&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Video: &lt;a href=&#34;https://vimeo.com/80222114&#34;&gt;Making Java Tests Groovy with Spock - Ken Sipe&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Code: &lt;a href=&#34;https://github.com/mongodb/mongo-java-driver&#34;&gt;MongoDB Java Driver&lt;/a&gt; All examples from the talk come from the MongoDB Java driver. Some tests have been improved or dropped over time.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
