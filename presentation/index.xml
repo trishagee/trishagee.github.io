@@ -6,7 +6,23 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 31 Aug 2016 00:00:00 UTC</updated>
+    <updated>Fri, 16 Sep 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;18-22 Sep 2016&lt;/strong&gt;: &lt;a href=&#34;https://www.oracle.com/javaone/speakers.html#gee&#34;&gt;JavaOne, San Francisco - Refactoring to Java 8, Java Council Live&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;30 Sep - 1 Oct 2016&lt;/strong&gt;: &lt;a href=&#34;http://www.lambda.world/speakers/&#34;&gt;Lambda World, Cadiz - Java 8 in Anger&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;7-11 Nov&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.be/&#34;&gt;DevoxxBE, Antwerp - Refactoring to Java 8&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;1-9 Dec&lt;/strong&gt;: &lt;a href=&#34;http://melbourne.yowconference.com.au/speakers/&#34;&gt;YOW! Melbourne, Brisbane, Sydney - Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Code Review Matters and Manners</title>
@@ -75,22 +91,6 @@ into a battlefield.&lt;/p&gt;
     </item>
     
     <item>
-      <title>Upcoming Events</title>
-      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Tue, 19 Jul 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;18-22 Sep 2016&lt;/strong&gt;: &lt;a href=&#34;https://www.oracle.com/javaone/speakers.html#gee&#34;&gt;JavaOne, San Francisco - Refactoring to Java 8, Java Council Live&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;30 Sep - 1 Oct 2016&lt;/strong&gt;: &lt;a href=&#34;http://www.lambda.world/speakers/&#34;&gt;Lambda World, Cadiz - Java 8 in Anger&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;7-11 Nov&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.be/&#34;&gt;DevoxxBE, Antwerp - Refactoring to Java 8&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;1-9 Dec&lt;/strong&gt;: &lt;a href=&#34;http://melbourne.yowconference.com.au/speakers/&#34;&gt;YOW! Melbourne, Brisbane, Sydney - Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Applying Java 8 Idioms to Existing Code</title>
       <link>http://trishagee.github.io/presentation/refactoring_to_java_8/</link>
       <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
@@ -121,12 +121,20 @@ most benefit&lt;/li&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
 
+&lt;p&gt;Most recent version, containing performance analysis, is on the
+&lt;a href=&#34;https://www.infoq.com/presentations/java8-lambda-streams&#34;&gt;InfoQ website&lt;/a&gt;, and InfoQ also has a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in
+the talk&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first appearance was at &lt;a href=&#34;https://www.youtube.com/watch?v=dlzMV83RTtw&#34;&gt;DevoxxUK&lt;/a&gt;.&lt;/p&gt;
+
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/xPhKtRN9aOsHZd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;p&gt;You can purchase a more in-depth tutorial on
+&lt;a href=&#34;http://www.informit.com/store/refactoring-to-modern-java-livelessons-video-training-9780134653594&#34;&gt;informIT&lt;/a&gt;, and is also available via
+&lt;a href=&#34;https://www.safaribooksonline.com/library/view/refactoring-to-modern/9780134653617/&#34;&gt;Safari Books Online&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The IntelliJ-specific features of some of the refactoring shown are covered in my
 &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt; tutorial.&lt;/p&gt;
-
-&lt;p&gt;InfoQ have a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in the talk&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_2&#34;&gt;Background&lt;/h2&gt;
 

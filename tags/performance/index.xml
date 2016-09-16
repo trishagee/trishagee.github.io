@@ -39,12 +39,20 @@ most benefit&lt;/li&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
 
+&lt;p&gt;Most recent version, containing performance analysis, is on the
+&lt;a href=&#34;https://www.infoq.com/presentations/java8-lambda-streams&#34;&gt;InfoQ website&lt;/a&gt;, and InfoQ also has a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in
+the talk&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The first appearance was at &lt;a href=&#34;https://www.youtube.com/watch?v=dlzMV83RTtw&#34;&gt;DevoxxUK&lt;/a&gt;.&lt;/p&gt;
+
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/xPhKtRN9aOsHZd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;p&gt;You can purchase a more in-depth tutorial on
+&lt;a href=&#34;http://www.informit.com/store/refactoring-to-modern-java-livelessons-video-training-9780134653594&#34;&gt;informIT&lt;/a&gt;, and is also available via
+&lt;a href=&#34;https://www.safaribooksonline.com/library/view/refactoring-to-modern/9780134653617/&#34;&gt;Safari Books Online&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;The IntelliJ-specific features of some of the refactoring shown are covered in my
 &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt; tutorial.&lt;/p&gt;
-
-&lt;p&gt;InfoQ have a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in the talk&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_2&#34;&gt;Background&lt;/h2&gt;
 
