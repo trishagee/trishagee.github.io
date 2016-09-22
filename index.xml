@@ -22,7 +22,7 @@
 
 &lt;p&gt;At JavaOne this year we&amp;rsquo;re learning all about what&amp;rsquo;s coming in Java 9, and it&amp;rsquo;s so much more than just Jigsaw.  But what we&amp;rsquo;re really wondering is, will it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
 
-&lt;p&gt;In this talk, Trisha will take a look at the features coming in Java 9, focussing on those that may be most useful to us in the day job.  She will demonstrate using some of these features in IntelliJ IDEA.  And finally, she&amp;rsquo;ll share the roadmap for Java 9 support in IntelliJ IDEA.&lt;/p&gt;
+&lt;p&gt;In this talk, Trisha will take a look at the features coming in Java 9, focusing on those that may be most useful to us in the day job.  She will demonstrate using some of these features in IntelliJ IDEA.  And finally, she&amp;rsquo;ll share the roadmap for Java 9 support in IntelliJ IDEA.&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
 
@@ -42,27 +42,11 @@ Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
 also available&lt;/a&gt;).&lt;/p&gt;
 
-&lt;p&gt;Aurelio Garcia Ribeyro has a great talk summarising all the features, which I can only find
-&lt;a href=&#34;http://onetime.dev.beachfrontbuilder.com/view/943985?type=channel&amp;amp;id=169&amp;amp;page=1&#34;&gt;in Spanish&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Aurelio Garcia Ribeyro has a talk summarising all the features in Java 9, I can only find a summary version
+&lt;a href=&#34;https://youtu.be/Ws2uT2Av42I&#34;&gt;in Spanish&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;The OpenJDK wiki provides &lt;a href=&#34;https://wiki.openjdk.java.net/display/Adoption/JDK+9+Outreach&#34;&gt;guidance on running your code with Java 9&lt;/a&gt;, and a
 &lt;a href=&#34;https://wiki.openjdk.java.net/display/quality/Quality+Outreach&#34;&gt;list of libraries and frameworks who are currently testing against Java 9&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;18-22 Sep 2016&lt;/strong&gt;: &lt;a href=&#34;https://www.oracle.com/javaone/speakers.html#gee&#34;&gt;JavaOne, San Francisco - Refactoring to Java 8, Java Council Live&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;30 Sep - 1 Oct 2016&lt;/strong&gt;: &lt;a href=&#34;http://www.lambda.world/speakers/&#34;&gt;Lambda World, Cadiz - Java 8 in Anger&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;7-11 Nov&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.be/&#34;&gt;DevoxxBE, Antwerp - Refactoring to Java 8&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;1-9 Dec&lt;/strong&gt;: &lt;a href=&#34;http://melbourne.yowconference.com.au/speakers/&#34;&gt;YOW! Melbourne, Brisbane, Sydney - Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -176,6 +160,22 @@ by the conference organisers.&lt;/li&gt;
 
 &lt;p&gt;PS In case you&amp;rsquo;re interested, we were presenting a new talk,
 &lt;a href=&#34;presentation/code_review_matters_and_manners&#34;&gt;Code Review Matters and Manners&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>http://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;18-22 Sep 2016&lt;/strong&gt;: &lt;a href=&#34;https://www.oracle.com/javaone/speakers.html#gee&#34;&gt;JavaOne, San Francisco - Refactoring to Java 8, Java Council Live&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;30 Sep - 1 Oct 2016&lt;/strong&gt;: &lt;a href=&#34;http://www.lambda.world/speakers/&#34;&gt;Lambda World, Cadiz - Java 8 in Anger&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;7-11 Nov&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.be/&#34;&gt;DevoxxBE, Antwerp - Refactoring to Java 8&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;1-9 Dec&lt;/strong&gt;: &lt;a href=&#34;http://melbourne.yowconference.com.au/speakers/&#34;&gt;YOW! Melbourne, Brisbane, Sydney - Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
