@@ -10,31 +10,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="description" content="">
-<meta name="keywords" content="in progress, qcon london, ">
+<meta name="keywords" content="java, java9, intellij, ">
 
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="QCon: Initial thoughts : trishagee.github.io"/>
+<meta property="og:title" content="Anticipating Java 9 - Functionality and Tooling : trishagee.github.io"/>
 <meta property="og:site_name" content="Trisha Gee"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="http://trishagee.github.io/post/qcon_initial_thoughts/">
+<meta property="og:url" content="http://trishagee.github.io/presentation/java_9_are_we_there_yet/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2007-03-19"/>
-<meta property="article:modified_time" content="2007-03-19"/>
+<meta property="article:published_time" content="2016-09-22"/>
+<meta property="article:modified_time" content="2016-09-22"/>
 
-<meta property="article:tag" content="in progress">
-<meta property="article:tag" content="qcon london">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="java9">
+<meta property="article:tag" content="intellij">
 
 
 
 <meta name="twitter:card" content="summary">
 
 <meta name="twitter:site" content="@trisha_gee">
-<meta name="twitter:title" content="QCon: Initial thoughts : trishagee.github.io">
+<meta name="twitter:title" content="Anticipating Java 9 - Functionality and Tooling : trishagee.github.io">
 <meta name="twitter:creator" content="@trishagee">
 <meta name="twitter:description" content="">
 <meta name="twitter:image:src" content="">
@@ -43,8 +44,8 @@
 
 
     <base href="http://trishagee.github.io">
-    <title> QCon: Initial thoughts - trishagee.github.io </title>
-    <link rel="canonical" href="http://trishagee.github.io/post/qcon_initial_thoughts/">
+    <title> Anticipating Java 9 - Functionality and Tooling - trishagee.github.io </title>
+    <link rel="canonical" href="http://trishagee.github.io/presentation/java_9_are_we_there_yet/">
     
 
     <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -95,17 +96,17 @@
 
         <div class="dropdown share">
             <ul class="social">
-                <li><a href="https://twitter.com/intent/tweet?status=QCon%3a%20Initial%20thoughts-http%3a%2f%2ftrishagee.github.io%2fpost%2fqcon_initial_thoughts%2f" target="_blank"
+                <li><a href="https://twitter.com/intent/tweet?status=Anticipating%20Java%209%20-%20Functionality%20and%20Tooling-http%3a%2f%2ftrishagee.github.io%2fpresentation%2fjava_9_are_we_there_yet%2f" target="_blank"
                        title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
-                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fpost%2fqcon_initial_thoughts%2f" target="_blank" title="Join me on Facebook"
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2fpresentation%2fjava_9_are_we_there_yet%2f" target="_blank" title="Join me on Facebook"
                        class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
-                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fqcon_initial_thoughts%2f" target="_blank" title="Google+" class="googleplus"><span
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2fjava_9_are_we_there_yet%2f" target="_blank" title="Google+" class="googleplus"><span
                         class="icon icon-google-plus"></span>Google+</a></li>
-                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fpost%2fqcon_initial_thoughts%2f&title=QCon%3a%20Initial%20thoughts&source=spf13"
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2fjava_9_are_we_there_yet%2f&title=Anticipating%20Java%209%20-%20Functionality%20and%20Tooling&source=spf13"
                        target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
-                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fqcon_initial_thoughts%2f" target="_blank" title="Reddit" class="reddit"><span
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2fjava_9_are_we_there_yet%2f" target="_blank" title="Reddit" class="reddit"><span
                         class="icon icon-reddit"></span>Reddit</a></li>
-                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpost%2fqcon_initial_thoughts%2f" target="_blank" title="StumbleUpon"
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2fpresentation%2fjava_9_are_we_there_yet%2f" target="_blank" title="StumbleUpon"
                        class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
             </ul>
             <span class="subcount">sharing is caring</span>
@@ -141,10 +142,42 @@
 
 
 <section id="main">
-  <h1 itemprop="name" id="title">QCon: Initial thoughts</h1>
+  <h1 itemprop="name" id="title">Anticipating Java 9 - Functionality and Tooling</h1>
   <div>
         <article itemprop="articleBody" id="content">
-           <p class="MsoNormal">Things I took out of QCon:<o:p></o:p></p>  <ul type="disc"><li style="" class="MsoNormal">I want to play with <st1:city w:st="on"><st1:place w:st="on">Ajax</st1:place></st1:city>.&nbsp; Maybe      I've "grown out" of front end development but that doesn't      prevent it from being (potentially) extremely cool<o:p></o:p></li><li style="" class="MsoNormal"><a href="http://opensource.thoughtworks.com/projects/selenium.html">Selenium</a>      looks like a good place to start for automated website testing<o:p></o:p></li><li style="" class="MsoNormal">It can take up to 7 years      to move away from a legacy architecture.&nbsp; Depressing, but at least it      shows it can be done and it's worth the effort<o:p></o:p></li><li style="" class="MsoNormal">I'm going to become a      <a href="http://www.scrumalliance.org/CSM_description/">certified Scrum <s>Master</s> Mistress</a>.&nbsp; I believe <a href="http://en.wikipedia.org/wiki/Agile_software_development">Agile      </a>in some form or other is the most efficient way to run software      development, but there are a <st1:place w:st="on">LOT</st1:place> of      lessons to learn in order to get it right.&nbsp; And number one lesson is      you need the right team.<o:p></o:p></li></ul>  <p class="MsoNormal"><o:p></o:p></p>
+           
+
+<p>Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&rsquo;s support (current and future) for it.</p>
+
+<h2 id="toc_0">Abstract</h2>
+
+<p>At JavaOne this year we&rsquo;re learning all about what&rsquo;s coming in Java 9, and it&rsquo;s so much more than just Jigsaw.  But what we&rsquo;re really wondering is, will it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?</p>
+
+<p>In this talk, Trisha will take a look at the features coming in Java 9, focussing on those that may be most useful to us in the day job.  She will demonstrate using some of these features in IntelliJ IDEA.  And finally, she&rsquo;ll share the roadmap for Java 9 support in IntelliJ IDEA.</p>
+
+<h2 id="toc_1">Resources</h2>
+
+<p><a href="https://jdk9.java.net/download/">Download the latest Java JDK here</a> (the talk uses build 136).</p>
+
+<p>At the time of writing, <a href="https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.3+EAP">IntelliJ IDEA 2016.3 EAP</a> (build 163.4396) comes with
+some support for jigsaw. In the talk I use build 163.4771, which builds with Java language level 9 without error and also supports
+multi-module projects.  Keep an eye on the
+<a href="https://blog.jetbrains.com/idea/tag/2016-3/">IntelliJ blog</a> for further updates.</p>
+
+<p>The Jigsaw code I used was from the <a href="http://openjdk.java.net/projects/jigsaw/quick-start">Getting Started tutorial</a>, and the <a href="https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf">Java REPL
+Tutorial</a> helped me get started with JShell.</p>
+
+<h2 id="toc_2">More information</h2>
+
+<p>Joseph Darcy&rsquo;s talk on
+<a href="https://youtu.be/vKYzmIi_1LM">JDK 9 Language, Tooling and Library Features</a> from JavaOne is a good summary of what&rsquo;s coming (<a href="https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf">slides
+also available</a>).</p>
+
+<p>Aurelio Garcia Ribeyro has a great talk summarising all the features, which I can only find
+<a href="http://onetime.dev.beachfrontbuilder.com/view/943985?type=channel&amp;id=169&amp;page=1">in Spanish</a></p>
+
+<p>The OpenJDK wiki provides <a href="https://wiki.openjdk.java.net/display/Adoption/JDK+9+Outreach">guidance on running your code with Java 9</a>, and a
+<a href="https://wiki.openjdk.java.net/display/quality/Quality+Outreach">list of libraries and frameworks who are currently testing against Java 9</a>.</p>
 
         </article>
   </div>
@@ -156,27 +189,29 @@
 
 <div>
     <section id="datecount">
-        <h4 id="date"> Mon Mar 19, 2007 </h4>
-        <h5 id="wc"> 200 Words </h5>
+        <h4 id="date"> Thu Sep 22, 2016 </h4>
+        <h5 id="wc"> 300 Words </h5>
     </section>
     <ul id="categories">
         
     </ul>
     <ul id="tags">
         
-        <li><a href="http://trishagee.github.io/tags/in-progress">in progress</a></li>
+        <li><a href="http://trishagee.github.io/tags/java">java</a></li>
         
-        <li><a href="http://trishagee.github.io/tags/qcon-london">qcon london</a></li>
+        <li><a href="http://trishagee.github.io/tags/java9">java9</a></li>
+        
+        <li><a href="http://trishagee.github.io/tags/intellij">intellij</a></li>
         
     </ul>
 </div>
 
 <div>
     <section id="prev">
-        &nbsp;<a class="previous" href="http://trishagee.github.io/post/continuing_the_agile_froth/"><i class="icon-arrow-left"></i> Continuing the Agile froth...</a><br>
+        &nbsp;
     </section>
     <section id="next">
-        &nbsp;<a class="next" href="http://trishagee.github.io/post/qcon_london/">QCon London <i class="icon-arrow-right"></i></a>
+        &nbsp;<a class="next" href="http://trishagee.github.io/presentation/upcoming_events/">Upcoming Events <i class="icon-arrow-right"></i></a>
     </section>
 </div>
 
@@ -193,9 +228,9 @@
 
 </aside>
 
-<meta itemprop="wordCount" content="119">
-<meta itemprop="datePublished" content="2007-03-19">
-<meta itemprop="url" content="http://trishagee.github.io/post/qcon_initial_thoughts/">
+<meta itemprop="wordCount" content="291">
+<meta itemprop="datePublished" content="2016-09-22">
+<meta itemprop="url" content="http://trishagee.github.io/presentation/java_9_are_we_there_yet/">
 
 
 <aside id=comments>
@@ -203,9 +238,9 @@
 <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'trishagee';
-    var disqus_identifier = 'http:\/\/trishagee.github.io\/post\/qcon_initial_thoughts\/';
-    var disqus_title = 'QCon: Initial thoughts';
-    var disqus_url = 'http:\/\/trishagee.github.io\/post\/qcon_initial_thoughts\/';
+    var disqus_identifier = 'http:\/\/trishagee.github.io\/presentation\/java_9_are_we_there_yet\/';
+    var disqus_title = 'Anticipating Java 9 - Functionality and Tooling';
+    var disqus_url = 'http:\/\/trishagee.github.io\/presentation\/java_9_are_we_there_yet';
 
     (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
