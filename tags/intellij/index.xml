@@ -36,7 +36,19 @@ multi-module projects.  Keep an eye on the
 &lt;p&gt;The Jigsaw code I used was from the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;, and the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
 Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;More information&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
+
+&lt;p&gt;Get help and more information on JDK 9 from the
+&lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
+bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can report bugs and request features for IntelliJ IDEA in
+&lt;a href=&#34;https://youtrack.jetbrains.com/issues/idea/&#34;&gt;YouTrack&lt;/a&gt;. Some Java 9 tickets you may be interested in:&lt;br /&gt;
+&lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161611&#34;&gt;IDEA-161611: Java REPL support for Java 9&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;More information&lt;/h2&gt;
 
 &lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
