@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Java9 on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/java9/index.xml/</link>
+    <link>http://trishagee.github.io/tags/java9/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -18,13 +18,13 @@
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;At JavaOne this year we&amp;rsquo;re learning all about what&amp;rsquo;s coming in Java 9, and it&amp;rsquo;s so much more than just Jigsaw.  But what we&amp;rsquo;re really wondering is, will it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
 
 &lt;p&gt;In this talk, Trisha will take a look at the features coming in Java 9, focusing on those that may be most useful to us in the day job.  She will demonstrate using some of these features in IntelliJ IDEA.  And finally, she&amp;rsquo;ll share the roadmap for Java 9 support in IntelliJ IDEA.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;resources:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the talk uses build 136).&lt;/p&gt;
 
@@ -36,7 +36,7 @@ multi-module projects.  Keep an eye on the
 &lt;p&gt;The Jigsaw code I used was from the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;, and the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
 Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
+&lt;h2 id=&#34;help-feedback:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
 
 &lt;p&gt;Get help and more information on JDK 9 from the
 &lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
@@ -48,7 +48,7 @@ bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it her
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;More information&lt;/h2&gt;
+&lt;h2 id=&#34;more-information:6a2eab40fe361c94565d54d6721754bb&#34;&gt;More information&lt;/h2&gt;
 
 &lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides

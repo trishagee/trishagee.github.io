@@ -15,16 +15,16 @@
  
 <meta property="og:type" content="article"/>
 <meta property="og:description" content=""/>
-<meta property="og:title" content="C : trishagee.github.io"/>
+<meta property="og:title" content="Angular.Js : trishagee.github.io"/>
 <meta property="og:site_name" content="Trisha Gee"/>
 <meta property="og:image" content="" />
 <meta property="og:image:type" content="image/jpeg" />
 <meta property="og:image:width" content="" />
 <meta property="og:image:height" content="" />
-<meta property="og:url" content="http://trishagee.github.io/tags/c/">
+<meta property="og:url" content="http://trishagee.github.io/tags/angular/index.js/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2011-06-20"/>
-<meta property="article:modified_time" content="2011-06-20"/>
+<meta property="article:published_time" content="2014-03-03"/>
+<meta property="article:modified_time" content="2014-03-03"/>
 
 
 
@@ -32,7 +32,7 @@
 <meta name="twitter:card" content="summary">
 
 <meta name="twitter:site" content="@trisha_gee">
-<meta name="twitter:title" content="C : trishagee.github.io">
+<meta name="twitter:title" content="Angular.Js : trishagee.github.io">
 <meta name="twitter:creator" content="@trishagee">
 <meta name="twitter:description" content="">
 <meta name="twitter:image:src" content="">
@@ -40,11 +40,11 @@
 
 
 
-    <base href="http://trishagee.github.io">
-    <title> C - trishagee.github.io </title>
-    <link rel="canonical" href="http://trishagee.github.io/tags/c/">
+    <base href="http://trishagee.github.io/">
+    <title> Angular.Js - trishagee.github.io </title>
+    <link rel="canonical" href="http://trishagee.github.io/tags/angular/index.js/">
     
-    <link href="http://trishagee.github.io/tags/c/index.xml/" rel="alternate" type="application/rss+xml" title="C"/>
+    <link href="http://trishagee.github.io/tags/angular.js/index.xml" rel="alternate" type="application/rss+xml" title="Angular.Js"/>
     
 
     <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
@@ -95,17 +95,17 @@
 
         <div class="dropdown share">
             <ul class="social">
-                <li><a href="https://twitter.com/intent/tweet?status=C-http%3a%2f%2ftrishagee.github.io%2ftags%2fc%2f" target="_blank"
+                <li><a href="https://twitter.com/intent/tweet?status=Angular.Js-http%3a%2f%2ftrishagee.github.io%2ftags%2fangular%2findex.js%2f" target="_blank"
                        title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
-                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2ftags%2fc%2f" target="_blank" title="Join me on Facebook"
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2ftrishagee.github.io%2ftags%2fangular%2findex.js%2f" target="_blank" title="Join me on Facebook"
                        class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
-                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2ftags%2fc%2f" target="_blank" title="Google+" class="googleplus"><span
+                <li><a href="https://plus.google.com/share?url=http%3a%2f%2ftrishagee.github.io%2ftags%2fangular%2findex.js%2f" target="_blank" title="Google+" class="googleplus"><span
                         class="icon icon-google-plus"></span>Google+</a></li>
-                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2ftags%2fc%2f&title=C&source=spf13"
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3a%2f%2ftrishagee.github.io%2ftags%2fangular%2findex.js%2f&title=Angular.Js&source=spf13"
                        target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
-                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2ftags%2fc%2f" target="_blank" title="Reddit" class="reddit"><span
+                <li><a href="http://www.reddit.com/submit?url=http%3a%2f%2ftrishagee.github.io%2ftags%2fangular%2findex.js%2f" target="_blank" title="Reddit" class="reddit"><span
                         class="icon icon-reddit"></span>Reddit</a></li>
-                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2ftags%2fc%2f" target="_blank" title="StumbleUpon"
+                <li><a href="http://www.stumbleupon.com/submit?url=http%3a%2f%2ftrishagee.github.io%2ftags%2fangular%2findex.js%2f" target="_blank" title="StumbleUpon"
                        class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
             </ul>
             <span class="subcount">sharing is caring</span>
@@ -141,30 +141,17 @@
 
 <section id="main">
   <div>
-   <h1 id="title">C</h1>
+   <h1 id="title">Angular.Js</h1>
     
         <article class="post">
     <header>
-      <h2><a href='http://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/'> A chance to see some of my actual code (even if it is C#)</a> </h2>
-      <div class="post-meta">Mon, Jun 20, 2011 - 100 Words </div>
+      <h2><a href='http://trishagee.github.io/post/in_my_day/'> In my day...</a> </h2>
+      <div class="post-meta">Mon, Mar 3, 2014 - 2700 Words </div>
     </header>
 
-    Remember I posted about having to write .NET?Well, the code and the tutorial are available for you, my lucky readers, to rip to pieces view.I am not the only person responsible for this code though, so be kind.
+    Web development has changed a lot. I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool. I used to be a web developer.
     <footer>
-        <a href='http://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/'><nobr>Read more →</nobr></a>
-    </footer>
-</article>
-
-    
-        <article class="post">
-    <header>
-      <h2><a href='http://trishagee.github.io/post/why_java_developers_hate_net/'> Why Java developers hate .NET</a> </h2>
-      <div class="post-meta">Fri, May 20, 2011 - 1300 Words </div>
-    </header>
-
-    I have been struggling with .NET.&nbsp; Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#.&nbsp; Easy, right?Trisha&rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward.&nbsp; Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.
-    <footer>
-        <a href='http://trishagee.github.io/post/why_java_developers_hate_net/'><nobr>Read more →</nobr></a>
+        <a href='http://trishagee.github.io/post/in_my_day/'><nobr>Read more →</nobr></a>
     </footer>
 </article>
 

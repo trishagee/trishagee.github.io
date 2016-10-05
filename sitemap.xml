@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://trishagee.github.io/</loc>
-    <lastmod>2016-09-22T00:00:00+00:00</lastmod>
+    <lastmod>2016-10-05T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/resources/intellij_for_eclipse_users/</loc>
+    <lastmod>2016-10-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -13,12 +18,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/presentation/upcoming_events/</loc>
+    <loc>http://trishagee.github.io/post/javazone_2016/</loc>
     <lastmod>2016-09-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/javazone_2016/</loc>
+    <loc>http://trishagee.github.io/presentation/upcoming_events/</loc>
     <lastmod>2016-09-16T00:00:00+00:00</lastmod>
   </url>
   
@@ -188,12 +193,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/svq_java8_launch_party/</loc>
+    <loc>http://trishagee.github.io/es/post/svq_java8_launch_party/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/es/post/svq_java8_launch_party/</loc>
+    <loc>http://trishagee.github.io/post/svq_java8_launch_party/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1078,51 +1083,6 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/release/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/presentation/public_appearances/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-started-with-gradle/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://trishagee.github.io/post/the_importance_of_choosing_a_good_scale_for_your_metrics/</loc>
     <lastmod>2007-10-10T00:00:00+00:00</lastmod>
   </url>
@@ -1168,13 +1128,49 @@
   </url>
   
   <url>
+    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
+    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://trishagee.github.io/post/qcon_london/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
-    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+    <loc>http://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-started-with-gradle/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/release/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/post/most_of_all_its_fun/</loc>
+  </url>
+  
+  <url>
+    <loc>http://trishagee.github.io/presentation/public_appearances/</loc>
   </url>
   
 </urlset>

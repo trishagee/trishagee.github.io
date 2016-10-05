@@ -2,11 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Resources on Trisha Gee </title>
-    <link>http://trishagee.github.io/resources/index.xml/</link>
+    <link>http://trishagee.github.io/resources/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 19 Jan 2015 00:00:00 UTC</updated>
+    <updated>Wed, 05 Oct 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>IntelliJ IDEA for Eclipse Users</title>
+      <link>http://trishagee.github.io/resources/intellij_for_eclipse_users/</link>
+      <pubDate>Wed, 05 Oct 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
+      <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://plugins.jetbrains.com/plugin/4455&#34;&gt;Key Promoter&lt;/a&gt;, a plugin that tells you what the keyboard shortcut is
+for every mouse action you perform.&lt;/li&gt;
+&lt;li&gt;The printable &lt;a href=&#34;https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf&#34;&gt;IntelliJ IDEA default keymap&lt;/a&gt; and &lt;a href=&#34;https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf&#34;&gt;Mac keymap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/4/&#34;&gt;Eclipse-IntelliJ Keymap Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ZeroTurnaround&amp;rsquo;s rather excellent (and extensive!) article &lt;a href=&#34;https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/4/&#34;&gt;Getting Started With IntelliJ IDEA as an Eclipse User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://youtu.be/eq3KiAH4IBI&#34;&gt;42 IntelliJ IDEA Tips and Tricks&lt;/a&gt;. Watch this.  Regularly.&lt;/li&gt;
+&lt;li&gt;If you have IntelliJ IDEA power users near you, get them to install &lt;a href=&#34;https://plugins.jetbrains.com/plugin/7345&#34;&gt;Presentation Assistant&lt;/a&gt; so you can see all the shortcuts they&amp;rsquo;re using.&lt;/li&gt;
+&lt;li&gt;If you want, you can also use the Eclipse keymap and the Eclipse compiler.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s an extensive JetBrains article on &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/eclipse.html&#34;&gt;Migrating from Eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some of my own presentations are live coding using lots of IntelliJ IDEA features, watching them might give an
+idea of what&amp;rsquo;s possible.  For example
+&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw&#34;&gt;AngularJS, HTML5, Groovy, Java and MongoDB All Together&lt;/a&gt;,
+&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt; and &lt;a href=&#34;http://trishagee.github.io/presentation/refactoring_to_java_8&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve written a few tutorials about specific topics performed in IntelliJ IDEA:
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-introduction-to-refactoring.html&#34;&gt;Introduction to Refactoring&lt;/a&gt;,
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;Test Driven Development&lt;/a&gt;,
+and &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</title>
@@ -19,7 +49,7 @@
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
 Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Who is this for?&lt;/h2&gt;
+&lt;h2 id=&#34;who-is-this-for:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Who is this for?&lt;/h2&gt;
 
 &lt;p&gt;This workshop is aimed at Java developers who want to learn more about how
 to rapidly prototype applications using web front-end technologies with JVM back-end technologies. The workshop may be
@@ -32,7 +62,7 @@ but this is &lt;em&gt;not&lt;/em&gt; an introduction to Java and familiarity wit
 
 &lt;p&gt;This is a hands-on workshop, bring a laptop set up according to the following instructions - you will be writing code!&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Overview&lt;/h2&gt;
+&lt;h2 id=&#34;overview:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Overview&lt;/h2&gt;
 
 &lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/klw9pIuTICM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
@@ -41,7 +71,7 @@ setup for the workshop.&lt;/p&gt;
 
 &lt;p&gt;The setup instructions below are the same process, so you can copy &amp;amp; paste where appropriate.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Setup&lt;/h2&gt;
+&lt;h2 id=&#34;setup:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Setup&lt;/h2&gt;
 
 &lt;p&gt;I am assuming you already have a version of the Java SDK downloaded. For this workshop, Java 7 or above should work, but
 I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;&gt;download the latest version of Java 8&lt;/a&gt; if you&amp;rsquo;re not already using it.&lt;/p&gt;
@@ -49,7 +79,7 @@ I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/do
 &lt;p&gt;Create a new work area for this tutorial. For the rest of these instructions I&amp;rsquo;ll refer to it as &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;.  I&amp;rsquo;ve put
  mine in &lt;code&gt;~/Projects/workshops/qcon2015&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Installing MongoDB&lt;/h2&gt;
+&lt;h2 id=&#34;installing-mongodb:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Installing MongoDB&lt;/h2&gt;
 
 &lt;p&gt;I&amp;rsquo;m going to be using &lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;MongoDB 3.0.0-rc8&lt;/a&gt;, but version 2.6 will be fine too.&lt;/p&gt;
 
@@ -61,12 +91,12 @@ have a folder at &lt;code&gt;&amp;lt;location&amp;gt;/data&lt;/code&gt;&lt;/p&gt
 
 &lt;p&gt;From the command line, start MongoDB to make sure everything is working.  From the &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt; directory:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_4&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongod --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_5&#34;&gt;Windows:&lt;/h5&gt;
+&lt;h5 id=&#34;windows:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows:&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongod.exe --dbpath data
 &lt;/code&gt;&lt;/pre&gt;
@@ -76,12 +106,12 @@ MongoDB should be running on localhost and port 27017&lt;/p&gt;
 
 &lt;p&gt;Connect to the shell to make sure it&amp;rsquo;s working:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_6&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./mongodb/bin/mongo
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_7&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;windows-1:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;monogdb\bin\mongo.exe
 &lt;/code&gt;&lt;/pre&gt;
@@ -101,18 +131,18 @@ Questions? Try the support group
 &amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h2 id=&#34;toc_8&#34;&gt;Creating your project&lt;/h2&gt;
+&lt;h2 id=&#34;creating-your-project:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Creating your project&lt;/h2&gt;
 
 &lt;p&gt;Clone &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;the Cafelito project&lt;/a&gt; into &lt;code&gt;&amp;lt;location&amp;gt;/cafelito&lt;/code&gt;&lt;/p&gt;
 
 &lt;p&gt;In a terminal/command line, navigate to this location, and run:&lt;/p&gt;
 
-&lt;h5 id=&#34;toc_9&#34;&gt;Linux/OSX&lt;/h5&gt;
+&lt;h5 id=&#34;linux-osx-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Linux/OSX&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;./gradlew check
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;h5 id=&#34;toc_10&#34;&gt;Windows&lt;/h5&gt;
+&lt;h5 id=&#34;windows-2:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;Windows&lt;/h5&gt;
 
 &lt;pre&gt;&lt;code&gt;gradlew.bat check
 &lt;/code&gt;&lt;/pre&gt;
@@ -128,7 +158,7 @@ the dependencies for you.&lt;/p&gt;
 &lt;p&gt;Feel free to use Eclipse or
 Netbeans (or whatever your favourite IDE is) but I&amp;rsquo;m out of practice using those IDEs and might not be able to help you out as much.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_11&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
+&lt;h2 id=&#34;and-now:c3884e8aa27c5b71cf8845e1ec680695&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
 
 &lt;p&gt;You should be ready to begin: you have a working instance of MongoDB, a skeleton project that we&amp;rsquo;ll be working with, and all the
 dependencies should have been downloaded.&lt;/p&gt;
@@ -145,12 +175,12 @@ dependencies should have been downloaded.&lt;/p&gt;
 
 &lt;p&gt;Brief guide to running the MongoDB tutorial from QCon London and JAX London.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Setup&lt;/h2&gt;
+&lt;h2 id=&#34;setup:f25e5622d7a2d9e6e8f7feb1192ae363&#34;&gt;Setup&lt;/h2&gt;
 
 &lt;p&gt;Create a new work area for this tutorial. For the rest of these instructions I&amp;rsquo;ll refer to it as &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;.  I&amp;rsquo;ve put
  mine in &lt;code&gt;~/Documents/workshops/jax&lt;/code&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Installing MongoDB&lt;/h2&gt;
+&lt;h2 id=&#34;installing-mongodb:f25e5622d7a2d9e6e8f7feb1192ae363&#34;&gt;Installing MongoDB&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;Download MongoDB&lt;/a&gt; or get it off the USB stick Unzip to an appropriate location,
 let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt;/p&gt;
@@ -167,7 +197,7 @@ let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt
 
 &lt;p&gt;&lt;span style=&#34;font-family: monospace;&#34;&gt;./mongodb/bin/mongo&lt;/span&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Creating your project&lt;/h2&gt;
+&lt;h2 id=&#34;creating-your-project:f25e5622d7a2d9e6e8f7feb1192ae363&#34;&gt;Creating your project&lt;/h2&gt;
 
 &lt;p&gt;Put &lt;a href=&#34;https://github.com/trishagee/mongodb-java-tutorial&#34;&gt;the Java project&lt;/a&gt; into &lt;code&gt;&amp;lt;location&amp;gt;/java3.0&lt;/code&gt;&lt;/p&gt;
 
@@ -177,11 +207,11 @@ let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt
 
 &lt;p&gt;Open in your favourite IDE and you should be ready to start playing.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;More help:&lt;/h2&gt;
+&lt;h2 id=&#34;more-help:f25e5622d7a2d9e6e8f7feb1192ae363&#34;&gt;More help:&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/&#34;&gt;MongoDB Tutorials&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;Emergency Gradle Procedure:&lt;/h2&gt;
+&lt;h2 id=&#34;emergency-gradle-procedure:f25e5622d7a2d9e6e8f7feb1192ae363&#34;&gt;Emergency Gradle Procedure:&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.gradle.org/&#34;&gt;Download Gradle&lt;/a&gt;&amp;nbsp;or get it off the USB stick&lt;br /&gt;Extract to some suitable location. &amp;nbsp;Mine&amp;rsquo;s in&amp;nbsp;&lt;code&gt;/Library/Tools/gradle/&lt;/code&gt;&lt;br /&gt;Put gradle on your path. &amp;nbsp;On the Mac, that means adding the following line to&amp;nbsp;&lt;code&gt;~/.bash_profile&lt;/code&gt;:&lt;br /&gt;&lt;code&gt;export PATH=&amp;ldquo;/Library/Tools/gradle/bin:$PATH&amp;rdquo;&lt;/code&gt;&lt;br /&gt;&lt;div&gt;&lt;code&gt;&lt;br /&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
@@ -197,7 +227,7 @@ let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt
 
 &lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Links to more detailed information&lt;/h2&gt;
+&lt;h2 id=&#34;links-to-more-detailed-information:901be61e6414e68f905421f5878b1fac&#34;&gt;Links to more detailed information&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;Introduction to the changes in 3.0&lt;/a&gt;&lt;/li&gt;
@@ -205,7 +235,7 @@ let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;How to get started with the 3.0
 not-production-ready snapshot&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Presentations&lt;/h2&gt;
+&lt;h2 id=&#34;presentations:901be61e6414e68f905421f5878b1fac&#34;&gt;Presentations&lt;/h2&gt;
 
 &lt;p&gt;Presentation from GeeCON about the design of the new MongoDB driver.&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -232,7 +262,7 @@ need to get out there and tell people what&amp;rsquo;s so great about what we do
 &lt;p&gt;Some of the initiatives you can get involved in are collected here. Please mail me or get me on twitter (&lt;a href=&#34;https://twitter.com/trisha_gee&#34;&gt;@trisha_gee&lt;/a&gt;) if you want to add
 anything to this list:&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;For Kids&lt;/h2&gt;
+&lt;h2 id=&#34;for-kids:e921ddc4aeb87d32c25e121ded74a9ee&#34;&gt;For Kids&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.devoxx.com/display/4KIDS/Home&#34;&gt;Devoxx For Kids&lt;/a&gt; (contact me or &lt;a href=&#34;https://twitter.com/dhardiker&#34;&gt;Dan Hardiker&lt;/a&gt; if you&amp;rsquo;re interested in the UK)&lt;/li&gt;
@@ -242,11 +272,11 @@ anything to this list:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://epik.org.uk/epikwiki/index.php/Main_Page&#34;&gt;EPiK (Encouraging Programming in Kent)&lt;/a&gt; - mentor young people (8-25)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Mentoring&lt;/h2&gt;
+&lt;h2 id=&#34;mentoring:e921ddc4aeb87d32c25e121ded74a9ee&#34;&gt;Mentoring&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://graduatedevelopercommunity.wordpress.com/2012/02/18/gdc-meet-a-mentor/&#34;&gt;Meet a Mentor&lt;/a&gt; - mentor undergraduates/graduates in London(ish). Always looking for mentors of any experience level&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Networking&amp;lt;&lt;/h2&gt;
+&lt;h2 id=&#34;networking:e921ddc4aeb87d32c25e121ded74a9ee&#34;&gt;Networking&amp;lt;&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.java.net/jugs/java-user-groups&#34;&gt;JUGs&lt;/a&gt; and other user groups - join a local JUG! There&amp;rsquo;s no better way to meet people who can mentor you, and influence you own peers. Being part of the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;London Java Community&lt;/a&gt; literally changed my life.&lt;/p&gt;
 

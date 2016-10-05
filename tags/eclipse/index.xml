@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Eclipse on Trisha Gee </title>
+    <link>http://trishagee.github.io/tags/eclipse/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Wed, 05 Oct 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>IntelliJ IDEA for Eclipse Users</title>
+      <link>http://trishagee.github.io/resources/intellij_for_eclipse_users/</link>
+      <pubDate>Wed, 05 Oct 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>http://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
+      <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://plugins.jetbrains.com/plugin/4455&#34;&gt;Key Promoter&lt;/a&gt;, a plugin that tells you what the keyboard shortcut is
+for every mouse action you perform.&lt;/li&gt;
+&lt;li&gt;The printable &lt;a href=&#34;https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf&#34;&gt;IntelliJ IDEA default keymap&lt;/a&gt; and &lt;a href=&#34;https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf&#34;&gt;Mac keymap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/4/&#34;&gt;Eclipse-IntelliJ Keymap Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ZeroTurnaround&amp;rsquo;s rather excellent (and extensive!) article &lt;a href=&#34;https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/4/&#34;&gt;Getting Started With IntelliJ IDEA as an Eclipse User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://youtu.be/eq3KiAH4IBI&#34;&gt;42 IntelliJ IDEA Tips and Tricks&lt;/a&gt;. Watch this.  Regularly.&lt;/li&gt;
+&lt;li&gt;If you have IntelliJ IDEA power users near you, get them to install &lt;a href=&#34;https://plugins.jetbrains.com/plugin/7345&#34;&gt;Presentation Assistant&lt;/a&gt; so you can see all the shortcuts they&amp;rsquo;re using.&lt;/li&gt;
+&lt;li&gt;If you want, you can also use the Eclipse keymap and the Eclipse compiler.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s an extensive JetBrains article on &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/eclipse.html&#34;&gt;Migrating from Eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some of my own presentations are live coding using lots of IntelliJ IDEA features, watching them might give an
+idea of what&amp;rsquo;s possible.  For example
+&lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw&#34;&gt;AngularJS, HTML5, Groovy, Java and MongoDB All Together&lt;/a&gt;,
+&lt;a href=&#34;http://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt; and &lt;a href=&#34;http://trishagee.github.io/presentation/refactoring_to_java_8&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve written a few tutorials about specific topics performed in IntelliJ IDEA:
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-introduction-to-refactoring.html&#34;&gt;Introduction to Refactoring&lt;/a&gt;,
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;Test Driven Development&lt;/a&gt;,
+and &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
