@@ -1128,12 +1128,12 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
+    <loc>http://trishagee.github.io/post/qcon_london/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/post/qcon_london/</loc>
+    <loc>http://trishagee.github.io/post/qcon_initial_thoughts/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
@@ -1146,10 +1146,6 @@
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
-  </url>
-  
-  <url>
     <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-1/</loc>
   </url>
   
@@ -1158,11 +1154,15 @@
   </url>
   
   <url>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
+  </url>
+  
+  <url>
     <loc>http://trishagee.github.io/other-sites/release/</loc>
   </url>
   
   <url>
-    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-3-2/</loc>
+    <loc>http://trishagee.github.io/other-sites/getting-start-with-mongodb-2/</loc>
   </url>
   
   <url>

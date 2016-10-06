@@ -16,6 +16,8 @@
       <guid>http://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
       <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;
 
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/qKgzj8tZX9JDmA&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://plugins.jetbrains.com/plugin/4455&#34;&gt;Key Promoter&lt;/a&gt;, a plugin that tells you what the keyboard shortcut is
 for every mouse action you perform.&lt;/li&gt;
@@ -26,6 +28,9 @@ for every mouse action you perform.&lt;/li&gt;
 &lt;li&gt;If you have IntelliJ IDEA power users near you, get them to install &lt;a href=&#34;https://plugins.jetbrains.com/plugin/7345&#34;&gt;Presentation Assistant&lt;/a&gt; so you can see all the shortcuts they&amp;rsquo;re using.&lt;/li&gt;
 &lt;li&gt;If you want, you can also use the Eclipse keymap and the Eclipse compiler.&lt;/li&gt;
 &lt;li&gt;There&amp;rsquo;s an extensive JetBrains article on &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/eclipse.html&#34;&gt;Migrating from Eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Check out
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/keyboard-shortcuts-you-cannot-miss.html&#34;&gt;Keyboard Shortcuts You Cannot Miss&lt;/a&gt;
+and DZone&amp;rsquo;s &lt;a href=&#34;https://dzone.com/refcardz/intellij-idea-update&#34;&gt;IntelliJ IDEA Refcard&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Some of my own presentations are live coding using lots of IntelliJ IDEA features, watching them might give an
 idea of what&amp;rsquo;s possible.  For example
 &lt;a href=&#34;http://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw&#34;&gt;AngularJS, HTML5, Groovy, Java and MongoDB All Together&lt;/a&gt;,
@@ -34,6 +39,53 @@ idea of what&amp;rsquo;s possible.  For example
 &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-introduction-to-refactoring.html&#34;&gt;Introduction to Refactoring&lt;/a&gt;,
 &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;Test Driven Development&lt;/a&gt;,
 and &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the slides above, there&amp;rsquo;s a section &amp;ldquo;The Power of IntelliJ IDEA&amp;rdquo; with no content - that&amp;rsquo;s because that&amp;rsquo;s a place
+for a live demo of working with IntelliJ IDEA. To create that demo, I jotted down some topics that I think are
+interesting in IntelliJ IDEA, which are worth making a note of here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IntelliJ provides &lt;em&gt;Contextual Aid&lt;/em&gt; - hints, tips, help and advice at the point at which you need it.  For example:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/auto-completing-code.html&#34;&gt;Code completion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The magic Alt+Enter to show &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/intention-actions.html&#34;&gt;intention actions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/using-postfix-templates.html&#34;&gt;Postfix completion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/gutter-icons.html?search=gutter%20icons&#34;&gt;Gutter icons&lt;/a&gt;, such as
+icons to run tests, show implementations of a method, display the Functional Interface for a lambda expression,
+etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/code-inspection.html&#34;&gt;Inspections&lt;/a&gt; are automatically run for the
+current file and shown as warnings, which you can
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/resolving-problems.html&#34;&gt;usually fix with a quick fix&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/navigating-through-the-source-code.html&#34;&gt;Navigation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/live-templates.html&#34;&gt;Live templates&lt;/a&gt;  might be one of my favourite
+features - both &lt;a href=&#34;http://www.radcortez.com/getting-started-with-intellij-idea-live-templates/&#34;&gt;built in&lt;/a&gt; (try &lt;code&gt;sout&lt;/code&gt;,
+&lt;code&gt;soutp&lt;/code&gt;, &lt;code&gt;psvm&lt;/code&gt;, &lt;code&gt;itar&lt;/code&gt; and &lt;code&gt;iter&lt;/code&gt;)
+and &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/creating-and-editing-live-templates.html#scratch&#34;&gt;custom&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/refactoring-source-code.html&#34;&gt;Refactoring&lt;/a&gt; (check out my &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-introduction-to-refactoring.html&#34;&gt;Refactoring
+Tutorial&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/code-inspection.html&#34;&gt;Inspections&lt;/a&gt; were mentioned above, but as well
+as having the results on the current file, you can
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/customizing-profiles.html&#34;&gt;customise what you&amp;rsquo;re looking for&lt;/a&gt; and
+the &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/running-inspections.html&#34;&gt;scope to check&lt;/a&gt;.
+They&amp;rsquo;re very powerful for helping to either keep your code clean, or improve it further. I&amp;rsquo;ve written a tutorial on
+how to use them to help
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;migrate your code to use Java 8 idioms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/debugging.html&#34;&gt;Debugger&lt;/a&gt; is powerful but easy to use.&lt;/li&gt;
+&lt;li&gt;All the things you get from the Java side of the IDE is also available for other languages you might be using too,
+e.g. &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/databases-and-sql.html&#34;&gt;SQL&lt;/a&gt;,
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/javascript-specific-guidelines.html&#34;&gt;JavaScript&lt;/a&gt;,
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/editing-html-files.html&#34;&gt;HTML&lt;/a&gt;, etc. E.g. code completion,
+refactoring and debugging, where appropriate.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/vcs-specific-procedures.html&#34;&gt;VCS support&lt;/a&gt; is sufficient for most
+everyday use, and every new release adds more features.  If in the past the VCS support didn&amp;rsquo;t do what you
+wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
+&lt;li&gt;Also interesting for most developers is the &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/gradle.html&#34;&gt;Gradle&lt;/a&gt;
+&amp;amp; &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/maven.html&#34;&gt;Maven&lt;/a&gt; integration, and
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/testing.html&#34;&gt;running tests&lt;/a&gt; with
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/code-coverage.html&#34;&gt;code coverage&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
