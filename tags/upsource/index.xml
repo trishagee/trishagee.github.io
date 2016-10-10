@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Upsource on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/upsource/</link>
+    <link>https://trishagee.github.io/tags/upsource/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Code Review Matters and Manners</title>
-      <link>http://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
+      <link>https://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
+      <guid>https://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
       <description>
 
 &lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
@@ -76,10 +76,10 @@ into a battlefield.&lt;/p&gt;
     
     <item>
       <title>What to look for in a Code Review</title>
-      <link>http://trishagee.github.io/post/code_reviews_1/</link>
+      <link>https://trishagee.github.io/post/code_reviews_1/</link>
       <pubDate>Mon, 27 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/code_reviews_1/</guid>
+      <guid>https://trishagee.github.io/post/code_reviews_1/</guid>
       <description>&lt;p&gt;I wrote a post for the JetBrains Upsource blog about some of the &lt;a href=&#34;http://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;things you should be looking for when you do code
 reviews&lt;/a&gt; (and some of the things
 you should not be looking at).&lt;/p&gt;

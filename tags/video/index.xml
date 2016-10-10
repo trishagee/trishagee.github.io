@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Video on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/video/</link>
+    <link>https://trishagee.github.io/tags/video/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>The Extraordinary Team Of Developers</title>
-      <link>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</link>
+      <link>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</guid>
+      <guid>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</guid>
       <description>
 
 &lt;p&gt;Daniel Bryant and I did a keynote at Devoxx UK about how individuals can add something to a team to make the team
@@ -61,10 +61,10 @@ an individual, add to the mix?&lt;/em&gt;&lt;/p&gt;
     
     <item>
       <title>Interviewed by InfoQ</title>
-      <link>http://trishagee.github.io/post/interviewed_for_infoq/</link>
+      <link>https://trishagee.github.io/post/interviewed_for_infoq/</link>
       <pubDate>Sat, 18 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/interviewed_for_infoq/</guid>
+      <guid>https://trishagee.github.io/post/interviewed_for_infoq/</guid>
       <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
 interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
 but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
@@ -76,10 +76,10 @@ of the JCP, and the future of Java.&lt;/p&gt;
     
     <item>
       <title>What could possibly go wrong? (GOTO Chicago)</title>
-      <link>http://trishagee.github.io/presentation/interview_at_goto_chicago/</link>
+      <link>https://trishagee.github.io/presentation/interview_at_goto_chicago/</link>
       <pubDate>Tue, 12 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/interview_at_goto_chicago/</guid>
+      <guid>https://trishagee.github.io/presentation/interview_at_goto_chicago/</guid>
       <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving,
 which happens to be the same one I&amp;rsquo;m giving at a number of conferences this year (although of course I&amp;rsquo;m evolving it as I go along).&lt;/p&gt;
 
@@ -111,10 +111,10 @@ and if you look through the history you can see how it builds up, the same as it
     
     <item>
       <title>Nighthacking at Sevilla Java User Group</title>
-      <link>http://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
+      <link>https://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
       <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
+      <guid>https://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
       <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
 for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
 and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
@@ -134,10 +134,10 @@ weekends.&lt;/p&gt;
     
     <item>
       <title>What do you mean, Backwards Compatibility? (YOW 2013)</title>
-      <link>http://trishagee.github.io/presentation/yow_2013_backwards/</link>
+      <link>https://trishagee.github.io/presentation/yow_2013_backwards/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/yow_2013_backwards/</guid>
+      <guid>https://trishagee.github.io/presentation/yow_2013_backwards/</guid>
       <description>&lt;p&gt;YOW recorded me, yet again, talking about the adventure that is the design of the new Java Driver for MongoDB.  This is the same talk I
 gave at &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;GeeCON&lt;/a&gt; and &lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;DevoxxUK&lt;/a&gt;,
 with some updates based on our Journey So Far.  In it, I cover the architecture of the new driver and some of our current thoughts
@@ -149,12 +149,12 @@ around where we want the API to go.&lt;/p&gt;
     
     <item>
       <title>Career Advice for Programmers (YOW 2013)</title>
-      <link>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</link>
+      <link>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</link>
       <pubDate>Thu, 17 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
+      <guid>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
       <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
-by &lt;a href=&#34;http://trishagee.github.io/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;http://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+by &lt;a href=&#34;https://trishagee.github.io/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;https://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
 &lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
 .com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
 time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
@@ -169,25 +169,25 @@ and please give me any feedback you have.&lt;/p&gt;
     
     <item>
       <title>Interviewed by Charles Humble for InfoQ</title>
-      <link>http://trishagee.github.io/presentation/infoq-interview-march-2014/</link>
+      <link>https://trishagee.github.io/presentation/infoq-interview-march-2014/</link>
       <pubDate>Tue, 15 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/infoq-interview-march-2014/</guid>
+      <guid>https://trishagee.github.io/presentation/infoq-interview-march-2014/</guid>
       <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&amp;rsquo;s always a pleasure to be interviewed by Charles,
 I think he brings out the best in me.&lt;/p&gt;
 
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;http://trishagee.github.io/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;https://trishagee.github.io/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>First presentation at the Virtual JUG!</title>
-      <link>http://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</link>
+      <link>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</link>
       <pubDate>Fri, 22 Nov 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</guid>
+      <guid>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</guid>
       <description>&lt;p&gt;Yesterday I had the privilege of presenting the very first session for &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, a new virtual Java User Group that allows us to span
 geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find
 good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have
@@ -206,40 +206,40 @@ width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
     
     <item>
       <title>Make the Future Java</title>
-      <link>http://trishagee.github.io/post/make_the_future_java/</link>
+      <link>https://trishagee.github.io/post/make_the_future_java/</link>
       <pubDate>Wed, 09 Oct 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/make_the_future_java/</guid>
+      <guid>https://trishagee.github.io/post/make_the_future_java/</guid>
       <description>&lt;p&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/6a9HAO0Pmkc&#34; width=&#34;420&#34;&gt;&lt;/iframe&gt; &lt;br /&gt;&lt;br /&gt;I think this is a nice example of how to showcase technology and make it relevant and exciting for people. &amp;nbsp;Something with this approach could do more for increasing the number of people interested in programming as a career than any of the traditional approaches of getting kids and &amp;ldquo;minorities&amp;rdquo; interested in IT.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Interviewed by Stephen Chin about JavaOne 2013</title>
-      <link>http://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</link>
+      <link>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</link>
       <pubDate>Fri, 30 Aug 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
+      <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
       <description>&lt;p&gt;Yesterday &lt;a href=&#34;https://twitter.com/steveonjava&#34;&gt;Stephen Chin&lt;/a&gt;, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about &lt;a href=&#34;http://www.oracle.com/javaone/index.html&#34;&gt;JavaOne&lt;/a&gt;, the &lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;new MongoDB Java driver&lt;/a&gt;, and my plans to Change The World.&lt;br /&gt;&lt;br /&gt;It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. &amp;nbsp;There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MdOHjGtITjo?list=PLX8CzqL3ArzXMvt5y8VHXKmr8gDC-xOH_&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Life on both sides of the interview table</title>
-      <link>http://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</link>
+      <link>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
+      <guid>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
       <description>&lt;p&gt;InfoQ has posted the video of Dan North and I opining on the subject of hiring. &amp;nbsp;Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. &amp;nbsp;We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://www.infoq.com/presentations/job-interview-tips#.UiBS9_WZJyU.blogger&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;It&amp;rsquo;s kind of funny because we talk a lot about hiring at ThoughtWorks (where we both worked, and which has one of the &lt;a href=&#34;http://www.businessinsider.com/hardest-tech-company-job-interviews-2012-8&#34;&gt;toughest interview processes&lt;/a&gt; in the industry) and LMAX, which learnt a lot off ThoughtWorks and shaped its own process for a smaller company that has different goals. &amp;nbsp;Yet neither of us work at those places now. &amp;nbsp;Still, we share stories from many of the places we&amp;rsquo;ve worked (or chose not to work), and if there&amp;rsquo;s one take-home point, it&amp;rsquo;s that hiring (and being hired) is not a simple thing to do well.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>My Summary of GeeCON, Krakow</title>
-      <link>http://trishagee.github.io/post/my_summary_of_geecon_krakow/</link>
+      <link>https://trishagee.github.io/post/my_summary_of_geecon_krakow/</link>
       <pubDate>Wed, 22 May 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
+      <guid>https://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
       <description>
 
 &lt;p&gt;Last week I was in Krakow, Poland for &lt;a href=&#34;http://2013.geecon.org/&#34;&gt;GeeCON&lt;/a&gt;. &amp;nbsp;Which was excellent! &amp;nbsp;I find it really
@@ -334,20 +334,20 @@ margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;300&#34; src=&
     
     <item>
       <title>Good overview of the NoSQL hype for Real Developers</title>
-      <link>http://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</link>
+      <link>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</link>
       <pubDate>Mon, 13 May 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
+      <guid>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
       <description>&lt;p&gt;Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. &amp;nbsp;Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.&lt;br /&gt;&lt;br /&gt;Skillsmatter recorded the whole thing, as usual, so you can &lt;a href=&#34;http://skillsmatter.com/podcast/nosql/considerations-for-using-nosql-technology-on-your-next-it-project/mh-7167&#34;&gt;watch the presentation for yourself&lt;/a&gt;. &amp;nbsp;I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Devoxx UK 2013</title>
-      <link>http://trishagee.github.io/post/devoxx_uk_2013/</link>
+      <link>https://trishagee.github.io/post/devoxx_uk_2013/</link>
       <pubDate>Tue, 02 Apr 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/post/devoxx_uk_2013/</guid>
+      <guid>https://trishagee.github.io/post/devoxx_uk_2013/</guid>
       <description>&lt;p&gt;Last week was the first Devoxx UK, bringing the brand from Belgium and, more recently, France. And I think it was a HUGE success.&lt;/p&gt;
 
 &lt;p&gt;Of course, disclaimers first - I was on the programme committee, so I might say that the whole thing was awesome. Although in all
@@ -421,10 +421,10 @@ or get a good feel of what it was like, watch this video by the awesome &lt;a hr
     
     <item>
       <title>GDL Presents Women Techmakers with Trisha Gee</title>
-      <link>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</link>
+      <link>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
+      <guid>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
       <description>&lt;p&gt;I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series,
 as it moves over to Europe.  In this video I talk about going to Mars, education, planning your career, being a developer,
 and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;

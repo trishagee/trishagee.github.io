@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Java9 on Trisha Gee </title>
-    <link>http://trishagee.github.io/tags/java9/</link>
+    <link>https://trishagee.github.io/tags/java9/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Anticipating Java 9 - Functionality and Tooling</title>
-      <link>http://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
+      <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
       <pubDate>Thu, 22 Sep 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
+      <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
       <description>
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;

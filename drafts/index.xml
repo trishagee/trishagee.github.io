@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Drafts on Trisha Gee </title>
-    <link>http://trishagee.github.io/drafts/</link>
+    <link>https://trishagee.github.io/drafts/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title></title>
-      <link>http://trishagee.github.io/drafts/how_to_write_a_cfp/</link>
+      <link>https://trishagee.github.io/drafts/how_to_write_a_cfp/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>http://trishagee.github.io/drafts/how_to_write_a_cfp/</guid>
+      <guid>https://trishagee.github.io/drafts/how_to_write_a_cfp/</guid>
       <description>&lt;p&gt;Title
 It needs a compelling (and ideally, short) title. Conference attendees will likely glance at the timetable and not necessarily read all
 the abstracts - have keywords in the title that will grab the attention. Maybe indicate the level required.  Good examples are things like:&lt;/p&gt;
