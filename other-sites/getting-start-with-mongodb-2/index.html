@@ -23,8 +23,8 @@
 <meta property="og:image:height" content="" />
 <meta property="og:url" content="https://trishagee.github.io/other-sites/getting-start-with-mongodb-2/">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="0001-01-01"/>
-<meta property="article:modified_time" content="0001-01-01"/>
+<meta property="article:published_time" content="2008-01-01"/>
+<meta property="article:modified_time" content="2008-01-01"/>
 
 
 
@@ -40,7 +40,7 @@
 
 
 
-    <base href="https://trishagee.github.io/">
+    <base href="https://trishagee.github.io">
     <title>  - trishagee.github.io </title>
     <link rel="canonical" href="https://trishagee.github.io/other-sites/getting-start-with-mongodb-2/">
     
@@ -146,13 +146,13 @@
 
 <p>In the last article [link needed], we covered the basics of installing and connecting to MongoDB via a Java application. In this post, I&rsquo;ll give an introduction to CRUD (Create, Read, Update, Delete) operations using the Java driver. As in the previous article, if you want to follow along and code as we go, you can use these tips to get the tests in the <a href="https://github.com/trishagee/mongodb-getting-started">Getting Started project</a> to go green.</p>
 
-<h2 id="creating-documents:4740d8a418f593bf302005b7d979ccec">Creating documents</h2>
+<h2 id="toc_0">Creating documents</h2>
 
 <p>In the last article [link needed], we introduced <a href="http://docs.mongodb.org/manual/reference/glossary/#term-document">documents</a> and how to
 create them from Java and insert them into MongoDB, so I&rsquo;m not going to repeat that here. But if you want a reminder, or simply want to skip to playing with the code, you can take a look at
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise3InsertTest.java">Exercise3InsertTest</a>.</p>
 
-<h2 id="querying:4740d8a418f593bf302005b7d979ccec">Querying</h2>
+<h2 id="toc_1">Querying</h2>
 
 <p>Putting stuff in the database is all well and good, but you&rsquo;ll probably want to query the database to get data from it.</p>
 
@@ -174,7 +174,7 @@ collection. As I mentioned, you can query by example, building up a <a href="htt
 }
 </code></pre>
 
-<h3 id="find-a-document-by-id:4740d8a418f593bf302005b7d979ccec">Find a document by ID</h3>
+<h3 id="toc_2">Find a document by ID</h3>
 
 <p>To recap, you can easily get a document back from the database using the unique ID:</p>
 
@@ -192,7 +192,7 @@ collection. As I mentioned, you can query by example, building up a <a href="htt
 
 <p>In the above example, because you&rsquo;ve queried by ID (and you knew that ID existed), you can be sure that the cursor has a single document that matches the query.  Therefore you can use <code>cursor.one()</code> to get it.</p>
 
-<h3 id="find-all-documents-matching-some-criteria:4740d8a418f593bf302005b7d979ccec">Find all documents matching some criteria</h3>
+<h3 id="toc_3">Find all documents matching some criteria</h3>
 
 <p>In the real world, you won&rsquo;t always know the ID of the document you want.  You could be looking for all the people with a particular name, for example.</p>
 
@@ -224,7 +224,7 @@ The cursor will fetch results in batches from the database, so if you run a quer
 
 <p>You can get started with <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise5SimpleQueryTest.java">Exercise5SimpleQueryTest</a>.</p>
 
-<h3 id="selecting-fields:4740d8a418f593bf302005b7d979ccec">Selecting Fields</h3>
+<h3 id="toc_4">Selecting Fields</h3>
 
 <p>Generally speaking, you will read entire documents from MongoDB most of the time. However, you can choose to return just the fields that you care about (for example, you might have a large document and not need all the values). You do this by passing a second parameter into the <code>find</code> method that&rsquo;s another <code>DBObject</code> defining the fields you want to
 return. In this example, we&rsquo;ll search for people called &ldquo;Smith&rdquo;, and return only the <code>name</code> field. To do this we pass in a <code>DBObject</code> representing <code>{name: 1}</code>:</p>
@@ -248,7 +248,7 @@ passing in a zero for this field name, i.e. <code>{address: 0}</code>:</p>
 <p>With this information, you&rsquo;re ready to tackle
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise6SelectFieldsTest.java">Exercise6SelectFieldsTest</a></p>
 
-<h3 id="query-operators:4740d8a418f593bf302005b7d979ccec">Query Operators</h3>
+<h3 id="toc_5">Query Operators</h3>
 
 <p>As I mentioned in the previous article, your fields can be one of a number of types, including numeric.  This means that you can do queries for numeric values as well.  Let&rsquo;s assume, for example, that our person has a <code>numberOfOrders</code> field, and we wanted to find everyone who had ordered more than, let&rsquo;s say, 10 items.  You can do this using the
 <a href="http://docs.mongodb.org/manual/reference/operator/query/gt/#op._S_gt">$gt</a> operator:</p>
@@ -275,7 +275,7 @@ safety).  So, what happens if you do this?</p>
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise7QueryOperatorsTest.java">Exercise7QueryOperatorsTest</a>
 to go green - it&rsquo;s a bit of a daft example, but you get the idea.</p>
 
-<h3 id="querying-subdocuments:4740d8a418f593bf302005b7d979ccec">Querying Subdocuments</h3>
+<h3 id="toc_6">Querying Subdocuments</h3>
 
 <p>So far we&rsquo;ve assumed that we only want to query values in our top-level fields.  However, we might want to query for <a href="http://docs.mongodb.org/manual/reference/method/db.collection.find/#query-subdocuments">values in a
 subdocument</a> - for example, with our person document, we might want to find everyone who lives in the same city.  We can use
@@ -289,13 +289,13 @@ collection.find(findLondoners));
 
 <p>We&rsquo;re not going to use this technique in a query test, but we will use it later when we&rsquo;re doing updates.</p>
 
-<h3 id="familiar-methods:4740d8a418f593bf302005b7d979ccec">Familiar methods</h3>
+<h3 id="toc_7">Familiar methods</h3>
 
 <p>I mentioned earlier that you can iterate over a cursor, and that the driver will fetch results in batches.  However, you can also use the familiar-looking <a href="http://docs.mongodb.org/manual/reference/method/cursor.skip/">skip()</a> and
 <a href="http://docs.mongodb.org/manual/reference/method/cursor.limit/">limit()</a> methods.  You can use these to fix up the test in
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise8SkipAndLimitTest.java">Exercise8SkipAndLimitTest</a>.</p>
 
-<h3 id="a-last-note-on-querying-indexes:4740d8a418f593bf302005b7d979ccec">A last note on querying: Indexes</h3>
+<h3 id="toc_8">A last note on querying: Indexes</h3>
 
 <p>Like a traditional database, you can add indexes onto the database to improve the speed of regular queries.  There&rsquo;s extensive
 <a href="http://docs.mongodb.org/manual/indexes/">documentation on indexes</a> which you can read at your own leisure.  However, it is worth pointing out that, if necessary, you can programmatically create indexes via the Java driver, using <code>createIndexes</code>.  For example:</p>
@@ -308,7 +308,7 @@ collection.find(findLondoners));
 <p>There is a very simple example for creating an index in <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise9IndexTest.java">Exercise9IndexTest</a>,
 but indexes are a full topic on their own, and the purpose of this part of the tutorial is to merely make you aware of their existence rather than provide a comprehensive tutorial on their purpose and uses.</p>
 
-<h2 id="updating-values:4740d8a418f593bf302005b7d979ccec">Updating values</h2>
+<h2 id="toc_9">Updating values</h2>
 
 <p>Now you can insert into and read from the database.  But your data is probably not static, especially as one of the benefits of MongoDB is a <a href="http://docs.mongodb.org/manual/data-modeling/">flexible schema</a> that can evolve with your needs over time.</p>
 
@@ -323,7 +323,7 @@ application or the user; then you save the updated document to the database.</p>
 
 <p>I&rsquo;ll show the various types of updates (and point you to the code in the test class) to walk you through these different cases.</p>
 
-<h3 id="simple-update-find-a-document-and-replace-it-with-an-updated-one:4740d8a418f593bf302005b7d979ccec">Simple Update: Find a document and replace it with an updated one</h3>
+<h3 id="toc_10">Simple Update: Find a document and replace it with an updated one</h3>
 
 <p>We&rsquo;ll carry on using our simple Person document for our examples.  Let&rsquo;s assume we&rsquo;ve got a document in our database that looks like:</p>
 
@@ -352,7 +352,7 @@ collection.update(new BasicDBObject(&quot;_id&quot;, &quot;jo&quot;),   // find 
 <p>You can make a start with
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise10UpdateByReplacementTest.java">Exercise10UpdateByReplacementTest</a>.</p>
 
-<h3 id="update-operators-change-a-field:4740d8a418f593bf302005b7d979ccec">Update Operators: Change a field</h3>
+<h3 id="toc_11">Update Operators: Change a field</h3>
 
 <p>But sometimes you won&rsquo;t have the whole document to replace the old one, sometimes you just want to update a single field in whichever document matched your criteria.</p>
 
@@ -369,7 +369,7 @@ we&rsquo;ll replace only the field we want to change:</p>
 
 <p>Now you can do <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise11UpdateAFieldTest.java">Exercise11UpdateAFieldTest</a></p>
 
-<h3 id="update-multiple:4740d8a418f593bf302005b7d979ccec">Update Multiple</h3>
+<h3 id="toc_12">Update Multiple</h3>
 
 <p>As I mentioned earlier, by default the <code>update</code> operation updates the first document it finds and no more.  You can, however, set the <code>multi</code> flag on <code>update</code> to update everything.</p>
 
@@ -386,7 +386,7 @@ we&rsquo;ll replace only the field we want to change:</p>
 <p>Now we&rsquo;ve learnt enough to complete the two tests in
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise12UpdateMultipleDocumentsTest.java">Exercise12UpdateMultipleDocumentsTest</a></p>
 
-<h3 id="upsert:4740d8a418f593bf302005b7d979ccec">Upsert</h3>
+<h3 id="toc_13">Upsert</h3>
 
 <p>Finally, the last thing to mention when updating documents is Upsert (Update-or-Insert).  This will search for a document matching the criteria and either: update it if it&rsquo;s there; or insert it into the database if it wasn&rsquo;t.</p>
 
@@ -400,7 +400,7 @@ we&rsquo;ll replace only the field we want to change:</p>
 <p>Now you know everything you need to complete the test in
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise13UpsertTest.java">Exercise13UpsertTest</a></p>
 
-<h2 id="removing-from-the-database:4740d8a418f593bf302005b7d979ccec">Removing from the database</h2>
+<h2 id="toc_14">Removing from the database</h2>
 
 <p>Finally the D in CRUD - Delete.  The syntax of a remove should look familiar now we&rsquo;ve got this far, you pass a document that represents your selection criteria into the remove method.  So if we wanted to delete <code>jo</code> from our database, we&rsquo;d do:</p>
 
@@ -419,7 +419,7 @@ we&rsquo;ll replace only the field we want to change:</p>
 <p>That&rsquo;s all there is to remove, you&rsquo;re ready to finish off
 <a href="https://github.com/trishagee/mongodb-getting-started/blob/master/src/test/java/com/mechanitis/mongodb/gettingstarted/Exercise14RemoveTest.java">Exercise14RemoveTest</a></p>
 
-<h2 id="conclusion:4740d8a418f593bf302005b7d979ccec">Conclusion</h2>
+<h2 id="toc_15">Conclusion</h2>
 
 <p>Unlike traditional databases, you don&rsquo;t create SQL queries in MongoDB to perform CRUD operations. Instead, operations are done by constructing documents both to query the database, and to define the operations to perform.</p>
 
@@ -441,7 +441,7 @@ we&rsquo;ll replace only the field we want to change:</p>
 
 <div>
     <section id="datecount">
-        <h4 id="date"> Mon Jan 1, 0001 </h4>
+        <h4 id="date"> Tue Jan 1, 2008 </h4>
         <h5 id="wc"> 2100 Words </h5>
     </section>
     <ul id="categories">
@@ -454,10 +454,10 @@ we&rsquo;ll replace only the field we want to change:</p>
 
 <div>
     <section id="prev">
-        &nbsp;<a class="previous" href="https://trishagee.github.io/drafts/how_to_write_a_cfp/"><i class="icon-arrow-left"></i> </a><br>
+        &nbsp;<a class="previous" href="https://trishagee.github.io/other-sites/getting-started-with-gradle/"><i class="icon-arrow-left"></i> </a><br>
     </section>
     <section id="next">
-        &nbsp;<a class="next" href="https://trishagee.github.io/other-sites/getting-start-with-mongodb-1/"> <i class="icon-arrow-right"></i></a>
+        &nbsp;<a class="next" href="https://trishagee.github.io/post/the_importance_of_choosing_a_good_scale_for_your_metrics/">The importance of choosing a good scale for your metrics <i class="icon-arrow-right"></i></a>
     </section>
 </div>
 
@@ -475,7 +475,7 @@ we&rsquo;ll replace only the field we want to change:</p>
 </aside>
 
 <meta itemprop="wordCount" content="2038">
-<meta itemprop="datePublished" content="0001-01-01">
+<meta itemprop="datePublished" content="2008-01-01">
 <meta itemprop="url" content="https://trishagee.github.io/other-sites/getting-start-with-mongodb-2/">
 
 

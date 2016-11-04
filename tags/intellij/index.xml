@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Intellij on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/intellij/</link>
+    <link>https://trishagee.github.io/tags/intellij/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -33,8 +33,8 @@ for every mouse action you perform.&lt;/li&gt;
 and DZone&amp;rsquo;s &lt;a href=&#34;https://dzone.com/refcardz/intellij-idea-update&#34;&gt;IntelliJ IDEA Refcard&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Some of my own presentations are live coding using lots of IntelliJ IDEA features, watching them might give an
 idea of what&amp;rsquo;s possible.  For example
-&lt;a href=&#34;https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw&#34;&gt;AngularJS, HTML5, Groovy, Java and MongoDB All Together&lt;/a&gt;,
-&lt;a href=&#34;https://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt; and &lt;a href=&#34;https://trishagee.github.io/presentation/refactoring_to_java_8&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw&#34;&gt;AngularJS, HTML5, Groovy, Java and MongoDB All Together&lt;/a&gt;,
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt; and &lt;a href=&#34;/presentation/refactoring_to_java_8&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;I&amp;rsquo;ve written a few tutorials about specific topics performed in IntelliJ IDEA:
 &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-introduction-to-refactoring.html&#34;&gt;Introduction to Refactoring&lt;/a&gt;,
 &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;Test Driven Development&lt;/a&gt;,
@@ -100,13 +100,13 @@ wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
 
-&lt;h2 id=&#34;abstract:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;At JavaOne this year we&amp;rsquo;re learning all about what&amp;rsquo;s coming in Java 9, and it&amp;rsquo;s so much more than just Jigsaw.  But what we&amp;rsquo;re really wondering is, will it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
 
 &lt;p&gt;In this talk, Trisha will take a look at the features coming in Java 9, focusing on those that may be most useful to us in the day job.  She will demonstrate using some of these features in IntelliJ IDEA.  And finally, she&amp;rsquo;ll share the roadmap for Java 9 support in IntelliJ IDEA.&lt;/p&gt;
 
-&lt;h2 id=&#34;resources:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the talk uses build 136).&lt;/p&gt;
 
@@ -118,7 +118,7 @@ multi-module projects.  Keep an eye on the
 &lt;p&gt;The Jigsaw code I used was from the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;, and the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
 Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
 
-&lt;h2 id=&#34;help-feedback:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
 
 &lt;p&gt;Get help and more information on JDK 9 from the
 &lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
@@ -130,7 +130,7 @@ bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it her
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;more-information:6a2eab40fe361c94565d54d6721754bb&#34;&gt;More information&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;More information&lt;/h2&gt;
 
 &lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
@@ -161,7 +161,7 @@ and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this
 are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
 cases.&lt;/p&gt;
 
-&lt;h3 id=&#34;navigate-between-methods:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Navigate between methods&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate between methods&lt;/h3&gt;
 
 &lt;p&gt;Now I knew you could use the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-2.Structure&#34;&gt;structure thingie&lt;/a&gt;
 (Ctrl+F12) to let you navigate to methods in your class (although I never actually
@@ -169,7 +169,7 @@ use it, it somehow never sticks in my head).  What I did &lt;em&gt;not&lt;/em&gt
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-5.Navigatebetweenmethods&#34;&gt;jump between methods&lt;/a&gt;
 using Alt+Up/Down arrows.  This strikes me as being super useful, especially to browse tests.&lt;/p&gt;
 
-&lt;h3 id=&#34;refactoring-string-fragments:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Refactoring String Fragments&lt;/h3&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;Refactoring String Fragments&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve wanted this feature so many times, but could never find it or get it to work - did you know you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-4.Stringfragments&#34;&gt;refactor out parts of a
 hardcoded string&lt;/a&gt;
@@ -178,37 +178,37 @@ shortcuts - e.g. Ctrl+Alt+V to extract it into a variable.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;m sure I&amp;rsquo;ve tried this before and it didn&amp;rsquo;t work.  But I&amp;rsquo;ve tested it and it does!&lt;/p&gt;
 
-&lt;h3 id=&#34;invert-boolean:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Invert Boolean&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;Invert Boolean&lt;/h3&gt;
 
 &lt;p&gt;There doesn&amp;rsquo;t seem to be a keyboard shortcut mapped by default, but using &amp;ldquo;Refactor -&amp;gt; Invert Boolean&amp;hellip;&amp;rdquo; (or using
-&lt;a href=&#34;https://trishagee.github.io/post/stuff_i_learnt_about_intellij/index.html#toc_0&#34;&gt;our newly discovered&lt;/a&gt; &amp;ldquo;Navigate to Action&amp;rdquo; shortcut of Shift+Ctrl+A and typing &amp;ldquo;Invert&amp;rdquo;) you can tell IntelliJ you want
+&lt;a href=&#34;/post/stuff_i_learnt_about_intellij/index.html#toc_0&#34;&gt;our newly discovered&lt;/a&gt; &amp;ldquo;Navigate to Action&amp;rdquo; shortcut of Shift+Ctrl+A and typing &amp;ldquo;Invert&amp;rdquo;) you can tell IntelliJ you want
 a boolean field to mean the &lt;em&gt;opposite&lt;/em&gt; thing, and it will
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-6.Invertboolean&#34;&gt;flip the meaning everywhere&lt;/a&gt;.
 For example, you might have an &lt;code&gt;saved&lt;/code&gt; flag, and you now want it to mean &lt;code&gt;notSaved&lt;/code&gt; - IntelliJ will make sure the
 &lt;code&gt;isSaved&lt;/code&gt; method returns &lt;code&gt;!notSaved&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;magic-refactor-suggestions:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Magic Refactor Suggestions&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;Magic Refactor Suggestions&lt;/h3&gt;
 
 &lt;p&gt;You don&amp;rsquo;t always know exactly what refactoring operation you want to perform, and IntelliJ is ready to help - it can
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-10.Refactorthis&#34;&gt;suggest refactorings available in the current context&lt;/a&gt;
 using the catchy magic incantation Ctrl+Shift+Alt+T.  Seems useful, but I&amp;rsquo;m pretty sure I&amp;rsquo;m not going to remember that
 one.&lt;/p&gt;
 
-&lt;h3 id=&#34;highlight-implemented-overridden-methods:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Highlight implemented/overridden methods&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Highlight implemented/overridden methods&lt;/h3&gt;
 
 &lt;p&gt;I love everything about IntelliJ&amp;rsquo;s ability to find usages of things - finding where methods are called, finding
 implementations of a method, highlighting usages of a field, method or variable&amp;hellip; What I didn&amp;rsquo;t know, is that you can
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Find+Usages#FindUsages-6.Highlightimplementedandoverriddenmethods&#34;&gt;highlight the methods that implement or override a specific interface or superclass&lt;/a&gt;.
 For some people, this might not add much, as your little &amp;ldquo;I override something&amp;rdquo; icon&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://trishagee.github.io/static/images/stuff_i_learnt_about_intellij/override.png&#34; alt=&#34;Overrides Something&#34; title=&#34;Overrides Something&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/override.png&#34; alt=&#34;Overrides Something&#34; title=&#34;Overrides Something&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;combined with the &lt;code&gt;@Override&lt;/code&gt; annotation, might tell you all you need to know. But that only really works if you&amp;rsquo;re implementing a
 a single interface.  If you&amp;rsquo;ve correctly separated your concerns, you might implement several interfaces, and want to know
 which are the methods from a particular one.  That&amp;rsquo;s where Shift+Ctrl+F7 on the &amp;ldquo;extends&amp;rdquo; keyword comes in handy.&lt;/p&gt;
 
-&lt;h3 id=&#34;run-individual-inspection-by-name:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Run individual inspection by name&lt;/h3&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;Run individual inspection by name&lt;/h3&gt;
 
 &lt;p&gt;I use &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections&#34;&gt;inspections&lt;/a&gt; quite a lot.  They&amp;rsquo;re especially
 useful if you have a codebase that doesn&amp;rsquo;t quite conform to your ideal standards, so you can&amp;rsquo;t yet turn on automated
@@ -224,19 +224,19 @@ unused parameters or unused/untested methods, you could press Shift+Alt+Ctrl+I a
 &amp;ldquo;Unused Declaration&amp;rdquo; inspection and choose to run this on all uncommitted files.  This will tell you where you can
 clean up your code, and every commit should make your codebase that little bit better.&lt;/p&gt;
 
-&lt;h3 id=&#34;saving-power-with-highlighting:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Saving Power With Highlighting&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;Saving Power With Highlighting&lt;/h3&gt;
 
 &lt;p&gt;I did not know you could easily &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-7.Highlightinglevelandpowersavemode&#34;&gt;alter the active errors/warnings&lt;/a&gt;,
 and use that to save power.  Quite Interesting.&lt;/p&gt;
 
-&lt;h3 id=&#34;auto-indent-your-lines:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Auto indent your lines&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Auto indent your lines&lt;/h3&gt;
 
 &lt;p&gt;I almost obsessively reformat my code as I go, pressing &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-1.Reformatcode&#34;&gt;Ctrl+Alt+L&lt;/a&gt;
 almost like a muscle twitch. What I&amp;rsquo;ve just discovered, though, is that there&amp;rsquo;s a &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-2.Autoindentlines&#34;&gt;shortcut which will just fix the line
 indentation&lt;/a&gt;,
 which is probably 80% of what I need anyway - Ctrl+Alt+I.&lt;/p&gt;
 
-&lt;h3 id=&#34;fix-evil-string-concatenation:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Fix Evil String Concatenation&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Fix Evil String Concatenation&lt;/h3&gt;
 
 &lt;p&gt;I can&amp;rsquo;t believe I didn&amp;rsquo;t notice this one earlier - do you know how many times I&amp;rsquo;ve gone around and manually changed:&lt;/p&gt;
 
@@ -251,7 +251,7 @@ which is probably 80% of what I need anyway - Ctrl+Alt+I.&lt;/p&gt;
 &lt;p&gt;Do you??? Anyway you don&amp;rsquo;t need to - Alt+Enter inside the params &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Intentions#Intentions-2.Stringconcatenation&#34;&gt;will suggest the replacement and do it for
 you&lt;/a&gt;. Nice.&lt;/p&gt;
 
-&lt;h3 id=&#34;vcs-quick-access:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;VCS Quick Access&lt;/h3&gt;
+&lt;h3 id=&#34;toc_9&#34;&gt;VCS Quick Access&lt;/h3&gt;
 
 &lt;p&gt;One of the areas where I &lt;em&gt;definitely&lt;/em&gt; don&amp;rsquo;t use IntelliJ to the best of its abilities is the Git integration.  I&amp;rsquo;ve
 been using &lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt; combined with IntelliJ to do most of my VCS management
@@ -266,22 +266,22 @@ find what on earth a &amp;ldquo;Back Quote&amp;rdquo; is, it&amp;rsquo;s &amp;#9
 corner of your keyboard (on the Mac, it&amp;rsquo;s on the bottom left next to the shift, but you shouldn&amp;rsquo;t need it since your
 shortcut is different anyway).&lt;/p&gt;
 
-&lt;h3 id=&#34;amend-commits:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Amend Commits&lt;/h3&gt;
+&lt;h3 id=&#34;toc_10&#34;&gt;Amend Commits&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve just discovered that you can commit a change which smushes up into your last commit and fixes it.  I&amp;rsquo;m assuming it commits the
 new changes and (potentially) an updated commit message into the last change.  I really wish I&amp;rsquo;d known about this
 earlier, on a number of occasions in the last few months I&amp;rsquo;ve done this either manually or by doing a rather
 dangerous soft reset.  I will &lt;em&gt;definitely&lt;/em&gt; be using this in the future.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://trishagee.github.io/static/images/stuff_i_learnt_about_intellij/amend-commit.png&#34; alt=&#34;Amend Commit&#34; title=&#34;Amend Commit&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/amend-commit.png&#34; alt=&#34;Amend Commit&#34; title=&#34;Amend Commit&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;the-cursor-as-a-breakpoint:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;The Cursor as a Breakpoint&lt;/h3&gt;
+&lt;h3 id=&#34;toc_11&#34;&gt;The Cursor as a Breakpoint&lt;/h3&gt;
 
 &lt;p&gt;Did you know that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Debugger#Debugger-5.Runtocursor&#34;&gt;use the cursor as a temporary breakpoint&lt;/a&gt;?
 I did not.  Well, now you know.&lt;/p&gt;
 
-&lt;h3 id=&#34;labelling-changes:c33c28c3818118510a814dfc68ca3ba2&#34;&gt;Labelling Changes&lt;/h3&gt;
+&lt;h3 id=&#34;toc_12&#34;&gt;Labelling Changes&lt;/h3&gt;
 
 &lt;p&gt;I hope by now none of us developers are doing that icky thing of having &lt;a href=&#34;https://twitter.com/trisha_gee/status/529299964787449856&#34;&gt;&amp;ldquo;Copy of&amp;hellip;&amp;rdquo; and &amp;ldquo;Backup of&amp;hellip;&amp;rdquo; filenames
 and directories&lt;/a&gt; to keep track of our versions.  We&amp;rsquo;re all using a VCS of course.  But if you&amp;rsquo;re being strict about making
@@ -312,7 +312,7 @@ come, so stay tuned!&lt;/p&gt;
       <guid>https://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
       <description>
 
-&lt;p&gt;Day three of my &lt;a href=&#34;https://trishagee.github.io/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
+&lt;p&gt;Day three of my &lt;a href=&#34;/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
 of IntelliJ, since I&amp;rsquo;m
 already a &amp;ldquo;Power User&amp;rdquo;, to see if there&amp;rsquo;s stuff missing that someone like me might want to see. Firstly, a confession -
 I&amp;rsquo;m not sure I&amp;rsquo;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&amp;rsquo;ve dipped
@@ -327,7 +327,7 @@ else using the tool and saw them doing something you didn&amp;rsquo;t know was p
 have upgraded to IntelliJ 14, and at the time of writing I don&amp;rsquo;t know which of these features are new and which are
 simply previously undiscovered):&lt;/p&gt;
 
-&lt;h3 id=&#34;navigate-directly-to-an-action-or-option:41c959bf685955ca610a9171f62da81b&#34;&gt;Navigate directly to an action or option&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate directly to an action or option&lt;/h3&gt;
 
 &lt;p&gt;Press Shift+Ctrl+A (Windows) or Shift+Cmd+A (Mac) and start typing the name of the thing you want to do, or the setting
 you want to change. I&amp;rsquo;ve found this especially useful now I&amp;rsquo;m back on Windows and I don&amp;rsquo;t have that nice helpful typing
@@ -335,10 +335,10 @@ box on the help menu that will take me straight to the menu item I want.  But wh
 as I&amp;rsquo;m setting up a new profile on a new laptop (more on the new laptop later, if it doesn&amp;rsquo;t defeat me utterly) is that
 from here, you can turn various settings on and off without having to navigate through the settings screen:&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://trishagee.github.io/static/images/stuff_i_learnt_about_intellij/action.png&#34; alt=&#34;Navigate to Action&#34; title=&#34;Navigate to Action&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/action.png&#34; alt=&#34;Navigate to Action&#34; title=&#34;Navigate to Action&#34; /&gt;
 &lt;/p&gt;
 
-&lt;h3 id=&#34;statement-completion:41c959bf685955ca610a9171f62da81b&#34;&gt;Statement completion&lt;/h3&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;Statement completion&lt;/h3&gt;
 
 &lt;p&gt;I never knew there was a
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-4.Statementcompletion&#34;&gt;shortcut for finishing off a statement&lt;/a&gt;,
@@ -346,7 +346,7 @@ all that Java boilerplate you need to keep the compiler happy - semi colons and 
 there is, and I can see it being super useful, especially if you&amp;rsquo;re using other bits of IntelliJ code completion to
 create the core of your line of code.&lt;/p&gt;
 
-&lt;h3 id=&#34;issue-tracker-integration:41c959bf685955ca610a9171f62da81b&#34;&gt;Issue tracker integration&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;Issue tracker integration&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;m sure loads of people are already using integration with their favourite issue tracker, but I hadn&amp;rsquo;t really thought
 about this as something that I really cared about.  But I was watching the intro videos for YouTrack (not surprisingly
@@ -359,7 +359,7 @@ precious navigational seconds and window-switching.&lt;/p&gt;
 consistency if all your developers are doing the same thing.  On my last project we only just realised we all quoted the
 Jira issues in subtly different ways.&lt;/p&gt;
 
-&lt;h3 id=&#34;settings-shortcut-keys:41c959bf685955ca610a9171f62da81b&#34;&gt;Settings shortcut keys&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;Settings shortcut keys&lt;/h3&gt;
 
 &lt;p&gt;When I initially started using IntelliJ in anger back in 2008, I was very much a point-and-click type user. Over time,
 pair programming with keyboard-super-users and giving live demos with very limited time available, I&amp;rsquo;ve worked harder
@@ -371,12 +371,12 @@ aforementioned &amp;ldquo;Navigate to Action&amp;rdquo; fails me).&lt;/p&gt;
 &lt;p&gt;Ctrl+Alt+S for the settings dialog (appears to be Cmd + , on the Mac)
 Shift+Ctrl+Alt+S for the project structure dialog (appears to be Cmd + ; on the Mac)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://trishagee.github.io/static/images/stuff_i_learnt_about_intellij/settings.png&#34; alt=&#34;Settings Shortcuts&#34; title=&#34;Settings Shortcuts&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/settings.png&#34; alt=&#34;Settings Shortcuts&#34; title=&#34;Settings Shortcuts&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;Yeah.  I can&amp;rsquo;t believe I wasn&amp;rsquo;t already using those either.&lt;/p&gt;
 
-&lt;h3 id=&#34;selecting-the-negative:41c959bf685955ca610a9171f62da81b&#34;&gt;Selecting the negative&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Selecting the negative&lt;/h3&gt;
 
 &lt;p&gt;I use completion/suggestions all the time from IntelliJ, I&amp;rsquo;m far too lazy to type everything.  What I didn&amp;rsquo;t realise, is
 that you don&amp;rsquo;t just have to accept the default they give you.  If, for example, IntelliJ suggests a boolean value, you
@@ -385,7 +385,7 @@ of explaining that, but take a look at
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-5.Negatingcompletion&#34;&gt;the documentation&lt;/a&gt;
 and try it, it&amp;rsquo;s quite cool.&lt;/p&gt;
 
-&lt;h3 id=&#34;exclude-from-autocomplete:41c959bf685955ca610a9171f62da81b&#34;&gt;Exclude from Autocomplete&lt;/h3&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;Exclude from Autocomplete&lt;/h3&gt;
 
 &lt;p&gt;Speaking of code completion, sometimes IntelliJ is sometimes just a bit too keen to suggest something, and you really
 will never want that value.  In the past, I&amp;rsquo;ve always used &lt;code&gt;Settings -&amp;gt; Editor -&amp;gt; General -&amp;gt; Auto Import&lt;/code&gt; to manage the
@@ -409,7 +409,7 @@ two people will find this useful.&lt;/p&gt;
       <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>https://trishagee.github.io/post/new_year_new_adventures/</guid>
-      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;https://trishagee.github.io/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
+      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
 called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
 this role were: to learn what it was
 like working for a company that produced a technology product; to discover what impact working in an open source fashion has; and to
@@ -420,7 +420,7 @@ worked to understand the value of community and evangelism, and to help create a
 and my evangelism efforts and open source work earned me the &lt;a href=&#34;https://java.net/website/java-champions/bios.html#Gee&#34;&gt;Java Champion&lt;/a&gt; title.
 I&amp;rsquo;m extremely proud of what I&amp;rsquo;ve achieved over this period, and very grateful to MongoDB for giving me these opportunities.&lt;/p&gt;
 
-&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
+&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
 this year, you&amp;rsquo;ll know of my love affair with &lt;a href=&#34;https://www.jetbrains.com/idea/whatsnew/&#34;&gt;IntelliJ IDEA&lt;/a&gt;,
 a tool I use daily (even for blogging). Well, now I&amp;rsquo;m joining the team at &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt;,
 where I&amp;rsquo;m going Full Advocate. I &lt;em&gt;hope&lt;/em&gt; this means I get to carry on doing more of what I love - presenting, writing,
@@ -430,7 +430,7 @@ Java/JVM world.&lt;/p&gt;
 &lt;p&gt;And yes, in answer to the Most Frequently Asked Question, I am staying in Spain. I&amp;rsquo;ve fallen in love with Sevilla and I&amp;rsquo;m not ready to
 leave yet.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;https://trishagee.github.io/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;I shall leave you with my somewhat disasterous &amp;ldquo;Top Ten IntelliJ Tips&amp;rdquo; from GOTO Aarhus, which is worth watching just to see Dan North
