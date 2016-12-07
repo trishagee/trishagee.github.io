@@ -100,17 +100,17 @@ wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Slides&lt;/h3&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ePGXu8U5H0CSh&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/java-9-functionality-and-tooling&#34; title=&#34;Java 9 Functionality and Tooling&#34; target=&#34;_blank&#34;&gt;Java 9 Functionality and Tooling&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/trishagee&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_1&#34;&gt;Abstract&lt;/h3&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;Seems like we’ve been waiting for Java 9 for eternity.  We’ve been hearing all about Jigsaw since Java 7, so we’ll be forgiven for thinking that’s the most interesting thing about the next Java release.  What we should be wondering is, will Java 9 it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
 
 &lt;p&gt;In this talk, Trisha will take a look at some of the features in Java 9, including modularity, the REPL, and the nice new Collections features.  Trisha will demonstrate, via live coding, these features in IntelliJ IDEA, and talk a bit about the current and future support for Java 9 in IntelliJ IDEA.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_2&#34;&gt;Resources&lt;/h3&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
 talk uses build 143).&lt;/p&gt;
@@ -122,7 +122,7 @@ on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ blog&lt
 &lt;p&gt;The Jigsaw code I used was from the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;, and the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
 Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Help &amp;amp; Feedback&lt;/h3&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
 
 &lt;p&gt;Get help and more information on JDK 9 from the
 &lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
@@ -134,7 +134,7 @@ bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it her
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;More information&lt;/h3&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;More information&lt;/h2&gt;
 
 &lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
