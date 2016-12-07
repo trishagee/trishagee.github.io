@@ -220,25 +220,29 @@ wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Slides&lt;/h3&gt;
 
-&lt;p&gt;At JavaOne this year we&amp;rsquo;re learning all about what&amp;rsquo;s coming in Java 9, and it&amp;rsquo;s so much more than just Jigsaw.  But what we&amp;rsquo;re really wondering is, will it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ePGXu8U5H0CSh&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/java-9-functionality-and-tooling&#34; title=&#34;Java 9 Functionality and Tooling&#34; target=&#34;_blank&#34;&gt;Java 9 Functionality and Tooling&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/trishagee&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
-&lt;p&gt;In this talk, Trisha will take a look at the features coming in Java 9, focusing on those that may be most useful to us in the day job.  She will demonstrate using some of these features in IntelliJ IDEA.  And finally, she&amp;rsquo;ll share the roadmap for Java 9 support in IntelliJ IDEA.&lt;/p&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;Abstract&lt;/h3&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
+&lt;p&gt;Seems like we’ve been waiting for Java 9 for eternity.  We’ve been hearing all about Jigsaw since Java 7, so we’ll be forgiven for thinking that’s the most interesting thing about the next Java release.  What we should be wondering is, will Java 9 it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the talk uses build 136).&lt;/p&gt;
+&lt;p&gt;In this talk, Trisha will take a look at some of the features in Java 9, including modularity, the REPL, and the nice new Collections features.  Trisha will demonstrate, via live coding, these features in IntelliJ IDEA, and talk a bit about the current and future support for Java 9 in IntelliJ IDEA.&lt;/p&gt;
 
-&lt;p&gt;At the time of writing, &lt;a href=&#34;https://confluence.jetbrains.com/display/IDEADEV/IDEA+2016.3+EAP&#34;&gt;IntelliJ IDEA 2016.3 EAP&lt;/a&gt; (build 163.4396) comes with
-some support for jigsaw. In the talk I use build 163.4771, which builds with Java language level 9 without error and also supports
-multi-module projects.  Keep an eye on the
-&lt;a href=&#34;https://blog.jetbrains.com/idea/tag/2016-3/&#34;&gt;IntelliJ blog&lt;/a&gt; for further updates.&lt;/p&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;Resources&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
+talk uses build 143).&lt;/p&gt;
+
+&lt;p&gt;At the time of writing, &lt;a href=&#34;https://blog.jetbrains.com/idea/2016/11/intellij-idea-2016-3-ga-java-8-and-es6-debugger-and-ui-improvements-and-a-ton-more/&#34;&gt;IntelliJ IDEA 2016.3&lt;/a&gt; comes with
+some support for jigsaw. This support will continue to evolve, so keep an eye
+on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ blog&lt;/a&gt; for further updates.&lt;/p&gt;
 
 &lt;p&gt;The Jigsaw code I used was from the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;, and the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
 Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;Help &amp;amp; Feedback&lt;/h3&gt;
 
 &lt;p&gt;Get help and more information on JDK 9 from the
 &lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
@@ -250,7 +254,7 @@ bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it her
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;More information&lt;/h2&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;More information&lt;/h3&gt;
 
 &lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
@@ -261,21 +265,6 @@ also available&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;The OpenJDK wiki provides &lt;a href=&#34;https://wiki.openjdk.java.net/display/Adoption/JDK+9+Outreach&#34;&gt;guidance on running your code with Java 9&lt;/a&gt;, and a
 &lt;a href=&#34;https://wiki.openjdk.java.net/display/quality/Quality+Outreach&#34;&gt;list of libraries and frameworks who are currently testing against Java 9&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;30 Sep - 1 Oct 2016&lt;/strong&gt;: &lt;a href=&#34;http://www.lambda.world/speakers/&#34;&gt;Lambda World, Cadiz - Java 8 in Anger&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;7-11 Nov&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.be/&#34;&gt;DevoxxBE, Antwerp - Refactoring to Java 8&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;1-9 Dec&lt;/strong&gt;: &lt;a href=&#34;http://melbourne.yowconference.com.au/speakers/&#34;&gt;YOW! Melbourne, Brisbane, Sydney - Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -389,6 +378,21 @@ by the conference organisers.&lt;/li&gt;
 
 &lt;p&gt;PS In case you&amp;rsquo;re interested, we were presenting a new talk,
 &lt;a href=&#34;presentation/code_review_matters_and_manners&#34;&gt;Code Review Matters and Manners&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;30 Sep - 1 Oct 2016&lt;/strong&gt;: &lt;a href=&#34;http://www.lambda.world/speakers/&#34;&gt;Lambda World, Cadiz - Java 8 in Anger&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;7-11 Nov&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.be/&#34;&gt;DevoxxBE, Antwerp - Refactoring to Java 8&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;1-9 Dec&lt;/strong&gt;: &lt;a href=&#34;http://melbourne.yowconference.com.au/speakers/&#34;&gt;YOW! Melbourne, Brisbane, Sydney - Java 8 in Anger&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
