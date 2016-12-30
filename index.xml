@@ -6,7 +6,22 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 04 Nov 2016 00:00:00 UTC</updated>
+    <updated>Fri, 30 Dec 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Fri, 30 Dec 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;25 Feb 2017&lt;/strong&gt;: &lt;a href=&#34;https://voxxeddays.com/cern/cth_speaker/trisha-gee/&#34;&gt;Voxxed CERN - Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;21-23 Mar 2017&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.us/&#34;&gt;Devoxx US - Java 9 Features and Tooling&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>What Can Men Do</title>
@@ -265,19 +280,6 @@ also available&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;The OpenJDK wiki provides &lt;a href=&#34;https://wiki.openjdk.java.net/display/Adoption/JDK+9+Outreach&#34;&gt;guidance on running your code with Java 9&lt;/a&gt;, and a
 &lt;a href=&#34;https://wiki.openjdk.java.net/display/quality/Quality+Outreach&#34;&gt;list of libraries and frameworks who are currently testing against Java 9&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;21-23 Mar 2017&lt;/strong&gt;: &lt;a href=&#34;https://devoxx.us/&#34;&gt;Devoxx US - Java 9 Features and Tooling&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -3,8 +3,13 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2016-11-04T00:00:00+00:00</lastmod>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
+    <lastmod>2016-12-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -20,11 +25,6 @@
   <url>
     <loc>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</loc>
     <lastmod>2016-09-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
-    <lastmod>2016-09-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1083,17 +1083,17 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trishagee.github.io/post/most_of_all_its_fun/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
+    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
     <lastmod>2008-01-01T00:00:00+00:00</lastmod>
   </url>
   
@@ -1118,12 +1118,12 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/agile_infection_growing/</loc>
+    <loc>https://trishagee.github.io/post/qcon_bloggers_summary/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/qcon_bloggers_summary/</loc>
+    <loc>https://trishagee.github.io/post/agile_infection_growing/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
   </url>
   
