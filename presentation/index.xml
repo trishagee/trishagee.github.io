@@ -2,11 +2,63 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Presentations on Trisha Gee </title>
-    <link>https://trishagee.github.io/presentation/index.xml/</link>
+    <link>https://trishagee.github.io/presentation/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 07 Feb 2017 00:00:00 UTC</updated>
+    <updated>Tue, 28 Feb 2017 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Real World Java 9</title>
+      <link>https://trishagee.github.io/presentation/real_world_java_9/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
+      <description>
+
+&lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;
+
+&lt;h2 id=&#34;abstract:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;The feature we always hear about whenever Java 9 is in the news is Jigsaw, modularity.  But this doesn&amp;rsquo;t scratch the
+same developer itch that Java 8&amp;rsquo;s lambdas and streams did, and we&amp;rsquo;re left with a vague sensation that the next version might not be that interesting.&lt;/p&gt;
+
+&lt;p&gt;Java 9 actually has a lot of great additions and changes to make development a bit nicer.  These features can&amp;rsquo;t be lumped under an umbrella term like Java 8&amp;rsquo;s lambdas and streams, the changes are scattered throughout the APIs and language features that we regularly use.&lt;/p&gt;
+
+&lt;p&gt;In this presentation Trisha will show, via live coding:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How we can use the new Flow API to utilise Reactive Programming&lt;/li&gt;
+&lt;li&gt;How the improvements to the Streams API make it easier to control real-time streaming data&lt;/li&gt;
+&lt;li&gt;How to the Collections convenience methods simplify code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Along the way we&amp;rsquo;ll bump into other Java 9 features, including some of the additions to interfaces and changes to deprecation.  We’ll see that once you start using Java 9, you can&amp;rsquo;t go back to Before.&lt;/p&gt;
+
+&lt;h2 id=&#34;resources:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;The code for this presentation was originally created to demonstrate Java 8 code in
+&lt;a href=&#34;https://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt;, take a look at the videos there to see more background on the application and how it used Java 8 Streams and Lambda Expressions for the core business logic. The code and the presentation
+evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Java 9 features&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have another Java 9 talk based off this code, &lt;a href=&#34;https://trishagee.github.io/presentation/java_9_are_we_there_yet&#34;&gt;Anticipating Java 9 - Functionality and Tooling&lt;/a&gt;, which demos more individual Java 9 features and talks specifically about IntelliJ IDEA&amp;rsquo;s support for it.&lt;/p&gt;
+
+&lt;h3 id=&#34;code:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Code&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;. The full application with all Java 9 code is currently under the &lt;em&gt;working-system&lt;/em&gt; branch.&lt;/li&gt;
+&lt;li&gt;Original Java 8 code comes from &lt;a href=&#34;https://github.com/trishagee/sense&#34;&gt;https://github.com/trishagee/sense&lt;/a&gt;, the &lt;em&gt;master&lt;/em&gt; branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the &lt;em&gt;junit-5&lt;/em&gt; branch. Java 8 and 9 features live side-by-side in &lt;em&gt;yow-brisbane&lt;/em&gt;. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;java-9:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Java 9&lt;/h3&gt;
+
+&lt;h3 id=&#34;jigsaw:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Jigsaw&lt;/h3&gt;
+
+&lt;h3 id=&#34;reactive-programming-and-rxjava:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
+
+&lt;h3 id=&#34;repl:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;REPL&lt;/h3&gt;
+</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -14,11 +66,8 @@
       <pubDate>Tue, 07 Feb 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;https://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;8 Feb 2017&lt;/strong&gt;: &lt;a href=&#34;https://info.jetbrains.com/IDEA-Webinar-February2017.html&#34;&gt;Refactoring to Java 8 (webinar)&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;25 Feb 2017&lt;/strong&gt;: Voxxed CERN - &lt;a href=&#34;https://voxxeddays.com/cern/cth_speaker/trisha-gee/&#34;&gt;Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;6-8 Mar 2017&lt;/strong&gt;: QCon London - &lt;a href=&#34;https://qconlondon.com/london-2017/track/java-interesting-stuff-space&#34;&gt;Java Track Host&lt;/a&gt;; &lt;a href=&#34;https://qconlondon.com/london-2017/presentation/real-world-Java-9&#34;&gt;Real World Java 9&lt;/a&gt;&lt;br /&gt;
 &lt;strong&gt;21-23 Mar 2017&lt;/strong&gt;: Devoxx US - &lt;a href=&#34;http://cfp.devoxx.us/2017/talk/PPJ-6907/Anticipating_Java_9_-_Functionality_and_Tooling&#34;&gt;Java 9 Features and Tooling&lt;/a&gt;; &lt;a href=&#34;http://cfp.devoxx.us/2017/talk/COD-6669/Don&#39;t_just_Embrace_Change,_Create_Change&#34;&gt;BoF: Don&amp;rsquo;t just Embrace Change, Create Change&lt;/a&gt;&lt;/p&gt;
@@ -43,17 +92,17 @@ this page should list my confirmed upcoming events.&lt;/p&gt;
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Slides&lt;/h2&gt;
+&lt;h2 id=&#34;slides:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ePGXu8U5H0CSh&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/java-9-functionality-and-tooling&#34; title=&#34;Java 9 Functionality and Tooling&#34; target=&#34;_blank&#34;&gt;Java 9 Functionality and Tooling&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/trishagee&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;Seems like we’ve been waiting for Java 9 for eternity.  We’ve been hearing all about Jigsaw since Java 7, so we’ll be forgiven for thinking that’s the most interesting thing about the next Java release.  What we should be wondering is, will Java 9 it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
 
 &lt;p&gt;In this talk, Trisha will take a look at some of the features in Java 9, including modularity, the REPL, and the nice new Collections features.  Trisha will demonstrate, via live coding, these features in IntelliJ IDEA, and talk a bit about the current and future support for Java 9 in IntelliJ IDEA.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;resources:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
 talk uses build 143).&lt;/p&gt;
@@ -65,7 +114,7 @@ on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ blog&lt
 &lt;p&gt;The Jigsaw code I used was from the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;, and the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
 Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
+&lt;h2 id=&#34;help-feedback:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
 
 &lt;p&gt;Get help and more information on JDK 9 from the
 &lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
@@ -77,7 +126,7 @@ bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it her
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;More information&lt;/h2&gt;
+&lt;h2 id=&#34;more-information:6a2eab40fe361c94565d54d6721754bb&#34;&gt;More information&lt;/h2&gt;
 
 &lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
@@ -102,7 +151,7 @@ also available&lt;/a&gt;).&lt;/p&gt;
 &lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
 supporting material.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:56b95afc30988b1465887042c61e6c3e&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;A code review is basically a technical discussion which should lead to improvements in the code and/or sharing
 knowledge in a team. As with any conversation, it should have substance and form.&lt;/p&gt;
@@ -116,15 +165,15 @@ without offending the authors - after all, this is something that they worked ha
 some observations, thoughts and practical tricks on how to give and receive feedback without turning a code review
 into a battlefield.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
+&lt;h2 id=&#34;the-talk:56b95afc30988b1465887042c61e6c3e&#34;&gt;The talk&lt;/h2&gt;
 
 &lt;iframe src=&#34;https://player.vimeo.com/video/182087729&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/7wG1iGAnGsQ4F6&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;More Information&lt;/h2&gt;
+&lt;h2 id=&#34;more-information:56b95afc30988b1465887042c61e6c3e&#34;&gt;More Information&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Books&lt;/h3&gt;
+&lt;h3 id=&#34;books:56b95afc30988b1465887042c61e6c3e&#34;&gt;Books&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;What to Look for in a Code Review&lt;/a&gt; - Trisha Gee (free!)&lt;/li&gt;
@@ -132,7 +181,7 @@ into a battlefield.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.amazon.com/gp/product/0132350882/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0132350882&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=86afa947570d6d5c8d03f7c4d495c449&#34;&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/a&gt;&lt;img src=&#34;//ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=am2&amp;o=1&amp;a=0132350882&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt; - Robert C. Martin&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;Articles&lt;/h3&gt;
+&lt;h3 id=&#34;articles:56b95afc30988b1465887042c61e6c3e&#34;&gt;Articles&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;What to look for in a Code Review&lt;/a&gt;, the article that started all of this.&lt;/li&gt;
@@ -149,7 +198,7 @@ into a battlefield.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://spin.atomicobject.com/2016/06/21/pick-battles-software-team/&#34;&gt;How to Pick Your Battles on a Software Team&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;And, of course&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;and-of-course:56b95afc30988b1465887042c61e6c3e&#34;&gt;And, of course&amp;hellip;&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;You can &lt;a href=&#34;https://www.jetbrains.com/upsource/&#34;&gt;download Upsource&lt;/a&gt;, it&amp;rsquo;s free for up to 10 users.&lt;/li&gt;
@@ -171,7 +220,7 @@ into a battlefield.&lt;/p&gt;
 &lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.&lt;/p&gt;
 
@@ -186,7 +235,7 @@ most benefit&lt;/li&gt;
 &lt;li&gt;Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
+&lt;h2 id=&#34;the-talk:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;The talk&lt;/h2&gt;
 
 &lt;p&gt;Most recent version, containing performance analysis, is on the
 &lt;a href=&#34;https://www.infoq.com/presentations/java8-lambda-streams&#34;&gt;InfoQ website&lt;/a&gt;, and InfoQ also has a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in
@@ -203,29 +252,29 @@ the talk&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;The IntelliJ-specific features of some of the refactoring shown are covered in my
 &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt; tutorial.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Background&lt;/h2&gt;
+&lt;h2 id=&#34;background:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Background&lt;/h2&gt;
 
 &lt;p&gt;Article: &lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;Five Java 8 Features You Won&amp;rsquo;t Be Able to Live Without&lt;/a&gt;&lt;br /&gt;
-Video and Research: &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;Building a Java 8 Application&lt;/a&gt;&lt;/p&gt;
+Video and Research: &lt;a href=&#34;https://trishagee.github.io/presentation/java8_in_anger/&#34;&gt;Building a Java 8 Application&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Code&lt;/h2&gt;
+&lt;h2 id=&#34;code:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Code&lt;/h2&gt;
 
 &lt;p&gt;The project we&amp;rsquo;re refactoring is &lt;a href=&#34;https://github.com/mongodb/morphia&#34;&gt;Morphia&lt;/a&gt;. You can see the &amp;ldquo;after&amp;rdquo; of the chosen refactorings on the
  &lt;a href=&#34;https://github.com/trishagee/morphia/tree/r2j8&#34;&gt;r2j8&lt;/a&gt; branch.&lt;/p&gt;
 
 &lt;p&gt;The performance tests that were written and run specifically for this talk are in the &lt;a href=&#34;https://github.com/trishagee/j8-morphia-perf-tests&#34;&gt;j8-morphia-perf-tests repository&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;Performance&lt;/h2&gt;
+&lt;h2 id=&#34;performance:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Performance&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;Lambda Expressions&lt;/h3&gt;
+&lt;h3 id=&#34;lambda-expressions:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Lambda Expressions&lt;/h3&gt;
 
 &lt;p&gt;Video: &lt;a href=&#34;http://medianetwork.oracle.com/video/player/2623576348001&#34;&gt;Lambda Performance&lt;/a&gt; and &lt;a href=&#34;http://www.oracle
 .com/technetwork/java/jvmls2013kuksen-2014088.pdf&#34;&gt;talk slides&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood&#34;&gt;Java 8 Lambdas - A Peek Under the Hood&lt;/a&gt;&lt;br /&gt;
 Video: &lt;a href=&#34;https://youtu.be/MLksirK9nnE&#34;&gt;Lambdas in Java: A Peek under the Hood - Brian Goetz&lt;/a&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_6&#34;&gt;Streams&lt;/h4&gt;
+&lt;h4 id=&#34;streams:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Streams&lt;/h4&gt;
 
 &lt;p&gt;Video: &lt;a href=&#34;https://www.infoq.com/presentations/java8-stream-performance&#34;&gt;Let’s Get to the Rapids: Java 8 Stream Performance&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;https://jaxenter
@@ -285,11 +334,11 @@ don&amp;rsquo;t realise you&amp;rsquo;re boxing)&lt;/p&gt;
 article&lt;br /&gt;
 Article: &lt;a href=&#34;http://blog.codefx.org/java/stream-performance-your-ideas/&#34;&gt;Follow up on Stream Performance&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;Date and Time&lt;/h3&gt;
+&lt;h3 id=&#34;date-and-time:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Date and Time&lt;/h3&gt;
 
 &lt;p&gt;Article: &lt;a href=&#34;http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/&#34;&gt;JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)&lt;/a&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Benchmarking&lt;/h3&gt;
+&lt;h3 id=&#34;benchmarking:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;Benchmarking&lt;/h3&gt;
 
 &lt;p&gt;I used a bunch of techniques to produce the benchmarks on the talk.  I&amp;rsquo;d like to summarise them more thoroughly when I get a chance, but
 for now here&amp;rsquo;s my background reading:&lt;/p&gt;
@@ -300,7 +349,7 @@ for now here&amp;rsquo;s my background reading:&lt;/p&gt;
 Tool: &lt;a href=&#34;https://github.com/artyushov/idea-jmh-plugin&#34;&gt;IntelliJ JMH Plugin&lt;/a&gt;&lt;br /&gt;
 Article: &lt;a href=&#34;http://java-performance.info/jmh/&#34;&gt;Introduction to JMH&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_9&#34;&gt;&amp;ldquo;Best Practice&amp;rdquo;&lt;/h2&gt;
+&lt;h2 id=&#34;best-practice:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;&amp;ldquo;Best Practice&amp;rdquo;&lt;/h2&gt;
 
 &lt;p&gt;I dislike the term &amp;ldquo;Best Practice&amp;rdquo; as it implies a &amp;ldquo;one size fits all&amp;rdquo; approach, and I believe that our job is to
 make difficult decisions based on various pros and cons and differing situations.  However, here I will collect
@@ -346,7 +395,7 @@ src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;abstract:55bdc67688424da8fd656071ea3cbd85&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Rock stars are dead. Ninjas are banished. There are simply too many trashed hotel rooms, dead bodies and failed
 projects. The age of the individual superhero coder is over.&lt;/em&gt;&lt;/p&gt;
@@ -377,7 +426,7 @@ an individual, add to the mix?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;This presentation is about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
 talk covers the same case study as
-&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
+&lt;a href=&#34;https://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.&lt;/p&gt;
 
@@ -385,11 +434,11 @@ technical look at the merits of one language over another.&lt;/p&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/zUhtb6nqz7IgdO&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Other Videos&lt;/h3&gt;
+&lt;h3 id=&#34;other-videos:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Other Videos&lt;/h3&gt;
 
 &lt;p&gt;First version: &lt;a href=&#34;https://www.youtube.com/watch?v=D-xra_X9Nwg&#34;&gt;GOTO Chicago&lt;/a&gt; ( &lt;a href=&#34;https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW&#34;&gt;slides&lt;/a&gt;)&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Questions&lt;/h2&gt;
+&lt;h2 id=&#34;questions:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Questions&lt;/h2&gt;
 
 &lt;p&gt;I sadly do not have a lot of time for questions during the presentation, but
 thanks to the wonders of modern technology, I have a list of unanswered
@@ -545,7 +594,7 @@ hope that&amp;rsquo;s enough to get you started, there&amp;rsquo;s plenty more o
 
 &lt;p&gt;&lt;strong&gt;How did you go about getting buy in from the team to use Spock?&lt;/strong&gt;&lt;br /&gt;
 I cover this in
-&lt;a href=&#34;/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
+&lt;a href=&#34;https://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;my other presentation on the topic&lt;/a&gt; - the
 short version is, I did a week-long spike to investigate whether Spock would
 make testing easier for us, showed the pros and cons to the whole team, and
 then led by example writing tests that (I thought) were more readable than
@@ -712,7 +761,7 @@ know is still used at LMAX.  Dave Farley talks about it in some of his
 &lt;a href=&#34;https://www.parleys.com/tutorial/continuous-delivery-part-2-2&#34;&gt;Continuous Delivery talks&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;resources:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;My talk that specifically looks at the
@@ -744,7 +793,7 @@ testing&lt;/a&gt;.&lt;/li&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:369c5d835fdcc409d637a5ecd272b568&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;i&gt;What can you do to help developers a) write tests b) write meaningful tests
 and c) write readable tests?&lt;/p&gt;
@@ -824,15 +873,16 @@ on this topic, and to the resources I used to create the code.&lt;/p&gt;
 the latest version even shows how to use TDD to help figure out which stream
 operations you need. The video of the latest version is not yet available.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_0&#34;&gt;Videos&lt;/h4&gt;
+&lt;h4 id=&#34;videos:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Videos&lt;/h4&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/6_06zcDisNg&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;br/&gt;&lt;br/&gt;&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_1&#34;&gt;Other videos&lt;/h4&gt;
+&lt;h4 id=&#34;other-videos:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Other videos&lt;/h4&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Java 8 (and 9) In Anger at &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;YOW!&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Java 8 (and 9) In Anger at &lt;a href=&#34;https://youtu.be/miV7Ws7DODY&#34;&gt;Lambda World&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.parleys.com/play/java-8-anger-1&#34;&gt;Devoxx UK&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/java8-examples&#34;&gt;QCon New York&lt;/a&gt; (in this version, you get to see what happens
@@ -843,7 +893,7 @@ when it goes wrong&amp;hellip;)&lt;br /&gt;&lt;/li&gt;
 simplified a little since then)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_2&#34;&gt;More details&lt;/h4&gt;
+&lt;h4 id=&#34;more-details:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;More details&lt;/h4&gt;
 
 &lt;p&gt;Firstly, you might want to read &lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8?&lt;/a&gt;, and &lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;5 Java 8 Features That
 You Won&amp;rsquo;t Be Able To Live Without&lt;/a&gt;.&lt;/p&gt;
@@ -859,20 +909,21 @@ the code I write in the presentation - 3 hours of material where I go into each 
 into some of the interesting code sections in more detail. It also shows more clearly some of the features of
 IntelliJ IDEA that make the transition to Java 8 a bit easier for developers.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_3&#34;&gt;Project code&lt;/h4&gt;
+&lt;h4 id=&#34;project-code:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Project code&lt;/h4&gt;
 
 &lt;ul&gt;
-&lt;li&gt;The full application code on the master branch branch of my &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;sense repository&lt;/a&gt;.
-This contains some refactorings that have not been demoed yet.&lt;/li&gt;
-&lt;li&gt;The code created on stage at QCon London is on the &lt;a href=&#34;https://github.com/trishagee/sense/tree/qcon&#34;&gt;QCon branch&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The full application code on the master branch branch of my &lt;a href=&#34;https://github.com/trishagee/sense/&#34;&gt;sense repository&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;If you want to play along from the beginning of the demo, check out &lt;a href=&#34;https://github.com/trishagee/sense/tree/starting_point&#34;&gt;starting_point&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s a branch which shows the steps of the application as a series of &lt;a href=&#34;https://github.com/trishagee/sense/tree/steps&#34;&gt;independent steps&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;You will find a whole mess of various branches. The conference names are the final working code demoed at that conference.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;resources:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;The following is a list of the resources I used to create the talk, and can be used to find more information about
 any of the technologies or approaches used during the presentation.&lt;/p&gt;
 
-&lt;h4 id=&#34;toc_5&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
+&lt;h4 id=&#34;java-8-java-ee-overview:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Java 8 &amp;amp; Java EE Overview&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://winterbe.com/posts/2014/03/16/java-8-tutorial/&#34;&gt;Java 8 Tutorial&lt;/a&gt;&lt;/li&gt;
@@ -881,7 +932,7 @@ any of the technologies or approaches used during the presentation.&lt;/p&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/143024626X/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=143024626X&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=R75X5UJWBVYK4SV4&#34;&gt;Beginning Java EE 7&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_6&#34;&gt;Lambdas and Streams&lt;/h4&gt;
+&lt;h4 id=&#34;lambdas-and-streams:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Lambdas and Streams&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Lambdas and Streams&lt;/a&gt; by Richard Warburton,  highly recommended&lt;/li&gt;
@@ -891,7 +942,7 @@ any of the technologies or approaches used during the presentation.&lt;/p&gt;
 &lt;li&gt;Code: &lt;a href=&#34;https://github.com/RichardWarburton/lambda-behave&#34;&gt;lambda-behave&lt;/a&gt;, a Java 8 testing framework&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_7&#34;&gt;JavaFX&lt;/h4&gt;
+&lt;h4 id=&#34;javafx:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;JavaFX&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/8/javafx/get-started-tutorial/jfx-overview.htm#JFXST784&#34;&gt;Introduction to JavaFX&lt;/a&gt; - invaluable. Short enough to download as PDF and read cover-to-cover.&lt;/li&gt;
@@ -907,7 +958,7 @@ any of the technologies or approaches used during the presentation.&lt;/p&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;, includes a section on JavaFX&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_8&#34;&gt;Websockets&lt;/h4&gt;
+&lt;h4 id=&#34;websockets:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Websockets&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jsr356-1937161.html&#34;&gt;JSR-356, Java API for WebSocket&lt;/a&gt;&lt;/li&gt;
@@ -920,7 +971,7 @@ any of the technologies or approaches used during the presentation.&lt;/p&gt;
 &lt;li&gt;Code: &lt;a href=&#34;https://github.com/jetty-project/embedded-jetty-websocket-examples&#34;&gt;embedded-jetty-websocket-examples&lt;/a&gt; examples of how to create Jetty Websockets&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_9&#34;&gt;Date and Time&lt;/h4&gt;
+&lt;h4 id=&#34;date-and-time:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Date and Time&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-date-time-2125367.html&#34;&gt;Java SE 8 Date and Time&lt;/a&gt; by Ben Evans and Richard Warburton&lt;/li&gt;
@@ -928,19 +979,19 @@ any of the technologies or approaches used during the presentation.&lt;/p&gt;
 &lt;li&gt;Book: &lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_10&#34;&gt;Optional&lt;/h4&gt;
+&lt;h4 id=&#34;optional:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Optional&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.voxxed.com/blog/2015/02/defence-java-8s-optional-use/&#34;&gt;In Defence of Java 8&amp;rsquo;s Optional: Why and How to Use It&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_11&#34;&gt;Files&lt;/h4&gt;
+&lt;h4 id=&#34;files:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Files&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/essential/io/file.html&#34;&gt;Reading, Writing, and Creating Files&lt;/a&gt; - much simplified since Java 7&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_12&#34;&gt;Microservices&lt;/h4&gt;
+&lt;h4 id=&#34;microservices:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Microservices&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Martin Fowler on Microservices: &lt;a href=&#34;http://youtu.be/wgdBVIX9ifA&#34;&gt;25 minute video overview&lt;/a&gt; and &lt;a href=&#34;http://martinfowler.com/articles/microservices.html&#34;&gt;article&lt;/a&gt;&lt;/li&gt;
@@ -948,7 +999,7 @@ any of the technologies or approaches used during the presentation.&lt;/p&gt;
 &lt;li&gt;Article &amp;amp; link to video: &lt;a href=&#34;http://www.infoq.com/articles/microservices-practical-tips&#34;&gt;Practical Implications of Microservices in 14 Tips&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;toc_13&#34;&gt;Special Thanks To&amp;hellip;&lt;/h4&gt;
+&lt;h4 id=&#34;special-thanks-to:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Special Thanks To&amp;hellip;&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://mechanical-sympathy.blogspot.com.es/&#34;&gt;Martin Thompson&lt;/a&gt;, &lt;a href=&#34;http://insightfullogic.com/blog/&#34;&gt;Richard Warburton&lt;/a&gt;,
 &lt;a href=&#34;http://www.codingthearchitecture.com/authors/rannett/&#34;&gt;Robert Annett&lt;/a&gt; and &lt;a href=&#34;http://hadihariri.com/&#34;&gt;Hadi Hariri&lt;/a&gt; for
@@ -956,7 +1007,7 @@ code reviewing and giving great suggestions. Not all suggestions have been imple
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;toc_14&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:1d84e04b0f74d0b3b985e46bf7a82f5d&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Java 9 is just around the corner, and yet many of us developers have yet to use Java 8 features in an application. The
 goal of this presentation is to move beyond slide-sized examples of streams and lambdas, and to show how to build a
@@ -994,7 +1045,7 @@ not a shining example of how to write these sorts of tests, but if you&amp;rsquo
 &lt;p&gt;I also talk about how amazing Spock is, so if you&amp;rsquo;re interested you can read more about
 &lt;a href=&#34;http://trishagee.github.io/tags/spock/&#34;&gt;my experiences with Spock&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;This talk was built off an &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
+&lt;p&gt;This talk was built off an &lt;a href=&#34;https://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;earlier blog post&lt;/a&gt; I wrote, about how to decide which technologies to
 invest your personal time in.&lt;/p&gt;
 
 &lt;p&gt;EDIT: The talk has been updated for 2016 and the Agile aspects emphasised in a version presented at Agile Manchester.&lt;/p&gt;
@@ -1004,10 +1055,10 @@ invest your personal time in.&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ll leave you with this crude decision
 chart and the mind-map of potential ways to play with a technology. Remember, learning to say &lt;em&gt;&amp;ldquo;no&amp;rdquo;&lt;/em&gt; to a technology can be very powerful.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://trishagee.github.io/static/images/staying-ahead/why-learn.png&#34; alt=&#34;Decision Flow Diagram&#34; title=&#34;Decision Flow Diagram&#34; /&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
+&lt;p&gt;&lt;img src=&#34;https://trishagee.github.io/static/images/staying-ahead/approaches.jpg&#34; alt=&#34;Approaches to trying new technologies&#34; title=&#34;Approaches to trying new technologies&#34; /&gt;
 &lt;/p&gt;
 
 &lt;p&gt;PS I&amp;rsquo;m thinking of writing a book, &lt;a href=&#34;https://leanpub.com/careeradviceforprogrammers/&#34;&gt;Career Advice for Programmers&lt;/a&gt;. If you&amp;rsquo;re
@@ -1015,7 +1066,7 @@ interested, let me know (because, you know, I&amp;rsquo;ve got loads of spare ti
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Presentation Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;presentation-abstract:42b45ac01f3ccbbe86d46b2593258976&#34;&gt;Presentation Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;We all want to stay ahead of the curve - after all, that&amp;rsquo;s what you go to a conference for. But have you ever considered how being ahead
 of the curve might be dangerous?&lt;/em&gt;&lt;/p&gt;
@@ -1059,7 +1110,7 @@ so you can get a feel for how the code builds up throughout the demo.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;http://click.linksynergy.com/fs-bin/click?id=/zztT3fScng&amp;offerid=145238.10000553&amp;type=3&amp;subid=0&#34; target=&#34;_blank&#34;&gt;&lt;IMG border=0 src=&#34;http://www.informit.com/ShowCover.aspx?isbn=9780134070865&amp;type=d&#34; &gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;In the demo I don&amp;rsquo;t get much of a chance to go through the Groovy script I use to import data into MongoDB,
-so I have a &lt;a href=&#34;/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
+so I have a &lt;a href=&#34;https://trishagee.github.io/post/groovy_import_to_mongodb/&#34;&gt;whole blog post just on that subject&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;This talk has been videoed several times -
 some older versions use a different library to talk to MongoDB and (I hope) you&amp;rsquo;ll see that the most recent code is even simpler than
@@ -1069,7 +1120,7 @@ these initial demos.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.parleys.com/talk/html5-angularjs-groovy-java-mongodb-together-what-could-possibly-go-wrong&#34;&gt;JavaOne, October 2014&lt;/a&gt; (uses Morphia, but the Java driver for &lt;code&gt;getNearest&lt;/code&gt;)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;vJUG, September 2014&lt;/a&gt; (the Java back end is similar to the JavaOne version, but UI for getting the nearest coffee shop is slightly different)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.oscon.com/open-source-2015/public/content/2015/05/15-html5-angularjs-groovy-java-mongodb-all-together?cmp=tw-prog-na-article-os15_1431727268&#34;&gt;OSCON, July 2014&lt;/a&gt; (uses Morphia)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
+&lt;li&gt;&lt;a href=&#34;https://trishagee.github.io/presentation/interview_at_goto_chicago/&#34;&gt;GOTO Chicago, May 2014&lt;/a&gt; (there&amp;rsquo;s an interview where I explain the motivation behind the
 presentation, and the video uses MongoJack instead of Morphia &amp;amp; shows an even earlier version of the find-my-coffee UI)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb&#34;&gt;Joy of Coding, March 2014&lt;/a&gt; (only the second time I presented this
 demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&gt;
@@ -1077,7 +1128,7 @@ demo, shows the initial technology stack (including MongoJack) and UI).&lt;/li&g
 
 &lt;p&gt;&lt;em&gt;(For a full list of this and all my presentations, see &lt;a href=&#34;presentation/public_appearances/&#34;&gt;Public Appearances&lt;/a&gt;)&lt;/em&gt;&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Resources&lt;/h3&gt;
+&lt;h3 id=&#34;resources:891809574da610a118d95fe52fd3cd80&#34;&gt;Resources&lt;/h3&gt;
 
 &lt;p&gt;These are the main resources I used in creating this talk:&lt;/p&gt;
 
@@ -1095,7 +1146,7 @@ AngularJS app to a JavaEE back end using NetBeans, but the principals here are t
 &lt;li&gt;&lt;a href=&#34;http://gradle.org/&#34;&gt;Gradle&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://groovy.codehaus.org/&#34;&gt;Groovy&lt;/a&gt;: I liked both &lt;a href=&#34;http://www.amazon.com/gp/product/1935182447/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182447&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=ZRWVYOCX5XYURUFM&#34;&gt;Groovy in Action&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182447&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
 and &lt;a href=&#34;http://www.amazon.com/gp/product/1935182943/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1935182943&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=AD26ZYRKRBBF3DHC&#34;&gt;Making Java Groovy&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1935182943&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/li&gt;
-&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and I&amp;rsquo;ve written about &lt;a href=&#34;https://trishagee.github.io/tags/spock/&#34;&gt;Spock&lt;/a&gt; before&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ&lt;/a&gt;: there&amp;rsquo;s a free community version of the IDE, but it&amp;rsquo;s not very expensive to upgrade to
 the full version and it will save you so much time and effort.&lt;/li&gt;
 &lt;/ul&gt;
@@ -1116,18 +1167,19 @@ which happens to be the same one I&amp;rsquo;m giving at a number of conferences
 &lt;p&gt;The presentation leaves very little time for anything other than coding, as it&amp;rsquo;s quite challenging to create a full app in 50
 minutes, so it was great to have the chance to talk about the motivations for the demo&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/sZee7lRAUF4&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-  
+&lt;/p&gt;
 
 &lt;p&gt;The video of the actual talk is also available now:&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/kmVnhyWqozA&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
+&lt;/p&gt;
 
 &lt;p&gt;At the beginning it doesn&amp;rsquo;t clearly show the screen, but it does improve.  You can see an earlier version from the
 &lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb#anch110035&#34;&gt;Joy of Coding&lt;/a&gt; as well,
@@ -1160,7 +1212,7 @@ around where we want the API to go.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
       <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
-by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+by &lt;a href=&#34;https://trishagee.github.io/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;https://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
 &lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
 .com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
 time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
@@ -1184,29 +1236,7 @@ I think he brings out the best in me.&lt;/p&gt;
 
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>First presentation at the Virtual JUG!</title>
-      <link>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</link>
-      <pubDate>Fri, 22 Nov 2013 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</guid>
-      <description>&lt;p&gt;Yesterday I had the privilege of presenting the very first session for &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, a new virtual Java User Group that allows us to span
-geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find
-good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have
-a local user group to go to. Not to mention cutting travel costs and saving the environment.&lt;/p&gt;
-
-&lt;p&gt;See the event, and the record of the IRC chat, here:&lt;/p&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/GixwXNlZ7dI&#34;
-width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;
-
-&lt;p&gt;The slides are also online, but obviously they&amp;rsquo;re part of the video as well:&lt;/p&gt;
-
-&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;356&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/28495923&#34; style=&#34;border-width: 1px 1px 0; border: 1px solid #CCC; margin-bottom: 5px;&#34; width=&#34;427&#34;&gt; &lt;/iframe&gt; &lt;/div&gt;&lt;div style=&#34;margin-bottom: 5px;&#34;&gt;&lt;strong&gt; &lt;a href=&#34;https://www.slideshare.net/trishagee/design-is-a-process-not-a-document&#34; target=&#34;_blank&#34; title=&#34;Design is a process, not a Document&#34;&gt;Design is a process, not a Document&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;http://www.slideshare.net/trishagee&#34; target=&#34;_blank&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;
+&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;https://trishagee.github.io/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

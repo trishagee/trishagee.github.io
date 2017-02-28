@@ -3,8 +3,13 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2017-02-07T00:00:00+00:00</lastmod>
+    <lastmod>2017-02-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/real_world_java_9/</loc>
+    <lastmod>2017-02-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1083,21 +1088,6 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/post/most_of_all_its_fun/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trishagee.github.io/post/the_importance_of_choosing_a_good_scale_for_your_metrics/</loc>
     <lastmod>2007-10-10T00:00:00+00:00</lastmod>
   </url>
@@ -1143,13 +1133,25 @@
   </url>
   
   <url>
+    <loc>https://trishagee.github.io/post/qcon_london/</loc>
+    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/post/qcon_initial_thoughts/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/qcon_london/</loc>
-    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+    <loc>https://trishagee.github.io/drafts/how_to_write_a_cfp/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/post/most_of_all_its_fun/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
   </url>
   
 </urlset>
