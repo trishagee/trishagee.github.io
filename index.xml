@@ -76,25 +76,16 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;h3 id=&#34;toc_5&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://community.oracle.com/docs/DOC-1006738&#34;&gt;Reactive Programming with JDK 9 Flow API&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxJava/wiki&#34;&gt;RxJava Documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/articles/rxjava2-by-example&#34;&gt;RXJava2 by Example&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.vogella.com/tutorials/RxJava/article.html&#34;&gt;RxJava 2.0 - Tutorial&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zeroturnaround.com/rebellabs/rxjava-for-easy-concurrency-and-backpressure&#34;&gt;RxJava for easy concurrency and backpressure&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.danlew.net/2016/06/13/multicasting-in-rxjava/&#34;&gt;Multicasting in RxJava&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/presentations/streams-jdk&#34;&gt;Reactive Streams, j.u.concurrent, &amp;amp; beyond!&lt;/a&gt; (video)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://spring.io/blog/2016/04/19/understanding-reactive-types&#34;&gt;Understanding Reactive Types&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/rolandkuhn/reactive-streams&#34;&gt;Reactive Streams: Handling Data-Flow the Reactive Way&lt;/a&gt;(slides)&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://rxmarbles.com/&#34;&gt;RxMarbles&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://community.oracle.com/docs/DOC-1006738&#34;&gt;Reactive Programming with JDK 9 Flow API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxJava/wiki&#34;&gt;RxJava Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/rxjava2-by-example&#34;&gt;RXJava2 by Example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.vogella.com/tutorials/RxJava/article.html&#34;&gt;RxJava 2.0 - Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zeroturnaround.com/rebellabs/rxjava-for-easy-concurrency-and-backpressure&#34;&gt;RxJava for easy concurrency and backpressure&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.danlew.net/2016/06/13/multicasting-in-rxjava/&#34;&gt;Multicasting in RxJava&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infoq.com/presentations/streams-jdk&#34;&gt;Reactive Streams, j.u.concurrent, &amp;amp; beyond!&lt;/a&gt; (video)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://spring.io/blog/2016/04/19/understanding-reactive-types&#34;&gt;Understanding Reactive Types&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/rolandkuhn/reactive-streams&#34;&gt;Reactive Streams: Handling Data-Flow the Reactive Way&lt;/a&gt;(slides)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://rxmarbles.com/&#34;&gt;RxMarbles&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_6&#34;&gt;REPL&lt;/h3&gt;
