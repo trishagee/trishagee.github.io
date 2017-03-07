@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="java, java9, intellij, ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="Real World Java 9 : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://trishagee.github.io/presentation/real_world_java_9/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2017-02-28"/>
+<meta property="article:modified_time" content="2017-02-28"/>
+
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="java9">
+<meta property="article:tag" content="intellij">
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content="Real World Java 9 : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="https://trishagee.github.io">
+    <title> Real World Java 9 - trishagee.github.io </title>
+    <link rel="canonical" href="https://trishagee.github.io/presentation/real_world_java_9/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=Real%20World%20Java%209-https%3a%2f%2ftrishagee.github.io%2fpresentation%2freal_world_java_9%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftrishagee.github.io%2fpresentation%2freal_world_java_9%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2freal_world_java_9%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2freal_world_java_9%2f&title=Real%20World%20Java%209&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2freal_world_java_9%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2freal_world_java_9%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">Real World Java 9</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           
+
+<p>How is Java 9 going to change the way developers work?</p>
+
+<h2 id="toc_0">Abstract</h2>
+
+<p>The feature we always hear about whenever Java 9 is in the news is Jigsaw, modularity.  But this doesn&rsquo;t scratch the
+same developer itch that Java 8&rsquo;s lambdas and streams did, and we&rsquo;re left with a vague sensation that the next version might not be that interesting.</p>
+
+<p>Java 9 actually has a lot of great additions and changes to make development a bit nicer.  These features can&rsquo;t be lumped under an umbrella term like Java 8&rsquo;s lambdas and streams, the changes are scattered throughout the APIs and language features that we regularly use.</p>
+
+<p>In this presentation Trisha will show, via live coding:</p>
+
+<ul>
+<li>How we can use the new Flow API to utilise Reactive Programming</li>
+<li>How the improvements to the Streams API make it easier to control real-time streaming data</li>
+<li>How to the Collections convenience methods simplify code</li>
+</ul>
+
+<p>Along the way we&rsquo;ll bump into other Java 9 features, including some of the additions to interfaces and changes to deprecation.  We’ll see that once you start using Java 9, you can&rsquo;t go back to Before.</p>
+
+<h2 id="toc_1">Resources</h2>
+
+<p>The code for this presentation was originally created to demonstrate Java 8 code in
+<a href="/presentation/java8_in_anger">Java 8 in Anger</a>, take a look at the videos there to see more background on the application and how it used Java 8 Streams and Lambda Expressions for the core business logic. The code and the presentation
+evolved <a href="https://youtu.be/sKozumGWAOo">to include some Java 9 features</a>.</p>
+
+<p>I have another Java 9 talk based off this code, <a href="/presentation/java_9_are_we_there_yet">Anticipating Java 9 - Functionality and Tooling</a>, which demos more individual Java 9 features and talks specifically about IntelliJ IDEA&rsquo;s support for it.</p>
+
+<h3 id="toc_2">Code</h3>
+
+<ul>
+<li><a href="https://github.com/trishagee/sense-nine">https://github.com/trishagee/sense-nine</a>. The full application with all Java 9 code is currently under the <em>working-system</em> branch.</li>
+<li>Original Java 8 code comes from <a href="https://github.com/trishagee/sense">https://github.com/trishagee/sense</a>, the <em>master</em> branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the <em>junit-5</em> branch. Java 8 and 9 features live side-by-side in <em>yow-brisbane</em>. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156</li>
+</ul>
+
+<h3 id="toc_3">Java 9</h3>
+
+<ul>
+<li><a href="http://openjdk.java.net/projects/jdk9/">JDK 9 Project Page</a></li>
+<li><a href="https://jdk9.java.net/download/">Download JDK 9 EA</a></li>
+<li><a href="https://www.sitepoint.com/ultimate-guide-to-java-9/">The Ultimate Guide to Java 9</a></li>
+<li><a href="https://www.sitepoint.com/inside-java-9-part-i/">Inside Java 9 – Version Schema, Multi-Release JARs, and More</a></li>
+<li><a href="https://www.sitepoint.com/inside-java-9-part-ii/">Inside Java 9 – Performance, Compiler, and More</a></li>
+</ul>
+
+<h3 id="toc_4">Jigsaw</h3>
+
+<ul>
+<li><a href="http://openjdk.java.net/projects/jigsaw/">Project Jigsaw</a></li>
+<li><a href="http://openjdk.java.net/projects/jigsaw/quick-start">Quick Start Tutorial</a></li>
+<li><a href="http://openjdk.java.net/projects/jigsaw/spec/sotms/">The State of the Module System</a></li>
+<li><a href="http://mreinhold.org/blog/jigsaw-module-system">Project Jigsaw: The module system</a></li>
+<li><a href="https://www.infoq.com/articles/Latest-Project-Jigsaw-Usage-Tutorial">Programming with Modularity and Project Jigsaw. A Tutorial Using the Latest Early Access Build</a></li>
+<li><a href="https://blog.codecentric.de/en/2015/11/first-steps-with-java9-jigsaw-part-1">First steps with Java 9 and Project Jigsaw – Part 1</a></li>
+<li><a href="https://blog.codecentric.de/en/2015/12/first-steps-with-java9-jigsaw-part-2/">First steps with Java 9 and Project Jigsaw – Part 2</a></li>
+<li><a href="https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html">Jdeps Tool</a></li>
+</ul>
+
+<h3 id="toc_5">Reactive Programming and RxJava</h3>
+
+<ul>
+<li><p><a href="https://community.oracle.com/docs/DOC-1006738">Reactive Programming with JDK 9 Flow API</a></p></li>
+
+<li><p><a href="https://github.com/ReactiveX/RxJava/wiki">RxJava Documentation</a></p></li>
+
+<li><p><a href="https://www.infoq.com/articles/rxjava2-by-example">RXJava2 by Example</a></p></li>
+
+<li><p><a href="http://www.vogella.com/tutorials/RxJava/article.html">RxJava 2.0 - Tutorial</a></p></li>
+
+<li><p><a href="https://zeroturnaround.com/rebellabs/rxjava-for-easy-concurrency-and-backpressure">RxJava for easy concurrency and backpressure</a></p></li>
+
+<li><p><a href="http://blog.danlew.net/2016/06/13/multicasting-in-rxjava/">Multicasting in RxJava</a></p></li>
+
+<li><p><a href="https://www.infoq.com/presentations/streams-jdk">Reactive Streams, j.u.concurrent, &amp; beyond!</a> (video)</p></li>
+
+<li><p><a href="https://spring.io/blog/2016/04/19/understanding-reactive-types">Understanding Reactive Types</a></p></li>
+
+<li><p><a href="https://www.slideshare.net/rolandkuhn/reactive-streams">Reactive Streams: Handling Data-Flow the Reactive Way</a>(slides)</p></li>
+
+<li><p><a href="http://rxmarbles.com/">RxMarbles</a></p></li>
+</ul>
+
+<h3 id="toc_6">REPL</h3>
+
+<ul>
+<li><a href="http://openjdk.java.net/projects/kulla/">REPL</a></li>
+<li><a href="https://www.jclarity.com/2015/04/15/java-9-repl-getting-started-guide/">Java 9 REPL – Getting started guide</a></li>
+</ul>
+
+<h3 id="toc_7">Other</h3>
+
+<ul>
+<li><a href="https://dzone.com/articles/gof-design-patterns-using-java-02">GoF - Adapter Pattern</a></li>
+</ul>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Tue Feb 28, 2017 </h4>
+        <h5 id="wc"> 500 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+        <li><a href="https://trishagee.github.io/tags/java">java</a></li>
+        
+        <li><a href="https://trishagee.github.io/tags/java9">java9</a></li>
+        
+        <li><a href="https://trishagee.github.io/tags/intellij">intellij</a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="https://trishagee.github.io/presentation/upcoming_events/">Upcoming Events <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="495">
+<meta itemprop="datePublished" content="2017-02-28">
+<meta itemprop="url" content="https://trishagee.github.io/presentation/real_world_java_9/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'https:\/\/trishagee.github.io\/presentation\/real_world_java_9\/';
+    var disqus_title = 'Real World Java 9';
+    var disqus_url = 'http:\/\/trishagee.github.io\/presentation\/real_world_java_9';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+

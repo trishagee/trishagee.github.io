@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="java, spock, testing, groovy, ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="Spock is awesome! Seriously Simplified Mocking : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2013-07-09"/>
+<meta property="article:modified_time" content="2013-07-09"/>
+
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="spock">
+<meta property="article:tag" content="testing">
+<meta property="article:tag" content="groovy">
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content="Spock is awesome! Seriously Simplified Mocking : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="https://trishagee.github.io">
+    <title> Spock is awesome! Seriously Simplified Mocking - trishagee.github.io </title>
+    <link rel="canonical" href="https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=Spock%20is%20awesome%21%20Seriously%20Simplified%20Mocking-https%3a%2f%2ftrishagee.github.io%2fpost%2fspock_is_awesome_seriously_simplified_mocking%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftrishagee.github.io%2fpost%2fspock_is_awesome_seriously_simplified_mocking%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=https%3a%2f%2ftrishagee.github.io%2fpost%2fspock_is_awesome_seriously_simplified_mocking%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2ftrishagee.github.io%2fpost%2fspock_is_awesome_seriously_simplified_mocking%2f&title=Spock%20is%20awesome%21%20Seriously%20Simplified%20Mocking&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftrishagee.github.io%2fpost%2fspock_is_awesome_seriously_simplified_mocking%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=https%3a%2f%2ftrishagee.github.io%2fpost%2fspock_is_awesome_seriously_simplified_mocking%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">Spock is awesome! Seriously Simplified Mocking</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           <p>We&rsquo;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. &nbsp;Ideally, we want the number of dependencies to be zero.<br /><br />This is not going to be the case when it comes to testing, however. &nbsp;At the very least, we&rsquo;re going to use JUnit or TestNG (we used testng in the previous version, we&rsquo;ve switched to JUnit for 3.0). &nbsp;Up until recently, we worked hard to eliminate the need for a mocking framework - the driver is not a large application with interacting services, most stuff can be tested either as an integration test or with very simple stubs.<br /><br />Recently I was working on the serialisation layer - we&rsquo;re making quite big changes to the model for encoding and decoding between <a href="http://bsonspec.org/">BSON</a> and Java, we&rsquo;re hoping this will simplify our lives but also make things a lot easier for the ODMs (Object-Document Mappers) and third party libraries. &nbsp;At this level, it makes a lot of sense to introduce mocks - I want to ensure particular methods are called on the writer, for example, I don&rsquo;t want to check actual byte values, that&rsquo;s not going to be very helpful for documentation (although there is a level where that is a sensible thing to do).<br /><br />We started using <a href="http://jmock.codehaus.org/">JMock</a> to begin with, it&rsquo;s what I&rsquo;ve been using for a while, and it gave us what we wanted - a simple mocking framework (I tried <a href="https://code.google.com/p/mockito/">Mockito</a> too, but I&rsquo;m not so used to the failure messages, so I found it really hard to figure out what was wrong when a test failed). <br /><br />I knew from my spies at LMAX that there&rsquo;s some <a href="http://groovy.codehaus.org/">Groovy</a> test framework called <a href="https://code.google.com/p/spock/">Spock</a> that is awesome, apparently, but I&nbsp;immediately&nbsp;discarded it - I feel very strongly that tests are documentation, and since the users of the Java driver are largely Java developers, I felt like introducing tests in a different language was an added complexity we didn&rsquo;t need.<br /><br />Then I went to GeeCON, and my ex-colleague <a href="https://twitter.com/IsraKaos">Israel</a> forced me to go to <a href="http://geecon.org/speakers/ken-sipe">the talk on Spock</a>. &nbsp;And I realised just how wrong I had been. &nbsp;Far from adding complexity, here was a lovely, descriptive way of writing tests. &nbsp;It&rsquo;s flexible, and yet structured enough get you thinking in a way that should create good tests.<br /><br />Since we&rsquo;re already using <a href="http://www.gradle.org/">gradle</a>, which is Groovy as well, we decided it was worth a spike to see if Spock would give us any benefits.<br /><br />During the spike I converted a selection of our tests to Spock tests to see what it looks like on a <i>real</i> codebase. &nbsp;I had very specific things I wanted to try out:<br /><br /><ul><li>Mocking</li><li>Stubbing</li><li>Data driven testing</li></ul><br />In the talk I also saw useful annotation like&nbsp;<code>@Requires</code>, which I&rsquo;m pretty sure we&rsquo;re going to use, but I don&rsquo;t think it&rsquo;s made it into a build yet.<br /><br />So, get this, I&rsquo;m going to write a blog post with Actual Code in. &nbsp;Yeah, I know, you all thought I was just a poncy evangelist these days and didn&rsquo;t do any real coding any more.<br /><br /><b>First up, Mocking</b><br />So, as I said, I have a number of tests checking that encoding of Java objects works the way we expect. &nbsp; The easiest way to test this is to mock our <a href="https://github.com/mongodb/mongo-java-driver/blob/3.0.x/bson/src/main/org/bson/BSONWriter.java">BSONWriter</a> class to ensure that the right interactions are happening against it. &nbsp;This is a nice way to check that when you give an encoder a particular set of data, it gets serialised in the way BSON expects. These tests ended up looking something like this:<br /><div><br /><script src="https://gist.github.com/trishagee/5728846.js"></script></div>(Yeah, I&rsquo;m still learning Spanish).<br /><br />So that&rsquo;s quite nice, my test checks that given a List of Strings, they get serialised correctly. &nbsp;What&rsquo;s not great is some of the setup overhead:<br /><br /><script src="https://gist.github.com/trishagee/5728883.js"></script>Obviously some of the things there are going to be ringing some people&rsquo;s alarm bells, but let&rsquo;s assume for a minute that all decisions were taken carefully and that pros and cons were weighed accordingly.<br /><br />So:<br /><ul><li>Mocking concrete classes is not pretty in JMock, just look at that <code>setUp</code> method.</li><li>We&rsquo;re using the <code>JUnitRuleMockery</code>, which appears to be Best Practice (and means you&rsquo;re less likely to forget the&nbsp;<code>@RunWith(JMock.class)</code> annotation), but checkstyle hates it - Public Fields Are Bad as we all know.</li></ul>But it&rsquo;s fine, a small amount of boilerplate for all our tests that involve mocking is an OK price to pay to have some nice tests.<br /><br />I converted this test to a Spock test. &nbsp;Groovy purists will notice that it&rsquo;s still very Java-y, and that&rsquo;s intentional - I want these tests, at least at this stage while we&rsquo;re getting used to it, to be familiar to Java programmers, our main audience.<br /><br /><script src="https://gist.github.com/trishagee/5728962.js"></script> Some initial observations:<br /><ul><li>It&rsquo;s a really simple thing, but I like having the&nbsp;<code>@Subject</code> annotation on the thing you&rsquo;re testing. &nbsp;In theory it should be obvious which of your fields or variables is the subject under test, but in practice that&rsquo;s not always true.</li><li>Although it freaks me out as someone who&rsquo;s been doing Java for the last 15 years, I really like the String for method name - although in this case it&rsquo;s the same as the JMock/JUnit equivalent, it gives a lot more flexibility for describing the purpose of this test.</li></ul><ul><li>Mocking is painless, with a simple call to <code>Mock()</code>, even though we&rsquo;re still mocking concrete classes (this is done simply by adding <a href="http://cglib.sourceforge.net/">cglib</a> and <a href="https://code.google.com/p/objenesis/">obgenesis</a> to the dependencies).</li><li>I <i>love</i>&nbsp;that the phases of Spock (<code>setup: when: then:</code>) document the different parts of the test while also being the useful magic keywords which tell Spock how to run the test. &nbsp;I know other frameworks provide this, but we&rsquo;ve been working with JUnit and I&rsquo;ve been in the habit of commenting my steps with <code>//given //when //then</code>.</li><li>Thanks to Groovy, creation of lists is less boiler plate (line 9). &nbsp;Not a big deal, but just makes it easier to read.</li><li>I&rsquo;ve got very used to the way expectations are set up in JMock, but I have to say that <code>1 * bsonWriter.blahblahblah()</code> is much more readable. &nbsp;</li><li>I love that everything after <code>then:</code> is an assertion, I think it makes it really clear what you expect to happen after you invoke the thing you&rsquo;re testing.</li></ul>So mocking is awesome. &nbsp;What&rsquo;s next?<br /><br /><ul><li><a href="http://mechanitis.blogspot.co.uk/2013/07/spock-passes-next-test-painless-stubbing.html">Painless Stubbing</a></li><li><a href="http://mechanitis.blogspot.com.es/2013/12/spock-data-driven-testing.html">Data Driven Testing</a></li></ul></p>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Tue Jul 9, 2013 </h4>
+        <h5 id="wc"> 1100 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+        <li><a href="https://trishagee.github.io/tags/java">java</a></li>
+        
+        <li><a href="https://trishagee.github.io/tags/spock">spock</a></li>
+        
+        <li><a href="https://trishagee.github.io/tags/testing">testing</a></li>
+        
+        <li><a href="https://trishagee.github.io/tags/groovy">groovy</a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;<a class="previous" href="https://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/"><i class="icon-arrow-left"></i> Spock passes the next test - Painless Stubbing</a><br>
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="https://trishagee.github.io/post/developers_hate_support_dont_they/">Developers hate support, don&#39;t they? <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="1029">
+<meta itemprop="datePublished" content="2013-07-09">
+<meta itemprop="url" content="https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'https:\/\/trishagee.github.io\/post\/spock_is_awesome_seriously_simplified_mocking\/';
+    var disqus_title = 'Spock is awesome! Seriously Simplified Mocking';
+    var disqus_url = 'http:\/\/trishagee.github.io\/post\/spock_is_awesome_seriously_simplified_mocking\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+

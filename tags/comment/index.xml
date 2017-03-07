@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Comment on Trisha Gee </title>
+    <link>https://trishagee.github.io/tags/comment/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Sun, 23 Nov 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>It&#39;s not waste, it&#39;s learning</title>
+      <link>https://trishagee.github.io/post/its_not_waste_its_learning/</link>
+      <pubDate>Sun, 23 Nov 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/its_not_waste_its_learning/</guid>
+      <description>&lt;p&gt;In one my my rare weekends at home, I found myself on a pottery course (this is the sort of thing that happens when you&amp;rsquo;re a &amp;ldquo;yes&amp;rdquo; person).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-1.jpg&#34; alt=&#34;OK, not pottery, horses. The course was on a farm.&#34; title=&#34;OK, not pottery, horses. The course was on a farm.&#34; /&gt;
+
+&lt;figcaption&gt;OK, not pottery, horses. The course was on a farm.&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;I had a fantastic time on the course, there was something enormously satisfactory and therapeutic about working with my hands,
+on something creative that was for me, and only me.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-2.jpg&#34; alt=&#34;My first bowl&#34; title=&#34;My first bowl&#34; /&gt;
+
+&lt;figcaption&gt;Honestly, I think the one I did in primary school when I was seven was better.&lt;br /&gt;
+And I don&amp;rsquo;t care, because I loved creating it.&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the things that really struck me that day was embracing failure and destruction as part of the creative process.  Let me give you a
+couple of examples:&lt;/p&gt;
+
+&lt;p&gt;The teacher showed us several techniques for creating pottery, one of which was using plaster moulds and very liquid clay to produce more
+complex items (for example, mugs and animal figures).  He told us that when using a new mould,
+the first few items would be useless.  But these &amp;ldquo;failures&amp;rdquo; are an important process for the mould itself.  The
+class was in Spanish, so my understanding was imperfect, but I think it was something to do with the fact that the plaster moulds are
+supposed to absorb water, and therefore I assume at the beginning they absorb far too much and the clay ends up being too dry and brittle.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-3.jpg&#34; alt=&#34;Pottery created with moulds&#34; title=&#34;Pottery created with moulds&#34; /&gt;
+
+ &lt;figcaption&gt;Pottery created with moulds&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;The second example was when he showed us why it was so difficult to create a clay plate - bowls, mugs, cups were fine,
+but a plate is difficult as it&amp;rsquo;s flat and the shape doesn&amp;rsquo;t have enough structure for it to have any rigidity  if it&amp;rsquo;s even slightly damp
+(and clay stays damp for a looong time, even in a climate like Seville&amp;rsquo;s). He demonstrated this by cutting straight through the plate
+that he&amp;rsquo;d put into the mould earlier and folding it up, to the collective intake of breath of the whole class - a class of people of a range
+of ages and backgrounds. We seem socially programmed to find destruction of any kind upsetting (which is probably, overall,
+not a bad thing), when the teacher sliced the plate in half to demonstrate how floppy the plate was, we were all disturbed by this waste.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-5.jpg&#34; alt=&#34;My pieces&#34; title=&#34;My pieces&#34; /&gt;
+
+&lt;figcaption&gt;Even when I broke my bowl when preparing it for the kiln, I couldn&amp;rsquo;t bring myself to abandon it - I turned it into a
+candle holder&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;But here&amp;rsquo;s the thing - it&amp;rsquo;s clay.  Clay is mud.  It&amp;rsquo;s from the ground.  Moreover, it&amp;rsquo;s almost completely reusable.  All of the leftover
+clay from our earlier exercises, all of the excess liquid clay from the moulds, all of the pieces that didn&amp;rsquo;t make it,
+it was put aside and saved for later.  It&amp;rsquo;s not a waste.  It&amp;rsquo;s learning.  It&amp;rsquo;s experimenting.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not failure.&lt;/p&gt;
+
+&lt;p&gt;It got me thinking.  If we can be like that about something concrete, something that exists in the real world,
+why aren&amp;rsquo;t we like that about something as ephemeral as code?  Why are we so afraid to throw away code? And don&amp;rsquo;t tell me we&amp;rsquo;re not
+afraid - how many &amp;ldquo;spikes&amp;rdquo; and &amp;ldquo;prototypes&amp;rdquo; have you seen running in production?  Have you read people talking about
+creating code and throwing it away, and thought &amp;ldquo;that sounds nice, but I think I&amp;rsquo;ll stick to just producing useful code&amp;rdquo;? (Note: I&amp;rsquo;m not
+talking about &lt;a href=&#34;http://www.joelonsoftware.com/articles/fog0000000069.html&#34;&gt;throwing away perfectly good production code&lt;/a&gt;,
+nor am I talking about &lt;a href=&#34;http://codesqueeze.com/refactorbation/&#34;&gt;refactorbation&lt;/a&gt;, a term I just discovered and love.
+I&amp;rsquo;m talking about creating for research, spikes, learning etc, and then throwing it away).&lt;/p&gt;
+
+&lt;p&gt;&lt;div style=&#34;text-align:center&#34;&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-6.jpg&#34; alt=&#34;Java&#34; title=&#34;Java&#34; height=&#34;300&#34;&gt;&lt;/img&gt;&lt;/div&gt;
+&lt;figcaption&gt;What?? I needed to carve something into the medallion&lt;/figcaption&gt;&lt;/p&gt;
+
+&lt;p&gt;Coincidentally, I&amp;rsquo;ve been reading &lt;a href=&#34;http://www.amazon.com/gp/product/1477800670/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1477800670&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=5KXFITDLKQQCXD3K&#34;&gt;Build Your Routine, Find Your Focus, and Sharpen Your Creative Mind&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1477800670&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;,
+and there&amp;rsquo;s a section in there that talks about getting into the habit of
+creating just for the sake of creating.  Not for your side projects, not for a client, not even for your portfolio.  Simply to get into
+the habit of creating.  &lt;em&gt;Maybe&lt;/em&gt; some of those ideas, or processes, will come in handy later down the line.  Or maybe,
+like the clay moulds, simply creating something for throwing away actually helps the overall process.&lt;/p&gt;
+
+&lt;p&gt;These experiences have left me with a feeling that I should start getting used to the idea of throwing code away,
+and start creating things for no reason other than the feeling of creating.  It could be like running - in theory I run so I have to
+worry less about my weight and my fitness, but actually I run &lt;em&gt;much&lt;/em&gt; more frequently when I run just for the joy of running. The fitness
+and health are side benefits.&lt;/p&gt;
+
+&lt;p&gt;Maybe we&amp;rsquo;re so reluctant to throw code away precisely because it &lt;em&gt;is&lt;/em&gt; ephemeral.  Maybe with the clay,
+we can see that concrete thing, that mud, being turned into something useful eventually.  With running,
+you can feel the difference in your attitude, in your fitness, maybe see it on the scales. With code, when you delete those characters,
+revert that change, you feel like you lost something, and have nothing to show for that precious time.  When actually you created new
+pathways in your brain, added new memories and learnt new lessons.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not sure I&amp;rsquo;m ready yet to create just for the sake of creating, I think I&amp;rsquo;m just too results-driven. But I&amp;rsquo;m going to
+write about it here to remind myself that it is something I want to do. Sometimes it&amp;rsquo;s the exercise, not the end result.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/its_not_waste_its_learning/pottery-7.jpg&#34; alt=&#34;The full haul&#34; title=&#34;The full haul&#34; /&gt;
+
+&lt;figcaption&gt;The final pieces, still needing the kiln to finish the glaze.&lt;/figcaption&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Certifiction</title>
+      <link>https://trishagee.github.io/post/certifiction/</link>
+      <pubDate>Wed, 21 Mar 2007 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/certifiction/</guid>
+      <description>&lt;p&gt;From &lt;div class=&#34;ljuser&#34;&gt;&lt;a href=&#34;http://community.livejournal.com/spellfecker/profile&#34;&gt;&lt;img width=&#34;16&#34; alt=&#34;[info]&#34; src=&#34;http://stat.livejournal.com/img/community.gif&#34; style=&#34;border: 0pt none ; vertical-align: bottom;&#34; height=&#34;16&#34;/&gt;&lt;/a&gt;&lt;a href=&#34;http://community.livejournal.com/spellfecker/&#34;&gt;&lt;b&gt;spellfecker&lt;/b&gt;&lt;/a&gt;&lt;/div&gt;&amp;nbsp;today:&lt;br/&gt;&lt;blockquote style=&#34;font-style: italic;&#34;&gt;Certifiction (n.) : a professional endorsement which states only that the holder had the money to pay for the exam.&lt;/blockquote&gt;&amp;hellip;which reminded me of &lt;a href=&#34;http://www.infoq.com/news/2007/03/Scrum-CSM-debate&#34;&gt;this debate&lt;/a&gt;, particularly the first comment.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

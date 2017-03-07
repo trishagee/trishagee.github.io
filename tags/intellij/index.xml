@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Intellij on Trisha Gee </title>
+    <link>https://trishagee.github.io/tags/intellij/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Tue, 28 Feb 2017 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Real World Java 9</title>
+      <link>https://trishagee.github.io/presentation/real_world_java_9/</link>
+      <pubDate>Tue, 28 Feb 2017 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
+      <description>
+
+&lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;The feature we always hear about whenever Java 9 is in the news is Jigsaw, modularity.  But this doesn&amp;rsquo;t scratch the
+same developer itch that Java 8&amp;rsquo;s lambdas and streams did, and we&amp;rsquo;re left with a vague sensation that the next version might not be that interesting.&lt;/p&gt;
+
+&lt;p&gt;Java 9 actually has a lot of great additions and changes to make development a bit nicer.  These features can&amp;rsquo;t be lumped under an umbrella term like Java 8&amp;rsquo;s lambdas and streams, the changes are scattered throughout the APIs and language features that we regularly use.&lt;/p&gt;
+
+&lt;p&gt;In this presentation Trisha will show, via live coding:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;How we can use the new Flow API to utilise Reactive Programming&lt;/li&gt;
+&lt;li&gt;How the improvements to the Streams API make it easier to control real-time streaming data&lt;/li&gt;
+&lt;li&gt;How to the Collections convenience methods simplify code&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Along the way we&amp;rsquo;ll bump into other Java 9 features, including some of the additions to interfaces and changes to deprecation.  We’ll see that once you start using Java 9, you can&amp;rsquo;t go back to Before.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;The code for this presentation was originally created to demonstrate Java 8 code in
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt;, take a look at the videos there to see more background on the application and how it used Java 8 Streams and Lambda Expressions for the core business logic. The code and the presentation
+evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Java 9 features&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have another Java 9 talk based off this code, &lt;a href=&#34;/presentation/java_9_are_we_there_yet&#34;&gt;Anticipating Java 9 - Functionality and Tooling&lt;/a&gt;, which demos more individual Java 9 features and talks specifically about IntelliJ IDEA&amp;rsquo;s support for it.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Code&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;. The full application with all Java 9 code is currently under the &lt;em&gt;working-system&lt;/em&gt; branch.&lt;/li&gt;
+&lt;li&gt;Original Java 8 code comes from &lt;a href=&#34;https://github.com/trishagee/sense&#34;&gt;https://github.com/trishagee/sense&lt;/a&gt;, the &lt;em&gt;master&lt;/em&gt; branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the &lt;em&gt;junit-5&lt;/em&gt; branch. Java 8 and 9 features live side-by-side in &lt;em&gt;yow-brisbane&lt;/em&gt;. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Java 9&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;JDK 9 Project Page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download JDK 9 EA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/ultimate-guide-to-java-9/&#34;&gt;The Ultimate Guide to Java 9&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/inside-java-9-part-i/&#34;&gt;Inside Java 9 – Version Schema, Multi-Release JARs, and More&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/inside-java-9-part-ii/&#34;&gt;Inside Java 9 – Performance, Compiler, and More&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Jigsaw&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Project Jigsaw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Quick Start Tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/spec/sotms/&#34;&gt;The State of the Module System&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://mreinhold.org/blog/jigsaw-module-system&#34;&gt;Project Jigsaw: The module system&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/Latest-Project-Jigsaw-Usage-Tutorial&#34;&gt;Programming with Modularity and Project Jigsaw. A Tutorial Using the Latest Early Access Build&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/11/first-steps-with-java9-jigsaw-part-1&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 1&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/12/first-steps-with-java9-jigsaw-part-2/&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html&#34;&gt;Jdeps Tool&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://community.oracle.com/docs/DOC-1006738&#34;&gt;Reactive Programming with JDK 9 Flow API&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxJava/wiki&#34;&gt;RxJava Documentation&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/articles/rxjava2-by-example&#34;&gt;RXJava2 by Example&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://www.vogella.com/tutorials/RxJava/article.html&#34;&gt;RxJava 2.0 - Tutorial&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://zeroturnaround.com/rebellabs/rxjava-for-easy-concurrency-and-backpressure&#34;&gt;RxJava for easy concurrency and backpressure&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://blog.danlew.net/2016/06/13/multicasting-in-rxjava/&#34;&gt;Multicasting in RxJava&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.infoq.com/presentations/streams-jdk&#34;&gt;Reactive Streams, j.u.concurrent, &amp;amp; beyond!&lt;/a&gt; (video)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://spring.io/blog/2016/04/19/understanding-reactive-types&#34;&gt;Understanding Reactive Types&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.slideshare.net/rolandkuhn/reactive-streams&#34;&gt;Reactive Streams: Handling Data-Flow the Reactive Way&lt;/a&gt;(slides)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://rxmarbles.com/&#34;&gt;RxMarbles&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;REPL&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jclarity.com/2015/04/15/java-9-repl-getting-started-guide/&#34;&gt;Java 9 REPL – Getting started guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Other&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/gof-design-patterns-using-java-02&#34;&gt;GoF - Adapter Pattern&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>IntelliJ IDEA for Eclipse Users</title>
+      <link>https://trishagee.github.io/resources/intellij_for_eclipse_users/</link>
+      <pubDate>Wed, 05 Oct 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
+      <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;
+
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/qKgzj8tZX9JDmA&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://plugins.jetbrains.com/plugin/4455&#34;&gt;Key Promoter&lt;/a&gt;, a plugin that tells you what the keyboard shortcut is
+for every mouse action you perform.&lt;/li&gt;
+&lt;li&gt;The printable &lt;a href=&#34;https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf&#34;&gt;IntelliJ IDEA default keymap&lt;/a&gt; and &lt;a href=&#34;https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf&#34;&gt;Mac keymap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/4/&#34;&gt;Eclipse-IntelliJ Keymap Cheat Sheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ZeroTurnaround&amp;rsquo;s rather excellent (and extensive!) article &lt;a href=&#34;https://zeroturnaround.com/rebellabs/getting-started-with-intellij-idea-as-an-eclipse-user/4/&#34;&gt;Getting Started With IntelliJ IDEA as an Eclipse User&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Video: &lt;a href=&#34;https://youtu.be/eq3KiAH4IBI&#34;&gt;42 IntelliJ IDEA Tips and Tricks&lt;/a&gt;. Watch this.  Regularly.&lt;/li&gt;
+&lt;li&gt;If you have IntelliJ IDEA power users near you, get them to install &lt;a href=&#34;https://plugins.jetbrains.com/plugin/7345&#34;&gt;Presentation Assistant&lt;/a&gt; so you can see all the shortcuts they&amp;rsquo;re using.&lt;/li&gt;
+&lt;li&gt;If you want, you can also use the Eclipse keymap and the Eclipse compiler.&lt;/li&gt;
+&lt;li&gt;There&amp;rsquo;s an extensive JetBrains article on &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/eclipse.html&#34;&gt;Migrating from Eclipse&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Check out
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/keyboard-shortcuts-you-cannot-miss.html&#34;&gt;Keyboard Shortcuts You Cannot Miss&lt;/a&gt;
+and DZone&amp;rsquo;s &lt;a href=&#34;https://dzone.com/refcardz/intellij-idea-update&#34;&gt;IntelliJ IDEA Refcard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Some of my own presentations are live coding using lots of IntelliJ IDEA features, watching them might give an
+idea of what&amp;rsquo;s possible.  For example
+&lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw&#34;&gt;AngularJS, HTML5, Groovy, Java and MongoDB All Together&lt;/a&gt;,
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt; and &lt;a href=&#34;/presentation/refactoring_to_java_8&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve written a few tutorials about specific topics performed in IntelliJ IDEA:
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-introduction-to-refactoring.html&#34;&gt;Introduction to Refactoring&lt;/a&gt;,
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;Test Driven Development&lt;/a&gt;,
+and &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;Migrating to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the slides above, there&amp;rsquo;s a section &amp;ldquo;The Power of IntelliJ IDEA&amp;rdquo; with no content - that&amp;rsquo;s because that&amp;rsquo;s a place
+for a live demo of working with IntelliJ IDEA. To create that demo, I jotted down some topics that I think are
+interesting in IntelliJ IDEA, which are worth making a note of here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;IntelliJ provides &lt;em&gt;Contextual Aid&lt;/em&gt; - hints, tips, help and advice at the point at which you need it.  For example:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/auto-completing-code.html&#34;&gt;Code completion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;The magic Alt+Enter to show &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/intention-actions.html&#34;&gt;intention actions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/using-postfix-templates.html&#34;&gt;Postfix completion&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/gutter-icons.html?search=gutter%20icons&#34;&gt;Gutter icons&lt;/a&gt;, such as
+icons to run tests, show implementations of a method, display the Functional Interface for a lambda expression,
+etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/code-inspection.html&#34;&gt;Inspections&lt;/a&gt; are automatically run for the
+current file and shown as warnings, which you can
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/resolving-problems.html&#34;&gt;usually fix with a quick fix&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/navigating-through-the-source-code.html&#34;&gt;Navigation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/live-templates.html&#34;&gt;Live templates&lt;/a&gt;  might be one of my favourite
+features - both &lt;a href=&#34;http://www.radcortez.com/getting-started-with-intellij-idea-live-templates/&#34;&gt;built in&lt;/a&gt; (try &lt;code&gt;sout&lt;/code&gt;,
+&lt;code&gt;soutp&lt;/code&gt;, &lt;code&gt;psvm&lt;/code&gt;, &lt;code&gt;itar&lt;/code&gt; and &lt;code&gt;iter&lt;/code&gt;)
+and &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/creating-and-editing-live-templates.html#scratch&#34;&gt;custom&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/refactoring-source-code.html&#34;&gt;Refactoring&lt;/a&gt; (check out my &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-introduction-to-refactoring.html&#34;&gt;Refactoring
+Tutorial&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/code-inspection.html&#34;&gt;Inspections&lt;/a&gt; were mentioned above, but as well
+as having the results on the current file, you can
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/customizing-profiles.html&#34;&gt;customise what you&amp;rsquo;re looking for&lt;/a&gt; and
+the &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/running-inspections.html&#34;&gt;scope to check&lt;/a&gt;.
+They&amp;rsquo;re very powerful for helping to either keep your code clean, or improve it further. I&amp;rsquo;ve written a tutorial on
+how to use them to help
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;migrate your code to use Java 8 idioms&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/debugging.html&#34;&gt;Debugger&lt;/a&gt; is powerful but easy to use.&lt;/li&gt;
+&lt;li&gt;All the things you get from the Java side of the IDE is also available for other languages you might be using too,
+e.g. &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/databases-and-sql.html&#34;&gt;SQL&lt;/a&gt;,
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/javascript-specific-guidelines.html&#34;&gt;JavaScript&lt;/a&gt;,
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/editing-html-files.html&#34;&gt;HTML&lt;/a&gt;, etc. E.g. code completion,
+refactoring and debugging, where appropriate.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/vcs-specific-procedures.html&#34;&gt;VCS support&lt;/a&gt; is sufficient for most
+everyday use, and every new release adds more features.  If in the past the VCS support didn&amp;rsquo;t do what you
+wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
+&lt;li&gt;Also interesting for most developers is the &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/gradle.html&#34;&gt;Gradle&lt;/a&gt;
+&amp;amp; &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/maven.html&#34;&gt;Maven&lt;/a&gt; integration, and
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/testing.html&#34;&gt;running tests&lt;/a&gt; with
+&lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/code-coverage.html&#34;&gt;code coverage&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Anticipating Java 9 - Functionality and Tooling</title>
+      <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
+      <pubDate>Thu, 22 Sep 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
+      <description>
+
+&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Slides&lt;/h2&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ePGXu8U5H0CSh&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/java-9-functionality-and-tooling&#34; title=&#34;Java 9 Functionality and Tooling&#34; target=&#34;_blank&#34;&gt;Java 9 Functionality and Tooling&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a target=&#34;_blank&#34; href=&#34;//www.slideshare.net/trishagee&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;Seems like we’ve been waiting for Java 9 for eternity.  We’ve been hearing all about Jigsaw since Java 7, so we’ll be forgiven for thinking that’s the most interesting thing about the next Java release.  What we should be wondering is, will Java 9 it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/p&gt;
+
+&lt;p&gt;In this talk, Trisha will take a look at some of the features in Java 9, including modularity, the REPL, and the nice new Collections features.  Trisha will demonstrate, via live coding, these features in IntelliJ IDEA, and talk a bit about the current and future support for Java 9 in IntelliJ IDEA.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
+talk uses build 143).&lt;/p&gt;
+
+&lt;p&gt;At the time of writing, &lt;a href=&#34;https://blog.jetbrains.com/idea/2016/11/intellij-idea-2016-3-ga-java-8-and-es6-debugger-and-ui-improvements-and-a-ton-more/&#34;&gt;IntelliJ IDEA 2016.3&lt;/a&gt; comes with
+some support for jigsaw. This support will continue to evolve, so keep an eye
+on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ blog&lt;/a&gt; for further updates.&lt;/p&gt;
+
+&lt;p&gt;The Jigsaw code I used was from the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;, and the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
+Tutorial&lt;/a&gt; helped me get started with JShell.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
+
+&lt;p&gt;Get help and more information on JDK 9 from the
+&lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
+bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You can report bugs and request features for IntelliJ IDEA in
+&lt;a href=&#34;https://youtrack.jetbrains.com/issues/idea/&#34;&gt;YouTrack&lt;/a&gt;. Some Java 9 tickets you may be interested in:&lt;br /&gt;
+&lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161611&#34;&gt;IDEA-161611: Java REPL support for Java 9&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;More information&lt;/h2&gt;
+
+&lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
+&lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
+also available&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Aurelio Garcia Ribeyro has a talk summarising all the features in Java 9, I can only find a summary version
+&lt;a href=&#34;https://youtu.be/Ws2uT2Av42I&#34;&gt;in Spanish&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The OpenJDK wiki provides &lt;a href=&#34;https://wiki.openjdk.java.net/display/Adoption/JDK+9+Outreach&#34;&gt;guidance on running your code with Java 9&lt;/a&gt;, and a
+&lt;a href=&#34;https://wiki.openjdk.java.net/display/quality/Quality+Outreach&#34;&gt;list of libraries and frameworks who are currently testing against Java 9&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New IntelliJ Tricks I Learnt Part 2</title>
+      <link>https://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</link>
+      <pubDate>Fri, 09 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</guid>
+      <description>
+
+&lt;p&gt;Apparently, I&amp;rsquo;m all about Continuous Learning - after I wrote the
+&lt;a href=&#34;post/stuff_i_learnt_about_intellij&#34;&gt;last post about IntelliJ Tips&lt;/a&gt;, I carried on through my trawl of the documentation
+and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this is all just in the
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Quick+Start&#34;&gt;Quick Start&lt;/a&gt; section!&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s the next batch (although once again I&amp;rsquo;m not sure how many are only applicable to IntelliJ 14).  All shortcuts
+are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
+cases.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate between methods&lt;/h3&gt;
+
+&lt;p&gt;Now I knew you could use the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-2.Structure&#34;&gt;structure thingie&lt;/a&gt;
+(Ctrl+F12) to let you navigate to methods in your class (although I never actually
+use it, it somehow never sticks in my head).  What I did &lt;em&gt;not&lt;/em&gt; know is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Navigation#Navigation-5.Navigatebetweenmethods&#34;&gt;jump between methods&lt;/a&gt;
+using Alt+Up/Down arrows.  This strikes me as being super useful, especially to browse tests.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Refactoring String Fragments&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve wanted this feature so many times, but could never find it or get it to work - did you know you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-4.Stringfragments&#34;&gt;refactor out parts of a
+hardcoded string&lt;/a&gt;
+into variable/field/constant? Select the section of the String you want to extract, and use the normal &amp;ldquo;Extract&amp;hellip;&amp;rdquo;
+shortcuts - e.g. Ctrl+Alt+V to extract it into a variable.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure I&amp;rsquo;ve tried this before and it didn&amp;rsquo;t work.  But I&amp;rsquo;ve tested it and it does!&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Invert Boolean&lt;/h3&gt;
+
+&lt;p&gt;There doesn&amp;rsquo;t seem to be a keyboard shortcut mapped by default, but using &amp;ldquo;Refactor -&amp;gt; Invert Boolean&amp;hellip;&amp;rdquo; (or using
+&lt;a href=&#34;/post/stuff_i_learnt_about_intellij/index.html#toc_0&#34;&gt;our newly discovered&lt;/a&gt; &amp;ldquo;Navigate to Action&amp;rdquo; shortcut of Shift+Ctrl+A and typing &amp;ldquo;Invert&amp;rdquo;) you can tell IntelliJ you want
+a boolean field to mean the &lt;em&gt;opposite&lt;/em&gt; thing, and it will
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-6.Invertboolean&#34;&gt;flip the meaning everywhere&lt;/a&gt;.
+For example, you might have an &lt;code&gt;saved&lt;/code&gt; flag, and you now want it to mean &lt;code&gt;notSaved&lt;/code&gt; - IntelliJ will make sure the
+&lt;code&gt;isSaved&lt;/code&gt; method returns &lt;code&gt;!notSaved&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Magic Refactor Suggestions&lt;/h3&gt;
+
+&lt;p&gt;You don&amp;rsquo;t always know exactly what refactoring operation you want to perform, and IntelliJ is ready to help - it can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Refactoring+Basics#RefactoringBasics-10.Refactorthis&#34;&gt;suggest refactorings available in the current context&lt;/a&gt;
+using the catchy magic incantation Ctrl+Shift+Alt+T.  Seems useful, but I&amp;rsquo;m pretty sure I&amp;rsquo;m not going to remember that
+one.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Highlight implemented/overridden methods&lt;/h3&gt;
+
+&lt;p&gt;I love everything about IntelliJ&amp;rsquo;s ability to find usages of things - finding where methods are called, finding
+implementations of a method, highlighting usages of a field, method or variable&amp;hellip; What I didn&amp;rsquo;t know, is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Find+Usages#FindUsages-6.Highlightimplementedandoverriddenmethods&#34;&gt;highlight the methods that implement or override a specific interface or superclass&lt;/a&gt;.
+For some people, this might not add much, as your little &amp;ldquo;I override something&amp;rdquo; icon&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/override.png&#34; alt=&#34;Overrides Something&#34; title=&#34;Overrides Something&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;combined with the &lt;code&gt;@Override&lt;/code&gt; annotation, might tell you all you need to know. But that only really works if you&amp;rsquo;re implementing a
+a single interface.  If you&amp;rsquo;ve correctly separated your concerns, you might implement several interfaces, and want to know
+which are the methods from a particular one.  That&amp;rsquo;s where Shift+Ctrl+F7 on the &amp;ldquo;extends&amp;rdquo; keyword comes in handy.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Run individual inspection by name&lt;/h3&gt;
+
+&lt;p&gt;I use &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections&#34;&gt;inspections&lt;/a&gt; quite a lot.  They&amp;rsquo;re especially
+useful if you have a codebase that doesn&amp;rsquo;t quite conform to your ideal standards, so you can&amp;rsquo;t yet turn on automated
+checks like checkstyle to break the build when the code doesn&amp;rsquo;t
+conform - there&amp;rsquo;s an initial step where first you need to clean up the code.  Inspections are great, because you can
+have IntelliJ give you little yellow marks to show where things are suboptimal, and aim to check in only files without
+little yellow marks.&lt;/p&gt;
+
+&lt;p&gt;What I didn&amp;rsquo;t know, is that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-6.Runasingleinspection&#34;&gt;run a single inspection&lt;/a&gt;
+on files in any scope.  So if, for example, you wanted to
+make sure that the code you&amp;rsquo;ve touched in this change has no unused bits, like
+unused parameters or unused/untested methods, you could press Shift+Alt+Ctrl+I and type &amp;ldquo;unused&amp;rdquo;. Select the
+&amp;ldquo;Unused Declaration&amp;rdquo; inspection and choose to run this on all uncommitted files.  This will tell you where you can
+clean up your code, and every commit should make your codebase that little bit better.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Saving Power With Highlighting&lt;/h3&gt;
+
+&lt;p&gt;I did not know you could easily &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Inspections#Inspections-7.Highlightinglevelandpowersavemode&#34;&gt;alter the active errors/warnings&lt;/a&gt;,
+and use that to save power.  Quite Interesting.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_7&#34;&gt;Auto indent your lines&lt;/h3&gt;
+
+&lt;p&gt;I almost obsessively reformat my code as I go, pressing &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-1.Reformatcode&#34;&gt;Ctrl+Alt+L&lt;/a&gt;
+almost like a muscle twitch. What I&amp;rsquo;ve just discovered, though, is that there&amp;rsquo;s a &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Style+and+Formatting#CodeStyleandFormatting-2.Autoindentlines&#34;&gt;shortcut which will just fix the line
+indentation&lt;/a&gt;,
+which is probably 80% of what I need anyway - Ctrl+Alt+I.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Fix Evil String Concatenation&lt;/h3&gt;
+
+&lt;p&gt;I can&amp;rsquo;t believe I didn&amp;rsquo;t notice this one earlier - do you know how many times I&amp;rsquo;ve gone around and manually changed:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;System.out.println(&amp;quot;This thing &amp;quot; + something + &amp;quot; is &amp;quot; + somethingElse);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;to&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;System.out.printf(&amp;quot;This thing %s is %s%n&amp;quot;, something, somethingElse);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Do you??? Anyway you don&amp;rsquo;t need to - Alt+Enter inside the params &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Intentions#Intentions-2.Stringconcatenation&#34;&gt;will suggest the replacement and do it for
+you&lt;/a&gt;. Nice.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;VCS Quick Access&lt;/h3&gt;
+
+&lt;p&gt;One of the areas where I &lt;em&gt;definitely&lt;/em&gt; don&amp;rsquo;t use IntelliJ to the best of its abilities is the Git integration.  I&amp;rsquo;ve
+been using &lt;a href=&#34;http://www.sourcetreeapp.com/&#34;&gt;SourceTree&lt;/a&gt; combined with IntelliJ to do most of my VCS management
+(I&amp;rsquo;m so sorry, I&amp;rsquo;m just not a command line
+person, I need to actually &lt;em&gt;see&lt;/em&gt; it). With the new laptop, I haven&amp;rsquo;t installed SourceTree yet and I&amp;rsquo;m going to try and
+do everything via the IDE.  Previously I used the right-click menu mostly for managing VCS operations, occasionally the
+VCS menu, and did most stuff in the &amp;ldquo;Changes&amp;rdquo; window.  But now I&amp;rsquo;ve discovered Alt+&amp;ldquo;Back Quote&amp;rdquo; (Ctrl+V on the mac) to
+bring up the &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Version+Control+Basics#VersionControlBasics-4.VCSoperationsquicklist&#34;&gt;menu of git-shaped operations for this
+context&lt;/a&gt;.
+To stop you having to hunt all over the keyboard to
+find what on earth a &amp;ldquo;Back Quote&amp;rdquo; is, it&amp;rsquo;s &amp;#96;, which on both my UK and US (Windows) keyboards is in the top left
+corner of your keyboard (on the Mac, it&amp;rsquo;s on the bottom left next to the shift, but you shouldn&amp;rsquo;t need it since your
+shortcut is different anyway).&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;Amend Commits&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve just discovered that you can commit a change which smushes up into your last commit and fixes it.  I&amp;rsquo;m assuming it commits the
+new changes and (potentially) an updated commit message into the last change.  I really wish I&amp;rsquo;d known about this
+earlier, on a number of occasions in the last few months I&amp;rsquo;ve done this either manually or by doing a rather
+dangerous soft reset.  I will &lt;em&gt;definitely&lt;/em&gt; be using this in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/amend-commit.png&#34; alt=&#34;Amend Commit&#34; title=&#34;Amend Commit&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_11&#34;&gt;The Cursor as a Breakpoint&lt;/h3&gt;
+
+&lt;p&gt;Did you know that you can &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Debugger#Debugger-5.Runtocursor&#34;&gt;use the cursor as a temporary breakpoint&lt;/a&gt;?
+I did not.  Well, now you know.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_12&#34;&gt;Labelling Changes&lt;/h3&gt;
+
+&lt;p&gt;I hope by now none of us developers are doing that icky thing of having &lt;a href=&#34;https://twitter.com/trisha_gee/status/529299964787449856&#34;&gt;&amp;ldquo;Copy of&amp;hellip;&amp;rdquo; and &amp;ldquo;Backup of&amp;hellip;&amp;rdquo; filenames
+and directories&lt;/a&gt; to keep track of our versions.  We&amp;rsquo;re all using a VCS of course.  But if you&amp;rsquo;re being strict about making
+sure that every commit leads to a working build (we all do that, right&amp;hellip;?) then sometimes even distributed file systems
+like git, with its local branches, are too heavyweight for experiments and debugging.&lt;/p&gt;
+
+&lt;p&gt;IntelliJ has Local History, which I personally think you should &lt;em&gt;never&lt;/em&gt; rely on, but has occasionally saved my bacon in
+times of strife.  It also does this really nice thing (automatically) where it labels versions where the tests passed,
+so you&amp;rsquo;ve got some level of confidence that at that point in time, at that revision, things weren&amp;rsquo;t hideously broken.
+At the very least, they must have compiled.  What I did not know is that you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Local+History#LocalHistory-6.Putlabel&#34;&gt;add your own labels&lt;/a&gt;, so you could
+label some local, non-committed version of the file as &amp;ldquo;feature x works but y doesn&amp;rsquo;t&amp;rdquo; (or probably something much
+shorter).&lt;/p&gt;
+
+&lt;p&gt;I think it looks useful. As I say though, &lt;em&gt;not&lt;/em&gt; a replacement for VCS, but a suppliment.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+So, that&amp;rsquo;s the end of Week One at JetBrains, and already I&amp;rsquo;ve learnt a whole heap of things.  I&amp;rsquo;m sure there&amp;rsquo;s more to
+come, so stay tuned!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New IntelliJ Tricks I Learnt Today</title>
+      <link>https://trishagee.github.io/post/stuff_i_learnt_about_intellij/</link>
+      <pubDate>Wed, 07 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
+      <description>
+
+&lt;p&gt;Day three of my &lt;a href=&#34;/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
+of IntelliJ, since I&amp;rsquo;m
+already a &amp;ldquo;Power User&amp;rdquo;, to see if there&amp;rsquo;s stuff missing that someone like me might want to see. Firstly, a confession -
+I&amp;rsquo;m not sure I&amp;rsquo;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&amp;rsquo;ve dipped
+into it when I needed to know something, I&amp;rsquo;ve searched for help with specific items, but like many developers, I tend to
+use something first rather than read the documentation first.&lt;/p&gt;
+
+&lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
+and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
+else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;
+
+&lt;p&gt;So here&amp;rsquo;s today&amp;rsquo;s list, and feel free to laugh at me and be smug in my direction if you already knew these things (note: I
+have upgraded to IntelliJ 14, and at the time of writing I don&amp;rsquo;t know which of these features are new and which are
+simply previously undiscovered):&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Navigate directly to an action or option&lt;/h3&gt;
+
+&lt;p&gt;Press Shift+Ctrl+A (Windows) or Shift+Cmd+A (Mac) and start typing the name of the thing you want to do, or the setting
+you want to change. I&amp;rsquo;ve found this especially useful now I&amp;rsquo;m back on Windows and I don&amp;rsquo;t have that nice helpful typing
+box on the help menu that will take me straight to the menu item I want.  But what&amp;rsquo;s most useful about this for me today,
+as I&amp;rsquo;m setting up a new profile on a new laptop (more on the new laptop later, if it doesn&amp;rsquo;t defeat me utterly) is that
+from here, you can turn various settings on and off without having to navigate through the settings screen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/action.png&#34; alt=&#34;Navigate to Action&#34; title=&#34;Navigate to Action&#34; /&gt;
+&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_1&#34;&gt;Statement completion&lt;/h3&gt;
+
+&lt;p&gt;I never knew there was a
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-4.Statementcompletion&#34;&gt;shortcut for finishing off a statement&lt;/a&gt;,
+all that Java boilerplate you need to keep the compiler happy - semi colons and curly brackets and everything.  But
+there is, and I can see it being super useful, especially if you&amp;rsquo;re using other bits of IntelliJ code completion to
+create the core of your line of code.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_2&#34;&gt;Issue tracker integration&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;m sure loads of people are already using integration with their favourite issue tracker, but I hadn&amp;rsquo;t really thought
+about this as something that I really cared about.  But I was watching the intro videos for YouTrack (not surprisingly
+I&amp;rsquo;ll be using this instead of Jira during my time at JetBrains) and when I saw
+&lt;a href=&#34;https://www.youtube.com/watch?v=n2_3Y1jLm5U&#34;&gt;how the IDE integration worked&lt;/a&gt;, I
+suddenly realised how this small thing can add up to save thousands of keystrokes over time, not to mention saving
+precious navigational seconds and window-switching.&lt;/p&gt;
+
+&lt;p&gt;For me, just the ability to generate at least the start of the commit message is a saving in time, and adds to project
+consistency if all your developers are doing the same thing.  On my last project we only just realised we all quoted the
+Jira issues in subtly different ways.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_3&#34;&gt;Settings shortcut keys&lt;/h3&gt;
+
+&lt;p&gt;When I initially started using IntelliJ in anger back in 2008, I was very much a point-and-click type user. Over time,
+pair programming with keyboard-super-users and giving live demos with very limited time available, I&amp;rsquo;ve worked harder
+to become a keyboard-shortcuts person.  With the latest version of IntelliJ, I can&amp;rsquo;t find the tiny icons I use to get to
+the settings window, something that I&amp;rsquo;ve been using a lot as I set up the new IDE instance on the new laptop.  So I bit
+the bullet and learnt the keyboard shortcuts, and it&amp;rsquo;s already saving me a bunch of time (on the rare occasions when the
+aforementioned &amp;ldquo;Navigate to Action&amp;rdquo; fails me).&lt;/p&gt;
+
+&lt;p&gt;Ctrl+Alt+S for the settings dialog (appears to be Cmd + , on the Mac)
+Shift+Ctrl+Alt+S for the project structure dialog (appears to be Cmd + ; on the Mac)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/stuff_i_learnt_about_intellij/settings.png&#34; alt=&#34;Settings Shortcuts&#34; title=&#34;Settings Shortcuts&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;Yeah.  I can&amp;rsquo;t believe I wasn&amp;rsquo;t already using those either.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Selecting the negative&lt;/h3&gt;
+
+&lt;p&gt;I use completion/suggestions all the time from IntelliJ, I&amp;rsquo;m far too lazy to type everything.  What I didn&amp;rsquo;t realise, is
+that you don&amp;rsquo;t just have to accept the default they give you.  If, for example, IntelliJ suggests a boolean value, you
+can get it to negate that value by selecting it with &amp;ldquo;!&amp;rdquo; instead of enter or tab.  Yes, I know I&amp;rsquo;ve done a horrible job
+of explaining that, but take a look at
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-5.Negatingcompletion&#34;&gt;the documentation&lt;/a&gt;
+and try it, it&amp;rsquo;s quite cool.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Exclude from Autocomplete&lt;/h3&gt;
+
+&lt;p&gt;Speaking of code completion, sometimes IntelliJ is sometimes just a bit too keen to suggest something, and you really
+will never want that value.  In the past, I&amp;rsquo;ve always used &lt;code&gt;Settings -&amp;gt; Editor -&amp;gt; General -&amp;gt; Auto Import&lt;/code&gt; to manage the
+suggestions (the most common one for me is I will never want &lt;code&gt;java.awt.List&lt;/code&gt;, I will almost always want
+&lt;code&gt;java.util.List&lt;/code&gt;).  Well, you don&amp;rsquo;t have to go into settings to do this, you can
+&lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Code+Completion#CodeCompletion-9.Excludefromcompletion&#34;&gt;do it from the suggestions themselves&lt;/a&gt; -
+navigate to the item you don&amp;rsquo;t want (in my case, &lt;code&gt;java.awt.List&lt;/code&gt;) and press Alt+Enter, this will give you the option
+of excluding this from the suggestions in the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;p&gt;That&amp;rsquo;s what I found from just one day of browsing the documentation and setting up my IDE from scratch yet again.
+Maybe I&amp;rsquo;ll promptly forget all these, or maybe they&amp;rsquo;ll be new weapons in my armoury of IDE-fu. Either way, maybe one or
+two people will find this useful.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New Year, New Adventures</title>
+      <link>https://trishagee.github.io/post/new_year_new_adventures/</link>
+      <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/new_year_new_adventures/</guid>
+      <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
+called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
+this role were: to learn what it was
+like working for a company that produced a technology product; to discover what impact working in an open source fashion has; and to
+level up my advocacy skills.  I have met all these goals, and more - I met some fantastic people; learnt different approaches to
+software development; discovered my new favourite database for creating applications; moved to Spain; started both a
+&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; and a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;;
+worked to understand the value of community and evangelism, and to help create a strategy for these areas;
+and my evangelism efforts and open source work earned me the &lt;a href=&#34;https://java.net/website/java-champions/bios.html#Gee&#34;&gt;Java Champion&lt;/a&gt; title.
+I&amp;rsquo;m extremely proud of what I&amp;rsquo;ve achieved over this period, and very grateful to MongoDB for giving me these opportunities.&lt;/p&gt;
+
+&lt;p&gt;But now, a new adventure is about to begin.  If you&amp;rsquo;ve seen my &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt;
+this year, you&amp;rsquo;ll know of my love affair with &lt;a href=&#34;https://www.jetbrains.com/idea/whatsnew/&#34;&gt;IntelliJ IDEA&lt;/a&gt;,
+a tool I use daily (even for blogging). Well, now I&amp;rsquo;m joining the team at &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt;,
+where I&amp;rsquo;m going Full Advocate. I &lt;em&gt;hope&lt;/em&gt; this means I get to carry on doing more of what I love - presenting, writing,
+and working on demos to help developers become more productive. I hope this will give me opportunities to stay ahead of the curve in the
+Java/JVM world.&lt;/p&gt;
+
+&lt;p&gt;And yes, in answer to the Most Frequently Asked Question, I am staying in Spain. I&amp;rsquo;ve fallen in love with Sevilla and I&amp;rsquo;m not ready to
+leave yet.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/Sevilla.jpg&#34; alt=&#34;Sevilla Cathedral&#34; title=&#34;Sevilla Cathedral&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I shall leave you with my somewhat disasterous &amp;ldquo;Top Ten IntelliJ Tips&amp;rdquo; from GOTO Aarhus, which is worth watching just to see Dan North
+save me from the curse of the live demo.  Things can only get better from here, right?&lt;/p&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/QsHasoJUgKo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

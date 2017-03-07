@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Workshop on Trisha Gee </title>
+    <link>https://trishagee.github.io/tags/workshop/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Mon, 19 Jan 2015 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</title>
+      <link>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</link>
+      <pubDate>Mon, 19 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
+      <description>
+
+&lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
+Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Who is this for?&lt;/h2&gt;
+
+&lt;p&gt;This workshop is aimed at Java developers who want to learn more about how
+to rapidly prototype applications using web front-end technologies with JVM back-end technologies. The workshop may be
+suitable for developers who don&amp;rsquo;t normally use Java as their primary language,
+but this is &lt;em&gt;not&lt;/em&gt; an introduction to Java and familiarity with server-side development of some kind is assumed.&lt;/p&gt;
+
+&lt;p&gt;A basic understanding of HTML and JavaScript is expected, but previous experience of Groovy or MongoDB is &lt;em&gt;not&lt;/em&gt; required.&lt;/p&gt;
+
+&lt;p&gt;The workshop is not suitable for people who have no programming experience.&lt;/p&gt;
+
+&lt;p&gt;This is a hands-on workshop, bring a laptop set up according to the following instructions - you will be writing code!&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Overview&lt;/h2&gt;
+
+&lt;iframe width=&#34;420&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/klw9pIuTICM&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I&amp;rsquo;ve created my very first screencast! This video takes you through all the steps you need to go through in order to be
+setup for the workshop.&lt;/p&gt;
+
+&lt;p&gt;The setup instructions below are the same process, so you can copy &amp;amp; paste where appropriate.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;I am assuming you already have a version of the Java SDK downloaded. For this workshop, Java 7 or above should work, but
+I recommend you &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html&#34;&gt;download the latest version of Java 8&lt;/a&gt; if you&amp;rsquo;re not already using it.&lt;/p&gt;
+
+&lt;p&gt;Create a new work area for this tutorial. For the rest of these instructions I&amp;rsquo;ll refer to it as &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;.  I&amp;rsquo;ve put
+ mine in &lt;code&gt;~/Projects/workshops/qcon2015&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Installing MongoDB&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;m going to be using &lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;MongoDB 3.0.0-rc8&lt;/a&gt;, but version 2.6 will be fine too.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;Download MongoDB&lt;/a&gt; for your operating system and unzip/install it.  Unless you prefer to put it
+somewhere else, I suggest you unzip it to &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now we have to create the directory for the data to go into. Create a &lt;code&gt;data&lt;/code&gt; directory in &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;, so that you
+have a folder at &lt;code&gt;&amp;lt;location&amp;gt;/data&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;From the command line, start MongoDB to make sure everything is working.  From the &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt; directory:&lt;/p&gt;
+
+&lt;h5 id=&#34;toc_4&#34;&gt;Linux/OSX&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;./mongodb/bin/mongod --dbpath data
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;toc_5&#34;&gt;Windows:&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;monogdb\bin\mongod.exe --dbpath data
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;
+MongoDB should be running on localhost and port 27017&lt;/p&gt;
+
+&lt;p&gt;Connect to the shell to make sure it&amp;rsquo;s working:&lt;/p&gt;
+
+&lt;h5 id=&#34;toc_6&#34;&gt;Linux/OSX&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;./mongodb/bin/mongo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;toc_7&#34;&gt;Windows&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;monogdb\bin\mongo.exe
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;
+You should see something like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~\Projects\workshops\qcon2015&amp;gt;monogdb\bin\mongo.exe
+MongoDB shell version: 2.8.0-rc5
+connecting to: test
+Welcome to the MongoDB shell.
+For interactive help, type &amp;quot;help&amp;quot;.
+For more comprehensive documentation, see
+        http://docs.mongodb.org/
+Questions? Try the support group
+        http://groups.google.com/group/mongodb-user
+&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;toc_8&#34;&gt;Creating your project&lt;/h2&gt;
+
+&lt;p&gt;Clone &lt;a href=&#34;https://github.com/trishagee/cafelito&#34;&gt;the Cafelito project&lt;/a&gt; into &lt;code&gt;&amp;lt;location&amp;gt;/cafelito&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;In a terminal/command line, navigate to this location, and run:&lt;/p&gt;
+
+&lt;h5 id=&#34;toc_9&#34;&gt;Linux/OSX&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;./gradlew check
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;toc_10&#34;&gt;Windows&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code&gt;gradlew.bat check
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;
+This should download all the required dependencies.&lt;/p&gt;
+
+&lt;p&gt;Open in your favourite IDE and import this directory as a new project. I&amp;rsquo;ll be using
+&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA 14&lt;/a&gt; and showing a number of its tricks. If you&amp;rsquo;re using IntelliJ IDEA and you
+import this project as a Gradle project, you don&amp;rsquo;t even need to do the above step, IntelliJ will download and import
+the dependencies for you.&lt;/p&gt;
+
+&lt;p&gt;Feel free to use Eclipse or
+Netbeans (or whatever your favourite IDE is) but I&amp;rsquo;m out of practice using those IDEs and might not be able to help you out as much.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_11&#34;&gt;And now&amp;hellip;&lt;/h2&gt;
+
+&lt;p&gt;You should be ready to begin: you have a working instance of MongoDB, a skeleton project that we&amp;rsquo;ll be working with, and all the
+dependencies should have been downloaded.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Getting started with the MongoDB Java Driver Tutorial</title>
+      <link>https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/</link>
+      <pubDate>Thu, 24 Oct 2013 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/</guid>
+      <description>
+
+&lt;p&gt;Brief guide to running the MongoDB tutorial from QCon London and JAX London.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;Create a new work area for this tutorial. For the rest of these instructions I&amp;rsquo;ll refer to it as &lt;code&gt;&amp;lt;location&amp;gt;&lt;/code&gt;.  I&amp;rsquo;ve put
+ mine in &lt;code&gt;~/Documents/workshops/jax&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Installing MongoDB&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.mongodb.org/downloads&#34;&gt;Download MongoDB&lt;/a&gt; or get it off the USB stick Unzip to an appropriate location,
+let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Then we&amp;rsquo;ll have to create the directory for the data to go into:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd &amp;lt;location&amp;gt;&lt;/code&gt;&lt;br /&gt;&lt;code&gt;mkdir data&lt;/code&gt;&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;And then start MongoDB:&lt;div&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;./mongodb/bin/mongod &amp;ndash;dbpath data&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Now MongoDB should be running on localhost and port 27017&lt;/p&gt;
+
+&lt;p&gt;If you want, you can connect to the shell - this is not necessary for this workshop:&lt;/p&gt;
+
+&lt;p&gt;&lt;span style=&#34;font-family: monospace;&#34;&gt;./mongodb/bin/mongo&lt;/span&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Creating your project&lt;/h2&gt;
+
+&lt;p&gt;Put &lt;a href=&#34;https://github.com/trishagee/mongodb-java-tutorial&#34;&gt;the Java project&lt;/a&gt; into &lt;code&gt;&amp;lt;location&amp;gt;/java3.0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;cd &amp;lt; location&amp;gt;/java3.0&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Run:&lt;br /&gt;&lt;code&gt;./gradlew idea&lt;/code&gt;&lt;br /&gt;&lt;div&gt;or&lt;/div&gt;&lt;code&gt;./gradlew eclipse&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Open in your favourite IDE and you should be ready to start playing.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;More help:&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://docs.mongodb.org/manual/tutorial/&#34;&gt;MongoDB Tutorials&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Emergency Gradle Procedure:&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.gradle.org/&#34;&gt;Download Gradle&lt;/a&gt;&amp;nbsp;or get it off the USB stick&lt;br /&gt;Extract to some suitable location. &amp;nbsp;Mine&amp;rsquo;s in&amp;nbsp;&lt;code&gt;/Library/Tools/gradle/&lt;/code&gt;&lt;br /&gt;Put gradle on your path. &amp;nbsp;On the Mac, that means adding the following line to&amp;nbsp;&lt;code&gt;~/.bash_profile&lt;/code&gt;:&lt;br /&gt;&lt;code&gt;export PATH=&amp;ldquo;/Library/Tools/gradle/bin:$PATH&amp;rdquo;&lt;/code&gt;&lt;br /&gt;&lt;div&gt;&lt;code&gt;&lt;br /&gt;&lt;/code&gt;&lt;/div&gt;&lt;/div&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

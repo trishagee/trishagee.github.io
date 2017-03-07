@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<head>
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="UA-25393690-2">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="description" content="">
+<meta name="keywords" content="java, refactoring, performance, ">
+
+ 
+<meta property="og:type" content="article"/>
+<meta property="og:description" content=""/>
+<meta property="og:title" content="Applying Java 8 Idioms to Existing Code : trishagee.github.io"/>
+<meta property="og:site_name" content="Trisha Gee"/>
+<meta property="og:image" content="" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="" />
+<meta property="og:image:height" content="" />
+<meta property="og:url" content="https://trishagee.github.io/presentation/refactoring_to_java_8/">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2016-06-03"/>
+<meta property="article:modified_time" content="2016-06-03"/>
+
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="refactoring">
+<meta property="article:tag" content="performance">
+
+
+
+<meta name="twitter:card" content="summary">
+
+<meta name="twitter:site" content="@trisha_gee">
+<meta name="twitter:title" content="Applying Java 8 Idioms to Existing Code : trishagee.github.io">
+<meta name="twitter:creator" content="@trishagee">
+<meta name="twitter:description" content="">
+<meta name="twitter:image:src" content="">
+<meta name="twitter:domain" content="trishagee.github.io">
+
+
+
+    <base href="https://trishagee.github.io">
+    <title> Applying Java 8 Idioms to Existing Code - trishagee.github.io </title>
+    <link rel="canonical" href="https://trishagee.github.io/presentation/refactoring_to_java_8/">
+    
+
+    <link href='http://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="/static/css/style.css">
+<link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+<script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+    <link rel="stylesheet" href="http://yandex.st/highlightjs/8.0/styles/default.min.css">
+    <script src="http://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+</head>
+
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+<header id="header">
+    <div id="byline">by Trisha Gee</div>
+    <nav id="nav">
+        <ul id="mainnav">
+    <li>
+        <a href="/post/">
+            <span class="icon"> <i aria-hidden="true" class="icon-quill"></i></span>
+            <span> blog </span>
+        </a>
+    </li>
+    <li>
+        <a href="/project/">
+            <span class="icon"> <i aria-hidden="true" class="icon-console"></i></span>
+            <span> code </span>
+        </a>
+    </li>
+    <li>
+        <a href="/presentation/">
+            <span class="icon"> <i aria-hidden="true" class="icon-stats"></i></span>
+            <span> talks </span>
+        </a>
+    </li>
+    <li>
+        <a href="/resources/">
+            <span class="icon"> <i aria-hidden="true" class="icon-gears"></i></span>
+            <span> resources </span>
+        </a>
+    </li>
+</ul>
+
+        <ul id="social">
+    <li id="share">
+        <span class="icon icon-bubbles"> </span>
+        <span class="title"> share </span>
+
+        <div class="dropdown share">
+            <ul class="social">
+                <li><a href="https://twitter.com/intent/tweet?status=Applying%20Java%208%20Idioms%20to%20Existing%20Code-https%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank"
+                       title="Follow me on Twitter" class="twitter"><span class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank" title="Join me on Facebook"
+                       class="facebook"><span class="icon icon-facebook"></span>Facebook</a></li>
+                <li><a href="https://plus.google.com/share?url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+                <li><a href="http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f&title=Applying%20Java%208%20Idioms%20to%20Existing%20Code&source=spf13"
+                       target="_blank" title="LinkedIn" class="linkedin"><span class="icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://www.reddit.com/submit?url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank" title="Reddit" class="reddit"><span
+                        class="icon icon-reddit"></span>Reddit</a></li>
+                <li><a href="http://www.stumbleupon.com/submit?url=https%3a%2f%2ftrishagee.github.io%2fpresentation%2frefactoring_to_java_8%2f" target="_blank" title="StumbleUpon"
+                       class="stumbleupon"><span class="icon icon-stumbleupon"></span>StumbleUpon</a></li>
+            </ul>
+            <span class="subcount">sharing is caring</span>
+        </div>
+    </li>
+    <li id="follow">
+        <span class="icon icon-rocket"> </span>
+        <span class="title"> follow </span>
+
+        <div class="dropdown follow">
+            <ul class="social">
+                <li><a href="http://trishagee.github.io/index.xml" target="_blank" title="Subscribe by RSS" class="rss"><span
+                        class="icon icon-feed-2"></span>RSS</a></li>
+                <li><a href="http://www.twitter.com/trisha_gee" target="_blank" title="Follow me on Twitter" class="twitter"><span
+                        class="icon icon-twitter"></span>Twitter</a></li>
+                <li><a href="http://www.linkedin.com/in/trishagee" target="_blank" title="LinkedIn" class="linkedin"><span class="
+                        icon icon-linkedin"></span>LinkedIn</a></li>
+                <li><a href="http://github.com/trishagee" target="_blank" title="GitHub" class="github"><span class="
+                        icon icon-github"></span>GitHub</a></li>
+                <li><a href="http://www.slideshare.net/trishagee" target="_blank" title="SlideShare" class="slideshare"><span
+                        class="icon icon-slideshare"></span>SlideShare</a></li>
+                <li><a href="https://plus.google.com/+TrishaGee/" target="_blank" title="Google+" class="googleplus"><span
+                        class="icon icon-google-plus"></span>Google+</a></li>
+            </ul>
+            <span class="subcount"></span>
+        </div>
+    </li>
+</ul>
+
+    </nav>
+</header>
+
+
+
+<section id="main">
+  <h1 itemprop="name" id="title">Applying Java 8 Idioms to Existing Code</h1>
+  <div>
+        <article itemprop="articleBody" id="content">
+           
+
+<ul>
+<li>Understand how to improve performance with your Java code using Java 8 language features.</li>
+<li>Learn hands on techniques to discover and implement common Java 8 refactorings.</li>
+<li>Understand when you should and should not apply key refactorings in Java 8.</li>
+</ul>
+
+<h2 id="toc_0">Abstract</h2>
+
+<p>While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.</p>
+
+<p>In this presentation, Trisha will:</p>
+
+<ul>
+<li>Highlight the performance benefits of using Java 8 - after all, you’ll probably have to persuade &ldquo;The Management&rdquo; that tampering with
+existing code is worthwhile</li>
+<li>Demonstrate how to identify areas of code that can be updated to use Java 8 features, and how to pick which changes will give you the
+most benefit</li>
+<li>Demonstrate how to automatically refactor your code to make use of features like lambdas and streams</li>
+<li>Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.</li>
+</ul>
+
+<h2 id="toc_1">The talk</h2>
+
+<p>Most recent version, containing performance analysis, is on the
+<a href="https://www.infoq.com/presentations/java8-lambda-streams">InfoQ website</a>, and InfoQ also has a nice summary of the <a href="https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721">points covered in
+the talk</a>.</p>
+
+<p>The first appearance was at <a href="https://www.youtube.com/watch?v=dlzMV83RTtw">DevoxxUK</a>.</p>
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/xPhKtRN9aOsHZd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
+
+<p>You can purchase a more in-depth tutorial on
+<a href="http://www.informit.com/store/refactoring-to-modern-java-livelessons-video-training-9780134653594">informIT</a>, and is also available via
+<a href="https://www.safaribooksonline.com/library/view/refactoring-to-modern/9780134653617/">Safari Books Online</a>.</p>
+
+<p>The IntelliJ-specific features of some of the refactoring shown are covered in my
+<a href="https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html">Migrating to Java 8</a> tutorial.</p>
+
+<h2 id="toc_2">Background</h2>
+
+<p>Article: <a href="https://dzone.com/articles/why-java-8-1">Why Java 8</a><br />
+Article: <a href="https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/">Five Java 8 Features You Won&rsquo;t Be Able to Live Without</a><br />
+Video and Research: <a href="/presentation/java8_in_anger/">Building a Java 8 Application</a></p>
+
+<h2 id="toc_3">Code</h2>
+
+<p>The project we&rsquo;re refactoring is <a href="https://github.com/mongodb/morphia">Morphia</a>. You can see the &ldquo;after&rdquo; of the chosen refactorings on the
+ <a href="https://github.com/trishagee/morphia/tree/r2j8">r2j8</a> branch.</p>
+
+<p>The performance tests that were written and run specifically for this talk are in the <a href="https://github.com/trishagee/j8-morphia-perf-tests">j8-morphia-perf-tests repository</a></p>
+
+<h2 id="toc_4">Performance</h2>
+
+<h3 id="toc_5">Lambda Expressions</h3>
+
+<p>Video: <a href="http://medianetwork.oracle.com/video/player/2623576348001">Lambda Performance</a> and <a href="http://www.oracle
+.com/technetwork/java/jvmls2013kuksen-2014088.pdf">talk slides</a><br />
+Article: <a href="https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood">Java 8 Lambdas - A Peek Under the Hood</a><br />
+Video: <a href="https://youtu.be/MLksirK9nnE">Lambdas in Java: A Peek under the Hood - Brian Goetz</a></p>
+
+<h4 id="toc_6">Streams</h4>
+
+<p>Video: <a href="https://www.infoq.com/presentations/java8-stream-performance">Let’s Get to the Rapids: Java 8 Stream Performance</a><br />
+Article: <a href="https://jaxenter
+.com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html">Java performance tutorial: How fast are the Java 8 streams? - Angelika Langer</a> Notable Quotes:</p>
+
+<blockquote>
+<p>Again, the for-loop is faster that the sequential stream operation, but the difference on an ArrayList is not nearly as significant as
+it was on an array.</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<blockquote>
+<p>You will find that there is no measurable difference any more between for-loop and sequential stream if the functionality is heavily cpu
+ bound.</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<blockquote>
+<p>The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for
+performance reasons; you do it because you like the functional programming style.</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<blockquote>
+<p>The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of
+overhead that is involved in going parallel and how (well or poorly) it is overcompensated (on this particular platform).</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<blockquote>
+<p>With this in mind it is fair to say that the performance model of streams is not a trivial one</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<blockquote>
+<p>&hellip;you need to benchmark a lot in order to find out for a given context whether going parallel is worth doing or not.</p>
+</blockquote>
+
+<p>&nbsp;</p>
+
+<blockquote>
+<p>The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t
+expect miracles. Also, don’t guess; instead, benchmark a lot.</p>
+</blockquote>
+
+<p>Article: <a href="http://blog.takipi
+.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/">Benchmark: How Misusing Streams Can Make Your Code 5 Times Slower</a> -
+interesting comparison of different iteration styles.  Also shows that things like boxing might add more cost than streams (but that you
+don&rsquo;t realise you&rsquo;re boxing)</p>
+
+<p>Article: <a href="http://blog.codefx.org/java/stream-performance/">Stream Performance</a> - some interesting benchmarks based on Angelika Langer&rsquo;s
+article<br />
+Article: <a href="http://blog.codefx.org/java/stream-performance-your-ideas/">Follow up on Stream Performance</a></p>
+
+<h3 id="toc_7">Date and Time</h3>
+
+<p>Article: <a href="http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/">JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)</a></p>
+
+<h3 id="toc_8">Benchmarking</h3>
+
+<p>I used a bunch of techniques to produce the benchmarks on the talk.  I&rsquo;d like to summarise them more thoroughly when I get a chance, but
+for now here&rsquo;s my background reading:</p>
+
+<p>Article: <a href="http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html">Avoiding Benchmarking Pitfalls on the JVM</a></p>
+
+<p>Tool: <a href="http://openjdk.java.net/projects/code-tools/jmh/">JMH</a><br />
+Tool: <a href="https://github.com/artyushov/idea-jmh-plugin">IntelliJ JMH Plugin</a><br />
+Article: <a href="http://java-performance.info/jmh/">Introduction to JMH</a></p>
+
+<h2 id="toc_9">&ldquo;Best Practice&rdquo;</h2>
+
+<p>I dislike the term &ldquo;Best Practice&rdquo; as it implies a &ldquo;one size fits all&rdquo; approach, and I believe that our job is to
+make difficult decisions based on various pros and cons and differing situations.  However, here I will collect
+resources that may help us make some of those decisions</p>
+
+<p>Article: <a href="http://martinfowler.com/articles/refactoring-pipelines.html">Refactoring with Loops and Collection Pipelines</a> -
+Martin Fowler<br />
+Slides: <a href="http://martinfowler.com/articles/workflowsOfRefactoring/">Workflows of Refactoring</a> - Martin Fowler<br />
+Book: <a href="https://www.amazon.com/gp/product/0201485672/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=trissramb-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0201485672&amp;linkId=11d0b95e050a492112eeac6fb6b2bcb0">Refactoring: Improving the Design of Existing Code</a> - Martin Fowler</p>
+
+<p>Article: <a href="http://blog.joda.org/2014/11/optional-in-java-se-8.html">Using Optional in Java SE 8</a> - Stephen Colebourne<br />
+Article: <a href="http://zeroturnaround.com/rebellabs/java-8-best-practices-cheat-sheet/">Java 8 Best Practices Cheat Sheet</a> - ZeroTurnaround</p>
+
+        </article>
+  </div>
+</section>
+
+
+
+<aside id="meta">
+
+<div>
+    <section id="datecount">
+        <h4 id="date"> Fri Jun 3, 2016 </h4>
+        <h5 id="wc"> 900 Words </h5>
+    </section>
+    <ul id="categories">
+        
+    </ul>
+    <ul id="tags">
+        
+        <li><a href="https://trishagee.github.io/tags/java">java</a></li>
+        
+        <li><a href="https://trishagee.github.io/tags/refactoring">refactoring</a></li>
+        
+        <li><a href="https://trishagee.github.io/tags/performance">performance</a></li>
+        
+    </ul>
+</div>
+
+<div>
+    <section id="prev">
+        &nbsp;<a class="previous" href="https://trishagee.github.io/post/what_a_year.md/"><i class="icon-arrow-left"></i> A Year? Really?</a><br>
+    </section>
+    <section id="next">
+        &nbsp;<a class="next" href="https://trishagee.github.io/post/java_8_mooc_session3/">Java 8 MOOC - Session 3 Summary <i class="icon-arrow-right"></i></a>
+    </section>
+</div>
+
+<div>
+    <section id="author">
+        <h4>About the Author:</h4>
+        Trisha is a Java Champion and a leader of the
+        Sevilla Java User Group. She works for
+        <a href="https://www.jetbrains.com/">JetBrains</a> who very kindly pay her
+        to do what she loves. She believes we
+        shouldn't all have to make the same mistakes again and again.
+    </section>
+</div>
+
+</aside>
+
+<meta itemprop="wordCount" content="857">
+<meta itemprop="datePublished" content="2016-06-03">
+<meta itemprop="url" content="https://trishagee.github.io/presentation/refactoring_to_java_8/">
+
+
+<aside id=comments>
+    <div><h2> Comments </h2></div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'trishagee';
+    var disqus_identifier = 'https:\/\/trishagee.github.io\/presentation\/refactoring_to_java_8\/';
+    var disqus_title = 'Applying Java 8 Idioms to Existing Code';
+    var disqus_url = 'http:\/\/trishagee.github.io\/presentation\/refactoring_to_java_8';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</aside>
+
+<footer>
+    <div>
+        <p>
+            &copy; 2013-14 <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Trisha Gee.</span></span>
+            <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons Attribution">Some rights reserved</a>;
+            please attribute properly and link back. <br>
+            Powered by <a href="http://hugo.spf13.com">Hugo</a>.
+            Original layout created by Steve Francia <a href="http://http://spf13.com/">http://spf13.com/</a>, derived from <a
+                href="https://github.com/spf13/spf13.com">https://github.com/spf13/spf13.com</a>.
+        </p>
+    </div>
+</footer>
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-49006189-1', 'auto');
+    ga('send', 'pageview');
+
+    (function () {
+        var j = function (a, b) {
+            return window.getComputedStyle ? getComputedStyle(a).getPropertyValue(b) : a.currentStyle[b]
+        };
+        var k = function (a, b, c) {
+            if (a.addEventListener)a.addEventListener(b, c, false); else a.attachEvent('on' + b, c)
+        };
+        var l = function (a, b) {
+            for (key in b)if (b.hasOwnProperty(key))a[key] = b[key];
+            return a
+        };
+        window.fitText = function (d, e, f) {
+            var g = l({'minFontSize': -1 / 0, 'maxFontSize': 1 / 0}, f);
+            var h = function (a) {
+                var b = e || 1;
+                var c = function () {
+                    a.style.fontSize = Math.max(Math.min(a.clientWidth / (b * 10), parseFloat(g.maxFontSize)), parseFloat(g.minFontSize)) + 'px'
+                };
+                c();
+                k(window, 'resize', c)
+            };
+            if (d.length)for (var i = 0; i < d.length; i++)h(d[i]); else h(d);
+            return d
+        }
+    })();
+    fitText(document.getElementById('title'), 1)
+
+</script>
+</body>
+</html>
+

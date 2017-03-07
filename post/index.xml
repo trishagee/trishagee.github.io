@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+      <title>Posts on Trisha Gee </title>
+    <link>https://trishagee.github.io/post/index.xml/</link>
+    <language>en-us</language>
+    <author>Trisha Gee</author>
+    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
+    <updated>Fri, 04 Nov 2016 00:00:00 UTC</updated>
+    
+    <item>
+      <title>What Can Men Do</title>
+      <link>https://trishagee.github.io/post/what_can_men_do/</link>
+      <pubDate>Fri, 04 Nov 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/what_can_men_do/</guid>
+      <description>&lt;p&gt;So, I wrote a long email to the London Java Community in answer to an excellent question: &amp;ldquo;What can men do to support Women in Technology?&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s a bit of a brain dump, by no means comprehensive, and is in answer to a specific question in a specific context, but I&amp;rsquo;ve been asked
+to make the information public so it can be useful in a broader context.  So here it is.&lt;/p&gt;
+
+&lt;p&gt;I know one of the reasons men feel strongly about this topic is because they do want to help and don&amp;rsquo;t always know how, and can feel
+excluded when it&amp;rsquo;s just presented as a women&amp;rsquo;s issue.&lt;/p&gt;
+
+&lt;p&gt;As I&amp;rsquo;ve said in the past, the &lt;a href=&#34;https://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; was the community that mentored me, and those mentors
+were largely men: Barry, Martijn, Ben Evans, John Stevenson to name a few. These guys were not only open and friendly and willing to
+listen to me, they pushed me (hard!).&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t have all the answers, of course, and there are lots of blogs and articles on the internet about this topic (if anyone finds any
+they like, feel free to post as a comment for all to see), but for me personally, my male mentors:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Listened&lt;/em&gt; to me, and made me feel like I had a valid opinion.  They took things I said, assumed they were a valid hypothesis, and
+made changes based on what I&amp;rsquo;d said.  I never felt like I had to change myself to fit in to the community.  Barry etc added different
+types of events and different approaches to running events in order to accommodate feedback I&amp;rsquo;d given.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Pushed&lt;/em&gt; me - Barry included me in the Associates, simultaneously recognising my value to the community but also forcing me to be
+more active in running it and applying changes I thought were important.  Martijn and Ben practically forced me to give short
+presentations at the LJC well before I was ready. But they also gave me loads of support, suggesting topics, checking through my slides
+in advance, giving me presentation hints and tips when I asked for them. They were right, I was ready, even when I felt like I wasn&amp;rsquo;t.
+I&amp;rsquo;ve talked before about &lt;a href=&#34;becoming_an_evangelist&#34;&gt;how this helped my career&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Validated&lt;/em&gt; me - By co-presenting with me, these men who were more well known (maybe even respected ;) ) in the community (not just
+the LJC, but the global Java Community) not only gave me support to launch my own presenting career, but they also validated, there on
+stage, that I was someone to listen to.  Martin Thompson, Todd Montgomery, Dan North, as well as those I&amp;rsquo;ve mentioned have all gone out
+of their way to co-present with me.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, in answer to the question:&lt;/p&gt;
+
+&lt;ol&gt;
+ &lt;li&gt;If you&#39;re interested in supporting a Women in [some technology] group specifically, please do reach out to the organiser. Check what 
+ the goals are for the community, and offer support.&lt;/li&gt;  
+ &lt;li&gt;If you&#39;re interested in supporting women in technology generally (or specific women you know), read the following points.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;This is for &lt;em&gt;everyone&lt;/em&gt;: When you see a woman at a technical event (community, conference, etc) &lt;em&gt;assume she&amp;rsquo;s a techie&lt;/em&gt;.  I cannot tell
+you
+the number of times a man I was talking to at an LJC event assumed I was a recruiter or in HR because I was female.  It is &lt;em&gt;far&lt;/em&gt; better to
+assume the woman is a techie and be corrected if she is not, than to assume the other way around.  And, &lt;em&gt;please&lt;/em&gt; assume she is a
+competent, senior techie.  Again, much better for a student to correct you and tell you she&amp;rsquo;s junior, than for you to assume a seasoned
+architect is junior just because she&amp;rsquo;s female.  This is by far the easiest thing for you to change in your behaviour, and probably the
+most valuable thing you can do for the community to encourage women to simply turn up and keep turning up.&lt;/li&gt;
+&lt;li&gt;If you know someone who&amp;rsquo;s interested in presenting, suggest she co-presents with you at a User Group event, internal company brown
+bag, community conference, etc.  This is a great way to get started.  Or suggest she does a lightning talk at a User Group (some
+conferences also offer Quickies for inexperienced speakers). If your local user group doesn&amp;rsquo;t currently do lightning talks, I&amp;rsquo;m sure they
+can be started if there&amp;rsquo;s interest.  If you have the expertise, offer to check slides, and/or be there for a run-though of the talk
+in advance.  This can even be over Skype or hangouts, there&amp;rsquo;s no need to take loads of time to travel to meet in person&lt;/li&gt;
+&lt;li&gt;If you know women who you think would be great at writing, but who haven&amp;rsquo;t started their own blog yet, offer a place for them to write
+for/with you. If you have a blog, they can write a guest post for you.  Again, offer to check the content before it goes live.  All of us
+are super nervous about our stuff being &amp;ldquo;good enough&amp;rdquo;, receiving the green light from someone else is a nice confidence boost and helps
+us feel better about publishing something.&lt;/li&gt;
+&lt;li&gt;Mentor a woman. This is for anyone, male, female, non-gender-specific. Mentoring includes some of the activities mentioned above. Or
+it can be something more code-focused.  Or helping them learn to play the politics of career (and believe me, techie roles and
+companies are still full of politics, especially if you want to get promoted). In fact, I recently read that what&amp;rsquo;s really needed for
+women is Sponsorship, not Mentoring.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip;male mentors tend to sponsor rather than just mentor—similar to the difference between coaching
+and selling. In fact&amp;hellip; women may actually be over-mentored, but under-sponsored. And that sponsoring—advocating to get somebody a job
+or promotion, mentioning their name in an appointments meeting, actively helping that person advance—is what makes the real difference
+in women helping women get ahead&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/peggydrexler/2014/03/04/can-women-succeed-without-a-mentor/#513dc3b542f6&#34;&gt;Forbes: Can Women Succeed Without A Mentor?&lt;/a&gt;&lt;br /&gt;
+  You have to be senior and visible (either in the community or in your organisation) to sponsor, but it makes a big difference to women&amp;rsquo;s
+careers. I remember the one time I had a male sponsor in one of my jobs is the only time I got a promotion.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Just be encouraging.  And while I personally have a real problem with being encouraging without sounding patronising (I dunno how to
+say something that doesn&amp;rsquo;t sound patronising!), it&amp;rsquo;s really important you try to be positive without being patronising or mentioning
+something gender related.  I&amp;rsquo;ve heard comments like &amp;ldquo;&lt;a href=&#34;https://web.archive.org/web/20120409030606/http://www.thedeveloperday.com/my-top-5-qcon-london-2012-talks/&#34;&gt;it would be enough to say this talk was delivered by a beautiful lady packed with a
+room of geeks but it deserves more praise&lt;/a&gt;&amp;rdquo;
+(er, thanks?) and &amp;ldquo;It&amp;rsquo;s so great to hear women give technical
+presentations!&amp;ldquo;.  Hmm. I know that&amp;rsquo;s trying to be supportive but it does make you feel a bit&amp;hellip; like an outsider, some sort of weird zoo
+animal. So, before you open your mouth, This One Simple Trick Can Save You From Embarrassment: would you say this to a man? If it would
+sound silly aimed at a male, re-phrase it until it sounds sensible.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re in a position to give feedback (e.g. at work a direct report, 360 reviews, or in the community someone who requests
+feedback), give actionable feedback.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Researchers have found that women receive more &lt;a href=&#34;https://hbr.org/2016/04/research-vague-feedback-is-holding-women-back&#34;&gt;vague feedback&lt;/a&gt;
+and &lt;a href=&#34;http://fortune.com/2014/08/26/performance-review-gender-bias/&#34;&gt;personality criticism&lt;/a&gt; in
+performance evaluations, whereas men receive actionable advice tied to business outcomes&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd#.a1hn4ztpy&#34;&gt;The Real Reason Women Quit Tech And How To Address It&lt;/a&gt;&lt;br /&gt;
+As you can imagine, it&amp;rsquo;s much easier to improve with clear, actionable advice than with vague feedback.&lt;/p&gt;
+
+&lt;p&gt;Really importantly, if a woman enjoys being technical, encourage her to stay technical.  Just because she has people skills as well doesn&amp;rsquo;t mean she should be promoted away from code to management, or moved into a Scrum Master position.  Just because she&amp;rsquo;s a woman presenting or writing about technology, does not mean she wants to present or write about being a woman in technology.&lt;/p&gt;
+
+&lt;p&gt;Further reading:&lt;br /&gt;
+I&amp;rsquo;ve already mentioned it, but this is excellent:
+&lt;a href=&#34;https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd#.a1hn4ztpy&#34;&gt;The Real Read Women Quit Tech And How To Address It&lt;/a&gt;.
+It contains links to tonnes of research in this area.&lt;br /&gt;
+&lt;a href=&#34;https://hbr.org/ideacast/2010/08/women-are-over-mentored-but-un.html&#34;&gt;Women Are Over-Mentored (But Under-Sponsored)&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&#34;https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women?referral=00134&#34;&gt;Why Men Still Get More Promotions Than Women&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you made it this far&amp;hellip;. well done!&lt;/p&gt;
+
+&lt;p&gt;You don&amp;rsquo;t have to do all these things.  But if you do care about diversity (and in my experience, I&amp;rsquo;ve met more white men who care about
+ diversity than women who care about it, cos being a minority is sometimes helpful), read these and do &lt;em&gt;something&lt;/em&gt;. Even if it&amp;rsquo;s just
+ that thing of assuming a woman you meet at a tech event is, in fact, a techie.&lt;/p&gt;
+
+&lt;p&gt;PS if you are a woman in technology and want to ask me anything, please feel free to drop me a line at any time. I have HORRIBLE e-mail
+latency but I will answer you eventually :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>JavaZone 2016</title>
+      <link>https://trishagee.github.io/post/javazone_2016/</link>
+      <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/javazone_2016/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s been a while since I wrote a conference write up.  The short version of &amp;ldquo;why&amp;rdquo; is because I got a bit bored of doing it.  Plus, I
+found I was attending conferences as a speaker &amp;ldquo;on the circuit&amp;rdquo;, and my experience of hanging out, catching up with my friends, chatting
+ to other attendees to see what they&amp;rsquo;re up to and so forth, didn&amp;rsquo;t seem as useful to share with people who might want to find out
+ whether a conference is worth attending from a content or atmosphere point of view.&lt;/p&gt;
+
+&lt;p&gt;But I feel compelled to blog about &lt;a href=&#34;https://2016.javazone.no/&#34;&gt;JavaZone&lt;/a&gt;. I presented there back in &lt;a href=&#34;/post/javazone_oslo&#34;&gt;2013&lt;/a&gt;, but every year since then haven&amp;rsquo;t
+made it for one reason or another (the fact that it&amp;rsquo;s near my birthday in no way impacts my scheduling…).  I made the effort this year, and
+I&amp;rsquo;m so pleased.  Now I&amp;rsquo;ve been to many more conferences, of various sizes, various themes, all around the world, and I can definitely
+state that JavaZone is up there as one of the best conferences around.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The content is great, JavaZone manages to attract a lot of great speakers who can present on topics that range from &lt;a href=&#34;https://vimeo.com/181814364&#34;&gt;deeply
+technical&lt;/a&gt; to &lt;a href=&#34;https://vimeo.com/181925281&#34;&gt;more theoretical&lt;/a&gt; to concepts
+&lt;a href=&#34;https://vimeo.com/182087729&#34;&gt;beyond just code and syntax&lt;/a&gt;.  They also really make an effort to encourage local presenters, and to offer
+the option of lightning talks. I love this from the point of view of encouraging more from the community to get involved and present themselves, but also because you get more novel content - experience reports from developers deep in the trenches; teams who can tell you what they&amp;rsquo;ve found trying to implement things that we hear about at conferences; and other things from the point of view of real developers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.45.36-coffee.jpg&#34; alt=&#34;Food and fantastic coffee&#34; title=&#34;Food and fantastic coffee&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The food is fantastic, and available all day.  I made half of a promise to myself not to rate conferences on the quality of the food
+after I had a glimpse at how insanely hard it is for conference organisers to balance the requirements of keeping ticket costs low,
+using an adequate venue in an accessible location, and providing some sort of catering through the day.  Especially when venues
+themselves often restrict this.  I don&amp;rsquo;t know how JavaZone do it, but now I&amp;rsquo;m aware of all these issues, I&amp;rsquo;m even more impressed at the
+variety and quality of their food.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.46.02-robots.jpg&#34; alt=&#34;Robots&#34; title=&#34;Robots&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The venue.  The location in the centre of Oslo is nice, often conference venues are out of town, making them hard to get to or, if
+you&amp;rsquo;re staying near there, terribly isolated.  One of the reasons to travel to a conference is to see the city, and you get a chance to
+do that at JavaZone. So it&amp;rsquo;s central, easy to get to, with plenty of great hotels nearby.  The venue itself also nicely laid out, with
+presentation rooms circling a central exhibition space.  Which leads me to&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 09.46.18-exhibition.jpg&#34; alt=&#34;Exhibition&#34; title=&#34;The Exhibition&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The exhibition space is brilliant.  Because it&amp;rsquo;s central, most people spend their time between sessions in the exhibition hall.  As
+an exhibitor (JetBrains had a stand there), this is obviously useful to us, but as an attendee it’s nice to know there&amp;rsquo;s a place to go
+to hang out where other people will also be hanging out.  Especially when the vibe of the hall was so much fun, so energetic.  And the
+stands themselves were impressive: some bribing us with excellent coffee; several with lego areas inviting you to sit down and play;
+interactive VR headsets; modern and retro gaming centres (curses, I forgot to take a photo); interactive quizzes and games… As for us,
+we had a sofa, and I loved that, it felt welcoming and relaxed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.45.20-games.jpg&#34; alt=&#34;Games&#34; title=&#34;Exhibition&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Everyone is really friendly.  The crew and JUG people were easy to spot and friendly if you needed help. All attendees and speakers
+were happy to strike up conversations short and long, on a variety of topics. People smiled.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s a big conference, there are a lot of attendees, but it doesn&amp;rsquo;t feel big and daunting.  Instead, you get the benefit of 8 tracks
+of varied content, but don&amp;rsquo;t feel lost in the crowd.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 09.39.20-overflow.jpg&#34; alt=&#34;Overflow Room&#34; title=&#34;Overflow Room&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The overflow room is the best thing I&amp;rsquo;ve ever seen at a conference, and I&amp;rsquo;m seriously wondering if I can set up something similar at
+home (on a much smaller scale!) to let me skim content from multiple talks when I&amp;rsquo;m doing research, or maybe just something to have
+half an eye on while I&amp;rsquo;m entertaining the minion.&lt;/li&gt;
+&lt;li&gt;It was, from my point of view as an attendee and speaker, incredibly well organised.  It felt smooth, and touches like the big
+monitors flashing up relevant information was really nice.  I also loved that the video production quality and presentation of the
+stages and so forth was really professional.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 15.46.36-stacks-coffee.jpg&#34; alt=&#34;Plenty of caffeine for the developers&#34; title=&#34;Plenty of caffeine for the developers&#34; /&gt;
+&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I personally think it&amp;rsquo;s brilliant that the &lt;a href=&#34;https://vimeo.com/album/4133413&#34;&gt;videos are online&lt;/a&gt; really soon after you&amp;rsquo;ve presented.
+Sometimes as a speaker you might want a delay on the video - conferences may be more likely to accept your talk if it&amp;rsquo;s not already widely available.  For me though,
+especially when giving a new talk like we did here, it&amp;rsquo;s nice to be able to see the video so soon afterwards, to see how it went and
+learn from it.  For speakers just starting on their presenting career, it&amp;rsquo;s also great - you have a video to use in your &amp;ldquo;portfolio&amp;rdquo; to
+help you get your talk(s) accepted at other conferences.&lt;/li&gt;
+&lt;li&gt;And I can&amp;rsquo;t leave this without mentioning diversity.  Now that I&amp;rsquo;m a world-weary veteran of conferences, I&amp;rsquo;m fairly blind to gender
+balance unless I specifically look, or something out of the ordinary catches my attention.  I don&amp;rsquo;t know what the percentages were, but
+I noticed so many women at the conference, women who were clearly professionals attending the conference and not hired booth babes or
+staff of some other kind.  It was obvious and pleasing.  I&amp;rsquo;m not sure how the other women attendees felt, if it was their first
+conference maybe they still noticed there were fewer women than men, but the difference to me was that whichever direction I looked
+in, there was at least &lt;em&gt;one&lt;/em&gt; woman, usually more. I don&amp;rsquo;t know if there are more women developers in Up North, or if it&amp;rsquo;s just a
+conference that somehow appeals more to women than other conferences. I&amp;rsquo;d be interested to find out if any special measures were taken
+by the conference organisers.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Now I know a bit more about conferences and how they work behind the scenes, I&amp;rsquo;m astounded at JavaZone.  It feels like  a lot of money has been spent getting it really right, and/or they&amp;rsquo;ve worked really hard to get the absolute most out of what budget they have.&lt;/p&gt;
+
+&lt;p&gt;If I had to really hunt for a downside, it&amp;rsquo;s that all the free alcohol was beer and not wine.  Yep, a complaint about free beer.  But knowing how expensive wine is in Norway, I&amp;rsquo;m not at all surprised.  Plus, moaning about the exact type of free alcohol available seems churlish at best.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/javazone-2016/2016-09-08 16.28.07-jetbrains.jpg&#34; alt=&#34;The JatBrains stand&#34; title=&#34;The JetBrains stand&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;If you do get a chance to go to JavaZone as an attendee or speaker, I highly recommend it.  I hope to be going again.&lt;/p&gt;
+
+&lt;p&gt;PS In case you&amp;rsquo;re interested, we were presenting a new talk,
+&lt;a href=&#34;presentation/code_review_matters_and_manners&#34;&gt;Code Review Matters and Manners&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Year? Really?</title>
+      <link>https://trishagee.github.io/post/what_a_year.md/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/what_a_year.md/</guid>
+      <description>&lt;p&gt;So I came to the blog to update my &lt;a href=&#34;//presentation/upcoming_events/&#34;&gt;upcoming events&lt;/a&gt; (at least something stays up to date) only to find
+it&amp;rsquo;s been nearly a year since I last blogged!  This is terrible!&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not that I haven&amp;rsquo;t written anything in a year, it&amp;rsquo;s that a lot of my writing energy goes into
+stuff for the actual day job.  Which is good, because that&amp;rsquo;s pretty much what I wanted from the day job, but the blog makes it look like
+I don&amp;rsquo;t write any more.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m going to cheat.  Here&amp;rsquo;s the stuff I&amp;rsquo;ve written in the last 12 months.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A whole series of articles off the back of last year&amp;rsquo;s &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;Java 8 in Anger&lt;/a&gt; talk:
+&lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;Five Java 8 Features That You Won’t Be Able to Live Without&lt;/a&gt;,
+&lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8?&lt;/a&gt;, and &lt;a href=&#34;https://community.oracle.com/docs/DOC-920950&#34;&gt;Java SE 8 in Practice&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A tutorial on &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;TDD in IntelliJ IDEA&lt;/a&gt;. I have video
+clips to turn this into a screencast as well, but that&amp;rsquo;s Yet Another thing I didn&amp;rsquo;t get around to.&lt;/li&gt;
+&lt;li&gt;A tutorial on how IntelliJ IDEA helps you &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;migrate code to Java 8&lt;/a&gt;.  This evolved into the other thing I&amp;rsquo;ve been working on this year, my latest live demo
+presentation, &lt;a href=&#34;/presentation/refactoring_to_java_8/&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;A whole series of blog posts on &lt;a href=&#34;https://blog.jetbrains.com/upsource/category/practices/&#34;&gt;&amp;ldquo;What to look for in a code review&amp;rdquo;&lt;/a&gt;. This was fun and satisfying to write.&lt;/li&gt;
+&lt;li&gt;&amp;hellip;which got &lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;turned into a book&lt;/a&gt;. Yes, I&amp;rsquo;m finally the author of a book!&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/idea/2016/07/java-8-top-tips/&#34;&gt;Java 8 Top Tips&lt;/a&gt;, with a bunch of IntelliJ-specific tips&lt;/li&gt;
+&lt;li&gt;I&amp;rsquo;ve taken over &lt;a href=&#34;https://blog.jetbrains.com/idea/tag/java-annotated/&#34;&gt;Java Annotated Monthly&lt;/a&gt;, so at least you get to hear from me
+once a month with that. I try really hard not to be too sarcastic, jokey or British when I write the newsletter. I don&amp;rsquo;t always succeed.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I&amp;rsquo;ve also done a bunch of screencasts &amp;amp; webinars for &lt;a href=&#34;https://www.youtube.com/user/intellijideavideo/videos&#34;&gt;IntelliJ IDEA&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/playlist?list=PLQ176FUIyIUa50f13M4v5Nvp6b-IBNB4e&#34;&gt;Upsource
+and Team City&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Oh yeah, and I had a baby.  I&amp;rsquo;m contemplating blogging about being a working parent, but I&amp;rsquo;m a bit concerned that Of Course a woman is
+going to blog about Being A Mother, when previously I just blogged about&amp;hellip; well, come to think about it I blogged about all sorts of
+things, including &lt;a href=&#34;/post/why_the_customer_isnt_always_right/&#34;&gt;haircuts&lt;/a&gt; and
+&lt;a href=&#34;/post/what_my_hangovers_can_teach_you_about_agile/&#34;&gt;hangovers&lt;/a&gt;, so I guess I could probably get away with it.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Java 8 MOOC - Session 3 Summary</title>
+      <link>https://trishagee.github.io/post/java_8_mooc_session3/</link>
+      <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session3/</guid>
+      <description>&lt;p&gt;Last night was the final get-together to discuss the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
+event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
+we had attendees from earlier sessions plus new people too.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/lesson3.jpg&#34; alt=&#34;Woohoo lambdas!&#34; title=&#34;Woohoo lambdas!&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The aim of this session was to talk about Lesson 3, but also to wrap up the course as a whole: to talk about what we
+liked and what we would have improved (about both the course itself and our user group events).&lt;/p&gt;
+
+&lt;p&gt;As in the previous &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;two&lt;/a&gt; &lt;a href=&#34;/post/java_8_mooc_session2&#34;&gt;posts&lt;/a&gt;, let&amp;rsquo;s outline our
+discussion areas:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findAny--&#34;&gt;findAny()&lt;/a&gt;
+vs &lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#findFirst--&#34;&gt;findFirst()&lt;/a&gt;&lt;/strong&gt;: Why do we
+need both of these methods, and when would you use them?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;findFirst()&lt;/code&gt; is the deterministic version, which will return you the first element in the Stream (according to
+encounter order - see the section on
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;Ordering in the documentation&lt;/a&gt;).
+So, regardless of whether you run the operation in parallel or serial, if you&amp;rsquo;re looking for &amp;ldquo;A&amp;rdquo; and use &lt;code&gt;findFirst&lt;/code&gt;
+with this list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;you&amp;rsquo;ll get the element at index 3 - the first &amp;ldquo;A&amp;rdquo; in the list.&lt;/p&gt;
+
+&lt;p&gt;But &lt;code&gt;findAny()&lt;/code&gt; is non-deterministic, so will return you any element that matches your criteria - it could return the
+element at index 3, or the one at position 6. Realistically, if the stream is on an ordered collection like a list,
+when you run &lt;code&gt;findAny&lt;/code&gt; on a sequential stream, I expect it will return the same result as &lt;code&gt;findFirst&lt;/code&gt;.  The real
+use-case for &lt;code&gt;findAny&lt;/code&gt; is when you&amp;rsquo;re running this on a parallel stream. Let&amp;rsquo;s take the above list, and assume that
+when you run this on a parallel stream it&amp;rsquo;s processed by two separate threads:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;,    // processed by thread 1 
+ &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]     // processed by thread 2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s possible that thread 2 finds its &amp;ldquo;A&amp;rdquo; (the one at position 6) before thread 1 finds the one at position 3, so
+this will be value that&amp;rsquo;s returned. By configuring the Stream to return any one of the values that matches the
+criteria, you can potentially execute the operation faster when running in parallel.&lt;/p&gt;
+
+&lt;p&gt;If &lt;code&gt;findAny&lt;/code&gt; is (potentially) faster in parallel and (probably) returns the same value as &lt;code&gt;findFirst&lt;/code&gt; when running in
+serial, why not use that all the time?  Well, there are times when you really do want the first item. If you have a
+list of DVDs ordered by year the film was released, and you want to find the original &amp;ldquo;King Kong&amp;rdquo; (for
+example), you&amp;rsquo;ll want &lt;code&gt;findFirst&lt;/code&gt; to find the one released in 1933, not the one that was released in 1976 or the
+one from 2005.&lt;/p&gt;
+
+&lt;p&gt;Plus, &lt;code&gt;findFirst&lt;/code&gt; is not always going to be slower than &lt;code&gt;findAny&lt;/code&gt;, even in parallel.  Going back to our list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[&amp;quot;B&amp;quot;, &amp;quot;Z&amp;quot;, &amp;quot;C&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;L&amp;quot;, &amp;quot;K&amp;quot;, &amp;quot;A&amp;quot;, &amp;quot;H&amp;quot;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Trying to &lt;code&gt;findFirst&lt;/code&gt; or &lt;code&gt;findAny&lt;/code&gt; for &amp;ldquo;H&amp;rdquo; could be the same performance for both methods.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Collectors&lt;/strong&gt;: Maybe it&amp;rsquo;s just me who doesn&amp;rsquo;t really see the big picture for collectors.  I&amp;rsquo;m perfectly content with
+the built in collectors like:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toList())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.toSet())
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;It&amp;rsquo;s easy to see what they do, and work out when you need to use them.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m also very happy to have discovered &lt;code&gt;joining&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.joining(&amp;quot;,&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;a super-useful way to create Comma Separated Values (CSVs) that I use in my
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Where things get a bit murky for me is where we start chaining up collectors:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;collect(Collectors.mapping(...).combiner().andThen(...).apply(...))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(it should be obvious from my lack of clear example that I&amp;rsquo;m not 100% certain under which circumstances these are
+useful).&lt;/p&gt;
+
+&lt;p&gt;As a group, we think the chained collectors are kinda ugly - not because we&amp;rsquo;re against chaining (we like Streams),
+but maybe because it&amp;rsquo;s another chain inside a param to a chain.&lt;/p&gt;
+
+&lt;p&gt;We think this is an area where some good, solid examples and a bit of daily use will make it much clearer to
+developers. We hope.&lt;/p&gt;
+
+&lt;p&gt;Related to this, the course didn&amp;rsquo;t go into creating your own collectors at all. My personal (under-informed) opinion
+is that I guess most developers should be able to use either the out-of-the-box collectors (&lt;code&gt;toList&lt;/code&gt; etc) or use the
+collector chaining to build what they need. If you need a custom collector, perhaps you haven&amp;rsquo;t considered everything
+that&amp;rsquo;s already available to you. But as a group, we decided we would have liked to see this topic anyway so that we
+could get a deeper understanding of what collectors are and how they work.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Exercises for lesson 3:&lt;/strong&gt; Well. What can we say? I really hope there are people reading this who haven&amp;rsquo;t finished
+the course yet, because the Sevilla Java User group would like to say to you: don&amp;rsquo;t despair, the lesson 3 exercises
+are &lt;em&gt;substantially&lt;/em&gt; harder than those for lessons 1 and 2. Honestly, the whole group considered it less of a learning
+curve and more of a massive cliff to climb.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://herbookthoughts.reads-it.com/wp-content/uploads/2014/06/d6a1143f571184db25f94613edd43b40af6d3a629221aba00d9efdcfef5efd84.jpg&#34; alt=&#34;I have no idea what I am doing&#34; title=&#34;I have no idea 
+what I am doing&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;I mean, it was great to have something so challenging to end on, but it probably would have been less ego-destroying
+if we could have got up to that level gradually instead of having it sprung on us.&lt;/p&gt;
+
+&lt;p&gt;The good thing about Part 2 of the lesson 3 exercises was that we had three very different answers to discuss
+in the group. None of us were super happy with any of them, but we could see definite pros and cons of each approach,
+and that&amp;rsquo;s something you really want to learn in a course like this.&lt;/p&gt;
+
+&lt;p&gt;It was also really great to have a rough performance test to run on your own computer, so that you could really see
+the impact of your choices on the performance of the stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;For more info&lt;/strong&gt;&lt;br /&gt;
+I&amp;rsquo;m going to add a shameless plug to a friend&amp;rsquo;s book here. I&amp;rsquo;ve been reading a lot about Java 8 for this course, for
+my &lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 demo&lt;/a&gt;, and to generally get up to speed. My favourite book for getting to
+grips with lambdas and streams
+is &lt;a href=&#34;http://www.amazon.com/gp/product/B00J3B3J3C/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=B00J3B3J3C&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=IX6U2YT4FADY4JY6&#34;&gt;Java 8 Lambdas: Pragmatic Functional Programming&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=B00J3B3J3C&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+by &lt;a href=&#34;https://twitter.com/RichardWarburto&#34;&gt;Richard Warburton&lt;/a&gt;. This book also contains more info about collectors too,
+so maybe some of our questions around how to use these in more complex situation are answered in here.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In Summary&lt;/strong&gt;&lt;br /&gt;
+We really enjoyed the MOOC, and the sessions to get together to discuss it. We particularly liked that the meetups
+were a safe place to ask questions and discuss alternative solutions, and that we weren&amp;rsquo;t expected to be genius-level
+experts in order to participate fully.&lt;/p&gt;
+
+&lt;p&gt;If/when Oracle re-runs the MOOC, if you didn&amp;rsquo;t get a chance to take part this time I highly recommend signing up.
+And if you can find (or run) a local meetup to discuss it, it makes the experience much more fun.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Java 8 MOOC - Session 2 Summary</title>
+      <link>https://trishagee.github.io/post/java_8_mooc_session2/</link>
+      <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session2/</guid>
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
+is working towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+to share knowledge between people who are doing the course.&lt;/p&gt;
+
+&lt;p&gt;The second week&amp;rsquo;s lesson was about
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; - how you can use the
+new stream API to transform data. There was also a whole section on
+&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;, which initially seemed like
+rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rather more than I originally thought.&lt;/p&gt;
+
+&lt;p&gt;In the meetup session, we talked about:&lt;br /&gt;
+&lt;strong&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;&lt;/strong&gt;: we were pretty
+comfortable,
+I think, with using &lt;code&gt;Optional&lt;/code&gt; to
+prevent a &lt;code&gt;NullPointerException&lt;/code&gt;. What we weren&amp;rsquo;t so clear on were the examples of
+&lt;code&gt;filter()&lt;/code&gt; and &lt;code&gt;map()&lt;/code&gt; - if you were getting your &lt;code&gt;Optional&lt;/code&gt; values from a stream, why wouldn&amp;rsquo;t you do the map and the
+filter on the stream first? For example, why do this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s -&amp;gt; s.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;when you could map and filter in the stream to get the first non-empty value? That certainly seems like an
+interesting question in relation to streams.&lt;/p&gt;
+
+&lt;p&gt;I can see &lt;code&gt;Optional&lt;/code&gt; being more useful when other APIs fully
+support Java 8 and return &lt;code&gt;Optional&lt;/code&gt; values, then you can perform additional operations on return values.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That terminal operation&amp;rsquo;s not actually terminal??&lt;/strong&gt;: We ran into this a couple of times in our examples in the
+session, one example is the code above (let&amp;rsquo;s copy it down here so we can look at it more closely):&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .findFirst()
+    .map(String::trim)
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Isn&amp;rsquo;t &lt;code&gt;findFirst()&lt;/code&gt; a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html#StreamOps&#34;&gt;terminal operation&lt;/a&gt;? How
+can you carry on doing more operations on that?&lt;/p&gt;
+
+&lt;p&gt;The answer is, of course, that the return type of the terminal operation can also lead to further operations.  The
+above is actually:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Optional&amp;lt;String&amp;gt; result = list.stream()
+                              .findFirst();
+result.map(String::trim)
+      .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+      .ifPresent(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Our terminal operation returns an optional, which allows you to do further operations. Another example of this
+confusion:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .collect(toList())
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here, &lt;code&gt;collect()&lt;/code&gt; is a terminal operation, but it returns a list, which also allows &lt;code&gt;forEach()&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;List&amp;lt;String&amp;gt; results = list.stream()
+                           .map(String::toLowerCase)
+                           .collect(toList());
+results.forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;So be aware that just because it&amp;rsquo;s called a terminal operation, doesn&amp;rsquo;t mean you can&amp;rsquo;t perform other operations on
+the returned value.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Parallel/sequential/parallel&lt;/strong&gt;: there had been a question in the previous week about why you could write code like
+this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .parallel()
+    .map(String::trim)
+    .sequential()
+    .filter(s1 -&amp;gt; s1.length() &amp;gt; 0)
+    .parallel()
+    .forEach(System.out::println);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and whether that would let you dictate which sections of the stream were parallel and which were to be processed in
+serial.  Lesson two set the lesson straight, declaring &amp;ldquo;the last operator wins&amp;rdquo; - meaning &lt;em&gt;all&lt;/em&gt; of the above code will
+be run as a parallel stream. I can&amp;rsquo;t find any documentation for this, I&amp;rsquo;ll edit this post if I locate it.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#unordered--&#34;&gt;Unordered&lt;/a&gt;&lt;/strong&gt;: &amp;ldquo;Why
+would you ever want your stream to be unordered?&amp;rdquo; - the answer is that &lt;code&gt;unordered()&lt;/code&gt; &lt;a href=&#34;http://stackoverflow.com/a/21350234/653519&#34;&gt;doesn&amp;rsquo;t turn
+your sorted collection into one with no order&lt;/a&gt;, it just says that when
+this code is executed, the order of elements doesn&amp;rsquo;t matter.  This might make processing faster on a parallel stream,
+but as a group we figured it would probably be pointless on a sequential stream.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Efficiency optimisations and order of stream operations&lt;/strong&gt;: We had a &lt;em&gt;long&lt;/em&gt; conversation about the order in which you
+perform
+operations in a stream. The MOOC (in fact, most documentation around Streams) tells us that a) streams are
+&lt;a href=&#34;http://docs.oracle.com/javase/8/docs/api/java/util/stream/package-summary.html&#34;&gt;lazy&lt;/a&gt;, and
+not evaluated until a terminal operator is encountered and b) this enables optimisation of the operations in the
+stream.  That lead to a discussion about the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .map(String::toLowerCase)
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The filter operation should result in less items to process in the stream. Given that the &lt;code&gt;map()&lt;/code&gt; operation doesn&amp;rsquo;t
+change anything that &lt;code&gt;filter()&lt;/code&gt; relies on, will this code be optimised somehow under the covers so that the filter
+is actually executed first? Or are optimisations still going to respect the order of operations on a stream?&lt;/p&gt;
+
+&lt;p&gt;Our case is actually a very specific case, because a) the &lt;code&gt;map()&lt;/code&gt; returns the same type as the params passed in (i.e.
+it doesn&amp;rsquo;t map a &lt;code&gt;String&lt;/code&gt; to an &lt;code&gt;int&lt;/code&gt;) and b) the &lt;code&gt;map()&lt;/code&gt; doesn&amp;rsquo;t change the characteristic the &lt;code&gt;filter()&lt;/code&gt; is
+looking at (i.e. length). But generally speaking, you can&amp;rsquo;t expect these conditions to be true - in fact I bet in a
+large number of cases they are &lt;em&gt;not&lt;/em&gt; true. So pipeline operations are &lt;a href=&#34;http://stackoverflow.com/a/22056258/653519&#34;&gt;performed in the order in which they are
+written&lt;/a&gt;, meaning that our &lt;code&gt;map&lt;/code&gt; and &lt;code&gt;filter&lt;/code&gt; will not be re-ordered into
+a more efficient order.&lt;/p&gt;
+
+&lt;p&gt;A good rule of thumb seems to be to do filtering as early in the stream as possible - that way you can potentially
+cut down the number of items you process in each step of the stream. Therefore our code would probably be better as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;list.stream()
+    .filter(s -&amp;gt; s.length() % 2 == 1)
+    .map(String::toLowerCase)
+    .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br/&gt;
+&lt;strong&gt;Flat Map&lt;/strong&gt;: what&amp;hellip;?
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-&#34;&gt;&lt;code&gt;flatMap()&lt;/code&gt;&lt;/a&gt;
+is one of those methods that makes total sense once you get the hang of it, and you don&amp;rsquo;t
+understand why it was so confusing. But the first time you encounter it, it&amp;rsquo;s confusing - how is &lt;code&gt;flatMap()&lt;/code&gt;
+different to &lt;code&gt;map()&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Well, &lt;code&gt;flatMap&lt;/code&gt; is used to squish (for example) a stream of streams into just a simple stream. It&amp;rsquo;s like turning a
+2-dimensional array into a single dimension so that you can iterate over all the items without needing nested
+for-loops. There&amp;rsquo;s &lt;a href=&#34;http://stackoverflow.com/a/22384132/653519&#34;&gt;an example on StackOverflow&lt;/a&gt;, and some more examples
+in answer to &lt;a href=&#34;http://stackoverflow.com/questions/26684562/java-8-map-and-flatmap-methods&#34;&gt;this question&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Comparators&lt;/strong&gt;: We&amp;rsquo;ve probably all written comparators at some point, it&amp;rsquo;s probably one of those examples where we
+really did use anonymous inner classes &amp;ldquo;in the olden days&amp;rdquo; and were looking forward to replacing them with lambdas.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(new Comparator&amp;lt;String&amp;gt;() {
+          @Override
+          public int compare(String o1, String o2) {
+              return ???;
+          }
+      })
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Sadly, using a lambda still doesn&amp;rsquo;t answer the question &amp;ldquo;do I minus o1 from o2, or o2 from o1?&amp;rdquo;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted((o1, o2) -&amp;gt; ??? )
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But there&amp;rsquo;s yet another new method in Java 8 here that can save us, one that is not nearly as well publicised as it
+should be. There&amp;rsquo;s a
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Comparator.html#comparing-java.util.function.Function-&#34;&gt;&lt;code&gt;Comparator.comparing()&lt;/code&gt;&lt;/a&gt;
+that you can use to really easily define what to compare on. The JavaDoc and signature looks kinda confusing, but
+this is one of those places where method references suddenly make loads of sense:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;reader.lines()
+      .sorted(comparingInt(String::length))
+      .collect(toList());
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(Here we&amp;rsquo;re actually using the &lt;code&gt;comparingInt&lt;/code&gt; method as we&amp;rsquo;re going to compare on a primitive value). Personally this
+is one of my favourite new features in Java 8.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;
+Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223910762/&#34;&gt;last session on Java 8 - Lambdas and Streams&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>What to look for in a Code Review</title>
+      <link>https://trishagee.github.io/post/code_reviews_1/</link>
+      <pubDate>Mon, 27 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/code_reviews_1/</guid>
+      <description>&lt;p&gt;I wrote a post for the JetBrains Upsource blog about some of the &lt;a href=&#34;http://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;things you should be looking for when you do code
+reviews&lt;/a&gt; (and some of the things
+you should not be looking at).&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d love to get feedback in the comments for the post of things that you look for in code reviews.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Java 8 MOOC - Session 1 Summary</title>
+      <link>https://trishagee.github.io/post/java_8_mooc_session1/</link>
+      <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session1/</guid>
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
+lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&amp;rsquo;re
+feeling very smart!) help people who may be struggling (or might not have watched the videos).&lt;/p&gt;
+
+&lt;p&gt;Last night we had the first session which went really well. We had a small-ish group, about half of whom had
+completed the homework and the quiz (for the first lesson) and half had not. We worked through the homework exercises
+together, saw how there were multiple solutions for each problem, and explored how to balance conciseness with
+longer, more descriptive code.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;First offline session for lesson 1 of the lambdas and streams mooc &lt;a href=&#34;https://twitter.com/hashtag/java8?src=hash&#34;&gt;#java8&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/40gradosAlaSombra?src=hash&#34;&gt;#40gradosAlaSombra&lt;/a&gt; &lt;a href=&#34;http://t.co/hJgPrLl3C5&#34;&gt;pic.twitter.com/hJgPrLl3C5&lt;/a&gt;&lt;/p&gt;&amp;mdash; SVQ JUG (@SVQJUG) &lt;a href=&#34;https://twitter.com/SVQJUG/status/623199430158778368&#34;&gt;July 20, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;//platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;On the whole people thought the videos for the course were very clear and well-explained, although we also went
+through how to run the videos at 1.5 speed, as most people wanted to run through them faster! I thought the pace of the
+videos was especially good for those who aren&amp;rsquo;t so comfortable with listening in English, and it&amp;rsquo;s easy to add
+subtitles and speed it up if you feel comfortable with the material.&lt;/p&gt;
+
+&lt;p&gt;The first lesson covers lambdas, and their use in some of the new Java 8 methods (specifically on collections, but
+&lt;em&gt;not&lt;/em&gt; streams).&lt;/p&gt;
+
+&lt;p&gt;The areas we discussed most, the ones that needed more clarity were:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/lang/FunctionalInterface.html&#34;&gt;Functional Interfaces&lt;/a&gt;:
+what does &lt;a href=&#34;https://dzone.com/articles/introduction-functional-1&#34;&gt;Single Abstract Method (SAM)&lt;/a&gt; really mean? Also, we
+were interested in the &amp;ldquo;exception&amp;rdquo; of methods declared on &lt;code&gt;Object&lt;/code&gt; as well as an interface (e.g. &lt;code&gt;equals()&lt;/code&gt;), but we
+came
+to the conclusion that it was easier to simply think of looking for only one method without any form of
+implementation at all - methods defined on &lt;code&gt;Object&lt;/code&gt; must have an implementation, since &lt;code&gt;Object&lt;/code&gt; is not an
+abstract class or interface.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/tutorial/java/javaOO/methodreferences.html&#34;&gt;Method References&lt;/a&gt;: we looked at
+examples of the three types that aren&amp;rsquo;t constructor references, what they look like in lambda form and how they
+differ. Method references are&amp;hellip; not difficult to understand, but do look a bit awkward in the code if you&amp;rsquo;re not
+used to them, and can be confusing as all your types, parameters and return values disappear.&lt;/li&gt;
+&lt;li&gt;Parallel execution: The first lesson talks a lot about how lambdas are here to make parallelisation and
+concurrency easier for developers, so obviously there was a question about how the code in the homework examples would
+be executed in a multi-CPU environment. I assumed (although I&amp;rsquo;m waiting for clarification) that methods like
+&lt;code&gt;removeIf&lt;/code&gt; are not parallelised, since in the case of Streams you have to explicitly state you want to go parallel.
+We also talked a bit about
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/stream/BaseStream.html#parallel--&#34;&gt;parallel()&lt;/a&gt; and
+&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/api/java/util/Collection.html#parallelStream--&#34;&gt;parallelStream()&lt;/a&gt;, even
+though the lesson didn&amp;rsquo;t cover Streams at all. We wanted to understand a bit more about the pros and cons of going
+parallel.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Of course, I also snuck in some demos of &lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&amp;rsquo;s&lt;/a&gt; awesomeness, including
+its magical support for creating lambdas and turning things into (and from) method references.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;/static/images/java8mooc/ReplaceWithMethodReferenceMac.gif&#34; alt=&#34;Converting code to Java 8&#34; title=&#34;Converting code to Java 8&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It was a great, collaborative session, with most people getting a chance to demonstrate their code (if they wanted
+to!). And at the end we had solutions to the five exercise problems and had discussed all the areas people wanted
+more clarity on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Interviewed by InfoQ</title>
+      <link>https://trishagee.github.io/post/interviewed_for_infoq/</link>
+      <pubDate>Sat, 18 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/interviewed_for_infoq/</guid>
+      <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
+interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
+but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
+of the JCP, and the future of Java.&lt;/p&gt;
+
+&lt;p&gt;Video and the transcript are &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-java-eco-system&#34;&gt;available on InfoQ&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>My Path To Evangelism</title>
+      <link>https://trishagee.github.io/post/becoming_an_evangelist/</link>
+      <pubDate>Thu, 02 Jul 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/becoming_an_evangelist/</guid>
+      <description>&lt;p&gt;So, I get asked a lot about how I got into technical advocacy /
+evangelism&lt;sup&gt;1&lt;/sup&gt;,
+so it seems like the most cost-effective way to answer this question is to
+write a post about it. Warning: it&amp;rsquo;s a long one!&lt;/p&gt;
+
+&lt;p&gt;Firstly, let me caveat this (I always have caveats, don&amp;rsquo;t I?) with, &amp;ldquo;this is
+my personal experience&amp;rdquo;.  There may be other ways to get into this role.&lt;/p&gt;
+
+&lt;p&gt;Any long-time readers of the blog (I love you guys!!) will
+know that I started blogging before I did any of this
+running-around-the-world-speaking-at-conferences lark.  I started blogging
+for a number of reasons:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Even &amp;ldquo;back then&amp;rdquo; (probably around 2007), it was definitely an advantage to
+have something external to the day job to differentiate you from other job
+candidates.  I didn&amp;rsquo;t feel comfortable with open source, Stack Overflow
+wasn&amp;rsquo;t invented yet (and even if it had been, I&amp;rsquo;m not sure I would have felt
+knowledgeable enough to answer questions), and most of what I had learnt in
+order to level-up my skills
+was via blogs like &lt;a href=&#34;http://www.joelonsoftware.com/&#34;&gt;Joel Spolsky&amp;rsquo;s&lt;/a&gt; and
+&lt;a href=&#34;http://randsinrepose.com/&#34;&gt;Rands in Repose&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;I really enjoyed writing. One of the (many) things I had wanted to be
+&amp;ldquo;when I grew up&amp;rdquo; was a writer or a journalist. I didn&amp;rsquo;t take that path
+because I thought if I did I would be Poor Forever.  However, if I started
+practising my writing in a blog, I would learn to find my voice, and have
+something to show book publishers if I ever did get around to writing a
+book, like I had always wanted to do.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If  you&amp;rsquo;ve ever started a blog, you know the problem is thinking of things to
+write about. I generally documented things I&amp;rsquo;d had difficulty getting
+working, because a) if I had trouble with the existing documentation, other
+people would too and b) I have a memory like a goldfish, so it would be
+useful for me if nothing else. But it took me years to really take the blog
+seriously.&lt;/p&gt;
+
+&lt;p&gt;At the end of 2008, I joined the
+&lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;London Java Community&lt;/a&gt;, largely
+because I had returned to London from a year working in New York, and a) I needed a new job (during
+the height of the crisis, when my recent experience was all financial
+markets!) and b) although I had friends in London, I needed to rebuild my
+social networks, and I was using meetup.com to do this. I tried lots of other
+meetup groups, but like many geeks, I found it hard to connect to people
+without the common ground of tech or code to talk about.&lt;/p&gt;
+
+&lt;p&gt;Eventually I ended up working for &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX Exchange&lt;/a&gt;, and
+because we were always looking
+for keen, bright developers, I started getting much more involved in the LJC
+so that I could help us hire people I actually wanted to work with. During
+this time, people like &lt;a href=&#34;https://twitter.com/karianna&#34;&gt;Martijn&lt;/a&gt;,
+&lt;a href=&#34;https://twitter.com/kittylyst&#34;&gt;Ben&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/jr0cket&#34;&gt;John&lt;/a&gt;
+and, of course, &lt;a href=&#34;https://twitter.com/bcrecworks&#34;&gt;Barry&lt;/a&gt; were
+encouraging me, consciously or not, to do a bit of technical presenting. I saw
+a lot of different talks there, some from professional evangelists from
+vendors, but many from &amp;ldquo;ordinary&amp;rdquo; developers like me. It made me think that
+a) I should do this (awesome for your profile/career etc) and b) I &lt;em&gt;could&lt;/em&gt;
+do this.&lt;/p&gt;
+
+&lt;p&gt;Of course, I saw very few women presenting (I do remember an
+awesome presentation from &lt;a href=&#34;https://twitter.com/fabianenardon&#34;&gt;Fabiane&lt;/a&gt;) and
+also very few women members. Many members
+assumed I was a recruiter, even before I started trying to chat to people
+to, well, recruit them for LMAX. In the first 2 minutes of meeting someone,
+if they didn&amp;rsquo;t ask me directly if I was in recruitment or HR, I would always
+make it clear that I was a Java developer. It was tedious but something I
+just got used to. Interestingly, once it was clear I was a Java person,
+people seemed to accept that and just treat me like any other techie.&lt;/p&gt;
+
+&lt;p&gt;I think this is one of the reasons I decided to start doing presentations - I
+could a) show my own technical credentials, so I would spend less time having
+these tiresome conversations (which, by the way, seems to have worked) and
+b) make it more normal to see women techies, hopefully minimising the number
+times other women faced the same assumptions (I&amp;rsquo;m not sure if this worked or
+not, as I only have my own experiences to look at).&lt;/p&gt;
+
+&lt;p&gt;But these thoughts were only floating around my mind, I didn&amp;rsquo;t actually
+&lt;em&gt;do&lt;/em&gt; anything.  During this time, while working at LMAX, it seemed like there were lots of
+things I &lt;em&gt;could&lt;/em&gt; blog about, or talk about, but I never really got round to it.
+Plus, I wasn&amp;rsquo;t really sure what I was allowed to talk about and what I shouldn&amp;rsquo;t be
+talking about. So apparently during these two years I only wrote a total of 6
+posts, and I never did a single presentation at the LJC.&lt;/p&gt;
+
+&lt;p&gt;However, I really wanted to do presenting and have time/inspiration for the
+blog, so I chose to leave LMAX and join
+&lt;a href=&#34;http://www.thoughtworks.com/&#34;&gt;ThoughtWorks&lt;/a&gt; - they were looking for
+consultants and I knew this was a company that valued blogging and
+presenting, and I&amp;rsquo;d had some exposure to their guys through the LJC and,
+years before, I&amp;rsquo;d seen them speaking at
+&lt;a href=&#34;http://mechanitis.blogspot.com.es/2007/03/qcon-london.html&#34;&gt;QCon London&lt;/a&gt;,
+which had actually been my initial inspiration for blogging.
+I told LMAX that was why I was leaving, and off I went.&lt;/p&gt;
+
+&lt;p&gt;So it&amp;rsquo;s 2011, and I&amp;rsquo;ve joined ThoughtWorks. I revived the blog while I was
+unassigned to a project, I invested that time in porting the blog to a
+more sensible platform, and trying to write a blog a day. Again, I picked
+topics I could comfortably talk about - I spoke about my experiences as a
+&lt;a href=&#34;/post/my_experiences_with_android_development/&#34;&gt;beginner trying Android for the first
+time&lt;/a&gt; (sometimes people will be arsey
+with beginners, but in reality many real human beings can&amp;rsquo;t tell you you&amp;rsquo;re
+wrong when you&amp;rsquo;re just talking about your own experiences), and despite my
+original intent to blog with zero gender identity (I was genuinely afraid
+that if I wrote about tech subjects and I was wrong, or very junior, I would
+give women programmers a bad name) I decided to blog about &amp;ldquo;the women in
+technology subject&amp;rdquo;. Again, here I went for my personal opinion/experiences,
+for which only mean people can criticise you (mean people are easier to
+ignore than correct people :) )&lt;/p&gt;
+
+&lt;p&gt;I was also fortunate enough to meet &lt;a href=&#34;http://martinfowler.com/&#34;&gt;Martin Fowler&lt;/a&gt;
+in person while he was over
+in London. We were talking over drinks (this is London, after all) about the
+women in technology thing (ThoughtWorks are really big on this subject, and
+determined to do something positive in this area), and I was complaining about
+the lack of women at a particular conference. He asked me if I had submitted
+a talk for the conference.  Me?? Of course not! I&amp;rsquo;m not ready for that! I&amp;rsquo;ve
+got nothing to talk about. I haven&amp;rsquo;t been given permission to do this, or
+guidance on how to do it. I haven&amp;rsquo;t even presented at the user group yet. But
+it did make me think - I said I wanted to present, so what was stopping me?
+Did I need someone to guide me through it, to assign it to me as a task? It
+was going to be up to me to make this happen. And if Martin Fowler, who
+had just met me 5 minutes beforehand, thinks I&amp;rsquo;m ready to do this, then who&amp;rsquo;s
+to tell me I&amp;rsquo;m not? What&amp;rsquo;s the worst that could happen?&lt;/p&gt;
+
+&lt;p&gt;Of course life then got in the way - I was assigned to a couple of projects,
+so the blogging stopped. I was interested in attending or
+speaking at conferences, but wasn&amp;rsquo;t going to have anything ThoughtWorksy to
+talk about for quite a while. And now, because I was commuting to my assigned
+project, I had very little time even for the LJC.&lt;/p&gt;
+
+&lt;p&gt;At this point, LMAX called
+to let me know that the talk they&amp;rsquo;d done at QCon San Francisco,
+&lt;a href=&#34;http://www.infoq.com/presentations/LMAX&#34;&gt;&amp;ldquo;How to Do 100K TPS at Less than 1ms Latency&amp;rdquo;&lt;/a&gt; had been
+enormously popular, and they were open sourcing
+&lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;The Disruptor&lt;/a&gt; and wanted to do
+some evangelism around this - did I want to come back and help a) do
+evangelism and b) co-ordinate the company&amp;rsquo;s evangelism?  Yes, yes I did. So,
+after just 3 months, I quit TW and went back to LMAX&lt;sup&gt;2&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;Back at LMAX, I started to take evangelism more seriously.&lt;/p&gt;
+
+&lt;p&gt;I tried to blog every week - I set aside Sundays for blogging (at the time
+I was, fortunately for my particular choices, single and not overburdened
+with a social life outside of the LJC). I wasn&amp;rsquo;t going to sit all alone in my
+tiny flat, so I&amp;rsquo;d go to the pub with my shiny new Macbook Air, bought
+specially for blogging (thanks ThoughtWorks, you spoiled me - I needed a mac
+after I&amp;rsquo;d invested 3 months getting to grips with the one you gave me) and
+write &lt;em&gt;something&lt;/em&gt;. It wasn&amp;rsquo;t always amazing, but I&amp;rsquo;d do something. During the
+week, when ideas came to me, I&amp;rsquo;d make a note of the title in the blogging
+tool so that when Sunday came I&amp;rsquo;d pick one and go with it.  Early on it was
+fairly easy - we&amp;rsquo;d released a white paper on the Disruptor, but I found it
+hard to understand what it really meant, so I spent Sundays writing shorter
+articles breaking down how it worked and how to use it. I needed a LOT of
+help from &lt;a href=&#34;http://www.real-logic.co.uk/about.html&#34;&gt;Martin Thompson&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/mikeb2701&#34;&gt;Mike
+Barker&lt;/a&gt; to understand it, but they were patient
+with me (plus I think they were happy that &lt;em&gt;someone&lt;/em&gt; was writing this and it
+didn&amp;rsquo;t
+have to be them). They took the heavier, more complicated subjects and I
+pitched my stuff at developers like myself. When I ran out of Disruptor
+stuff, I moved on to the topics I had in the backlog - I generally had more
+ideas for blogs than time to blog, so I ended up with quite a long list to
+pick from. The key is to make a note of it at the time you think of it, and
+not try and think of a topic when you sit down with time to blog.&lt;/p&gt;
+
+&lt;p&gt;I coordinated our events and publicised them on the new LMAX blog I&amp;rsquo;d created.
+&lt;a href=&#34;https://twitter.com/davefarley77&#34;&gt;Dave Farley&lt;/a&gt; was often presenting on
+something Continuous Delivery related since
+&lt;a href=&#34;http://amzn.to/1NyUQ53&#34;&gt;his book&lt;/a&gt; had been released, and Martin was talking
+about hardcore concurrency stuff.&lt;/p&gt;
+
+&lt;p&gt;Mike and I got even more involved in the LJC, not just to recruit people.  We
+got involved in the JCP and OpenJDK - since LMAX was doing cutting edge
+technology stuff with Java, we wanted to see where the language was going
+and influence it too if possible.&lt;/p&gt;
+
+&lt;p&gt;Martijn must&amp;rsquo;ve got fed up my lack of drive in the presenting area, as he
+pretty much forced me to do my first presentation.  In a
+nice way! But he told me I was ready, he checked my content before I did it,
+and I did a short talk on the JCP.&lt;/p&gt;
+
+&lt;p&gt;At this point, my plan was to spend this first year of presenting doing short
+talks at the JUG, maybe work my way up to a longer talk by the end of the year, or maybe
+the following year, then the year after that to submit to conferences.&lt;/p&gt;
+
+&lt;p&gt;Well, with amazing mentors like mine, that didn&amp;rsquo;t happen. Martin Thompson was
+due to
+give a talk at JavaOne at the end of that year (still 2011), and I was lucky
+enough to get a ticket at the last minute (we won the &lt;a href=&#34;https://www.java.net/dukeschoice/2011&#34;&gt;Duke&amp;rsquo;s Choice Award
+for Innovative Programming Framework&lt;/a&gt;,
+and LMAX was awesome enough to let me have the ticket to the
+conference to receive the award, since the evangelism efforts and blogging
+had had a direct influence on us winning this award). Martin
+asked if I wanted to co-present with him. Of course this was terrifying! I
+hadn&amp;rsquo;t even done a full length talk at the LJC, I had barely even been to a
+conference, let alone presented at the largest Java conference In The World!
+So I said yes. These opportunities do not come up every week. It&amp;rsquo;s a talk
+Martin had given various times before, he would be there to pick up the slack
+if I freaked out, and I knew this material, I&amp;rsquo;d been blogging about it and
+answering questions for the last 6 months.&lt;/p&gt;
+
+&lt;p&gt;It really was as terrifying as I thought.  But.  It went well. I answered
+difficult questions. We got great feedback.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;/post/javaone_2011_roundup/&#34;&gt;JavaOne 2011&lt;/a&gt;
+was an important milestone in my evangelism career.  Not only
+did I get to put this presentation on my CV, I got to meet a lot of people in
+this network: Martin introduced me to a lot of high performance specialists;
+Martijn and Ben introduced me to people involved in the JCP, to other Java
+User Group leaders, and we somehow got in to the O&amp;rsquo;Reilly party -
+I finally got to meet a book publisher and get one step closer to my dream
+of writing a book. I also met the ladies behind &lt;a href=&#34;http://jduchess.org/&#34;&gt;Duchess&lt;/a&gt;,
+and they introduced me to
+&lt;a href=&#34;https://twitter.com/Stephan007&#34;&gt;Stephan&lt;/a&gt; who runs Devoxx. This turned out
+to be an important step in turning an idea I had for a panel into a Devoxx
+reality.&lt;/p&gt;
+
+&lt;p&gt;This is October.  By the end of the year I had also presented at &lt;a href=&#34;/presentation/video_of_our_jax_london_session/&#34;&gt;JAX London
+with Mike&lt;/a&gt;, and at
+&lt;a href=&#34;/post/why_we_shouldnt_target_women/&#34;&gt;Devoxx Belgium on a panel&lt;/a&gt;,
+largely thanks to the contacts I
+had made and the prestige of having a JavaOne talk under my belt.  So I went
+from basically zero at the start of that year (my blog had been dormant for
+years and I had no experience presenting) to having a blog with thousands of
+hits a month and being an &amp;ldquo;international conference speaker&amp;rdquo;. In many ways I
+got lucky, because the Disruptor was a really interesting, technical topic
+that is in an area developers feel they should understand (high performance).
+But I believe it was more a) determination to make this work, even if it
+meant using my own time to write blogs and prepare presentations and b)
+fantastic mentors who pushed me to do it and opened up their networks to me,
+that facilitated this rapid rise.&lt;/p&gt;
+
+&lt;p&gt;Honestly, after that things were a lot easier - I had the experience
+presenting at conferences, I had Martin and Martijn suggesting conferences to
+me (and introducing me to the right people where appropriate), which got me
+into the QCon/GOTO loop and into OSCON. With videos of my presentations
+availble, combined with the reach of my blog, I also had people approaching
+me to do other events, like user groups in the cities I was visiting, and
+conferences I had never heard of.  I think it helped that I&amp;rsquo;m a woman,
+because conferences are always actively looking to increase their diversity
+(whatever it might seem like at times!), but I think that anyone could follow
+these sorts of steps with a similar outcome.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not going to talk much about my career after that, because really that&amp;rsquo;s
+the tipping point - after that it was more of the same, really. I will say
+that I left LMAX because the pressure to be a full time developer &lt;em&gt;and&lt;/em&gt; do
+advocacy is hard, especially when you&amp;rsquo;re no longer single and you don&amp;rsquo;t have
+the spare time you used to have. I joined
+&lt;a href=&#34;https://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; because they were well known for
+understanding the technical community, and because they were looking for an
+evangelist who would continue to be an engineer (although not for 40 hours a
+week every week). I think they might have hired me without the previous
+experience, but the blogging and presenting experience was a big selling
+point for the guy who became my boss.  I eventually left
+them for &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;JetBrains&lt;/a&gt; because you learn, over
+time, what your sweet spots are as an advocate/educator, and what your
+interests are. After two years of MongoDB, I knew I really wanted to focus
+on Java and the JVM, and JetBrains is a much better fit for that. I&amp;rsquo;m pretty
+certain I would &lt;em&gt;not&lt;/em&gt; have got this job without a) having the
+conference-presenting experience and therefore b) being known to the team
+already through the conference circuit.&lt;/p&gt;
+
+&lt;p&gt;Well. That was a massive post. That&amp;rsquo;s why I&amp;rsquo;ve been putting off
+writing this for ages. That&amp;rsquo;s just my own story, I have another post in my
+head about the challenges that face you on trying to sell the value of
+evangelism/advocacy to your organisation (and maybe some suggestions). But
+that&amp;rsquo;s for another day.&lt;/p&gt;
+
+&lt;p&gt;In closing, I shall try to leave you with take-away points that I hope will
+be helpful if you either want to become a technical advocate, or are interested
+in just some aspects, like writing or presenting:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Join a user group.  I cannot, &lt;em&gt;cannot&lt;/em&gt; stress how important the LJC was to
+my career. If you do nothing else, this is the one thing that can help you.
+You will meet people who will inspire you or give you the kick up the
+backside you need. Try to remember that many of these people, like me, were
+developers like you before they became bloggers/authors/speakers. If they
+can, you can. These people also have networks, and whether you like it or
+not, it really is not what you know but who you know (but don&amp;rsquo;t let that put
+you off - meeting the right people can be easier than becoming some sort of
+super-expert!)&lt;/li&gt;
+&lt;li&gt;Present at the user group. Preferably get them to video it - you can use
+this in submissions to conferences, if it&amp;rsquo;s not a blind CFP they will like to
+see examples of your style. Having an example, even one that you think isn&amp;rsquo;t
+awesome, is much, much better than having nothing at all. (Also, and this is
+not a blog post about becoming a better speaker, but do watch your own
+videos - it&amp;rsquo;s &lt;em&gt;insanely&lt;/em&gt; painful the first few times, but it gets easier and
+will help you to improve).&lt;/li&gt;
+&lt;li&gt;Be prepared to commit your own time to this. I blogged and prepared talks
+at weekends, even for companies that valued evangelism. I gave up evenings
+to attend the user group.  This will be
+especially important in the early days when you probably have a day job too.
+This investment should pay off, either your company will learn to see the
+value of it and give you more time (having developers attend and speak at the
+LJC was enormously successful for recruitment for LMAX), or you will get a
+job better suited to what you want to do.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t have to have something awesome to talk about. I got lucky with
+the Disruptor, true. But our most in-demand topics at the Sevilla Java User
+Group are &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; topics, especially for things that are
+no-longer cutting edge - not all developers were early adopters, and now they
+need an overview of &amp;ldquo;why NoSQL&amp;rdquo; or &amp;ldquo;what&amp;rsquo;s Docker&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;You don&amp;rsquo;t have to be awesome. Your blog doesn&amp;rsquo;t have to be perfect English
+(especially if you&amp;rsquo;re not a native). It just needs to clearly describe the
+thing you&amp;rsquo;re trying to explain. You don&amp;rsquo;t
+have to be &lt;a href=&#34;http://www.infoq.com/author/Damian-Conway&#34;&gt;Damian Conway&lt;/a&gt;(one of
+my favourite presenters) when you speak - in my experience, a presenter
+can get away with either &lt;em&gt;only&lt;/em&gt; great content or &lt;em&gt;only&lt;/em&gt; great delivery, you
+actually don&amp;rsquo;t need both. I&amp;rsquo;ve been to conferences where presenters haven&amp;rsquo;t
+really had either - you have to start somewhere, and audiences are
+surprisingly forgiving (especially at user groups).&lt;/li&gt;
+&lt;li&gt;Find mentors. Listen to them. You might not even meet them, you can watch
+what they do. But I&amp;rsquo;d encourage you to find real human beings who are a step
+or two closer to where you want to be. Talk to them, let them know what you
+want. And let them bully you into doing scary things.&lt;/li&gt;
+&lt;li&gt;Be yourself. Figure out your strengths and interests, and play to them. I
+was scared of being a woman developer on show, via the blog or via
+conferences, but it turns out to be an advantage. I was afraid that because
+I&amp;rsquo;m not Martin Thompson I can&amp;rsquo;t possibly talk about difficult technical
+subjects. But I don&amp;rsquo;t have to be him, I can be me - I can explain things to
+the level that I need to understand them, so other developers like me can
+catch up with me. We don&amp;rsquo;t need to all be genius-level.&lt;/li&gt;
+&lt;li&gt;Do things that scare you. The terrifying things are the things that got me
+the furthest.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I hope this helps someone.&lt;/p&gt;
+
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt;Evangelism / Technical Advocacy - I use these terms fairly
+interchangeably. Evangelism was the common name some years back, but many
+are uncomfortable with the religious overtones, so instead prefer Advocacy.&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt; This is why I often talk about being at ThoughtWorks for a
+minute and a half - I really loved a lot of things about the company, but what
+I really wanted to do was offered to me in a company I already knew, where I
+could get going straight away without any ramp up&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Java at 20</title>
+      <link>https://trishagee.github.io/post/java_at_20/</link>
+      <pubDate>Fri, 22 May 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/java_at_20/</guid>
+      <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
+&lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
+ No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Android Xtended</title>
+      <link>https://trishagee.github.io/post/android_xtended/</link>
+      <pubDate>Thu, 21 May 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/android_xtended/</guid>
+      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
+calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;You may have noticed that the more I go to conferences, the less I write about them.  I could claim lack of time, but
+the fact is that all my write-ups will be something along the lines of &amp;ldquo;Loved &amp;lt;city&amp;gt;, went to talks that made me
+think, met interesting people, gave a talk or two that seemed to go well&amp;rdquo;. Not sure if people get bored of reading
+that, but I get bored of writing it.&lt;/p&gt;
+
+&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6803.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;That&amp;rsquo;s not to say I&amp;rsquo;m bored of conferences. On the contrary - since I work from home, travelling to new places and
+meeting Real Human Beings keeps me sane. Plus conferences are fun.&lt;/p&gt;
+
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6753.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
+setup&#34; title=&#34;The setup&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;But I went to a conference on Saturday that makes me feel compelled to write something, and not just because it was
+organised by my two fellow &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla JUG&lt;/a&gt; organisers.
+&lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt; are both doing more Android day-to-day than
+server-side Java, so this is an area they&amp;rsquo;re interested in learning more about. Not content with organising
+Android events every other month, they decided they had so many interesting speakers they wanted to have speaking here
+in Sevilla that they wanted to run a whole day, single track conference, on behalf of &lt;a href=&#34;https://plus.google.com/communities/114997118727600981533&#34;&gt;GDG Sevilla&lt;/a&gt;.
+&lt;a href=&#34;http://www.androidxtended.com/&#34;&gt;Android Xtended&lt;/a&gt; was born.&lt;/p&gt;
+
+&lt;div&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6848.jpg&#34; alt=&#34;Android Xtended&#34; title=&#34;Android Xtended&#34;&gt;&lt;/div&gt;
+ 
+
+&lt;p&gt;As a Java &amp;ldquo;Technical Advocate&amp;rdquo;, I suppose I should keep an eye on what&amp;rsquo;s going on in the Android space, it&amp;rsquo;s quite a
+huge part of the ecosystem&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. Fortunately I didn&amp;rsquo;t have to go in any sort
+of official capacity (I wasn&amp;rsquo;t speaking, manning a booth, organising or sponsoring), so I could just enjoy it.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/registration.jpg&#34; alt=&#34;Hola...&#34; title=&#34;Hola...&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Firstly, they roped me into doing registrations. Me! I was concerned my Spanish wasn&amp;rsquo;t up for it, but apparently I only
+needed two words: &amp;ldquo;nombre&amp;rdquo; and &amp;ldquo;talla&amp;rdquo; (for the t-shirt). Oh, and &amp;ldquo;treinta y uno b&amp;rdquo; - there was such demand for the
+conference the initial venue wasn&amp;rsquo;t big enough, so it was being hosted at two sites on the same road. Not
+surprisingly, some turned up to the wrong one.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6813.jpg&#34; alt=&#34;@inmaculadaalcon&#34; title=&#34;@inmaculadaalcon&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Unlike a large number of our &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;JUG&lt;/a&gt;/&lt;a href=&#34;http://www.meetup.com/Sevilla-MongoDB-User-Group/&#34;&gt;MUG&lt;/a&gt; events, all the talks were in Spanish. So feel
+free to ignore my analysis if you like - my Spanish comprehension is pretty good, but sometimes I don&amp;rsquo;t realise when
+I didn&amp;rsquo;t understand something and just make up my own story.&lt;/p&gt;
+
+&lt;div style=&#34;float:left; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6794.jpg&#34; width=&#34;200px&#34; 
+alt=&#34;@flipper83&#34; title=&#34;@flipper83&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;A lot of what I&amp;rsquo;ve seen so far in the Android space is Getting Started type material - a lot of tutorials and
+examples that show you how to achieve a particular goal. There seems to be less of an emphasis on areas that
+interest me as an experienced Java person - easy automation of testing, good design practices, craftsmanship etc. Now,
+ it may be that because those areas (apart from testing) apply to both back-end Java and Android, there&amp;rsquo;s less of a
+ need to re-iterate it in the Android space. Or it may be that I don&amp;rsquo;t see the entry-level Java stuff any more,
+ because I don&amp;rsquo;t need it, and I seek out the topics that interest me.&lt;/p&gt;
+
+&lt;p&gt;&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6892.jpg&#34; width=&#34;200px&#34; 
+ alt=&#34;@JMPergar&#34; title=&#34;@JMPergar&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Or it may be that as Android is one of those
+ platforms that&amp;rsquo;s a good place to start as a fairly novice developer (because you can write self-contained code with
+ a visible UI and get results fairly easily), lots of the focus is on the needs of new developers.  Whatever the
+ reason, I had been starting to feel like the Android ecosystem was missing people taking developers beyond that
+ initial step of getting something to work and up to the level of creating maintainable code.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6880.jpg&#34; alt=&#34;@pedro_g_s&#34; title=&#34;@pedro_g_s&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;Android Xtended put my mind at rest. Here was a range of talks that led attendees through the things that will make
+them more effective developers - tools and libraries to use; testing approaches; integration with persistence; clean
+(code) design for the UI; design patterns and domain driven design to simplify your code, and so on. As an employee
+of JetBrains, I was obviously very happy to see both
+&lt;a href=&#34;http://developer.android.com/tools/studio/index.html&#34;&gt;Android Studio&lt;/a&gt; and
+&lt;a href=&#34;https://www.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA&lt;/a&gt; mentioned and used throughout as well.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6863.jpg&#34; alt=&#34;@davilagrau&#34; title=&#34;@davilagrau&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;As well as fantastic speakers (they knew their stuff, were clearly practitioners, and all had great individual
+presentation styles), there were three mob-programming sessions.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6853.jpg&#34; alt=&#34;Mob Programming&#34; title=&#34;Mob Programming&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;This was an ambitious attempt to not just preach to
+a passive audience, but to involve them in creating real, working code to teach fundamental practices - dependency
+injection, testing and Gradle.  An hour is barely enough time to give a practiced demo of real code, to create
+something collaboratively with an audience of 30 people was a challenge. But I thought it did give people a flavour
+of not just how to use the technologies, but what they were for. I also saw a lot of the audience starting to
+realise the power of refactoring using an IDE - I firmly believe the best way to teach the power of a tool is by
+pair programming or, at least, using the tool in real use cases in front of people.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6921.jpg&#34; alt=&#34;More collaboration&#34; title=&#34;More collaboration&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;The mob programming was kinda
+like a half day tutorial squished into an hour. I&amp;rsquo;d be interested to hear how the attendees found it. For me, since
+this was a full day conference that cost &amp;euro;10, I thought getting three short tutorials as well as five excellent
+talks was &lt;em&gt;very&lt;/em&gt; good value for money.&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6896.jpg&#34; alt=&#34;Happy developers&#34; title=&#34;Happy developers&#34;&gt;&lt;/div&gt;
+  
+
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6883.jpg&#34; width=&#34;200px&#34; 
+alt=&#34;Interesting...&#34; title=&#34;Interesting...&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;I&amp;rsquo;d be remiss in talking about the conference if I didn&amp;rsquo;t mention the venue.  We were at
+&lt;a href=&#34;http://espaciores.org/&#34;&gt;Espacio RES&lt;/a&gt;, which was pretty easy to get to, and a really nice, airy, comfortable
+space&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote2&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.
+And they let us rearrange their whole place just for us. The only downside is that it doesn&amp;rsquo;t hold more people, which
+is a shame, and the reason we had to host on two sites (I can&amp;rsquo;t comment on the other site as I stayed
+at RES the whole day, but we&amp;rsquo;re very grateful to &lt;a href=&#34;https://bitnami.com/&#34;&gt;Bitnami&lt;/a&gt; for lending us their offices as well).&lt;/p&gt;
+
+&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6831.jpg&#34; alt=&#34;Collaboration&#34; title=&#34;Collaboration&#34;&gt;&lt;/div&gt;
+
+&lt;p&gt;So, what did I learn?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://espaciores.org/&#34;&gt;Espacio RES&lt;/a&gt; is a really nice space that hopefully we can use more regularly for events&lt;/li&gt;
+&lt;li&gt;It is possible to use Good Practices to write Android code, and Real Developers are doing so for Real Applications&lt;/li&gt;
+&lt;li&gt;There are very talented and expert technical speakers in Spain. I&amp;rsquo;ve been to two conferences in Spain in
+the last month, but as they were all in English I think it puts some people off presenting. It&amp;rsquo;s nice to see Spanish
+talent being showcased, it gives developers here good role models and shows that experts aren&amp;rsquo;t just from outside
+Spain.&lt;/li&gt;
+&lt;li&gt;Sevilla has a very healthy tech scene with people more than happy to give up a Saturday to learn new things. In
+fact, for some set of people, they prefer Saturdays to weekday
+evenings&lt;sup&gt;&lt;a href=&#34;/post/androidxtended#footnote3&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;. I have a feeling I&amp;rsquo;m about to lose more weekends in the
+future&amp;hellip;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6872.jpg&#34; alt=&#34;People like Saturdays?&#34; title=&#34;People like 
+ Saturdays?&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Android Xtended was a fantastic event, with great speakers and engaged attendees.  I loved how social
+ everyone was during the breaks, how people were happy to chat and share stories, even though most of the attendees
+ didn&amp;rsquo;t know each other beforehand. It was brilliantly organised, and although I did see how much work went into
+ arranging it, you would never believe from how smoothly it went that this two-venue event was organised by just two
+ guys. Well done &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt;!&lt;/p&gt;
+
+&lt;p&gt;&lt;div&gt;&lt;img src=&#34;/static/images/androidxtended/DSC_6927.jpg&#34; alt=&#34;Drinks&#34; title=&#34;Drinks&#34;&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;sup id=&#34;footnote1&#34;&gt;1&lt;/sup&gt; Although in my experience Android and &amp;ldquo;pure&amp;rdquo; Java user groups and events tend not to
+ overlap much - not sure if that&amp;rsquo;s a function of the relationship between Google and Oracle or just because large cities like
+ London tend to split groups along technology lines to keep group and event sizes manageable&lt;/p&gt;
+
+&lt;p&gt;&lt;sup id=&#34;footnote2&#34;&gt;2&lt;/sup&gt; The downside was there are not a lot of places nearby open for coffee at 8am!&lt;/p&gt;
+
+&lt;p&gt;&lt;sup id=&#34;footnote3&#34;&gt;3&lt;/sup&gt; This is completely alien to me as someone who built her career largely in London - you
+ do &lt;em&gt;not&lt;/em&gt; host events on a Saturday, except for maybe the annual LJC Open Conference, because many people have a
+ long commute into the city. Doing that 5 days a week is plenty, most people don&amp;rsquo;t want to do it on a Saturday as
+ well. But they will give up a couple of hours in the evening, as it costs far less in time overall.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blind CFPs - a Postscript</title>
+      <link>https://trishagee.github.io/post/blind_cfps_2/</link>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/blind_cfps_2/</guid>
+      <description>
+
+&lt;p&gt;Since publishing &lt;a href=&#34;/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
+another post to answer them.&lt;/p&gt;
+
+&lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
+circles in which speakers will refuse to submit if the selection process isn&amp;rsquo;t blind. But what blind CFPs are &lt;em&gt;not&lt;/em&gt;,
+is an answer to &amp;ldquo;How do I get more women speakers at my conference?&amp;rdquo;, especially if the problem is not that the
+women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
+in the conferences I speak at/help organise.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_0&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
+
+&lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
+in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
+select both women or not, when there are nasty comments about your lack of women speakers, you&amp;rsquo;re protected - you did
+the right things, you had a blind CFP, and just not many women made it through that process. Women simply aren&amp;rsquo;t
+writing compelling abstracts and/or aren&amp;rsquo;t picking interesting subjects and/or clearly aren&amp;rsquo;t interested in
+presenting at conferences.&lt;/p&gt;
+
+&lt;p&gt;AAAARRRGGHHHHHH!!!! Anger.&lt;/p&gt;
+
+&lt;p&gt;Protect your arse if you like, that&amp;rsquo;s fine, I see the attacks against organisers and I understand the need to be able to
+say you did the right thing. But notice that once you&amp;rsquo;ve protected yourselves, the blame is back on the
+minorities for not meeting your criteria.&lt;/p&gt;
+
+&lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
+of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_1&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
+
+&lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
+a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
+that absolutely called to me - here was the missing piece for a technology that I simply can&amp;rsquo;t get my head around. I
+gave an hour of my life to that talk, each minute I was wondering when this person would get to the bits mentioned
+in the abstract, so I watched it all the way to the end. They never delivered what the abstract promised, and their
+meandering style meant I learnt almost nothing from the talk. That&amp;rsquo;s an hour of my life I&amp;rsquo;ll never get back. Good
+thing I was playing computer games as well at the time, if I&amp;rsquo;d paid money for that I would have been very peeved.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s another weakness in this process - if you go to a number of conferences (like I do) you kinda learn which
+speakers are doing
+which talks.  If I submit my &amp;ldquo;AngularJS, HTML5, Groovy, Java and MongoDB all together - what could possibly go wrong??&amp;rdquo;
+talk to a blind process, if there&amp;rsquo;s anyone on the selection committee who&amp;rsquo;s even vaguely involved in the Java or MongoDB
+spaces, they&amp;rsquo;ll know that&amp;rsquo;s me. And they can Google the talk and decide whether they like it (or with any luck, the
+buzz-word crammed title will do the job and they&amp;rsquo;ll say yes, although probably AngularJS is so 2014).&lt;/p&gt;
+
+&lt;p&gt;An abstract is like your presentation in the same way that your CV is like your ability to do your job - there&amp;rsquo;s a skill
+to writing good abstracts (or CVs), but mastery of that skill does not necessarily mean mastery of the thing it
+represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
+being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
+
+&lt;h4 id=&#34;toc_2&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
+
+&lt;p&gt;Yeah, sorry.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve listened to feedback from a bunch of people, and I have learnt more things (thanks everyone!). I am more sold on
+a blind CFP being maybe part of a bigger process. But I do &lt;em&gt;not&lt;/em&gt; believe it fixes the &amp;ldquo;we need more women speakers&amp;rdquo;
+problem, which was the original claim that I wanted to dispute. Conferences have to be &lt;em&gt;much&lt;/em&gt; more active to address
+this issue.&lt;/p&gt;
+
+&lt;p&gt;And I am not sold on an abstract being a fair representation of the quality of a talk. Maybe a more realistic &amp;ldquo;blind&amp;rdquo;
+audition would be to give the talk to an audience, like a user group, who rated the talk:
+the organisers wouldn&amp;rsquo;t watch the talk, but they could use the ratings to decide. Yes, the user group could also
+have biases that affect their rating, but when the speaker gives the talk at the conference, those attendees will also
+have their biases too.&lt;/p&gt;
+
+&lt;p&gt;Blindness is not a realistic option, we just have to keep putting women (and other non-white-straight-men) in front of
+audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Are Blind CFPs Really The Answer?</title>
+      <link>https://trishagee.github.io/post/blind_cfps/</link>
+      <pubDate>Wed, 11 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/blind_cfps/</guid>
+      <description>
+
+&lt;p&gt;Off the back of &lt;a href=&#34;/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
+around blind &lt;a href=&#34;http://www.wikicfp.com/cfp/&#34;&gt;CFPs&lt;/a&gt; (Call For Papers - usually to get into a conference you submit to a CFP) for
+conferences. I often hear it said that a blind CFP will fix, or at least improve, the diversity imbalance at conferences.&lt;/p&gt;
+
+&lt;p&gt;I don&amp;rsquo;t believe this.&lt;/p&gt;
+
+&lt;p&gt;Firstly, I should caveat this with: this is going to be a blog post based on my experiences and chats with people, and I
+have zero science to back this up. Sorry. But I do have some numbers.&lt;/p&gt;
+
+&lt;p&gt;There are a couple of London conferences that I won&amp;rsquo;t name (because I haven&amp;rsquo;t asked their permission not because they&amp;rsquo;ve
+done anything wrong) that in some years have received only 2 from around 200 (or more) submissions from women. These
+conferences have accepted 100% of the submissions from women, and then been open to criticism for not having enough women
+speakers.&lt;/p&gt;
+
+&lt;p&gt;A blind CFP to remove unconscious bias from the selection committee might have resulted in zero women speakers.&lt;/p&gt;
+
+&lt;p&gt;Now I know the next argument is that advertising a blind CFP might encourage a wider diversity of speakers to apply. This
+does seem to work in some parts of the industry (I&amp;rsquo;ve been talking to women from tech scenes that don&amp;rsquo;t intersect with mine
+and I&amp;rsquo;m starting to see that we have different problems in different segments of the wider development world). But for my
+world, which is largely Java, with some forays into Agile, NoSQL, Open Source, and Enterprise, the women I speak to
+aren&amp;rsquo;t scared they&amp;rsquo;ll be discriminated against if they put their name on a CFP. Besides, they don&amp;rsquo;t have anything to
+lose by submitting and being rejected. They&amp;rsquo;re more afraid they&amp;rsquo;ll be accepted, and then they&amp;rsquo;ll have to give a
+presentation! No, the women I&amp;rsquo;ve spoken to in my world don&amp;rsquo;t submit because they don&amp;rsquo;t feel ready, they don&amp;rsquo;t think they
+have anything to talk about, and they&amp;rsquo;re worried about the sorts of questions they&amp;rsquo;ll get asked when they&amp;rsquo;re standing up
+there. Those fears aren&amp;rsquo;t allayed by having a blind CFP.&lt;/p&gt;
+
+&lt;p&gt;If there are any fears of being judged as a woman, it&amp;rsquo;s when we&amp;rsquo;re standing up in front of people at the conference, and
+no amount of blindness during the CFP process is going to make us feel better about that.&lt;/p&gt;
+
+&lt;p&gt;For me, personally, I find the idea of a blind CFP terrifying:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Firstly, if you have such a problem with judging people based on race or gender that you have to anonymise the
+selection process, I&amp;rsquo;m not sure I want to speak at your conference where my gender will be blatantly on show.&lt;/li&gt;
+&lt;li&gt;Secondly, when I was starting out as a speaker, I was new to writing titles and abstracts and expected that they would
+not be good enough to get in. With a blind CFP I would never find out why as I could never ask for feedback on my
+anonymous abstract. As a novice speaker, I expected my gender would help me be selected, not hinder.&lt;/li&gt;
+&lt;li&gt;Thirdly, as an experienced speaker I know my abstract-writing has not really improved, but I know my presenting has,
+and I know there are videos of me out there doing a good job as a presenter, &lt;em&gt;this&lt;/em&gt; is my audition tape.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;When I was starting out as a speaker, I knew there weren&amp;rsquo;t enough women presenters around. And although I hate the idea
+of positive discrimination and hate the idea that men might think I got into my position merely because I&amp;rsquo;m female, I knew
+that being a woman made me stand out in all those submissions. And I knew that enough conferences would take a chance on
+me, if only to improve their diversity, and that&amp;rsquo;s all I needed to bootstrap my speaking career - once I had spoken at
+enough conferences, once I had videos of me doing that, I would find it much easier to get into the next conferences.
+And that&amp;rsquo;s worked. And now, as an experienced (female) speaker, I fear blind CFPs as they won&amp;rsquo;t know who I am or what I&amp;rsquo;m
+capable of.&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s my opinion as a female speaker. But I&amp;rsquo;ve also been fortunate enough to be on the programme committee for a couple
+of conferences, and after three years or so of speaking at conferences I know a &lt;em&gt;lot&lt;/em&gt; of conference organisers.  Let&amp;rsquo;s
+assume you&amp;rsquo;re &amp;ldquo;merely&amp;rdquo; trying to build the best conference you can around your subject whilst not discriminating against
+anyone (i.e. let&amp;rsquo;s assume you&amp;rsquo;re not going out of your way to actively promote diversity). How can you do this when you only
+have abstracts and titles to go on?&lt;/p&gt;
+
+&lt;p&gt;I am aware of the &lt;a href=&#34;http://www.nber.org/papers/w5903&#34;&gt;studies around blind auditions for orchestras&lt;/a&gt;. And I understand
+how tempting it is to try to apply that to our world, since it has had an effect on the number of women in orchestras
+(but let&amp;rsquo;s not get too excited here, we&amp;rsquo;re talking about an increase from 5% to 25% over thirty years&amp;hellip;). I think
+blind auditions would work really well for coding - we can look at just the code, without knowing anything about the
+physical body behind the code, and figure out if that person is good enough for us. We could even do blind pair
+programming, using screen sharing and chat (actually that&amp;rsquo;s a great idea, I think I&amp;rsquo;ll patent that!). Because
+the thing you&amp;rsquo;ve anonymised (the code) is the output you really care about in a programming job. If you communicate via
+chat you can even measure someone&amp;rsquo;s communication skills without judging them physically, another vital skill for
+being part of a team.&lt;/p&gt;
+
+&lt;p&gt;But a talk abstract is &lt;em&gt;not&lt;/em&gt; the output we&amp;rsquo;re looking for.  Sure, a good title and abstract will attract attendees to the
+conference and bums on seats in the actual talk. But the output you&amp;rsquo;re looking for is the presenter - their style, their
+approach to the topic, their ability to hold attention, their ability to impart information. We&amp;rsquo;re not always looking
+for the same things either, an interesting topic presented nervously but logically is fine, as is an entertaining
+presenter reminding us of fundamentals we already know (and any other combination of strengths and weaknesses). An abstract
+can&amp;rsquo;t tell you how good the presentation is going to be. Evaluating a presentation on a blind abstract would be like
+evaluating those musicians on a couple of paragraphs explaining what they&amp;rsquo;re going to play and how they&amp;rsquo;re going to
+try to make you feel when they play it - the words could sound great, but the musician might not even be able to play
+the instrument.&lt;/p&gt;
+
+&lt;p&gt;The best audition you can have as a presenter is to, well, present. Videos, audio clips, even screencasts. But the
+problem with presenting is that it&amp;rsquo;s so freaking obvious that you&amp;rsquo;re a woman (or other variation on
+non-white-straight-male).  If you can&amp;rsquo;t objectively evaluate a presentation without taking away the presenter&amp;rsquo;s
+physical body (for colour
+or gender or whatever), then you&amp;rsquo;ve got real problems. Your audience is going to be faced with that physical body for an
+hour of their life, and you can bet they&amp;rsquo;ll be judging them too.  You want to be damned sure that you&amp;rsquo;ve selected a
+competent presenter, and you&amp;rsquo;ll need to stand by that choice. Saying &amp;ldquo;oh, well, they didn&amp;rsquo;t seem boring in their
+abstract&amp;rdquo; is not going to make the audience feel like you did a good job of the selection.&lt;/p&gt;
+
+&lt;p&gt;There&amp;rsquo;s another point about non-blind selection processes, other than the process allowing you to select on presentation
+ability rather than abstract-writing ability: you can be more active in promoting diversity. I am against &amp;ldquo;affirmative
+action&amp;rdquo;, but if the proportion of women submitting presentations is lower than the proportion of women in the field, there&amp;rsquo;s
+something missing.  Here are some of the things you can do if you identify a lack of a certain demographic - as usual,
+I&amp;rsquo;m going to use &amp;ldquo;women&amp;rdquo;, but you could equally argue this for any demographic, even not-enough-C#-developers or
+too-many-startups-not-enough-enterprise:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reach out to relevant user groups and communities asking them to submit.  In London for example, there&amp;rsquo;s &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/women-who-code-london/&#34;&gt;Women Who Code&lt;/a&gt;, &lt;a href=&#34;http://london.girlgeekdinners.com/&#34;&gt;Girl Geek Dinners&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/PyLadiesLondon/&#34;&gt;PyLadies&lt;/a&gt;, &lt;a href=&#34;http://www.meetup.com/Rails-Girls-London/&#34;&gt;Rails Girls&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/Women-in-Data/&#34;&gt;Women in Data&lt;/a&gt;,
+&lt;a href=&#34;http://www.geekgirlmeetup.co.uk/&#34;&gt;Girl Geek Meetup&lt;/a&gt;, &lt;a href=&#34;http://www.meetup.com/WIGJMeetup/&#34;&gt;Women in Games Jobs&lt;/a&gt;,
+&lt;a href=&#34;http://girlsintechuk.com/community/&#34;&gt;Girls in Tech&lt;/a&gt;,
+&lt;a href=&#34;http://www.meetup.com/Geek-Girls-Unite-London/&#34;&gt;Girl Geeks Unite&lt;/a&gt;, and a
+&lt;a href=&#34;http://witi.meetup.com/cities/gb/17/london/&#34;&gt;whole host of women techies meetups&lt;/a&gt; &amp;hellip; And don&amp;rsquo;t think I psychically
+know about all those
+because I have two X chromosomes, I found half of those just now, in less than two minutes, by Googling
+&amp;ldquo;Girl Geeks London&amp;rdquo; and &amp;ldquo;Women Tech London&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;Put the faces of the women you do want to have speak (or the women on your programme committee, or both) on your
+website - showing these women sends the message that this conference is for women. It should also impact the diversity
+of your attendees.&lt;/li&gt;
+&lt;li&gt;Reach out to specific women speakers and ask them to present. &lt;a href=&#34;/post/more_female_speakers&#34;&gt;I&amp;rsquo;ve talked about this before&lt;/a&gt;,
+women speakers are few and far between, and a) they get
+booked in advance and b) are busy enough not to have to (or want to) submit via a CFP process.&lt;/li&gt;
+&lt;li&gt;There are &lt;a href=&#34;/post/more_female_speakers&#34;&gt;more ideas here&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And there&amp;rsquo;s more - you don&amp;rsquo;t just have to drain the pool dry of known competent speakers-who-tick-some-diversity-box. With
+a non-blind process you can actively improve the submissions you do have, assuming you&amp;rsquo;re not one of the conferences
+suffering from a complete lack of submissions from those people. For example, if you&amp;rsquo;re looking to increase the number of women
+presenting at your conference, if you have women submitting but they don&amp;rsquo;t quite meet your criteria (maybe the abstract
+is weak, the title isn&amp;rsquo;t catchy, or maybe the presenter simply isn&amp;rsquo;t quite ready yet) you, as the conference organiser, are
+in the perfect position to mentor these people: you can help them re-write their abstracts; you can offer them mentoring
+and training for presenting. If there&amp;rsquo;s no record of them presenting but you&amp;rsquo;re interested in evaluating their ability,
+you can set them up with a user group to present at - as a conference organiser, you have the network contacts that
+new speakers might not. You can run sessions aimed at people who have never done public speaking (I&amp;rsquo;ve run a session
+like this four times now, at the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; and at Ladies Who Code -
+I had &lt;em&gt;over 70&lt;/em&gt; RSVPs for the last London Ladies Who Code session, twice the number of the last LJC session,
+so there are plenty of women interested in breaking into this field, who are looking for training, who don&amp;rsquo;t feel ready
+to present yet).&lt;/p&gt;
+
+&lt;p&gt;So, what are my points?&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;A blind process of selection can be applied to something where the output you&amp;rsquo;re selecting for can be effectively
+anonymised: music auditions, code, technical writing, etc.&lt;/li&gt;
+&lt;li&gt;A blind process where you select based on criteria that are not the end result will only be effective
+if it&amp;rsquo;s the selection process is biased, or if submissions to the selection process are lower
+from discriminated-against-groups because they fear a biased selection process.&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;For those conferences that are getting very tiny numbers of submissions from women (I&amp;rsquo;m picking women as the example
+but you can pick any group you want), a blind process could lead to even fewer selected women speakers. Instead of
+switching to a blind process, you&amp;rsquo;re probably going to want to check:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;the messaging around your conference (remember masculine words like rock star, ninja, competitive, hardcore,
+challenging etc &lt;a href=&#34;http://www.tum.de/en/about-tum/news/press-releases/short/article/31438/&#34;&gt;put women off applying to jobs&lt;/a&gt;, the same probably applies to technical conferences)&lt;/li&gt;
+&lt;li&gt;subliminal messages on your website/info (one of the conferences I mentioned, for example, sent out a couple of emails
+containing photos of previous years&amp;rsquo; conferences which happened to only show men - this was not even representative of
+the conference, but it can have an unexpectedly big effect on the subconscious)&lt;/li&gt;
+&lt;li&gt;have you showcased the diversity of the conference, or previous years&amp;rsquo; conferences, with photos, interviews, testamonials?&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;A non-blind submission process allows you to be more active in promoting diversity - instead of hoping that the
+submissions are representative of the diversity in your community, and that selecting the most interesting talks
+will naturally lead to improved diversity, with a non-blind process you can track exactly how many women are submitting,
+address problems in this area early and offer mentoring to those who aren&amp;rsquo;t quite ready yet. Remember that &lt;a href=&#34;https://hbr.org/2014/08/why-women-dont-apply-for-jobs-unless-theyre-100-qualified/0-qualified/&#34;&gt;women
+only apply for jobs they feel 100% qualified for&lt;/a&gt;
+and take fewer chances, they might need that extra push.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;So, no. I don&amp;rsquo;t believe that implementing a blind CFP will address the lack of diversity in conference speakers. I
+know it helps in some circles, but I personally think that conference selection committees should a) be much better at
+identifying their own biases and actively attempting to overcome them b) be active in improving the diversity of
+their conference, and c) be offering feedback and mentoring to those who are not quite ready yet in order to improve
+the overall ecosystem.&lt;/p&gt;
+
+&lt;p&gt;Diversity isn&amp;rsquo;t going to accidentally happen when we stop looking at gender and race and other visible you-don&amp;rsquo;t-belong-here
+cues.  Diversity is only going to happen if people fight for it, and if we actively train, mentor, and support those
+trying to break through the barriers.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_0&#34;&gt;Postscript&lt;/h3&gt;
+
+&lt;p&gt;I wrote a &lt;a href=&#34;/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>I&#39;m so tired of it all</title>
+      <link>https://trishagee.github.io/post/i_am_so_tired_of_it_all/</link>
+      <pubDate>Tue, 10 Mar 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/i_am_so_tired_of_it_all/</guid>
+      <description>&lt;p&gt;We work so hard to promote equality, to fight for the rights of people who are not middle-class
+white men, and time and again it just feels like we&amp;rsquo;re not getting anywhere.  &lt;a href=&#34;http://www.internationalwomensday.com/&#34;&gt;International Women&amp;rsquo;s
+Day&lt;/a&gt; highlights the issues that face women all around the world, and make our
+women-in-tech problem
+look like a genuine &lt;a href=&#34;https://twitter.com/hashtag/firstworldproblems&#34;&gt;First World Problem&lt;/a&gt;, and yet we can&amp;rsquo;t even get that right.&lt;/p&gt;
+
+&lt;p&gt;I nearly gave up. This weekend I thought, fuck it. I&amp;rsquo;ve done my bit. Personally, I&amp;rsquo;ve been through the phase in my
+career where being a woman was a disadvantage and somehow arrived out the other side - in my position, in my job, it&amp;rsquo;s
+an advantage, and I don&amp;rsquo;t need to change anything to improve things for my career. I&amp;rsquo;m going to carry on doing my job to the best
+of my ability, but I&amp;rsquo;m no longer going to let this diversity thing drain my energy - nothing ever seems to make a difference anyway.&lt;/p&gt;
+
+&lt;p&gt;Over the last year, four (white, middle-class, English-speaking) men who I know well, who
+I have seen by their actions are champions of women in technology, who have personally mentored
+me in some way or another, have been accused of not thinking about women techies, not encouraging them - have
+been accused of sexism.&lt;/p&gt;
+
+&lt;p&gt;This third year of being on the programme committee for QCon, I could see we had achieved far more to promote diversity
+than ever before, but it was &lt;em&gt;so&lt;/em&gt; much work to get that far, and there&amp;rsquo;s still &lt;em&gt;so much&lt;/em&gt; more to do.&lt;/p&gt;
+
+&lt;p&gt;Another conference I have great affection for which has never previously suffered badly from a lack of women speakers
+received practically
+zero submissions for full conference talks from women this year. The submissions that did come in were from the usual
+suspects, the speakers who one calls upon when desperately trying to shore up the gender diversity of your speaker line-up.&lt;/p&gt;
+
+&lt;p&gt;The Sevilla Java User Group, which I started, with my money, which I present at regularly, has had &lt;em&gt;zero&lt;/em&gt; female
+developers attend who were not previously friends. Apparently the impact of visible female role models is far smaller than
+I imagined.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s so much work.&lt;/p&gt;
+
+&lt;p&gt;And it&amp;rsquo;s thankless.&lt;/p&gt;
+
+&lt;p&gt;For the men who support the women, they get attacked by both sides - by women, for not
+doing enough, or sometimes for simply being privileged white men, by men and women for fighting for something that
+doesn&amp;rsquo;t impact them, and by men for betraying their gender.&lt;/p&gt;
+
+&lt;p&gt;For the women, it&amp;rsquo;s the same but more so: some women accuse us of not doing enough, some women sneer at what we&amp;rsquo;re doing,
+telling us we already have equality, men and women think you&amp;rsquo;re in it just to improve your own life, and the men, well,
+many men genuinely don&amp;rsquo;t understand the problems (and it&amp;rsquo;s exhausting to explain), and some are outright hostile.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s fantastic to find men allies.  I don&amp;rsquo;t know about anyone else, but at this stage in my career I&amp;rsquo;m surrounded by men
+who are all allies. And I can honestly say that any professional struggles I&amp;rsquo;ve had in recent years I can see are suffered
+by my colleagues of the opposite sex, so I know they&amp;rsquo;re not because of my gender.&lt;/p&gt;
+
+&lt;p&gt;Maybe it&amp;rsquo;s only fair that our male allies suffer the same way we do, even though they get even less out of fighting our battles
+than we do. Maybe it&amp;rsquo;s fair that they are attacked by both genders, and have to put up with unfair, unjust
+criticism and accusations. After all, look at some of the vile, hate-filled messages thrown at women leading the charge -
+that&amp;rsquo;s abuse. Some of these women fear for their lives.  I couldn&amp;rsquo;t live that life, and I despair that we live in a
+society that can&amp;rsquo;t seem to prevent that.&lt;/p&gt;
+
+&lt;p&gt;So I&amp;rsquo;m a bit burnt out. So my friends are finding it tough. But this is a marathon, not a sprint.  And I never did this
+for me anyway. I care about diversity because it matters. I try to change the gender balance specifically, because that&amp;rsquo;s an area I
+might be able to impact, one I have a chance of understanding. I care about equality, about justice, because
+it matters. And I do my tiny part to try and drown out the hate, the anger, the &amp;ldquo;get back into the kitchen, woman&amp;rdquo;
+because those things make me feel sick, because &amp;ldquo;you can be whoever you want to be&amp;rdquo; shouldn&amp;rsquo;t be a lie, shouldn&amp;rsquo;t come
+with caveats.&lt;/p&gt;
+
+&lt;p&gt;Maybe I don&amp;rsquo;t have the time or energy for large-scale revolutions, but I will carry on trying to make a small difference:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;By trying to be a role model for anyone who can relate to me, whatever their colour, gender, or sexual orientation&lt;/li&gt;
+&lt;li&gt;By being visible as a woman techie, who does woman techie things, who&amp;rsquo;s also a human being.&lt;/li&gt;
+&lt;li&gt;By calling out (quietly and personally, at least at first) where I see things that might give the wrong message: e.g.
+e-mailing conference organisers to point out they only have white men in their line up; private messaging people to
+let them know their comments could be taken the wrong way; pointing out to user group leaders that their meetup
+page shows only men at their events.&lt;/li&gt;
+&lt;li&gt;By continuing to give an honest view of what it&amp;rsquo;s like to be a female Java developer, especially if these
+experiences are different to those of other women - one woman&amp;rsquo;s view does not represent every woman&amp;rsquo;s view, if more
+of us tell our different tales, we have a better view of the whole ecosystem (and its inhabitants).&lt;/li&gt;
+&lt;li&gt;By sharing not only the negatives, but the many positives of working in such a varied and rapidly changing profession.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I am tired of fighting, however tiny my efforts are. But I&amp;rsquo;m more tired of inequality.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The State of Java</title>
+      <link>https://trishagee.github.io/post/svq_state_of_java_update/</link>
+      <pubDate>Thu, 29 Jan 2015 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/svq_state_of_java_update/</guid>
+      <description>
+
+&lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
+find people unusually keen to come and visit us on the pretence of presenting at the Sevilla Java User Group (and please,
+DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
+
+&lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
+an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m just starting to use Java 8 in real life, so this could not have been better timed - I got to ask the guys a bunch
+of questions about the intentions behind some of the Java 8 features, and the current vision for the future.&lt;/p&gt;
+
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/44036521&#34; width=&#34;425&#34; height=&#34;355&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;div style=&#34;margin-bottom:5px&#34;&gt;&lt;i&gt; &lt;a href=&#34;//www.slideshare.net/trishagee/2015-java-update-and-roadmap-jug-sevilla&#34; title=&#34;2015 Java update and roadmap, JUG sevilla&#34; target=&#34;_blank&#34;&gt;2015 Java update and roadmap, JUG sevilla&lt;/a&gt; from Georges Saab and Aurelio Garcia-Ribeyro &lt;/i&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;My notes from the session:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html&#34;&gt;Lambdas&lt;/a&gt; could be just a syntax change,
+but they could be more than that - they could impact the language, the libraries
+and the JVM. They could have a positive impact on performance, and this work can continue to go on through small
+updates to Java that don&amp;rsquo;t impact the syntax.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; are a pipeline of operations, made possible/easier/more readable by lambdas. The aim is to make operations
+on collections easier and more readable.&lt;/li&gt;
+&lt;li&gt;In the Old World Order, you had to care about &lt;em&gt;how&lt;/em&gt; to perform certain operations. With streams, you don&amp;rsquo;t need to
+tell the computer exactly how it&amp;rsquo;s done, you can simply say what operations you want performed. This makes it easier
+for developers&lt;/li&gt;
+&lt;li&gt;Streams will take all the operations you pass in and perform them in a single pass of the data, so you don&amp;rsquo;t have
+to write multiple loops to perform multiple operations on the same data structure, or tie your brain in knots figuring
+out how to do it in one loop. There are also no intermediate data structures when you use streams.&lt;/li&gt;
+&lt;li&gt;The implementation
+can be optimised under the covers (e.g. not performing the &lt;code&gt;sort&lt;/code&gt; operation if the data is already ordered correctly),
+and the developer doesn&amp;rsquo;t have to worry about it. Java can introduce further optimisations in later releases without
+changing the API or impacting the code a developer has already written.&lt;/li&gt;
+&lt;li&gt;These new features in Java have a focus on readability, since code is much more often read than written.&lt;/li&gt;
+&lt;li&gt;The operations are easier to parallelise, because the developer is no longer dictating the &lt;em&gt;how&lt;/em&gt; - multiple &lt;code&gt;for&lt;/code&gt; loops
+might not be easy to parallelise, but a series of operations can be.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html&#34;&gt;Default methods&lt;/a&gt; and
+new support for &lt;a href=&#34;http://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html#static&#34;&gt;static methods on interfaces&lt;/a&gt; are interesting.
+I&amp;rsquo;d forgotten you could put static methods on interfaces and I&amp;rsquo;m going to sneak them into my latest project.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/jf14-nashorn-2126515.html&#34;&gt;Nashorn&lt;/a&gt; is here to replace Rhino. Personally I haven&amp;rsquo;t worked in the sort of environment that would need server-side
+JavaScript so this whole area has passed me by somewhat, but seems it might be interesting for Node.js or creating
+a &lt;a href=&#34;http://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop&#34;&gt;REPL&lt;/a&gt;
+in JavaScript that you want to run on the JVM.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;https://blogs.oracle.com/java-platform-group/entry/java_8_s_new_type&#34;&gt;additional annotation support in Java 8&lt;/a&gt;
+will be useful for &lt;a href=&#34;http://www.oracle.com/technetwork/java/javaee/overview/index.html&#34;&gt;Java EE&lt;/a&gt;.  As this is something I&amp;rsquo;m currently playing
+with (specifically web sockets) I&amp;rsquo;m interested in this, but it seems like it will be a while before this filters into
+the Java EE that&amp;rsquo;s used on a daily basis.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.oracle.com/technetwork/java/javaseproducts/mission-control/java-mission-control-1998576.html&#34;&gt;Mission Control and Flight Recorder&lt;/a&gt; - look interesting.  Feel like I should play with them.&lt;/li&gt;
+&lt;li&gt;Many people are skipping straight from Java 6 to 8 - the new language features and improved performance are major driving
+factors&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.java.com/en/download/faq/java_7.xml&#34;&gt;End of public updates of Java 7 in April&lt;/a&gt;. Having libraries that, um&amp;hellip; &lt;em&gt;encourage&lt;/em&gt;&amp;hellip; adoption of the latest version of
+Java makes life a lot easier for those who develop the Java language, as they can concentrate on moving the language
+forward and not be tied down supporting old versions.&lt;/li&gt;
+&lt;li&gt;Either this is the first time I&amp;rsquo;ve heard of &lt;a href=&#34;http://www.oracle.com/technetwork/java/javadb/overview/index.html&#34;&gt;JavaDB&lt;/a&gt;,
+or my memory has completely discarded it. I had no idea what it was.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9&lt;/a&gt; is well under way, check out the JEPs.&lt;/li&gt;
+&lt;li&gt;(This is the &lt;a href=&#34;http://openjdk.java.net/jeps/1&#34;&gt;JEP process&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Jigsaw&lt;/a&gt; was explained, and actually I could see myself using it for the project I&amp;rsquo;m working on right now. I had a look
+to see if I could use it via the OpenJDK, but it looks like the groundwork is there, but not the actual modules themselves.&lt;/li&gt;
+&lt;li&gt;The &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/tech/g1-intro-jsp-135488.html&#34;&gt;G1 Garbage Collector&lt;/a&gt; is &amp;ldquo;&amp;hellip;the go forward GC&amp;rdquo;, it&amp;rsquo;s the one that&amp;rsquo;s being actively worked on.&lt;/li&gt;
+&lt;li&gt;This is the first I&amp;rsquo;ve heard of &lt;a href=&#34;http://openjdk.java.net/jeps/193&#34;&gt;Enhanced Volatiles&lt;/a&gt;, I&amp;rsquo;m so behind the times!&lt;/li&gt;
+&lt;li&gt;Access to internal packages is going away in Java 9. So
+&lt;a href=&#34;http://www.oracle.com/technetwork/java/faq-sun-packages-142232.html&#34;&gt;don&amp;rsquo;t use any &lt;code&gt;sun.*&lt;/code&gt; packages&lt;/a&gt;.
+Use &lt;a href=&#34;http://java.dzone.com/articles/jdeps-jdk-8-command-line&#34;&gt;jdeps&lt;/a&gt; to identify any
+dependencies in your code that need to change.&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and, looking further ahead than Java 9, we have &lt;a href=&#34;http://openjdk.java.net/jeps/169&#34;&gt;value types&lt;/a&gt; and
+&lt;a href=&#34;http://openjdk.java.net/projects/valhalla/&#34;&gt;Project Valhalla&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;a &lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL for Java&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;possibly a &lt;a href=&#34;http://openjdk.java.net/jeps/198&#34;&gt;lightweight JSON API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&amp;hellip;and &lt;a href=&#34;http://cr.openjdk.java.net/~psandoz/varhandles/jvmls14-varHandles.pdf&#34;&gt;VarHandles&lt;/a&gt; were also mentioned.&lt;/li&gt;
+&lt;li&gt;Finally, the guys mentioned a &lt;a href=&#34;http://youtu.be/2y5Pv4yN0b0&#34;&gt;talk by Brian Goetz called &amp;ldquo;Stewardship: the Sobering Parts&amp;rdquo;&lt;/a&gt;, which has gone onto my
+to-watch list.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_0&#34;&gt;Ideas&lt;/h4&gt;
+
+&lt;p&gt;It became clear throughout the talk there are plenty of ideas that we could explore in later presentations.  If you want to see
+any of the following, add a comment or ping me or &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;IsraKaos&lt;/a&gt; on twitter or Meetup and we&amp;rsquo;ll try and schedule it.&lt;/p&gt;
+
+&lt;p&gt;Similarly, if you can present on any of these topics and want to come to a beautiful, sunny city with amazing food to
+do so, drop me a line:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;The OpenJDK&lt;/li&gt;
+&lt;li&gt;The JCP, the purpose, the processes, the people&lt;/li&gt;
+&lt;li&gt;Adopt a JSR, Adopt OpenJDK&lt;/li&gt;
+&lt;li&gt;New Date/Time (JSR310)&lt;/li&gt;
+&lt;li&gt;JavaFX&lt;/li&gt;
+&lt;li&gt;Code optimisation vs Data optimisation (I honestly don&amp;rsquo;t know what this means, but I wrote it down in my notes)&lt;/li&gt;
+&lt;li&gt;Java EE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;toc_1&#34;&gt;Further Reading&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I really liked &lt;a href=&#34;http://www.amazon.com/gp/product/1449370772/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1449370772&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=GGWNXKE672H3G2FY&#34;&gt;Richard Warburton&amp;rsquo;s Lambdas and Streams&lt;/a&gt; book&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1617291994/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=1617291994&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=KDGWBWOK2S6FVS6F&#34;&gt;Java 8 in Action&lt;/a&gt; has details on other Java 8 features like Date and Time&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/0321927761/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;amp;camp=1789&amp;amp;creative=9325&amp;amp;creativeASIN=0321927761&amp;amp;linkCode=as2&amp;amp;tag=trissramb-20&amp;amp;linkId=7VJH32FI5ZVEDOMW&#34;&gt;Java 8 for the Really Impatient&lt;/a&gt; covers JavaFX too, and highlights some Java 7 features you might like&lt;/li&gt;
+&lt;li&gt;Brian Goetz did a great talk last year, &lt;a href=&#34;https://www.youtube.com/watch?v=MLksirK9nnE&#34;&gt;&amp;ldquo;Lambdas in Java: A peek under the hood&amp;rdquo;&lt;/a&gt;. I had to watch it twice before even half of the info sank in, but it&amp;rsquo;s really interesting.&lt;/li&gt;
+&lt;li&gt;Stephen Colebourne, the guy behind Joda time and the new Date and Time API, has &lt;a href=&#34;http://vimeo.com/87157763&#34;&gt;this talk about the new API&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;Java 9 OpenJDK page&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
