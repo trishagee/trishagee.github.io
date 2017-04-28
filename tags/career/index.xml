@@ -16,6 +16,9 @@
       <guid>https://trishagee.github.io/presentation/becoming_buzzword_compliant/</guid>
       <description>
 
+&lt;p&gt;How do you keep your skills up to date in this fast-moving and turbulant
+industry?&lt;/p&gt;
+
 &lt;h1 id=&#34;toc_0&#34;&gt;Abstract&lt;/h1&gt;
 
 &lt;blockquote&gt;
@@ -30,9 +33,13 @@ it’s a tall order, learning to be a fully buzzword compliant developer, archit
 &lt;p&gt;&lt;em&gt;During this talk, Trisha will give an irreverent overview of the current
 technical landscape and present a survival guide for those who want to stay ahead in this turbulent industry.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h1 id=&#34;toc_1&#34;&gt;Resources&lt;/h1&gt;
+&lt;h1 id=&#34;toc_1&#34;&gt;Slides&lt;/h1&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;News&lt;/h2&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/4uySiObJeca3dX&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+
+&lt;h1 id=&#34;toc_2&#34;&gt;Resources&lt;/h1&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;News&lt;/h2&gt;
 
 &lt;p&gt;These are the sources I mention in the talk and some of the tools I personally
 use to help organise my news.  Definite slant towards the Java / JVM world.&lt;/p&gt;
@@ -66,7 +73,7 @@ You can subscribe to receive regular updates via email too if you prefer.&lt;/p&
 later, including offline.  Useful for commuting.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;More Info&lt;/h2&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;More Info&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;Blockchain&lt;/strong&gt;&lt;/p&gt;
 
@@ -92,7 +99,7 @@ this presentation:&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://rxmarbles.com/&#34;&gt;RxMarbles&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;toc_4&#34;&gt;Credits&lt;/h1&gt;
+&lt;h1 id=&#34;toc_5&#34;&gt;Credits&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://flic.kr/p/b99vsi&#34;&gt;Enigma Machine Photo: Adam Foster&lt;/a&gt;&lt;/li&gt;
@@ -103,7 +110,7 @@ this presentation:&lt;/p&gt;
 from &lt;a href=&#34;http://www.unicode.org/L2/L2015/15229-bitcoin-sign.pdf&#34;&gt;Proposal for addition of bitcoin sign&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&#34;toc_5&#34;&gt;Related Presentations&lt;/h1&gt;
+&lt;h1 id=&#34;toc_6&#34;&gt;Related Presentations&lt;/h1&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;/presentation/staying_ahead_of_the_curve&#34;&gt;Staying Ahead of the Curve&lt;/a&gt;&lt;/li&gt;
