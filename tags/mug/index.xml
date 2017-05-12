@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Mug on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/mug/index.xml/</link>
+    <link>/tags/mug/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Sevilla MUG March Madness</title>
-      <link>https://trishagee.github.io/post/svq_mug_march_madness/</link>
+      <link>/post/svq_mug_march_madness/</link>
       <pubDate>Wed, 19 Mar 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/svq_mug_march_madness/</guid>
+      <guid>/post/svq_mug_march_madness/</guid>
       <description>&lt;figure &gt;
     
         &lt;img src=&#34;https://lh4.googleusercontent.com/-JVIgox7nGXo/UyjIQYxtiSI/AAAAAAAANc4/JV3lj4xwcgk/w919-h689-no/IMG_20140318_193758.jpg&#34;  /&gt;

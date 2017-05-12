@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Java on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/java/index.xml/</link>
+    <link>/tags/java/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Anticipating Java 9 - Functionality and Tooling</title>
-      <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
+      <link>/presentation/java_9_are_we_there_yet/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
+      <guid>/presentation/java_9_are_we_there_yet/</guid>
       <description>
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
@@ -75,10 +75,10 @@ also available&lt;/a&gt;).&lt;/p&gt;
     
     <item>
       <title>Real World Java 9</title>
-      <link>https://trishagee.github.io/presentation/real_world_java_9/</link>
+      <link>/presentation/real_world_java_9/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
+      <guid>/presentation/real_world_java_9/</guid>
       <description>
 
 &lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;
@@ -214,10 +214,10 @@ is out I will update this to link to it. Highly recommended.&lt;/li&gt;
     
     <item>
       <title>Code Review Matters and Manners</title>
-      <link>https://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
+      <link>/presentation/code_review_matters_and_manners/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
+      <guid>/presentation/code_review_matters_and_manners/</guid>
       <description>
 
 &lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
@@ -280,10 +280,10 @@ into a battlefield.&lt;/p&gt;
     
     <item>
       <title>Applying Java 8 Idioms to Existing Code</title>
-      <link>https://trishagee.github.io/presentation/refactoring_to_java_8/</link>
+      <link>/presentation/refactoring_to_java_8/</link>
       <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/refactoring_to_java_8/</guid>
+      <guid>/presentation/refactoring_to_java_8/</guid>
       <description>
 
 &lt;ul&gt;
@@ -439,10 +439,10 @@ Article: &lt;a href=&#34;http://zeroturnaround.com/rebellabs/java-8-best-practic
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
-      <link>https://trishagee.github.io/post/java_8_mooc_session3/</link>
+      <link>/post/java_8_mooc_session3/</link>
       <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/java_8_mooc_session3/</guid>
+      <guid>/post/java_8_mooc_session3/</guid>
       <description>&lt;p&gt;Last night was the final get-together to discuss the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
@@ -579,10 +579,10 @@ And if you can find (or run) a local meetup to discuss it, it makes the experien
     
     <item>
       <title>Java 8 MOOC - Session 2 Summary</title>
-      <link>https://trishagee.github.io/post/java_8_mooc_session2/</link>
+      <link>/post/java_8_mooc_session2/</link>
       <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/java_8_mooc_session2/</guid>
+      <guid>/post/java_8_mooc_session2/</guid>
       <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
@@ -768,10 +768,10 @@ Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/22
     
     <item>
       <title>Java 8 MOOC - Session 1 Summary</title>
-      <link>https://trishagee.github.io/post/java_8_mooc_session1/</link>
+      <link>/post/java_8_mooc_session1/</link>
       <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/java_8_mooc_session1/</guid>
+      <guid>/post/java_8_mooc_session1/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
@@ -833,10 +833,10 @@ more clarity on.&lt;/p&gt;
     
     <item>
       <title>Java at 20</title>
-      <link>https://trishagee.github.io/post/java_at_20/</link>
+      <link>/post/java_at_20/</link>
       <pubDate>Fri, 22 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/java_at_20/</guid>
+      <guid>/post/java_at_20/</guid>
       <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
  No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;
@@ -845,10 +845,10 @@ more clarity on.&lt;/p&gt;
     
     <item>
       <title>Groovy vs Java</title>
-      <link>https://trishagee.github.io/presentation/groovy_vs_java/</link>
+      <link>/presentation/groovy_vs_java/</link>
       <pubDate>Mon, 06 Apr 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/groovy_vs_java/</guid>
+      <guid>/presentation/groovy_vs_java/</guid>
       <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.&lt;/p&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/VK2sMI5B1pY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
@@ -875,10 +875,10 @@ more clarity on.&lt;/p&gt;
     
     <item>
       <title>The State of Java</title>
-      <link>https://trishagee.github.io/post/svq_state_of_java_update/</link>
+      <link>/post/svq_state_of_java_update/</link>
       <pubDate>Thu, 29 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/svq_state_of_java_update/</guid>
+      <guid>/post/svq_state_of_java_update/</guid>
       <description>
 
 &lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
@@ -987,10 +987,10 @@ do so, drop me a line:&lt;/p&gt;
     
     <item>
       <title>Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</title>
-      <link>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</link>
+      <link>/resources/angular_java_groovy_mongodb_workshop/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
+      <guid>/resources/angular_java_groovy_mongodb_workshop/</guid>
       <description>
 
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
@@ -1114,10 +1114,10 @@ dependencies should have been downloaded.&lt;/p&gt;
     
     <item>
       <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
-      <link>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
+      <link>/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
       <pubDate>Mon, 20 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
+      <guid>/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
       <description>
 
 &lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
@@ -1186,10 +1186,10 @@ the full version and it will save you so much time and effort.&lt;/li&gt;
     
     <item>
       <title>Getting Started with MongoDB and Java</title>
-      <link>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</link>
+      <link>/post/getting_started_with_mongodb_and_java/</link>
       <pubDate>Thu, 14 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
+      <guid>/post/getting_started_with_mongodb_and_java/</guid>
       <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
 documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
 developer.&lt;/p&gt;
@@ -1211,10 +1211,10 @@ operations using the Java driver:&lt;/p&gt;
     
     <item>
       <title>Sevilla Java User Group Java 8 Launch Party</title>
-      <link>https://trishagee.github.io/post/svq_java8_launch_party/</link>
+      <link>/post/svq_java8_launch_party/</link>
       <pubDate>Fri, 01 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/svq_java8_launch_party/</guid>
+      <guid>/post/svq_java8_launch_party/</guid>
       <description>&lt;p&gt;Last night at the Sevilla JUG we officially celebrated the launch of &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt; - yay!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;
@@ -1238,10 +1238,10 @@ which is a great source of presentations from international speakers.&lt;/p&gt;
     
     <item>
       <title>Nighthacking at Sevilla Java User Group</title>
-      <link>https://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
+      <link>/post/nighthacking_jug_sevilla/</link>
       <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
+      <guid>/post/nighthacking_jug_sevilla/</guid>
       <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
 for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
 and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana

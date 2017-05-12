@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Recruitment on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/recruitment/index.xml/</link>
+    <link>/tags/recruitment/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>LinkedIn Etiquette</title>
-      <link>https://trishagee.github.io/post/linkedin_etiquette/</link>
+      <link>/post/linkedin_etiquette/</link>
       <pubDate>Wed, 06 Nov 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/linkedin_etiquette/</guid>
+      <guid>/post/linkedin_etiquette/</guid>
       <description>&lt;p&gt;For no reason other than &lt;a href=&#34;http://www.linkedin.com/&#34;&gt;LinkedIn&lt;/a&gt; communications are starting to irritate me, here&amp;rsquo;s my personal
 LinkedIn Etiquette guide. Feel free to disagree with it all.&lt;/p&gt;
 
@@ -71,10 +71,10 @@ necessarily add you back - all you need to do is type in the little invitation b
     
     <item>
       <title>Life on both sides of the interview table</title>
-      <link>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</link>
+      <link>/post/life_on_both_sides_of_the_interview_table/</link>
       <pubDate>Thu, 29 Aug 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
+      <guid>/post/life_on_both_sides_of_the_interview_table/</guid>
       <description>&lt;p&gt;InfoQ has posted the video of Dan North and I opining on the subject of hiring. &amp;nbsp;Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. &amp;nbsp;We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://www.infoq.com/presentations/job-interview-tips#.UiBS9_WZJyU.blogger&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;It&amp;rsquo;s kind of funny because we talk a lot about hiring at ThoughtWorks (where we both worked, and which has one of the &lt;a href=&#34;http://www.businessinsider.com/hardest-tech-company-job-interviews-2012-8&#34;&gt;toughest interview processes&lt;/a&gt; in the industry) and LMAX, which learnt a lot off ThoughtWorks and shaped its own process for a smaller company that has different goals. &amp;nbsp;Yet neither of us work at those places now. &amp;nbsp;Still, we share stories from many of the places we&amp;rsquo;ve worked (or chose not to work), and if there&amp;rsquo;s one take-home point, it&amp;rsquo;s that hiring (and being hired) is not a simple thing to do well.&lt;/p&gt;
 </description>
     </item>

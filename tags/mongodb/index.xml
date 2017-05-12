@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Mongodb on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/mongodb/index.xml/</link>
+    <link>/tags/mongodb/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</title>
-      <link>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</link>
+      <link>/resources/angular_java_groovy_mongodb_workshop/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
+      <guid>/resources/angular_java_groovy_mongodb_workshop/</guid>
       <description>
 
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
@@ -137,10 +137,10 @@ dependencies should have been downloaded.&lt;/p&gt;
     
     <item>
       <title>New Year, New Adventures</title>
-      <link>https://trishagee.github.io/post/new_year_new_adventures/</link>
+      <link>/post/new_year_new_adventures/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/new_year_new_adventures/</guid>
+      <guid>/post/new_year_new_adventures/</guid>
       <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
 called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
 this role were: to learn what it was
@@ -174,10 +174,10 @@ save me from the curse of the live demo.  Things can only get better from here, 
     
     <item>
       <title>MongoDB London</title>
-      <link>https://trishagee.github.io/post/mongodb_london/</link>
+      <link>/post/mongodb_london/</link>
       <pubDate>Wed, 22 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/mongodb_london/</guid>
+      <guid>/post/mongodb_london/</guid>
       <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;So, &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt; is nearly upon us again,
@@ -210,10 +210,10 @@ it&amp;rsquo;s only £45! &lt;a href=&#34;https://www.eventbrite.com/e/mongodb-l
     
     <item>
       <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
-      <link>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
+      <link>/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
       <pubDate>Mon, 20 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
+      <guid>/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
       <description>
 
 &lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
@@ -282,10 +282,10 @@ the full version and it will save you so much time and effort.&lt;/li&gt;
     
     <item>
       <title>Using Groovy to import XML into MongoDB</title>
-      <link>https://trishagee.github.io/post/groovy_import_to_mongodb/</link>
+      <link>/post/groovy_import_to_mongodb/</link>
       <pubDate>Tue, 07 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/groovy_import_to_mongodb/</guid>
+      <guid>/post/groovy_import_to_mongodb/</guid>
       <description>
 
 &lt;p&gt;This year I&amp;rsquo;ve been demonstrating how easy it is to &lt;a href=&#34;https://www.youtube.com/watch?v=MRrSAkEAnZQ&#34;&gt;create modern web apps using AngularJS,
@@ -452,10 +452,10 @@ and transforming it into something that can be inserted into a MongoDB collectio
     
     <item>
       <title>Getting Started with MongoDB and Java</title>
-      <link>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</link>
+      <link>/post/getting_started_with_mongodb_and_java/</link>
       <pubDate>Thu, 14 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
+      <guid>/post/getting_started_with_mongodb_and_java/</guid>
       <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
 documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
 developer.&lt;/p&gt;
@@ -477,10 +477,10 @@ operations using the Java driver:&lt;/p&gt;
     
     <item>
       <title>What do you mean, Backwards Compatibility? (YOW 2013)</title>
-      <link>https://trishagee.github.io/presentation/yow_2013_backwards/</link>
+      <link>/presentation/yow_2013_backwards/</link>
       <pubDate>Tue, 22 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/yow_2013_backwards/</guid>
+      <guid>/presentation/yow_2013_backwards/</guid>
       <description>&lt;p&gt;YOW recorded me, yet again, talking about the adventure that is the design of the new Java Driver for MongoDB.  This is the same talk I
 gave at &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;GeeCON&lt;/a&gt; and &lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;DevoxxUK&lt;/a&gt;,
 with some updates based on our Journey So Far.  In it, I cover the architecture of the new driver and some of our current thoughts
@@ -492,10 +492,10 @@ around where we want the API to go.&lt;/p&gt;
     
     <item>
       <title>Interviewed by Charles Humble for InfoQ</title>
-      <link>https://trishagee.github.io/presentation/infoq-interview-march-2014/</link>
+      <link>/presentation/infoq-interview-march-2014/</link>
       <pubDate>Tue, 15 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/infoq-interview-march-2014/</guid>
+      <guid>/presentation/infoq-interview-march-2014/</guid>
       <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&amp;rsquo;s always a pleasure to be interviewed by Charles,
 I think he brings out the best in me.&lt;/p&gt;
 
@@ -507,10 +507,10 @@ I think he brings out the best in me.&lt;/p&gt;
     
     <item>
       <title>Sevilla MUG March Madness</title>
-      <link>https://trishagee.github.io/post/svq_mug_march_madness/</link>
+      <link>/post/svq_mug_march_madness/</link>
       <pubDate>Wed, 19 Mar 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/svq_mug_march_madness/</guid>
+      <guid>/post/svq_mug_march_madness/</guid>
       <description>&lt;figure &gt;
     
         &lt;img src=&#34;https://lh4.googleusercontent.com/-JVIgox7nGXo/UyjIQYxtiSI/AAAAAAAANc4/JV3lj4xwcgk/w919-h689-no/IMG_20140318_193758.jpg&#34;  /&gt;
@@ -555,30 +555,30 @@ the menu of the new location seemed to be a massive win.&lt;/p&gt;
     
     <item>
       <title>Sevilla MUG, first event</title>
-      <link>https://trishagee.github.io/post/sevilla_mug_first_event/</link>
+      <link>/post/sevilla_mug_first_event/</link>
       <pubDate>Fri, 31 Jan 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/sevilla_mug_first_event/</guid>
+      <guid>/post/sevilla_mug_first_event/</guid>
       <description>&lt;p&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-ACbZtH8y3pM/Uurim-7CuNI/AAAAAAAAMfU/iR7aAjV3L_E/s1600/IMG_20140130_191433.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://2.bp.blogspot.com/-ACbZtH8y3pM/Uurim-7CuNI/AAAAAAAAMfU/iR7aAjV3L_E/s1600/IMG_20140130_191433.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;Last night was the inaugural meeting of the Sevilla MongoDN User Group. &amp;nbsp;An event organised with just over 48 hours notice, in a city where I don&amp;rsquo;t speak the language and where even my best-connected contacts aren&amp;rsquo;t sure they&amp;rsquo;re fully plugged in to the tech scene.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;ll admit, I had some reservations:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;a lightning talk? Will people come all that way for beer and 15 minutes of presentation?&lt;/li&gt;&lt;li&gt;in English? Whilst I&amp;rsquo;m desperately learning Spanish to get closer to presenting in Spanish, at this point I&amp;rsquo;m just not ready and have to hope people want to listen to me ramble in a foreign language&lt;/li&gt;&lt;li&gt;a MUG? Are people interested in joining a group that&amp;rsquo;s solely focussed on one technology, a technology that might not have adoption here or even interest?&lt;/li&gt;&lt;li&gt;two days notice? &amp;nbsp;Are you kidding? &amp;nbsp;I know people here like to figure out their plans at the last minute, but surely this is shooting ourselves in the foot before we even start.&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-ZxzdtnwGKrk/UurinNqIjZI/AAAAAAAAMfQ/HHbZGT9MCV0/s1600/IMG_20140130_192137.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-ZxzdtnwGKrk/UurinNqIjZI/AAAAAAAAMfQ/HHbZGT9MCV0/s1600/IMG_20140130_192137.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;And then last night&amp;hellip; &amp;nbsp;The people&amp;hellip; they came. &amp;nbsp;On time. &amp;nbsp;And with their interesting stories and their varied backgrounds. &amp;nbsp;They listened, they asked questions, they wanted more.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-nU0wPfzI6DE/UuritPmwnDI/AAAAAAAAMfk/R49MwaxAzCk/s1600/IMG_20140130_201313.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-nU0wPfzI6DE/UuritPmwnDI/AAAAAAAAMfk/R49MwaxAzCk/s1600/IMG_20140130_201313.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;What a great event. &amp;nbsp;What an awesome city. &lt;br /&gt;&lt;br /&gt;I can&amp;rsquo;t wait for next month. &lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/--soNKu8wqYU/UurimtUlxPI/AAAAAAAAMfM/wh3q9UV1FLQ/s1600/IMG_20140130_192632.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://1.bp.blogspot.com/--soNKu8wqYU/UurimtUlxPI/AAAAAAAAMfM/wh3q9UV1FLQ/s1600/IMG_20140130_192632.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: left;&#34;&gt;(Slides here, with usual caveats of them being pretty pointless on their own)&lt;/div&gt;&lt;iframe frameborder=&#34;0&#34; height=&#34;300&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/30654613&#34; width=&#34;376&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Introduction to MongoDB and Big Data</title>
-      <link>https://trishagee.github.io/post/introduction_to_mongodb_and_big_data/</link>
+      <link>/post/introduction_to_mongodb_and_big_data/</link>
       <pubDate>Thu, 23 Jan 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/introduction_to_mongodb_and_big_data/</guid>
+      <guid>/post/introduction_to_mongodb_and_big_data/</guid>
       <description>&lt;p&gt;I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&amp;rsquo;s good in the &amp;ldquo;Big Data&amp;rdquo; space.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;table border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;&lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1390425195000&#34; height=&#34;28&#34; /&gt;&lt;/td&gt;&lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/jan_feb_2014?pg=52&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;&lt;img alt=&#34;51&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/jan_feb_2014/data/imgpages/smtn/0052_vyvpwu.gif?lm=1390425195000&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;&lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;MongoDB and Big Data&lt;/span&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>JAX London &amp; MongoDB Tutorial</title>
-      <link>https://trishagee.github.io/post/jax_london__mongodb_tutorial/</link>
+      <link>/post/jax_london__mongodb_tutorial/</link>
       <pubDate>Thu, 07 Nov 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/jax_london__mongodb_tutorial/</guid>
+      <guid>/post/jax_london__mongodb_tutorial/</guid>
       <description>&lt;p&gt;In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get
 there, and not because of the &lt;a href=&#34;http://metro.co.uk/2013/10/27/its-ok-to-take-the-morning-off-work-if-storm-hits-michael-fish-says-so-4162862/&#34;&gt;Super Storm&lt;/a&gt;.  Still, that gave me the day to finish off the tutorial I was running there on
 Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute,
@@ -637,10 +637,10 @@ MongoDB Java API (in its current, unfinished, state).&lt;/p&gt;
     
     <item>
       <title>The New 3.0 Java Driver for MongoDB</title>
-      <link>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</link>
+      <link>/resources/the_new_30_java_driver_for_mongodb/</link>
       <pubDate>Mon, 09 Sep 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</guid>
+      <guid>/resources/the_new_30_java_driver_for_mongodb/</guid>
       <description>
 
 &lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
@@ -668,20 +668,20 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
     
     <item>
       <title>How to get started with the new MongoDB Java Driver</title>
-      <link>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</link>
+      <link>/post/how_to_get_started_with_the_new_mongodb_java_driver/</link>
       <pubDate>Sat, 31 Aug 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</guid>
+      <guid>/post/how_to_get_started_with_the_new_mongodb_java_driver/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://blog.mongodb.org/post/59769560940/the-mongodb-java-driver-3-0-whats-changing&#34;&gt;second in my short series of blogs&lt;/a&gt; about the new Java driver is now available for your perusal. &amp;nbsp;In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.&lt;br /&gt;&lt;br /&gt;The post also shows that &lt;a href=&#34;http://www.gradle.org/&#34;&gt;Gradle&lt;/a&gt; is prettier than &lt;a href=&#34;http://maven.apache.org/&#34;&gt;Maven&lt;/a&gt;. &amp;nbsp;Sorry Maven.&lt;br /&gt;&lt;br /&gt;If you are going to play with the new driver, please read all the caveats carefully. &amp;nbsp;I know it looks a bit like the warnings on your prescription medicine, but it serves the same purpose. &amp;nbsp;Short version: the driver is not finished yet, and should not be used in production.&lt;br /&gt;&lt;br /&gt;We really want to hear your experiences with the driver - it is an open source project and &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; is very much driven by the community, we want to hear from you. &amp;nbsp;But only if you say nice things. &amp;nbsp;No, seriously, please tell us if you have problems, if functionality is missing, if your tests fail if you start to use it, etc etc etc.&lt;br /&gt;&lt;br /&gt;Go play.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Interviewed by Stephen Chin about JavaOne 2013</title>
-      <link>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</link>
+      <link>/post/interviewed_by_stephen_chin_about_javaone_2013/</link>
       <pubDate>Fri, 30 Aug 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
+      <guid>/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
       <description>&lt;p&gt;Yesterday &lt;a href=&#34;https://twitter.com/steveonjava&#34;&gt;Stephen Chin&lt;/a&gt;, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about &lt;a href=&#34;http://www.oracle.com/javaone/index.html&#34;&gt;JavaOne&lt;/a&gt;, the &lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;new MongoDB Java driver&lt;/a&gt;, and my plans to Change The World.&lt;br /&gt;&lt;br /&gt;It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. &amp;nbsp;There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MdOHjGtITjo?list=PLX8CzqL3ArzXMvt5y8VHXKmr8gDC-xOH_&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>

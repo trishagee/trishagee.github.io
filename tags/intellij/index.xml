@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Intellij on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/intellij/index.xml/</link>
+    <link>/tags/intellij/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Anticipating Java 9 - Functionality and Tooling</title>
-      <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
+      <link>/presentation/java_9_are_we_there_yet/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
+      <guid>/presentation/java_9_are_we_there_yet/</guid>
       <description>
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
@@ -75,10 +75,10 @@ also available&lt;/a&gt;).&lt;/p&gt;
     
     <item>
       <title>Real World Java 9</title>
-      <link>https://trishagee.github.io/presentation/real_world_java_9/</link>
+      <link>/presentation/real_world_java_9/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
+      <guid>/presentation/real_world_java_9/</guid>
       <description>
 
 &lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;
@@ -214,10 +214,10 @@ is out I will update this to link to it. Highly recommended.&lt;/li&gt;
     
     <item>
       <title>IntelliJ IDEA for Eclipse Users</title>
-      <link>https://trishagee.github.io/resources/intellij_for_eclipse_users/</link>
+      <link>/resources/intellij_for_eclipse_users/</link>
       <pubDate>Wed, 05 Oct 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
+      <guid>/resources/intellij_for_eclipse_users/</guid>
       <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/qKgzj8tZX9JDmA&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
@@ -296,10 +296,10 @@ wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
     
     <item>
       <title>New IntelliJ Tricks I Learnt Part 2</title>
-      <link>https://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</link>
+      <link>/post/stuff_i_learnt_about_intellij_2/</link>
       <pubDate>Fri, 09 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</guid>
+      <guid>/post/stuff_i_learnt_about_intellij_2/</guid>
       <description>
 
 &lt;p&gt;Apparently, I&amp;rsquo;m all about Continuous Learning - after I wrote the
@@ -456,10 +456,10 @@ come, so stay tuned!&lt;/p&gt;
     
     <item>
       <title>New IntelliJ Tricks I Learnt Today</title>
-      <link>https://trishagee.github.io/post/stuff_i_learnt_about_intellij/</link>
+      <link>/post/stuff_i_learnt_about_intellij/</link>
       <pubDate>Wed, 07 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
+      <guid>/post/stuff_i_learnt_about_intellij/</guid>
       <description>
 
 &lt;p&gt;Day three of my &lt;a href=&#34;/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
@@ -555,10 +555,10 @@ two people will find this useful.&lt;/p&gt;
     
     <item>
       <title>New Year, New Adventures</title>
-      <link>https://trishagee.github.io/post/new_year_new_adventures/</link>
+      <link>/post/new_year_new_adventures/</link>
       <pubDate>Wed, 10 Dec 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/new_year_new_adventures/</guid>
+      <guid>/post/new_year_new_adventures/</guid>
       <description>&lt;p&gt;Just over two years ago, &lt;a href=&#34;/post/and_for_my_next_trick/&#34;&gt;I embarked upon a journey&lt;/a&gt; as a developer / evangelist for a company who was then
 called 10gen (who got fed up of saying &amp;ldquo;the MongoDB people&amp;rdquo;, and transformed into &lt;a href=&#34;http://www.mongodb.com/&#34;&gt;MongoDB Inc&lt;/a&gt;). My goals for
 this role were: to learn what it was

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Pages on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/pages/index.xml/</link>
+    <link>/tags/pages/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>The New 3.0 Java Driver for MongoDB</title>
-      <link>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</link>
+      <link>/resources/the_new_30_java_driver_for_mongodb/</link>
       <pubDate>Mon, 09 Sep 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</guid>
+      <guid>/resources/the_new_30_java_driver_for_mongodb/</guid>
       <description>
 
 &lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
@@ -41,10 +41,10 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
     
     <item>
       <title>Just Do Something</title>
-      <link>https://trishagee.github.io/resources/just_do_something/</link>
+      <link>/resources/just_do_something/</link>
       <pubDate>Wed, 19 Dec 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/just_do_something/</guid>
+      <guid>/resources/just_do_something/</guid>
       <description>
 
 &lt;p&gt;As I constantly talk about in my how-to-get-more-women-into-technology talks, we, the developers, the people who do this job,
@@ -77,10 +77,10 @@ anything to this list:&lt;/p&gt;
     
     <item>
       <title>Performance Links</title>
-      <link>https://trishagee.github.io/resources/performance_resources/</link>
+      <link>/resources/performance_resources/</link>
       <pubDate>Mon, 22 Oct 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/performance_resources/</guid>
+      <guid>/resources/performance_resources/</guid>
       <description>&lt;p&gt;A hastily thrown-together list of some of the places to get more information on how to write performant code.&lt;/p&gt;
 
 &lt;ul&gt;

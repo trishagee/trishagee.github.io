@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Html5 on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/html5/index.xml/</link>
+    <link>/tags/html5/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</title>
-      <link>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</link>
+      <link>/resources/angular_java_groovy_mongodb_workshop/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
+      <guid>/resources/angular_java_groovy_mongodb_workshop/</guid>
       <description>
 
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.

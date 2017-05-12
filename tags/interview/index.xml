@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Interview on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/interview/index.xml/</link>
+    <link>/tags/interview/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>What could possibly go wrong? (GOTO Chicago)</title>
-      <link>https://trishagee.github.io/presentation/interview_at_goto_chicago/</link>
+      <link>/presentation/interview_at_goto_chicago/</link>
       <pubDate>Tue, 12 Aug 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/interview_at_goto_chicago/</guid>
+      <guid>/presentation/interview_at_goto_chicago/</guid>
       <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving,
 which happens to be the same one I&amp;rsquo;m giving at a number of conferences this year (although of course I&amp;rsquo;m evolving it as I go along).&lt;/p&gt;
 
@@ -44,10 +44,10 @@ and if you look through the history you can see how it builds up, the same as it
     
     <item>
       <title>Interviewed by Charles Humble for InfoQ</title>
-      <link>https://trishagee.github.io/presentation/infoq-interview-march-2014/</link>
+      <link>/presentation/infoq-interview-march-2014/</link>
       <pubDate>Tue, 15 Apr 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/infoq-interview-march-2014/</guid>
+      <guid>/presentation/infoq-interview-march-2014/</guid>
       <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&amp;rsquo;s always a pleasure to be interviewed by Charles,
 I think he brings out the best in me.&lt;/p&gt;
 
@@ -59,20 +59,20 @@ I think he brings out the best in me.&lt;/p&gt;
     
     <item>
       <title>Interviewed by Stephen Chin about JavaOne 2013</title>
-      <link>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</link>
+      <link>/post/interviewed_by_stephen_chin_about_javaone_2013/</link>
       <pubDate>Fri, 30 Aug 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
+      <guid>/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
       <description>&lt;p&gt;Yesterday &lt;a href=&#34;https://twitter.com/steveonjava&#34;&gt;Stephen Chin&lt;/a&gt;, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about &lt;a href=&#34;http://www.oracle.com/javaone/index.html&#34;&gt;JavaOne&lt;/a&gt;, the &lt;a href=&#34;http://blog.mongodb.org/post/58136652766/the-mongodb-java-driver-3-0&#34;&gt;new MongoDB Java driver&lt;/a&gt;, and my plans to Change The World.&lt;br /&gt;&lt;br /&gt;It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. &amp;nbsp;There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/MdOHjGtITjo?list=PLX8CzqL3ArzXMvt5y8VHXKmr8gDC-xOH_&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>GDL Presents Women Techmakers with Trisha Gee</title>
-      <link>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</link>
+      <link>/presentation/gdl_presents_women_techmakers_with_trisha_gee/</link>
       <pubDate>Thu, 07 Mar 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
+      <guid>/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
       <description>&lt;p&gt;I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series,
 as it moves over to Europe.  In this video I talk about going to Mars, education, planning your career, being a developer,
 and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;
@@ -83,10 +83,10 @@ and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;
     
     <item>
       <title>Interviewed at Devoxx</title>
-      <link>https://trishagee.github.io/presentation/interviewed_at_devoxx/</link>
+      <link>/presentation/interviewed_at_devoxx/</link>
       <pubDate>Sat, 12 Jan 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/interviewed_at_devoxx/</guid>
+      <guid>/presentation/interviewed_at_devoxx/</guid>
       <description>&lt;p&gt;Yolande Poirier from &lt;a href=&#34;http://www.oracle.com/technetwork/index.html&#34;&gt;OTN&lt;/a&gt; interviewed me at Devoxx about my new job at 10gen,
 Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
 &lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3544&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3544&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
@@ -95,10 +95,10 @@ Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
     
     <item>
       <title>Interview and Hacking session with Stephen Chin</title>
-      <link>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</link>
+      <link>/post/interview_and_hacking_session_with_stephen_chin/</link>
       <pubDate>Wed, 31 Oct 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
+      <guid>/post/interview_and_hacking_session_with_stephen_chin/</guid>
       <description>&lt;p&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe allowfullscreen=&#34;&#34; frameborder=&#34;0&#34; height=&#34;270&#34; src=&#34;http://www.youtube.com/embed/c5-jyvVnqT0?fs=1&#34; width=&#34;480&#34;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;
 On Monday, &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Stephen Chin&lt;/a&gt; from Oracle visited me at the &lt;a href=&#34;http://www.10gen.com/&#34;&gt;10gen&lt;/a&gt; offices as part of his &lt;a href=&#34;http://steveonjava.com/nighthacking/&#34;&gt;NightHacking tour&lt;/a&gt;. &amp;nbsp;In the video we talk about my sessions at JavaOne and the &lt;a href=&#34;http://www.devoxx.com/pages/viewpage.action?pageId=6391499&#34;&gt;Agile presentation&lt;/a&gt; I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the &lt;a href=&#34;http://www.mongodb.org/display/DOCS/Java+Tutorial&#34;&gt;MongoDB Java driver&lt;/a&gt;, attempting to showcase &lt;a href=&#34;http://www.gradle.org/&#34;&gt;gradle&lt;/a&gt; at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!&lt;/p&gt;
 </description>
@@ -106,30 +106,30 @@ On Monday, &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Stephen Chin&lt;/a&gt
     
     <item>
       <title>Interviewed at GOTO Copenhagen</title>
-      <link>https://trishagee.github.io/post/interviewed_at_goto_copenhagen/</link>
+      <link>/post/interviewed_at_goto_copenhagen/</link>
       <pubDate>Thu, 23 Aug 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/interviewed_at_goto_copenhagen/</guid>
+      <guid>/post/interviewed_at_goto_copenhagen/</guid>
       <description>&lt;p&gt;I was interviewed at GOTO Copenhagen, about Java, the Disruptor, the Graduate Developer Community &amp;amp; London Java Community, and a whole host of other things. &amp;nbsp;So to make up for the lack of blogging this month, here it is:&lt;br /&gt;&lt;br /&gt;&lt;iframe allowfullscreen=&#34;allowfullscreen&#34; frameborder=&#34;0&#34; height=&#34;315&#34; src=&#34;http://www.youtube.com/embed/0OcczjVXQQc&#34; width=&#34;560&#34;&gt;&lt;/iframe&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>What Do You Do and How Did You Get There?</title>
-      <link>https://trishagee.github.io/post/what_do_you_do_and_how_did_you_get_there/</link>
+      <link>/post/what_do_you_do_and_how_did_you_get_there/</link>
       <pubDate>Sat, 19 May 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/what_do_you_do_and_how_did_you_get_there/</guid>
+      <guid>/post/what_do_you_do_and_how_did_you_get_there/</guid>
       <description>&lt;p&gt;So &lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;yet another interview&lt;/a&gt; with me is available, but this one is in written form. &amp;nbsp;It&amp;rsquo;s for the Graduate Developer Community, the aim is to show undergraduates and graduates what real techies jobs are like, and how people doing them they got there.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s long, but if you know anyone just starting out their career who wants to get a feel for where they might want to go, please point them at it. &amp;nbsp;The site has a number of interviews with people in different roles so it&amp;rsquo;s quite a good way to showcase the diversity of what&amp;rsquo;s available.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Interviewed for InfoQ at QCon London</title>
-      <link>https://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london/</link>
+      <link>/presentation/interviewed_for_infoq_at_qcon_london/</link>
       <pubDate>Fri, 18 May 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london/</guid>
+      <guid>/presentation/interviewed_for_infoq_at_qcon_london/</guid>
       <description>&lt;p&gt;I was flattered to be &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-disruptor&#34;&gt;interviewed for InfoQ&lt;/a&gt; at QCon London. It was a fun interview actually,
 and didn&amp;rsquo;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).&lt;/p&gt;
 </description>
@@ -137,30 +137,30 @@ and didn&amp;rsquo;t feel anything like the half an hour it actually took. In it
     
     <item>
       <title>Update on events</title>
-      <link>https://trishagee.github.io/post/update_on_events/</link>
+      <link>/post/update_on_events/</link>
       <pubDate>Sat, 12 May 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/update_on_events/</guid>
+      <guid>/post/update_on_events/</guid>
       <description>&lt;p&gt;Just a quick note to say I was &lt;a href=&#34;http://www.star107.co.uk/podcasts/the-app-show/show-13-podcast.mp3&#34;&gt;interviewed for another podcast&lt;/a&gt;, again to talk about all-female events. &amp;nbsp;It&amp;rsquo;s only a short one and there&amp;rsquo;s probably not much in there that I haven&amp;rsquo;t said before, either on here or in person.&lt;br /&gt;&lt;br /&gt;From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. &amp;nbsp;I&amp;rsquo;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology. &amp;nbsp;If you see me there, come and say hello!&lt;br /&gt;&lt;br /&gt;On Friday 25th May, after all the GOTO craziness, I&amp;rsquo;m going to repeat the Disruptor presentation in Rotterdam at &lt;a href=&#34;http://010dev.nl/&#34;&gt;010DEV&lt;/a&gt;, an event rather fantastically called &amp;ldquo;The Disruptor and the Perfect Programmer&amp;rdquo;, which someone on Twitter correct noted sounds like a fairy tale.&lt;br /&gt;&lt;br /&gt;After all that, I&amp;rsquo;m hopefully going to take June off to play Diablo 3 and Prototype 2, and read the next Game of Thrones book. &amp;nbsp;All these joys I have been denying myself to make sure I get everything sorted in time for next week.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Featured on a BBC Podcast</title>
-      <link>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</link>
+      <link>/post/featured_on_a_bbc_podcast/</link>
       <pubDate>Thu, 03 May 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</guid>
+      <guid>/post/featured_on_a_bbc_podcast/</guid>
       <description>&lt;p&gt;This week&amp;rsquo;s &lt;a href=&#34;http://www.bbc.co.uk/blogs/outriders/2012/05/hello_outriders_this_week_for.shtml&#34;&gt;BBC Outriders podcast&lt;/a&gt; features yours truly venting about The Subject That Won&amp;rsquo;t Go Away, Women in Technology. &amp;nbsp;I was interviewed at Sunday&amp;rsquo;s &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/04/in-which-i-defend-male-species-at-all.html&#34;&gt;Girl Geek conference&lt;/a&gt;, and got a chance to voice my opinions once again. &amp;nbsp;For those who can&amp;rsquo;t be bothered to listen, they can probably be summarised as:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;There are genuine problems that face people in our industry, let&amp;rsquo;s talk about those that you have actually faced, not ones that you imagine exist.&lt;/li&gt;&lt;li&gt;In my opinion, now is a great time for women to make a name for themselves - conference organisers are crying out for you to attend and (if you want) speak, and our industry needs talented people of any type and isn&amp;rsquo;t that fussy about who you are.&lt;/li&gt;&lt;li&gt;Please, please can we start talking about the good stuff that we see as women in IT? &amp;nbsp;We shouldn&amp;rsquo;t only talk about the issues we face. &amp;nbsp;Yes, we need to highlight problems and address them, but I believe that this message is drowning out all the great things about what we do, and why we love our jobs. &amp;nbsp;We should be encouraging people (not just women) to join us, not putting them off.&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Interview by the Oracle Technology Network at Devoxx</title>
-      <link>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</link>
+      <link>/post/interview_by_the_oracle_technology_network_at_devoxx/</link>
       <pubDate>Sun, 04 Dec 2011 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
+      <guid>/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
       <description>&lt;p&gt;Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. &amp;nbsp;Because I was there to be on the &lt;a href=&#34;http://mechanitis.blogspot.com/2011/11/why-we-shouldnt-target-women.html&#34;&gt;Why We Shouldn&amp;rsquo;t Target Women&lt;/a&gt; panel, the interview is just another platform for me to air my views on this subject again. &lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;/param&gt;&lt;param name=&#34;wmode&#34; value=&#34;direct&#34;&gt;&lt;/param&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;&gt;&lt;/param&gt;&lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;pageId=2769&#34; &gt;&lt;/param&gt;&lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;pageId=2769&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/div&gt;&lt;br /&gt;Yes, I am actually wearing pink&amp;hellip;.&lt;/p&gt;
 </description>
     </item>
