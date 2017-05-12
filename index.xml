@@ -120,6 +120,25 @@ from &lt;a href=&#34;http://www.unicode.org/L2/L2015/15229-bitcoin-sign.pdf&#34;
     </item>
     
     <item>
+      <title>Upcoming Events</title>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11-12 May&lt;/strong&gt;: DevoxxUK - &lt;a href=&#34;http://www.devoxx.co.uk/&#34;&gt;Real World Java 9&lt;/a&gt;;
+ &lt;a href=&#34;http://cfp.devoxx.co.uk/2017/talk/JPZ-5869/Don&#39;t_just_Embrace_Change,_Create_Change&#34;&gt;BoF: Don&amp;rsquo;t just Embrace Change, Create Change&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;13 May&lt;/strong&gt;: Sevilla Developer Conf 4 - &lt;a href=&#34;http://www.sevilladevelopers.com/schedule/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;17-19 May&lt;/strong&gt;: J on the Beach, Malaga - &lt;a href=&#34;http://jonthebeach.com/&#34;&gt;Real World Java 9&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14 Jun&lt;/strong&gt;: GOTO Amsterdam - &lt;a href=&#34;https://gotoamsl/2017/sessions/100&#34;&gt;Real World Java 9&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;19-21 Jun&lt;/strong&gt;: JBCNConf, Barcelona - &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Real World Java 9&lt;/a&gt;; &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Workshop: Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Anticipating Java 9 - Functionality and Tooling</title>
       <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
@@ -181,25 +200,6 @@ also available&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;The OpenJDK wiki provides &lt;a href=&#34;https://wiki.openjdk.java.net/display/Adoption/JDK+9+Outreach&#34;&gt;guidance on running your code with Java 9&lt;/a&gt;, and a
 &lt;a href=&#34;https://wiki.openjdk.java.net/display/quality/Quality+Outreach&#34;&gt;list of libraries and frameworks who are currently testing against Java 9&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;11-12 May&lt;/strong&gt;: DevoxxUK - &lt;a href=&#34;http://www.devoxx.co.uk/&#34;&gt;Real World Java 9&lt;/a&gt;;
- &lt;a href=&#34;http://cfp.devoxx.co.uk/2017/talk/JPZ-5869/Don&#39;t_just_Embrace_Change,_Create_Change&#34;&gt;BoF: Don&amp;rsquo;t just Embrace Change, Create Change&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;13 May&lt;/strong&gt;: Sevilla Developer Conf 4 - &lt;a href=&#34;http://www.sevilladevelopers.com/schedule/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;17-19 May&lt;/strong&gt;: J on the Beach, Malaga - &lt;a href=&#34;http://jonthebeach.com/&#34;&gt;Real World Java 9&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;14 Jun&lt;/strong&gt;: GOTO Amsterdam - &lt;a href=&#34;https://gotoamsl/2017/sessions/100&#34;&gt;Real World Java 9&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;19-21 Jun&lt;/strong&gt;: JBCNConf, Barcelona - &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Real World Java 9&lt;/a&gt;; &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Workshop: Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -280,11 +280,16 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/11/first-steps-with-java9-jigsaw-part-1&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/12/first-steps-with-java9-jigsaw-part-2/&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html&#34;&gt;Jdeps Tool&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.joda.org/2017/04/java-se-9-jpms-modules-are-not-artifacts.html?m=1&#34;&gt;Java SE 9 - JPMS modules are not artifacts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cfp.devoxx.co.uk/2017/talk/ORF-1487/Migrating_to_Modules&#34;&gt;Migrating to Modules&lt;/a&gt; - when the video of this talk
+is out I will update this to link to it. Highly recommended.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_6&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.reactive-streams.org/&#34;&gt;Reactive Streams API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.reactive-streams.org/announce-1.0.0#implementations&#34;&gt;Reactive Streams Implementations&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://community.oracle.com/docs/DOC-1006738&#34;&gt;Reactive Programming with JDK 9 Flow API&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/ReactiveX/RxJava/wiki&#34;&gt;RxJava Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/rxjava2-by-example&#34;&gt;RXJava2 by Example&lt;/a&gt;&lt;/li&gt;
@@ -295,16 +300,41 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;li&gt;&lt;a href=&#34;https://spring.io/blog/2016/04/19/understanding-reactive-types&#34;&gt;Understanding Reactive Types&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/rolandkuhn/reactive-streams&#34;&gt;Reactive Streams: Handling Data-Flow the Reactive Way&lt;/a&gt;(slides)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://rxmarbles.com/&#34;&gt;RxMarbles&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/reactor-by-example/&#34;&gt;Reactor by Example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;REPL&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Multi-Release JAR Files&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/238&#34;&gt;JEP 238&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/inside-java-9-part-i/#multireleasejars&#34;&gt;Simple example&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://thoughtfulsoftware.wordpress.com/2016/08/22/java-9-multi-release-jar-files-part-ii/&#34;&gt;Multi-release JAR files tutorial&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_8&#34;&gt;Stack-Walking API&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/259&#34;&gt;JEP 259&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/deep-dive-into-java-9s-stack-walking-api/&#34;&gt;Deep Dive into the Stack-Walking API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaworld.com/article/3188289/core-java/java-9s-other-new-enhancements-part-5-stack-walking-api.html&#34;&gt;Java 9&amp;rsquo;s other new enhancements, Part 5: Stack-Walking API&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_9&#34;&gt;Process API&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/102&#34;&gt;JEP 102&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaworld.com/article/3176874/java-language/java-9s-other-new-enhancements-part-3.html&#34;&gt;Java 9&amp;rsquo;s other new enhancements, Part 3: The Process API&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://iteratrlearning.com/java/2017/03/12/java9-process-api.html&#34;&gt;Java 9 Process API: The Shape of Things to Come&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_10&#34;&gt;REPL&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jclarity.com/2015/04/15/java-9-repl-getting-started-guide/&#34;&gt;Java 9 REPL – Getting started guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Other&lt;/h3&gt;
+&lt;h3 id=&#34;toc_11&#34;&gt;Other&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/gof-design-patterns-using-java-02&#34;&gt;GoF - Adapter Pattern&lt;/a&gt;&lt;/li&gt;
