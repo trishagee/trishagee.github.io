@@ -39,9 +39,10 @@
 &lt;p&gt;&lt;a href=&#34;http://jdk.java.net/9/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
 talk uses build 161).&lt;/p&gt;
 
-&lt;p&gt;At the time of writing, &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/03/support-for-java-9-modules-in-intellij-idea-2017-1/&#34;&gt;IntelliJ IDEA 2017.1&lt;/a&gt; comes with
-basic support for jigsaw. This support will continue to evolve, so keep an eye
-on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ blog&lt;/a&gt; for further updates.&lt;/p&gt;
+&lt;p&gt;IntelliJ IDEA 2017.1
+&lt;a href=&#34;https://blog.jetbrains.com/idea/2017/03/support-for-java-9-modules-in-intellij-idea-2017-1/&#34;&gt;introduced basic support for modules&lt;/a&gt;.
+This support has evolved a little since then, I&amp;rsquo;m now using the
+&lt;a href=&#34;https://www.jetbrains.com/idea/nextversion/&#34;&gt;2017.2 EAP&lt;/a&gt; to get the best support for Java 9.&lt;/p&gt;
 
 &lt;p&gt;The Jigsaw code I used was from a workshop by Brian Goetz.  But to start playing with Jigsaw, take a look at
 the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;.  I used the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
