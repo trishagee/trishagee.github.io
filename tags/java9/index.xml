@@ -150,6 +150,7 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/ultimate-guide-to-java-9/&#34;&gt;The Ultimate Guide to Java 9&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/inside-java-9-part-i/&#34;&gt;Inside Java 9 – Version Schema, Multi-Release JARs, and More&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/inside-java-9-part-ii/&#34;&gt;Inside Java 9 – Performance, Compiler, and More&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.javaworld.com/article/3169388/java-language/java-9s-other-new-enhancements-part-2.html&#34;&gt;Java 9&amp;rsquo;s other new enhancements, Part 2: Milling Project Coin&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://download.java.net/java/jdk9/docs/index.html&#34;&gt;Java Platform Standard Edition 9 Early Access Documentation&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://download.java.net/java/jdk9/docs/api/overview-summary.html&#34;&gt;Java 9 Javadoc&lt;/a&gt; (note the new search feature!)&lt;/li&gt;
 &lt;/ul&gt;
@@ -158,6 +159,7 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Project Jigsaw&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/261&#34;&gt;JEP 261: The Java Platform Module System&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Quick Start Tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/spec/sotms/&#34;&gt;The State of the Module System&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://mreinhold.org/blog/jigsaw-module-system&#34;&gt;Project Jigsaw: The module system&lt;/a&gt;&lt;/li&gt;
