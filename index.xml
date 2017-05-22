@@ -170,6 +170,25 @@ from &lt;a href=&#34;http://www.unicode.org/L2/L2015/15229-bitcoin-sign.pdf&#34;
     </item>
     
     <item>
+      <title>Upcoming Events</title>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;11-12 May&lt;/strong&gt;: DevoxxUK - &lt;a href=&#34;http://www.devoxx.co.uk/&#34;&gt;Real World Java 9&lt;/a&gt;;
+ &lt;a href=&#34;http://cfp.devoxx.co.uk/2017/talk/JPZ-5869/Don&#39;t_just_Embrace_Change,_Create_Change&#34;&gt;BoF: Don&amp;rsquo;t just Embrace Change, Create Change&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;13 May&lt;/strong&gt;: Sevilla Developer Conf 4 - &lt;a href=&#34;http://www.sevilladevelopers.com/schedule/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;17-19 May&lt;/strong&gt;: J on the Beach, Malaga - &lt;a href=&#34;http://jonthebeach.com/&#34;&gt;Real World Java 9&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;14 Jun&lt;/strong&gt;: GOTO Amsterdam - &lt;a href=&#34;https://gotoamsl/2017/sessions/100&#34;&gt;Real World Java 9&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;19-21 Jun&lt;/strong&gt;: JBCNConf, Barcelona - &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Real World Java 9&lt;/a&gt;; &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Workshop: Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Anticipating Java 9 - Functionality and Tooling</title>
       <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
@@ -235,25 +254,6 @@ also available&lt;/a&gt;).&lt;/p&gt;
     </item>
     
     <item>
-      <title>Upcoming Events</title>
-      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;11-12 May&lt;/strong&gt;: DevoxxUK - &lt;a href=&#34;http://www.devoxx.co.uk/&#34;&gt;Real World Java 9&lt;/a&gt;;
- &lt;a href=&#34;http://cfp.devoxx.co.uk/2017/talk/JPZ-5869/Don&#39;t_just_Embrace_Change,_Create_Change&#34;&gt;BoF: Don&amp;rsquo;t just Embrace Change, Create Change&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;13 May&lt;/strong&gt;: Sevilla Developer Conf 4 - &lt;a href=&#34;http://www.sevilladevelopers.com/schedule/&#34;&gt;Career Advice for Programmers&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;17-19 May&lt;/strong&gt;: J on the Beach, Malaga - &lt;a href=&#34;http://jonthebeach.com/&#34;&gt;Real World Java 9&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;14 Jun&lt;/strong&gt;: GOTO Amsterdam - &lt;a href=&#34;https://gotoamsl/2017/sessions/100&#34;&gt;Real World Java 9&lt;/a&gt;&lt;br /&gt;
-&lt;strong&gt;19-21 Jun&lt;/strong&gt;: JBCNConf, Barcelona - &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Real World Java 9&lt;/a&gt;; &lt;a href=&#34;http://www.jbcnconf.com/2017/infoSpeaker.html?ref=trisha&#34;&gt;Workshop: Refactoring to Java 8&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Real World Java 9</title>
       <link>https://trishagee.github.io/presentation/real_world_java_9/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 UTC</pubDate>
@@ -287,14 +287,15 @@ real-time streaming data&lt;/em&gt;&lt;/li&gt;
 additions to interfaces and changes to deprecation.  We’ll see that once you
 start using Java 9, you can&amp;rsquo;t go back to Before.&lt;/em&gt;&lt;/p&gt;
 
-&lt;p&gt;##Video
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GkP83hvdeMk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Video&lt;/h2&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Slides&lt;/h2&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GkP83hvdeMk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/CFW6Y9uyF181yV&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;The code for this presentation was originally created to demonstrate Java 8 code in
 &lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt;, take a look at the videos there to see more background on the application and how it used Java 8 Streams and Lambda Expressions for the core business logic. The code and the presentation
@@ -302,7 +303,7 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 
 &lt;p&gt;I have another Java 9 talk based off this code, &lt;a href=&#34;/presentation/java_9_are_we_there_yet&#34;&gt;Anticipating Java 9 - Functionality and Tooling&lt;/a&gt;, which demos more individual Java 9 features and talks specifically about IntelliJ IDEA&amp;rsquo;s support for it.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_3&#34;&gt;Code&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Code&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;.
@@ -311,7 +312,7 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;Original Java 8 code comes from &lt;a href=&#34;https://github.com/trishagee/sense&#34;&gt;https://github.com/trishagee/sense&lt;/a&gt;, the &lt;em&gt;master&lt;/em&gt; branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the &lt;em&gt;junit-5&lt;/em&gt; branch. Java 8 and 9 features live side-by-side in &lt;em&gt;yow-brisbane&lt;/em&gt;. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;IntelliJ IDEA&lt;/h3&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;IntelliJ IDEA&lt;/h3&gt;
 
 &lt;p&gt;The earlier version of this talk runs on IntelliJ IDEA 2017.1, which supports
 Jigsaw much better than earlier versions.  However, I&amp;rsquo;m currently using
@@ -320,7 +321,7 @@ of Java 9 do not play nicely with earlier versions of IntelliJ.  The current
 combo I have working is Java 9 build 9-ea+166 and
 IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;Java 9&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;Java 9&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;JDK 9 Project Page&lt;/a&gt;&lt;/li&gt;
@@ -333,7 +334,7 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://download.java.net/java/jdk9/docs/api/overview-summary.html&#34;&gt;Java 9 Javadoc&lt;/a&gt; (note the new search feature!)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;Jigsaw&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Jigsaw&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Project Jigsaw&lt;/a&gt;&lt;/li&gt;
@@ -348,7 +349,7 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/czhSo8rotC4&#34;&gt;Migrating to Modules&lt;/a&gt; (video) Highly recommended.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.reactive-streams.org/&#34;&gt;Reactive Streams API&lt;/a&gt;&lt;/li&gt;
@@ -366,7 +367,7 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/reactor-by-example/&#34;&gt;Reactor by Example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Multi-Release JAR Files&lt;/h3&gt;
+&lt;h3 id=&#34;toc_9&#34;&gt;Multi-Release JAR Files&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/238&#34;&gt;JEP 238&lt;/a&gt;&lt;/li&gt;
@@ -374,7 +375,7 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;https://thoughtfulsoftware.wordpress.com/2016/08/22/java-9-multi-release-jar-files-part-ii/&#34;&gt;Multi-release JAR files tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_9&#34;&gt;Stack-Walking API&lt;/h3&gt;
+&lt;h3 id=&#34;toc_10&#34;&gt;Stack-Walking API&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/259&#34;&gt;JEP 259&lt;/a&gt;&lt;/li&gt;
@@ -382,7 +383,7 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.javaworld.com/article/3188289/core-java/java-9s-other-new-enhancements-part-5-stack-walking-api.html&#34;&gt;Java 9&amp;rsquo;s other new enhancements, Part 5: Stack-Walking API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_10&#34;&gt;Process API&lt;/h3&gt;
+&lt;h3 id=&#34;toc_11&#34;&gt;Process API&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/102&#34;&gt;JEP 102&lt;/a&gt;&lt;/li&gt;
@@ -390,14 +391,14 @@ IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
 &lt;li&gt;&lt;a href=&#34;http://iteratrlearning.com/java/2017/03/12/java9-process-api.html&#34;&gt;Java 9 Process API: The Shape of Things to Come&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_11&#34;&gt;REPL&lt;/h3&gt;
+&lt;h3 id=&#34;toc_12&#34;&gt;REPL&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jclarity.com/2015/04/15/java-9-repl-getting-started-guide/&#34;&gt;Java 9 REPL – Getting started guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_12&#34;&gt;Other&lt;/h3&gt;
+&lt;h3 id=&#34;toc_13&#34;&gt;Other&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/gof-design-patterns-using-java-02&#34;&gt;GoF - Adapter Pattern&lt;/a&gt;&lt;/li&gt;
