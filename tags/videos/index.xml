@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Videos on Trisha Gee </title>
-    <link>/tags/videos/index.xml/</link>
+    <link>https://trishagee.github.io/tags/videos/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
-      <link>/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
+      <link>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>
       <pubDate>Mon, 20 Oct 2014 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
+      <guid>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
       <description>
 
 &lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,

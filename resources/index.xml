@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Resources on Trisha Gee </title>
-    <link>/resources/index.xml/</link>
+    <link>https://trishagee.github.io/resources/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>IntelliJ IDEA for Eclipse Users</title>
-      <link>/resources/intellij_for_eclipse_users/</link>
+      <link>https://trishagee.github.io/resources/intellij_for_eclipse_users/</link>
       <pubDate>Wed, 05 Oct 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/intellij_for_eclipse_users/</guid>
+      <guid>https://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
       <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/qKgzj8tZX9JDmA&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
@@ -92,10 +92,10 @@ wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
     
     <item>
       <title>Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</title>
-      <link>/resources/angular_java_groovy_mongodb_workshop/</link>
+      <link>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/angular_java_groovy_mongodb_workshop/</guid>
+      <guid>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
       <description>
 
 &lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
@@ -219,10 +219,10 @@ dependencies should have been downloaded.&lt;/p&gt;
     
     <item>
       <title>Getting started with the MongoDB Java Driver Tutorial</title>
-      <link>/resources/getting_started_with_the_mongodb_java_tutorial/</link>
+      <link>https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/</link>
       <pubDate>Thu, 24 Oct 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/getting_started_with_the_mongodb_java_tutorial/</guid>
+      <guid>https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/</guid>
       <description>
 
 &lt;p&gt;Brief guide to running the MongoDB tutorial from QCon London and JAX London.&lt;/p&gt;
@@ -271,10 +271,10 @@ let&amp;rsquo;s say &lt;code&gt;&amp;lt;location&amp;gt;/mongodb&lt;/code&gt;&lt
     
     <item>
       <title>The New 3.0 Java Driver for MongoDB</title>
-      <link>/resources/the_new_30_java_driver_for_mongodb/</link>
+      <link>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</link>
       <pubDate>Mon, 09 Sep 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/the_new_30_java_driver_for_mongodb/</guid>
+      <guid>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</guid>
       <description>
 
 &lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
@@ -302,10 +302,10 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
     
     <item>
       <title>Just Do Something</title>
-      <link>/resources/just_do_something/</link>
+      <link>https://trishagee.github.io/resources/just_do_something/</link>
       <pubDate>Wed, 19 Dec 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/just_do_something/</guid>
+      <guid>https://trishagee.github.io/resources/just_do_something/</guid>
       <description>
 
 &lt;p&gt;As I constantly talk about in my how-to-get-more-women-into-technology talks, we, the developers, the people who do this job,
@@ -338,10 +338,10 @@ anything to this list:&lt;/p&gt;
     
     <item>
       <title>Performance Links</title>
-      <link>/resources/performance_resources/</link>
+      <link>https://trishagee.github.io/resources/performance_resources/</link>
       <pubDate>Mon, 22 Oct 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/performance_resources/</guid>
+      <guid>https://trishagee.github.io/resources/performance_resources/</guid>
       <description>&lt;p&gt;A hastily thrown-together list of some of the places to get more information on how to write performant code.&lt;/p&gt;
 
 &lt;ul&gt;

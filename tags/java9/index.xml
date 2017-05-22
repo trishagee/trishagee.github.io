@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Java9 on Trisha Gee </title>
-    <link>/tags/java9/index.xml/</link>
+    <link>https://trishagee.github.io/tags/java9/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Anticipating Java 9 - Functionality and Tooling</title>
-      <link>/presentation/java_9_are_we_there_yet/</link>
+      <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/java_9_are_we_there_yet/</guid>
+      <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
       <description>
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
@@ -75,10 +75,10 @@ also available&lt;/a&gt;).&lt;/p&gt;
     
     <item>
       <title>Real World Java 9</title>
-      <link>/presentation/real_world_java_9/</link>
+      <link>https://trishagee.github.io/presentation/real_world_java_9/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/real_world_java_9/</guid>
+      <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
       <description>
 
 &lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;
@@ -107,6 +107,9 @@ real-time streaming data&lt;/em&gt;&lt;/li&gt;
 additions to interfaces and changes to deprecation.  We’ll see that once you
 start using Java 9, you can&amp;rsquo;t go back to Before.&lt;/em&gt;&lt;/p&gt;
 
+&lt;p&gt;##Video
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GkP83hvdeMk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;toc_1&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/CFW6Y9uyF181yV&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
@@ -122,7 +125,9 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;h3 id=&#34;toc_3&#34;&gt;Code&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;. The full application with all Java 9 code is currently under the &lt;em&gt;working-system&lt;/em&gt; branch.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;.
+The full application with all Java 9 code is currently under the
+&lt;em&gt;working-system&lt;/em&gt; branch, the presentation builds off the code in &lt;em&gt;start_point&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Original Java 8 code comes from &lt;a href=&#34;https://github.com/trishagee/sense&#34;&gt;https://github.com/trishagee/sense&lt;/a&gt;, the &lt;em&gt;master&lt;/em&gt; branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the &lt;em&gt;junit-5&lt;/em&gt; branch. Java 8 and 9 features live side-by-side in &lt;em&gt;yow-brisbane&lt;/em&gt;. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -151,8 +156,7 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/12/first-steps-with-java9-jigsaw-part-2/&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html&#34;&gt;Jdeps Tool&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.joda.org/2017/04/java-se-9-jpms-modules-are-not-artifacts.html?m=1&#34;&gt;Java SE 9 - JPMS modules are not artifacts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cfp.devoxx.co.uk/2017/talk/ORF-1487/Migrating_to_Modules&#34;&gt;Migrating to Modules&lt;/a&gt; - when the video of this talk
-is out I will update this to link to it. Highly recommended.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/czhSo8rotC4&#34;&gt;Migrating to Modules&lt;/a&gt; (video) Highly recommended.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_6&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;

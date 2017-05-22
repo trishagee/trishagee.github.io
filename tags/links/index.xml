@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Links on Trisha Gee </title>
-    <link>/tags/links/index.xml/</link>
+    <link>https://trishagee.github.io/tags/links/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>The New 3.0 Java Driver for MongoDB</title>
-      <link>/resources/the_new_30_java_driver_for_mongodb/</link>
+      <link>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</link>
       <pubDate>Mon, 09 Sep 2013 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/the_new_30_java_driver_for_mongodb/</guid>
+      <guid>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</guid>
       <description>
 
 &lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;
@@ -41,10 +41,10 @@ src=&#34;http://www.slideshare.net/slideshow/embed_code/26024765&#34; width=&#34
     
     <item>
       <title>Just Do Something</title>
-      <link>/resources/just_do_something/</link>
+      <link>https://trishagee.github.io/resources/just_do_something/</link>
       <pubDate>Wed, 19 Dec 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/just_do_something/</guid>
+      <guid>https://trishagee.github.io/resources/just_do_something/</guid>
       <description>
 
 &lt;p&gt;As I constantly talk about in my how-to-get-more-women-into-technology talks, we, the developers, the people who do this job,
@@ -77,20 +77,20 @@ anything to this list:&lt;/p&gt;
     
     <item>
       <title>Java 8 - Introduction to Lambdas Article</title>
-      <link>/post/java_8__introduction_to_lambdas_article/</link>
+      <link>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</link>
       <pubDate>Thu, 08 Nov 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/java_8__introduction_to_lambdas_article/</guid>
+      <guid>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</guid>
       <description>&lt;p&gt;This month&amp;rsquo;s Java Magazine features an article by me, &lt;a href=&#34;https://twitter.com/kittylyst&#34;&gt;Ben Evans&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/karianna&#34;&gt;Martijn Verburg&lt;/a&gt; about the new &lt;a href=&#34;http://openjdk.java.net/projects/lambda/&#34;&gt;lambdas&lt;/a&gt;&amp;nbsp;coming in &lt;a href=&#34;http://jdk8.java.net/&#34;&gt;Java 8&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;The aim of the article is to give an overview to normal, human Java developers, who don&amp;rsquo;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and &lt;a href=&#34;http://jdk8.java.net/lambda/&#34;&gt;try them now&lt;/a&gt;).&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; border=&#34;0&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34;&gt;            &lt;tbody&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td&gt;&lt;img align=&#34;left&#34; alt=&#34;www.oracle.com/javamagazine&#34; class=&#34;navlogo&#34; height=&#34;28&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/include/icons/navbar_logo.gif?lm=1352311955000&#34; /&gt;                &lt;/td&gt;                &lt;td align=&#34;right&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px; padding-right: 5px;&#34;&gt;&lt;span id=&#34;top_right_text&#34;&gt;Look inside &amp;gt;&lt;/span&gt;                &lt;/td&gt;             &lt;/tr&gt;&lt;tr style=&#34;background-color: white;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;padding: 10px 0px;&#34;&gt;&lt;a href=&#34;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#34; onclick=&#34;window.open(&#39;http://www.oraclejavamagazine-digital.com/javamagazine/20121112?pg=35&#39;,&#39;sharewidget&#39;,&#39;toolbar=no,menubar=no,resizable=yes,scrollbars=yes,left=0,top=0,width=&#39;+(screen.width-10)+&#39;,height=&#39;+(screen.height-10)+&#39;&#39;);return false;&#34; target=&#34;_blank&#34; title=&#34;View Magazine&#34;&gt;                  &lt;img alt=&#34;34&#34; border=&#34;0&#34; src=&#34;http://images-cdn.dashdigital.com/javamagazine/20121112/data/imgpages/smtn/0035_egfgcb.gif?lm=1352311955000&#34; /&gt;                &lt;/a&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;tr style=&#34;background-color: #d2d2d2; height: 30px;&#34;&gt;                &lt;td align=&#34;center&#34; colspan=&#34;2&#34; style=&#34;color: #666666; font-family: tahoma, sans-serif; font-size: 11px; font-weight: bold; line-height: 15px;&#34;&gt;&lt;span id=&#34;bottom_text&#34;&gt;Exploring Lambda Expressions for the Java Language and the JVM&lt;/span&gt;                &lt;/td&gt;            &lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Performance Links</title>
-      <link>/resources/performance_resources/</link>
+      <link>https://trishagee.github.io/resources/performance_resources/</link>
       <pubDate>Mon, 22 Oct 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/performance_resources/</guid>
+      <guid>https://trishagee.github.io/resources/performance_resources/</guid>
       <description>&lt;p&gt;A hastily thrown-together list of some of the places to get more information on how to write performant code.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -114,110 +114,110 @@ href=&#34;http://bad-concurrency.blogspot.co.uk/&#34;&gt;Mike Barker&lt;/a&gt;, 
     
     <item>
       <title>Update on events</title>
-      <link>/post/update_on_events/</link>
+      <link>https://trishagee.github.io/post/update_on_events/</link>
       <pubDate>Sat, 12 May 2012 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/update_on_events/</guid>
+      <guid>https://trishagee.github.io/post/update_on_events/</guid>
       <description>&lt;p&gt;Just a quick note to say I was &lt;a href=&#34;http://www.star107.co.uk/podcasts/the-app-show/show-13-podcast.mp3&#34;&gt;interviewed for another podcast&lt;/a&gt;, again to talk about all-female events. &amp;nbsp;It&amp;rsquo;s only a short one and there&amp;rsquo;s probably not much in there that I haven&amp;rsquo;t said before, either on here or in person.&lt;br /&gt;&lt;br /&gt;From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. &amp;nbsp;I&amp;rsquo;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology. &amp;nbsp;If you see me there, come and say hello!&lt;br /&gt;&lt;br /&gt;On Friday 25th May, after all the GOTO craziness, I&amp;rsquo;m going to repeat the Disruptor presentation in Rotterdam at &lt;a href=&#34;http://010dev.nl/&#34;&gt;010DEV&lt;/a&gt;, an event rather fantastically called &amp;ldquo;The Disruptor and the Perfect Programmer&amp;rdquo;, which someone on Twitter correct noted sounds like a fairy tale.&lt;br /&gt;&lt;br /&gt;After all that, I&amp;rsquo;m hopefully going to take June off to play Diablo 3 and Prototype 2, and read the next Game of Thrones book. &amp;nbsp;All these joys I have been denying myself to make sure I get everything sorted in time for next week.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Interview by the Oracle Technology Network at Devoxx</title>
-      <link>/post/interview_by_the_oracle_technology_network_at_devoxx/</link>
+      <link>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</link>
       <pubDate>Sun, 04 Dec 2011 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
+      <guid>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
       <description>&lt;p&gt;Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. &amp;nbsp;Because I was there to be on the &lt;a href=&#34;http://mechanitis.blogspot.com/2011/11/why-we-shouldnt-target-women.html&#34;&gt;Why We Shouldn&amp;rsquo;t Target Women&lt;/a&gt; panel, the interview is just another platform for me to air my views on this subject again. &lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;&lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;&gt;&lt;/param&gt;&lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;&gt;&lt;/param&gt;&lt;param name=&#34;wmode&#34; value=&#34;direct&#34;&gt;&lt;/param&gt;&lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;&gt;&lt;/param&gt;&lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;pageId=2769&#34; &gt;&lt;/param&gt;&lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;pageId=2769&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;&gt;&lt;/embed&gt;&lt;/object&gt;&lt;/div&gt;&lt;br /&gt;Yes, I am actually wearing pink&amp;hellip;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Mike and I debut our new Disruptor presentation</title>
-      <link>/post/mike_and_i_debut_our_new_disruptor_presentation/</link>
+      <link>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</link>
       <pubDate>Fri, 21 Oct 2011 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
+      <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
       <description>&lt;p&gt;Last Tuesday&amp;nbsp;&lt;a href=&#34;http://mikes-tech.blogspot.com/&#34;&gt;Mike&lt;/a&gt; and I unveiled our brand shiny new presentation: &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/events/32877942/&#34;&gt;Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency&lt;/a&gt;. &amp;nbsp;This was a preview of the talk we&amp;rsquo;ll be doing at &lt;a href=&#34;http://jaxlondon.com/2011/sessions/?tid=2175&#34;&gt;JAX London&lt;/a&gt; on the 2nd November.&lt;br /&gt;&lt;br /&gt;A &lt;a href=&#34;http://vimeo.com/30781988&#34;&gt;video of the session&lt;/a&gt; is available, as are &lt;a href=&#34;http://www.slideshare.net/trishagee/understanding-the-disruptor&#34;&gt;the slides&lt;/a&gt;. &amp;nbsp;I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?).&lt;br /&gt;&lt;br /&gt;I thought the session went really really well. &amp;nbsp;We got some great questions at the end, we had an audience that was engaged, and I was dead pleased we didn&amp;rsquo;t lose anyone with the assembly language. &amp;nbsp;We had some very valuable feedback afterwards too.&lt;br /&gt;&lt;br /&gt;As well as our presentation, there were three great lightning talks:&lt;br /&gt;&lt;ul&gt;&lt;b&gt;Somay Nakhal on&amp;nbsp;Java Thread States&lt;/b&gt; - Somay gave a nice overview of thread lifecycles with code and some great diagrams. &amp;nbsp;I liked how he made this more applicable to the real world than the sort of book examples you get.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;&lt;a href=&#34;http://twitter.com/#!/gedb&#34;&gt;Ged Byrne&lt;/a&gt; on the shiny new&amp;nbsp;&lt;a href=&#34;http://ljcbookclub.wordpress.com/2011/10/11/coherence-3-5-book-review/&#34;&gt;LJC Book Club&lt;/a&gt;&lt;/b&gt; - Ged reminded us how great it is to read an actual, paper book. &amp;nbsp;How committing to reading page by page forces you to learn in a different way to jumping around internet references that might not give you the context you need. &amp;nbsp;I thought this was a great presentation with humour, and I liked the way he challenged us to &amp;ldquo;expand our minds&amp;rdquo;. &amp;nbsp;Although the actual book he was reviewing was &lt;a href=&#34;http://www.blogger.com/%3Ca%20href=%22http://www.amazon.com/gp/product/1847196128/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=trissramb-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399369&amp;amp;creativeASIN=1847196128%22%3EOracle%20Coherence%203.5%3C/a%3E%3Cimg%20src=%22http://www.assoc-amazon.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=1847196128&amp;amp;camp=217145&amp;amp;creative=399369%22%20width=%221%22%20height=%221%22%20border=%220%22%20alt=%22%22%20style=%22border:none%20!important;%20margin:0px%20!important;%22%20/%3E&#34;&gt;Oracle Coherence 3.5&lt;/a&gt;, I&amp;rsquo;ve decided I need to read &lt;a href=&#34;http://www.blogger.com/%3Ca%20href=%22http://www.amazon.com/gp/product/1456438786/ref=as_li_tf_tl?ie=UTF8&amp;amp;tag=trissramb-20&amp;amp;linkCode=as2&amp;amp;camp=217145&amp;amp;creative=399373&amp;amp;creativeASIN=1456438786%22%3EBeautiful%20Software%3C/a%3E%3Cimg%20src=%22http://www.assoc-amazon.com/e/ir?t=trissramb-20&amp;amp;l=as2&amp;amp;o=1&amp;amp;a=1456438786&amp;amp;camp=217145&amp;amp;creative=399373%22%20width=%221%22%20height=%221%22%20border=%220%22%20alt=%22%22%20style=%22border:none%20!important;%20margin:0px%20!important;%22%20/%3E&#34;&gt;Beautiful Software&lt;/a&gt;, which Ged quoted at the end of the talk.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;&lt;a href=&#34;http://vanillajava.blogspot.com/&#34;&gt;Peter Lawrey&lt;/a&gt; on&amp;nbsp;Common Java Misconceptions&lt;/b&gt; - A session which plays well with what we&amp;rsquo;re trying to preach when we talk about &lt;a href=&#34;http://gotocon.com/amsterdam-2011/presentation/Tackling%20the%20folklore%20surrounding%20high%20performance%20computing&#34;&gt;Tackling Folklore&lt;/a&gt;. &amp;nbsp;He covered a few topics that are assumed to be &amp;ldquo;truth&amp;rdquo;. &amp;nbsp;For example, dealing with garbage collection is not a &lt;i&gt;mandatory&lt;/i&gt; part of writing Java - you could write GC-friendly code for a start. &amp;nbsp;Also it&amp;rsquo;s naive to assume the JDK is written in an efficient way, anyone who&amp;rsquo;s actually dug around it for a while will realise that newer, more efficient methods of programming have not been applied to all areas of the (massive) existing code base. &amp;nbsp;I think it&amp;rsquo;s great to have people out there talking about this stuff, it&amp;rsquo;s too easy to make assumptions and take things for granted. &amp;nbsp;The most important thing he said: &amp;ldquo;If you&amp;rsquo;re told something, don&amp;rsquo;t just believe it - test it yourself first&amp;rdquo;.&lt;/ul&gt;All of us (me, Mike and the lightning talk presenters) got such a great response it has encouraged us at the LJC to try and push for more real developers presenting their experiences. &amp;nbsp;We have a lot of great presentations from vendors, but what&amp;rsquo;s more applicable to Java guys and girls across the board is other developers sharing the problems they&amp;rsquo;re trying to solve and how they go about that process.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m very much looking forward to presenting this again at JAX. &lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>A chance to see some of my actual code (even if it is C#)</title>
-      <link>/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</link>
+      <link>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</link>
       <pubDate>Mon, 20 Jun 2011 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</guid>
+      <guid>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</guid>
       <description>&lt;p&gt;Remember I posted about &lt;a href=&#34;http://mechanitis.blogspot.com/2011/05/why-java-developers-hate-net.html&#34;&gt;having to write .NET&lt;/a&gt;?&lt;br /&gt;&lt;br /&gt;Well, the &lt;a href=&#34;http://www.lmaxtrader.co.uk/api-trading/resources-releases&#34;&gt;code and the tutorial&lt;/a&gt; are available for you, my lucky readers, to &lt;strike&gt;rip to pieces&lt;/strike&gt; view.&lt;br /&gt;&lt;br /&gt;I am not the only person responsible for this code though, so be kind.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Getting around a bit</title>
-      <link>/post/getting_around_a_bit/</link>
+      <link>https://trishagee.github.io/post/getting_around_a_bit/</link>
       <pubDate>Mon, 23 May 2011 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/getting_around_a_bit/</guid>
+      <guid>https://trishagee.github.io/post/getting_around_a_bit/</guid>
       <description>&lt;p&gt;I&amp;rsquo;m honoured to now be listed on three aggregated blog feeds:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;The new and somewhat embryonic &lt;a href=&#34;http://blogs.lmax.com/&#34;&gt;blogs.lmax.com&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;The &lt;a href=&#34;http://ljc.aggrity.com/&#34;&gt;London Java Community Aggrity&lt;/a&gt;.&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;http://www.thoughtworks.com/blogs/alumni&#34;&gt;ThoughtWorks Alumni&lt;/a&gt;, along with a whole host of distinguished names.&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;The pressure&amp;rsquo;s on to try and write useful stuff. &amp;nbsp;Oh OK, I&amp;rsquo;ll settle for &amp;ldquo;entertaining&amp;rdquo;.&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Comments on representations of our industry</title>
-      <link>/post/comments_on_representations_of_our_industry/</link>
+      <link>https://trishagee.github.io/post/comments_on_representations_of_our_industry/</link>
       <pubDate>Fri, 15 May 2009 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/comments_on_representations_of_our_industry/</guid>
+      <guid>https://trishagee.github.io/post/comments_on_representations_of_our_industry/</guid>
       <description>&lt;p&gt;I&amp;nbsp;have not (yet) seen the presentation &lt;a href=&#34;http://blogs.tedneward.com/2009/05/01/On+Speaking+Trolling+Inciting+And+Growing.aspx&#34;&gt;this post &lt;/a&gt;is referring to.&amp;nbsp; But I think many of the comments Ted makes are very valid, and our industry as a whole should occasionally stop and think.&amp;nbsp; I&amp;rsquo;ve seen Ted speak at QCon, and I&amp;rsquo;ve had a lot of time for his comments ever since.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m aware that this blog is rapidly filling with comments about gender and perceptions and people-y stuff, when I originally wanted it to be a purely technical blog.&amp;nbsp; But I guess this other stuff interests me more. &amp;nbsp;And there are less people talking about it than there are talking about pure technical solutions to problems.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Why changing jobs frequently is not necessarily a bad thing...</title>
-      <link>/post/why_changing_jobs_frequently_is_not_necessarily_a_bad_thing/</link>
+      <link>https://trishagee.github.io/post/why_changing_jobs_frequently_is_not_necessarily_a_bad_thing/</link>
       <pubDate>Thu, 02 Apr 2009 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/why_changing_jobs_frequently_is_not_necessarily_a_bad_thing/</guid>
+      <guid>https://trishagee.github.io/post/why_changing_jobs_frequently_is_not_necessarily_a_bad_thing/</guid>
       <description>&lt;p&gt;&amp;hellip;in fact, &lt;a href=&#34;http://www.infoq.com/news/2009/03/models_apprenticeship&#34;&gt;it&amp;rsquo;s actually a good thing&lt;/a&gt;.&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Scrum but...</title>
-      <link>/post/scrum_but/</link>
+      <link>https://trishagee.github.io/post/scrum_but/</link>
       <pubDate>Tue, 24 Feb 2009 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/scrum_but/</guid>
+      <guid>https://trishagee.github.io/post/scrum_but/</guid>
       <description>&lt;p&gt;Having experience &lt;a href=&#34;http://martinfowler.com/bliki/FlaccidScrum.html&#34;&gt;Flaccid Scrum&lt;/a&gt;, I find this article interesting, and agree with most of it.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;d also like to add though, that if you do the scrum practices&amp;nbsp;(story cards, stand ups, retrospectives, etc) but don&amp;rsquo;t buy into the fundamental principals, you will not succeed.&amp;nbsp; And that means everyone on the team, not just the people in charge. &amp;nbsp;In particular, if the team is not empowered, is not committing to the estimates and the iteration plan in its heart, and and does not trust, then you are probably better off using traditional processes.&amp;nbsp; Or just as likely to fail whatever process you use.&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Why to Start a Startup in a Bad Economy</title>
-      <link>/post/why_to_start_a_startup_in_a_bad_economy/</link>
+      <link>https://trishagee.github.io/post/why_to_start_a_startup_in_a_bad_economy/</link>
       <pubDate>Thu, 18 Dec 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/why_to_start_a_startup_in_a_bad_economy/</guid>
+      <guid>https://trishagee.github.io/post/why_to_start_a_startup_in_a_bad_economy/</guid>
       <description>&lt;p&gt;&lt;br /&gt;&lt;a href=&#34;http://www.paulgraham.com/badeconomy.html&#34;&gt;Why to Start a Startup in a Bad Economy&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Gender Stereotyping</title>
-      <link>/post/gender_stereotyping/</link>
+      <link>https://trishagee.github.io/post/gender_stereotyping/</link>
       <pubDate>Tue, 16 Dec 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/gender_stereotyping/</guid>
+      <guid>https://trishagee.github.io/post/gender_stereotyping/</guid>
       <description>&lt;p&gt;&lt;br /&gt;I&amp;rsquo;m very interested in the subject of gender stereotyping, which probably isn&amp;rsquo;t surprising as I&amp;rsquo;m a girl in a predominantly male industry.&amp;nbsp; And I&amp;nbsp;like cars, and&amp;nbsp;sports, and get irritated if people assume I&amp;rsquo;m not &amp;quot;allowed&amp;quot; to be interested in these things.&lt;br /&gt;&lt;br /&gt;Far from being discriminated against, however, I&amp;nbsp;find many people ask me why there aren&amp;rsquo;t more women in the industry and what can be done to encourage girls into IT.&amp;nbsp; If these questions were easy to answer, they wouldn&amp;rsquo;t have to be asked.&lt;br /&gt;&lt;br /&gt;But one of my personal theories is around how we raise our children.&amp;nbsp; Yes, it&amp;rsquo;s possible that girls are genetically, for some reason, averse to technical types of roles. &amp;nbsp;Or&amp;nbsp;that the working environments don&amp;rsquo;t appeal to the feminine mindset.&amp;nbsp; But if you tell kids from an early age that some things are for boys and some are for girls, there just aren&amp;rsquo;t going to be enough girls studying &amp;quot;boys&amp;quot; subjects later in life to get a large proportion of them into &amp;quot;boys&amp;quot; jobs.&lt;br /&gt;&lt;br /&gt;I have a lot more to say around all these possibilities but I only want to explore one small area today.&amp;nbsp; I was pointed this morning to an article on &lt;a href=&#34;http://www.guardian.co.uk/education/2008/dec/16/play&#34;&gt;Gender and Toys&lt;/a&gt;.&amp;nbsp; I&amp;rsquo;m mainly recording it in here so I don&amp;rsquo;t forget where it is.&amp;nbsp; But I&amp;nbsp;found it interesting because it raises many of the same questions I&amp;nbsp;have, and answers almost none of them.&amp;nbsp; At this stage, I think it&amp;rsquo;s very difficult to say how much of a child&amp;rsquo;s preferences are there because of parental or peer pressure, and how much is natural.&amp;nbsp; &lt;br /&gt;&lt;br /&gt;I&amp;nbsp;don&amp;rsquo;t understand why a society can discourage the use of words like chairman (preferring &amp;quot;chair&amp;quot; or &amp;quot;chairperson&amp;quot;) and that works hard to at least look like they promote equal opportunities in the workplace, can encourage gender-specific advertising to children (have you watched the adverts between cartoons?) and the &lt;span style=&#34;font-size: 9pt; font-family: Arial; mso-fareast-font-family: &#39;Times New Roman&#39;; mso-ansi-language: EN-GB; mso-fareast-language: EN-GB; mso-bidi-language: AR-SA&#34;&gt;blatant &lt;/span&gt;gender stereotyping the article talks about in toy stores.&lt;br /&gt;&lt;br /&gt;The main point to take out of it, I&amp;nbsp;think, is that we should be aware of how we raise our children.&amp;nbsp; Well OK&amp;nbsp;so any parent will always want the best for the child and so that&amp;rsquo;s a slightly fatuous statement.&amp;nbsp; What I&amp;nbsp;mean is, I don&amp;rsquo;t think we should inflict our own preconceptions of what a child will like based purely upon their gender, or they might grow up thinking that really is what they like.&amp;nbsp; We should be allowed to develop our own preferences and exercise any skills that interest us until we find what really suits us personally.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;PS The assumption that Lego is for boys in that article made me very angry.&amp;nbsp; Of all toys I&amp;nbsp;thought Lego was pretty good at not overtly targeting an audience, although the new trend towards Lego-for-girls has worried me since first saw it.&amp;nbsp; Lego is for kids!&amp;nbsp; Doesn&amp;rsquo;t matter what age or gender they are!&amp;lt;/rant&amp;gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Metrics and Incentives.</title>
-      <link>/post/metrics_and_incentives/</link>
+      <link>https://trishagee.github.io/post/metrics_and_incentives/</link>
       <pubDate>Thu, 17 Apr 2008 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/metrics_and_incentives/</guid>
+      <guid>https://trishagee.github.io/post/metrics_and_incentives/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://thedailywtf.com/Articles/The-Defect-Black-Market.aspx&#34;&gt;This&lt;/a&gt;&amp;nbsp;is a great example of what&amp;nbsp;happens when you try to incentivise intelligent people on very simple metrics.&lt;br /&gt;&lt;br /&gt;They cheat.&lt;br /&gt;&lt;br /&gt;This was well described in &lt;a href=&#34;http://www.amazon.com/Freakonomics-Economist-Explores-Hidden-Everything/dp/product-description/006073132X&#34;&gt;Freakonomics&lt;/a&gt;, and something &lt;a href=&#34;http://www.joelonsoftware.com/AboutMe.html&#34;&gt;Mr On Software&lt;/a&gt; &lt;a href=&#34;http://www.joelonsoftware.com/items/2006/08/09.html&#34;&gt;bangs on about regularly&lt;/a&gt;.&amp;nbsp; It&amp;rsquo;s clear that there isn&amp;rsquo;t really a good answer to the problem - actually that&amp;rsquo;s not true.&amp;nbsp; The answer to the problem is to have everyone working in a job they are happy in and proud of, one where they are intrinsically motivated, and give them enough information to allow them to make the correct calls when it comes to prioritising work.&amp;nbsp; But I&amp;rsquo;m guessing that a large portion of the working world does not fall into this category.&lt;/p&gt;
 </description>
     </item>

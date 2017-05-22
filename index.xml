@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Recent Content on Trisha Gee </title>
-    <link>/index.xml/</link>
+    <link>https://trishagee.github.io/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Career Advice for Programmers</title>
-      <link>/presentation/career_advice_for_programmers/</link>
+      <link>https://trishagee.github.io/presentation/career_advice_for_programmers/</link>
       <pubDate>Fri, 12 May 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/career_advice_for_programmers/</guid>
+      <guid>https://trishagee.github.io/presentation/career_advice_for_programmers/</guid>
       <description>
 
 &lt;p&gt;One developer&amp;rsquo;s journey to find the perfect job.&lt;/p&gt;
@@ -60,10 +60,10 @@ version has a better structure, but doesn&amp;rsquo;t cover as many topics&lt;/l
     
     <item>
       <title>Becoming Fully Buzzword Compliant</title>
-      <link>/presentation/becoming_buzzword_compliant/</link>
+      <link>https://trishagee.github.io/presentation/becoming_buzzword_compliant/</link>
       <pubDate>Tue, 25 Apr 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/becoming_buzzword_compliant/</guid>
+      <guid>https://trishagee.github.io/presentation/becoming_buzzword_compliant/</guid>
       <description>
 
 &lt;p&gt;How do you keep your skills up to date in this fast-moving and turbulant
@@ -171,10 +171,10 @@ from &lt;a href=&#34;http://www.unicode.org/L2/L2015/15229-bitcoin-sign.pdf&#34;
     
     <item>
       <title>Upcoming Events</title>
-      <link>/presentation/upcoming_events/</link>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/upcoming_events/</guid>
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
@@ -190,10 +190,10 @@ this page should list my confirmed upcoming events.&lt;/p&gt;
     
     <item>
       <title>Anticipating Java 9 - Functionality and Tooling</title>
-      <link>/presentation/java_9_are_we_there_yet/</link>
+      <link>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</link>
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/java_9_are_we_there_yet/</guid>
+      <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
       <description>
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
@@ -255,10 +255,10 @@ also available&lt;/a&gt;).&lt;/p&gt;
     
     <item>
       <title>Real World Java 9</title>
-      <link>/presentation/real_world_java_9/</link>
+      <link>https://trishagee.github.io/presentation/real_world_java_9/</link>
       <pubDate>Tue, 28 Feb 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/real_world_java_9/</guid>
+      <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
       <description>
 
 &lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;
@@ -287,6 +287,9 @@ real-time streaming data&lt;/em&gt;&lt;/li&gt;
 additions to interfaces and changes to deprecation.  We’ll see that once you
 start using Java 9, you can&amp;rsquo;t go back to Before.&lt;/em&gt;&lt;/p&gt;
 
+&lt;p&gt;##Video
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GkP83hvdeMk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+
 &lt;h2 id=&#34;toc_1&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/CFW6Y9uyF181yV&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
@@ -302,7 +305,9 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;h3 id=&#34;toc_3&#34;&gt;Code&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;. The full application with all Java 9 code is currently under the &lt;em&gt;working-system&lt;/em&gt; branch.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;.
+The full application with all Java 9 code is currently under the
+&lt;em&gt;working-system&lt;/em&gt; branch, the presentation builds off the code in &lt;em&gt;start_point&lt;/em&gt;.&lt;/li&gt;
 &lt;li&gt;Original Java 8 code comes from &lt;a href=&#34;https://github.com/trishagee/sense&#34;&gt;https://github.com/trishagee/sense&lt;/a&gt;, the &lt;em&gt;master&lt;/em&gt; branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the &lt;em&gt;junit-5&lt;/em&gt; branch. Java 8 and 9 features live side-by-side in &lt;em&gt;yow-brisbane&lt;/em&gt;. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -331,8 +336,7 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/12/first-steps-with-java9-jigsaw-part-2/&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 2&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/8/docs/technotes/tools/unix/jdeps.html&#34;&gt;Jdeps Tool&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.joda.org/2017/04/java-se-9-jpms-modules-are-not-artifacts.html?m=1&#34;&gt;Java SE 9 - JPMS modules are not artifacts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://cfp.devoxx.co.uk/2017/talk/ORF-1487/Migrating_to_Modules&#34;&gt;Migrating to Modules&lt;/a&gt; - when the video of this talk
-is out I will update this to link to it. Highly recommended.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/czhSo8rotC4&#34;&gt;Migrating to Modules&lt;/a&gt; (video) Highly recommended.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_6&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
@@ -394,10 +398,10 @@ is out I will update this to link to it. Highly recommended.&lt;/li&gt;
     
     <item>
       <title>What Can Men Do</title>
-      <link>/post/what_can_men_do/</link>
+      <link>https://trishagee.github.io/post/what_can_men_do/</link>
       <pubDate>Fri, 04 Nov 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/what_can_men_do/</guid>
+      <guid>https://trishagee.github.io/post/what_can_men_do/</guid>
       <description>&lt;p&gt;So, I wrote a long email to the London Java Community in answer to an excellent question: &amp;ldquo;What can men do to support Women in Technology?&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a brain dump, by no means comprehensive, and is in answer to a specific question in a specific context, but I&amp;rsquo;ve been asked
@@ -514,10 +518,10 @@ latency but I will answer you eventually :)&lt;/p&gt;
     
     <item>
       <title>IntelliJ IDEA for Eclipse Users</title>
-      <link>/resources/intellij_for_eclipse_users/</link>
+      <link>https://trishagee.github.io/resources/intellij_for_eclipse_users/</link>
       <pubDate>Wed, 05 Oct 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/resources/intellij_for_eclipse_users/</guid>
+      <guid>https://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
       <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/qKgzj8tZX9JDmA&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; 
@@ -596,10 +600,10 @@ wanted, give it another try now, it&amp;rsquo;s constantly evolving.&lt;/li&gt;
     
     <item>
       <title>JavaZone 2016</title>
-      <link>/post/javazone_2016/</link>
+      <link>https://trishagee.github.io/post/javazone_2016/</link>
       <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/javazone_2016/</guid>
+      <guid>https://trishagee.github.io/post/javazone_2016/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been a while since I wrote a conference write up.  The short version of &amp;ldquo;why&amp;rdquo; is because I got a bit bored of doing it.  Plus, I
 found I was attending conferences as a speaker &amp;ldquo;on the circuit&amp;rdquo;, and my experience of hanging out, catching up with my friends, chatting
  to other attendees to see what they&amp;rsquo;re up to and so forth, didn&amp;rsquo;t seem as useful to share with people who might want to find out
@@ -709,10 +713,10 @@ by the conference organisers.&lt;/li&gt;
     
     <item>
       <title>Code Review Matters and Manners</title>
-      <link>/presentation/code_review_matters_and_manners/</link>
+      <link>https://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
       <pubDate>Wed, 31 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/code_review_matters_and_manners/</guid>
+      <guid>https://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
       <description>
 
 &lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
@@ -775,10 +779,10 @@ into a battlefield.&lt;/p&gt;
     
     <item>
       <title>A Year? Really?</title>
-      <link>/post/what_a_year.md/</link>
+      <link>https://trishagee.github.io/post/what_a_year.md/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/what_a_year.md/</guid>
+      <guid>https://trishagee.github.io/post/what_a_year.md/</guid>
       <description>&lt;p&gt;So I came to the blog to update my &lt;a href=&#34;//presentation/upcoming_events/&#34;&gt;upcoming events&lt;/a&gt; (at least something stays up to date) only to find
 it&amp;rsquo;s been nearly a year since I last blogged!  This is terrible!&lt;/p&gt;
 
@@ -815,10 +819,10 @@ things, including &lt;a href=&#34;/post/why_the_customer_isnt_always_right/&#34;
     
     <item>
       <title>Applying Java 8 Idioms to Existing Code</title>
-      <link>/presentation/refactoring_to_java_8/</link>
+      <link>https://trishagee.github.io/presentation/refactoring_to_java_8/</link>
       <pubDate>Fri, 03 Jun 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/refactoring_to_java_8/</guid>
+      <guid>https://trishagee.github.io/presentation/refactoring_to_java_8/</guid>
       <description>
 
 &lt;ul&gt;
@@ -974,10 +978,10 @@ Article: &lt;a href=&#34;http://zeroturnaround.com/rebellabs/java-8-best-practic
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
-      <link>/post/java_8_mooc_session3/</link>
+      <link>https://trishagee.github.io/post/java_8_mooc_session3/</link>
       <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/java_8_mooc_session3/</guid>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session3/</guid>
       <description>&lt;p&gt;Last night was the final get-together to discuss the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
@@ -1114,10 +1118,10 @@ And if you can find (or run) a local meetup to discuss it, it makes the experien
     
     <item>
       <title>Java 8 MOOC - Session 2 Summary</title>
-      <link>/post/java_8_mooc_session2/</link>
+      <link>https://trishagee.github.io/post/java_8_mooc_session2/</link>
       <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/java_8_mooc_session2/</guid>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session2/</guid>
       <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
@@ -1303,10 +1307,10 @@ Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/22
     
     <item>
       <title>What to look for in a Code Review</title>
-      <link>/post/code_reviews_1/</link>
+      <link>https://trishagee.github.io/post/code_reviews_1/</link>
       <pubDate>Mon, 27 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/code_reviews_1/</guid>
+      <guid>https://trishagee.github.io/post/code_reviews_1/</guid>
       <description>&lt;p&gt;I wrote a post for the JetBrains Upsource blog about some of the &lt;a href=&#34;http://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;things you should be looking for when you do code
 reviews&lt;/a&gt; (and some of the things
 you should not be looking at).&lt;/p&gt;
@@ -1317,10 +1321,10 @@ you should not be looking at).&lt;/p&gt;
     
     <item>
       <title>The Extraordinary Team Of Developers</title>
-      <link>/presentation/the_extraordinary_team_of_developers/</link>
+      <link>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</link>
       <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/presentation/the_extraordinary_team_of_developers/</guid>
+      <guid>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</guid>
       <description>
 
 &lt;p&gt;Daniel Bryant and I did a keynote at Devoxx UK about how individuals can add something to a team to make the team

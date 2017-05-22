@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Posts on Trisha Gee </title>
-    <link>/post/index.xml/</link>
+    <link>https://trishagee.github.io/post/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>What Can Men Do</title>
-      <link>/post/what_can_men_do/</link>
+      <link>https://trishagee.github.io/post/what_can_men_do/</link>
       <pubDate>Fri, 04 Nov 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/what_can_men_do/</guid>
+      <guid>https://trishagee.github.io/post/what_can_men_do/</guid>
       <description>&lt;p&gt;So, I wrote a long email to the London Java Community in answer to an excellent question: &amp;ldquo;What can men do to support Women in Technology?&amp;rdquo;.&lt;/p&gt;
 
 &lt;p&gt;It&amp;rsquo;s a bit of a brain dump, by no means comprehensive, and is in answer to a specific question in a specific context, but I&amp;rsquo;ve been asked
@@ -130,10 +130,10 @@ latency but I will answer you eventually :)&lt;/p&gt;
     
     <item>
       <title>JavaZone 2016</title>
-      <link>/post/javazone_2016/</link>
+      <link>https://trishagee.github.io/post/javazone_2016/</link>
       <pubDate>Fri, 16 Sep 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/javazone_2016/</guid>
+      <guid>https://trishagee.github.io/post/javazone_2016/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been a while since I wrote a conference write up.  The short version of &amp;ldquo;why&amp;rdquo; is because I got a bit bored of doing it.  Plus, I
 found I was attending conferences as a speaker &amp;ldquo;on the circuit&amp;rdquo;, and my experience of hanging out, catching up with my friends, chatting
  to other attendees to see what they&amp;rsquo;re up to and so forth, didn&amp;rsquo;t seem as useful to share with people who might want to find out
@@ -243,10 +243,10 @@ by the conference organisers.&lt;/li&gt;
     
     <item>
       <title>A Year? Really?</title>
-      <link>/post/what_a_year.md/</link>
+      <link>https://trishagee.github.io/post/what_a_year.md/</link>
       <pubDate>Mon, 01 Aug 2016 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/what_a_year.md/</guid>
+      <guid>https://trishagee.github.io/post/what_a_year.md/</guid>
       <description>&lt;p&gt;So I came to the blog to update my &lt;a href=&#34;//presentation/upcoming_events/&#34;&gt;upcoming events&lt;/a&gt; (at least something stays up to date) only to find
 it&amp;rsquo;s been nearly a year since I last blogged!  This is terrible!&lt;/p&gt;
 
@@ -283,10 +283,10 @@ things, including &lt;a href=&#34;/post/why_the_customer_isnt_always_right/&#34;
     
     <item>
       <title>Java 8 MOOC - Session 3 Summary</title>
-      <link>/post/java_8_mooc_session3/</link>
+      <link>https://trishagee.github.io/post/java_8_mooc_session3/</link>
       <pubDate>Tue, 04 Aug 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/java_8_mooc_session3/</guid>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session3/</guid>
       <description>&lt;p&gt;Last night was the final get-together to discuss the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
@@ -423,10 +423,10 @@ And if you can find (or run) a local meetup to discuss it, it makes the experien
     
     <item>
       <title>Java 8 MOOC - Session 2 Summary</title>
-      <link>/post/java_8_mooc_session2/</link>
+      <link>https://trishagee.github.io/post/java_8_mooc_session2/</link>
       <pubDate>Fri, 31 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/java_8_mooc_session2/</guid>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session2/</guid>
       <description>&lt;p&gt;As I mentioned &lt;a href=&#34;/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
@@ -612,10 +612,10 @@ Join us next week for the &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/22
     
     <item>
       <title>What to look for in a Code Review</title>
-      <link>/post/code_reviews_1/</link>
+      <link>https://trishagee.github.io/post/code_reviews_1/</link>
       <pubDate>Mon, 27 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/code_reviews_1/</guid>
+      <guid>https://trishagee.github.io/post/code_reviews_1/</guid>
       <description>&lt;p&gt;I wrote a post for the JetBrains Upsource blog about some of the &lt;a href=&#34;http://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;things you should be looking for when you do code
 reviews&lt;/a&gt; (and some of the things
 you should not be looking at).&lt;/p&gt;
@@ -626,10 +626,10 @@ you should not be looking at).&lt;/p&gt;
     
     <item>
       <title>Java 8 MOOC - Session 1 Summary</title>
-      <link>/post/java_8_mooc_session1/</link>
+      <link>https://trishagee.github.io/post/java_8_mooc_session1/</link>
       <pubDate>Tue, 21 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/java_8_mooc_session1/</guid>
+      <guid>https://trishagee.github.io/post/java_8_mooc_session1/</guid>
       <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
@@ -691,10 +691,10 @@ more clarity on.&lt;/p&gt;
     
     <item>
       <title>Interviewed by InfoQ</title>
-      <link>/post/interviewed_for_infoq/</link>
+      <link>https://trishagee.github.io/post/interviewed_for_infoq/</link>
       <pubDate>Sat, 18 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/interviewed_for_infoq/</guid>
+      <guid>https://trishagee.github.io/post/interviewed_for_infoq/</guid>
       <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
 interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
 but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
@@ -706,10 +706,10 @@ of the JCP, and the future of Java.&lt;/p&gt;
     
     <item>
       <title>My Path To Evangelism</title>
-      <link>/post/becoming_an_evangelist/</link>
+      <link>https://trishagee.github.io/post/becoming_an_evangelist/</link>
       <pubDate>Thu, 02 Jul 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/becoming_an_evangelist/</guid>
+      <guid>https://trishagee.github.io/post/becoming_an_evangelist/</guid>
       <description>&lt;p&gt;So, I get asked a lot about how I got into technical advocacy /
 evangelism&lt;sup&gt;1&lt;/sup&gt;,
 so it seems like the most cost-effective way to answer this question is to
@@ -1052,10 +1052,10 @@ could get going straight away without any ramp up&lt;/p&gt;
     
     <item>
       <title>Java at 20</title>
-      <link>/post/java_at_20/</link>
+      <link>https://trishagee.github.io/post/java_at_20/</link>
       <pubDate>Fri, 22 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/java_at_20/</guid>
+      <guid>https://trishagee.github.io/post/java_at_20/</guid>
       <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
  No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;
@@ -1064,10 +1064,10 @@ could get going straight away without any ramp up&lt;/p&gt;
     
     <item>
       <title>Android Xtended</title>
-      <link>/post/android_xtended/</link>
+      <link>https://trishagee.github.io/post/android_xtended/</link>
       <pubDate>Thu, 21 May 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/android_xtended/</guid>
+      <guid>https://trishagee.github.io/post/android_xtended/</guid>
       <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;/static/images/androidxtended/DSC_6771.jpg&#34; width=&#34;300px&#34; alt=&#34;The 
 calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
 
@@ -1220,10 +1220,10 @@ future&amp;hellip;&lt;/li&gt;
     
     <item>
       <title>Blind CFPs - a Postscript</title>
-      <link>/post/blind_cfps_2/</link>
+      <link>https://trishagee.github.io/post/blind_cfps_2/</link>
       <pubDate>Thu, 12 Mar 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/blind_cfps_2/</guid>
+      <guid>https://trishagee.github.io/post/blind_cfps_2/</guid>
       <description>
 
 &lt;p&gt;Since publishing &lt;a href=&#34;/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
@@ -1297,10 +1297,10 @@ audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
     
     <item>
       <title>Are Blind CFPs Really The Answer?</title>
-      <link>/post/blind_cfps/</link>
+      <link>https://trishagee.github.io/post/blind_cfps/</link>
       <pubDate>Wed, 11 Mar 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/blind_cfps/</guid>
+      <guid>https://trishagee.github.io/post/blind_cfps/</guid>
       <description>
 
 &lt;p&gt;Off the back of &lt;a href=&#34;/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
@@ -1477,10 +1477,10 @@ trying to break through the barriers.&lt;/p&gt;
     
     <item>
       <title>I&#39;m so tired of it all</title>
-      <link>/post/i_am_so_tired_of_it_all/</link>
+      <link>https://trishagee.github.io/post/i_am_so_tired_of_it_all/</link>
       <pubDate>Tue, 10 Mar 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/i_am_so_tired_of_it_all/</guid>
+      <guid>https://trishagee.github.io/post/i_am_so_tired_of_it_all/</guid>
       <description>&lt;p&gt;We work so hard to promote equality, to fight for the rights of people who are not middle-class
 white men, and time and again it just feels like we&amp;rsquo;re not getting anywhere.  &lt;a href=&#34;http://www.internationalwomensday.com/&#34;&gt;International Women&amp;rsquo;s
 Day&lt;/a&gt; highlights the issues that face women all around the world, and make our
@@ -1559,10 +1559,10 @@ of us tell our different tales, we have a better view of the whole ecosystem (an
     
     <item>
       <title>The State of Java</title>
-      <link>/post/svq_state_of_java_update/</link>
+      <link>https://trishagee.github.io/post/svq_state_of_java_update/</link>
       <pubDate>Thu, 29 Jan 2015 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
-      <guid>/post/svq_state_of_java_update/</guid>
+      <guid>https://trishagee.github.io/post/svq_state_of_java_update/</guid>
       <description>
 
 &lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
