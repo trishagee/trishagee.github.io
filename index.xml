@@ -204,20 +204,19 @@ this page should list my confirmed upcoming events.&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;In this talk, Trisha will take a look at some of the features in Java 9, including modularity, the REPL, and the nice new Collections features.  Trisha will demonstrate, via live coding, these features in IntelliJ IDEA, and talk a bit about the current and future support for Java 9 in IntelliJ IDEA.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Slides&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Video&lt;/h2&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/eDV1JUMqMDU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ePGXu8U5H0CSh&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;Video&lt;/h2&gt;
-
-&lt;p&gt;This is an earlier version of the talk, which will be updated when the DevoxxUS version is available.
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/96vce1qd0QY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
 
 &lt;h2 id=&#34;toc_3&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;See also &lt;a href=&#34;/presentation/real_world_java_9&#34;&gt;Real World Java 9&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
+&lt;p&gt;&lt;a href=&#34;http://jdk.java.net/9/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
 talk uses build 161).&lt;/p&gt;
 
 &lt;p&gt;At the time of writing, &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/03/support-for-java-9-modules-in-intellij-idea-2017-1/&#34;&gt;IntelliJ IDEA 2017.1&lt;/a&gt; comes with
@@ -311,11 +310,20 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;Original Java 8 code comes from &lt;a href=&#34;https://github.com/trishagee/sense&#34;&gt;https://github.com/trishagee/sense&lt;/a&gt;, the &lt;em&gt;master&lt;/em&gt; branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the &lt;em&gt;junit-5&lt;/em&gt; branch. Java 8 and 9 features live side-by-side in &lt;em&gt;yow-brisbane&lt;/em&gt;. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;Java 9&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;IntelliJ IDEA&lt;/h3&gt;
+
+&lt;p&gt;The earlier version of this talk runs on IntelliJ IDEA 2017.1, which supports
+Jigsaw much better than earlier versions.  However, I&amp;rsquo;m currently using
+&lt;a href=&#34;https://www.jetbrains.com/idea/nextversion/&#34;&gt;2017.2 EAP&lt;/a&gt; as later versions
+of Java 9 do not play nicely with earlier versions of IntelliJ.  The current
+combo I have working is Java 9 build 9-ea+166 and
+IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Java 9&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk9/&#34;&gt;JDK 9 Project Page&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://jdk9.java.net/download/&#34;&gt;Download JDK 9 EA&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jdk.java.net/9/&#34;&gt;Download JDK 9 EA&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://static.rainfocus.com/oracle/oraclecode17/sess/1485992822413001Yd6N/PF/Cool%20in%20Java%208,%20and%20new%20in%20Java%209.pdf&#34;&gt;What is cool in Java 8 and new in 9&lt;/a&gt;(Slides: Java 9 content starts at Slide 40)&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/ultimate-guide-to-java-9/&#34;&gt;The Ultimate Guide to Java 9&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.sitepoint.com/inside-java-9-part-i/&#34;&gt;Inside Java 9 – Version Schema, Multi-Release JARs, and More&lt;/a&gt;&lt;/li&gt;
@@ -324,7 +332,7 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;&lt;a href=&#34;http://download.java.net/java/jdk9/docs/api/overview-summary.html&#34;&gt;Java 9 Javadoc&lt;/a&gt; (note the new search feature!)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;Jigsaw&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;Jigsaw&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Project Jigsaw&lt;/a&gt;&lt;/li&gt;
@@ -339,7 +347,7 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/czhSo8rotC4&#34;&gt;Migrating to Modules&lt;/a&gt; (video) Highly recommended.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.reactive-streams.org/&#34;&gt;Reactive Streams API&lt;/a&gt;&lt;/li&gt;
@@ -357,7 +365,7 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/reactor-by-example/&#34;&gt;Reactor by Example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_7&#34;&gt;Multi-Release JAR Files&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Multi-Release JAR Files&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/238&#34;&gt;JEP 238&lt;/a&gt;&lt;/li&gt;
@@ -365,7 +373,7 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;&lt;a href=&#34;https://thoughtfulsoftware.wordpress.com/2016/08/22/java-9-multi-release-jar-files-part-ii/&#34;&gt;Multi-release JAR files tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_8&#34;&gt;Stack-Walking API&lt;/h3&gt;
+&lt;h3 id=&#34;toc_9&#34;&gt;Stack-Walking API&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/259&#34;&gt;JEP 259&lt;/a&gt;&lt;/li&gt;
@@ -373,7 +381,7 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;&lt;a href=&#34;http://www.javaworld.com/article/3188289/core-java/java-9s-other-new-enhancements-part-5-stack-walking-api.html&#34;&gt;Java 9&amp;rsquo;s other new enhancements, Part 5: Stack-Walking API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_9&#34;&gt;Process API&lt;/h3&gt;
+&lt;h3 id=&#34;toc_10&#34;&gt;Process API&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/102&#34;&gt;JEP 102&lt;/a&gt;&lt;/li&gt;
@@ -381,14 +389,14 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;&lt;a href=&#34;http://iteratrlearning.com/java/2017/03/12/java9-process-api.html&#34;&gt;Java 9 Process API: The Shape of Things to Come&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_10&#34;&gt;REPL&lt;/h3&gt;
+&lt;h3 id=&#34;toc_11&#34;&gt;REPL&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/kulla/&#34;&gt;REPL&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.jclarity.com/2015/04/15/java-9-repl-getting-started-guide/&#34;&gt;Java 9 REPL – Getting started guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_11&#34;&gt;Other&lt;/h3&gt;
+&lt;h3 id=&#34;toc_12&#34;&gt;Other&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/gof-design-patterns-using-java-02&#34;&gt;GoF - Adapter Pattern&lt;/a&gt;&lt;/li&gt;
