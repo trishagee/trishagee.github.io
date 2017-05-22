@@ -43,7 +43,7 @@
 
 
 
-    <base href="https://trishagee.github.io">
+    <base href="https://trishagee.github.io/">
     <title> Applying Java 8 Idioms to Existing Code - trishagee.github.io </title>
     <link rel="canonical" href="https://trishagee.github.io/presentation/refactoring_to_java_8/">
     
@@ -153,7 +153,7 @@
 <li>Understand when you should and should not apply key refactorings in Java 8.</li>
 </ul>
 
-<h2 id="toc_0">Abstract</h2>
+<h2 id="abstract:1d92c1fb153457538bc0d5b3070a1686">Abstract</h2>
 
 <p>While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.</p>
 
@@ -168,7 +168,7 @@ most benefit</li>
 <li>Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.</li>
 </ul>
 
-<h2 id="toc_1">The talk</h2>
+<h2 id="the-talk:1d92c1fb153457538bc0d5b3070a1686">The talk</h2>
 
 <p>Most recent version, containing performance analysis, is on the
 <a href="https://www.infoq.com/presentations/java8-lambda-streams">InfoQ website</a>, and InfoQ also has a nice summary of the <a href="https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721">points covered in
@@ -185,29 +185,29 @@ the talk</a>.</p>
 <p>The IntelliJ-specific features of some of the refactoring shown are covered in my
 <a href="https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html">Migrating to Java 8</a> tutorial.</p>
 
-<h2 id="toc_2">Background</h2>
+<h2 id="background:1d92c1fb153457538bc0d5b3070a1686">Background</h2>
 
 <p>Article: <a href="https://dzone.com/articles/why-java-8-1">Why Java 8</a><br />
 Article: <a href="https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/">Five Java 8 Features You Won&rsquo;t Be Able to Live Without</a><br />
 Video and Research: <a href="/presentation/java8_in_anger/">Building a Java 8 Application</a></p>
 
-<h2 id="toc_3">Code</h2>
+<h2 id="code:1d92c1fb153457538bc0d5b3070a1686">Code</h2>
 
 <p>The project we&rsquo;re refactoring is <a href="https://github.com/mongodb/morphia">Morphia</a>. You can see the &ldquo;after&rdquo; of the chosen refactorings on the
  <a href="https://github.com/trishagee/morphia/tree/r2j8">r2j8</a> branch.</p>
 
 <p>The performance tests that were written and run specifically for this talk are in the <a href="https://github.com/trishagee/j8-morphia-perf-tests">j8-morphia-perf-tests repository</a></p>
 
-<h2 id="toc_4">Performance</h2>
+<h2 id="performance:1d92c1fb153457538bc0d5b3070a1686">Performance</h2>
 
-<h3 id="toc_5">Lambda Expressions</h3>
+<h3 id="lambda-expressions:1d92c1fb153457538bc0d5b3070a1686">Lambda Expressions</h3>
 
 <p>Video: <a href="http://medianetwork.oracle.com/video/player/2623576348001">Lambda Performance</a> and <a href="http://www.oracle
 .com/technetwork/java/jvmls2013kuksen-2014088.pdf">talk slides</a><br />
 Article: <a href="https://www.infoq.com/articles/Java-8-Lambdas-A-Peek-Under-the-Hood">Java 8 Lambdas - A Peek Under the Hood</a><br />
 Video: <a href="https://youtu.be/MLksirK9nnE">Lambdas in Java: A Peek under the Hood - Brian Goetz</a></p>
 
-<h4 id="toc_6">Streams</h4>
+<h4 id="streams:1d92c1fb153457538bc0d5b3070a1686">Streams</h4>
 
 <p>Video: <a href="https://www.infoq.com/presentations/java8-stream-performance">Let’s Get to the Rapids: Java 8 Stream Performance</a><br />
 Article: <a href="https://jaxenter
@@ -267,11 +267,11 @@ don&rsquo;t realise you&rsquo;re boxing)</p>
 article<br />
 Article: <a href="http://blog.codefx.org/java/stream-performance-your-ideas/">Follow up on Stream Performance</a></p>
 
-<h3 id="toc_7">Date and Time</h3>
+<h3 id="date-and-time:1d92c1fb153457538bc0d5b3070a1686">Date and Time</h3>
 
 <p>Article: <a href="http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/">JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)</a></p>
 
-<h3 id="toc_8">Benchmarking</h3>
+<h3 id="benchmarking:1d92c1fb153457538bc0d5b3070a1686">Benchmarking</h3>
 
 <p>I used a bunch of techniques to produce the benchmarks on the talk.  I&rsquo;d like to summarise them more thoroughly when I get a chance, but
 for now here&rsquo;s my background reading:</p>
@@ -282,7 +282,7 @@ for now here&rsquo;s my background reading:</p>
 Tool: <a href="https://github.com/artyushov/idea-jmh-plugin">IntelliJ JMH Plugin</a><br />
 Article: <a href="http://java-performance.info/jmh/">Introduction to JMH</a></p>
 
-<h2 id="toc_9">&ldquo;Best Practice&rdquo;</h2>
+<h2 id="best-practice:1d92c1fb153457538bc0d5b3070a1686">&ldquo;Best Practice&rdquo;</h2>
 
 <p>I dislike the term &ldquo;Best Practice&rdquo; as it implies a &ldquo;one size fits all&rdquo; approach, and I believe that our job is to
 make difficult decisions based on various pros and cons and differing situations.  However, here I will collect
@@ -314,11 +314,11 @@ Article: <a href="http://zeroturnaround.com/rebellabs/java-8-best-practices-chea
     </ul>
     <ul id="tags">
         
-        <li><a href="https://trishagee.github.io/tags/java">java</a></li>
+        <li><a href="https://trishagee.github.io//tags/java">java</a></li>
         
-        <li><a href="https://trishagee.github.io/tags/refactoring">refactoring</a></li>
+        <li><a href="https://trishagee.github.io//tags/refactoring">refactoring</a></li>
         
-        <li><a href="https://trishagee.github.io/tags/performance">performance</a></li>
+        <li><a href="https://trishagee.github.io//tags/performance">performance</a></li>
         
     </ul>
 </div>
@@ -345,7 +345,7 @@ Article: <a href="http://zeroturnaround.com/rebellabs/java-8-best-practices-chea
 
 </aside>
 
-<meta itemprop="wordCount" content="857">
+<meta itemprop="wordCount" content="856">
 <meta itemprop="datePublished" content="2016-06-03">
 <meta itemprop="url" content="https://trishagee.github.io/presentation/refactoring_to_java_8/">
 

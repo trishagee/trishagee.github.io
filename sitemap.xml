@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
+    <loc>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</loc>
     <lastmod>2017-04-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</loc>
+    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
     <lastmod>2017-04-03T00:00:00+00:00</lastmod>
   </url>
   
@@ -1098,16 +1098,6 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/most_of_all_its_fun/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://trishagee.github.io/post/the_importance_of_choosing_a_good_scale_for_your_metrics/</loc>
     <lastmod>2007-10-10T00:00:00+00:00</lastmod>
   </url>
@@ -1160,6 +1150,14 @@
   <url>
     <loc>https://trishagee.github.io/post/qcon_initial_thoughts/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/post/most_of_all_its_fun/</loc>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
   </url>
   
 </urlset>
