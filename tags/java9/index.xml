@@ -107,13 +107,20 @@ real-time streaming data&lt;/em&gt;&lt;/li&gt;
 additions to interfaces and changes to deprecation.  We’ll see that once you
 start using Java 9, you can&amp;rsquo;t go back to Before.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;video:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Video&lt;/h2&gt;
+&lt;h2 id=&#34;videos:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Videos&lt;/h2&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/GkP83hvdeMk&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;These are all the available videos, with the most recent at the top.  Usually, the more recent the talk the more polished, therefore usually they&amp;rsquo;re better.  With this talk, it&amp;rsquo;s more a case of showcasing / focusing on different aspects in different versions.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GOTO Amsterdam (not available yet).  Less reactive streams, less Jigsaw, marginally more time for the &amp;ldquo;other&amp;rdquo; Java 9 features.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/wZLDDx-5KJg&#34;&gt;J on the Beach, Malaga&lt;/a&gt;. Pretty much the same as the DevoxxUK version.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/GkP83hvdeMk&#34;&gt;DevoxxUK&lt;/a&gt;. More Jigsaw content than earlier.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infoq.com/presentations/java9-flow-stream-api&#34;&gt;QCon London&lt;/a&gt;. Much more focus on Reactive Streams: what they are, how they work, and how to migrate an app to use the Reactive Streams API.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h2 id=&#34;slides:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Slides&lt;/h2&gt;
 
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/CFW6Y9uyF181yV&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/9Qyo85MWpDl7fZ&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
 &lt;h2 id=&#34;resources:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Resources&lt;/h2&gt;
 
@@ -138,8 +145,8 @@ The full application with all Java 9 code is currently under the
 Jigsaw much better than earlier versions.  However, I&amp;rsquo;m currently using
 &lt;a href=&#34;https://www.jetbrains.com/idea/nextversion/&#34;&gt;2017.2 EAP&lt;/a&gt; as later versions
 of Java 9 do not play nicely with earlier versions of IntelliJ.  The current
-combo I have working is Java 9 build 9-ea+166 and
-IntelliJ IDEA Build #IU-172.2103.15.&lt;/p&gt;
+combo I have working is Java 9 build 9-ea+175 and
+IntelliJ IDEA Build #IU-172.3095.12.&lt;/p&gt;
 
 &lt;h3 id=&#34;java-9:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Java 9&lt;/h3&gt;
 
