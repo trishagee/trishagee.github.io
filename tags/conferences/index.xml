@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Conferences on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/conferences/</link>
+    <link>https://trishagee.github.io/tags/conferences/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -14,7 +14,7 @@
       <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;https://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
 &lt;p&gt;No travel planned!  Keep an eye on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA blog&lt;/a&gt; for
@@ -31,7 +31,7 @@ the fourth member of my family.&lt;/p&gt;
       <guid>https://trishagee.github.io/post/blind_cfps_2/</guid>
       <description>
 
-&lt;p&gt;Since publishing &lt;a href=&#34;https://trishagee.github.io/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
+&lt;p&gt;Since publishing &lt;a href=&#34;/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
 another post to answer them.&lt;/p&gt;
 
 &lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
@@ -40,7 +40,7 @@ is an answer to &amp;ldquo;How do I get more women speakers at my conference?&am
 women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
 in the conferences I speak at/help organise.&lt;/p&gt;
 
-&lt;h4 id=&#34;you-re-missing-the-point-of-blind-cfps:43f099050d27fb0647d57b33c7259595&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
+&lt;h4 id=&#34;toc_0&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
 
 &lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
 in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
@@ -58,7 +58,7 @@ minorities for not meeting your criteria.&lt;/p&gt;
 &lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
 of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
 
-&lt;h4 id=&#34;an-abstract-is-not-a-representation-of-your-talk:43f099050d27fb0647d57b33c7259595&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
+&lt;h4 id=&#34;toc_1&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
 
 &lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
 a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
@@ -80,7 +80,7 @@ to writing good abstracts (or CVs), but mastery of that skill does not necessari
 represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
 being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
 
-&lt;h4 id=&#34;for-goodness-sake-trisha-the-postscript-is-nearly-longer-than-the-original-post:43f099050d27fb0647d57b33c7259595&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
+&lt;h4 id=&#34;toc_2&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
 
 &lt;p&gt;Yeah, sorry.&lt;/p&gt;
 
@@ -117,7 +117,7 @@ only identify some issues and explore some options.&lt;/p&gt;
 &lt;p&gt;This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and
 posted than if this all goes to die in my drafts folder.&lt;/p&gt;
 
-&lt;h3 id=&#34;firstly-what-stops-people-from-stepping-up-to-speak:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
+&lt;h3 id=&#34;toc_0&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;I don&amp;rsquo;t have anything to say&lt;/strong&gt;&lt;br /&gt;
 This is the very first thing any developer says when you ask them why they haven&amp;rsquo;t thought about presenting at conferences or user
@@ -160,7 +160,7 @@ or to the audience as a whole. In conferences in particular, there&amp;rsquo;s a
 an alternative, like via Twitter or e-mail, if you can.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;what-can-conference-organisers-do:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What can conference organisers do?&lt;/h3&gt;
+&lt;h3 id=&#34;toc_1&#34;&gt;What can conference organisers do?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;Specifically invite the people you want presenting&lt;/strong&gt;&lt;br /&gt;
 Don&amp;rsquo;t just wait for them to submit. If you want more women, more diversity, invite them. And invite them early&amp;hellip;&lt;/p&gt;
@@ -232,7 +232,7 @@ advanced. People will submit more appropriate talks.&lt;/p&gt;
 &amp;hellip;not just for the speakers, for the content too. Beginner speakers may be more comfortable presenting &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; talks.&lt;br /&gt;
 Having a beginners track, whether it&amp;rsquo;s for content or speakers, will make newbies feel more included.&lt;/p&gt;
 
-&lt;h3 id=&#34;what-other-things-can-we-try:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;What other things can we try?&lt;/h3&gt;
+&lt;h3 id=&#34;toc_2&#34;&gt;What other things can we try?&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;User groups can grow talent&lt;/strong&gt;&lt;/p&gt;
 
@@ -250,7 +250,7 @@ contributing to. But women&amp;rsquo;s user groups can help us to integrate bett
 to submit talks to Devoxx, gave feedback on CFPs before they were submitted, and provided a safe place for the women to practice
 presenting beforehand.  I think this is exactly the sort of thing women&amp;rsquo;s user groups could be fantastic for.&lt;/p&gt;
 
-&lt;h3 id=&#34;advice-for-budding-speakers:1af3fe33f6e93bedb196a85f5a451c5d&#34;&gt;Advice for budding speakers&lt;/h3&gt;
+&lt;h3 id=&#34;toc_3&#34;&gt;Advice for budding speakers&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Just Do It&lt;/li&gt;
@@ -290,7 +290,7 @@ I&amp;rsquo;d been here less than six months, and it was a really great way to g
 &lt;p&gt;I was trying to find a blog post where I talked about my experiences, but it looks like I only wrote that In My Mind. In fact,
 I only only wrote two whole lines of notes on the conference.  But 18 months later I clearly remember presentations from my colleagues
 &lt;a href=&#34;http://rosslawley.co.uk/&#34;&gt;Ross&lt;/a&gt; and &lt;a href=&#34;http://derickrethans.nl/&#34;&gt;Derick&lt;/a&gt; demonstrating the geo capabilities in MongoDB,
-presentations which heavily influenced the &lt;a href=&#34;https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt; I&amp;rsquo;ve been giving
+presentations which heavily influenced the &lt;a href=&#34;/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/&#34;&gt;live coding demo&lt;/a&gt; I&amp;rsquo;ve been giving
 recently.&lt;/p&gt;
 
 &lt;p&gt;I also remember Eliot&amp;rsquo;s presentation - Eliot is one of those people who totally gets away with breaking the &amp;ldquo;speak in a measured,
@@ -432,7 +432,7 @@ Oliver&lt;/a&gt;: &lt;a href=&#34;http://jaxlondon.com/speakers/john-stevenson&#
  were:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Ken Sipe&amp;rsquo;s &lt;a href=&#34;http://www.spockframework.org/&#34;&gt;Spock&lt;/a&gt; talk. I saw this at GeeCON and that&amp;rsquo;s why &lt;a href=&#34;https://trishagee.github.io/tags/spock/&#34;&gt;I started using
+&lt;li&gt;Ken Sipe&amp;rsquo;s &lt;a href=&#34;http://www.spockframework.org/&#34;&gt;Spock&lt;/a&gt; talk. I saw this at GeeCON and that&amp;rsquo;s why &lt;a href=&#34;/tags/spock/&#34;&gt;I started using
 Spock&lt;/a&gt; to test the MongoDB Java driver, but it was great to see it again and pick up some extra tips&lt;/li&gt;
 &lt;li&gt;Ted Neward&amp;rsquo;s talk at the community night about being a CTO at a startup. It was really interesting,
 and nice to see a realistic view of the difficulties of that role.&lt;/li&gt;
