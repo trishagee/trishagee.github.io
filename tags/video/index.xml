@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Video on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/video/index.xml/</link>
+    <link>https://trishagee.github.io/tags/video/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -38,7 +38,7 @@ src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&
 
 &lt;hr /&gt;
 
-&lt;h3 id=&#34;toc_0&#34;&gt;Abstract&lt;/h3&gt;
+&lt;h3 id=&#34;abstract:55bdc67688424da8fd656071ea3cbd85&#34;&gt;Abstract&lt;/h3&gt;
 
 &lt;p&gt;&lt;em&gt;Rock stars are dead. Ninjas are banished. There are simply too many trashed hotel rooms, dead bodies and failed
 projects. The age of the individual superhero coder is over.&lt;/em&gt;&lt;/p&gt;
@@ -86,18 +86,19 @@ which happens to be the same one I&amp;rsquo;m giving at a number of conferences
 &lt;p&gt;The presentation leaves very little time for anything other than coding, as it&amp;rsquo;s quite challenging to create a full app in 50
 minutes, so it was great to have the chance to talk about the motivations for the demo&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/sZee7lRAUF4&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
-  
+&lt;/p&gt;
 
 &lt;p&gt;The video of the actual talk is also available now:&lt;/p&gt;
 
-&lt;div class=&#34;embed video-player&#34;&gt;
+&lt;p&gt;&lt;div class=&#34;embed video-player&#34;&gt;
 &lt;iframe class=&#34;youtube-player&#34; type=&#34;text/html&#34; width=&#34;640&#34; height=&#34;385&#34; src=&#34;http://www.youtube.com/embed/kmVnhyWqozA&#34; allowfullscreen frameborder=&#34;0&#34;&gt;
 &lt;/iframe&gt;
 &lt;/div&gt;
+&lt;/p&gt;
 
 &lt;p&gt;At the beginning it doesn&amp;rsquo;t clearly show the screen, but it does improve.  You can see an earlier version from the
 &lt;a href=&#34;http://www.infoq.com/presentations/demo-java-javascript-mongodb#anch110035&#34;&gt;Joy of Coding&lt;/a&gt; as well,
@@ -153,7 +154,7 @@ around where we want the API to go.&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
       <description>&lt;p&gt;Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example,
-by &lt;a href=&#34;/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
+by &lt;a href=&#34;https://trishagee.github.io/post/how_to_make_your_cv_not_suck/&#34;&gt;creating CVs that don&amp;rsquo;t suck&lt;/a&gt;, and by &lt;a href=&#34;https://trishagee.github.io/post/staying_ahead_of_the_curve/&#34;&gt;staying ahead of the curve&lt;/a&gt;),
 &lt;a href=&#34;http://www.davethomas.net/&#34;&gt;Dave Thomas&lt;/a&gt; asked me to speak for a mere 50 minutes on the subject at &lt;a href=&#34;http://gotocon
 .com/video#36&#34;&gt;GOTO Aarhus&lt;/a&gt;, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short
 time.  Dave seemed to like something in it though, as he gave me the opportunity to present the topic again at YOW last December,
@@ -177,7 +178,7 @@ I think he brings out the best in me.&lt;/p&gt;
 
 &lt;p&gt;You can see the video &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-mongdo-java8#.U00BRMNMIC4.blogger&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;At the start of the interview we refer to the first time we met, which, if you&amp;rsquo;re interested, &lt;a href=&#34;https://trishagee.github.io/post/interviewed_for_infoq_at_qcon_london/&#34;&gt;you can also watch&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -255,7 +256,7 @@ ask more than one at once - this meant that all the speakers really needed to al
 of the other things I found unusual was the number of people who would walk in and out of the room during sessions - this wasn&amp;rsquo;t just
 everyone fleeing my session (I hope!), I saw it happen in all the talks, even the keynotes.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;My stuff&lt;/h2&gt;
+&lt;h2 id=&#34;my-stuff:b3cefa5c23d3f4606559d8680eb582a8&#34;&gt;My stuff&lt;/h2&gt;
 
 &lt;p&gt;On the first day I was on a panel about diversity in IT, which was basically about women programmers (again). It was a good panel to be
 on, actually, because there were a range of opinions, including downright disagreement, which made for a more interesting discussion.
@@ -272,7 +273,7 @@ something as an attendee. &amp;nbsp;I don&amp;rsquo;t know if that&amp;rsquo;s b
 sessions b) we have some specific problems we&amp;rsquo;re trying to solve on our code right now that we&amp;rsquo;re looking for answers to or c) the
 conference inspired it, but I came out of a lot of sessions excited about things to try.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Testing&lt;/h2&gt;
+&lt;h2 id=&#34;testing:b3cefa5c23d3f4606559d8680eb582a8&#34;&gt;Testing&lt;/h2&gt;
 
 &lt;p&gt;My first take-away point is to try &lt;a href=&#34;https://code.google.com/p/spock/&#34;&gt;Spock&lt;/a&gt;. I&amp;rsquo;ve been told for ages that I need to give it a
  go, but the session really sold it to me. &amp;nbsp;It seems to have features that will solve specific things we&amp;rsquo;re looking at right now,
@@ -290,13 +291,13 @@ conference inspired it, but I came out of a lot of sessions excited about things
 to be understandable to Java developers, and I worried that adding Groovy tests might make the learning curve steeper. &amp;nbsp;But I think
 it&amp;rsquo;s an idea worth playing with.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Asynchronous IO&lt;/h2&gt;
+&lt;h2 id=&#34;asynchronous-io:b3cefa5c23d3f4606559d8680eb582a8&#34;&gt;Asynchronous IO&lt;/h2&gt;
 
 &lt;p&gt;So one of the things we&amp;rsquo;re working on is trying to figure out the best way to provide an async Java driver. &lt;a href=&#34;http://2013.geecon
 .org/speakers/erik-onnen&#34;&gt;Erik Onnen&lt;/a&gt;&amp;rsquo;s talk around performance network programming on the JVM was really interesting. &amp;nbsp;Most
 usefully, it compared sync to async communication, outlining the pros and cons, and how you can do it on the JVM.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Build the right thing before you build the thing right&lt;/h2&gt;
+&lt;h2 id=&#34;build-the-right-thing-before-you-build-the-thing-right:b3cefa5c23d3f4606559d8680eb582a8&#34;&gt;Build the right thing before you build the thing right&lt;/h2&gt;
 
 &lt;p&gt;The first keynote was about &lt;a href=&#34;http://www.pretotyping.org/&#34;&gt;Pretotyping&lt;/a&gt; - Patrick Copeland from Google was talking
 about ideas and innovators, and blowing away the myth that all it takes to make money is a single great idea. He highlighted how
@@ -313,7 +314,7 @@ reducing the cost).&lt;/p&gt;
 
 &lt;p&gt;The session was videoed, so hopefully it will be available to see. If you&amp;rsquo;re thinking of An Idea, I highly recommend this talk.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_4&#34;&gt;Many users = anthropology, not user experience&lt;/h2&gt;
+&lt;h2 id=&#34;many-users-anthropology-not-user-experience:b3cefa5c23d3f4606559d8680eb582a8&#34;&gt;Many users = anthropology, not user experience&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://www.joelonsoftware.com/&#34;&gt;Joel Spolksy&lt;/a&gt;, the man who inspired me to start this very blog (well,
 earlier incarnations of it) talked about the experiences of growing stack exchange. This was interesting because it was not about

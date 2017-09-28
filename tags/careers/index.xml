@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Careers on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/careers/index.xml/</link>
+    <link>https://trishagee.github.io/tags/careers/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -18,7 +18,7 @@
 
 &lt;p&gt;One developer&amp;rsquo;s journey to find the perfect job.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;abstract:3aabbc6c68eb6f98c6db7a8cf0064be0&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Do you know how to remain a programmer? To avoid being “promoted” into
 positions away from technology and code? Did they teach you at university
@@ -29,11 +29,11 @@ session, Trisha Gee (Java Champion, 2015 MongoDB Master, 2016 / 2014 / 2012
 JavaOne Rock Star &amp;amp; Technical Advocate for JetBrains) will share some lessons
 she learnt the hard way over nearly twenty years of managing her career as a Java developer. She&amp;rsquo;ll talk about what&amp;rsquo;s really important to developers when thinking about their careers, and give you tools for working out what your next steps are. If nothing else, you’ll get to laugh at the (many) mistakes I’ve made in my search for The Perfect Job.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_1&#34;&gt;Slides&lt;/h2&gt;
+&lt;h2 id=&#34;slides:3aabbc6c68eb6f98c6db7a8cf0064be0&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/l8V7GYWY3pl2GG&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
-&lt;h2 id=&#34;toc_2&#34;&gt;Videos&lt;/h2&gt;
+&lt;h2 id=&#34;videos:3aabbc6c68eb6f98c6db7a8cf0064be0&#34;&gt;Videos&lt;/h2&gt;
 
 &lt;p&gt;This talk has been videoed twice:&lt;/p&gt;
 
@@ -44,7 +44,7 @@ covers a wide variety of topics&lt;/li&gt;
 version has a better structure, but doesn&amp;rsquo;t cover as many topics&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Other links&lt;/h2&gt;
+&lt;h2 id=&#34;other-links:3aabbc6c68eb6f98c6db7a8cf0064be0&#34;&gt;Other links&lt;/h2&gt;
 
 &lt;p&gt;Links and resources mentioned in the talk are largely from my own blog:&lt;/p&gt;
 
