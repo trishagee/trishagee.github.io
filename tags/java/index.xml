@@ -365,11 +365,18 @@ most benefit&lt;/li&gt;
 
 &lt;h2 id=&#34;the-talk:1d92c1fb153457538bc0d5b3070a1686&#34;&gt;The talk&lt;/h2&gt;
 
-&lt;p&gt;Most recent version, containing performance analysis, is on the
-&lt;a href=&#34;https://www.infoq.com/presentations/java8-lambda-streams&#34;&gt;InfoQ website&lt;/a&gt;, and InfoQ also has a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in
-the talk&lt;/a&gt;.&lt;/p&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/NcetKbGayZY&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;The first appearance was at &lt;a href=&#34;https://www.youtube.com/watch?v=dlzMV83RTtw&#34;&gt;DevoxxUK&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;This is the most complete version of the talk, containing as many different refactorings as I could squeeze in, and updated performance analysis.&lt;/p&gt;
+
+&lt;p&gt;Other versions include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/2xOtyGUTpQU&#34;&gt;JetBrains Webinar&lt;/a&gt;, with all the latest IntelliJ IDEA support for Java 8 refactoring.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.infoq.com/presentations/java8-lambda-streams&#34;&gt;QCon New York&lt;/a&gt;, with a nice summary of the &lt;a href=&#34;https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721&#34;&gt;points covered in
+the talk&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=dlzMV83RTtw&#34;&gt;DevoxxUK&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/xPhKtRN9aOsHZd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
