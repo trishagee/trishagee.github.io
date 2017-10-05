@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Java9 on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/java9/</link>
+    <link>https://trishagee.github.io/tags/java9/index.xml/</link>
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
@@ -18,7 +18,7 @@
 
 &lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;
 
-&lt;h2 id=&#34;abstract:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;The feature we always hear about whenever Java 9 is in the news is Jigsaw, modularity.  But this doesn&amp;rsquo;t scratch the same developer itch that Java 8&amp;rsquo;s lambdas and streams did, and we&amp;rsquo;re left with a vague sensation that the next version might not be that interesting.&lt;/em&gt;&lt;/p&gt;
 
@@ -34,7 +34,7 @@
 
 &lt;p&gt;&lt;em&gt;Along the way we&amp;rsquo;ll bump into other Java 9 features, including some of the additions to interfaces and Optional, and a number of other small changes that make coding in Java a bit nicer than it was before.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;videos:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Videos&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Videos&lt;/h2&gt;
 
 &lt;p&gt;These are all the available videos, with the most recent at the top.  Usually, the more recent the talk the more polished, therefore usually they&amp;rsquo;re better.  With this talk, it&amp;rsquo;s more a case of showcasing / focusing on different aspects in different versions.&lt;/p&gt;
 
@@ -49,21 +49,21 @@
 &lt;li&gt;&lt;a href=&#34;https://www.infoq.com/presentations/java9-flow-stream-api&#34;&gt;QCon London&lt;/a&gt;. Much more focus on Reactive Streams: what they are, how they work, and how to migrate an app to use the Reactive Streams API.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&#34;slides:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Slides&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/5WKfdU7WjMOQkd&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
 &lt;p&gt;These are the latest slides.  For earlier versions, see &lt;a href=&#34;https://www.slideshare.net/trishagee/&#34;&gt;Slideshare&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;resources:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Resources&lt;/h2&gt;
 
 &lt;p&gt;The code for this presentation was originally created to demonstrate Java 8 code in
-&lt;a href=&#34;https://trishagee.github.io/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt;, take a look at the videos there to see more background on the application and how it used Java 8 Streams and Lambda Expressions for the core business logic. The code and the presentation
+&lt;a href=&#34;/presentation/java8_in_anger&#34;&gt;Java 8 in Anger&lt;/a&gt;, take a look at the videos there to see more background on the application and how it used Java 8 Streams and Lambda Expressions for the core business logic. The code and the presentation
 evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Java 9 features&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;I have another Java 9 talk based off this code, &lt;a href=&#34;https://trishagee.github.io/presentation/java_9_are_we_there_yet&#34;&gt;Anticipating Java 9 - Functionality and Tooling&lt;/a&gt;, which demos more individual Java 9 features and talks specifically about IntelliJ IDEA&amp;rsquo;s support for it.&lt;/p&gt;
+&lt;p&gt;I have another Java 9 talk based off this code, &lt;a href=&#34;/presentation/java_9_are_we_there_yet&#34;&gt;Anticipating Java 9 - Functionality and Tooling&lt;/a&gt;, which demos more individual Java 9 features and talks specifically about IntelliJ IDEA&amp;rsquo;s support for it.&lt;/p&gt;
 
-&lt;h3 id=&#34;articles:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Articles&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Articles&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve expanded upon the examples in this presentation in a couple of articles about adopting Java 9:&lt;/p&gt;
 
@@ -72,7 +72,7 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 &lt;li&gt;InfoQ: &lt;a href=&#34;https://www.infoq.com/articles/Java-Jigsaw-Migration-Guide&#34;&gt;Painlessly Migrating to Java Jigsaw Modules - a Case Study&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;code:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Code&lt;/h3&gt;
+&lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/trishagee/sense-nine&#34;&gt;https://github.com/trishagee/sense-nine&lt;/a&gt;.
@@ -81,7 +81,7 @@ The full application with all Java 9 code is currently under the
 &lt;li&gt;Original Java 8 code comes from &lt;a href=&#34;https://github.com/trishagee/sense&#34;&gt;https://github.com/trishagee/sense&lt;/a&gt;, the &lt;em&gt;master&lt;/em&gt; branch has the most up-to-date final working Java 8 application.  JUnit 5 tests come from the &lt;em&gt;junit-5&lt;/em&gt; branch. Java 8 and 9 features live side-by-side in &lt;em&gt;yow-brisbane&lt;/em&gt;. That app was built with Java build 9-ea+146, but does not work with build 9-ea+156&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;intellij-idea:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;IntelliJ IDEA&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;IntelliJ IDEA&lt;/h3&gt;
 
 &lt;p&gt;The earliest version of this talk runs on IntelliJ IDEA 2017.1, which supports
 Jigsaw much better than pre-2017 versions.  However, I&amp;rsquo;m currently using
@@ -89,7 +89,7 @@ Jigsaw much better than pre-2017 versions.  However, I&amp;rsquo;m currently usi
 and also a basic version of the &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161611&#34;&gt;Java Console&lt;/a&gt;.
 Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intellij-idea/&#34;&gt;summary of the Java 9 support in IntelliJ IDEA&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;java-9:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Java 9&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Java 9&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Download &lt;a href=&#34;http://www.oracle.com/technetwork/java/javase/downloads/jdk9-downloads-3848520.html&#34;&gt;Oracle&amp;rsquo;s JDK 9&lt;/a&gt; or &lt;a href=&#34;http://jdk.java.net/9/&#34;&gt;OpenJDK&lt;/a&gt;&lt;/li&gt;
@@ -106,7 +106,7 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;http://download.java.net/java/jdk9/docs/api/overview-summary.html&#34;&gt;Java 9 Javadoc&lt;/a&gt; (note the new search feature!)&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;jigsaw:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Jigsaw&lt;/h3&gt;
+&lt;h3 id=&#34;toc_8&#34;&gt;Jigsaw / JPMS&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/&#34;&gt;Project Jigsaw&lt;/a&gt;&lt;/li&gt;
@@ -117,11 +117,13 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/Latest-Project-Jigsaw-Usage-Tutorial&#34;&gt;Programming with Modularity and Project Jigsaw. A Tutorial Using the Latest Early Access Build&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/11/first-steps-with-java9-jigsaw-part-1&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 1&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.codecentric.de/en/2015/12/first-steps-with-java9-jigsaw-part-2/&#34;&gt;First steps with Java 9 and Project Jigsaw – Part 2&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.joda.org/2017/04/java-9-modules-jpms-basics.html&#34;&gt;Java 9 modules - JPMS basics&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://blog.joda.org/2017/04/java-se-9-jpms-modules-are-not-artifacts.html?m=1&#34;&gt;Java SE 9 - JPMS modules are not artifacts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.joda.org/2017/04/java-se-9-jpms-module-naming.html&#34;&gt;Java SE 9 - JPMS module naming&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/doc/ModulesAndJavac.pdf&#34;&gt;Modules and javac&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;jlink:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;jlink&lt;/h3&gt;
+&lt;h3 id=&#34;toc_9&#34;&gt;jlink&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;docs.oracle.com/javase/9/tools/jlink.htm&#34;&gt;jlink Reference Documentation&lt;/a&gt;&lt;/li&gt;
@@ -129,7 +131,7 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;The Jigsaw &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Quick Start Tutorial&lt;/a&gt; also has a section on jlink&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;migrating-to-java-9-and-jigsaw:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Migrating to Java 9 (and Jigsaw)&lt;/h3&gt;
+&lt;h3 id=&#34;toc_10&#34;&gt;Migrating to Java 9 (and Jigsaw)&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/9/migrate/&#34;&gt;Java 9 Migration Guide&lt;/a&gt;&lt;/li&gt;
@@ -139,7 +141,7 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/9/tools/jdeps.htm#JSWOR690&#34;&gt;jdeps Tool&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;reactive-programming-and-rxjava:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
+&lt;h3 id=&#34;toc_11&#34;&gt;Reactive Programming and RxJava&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://www.reactive-streams.org/&#34;&gt;Reactive Streams API&lt;/a&gt;&lt;/li&gt;
@@ -157,7 +159,7 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/reactor-by-example/&#34;&gt;Reactor by Example&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;multi-release-jar-files:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Multi-Release JAR Files&lt;/h3&gt;
+&lt;h3 id=&#34;toc_12&#34;&gt;Multi-Release JAR Files&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/238&#34;&gt;JEP 238&lt;/a&gt;&lt;/li&gt;
@@ -165,7 +167,7 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;https://thoughtfulsoftware.wordpress.com/2016/08/22/java-9-multi-release-jar-files-part-ii/&#34;&gt;Multi-release JAR files tutorial&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;stack-walking-api:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Stack-Walking API&lt;/h3&gt;
+&lt;h3 id=&#34;toc_13&#34;&gt;Stack-Walking API&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/259&#34;&gt;JEP 259&lt;/a&gt;&lt;/li&gt;
@@ -173,7 +175,7 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;http://www.javaworld.com/article/3188289/core-java/java-9s-other-new-enhancements-part-5-stack-walking-api.html&#34;&gt;Java 9&amp;rsquo;s other new enhancements, Part 5: Stack-Walking API&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;process-api:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Process API&lt;/h3&gt;
+&lt;h3 id=&#34;toc_14&#34;&gt;Process API&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/102&#34;&gt;JEP 102&lt;/a&gt;&lt;/li&gt;
@@ -181,7 +183,7 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;http://iteratrlearning.com/java/2017/03/12/java9-process-api.html&#34;&gt;Java 9 Process API: The Shape of Things to Come&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;jshell-the-repl:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;JShell (the REPL)&lt;/h3&gt;
+&lt;h3 id=&#34;toc_15&#34;&gt;JShell (the REPL)&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm&#34;&gt;JShell User&amp;rsquo;s Guide&lt;/a&gt;&lt;/li&gt;
@@ -189,14 +191,14 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 &lt;li&gt;&lt;a href=&#34;https://www.jclarity.com/2015/04/15/java-9-repl-getting-started-guide/&#34;&gt;Java 9 REPL – Getting started guide&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;html5-javadoc:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;HTML5 Javadoc&lt;/h3&gt;
+&lt;h3 id=&#34;toc_16&#34;&gt;HTML5 Javadoc&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.voxxed.com/2016/10/java-9-series-html5-javadoc/&#34;&gt;Java 9 series: HTML5 and Javadoc&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.idrsolutions.com/2017/05/how-html5-javadocs-in-java-9-will-make-your-life-easier/&#34;&gt;How HTML5 Javadocs in Java 9 will make your life easier&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;other:730c654ae5c9e0febf7f7ef37454d116&#34;&gt;Other&lt;/h3&gt;
+&lt;h3 id=&#34;toc_17&#34;&gt;Other&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://dzone.com/articles/gof-design-patterns-using-java-02&#34;&gt;GoF - Adapter Pattern&lt;/a&gt; (required to adapt between Java 9 Flow API and the Reactive Streams API)&lt;/li&gt;
@@ -214,23 +216,23 @@ Read a &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intell
 
 &lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;
 
-&lt;h2 id=&#34;abstract:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Abstract&lt;/h2&gt;
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
 
 &lt;p&gt;&lt;em&gt;Seems like we’ve been waiting for Java 9 for eternity.  We’ve been hearing all about Jigsaw since Java 7, so we’ll be forgiven for thinking that’s the most interesting thing about the next Java release.  What we should be wondering is, will Java 9 it change the way we develop, like Java 8 did?  Will my tools break when I try to use it? Is it worth playing with it before it comes out, or should I just wait until everything stabilises?&lt;/em&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;In this talk, Trisha will take a look at some of the features in Java 9, including modularity, the REPL, and the nice new Collections features.  Trisha will demonstrate, via live coding, these features in IntelliJ IDEA, and talk a bit about the current and future support for Java 9 in IntelliJ IDEA.&lt;/em&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;video:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Video&lt;/h2&gt;
+&lt;h2 id=&#34;toc_1&#34;&gt;Video&lt;/h2&gt;
 
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/eDV1JUMqMDU&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;h2 id=&#34;slides:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Slides&lt;/h2&gt;
+&lt;h2 id=&#34;toc_2&#34;&gt;Slides&lt;/h2&gt;
 
 &lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/ePGXu8U5H0CSh&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
 
-&lt;h2 id=&#34;resources:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Resources&lt;/h2&gt;
 
-&lt;p&gt;See also &lt;a href=&#34;https://trishagee.github.io/presentation/real_world_java_9&#34;&gt;Real World Java 9&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;See also &lt;a href=&#34;/presentation/real_world_java_9&#34;&gt;Real World Java 9&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://jdk.java.net/9/&#34;&gt;Download the latest Java JDK here&lt;/a&gt; (the
 talk uses build 161).&lt;/p&gt;
@@ -244,7 +246,7 @@ This support has evolved a little since then, I&amp;rsquo;m now using the
 the &lt;a href=&#34;http://openjdk.java.net/projects/jigsaw/quick-start&#34;&gt;Getting Started tutorial&lt;/a&gt;.  I used the &lt;a href=&#34;https://java.net/downloads/adoptopenjdk/REPL_Tutorial.pdf&#34;&gt;Java REPL
 Tutorial&lt;/a&gt; to help me get started with JShell.&lt;/p&gt;
 
-&lt;h2 id=&#34;help-feedback:6a2eab40fe361c94565d54d6721754bb&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
+&lt;h2 id=&#34;toc_4&#34;&gt;Help &amp;amp; Feedback&lt;/h2&gt;
 
 &lt;p&gt;Get help and more information on JDK 9 from the
 &lt;a href=&#34;https://community.oracle.com/community/java/java_desktop/java-se-early-access&#34;&gt;Oracle Community feedback forum&lt;/a&gt;. If you find a genuine
@@ -256,7 +258,7 @@ bug in the JDK, &lt;a href=&#34;http://bugreport.java.com/&#34;&gt;report it her
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-154240&#34;&gt;IDEA-154240: IDEA should work with JDK module system&lt;/a&gt;&lt;br /&gt;
 &lt;a href=&#34;https://youtrack.jetbrains.com/issue/IDEA-161641&#34;&gt;IDEA-161641: Produce JLink Artefacts&lt;/a&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;more-information:6a2eab40fe361c94565d54d6721754bb&#34;&gt;More information&lt;/h2&gt;
+&lt;h2 id=&#34;toc_5&#34;&gt;More information&lt;/h2&gt;
 
 &lt;p&gt;Joseph Darcy&amp;rsquo;s talk on
 &lt;a href=&#34;https://youtu.be/vKYzmIi_1LM&#34;&gt;JDK 9 Language, Tooling and Library Features&lt;/a&gt; from JavaOne is a good summary of what&amp;rsquo;s coming (&lt;a href=&#34;https://blogs.oracle.com/darcy/resource/JavaOne/J1_2016-jdk9-lang-tools-libs.pdf&#34;&gt;slides
