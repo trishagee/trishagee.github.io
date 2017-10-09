@@ -38,11 +38,14 @@
 
 &lt;p&gt;These are all the available videos, with the most recent at the top.  Usually, the more recent the talk the more polished, therefore usually they&amp;rsquo;re better.  With this talk, it&amp;rsquo;s more a case of showcasing / focusing on different aspects in different versions.&lt;/p&gt;
 
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/QAssmRMXMXo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/QqmQ_0tV978&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
 
-&lt;p&gt;This is the vJUG version from September, it has a bit more on the non-Jigsaw, non-Reactive features.&lt;/p&gt;
+&lt;p&gt;This JetBrains webinar is the most up-to-date version of the talk, and includes more Java 9 features than any of the
+others, including a quick look at JShell. It has almost no content on Reactive Streams though, so check out one of
+the other videos if this is what you&amp;rsquo;re interested in.&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://youtu.be/QAssmRMXMXo&#34;&gt;vJUG, September 2017&lt;/a&gt;.  Lucky to have 90 minutes to cover the material.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/watS54iWH9U&#34;&gt;GOTO Amsterdam&lt;/a&gt;. Less reactive streams, less Jigsaw, marginally more time for the &amp;ldquo;other&amp;rdquo; Java 9 features.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/wZLDDx-5KJg&#34;&gt;J on the Beach, Malaga&lt;/a&gt;. Pretty much the same as the DevoxxUK version.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://youtu.be/GkP83hvdeMk&#34;&gt;DevoxxUK&lt;/a&gt;. More focus on Jigsaw / Java Modules.&lt;/li&gt;
@@ -63,13 +66,16 @@ evolved &lt;a href=&#34;https://youtu.be/sKozumGWAOo&#34;&gt;to include some Jav
 
 &lt;p&gt;I have another Java 9 talk based off this code, &lt;a href=&#34;/presentation/java_9_are_we_there_yet&#34;&gt;Anticipating Java 9 - Functionality and Tooling&lt;/a&gt;, which demos more individual Java 9 features and talks specifically about IntelliJ IDEA&amp;rsquo;s support for it.&lt;/p&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;Articles&lt;/h3&gt;
+&lt;h3 id=&#34;toc_4&#34;&gt;Articles &amp;amp; More Detail&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve expanded upon the examples in this presentation in a couple of articles about adopting Java 9:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Java Magazine: &lt;a href=&#34;http://www.javamagazine.mozaicreader.com/JulyAug2017#&amp;amp;pageSet=17&amp;amp;page=0&#34;&gt;Migrating from Java 8 to Java 9&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;InfoQ: &lt;a href=&#34;https://www.infoq.com/articles/Java-Jigsaw-Migration-Guide&#34;&gt;Painlessly Migrating to Java Jigsaw Modules - a Case Study&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;JetBrains Blog: &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/10/real-world-java-9/&#34;&gt;Real World Java 9 Summary and FAQs&lt;/a&gt;
+in this blog post I answer audience questions about the module system mostly, some questions relate to other Java 9
+features.&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3 id=&#34;toc_5&#34;&gt;Code&lt;/h3&gt;
