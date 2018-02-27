@@ -6,7 +6,77 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 28 Sep 2017 00:00:00 UTC</updated>
+    <updated>Wed, 21 Feb 2018 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Is boilerplate code really so bad?</title>
+      <link>https://trishagee.github.io/presentation/boilerplate/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/boilerplate/</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
+do modern languages give us?&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Many JVM languages promote &amp;ldquo;less boilerplate code&amp;rdquo; as one of their selling points. Even updates to Java in recent years
+ have removed unnecessary syntax. While this is clearly meant to be a Good Thing, many of us - particularly if we&amp;rsquo;ve been writing Java for a long time - think &amp;ldquo;so what?&amp;rdquo;. Our IDEs can generate code, and our brains get used to ignoring the stuff that doesn&amp;rsquo;t matter.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Is the removal of extraneous code from the syntax of a language necessary, or just a gimmick? How does it impact our
+ability to write and read code?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;In this talk, Trisha will explore common coding scenarios using Java and Kotlin. We&amp;rsquo;ll see what a language designed for
+ developer productivity looks like: what&amp;rsquo;s important for developers to write (and, more importantly, read) and what can
+ be removed. We&amp;rsquo;ll also see how Java has evolved to improve our productivity as producers and consumers of code, and why staying up to date with the features of a language like Java can ultimately make your life easier.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Slides&lt;/h2&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Videos&lt;/h2&gt;
+
+&lt;p&gt;The code examples from this talk are shamelessly reused from Hadi Hariri&amp;rsquo;s London Software Craftsmanship
+Conference talk, &lt;a href=&#34;https://youtu.be/pAFiPjXEOtg&#34;&gt;The Importance of Syntax In Clean Code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Version information&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.meetup.com/SVQJUG/events/247799741/&#34;&gt;JUG&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java: OpenJDK Runtime Environment 18.3 (build 10+44)&lt;/li&gt;
+&lt;li&gt;Kotlin: 1.2.21&lt;/li&gt;
+&lt;li&gt;IntelliJ: IntelliJ IDEA 2018.1 EAP (Ultimate Edition) Build #IU-181.3870.7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jdk.java.net/10/&#34;&gt;JDK 10 early access releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk/10/&#34;&gt;Java 10 Open JDK page&lt;/a&gt; (tracks which features are currently going into
+Java 10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk/11/&#34;&gt;Java 11 Open JDK page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/286&#34;&gt;JEP 286: Local-variable type inference&lt;/a&gt; (Java 10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/302&#34;&gt;JEP 302: Lambda Leftovers (including underscore for param)&lt;/a&gt; (Java ??)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/305&#34;&gt;JEP 305: Pattern Matching&lt;/a&gt; (Java ??)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/325&#34;&gt;JEP 325: Switch expressions&lt;/a&gt; (Java ??)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cr.openjdk.java.net/~briangoetz/amber/datum.html&#34;&gt;Data Classes for Java&lt;/a&gt; and &lt;a href=&#34;https://www.infoq.com/news/2018/02/data-classes-for-java&#34;&gt;Brian Goetz on Data Classes
+for Java&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Kotlin&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/data-classes.html&#34;&gt;Data Classes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/lambdas.html&#34;&gt;Lambdas and higher order functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/properties.html&#34;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/equality.html&#34;&gt;Equality (== vs ===)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Real World Java 9</title>
@@ -1309,29 +1379,6 @@ presentations, &lt;a href=&#34;https://www.youtube.com/watch?v=rtAredKhyac&#34;&
 
 &lt;p&gt;Note that the last link is to a video from &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, the Virtual Java User Group,
 which is a great source of presentations from international speakers.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Nighthacking at Sevilla Java User Group</title>
-      <link>https://trishagee.github.io/post/nighthacking_jug_sevilla/</link>
-      <pubDate>Wed, 23 Apr 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
-      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
-for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
-and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
-Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;This is also the first event that we&amp;rsquo;ve had videoed (apologies for the horrible focus at times on the video,
-I&amp;rsquo;m just learning and used to relying heavily on auto-focus).&lt;/p&gt;
-
-&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;//www.youtube.com/embed/q3OKs08X3oo&#34; frameborder=&#34;0&#34; allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;p&gt;Thanks very much to Stephen for visiting, and thank you to those who came, you&amp;rsquo;re making me re-think the idea of running events at
-weekends.&lt;/p&gt;
-
-&lt;p&gt;Also there are &lt;a href=&#34;http://www.meetup.com/SVQJUG/photos/all_photos/?photoAlbumId=21306622&#34;&gt;photos on Meetup&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     

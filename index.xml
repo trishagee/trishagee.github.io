@@ -6,7 +6,91 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Thu, 28 Sep 2017 00:00:00 UTC</updated>
+    <updated>Mon, 26 Feb 2018 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;27 Feb&lt;/strong&gt;: SVQJUG - &lt;a href=&#34;https://www.meetup.com/SVQJUG/events/247799741/&#34;&gt;Is boilerplate code really so bad?&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;7 Mar&lt;/strong&gt;: QCon London - &lt;a href=&#34;https://qconlondon.com/london2018/presentation/boilerplate-code-really-so-bad&#34;&gt;Is boilerplate code really so bad?&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is boilerplate code really so bad?</title>
+      <link>https://trishagee.github.io/presentation/boilerplate/</link>
+      <pubDate>Wed, 21 Feb 2018 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/presentation/boilerplate/</guid>
+      <description>
+
+&lt;p&gt;It&amp;rsquo;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
+do modern languages give us?&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Many JVM languages promote &amp;ldquo;less boilerplate code&amp;rdquo; as one of their selling points. Even updates to Java in recent years
+ have removed unnecessary syntax. While this is clearly meant to be a Good Thing, many of us - particularly if we&amp;rsquo;ve been writing Java for a long time - think &amp;ldquo;so what?&amp;rdquo;. Our IDEs can generate code, and our brains get used to ignoring the stuff that doesn&amp;rsquo;t matter.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Is the removal of extraneous code from the syntax of a language necessary, or just a gimmick? How does it impact our
+ability to write and read code?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;In this talk, Trisha will explore common coding scenarios using Java and Kotlin. We&amp;rsquo;ll see what a language designed for
+ developer productivity looks like: what&amp;rsquo;s important for developers to write (and, more importantly, read) and what can
+ be removed. We&amp;rsquo;ll also see how Java has evolved to improve our productivity as producers and consumers of code, and why staying up to date with the features of a language like Java can ultimately make your life easier.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Slides&lt;/h2&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Videos&lt;/h2&gt;
+
+&lt;p&gt;The code examples from this talk are shamelessly reused from Hadi Hariri&amp;rsquo;s London Software Craftsmanship
+Conference talk, &lt;a href=&#34;https://youtu.be/pAFiPjXEOtg&#34;&gt;The Importance of Syntax In Clean Code&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_4&#34;&gt;Version information&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.meetup.com/SVQJUG/events/247799741/&#34;&gt;JUG&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java: OpenJDK Runtime Environment 18.3 (build 10+44)&lt;/li&gt;
+&lt;li&gt;Kotlin: 1.2.21&lt;/li&gt;
+&lt;li&gt;IntelliJ: IntelliJ IDEA 2018.1 EAP (Ultimate Edition) Build #IU-181.3870.7&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Java&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jdk.java.net/10/&#34;&gt;JDK 10 early access releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk/10/&#34;&gt;Java 10 Open JDK page&lt;/a&gt; (tracks which features are currently going into
+Java 10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk/11/&#34;&gt;Java 11 Open JDK page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/286&#34;&gt;JEP 286: Local-variable type inference&lt;/a&gt; (Java 10)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/302&#34;&gt;JEP 302: Lambda Leftovers (including underscore for param)&lt;/a&gt; (Java ??)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/305&#34;&gt;JEP 305: Pattern Matching&lt;/a&gt; (Java ??)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/jeps/325&#34;&gt;JEP 325: Switch expressions&lt;/a&gt; (Java ??)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://cr.openjdk.java.net/~briangoetz/amber/datum.html&#34;&gt;Data Classes for Java&lt;/a&gt; and &lt;a href=&#34;https://www.infoq.com/news/2018/02/data-classes-for-java&#34;&gt;Brian Goetz on Data Classes
+for Java&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;toc_6&#34;&gt;Kotlin&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/data-classes.html&#34;&gt;Data Classes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/lambdas.html&#34;&gt;Lambdas and higher order functions&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/properties.html&#34;&gt;Properties&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/equality.html&#34;&gt;Equality (== vs ===)&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Real World Java 9</title>
@@ -374,21 +458,6 @@ from &lt;a href=&#34;http://www.unicode.org/L2/L2015/15229-bitcoin-sign.pdf&#34;
 &lt;li&gt;&lt;a href=&#34;/presentation/staying_ahead_of_the_curve&#34;&gt;Staying Ahead of the Curve&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;/presentation/yow_2013_career_advice_for_programmers&#34;&gt;Career Advice for Programmers&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;
-
-&lt;p&gt;No travel planned!  Keep an eye on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA blog&lt;/a&gt; for
-more of my content or webinars.  And at the end of 2017 I&amp;rsquo;ll be taking a short break to instantiate
-the fourth member of my family.&lt;/p&gt;
 </description>
     </item>
     
@@ -1384,57 +1453,6 @@ reviews&lt;/a&gt; (and some of the things
 you should not be looking at).&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;d love to get feedback in the comments for the post of things that you look for in code reviews.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Extraordinary Team Of Developers</title>
-      <link>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</link>
-      <pubDate>Thu, 23 Jul 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</guid>
-      <description>
-
-&lt;p&gt;Daniel Bryant and I did a keynote at Devoxx UK about how individuals can add something to a team to make the team
-more productive, and overall more awesome.&lt;/p&gt;
-
-&lt;p&gt;&lt;div data-parleys-presentation=&#34;keynote-extraordinary-team-developers&#34; style=&#34;width:100%;height:300px&#34;&gt;&lt;script type = &#34;text/javascript&#34; src=&#34;//parleys.com/js/parleys-share.js&#34;&gt;&lt;/script&gt;&lt;a href=&#34;https://www.parleys.com/play/keynote-extraordinary-team-developers&#34;&gt;Watch on Parleys.com&lt;/a&gt;&lt;/div&gt;
-&lt;br/&gt;&lt;/p&gt;
-
-&lt;p&gt;We mention a number of books, so I&amp;rsquo;ve made a list of them here:&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.amazon.com/gp/product/1594484805/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1594484805&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=GSO6AH7236C37XUL&#34;&gt;Drive: The Surprising Truth About What Motivates
-Us&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1594484805&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.amazon.com/gp/product/1491919019/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1491919019&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=S3PUS65PBYMVIK4U&#34;&gt;Badass: Making Users Awesome&lt;/a&gt;&lt;img 
-src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1491919019&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.amazon.com/gp/product/0316346624/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0316346624&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=JSKRNEPP3R3RTZH4&#34;&gt;The Tipping Point: How Little Things Can Make a
-Big Difference&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=0316346624&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.amazon.com/gp/product/0321356683/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321356683&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=WFSI2OVJKEBPD7YA&#34;&gt;Effective Java (2nd Edition)&lt;/a&gt;&lt;img 
-src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=0321356683&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.amazon.com/gp/product/0982201222/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0982201222&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=26DOP5D3JV2MWTGW&#34;&gt;The Servant as Leader&lt;/a&gt;&lt;img src=&#34;http://ir-na
-.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=0982201222&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;br /&gt;
-&lt;a href=&#34;http://www.amazon.com/gp/product/1591842697/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1591842697&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=NJ42CVES4P6F7FEA&#34;&gt;The Back of the Napkin: Solving Problems and Selling Ideas with Pictures&lt;/a&gt;&lt;img src=&#34;http://ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=as2&amp;o=1&amp;a=1591842697&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Abstract&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;Rock stars are dead. Ninjas are banished. There are simply too many trashed hotel rooms, dead bodies and failed
-projects. The age of the individual superhero coder is over.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;But if we’re still striving for excellence, what’s replaced the rock-star-ninja-hero programmer?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;The team. The team that’s greater than the sum of its parts. Like The Avengers, but with less latex.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;In the same way those without super powers, genius levels of intelligence and pots of money were vital to The
-Avengers, every developer, no matter how much or how little experience they have, brings something important to the
-team and has the potential to make it better: a nicer place to work, an openness to learning, a focus on clean code or a deeper understanding of the business’ needs.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;How can a collection of good developers become a super-performing business-impact-delivering team? What do you, as
-an individual, add to the mix?&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;Daniel and Trisha will share stories of individuals and teams who have made an impact (both good and bad!) and offer
-  suggestions for steps we, as individuals, can take to level up our teams.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

@@ -6,20 +6,19 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 03 Apr 2017 00:00:00 UTC</updated>
+    <updated>Mon, 26 Feb 2018 00:00:00 UTC</updated>
     
     <item>
       <title>Upcoming Events</title>
       <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Mon, 03 Apr 2017 00:00:00 UTC</pubDate>
+      <pubDate>Mon, 26 Feb 2018 00:00:00 UTC</pubDate>
       <author>Trisha Gee</author>
       <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;
 
-&lt;p&gt;No travel planned!  Keep an eye on the &lt;a href=&#34;https://blog.jetbrains.com/idea/&#34;&gt;IntelliJ IDEA blog&lt;/a&gt; for
-more of my content or webinars.  And at the end of 2017 I&amp;rsquo;ll be taking a short break to instantiate
-the fourth member of my family.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;27 Feb&lt;/strong&gt;: SVQJUG - &lt;a href=&#34;https://www.meetup.com/SVQJUG/events/247799741/&#34;&gt;Is boilerplate code really so bad?&lt;/a&gt;&lt;br /&gt;
+&lt;strong&gt;7 Mar&lt;/strong&gt;: QCon London - &lt;a href=&#34;https://qconlondon.com/london2018/presentation/boilerplate-code-really-so-bad&#34;&gt;Is boilerplate code really so bad?&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
