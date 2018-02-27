@@ -38,9 +38,13 @@ ability to write and read code?&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The code examples from this talk are shamelessly reused from Hadi Hariri&amp;rsquo;s London Software Craftsmanship
 Conference talk, &lt;a href=&#34;https://youtu.be/pAFiPjXEOtg&#34;&gt;The Importance of Syntax In Clean Code&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;toc_3&#34;&gt;Resources&lt;/h2&gt;
+&lt;h2 id=&#34;toc_3&#34;&gt;Code&lt;/h2&gt;
 
-&lt;h3 id=&#34;toc_4&#34;&gt;Version information&lt;/h3&gt;
+&lt;p&gt;The code &lt;a href=&#34;https://github.com/trishagee/boilerplate&#34;&gt;lives here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Resources&lt;/h2&gt;
+
+&lt;h3 id=&#34;toc_5&#34;&gt;Version information&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.meetup.com/SVQJUG/events/247799741/&#34;&gt;JUG&lt;/a&gt;
@@ -52,7 +56,7 @@ Conference talk, &lt;a href=&#34;https://youtu.be/pAFiPjXEOtg&#34;&gt;The Import
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_5&#34;&gt;Java&lt;/h3&gt;
+&lt;h3 id=&#34;toc_6&#34;&gt;Java&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://jdk.java.net/10/&#34;&gt;JDK 10 early access releases&lt;/a&gt;&lt;/li&gt;
@@ -67,7 +71,7 @@ Java 10)&lt;/li&gt;
 for Java&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&#34;toc_6&#34;&gt;Kotlin&lt;/h3&gt;
+&lt;h3 id=&#34;toc_7&#34;&gt;Kotlin&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://kotlinlang.org/docs/reference/data-classes.html&#34;&gt;Data Classes&lt;/a&gt;&lt;/li&gt;
