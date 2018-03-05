@@ -150,7 +150,7 @@
 <p>It&rsquo;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
 do modern languages give us?</p>
 
-<h2 id="toc_0">Abstract</h2>
+<h1 id="toc_0">Abstract</h1>
 
 <p><em>Many JVM languages promote &ldquo;less boilerplate code&rdquo; as one of their selling points. Even updates to Java in recent years
  have removed unnecessary syntax. While this is clearly meant to be a Good Thing, many of us - particularly if we&rsquo;ve been writing Java for a long time - think &ldquo;so what?&rdquo;. Our IDEs can generate code, and our brains get used to ignoring the stuff that doesn&rsquo;t matter.</em></p>
@@ -162,20 +162,20 @@ ability to write and read code?</em></p>
  developer productivity looks like: what&rsquo;s important for developers to write (and, more importantly, read) and what can
  be removed. We&rsquo;ll also see how Java has evolved to improve our productivity as producers and consumers of code, and why staying up to date with the features of a language like Java can ultimately make your life easier.</em></p>
 
-<h2 id="toc_1">Slides</h2>
+<h1 id="toc_1">Slides</h1>
 
-<h2 id="toc_2">Videos</h2>
+<h1 id="toc_2">Videos</h1>
 
 <p>The code examples from this talk are shamelessly reused from Hadi Hariri&rsquo;s London Software Craftsmanship
 Conference talk, <a href="https://youtu.be/pAFiPjXEOtg">The Importance of Syntax In Clean Code</a>.</p>
 
-<h2 id="toc_3">Code</h2>
+<h1 id="toc_3">Code</h1>
 
 <p>The code <a href="https://github.com/trishagee/boilerplate">lives here</a>.</p>
 
-<h2 id="toc_4">Resources</h2>
+<h1 id="toc_4">Resources</h1>
 
-<h3 id="toc_5">Version information</h3>
+<h2 id="toc_5">Version information</h2>
 
 <ul>
 <li><a href="https://www.meetup.com/SVQJUG/events/247799741/">JUG</a>
@@ -187,28 +187,49 @@ Conference talk, <a href="https://youtu.be/pAFiPjXEOtg">The Importance of Syntax
 </ul></li>
 </ul>
 
-<h3 id="toc_6">Java</h3>
+<h2 id="toc_6">Java</h2>
 
 <ul>
+<li>Java 5: <a href="https://docs.oracle.com/javase/tutorial/java/generics/index.html">Generics</a></li>
+<li>Java 7: <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/language/type-inference-generic-instance-creation.html">Diamond operator</a></li>
+<li>Java 8: <a href="http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html">Optional</a></li>
+<li>Java 8: <a href="http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html">Streams</a></li>
+<li>Java 8: <a href="https://docs.oracle.com/javase/8/docs/api/java/util/stream/IntStream.html">IntStream</a></li>
+<li>Java 8: <a href="https://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html">Lambda Expressions</a></li>
+<li>Java 9: <a href="http://www.baeldung.com/java-9-optional">More methods on Optional</a></li>
+<li>Java 9: <a href="http://openjdk.java.net/jeps/269">Convenience Factory Methods for Collections</a></li>
+<li>Java 10: <a href="http://openjdk.java.net/jeps/286">Local-variable type inference</a></li>
 <li><a href="http://jdk.java.net/10/">JDK 10 early access releases</a></li>
 <li><a href="http://openjdk.java.net/projects/jdk/10/">Java 10 Open JDK page</a> (tracks which features are currently going into
 Java 10)</li>
 <li><a href="http://openjdk.java.net/projects/jdk/11/">Java 11 Open JDK page</a></li>
-<li><a href="http://openjdk.java.net/jeps/286">JEP 286: Local-variable type inference</a> (Java 10)</li>
-<li><a href="http://openjdk.java.net/jeps/302">JEP 302: Lambda Leftovers (including underscore for param)</a> (Java ??)</li>
-<li><a href="http://openjdk.java.net/jeps/305">JEP 305: Pattern Matching</a> (Java ??)</li>
-<li><a href="http://openjdk.java.net/jeps/325">JEP 325: Switch expressions</a> (Java ??)</li>
-<li><a href="http://cr.openjdk.java.net/~briangoetz/amber/datum.html">Data Classes for Java</a> and <a href="https://www.infoq.com/news/2018/02/data-classes-for-java">Brian Goetz on Data Classes
+<li>Java??: <a href="http://openjdk.java.net/jeps/302">JEP 302: Lambda Leftovers (including underscore for param)</a></li>
+<li>Java??: <a href="http://openjdk.java.net/jeps/305">JEP 305: Pattern Matching</a></li>
+<li>Java??: <a href="http://openjdk.java.net/jeps/325">JEP 325: Switch expressions</a></li>
+<li>Java??: <a href="http://cr.openjdk.java.net/~briangoetz/amber/datum.html">Data Classes for Java</a> and <a href="https://www.infoq.com/news/2018/02/data-classes-for-java">Brian Goetz on Data Classes
 for Java</a></li>
 </ul>
 
-<h3 id="toc_7">Kotlin</h3>
+<h2 id="toc_7">Kotlin</h2>
 
 <ul>
 <li><a href="https://kotlinlang.org/docs/reference/data-classes.html">Data Classes</a></li>
 <li><a href="https://kotlinlang.org/docs/reference/lambdas.html">Lambdas and higher order functions</a></li>
-<li><a href="https://kotlinlang.org/docs/reference/properties.html">Properties</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/properties.html">Properties (var/val)</a></li>
 <li><a href="https://kotlinlang.org/docs/reference/equality.html">Equality (== vs ===)</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/typecasts.html">Type Checks and Casts</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/null-safety.html">Null Safety</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/control-flow.html">when</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/functions.html#default-arguments">Default arguments</a></li>
+<li><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.sequences/index.html">Sequences</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/ranges.html">Ranges</a></li>
+<li><a href="https://kotlinlang.org/docs/reference/collections.html">Collections</a></li>
+</ul>
+
+<h2 id="toc_8">Other</h2>
+
+<ul>
+<li><a href="https://blog.jetbrains.com/idea/2017/08/code-smells-null/">Null is a Code Smell</a></li>
 </ul>
 
         </article>
@@ -260,7 +281,7 @@ for Java</a></li>
 
 </aside>
 
-<meta itemprop="wordCount" content="334">
+<meta itemprop="wordCount" content="382">
 <meta itemprop="datePublished" content="2018-02-21">
 <meta itemprop="url" content="https://trishagee.github.io/presentation/boilerplate/">
 
