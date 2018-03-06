@@ -42,19 +42,19 @@ Conference talk, &lt;a href=&#34;https://youtu.be/pAFiPjXEOtg&#34;&gt;The Import
 
 &lt;p&gt;The code &lt;a href=&#34;https://github.com/trishagee/boilerplate&#34;&gt;lives here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h1 id=&#34;toc_4&#34;&gt;Resources&lt;/h1&gt;
-
-&lt;h2 id=&#34;toc_5&#34;&gt;Version information&lt;/h2&gt;
+&lt;h1 id=&#34;toc_4&#34;&gt;Version information&lt;/h1&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.meetup.com/SVQJUG/events/247799741/&#34;&gt;JUG&lt;/a&gt;
+&lt;li&gt;&lt;a href=&#34;https://qconlondon.com/london2018/presentation/boilerplate-code-really-so-bad&#34;&gt;QCon London&lt;/a&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Java: OpenJDK Runtime Environment 18.3 (build 10+44)&lt;/li&gt;
+&lt;li&gt;Java&amp;trade; SE Runtime Environment 18.3 (build 10+45)&lt;/li&gt;
 &lt;li&gt;Kotlin: 1.2.21&lt;/li&gt;
-&lt;li&gt;IntelliJ: IntelliJ IDEA 2018.1 EAP (Ultimate Edition) Build #IU-181.3870.7&lt;/li&gt;
+&lt;li&gt;IDE: IntelliJ IDEA 2018.1 EAP (Ultimate Edition) Build #IU-181.3986.9&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h1 id=&#34;toc_5&#34;&gt;Resources&lt;/h1&gt;
 
 &lt;h2 id=&#34;toc_6&#34;&gt;Java&lt;/h2&gt;
 
@@ -99,6 +99,12 @@ for Java&lt;/a&gt;&lt;/li&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/idea/2017/08/code-smells-null/&#34;&gt;Null is a Code Smell&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;toc_9&#34;&gt;Presented at&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.meetup.com/SVQJUG/events/247799741/&#34;&gt;JUG&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
