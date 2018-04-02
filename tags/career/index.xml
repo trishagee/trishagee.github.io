@@ -6,7 +6,522 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Tue, 25 Apr 2017 00:00:00 UTC</updated>
+    <updated>Mon, 02 Apr 2018 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Being a Developer Advocate at JetBrains</title>
+      <link>https://trishagee.github.io/post/my_job/</link>
+      <pubDate>Mon, 02 Apr 2018 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/my_job/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Mandatory initial exclamation about how little I have blogged here lately.  Over a year without
+updates, oh dear!  But a) I have been blogging quite a lot for the
+&lt;a href=&#34;https://blog.jetbrains.com/idea/author/trishagee/&#34;&gt;IntelliJ IDEA&lt;/a&gt; and
+&lt;a href=&#34;https://blog.jetbrains.com/upsource/author/trishagee/&#34;&gt;Upsource&lt;/a&gt; blogs, and b) I had another
+baby, which kept me quite busy.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;So on that topic (more or less) I get a lot of questions about my job: what&amp;rsquo;s involved in the
+job, what&amp;rsquo;s it like working for JetBrains, what does a Developer Advocate do, what&amp;rsquo;s it like
+working remotely etc etc.  Given I also rather generously&lt;sup&gt;1&lt;/sup&gt; recently offered to answer
+people&amp;rsquo;s questions about my job, I thought the most scalable way was to write-once-read-many,
+i.e. write it in a single blog post for everyone to read.&lt;/p&gt;
+
+&lt;p&gt;&lt;blockquote class=&#34;twitter-tweet&#34; data-lang=&#34;en&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Also, if you&amp;#39;re vaguely contemplating a move into an advocacy-type role and interested to find out what&amp;#39;s involved (and/or if it will suit you) feel free to Tweet/DM/e-mail me with questions and I&amp;#39;ll do my best to brain-dump my experience onto you&lt;/p&gt;&amp;mdash; Trisha Gee (@trisha_gee) &lt;a href=&#34;https://twitter.com/trisha_gee/status/979014330631979010?ref_src=twsrc%5Etfw&#34;&gt;March 28, 2018&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;&lt;/p&gt;
+
+&lt;p&gt;This is a Very Long Post.  It&amp;rsquo;s also a bit of a brain dump and is not well organised, sorry.  I
+take comfort in the fact that if you don&amp;rsquo;t care about the role you won&amp;rsquo;t read it, and if you do
+care you&amp;rsquo;re probably interested in all this.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Getting Started&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;One of the most common questions I get is &amp;ldquo;How does one become a Developer Advocate?&amp;rdquo;. I&amp;rsquo;ve already
+written about &lt;a href=&#34;/post/becoming_an_evangelist&#34;&gt;My Path to Evangelism&lt;/a&gt;, which covers how I got into
+this job.  My route is not the only route, but at the bottom of that post there are some things you
+can do to a) see if you like doing this kind of thing b) improve your skills in this area and c) get the
+ experience and visibility you need to make it easier for someone to hire you to do this
+ professionally.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What do I do?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m a &lt;a href=&#34;https://www.linkedin.com/in/trishagee/&#34;&gt;Developer Advocate for JetBrains&lt;/a&gt;. Developer
+Advocates/Evangelists come in various different shapes and sizes depending upon the individual
+and the organisation.  At JetBrains advocates do advocacy first and foremost (see the next
+section which explains a bit about what I mean).  For me, this means I:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Physically go to &lt;em&gt;conferences&lt;/em&gt; and &lt;em&gt;give presentations&lt;/em&gt;.  I prefer live coding demos, because I
+think a) it makes me look clever and b) it showcases the tools nicely. This is not a requirement
+of the role, it&amp;rsquo;s something I personally chose because I thought it was good for my personal
+&amp;ldquo;brand&amp;rdquo; (this is linked a bit to the fact that I&amp;rsquo;m a female developer, more on that later).
+&lt;a href=&#34;https://twitter.com/hhariri&#34;&gt;Hadi&amp;rsquo;s&lt;/a&gt; talks are more varied than mine, he has plenty that aren&amp;rsquo;t
+specifically code-related.&lt;br /&gt;
+From JetBrains point of view, if you&amp;rsquo;re out at conferences giving popular talks, that makes
+the company look good.&lt;/li&gt;
+&lt;li&gt;While I am physically in a country/city I may also seek out &lt;em&gt;user groups&lt;/em&gt; and &lt;em&gt;customers&lt;/em&gt; to go
+and see. This is not a requirement of the job, but it&amp;rsquo;s something I want to do more of and get
+better at.  It&amp;rsquo;s very effective and fairly limited extra overhead to also give the same talk you&amp;rsquo;re
+giving at some conference to the local user group and some customers.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Customer meetings&lt;/em&gt;. When I originally took this role,
+I thought I&amp;rsquo;d be doing a bit of consulting as part of the job, e.g. going to a customer and
+trouble-shooting their TeamCity installation or running tailored training courses on IntelliJ
+IDEA.  I&amp;rsquo;ve been here three years and I haven&amp;rsquo;t done that.  I have, however, done pre-sales
+trips to demo a particular product (usually &lt;a href=&#34;https://www.jetbrains.com/upsource/&#34;&gt;Upsource&lt;/a&gt; and answer questions about it: what does
+it do, how does it scale, where will it fit into this company&amp;rsquo;s process, etc. I&amp;rsquo;ve only
+physically had to travel for these a couple of times, usually a company is more than happy to
+have me present this via a private webinar.  These webinars can sometimes be to a huge number of
+developers (hundreds), more usually to 10-20 techies, occasionally just to one or two people.
+Whether it&amp;rsquo;s a webinar or a physical meeting, I always, always have backup to help me with
+things I don&amp;rsquo;t know.  I&amp;rsquo;m a technical advocate, I understand how to use the tool really well. I
+don&amp;rsquo;t necessarily know everything on the roadmap (that&amp;rsquo;s usually the PMM), nor do I know all
+the technical limitations (a lead techy will know this). It scares me a bit going into these
+meetings knowing that I don&amp;rsquo;t know everything, but sometimes I have someone with me (either
+physically at the meeting or online with me during the webinar) and I always have someone
+available via Slack to answer any questions I don&amp;rsquo;t know the answer to. I don&amp;rsquo;t believe my
+credibility has suffered when I&amp;rsquo;ve said &amp;ldquo;I don&amp;rsquo;t know the answer to that, let me quickly find
+out&amp;rdquo;, especially when there&amp;rsquo;s almost always a fast response. If there&amp;rsquo;s no adequate response
+there and then, I make a note of the question and promise to get back to them. I usually end
+the meeting by repeating the next steps and listing the information I believe I have to find
+out for them, and always follow up with an email. If the answers were quick to find, all the
+answers will be in the follow up email. If the answers are still pending, I will tell them
+that in the quick response and get back to them later with the answers (e.g. I don&amp;rsquo;t leave
+them hanging with no response, it looks bad.)&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Webinars&lt;/em&gt;.  I&amp;rsquo;m not a fan of giving webinars, it&amp;rsquo;s like doing a conference presentation, only
+with
+waaaaay more real-time viewers and almost zero real-time feedback. It&amp;rsquo;s like talking into the
+void.  Some people like giving webinars precisely because they CAN&amp;rsquo;T see the audience.  I used
+to hate them because the lack of feedback is very unnerving, but with practice (like anything)
+I&amp;rsquo;ve become more comfortable with them.  I probably give maybe 3 public webinars a year (like my
+upcoming &lt;a href=&#34;https://blog.jetbrains.com/idea/2018/03/live-webinar-java-10-and-intellij-idea/&#34;&gt;webinar on Java 10&lt;/a&gt;, and maybe 6 or so private ones a year.  These numbers may be
+totally incorrect, but that&amp;rsquo;s what it feels like.  The public webinars are frequently one of my
+conference talks just presented online, the private ones are less formal/practiced and may be
+something like a short-ish live demo (10-20 mins) followed by questions and further
+customer-driven demos (i.e. &amp;ldquo;can you show me how you&amp;hellip;?&amp;rdquo;)&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Screencasts&lt;/em&gt;. I hadn&amp;rsquo;t done any screencasts before I came to JetBrains and they&amp;rsquo;re a totally
+different skillset.  Not only do you have to learn how to use a brand new tool (I use Camtasia)
+that requires a set of skills you probably don&amp;rsquo;t have already (i.e. video editing), but putting
+together a 5 minute video of features is a VERY different thing to taking 40-60 minutes exploring
+a concept in real-time with an audience. You have to work out up-front what it is you&amp;rsquo;re trying
+to demo, figure out a sensible real-world use case for it, and then record the video and
+narration that effectively shows this to users. I record those two things separately and edit
+them together, others like to record the whole lot together. Because this area in particular is
+one where probably most of the team was new to the skills needed, we&amp;rsquo;ve shared our knowledge a
+few times here to try and improve ourselves and to try to get some consistency in approach. I
+quite like doing screencasts because they&amp;rsquo;re a good way to poke at particular features in a tool,
+and I like finding the use case that makes the feature make sense. But they can be quite a lot
+of work. A screencast like my
+&lt;a href=&#34;https://youtu.be/szlAxgchyXU&#34;&gt;VCS features in IntelliJ IDEA 2018.1&lt;/a&gt; can take less than a day
+to
+put together (most of which is editing), because this is an area of the tool I know well, and I
+have a lot of example projects that showcase different use cases of Git workflows.  A
+screencast on Spring features is more likely to take 2 or more days, most of which is locating
+the right sort of code example that shows the features. It&amp;rsquo;s an area of the tool I haven&amp;rsquo;t used
+much in a real development environment, a framework I&amp;rsquo;m familiar with but again don&amp;rsquo;t use
+much, and also a framework that moves very rapidly, so I spend a lot of time getting up to
+speed on the new parts of the framework and finding examples.  Screencasts generally fall into
+two categories.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What&amp;rsquo;s New in {Product} {Version} (e.g. &lt;a href=&#34;https://www.youtube.com/playlist?list=PLPZy-hmwOdEXtJTNC65GCuw8f7sR13UK9&#34;&gt;IntelliJ IDEA 2017.2&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;More &lt;a href=&#34;https://www.youtube.com/playlist?list=PLPZy-hmwOdEXdOtXdFzyx_XCnrF_oD2Ft&#34;&gt;general tutorials&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Blogging&lt;/em&gt;. I love writing. It&amp;rsquo;s what got me into this. It&amp;rsquo;s why this blog post is SO much
+longer than it really ought to be. For JetBrains I blog about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;New releases/features for IntelliJ IDEA and Upsource (e.g. &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/12/intellij-idea-2017-3-debugger-improvements/&#34;&gt;IntelliJ IDEA 2017.3: Debugger
+Improvements&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Topics related to the tool but aren&amp;rsquo;t necessarily features of the tool (e.g.
+&lt;a href=&#34;https://blog.jetbrains.com/idea/tag/code-smells/&#34;&gt;Code Smells&lt;/a&gt; for
+IntelliJ IDEA, &lt;a href=&#34;https://blog.jetbrains.com/upsource/tag/code-review-workflows/&#34;&gt;Code Review Processes&lt;/a&gt; for Upsource)&lt;/li&gt;
+&lt;li&gt;A specific topic that&amp;rsquo;s relevant to readers of the blog that either is relevant at a
+particular time (e.g. &lt;a href=&#34;https://blog.jetbrains.com/idea/2017/09/java-9-and-intellij-idea/&#34;&gt;Java 9 and IntelliJ IDEA&lt;/a&gt;), or is something I&amp;rsquo;ve discovered myself
+(&lt;a href=&#34;https://blog.jetbrains.com/idea/2017/10/creating-multi-release-jar-files-in-intellij-idea/&#34;&gt;Creating Multi-Release JAR Files in IntelliJ IDEA&lt;/a&gt;) or&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/idea/tag/java-annotated/&#34;&gt;Annotated monthly&lt;/a&gt;: takes me a day every
+month to put together the newsletter, but it&amp;rsquo;s worth it as it forces me to stay up to date.&lt;/li&gt;
+&lt;li&gt;Or sometimes something that I think is interesting or cool and is vaguely
+development-/Java-related.
+I probably average 1-2 blog posts a month.  Probably not that much actually, it depends a lot on my travel and other workloads.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Twitter&lt;/em&gt;. I have access to Tweet on &lt;a href=&#34;https://twitter.com/intellijidea&#34;&gt;intellijidea&lt;/a&gt; and
+&lt;a href=&#34;http://twitter.com/upsource_jb&#34;&gt;upsource_jb&lt;/a&gt;. I&amp;rsquo;m not the only one behind
+those handles though. I post links to the videos, blog posts and other content I produce, and I
+also create content for the &lt;a href=&#34;https://twitter.com/hashtag/DriveToDevelop?src=hash&#34;&gt;Twitter Tips&lt;/a&gt;
+for both of those products. I use Camtasia to record
+short videos and convert them to GIFs.  The most painful part of this process is thinking of
+something interesting to Tweet about.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;I also &lt;em&gt;Tweet from my own personal account&lt;/em&gt;. As I have gained more followers I have been more
+and more careful/restrained about what I Tweet from there. I recently realised these days I
+retweet a lot and occasionally tweet things I think are interesting to developers. I spend less
+and less time ranting on there or making personal observations, although I would quite like to
+bring back a more personal element to my Tweets.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Theoretically I also &lt;em&gt;answer questions via
+Twitter/&lt;a href=&#34;https://stackoverflow.com/users/653519/trisha&#34;&gt;StackOverflow&lt;/a&gt;/other social media&lt;/em&gt; about
+our
+tools.  I don&amp;rsquo;t get around to doing this very often, I should work it into my schedule/routine,
+but sometimes I find it takes a disproportionally long time to replicate a problem and work out a
+fix, by which time someone else has already answered or the original user has worked it out. If
+someone addresses me directly I always try to respond, even if it&amp;rsquo;s just to ask someone to file
+a ticket in YouTrack.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;em&gt;Admin&lt;/em&gt;.  I actually have to do quite a lot of mundane admin stuff.  Part of it might be because
+of my particular perfectionism, part of it might be because my situation really does require it.
+For example, I have to book my own travel for a lot of the conferences, usually this means
+flights and accommodation. I tried a travel agent for this, but I found a lot of the
+complications were not around the actual booking process, but coordinating with everyone (my
+family included) which times/days work best, am I bringing the family, am I going to do customer
+visits, which customers might want to see me, when works for them etc. Also since I&amp;rsquo;m
+travelling from Seville, we do have an airport but I&amp;rsquo;m very limited for flight choices, which
+always bites me even though it&amp;rsquo;s five years since I was spoiled by living in London. On top
+of all that, most of
+us remote people are technically contractors because we don&amp;rsquo;t work in a country that has a
+JetBrains office, so we also have to manage our own expenses do invoicing etc. And I do the
+contracting through my own company, so there&amp;rsquo;s admin associated with that (although my partner
+does 99% of that).&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;How are the advocates organised at JetBrains?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;When I was at MongoDB, the Advocates were engineers who spent most of
+their time working on language drivers for the database and some of their time blogging and
+speaking at conferences.  At JetBrains, the Advocate position is a full time job doing the
+advocacy stuff. We don&amp;rsquo;t report to engineering, we don&amp;rsquo;t report to marketing, our &lt;a href=&#34;https://www.linkedin.com/in/hadi-hariri-b0368a83/&#34;&gt;Boss Person&lt;/a&gt; reports directly to the CEO.&lt;/p&gt;
+
+&lt;p&gt;The advocates all belong to the same team, but each advocate has their own product(s) and
+specialties.  In terms of co-ordinating what we&amp;rsquo;re actually going to work on, we talk to the PMMs
+ (Product Marketing Managers) for our product and they&amp;rsquo;ll let us know what they need from us.
+ Each PMM and each product is different, so they have different interests/focuses/plans.  With
+ IntelliJ IDEA I spend quite a lot of time working with the PMM on each of the 3 releases a year,
+ and most of the rest of the content is driven by me: it&amp;rsquo;s either connected to something else I&amp;rsquo;m
+  working on (like one of my conference talks) or a Java release or something. Working in this
+  way is quite familiar if you&amp;rsquo;ve been a consultant: in this model, the PMM is basically my
+  customer and not my manager.&lt;/p&gt;
+
+&lt;p&gt;Physically, our team is almost entirely remote. The JetBrains development teams are based in St
+Petersburg and Munich, which means that those of us on a European timezone have an easier time of
+ it. Our American team members tend to be dragged out of bed earlier than they would probably
+ like in order to dial in to meetings.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do I still code?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Yes and no. I don&amp;rsquo;t write enterprise code any more, and I don&amp;rsquo;t write code that goes into the
+IntelliJ IDEA codebase.  I do, however, spend a good chunk of the year creating projects that
+demonstrate particular things, and live-coding within these projects.  I also occasionally still
+contribute to &lt;a href=&#34;https://github.com/mongodb/morphia&#34;&gt;Morphia&lt;/a&gt;, although mostly I use that as an
+example code base to demo various things
+- I love the Morphia code because it&amp;rsquo;s real lived-in code that is very similar to the sort of
+code that real developers will be working with, it&amp;rsquo;s not just a nice clean toy project that bears
+ zero resemblance to real life.&lt;/p&gt;
+
+&lt;p&gt;On a weekly basis I don&amp;rsquo;t spend a lot of time coding, but every now and then I will devote a day
+or two (or sometimes a week or two) to playing with something to scratch that itch.  This is
+often used in blog posts or demos but sometimes it&amp;rsquo;s enough just to learn something new.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What did I need to learn on the job?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I had been doing advocacy before I got to JetBrains, but there were still plenty of things I
+needed to learn or level-up when I got here:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Screencasts: I had zero experience here, and I struggled to begin with. But then the whole
+team had a number of discussions about how we did them. At first I was scared to talk about
+didn&amp;rsquo;t know or what I was struggling with, but I found that when I opened up (both on Slack and
+during one of our annual actual-face-to-face get togethers) about my pain points, I found a)
+lots of the others struggle too and b) some people had answers that worked for me.  Also c)
+turned out I knew things other people didn&amp;rsquo;t know, and that gave me a big confidence boost. A
+lot of this is now documented on Confluence, so new people won&amp;rsquo;t have to struggle as much&lt;/li&gt;
+&lt;li&gt;Webinars: I&amp;rsquo;d done two at MongoDB and I really didn&amp;rsquo;t like them.  For the first year at
+JetBrains I still didn&amp;rsquo;t really like them, but we gather feedback from attendees and on the
+whole people liked my webinars, and those that didn&amp;rsquo;t usually gave constructive feedback, so I
+gained confidence and I think I&amp;rsquo;ve improved in this area too.  Also, it became clear I
+absolutely had to pay a lot more for my home internet connection, since the major complaint was
+always that my sound would frequently cut out or get out of sync. Now I have faster internet and
+it&amp;rsquo;s made my (work) life all round much better.&lt;/li&gt;
+&lt;li&gt;Self management: I&amp;rsquo;ve worked a lot at &amp;ldquo;proper&amp;rdquo; enterprises, where there&amp;rsquo;s a clear chain of
+command.  I&amp;rsquo;ve also worked for consultancies, where customers have clear expectations of you.
+I&amp;rsquo;ve worked at startups, at one of which my manager liked to micromanage everyone, down to the
+lines of code they wrote. JetBrains is not like any of those.  It is genuinely a flat
+organisation (as I mentioned above, there&amp;rsquo;s very little management between me and the head boss
+person), and people are given the freedom to work on what they want to, more or less however
+they want to.  This can be quite a change if you&amp;rsquo;re used to formal management.  It&amp;rsquo;s even more
+difficult when you&amp;rsquo;re remote, because you have to speak to a lot of individuals to figure out
+what&amp;rsquo;s happening when where and how.  On the plus side, you&amp;rsquo;re trusted to get on with your job
+(and expected to ask for help and support when you need it).  Self management is a skill, and
+not everyone likes it.&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;How much travel is involved?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Over the last 5 years of doing advocacy I have been to quite a lot of conferences.  Every year I
+say I&amp;rsquo;ll do less, and every year I end up doing much more than I expected/wanted. Last year I &amp;ldquo;only&amp;rdquo;
+did 7 events, and I was unable fly/on maternity leave for nearly 3 months.  That&amp;rsquo;s slightly more
+than the one-every-other-month I wanted to do, but quite a bit less than previous years.  This year
+I&amp;rsquo;m currently signed up for only two conferences, I expect that to at least double by the end of
+the year.&lt;/p&gt;
+
+&lt;p&gt;Not everyone travels as much as me though, many of the other advocates only do a couple a year.&lt;br /&gt;
+This is something that is more or less up to you, although there are a couple of big conferences
+through the year (for me at least) that are about as close to mandatory for me to attend as is
+possible in this self-managed environment.&lt;/p&gt;
+
+&lt;p&gt;I expect our technical writers won&amp;rsquo;t have to travel at all, except perhaps occasionally to the
+office to connect with people.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What&amp;rsquo;s it like working remotely?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll be honest, it doesn&amp;rsquo;t suit everyone.  And there&amp;rsquo;s a skill to it too.  I tend to like to work
+ 10ish-6ish because if I don&amp;rsquo;t work normal office hours I&amp;rsquo;m worried I won&amp;rsquo;t be doing enough. I
+ also track how much time I spend on things, mostly to see where all my time is spent on those
+ weeks where I feel like I haven&amp;rsquo;t done anything.&lt;/p&gt;
+
+&lt;p&gt;JetBrains uses Slack a lot, so us remote people do have a direct line to what&amp;rsquo;s going on, even
+into the teams that are all sat together in an office.  The Developer Advocates have our own
+Slack channel, of course, and that tends to be full of &amp;ldquo;witty banter&amp;rdquo; / water cooler conversation
+.  It&amp;rsquo;s also the first place I go to ask questions about anything, and I&amp;rsquo;m no longer scared of
+looking stupid if I ask a &amp;ldquo;dumb&amp;rdquo; question.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ve &lt;a href=&#34;/post/adjusting_to_working_remotely&#34;&gt;worked remotely in the past&lt;/a&gt;, it&amp;rsquo;s better here than
+other places because JetBrains
+understands there are remote workers and that we have rights and needs. It&amp;rsquo;s also good for me
+because I&amp;rsquo;m in Europe, so although I&amp;rsquo;m physically separate at least I don&amp;rsquo;t have the
+&lt;a href=&#34;/post/tales_from_the_other_side_confessions_of_an_offshore_resource/&#34;&gt;timezone problem&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Working remotely is great for flexibility, of course.  And although I do try to work 10-6ish, in
+my office upstairs where the children can&amp;rsquo;t get to me, I am around if one of them needs me
+immediately. I also don&amp;rsquo;t have a commute, so my hours are a lot shorter than if I worked (for
+example) in London. I don&amp;rsquo;t believe I could have gone back to work after just 4 months of
+maternity leave if I had to work in an office - I&amp;rsquo;m still breastfeeding and this would have been
+impossible if I didn&amp;rsquo;t work from home.&lt;/p&gt;
+
+&lt;p&gt;Of course this has its pros and cons, working at home also comes with distractions (although it&amp;rsquo;s
+ nice to be able to get the laundry done throughout the week rather than have to do it all at the
+  weekend). Pros: a good excuse for a nice computer and exactly the desk / chair / office setup
+  you want; close to the family and much more available than in an office. Cons: can be quite
+  isolated, can be easily distracted, can be quite noisy (currently both the 5-month-old and the
+  two-year-old are crying: is OK to be writing a blog now, would be a terrible time to record a
+  screencast).&lt;/p&gt;
+
+&lt;p&gt;Remote working is a big topic of its own.  If you&amp;rsquo;ve done it before, you know the deal.  And
+JetBrains is better than most places because they recognise us as real workers. But also probably
+ because the whole team is remote, so it&amp;rsquo;s not just one or two people cut off.&lt;/p&gt;
+
+&lt;p&gt;We&amp;rsquo;re in the process of working on an employee handbook which will help us remote people a lot
+too, there&amp;rsquo;s a lot of knowledge stored in people&amp;rsquo;s brains that isn&amp;rsquo;t documented anywhere.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is the team like?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There are a dozen or so advocates on the team, all with different technology backgrounds and
+covering different tools.  Hadi and Svetlana cover Kotlin, which also tends to overlap with
+IntelliJ IDEA. I do IntelliJ IDEA (I guess I&amp;rsquo;m the main IDEA advocate, I do all the release
+material etc) and I&amp;rsquo;m the only one who really does Upsource, and have so far been nearly 100%
+Java-the-language. Anton does TeamCity and because he&amp;rsquo;s Java &amp;amp; Kotlin there&amp;rsquo;s some overlap there
+with IntelliJ IDEA.  Other team members cover C++, Python, Go, .NET, Web technologies (this last
+is an area we&amp;rsquo;re looking for specific expertise) and related tools (Resharper, Rider, GoLand,
+CLion, PyCharm, WebStorm) and I have probably forgotten a load of them too. I see us as
+individuals doing a similar job but with surprisingly little overlap. This is one reason being
+remote actually works for us, we don&amp;rsquo;t need to co-ordinate much. But we are trying to get better
+at reusing stuff between tools, and/or taking other people&amp;rsquo;s ideas and content and reworking it
+for our communities (for example, I stole a load of Paul&amp;rsquo;s PyCharm tip tweets and did them for
+IntelliJ IDEA).&lt;/p&gt;
+
+&lt;p&gt;The average age of the team is somewhere up in the late thirties.  I myself am just about to
+cross into the 40s - eeeek!  We&amp;rsquo;re all experienced developers with an interest in our
+technologies.  We&amp;rsquo;re laid back and passionate, which sounds like a weird combination but works
+well for us. There&amp;rsquo;s no such thing as a stupid question in our team, and even though we don&amp;rsquo;t
+work super closely on everything, we all support each other and do our best to make the team
+happy and productive.  We definitely have room for improvement for working together (Gary and I
+had fun recording our &lt;a href=&#34;https://youtu.be/o-2fvj7GsOQ&#34;&gt;series of Git videos&lt;/a&gt; but we haven&amp;rsquo;t managed
+ to do anything similar since)
+but it&amp;rsquo;s not because we don&amp;rsquo;t want to work together.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What are the good parts?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Being remote&lt;/li&gt;
+&lt;li&gt;Managing myself&lt;/li&gt;
+&lt;li&gt;Picking my own code projects&lt;/li&gt;
+&lt;li&gt;Learning new technologies and tools&lt;/li&gt;
+&lt;li&gt;Flexibility&lt;/li&gt;
+&lt;li&gt;Travel&lt;/li&gt;
+&lt;li&gt;My office&lt;/li&gt;
+&lt;li&gt;Where I live&lt;/li&gt;
+&lt;li&gt;The coffee&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;What are the bad parts?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Being remote&lt;/li&gt;
+&lt;li&gt;Managing myself&lt;/li&gt;
+&lt;li&gt;Not having enough time to code&lt;/li&gt;
+&lt;li&gt;Learning new technologies and tools&lt;/li&gt;
+&lt;li&gt;Travel&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Yep.  The plus sides are also the downsides.  I probably don&amp;rsquo;t have to explain why, but if anyone
+ is interested in the specifics drop a note in the comments below.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What are we looking for in a developer advocate / technical writer?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;This was all sparked by our need to
+&lt;a href=&#34;https://www.jetbrains .com/company/jobs/&#34;&gt;hire a couple of people&lt;/a&gt;, and wanting to be really transparent
+ about what the role was like, ideally to attract people who might not have considered this role
+ for themselves.&lt;/p&gt;
+
+&lt;p&gt;JetBrains is currently
+&lt;a href=&#34;https://www.jetbrains.com/company/jobs/&#34;&gt;hiring a bunch of people&lt;/a&gt;, but the two roles that
+sparked this whole
+conversation are a Web Technologies Developer Advocate and an Engineering Technical Writer. I&amp;rsquo;m
+not the one making the hiring decisions, and on top of that there&amp;rsquo;s no real hard and fast rules
+about what makes a good hire into these roles, but I think these things are interesting to
+us:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Ideally you will have at least 10 years of experience as a developer. You don&amp;rsquo;t need to have
+been an architect/tech lead or other &amp;ldquo;senior&amp;rdquo; role, but you do need to have a very good
+understanding of what it&amp;rsquo;s like to be a developer, what the pain points are for people in this
+role, how developers use technology and how they learn it.  In our
+writing / presentations / screencasts we try to present information in a way that makes
+developers awesome at their jobs (see Kathy Sierra&amp;rsquo;s
+&lt;a href=&#34;https://amzn.to/2EdyIOH&#34;&gt;Badass: Making Users Awesome&lt;/a&gt;), which means our content is usually
+pretty technical and targeted at developers.  Having a good chunk of experience as a developer
+makes this substantially easier.&lt;/li&gt;
+&lt;li&gt;You use our tools. Yes, it&amp;rsquo;s possible for anyone to learn on the job.  As developers this is
+pretty much all we do.  But it&amp;rsquo;s going to be much easier for you to talk about how our tools make
+developer&amp;rsquo;s lives easier / improve people&amp;rsquo;s productivity if you&amp;rsquo;ve actually used the tools in
+real life,
+have really felt their benefits, and have a good enough understanding of how to use
+them to look like a power user (at least in the context you&amp;rsquo;ll be showing them). You don&amp;rsquo;t have
+to have used all of our tools all of the time, but to be a developer advocate of a particular
+IDE, you really should have used that IDE to code in the day job and have used it as more than
+just a text editor&lt;sup&gt;2&lt;/sup&gt;.&lt;/li&gt;
+&lt;li&gt;Ideally you&amp;rsquo;ll have some public profile that demonstrates you are not only interested in some
+technology community (ideally the one we&amp;rsquo;re hiring for, e.g. web technologies) but are active in
+that community.  We&amp;rsquo;re not looking for Rock Star Ninja Fully-Established Famous Developers.  But
+this role is very much about being visible to developers, so it would be nice to see that you are
+capable of interacting with other techies in a community.  What do I mean by this? I mean you
+don&amp;rsquo;t have to have tens of thousands of followers on Twitter &lt;em&gt;and&lt;/em&gt; thousands of points on
+StackOverflow &lt;em&gt;and&lt;/em&gt; have been speaking at conferences for years &lt;em&gt;and&lt;/em&gt; be the leader of a user
+group &lt;em&gt;and&lt;/em&gt; have an established blog &lt;em&gt;and&lt;/em&gt; have written a book. What we would like to see though
+is maybe one (or more) of the following:
+
+&lt;ul&gt;
+&lt;li&gt;Have presented at a conference (ideally with a video so we can see your style)&lt;/li&gt;
+&lt;li&gt;Active involvement in User Group(s) - e.g. organiser, regular presenter, active on mailing
+list etc&lt;/li&gt;
+&lt;li&gt;Have a technical blog&lt;/li&gt;
+&lt;li&gt;Have a profile on StackOverflow which demonstrates the ability to provide valuable answers to
+questions&lt;/li&gt;
+&lt;li&gt;Have a GitHub (or similar) profile which showcases involvement in open source code and/or has
+demo projects / code that other developers have found useful.&lt;/li&gt;
+&lt;li&gt;Have a Twitter profile that shows an interest in relevant technologies, and that you post
+content that&amp;rsquo;s valuable to other developers (e.g. re-tweeting/linking to interesting content)
+To re-iterate: we&amp;rsquo;re not looking for you to have &lt;em&gt;all&lt;/em&gt; of these things, and there may be other
+types of public (or public-ish) activity which is just as good.  The key point is that you are
+involved in the technical community outside of the day job and that you have demonstrated that
+you give back to this community in some way&lt;sup&gt;3&lt;/sup&gt;.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Related to point three, you have to be able to demonstrate truly excellent communication
+skills.  I have been involved in hiring developers at all sorts of organisations, and
+communication skills is always seen as an important part of the role.  But for a role like this,
+the job is almost entirely about communicating to people: to developers / architects / even
+management about why and how to use our tools, and between you and the product marketing managers
+for
+the tool you&amp;rsquo;re the advocate for (more on that above).  Add to that the fact that we are
+largely remote, it&amp;rsquo;s that much more difficult both to express what we mean to our colleagues and
+to get a feel for what our colleagues are trying to tell us. You need to be able to communicate
+potentially very technical ideas to other techies, you may need to be able to understand process
+and talk about how a tool fits into a process (or what process works for a tool set), you need to
+be able to work out with potentially multiple stakeholders what your priorities are and talk
+honestly to set expectations.&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Ability to be self-managed.  Our boss is the busiest man I know, and he really doesn&amp;rsquo;t want to
+manage people.  He wants us to get on with our job, talking directly to the right people (like
+the PMM, or the developers who worked on a specific feature) and only come to him when he&amp;rsquo;s
+needed to unblock something.  This is another reason why the team is generally staffed with very
+experienced people.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Call to women.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Right, so, I didn&amp;rsquo;t really want to do this because I hate trying to suggest that different
+genders have different needs by singling out a particular gender. I also have found that my
+advice &amp;ldquo;for women&amp;rdquo; works really well for almost everyone anyway.&lt;/p&gt;
+
+&lt;p&gt;But I do very specifically want to talk to &lt;em&gt;you&lt;/em&gt; if you are a woman developer (or other minority,
+ but I can only speak from my experience of being a woman) and are even vaguely interested in
+ developer advocacy as a career.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you think you maybe could do this, but you&amp;rsquo;re not ready yet, you probably are ready. For
+every time you&amp;rsquo;ve thought you couldn&amp;rsquo;t present at a conference, think of those talks you&amp;rsquo;ve seen
+where you&amp;rsquo;ve though &amp;ldquo;I could do that. I could do better than that.&amp;rdquo;. You don&amp;rsquo;t have to be
+perfect straight away and you don&amp;rsquo;t have to be better than everyone immediately. You simply
+have to be good enough.&lt;/li&gt;
+&lt;li&gt;You already have the skills you need for managing the social media side of this job.  I had an
+excellent question last week on Twitter about how I handle the fact that my Twitter feed is
+effectively a public representation of JetBrains as a company. And I realised I don&amp;rsquo;t freak out
+about this - partly because JetBrains is really cool about &amp;ldquo;the voice&amp;rdquo; of the company and is
+happy to have us just being ourselves, but mostly because as a woman, particularly a woman
+developer, I am already super-conscious of what I post, how I word things, how I appear on
+social media. Doing this as a job required almost zero adjustment for me.&lt;/li&gt;
+&lt;li&gt;My experience in the Java/JVM community has shown me being a woman is a massive advantage for
+things like getting in to speak at conferences.  I&amp;rsquo;ve been on the programme committee for a
+couple of conferences, and I&amp;rsquo;ve seen the CFPs generally dominated by submissions from men. We&amp;rsquo;ve
+actively looked for those from women and generally said &amp;ldquo;yes&amp;rdquo; to them unless there was a
+compelling reason not to.  You will often get emails from conference organisers saying &amp;ldquo;I&amp;rsquo;d
+really love for you to submit to this conference because we don&amp;rsquo;t have enough women speakers&amp;rdquo;,
+and while that particular approach makes me roll my eyes (what, you don&amp;rsquo;t care about the
+content, you just care about my vagina?) it is something you can use to your advantage.  And to
+be fair, they wouldn&amp;rsquo;t invite you if you were crap.&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re worried about being taken seriously as a developer when you&amp;rsquo;re a woman, I can tell
+you from my own personal experience that being semi-famous in this space has reduced the number
+of &amp;ldquo;are you a real developer?&amp;rdquo; questions at conferences and events to zero. If you&amp;rsquo;ve got
+&amp;ldquo;speaker&amp;rdquo; on your lanyard, if you&amp;rsquo;ve just given a live demo showing you can code, you no longer
+have to prove yourself to anyone, it&amp;rsquo;s out there for everyone to see.&lt;/li&gt;
+&lt;li&gt;I don&amp;rsquo;t want to draw attention to this side of things because I don&amp;rsquo;t want you to worry about
+it if you hadn&amp;rsquo;t already thought about it, but it&amp;rsquo;s something that I was scared of right at the
+beginning: I was worried I might get shit over Twitter or on the blog for being a woman.  So far
+(fingers crossed) I haven&amp;rsquo;t had the sort of thing I was afraid of. I do get mansplained at
+sometimes, and I do have to respond to idiots on Twitter.  But a) I see my (white, male)
+colleagues suffering the same thing all the time and b) my team, JetBrains and even my Twitter
+followers etc have my back.  I have a support network.  The fear is still real though.&lt;/li&gt;
+&lt;li&gt;If there are more of us doing this job, there will be fewer people looking at the single woman
+developer thinking she represents all women developers.  If half a dozen women&amp;rsquo;s voices are out
+there, it becomes clearer we don&amp;rsquo;t all want the same things or work the same way, And That&amp;rsquo;s OK.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you are a woman developer and are considering applying for this role, I urge you to please
+apply.  And if you have any questions, queries, doubts etc, please do contact me directly.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;d really love to see more applications from women developers. That&amp;rsquo;s not to say we discourage
+or dislike applications from men or that we&amp;rsquo;ll reject you if you&amp;rsquo;re not female, but if you are a
+woman developer and are even marginally interested in this role, please, please go for it!&lt;/p&gt;
+
+&lt;hr/&gt;
+
+&lt;p&gt;&lt;sup&gt;1&lt;/sup&gt; It&amp;rsquo;s not generous at all, it&amp;rsquo;s totally self-serving for JetBrains since we&amp;rsquo;re trying
+ to hire
+developer advocates and technical writers&lt;br /&gt;
+&lt;sup&gt;2&lt;/sup&gt; I was a power user of IntelliJ IDEA, and I had done live coding demos with it in the
+past when I joined, and that was probably a large part of why I was hired.  However, I hadn&amp;rsquo;t used
+Upsource or TeamCity before I came to JetBrains and I have done advocacy for both
+tools, so you don&amp;rsquo;t need to be an expert in all JB tools. But the fact that I
+had used other code review tools before and felt a LOT of pain while using them made Upsource a
+joy to advocate, since it fixes so many of the pain points I&amp;rsquo;ve felt with other tools.  And the
+fact that I&amp;rsquo;ve worked in Continuous Delivery environments, and had experience with Jenkins, also
+made it easier for me to see where TeamCity fits, what it does well, why you might use it.&lt;br /&gt;
+&lt;sup&gt;3&lt;/sup&gt; Now I have children I seriously appreciate that physically getting out to user group
+events or
+conferences is very challenging for developers who are parents.  That&amp;rsquo;s why this list also includes
+things which are a little easier to do on what can laughably be called the &amp;ldquo;spare time&amp;rdquo; when the
+children aren&amp;rsquo;t demanding 100% of your attention, e.g. blogs/Twitter/StackOverflow/mailing lists.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Becoming Fully Buzzword Compliant</title>
