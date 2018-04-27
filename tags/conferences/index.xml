@@ -6,7 +6,378 @@
     <language>en-us</language>
     <author>Trisha Gee</author>
     <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Mon, 26 Feb 2018 00:00:00 UTC</updated>
+    <updated>Fri, 20 Apr 2018 00:00:00 UTC</updated>
+    
+    <item>
+      <title>What Can Conferences Do To Attract More Women Speakers?</title>
+      <link>https://trishagee.github.io/post/more_women_speakers/</link>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 UTC</pubDate>
+      <author>Trisha Gee</author>
+      <guid>https://trishagee.github.io/post/more_women_speakers/</guid>
+      <description>
+
+&lt;p&gt;Now I&amp;rsquo;ve been speaking at (mostly Java) conferences for a while (six years now), I get asked to
+present at a lot of conferences.  &lt;em&gt;Obviously&lt;/em&gt; all these conferences are mostly interested in my
+terribly educational talks, but it&amp;rsquo;s also because I&amp;rsquo;m a technical woman and there aren&amp;rsquo;t very
+many technical women speaking at conferences.&lt;/p&gt;
+
+&lt;p&gt;In my experience, conferences want to do the right thing - they want a diverse line up of
+speakers, they want to attract diverse attendees. Often this is not as easy as it may seem, and
+frequently conferences are Twitter-shamed for not having enough women speakers. When it gets to
+this point (and often before), conferences frequently ask me for advice on
+speakers they could invite, and how to attract more women.&lt;/p&gt;
+
+&lt;p&gt;I do at this point have to roll my eyes somewhat though.  It&amp;rsquo;s an additional bit of workload that
+my male peers do not have to do: they are not asked to recommend suitable women speakers; they
+are not asked what a conference should be doing to improve diversity.  And let&amp;rsquo;s not forget that
+one of the reasons why I have made it to this point in our male industry is by having some
+combination of luck, selective blindness and an unusual attitude which means that I&amp;rsquo;m probably not
+qualified to speak on behalf of all the other women developers/speakers out there.&lt;/p&gt;
+
+&lt;p&gt;Anyway. To save myself some time in the future, here&amp;rsquo;s my blog post version of
+stuff-that-I-can-think-of-that-might-help. This is not scientific. There&amp;rsquo;s a bunch more stuff out
+there on the internet (including
+&lt;a href=&#34;https://continuousdelivery.com/2013/09/how-we-got-40-female-speakers-at-flowcon/&#34;&gt;one from Jez Humble&lt;/a&gt;
+and
+&lt;a href=&#34;https://medium.com/samsung-internet-dev/help-someone-has-pointed-out-my-conference-has-diversity-issues-c1162a1e8d4c&#34;&gt;help, my conference has diversity issues&lt;/a&gt;),
+please do Google for more.  The following suggestions come from my experience as a) a speaker b)
+a programme committee member of QCon London, DevoxxUK and DevoxxUS and c) just a normal person
+who thinks about these things.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_0&#34;&gt;Have a Code of Conduct&lt;/h2&gt;
+
+&lt;p&gt;Many many things have been written about this, I don&amp;rsquo;t intend to rehash them. You need one, if
+you don&amp;rsquo;t have one go and research this and put one in place.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_1&#34;&gt;Consider Diversity as a Key, Cross-Cutting Concern of Your Conference&lt;/h2&gt;
+
+&lt;p&gt;You couldn&amp;rsquo;t have a
+conference without researching venues; without figuring out the catering; without doing analysis
+of costs. If you&amp;rsquo;re serious about diversity, about improving the industry, or even just about not
+being attacked on Twitter, you have to consider diversity right from the start, and you have to
+consider it in the context of almost every other decision: Does the venue have step-free access?
+Can the caterers provide a range of non-alcoholic drinks rather than just the standard beers? Do
+the dates clash with some major religious festival? Or football event? (for example).
+Considering people with different needs, cultures, interests is something that you need to take
+seriously at every step. Diversity is not something you can just tack on at the last minute.
+This Is Hard.  It helps if your organisers/program committee members are diverse, as others will
+think of things you have not.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_2&#34;&gt;Your Website and Marketing Material Should Represent the People You Want to Attract&lt;/h2&gt;
+
+&lt;p&gt;Make
+sure that on your website and in your emails/tweets, photos of attendees and speakers
+represent the range of people you want to come. Don&amp;rsquo;t just put up a handful of photos
+from last year&amp;rsquo;s conference without looking very closely at who is, and who is not, shown in
+these photos.  From a gender diversity point of view, my rule of thumb is that every photo should
+have at least one female-looking person visible in it, ideally closer to 50%. Other measures of
+diversity that may be visible in photos include race and age, but
+it can also be things like dress code - the first DevoxxUK attracted people with pink mohawks,
+goths, men/women in suits, as well as the usual tshirt-and-jeans brigade.  It was wonderful!&lt;/p&gt;
+
+&lt;p&gt;To showcase diversity in photos/images, you can:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Show your organisers/programme committee. In my experience there are usually women in amongst
+the organisers, having photos of them on the site in a visible place is a good way to suggest to
+women that if they submit a talk they will be evaluated by people like them. As usual, I&amp;rsquo;m
+focusing on gender, but this can apply to other dimensions too.&lt;/li&gt;
+&lt;li&gt;Select photos from previous conferences that include women (I&amp;rsquo;ve heard that the new
+&lt;a href=&#34;https://en.wikipedia.org/wiki/General_Data_Protection_Regulation&#34;&gt;GDPR&lt;/a&gt; may prevent you from
+posting photos of people publicly without their consent, so be careful here). Make sure they&amp;rsquo;re
+not booth babes (Note: Do Not Allow Booth Babes. By all means, women should work on
+sponsor booths, but they should be employees of the company, not women hired in to look a
+particular way to sell the product). Ideally in these photos the women should look like they are
+being included, e.g. in groups talking to people, not standing alone to one side.&lt;/li&gt;
+&lt;li&gt;Showcase your diverse speakers.  This is a catch 22 of course, because you want to showcase
+diversity in order to attract speakers to submit, so you can&amp;rsquo;t show diverse speakers before
+you&amp;rsquo;ve had speakers submit&amp;hellip; You can show speakers from previous years; you can show your
+keynote speakers (hint: it&amp;rsquo;s a good idea to have at least one woman giving a keynote and you
+should secure them well before the CFP closes so you can show them off); you can invite selected
+speakers early who won&amp;rsquo;t go through the CFP and show them on the site (see next
+section)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;It&amp;rsquo;s not just about photos, it&amp;rsquo;s also logos/imagery and language.  If you have characters, make
+sure they&amp;rsquo;re not all men/masculine. If you have a theme, make sure it&amp;rsquo;s open to all.  I really
+loved
+&lt;a href=&#34;https://www.linkedin.com/pulse/devoxx-uk-2015-stephan-janssen/&#34;&gt;DevoxxUK&amp;rsquo;s League of Extraordinary Developers&lt;/a&gt;,
+it showed a range of diverse characters, not
+just gender and race but implied we&amp;rsquo;re not all the same and we have different strengths and
+skills.&lt;/p&gt;
+
+&lt;p&gt;Also check the language you use. There have been a number of studies
+that show that &lt;a href=&#34;https://www.forbes.com/sites/hbsworkingknowledge/2016/12/14/how-to-take-gender-bias-out-of-your-job-ads/#490276c71024&#34;&gt;language in job adverts can subtly imply male vs female
+roles&lt;/a&gt;. But even easier
+than that, make sure you don&amp;rsquo;t assume attendees will be a &amp;ldquo;he&amp;rdquo; and don&amp;rsquo;t use words like &amp;ldquo;guys&amp;rdquo; -
+you may have seen this used in a gender neutral way but many people feel it is &lt;em&gt;not&lt;/em&gt; gender
+neutral and implies &amp;ldquo;men&amp;rdquo;.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_3&#34;&gt;Invite Women Speakers Early, and Personally&lt;/h2&gt;
+
+&lt;p&gt;Women speakers are very much in demand.  There
+are more conferences than women speakers, and we get booked up well in advance (my next 9-12
+months are usually already booked up).  If you want to
+ensure you have a decent proportion of women speakers, you need to reach out to us personally,
+early, and ideally offer us a guaranteed speaking slot. I&amp;rsquo;m not a fan of being asked to submit
+to a CFP, I get invited to enough conferences that I don&amp;rsquo;t need to go to more, and going through a
+CFP adds a lot of variability. For experienced speakers who you know you&amp;rsquo;re likely
+to accept anyway, consider offering them a guaranteed slot.  For less experienced / new speakers,
+invite them to submit.  But whoever you&amp;rsquo;re reaching out to, at least (please) put their name on the
+email.  One of the conferences suffering from a lack of women speakers at the moment invited me
+with a standard email addressed to &amp;ldquo;Dear madam&amp;rdquo;. I&amp;rsquo;m usually strict about replying to requests
+but I didn&amp;rsquo;t take the time to reply to this one as they didn&amp;rsquo;t take the time to customise their
+request to me.  On this topic, what I want to see in an invitation email (and maybe other people
+ are different) are:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;In the first paragraph: which conference (with link); date; city; very very short description
+of the conference (&amp;ldquo;community run Java conference&amp;rdquo;, &amp;ldquo;Europe&amp;rsquo;s biggest devops conference&amp;rdquo;,
+something that gives me a rough idea of technology and community); what do you want me to
+speak about (either a specific talk, or a more general topic).&lt;/li&gt;
+&lt;li&gt;If you cover travel/accommodation, put that somewhere near the beginning of your email, this
+can make it much easier for a speaker to say &amp;ldquo;yes&amp;rdquo; to your conference.&lt;/li&gt;
+&lt;li&gt;Other useful information can go in the later paragraphs: approx number of attendees; who else
+is presenting / has presented in the past; interesting activities during the conference / in
+the city.  None of this stuff is mandatory.&lt;/li&gt;
+&lt;li&gt;A bit of flattery / how you know about me is always welcome. Oh but don&amp;rsquo;t be creepy &lt;em&gt;shudder&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_4&#34;&gt;Find Women&lt;/h2&gt;
+
+&lt;p&gt;Easy, right? Not so much.  But please, don&amp;rsquo;t just email the first woman speaker
+who comes to your mind and say &amp;ldquo;please come and speak, and also if you could find us all the other
+women speakers we need that would be great too&amp;rdquo;. By all means ask for recommendations (from all
+speakers actually, it&amp;rsquo;s freaking exhausting being a woman speaker because we do a lot of work in
+this area, connecting people up and pointing them in the right direction and plenty of
+experienced male speakers are better at this than me). But this is a numbers game - there aren&amp;rsquo;t
+many women speakers and those that do this regularly are very in demand, you&amp;rsquo;re going to need to
+invite a &lt;em&gt;lot&lt;/em&gt; of women to stand a chance of having a diverse line up. Here are some suggestions
+based on what I&amp;rsquo;ve done in the past to find women speakers:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Google &amp;ldquo;Women in&amp;hellip;&amp;rdquo; Java, Data, Blockchain, whatever.&lt;/li&gt;
+&lt;li&gt;Look at big conferences in this space from the last two years, spot the female-ish faces and
+make a list of them. When asked for Java/JVM recommendations, I check JavaOne,
+DevoxxUK/Belgium, JavaZone, JFokus and maybe Google &amp;ldquo;Java conferences&amp;rdquo; to find the others I&amp;rsquo;ve
+forgotten. For broader topics I look at QCon London because I know they always
+work hard on diversity and have had a bunch of really fantastic women speakers in the past. I
+sometimes check out the GOTO conferences for the same reason.&lt;/li&gt;
+&lt;li&gt;Look for local user groups who could help.  You can search Meetup.com
+for &amp;ldquo;Women code&amp;rdquo;, &amp;ldquo;Lady developers&amp;rdquo; and variations on that theme.  Find the groups in the area
+local to the conference, and reach out really nicely to them to ask if they wouldn&amp;rsquo;t mind
+circulating the details of your CFP amongst their members.  Remember to provide them with
+information about why their members want to speak
+(all travel covered/opportunities to meet various people/mentoring provided, whatever). If you
+can see previous speakers at these groups, you could add them to your list of women to reach
+out to personally.&lt;/li&gt;
+&lt;li&gt;Ask &lt;a href=&#34;https://twitter.com/callbackwomen&#34;&gt;Callback women&lt;/a&gt; to retweet the CFP details&lt;/li&gt;
+&lt;li&gt;Check out the networks of women speakers, like
+&lt;a href=&#34;http://articulate-network.lanyrd.com/&#34;&gt;Articulate Network&lt;/a&gt;,
+&lt;a href=&#34;https://github.com/fempire/women-tech-speakers-organizers&#34;&gt;this list of women speakers&lt;/a&gt;, and
+&lt;a href=&#34;https://womenwhokeynote.com/&#34;&gt;Women who keynote&lt;/a&gt;.  Google
+for these lists too, there&amp;rsquo;s loads of them. Sadly these resources are not very centralised.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_5&#34;&gt;Provide Travel and Accommodation&lt;/h2&gt;
+
+&lt;p&gt;Particularly if you&amp;rsquo;re trying to attract/grow new
+speakers. You may not have budget to apply this to everyone, but if you really want to have diverse
+speakers you may need to set aside some budget to pay for them.  In my first year of presenting I
+was doing it more or less on my own (vacation) time because I had a real job as a real
+developer, and I could only speak at conferences who would cover my costs.  This is even more
+tricky for self employed people as they&amp;rsquo;re also losing money by attending your conference.  Be
+aware that not everyone a) is a professional advocate (and even when we are it&amp;rsquo;s easier to say
+yes to a conference if our employer doesn&amp;rsquo;t have to pay) b) is employed by a forward-thinking
+employer who is happy to let employees go to conferences or c) has paid vacation time they are
+willing/able to use. Be aware that for some people this cost might be more than just
+the cheapest flight and cheapest hotel for one person - one conference paid for me,
+my partner and my (at the time) one-year-old to travel halfway around the world so I could speak at
+the conference. I couldn&amp;rsquo;t take that time away from my family so they brought the whole family,
+I would not have been able to speak there otherwise.  Another conference this year is paying
+for all four of us to travel, plus a family hotel room - I&amp;rsquo;m currently breastfeeding and I can&amp;rsquo;t
+leave the baby for very long, and if I&amp;rsquo;m going to bring the baby I need to bring the husband to
+take the baby while I&amp;rsquo;m talking, which means we also need to bring the toddler, because she&amp;rsquo;s
+a bit young to leave at home alone for a weekend.  I don&amp;rsquo;t always need all these costs covering,
+I&amp;rsquo;m not always breastfeeding, and even after the first was born there were plenty of times I could
+travel alone.  But if you want to improve your diversity you&amp;rsquo;re going to need to consider these
+sorts of cases.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_6&#34;&gt;Provide rehearsal space&lt;/h2&gt;
+
+&lt;p&gt;This is quite time consuming and relies on having people willing
+to watch the rehearsal and give feedback.  I actually mean &lt;em&gt;virtual&lt;/em&gt; space here, I&amp;rsquo;ve given my talk
+via hangouts to the track lead for QCon New York to get feedback on a new talk.&lt;/p&gt;
+
+&lt;p&gt;If you&amp;rsquo;re trying
+ to attract new talent, consider involving one or more local user groups and running a speaker
+ training session. The London Java Community has done this a couple of times. You need to select
+ the people who will provide mentoring / feedback &lt;em&gt;very&lt;/em&gt; carefully.  They need to be aware of the
+ type of gendered words that are frequently used for women and avoid them (would
+ you ever use the word &amp;ldquo;feisty&amp;rdquo; for a man? No, you would not); they
+ need to be aware that women get
+ &lt;a href=&#34;https://hbr.org/2017/04/how-gender-bias-corrupts-performance-reviews-and-what-to-do-about-it&#34;&gt;critical personality feedback&lt;/a&gt;
+ instead of actionable feedback.
+ The feedback to help mentor new speakers, particularly women speakers, needs to be well thought
+ out (not &amp;ldquo;you seem nervous&amp;rdquo;, maybe &amp;ldquo;is there some section of the content
+ that makes you uncomfortable&amp;rdquo;, for example). These mentors need to be experienced speakers.
+ Ideally they should also be diverse, but if this is not possible then men who are experienced at
+championing women will be OK (my mentors were all men).&lt;/p&gt;
+
+&lt;p&gt;You can also run community nights, these
+aren&amp;rsquo;t sessions aimed at training the speakers, but user group events where you can have
+prospective speakers present their talk. Obviously this works if a) the speaker is local and b)
+you have links with appropriate local user groups.  But this is a good way to grow the community,
+ and to try out speakers without having to judge them through a CFP.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_7&#34;&gt;Have lightning talks on the agenda&lt;/h2&gt;
+
+&lt;p&gt;Lightning talks can be a very mixed bag of quality and can introduce complexity to your scheduling.
+But they&amp;rsquo;re also a good way to get inexperienced speakers
+into the conference, and to give them an opportunity to be videoed (and have conference speaking
+on their CV) so they can break into speaking properly.  As an attendee I like lightning talks -
+the topics are often varied, and ones I often wouldn&amp;rsquo;t bother watching a whole hour of, and I&amp;rsquo;ll
+tolerate poor content/poor delivery for 10 minutes without complaint.  You will need to consider
+your cost/benefit here though, I doubt you&amp;rsquo;ll want to pay expenses to ship a whole family of four
+over to your conference for the sake of a 10 minute talk, these seem to work best in encouraging
+local developers to speak at your conference.  Again, ties with local user groups will be key here.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_8&#34;&gt;Be Open to Flexible Scheduling&lt;/h2&gt;
+
+&lt;p&gt;I know, I really do, that your conference is really hard to
+schedule. Not just the
+actual dates, but who presents in which room at what time.  This is super difficult, and most
+speakers understand this and will accept the vague &amp;ldquo;your talk will be one of these three days&amp;rdquo;
+notice. Many speakers who are just starting will probably love to be there for the whole
+conference, I certainly did! But this is really hard for people who can&amp;rsquo;t get the time off work
+or away from their family. It&amp;rsquo;s also less exciting when you&amp;rsquo;ve already seen many of the talks
+you care about.&lt;/p&gt;
+
+&lt;p&gt;When I started doing this, my work was peeved if I took three days off to travel to a
+conference.  Now, I&amp;rsquo;m peeved if I take three days away from my family.  There&amp;rsquo;s a really hard
+balance for us speakers to strike, especially when
+ we book our own travel: we either need to book early to get cheap travel, in which case we
+ don&amp;rsquo;t know when our talk is so we have to be there for the whole conference; or we book as soon
+ as we know the date and time of the talk, in which case someone is going to be stung with higher
+  travel costs.&lt;/p&gt;
+
+&lt;p&gt;Considering diversity also means understanding that not everyone lives in or near a city
+with a major airport. It&amp;rsquo;s easy to get spoilt in London, Paris, Madrid, Amsterdam, because
+there are so many flights to so many places from there.  But because I&amp;rsquo;m
+travelling from somewhere that isn&amp;rsquo;t a major airport,
+  direct flights to many conference locations are rare, and if they exist are almost always only
+  on a couple
+  of days the week and at horrible times, so my ability to get to and from the conference is
+  limited. This either adds one or two days either side of the conference waiting for the
+  right flight (so days and days away from the family for a one hour talk), or means I have a very
+  small window during your conference that I can be there. What would make my life easier is one of:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Tell me my time slot as soon as possible.  Oh, and do tell me.  Most conferences don&amp;rsquo;t
+bother, I have to check the schedule when it&amp;rsquo;s posted on the website which is often only a
+couple of weeks before the conference.&lt;/li&gt;
+&lt;li&gt;Allow me to suggest the best dates/times for me. I know it&amp;rsquo;s not possible to accommodate
+everyone, but for those of us with difficult schedules and/or who want to limit time away from
+home/work, I would really like to be able to say &amp;ldquo;I can only do this conference if I can talk
+Monday afternoon&amp;rdquo; and not sound like a diva.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;toc_9&#34;&gt;Consider Diversity Scholarships&lt;/h2&gt;
+
+&lt;p&gt;Some conferences offer discounts/free tickets for underrepresented groups.
+I feel a bit torn on this topic personally because I&amp;rsquo;m not a big fan of positive discrimination and
+this looks a bit like that.  But if you have offered something like this, it may attract
+speakers from underrepresented groups as well, because you are doing something proactive. If you
+consider this idea please do your research in this area.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_10&#34;&gt;Swag isn&amp;rsquo;t Just for Boys&lt;/h2&gt;
+
+&lt;p&gt;When I first started going to conferences I got really annoyed
+that all the free t-shirts were &amp;ldquo;unisex&amp;rdquo;, i.e. male.  I don&amp;rsquo;t really care about this any more
+because I&amp;rsquo;d like to wear clothes that I&amp;rsquo;ve actually chosen and paid for that actually fit me.
+But it does annoy a lot of women
+speakers and attendees, and it&amp;rsquo;s always noticeable when a conference goes out of
+its way to have women&amp;rsquo;s shapes and sizes. But don&amp;rsquo;t make them a different colour/logo, this just
+says &amp;ldquo;hey women, you&amp;rsquo;re like a totally different species and we&amp;rsquo;re going to make you stand out&amp;rdquo;.
+Doesn&amp;rsquo;t matter that in 100% of the cases where I&amp;rsquo;ve had a different colour the men have been
+totally jealous of my much more attractive women&amp;rsquo;s cut top, what matters is you don&amp;rsquo;t want to
+make the minorities stand out even more than they already do.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not just t-shirts either. For each bit of swag, think &amp;ldquo;would I give this to my sister / gay
+friend / muslim co-worker?&amp;ldquo;. Not everyone at the conference is a beer-drinking, youngish,
+straight, white, single male. And even those who are can be offended by swag that stereotypes
+what they should be interested in.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_11&#34;&gt;Consider having a blind CFP&lt;/h2&gt;
+
+&lt;p&gt;I&amp;rsquo;ve written in the past that I&amp;rsquo;m really not sure about this
+as a solution, but other sectors and other conferences have had success with this.  Perhaps if
+you combine this with actively reaching out to women and giving them guaranteed speaking slots,
+maybe this will address the weaknesses of both the invitation and the CFP processes. Do your
+research, see how you feel.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_12&#34;&gt;Note for women speakers&lt;/h2&gt;
+
+&lt;p&gt;After all that advice for conference organisers, I&amp;rsquo;d really like to say something to the women
+speakers out there. As usual, my advice applies to men too, but I want to talk specifically to the
+ladies.&lt;/p&gt;
+
+&lt;p&gt;If a conference invites you to speak and you have no intention of going, please respond with a
+&amp;ldquo;no&amp;rdquo; as promptly as possible.  I&amp;rsquo;ve been on both sides of the
+invitation (inviting speakers to speak and being invited) and as an inviter it is very very
+frustrating not to hear anything back from a valued speaker, especially if there&amp;rsquo;s a slot held
+for this speaker that needs to be filled. As a speaker, every time I&amp;rsquo;ve said &amp;ldquo;no&amp;rdquo;
+within a few hours of getting the email, I almost always get a very nice response
+saying &amp;ldquo;thanks for the quick reply&amp;rdquo;.  Saying &amp;ldquo;no&amp;rdquo; quickly is not ever going to be considered
+rude, it&amp;rsquo;s actually very helpful to the organisers.  Waiting a while because you want to phrase
+it in a nice way, or
+simply never getting around to responding because you mean to think the offer through and/or
+spend some time on the reply (and I am &lt;em&gt;the worst&lt;/em&gt; at this in most of my email) puts the
+conference into limbo - yes, they will have invited plenty
+of other speakers so they&amp;rsquo;re not just dependent upon you, but if half of them don&amp;rsquo;t take the
+time to respond the organisers don&amp;rsquo;t know if they need to reach out to more people or not. And
+as a speaker it&amp;rsquo;s a bit embarrassing to respond a week or more later with a &amp;ldquo;yes&amp;rdquo; only to have the
+ conference say &amp;ldquo;er, sorry, we didn&amp;rsquo;t hear from you so we&amp;rsquo;re all full now&amp;rdquo;. This has happened to
+ me. I felt bad.&lt;/p&gt;
+
+&lt;p&gt;So:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;If you know you&amp;rsquo;re not going, say &amp;ldquo;no&amp;rdquo; straight away (&amp;ldquo;thanks for the invite, really pleased
+you&amp;rsquo;re interested in having me, but I&amp;rsquo;m afraid I can&amp;rsquo;t make it&amp;rdquo;, or something, doesn&amp;rsquo;t have to be
+long winded and you don&amp;rsquo;t have to justify why you&amp;rsquo;re not going).&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;If you&amp;rsquo;re thinking about it
+but you have to work out details/check with work/run it past your partner/research costs,
+respond telling them you&amp;rsquo;re thinking about it, and give a rough date of when you&amp;rsquo;ll get back to
+them (&amp;ldquo;thanks for the invite, it looks really interesting, I can&amp;rsquo;t commit right now because
+I&amp;rsquo;ve got some stuff to work out, if I don&amp;rsquo;t get back to you by the end of next week please give
+me a nudge&amp;rdquo;). If you&amp;rsquo;re having some trouble working out the details (maybe the flights are too
+expensive, maybe work won&amp;rsquo;t give you the time off) update the conference with this information
+because they might be able to do something (give you money towards travel; send you some useful
+blurb to wave at your boss about why this is a good business investment for them, etc)&lt;/li&gt;
+&lt;li&gt;Obviously if it&amp;rsquo;s a yes just respond straight away with yes.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Don&amp;rsquo;t, please, just fail to respond.  I know you&amp;rsquo;re super busy, I know you have an inbox stacked
+full of more important things you haven&amp;rsquo;t got around to.  Set up a
+&lt;a href=&#34;https://support.google.com/inbox/answer/7107959?hl=en&#34;&gt;Google template&lt;/a&gt; (or equivalent) and it
+will take seconds to reply, and it&amp;rsquo;s one more mail you can get out of your inbox.  I&amp;rsquo;ve heard a lot
+of frustration from conference organisers that the women they contact never reply, and because human
+nature is the way it is, it leaves organisers feeling demotivated and makes them less likely to
+reach out to other women.  I know this isn&amp;rsquo;t your fault, but it is something we can all help to
+improve.&lt;/p&gt;
+
+&lt;h2 id=&#34;toc_13&#34;&gt;In Summary&lt;/h2&gt;
+
+&lt;p&gt;There are probably loads and loads of things I haven&amp;rsquo;t mentioned.  And it&amp;rsquo;s possible that
+conference organisers could do all of these things and still not reach the numbers they want. But I
+can practically guarantee that if, as an organiser, you don&amp;rsquo;t do any of these, you aren&amp;rsquo;t going
+to get many women speakers at all. Please, read all of these items again, and for your next
+conference create a tick-list of all the
+ things you&amp;rsquo;re going to do, and all the things you need to check at each stage (like the imagery
+ and language of your marketing material).&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -481,16 +852,6 @@ MongoDB Java API (in its current, unfinished, state).&lt;/p&gt;
       <author>Trisha Gee</author>
       <guid>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
       <description>&lt;p&gt;InfoQ has posted the video of Dan North and I opining on the subject of hiring. &amp;nbsp;Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. &amp;nbsp;We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://www.infoq.com/presentations/job-interview-tips#.UiBS9_WZJyU.blogger&#34;&gt;Hire Education - Making Interviews Rock&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;It&amp;rsquo;s kind of funny because we talk a lot about hiring at ThoughtWorks (where we both worked, and which has one of the &lt;a href=&#34;http://www.businessinsider.com/hardest-tech-company-job-interviews-2012-8&#34;&gt;toughest interview processes&lt;/a&gt; in the industry) and LMAX, which learnt a lot off ThoughtWorks and shaped its own process for a smaller company that has different goals. &amp;nbsp;Yet neither of us work at those places now. &amp;nbsp;Still, we share stories from many of the places we&amp;rsquo;ve worked (or chose not to work), and if there&amp;rsquo;s one take-home point, it&amp;rsquo;s that hiring (and being hired) is not a simple thing to do well.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>JavaOne Shanghai</title>
-      <link>https://trishagee.github.io/post/javaone_shanghai/</link>
-      <pubDate>Wed, 31 Jul 2013 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
-      <guid>https://trishagee.github.io/post/javaone_shanghai/</guid>
-      <description>&lt;p&gt;&lt;table cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-Zw5OLhNC2_0/UfkleToCp7I/AAAAAAAALqs/pP-pjChpfUg/s1600/DSC_0250.jpg&#34; imageanchor=&#34;1&#34; style=&#34;clear: left; margin-bottom: 1em; margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;400&#34; src=&#34;http://3.bp.blogspot.com/-Zw5OLhNC2_0/UfkleToCp7I/AAAAAAAALqs/pP-pjChpfUg/s400/DSC_0250.jpg&#34; width=&#34;267&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;I was expecting this&amp;hellip;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;So, I was in China last week. &amp;nbsp;It&amp;rsquo;s not really what I expected, but then my knowledge of China comes almost entirely from visiting various Chinatowns and watching martial arts movies, so I guess I wasn&amp;rsquo;t all that well prepared for a modern Asian city like Shanghai.&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: right;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-LLo9NO2T6ug/Ufkc1_QLrDI/AAAAAAAALoI/hDFjCD1qmf4/s1600/DSC_0100.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;424&#34; src=&#34;http://4.bp.blogspot.com/-LLo9NO2T6ug/Ufkc1_QLrDI/AAAAAAAALoI/hDFjCD1qmf4/s640/DSC_0100.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;&amp;hellip;and found this instead&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;The city is, in my opinion, clean, modern, and attractive. &amp;nbsp;I was surprised by American-looking early skyscrapers, and really surprised that the city overall felt more European than American - with Marks &amp;amp; Spencer, Tesco, Carrefour, H &amp;amp; M, Zara, Costa Coffee, as well as the inevitable McDonalds, KFC and Pizza Hut.&lt;br /&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-QhI7Bb7KFpA/Ufkc2Y6SxDI/AAAAAAAALoU/mwPo9VG81Vc/s1600/DSC_0116.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;428&#34; src=&#34;http://3.bp.blogspot.com/-QhI7Bb7KFpA/Ufkc2Y6SxDI/AAAAAAAALoU/mwPo9VG81Vc/s640/DSC_0116.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;Some of the architecture reminded me more of New York than Europe or Asia&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;I felt like they had the option to take the best of all worlds - the modern, high tech and sometimes downright weird influence of Japan; a care for heritage from Europe; the consumer choice of the US; and food from all over China and the world.&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://3.bp.blogspot.com/-EaMzViVxXg8/Ufkc6YcbAQI/AAAAAAAALqA/bVpTqW2HJWc/s1600/DSC_0555.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;428&#34; src=&#34;http://3.bp.blogspot.com/-EaMzViVxXg8/Ufkc6YcbAQI/AAAAAAAALqA/bVpTqW2HJWc/s640/DSC_0555.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;OK, I didn&amp;rsquo;t eat here, but I did love the food in Shanghai&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;The food was awesome and, by my London-standards, very reasonably priced. &amp;nbsp;Our hotel was amazing, and also a good price for such luxury (although it was in the arse end of nowhere, but that didn&amp;rsquo;t matter when taxi journeys to the centre of Shanghai were around £3.00). &amp;nbsp;Road users were mental (although there are probably many worse places I haven&amp;rsquo;t visited them yet) and we got into the habit of not looking out of the cab windows when we travelled.&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-z-mEw4eDm9k/Ufkh1_15luI/AAAAAAAALqM/jQ_tAAj1y-Q/s1600/DSC_0234.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;427&#34; src=&#34;http://2.bp.blogspot.com/-z-mEw4eDm9k/Ufkh1_15luI/AAAAAAAALqM/jQ_tAAj1y-Q/s640/DSC_0234.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;Apparently road accidents kill 300 people a day in China.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: left;&#34;&gt;I did miss Twitter and Facebook while I was out there, and the WiFi availability was limited. &amp;nbsp;Also, maybe I&amp;rsquo;m paranoid, but I wasn&amp;rsquo;t sure how much to trust the WiFi. &amp;nbsp;But I found myself quite pleased to be separated from the interwebs for a bit - it was peaceful and relaxing. &amp;nbsp;I even did more work than I expected, probably because I wasn&amp;rsquo;t replying to e-mails all the time or thinking of what to tweet next.&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-oqapZA6WGUI/Ufkc5L2G7hI/AAAAAAAALpg/blm4iEKfz8I/s1600/DSC_0291.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;427&#34; src=&#34;http://2.bp.blogspot.com/-oqapZA6WGUI/Ufkc5L2G7hI/AAAAAAAALpg/blm4iEKfz8I/s640/DSC_0291.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;The conference itself was a weird mix of the familiar with the massively unfamiliar - familiar, because it &lt;i&gt;felt&lt;/i&gt; like a JavaOne - the branding, the badges, the signage. &amp;nbsp;Unfamiliar because I don&amp;rsquo;t speak Chinese - most of the signs and documentation were in Chinese, and not all the stewards spoke English. &amp;nbsp;The attendees in particular were not expected to speak English (which is totally understandable of course! Conferences should cater for the local population), which made it more difficult to feel like a part of the event. &amp;nbsp;I think I&amp;rsquo;ve mentioned before that the more I come to these events, the less I feel like an outsider as one of the rare women. &amp;nbsp;But as a blonde-haired European woman I did feel a little&amp;hellip; conspicuous.&lt;br /&gt;&lt;br /&gt;&lt;table cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;float: left; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-oOKZpQA9aiM/Ufkc24I2QvI/AAAAAAAALoo/KDA5LT4htD8/s1600/DSC_0217.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;428&#34; src=&#34;http://2.bp.blogspot.com/-oOKZpQA9aiM/Ufkc24I2QvI/AAAAAAAALoo/KDA5LT4htD8/s640/DSC_0217.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;It was an Oracle conference. &amp;nbsp;In case you&amp;rsquo;re not sure.&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;Oracle probably like the fact that the event is small enough that Open World and JavaOne can be in the same place at the same time, but to me it feels a bit odd. &amp;nbsp;I couldn&amp;rsquo;t easily find the content that was applicable to me as a Java developer, and I really don&amp;rsquo;t see much crossover between the two conferences - I can&amp;rsquo;t see what I, as a developer, would get out of &amp;ldquo;How to use Oracle blah blah more effectively&amp;rdquo;.  And I can&amp;rsquo;t see the suited business types enjoying &amp;ldquo;Effective Scala&amp;rdquo;.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s less obvious than at the SF conference(s), but there&amp;rsquo;s a very distinct difference between the JavaOne attendees (emphasis on the casual part of business casual) and the Oracle people (do they sleep in their suits?).  I didn&amp;rsquo;t envy the latter at all - wearing a full suit and tie in 40°C heat and humidity you could drown in must be extremely uncomfortable.&amp;nbsp;Speaking of clothes, all the women are dressed in summery, pretty clothes (except the business-suited Oracle types), and looked like normal human beings, and the geek guys were wearing less badges of geekness (geek t-shirts, jeans etc).&lt;br /&gt;&lt;div&gt;&lt;br /&gt;This did seem to be a great conference to get people from all over Asia and even the antipodes together.  There was buzz in the air, an excitement to be learning stuff and meeting people. &amp;nbsp;I don&amp;rsquo;t know if it&amp;rsquo;s the (relatively) small size of the conference, its youth or its geography, or maybe simply me projecting my excitement at being in a place I&amp;rsquo;d never been to before, but there was less cynicism than in the western conferences.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;table cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-HnWFwFqbyUs/Ufkc3GqPjCI/AAAAAAAALos/zOoIsSqSzCs/s1600/DSC_0221.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;427&#34; src=&#34;http://2.bp.blogspot.com/-HnWFwFqbyUs/Ufkc3GqPjCI/AAAAAAAALos/zOoIsSqSzCs/s640/DSC_0221.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;Awesome to see the LJC get a shout out in China!&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/div&gt;In terms of presenting, this was an entirely new experience for me. &amp;nbsp;The slides had all been translated into Chinese&lt;sup&gt;1&lt;/sup&gt;, which I&amp;rsquo;ve already mentioned I don&amp;rsquo;t speak, so this meant I had to have my laptop out with my English notes on, as well as the slides on the main screen. &amp;nbsp;I had two remotes, one in each hand, and I advanced both sets of slides at the same time. The fact that the slide on the screen was also on a monitor in front of me made it relatively easy to make sure I had both in sync, but it did require a bit of extra cognitive power. &amp;nbsp;I felt lucky that most of my slides are practically content-less - if my presentations followed the &lt;a href=&#34;http://presentationpatterns.com/glossary/#bullet-riddledcorpse&#34;&gt;Bullet-Riddled Corpse pattern&lt;/a&gt; a) the poor translator would have had to work harder and b) it would have been more difficult to work out which slide I was on.&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-RGTON8Wogt0/UfkjPmpqg5I/AAAAAAAALqc/p8bTKu5qiRg/s1600/2013-07-23+16.28.37.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;480&#34; src=&#34;http://4.bp.blogspot.com/-RGTON8Wogt0/UfkjPmpqg5I/AAAAAAAALqc/p8bTKu5qiRg/s640/2013-07-23+16.28.37.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;Half of my massive audience&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;In addition, my presentation was being interpreted in real time as I spoke. &amp;nbsp;I was worried about the interpreter - I know I speak too fast, and I wasn&amp;rsquo;t sure if Chinese is one of those languages where it takes more words to say the same thing&lt;sup&gt;2&lt;/sup&gt;. &amp;nbsp;So I needed to make sure I slowed down, spoke clearly and coherently, and left longer pauses. &amp;nbsp;These are things you should do as a presenter anyway, but it always feels a little unnatural. &amp;nbsp;And in fact the more you present, the easier it is to forget this, especially if you get good feedback on your talks.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;To deal with both these different things (Chinese slides and real time interpretation), I had to be prepared earlier than normal and I practiced more than normal. &amp;nbsp;I wanted to get the timing right so I would be comfortable slowing down. &amp;nbsp;I wanted it to be 40 minutes (in a 60 minute slot) to give me 10 mins for questions and 10 mins buffer for allowing me to slow down and/or cope with any disasters. &amp;nbsp;I needed to run through with the Chinese slides so there weren&amp;rsquo;t any nasty surprises.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;In the end, I thought it went very well. &amp;nbsp;The preparation made me feel much more comfortable and confident. &amp;nbsp;Slowing down had an additional benefit - not everyone opted for the headphones &amp;amp; interpreter, so me not speaking at 100 miles an hour gave them a fighting chance of following along. &amp;nbsp;The audience seemed very reluctant to ask questions in public, so I skipped my usual audience-participation bit, but the fact that I hit 40 minutes exactly gave people loads of time to come up to me afterwards and ask me questions, and I did have quite a big line of people as I was packing up. I think this is a Good Thing.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Fortunately (for me) the session was not recorded in any form, so you won&amp;rsquo;t be able to see whether it really was any good or not. &amp;nbsp;But here are the slides, in case you speak Chinese (sadly my Keynote to Powerpoint conversion didn&amp;rsquo;t quite work, so some of the code falls off the bottom).&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;iframe frameborder=&#34;0&#34; height=&#34;400&#34; marginheight=&#34;0&#34; marginwidth=&#34;0&#34; scrolling=&#34;no&#34; src=&#34;http://www.slideshare.net/slideshow/embed_code/24790295&#34; width=&#34;476&#34;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;(Note that my caveats are in Chinese, but the caveats are that the new API for the MongoDB Java driver will almost definitely NOT look like that, it&amp;rsquo;s just indicative of the direction we were looking in when I wrote that presentation.)&lt;br /&gt;&lt;br /&gt;Although I was more nervous about this session than recent sessions, I&amp;rsquo;m really pleased I did it. &amp;nbsp;I highly recommend this to other speakers as a way to force you out of your routine and to think about your presentation style (something we probably all stress about anyway, but this forces you to look carefully at it).&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;And Shanghai overall&amp;hellip; as you can probably gather from the start of this blog, I liked it a lot. &amp;nbsp;I had a nice, mostly relaxing, fun time there. &amp;nbsp;I loved the modern-ness of it, like the ridiculously fast MagLev that takes a mere 7 minutes to travel the 30km to the airport.&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://2.bp.blogspot.com/-N4uxMHHBqP8/Ufj39c6HFlI/AAAAAAAALnk/LkqJmrUtQYM/s1600/MagLevSpeed.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;90&#34; src=&#34;http://2.bp.blogspot.com/-N4uxMHHBqP8/Ufj39c6HFlI/AAAAAAAALnk/LkqJmrUtQYM/s320/MagLevSpeed.jpg&#34; width=&#34;320&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;The Shanghai MagLev is &amp;ldquo;the world&amp;rsquo;s fastest train in regular commercial service&amp;rdquo;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;I liked the alienness, after countless European and American cities. &amp;nbsp;I did not like not being able to speak the language, or the fact that taxi drivers don&amp;rsquo;t want to take you to the Expo area where our hotel was. &amp;nbsp;I liked the many touches of familiarity and the atmosphere. &amp;nbsp;I&amp;rsquo;d definitely go back.&lt;br /&gt;&lt;br /&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/-WCwgvIYVSPc/Ufk0x8cl66I/AAAAAAAALq8/56LFQqYJwfg/s1600/DSC_0227.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;427&#34; src=&#34;http://1.bp.blogspot.com/-WCwgvIYVSPc/Ufk0x8cl66I/AAAAAAAALq8/56LFQqYJwfg/s640/DSC_0227.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;Pollution makes awesome sunsets&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-zKRXrTupRYE/Ufk0x683cTI/AAAAAAAALrA/QOdN4Mu0rXQ/s1600/DSC_0064.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;428&#34; src=&#34;http://4.bp.blogspot.com/-zKRXrTupRYE/Ufk0x683cTI/AAAAAAAALrA/QOdN4Mu0rXQ/s640/DSC_0064.jpg&#34; width=&#34;640&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: left;&#34;&gt;And it&amp;rsquo;s whetted my appetite for &lt;a href=&#34;http://www.oracle.com/javaone/index.html&#34;&gt;JavaOne&lt;/a&gt; so I&amp;rsquo;m really looking forward to San Francisco in September. See you there?&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;sup&gt;1&amp;nbsp;&lt;/sup&gt;I was surprised to hear everyone talking about &amp;ldquo;Chinese&amp;rdquo; when even in my ignorance I know there are many types of Chinese language, but doing my research I&amp;rsquo;ve learnt there is a&amp;nbsp;&lt;a href=&#34;http://en.wikipedia.org/wiki/Standard_Chinese&#34;&gt;Standard Chinese&lt;/a&gt;. &amp;nbsp;Which makes sense. &amp;nbsp;You learn something new every day&lt;br /&gt;&lt;sup&gt;2&amp;nbsp;&lt;/sup&gt;Apparently it&amp;rsquo;s not&lt;/div&gt;&lt;/p&gt;
 </description>
     </item>
     
