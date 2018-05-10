@@ -941,6 +941,8 @@ ability to write and read code?&lt;/em&gt;&lt;/p&gt;
 
 &lt;h1 id=&#34;toc_1&#34;&gt;Slides&lt;/h1&gt;
 
+&lt;p&gt;&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/jtFuTyjjj5bBH&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt; &lt;div style=&#34;margin-bottom:5px&#34;&gt; &lt;strong&gt; &lt;a href=&#34;//www.slideshare.net/secret/jtFuTyjjj5bBH&#34; title=&#34;Is Boilerplate Code Really So Bad?&#34; target=&#34;_blank&#34;&gt;Is Boilerplate Code Really So Bad?&lt;/a&gt; &lt;/strong&gt; from &lt;strong&gt;&lt;a href=&#34;https://www.slideshare.net/trishagee&#34; target=&#34;_blank&#34;&gt;Trisha Gee&lt;/a&gt;&lt;/strong&gt; &lt;/div&gt;&lt;/p&gt;
+
 &lt;h1 id=&#34;toc_2&#34;&gt;Videos&lt;/h1&gt;
 
 &lt;p&gt;The code examples from this talk are shamelessly reused from Hadi Hariri&amp;rsquo;s London Software Craftsmanship
@@ -953,6 +955,13 @@ Conference talk, &lt;a href=&#34;https://youtu.be/pAFiPjXEOtg&#34;&gt;The Import
 &lt;h1 id=&#34;toc_4&#34;&gt;Version information&lt;/h1&gt;
 
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://cfp.devoxx.co.uk/2018/talk/XUD-8349/Is_boilerplate_code_really_so_bad%3F&#34;&gt;DevoxxUK&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Java&amp;trade; SE Runtime Environment 18.3 (build 10.0.1+10)&lt;/li&gt;
+&lt;li&gt;Kotlin: 1.2.31&lt;/li&gt;
+&lt;li&gt;IDE: IntelliJ IDEA 2018.1.3 (Ultimate Edition) Build #IU-181.4892.42&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://qconlondon.com/london2018/presentation/boilerplate-code-really-so-bad&#34;&gt;QCon London&lt;/a&gt;
 
 &lt;ul&gt;
@@ -976,10 +985,9 @@ Conference talk, &lt;a href=&#34;https://youtu.be/pAFiPjXEOtg&#34;&gt;The Import
 &lt;li&gt;Java 9: &lt;a href=&#34;http://www.baeldung.com/java-9-optional&#34;&gt;More methods on Optional&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Java 9: &lt;a href=&#34;http://openjdk.java.net/jeps/269&#34;&gt;Convenience Factory Methods for Collections&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Java 10: &lt;a href=&#34;http://openjdk.java.net/jeps/286&#34;&gt;Local-variable type inference&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://jdk.java.net/10/&#34;&gt;JDK 10 early access releases&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk/10/&#34;&gt;Java 10 Open JDK page&lt;/a&gt; (tracks which features are currently going into
-Java 10)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk/11/&#34;&gt;Java 11 Open JDK page&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://jdk.java.net/11/&#34;&gt;JDK 11 early access releases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://openjdk.java.net/projects/jdk/11/&#34;&gt;Java 11 Open JDK page&lt;/a&gt; (tracks which features are
+currently going into Java 11)&lt;/li&gt;
 &lt;li&gt;Java??: &lt;a href=&#34;http://openjdk.java.net/jeps/302&#34;&gt;JEP 302: Lambda Leftovers (including underscore for param)&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Java??: &lt;a href=&#34;http://openjdk.java.net/jeps/305&#34;&gt;JEP 305: Pattern Matching&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;Java??: &lt;a href=&#34;http://openjdk.java.net/jeps/325&#34;&gt;JEP 325: Switch expressions&lt;/a&gt;&lt;/li&gt;
