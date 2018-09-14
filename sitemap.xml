@@ -1,1180 +1,2691 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://trishagee.github.io/</loc>
-    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/more_women_speakers/</loc>
     <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/my_job/</loc>
     <lastmod>2018-04-02T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
-    <lastmod>2018-02-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/boilerplate/</loc>
     <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/real_world_java_9/</loc>
     <lastmod>2017-09-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/career_advice_for_programmers/</loc>
     <lastmod>2017-05-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/becoming_buzzword_compliant/</loc>
     <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</loc>
     <lastmod>2017-04-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/what_can_men_do/</loc>
     <lastmod>2016-11-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/resources/intellij_for_eclipse_users/</loc>
     <lastmod>2016-10-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javazone_2016/</loc>
     <lastmod>2016-09-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/code_review_matters_and_manners/</loc>
     <lastmod>2016-08-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/what_a_year.md/</loc>
     <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/refactoring_to_java_8/</loc>
     <lastmod>2016-06-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_8_mooc_session3/</loc>
     <lastmod>2015-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_8_mooc_session2/</loc>
     <lastmod>2015-07-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/code_reviews_1/</loc>
     <lastmod>2015-07-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</loc>
     <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_8_mooc_session1/</loc>
     <lastmod>2015-07-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/interviewed_for_infoq/</loc>
     <lastmod>2015-07-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/becoming_an_evangelist/</loc>
     <lastmod>2015-07-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/level_up_your_automated_tests/</loc>
     <lastmod>2015-06-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_at_20/</loc>
     <lastmod>2015-05-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/android_xtended/</loc>
     <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/groovy_vs_java/</loc>
     <lastmod>2015-04-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/blind_cfps_2/</loc>
     <lastmod>2015-03-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/blind_cfps/</loc>
     <lastmod>2015-03-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/i_am_so_tired_of_it_all/</loc>
     <lastmod>2015-03-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/java8_in_anger/</loc>
     <lastmod>2015-02-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/svq_state_of_java_update/</loc>
     <lastmod>2015-01-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</loc>
     <lastmod>2015-01-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</loc>
     <lastmod>2015-01-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/stuff_i_learnt_about_intellij/</loc>
     <lastmod>2015-01-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/developers_want_to_be_heard/</loc>
     <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/new_year_new_adventures/</loc>
     <lastmod>2014-12-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/more_female_speakers/</loc>
     <lastmod>2014-12-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/its_not_waste_its_learning/</loc>
     <lastmod>2014-11-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/staying_ahead_of_the_curve/</loc>
     <lastmod>2014-11-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/mongodb_london/</loc>
     <lastmod>2014-10-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</loc>
     <lastmod>2014-10-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/groovy_import_to_mongodb/</loc>
     <lastmod>2014-10-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_one_2014_day_one/</loc>
     <lastmod>2014-09-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</loc>
     <lastmod>2014-08-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/interview_at_goto_chicago/</loc>
     <lastmod>2014-08-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/post/most_of_all_its_fun/</loc>
+    <lastmod>2014-08-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/svq_java8_launch_party/</loc>
     <lastmod>2014-08-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/short_vs_readable.md/</loc>
     <lastmod>2014-07-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_handover.md/</loc>
     <lastmod>2014-06-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/nighthacking_jug_sevilla/</loc>
     <lastmod>2014-04-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/yow_2013_backwards/</loc>
     <lastmod>2014-04-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</loc>
     <lastmod>2014-04-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/upcoming_events_2014/</loc>
     <lastmod>2014-04-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/infoq-interview-march-2014/</loc>
     <lastmod>2014-04-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/project/atom-to-hugo/</loc>
+    <loc>https://trishagee.github.io/post/atom-to-hugo/</loc>
     <lastmod>2014-03-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/svq_mug_march_madness/</loc>
     <lastmod>2014-03-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/qcon_london_2014/</loc>
     <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/sparking_innovation_in_an_established_company/</loc>
     <lastmod>2014-03-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_joy_of_coding/</loc>
     <lastmod>2014-03-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/in_my_day/</loc>
     <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</loc>
     <lastmod>2014-02-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/feel_like_an_outsider/</loc>
     <lastmod>2014-02-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/sevilla_mug_first_event/</loc>
     <lastmod>2014-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/introduction_to_mongodb_and_big_data/</loc>
     <lastmod>2014-01-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/why_is_it_news_when_a_woman_becomes_ceo/</loc>
     <lastmod>2014-01-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/goodbye_2013_you_were_good_to_me/</loc>
     <lastmod>2014-01-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/yow/</loc>
     <lastmod>2013-12-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/spock_data_driven_testing/</loc>
     <lastmod>2013-12-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</loc>
     <lastmod>2013-11-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/jax_london__mongodb_tutorial/</loc>
     <lastmod>2013-11-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/linkedin_etiquette/</loc>
     <lastmod>2013-11-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_2013/</loc>
     <lastmod>2013-11-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/</loc>
     <lastmod>2013-10-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/make_the_future_java/</loc>
     <lastmod>2013-10-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/kids_these_days/</loc>
     <lastmod>2013-09-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javazone_oslo/</loc>
     <lastmod>2013-09-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</loc>
     <lastmod>2013-09-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</loc>
     <lastmod>2013-08-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</loc>
     <lastmod>2013-08-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</loc>
     <lastmod>2013-08-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/autumn_world_tour/</loc>
     <lastmod>2013-08-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_30_java_driver__design_goals/</loc>
     <lastmod>2013-08-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_shanghai/</loc>
     <lastmod>2013-07-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/cant_take_much_more/</loc>
     <lastmod>2013-07-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</loc>
     <lastmod>2013-07-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</loc>
     <lastmod>2013-07-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/developers_hate_support_dont_they/</loc>
     <lastmod>2013-07-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/trishas_world_tour_2013/</loc>
     <lastmod>2013-06-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/calling_dublin_tech_user_groups/</loc>
     <lastmod>2013-06-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/adjusting_to_working_remotely/</loc>
     <lastmod>2013-05-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/be_an_ambassador/</loc>
     <lastmod>2013-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/my_summary_of_geecon_krakow/</loc>
     <lastmod>2013-05-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/how_are_you_using_mongodb_with_java/</loc>
     <lastmod>2013-05-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</loc>
     <lastmod>2013-05-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/2013_is_looking_a_lot_busier_than_i_planned/</loc>
     <lastmod>2013-05-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/how_mechanical_sympathy_got_me_to_the_airport_on_time/</loc>
     <lastmod>2013-04-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/devoxx_uk_2013/</loc>
     <lastmod>2013-04-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/it_depends/</loc>
     <lastmod>2013-03-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_coalescing_ring_buffer/</loc>
     <lastmod>2013-03-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</loc>
     <lastmod>2013-03-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/qcon_day_one/</loc>
     <lastmod>2013-03-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/staying_ahead_of_the_curve/</loc>
     <lastmod>2013-02-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/upcoming_events_and_trisha_freaks_out_a_bit/</loc>
     <lastmod>2013-02-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/interviewed_at_devoxx/</loc>
     <lastmod>2013-01-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/wrap_up_of_2012/</loc>
     <lastmod>2013-01-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/resources/just_do_something/</loc>
     <lastmod>2012-12-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</loc>
     <lastmod>2012-12-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/agile_when_agile_goes_well/</loc>
     <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb/</loc>
     <lastmod>2012-12-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/my_first_official_mongodb_appearance/</loc>
     <lastmod>2012-11-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/ljc_open_conference_2012/</loc>
     <lastmod>2012-11-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/summary_of_devoxx_2012/</loc>
     <lastmod>2012-11-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/brain_overload/</loc>
     <lastmod>2012-11-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/devoxx_2012/</loc>
     <lastmod>2012-11-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</loc>
     <lastmod>2012-11-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/nighthacking_tour_the_ljc/</loc>
     <lastmod>2012-11-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</loc>
     <lastmod>2012-10-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/nosql_is_a_stupid_name/</loc>
     <lastmod>2012-10-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/resources/performance_resources/</loc>
     <lastmod>2012-10-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/jax_london_2012/</loc>
     <lastmod>2012-10-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/and_for_my_next_trick/</loc>
     <lastmod>2012-10-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/introduction_to_the_disruptor_slides/</loc>
     <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_the_summary/</loc>
     <lastmod>2012-10-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_the_problem_with_women__a_technical_approach/</loc>
     <lastmod>2012-10-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/tips_for_presenters/</loc>
     <lastmod>2012-10-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_user_group_sunday/</loc>
     <lastmod>2012-10-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_strange_loop/</loc>
     <lastmod>2012-09-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/strangeloop_disruptor_workshop_materials/</loc>
     <lastmod>2012-09-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/apologies_for_the_interruption_to_your_service/</loc>
     <lastmod>2012-09-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/upcoming_events/</loc>
     <lastmod>2012-09-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/interviewed_at_goto_copenhagen/</loc>
     <lastmod>2012-08-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/on_the_evil_of_stereotypes/</loc>
     <lastmod>2012-07-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/oscon_day_one/</loc>
     <lastmod>2012-07-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_subject_of_women_programmers_is_boring/</loc>
     <lastmod>2012-06-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/overheard_development_myths/</loc>
     <lastmod>2012-06-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_birth_of_a_new_community/</loc>
     <lastmod>2012-06-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/qcon_london_disruptor_presentation_video/</loc>
     <lastmod>2012-06-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/goto_amsterdam/</loc>
     <lastmod>2012-05-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/goto_copenhagen/</loc>
     <lastmod>2012-05-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/what_do_you_do_and_how_did_you_get_there/</loc>
     <lastmod>2012-05-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london/</loc>
     <lastmod>2012-05-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/why_open_source_your_secrets/</loc>
     <lastmod>2012-05-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/update_on_events/</loc>
     <lastmod>2012-05-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</loc>
     <lastmod>2012-05-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/in_which_i_defend_the_male_species_at_an_all_female_event/</loc>
     <lastmod>2012-04-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/overheard_agile_truths/</loc>
     <lastmod>2012-04-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/qcon_london_2012/</loc>
     <lastmod>2012-03-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one/</loc>
     <lastmod>2012-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/new_disruptor_presentation_unveiled_to_the_ljc/</loc>
     <lastmod>2012-03-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/why_the_customer_isnt_always_right/</loc>
     <lastmod>2012-02-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/upcoming_speaking_events/</loc>
     <lastmod>2012-02-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/christmas_decorations_teach_me_a_lesson_about_troubleshooting/</loc>
     <lastmod>2012-01-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/video_why_we_shouldnt_target_women/</loc>
     <lastmod>2011-12-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/how_to_make_your_cv_not_suck/</loc>
     <lastmod>2011-12-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/presentation/video_of_our_jax_london_session/</loc>
     <lastmod>2011-12-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</loc>
     <lastmod>2011-12-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/london_java_community_open_conference/</loc>
     <lastmod>2011-11-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/why_we_shouldnt_target_women/</loc>
     <lastmod>2011-11-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/devoxx_the_story_so_far/</loc>
     <lastmod>2011-11-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/jax_london__i_learn_stuff_and_meet_people/</loc>
     <lastmod>2011-11-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/a_nyse_product_manager_and_an_lmax_developer_walk_into_a_low_latency_trading_seminar/</loc>
     <lastmod>2011-11-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/more_videos_from_java_one_2011/</loc>
     <lastmod>2011-11-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/on_the_similarities_between_girls_and_aliens/</loc>
     <lastmod>2011-10-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</loc>
     <lastmod>2011-10-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_2011_roundup/</loc>
     <lastmod>2011-10-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_initial_observations/</loc>
     <lastmod>2011-10-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/javaone_2011/</loc>
     <lastmod>2011-09-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/first_public_appearance_caught_on_video/</loc>
     <lastmod>2011-09-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/are_you_an_awesome_developer/</loc>
     <lastmod>2011-09-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/what_my_hangovers_can_teach_you_about_agile/</loc>
     <lastmod>2011-09-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/effective_sketches/</loc>
     <lastmod>2011-09-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/disruptor_20__all_change_please/</loc>
     <lastmod>2011-08-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/what_i_did_on_my_holidays/</loc>
     <lastmod>2011-08-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</loc>
     <lastmod>2011-08-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</loc>
     <lastmod>2011-07-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</loc>
     <lastmod>2011-07-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/in_answer_to_one_of_the_search_terms_which_led_to_my_blog/</loc>
     <lastmod>2011-07-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/</loc>
     <lastmod>2011-07-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/</loc>
     <lastmod>2011-07-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/</loc>
     <lastmod>2011-06-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</loc>
     <lastmod>2011-06-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</loc>
     <lastmod>2011-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/vote_for_the_ljc/</loc>
     <lastmod>2011-06-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/stac_london_summit/</loc>
     <lastmod>2011-06-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/my_first_public_appearance/</loc>
     <lastmod>2011-05-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/getting_around_a_bit/</loc>
     <lastmod>2011-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/why_java_developers_hate_net/</loc>
     <lastmod>2011-05-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_london_java_community_elected_to_the_jcp_seee_executive_committee/</loc>
     <lastmod>2011-05-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/cyclist_tribes/</loc>
     <lastmod>2011-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/tradetech_2011__not_like_a_developer_conference/</loc>
     <lastmod>2011-04-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/css_for_developers_horizontal_and_vertical_centring/</loc>
     <lastmod>2011-04-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/how_to_show_your_employees_how_much_you_hate_them/</loc>
     <lastmod>2011-04-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/for_those_who_might_want_to_make_the_leap_from_developer_to_architect/</loc>
     <lastmod>2011-02-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/css_for_developers_cross_browser_table_border_behaviour/</loc>
     <lastmod>2011-01-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/my_experiences_with_android_development/</loc>
     <lastmod>2011-01-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/css_for_developers_column_layout_using_css/</loc>
     <lastmod>2011-01-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/on_changing_the_image_of_programmers/</loc>
     <lastmod>2011-01-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/gwt_why_verticalpanel_is_evil/</loc>
     <lastmod>2011-01-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/on_how_not_to_target_girl_geeks/</loc>
     <lastmod>2011-01-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/css_for_developers_the_joy_of_floats/</loc>
     <lastmod>2011-01-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/fogbugs_and_kiln_world_tour/</loc>
     <lastmod>2011-01-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/css_for_developers_horizontal_layout_using_css/</loc>
     <lastmod>2011-01-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/live_at_last/</loc>
     <lastmod>2010-10-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/lean_software_and_systems_conference_2010_bletchley_park/</loc>
     <lastmod>2010-07-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/comments_on_representations_of_our_industry/</loc>
     <lastmod>2009-05-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/why_changing_jobs_frequently_is_not_necessarily_a_bad_thing/</loc>
     <lastmod>2009-04-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/sexism_in_it/</loc>
     <lastmod>2009-03-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/scrum_but/</loc>
     <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/why_to_start_a_startup_in_a_bad_economy/</loc>
     <lastmod>2008-12-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/gender_stereotyping/</loc>
     <lastmod>2008-12-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/nine_things_developers_want_more_than_money/</loc>
     <lastmod>2008-12-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/working_environment/</loc>
     <lastmod>2008-11-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/amazing/</loc>
     <lastmod>2008-10-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/multiple_environment_configuration_in_maven/</loc>
     <lastmod>2008-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/on_the_perils_of_front_end_design/</loc>
     <lastmod>2008-09-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/job_hunting/</loc>
     <lastmod>2008-07-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/scrum/</loc>
     <lastmod>2008-05-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/bsc_hons_scjp_scwcd_csm/</loc>
     <lastmod>2008-05-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/tales_from_the_other_side_confessions_of_an_offshore_resource/</loc>
     <lastmod>2008-04-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/metrics_and_incentives/</loc>
     <lastmod>2008-04-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/certification/</loc>
     <lastmod>2008-04-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/aop_caching/</loc>
     <lastmod>2008-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/certified_scrum_master/</loc>
     <lastmod>2008-04-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/post/most_of_all_its_fun/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
-    <lastmod>2008-01-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/the_importance_of_choosing_a_good_scale_for_your_metrics/</loc>
     <lastmod>2007-10-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/validation_with_spring_modules_validation/</loc>
     <lastmod>2007-07-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/java_specifics/</loc>
     <lastmod>2007-07-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/excuses_excuses/</loc>
     <lastmod>2007-04-23T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/post/qcon_bloggers_summary/</loc>
-    <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/agile_infection_growing/</loc>
     <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/post/qcon_bloggers_summary/</loc>
+    <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/certifiction/</loc>
     <lastmod>2007-03-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/continuing_the_agile_froth/</loc>
     <lastmod>2007-03-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference/</loc>
     <lastmod>2007-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/post/qcon_initial_thoughts/</loc>
-    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://trishagee.github.io/post/qcon_london/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/post/qcon_initial_thoughts/</loc>
+    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/.net/</loc>
+    <lastmod>2011-05-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/10gen/</loc>
+    <lastmod>2013-07-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/advice/</loc>
+    <lastmod>2013-11-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/advocacy/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/agile/</loc>
+    <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/public_appearances/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/android/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/angular.js/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/aop/</loc>
+    <lastmod>2008-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/articles/</loc>
+    <lastmod>2014-08-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/awards/</loc>
+    <lastmod>2011-06-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/books/</loc>
+    <lastmod>2008-04-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/build/</loc>
+    <lastmod>2008-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/c/</loc>
+    <lastmod>2011-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/caching/</loc>
+    <lastmod>2008-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/career/</loc>
+    <lastmod>2018-04-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/careers/</loc>
+    <lastmod>2017-05-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/cargo-cultism/</loc>
+    <lastmod>2011-09-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/categories/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/certification/</loc>
+    <lastmod>2008-05-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/code/</loc>
+    <lastmod>2014-07-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/code-review/</loc>
+    <lastmod>2016-08-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/comment/</loc>
+    <lastmod>2014-11-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/concurrency/</loc>
+    <lastmod>2011-10-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/conference/</loc>
+    <lastmod>2016-09-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/conferences/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/configuration/</loc>
+    <lastmod>2008-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/creativity/</loc>
+    <lastmod>2014-11-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/css/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/cycling/</loc>
+    <lastmod>2011-04-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/data-structures/</loc>
+    <lastmod>2011-06-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/ddd/</loc>
+    <lastmod>2011-09-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/demo/</loc>
+    <lastmod>2014-10-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/design/</loc>
+    <lastmod>2013-03-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/devoxx/</loc>
+    <lastmod>2012-12-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/disruptor/</loc>
+    <lastmod>2012-10-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/disruptor-docs/</loc>
+    <lastmod>2012-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/domain-driven-design/</loc>
+    <lastmod>2012-06-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/eclipse/</loc>
+    <lastmod>2016-10-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/events/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/gdc/</loc>
+    <lastmod>2012-05-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/gender/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/girls/</loc>
+    <lastmod>2009-03-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/gotocph/</loc>
+    <lastmod>2012-05-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/gradle/</loc>
+    <lastmod>2013-08-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/groovy/</loc>
+    <lastmod>2015-04-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/guest-posts/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/gwt/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/html/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/html5/</loc>
+    <lastmod>2015-01-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/ide/</loc>
+    <lastmod>2011-05-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/in-progress/</loc>
+    <lastmod>2007-03-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/intellij/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/interview/</loc>
+    <lastmod>2014-08-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/java/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/java-5/</loc>
+    <lastmod>2008-04-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/java-8/</loc>
+    <lastmod>2015-02-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/java8/</loc>
+    <lastmod>2015-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/java9/</loc>
+    <lastmod>2017-09-28T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/javafx/</loc>
+    <lastmod>2012-11-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/javaone/</loc>
+    <lastmod>2014-09-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/javaone11/</loc>
+    <lastmod>2011-11-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/javaone12/</loc>
+    <lastmod>2012-10-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/javaone13/</loc>
+    <lastmod>2013-11-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/jax-london/</loc>
+    <lastmod>2013-11-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/jcp/</loc>
+    <lastmod>2011-10-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/jetbrains/</loc>
+    <lastmod>2018-04-02T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/jobs/</loc>
+    <lastmod>2014-04-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/joel/</loc>
+    <lastmod>2011-01-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/joy-of-coding/</loc>
+    <lastmod>2014-03-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/jsp/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/jug/</loc>
+    <lastmod>2014-08-01T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/kanban/</loc>
+    <lastmod>2010-07-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/kids/</loc>
+    <lastmod>2013-09-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/kotlin/</loc>
+    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/lean/</loc>
+    <lastmod>2010-07-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/links/</loc>
+    <lastmod>2014-08-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/ljc/</loc>
+    <lastmod>2013-11-07T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/lmax/</loc>
+    <lastmod>2013-03-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/london/</loc>
+    <lastmod>2012-06-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/maven/</loc>
+    <lastmod>2008-10-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/mechanical-sympathy/</loc>
+    <lastmod>2013-04-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/mentoring/</loc>
+    <lastmod>2013-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/metrics/</loc>
+    <lastmod>2008-04-17T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/mongodb/</loc>
+    <lastmod>2015-01-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/morphia/</loc>
+    <lastmod>2014-06-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/mug/</loc>
+    <lastmod>2014-03-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/non-tech/</loc>
+    <lastmod>2011-08-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/none/</loc>
+    <lastmod>2007-10-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/nosql/</loc>
+    <lastmod>2013-05-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/offshore/</loc>
+    <lastmod>2008-04-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/open-source/</loc>
+    <lastmod>2013-03-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/openjdk/</loc>
+    <lastmod>2012-11-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/opinion/</loc>
+    <lastmod>2014-12-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/oracle/</loc>
+    <lastmod>2015-01-29T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/oscon/</loc>
+    <lastmod>2012-07-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/pages/</loc>
+    <lastmod>2013-09-09T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/people-are-people/</loc>
+    <lastmod>2012-02-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/performance/</loc>
+    <lastmod>2016-06-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/photos/</loc>
+    <lastmod>2011-08-13T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/post/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/presentations/</loc>
+    <lastmod>2017-04-25T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/presenting/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/process/</loc>
+    <lastmod>2014-06-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/projects/</loc>
+    <lastmod>2014-03-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/publications/</loc>
+    <lastmod>2012-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/qcon-london/</loc>
+    <lastmod>2014-03-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/question/</loc>
+    <lastmod>2008-11-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/recruitment/</loc>
+    <lastmod>2013-11-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/refactoring/</loc>
+    <lastmod>2016-06-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/reference/</loc>
+    <lastmod>2011-04-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/releases/</loc>
+    <lastmod>2014-06-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/requirements/</loc>
+    <lastmod>2012-02-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/resources/</loc>
+    <lastmod>2016-10-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/rw/</loc>
+    <lastmod>2012-07-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/scrum/</loc>
+    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/sevilla/</loc>
+    <lastmod>2015-05-21T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/sitemesh/</loc>
+    <lastmod>2008-04-16T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/slides/</loc>
+    <lastmod>2014-11-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/spock/</loc>
+    <lastmod>2015-04-06T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/spring/</loc>
+    <lastmod>2008-10-08T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/stereotypes/</loc>
+    <lastmod>2012-07-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/stories/</loc>
+    <lastmod>2013-04-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/story-cards/</loc>
+    <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/strangeloop/</loc>
+    <lastmod>2012-09-30T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/support/</loc>
+    <lastmod>2013-07-05T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/svqjug/</loc>
+    <lastmod>2015-08-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/</loc>
+    <lastmod>2011-05-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/testing/</loc>
+    <lastmod>2015-06-26T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/thoughtworks/</loc>
+    <lastmod>2011-05-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/todo/</loc>
+    <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/tools/</loc>
+    <lastmod>2011-01-18T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/training/</loc>
+    <lastmod>2011-09-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/travel/</loc>
+    <lastmod>2013-06-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/</loc>
+    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/tutorial/</loc>
+    <lastmod>2015-01-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/ui/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/upsource/</loc>
+    <lastmod>2016-08-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/user-groups/</loc>
+    <lastmod>2014-01-31T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/video/</loc>
+    <lastmod>2015-07-23T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/videos/</loc>
+    <lastmod>2014-10-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/wcpgw/</loc>
+    <lastmod>2014-08-12T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/web-development/</loc>
+    <lastmod>2014-03-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/webinars/</loc>
+    <lastmod>2013-11-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/what-not-to-do/</loc>
+    <lastmod>2009-02-24T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/women/</loc>
+    <lastmod>2018-04-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/work-environment/</loc>
+    <lastmod>2011-04-04T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/workshop/</loc>
+    <lastmod>2015-01-19T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/your-work/</loc>
+    <lastmod>2008-12-11T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/yow/</loc>
+    <lastmod>2014-04-22T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
   </url>
   
 </urlset>

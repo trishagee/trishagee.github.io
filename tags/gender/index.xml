@@ -1,1105 +1,340 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Gender on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/gender/index.xml/</link>
-    <language>en-us</language>
-    <author>Trisha Gee</author>
-    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Fri, 20 Apr 2018 00:00:00 UTC</updated>
+    <title>Gender on Trisha Gee</title>
+    <link>https://trishagee.github.io/tags/gender/</link>
+    <description>Recent content in Gender on Trisha Gee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 20 Apr 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://trishagee.github.io/tags/gender/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>What Can Conferences Do To Attract More Women Speakers?</title>
       <link>https://trishagee.github.io/post/more_women_speakers/</link>
-      <pubDate>Fri, 20 Apr 2018 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Fri, 20 Apr 2018 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/more_women_speakers/</guid>
-      <description>
-
-&lt;p&gt;Now I&amp;rsquo;ve been speaking at (mostly Java) conferences for a while (six years now), I get asked to
-present at a lot of conferences.  &lt;em&gt;Obviously&lt;/em&gt; all these conferences are mostly interested in my
-terribly educational talks, but it&amp;rsquo;s also because I&amp;rsquo;m a technical woman and there aren&amp;rsquo;t very
-many technical women speaking at conferences.&lt;/p&gt;
-
-&lt;p&gt;In my experience, conferences want to do the right thing - they want a diverse line up of
-speakers, they want to attract diverse attendees. Often this is not as easy as it may seem, and
-frequently conferences are Twitter-shamed for not having enough women speakers. When it gets to
-this point (and often before), conferences frequently ask me for advice on
-speakers they could invite, and how to attract more women.&lt;/p&gt;
-
-&lt;p&gt;I do at this point have to roll my eyes somewhat though.  It&amp;rsquo;s an additional bit of workload that
-my male peers do not have to do: they are not asked to recommend suitable women speakers; they
-are not asked what a conference should be doing to improve diversity.  And let&amp;rsquo;s not forget that
-one of the reasons why I have made it to this point in our male industry is by having some
-combination of luck, selective blindness and an unusual attitude which means that I&amp;rsquo;m probably not
-qualified to speak on behalf of all the other women developers/speakers out there.&lt;/p&gt;
-
-&lt;p&gt;Anyway. To save myself some time in the future, here&amp;rsquo;s my blog post version of
-stuff-that-I-can-think-of-that-might-help. This is not scientific. There&amp;rsquo;s a bunch more stuff out
-there on the internet (including
-&lt;a href=&#34;https://continuousdelivery.com/2013/09/how-we-got-40-female-speakers-at-flowcon/&#34;&gt;one from Jez Humble&lt;/a&gt;
-and
-&lt;a href=&#34;https://medium.com/samsung-internet-dev/help-someone-has-pointed-out-my-conference-has-diversity-issues-c1162a1e8d4c&#34;&gt;help, my conference has diversity issues&lt;/a&gt;),
-please do Google for more.  The following suggestions come from my experience as a) a speaker b)
-a programme committee member of QCon London, DevoxxUK and DevoxxUS and c) just a normal person
-who thinks about these things.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;Have a Code of Conduct&lt;/h2&gt;
-
-&lt;p&gt;Many many things have been written about this, I don&amp;rsquo;t intend to rehash them. You need one, if
-you don&amp;rsquo;t have one go and research this and put one in place.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;Consider Diversity as a Key, Cross-Cutting Concern of Your Conference&lt;/h2&gt;
-
-&lt;p&gt;You couldn&amp;rsquo;t have a
-conference without researching venues; without figuring out the catering; without doing analysis
-of costs. If you&amp;rsquo;re serious about diversity, about improving the industry, or even just about not
-being attacked on Twitter, you have to consider diversity right from the start, and you have to
-consider it in the context of almost every other decision: Does the venue have step-free access?
-Can the caterers provide a range of non-alcoholic drinks rather than just the standard beers? Do
-the dates clash with some major religious festival? Or football event? (for example).
-Considering people with different needs, cultures, interests is something that you need to take
-seriously at every step. Diversity is not something you can just tack on at the last minute.
-This Is Hard.  It helps if your organisers/program committee members are diverse, as others will
-think of things you have not.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;Your Website and Marketing Material Should Represent the People You Want to Attract&lt;/h2&gt;
-
-&lt;p&gt;Make
-sure that on your website and in your emails/tweets, photos of attendees and speakers
-represent the range of people you want to come. Don&amp;rsquo;t just put up a handful of photos
-from last year&amp;rsquo;s conference without looking very closely at who is, and who is not, shown in
-these photos.  From a gender diversity point of view, my rule of thumb is that every photo should
-have at least one female-looking person visible in it, ideally closer to 50%. Other measures of
-diversity that may be visible in photos include race and age, but
-it can also be things like dress code - the first DevoxxUK attracted people with pink mohawks,
-goths, men/women in suits, as well as the usual tshirt-and-jeans brigade.  It was wonderful!&lt;/p&gt;
-
-&lt;p&gt;To showcase diversity in photos/images, you can:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Show your organisers/programme committee. In my experience there are usually women in amongst
-the organisers, having photos of them on the site in a visible place is a good way to suggest to
-women that if they submit a talk they will be evaluated by people like them. As usual, I&amp;rsquo;m
-focusing on gender, but this can apply to other dimensions too.&lt;/li&gt;
-&lt;li&gt;Select photos from previous conferences that include women (I&amp;rsquo;ve heard that the new
-&lt;a href=&#34;https://en.wikipedia.org/wiki/General_Data_Protection_Regulation&#34;&gt;GDPR&lt;/a&gt; may prevent you from
-posting photos of people publicly without their consent, so be careful here). Make sure they&amp;rsquo;re
-not booth babes (Note: Do Not Allow Booth Babes. By all means, women should work on
-sponsor booths, but they should be employees of the company, not women hired in to look a
-particular way to sell the product). Ideally in these photos the women should look like they are
-being included, e.g. in groups talking to people, not standing alone to one side.&lt;/li&gt;
-&lt;li&gt;Showcase your diverse speakers.  This is a catch 22 of course, because you want to showcase
-diversity in order to attract speakers to submit, so you can&amp;rsquo;t show diverse speakers before
-you&amp;rsquo;ve had speakers submit&amp;hellip; You can show speakers from previous years; you can show your
-keynote speakers (hint: it&amp;rsquo;s a good idea to have at least one woman giving a keynote and you
-should secure them well before the CFP closes so you can show them off); you can invite selected
-speakers early who won&amp;rsquo;t go through the CFP and show them on the site (see next
-section)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;It&amp;rsquo;s not just about photos, it&amp;rsquo;s also logos/imagery and language.  If you have characters, make
-sure they&amp;rsquo;re not all men/masculine. If you have a theme, make sure it&amp;rsquo;s open to all.  I really
-loved
-&lt;a href=&#34;https://www.linkedin.com/pulse/devoxx-uk-2015-stephan-janssen/&#34;&gt;DevoxxUK&amp;rsquo;s League of Extraordinary Developers&lt;/a&gt;,
-it showed a range of diverse characters, not
-just gender and race but implied we&amp;rsquo;re not all the same and we have different strengths and
-skills.&lt;/p&gt;
-
-&lt;p&gt;Also check the language you use. There have been a number of studies
-that show that &lt;a href=&#34;https://www.forbes.com/sites/hbsworkingknowledge/2016/12/14/how-to-take-gender-bias-out-of-your-job-ads/#490276c71024&#34;&gt;language in job adverts can subtly imply male vs female
-roles&lt;/a&gt;. But even easier
-than that, make sure you don&amp;rsquo;t assume attendees will be a &amp;ldquo;he&amp;rdquo; and don&amp;rsquo;t use words like &amp;ldquo;guys&amp;rdquo; -
-you may have seen this used in a gender neutral way but many people feel it is &lt;em&gt;not&lt;/em&gt; gender
-neutral and implies &amp;ldquo;men&amp;rdquo;.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_3&#34;&gt;Invite Women Speakers Early, and Personally&lt;/h2&gt;
-
-&lt;p&gt;Women speakers are very much in demand.  There
-are more conferences than women speakers, and we get booked up well in advance (my next 9-12
-months are usually already booked up).  If you want to
-ensure you have a decent proportion of women speakers, you need to reach out to us personally,
-early, and ideally offer us a guaranteed speaking slot. I&amp;rsquo;m not a fan of being asked to submit
-to a CFP, I get invited to enough conferences that I don&amp;rsquo;t need to go to more, and going through a
-CFP adds a lot of variability. For experienced speakers who you know you&amp;rsquo;re likely
-to accept anyway, consider offering them a guaranteed slot.  For less experienced / new speakers,
-invite them to submit.  But whoever you&amp;rsquo;re reaching out to, at least (please) put their name on the
-email.  One of the conferences suffering from a lack of women speakers at the moment invited me
-with a standard email addressed to &amp;ldquo;Dear madam&amp;rdquo;. I&amp;rsquo;m usually strict about replying to requests
-but I didn&amp;rsquo;t take the time to reply to this one as they didn&amp;rsquo;t take the time to customise their
-request to me.  On this topic, what I want to see in an invitation email (and maybe other people
- are different) are:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;In the first paragraph: which conference (with link); date; city; very very short description
-of the conference (&amp;ldquo;community run Java conference&amp;rdquo;, &amp;ldquo;Europe&amp;rsquo;s biggest devops conference&amp;rdquo;,
-something that gives me a rough idea of technology and community); what do you want me to
-speak about (either a specific talk, or a more general topic).&lt;/li&gt;
-&lt;li&gt;If you cover travel/accommodation, put that somewhere near the beginning of your email, this
-can make it much easier for a speaker to say &amp;ldquo;yes&amp;rdquo; to your conference.&lt;/li&gt;
-&lt;li&gt;Other useful information can go in the later paragraphs: approx number of attendees; who else
-is presenting / has presented in the past; interesting activities during the conference / in
-the city.  None of this stuff is mandatory.&lt;/li&gt;
-&lt;li&gt;A bit of flattery / how you know about me is always welcome. Oh but don&amp;rsquo;t be creepy &lt;em&gt;shudder&lt;/em&gt;.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_4&#34;&gt;Find Women&lt;/h2&gt;
-
-&lt;p&gt;Easy, right? Not so much.  But please, don&amp;rsquo;t just email the first woman speaker
-who comes to your mind and say &amp;ldquo;please come and speak, and also if you could find us all the other
-women speakers we need that would be great too&amp;rdquo;. By all means ask for recommendations (from all
-speakers actually, it&amp;rsquo;s freaking exhausting being a woman speaker because we do a lot of work in
-this area, connecting people up and pointing them in the right direction and plenty of
-experienced male speakers are better at this than me). But this is a numbers game - there aren&amp;rsquo;t
-many women speakers and those that do this regularly are very in demand, you&amp;rsquo;re going to need to
-invite a &lt;em&gt;lot&lt;/em&gt; of women to stand a chance of having a diverse line up. Here are some suggestions
-based on what I&amp;rsquo;ve done in the past to find women speakers:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Google &amp;ldquo;Women in&amp;hellip;&amp;rdquo; Java, Data, Blockchain, whatever.&lt;/li&gt;
-&lt;li&gt;Look at big conferences in this space from the last two years, spot the female-ish faces and
-make a list of them. When asked for Java/JVM recommendations, I check JavaOne,
-DevoxxUK/Belgium, JavaZone, JFokus and maybe Google &amp;ldquo;Java conferences&amp;rdquo; to find the others I&amp;rsquo;ve
-forgotten. For broader topics I look at QCon London because I know they always
-work hard on diversity and have had a bunch of really fantastic women speakers in the past. I
-sometimes check out the GOTO conferences for the same reason.&lt;/li&gt;
-&lt;li&gt;Look for local user groups who could help.  You can search Meetup.com
-for &amp;ldquo;Women code&amp;rdquo;, &amp;ldquo;Lady developers&amp;rdquo; and variations on that theme.  Find the groups in the area
-local to the conference, and reach out really nicely to them to ask if they wouldn&amp;rsquo;t mind
-circulating the details of your CFP amongst their members.  Remember to provide them with
-information about why their members want to speak
-(all travel covered/opportunities to meet various people/mentoring provided, whatever). If you
-can see previous speakers at these groups, you could add them to your list of women to reach
-out to personally.&lt;/li&gt;
-&lt;li&gt;Ask &lt;a href=&#34;https://twitter.com/callbackwomen&#34;&gt;Callback women&lt;/a&gt; to retweet the CFP details&lt;/li&gt;
-&lt;li&gt;Check out the networks of women speakers, like
-&lt;a href=&#34;http://articulate-network.lanyrd.com/&#34;&gt;Articulate Network&lt;/a&gt;,
-&lt;a href=&#34;https://github.com/fempire/women-tech-speakers-organizers&#34;&gt;this list of women speakers&lt;/a&gt;, and
-&lt;a href=&#34;https://womenwhokeynote.com/&#34;&gt;Women who keynote&lt;/a&gt;.  Google
-for these lists too, there&amp;rsquo;s loads of them. Sadly these resources are not very centralised.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_5&#34;&gt;Provide Travel and Accommodation&lt;/h2&gt;
-
-&lt;p&gt;Particularly if you&amp;rsquo;re trying to attract/grow new
-speakers. You may not have budget to apply this to everyone, but if you really want to have diverse
-speakers you may need to set aside some budget to pay for them.  In my first year of presenting I
-was doing it more or less on my own (vacation) time because I had a real job as a real
-developer, and I could only speak at conferences who would cover my costs.  This is even more
-tricky for self employed people as they&amp;rsquo;re also losing money by attending your conference.  Be
-aware that not everyone a) is a professional advocate (and even when we are it&amp;rsquo;s easier to say
-yes to a conference if our employer doesn&amp;rsquo;t have to pay) b) is employed by a forward-thinking
-employer who is happy to let employees go to conferences or c) has paid vacation time they are
-willing/able to use. Be aware that for some people this cost might be more than just
-the cheapest flight and cheapest hotel for one person - one conference paid for me,
-my partner and my (at the time) one-year-old to travel halfway around the world so I could speak at
-the conference. I couldn&amp;rsquo;t take that time away from my family so they brought the whole family,
-I would not have been able to speak there otherwise.  Another conference this year is paying
-for all four of us to travel, plus a family hotel room - I&amp;rsquo;m currently breastfeeding and I can&amp;rsquo;t
-leave the baby for very long, and if I&amp;rsquo;m going to bring the baby I need to bring the husband to
-take the baby while I&amp;rsquo;m talking, which means we also need to bring the toddler, because she&amp;rsquo;s
-a bit young to leave at home alone for a weekend.  I don&amp;rsquo;t always need all these costs covering,
-I&amp;rsquo;m not always breastfeeding, and even after the first was born there were plenty of times I could
-travel alone.  But if you want to improve your diversity you&amp;rsquo;re going to need to consider these
-sorts of cases.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_6&#34;&gt;Provide rehearsal space&lt;/h2&gt;
-
-&lt;p&gt;This is quite time consuming and relies on having people willing
-to watch the rehearsal and give feedback.  I actually mean &lt;em&gt;virtual&lt;/em&gt; space here, I&amp;rsquo;ve given my talk
-via hangouts to the track lead for QCon New York to get feedback on a new talk.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re trying
- to attract new talent, consider involving one or more local user groups and running a speaker
- training session. The London Java Community has done this a couple of times. You need to select
- the people who will provide mentoring / feedback &lt;em&gt;very&lt;/em&gt; carefully.  They need to be aware of the
- type of gendered words that are frequently used for women and avoid them (would
- you ever use the word &amp;ldquo;feisty&amp;rdquo; for a man? No, you would not); they
- need to be aware that women get
- &lt;a href=&#34;https://hbr.org/2017/04/how-gender-bias-corrupts-performance-reviews-and-what-to-do-about-it&#34;&gt;critical personality feedback&lt;/a&gt;
- instead of actionable feedback.
- The feedback to help mentor new speakers, particularly women speakers, needs to be well thought
- out (not &amp;ldquo;you seem nervous&amp;rdquo;, maybe &amp;ldquo;is there some section of the content
- that makes you uncomfortable&amp;rdquo;, for example). These mentors need to be experienced speakers.
- Ideally they should also be diverse, but if this is not possible then men who are experienced at
-championing women will be OK (my mentors were all men).&lt;/p&gt;
-
-&lt;p&gt;You can also run community nights, these
-aren&amp;rsquo;t sessions aimed at training the speakers, but user group events where you can have
-prospective speakers present their talk. Obviously this works if a) the speaker is local and b)
-you have links with appropriate local user groups.  But this is a good way to grow the community,
- and to try out speakers without having to judge them through a CFP.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_7&#34;&gt;Have lightning talks on the agenda&lt;/h2&gt;
-
-&lt;p&gt;Lightning talks can be a very mixed bag of quality and can introduce complexity to your scheduling.
-But they&amp;rsquo;re also a good way to get inexperienced speakers
-into the conference, and to give them an opportunity to be videoed (and have conference speaking
-on their CV) so they can break into speaking properly.  As an attendee I like lightning talks -
-the topics are often varied, and ones I often wouldn&amp;rsquo;t bother watching a whole hour of, and I&amp;rsquo;ll
-tolerate poor content/poor delivery for 10 minutes without complaint.  You will need to consider
-your cost/benefit here though, I doubt you&amp;rsquo;ll want to pay expenses to ship a whole family of four
-over to your conference for the sake of a 10 minute talk, these seem to work best in encouraging
-local developers to speak at your conference.  Again, ties with local user groups will be key here.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_8&#34;&gt;Be Open to Flexible Scheduling&lt;/h2&gt;
-
-&lt;p&gt;I know, I really do, that your conference is really hard to
-schedule. Not just the
-actual dates, but who presents in which room at what time.  This is super difficult, and most
-speakers understand this and will accept the vague &amp;ldquo;your talk will be one of these three days&amp;rdquo;
-notice. Many speakers who are just starting will probably love to be there for the whole
-conference, I certainly did! But this is really hard for people who can&amp;rsquo;t get the time off work
-or away from their family. It&amp;rsquo;s also less exciting when you&amp;rsquo;ve already seen many of the talks
-you care about.&lt;/p&gt;
-
-&lt;p&gt;When I started doing this, my work was peeved if I took three days off to travel to a
-conference.  Now, I&amp;rsquo;m peeved if I take three days away from my family.  There&amp;rsquo;s a really hard
-balance for us speakers to strike, especially when
- we book our own travel: we either need to book early to get cheap travel, in which case we
- don&amp;rsquo;t know when our talk is so we have to be there for the whole conference; or we book as soon
- as we know the date and time of the talk, in which case someone is going to be stung with higher
-  travel costs.&lt;/p&gt;
-
-&lt;p&gt;Considering diversity also means understanding that not everyone lives in or near a city
-with a major airport. It&amp;rsquo;s easy to get spoilt in London, Paris, Madrid, Amsterdam, because
-there are so many flights to so many places from there.  But because I&amp;rsquo;m
-travelling from somewhere that isn&amp;rsquo;t a major airport,
-  direct flights to many conference locations are rare, and if they exist are almost always only
-  on a couple
-  of days the week and at horrible times, so my ability to get to and from the conference is
-  limited. This either adds one or two days either side of the conference waiting for the
-  right flight (so days and days away from the family for a one hour talk), or means I have a very
-  small window during your conference that I can be there. What would make my life easier is one of:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Tell me my time slot as soon as possible.  Oh, and do tell me.  Most conferences don&amp;rsquo;t
-bother, I have to check the schedule when it&amp;rsquo;s posted on the website which is often only a
-couple of weeks before the conference.&lt;/li&gt;
-&lt;li&gt;Allow me to suggest the best dates/times for me. I know it&amp;rsquo;s not possible to accommodate
-everyone, but for those of us with difficult schedules and/or who want to limit time away from
-home/work, I would really like to be able to say &amp;ldquo;I can only do this conference if I can talk
-Monday afternoon&amp;rdquo; and not sound like a diva.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;toc_9&#34;&gt;Consider Diversity Scholarships&lt;/h2&gt;
-
-&lt;p&gt;Some conferences offer discounts/free tickets for underrepresented groups.
-I feel a bit torn on this topic personally because I&amp;rsquo;m not a big fan of positive discrimination and
-this looks a bit like that.  But if you have offered something like this, it may attract
-speakers from underrepresented groups as well, because you are doing something proactive. If you
-consider this idea please do your research in this area.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_10&#34;&gt;Swag isn&amp;rsquo;t Just for Boys&lt;/h2&gt;
-
-&lt;p&gt;When I first started going to conferences I got really annoyed
-that all the free t-shirts were &amp;ldquo;unisex&amp;rdquo;, i.e. male.  I don&amp;rsquo;t really care about this any more
-because I&amp;rsquo;d like to wear clothes that I&amp;rsquo;ve actually chosen and paid for that actually fit me.
-But it does annoy a lot of women
-speakers and attendees, and it&amp;rsquo;s always noticeable when a conference goes out of
-its way to have women&amp;rsquo;s shapes and sizes. But don&amp;rsquo;t make them a different colour/logo, this just
-says &amp;ldquo;hey women, you&amp;rsquo;re like a totally different species and we&amp;rsquo;re going to make you stand out&amp;rdquo;.
-Doesn&amp;rsquo;t matter that in 100% of the cases where I&amp;rsquo;ve had a different colour the men have been
-totally jealous of my much more attractive women&amp;rsquo;s cut top, what matters is you don&amp;rsquo;t want to
-make the minorities stand out even more than they already do.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not just t-shirts either. For each bit of swag, think &amp;ldquo;would I give this to my sister / gay
-friend / muslim co-worker?&amp;ldquo;. Not everyone at the conference is a beer-drinking, youngish,
-straight, white, single male. And even those who are can be offended by swag that stereotypes
-what they should be interested in.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_11&#34;&gt;Consider having a blind CFP&lt;/h2&gt;
-
-&lt;p&gt;I&amp;rsquo;ve written in the past that I&amp;rsquo;m really not sure about this
-as a solution, but other sectors and other conferences have had success with this.  Perhaps if
-you combine this with actively reaching out to women and giving them guaranteed speaking slots,
-maybe this will address the weaknesses of both the invitation and the CFP processes. Do your
-research, see how you feel.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_12&#34;&gt;Note for women speakers&lt;/h2&gt;
-
-&lt;p&gt;After all that advice for conference organisers, I&amp;rsquo;d really like to say something to the women
-speakers out there. As usual, my advice applies to men too, but I want to talk specifically to the
-ladies.&lt;/p&gt;
-
-&lt;p&gt;If a conference invites you to speak and you have no intention of going, please respond with a
-&amp;ldquo;no&amp;rdquo; as promptly as possible.  I&amp;rsquo;ve been on both sides of the
-invitation (inviting speakers to speak and being invited) and as an inviter it is very very
-frustrating not to hear anything back from a valued speaker, especially if there&amp;rsquo;s a slot held
-for this speaker that needs to be filled. As a speaker, every time I&amp;rsquo;ve said &amp;ldquo;no&amp;rdquo;
-within a few hours of getting the email, I almost always get a very nice response
-saying &amp;ldquo;thanks for the quick reply&amp;rdquo;.  Saying &amp;ldquo;no&amp;rdquo; quickly is not ever going to be considered
-rude, it&amp;rsquo;s actually very helpful to the organisers.  Waiting a while because you want to phrase
-it in a nice way, or
-simply never getting around to responding because you mean to think the offer through and/or
-spend some time on the reply (and I am &lt;em&gt;the worst&lt;/em&gt; at this in most of my email) puts the
-conference into limbo - yes, they will have invited plenty
-of other speakers so they&amp;rsquo;re not just dependent upon you, but if half of them don&amp;rsquo;t take the
-time to respond the organisers don&amp;rsquo;t know if they need to reach out to more people or not. And
-as a speaker it&amp;rsquo;s a bit embarrassing to respond a week or more later with a &amp;ldquo;yes&amp;rdquo; only to have the
- conference say &amp;ldquo;er, sorry, we didn&amp;rsquo;t hear from you so we&amp;rsquo;re all full now&amp;rdquo;. This has happened to
- me. I felt bad.&lt;/p&gt;
-
-&lt;p&gt;So:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;If you know you&amp;rsquo;re not going, say &amp;ldquo;no&amp;rdquo; straight away (&amp;ldquo;thanks for the invite, really pleased
-you&amp;rsquo;re interested in having me, but I&amp;rsquo;m afraid I can&amp;rsquo;t make it&amp;rdquo;, or something, doesn&amp;rsquo;t have to be
-long winded and you don&amp;rsquo;t have to justify why you&amp;rsquo;re not going).&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re thinking about it
-but you have to work out details/check with work/run it past your partner/research costs,
-respond telling them you&amp;rsquo;re thinking about it, and give a rough date of when you&amp;rsquo;ll get back to
-them (&amp;ldquo;thanks for the invite, it looks really interesting, I can&amp;rsquo;t commit right now because
-I&amp;rsquo;ve got some stuff to work out, if I don&amp;rsquo;t get back to you by the end of next week please give
-me a nudge&amp;rdquo;). If you&amp;rsquo;re having some trouble working out the details (maybe the flights are too
-expensive, maybe work won&amp;rsquo;t give you the time off) update the conference with this information
-because they might be able to do something (give you money towards travel; send you some useful
-blurb to wave at your boss about why this is a good business investment for them, etc)&lt;/li&gt;
-&lt;li&gt;Obviously if it&amp;rsquo;s a yes just respond straight away with yes.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Don&amp;rsquo;t, please, just fail to respond.  I know you&amp;rsquo;re super busy, I know you have an inbox stacked
-full of more important things you haven&amp;rsquo;t got around to.  Set up a
-&lt;a href=&#34;https://support.google.com/inbox/answer/7107959?hl=en&#34;&gt;Google template&lt;/a&gt; (or equivalent) and it
-will take seconds to reply, and it&amp;rsquo;s one more mail you can get out of your inbox.  I&amp;rsquo;ve heard a lot
-of frustration from conference organisers that the women they contact never reply, and because human
-nature is the way it is, it leaves organisers feeling demotivated and makes them less likely to
-reach out to other women.  I know this isn&amp;rsquo;t your fault, but it is something we can all help to
-improve.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_13&#34;&gt;In Summary&lt;/h2&gt;
-
-&lt;p&gt;There are probably loads and loads of things I haven&amp;rsquo;t mentioned.  And it&amp;rsquo;s possible that
-conference organisers could do all of these things and still not reach the numbers they want. But I
-can practically guarantee that if, as an organiser, you don&amp;rsquo;t do any of these, you aren&amp;rsquo;t going
-to get many women speakers at all. Please, read all of these items again, and for your next
-conference create a tick-list of all the
- things you&amp;rsquo;re going to do, and all the things you need to check at each stage (like the imagery
- and language of your marketing material).&lt;/p&gt;
-</description>
+      <description>Now I&amp;rsquo;ve been speaking at (mostly Java) conferences for a while (six years now), I get asked to present at a lot of conferences. Obviously all these conferences are mostly interested in my terribly educational talks, but it&amp;rsquo;s also because I&amp;rsquo;m a technical woman and there aren&amp;rsquo;t very many technical women speaking at conferences.
+In my experience, conferences want to do the right thing - they want a diverse line up of speakers, they want to attract diverse attendees.</description>
     </item>
     
     <item>
       <title>What Can Men Do</title>
       <link>https://trishagee.github.io/post/what_can_men_do/</link>
-      <pubDate>Fri, 04 Nov 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Fri, 04 Nov 2016 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/what_can_men_do/</guid>
-      <description>&lt;p&gt;So, I wrote a long email to the London Java Community in answer to an excellent question: &amp;ldquo;What can men do to support Women in Technology?&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s a bit of a brain dump, by no means comprehensive, and is in answer to a specific question in a specific context, but I&amp;rsquo;ve been asked
-to make the information public so it can be useful in a broader context.  So here it is.&lt;/p&gt;
-
-&lt;p&gt;I know one of the reasons men feel strongly about this topic is because they do want to help and don&amp;rsquo;t always know how, and can feel
-excluded when it&amp;rsquo;s just presented as a women&amp;rsquo;s issue.&lt;/p&gt;
-
-&lt;p&gt;As I&amp;rsquo;ve said in the past, the &lt;a href=&#34;https://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; was the community that mentored me, and those mentors
-were largely men: Barry, Martijn, Ben Evans, John Stevenson to name a few. These guys were not only open and friendly and willing to
-listen to me, they pushed me (hard!).&lt;/p&gt;
-
-&lt;p&gt;I don&amp;rsquo;t have all the answers, of course, and there are lots of blogs and articles on the internet about this topic (if anyone finds any
-they like, feel free to post as a comment for all to see), but for me personally, my male mentors:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Listened&lt;/em&gt; to me, and made me feel like I had a valid opinion.  They took things I said, assumed they were a valid hypothesis, and
-made changes based on what I&amp;rsquo;d said.  I never felt like I had to change myself to fit in to the community.  Barry etc added different
-types of events and different approaches to running events in order to accommodate feedback I&amp;rsquo;d given.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Pushed&lt;/em&gt; me - Barry included me in the Associates, simultaneously recognising my value to the community but also forcing me to be
-more active in running it and applying changes I thought were important.  Martijn and Ben practically forced me to give short
-presentations at the LJC well before I was ready. But they also gave me loads of support, suggesting topics, checking through my slides
-in advance, giving me presentation hints and tips when I asked for them. They were right, I was ready, even when I felt like I wasn&amp;rsquo;t.
-I&amp;rsquo;ve talked before about &lt;a href=&#34;becoming_an_evangelist&#34;&gt;how this helped my career&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Validated&lt;/em&gt; me - By co-presenting with me, these men who were more well known (maybe even respected ;) ) in the community (not just
-the LJC, but the global Java Community) not only gave me support to launch my own presenting career, but they also validated, there on
-stage, that I was someone to listen to.  Martin Thompson, Todd Montgomery, Dan North, as well as those I&amp;rsquo;ve mentioned have all gone out
-of their way to co-present with me.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So, in answer to the question:&lt;/p&gt;
-
-&lt;ol&gt;
- &lt;li&gt;If you&#39;re interested in supporting a Women in [some technology] group specifically, please do reach out to the organiser. Check what 
- the goals are for the community, and offer support.&lt;/li&gt;  
- &lt;li&gt;If you&#39;re interested in supporting women in technology generally (or specific women you know), read the following points.&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-&lt;li&gt;This is for &lt;em&gt;everyone&lt;/em&gt;: When you see a woman at a technical event (community, conference, etc) &lt;em&gt;assume she&amp;rsquo;s a techie&lt;/em&gt;.  I cannot tell
-you
-the number of times a man I was talking to at an LJC event assumed I was a recruiter or in HR because I was female.  It is &lt;em&gt;far&lt;/em&gt; better to
-assume the woman is a techie and be corrected if she is not, than to assume the other way around.  And, &lt;em&gt;please&lt;/em&gt; assume she is a
-competent, senior techie.  Again, much better for a student to correct you and tell you she&amp;rsquo;s junior, than for you to assume a seasoned
-architect is junior just because she&amp;rsquo;s female.  This is by far the easiest thing for you to change in your behaviour, and probably the
-most valuable thing you can do for the community to encourage women to simply turn up and keep turning up.&lt;/li&gt;
-&lt;li&gt;If you know someone who&amp;rsquo;s interested in presenting, suggest she co-presents with you at a User Group event, internal company brown
-bag, community conference, etc.  This is a great way to get started.  Or suggest she does a lightning talk at a User Group (some
-conferences also offer Quickies for inexperienced speakers). If your local user group doesn&amp;rsquo;t currently do lightning talks, I&amp;rsquo;m sure they
-can be started if there&amp;rsquo;s interest.  If you have the expertise, offer to check slides, and/or be there for a run-though of the talk
-in advance.  This can even be over Skype or hangouts, there&amp;rsquo;s no need to take loads of time to travel to meet in person&lt;/li&gt;
-&lt;li&gt;If you know women who you think would be great at writing, but who haven&amp;rsquo;t started their own blog yet, offer a place for them to write
-for/with you. If you have a blog, they can write a guest post for you.  Again, offer to check the content before it goes live.  All of us
-are super nervous about our stuff being &amp;ldquo;good enough&amp;rdquo;, receiving the green light from someone else is a nice confidence boost and helps
-us feel better about publishing something.&lt;/li&gt;
-&lt;li&gt;Mentor a woman. This is for anyone, male, female, non-gender-specific. Mentoring includes some of the activities mentioned above. Or
-it can be something more code-focused.  Or helping them learn to play the politics of career (and believe me, techie roles and
-companies are still full of politics, especially if you want to get promoted). In fact, I recently read that what&amp;rsquo;s really needed for
-women is Sponsorship, not Mentoring.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;&amp;hellip;male mentors tend to sponsor rather than just mentor—similar to the difference between coaching
-and selling. In fact&amp;hellip; women may actually be over-mentored, but under-sponsored. And that sponsoring—advocating to get somebody a job
-or promotion, mentioning their name in an appointments meeting, actively helping that person advance—is what makes the real difference
-in women helping women get ahead&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://www.forbes.com/sites/peggydrexler/2014/03/04/can-women-succeed-without-a-mentor/#513dc3b542f6&#34;&gt;Forbes: Can Women Succeed Without A Mentor?&lt;/a&gt;&lt;br /&gt;
-  You have to be senior and visible (either in the community or in your organisation) to sponsor, but it makes a big difference to women&amp;rsquo;s
-careers. I remember the one time I had a male sponsor in one of my jobs is the only time I got a promotion.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Just be encouraging.  And while I personally have a real problem with being encouraging without sounding patronising (I dunno how to
-say something that doesn&amp;rsquo;t sound patronising!), it&amp;rsquo;s really important you try to be positive without being patronising or mentioning
-something gender related.  I&amp;rsquo;ve heard comments like &amp;ldquo;&lt;a href=&#34;https://web.archive.org/web/20120409030606/http://www.thedeveloperday.com/my-top-5-qcon-london-2012-talks/&#34;&gt;it would be enough to say this talk was delivered by a beautiful lady packed with a
-room of geeks but it deserves more praise&lt;/a&gt;&amp;rdquo;
-(er, thanks?) and &amp;ldquo;It&amp;rsquo;s so great to hear women give technical
-presentations!&amp;ldquo;.  Hmm. I know that&amp;rsquo;s trying to be supportive but it does make you feel a bit&amp;hellip; like an outsider, some sort of weird zoo
-animal. So, before you open your mouth, This One Simple Trick Can Save You From Embarrassment: would you say this to a man? If it would
-sound silly aimed at a male, re-phrase it until it sounds sensible.&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re in a position to give feedback (e.g. at work a direct report, 360 reviews, or in the community someone who requests
-feedback), give actionable feedback.&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;Researchers have found that women receive more &lt;a href=&#34;https://hbr.org/2016/04/research-vague-feedback-is-holding-women-back&#34;&gt;vague feedback&lt;/a&gt;
-and &lt;a href=&#34;http://fortune.com/2014/08/26/performance-review-gender-bias/&#34;&gt;personality criticism&lt;/a&gt; in
-performance evaluations, whereas men receive actionable advice tied to business outcomes&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd#.a1hn4ztpy&#34;&gt;The Real Reason Women Quit Tech And How To Address It&lt;/a&gt;&lt;br /&gt;
-As you can imagine, it&amp;rsquo;s much easier to improve with clear, actionable advice than with vague feedback.&lt;/p&gt;
-
-&lt;p&gt;Really importantly, if a woman enjoys being technical, encourage her to stay technical.  Just because she has people skills as well doesn&amp;rsquo;t mean she should be promoted away from code to management, or moved into a Scrum Master position.  Just because she&amp;rsquo;s a woman presenting or writing about technology, does not mean she wants to present or write about being a woman in technology.&lt;/p&gt;
-
-&lt;p&gt;Further reading:&lt;br /&gt;
-I&amp;rsquo;ve already mentioned it, but this is excellent:
-&lt;a href=&#34;https://medium.com/tech-diversity-files/the-real-reason-women-quit-tech-and-how-to-address-it-6dfb606929fd#.a1hn4ztpy&#34;&gt;The Real Reason Women Quit Tech And How To Address It&lt;/a&gt;.
-It contains links to tonnes of research in this area.&lt;br /&gt;
-&lt;a href=&#34;https://hbr.org/ideacast/2010/08/women-are-over-mentored-but-un.html&#34;&gt;Women Are Over-Mentored (But Under-Sponsored)&lt;/a&gt;&lt;br /&gt;
-&lt;a href=&#34;https://hbr.org/2010/09/why-men-still-get-more-promotions-than-women?referral=00134&#34;&gt;Why Men Still Get More Promotions Than Women&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you made it this far&amp;hellip;. well done!&lt;/p&gt;
-
-&lt;p&gt;You don&amp;rsquo;t have to do all these things.  But if you do care about diversity (and in my experience, I&amp;rsquo;ve met more white men who care about
- diversity than women who care about it, cos being a minority is sometimes helpful), read these and do &lt;em&gt;something&lt;/em&gt;. Even if it&amp;rsquo;s just
- that thing of assuming a woman you meet at a tech event is, in fact, a techie.&lt;/p&gt;
-
-&lt;p&gt;PS if you are a woman in technology and want to ask me anything, please feel free to drop me a line at any time. I have HORRIBLE e-mail
-latency but I will answer you eventually :)&lt;/p&gt;
-</description>
+      <description>So, I wrote a long email to the London Java Community in answer to an excellent question: &amp;ldquo;What can men do to support Women in Technology?&amp;rdquo;.
+It&amp;rsquo;s a bit of a brain dump, by no means comprehensive, and is in answer to a specific question in a specific context, but I&amp;rsquo;ve been asked to make the information public so it can be useful in a broader context. So here it is.</description>
     </item>
     
     <item>
       <title>Blind CFPs - a Postscript</title>
       <link>https://trishagee.github.io/post/blind_cfps_2/</link>
-      <pubDate>Thu, 12 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Thu, 12 Mar 2015 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/blind_cfps_2/</guid>
-      <description>
-
-&lt;p&gt;Since publishing &lt;a href=&#34;/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
+      <description>&lt;p&gt;Since publishing &lt;a href=&#34;https://trishagee.github.io/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
 another post to answer them.&lt;/p&gt;
 
-&lt;p&gt;Firstly, let me state that I don&amp;rsquo;t think blind CFPs are a complete waste of time - for example, I know that there are
-circles in which speakers will refuse to submit if the selection process isn&amp;rsquo;t blind. But what blind CFPs are &lt;em&gt;not&lt;/em&gt;,
-is an answer to &amp;ldquo;How do I get more women speakers at my conference?&amp;rdquo;, especially if the problem is not that the
-women are being rejected, but that they simply aren&amp;rsquo;t submitting talks - this is the situation I see most frequently
-in the conferences I speak at/help organise.&lt;/p&gt;
-
-&lt;h4 id=&#34;toc_0&#34;&gt;You&amp;rsquo;re missing the point of blind CFPs&lt;/h4&gt;
-
-&lt;p&gt;I want to address the point &amp;ldquo;Blind CFPs are to protect the organisers, not simply to improve diversity&amp;rdquo;. OK, great. So
-in the case of the conferences that had only two women out of 200 submissions: if you make that process blind, whether you
-select both women or not, when there are nasty comments about your lack of women speakers, you&amp;rsquo;re protected - you did
-the right things, you had a blind CFP, and just not many women made it through that process. Women simply aren&amp;rsquo;t
-writing compelling abstracts and/or aren&amp;rsquo;t picking interesting subjects and/or clearly aren&amp;rsquo;t interested in
-presenting at conferences.&lt;/p&gt;
-
-&lt;p&gt;AAAARRRGGHHHHHH!!!! Anger.&lt;/p&gt;
-
-&lt;p&gt;Protect your arse if you like, that&amp;rsquo;s fine, I see the attacks against organisers and I understand the need to be able to
-say you did the right thing. But notice that once you&amp;rsquo;ve protected yourselves, the blame is back on the
-minorities for not meeting your criteria.&lt;/p&gt;
-
-&lt;p&gt;If the purpose of a blind CFP is to protect the selectors, then let&amp;rsquo;s not pretend it&amp;rsquo;s an answer to increasing diversity
-of speakers, it&amp;rsquo;s a piece in a larger puzzle.&lt;/p&gt;
-
-&lt;h4 id=&#34;toc_1&#34;&gt;An abstract is not a representation of your talk&lt;/h4&gt;
-
-&lt;p&gt;I don&amp;rsquo;t think I can emphasise this enough: blind CFPs have a very big weakness - there is no direct correlation between
-a good abstract and a good talk. I&amp;rsquo;ve been watching a bunch of talks online lately, and I watched one with an abstract
-that absolutely called to me - here was the missing piece for a technology that I simply can&amp;rsquo;t get my head around. I
-gave an hour of my life to that talk, each minute I was wondering when this person would get to the bits mentioned
-in the abstract, so I watched it all the way to the end. They never delivered what the abstract promised, and their
-meandering style meant I learnt almost nothing from the talk. That&amp;rsquo;s an hour of my life I&amp;rsquo;ll never get back. Good
-thing I was playing computer games as well at the time, if I&amp;rsquo;d paid money for that I would have been very peeved.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s another weakness in this process - if you go to a number of conferences (like I do) you kinda learn which
-speakers are doing
-which talks.  If I submit my &amp;ldquo;AngularJS, HTML5, Groovy, Java and MongoDB all together - what could possibly go wrong??&amp;rdquo;
-talk to a blind process, if there&amp;rsquo;s anyone on the selection committee who&amp;rsquo;s even vaguely involved in the Java or MongoDB
-spaces, they&amp;rsquo;ll know that&amp;rsquo;s me. And they can Google the talk and decide whether they like it (or with any luck, the
-buzz-word crammed title will do the job and they&amp;rsquo;ll say yes, although probably AngularJS is so 2014).&lt;/p&gt;
-
-&lt;p&gt;An abstract is like your presentation in the same way that your CV is like your ability to do your job - there&amp;rsquo;s a skill
-to writing good abstracts (or CVs), but mastery of that skill does not necessarily mean mastery of the thing it
-represents - the ability to present or the ability to do the job.  I&amp;rsquo;m not going to be sold on a blind process
-being a good way to build &amp;ldquo;the best content available for the conference&amp;rdquo; until this disconnect is somehow solved.&lt;/p&gt;
-
-&lt;h4 id=&#34;toc_2&#34;&gt;For goodness sake Trisha, the postscript is nearly longer than the original post&lt;/h4&gt;
-
-&lt;p&gt;Yeah, sorry.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve listened to feedback from a bunch of people, and I have learnt more things (thanks everyone!). I am more sold on
-a blind CFP being maybe part of a bigger process. But I do &lt;em&gt;not&lt;/em&gt; believe it fixes the &amp;ldquo;we need more women speakers&amp;rdquo;
-problem, which was the original claim that I wanted to dispute. Conferences have to be &lt;em&gt;much&lt;/em&gt; more active to address
-this issue.&lt;/p&gt;
-
-&lt;p&gt;And I am not sold on an abstract being a fair representation of the quality of a talk. Maybe a more realistic &amp;ldquo;blind&amp;rdquo;
-audition would be to give the talk to an audience, like a user group, who rated the talk:
-the organisers wouldn&amp;rsquo;t watch the talk, but they could use the ratings to decide. Yes, the user group could also
-have biases that affect their rating, but when the speaker gives the talk at the conference, those attendees will also
-have their biases too.&lt;/p&gt;
-
-&lt;p&gt;Blindness is not a realistic option, we just have to keep putting women (and other non-white-straight-men) in front of
-audiences until it&amp;rsquo;s no longer a novelty.&lt;/p&gt;
-</description>
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Are Blind CFPs Really The Answer?</title>
       <link>https://trishagee.github.io/post/blind_cfps/</link>
-      <pubDate>Wed, 11 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Wed, 11 Mar 2015 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/blind_cfps/</guid>
-      <description>
-
-&lt;p&gt;Off the back of &lt;a href=&#34;/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
+      <description>&lt;p&gt;Off the back of &lt;a href=&#34;https://trishagee.github.io/post/i_am_so_tired_of_it_all/&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I received a number of comments and questions
 around blind &lt;a href=&#34;http://www.wikicfp.com/cfp/&#34;&gt;CFPs&lt;/a&gt; (Call For Papers - usually to get into a conference you submit to a CFP) for
 conferences. I often hear it said that a blind CFP will fix, or at least improve, the diversity imbalance at conferences.&lt;/p&gt;
 
-&lt;p&gt;I don&amp;rsquo;t believe this.&lt;/p&gt;
-
-&lt;p&gt;Firstly, I should caveat this with: this is going to be a blog post based on my experiences and chats with people, and I
-have zero science to back this up. Sorry. But I do have some numbers.&lt;/p&gt;
-
-&lt;p&gt;There are a couple of London conferences that I won&amp;rsquo;t name (because I haven&amp;rsquo;t asked their permission not because they&amp;rsquo;ve
-done anything wrong) that in some years have received only 2 from around 200 (or more) submissions from women. These
-conferences have accepted 100% of the submissions from women, and then been open to criticism for not having enough women
-speakers.&lt;/p&gt;
-
-&lt;p&gt;A blind CFP to remove unconscious bias from the selection committee might have resulted in zero women speakers.&lt;/p&gt;
-
-&lt;p&gt;Now I know the next argument is that advertising a blind CFP might encourage a wider diversity of speakers to apply. This
-does seem to work in some parts of the industry (I&amp;rsquo;ve been talking to women from tech scenes that don&amp;rsquo;t intersect with mine
-and I&amp;rsquo;m starting to see that we have different problems in different segments of the wider development world). But for my
-world, which is largely Java, with some forays into Agile, NoSQL, Open Source, and Enterprise, the women I speak to
-aren&amp;rsquo;t scared they&amp;rsquo;ll be discriminated against if they put their name on a CFP. Besides, they don&amp;rsquo;t have anything to
-lose by submitting and being rejected. They&amp;rsquo;re more afraid they&amp;rsquo;ll be accepted, and then they&amp;rsquo;ll have to give a
-presentation! No, the women I&amp;rsquo;ve spoken to in my world don&amp;rsquo;t submit because they don&amp;rsquo;t feel ready, they don&amp;rsquo;t think they
-have anything to talk about, and they&amp;rsquo;re worried about the sorts of questions they&amp;rsquo;ll get asked when they&amp;rsquo;re standing up
-there. Those fears aren&amp;rsquo;t allayed by having a blind CFP.&lt;/p&gt;
-
-&lt;p&gt;If there are any fears of being judged as a woman, it&amp;rsquo;s when we&amp;rsquo;re standing up in front of people at the conference, and
-no amount of blindness during the CFP process is going to make us feel better about that.&lt;/p&gt;
-
-&lt;p&gt;For me, personally, I find the idea of a blind CFP terrifying:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Firstly, if you have such a problem with judging people based on race or gender that you have to anonymise the
-selection process, I&amp;rsquo;m not sure I want to speak at your conference where my gender will be blatantly on show.&lt;/li&gt;
-&lt;li&gt;Secondly, when I was starting out as a speaker, I was new to writing titles and abstracts and expected that they would
-not be good enough to get in. With a blind CFP I would never find out why as I could never ask for feedback on my
-anonymous abstract. As a novice speaker, I expected my gender would help me be selected, not hinder.&lt;/li&gt;
-&lt;li&gt;Thirdly, as an experienced speaker I know my abstract-writing has not really improved, but I know my presenting has,
-and I know there are videos of me out there doing a good job as a presenter, &lt;em&gt;this&lt;/em&gt; is my audition tape.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;When I was starting out as a speaker, I knew there weren&amp;rsquo;t enough women presenters around. And although I hate the idea
-of positive discrimination and hate the idea that men might think I got into my position merely because I&amp;rsquo;m female, I knew
-that being a woman made me stand out in all those submissions. And I knew that enough conferences would take a chance on
-me, if only to improve their diversity, and that&amp;rsquo;s all I needed to bootstrap my speaking career - once I had spoken at
-enough conferences, once I had videos of me doing that, I would find it much easier to get into the next conferences.
-And that&amp;rsquo;s worked. And now, as an experienced (female) speaker, I fear blind CFPs as they won&amp;rsquo;t know who I am or what I&amp;rsquo;m
-capable of.&lt;/p&gt;
-
-&lt;p&gt;So that&amp;rsquo;s my opinion as a female speaker. But I&amp;rsquo;ve also been fortunate enough to be on the programme committee for a couple
-of conferences, and after three years or so of speaking at conferences I know a &lt;em&gt;lot&lt;/em&gt; of conference organisers.  Let&amp;rsquo;s
-assume you&amp;rsquo;re &amp;ldquo;merely&amp;rdquo; trying to build the best conference you can around your subject whilst not discriminating against
-anyone (i.e. let&amp;rsquo;s assume you&amp;rsquo;re not going out of your way to actively promote diversity). How can you do this when you only
-have abstracts and titles to go on?&lt;/p&gt;
-
-&lt;p&gt;I am aware of the &lt;a href=&#34;http://www.nber.org/papers/w5903&#34;&gt;studies around blind auditions for orchestras&lt;/a&gt;. And I understand
-how tempting it is to try to apply that to our world, since it has had an effect on the number of women in orchestras
-(but let&amp;rsquo;s not get too excited here, we&amp;rsquo;re talking about an increase from 5% to 25% over thirty years&amp;hellip;). I think
-blind auditions would work really well for coding - we can look at just the code, without knowing anything about the
-physical body behind the code, and figure out if that person is good enough for us. We could even do blind pair
-programming, using screen sharing and chat (actually that&amp;rsquo;s a great idea, I think I&amp;rsquo;ll patent that!). Because
-the thing you&amp;rsquo;ve anonymised (the code) is the output you really care about in a programming job. If you communicate via
-chat you can even measure someone&amp;rsquo;s communication skills without judging them physically, another vital skill for
-being part of a team.&lt;/p&gt;
-
-&lt;p&gt;But a talk abstract is &lt;em&gt;not&lt;/em&gt; the output we&amp;rsquo;re looking for.  Sure, a good title and abstract will attract attendees to the
-conference and bums on seats in the actual talk. But the output you&amp;rsquo;re looking for is the presenter - their style, their
-approach to the topic, their ability to hold attention, their ability to impart information. We&amp;rsquo;re not always looking
-for the same things either, an interesting topic presented nervously but logically is fine, as is an entertaining
-presenter reminding us of fundamentals we already know (and any other combination of strengths and weaknesses). An abstract
-can&amp;rsquo;t tell you how good the presentation is going to be. Evaluating a presentation on a blind abstract would be like
-evaluating those musicians on a couple of paragraphs explaining what they&amp;rsquo;re going to play and how they&amp;rsquo;re going to
-try to make you feel when they play it - the words could sound great, but the musician might not even be able to play
-the instrument.&lt;/p&gt;
-
-&lt;p&gt;The best audition you can have as a presenter is to, well, present. Videos, audio clips, even screencasts. But the
-problem with presenting is that it&amp;rsquo;s so freaking obvious that you&amp;rsquo;re a woman (or other variation on
-non-white-straight-male).  If you can&amp;rsquo;t objectively evaluate a presentation without taking away the presenter&amp;rsquo;s
-physical body (for colour
-or gender or whatever), then you&amp;rsquo;ve got real problems. Your audience is going to be faced with that physical body for an
-hour of their life, and you can bet they&amp;rsquo;ll be judging them too.  You want to be damned sure that you&amp;rsquo;ve selected a
-competent presenter, and you&amp;rsquo;ll need to stand by that choice. Saying &amp;ldquo;oh, well, they didn&amp;rsquo;t seem boring in their
-abstract&amp;rdquo; is not going to make the audience feel like you did a good job of the selection.&lt;/p&gt;
-
-&lt;p&gt;There&amp;rsquo;s another point about non-blind selection processes, other than the process allowing you to select on presentation
-ability rather than abstract-writing ability: you can be more active in promoting diversity. I am against &amp;ldquo;affirmative
-action&amp;rdquo;, but if the proportion of women submitting presentations is lower than the proportion of women in the field, there&amp;rsquo;s
-something missing.  Here are some of the things you can do if you identify a lack of a certain demographic - as usual,
-I&amp;rsquo;m going to use &amp;ldquo;women&amp;rdquo;, but you could equally argue this for any demographic, even not-enough-C#-developers or
-too-many-startups-not-enough-enterprise:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Reach out to relevant user groups and communities asking them to submit.  In London for example, there&amp;rsquo;s &lt;a href=&#34;http://www.meetup.com/Ladies-Who-Code-UK/&#34;&gt;Ladies Who Code&lt;/a&gt;,
-&lt;a href=&#34;http://www.meetup.com/women-who-code-london/&#34;&gt;Women Who Code&lt;/a&gt;, &lt;a href=&#34;http://london.girlgeekdinners.com/&#34;&gt;Girl Geek Dinners&lt;/a&gt;,
-&lt;a href=&#34;http://www.meetup.com/PyLadiesLondon/&#34;&gt;PyLadies&lt;/a&gt;, &lt;a href=&#34;http://www.meetup.com/Rails-Girls-London/&#34;&gt;Rails Girls&lt;/a&gt;,
-&lt;a href=&#34;http://www.meetup.com/Women-in-Data/&#34;&gt;Women in Data&lt;/a&gt;,
-&lt;a href=&#34;http://www.geekgirlmeetup.co.uk/&#34;&gt;Girl Geek Meetup&lt;/a&gt;, &lt;a href=&#34;http://www.meetup.com/WIGJMeetup/&#34;&gt;Women in Games Jobs&lt;/a&gt;,
-&lt;a href=&#34;http://girlsintechuk.com/community/&#34;&gt;Girls in Tech&lt;/a&gt;,
-&lt;a href=&#34;http://www.meetup.com/Geek-Girls-Unite-London/&#34;&gt;Girl Geeks Unite&lt;/a&gt;, and a
-&lt;a href=&#34;http://witi.meetup.com/cities/gb/17/london/&#34;&gt;whole host of women techies meetups&lt;/a&gt; &amp;hellip; And don&amp;rsquo;t think I psychically
-know about all those
-because I have two X chromosomes, I found half of those just now, in less than two minutes, by Googling
-&amp;ldquo;Girl Geeks London&amp;rdquo; and &amp;ldquo;Women Tech London&amp;rdquo;&lt;/li&gt;
-&lt;li&gt;Put the faces of the women you do want to have speak (or the women on your programme committee, or both) on your
-website - showing these women sends the message that this conference is for women. It should also impact the diversity
-of your attendees.&lt;/li&gt;
-&lt;li&gt;Reach out to specific women speakers and ask them to present. &lt;a href=&#34;/post/more_female_speakers&#34;&gt;I&amp;rsquo;ve talked about this before&lt;/a&gt;,
-women speakers are few and far between, and a) they get
-booked in advance and b) are busy enough not to have to (or want to) submit via a CFP process.&lt;/li&gt;
-&lt;li&gt;There are &lt;a href=&#34;/post/more_female_speakers&#34;&gt;more ideas here&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;And there&amp;rsquo;s more - you don&amp;rsquo;t just have to drain the pool dry of known competent speakers-who-tick-some-diversity-box. With
-a non-blind process you can actively improve the submissions you do have, assuming you&amp;rsquo;re not one of the conferences
-suffering from a complete lack of submissions from those people. For example, if you&amp;rsquo;re looking to increase the number of women
-presenting at your conference, if you have women submitting but they don&amp;rsquo;t quite meet your criteria (maybe the abstract
-is weak, the title isn&amp;rsquo;t catchy, or maybe the presenter simply isn&amp;rsquo;t quite ready yet) you, as the conference organiser, are
-in the perfect position to mentor these people: you can help them re-write their abstracts; you can offer them mentoring
-and training for presenting. If there&amp;rsquo;s no record of them presenting but you&amp;rsquo;re interested in evaluating their ability,
-you can set them up with a user group to present at - as a conference organiser, you have the network contacts that
-new speakers might not. You can run sessions aimed at people who have never done public speaking (I&amp;rsquo;ve run a session
-like this four times now, at the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; and at Ladies Who Code -
-I had &lt;em&gt;over 70&lt;/em&gt; RSVPs for the last London Ladies Who Code session, twice the number of the last LJC session,
-so there are plenty of women interested in breaking into this field, who are looking for training, who don&amp;rsquo;t feel ready
-to present yet).&lt;/p&gt;
-
-&lt;p&gt;So, what are my points?&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A blind process of selection can be applied to something where the output you&amp;rsquo;re selecting for can be effectively
-anonymised: music auditions, code, technical writing, etc.&lt;/li&gt;
-&lt;li&gt;A blind process where you select based on criteria that are not the end result will only be effective
-if it&amp;rsquo;s the selection process is biased, or if submissions to the selection process are lower
-from discriminated-against-groups because they fear a biased selection process.&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;For those conferences that are getting very tiny numbers of submissions from women (I&amp;rsquo;m picking women as the example
-but you can pick any group you want), a blind process could lead to even fewer selected women speakers. Instead of
-switching to a blind process, you&amp;rsquo;re probably going to want to check:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;the messaging around your conference (remember masculine words like rock star, ninja, competitive, hardcore,
-challenging etc &lt;a href=&#34;http://www.tum.de/en/about-tum/news/press-releases/short/article/31438/&#34;&gt;put women off applying to jobs&lt;/a&gt;, the same probably applies to technical conferences)&lt;/li&gt;
-&lt;li&gt;subliminal messages on your website/info (one of the conferences I mentioned, for example, sent out a couple of emails
-containing photos of previous years&amp;rsquo; conferences which happened to only show men - this was not even representative of
-the conference, but it can have an unexpectedly big effect on the subconscious)&lt;/li&gt;
-&lt;li&gt;have you showcased the diversity of the conference, or previous years&amp;rsquo; conferences, with photos, interviews, testamonials?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;A non-blind submission process allows you to be more active in promoting diversity - instead of hoping that the
-submissions are representative of the diversity in your community, and that selecting the most interesting talks
-will naturally lead to improved diversity, with a non-blind process you can track exactly how many women are submitting,
-address problems in this area early and offer mentoring to those who aren&amp;rsquo;t quite ready yet. Remember that &lt;a href=&#34;https://hbr.org/2014/08/why-women-dont-apply-for-jobs-unless-theyre-100-qualified/0-qualified/&#34;&gt;women
-only apply for jobs they feel 100% qualified for&lt;/a&gt;
-and take fewer chances, they might need that extra push.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;So, no. I don&amp;rsquo;t believe that implementing a blind CFP will address the lack of diversity in conference speakers. I
-know it helps in some circles, but I personally think that conference selection committees should a) be much better at
-identifying their own biases and actively attempting to overcome them b) be active in improving the diversity of
-their conference, and c) be offering feedback and mentoring to those who are not quite ready yet in order to improve
-the overall ecosystem.&lt;/p&gt;
-
-&lt;p&gt;Diversity isn&amp;rsquo;t going to accidentally happen when we stop looking at gender and race and other visible you-don&amp;rsquo;t-belong-here
-cues.  Diversity is only going to happen if people fight for it, and if we actively train, mentor, and support those
-trying to break through the barriers.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Postscript&lt;/h3&gt;
-
-&lt;p&gt;I wrote a &lt;a href=&#34;/post/blind_cfps_2&#34;&gt;follow up&lt;/a&gt; based off responses to this post, covering additional questions raised.&lt;/p&gt;
-</description>
+&lt;p&gt;I don&amp;rsquo;t believe this.
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>I&#39;m so tired of it all</title>
       <link>https://trishagee.github.io/post/i_am_so_tired_of_it_all/</link>
-      <pubDate>Tue, 10 Mar 2015 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Tue, 10 Mar 2015 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/i_am_so_tired_of_it_all/</guid>
       <description>&lt;p&gt;We work so hard to promote equality, to fight for the rights of people who are not middle-class
 white men, and time and again it just feels like we&amp;rsquo;re not getting anywhere.  &lt;a href=&#34;http://www.internationalwomensday.com/&#34;&gt;International Women&amp;rsquo;s
 Day&lt;/a&gt; highlights the issues that face women all around the world, and make our
 women-in-tech problem
-look like a genuine &lt;a href=&#34;https://twitter.com/hashtag/firstworldproblems&#34;&gt;First World Problem&lt;/a&gt;, and yet we can&amp;rsquo;t even get that right.&lt;/p&gt;
-
-&lt;p&gt;I nearly gave up. This weekend I thought, fuck it. I&amp;rsquo;ve done my bit. Personally, I&amp;rsquo;ve been through the phase in my
-career where being a woman was a disadvantage and somehow arrived out the other side - in my position, in my job, it&amp;rsquo;s
-an advantage, and I don&amp;rsquo;t need to change anything to improve things for my career. I&amp;rsquo;m going to carry on doing my job to the best
-of my ability, but I&amp;rsquo;m no longer going to let this diversity thing drain my energy - nothing ever seems to make a difference anyway.&lt;/p&gt;
-
-&lt;p&gt;Over the last year, four (white, middle-class, English-speaking) men who I know well, who
-I have seen by their actions are champions of women in technology, who have personally mentored
-me in some way or another, have been accused of not thinking about women techies, not encouraging them - have
-been accused of sexism.&lt;/p&gt;
-
-&lt;p&gt;This third year of being on the programme committee for QCon, I could see we had achieved far more to promote diversity
-than ever before, but it was &lt;em&gt;so&lt;/em&gt; much work to get that far, and there&amp;rsquo;s still &lt;em&gt;so much&lt;/em&gt; more to do.&lt;/p&gt;
-
-&lt;p&gt;Another conference I have great affection for which has never previously suffered badly from a lack of women speakers
-received practically
-zero submissions for full conference talks from women this year. The submissions that did come in were from the usual
-suspects, the speakers who one calls upon when desperately trying to shore up the gender diversity of your speaker line-up.&lt;/p&gt;
-
-&lt;p&gt;The Sevilla Java User Group, which I started, with my money, which I present at regularly, has had &lt;em&gt;zero&lt;/em&gt; female
-developers attend who were not previously friends. Apparently the impact of visible female role models is far smaller than
-I imagined.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s so much work.&lt;/p&gt;
-
-&lt;p&gt;And it&amp;rsquo;s thankless.&lt;/p&gt;
-
-&lt;p&gt;For the men who support the women, they get attacked by both sides - by women, for not
-doing enough, or sometimes for simply being privileged white men, by men and women for fighting for something that
-doesn&amp;rsquo;t impact them, and by men for betraying their gender.&lt;/p&gt;
-
-&lt;p&gt;For the women, it&amp;rsquo;s the same but more so: some women accuse us of not doing enough, some women sneer at what we&amp;rsquo;re doing,
-telling us we already have equality, men and women think you&amp;rsquo;re in it just to improve your own life, and the men, well,
-many men genuinely don&amp;rsquo;t understand the problems (and it&amp;rsquo;s exhausting to explain), and some are outright hostile.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s fantastic to find men allies.  I don&amp;rsquo;t know about anyone else, but at this stage in my career I&amp;rsquo;m surrounded by men
-who are all allies. And I can honestly say that any professional struggles I&amp;rsquo;ve had in recent years I can see are suffered
-by my colleagues of the opposite sex, so I know they&amp;rsquo;re not because of my gender.&lt;/p&gt;
-
-&lt;p&gt;Maybe it&amp;rsquo;s only fair that our male allies suffer the same way we do, even though they get even less out of fighting our battles
-than we do. Maybe it&amp;rsquo;s fair that they are attacked by both genders, and have to put up with unfair, unjust
-criticism and accusations. After all, look at some of the vile, hate-filled messages thrown at women leading the charge -
-that&amp;rsquo;s abuse. Some of these women fear for their lives.  I couldn&amp;rsquo;t live that life, and I despair that we live in a
-society that can&amp;rsquo;t seem to prevent that.&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;m a bit burnt out. So my friends are finding it tough. But this is a marathon, not a sprint.  And I never did this
-for me anyway. I care about diversity because it matters. I try to change the gender balance specifically, because that&amp;rsquo;s an area I
-might be able to impact, one I have a chance of understanding. I care about equality, about justice, because
-it matters. And I do my tiny part to try and drown out the hate, the anger, the &amp;ldquo;get back into the kitchen, woman&amp;rdquo;
-because those things make me feel sick, because &amp;ldquo;you can be whoever you want to be&amp;rdquo; shouldn&amp;rsquo;t be a lie, shouldn&amp;rsquo;t come
-with caveats.&lt;/p&gt;
-
-&lt;p&gt;Maybe I don&amp;rsquo;t have the time or energy for large-scale revolutions, but I will carry on trying to make a small difference:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;By trying to be a role model for anyone who can relate to me, whatever their colour, gender, or sexual orientation&lt;/li&gt;
-&lt;li&gt;By being visible as a woman techie, who does woman techie things, who&amp;rsquo;s also a human being.&lt;/li&gt;
-&lt;li&gt;By calling out (quietly and personally, at least at first) where I see things that might give the wrong message: e.g.
-e-mailing conference organisers to point out they only have white men in their line up; private messaging people to
-let them know their comments could be taken the wrong way; pointing out to user group leaders that their meetup
-page shows only men at their events.&lt;/li&gt;
-&lt;li&gt;By continuing to give an honest view of what it&amp;rsquo;s like to be a female Java developer, especially if these
-experiences are different to those of other women - one woman&amp;rsquo;s view does not represent every woman&amp;rsquo;s view, if more
-of us tell our different tales, we have a better view of the whole ecosystem (and its inhabitants).&lt;/li&gt;
-&lt;li&gt;By sharing not only the negatives, but the many positives of working in such a varied and rapidly changing profession.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I am tired of fighting, however tiny my efforts are. But I&amp;rsquo;m more tired of inequality.&lt;/p&gt;
-</description>
+look like a genuine &lt;a href=&#34;https://twitter.com/hashtag/firstworldproblems&#34;&gt;First World Problem&lt;/a&gt;, and yet we can&amp;rsquo;t even get that right.
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Improving Speaker Diversity</title>
       <link>https://trishagee.github.io/post/more_female_speakers/</link>
-      <pubDate>Tue, 09 Dec 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Tue, 09 Dec 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/more_female_speakers/</guid>
-      <description>
-
-&lt;p&gt;Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically,
-although not limited to, increasing the number of women speakers).&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m going to outline the things I remember being discussed, although as usual we did not find the answer to the problem,
-only identify some issues and explore some options.&lt;/p&gt;
-
-&lt;p&gt;This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and
-posted than if this all goes to die in my drafts folder.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_0&#34;&gt;Firstly, what stops people from stepping up to speak?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;I don&amp;rsquo;t have anything to say&lt;/strong&gt;&lt;br /&gt;
-This is the very first thing any developer says when you ask them why they haven&amp;rsquo;t thought about presenting at conferences or user
-groups. Turns out, you always have something to say.  For example, our most popular sessions at the Sevilla JUG and MUG are &amp;ldquo;Introduction
- to&amp;hellip;&amp;ldquo;. You hear from plenty of experts who have travelled the whole road to some pinnacle of excellence,
- but what many developers need is simply someone a couple of steps ahead of them to lead them forwards.&lt;/p&gt;
-
-&lt;p&gt;You always know more than &lt;em&gt;someone&lt;/em&gt;, you don&amp;rsquo;t need to know everything, and you don&amp;rsquo;t need to know more than everyone&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Why should I be role model?&lt;/strong&gt;&lt;br /&gt;
-So many women feel this, and I&amp;rsquo;m completely sympathetic to this view point: I&amp;rsquo;m a woman developer, getting along, happy in my job,
-happy being a programmer, why the hell should I have to stand up and present and blog and be a role model for other women? Men don&amp;rsquo;t have
-to do that. Men can &lt;em&gt;just&lt;/em&gt; be developers.&lt;/p&gt;
-
-&lt;p&gt;In addition, there&amp;rsquo;s the fear that if you &lt;em&gt;do&lt;/em&gt; stand up, become a role model, that somehow people will think you&amp;rsquo;re representing all
-women developers. You&amp;rsquo;ll be worried because you can only represent who you are, what you do, you can&amp;rsquo;t represent a whole gender in a
-single presentation or a single interview.  And the pressure! What if I mess up? What if I say something my gender does not agree with?
-What if I say something that causes my whole gender to be judged?&lt;/p&gt;
-
-&lt;p&gt;Totally understandable fears. Totally true that many people will ask you to be &lt;em&gt;the&lt;/em&gt; woman developer, to answer for all women.  Well,
-that&amp;rsquo;s why I&amp;rsquo;m asking more women to stand up, to be role models - if we all step up, it will no longer just be me, and you,
-and that other one over there. There&amp;rsquo;ll be more of us, more differing voices, we&amp;rsquo;ll stand out less. But we have to stand up first.  And
-in the meantime it&amp;rsquo;s us and our points of view they&amp;rsquo;re listening to. Wouldn&amp;rsquo;t you rather voice your opinion than have someone else speak
-on your behalf? Especially when very few people really can represent you, who you are and what you want.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;What if I can&amp;rsquo;t answer the questions?&lt;/strong&gt;&lt;br /&gt;
-You&amp;rsquo;ll be surprised at what you do know, so people who present run into this less than you&amp;rsquo;d think, even if you&amp;rsquo;re just beginning,
-but just in case here are some tips:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Repeat the question, paraphrasing. Firstly, this ensures you&amp;rsquo;ve actually heard the question correctly. Secondly,
-it allows the whole audience to hear it, and thirdly, but most importantly, it buys you time to think.&lt;/li&gt;
-&lt;li&gt;Be honest - say you don&amp;rsquo;t know, and move on. If you know somewhere that might have the answer,
-point the person to that resource.  But a technical audience actually values the answer &amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; more than you think. Especially
-the person who asked the question, it makes them feel really smart!&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;If you don&amp;rsquo;t know, but you think the audience might know, throw it back to them. Either to the person who asked the question,
-if that feels appropriate (especially if this is one of those &amp;ldquo;look how smart I am&amp;rdquo; questions),
-or to the audience as a whole. In conferences in particular, there&amp;rsquo;s a good chance someone there knows the answer.&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re genuinely terrified of all questions, say at the start of the presentation that you won&amp;rsquo;t take questions in the talk. Offer
-an alternative, like via Twitter or e-mail, if you can.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_1&#34;&gt;What can conference organisers do?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;Specifically invite the people you want presenting&lt;/strong&gt;&lt;br /&gt;
-Don&amp;rsquo;t just wait for them to submit. If you want more women, more diversity, invite them. And invite them early&amp;hellip;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Secure your women presenters early.&lt;/strong&gt;&lt;br /&gt;
-Recognise that there are relatively few women presenters on &amp;ldquo;the circuit&amp;rdquo;, and understand that &lt;em&gt;everyone&lt;/em&gt; wants them to speak at their
-conference. This rare breed, the female technical presenter, gets booked up &lt;em&gt;well&lt;/em&gt; in advance.  They&amp;rsquo;re probably as in-demand as your
-keynote speakers, and can probably devote less time to appearing at conferences than those who have made it to keynote-standard (I&amp;rsquo;m
-making a sweeping generalisation that your techy women have day-jobs as developers and your keynote speakers are either professional
-presenters or at least can argue presenting as a critical part of their job).&lt;/p&gt;
-
-&lt;p&gt;So, you have a limited resource (experienced women presenters) that&amp;rsquo;s in high demand. You need to reach out directly to them,
-invite them, and secure them well in advance of your conference.  Many big conferences, for example JavaOne and QCon,
-will invite speakers six months in advance. If you give women speakers a month&amp;rsquo;s notice before your conference or event,
-they simply are not going to have the space in their schedule at that late notice.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Showcase your diversity on your website&lt;/strong&gt;&lt;br /&gt;
-If you haven&amp;rsquo;t already heard of &lt;a href=&#34;http://en.wikipedia.org/wiki/Microaggression_theory&#34;&gt;microaggressions&lt;/a&gt;,
-go and read what that means before you get any further.  There&amp;rsquo;s a very simple thing you
-need to do with your website, whether you&amp;rsquo;ve opened for CFP or you&amp;rsquo;re trying to get attendees to register - make sure the photos on your
-website show the type of diversity you want to encourage.  Only yesterday I was looking at the website of a big conference,
-who I know for a fact are working &lt;em&gt;really&lt;/em&gt; hard to ensure diversity, not just with gender but race, age,
-and where possible in less physically obvious dimensions. The conference is many months off, so the only photo they have on the website
-is a background photo of the exhibition hall from some previous year, crammed full of attendees - white, male attendees,
-as far as it&amp;rsquo;s possible to tell.  It&amp;rsquo;s extremely subtle. You might not even notice, as the photo is behind the headers and text of the
-site. But I noticed. And you can be sure the subconscious of every person who went to the website to either submit a proposal for a
-talk, or is considering asking their employer to pay for the registration, also noticed.  The conscious mind might be able to shrug it
-off.  But the subconscious of a non-white and/or non-male person notices and plants the subtle seed
-of &amp;ldquo;this conference is not for me&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;So, conference and event organisers - if you want more women applying to speak at your conference,
-show more women on your website.  If you want a more diverse audience, show more diverse faces.  If you&amp;rsquo;ve invited your women presenters
-early and secured them early, show their photos on the site - this sends a strong message to other women that their talk proposals will be
-taken seriously.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Run warm up nights to try out new speakers&lt;/strong&gt;&lt;br /&gt;
-I know conference organisers get &lt;em&gt;lots&lt;/em&gt; of submissions, and I know it&amp;rsquo;s hard to tell which are going to be good speakers,
-especially if they&amp;rsquo;re new speakers or don&amp;rsquo;t have a video.  If you&amp;rsquo;re genuine about improving the diversity of your speakers,
-run free nights to a) promote your conference and b) try out new speakers.  Probably a good idea to have a new speaker and a known
-speaker to attract the crowd and give newbies a chance.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Don&amp;rsquo;t be so damn picky&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;New speakers need to be encouraged. Find a way to see their content without just discarding an unknown name.&lt;/li&gt;
-&lt;li&gt;Existing speakers might not have the luxury of creating new content. Many conferences want genuine practitioners,
-not just evangelists, but those people have day jobs and can&amp;rsquo;t be creating a new talk just for your conference.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Leave space for new speakers&lt;/strong&gt;&lt;br /&gt;
-&amp;hellip;and don&amp;rsquo;t just have 7 slots for a pro speaker&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Look at your swag&lt;/strong&gt;&lt;br /&gt;
-Not just guys t-shirts.  One conference gave out cupcakes for example. But it doesn&amp;rsquo;t just have to be handbags and high-heeled shoes,
-just take a quick look and see if your swag is generally useful for techies, or if it leans towards men only. Men only swag (men&amp;rsquo;s
-t-shirts, bottle openers, subtle things like that) subliminally says &amp;ldquo;you don&amp;rsquo;t belong here&amp;rdquo; to the women.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Give feedback&lt;/strong&gt;&lt;br /&gt;
-You can&amp;rsquo;t tell every individual why they were rejected, but you could look at all the rejected submissions and give broad indications of
-the type of CFPs that didn&amp;rsquo;t make it. Maybe write a blog post explaining which sorts of talks didn&amp;rsquo;t make it and why.  This will help
-speakers create content that better fits your conference.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Be specific about what you&amp;rsquo;re looking for&lt;/strong&gt;&lt;br /&gt;
-If you have tracks you&amp;rsquo;re finding content for, put them on the website/CFP, so people know what the topics are. If you have an
-idea that you want 30% beginner material and 30% very advanced, make that clear too. Especially if you want &lt;em&gt;only&lt;/em&gt; beginner or &lt;em&gt;only&lt;/em&gt;
-advanced. People will submit more appropriate talks.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;Have a beginner&amp;rsquo;s track&lt;/strong&gt;&lt;br /&gt;
-&amp;hellip;not just for the speakers, for the content too. Beginner speakers may be more comfortable presenting &amp;ldquo;Introduction to&amp;hellip;&amp;rdquo; talks.&lt;br /&gt;
-Having a beginners track, whether it&amp;rsquo;s for content or speakers, will make newbies feel more included.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_2&#34;&gt;What other things can we try?&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;User groups can grow talent&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Practice writing CFPs&lt;/li&gt;
-&lt;li&gt;Help each other&lt;/li&gt;
-&lt;li&gt;Presentation skills&lt;/li&gt;
-&lt;li&gt;Lightning talks, book club, different meetup styles (like fishbowl)&lt;/li&gt;
-&lt;li&gt;Run an open conference to encourage new speakers&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Women&amp;rsquo;s user groups are instrumental&lt;/strong&gt;&lt;br /&gt;
-So here&amp;rsquo;s something interesting. I&amp;rsquo;m sceptical of all-women user groups as I feel it separates us from the communities we &lt;em&gt;should&lt;/em&gt; be
-contributing to. But women&amp;rsquo;s user groups can help us to integrate better.  For example, Duchess France helped and encouraged its members
-to submit talks to Devoxx, gave feedback on CFPs before they were submitted, and provided a safe place for the women to practice
-presenting beforehand.  I think this is exactly the sort of thing women&amp;rsquo;s user groups could be fantastic for.&lt;/p&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Advice for budding speakers&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Just Do It&lt;/li&gt;
-&lt;li&gt;The more you do it, the more comfortable you&amp;rsquo;ll be&lt;/li&gt;
-&lt;li&gt;If you&amp;rsquo;re a speaker, it can make you feel less of an impostor at a conference - you&amp;rsquo;re not just a woman developer, you&amp;rsquo;re a speaker!&lt;/li&gt;
-&lt;li&gt;Everyone&amp;rsquo;s afraid, it&amp;rsquo;s not just you&lt;/li&gt;
-&lt;li&gt;Every developer wants to learn&lt;/li&gt;
-&lt;li&gt;The audience is on your side&lt;/li&gt;
-&lt;li&gt;Start Small (user groups)&lt;/li&gt;
-&lt;li&gt;Be technical. But you don&amp;rsquo;t have to be super smart&lt;/li&gt;
-&lt;li&gt;Bootstrapping is hard - you haven&amp;rsquo;t presented so you can&amp;rsquo;t get into conferences. Again, user groups can help with this.&lt;/li&gt;
-&lt;li&gt;Pair. Ask a more experienced presenter if you can co-present with them.&lt;/li&gt;
-&lt;li&gt;Ask for mentors&lt;/li&gt;
-&lt;li&gt;Ask for feedback&lt;/li&gt;
-&lt;li&gt;&amp;ldquo;I don&amp;rsquo;t know&amp;rdquo; is perfectly acceptable.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I appreciate there is &lt;em&gt;so&lt;/em&gt; much more I could have covered, and many topics deserve more depth. But this is the brain dump from the Devoxx
-session, and maybe one day things will be expanded into their own topics.&lt;/p&gt;
-</description>
+      <description>Last month at Devoxx I was in a session discussing what we can do to encourage more diversity in our speakers (specifically, although not limited to, increasing the number of women speakers).
+I&amp;rsquo;m going to outline the things I remember being discussed, although as usual we did not find the answer to the problem, only identify some issues and explore some options.
+This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp;rsquo;ll never post it, and it&amp;rsquo;s better if my thoughts are scrawled down and posted than if this all goes to die in my drafts folder.</description>
+    </item>
+    
+    <item>
+      <title>...but most of all, it&#39;s fun</title>
+      <link>https://trishagee.github.io/post/most_of_all_its_fun/</link>
+      <pubDate>Mon, 11 Aug 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/most_of_all_its_fun/</guid>
+      <description>&lt;p&gt;I loved this analogy: &lt;a href=&#34;https://medium.com/@nkkl/ride-like-a-girl-1d5524e25d3a&#34;&gt;Cycling is awfully similar to being a woman&lt;/a&gt;.
+It nicely describes how it feels to be marginalised and not quite &amp;ldquo;normal&amp;rdquo;. But there are some things that I&amp;rsquo;d like to
+add:
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Should you notice I&#39;m a woman? Should I care?</title>
       <link>https://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</link>
-      <pubDate>Mon, 10 Feb 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</guid>
-      <description>&lt;p&gt;So, following on from my observations of &lt;a href=&#34;http://mechanitis.blogspot.com/2014/02/so-fosdem.html&#34;&gt;being an outsider&lt;/a&gt; at FOSDEM because I&amp;rsquo;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m going to give specifics, but it&amp;rsquo;s not to name and shame or anything like that, it&amp;rsquo;s just that anonymising it will probably erase some of the subtleties. &amp;nbsp;But I&amp;rsquo;m not telling this to make anyone feel bad, because this is not an oh-poor-me story, this is just the way it goes sometimes and I want to share what it feels like.&lt;br /&gt;&lt;br /&gt;At JFokus (a conference I really enjoyed, where I got a chance to spend time with some awesome people) I was on a panel (well, game-show really) about static vs dynamic languages. &amp;nbsp;Not unusually, I was the only woman on the panel. &amp;nbsp;Also not unusually, one of the reasons I agreed to take part is to do my bit in demonstrating that women have technical knowledge too (in my opinion, it&amp;rsquo;s important where possible to avoid a stage full of white men of a particular age, and I&amp;rsquo;m in a position to be able to do something about that). &amp;nbsp;And, as per usual, I was a bit nervous about this in case the only woman on the panel also turned out to look stupid, but hey, looking stupid is one of the risks of this job.&lt;br /&gt;&lt;br /&gt;During the session, my gender was mentioned twice - once with &amp;ldquo;ladies first&amp;rdquo;, and once to specifically point out that our static-languages team was somehow superior because we had both genders represented (well of course we&amp;rsquo;re better, &lt;i&gt;I&amp;rsquo;m&lt;/i&gt; on the team). Note that neither of these was derogatory at all - both were, in fact, positive towards me, and I wasn&amp;rsquo;t troubled or offended by them. I&amp;rsquo;m used to people noticing and commenting on my gender. &amp;nbsp;I got used to it in the same way you get used to your commute to work, or dealing with merge conflicts - it&amp;rsquo;s something you do, it&amp;rsquo;s not always comfortable, but it&amp;rsquo;s no one&amp;rsquo;s fault and they&amp;rsquo;re not out to get you.&lt;br /&gt;&lt;br /&gt;I didn&amp;rsquo;t really process how the gender-mentions made me feel until after, at which point I was drained from giving yet another new talk that day, as well as the surprisingly physical panel discussion. But afterwards, when I was back in my hotel room packing for yet another plane journey, I was thinking &amp;ldquo;is it normal?&amp;rdquo;. &amp;nbsp;Was it inevitable that someone was going to notice/point out that I&amp;rsquo;m female? &lt;br /&gt;&lt;br /&gt;Was it down to my choice of clothing? &amp;nbsp;I debated long and hard with myself about wearing what was definitely a ridiculously short skirt for a session like that, but in the end I decided I didn&amp;rsquo;t want to wear jeans like everyone else, and wearing tiny skirts is something I find fun. But I did think I&amp;rsquo;d be behind a table and it wouldn&amp;rsquo;t be too obvious. &amp;nbsp;Should I worry that much about what I wear? &amp;nbsp;I used to plan what to wear for work, I used to love dressing up for going out with friends, so over-thinking my clothes for a conference is part of who I am.&lt;br /&gt;&lt;br /&gt;And one of the reasons to wear the skirt is because I&amp;rsquo;ve found myself wearing jeans and t-shirts more than ever. &amp;nbsp;I think the combination of travelling a lot (I &lt;i&gt;hate&lt;/i&gt; packing, so packing a couple of pairs of jeans and a bunch of t-shirts makes life easy) and being part of a tech company where that&amp;rsquo;s basically our uniform has lead to extreme laziness in my clothing choices, and I want to change that. &amp;nbsp;Who wants to look like everyone else? &amp;nbsp;Not me.&lt;br /&gt;&lt;br /&gt;So back in that hotel room, at the end of a long day, knowing I have to get up at 5am the next morning to get on a plane to New York, I felt drained. &amp;nbsp;I felt&amp;hellip; vulnerable? But if I dig down to find out what&amp;rsquo;s really making me feel not-cool, it&amp;rsquo;s not because a couple of people noticed I was a girl. &amp;nbsp;It&amp;rsquo;s because I was tired, because I was on display, because I had been worried about my choice of clothes, because drawing attention to yourself is not terribly British, because I didn&amp;rsquo;t know if my new talk was any good.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s easy to blame impostor syndrome, or something similar. And maybe this is what impostor syndrome feels like. But I&amp;rsquo;m pretty sure every conference speaker, whatever their gender, race, sexual orientation, age, has felt this way. &amp;nbsp;I don&amp;rsquo;t think it&amp;rsquo;s because I have two X chromosomes and I&amp;rsquo;m in a male-dominated environment.&lt;br /&gt;&lt;br /&gt;I&amp;rsquo;m not really sure what conclusions to draw from this experience. &amp;nbsp;I did want to share it so that other people know what it feels like.&lt;br /&gt;&lt;br /&gt;Possible conclusions:&lt;br /&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;When you&amp;rsquo;re tired, it&amp;rsquo;s easy to blame the first thing that springs to mind for your lack of shiny-happy feelings&lt;/li&gt;&lt;li&gt;When you&amp;rsquo;ve got a lot on your plate, seemingly-innocuous (even those driven by positive intentions) comments or actions can increase your stress levels&lt;/li&gt;&lt;li&gt;Don&amp;rsquo;t think too much. &amp;nbsp;It can drive you mad.&lt;/li&gt;&lt;/ul&gt;&lt;/p&gt;
-</description>
+      <description>So, following on from my observations of being an outsider at FOSDEM because I&amp;rsquo;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.
+I&amp;rsquo;m going to give specifics, but it&amp;rsquo;s not to name and shame or anything like that, it&amp;rsquo;s just that anonymising it will probably erase some of the subtleties. &amp;nbsp;But I&amp;rsquo;m not telling this to make anyone feel bad, because this is not an oh-poor-me story, this is just the way it goes sometimes and I want to share what it feels like.</description>
     </item>
     
     <item>
       <title>Feel like an outsider?</title>
       <link>https://trishagee.github.io/post/feel_like_an_outsider/</link>
-      <pubDate>Sat, 08 Feb 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Sat, 08 Feb 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/feel_like_an_outsider/</guid>
-      <description>&lt;div class=&#34;p1&#34;&gt;So, FOSDEM.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I&#39;ve heard great things about this conference, so I was pretty exited to go&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;table align=&#34;center&#34; cellpadding=&#34;0&#34; cellspacing=&#34;0&#34; class=&#34;tr-caption-container&#34; style=&#34;margin-left: auto; margin-right: auto; text-align: center;&#34;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style=&#34;text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/-PmLM8wpvxns/UvaWZpqWFeI/AAAAAAAAMxI/dqKWFf_PH4M/s1600/JavaDevRoom.jpg&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: auto; margin-right: auto;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://1.bp.blogspot.com/-PmLM8wpvxns/UvaWZpqWFeI/AAAAAAAAMxI/dqKWFf_PH4M/s1600/JavaDevRoom.jpg&#34; height=&#34;300&#34; width=&#34;400&#34; /&gt;&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class=&#34;tr-caption&#34; style=&#34;text-align: center;&#34;&gt;The Java dev room&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;div class=&#34;p1&#34;&gt;Now I know people talk about &lt;a href=&#34;http://en.wikipedia.org/wiki/Impostor_syndrome&#34;&gt;impostor syndrome&lt;/a&gt; whenever they mention the woeful lack of diversity at tech conferences.&amp;nbsp; Interestingly, I felt like an impostor at FOSDEM - not because I&#39;m a woman (there were quite a few techy women around at FOSDEM, more than I expected) but because I&#39;m not an open source person.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I mean, I am, technically - &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt; and the Java driver are both open source, and I have real live code on github.&amp;nbsp; But I didn&#39;t get there via the open source community, I was hired to do a specific job that happens to be open source (for which I am extremely grateful).&amp;nbsp; So although I knew the MongoDB folks I was there with and a lot of people who were running or speaking in the Java room, I didn&#39;t feel really at home in this conference.&amp;nbsp; I think I feel more comfortable with the ones aimed at enterprise Java developers (by which I mean Java people who work producing software for companies) because this is more similar to my background - I understand the attendees and I think I know what they want.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;It&#39;s also possible since I&#39;ve been to a lot more of the enterprise-aimed conferences that I used to feel just as awkward there, and I&#39;ve become much more comfortable now I&#39;ve been to many.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Which leads me to another observation: when I first went to JavaOne, in 2011, I felt extremely conspicuous as a woman.&amp;nbsp; I mean, I didn&#39;t do much to help, my skirts and shorts are occasionally… not really enterprise-developer-length.&amp;nbsp; But I felt like everyone noticed me and I felt the pressure to assert early on in every new conversation that I was, in fact, a developer and not a booth babe or a recruiter.&amp;nbsp; But these days, I feel much more comfortable.&amp;nbsp; And do you know what&#39;s really helped with that?&amp;nbsp; Being a speaker; having my face on the website.&amp;nbsp; I don&#39;t have to prove I&#39;m a developer, I was asked to speak at that conference - if the conference organisers think I belong there, then I belong there.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So… what.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Well, we can do things to combat this I-don&#39;t-belong-here feeling -&amp;nbsp;I&#39;m pretty sure we&#39;ve all been there, regardless of gender, race, background etc. &amp;nbsp;To be honest, us geeks probably feel this more than most humans.&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Conferences and user groups and meet ups and so forth can all make life a little easier for those feeling this.&amp;nbsp; At the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;London Java Community&lt;/a&gt;, for example, we started having greeters at the door for our social events, to try and make everyone feel welcomed and to introduce people to each other.&amp;nbsp; I also liked what YOW did - they had a really informal social event at the end of the first day of the conference (with free booze, yay!) which made it relatively easy to mingle with other people.&amp;nbsp; FOSDEM, with its lack of free food and drink gave us less opportunities to mingle with people other than your own friends, although I did like the canteen area for random encounters.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;But it&#39;s not just down to organisers of groups or events to solve this problem for us. &amp;nbsp;I&#39;ve found that if you do feel like you don&#39;t belong, there&#39;s a way to get over that, and it&#39;s not to withdraw.&amp;nbsp; It&#39;s to get more involved.&amp;nbsp; Find the groups you feel most comfortable with (for me, it started at the LJC), find the medium that you&#39;re most comfortable with (in person meet-ups, e-mail, IRC, Twitter, whatever), and join in.&amp;nbsp; Have conversations.&amp;nbsp; Meet people.&amp;nbsp; Once you start to make friends you start to feel like you belong, and when you start to feel like you belong you can step up and do more.&amp;nbsp; You might even find yourself accidentally propelled into speaking at an international conference, and who knows where you find yourself after that?&amp;nbsp; Although I appreciate that&#39;s not for everyone.&amp;nbsp; The point is, find your comfort zone for entry and gradually push yourself more - as you find yourself more accepted and respected, you&#39;ll feel less like an outsider. &amp;nbsp;At the very least, you&#39;ll have friends to talk to at these sorts of events.&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;And don&#39;t be put off by a couple of bad experiences - you don&#39;t have to go back to that group, those people, that thing, but don&#39;t assume that all groups or events are like that. &amp;nbsp;I&#39;ve been to a number of events, techy or otherwise, that I didn&#39;t feel at home with. &amp;nbsp;If, after two tries (in person, I&#39;ll give e-mails lists or chat rooms many more chances), I still don&#39;t get on with it, I try somewhere else.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;There are still going to be times when you&#39;re not in your comfort zone, but this is probably healthy - pushing yourself a little leads to different opportunities.&amp;nbsp; And in my case, it reminded me what it was like to be an outsider, a newbie.&amp;nbsp; And that gives us greater empathy for people in that situation.&lt;/div&gt;
-</description>
+      <description>So, FOSDEM.I&#39;ve heard great things about this conference, so I was pretty exited to goThe Java dev roomNow I know people talk about impostor syndrome whenever they mention the woeful lack of diversity at tech conferences.&amp;nbsp; Interestingly, I felt like an impostor at FOSDEM - not because I&#39;m a woman (there were quite a few techy women around at FOSDEM, more than I expected) but because I&#39;m not an open source person.</description>
     </item>
     
     <item>
       <title>Why is it News when a woman becomes CEO?</title>
       <link>https://trishagee.github.io/post/why_is_it_news_when_a_woman_becomes_ceo/</link>
-      <pubDate>Mon, 20 Jan 2014 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Mon, 20 Jan 2014 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/why_is_it_news_when_a_woman_becomes_ceo/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m pleased to see that GM has hired the &amp;ldquo;best person for the job&amp;rdquo; as &lt;a href=&#34;http://www.linkedin.com/today/post/article/20131220221807-281874400-in-hiring-mary-barra-gm-s-board-did-more-than-break-the-mold&#34;&gt;their new CEO&lt;/a&gt;&amp;nbsp;- that does seem like a good idea. &amp;nbsp;I&amp;rsquo;m happy her gender did not get in the way. &amp;nbsp;What makes me uncomfortable is the international news coverage of the decision of this large manufacturer to hire a woman as their CEO - if she were a man (and/or black/gay/disabled) would the headline read &amp;ldquo;The camera loves her. So do employees.&amp;rdquo;?&lt;br /&gt;&lt;br /&gt;But at the root of that is probably the thing I&amp;rsquo;m most unhappy about. &amp;nbsp;What I&amp;rsquo;m not happy about is that it is 2014, halfway through the second decade of the 21st century, and she&amp;rsquo;s the first woman CEO of a car manufacturer. &lt;br /&gt;&lt;br /&gt;I worked at &lt;a href=&#34;http://corporate.ford.com/&#34;&gt;Ford Motor Company&lt;/a&gt; as an undergraduate and, later, a graduate. &amp;nbsp;I basically did my apprenticeship there. I know that over fifteen years ago they were hiring graduates from different disciplines (men and women), they had a women-in-leadership programme (or probably several, as I was only involved in the one for the IT organisation), they had a great maternity package (a great package for adoption too, but only the standard paternity package, ho-hum), on-site creches at the bigger locations, and were actively looking for ways to improve their diversity across the board. &amp;nbsp;They had issues on the plant floor which they were actively working to address, but management did not have a culture of discrimination, to my knowledge. &amp;nbsp;I remember the number of &amp;ldquo;real&amp;rdquo; techies in my IT graduate intake year, not the number of women, probably because the women were better represented than the coders.&lt;br /&gt;&lt;br /&gt;So why has it taken so long for these old, old companies (Ford turned 100 while I was there) to put a woman into a position of leadership? &amp;nbsp;Maybe all these actions are what has, finally, lead to this mold-breaking appointment. &amp;nbsp;Or maybe decades of doing what is supposed to be the right thing is not having any impact at all - Mary Barra&amp;rsquo;s father worked at GM for 39 years, she herself started there as an intern and engineer, and has worked in different areas of the company as she&amp;rsquo;s risen through the ranks. &amp;nbsp;In this day and age, it&amp;rsquo;s probably more unusual to appoint a CEO who worked their way up to that position in that company than it is to appoint a woman - I&amp;rsquo;m not sure how many more there are out there when often it seems the best way to get a promotion now is to switch company.&lt;br /&gt;&lt;br /&gt;I don&amp;rsquo;t know why it took GM so long to appoint a female CEO, I don&amp;rsquo;t know how they managed to be the first of the big automotives. &amp;nbsp;And although I really hate all this &amp;ldquo;Oh wow, a woman CEO&amp;rdquo; news coverage (and I dare not read the comments because I know I&amp;rsquo;ll get angry), I don&amp;rsquo;t know if it&amp;rsquo;s something we need to do, to hold up these positive female role models, or something we should stop doing because all it does is point out how unusual women in leadership are - how news-worthy it is that a big, old organisation has finally joined the 21st century. &amp;nbsp;But the fact that I felt the need to blog about it I think means we still have a lot of work to do in this area.&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;m pleased to see that GM has hired the &amp;ldquo;best person for the job&amp;rdquo; as their new CEO&amp;nbsp;- that does seem like a good idea. &amp;nbsp;I&amp;rsquo;m happy her gender did not get in the way. &amp;nbsp;What makes me uncomfortable is the international news coverage of the decision of this large manufacturer to hire a woman as their CEO - if she were a man (and/or black/gay/disabled) would the headline read &amp;ldquo;The camera loves her.</description>
     </item>
     
     <item>
       <title>Devoxx: The Problem with Women - A Technical Approach</title>
       <link>https://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</link>
-      <pubDate>Tue, 18 Dec 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Tue, 18 Dec 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</guid>
-      <description>&lt;p&gt;As well as talking about, you know, &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2012/12/agile-when-agile-goes-well.html&#34;&gt;actual work-type-stuff&lt;/a&gt;, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. &amp;nbsp;This went so well at JavaOne that I thought it would be difficult to top. &amp;nbsp;Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.&lt;br /&gt;&lt;br /&gt;I was incredibly impressed with the audience. &amp;nbsp;There were literally hundreds of people, most of them men. &amp;nbsp;To me, it proved once again that the men in this industry are determined to &amp;ldquo;fix&amp;rdquo; this problem of gender imbalance. &amp;nbsp;And they&amp;rsquo;re happy to extend that to improving diversity as a whole, once you highlight the bigger problem. &amp;nbsp;It says to me that this is not naturally a misogynistic industry, where you have to fight against the boys club to get anywhere. &amp;nbsp;It says to me that we are all in this together. &amp;nbsp;After all, in the &amp;ldquo;real&amp;rdquo; world the geeks are still outsiders, and different, so we&amp;rsquo;re used to embracing our different-ness - whether that&amp;rsquo;s because you&amp;rsquo;re the only girl in the room, the only Java developer at a .NET conference, or the only techy at a dinner party.&lt;br /&gt;&lt;br /&gt;Conferences are a self-selecting audience, I know - these are the people who are investing time and money in advancing their careers, or at least encouraging their employers to do. &amp;nbsp;But for the punchline of this session, these are exactly the right people. &amp;nbsp;We need to go out, tell everyone how much we enjoy our jobs; tell kids that programming is cool, and &lt;i&gt;show&lt;/i&gt; them it&amp;rsquo;s fun; mentor other people, and each other, and be a role model. &amp;nbsp;I don&amp;rsquo;t care what gender you are or what colour you are or what your dark secret is - &lt;i&gt;you&lt;/i&gt; are the role model to inspire someone. &lt;br /&gt;&lt;br /&gt;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/p/just-do-something.html&#34;&gt;Just do it&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;&lt;div style=&#34;text-align: center;&#34;&gt;&lt;object height=&#34;395&#34; width=&#34;395&#34;&gt;  &lt;param name=&#34;movie&#34; value=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34;/&gt;  &lt;param name=&#34;allowFullScreen&#34; value=&#34;true&#34;/&gt;  &lt;param name=&#34;wmode&#34; value=&#34;direct&#34;/&gt;  &lt;param name=&#34;bgcolor&#34; value=&#34;#222222&#34;/&gt;  &lt;param name=&#34;flashVars&#34; value=&#34;sv=true&amp;amp;pageId=3513&#34;/&gt;  &lt;embed src=&#34;http://www.parleys.com/dist/share/parleysshare.swf&#34; type=&#34;application/x-shockwave-flash&#34; flashVars=&#34;sv=true&amp;amp;pageId=3513&#34; allowfullscreen=&#34;true&#34; bgcolor=&#34;#222222&#34; width=&#34;395&#34; height=&#34;395&#34;/&gt;&lt;/object&gt;&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description>As well as talking about, you know, actual work-type-stuff, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. &amp;nbsp;This went so well at JavaOne that I thought it would be difficult to top. &amp;nbsp;Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.</description>
     </item>
     
     <item>
       <title>JavaOne: The Problem With Women - A Technical Approach</title>
       <link>https://trishagee.github.io/post/javaone_the_problem_with_women__a_technical_approach/</link>
-      <pubDate>Thu, 04 Oct 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Thu, 04 Oct 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/javaone_the_problem_with_women__a_technical_approach/</guid>
-      <description>&lt;p&gt;Yesterday dawned, with a sense of foreboding (actually it dawned with me coughing my lungs out, but we&amp;rsquo;ve heard enough about the sub-optimal state of my respiratory system this week). &amp;nbsp;&amp;nbsp;On this day, I was giving the &lt;a href=&#34;http://mechanitis.blogspot.com/2012/06/subject-of-women-programmers-is-boring.html&#34;&gt;talk I was dreading&lt;/a&gt; when I got asked to do it.&amp;nbsp; It&amp;rsquo;s the talk I actually put more work into than any of the other sessions I was presenting at this JavaOne.&amp;nbsp; It was the Women In IT talk.&lt;br /&gt;&lt;br /&gt;It&amp;rsquo;s timely, given that conference season has one again led to cries of &lt;a href=&#34;http://cerianjenkins.me/2012/10/02/insight-of-an-intern-sexism-in-tech/&#34;&gt;sexism&lt;/a&gt; and &lt;a href=&#34;http://blog.jessitron.com/2012/09/this-is-not-ok.html&#34;&gt;discrimination&lt;/a&gt;. &amp;nbsp;So although I really hate banging on about the subject (you&amp;rsquo;d never believe it from my blog) it&amp;rsquo;s still necessary to cover.&lt;br /&gt;&lt;br /&gt;I feel, and have felt for a long time, that &lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/01/on-how-not-to-target-girl-geeks.html&#34;&gt;the way we&amp;rsquo;re approaching the &amp;ldquo;problem&amp;rdquo;&lt;/a&gt; of the lack of women techies is just wrong. &amp;nbsp;&lt;i&gt;Obviously&lt;/i&gt; painting stuff pink is just not going to cut it (I hope that&amp;rsquo;s obvious). &amp;nbsp;I think the fundamental problem is that we keep thinking about women. &amp;nbsp;While that should be great for someone like me, it actually triggers a whole bunch of gender stereotyping in our poor human brains which prevents us seeing the big picture - the fact that we&amp;rsquo;re not attractive as an industry for women suggests we&amp;rsquo;re losing a whole heap of talent because of some sort of image problem. &amp;nbsp;We just don&amp;rsquo;t see the other missing minorities, or we&amp;rsquo;re not comfortable talking about them. &amp;nbsp;I mean, can you image running a session about attracting more black people into programming? &amp;nbsp;I suspect there would be uproar in singling out a minority based on something as arbitrary as skin colour.&lt;br /&gt;&lt;br /&gt;To be fair, even before the session there was a tiny bit of controversy:&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://4.bp.blogspot.com/-JgSVCSZexEg/UG3fuhHgeuI/AAAAAAAALLg/FYubozFuf-E/s1600/pmonks.png&#34; imageanchor=&#34;1&#34; style=&#34;margin-left: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://4.bp.blogspot.com/-JgSVCSZexEg/UG3fuhHgeuI/AAAAAAAALLg/FYubozFuf-E/s1600/pmonks.png&#34; /&gt;&lt;/a&gt;&lt;/div&gt;&lt;br /&gt;It is nice though to see guys (because indeed this was someone of the male persuasion) getting upset at the thought of someone taking a shot at the girls again. &amp;nbsp;I think it probably would have been a &lt;i&gt;little&lt;/i&gt; more helpful to the session if they&amp;rsquo;d put my name on it&amp;hellip;&lt;br /&gt;&lt;br /&gt;Maybe the publicity helped, because there was a really decent turnout for the talk. &amp;nbsp;I&amp;rsquo;m terrible at estimating numbers, and of course I completely forgot to take a photo of my lovely audience. &amp;nbsp;But I&amp;rsquo;d say there were&amp;hellip; 60? 80? people there? &amp;nbsp;Between 50 and 100 anyway, and seemed like a roughly even split of men and women, and there were people of different backgrounds. &amp;nbsp;Which is great, it&amp;rsquo;s more women than you normally see at a conference, and more men than you usually see at an event talking about &amp;ldquo;women&amp;rsquo;s issues&amp;rdquo;. &amp;nbsp;I really love running sessions about this subject with guys there, I&amp;rsquo;m of the opinion that talking about this with just women is almost completely useless, and isolates us from the rest of our community.&lt;br /&gt;&lt;br /&gt;&lt;br /&gt;I took the novel approach of actually trying to treat the problem the same way coders treat any problem: break it down logically.&amp;nbsp;&amp;nbsp;So I had the problem, the requirements, a retrospective, and the aim was to come up with a list of tasks going forward.&lt;br /&gt;&lt;br /&gt;&lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; from Oracle was great as our &amp;ldquo;Business Analyst&amp;rdquo; - not only did he outline the business value in increasing diversity in the workplace:&lt;br /&gt;&lt;ol&gt;&lt;li&gt;Greater pool of talent to hire from&lt;/li&gt;&lt;li&gt;Happier and more productive employees&lt;/li&gt;&lt;li&gt;Greater retention rates&lt;/li&gt;&lt;/ol&gt;He also gave examples of how this is a bigger problem than just &amp;ldquo;Women in IT&amp;rdquo; - he spoke about being the outsider as an American who had relocated to Sweden, and how he benefitted from being in a country that recognises a father&amp;rsquo;s rights when his daughter was born there.&lt;br /&gt;&lt;br /&gt;&lt;div class=&#34;separator&#34; style=&#34;clear: both; text-align: center;&#34;&gt;&lt;a href=&#34;http://1.bp.blogspot.com/-K9RVDN6uDE8/UG3mH1ykffI/AAAAAAAALL4/xwpuhtMpvTY/s1600/TrishaRetrospective.jpg&#34; imageanchor=&#34;1&#34; style=&#34;clear: left; float: left; margin-bottom: 1em; margin-right: 1em;&#34;&gt;&lt;img border=&#34;0&#34; height=&#34;400&#34; src=&#34;http://1.bp.blogspot.com/-K9RVDN6uDE8/UG3mH1ykffI/AAAAAAAALL4/xwpuhtMpvTY/s400/TrishaRetrospective.jpg&#34; width=&#34;298&#34; /&gt;&lt;/a&gt;&lt;/div&gt;At LMAX we&amp;rsquo;re super-Agile (something we&amp;rsquo;ll actually be talking about at &lt;a href=&#34;http://www.devoxx.com/display/DV12/Home&#34;&gt;Devoxx&lt;/a&gt; this year), so the logical thing to do is to have a retrospective. &amp;nbsp;The question was somewhat fluffy - tell me about working as a techie, specific points about being female not essential. &amp;nbsp;So as with all our retrospectives, we covered good points, bad points, questions and ideas.&lt;br /&gt;&lt;br /&gt;&amp;lt;aside&amp;gt;Incidentally, loads of people there knew about Agile methods and many were using them at work. Does this mean that agile is now more-or-less the norm? &amp;nbsp;Does it mean that companies that encourage people to go to conferences are agile or agile-friendly companies? &amp;nbsp;Or does it mean that people who care about people (i.e. those that go to a session like this) are more drawn to Agile methods? &amp;lt;/aside&amp;gt;&lt;br /&gt;&lt;br /&gt;(Yes, I&amp;rsquo;m wearing trainers to present, for the very first time! Thanks to &lt;a href=&#34;https://twitter.com/CeciliaBorg/&#34;&gt;Cecilia Borg&lt;/a&gt; for taking the photo)&lt;br /&gt;&lt;br /&gt;((Also, special super-thanks to &lt;a href=&#34;https://twitter.com/steveonjava&#34;&gt;Stephen Chin&lt;/a&gt; who saved my presentation by sneaking in with a flipchart, stand and pens literally seconds before I needed it))&lt;br /&gt;&lt;br /&gt;Everyone in the audience came up with really great points about working as a techie. &amp;nbsp;The thing I found most interesting was that very little of it was gender-specific.&lt;br /&gt;&lt;br /&gt;&lt;h3&gt;Negatives&lt;/h3&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;&amp;ldquo;Pink it and Shrink it&amp;rdquo; marketing campaigns, allegedly for women.&lt;/li&gt;&lt;li&gt;How do you get into the job? &amp;nbsp;Entry and career paths unclear&lt;/li&gt;&lt;li&gt;Micromanagement&lt;/li&gt;&lt;li&gt;The hours&lt;/li&gt;&lt;li&gt;Lack of mentoring/role models&lt;/li&gt;&lt;li&gt;Booth Babes (they are bad for women, but they are bad for men too - very demeaning to assume that guys as bright and&amp;nbsp;successful&amp;nbsp;as techies are drawn only to boobs)&lt;/li&gt;&lt;li&gt;Salary discrepancies&lt;/li&gt;&lt;li&gt;&lt;a href=&#34;http://www.urbandictionary.com/define.php?term=brogrammer&#34;&gt;Brogrammers&lt;/a&gt; stereotype&lt;/li&gt;&lt;li&gt;Education pipeline – women doing &amp;ldquo;computery&amp;rdquo; subjects decreasing from about 13 years old and onwards (&lt;a href=&#34;http://mechanitis.blogspot.com/2011/11/why-we-shouldnt-target-women.html#comment-form&#34;&gt;UK numbers&lt;/a&gt;)&lt;/li&gt;&lt;li&gt;Pressure to be visible when you&amp;rsquo;re a woman/minority&lt;/li&gt;&lt;li&gt;You&amp;rsquo;re seen as a woman first and a techie second&lt;/li&gt;&lt;li&gt;Time drain to keep current, 90% of what you do is learning new stuff not using skills you already had&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&lt;h3&gt;Positives&lt;/h3&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;Being different makes you stand out&lt;/li&gt;&lt;li&gt;The hours&lt;/li&gt;&lt;li&gt;The salary&lt;/li&gt;&lt;li&gt;Woman&amp;rsquo;s perspective is a positive for the team (&lt;i&gt;Later agreed that diverse teams generally were more interesting to work in&lt;/i&gt;)&lt;/li&gt;&lt;li&gt;We&amp;rsquo;ve seen an increase in the number of senior women&lt;/li&gt;&lt;li&gt;Balanced teams are more productive&lt;/li&gt;&lt;li&gt;There are lots of jobs in IT, always hiring&lt;/li&gt;&lt;li&gt;Flexibility and meritocracy&lt;/li&gt;&lt;li&gt;Women Are Exceptional (rare to get in as a girl so you&amp;rsquo;re either really interested, or really good, or both)&lt;/li&gt;&lt;/ul&gt;&lt;br /&gt;&lt;h3&gt;Questions&lt;/h3&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;/div&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;/div&gt;&lt;ul&gt;&lt;li&gt;I don&amp;rsquo;t understand this, my CIO is a woman?&lt;/li&gt;&lt;li&gt;Is there a correlation between gamers and professional programmers?&lt;/li&gt;&lt;li&gt;Does the wider availability of technology (e.g. Facebook) lead to a wider appeal (of working in the industry) to people?&lt;/li&gt;&lt;li&gt;As parents should we be doing more to encourage our kids into technology?&lt;/li&gt;&lt;li&gt;Is the image of techies changing?&amp;nbsp;&lt;/li&gt;&lt;/ul&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;We can replace the word &amp;ldquo;Woman&amp;rdquo; with person pretty much everywhere, and it becomes clear that we shouldn&amp;rsquo;t be trying to work out the problems that face women, but instead be working harder to attract more awesome people into the job we love (I asked who in the room really hated the job, and one person half put his hand up. &amp;nbsp;So as techies, we generally like what we do), and to look after everyone who&amp;rsquo;s here already as well. &amp;nbsp;So that lead on to the actions we could do to help this.&lt;/div&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;h3&gt;Actions&lt;/h3&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;Look elsewhere for technical talent (e.g. people with craft skills are creative and practical)&lt;/li&gt;&lt;li&gt;We should be more actively networking (join your local &lt;a href=&#34;http://www.java.net/jugs/java-user-groups&#34;&gt;JUG&lt;/a&gt;!)&lt;/li&gt;&lt;li&gt;Get them young - go to schools and show kids what we do&lt;/li&gt;&lt;li&gt;Challenge stereotypes - we&amp;rsquo;re not geeks who live at home and code in our bedrooms, we&amp;rsquo;re collaborative and creative individuals&lt;/li&gt;&lt;li&gt;We need more role models of all flavours&lt;/li&gt;&lt;li&gt;Flexible education - it should be cheaper to make &amp;ldquo;mistakes&amp;rdquo; - e.g. to switch degrees or to cross-train from other qualifications, we can&amp;rsquo;t be limited by choices we made so young&lt;/li&gt;&lt;li&gt;Work experience to give kids/young people a taste of different jobs&lt;/li&gt;&lt;li&gt;Encourage / expect children to ask questions, more than just learning the school curriculum&lt;/li&gt;&lt;li&gt;Buy kids technology e.g. raspberry pi, arduino&lt;/li&gt;&lt;li&gt;Show our faces, we are all role models&lt;/li&gt;&lt;li&gt;Be vocal about our passions. &amp;nbsp;We love this job, let&amp;rsquo;s tell people.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I felt extremely positive at the end of the session, I think guys saw some of the attitudes that affect women, and women saw that guys were not only sympathetic to our &amp;ldquo;plight&amp;rdquo;, but that they suffer discrimination too. &amp;nbsp;Basically we&amp;rsquo;re all in this together, and talking gender specifically is sometimes dividing us.&lt;/div&gt;&lt;br /&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;/div&gt;One observation that I loved was&amp;nbsp;that one guy&amp;rsquo;s wife wanted their daughter to do what he does because he loves his job, and she sees hers as a chore.&lt;br /&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div style=&#34;margin-bottom: 0cm;&#34;&gt;I also had a number of spin-off conversations later, as always happens when people are dead interested, and a really good point someone raised is that as techies we&amp;rsquo;re frequently the odd one out, the outsider, in a group of &amp;ldquo;normal&amp;rdquo; people. &amp;nbsp;We&amp;rsquo;re actually quite used to it and pretty much embrace it. So if anything we&amp;rsquo;re an industry which will be more tolerant of your outsider-ness (as a woman, as someone who looks different) than more traditional jobs. &amp;nbsp;It&amp;rsquo;s a thought, and an attitude we should perhaps publish more.&lt;br /&gt;&lt;br /&gt;The three things I think we should do as individuals are:&lt;br /&gt;&lt;br /&gt;&lt;b&gt;1. Take The Plunge&lt;/b&gt;&lt;br /&gt;Women in particularly, but all of you who don&amp;rsquo;t think you can be That Person - start talking at conferences, start writing blogs, start a new user group if you haven&amp;rsquo;t got one, go into schools. &amp;nbsp;Be that role model.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;2. Don&amp;rsquo;t Point Out Her Gender&lt;/b&gt;&lt;br /&gt;I know the guys mean well, and women are guilty of this too, but don&amp;rsquo;t highlight to a women at a conference/interview/meetup when you meet her for the first time that she&amp;rsquo;s female. &amp;nbsp;She knows this. It&amp;rsquo;s almost always said in a positive way (&amp;ldquo;Wow, it&amp;rsquo;s great that you&amp;rsquo;re here, we don&amp;rsquo;t see many women in these parts&amp;rdquo;), and I know you mean it to be encouraging. &amp;nbsp;But it just highlights how different she is, not how awesome it is she&amp;rsquo;s doing the same thing you&amp;rsquo;re doing.&lt;br /&gt;&lt;br /&gt;&lt;b&gt;3. What We Do Is Awesome&lt;/b&gt;&lt;br /&gt;We&amp;rsquo;re here because we like what we do, we get paid for doing our hobbies. &amp;nbsp;Not many people can boast of that. &amp;nbsp;We need to get out there and tell people how much fun it is to be a techie. &amp;nbsp;Don&amp;rsquo;t let the Hollywood geek stereotype be the only image people have of us.&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;br /&gt;I had a really good time, and I came out feeling very positive about my job, my industry, and the people who do this. &amp;nbsp;I&amp;rsquo;d love to run this session again if I get the opportunity.&lt;br /&gt;&lt;br /&gt;&lt;i&gt;EDIT: The &lt;a href=&#34;https://oracleus.activeevents.com/connect/search.ww?event=javaone#loadSearch-event=javaone&amp;amp;searchPhrase=CON11338&amp;amp;searchType=session&amp;amp;tc=0&amp;amp;sortBy=&amp;amp;p=&amp;amp;i(11424)=&amp;amp;i(10050)=&amp;amp;i(10090)=&amp;amp;i(10092)=&amp;amp;i(11842)=&amp;amp;i(10086)=&#34;&gt;slides and audio&lt;/a&gt; are available. &amp;nbsp;The content catalog is a little counter-intuitive to use, hopefully that link will take you to a page with this session title on - click on it and there&amp;rsquo;s &amp;ldquo;media&amp;rdquo; on the pop up window. &amp;nbsp;This session doesn&amp;rsquo;t lend itself well to audio because of the audience participation aspect but I do repeat most of the points and you get a feel for the session.&lt;/i&gt;&lt;/p&gt;
-</description>
+      <description>Yesterday dawned, with a sense of foreboding (actually it dawned with me coughing my lungs out, but we&amp;rsquo;ve heard enough about the sub-optimal state of my respiratory system this week). &amp;nbsp;&amp;nbsp;On this day, I was giving the talk I was dreading when I got asked to do it.&amp;nbsp; It&amp;rsquo;s the talk I actually put more work into than any of the other sessions I was presenting at this JavaOne.&amp;nbsp; It was the Women In IT talk.</description>
     </item>
     
     <item>
       <title>On The Evil Of Stereotypes</title>
       <link>https://trishagee.github.io/post/on_the_evil_of_stereotypes/</link>
-      <pubDate>Fri, 27 Jul 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Fri, 27 Jul 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/on_the_evil_of_stereotypes/</guid>
-      <description>&lt;div class=&#34;p1&#34;&gt;I attended (one way or another) two events last week that got me thinking&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;The first was&amp;nbsp;&lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/detail/23066&#34;&gt;Girl Developers will Save the World&lt;/a&gt;&amp;nbsp;- a session that had me a little confused as to whether that referred to me, or&amp;nbsp;&lt;i&gt;actual&lt;/i&gt;&amp;nbsp;girls, i.e. those that are not yet legally classed as adults.&amp;nbsp; The second was the&amp;nbsp;&lt;a href=&#34;http://remarkablewomen.co.uk/post/27487174154/has-social-media-given-women-a-louder-voice&#34;&gt;Remarkable Women Twitter&lt;/a&gt;&amp;nbsp;party the following day.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Firstly, a caveat/disclaimer (as usual) - both events were useful, thought-provoking and overall worthwhile.&amp;nbsp; But the alarming thing to me was the number of times I heard &#34;boys are…&#34; or &#34;women think…&#34; or &#34;girls prefer…&#34;.&amp;nbsp; And I know we often make generalisations to stress a point, but I&#39;m becoming extremely wary of statements that group people together along some arbitrary boundaries. &amp;nbsp;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&#34;background-color: white;&#34;&gt;&#34;Google+ failed because it&#39;s design by men for men&#34; - no, it&#39;s because it&#39;s not designed for anyone. &amp;nbsp;Its only purpose was to compete with Facebook.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&#34;background-color: white;&#34;&gt;&#34;Women are better at communicating and social activities&#34; - what, all of us?&amp;nbsp; I&#39;m better at communicating than every man I&#39;ve ever met?&amp;nbsp; Than someone like Obama or Steve Jobs or John Stewart?&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&#34;background-color: white;&#34;&gt;&#34;Women do better with female role models&#34; - where are the statistics?&amp;nbsp; And do men do better with male role models, or do they do better with female role models too because women are so much &#34;better at communicating&#34;?&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I&#39;m not saying these statements aren&#39;t ever true.&amp;nbsp; I&#39;m not even saying they&#39;re not true &#34;most&#34; of the time (although I want to see proof).&amp;nbsp; But any kind of strategy based on gross generalisations had better take into account the fact that these are generalisations, that they are based on Statistics&lt;sup&gt;1&lt;/sup&gt;(and sometimes not even those), and that they frequently correspond nicely to things we&#39;d&amp;nbsp;&lt;i&gt;like&lt;/i&gt;&amp;nbsp;to think or we are trained to think.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Humans are great at categorising.&amp;nbsp; It&#39;s a survival skill - &#34;yummy&#34;, &#34;warm&#34;, &#34;safe&#34;, &#34;funny coloured = hurty tummy&#34;, &#34;things with sharp pointy teethies like to eat me&#34;.&amp;nbsp; Without this skill we wouldn&#39;t have made it as a species.&amp;nbsp; And marketing people, who have to use psychology to get us to part with our money, understand this.&amp;nbsp; They identify trends and target their shinies to these trends (&lt;a href=&#34;http://en.wikipedia.org/wiki/Yuppie&#34;&gt;Yuppie&lt;/a&gt;,&amp;nbsp;&lt;a href=&#34;http://en.wikipedia.org/wiki/Baby_boomer&#34;&gt;Baby Boomer&lt;/a&gt;, etc).&amp;nbsp; By identifying these groups and aiming at them, they make them real. &amp;nbsp;And since humans are a clan-based society, who (again for evolutionary reasons) need to fit in with their gang, these groups become aspirational.&amp;nbsp; Essex people drive BMWs and wear white stilettos?&amp;nbsp; I don&#39;t and I live in Essex, oh no! I&#39;d better get on that right away, otherwise people will see I&#39;m An Imposter.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So when people go around saying &#34;Women are great at communicating&#34;, we believe it.&amp;nbsp; Those of us who are a bit sucky at it or maybe don&#39;t care about it wonder if we&#39;re&amp;nbsp;&lt;a href=&#34;http://mechanitis.blogspot.co.uk/2011/10/on-similarities-between-girls-and.html&#34;&gt;aliens&lt;/a&gt;.&amp;nbsp; Or we believe we&#39;re great at it because we should be, and we don&#39;t work at improving our skills.&amp;nbsp; Men are terrible at cleaning?&amp;nbsp; Great!&amp;nbsp; I don&#39;t have to clean the toilet!&amp;nbsp; Women&#39;s minds aren&#39;t programmed for engineering because they&#39;re more communicaty than logical?&amp;nbsp; Fine, I&#39;ll teach physics instead of using it.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;If I hear one more person say women don&#39;t do well in IT because they prefer more soft-skill-based roles, I&#39;m going to scream. In that case, why are there more women entering accountancy than men? In that case, how do men ever get to manage people, and why does pair programming work so well?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;If I hear once more that men put women off these roles because of the macho male environment, I&#39;m going to drag that person through a tour of every office I&#39;ve worked in - I&#39;m constantly disappointed that my male colleagues enjoy football even less than than the girls I went to school with.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;So, using stereotypes to try and address things like gender disparity in IT is not going to work. &amp;nbsp;The men in our industry are not beer-swilling, football-watching, womanising alpha males. &amp;nbsp;So why, when we talk about the missing women in our industry, do we assume they will be pink-obsessed, fashion-conscious, gossipy socialites who only hang around with other women? &amp;nbsp;Do you even know any women like that? &amp;nbsp;This is not Desperate Housewives, this is Real Life.&lt;br /&gt;&lt;br /&gt;Really good marketing people don&#39;t target people as they are - no-one wants to be considered poor - you&#39;re a bargain hunter or great at identifying value. &amp;nbsp;Similarly, if you want women to use your product or &amp;nbsp;work for your company, you don&#39;t target to weight-obsessed, soap-opera-watching, child-caring fashionistas. &amp;nbsp;Instead you target how a person wants to be seen. &amp;nbsp;You might say using your product or working for your company makes a person look smart, savvy and awesome. &amp;nbsp;And who doesn&#39;t want to be all of those things?&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;&lt;br /&gt;Saying people in IT are sexy and intelligent and earn loads of money and have oodles of job options and can find work globally &lt;i style=&#34;background-color: white;&#34;&gt;might&lt;/i&gt; be a compelling story for people.&amp;nbsp; Some of those people might even be women.&amp;nbsp; Some of them might even be the other missing minorities&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;Thinking in stereotypes can be damaging to everyone. &amp;nbsp;Gender stereotypes in both directions are so sweeping they are unhelpful, you can&#39;t categorise fully half of the world&#39;s population as one thing or another. &amp;nbsp;I hear men doing men a disservice by saying things that aren&#39;t even true for themselves, and the same for women. &amp;nbsp;It&#39;s something we&#39;re trained to do, and something the media loves to do. &amp;nbsp;But it&#39;s wrong. &amp;nbsp;&lt;/div&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;So the next time you find yourself saying &#34;men&amp;nbsp;prefer...&#34; or &#34;women are...&#34;, stop and think if this is actually true for all of the men and women you know. &amp;nbsp;And if it&#39;s not, just don&#39;t say it.&lt;/div&gt;&lt;br /&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;a href=&#34;http://en.wikipedia.org/wiki/Lies,_damned_lies,_and_statistics&#34;&gt;Lies, damned dies and…&lt;/a&gt;&lt;/div&gt;
-</description>
+      <description>I attended (one way or another) two events last week that got me thinkingThe first was&amp;nbsp;Girl Developers will Save the World&amp;nbsp;- a session that had me a little confused as to whether that referred to me, or&amp;nbsp;actual&amp;nbsp;girls, i.e. those that are not yet legally classed as adults.&amp;nbsp; The second was the&amp;nbsp;Remarkable Women Twitter&amp;nbsp;party the following day.Firstly, a caveat/disclaimer (as usual) - both events were useful, thought-provoking and overall worthwhile.&amp;nbsp; But the alarming thing to me was the number of times I heard &#34;</description>
     </item>
     
     <item>
       <title>The subject of women programmers is boring</title>
       <link>https://trishagee.github.io/post/the_subject_of_women_programmers_is_boring/</link>
-      <pubDate>Sun, 24 Jun 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Sun, 24 Jun 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/the_subject_of_women_programmers_is_boring/</guid>
-      <description>&lt;p&gt;&lt;br /&gt;&lt;div class=&#34;p1&#34;&gt;I&amp;rsquo;ve been challenged to do a session at a very large conference around women in programming. &amp;nbsp;Which leads to two reactions from me 1) wow, what an honour! and 2) &lt;em&gt;sigh&lt;/em&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The problem with these sessions is that you&amp;rsquo;re preaching to the choir.&amp;nbsp; Those who turn up are a) women or b) men who are sympathetic and supportive to the cause.&amp;nbsp; People who are actively discriminating against women or, more commonly, those who don&amp;rsquo;t know their actions are hurting diversity in our industry, are the least likely to receive the message.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;This tends to lead to the same types of sessions - yes, our industry under-represents certain segments of society (i.e. women); yes, we all agree this is a problem; yes, everyone in this room is trying their best to do the right things; no, we have no idea how to fix it at the industry-level.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;These sessions are &lt;i&gt;boring&lt;/i&gt;.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;How do you make this subject interesting, relevant, and appeal to the types of people it really should target?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;I&amp;rsquo;m considering all sorts of games with the title, even going so far as to put &amp;ldquo;Boobs&amp;rdquo; in it. &amp;nbsp;I &lt;i&gt;very&lt;/i&gt; much doubt that will make my final selection. &amp;nbsp;I&amp;rsquo;m thinking hard about the format, I definitely don&amp;rsquo;t want it to be preachy, I want it to be informative, collaborative, and, preferably, funny. &amp;nbsp;Not too much to ask, right?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;In programming, if something is difficult to do right, it&amp;rsquo;s a sign of a smell - the feature being requested might be contrary to the purpose of the product; the application might not have been designed around the business&amp;rsquo;s real requirements; there could be a large amount of tech debt that should have been cleaned up along the way but wasn&amp;rsquo;t; the requirements might be fluffy, changeable, or simply outright wrong.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Does the fact that we can&amp;rsquo;t get these sessions right point to a smell as well?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Are they pitched at the wrong people? &amp;nbsp;Are we saying the wrong things, suggesting the wrong ideas, tackling the wrong problem? &amp;nbsp;Should we even be talking about women in technology?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Or am I just the wrong person to do it? &amp;nbsp;I don&amp;rsquo;t even want to be the spokesperson for women developers.&amp;nbsp; I can only be the spokesperson for me.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Overall I can&amp;rsquo;t help but think we&amp;rsquo;re missing the point again. &amp;nbsp;If I think that events aimed at girls are wrong, then I think that sessions at conferences aimed at highlighting the missing women there is also wrong. &amp;nbsp;But this is a great audience to reach - these are people who want to further their careers, who are likely to be putting in extra hours to improve themselves/their company/the industry. &amp;nbsp;Give a techy a tricky problem to gnaw on and there&amp;rsquo;s no-one happier. &amp;nbsp;And what could be more tricky than the seemingly-unsolvable problem of attracting greater diversity into technical roles?&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;The answer might lie in shaping the problem such that it is interesting enough, difficult enough and technical enough for us.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;Or maybe the answer is simply accepting the fact that you&amp;rsquo;re not going to change those who are part of the problem, but you can change the message you are giving.&amp;nbsp; I know many men are tired of being berated about this issue because they&amp;rsquo;re already doing the best they can.&amp;nbsp; I know many women are bored of hearing about it because they&amp;rsquo;re already here.&amp;nbsp; Maybe it&amp;rsquo;s time to look at the problem differently and suggest an alternative approach.&lt;/div&gt;&lt;div class=&#34;p2&#34;&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&#34;p1&#34;&gt;If only I knew what that was&amp;hellip;&lt;/div&gt;&lt;/p&gt;
-</description>
+      <description>I&amp;rsquo;ve been challenged to do a session at a very large conference around women in programming. &amp;nbsp;Which leads to two reactions from me 1) wow, what an honour! and 2) sigh.The problem with these sessions is that you&amp;rsquo;re preaching to the choir.&amp;nbsp; Those who turn up are a) women or b) men who are sympathetic and supportive to the cause.&amp;nbsp; People who are actively discriminating against women or, more commonly, those who don&amp;rsquo;t know their actions are hurting diversity in our industry, are the least likely to receive the message.</description>
     </item>
     
     <item>
       <title>Interviewed for InfoQ at QCon London</title>
       <link>https://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london/</link>
-      <pubDate>Fri, 18 May 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london/</guid>
-      <description>&lt;p&gt;I was flattered to be &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-disruptor&#34;&gt;interviewed for InfoQ&lt;/a&gt; at QCon London. It was a fun interview actually,
-and didn&amp;rsquo;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).&lt;/p&gt;
-</description>
+      <description>I was flattered to be interviewed for InfoQ at QCon London. It was a fun interview actually, and didn&amp;rsquo;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).</description>
     </item>
     
     <item>
       <title>Update on events</title>
       <link>https://trishagee.github.io/post/update_on_events/</link>
-      <pubDate>Sat, 12 May 2012 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/update_on_events/</guid>
-      <description>&lt;p&gt;Just a quick note to say I was &lt;a href=&#34;http://www.star107.co.uk/podcasts/the-app-show/show-13-podcast.mp3&#34;&gt;interviewed for another podcast&lt;/a&gt;, again to talk about all-female events. &amp;nbsp;It&amp;rsquo;s only a short one and there&amp;rsquo;s probably not much in there that I haven&amp;rsquo;t said before, either on here or in person.&lt;br /&gt;&lt;br /&gt;From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. &amp;nbsp;I&amp;rsquo;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology. &amp;nbsp;If you see me there, come and say hello!&lt;br /&gt;&lt;br /&gt;On Friday 25th May, after all the GOTO craziness, I&amp;rsquo;m going to repeat the Disruptor presentation in Rotterdam at &lt;a href=&#34;http://010dev.nl/&#34;&gt;010DEV&lt;/a&gt;, an event rather fantastically called &amp;ldquo;The Disruptor and the Perfect Programmer&amp;rdquo;, which someone on Twitter correct noted sounds like a fairy tale.&lt;br /&gt;&lt;br /&gt;After all that, I&amp;rsquo;m hopefully going to take June off to play Diablo 3 and Prototype 2, and read the next Game of Thrones book. &amp;nbsp;All these joys I have been denying myself to make sure I get everything sorted in time for next week.&lt;/p&gt;
-</description>
+      <description>Just a quick note to say I was interviewed for another podcast, again to talk about all-female events. &amp;nbsp;It&amp;rsquo;s only a short one and there&amp;rsquo;s probably not much in there that I haven&amp;rsquo;t said before, either on here or in person.
+From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. &amp;nbsp;I&amp;rsquo;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology.</description>
+    </item>
+    
+    <item>
+      <title>Featured on a BBC Podcast</title>
+      <link>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</link>
+      <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</guid>
+      <description>This week&amp;rsquo;s BBC Outriders podcast features yours truly venting about The Subject That Won&amp;rsquo;t Go Away, Women in Technology. &amp;nbsp;I was interviewed at Sunday&amp;rsquo;s Girl Geek conference, and got a chance to voice my opinions once again. &amp;nbsp;For those who can&amp;rsquo;t be bothered to listen, they can probably be summarised as:
+There are genuine problems that face people in our industry, let&amp;rsquo;s talk about those that you have actually faced, not ones that you imagine exist.</description>
+    </item>
+    
+    <item>
+      <title>In which I defend the Male species at an all Female event</title>
+      <link>https://trishagee.github.io/post/in_which_i_defend_the_male_species_at_an_all_female_event/</link>
+      <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/in_which_i_defend_the_male_species_at_an_all_female_event/</guid>
+      <description>Google Campus is an awesome spaceToday I was at the Girl Geek Meetup conference. &amp;nbsp;I didn&amp;rsquo;t advertise it much because I&amp;rsquo;ve said in the past I don&amp;rsquo;t really agree with women-only events, and actually I felt quite uncomfortable telling you guys I was going to be there, knowing the majority of my readers weren&amp;rsquo;t allowed to attend.
+It&amp;rsquo;s probably worth explaining why I went, so a) I can give you guys and excuse but b) conference organisers can see what people like me are looking for in a conference.</description>
+    </item>
+    
+    <item>
+      <title>Video: Why we shouldn&#39;t target women</title>
+      <link>https://trishagee.github.io/post/video_why_we_shouldnt_target_women/</link>
+      <pubDate>Thu, 22 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/video_why_we_shouldnt_target_women/</guid>
+      <description>If you have a Parleys subscription, you can watch the whole &amp;ldquo;Why we shouldn&amp;rsquo;t target women&amp;rdquo; panel from Devoxx 2011 a month or so ago. &amp;nbsp;Watch me attempt to monopolise the whole panel as if it was my idea or something&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Interview by the Oracle Technology Network at Devoxx</title>
+      <link>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</link>
+      <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
+      <description>Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. &amp;nbsp;Because I was there to be on the Why We Shouldn&amp;rsquo;t Target Women panel, the interview is just another platform for me to air my views on this subject again. 
+Yes, I am actually wearing pink&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Why We Shouldn&#39;t Target Women</title>
+      <link>https://trishagee.github.io/post/why_we_shouldnt_target_women/</link>
+      <pubDate>Sun, 20 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/why_we_shouldnt_target_women/</guid>
+      <description>I&amp;rsquo;m back from Devoxx, having had lots of food for thought. &amp;nbsp;In particular, my panel on Why We Shouldn&amp;rsquo;t Target Women generated a lot of discussion and I&amp;rsquo;m still trying to process it all.
+Martijn Verburg; Regina ten Bruggencate; Trisha Gee; Antonio Goncalves; Claude Falguière; Kim Ross&amp;nbsp;The panel went really well, we got decent interaction from the audience, and of course my fellow panel members were awesome. &amp;nbsp;I managed to restrain myself from using the opportunity as my own personal soap box and allowed other people to speak occasionally.</description>
+    </item>
+    
+    <item>
+      <title>Devoxx: The story so far</title>
+      <link>https://trishagee.github.io/post/devoxx_the_story_so_far/</link>
+      <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/devoxx_the_story_so_far/</guid>
+      <description>Stephan wearing the Brazilian flag at the opening keynoteEuropean conferences are different (and cool) because you get to hear even more languages spoken than you usually do in London (apparently the most diverse city in the world for spoken languages). &amp;nbsp;I think the idea of a Paris Devoxx with 75% of the talks in French is brilliant - I&amp;rsquo;m always banging on about diversity, we shouldn&amp;rsquo;t expect developers to learn&amp;nbsp;in English only.</description>
+    </item>
+    
+    <item>
+      <title>A NYSE Product Manager and an LMAX Developer walk into a low latency trading seminar...</title>
+      <link>https://trishagee.github.io/post/a_nyse_product_manager_and_an_lmax_developer_walk_into_a_low_latency_trading_seminar/</link>
+      <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/a_nyse_product_manager_and_an_lmax_developer_walk_into_a_low_latency_trading_seminar/</guid>
+      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&amp;rsquo;s event? Because&amp;hellip;&amp;rdquo;
+&amp;ldquo;Because we&amp;rsquo;re girls?&amp;rdquo;
+&amp;ldquo;Um&amp;hellip; yes&amp;hellip;&amp;rdquo;
+Kim impetuously opts for The Truth: &amp;ldquo;We&amp;rsquo;re here to meet men.&amp;rdquo;
+Our interrogator looks round dubiously. &amp;ldquo;No, really, why are you here?&amp;rdquo;
+Phew. &amp;nbsp;My reputation is intact1
+Kim eloquently describes what her situation is as Product Manager and the criteria she&amp;rsquo;s measuring third party products against. &amp;nbsp;I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.</description>
+    </item>
+    
+    <item>
+      <title>More videos from Java One 2011</title>
+      <link>https://trishagee.github.io/post/more_videos_from_java_one_2011/</link>
+      <pubDate>Sun, 06 Nov 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/more_videos_from_java_one_2011/</guid>
+      <description>It must be time for me to move on from talking about Java One, it has dominated my blog of late. &amp;nbsp;But also I want to talk about JAX London from this week.
+But before I move on, it&amp;rsquo;s probably worth rounding off with the last two resources from the conference.
+1) Martin Thompson and I are interviewed about the Disruptor winning the Duke Award (we come in halfway through):</description>
+    </item>
+    
+    <item>
+      <title>On The Similarities Between Girls And Aliens</title>
+      <link>https://trishagee.github.io/post/on_the_similarities_between_girls_and_aliens/</link>
+      <pubDate>Fri, 28 Oct 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/on_the_similarities_between_girls_and_aliens/</guid>
+      <description>I discovered, through the power of the search words that lead to my blog, that there was an incident at JavaOne that once again opens the can of worms that is Sexism In IT.
+This Makes Me Sad. &amp;nbsp;I had a really positive experience at JavaOne. &amp;nbsp;In fact, I would say it was the one conference I&amp;rsquo;ve been to in the last 12 months where I felt like my gender wasn&amp;rsquo;t a problem - I even got away with wearing hotpants (tweed is business-casual, right?</description>
+    </item>
+    
+    <item>
+      <title>In answer to one of the search terms which led to my blog...</title>
+      <link>https://trishagee.github.io/post/in_answer_to_one_of_the_search_terms_which_led_to_my_blog/</link>
+      <pubDate>Tue, 12 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/in_answer_to_one_of_the_search_terms_which_led_to_my_blog/</guid>
+      <description>&amp;hellip;&amp;rdquo;what do female programmers look like&amp;rdquo;:
+
+
+
+Well, sometimes&amp;hellip;
+If there are any girl programmers out there who are interested in being part of a montage showing who we are, I&amp;rsquo;d be dead (see what I did there&amp;hellip;?) interested in putting us all on one page. &amp;nbsp;And not just because I&amp;rsquo;m narcissistic. Although that helps.</description>
+    </item>
+    
+    <item>
+      <title>On Changing The Image Of Programmers</title>
+      <link>https://trishagee.github.io/post/on_changing_the_image_of_programmers/</link>
+      <pubDate>Mon, 24 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/on_changing_the_image_of_programmers/</guid>
+      <description>Gah!! This is exactly what I was talking about&amp;nbsp;- it&amp;rsquo;s pink, it mentions shoes, and it&amp;rsquo;s about as patronising as you can get.
+Would&amp;nbsp;the chart&amp;nbsp;be different if your possible outcomes were&amp;nbsp;Bill Gates,&amp;nbsp;Steve Jobs,&amp;nbsp;Mark Zuckerberg, and&amp;nbsp;Linus Torvalds? &amp;nbsp;I bet for a start it wouldn&amp;rsquo;t mention Jimmy Choos or choice of handbags. &amp;nbsp;And it probably wouldn&amp;rsquo;t be in baby blue either.
+Which leads me nicely onto the next subject I have strong opinions on: Role models.</description>
+    </item>
+    
+    <item>
+      <title>On How Not To Target Girl Geeks</title>
+      <link>https://trishagee.github.io/post/on_how_not_to_target_girl_geeks/</link>
+      <pubDate>Thu, 20 Jan 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/on_how_not_to_target_girl_geeks/</guid>
+      <description>(First, let me say this post contains opinion, stereotyping and sweeping generalisations. &amp;nbsp;But that&amp;rsquo;s sort of the point. &amp;nbsp;Also I don&amp;rsquo;t pretend for one moment to speak for all girl programmers, I can only speak for myself)
+When I first started this blog, I wanted to just post &amp;ldquo;proper&amp;rdquo; technical information. &amp;nbsp;I wanted to prove that there are girls out there doing &amp;ldquo;real&amp;rdquo; programming.
+I specifically didn&amp;rsquo;t want to talk about my gender.</description>
+    </item>
+    
+    <item>
+      <title>Comments on representations of our industry</title>
+      <link>https://trishagee.github.io/post/comments_on_representations_of_our_industry/</link>
+      <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/comments_on_representations_of_our_industry/</guid>
+      <description>I&amp;nbsp;have not (yet) seen the presentation this post is referring to.&amp;nbsp; But I think many of the comments Ted makes are very valid, and our industry as a whole should occasionally stop and think.&amp;nbsp; I&amp;rsquo;ve seen Ted speak at QCon, and I&amp;rsquo;ve had a lot of time for his comments ever since.
+I&amp;rsquo;m aware that this blog is rapidly filling with comments about gender and perceptions and people-y stuff, when I originally wanted it to be a purely technical blog.</description>
+    </item>
+    
+    <item>
+      <title>Sexism in IT?</title>
+      <link>https://trishagee.github.io/post/sexism_in_it/</link>
+      <pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/sexism_in_it/</guid>
+      <description>Let&amp;rsquo;s celebrate our IT women
+&amp;quot;Everyone&amp;quot; knows that there are more men than women in IT.&amp;nbsp; That it&amp;rsquo;s a &amp;quot;boys&amp;quot; job. &amp;nbsp;Not a lot of people know that the first programmer was a woman.&amp;nbsp; Not a lot of people realise the number of women in IT is DECREASING. &amp;nbsp;And has been since the 80s. &amp;nbsp;In a working world where I&amp;nbsp;honestly believe that in general there are more opportunities for women&amp;nbsp;(OK, inline with the other stuff I&amp;rsquo;ve been reading I&amp;rsquo;ll caveat this with white, middle-class women), it seems shocking that such a growth industry as IT&amp;nbsp;is actually losing women, and appears unable to determine why, or stop the flow.</description>
+    </item>
+    
+    <item>
+      <title>Gender Stereotyping</title>
+      <link>https://trishagee.github.io/post/gender_stereotyping/</link>
+      <pubDate>Tue, 16 Dec 2008 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/gender_stereotyping/</guid>
+      <description>I&amp;rsquo;m very interested in the subject of gender stereotyping, which probably isn&amp;rsquo;t surprising as I&amp;rsquo;m a girl in a predominantly male industry.&amp;nbsp; And I&amp;nbsp;like cars, and&amp;nbsp;sports, and get irritated if people assume I&amp;rsquo;m not &amp;quot;allowed&amp;quot; to be interested in these things.
+Far from being discriminated against, however, I&amp;nbsp;find many people ask me why there aren&amp;rsquo;t more women in the industry and what can be done to encourage girls into IT.</description>
     </item>
     
   </channel>

@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="pinterest" content="nopin">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<meta name="generator" content="Hugo 0.48" />
+
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://trishagee.github.io/tags/lmax/index.xml">
+
+<link rel="canonical" href="https://trishagee.github.io/tags/lmax/">
+
+
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
+    <title>Lmax - Trisha Gee</title>
+    
+    <link href="https://trishagee.github.iocss/styles.css" rel="stylesheet">
+    
+
+  </head>
+
+  <body>
+    
+    
+    
+
+    <header class="l-header">
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://trishagee.github.io">Trisha Gee</a>
+          </div>
+
+          
+
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        
+<div class="row">
+  <div class="col-md-8">
+
+    
+    <header class="page-header">
+      <h1>Lmax</h1>
+    </header>
+    
+
+    <ul class="p-articles">
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-07-16T00:00:00JST">Jul 16, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/">Dissecting the Disruptor: Why it&#39;s so fast (part one) - Locks Are Bad</a></h2>
+  </header>
+
+  
+  <div class="summary">Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. &nbsp;This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;.
+I&rsquo;m working up to answering that. &nbsp;I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;.
+These questions do go hand in hand, however, because I can&rsquo;t talk about why it&rsquo;s fast without saying what it does, and I can&rsquo;t talk about what it is without saying why it is that way.</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/" title="Dissecting the Disruptor: Why it&#39;s so fast (part one) - Locks Are Bad">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-07-10T00:00:00JST">Jul 10, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/">Dissecting the Disruptor: Wiring up the dependencies</a></h2>
+  </header>
+
+  
+  <div class="summary">So now I&rsquo;ve covered the ring buffer itself, reading from it and writing to it.
+Logically the next thing to do is to wire everything up together.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. &nbsp;I&rsquo;ve talked about consumers in a simple situation. &nbsp;Multiple consumers can get a little more involved. &nbsp;We&rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/" title="Dissecting the Disruptor: Wiring up the dependencies">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-07-04T00:00:00JST">Jul 4, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/">Dissecting the Disruptor: Writing to the ring buffer</a></h2>
+  </header>
+
+  
+  <div class="summary">This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.
+The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
+ProducerBarriers
+The Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/" title="Dissecting the Disruptor: Writing to the ring buffer">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-06-28T00:00:00JST">Jun 28, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/">Dissecting the Disruptor: How do I read from the ring buffer?</a></h2>
+  </header>
+
+  
+  <div class="summary">The next in the series of understanding the Disruptor pattern developed at LMAX.
+After the last post we all understand ring buffers and how awesome they are. &nbsp;Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.
+ConsumerBarriers and Consumers
+I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run. &nbsp;Assuming that some magic has populated it: how do you read something from the ring buffer?</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/" title="Dissecting the Disruptor: How do I read from the ring buffer?">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-06-22T00:00:00JST">Jun 22, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/">Dissecting the Disruptor: What&#39;s so special about a ring buffer?</a></h2>
+  </header>
+
+  
+  <div class="summary">Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. &nbsp;Why did we open source it? &nbsp;Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it&nbsp;would be selfish not to share it with the world. &nbsp;Plus it makes us look dead clever.
+On the site you can download a technical article explaining what the Disruptor is and why it&rsquo;s so clever and fast.</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/" title="Dissecting the Disruptor: What&#39;s so special about a ring buffer?">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-06-12T00:00:00JST">Jun 12, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/stac_london_summit/">STAC London Summit</a></h2>
+  </header>
+
+  
+  <div class="summary">On Wednesday I tagged along to the STAC London Summit to provide backup for Mike, who was on the &ldquo;The Future of Messaging Middleware&rdquo; panel.
+The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &ldquo;users&rdquo;, Citihub and LMAX. &nbsp; &nbsp;Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/stac_london_summit/" title="STAC London Summit">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-05-23T00:00:00JST">May 23, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/getting_around_a_bit/">Getting around a bit</a></h2>
+  </header>
+
+  
+  <div class="summary">I&rsquo;m honoured to now be listed on three aggregated blog feeds:
+The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&rsquo;s on to try and write useful stuff. &nbsp;Oh OK, I&rsquo;ll settle for &ldquo;entertaining&rdquo;.</div>
+
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-05-20T00:00:00JST">May 20, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/why_java_developers_hate_net/">Why Java developers hate .NET</a></h2>
+  </header>
+
+  
+  <div class="summary">I have been struggling with .NET.&nbsp; Actually, I have been fighting pitched battles with it.
+All I want to do is take our existing Java client example code and write an equivalent in C#.&nbsp; Easy, right?
+Trisha&rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward.&nbsp; Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/why_java_developers_hate_net/" title="Why Java developers hate .NET">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-04-18T00:00:00JST">Apr 18, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/tradetech_2011__not_like_a_developer_conference/">TradeTech 2011 - Not like a developer conference</a></h2>
+  </header>
+
+  
+  <div class="summary">I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.
+The fascinating thing to me was how different this is from the sorts of technology conferences I&rsquo;ve been to. For example, I popped into JAX this week (albeit in the evening for drinks). At technology conferences (&lt;gross-generalisation&gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/tradetech_2011__not_like_a_developer_conference/" title="TradeTech 2011 - Not like a developer conference">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2011-01-21T00:00:00JST">Jan 21, 2011</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="https://trishagee.github.iopost/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="https://trishagee.github.io/post/gwt_why_verticalpanel_is_evil/">GWT: Why VerticalPanel is Evil</a></h2>
+  </header>
+
+  
+  <div class="summary">At LMAX we adopted Google Web Toolkit pretty early on. &nbsp;One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. &nbsp;Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.</div>
+
+  
+  <footer>
+    <a href="https://trishagee.github.io/post/gwt_why_verticalpanel_is_evil/" title="GWT: Why VerticalPanel is Evil">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+    </ul>
+
+    
+<nav>
+  <ul class="pager">
+
+    
+    <li><a href="/tags/lmax/">Previous</a></li>
+    
+
+    
+    <li><a href="/tags/lmax/page/3/">Next</a></li>
+    
+
+  </ul>
+</nav>
+
+
+
+  </div>
+  <div class="col-md-4">
+    
+<aside class="l-sidebar">
+
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">LATESTS</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://trishagee.github.io/post/more_women_speakers/" class="list-group-item">What Can Conferences Do To Attract More Women Speakers?</a>
+      
+      <a href="https://trishagee.github.io/post/my_job/" class="list-group-item">Being a Developer Advocate at JetBrains</a>
+      
+      <a href="https://trishagee.github.io/presentation/upcoming_events/" class="list-group-item">Upcoming Events</a>
+      
+      <a href="https://trishagee.github.io/presentation/boilerplate/" class="list-group-item">Is boilerplate code really so bad?</a>
+      
+      <a href="https://trishagee.github.io/presentation/real_world_java_9/" class="list-group-item">Real World Java 9</a>
+      
+      <a href="https://trishagee.github.io/presentation/career_advice_for_programmers/" class="list-group-item">Career Advice for Programmers</a>
+      
+      <a href="https://trishagee.github.io/presentation/becoming_buzzword_compliant/" class="list-group-item">Becoming Fully Buzzword Compliant</a>
+      
+      <a href="https://trishagee.github.io/presentation/java_9_are_we_there_yet/" class="list-group-item">Anticipating Java 9 - Functionality and Tooling</a>
+      
+      <a href="https://trishagee.github.io/post/what_can_men_do/" class="list-group-item">What Can Men Do</a>
+      
+      <a href="https://trishagee.github.io/resources/intellij_for_eclipse_users/" class="list-group-item">IntelliJ IDEA for Eclipse Users</a>
+      
+    </div>
+  </section>
+
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TAG</div>
+    </div>
+    <div class="list-group">
+      
+      <a href="https://trishagee.github.iotags/conferences" class="list-group-item">conferences</a>
+      
+      <a href="https://trishagee.github.iotags/java" class="list-group-item">java</a>
+      
+      <a href="https://trishagee.github.iotags/gender" class="list-group-item">gender</a>
+      
+      <a href="https://trishagee.github.iotags/video" class="list-group-item">video</a>
+      
+      <a href="https://trishagee.github.iotags/mongodb" class="list-group-item">mongodb</a>
+      
+      <a href="https://trishagee.github.iotags/presentations" class="list-group-item">presentations</a>
+      
+      <a href="https://trishagee.github.iotags/disruptor" class="list-group-item">disruptor</a>
+      
+      <a href="https://trishagee.github.iotags/lmax" class="list-group-item">lmax</a>
+      
+      <a href="https://trishagee.github.iotags/links" class="list-group-item">links</a>
+      
+      <a href="https://trishagee.github.iotags/ljc" class="list-group-item">ljc</a>
+      
+    </div>
+  </section>
+  
+  <section class="panel panel-default">
+    <div class="panel-heading">
+      <div class="panel-title">TOPIC</div>
+    </div>
+    <div class="list-group">
+      
+    </div>
+  </section>
+  
+
+</aside>
+
+
+  </div>
+</div>
+
+      </div>
+    </main>
+
+    <footer class="l-footer">
+      <div class="container">
+        <p><span class="h-logo">&copy; Trisha Gee</span></p>
+        <aside>
+          <p>Powered by <a href="https://gohugo.io/">Hugo</a>.</p>
+          <p><a href="https://github.com/dim0627/hugo_theme_beg">Beg</a> designed by <a href="http://yet.unresolved.xyz/">Daisuke Tsuji</a>.</p>
+        </aside>
+      </div>
+    </footer>
+
+    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

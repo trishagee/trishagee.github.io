@@ -1,117 +1,35 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-      <title>Code-Review on Trisha Gee </title>
-    <link>https://trishagee.github.io/tags/code-review/index.xml/</link>
-    <language>en-us</language>
-    <author>Trisha Gee</author>
-    <rights>Copyright (c) 2011 - 2014, Trisha Gee; all rights reserved.</rights>
-    <updated>Wed, 31 Aug 2016 00:00:00 UTC</updated>
+    <title>Code Review on Trisha Gee</title>
+    <link>https://trishagee.github.io/tags/code-review/</link>
+    <description>Recent content in Code Review on Trisha Gee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 31 Aug 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://trishagee.github.io/tags/code-review/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Code Review Matters and Manners</title>
       <link>https://trishagee.github.io/presentation/code_review_matters_and_manners/</link>
-      <pubDate>Wed, 31 Aug 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Wed, 31 Aug 2016 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
-      <description>
-
-&lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
-supporting material.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_0&#34;&gt;Abstract&lt;/h2&gt;
-
-&lt;p&gt;A code review is basically a technical discussion which should lead to improvements in the code and/or sharing
-knowledge in a team. As with any conversation, it should have substance and form.&lt;/p&gt;
-
-&lt;p&gt;What’s involved in a good code review? What kind of problems do we want to spot and address? Trisha Gee will talk
-about things a reviewer may consider when looking at changes:  what potential issues to look for; why certain
-patterns may be harmful; and, of course, what NOT to look at.&lt;/p&gt;
-
-&lt;p&gt;But when it comes to commenting on someone’s work, it may be hard to find the right words to convey a useful message
-without offending the authors - after all, this is something that they worked hard on. Maria Khalusova will share
-some observations, thoughts and practical tricks on how to give and receive feedback without turning a code review
-into a battlefield.&lt;/p&gt;
-
-&lt;h2 id=&#34;toc_1&#34;&gt;The talk&lt;/h2&gt;
-
-&lt;iframe src=&#34;https://player.vimeo.com/video/182087729&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
-
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/7wG1iGAnGsQ4F6&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
-
-&lt;h2 id=&#34;toc_2&#34;&gt;More Information&lt;/h2&gt;
-
-&lt;h3 id=&#34;toc_3&#34;&gt;Books&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;What to Look for in a Code Review&lt;/a&gt; - Trisha Gee (free!)&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/gp/product/0735619670/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0735619670&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=4f2f97b38b1e19961a4425340aef003b&#34;&gt;Code Complete: A Practical Handbook of Software Construction, Second Edition&lt;/a&gt;&lt;img src=&#34;//ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=am2&amp;o=1&amp;a=0735619670&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt; - Steve McConnell&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.amazon.com/gp/product/0132350882/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0132350882&amp;linkCode=as2&amp;tag=trissramb-20&amp;linkId=86afa947570d6d5c8d03f7c4d495c449&#34;&gt;Clean Code: A Handbook of Agile Software Craftsmanship&lt;/a&gt;&lt;img src=&#34;//ir-na.amazon-adsystem.com/e/ir?t=trissramb-20&amp;l=am2&amp;o=1&amp;a=0132350882&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt; - Robert C. Martin&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_4&#34;&gt;Articles&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;What to look for in a Code Review&lt;/a&gt;, the article that started all of this.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/03/what-to-look-for-in-a-code-review-tests/&#34;&gt;What to look for in a Code Review: Tests&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/06/what-to-look-for-in-a-code-review-performance/&#34;&gt;What to look for in a Code Review: Performance&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/20/what-to-look-for-in-a-code-review-data-structures/&#34;&gt;What to look for in a Code Review: Data Structures&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/08/31/what-to-look-for-in-a-code-review-solid-principles-2/&#34;&gt;What to look for in a Code Review: SOLID Principles&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/10/05/what-to-look-for-in-a-code-review-security/&#34;&gt;What to look for in a Code Review: Security&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2015/10/19/what-to-look-for-in-a-code-review-upsource-quick-wins/&#34;&gt;What to look for in a Code Review: Upsource Quick Wins&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/2016/08/03/what-to-look-for-in-java-8-code/&#34;&gt;What to look for in: Java 8 code&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.codinghorror.com/code-reviews-just-do-it/&#34;&gt;Code Reviews: Just Do It&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.fullstory.com/what-we-learned-from-google-code-reviews-arent-just-for-catching-bugs-b125a13aa292#.mktgod79l&#34;&gt;What we learned from Google: code reviews aren’t just for catching bugs&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.infragistics.com/community/blogs/erikdietrich/archive/2016/06/29/the-human-cost-of-tech-debt.aspx&#34;&gt;The Human Cost of Tech Debt&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://spin.atomicobject.com/2016/06/21/pick-battles-software-team/&#34;&gt;How to Pick Your Battles on a Software Team&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;toc_5&#34;&gt;And, of course&amp;hellip;&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;You can &lt;a href=&#34;https://www.jetbrains.com/upsource/&#34;&gt;download Upsource&lt;/a&gt;, it&amp;rsquo;s free for up to 10 users.&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <description>&lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
+supporting material.
+&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>A Year? Really?</title>
       <link>https://trishagee.github.io/post/what_a_year.md/</link>
-      <pubDate>Mon, 01 Aug 2016 00:00:00 UTC</pubDate>
-      <author>Trisha Gee</author>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      
       <guid>https://trishagee.github.io/post/what_a_year.md/</guid>
-      <description>&lt;p&gt;So I came to the blog to update my &lt;a href=&#34;//presentation/upcoming_events/&#34;&gt;upcoming events&lt;/a&gt; (at least something stays up to date) only to find
-it&amp;rsquo;s been nearly a year since I last blogged!  This is terrible!&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s not that I haven&amp;rsquo;t written anything in a year, it&amp;rsquo;s that a lot of my writing energy goes into
-stuff for the actual day job.  Which is good, because that&amp;rsquo;s pretty much what I wanted from the day job, but the blog makes it look like
-I don&amp;rsquo;t write any more.&lt;/p&gt;
-
-&lt;p&gt;So I&amp;rsquo;m going to cheat.  Here&amp;rsquo;s the stuff I&amp;rsquo;ve written in the last 12 months.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;A whole series of articles off the back of last year&amp;rsquo;s &lt;a href=&#34;/presentation/java8_in_anger/&#34;&gt;Java 8 in Anger&lt;/a&gt; talk:
-&lt;a href=&#34;https://www.safaribooksonline.com/blog/2015/10/30/five-java-8-features/&#34;&gt;Five Java 8 Features That You Won’t Be Able to Live Without&lt;/a&gt;,
-&lt;a href=&#34;https://dzone.com/articles/why-java-8-1&#34;&gt;Why Java 8?&lt;/a&gt;, and &lt;a href=&#34;https://community.oracle.com/docs/DOC-920950&#34;&gt;Java SE 8 in Practice&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;A tutorial on &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-test-driven-development.html&#34;&gt;TDD in IntelliJ IDEA&lt;/a&gt;. I have video
-clips to turn this into a screencast as well, but that&amp;rsquo;s Yet Another thing I didn&amp;rsquo;t get around to.&lt;/li&gt;
-&lt;li&gt;A tutorial on how IntelliJ IDEA helps you &lt;a href=&#34;https://www.jetbrains.com/help/idea/2016.2/tutorial-migrating-to-java-8.html&#34;&gt;migrate code to Java 8&lt;/a&gt;.  This evolved into the other thing I&amp;rsquo;ve been working on this year, my latest live demo
-presentation, &lt;a href=&#34;/presentation/refactoring_to_java_8/&#34;&gt;Refactoring to Java 8&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;A whole series of blog posts on &lt;a href=&#34;https://blog.jetbrains.com/upsource/category/practices/&#34;&gt;&amp;ldquo;What to look for in a code review&amp;rdquo;&lt;/a&gt;. This was fun and satisfying to write.&lt;/li&gt;
-&lt;li&gt;&amp;hellip;which got &lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;turned into a book&lt;/a&gt;. Yes, I&amp;rsquo;m finally the author of a book!&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/idea/2016/07/java-8-top-tips/&#34;&gt;Java 8 Top Tips&lt;/a&gt;, with a bunch of IntelliJ-specific tips&lt;/li&gt;
-&lt;li&gt;I&amp;rsquo;ve taken over &lt;a href=&#34;https://blog.jetbrains.com/idea/tag/java-annotated/&#34;&gt;Java Annotated Monthly&lt;/a&gt;, so at least you get to hear from me
-once a month with that. I try really hard not to be too sarcastic, jokey or British when I write the newsletter. I don&amp;rsquo;t always succeed.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I&amp;rsquo;ve also done a bunch of screencasts &amp;amp; webinars for &lt;a href=&#34;https://www.youtube.com/user/intellijideavideo/videos&#34;&gt;IntelliJ IDEA&lt;/a&gt;, &lt;a href=&#34;https://www.youtube.com/playlist?list=PLQ176FUIyIUa50f13M4v5Nvp6b-IBNB4e&#34;&gt;Upsource
-and Team City&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Oh yeah, and I had a baby.  I&amp;rsquo;m contemplating blogging about being a working parent, but I&amp;rsquo;m a bit concerned that Of Course a woman is
-going to blog about Being A Mother, when previously I just blogged about&amp;hellip; well, come to think about it I blogged about all sorts of
-things, including &lt;a href=&#34;/post/why_the_customer_isnt_always_right/&#34;&gt;haircuts&lt;/a&gt; and
-&lt;a href=&#34;/post/what_my_hangovers_can_teach_you_about_agile/&#34;&gt;hangovers&lt;/a&gt;, so I guess I could probably get away with it.&lt;/p&gt;
-</description>
+      <description>So I came to the blog to update my upcoming events (at least something stays up to date) only to find it&amp;rsquo;s been nearly a year since I last blogged! This is terrible!
+It&amp;rsquo;s not that I haven&amp;rsquo;t written anything in a year, it&amp;rsquo;s that a lot of my writing energy goes into stuff for the actual day job. Which is good, because that&amp;rsquo;s pretty much what I wanted from the day job, but the blog makes it look like I don&amp;rsquo;t write any more.</description>
     </item>
     
   </channel>
