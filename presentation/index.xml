@@ -6,10 +6,20 @@
     <description>Recent content in Presentations on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 14 Sep 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 15 Sep 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/presentation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Career Advice for Programmers</title>
+      <link>https://trishagee.github.io/presentation/career_advice_for_programmers/</link>
+      <pubDate>Sat, 15 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/career_advice_for_programmers/</guid>
+      <description>&lt;p&gt;One developer&amp;rsquo;s journey to find the perfect job.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -40,16 +50,6 @@ do modern languages give us?
       
       <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
       <description>&lt;p&gt;How is Java 9 going to change the way developers work?
-&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Career Advice for Programmers</title>
-      <link>https://trishagee.github.io/presentation/career_advice_for_programmers/</link>
-      <pubDate>Fri, 12 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/career_advice_for_programmers/</guid>
-      <description>&lt;p&gt;One developer&amp;rsquo;s journey to find the perfect job.
 &lt;/p&gt;</description>
     </item>
     
