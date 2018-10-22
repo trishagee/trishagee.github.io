@@ -6,10 +6,20 @@
     <description>Recent content in Presentations on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 22 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/presentation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Diversity and Inclusion: Are We There Yet?</title>
+      <link>https://trishagee.github.io/presentation/diversity_and_inclusion/</link>
+      <pubDate>Mon, 22 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/diversity_and_inclusion/</guid>
+      <description>It’s 2018, and we still
+ Have conferences with only one woman speaker Regularly see all-male panels See only a small subset of ethnicities represented Use language that excludes people from job advertisements  By now we’ve heard that diversity makes for better teams, better products, and better leadership, and it seems like the industry has been beating itself up about it for some time now. Why isn’t it fixed? What can we do?</description>
+    </item>
     
     <item>
       <title>Code Review Best Practices</title>
