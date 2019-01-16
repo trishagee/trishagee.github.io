@@ -3,6 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/presentation/abstracts/</loc>
+    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/speaking_credentials/</loc>
+    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
+    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/presentation/diversity_and_inclusion/</loc>
     <lastmod>2018-10-22T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -19,13 +40,6 @@
   <url>
     <loc>https://trishagee.github.io/presentation/career_advice_for_programmers/</loc>
     <lastmod>2018-09-15T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
-    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1822,7 +1836,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/conferences/</loc>
-    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -1927,7 +1941,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/events/</loc>
-    <lastmod>2018-09-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2361,7 +2375,7 @@
   
   <url>
     <loc>https://trishagee.github.io/presentation/</loc>
-    <lastmod>2018-10-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2599,7 +2613,7 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2018-10-22T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
