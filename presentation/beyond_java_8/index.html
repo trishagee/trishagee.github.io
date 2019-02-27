@@ -44,7 +44,7 @@
 
 <meta itemprop="datePublished" content="2019-02-22T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-02-22T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="940">
+<meta itemprop="wordCount" content="1052">
 
 
 
@@ -247,8 +247,7 @@
 <li><a href="https://blog.codefx.org/java/reactive-http-2-requests-responses/">Reactive HTTP/2 Requests And Responses In Java 11</a></li>
 <li><a href="https://blog.codefx.org/java/scripting-java-shebang/">Scripting Java 11, Shebang And All</a></li>
 <li><a href="https://blog.codefx.org/java/java-11-gems/">Eleven Hidden Gems In Java 11</a> - for me, it&rsquo;s the tiny API changes that make my life as a developer easier</li>
-<li><a href="http://openjdk.java.net/jeps/318">JEP 318: Epsilon: A No-Op Garbage Collector (Experimental)</a></li>
-<li><a href="https://wiki.openjdk.java.net/display/zgc/Main">ZGC</a></li>
+<li><a href="https://www.baeldung.com/java-11-string-api">Java 11 String API Additions</a></li>
 <li><a href="https://www.opsian.com/blog/javas-new-zgc-is-very-exciting/">Java&rsquo;s new Z Garbage Collector (ZGC) is very exciting</a> - &ldquo;ZGC’s design targets a future where these kinds of capacities are common: multi-terabyte heaps with low (&lt;10ms) pause times and impact on overall application performance (&lt;15% on throughput).&rdquo;</li>
 <li><a href="https://blog.jetbrains.com/idea/2018/09/java-11-and-intellij-idea/">Java 11 and IntelliJ IDEA</a></li>
 </ul>
@@ -257,7 +256,6 @@
 
 <ul>
 <li>Java 10: <a href="http://openjdk.java.net/jeps/286">Local-variable type inference</a></li>
-<li><a href="https://blog.idrsolutions.com/2018/04/java-10-improvements-to-garbage-collection-explained-in-5-minutes/">Java 10 improvements to Garbage Collection explained in 5 minutes</a></li>
 <li><a href="https://blog.jetbrains.com/idea/2018/04/webinar-intellij-idea-and-java-10/">Webinar: IntelliJ IDEA and Java 10</a> - video and follow up blog post discussing the best places to use <code>var</code></li>
 </ul>
 
@@ -279,7 +277,6 @@
 <li><a href="http://openjdk.java.net/jeps/102">JEP 102: Process API</a></li>
 <li><a href="https://docs.oracle.com/javase/9/jshell/introduction-jshell.htm">JShell User&rsquo;s Guide</a></li>
 <li><a href="http://www.baeldung.com/java-9-optional">More methods on Optional</a></li>
-<li><a href="http://openjdk.java.net/jeps/248">G1 the Default Garbage Collector</a></li>
 <li><a href="https://blog.jetbrains.com/idea/2017/09/java-9-and-intellij-idea/">Java 9 and IntelliJ IDEA</a></li>
 </ul>
 
@@ -289,7 +286,6 @@
 <li><a href="https://openjdk.java.net/projects/jdk/12/">JDK 12 JEPs</a> - includes several related to Garbage Collection</li>
 <li><a href="http://openjdk.java.net/jeps/325">JEP 325: Switch expressions (Preview)</a></li>
 <li><a href="https://blog.jetbrains.com/idea/2019/02/java-12-and-intellij-idea/">Java 12 and IntelliJ IDEA</a> - how IntelliJ IDEA can help you with the new switch expression syntax (available in IntelliJ IDEA 2019.1)</li>
-<li><a href="https://wiki.openjdk.java.net/display/shenandoah/Main">Shenandoah GC (Experimental)</a></li>
 </ul>
 
 <h3 id="java-future">Java Future</h3>
@@ -303,7 +299,35 @@
 <li><a href="https://openjdk.java.net/projects/loom/">Loom</a> - Fibers, Continuations and Tail-Calls for the JVM</li>
 </ul>
 
-<h3 id="other">Other</h3>
+<h2 id="performance">Performance</h2>
+
+<ul>
+<li>Java 11: <a href="https://openjdk.java.net/jeps/331">JEP 331: Low-Overhead Heap Profiling</a></li>
+<li><a href="https://www.optaplanner.org/blog/2019/01/17/HowMuchFasterIsJava11.html">How much faster is Java 11?</a> - a case study that benchmarks both G1 GC and Parallel GC</li>
+</ul>
+
+<h3 id="garbage-collectors">Garbage Collectors</h3>
+
+<ul>
+<li>Java 9: <a href="http://openjdk.java.net/jeps/248">JEP 248: G1 the Default Garbage Collector</a></li>
+<li>Java 10: <a href="http://openjdk.java.net/jeps/307">JEP 307: Parallel Full GC for G1</a></li>
+<li>Java 10: <a href="https://blog.idrsolutions.com/2018/04/java-10-improvements-to-garbage-collection-explained-in-5-minutes/">Improvements to Garbage Collection explained in 5 minutes</a></li>
+<li>Java 11: <a href="http://openjdk.java.net/jeps/318">JEP 318: Epsilon: A No-Op Garbage Collector (Experimental)</a></li>
+<li>Java 11: <a href="https://openjdk.java.net/jeps/333">JEP 333: ZGC: A Scalable Low-Latency Garbage Collector (Experimental)</a>, see also <a href="https://wiki.openjdk.java.net/display/zgc/Main">ZGC Wiki</a></li>
+<li>Java 12: <a href="https://openjdk.java.net/jeps/189">JEP 189: Shenandoah: A Low-Pause-Time Garbage Collector (Experimental)</a>, see also <a href="https://wiki.openjdk.java.net/display/shenandoah/Main">Shenandoah GC Wiki</a></li>
+<li>Java 12: <a href="http://openjdk.java.net/projects/jdk/12/">More Updates to G1</a></li>
+</ul>
+
+<h3 id="string-performance">String Performance</h3>
+
+<ul>
+<li>Java 9: <a href="https://openjdk.java.net/jeps/254">JEP 254: Compact Strings</a></li>
+<li><a href="https://www.baeldung.com/java-9-compact-string">Compact Strings in Java 9</a></li>
+<li>Java 9: <a href="https://openjdk.java.net/jeps/280">JEP 280: Indify String Concatenation</a></li>
+<li><a href="https://arnaudroger.github.io/blog/2017/06/14/CompactStrings.html">Evolution of Strings in Java to Compact Strings and Indify String Concatenation</a></li>
+</ul>
+
+<h2 id="other">Other</h2>
 
 <ul>
 <li><a href="https://martinfowler.com/bliki/FrequencyReducesDifficulty.html">FrequencyReducesDifficulty</a></li>
