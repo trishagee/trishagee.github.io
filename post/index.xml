@@ -69,8 +69,7 @@ It&amp;rsquo;s not that I haven&amp;rsquo;t written anything in a year, it&amp;r
       <description>&lt;p&gt;Last night was the final get-together to discuss the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
-we had attendees from earlier sessions plus new people too.
-&lt;/p&gt;</description>
+we had attendees from earlier sessions plus new people too.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,13 +82,7 @@ we had attendees from earlier sessions plus new people too.
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
-to share knowledge between people who are doing the course.
-
-The second week&amp;rsquo;s lesson was about
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; - how you can use the
-new stream API to transform data. There was also a whole section on
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;, which initially seemed like
-rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rather more than I originally thought.&lt;/p&gt;</description>
+to share knowledge between people who are doing the course.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -100,9 +93,7 @@ rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rat
       <guid>https://trishagee.github.io/post/code_reviews_1/</guid>
       <description>&lt;p&gt;I wrote a post for the JetBrains Upsource blog about some of the &lt;a href=&#34;http://blog.jetbrains.com/upsource/2015/07/23/what-to-look-for-in-a-code-review/&#34;&gt;things you should be looking for when you do code
 reviews&lt;/a&gt; (and some of the things
-you should not be looking at).
-
-I&amp;rsquo;d love to get feedback in the comments for the post of things that you look for in code reviews.&lt;/p&gt;</description>
+you should not be looking at).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -115,8 +106,7 @@ I&amp;rsquo;d love to get feedback in the comments for the post of things that y
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
 during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&amp;rsquo;re
-feeling very smart!) help people who may be struggling (or might not have watched the videos).
-&lt;/p&gt;</description>
+feeling very smart!) help people who may be struggling (or might not have watched the videos).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -130,9 +120,7 @@ interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the 
 but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
 of the JCP, and the future of Java.&lt;/p&gt;
 
-&lt;p&gt;Video and the transcript are &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-java-eco-system&#34;&gt;available on InfoQ&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;Video and the transcript are &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-java-eco-system&#34;&gt;available on InfoQ&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -144,8 +132,7 @@ of the JCP, and the future of Java.&lt;/p&gt;
       <description>&lt;p&gt;So, I get asked a lot about how I got into technical advocacy /
 evangelism&lt;sup&gt;1&lt;/sup&gt;,
 so it seems like the most cost-effective way to answer this question is to
-write a post about it. Warning: it&amp;rsquo;s a long one!
-&lt;/p&gt;</description>
+write a post about it. Warning: it&amp;rsquo;s a long one!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -156,8 +143,7 @@ write a post about it. Warning: it&amp;rsquo;s a long one!
       <guid>https://trishagee.github.io/post/java_at_20/</guid>
       <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
- No wonder I can&amp;rsquo;t seem to find the time to write these days.
- &lt;/p&gt;</description>
+ No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -176,9 +162,7 @@ write a post about it. Warning: it&amp;rsquo;s a long one!
       
       <guid>https://trishagee.github.io/post/blind_cfps_2/</guid>
       <description>&lt;p&gt;Since publishing &lt;a href=&#34;https://trishagee.github.io/post/blind_cfps&#34;&gt;yesterday&amp;rsquo;s post&lt;/a&gt;, I&amp;rsquo;ve had a lot of great comments, so I thought I&amp;rsquo;d write yet
-another post to answer them.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+another post to answer them.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -191,8 +175,7 @@ another post to answer them.&lt;/p&gt;
 around blind &lt;a href=&#34;http://www.wikicfp.com/cfp/&#34;&gt;CFPs&lt;/a&gt; (Call For Papers - usually to get into a conference you submit to a CFP) for
 conferences. I often hear it said that a blind CFP will fix, or at least improve, the diversity imbalance at conferences.&lt;/p&gt;
 
-&lt;p&gt;I don&amp;rsquo;t believe this.
-&lt;/p&gt;</description>
+&lt;p&gt;I don&amp;rsquo;t believe this.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -205,8 +188,7 @@ conferences. I often hear it said that a blind CFP will fix, or at least improve
 white men, and time and again it just feels like we&amp;rsquo;re not getting anywhere.  &lt;a href=&#34;http://www.internationalwomensday.com/&#34;&gt;International Women&amp;rsquo;s
 Day&lt;/a&gt; highlights the issues that face women all around the world, and make our
 women-in-tech problem
-look like a genuine &lt;a href=&#34;https://twitter.com/hashtag/firstworldproblems&#34;&gt;First World Problem&lt;/a&gt;, and yet we can&amp;rsquo;t even get that right.
-&lt;/p&gt;</description>
+look like a genuine &lt;a href=&#34;https://twitter.com/hashtag/firstworldproblems&#34;&gt;First World Problem&lt;/a&gt;, and yet we can&amp;rsquo;t even get that right.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -220,8 +202,7 @@ find people unusually keen to come and visit us on the pretence of presenting at
 DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
 
 &lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
-an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.
-&lt;/p&gt;</description>
+an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -237,9 +218,7 @@ and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this
 
 &lt;p&gt;So here&amp;rsquo;s the next batch (although once again I&amp;rsquo;m not sure how many are only applicable to IntelliJ 14).  All shortcuts
 are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
-cases.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+cases.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -257,9 +236,7 @@ use something first rather than read the documentation first.&lt;/p&gt;
 
 &lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
 and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
-else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -271,9 +248,7 @@ else using the tool and saw them doing something you didn&amp;rsquo;t know was p
       <description>&lt;p&gt;I wrote a &lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;piece for the Java Advent Blog&lt;/a&gt;,
 about how developers aren&amp;rsquo;t just communing with the computer, they also need to feel listened to by real human beings.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;Read it here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;http://www.javaadvent.com/2014/12/developers-want-to-be-heard.html&#34;&gt;Read it here&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -302,8 +277,7 @@ This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp
       <pubDate>Sun, 23 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/its_not_waste_its_learning/</guid>
-      <description>&lt;p&gt;In one my my rare weekends at home, I found myself on a pottery course (this is the sort of thing that happens when you&amp;rsquo;re a &amp;ldquo;yes&amp;rdquo; person).
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;In one my my rare weekends at home, I found myself on a pottery course (this is the sort of thing that happens when you&amp;rsquo;re a &amp;ldquo;yes&amp;rdquo; person).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -312,8 +286,7 @@ This is a very chaotic blog post, because if I don&amp;rsquo;t post it now I&amp
       <pubDate>Wed, 22 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mongodb_london/</guid>
-      <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;br /&gt;
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;em&gt;TL;DR&lt;/em&gt; &lt;a href=&#34;http://www.mongodb.com/events/mongodb-london-2014&#34;&gt;MongoDB London&lt;/a&gt;, 6th November, 50% off with discount code &lt;strong&gt;50Trisha&lt;/strong&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -333,8 +306,7 @@ Due to the time pressures in the demo, I never really get a chance to go into th
       
       <guid>https://trishagee.github.io/post/java_one_2014_day_one/</guid>
       <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
-had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.
-&lt;/p&gt;</description>
+had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -360,8 +332,7 @@ operations using the Java driver:&lt;/p&gt;</description>
       <guid>https://trishagee.github.io/post/most_of_all_its_fun/</guid>
       <description>&lt;p&gt;I loved this analogy: &lt;a href=&#34;https://medium.com/@nkkl/ride-like-a-girl-1d5524e25d3a&#34;&gt;Cycling is awfully similar to being a woman&lt;/a&gt;.
 It nicely describes how it feels to be marginalised and not quite &amp;ldquo;normal&amp;rdquo;. But there are some things that I&amp;rsquo;d like to
-add:
-&lt;/p&gt;</description>
+add:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -376,8 +347,7 @@ add:
 
 &lt;p&gt;Don&amp;rsquo;t be fooled by the picture, people had more fun than it looks.  Honest.&lt;/p&gt;
 
-&lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:
-&lt;/p&gt;</description>
+&lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -394,9 +364,7 @@ add:
 &lt;p&gt;or&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
@@ -409,8 +377,7 @@ add:
 a part-chopped hard boiled egg and said &amp;ldquo;finish this, I need to have a shower&amp;rdquo;. As you do. Apparently there were two things that needed
 doing - &amp;ldquo;this&amp;rdquo; needed finishing, and I needed to keep an eye on the fish.&lt;/p&gt;
 
-&lt;p&gt;Fine.
-&lt;/p&gt;</description>
+&lt;p&gt;Fine.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -422,8 +389,7 @@ doing - &amp;ldquo;this&amp;rdquo; needed finishing, and I needed to keep an eye
       <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
 for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
 and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
-Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.
-&lt;/p&gt;</description>
+Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -433,8 +399,7 @@ Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&l
       
       <guid>https://trishagee.github.io/post/upcoming_events_2014/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s been a while since I updated you on my travel plans, so now I&amp;rsquo;ve had some more conferences confirmed,
-I thought I would pass the information on.
-&lt;/p&gt;</description>
+I thought I would pass the information on.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -875,8 +840,7 @@ Full disclosure: I&amp;rsquo;ve been involved in planning QCon this year. &amp;n
       
       <guid>https://trishagee.github.io/post/staying_ahead_of_the_curve/</guid>
       <description>&lt;p&gt;I had an interesting discussion last night at the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; developer sessions, and
-it&amp;rsquo;s a topic that comes up again and again:
-&lt;/p&gt;</description>
+it&amp;rsquo;s a topic that comes up again and again:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1362,8 +1326,7 @@ The first two went up fine. &amp;nbsp;The third lit up when I plugged it in, and
       <description>&lt;p&gt;When you&amp;rsquo;re applying for a job at &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX&lt;/a&gt;, your CV (or résumé, for our American readers) usually comes through me and I decide whether
 to call you for a technical phone screen.&lt;/p&gt;
 
-&lt;p&gt;I&amp;rsquo;m going to let you into a secret.
-&lt;/p&gt;</description>
+&lt;p&gt;I&amp;rsquo;m going to let you into a secret.&lt;/p&gt;</description>
     </item>
     
     <item>

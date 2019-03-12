@@ -17,8 +17,7 @@
       <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/groovy_vs_java/</guid>
-      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,9 +27,7 @@
       
       <guid>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
       <description>&lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
-Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -57,9 +54,7 @@ Due to the time pressures in the demo, I never really get a chance to go into th
 &lt;p&gt;or&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>

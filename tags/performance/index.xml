@@ -20,7 +20,8 @@
       <description>&lt;ul&gt;
 &lt;li&gt;Understand how to improve performance with your Java code using Java 8 language features.&lt;/li&gt;
 &lt;li&gt;Learn hands on techniques to discover and implement common Java 8 refactorings.&lt;/li&gt;
-&lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.</description>
+&lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -29,8 +30,7 @@
       <pubDate>Mon, 22 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/resources/performance_resources/</guid>
-      <description>&lt;p&gt;A hastily thrown-together list of some of the places to get more information on how to write performant code.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;A hastily thrown-together list of some of the places to get more information on how to write performant code.&lt;/p&gt;</description>
     </item>
     
     <item>

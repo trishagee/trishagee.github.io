@@ -18,8 +18,7 @@
       
       <guid>https://trishagee.github.io/presentation/boilerplate/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
-do modern languages give us?
-&lt;/p&gt;</description>
+do modern languages give us?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,8 +27,7 @@ do modern languages give us?
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
-      <description>&lt;p&gt;How is Java 9 going to change the way developers work?
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,8 +36,7 @@ do modern languages give us?
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
-      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,8 +45,7 @@ do modern languages give us?
       <pubDate>Wed, 05 Oct 2016 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/resources/intellij_for_eclipse_users/</guid>
-      <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;List of resources for those trying to make the switch from Eclipse to IntelliJ IDEA:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -65,9 +61,7 @@ and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this
 
 &lt;p&gt;So here&amp;rsquo;s the next batch (although once again I&amp;rsquo;m not sure how many are only applicable to IntelliJ 14).  All shortcuts
 are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
-cases.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+cases.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,9 +79,7 @@ use something first rather than read the documentation first.&lt;/p&gt;
 
 &lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
 and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
-else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;</description>
     </item>
     
     <item>

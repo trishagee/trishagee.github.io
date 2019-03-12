@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>C# on Trisha Gee</title>
+    <link>https://trishagee.github.io/tags/c#/</link>
+    <description>Recent content in C# on Trisha Gee</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 20 Jun 2011 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://trishagee.github.io/tags/c#/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A chance to see some of my actual code (even if it is C#)</title>
+      <link>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</link>
+      <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</guid>
+      <description>Remember I posted about having to write .NET?
+Well, the code and the tutorial are available for you, my lucky readers, to rip to pieces view.
+I am not the only person responsible for this code though, so be kind.</description>
+    </item>
+    
+    <item>
+      <title>Why Java developers hate .NET</title>
+      <link>https://trishagee.github.io/post/why_java_developers_hate_net/</link>
+      <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
+      <description>I have been struggling with .NET.&amp;nbsp; Actually, I have been fighting pitched battles with it.
+All I want to do is take our existing Java client example code and write an equivalent in C#.&amp;nbsp; Easy, right?
+Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward.&amp;nbsp; Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
+    </item>
+    
+  </channel>
+</rss>

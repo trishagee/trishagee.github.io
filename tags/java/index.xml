@@ -17,8 +17,7 @@
       <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
-      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -28,8 +27,7 @@
       
       <guid>https://trishagee.github.io/presentation/boilerplate/</guid>
       <description>&lt;p&gt;It&amp;rsquo;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
-do modern languages give us?
-&lt;/p&gt;</description>
+do modern languages give us?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -38,8 +36,7 @@ do modern languages give us?
       <pubDate>Thu, 28 Sep 2017 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/real_world_java_9/</guid>
-      <description>&lt;p&gt;How is Java 9 going to change the way developers work?
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;How is Java 9 going to change the way developers work?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,8 +45,7 @@ do modern languages give us?
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
-      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,8 +55,7 @@ do modern languages give us?
       
       <guid>https://trishagee.github.io/presentation/code_review_matters_and_manners/</guid>
       <description>&lt;p&gt;Content and resources for the Code Review Matters and Manners talk, including links to additional information and
-supporting material.
-&lt;/p&gt;</description>
+supporting material.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,7 +67,8 @@ supporting material.
       <description>&lt;ul&gt;
 &lt;li&gt;Understand how to improve performance with your Java code using Java 8 language features.&lt;/li&gt;
 &lt;li&gt;Learn hands on techniques to discover and implement common Java 8 refactorings.&lt;/li&gt;
-&lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.</description>
+&lt;li&gt;Understand when you should and should not apply key refactorings in Java 8.&lt;/li&gt;
+&lt;/ul&gt;</description>
     </item>
     
     <item>
@@ -84,8 +80,7 @@ supporting material.
       <description>&lt;p&gt;Last night was the final get-together to discuss the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
 event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
-we had attendees from earlier sessions plus new people too.
-&lt;/p&gt;</description>
+we had attendees from earlier sessions plus new people too.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -98,13 +93,7 @@ we had attendees from earlier sessions plus new people too.
 is working towards completing the
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
-to share knowledge between people who are doing the course.
-
-The second week&amp;rsquo;s lesson was about
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/ma14-java-se-8-streams-2177646.html&#34;&gt;Streams&lt;/a&gt; - how you can use the
-new stream API to transform data. There was also a whole section on
-&lt;a href=&#34;http://www.oracle.com/technetwork/articles/java/java8-optional-2175753.html&#34;&gt;Optional&lt;/a&gt;, which initially seemed like
-rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rather more than I originally thought.&lt;/p&gt;</description>
+to share knowledge between people who are doing the course.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -117,8 +106,7 @@ rather a lot, but it turns out that &lt;code&gt;Optional&lt;/code&gt; can do rat
 &lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
 lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
 during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&amp;rsquo;re
-feeling very smart!) help people who may be struggling (or might not have watched the videos).
-&lt;/p&gt;</description>
+feeling very smart!) help people who may be struggling (or might not have watched the videos).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -129,8 +117,7 @@ feeling very smart!) help people who may be struggling (or might not have watche
       <guid>https://trishagee.github.io/post/java_at_20/</guid>
       <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
- No wonder I can&amp;rsquo;t seem to find the time to write these days.
- &lt;/p&gt;</description>
+ No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -139,8 +126,7 @@ feeling very smart!) help people who may be struggling (or might not have watche
       <pubDate>Mon, 06 Apr 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/groovy_vs_java/</guid>
-      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Resources for my &amp;ldquo;Is Groovy Better Than Java for Testing?&amp;rdquo; talk.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -154,8 +140,7 @@ find people unusually keen to come and visit us on the pretence of presenting at
 DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
 
 &lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
-an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.
-&lt;/p&gt;</description>
+an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -165,9 +150,7 @@ an update on where Java is now and where it looks like it&amp;rsquo;s going in t
       
       <guid>https://trishagee.github.io/resources/angular_java_groovy_mongodb_workshop/</guid>
       <description>&lt;p&gt;Setup required for the &lt;a href=&#34;http://qconlondon.com/tutorial/html5-angularjs-groovy-java-and-mongodb-all-together&#34;&gt;AngularJS/HTML5/Groovy/Java/MongoDB tutorial&lt;/a&gt; for QCon London 2015.
-Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -178,8 +161,7 @@ Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;
       <guid>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
       <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
 mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
-where these popular technologies sit in your architecture, and how they interact with each other.
-&lt;/p&gt;</description>
+where these popular technologies sit in your architecture, and how they interact with each other.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -209,8 +191,7 @@ operations using the Java driver:&lt;/p&gt;</description>
 
 &lt;p&gt;Don&amp;rsquo;t be fooled by the picture, people had more fun than it looks.  Honest.&lt;/p&gt;
 
-&lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:
-&lt;/p&gt;</description>
+&lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -222,8 +203,7 @@ operations using the Java driver:&lt;/p&gt;</description>
       <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
 for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
 and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
-Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.
-&lt;/p&gt;</description>
+Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -262,8 +242,7 @@ All developers have a tendency to think of and test the happy path. Not least of
       <pubDate>Mon, 09 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</guid>
-      <description>&lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.
-&lt;/p&gt;</description>
+      <description>&lt;p&gt;Information related to the currently-ongoing effort to redesign the Java driver for MongoDB.&lt;/p&gt;</description>
     </item>
     
     <item>

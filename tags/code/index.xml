@@ -25,9 +25,7 @@
 &lt;p&gt;or&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
     <item>
