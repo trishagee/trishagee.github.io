@@ -38,7 +38,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://trishagee.github.io/post/" />
 
-<meta property="og:updated_time" content="2012-03-21T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2012-03-22T00:00:00&#43;00:00"/>
 
 <meta itemprop="name" content="Posts">
 <meta itemprop="description" content="Trisha&#39;s thoughts on anything">
@@ -161,6 +161,26 @@
       
     </section>
     <aside class="flex-ns flex-wrap justify-around mt5">
+      
+        <div class="relative w-100 w-30-l mb4 bg-white">
+          
+            <div class="mb3 pa4 mid-gray overflow-hidden">
+    
+      <div class="f6">
+        March 22, 2012
+      </div>
+    
+    <h1 class="f3 near-black">
+      <a href="/post/java_magazine_intro_to_the_disruptor_part_one/" class="link black dim">
+        Java Magazine: Intro to the Disruptor Part One
+      </a>
+    </h1>
+    <div class="nested-links f5 lh-copy nested-copy-line-height">
+      This month&rsquo;s Java Magazine&nbsp;features an article by yours truly, which is yet another intro to the Disruptor. &nbsp;It&rsquo;s basically a summary of the stuff I&rsquo;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. &nbsp;If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.
+    </div>
+  </div>
+
+        </div>
       
         <div class="relative w-100 w-30-l mb4 bg-white">
           
@@ -784,29 +804,6 @@ If there are any girl programmers out there who are interested in being part of 
       So now I&rsquo;ve covered the ring buffer itself, reading from it and writing to it.
 Logically the next thing to do is to wire everything up together.
 I talked about multiple producers - they have the producer barrier to keep them in order and under control. &nbsp;I&rsquo;ve talked about consumers in a simple situation. &nbsp;Multiple consumers can get a little more involved. &nbsp;We&rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
-    </div>
-  </div>
-
-        </div>
-      
-        <div class="relative w-100 w-30-l mb4 bg-white">
-          
-            <div class="mb3 pa4 mid-gray overflow-hidden">
-    
-      <div class="f6">
-        July 4, 2011
-      </div>
-    
-    <h1 class="f3 near-black">
-      <a href="/post/dissecting_the_disruptor_writing_to_the_ring_buffer/" class="link black dim">
-        Dissecting the Disruptor: Writing to the ring buffer
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.
-The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
-ProducerBarriers
-The Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.
     </div>
   </div>
 
