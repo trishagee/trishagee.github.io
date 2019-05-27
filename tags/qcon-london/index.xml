@@ -70,15 +70,6 @@ Firstly, me me meI presented the talk I previewed at Skillsmatter the previous w
     </item>
     
     <item>
-      <title>QCon London</title>
-      <link>https://trishagee.github.io/post/qcon_london/</link>
-      <pubDate>Mon, 19 Mar 2007 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/post/qcon_london/</guid>
-      <description>Last week saw the first QCon London conference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.The conference consisted of two days of tutorials followed by three days of talks covering technologies, vendor products, and processes. In addition there were numerous &amp;ldquo;networking&amp;rdquo; opportunities with plenty of break times to both absorb information and meet other people, plus evening events.The conference was both comprehensive and absorbing, and I&amp;rsquo;m hoping to take the next few days to filter through the notes I have taken and present a more succinct version here.</description>
-    </item>
-    
-    <item>
       <title>QCon: Initial thoughts</title>
       <link>https://trishagee.github.io/post/qcon_initial_thoughts/</link>
       <pubDate>Mon, 19 Mar 2007 00:00:00 +0000</pubDate>
@@ -86,6 +77,16 @@ Firstly, me me meI presented the talk I previewed at Skillsmatter the previous w
       <guid>https://trishagee.github.io/post/qcon_initial_thoughts/</guid>
       <description>Things I took out of QCon:
 I want to play with Ajax.&amp;nbsp; Maybe I&#39;ve &#34;grown out&#34; of front end development but that doesn&#39;t prevent it from being (potentially) extremely coolSelenium looks like a good place to start for automated website testingIt can take up to 7 years to move away from a legacy architecture.&amp;nbsp; Depressing, but at least it shows it can be done and it&#39;s worth the effortI&#39;m going to become a certified Scrum Master Mistress.</description>
+    </item>
+    
+    <item>
+      <title>QCon London</title>
+      <link>https://trishagee.github.io/post/qcon_london/</link>
+      <pubDate>Sun, 18 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/qcon_london/</guid>
+      <description>Last week saw the first QCon London conference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.
+The conference consisted of two days of tutorials followed by three days of talks covering technologies, vendor products, and processes. In addition there were numerous &amp;ldquo;networking&amp;rdquo; opportunities with plenty of break times to both absorb information and meet other people, plus evening events.</description>
     </item>
     
   </channel>

@@ -39,7 +39,7 @@
   
   <url>
     <loc>https://trishagee.github.io/presentation/abstracts/</loc>
-    <lastmod>2018-12-14T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1649,7 +1649,7 @@
   
   <url>
     <loc>https://trishagee.github.io/post/agile_infection_growing/</loc>
-    <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <lastmod>2007-03-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1683,15 +1683,15 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/qcon_london/</loc>
+    <loc>https://trishagee.github.io/post/qcon_initial_thoughts/</loc>
     <lastmod>2007-03-19T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/qcon_initial_thoughts/</loc>
-    <lastmod>2007-03-19T00:00:00+00:00</lastmod>
+    <loc>https://trishagee.github.io/post/qcon_london/</loc>
+    <lastmod>2007-03-18T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2592,7 +2592,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/story-cards/</loc>
-    <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <lastmod>2007-03-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2641,7 +2641,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/todo/</loc>
-    <lastmod>2007-03-22T00:00:00+00:00</lastmod>
+    <lastmod>2007-03-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

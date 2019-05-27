@@ -63,7 +63,7 @@ Note: as usual, my advice is from the point of view of a woman (me) and is aimed
     <item>
       <title>Bio and Abstracts</title>
       <link>https://trishagee.github.io/presentation/abstracts/</link>
-      <pubDate>Fri, 14 Dec 2018 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/abstracts/</guid>
       <description>Bio Trisha has developed Java applications for a range of industries, including finance, manufacturing, software and non-profit, for companies of all sizes. She has expertise in Java high performance systems, is passionate about enabling developer productivity, and dabbles with Open Source development. Trisha is a leader of the Sevilla Java User Group and a Java Champion, she believes healthy communities and sharing ideas help us to learn from mistakes and build on successes.</description>
@@ -2461,10 +2461,11 @@ Still, people like Joel and Scott manage regular pronouncements and I&amp;rsquo;
     <item>
       <title>Agile Infection Growing</title>
       <link>https://trishagee.github.io/post/agile_infection_growing/</link>
-      <pubDate>Thu, 22 Mar 2007 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 23 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/agile_infection_growing/</guid>
-      <description>This is a bloody good idea. It builds upon my own Virgoen tendancies to write lists and tick things off, but what the list model lacks is the &amp;ldquo;in progress&amp;rdquo; state. Plus occasionally my lists get confused. See today&amp;rsquo;s notebook page:ThursdayFix bugs in Test DirectorMerge fixes upDo buildMerge downRead terms of contractE-mail solicitorGo to Robert DyasOrder DAB RadioFinish business analysis docsCarry on with QCon note consolidationHow do I know which ones I&amp;rsquo;ve started?</description>
+      <description>This is a bloody good idea.
+It builds upon my own Virgoen tendancies to write lists and tick things off, but what the list model lacks is the &amp;ldquo;in progress&amp;rdquo; state. Plus occasionally my lists get confused. See today&amp;rsquo;s notebook page:ThursdayFix bugs in Test DirectorMerge fixes upDo buildMerge downRead terms of contractE-mail solicitorGo to Robert DyasOrder DAB RadioFinish business analysis docsCarry on with QCon note consolidationHow do I know which ones I&amp;rsquo;ve started?</description>
     </item>
     
     <item>
@@ -2504,15 +2505,6 @@ Still, people like Joel and Scott manage regular pronouncements and I&amp;rsquo;
     </item>
     
     <item>
-      <title>QCon London</title>
-      <link>https://trishagee.github.io/post/qcon_london/</link>
-      <pubDate>Mon, 19 Mar 2007 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/post/qcon_london/</guid>
-      <description>Last week saw the first QCon London conference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.The conference consisted of two days of tutorials followed by three days of talks covering technologies, vendor products, and processes. In addition there were numerous &amp;ldquo;networking&amp;rdquo; opportunities with plenty of break times to both absorb information and meet other people, plus evening events.The conference was both comprehensive and absorbing, and I&amp;rsquo;m hoping to take the next few days to filter through the notes I have taken and present a more succinct version here.</description>
-    </item>
-    
-    <item>
       <title>QCon: Initial thoughts</title>
       <link>https://trishagee.github.io/post/qcon_initial_thoughts/</link>
       <pubDate>Mon, 19 Mar 2007 00:00:00 +0000</pubDate>
@@ -2520,6 +2512,16 @@ Still, people like Joel and Scott manage regular pronouncements and I&amp;rsquo;
       <guid>https://trishagee.github.io/post/qcon_initial_thoughts/</guid>
       <description>Things I took out of QCon:
 I want to play with Ajax.&amp;nbsp; Maybe I&#39;ve &#34;grown out&#34; of front end development but that doesn&#39;t prevent it from being (potentially) extremely coolSelenium looks like a good place to start for automated website testingIt can take up to 7 years to move away from a legacy architecture.&amp;nbsp; Depressing, but at least it shows it can be done and it&#39;s worth the effortI&#39;m going to become a certified Scrum Master Mistress.</description>
+    </item>
+    
+    <item>
+      <title>QCon London</title>
+      <link>https://trishagee.github.io/post/qcon_london/</link>
+      <pubDate>Sun, 18 Mar 2007 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/qcon_london/</guid>
+      <description>Last week saw the first QCon London conference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.
+The conference consisted of two days of tutorials followed by three days of talks covering technologies, vendor products, and processes. In addition there were numerous &amp;ldquo;networking&amp;rdquo; opportunities with plenty of break times to both absorb information and meet other people, plus evening events.</description>
     </item>
     
     <item>
