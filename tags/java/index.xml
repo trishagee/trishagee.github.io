@@ -6,7 +6,7 @@
     <description>Recent content in Java on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 22 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Life Beyond Java 8 </title>
       <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
       <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;</description>

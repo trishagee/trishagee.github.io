@@ -6,10 +6,19 @@
     <description>Recent content on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Life Beyond Java 8 </title>
+      <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
+      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
+      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Speaker Tips - Focus on Either Content or Delivery</title>
@@ -49,15 +58,6 @@ this page should list my confirmed upcoming events.&lt;/p&gt;</description>
       <guid>https://trishagee.github.io/post/st_mic_fitting/</guid>
       <description>I realise I have a bunch of experience and advice for speakers and potential speakers that I simply haven&amp;rsquo;t written down or shared. Here&amp;rsquo;s the first piece on things to consider that you might not have thought about.
 Note: as usual, my advice is from the point of view of a woman (me) and is aimed mostly at women, but also as usual it&amp;rsquo;s probably useful for others to know too.</description>
-    </item>
-    
-    <item>
-      <title>Life Beyond Java 8 </title>
-      <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
-      <pubDate>Fri, 22 Feb 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
-      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;</description>
     </item>
     
     <item>

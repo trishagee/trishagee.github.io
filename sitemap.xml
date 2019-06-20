@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/presentation/beyond_java_8/</loc>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/post/st_content_or_delivery/</loc>
     <lastmod>2019-03-29T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -26,13 +33,6 @@
   <url>
     <loc>https://trishagee.github.io/post/st_mic_fitting/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/beyond_java_8/</loc>
-    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -2081,7 +2081,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/java/</loc>
-    <lastmod>2019-02-22T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2410,7 +2410,7 @@
   
   <url>
     <loc>https://trishagee.github.io/presentation/</loc>
-    <lastmod>2019-03-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2669,7 +2669,7 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
