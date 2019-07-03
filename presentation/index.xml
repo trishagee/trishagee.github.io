@@ -6,10 +6,20 @@
     <description>Recent content in Presentations on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 20 Jun 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/presentation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Upcoming Events</title>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;https://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Life Beyond Java 8 </title>
@@ -18,16 +28,6 @@
       
       <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
       <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;https://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;</description>
     </item>
     
     <item>

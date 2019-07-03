@@ -33,6 +33,16 @@
     </item>
     
     <item>
+      <title>Upcoming Events</title>
+      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
+      <description>&lt;p&gt;While the list in the &lt;a href=&#34;https://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
+this page should list my confirmed upcoming events.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Life Beyond Java 8 </title>
       <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
       <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
@@ -50,16 +60,6 @@
       <description>&lt;p&gt;When you&amp;rsquo;re a new speaker, or just starting to consider speaking at conferences or user groups
 for the first time, it&amp;rsquo;s easy to become overwhelmed by all the things you worry
 about when delivering a talk.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Upcoming Events</title>
-      <link>https://trishagee.github.io/presentation/upcoming_events/</link>
-      <pubDate>Tue, 19 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
-      <description>&lt;p&gt;While the list in the &lt;a href=&#34;https://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
-this page should list my confirmed upcoming events.&lt;/p&gt;</description>
     </item>
     
     <item>
