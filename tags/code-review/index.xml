@@ -6,10 +6,31 @@
     <description>Recent content in Code Review on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/tags/code-review/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Code Review Best Practices</title>
+      <link>https://trishagee.github.io/post/code_review_best_practices/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/code_review_best_practices/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This article was originally a &lt;a href=&#34;https://www.fogbugz.com/blog/code-review-best-practices/&#34;&gt;guest post for FogBugz&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As developers, we all know that code reviews are a good thing in theory. They should help us:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Find bugs and security issues early&lt;/li&gt;
+&lt;li&gt;Improve the readability of our code&lt;/li&gt;
+&lt;li&gt;Provide a safety net to ensure all tasks are fully completed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The reality is that code reviews can frequently be an uncomfortable experience for everyone involved, leading to reviews that are combative, ineffective, or even worse, simply not happening.&lt;/p&gt;
+
+&lt;p&gt;Here is a quick guide to help you to create an effective code review process.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Code Review Best Practices</title>

@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/post/code_review_best_practices/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/presentation/beyond_java_8/</loc>
     <lastmod>2019-06-20T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1843,7 +1850,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/code-review/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2403,7 +2410,14 @@
   
   <url>
     <loc>https://trishagee.github.io/post/</loc>
-    <lastmod>2019-03-29T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://trishagee.github.io/tags/practices/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2626,6 +2640,13 @@
   </url>
   
   <url>
+    <loc>https://trishagee.github.io/tags/team/</loc>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/tags/testing/</loc>
     <lastmod>2015-06-26T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -2669,7 +2690,7 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

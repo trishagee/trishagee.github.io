@@ -6,10 +6,31 @@
     <description>Recent content in Posts on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 29 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 03 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Code Review Best Practices</title>
+      <link>https://trishagee.github.io/post/code_review_best_practices/</link>
+      <pubDate>Wed, 03 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/post/code_review_best_practices/</guid>
+      <description>&lt;p&gt;&lt;em&gt;This article was originally a &lt;a href=&#34;https://www.fogbugz.com/blog/code-review-best-practices/&#34;&gt;guest post for FogBugz&lt;/a&gt;.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;As developers, we all know that code reviews are a good thing in theory. They should help us:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Find bugs and security issues early&lt;/li&gt;
+&lt;li&gt;Improve the readability of our code&lt;/li&gt;
+&lt;li&gt;Provide a safety net to ensure all tasks are fully completed&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The reality is that code reviews can frequently be an uncomfortable experience for everyone involved, leading to reviews that are combative, ineffective, or even worse, simply not happening.&lt;/p&gt;
+
+&lt;p&gt;Here is a quick guide to help you to create an effective code review process.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Speaker Tips - Focus on Either Content or Delivery</title>
@@ -28,7 +49,10 @@ about when delivering a talk.&lt;/p&gt;</description>
       <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/st_what_to_wear/</guid>
-      <description>For years I&amp;rsquo;ve avoided talking about the topic of what to wear when presenting. I didn&amp;rsquo;t want to cover it because I didn&amp;rsquo;t want people to think that I only worried about this topic because I was a woman. I also didn&amp;rsquo;t want other women to inherit any of my neuroses around deciding what to wear. I&amp;rsquo;m the sort of person who always enjoyed thinking long and hard about what to wear the next day at work, and I know that&amp;rsquo;s not how everyone works.</description>
+      <description>&lt;p&gt;For years I&amp;rsquo;ve avoided talking about the topic of what to wear when presenting. I didn&amp;rsquo;t want to cover it because I
+didn&amp;rsquo;t want people to think that I only worried about this topic because I was a woman. I also didn&amp;rsquo;t want other
+women to inherit any of my neuroses around deciding what to wear. I&amp;rsquo;m the sort of person who always enjoyed thinking
+long and hard about what to wear the next day at work, and I know that&amp;rsquo;s not how everyone works.&lt;/p&gt;</description>
     </item>
     
     <item>
