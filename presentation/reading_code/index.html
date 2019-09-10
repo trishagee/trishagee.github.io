@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Trisha Gee </title>
+    <title>Trisha Gee  | Reading Code Is Harder Than Writing It</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.54.0" />
     
@@ -26,23 +26,28 @@
     
 
     
-      <link href="https://trishagee.github.io/tags/javaone/index.xml" rel="alternate" type="application/rss+xml" title="Trisha Gee" />
-      <link href="https://trishagee.github.io/tags/javaone/index.xml" rel="feed" type="application/rss+xml" title="Trisha Gee" />
-    
 
-    <meta property="og:title" content="Javaone" />
-<meta property="og:description" content="Trisha&#39;s thoughts on anything" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://trishagee.github.io/tags/javaone/" />
+    <meta property="og:title" content="Reading Code Is Harder Than Writing It" />
+<meta property="og:description" content="We should invest more time in the skill of reading code." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://trishagee.github.io/presentation/reading_code/" />
+<meta property="article:published_time" content="2019-09-10T00:00:00&#43;00:00"/>
+<meta property="article:modified_time" content="2019-09-10T00:00:00&#43;00:00"/>
 
-<meta property="og:updated_time" content="2014-09-30T00:00:00&#43;00:00"/>
+<meta itemprop="name" content="Reading Code Is Harder Than Writing It">
+<meta itemprop="description" content="We should invest more time in the skill of reading code.">
 
-<meta itemprop="name" content="Javaone">
-<meta itemprop="description" content="Trisha&#39;s thoughts on anything">
 
+<meta itemprop="datePublished" content="2019-09-10T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2019-09-10T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="266">
+
+
+
+<meta itemprop="keywords" content="java,intellij," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Javaone"/>
-<meta name="twitter:description" content="Trisha&#39;s thoughts on anything"/>
+<meta name="twitter:title" content="Reading Code Is Harder Than Writing It"/>
+<meta name="twitter:description" content="We should invest more time in the skill of reading code."/>
 
       
 <script type="application/javascript">
@@ -62,11 +67,11 @@ if (!doNotTrack) {
   <body class="ma0 avenir bg-near-white production">
 
     
+   
+  
 
-  
-  
-  <header class="cover bg-top" style="background-image: url('https://trishagee.github.io/static/images/layout/sea.jpg');">
-    <div class="bg-black-60">
+  <header>
+    <div class="bg-black">
       <nav class="pv3 ph3 ph4-ns" role="navigation">
   <div class="flex-l justify-between items-center center">
     <div></div>
@@ -153,46 +158,187 @@ if (!doNotTrack) {
   </div>
 </nav>
 
-      <div class="tc-l pv4 pv6-l ph3 ph4-ns">
-        <h1 class="f2 f-subheadline-l fw2 white-90 mb0 lh-title">
-          Javaone
-        </h1>
-        
-      </div>
     </div>
   </header>
 
 
+
     <main class="pb7" role="main">
       
-  <article class="cf pa3 pa4-m pa4-l">
-    <div class="measure-wide-l center f4 lh-copy nested-copy-line-height nested-links nested-img mid-gray">
-      <p>Below you will find pages that utilize the taxonomy term “Javaone”</p>
-    </div>
-  </article>
-  <div class="mw8 center">    
-    <section class="flex-ns flex-wrap justify-around mt5">
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+
+    <header class="mt4 w-100">
+      <p class="f6 b helvetica tracked">
+          
+        PRESENTATIONS
+      </p>
+      <h1 class="f1 athelas mb1">Reading Code Is Harder Than Writing It</h1>
       
-        <div class="relative w-100  mb4 bg-white">
-          <div class="relative w-100 mb4 bg-white nested-copy-line-height">
-  <div class="bg-white mb3 pa4 gray overflow-hidden">
-    <span class="f6 db">Post</span>
-    <h1 class="f3 near-black">
-      <a href="/post/java_one_2014_day_one/" class="link black dim">
-        JavaOne 2014, Day One
-      </a>
-    </h1>
-    <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>Well, I&rsquo;m at JavaOne again, and after only one day I&rsquo;ve already learnt stuff.  And, of course,
-had a great time catching up with interesting people.  Here&rsquo;s a summary of the first day.</p>
-    </div>
-  </div>
+      <time class="f6 mv4 dib tracked" datetime="2019-09-10T00:00:00Z">September 10, 2019</time>
+      
+      
+    </header>
+
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>We should invest more time in the skill of reading code.</p>
+
+<h2 id="abstract">Abstract</h2>
+
+<p><em>It&rsquo;s funny that computer languages are the only languages where one learns to write before
+ learning to read.  It&rsquo;s actually not uncommon for people to never really learn to read code.
+ This seems a little unbalanced given that we actually read code much more frequently than we write it.</em></p>
+
+<p><em>Even those who promote software as a craft sometimes fall into the trap of often talking about
+ writing clean code that people can read, yet not placing much emphasis on the skill of reading
+ the code.</em></p>
+
+<p><em>The ability to read code must also be a skill, and as such it must be something that can be
+ learnt and practiced.  In this presentation, we&rsquo;re going to look at:</em></p>
+
+<ul>
+<li><em>The different reasons we might have to read code, and how that should impact our reading</em></li>
+<li><em>The problems we face when reading code (even our own!)</em></li>
+<li><em>Tips to bear in mind when we&rsquo;re reading code</em></li>
+<li><em>Tools we can use to help our understanding</em></li>
+<li><em>How and where to practice these skills</em></li>
+</ul>
+
+<p><em>At the end of the talk we will at least have considered whether we need to level up our &ldquo;Reading
+ Code&rdquo; skill.</em></p>
+
+<h2 id="slides">Slides</h2>
+
+<script async class="speakerdeck-embed" data-id="d77e820ccf214f9ba5838a14e654e433" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+<h2 id="resources">Resources</h2>
+
+<ul>
+<li><a href="https://www.youtube.com/watch?v=1UHsJyCq1SU">Navigation in IntelliJ IDEA</a> (video)</li>
+<li><a href="https://en.wikipedia.org/wiki/Perceptual_learning">Perceptual Learning</a></li>
+<li><a href="https://decembersoft.com/posts/code-quality-vs-your-sanity-coping-with-bad-code-on-the-job/">Code Quality vs. Your Sanity: Coping with Bad Code on the Job</a></li>
+<li><a href="https://en.wikipedia.org/wiki/IKEA_effect">IKEA Effect</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Mere-exposure_effect">Mere exposure effect</a></li>
+<li><a href="https://en.wikipedia.org/wiki/False_friend">False friend</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect">Dunning-Kruger effect</a></li>
+<li><a href="https://meltingasphalt.com/a-codebase-is-an-organism/">A Codebase is an Organism</a></li>
+<li><a href="https://selftaughtcoders.com/how-to-quickly-and-effectively-read-other-peoples-code/">How to quickly and effectively read other people’s code</a></li>
+<li><a href="https://www.stilldrinking.org/programming-sucks">Programming Sucks</a></li>
+<li><a href="https://blog.codinghorror.com/learn-to-read-the-source-luke/">Learn to Read the Source, Luke</a></li>
+<li><a href="https://medium.com/launch-school/how-to-read-source-code-without-ripping-your-hair-out-e066472bbe8d">How to read code without ripping your hair out</a></li>
+<li><a href="https://www.youtube.com/watch?v=mrXHf71lYrs">Reading other people&rsquo;s code</a> (video)</li>
+</ul><ul class="pa0">
+  
+   <li class="list">
+     <a href="/tags/java" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">java</a>
+   </li>
+  
+   <li class="list">
+     <a href="/tags/intellij" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">intellij</a>
+   </li>
+  
+</ul>
+<div class="mt6">
+      
+        <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    this.page.title = 'Reading Code Is Harder Than Writing It';
+    this.page.url = 'http:\/\/trishagee.github.io\/presentation\/reading_code';
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "trishagee" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
+      </div>
+    </section>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+  <div class="bg-light-gray pa3 nested-list-reset nested-copy-line-height nested-links">
+    <p class="f5 b mb3">Related</p>
+    <ul class="pa0 list">
+	   
+	     <li  class="mb2">
+          <a href="/presentation/boilerplate/">Is boilerplate code really so bad?</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/presentation/real_world_java_9/">Real World Java 9</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/presentation/java_9_are_we_there_yet/">Anticipating Java 9 - Functionality and Tooling</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/presentation/beyond_java_8/">Life Beyond Java 8 </a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/resources/intellij_for_eclipse_users/">IntelliJ IDEA for Eclipse Users</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/presentation/code_review_matters_and_manners/">Code Review Matters and Manners</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/presentation/refactoring_to_java_8/">Applying Java 8 Idioms to Existing Code</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/java_8_mooc_session3/">Java 8 MOOC - Session 3 Summary</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/java_8_mooc_session2/">Java 8 MOOC - Session 2 Summary</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/java_8_mooc_session1/">Java 8 MOOC - Session 1 Summary</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/java_at_20/">Java at 20</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/presentation/groovy_vs_java/">Groovy vs Java</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/svq_state_of_java_update/">The State of Java</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/resources/angular_java_groovy_mongodb_workshop/">Workshop: AngularJS, HTML5, Groovy, Java and MongoDB</a>
+        </li>
+	    
+	     <li  class="mb2">
+          <a href="/post/stuff_i_learnt_about_intellij_2/">New IntelliJ Tricks I Learnt Part 2</a>
+        </li>
+	    
+    </ul>
 </div>
 
-        </div>
-      
-    </section>
-  </div>
+</aside>
+
+  </article>
 
     </main>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">

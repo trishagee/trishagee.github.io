@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/presentation/reading_code/</loc>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/post/code_review_best_practices/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -2074,7 +2081,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/intellij/</loc>
-    <lastmod>2018-02-21T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2088,7 +2095,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/java/</loc>
-    <lastmod>2019-06-20T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2424,7 +2431,7 @@
   
   <url>
     <loc>https://trishagee.github.io/presentation/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2690,7 +2697,7 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
