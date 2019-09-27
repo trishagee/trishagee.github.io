@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/post/me_mum/</loc>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/post/ode_to_a_resting_warrior/</loc>
     <lastmod>2019-09-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
