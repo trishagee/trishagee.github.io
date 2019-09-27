@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/post/ode_to_a_resting_warrior/</loc>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/presentation/reading_code/</loc>
     <lastmod>2019-09-10T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -409,7 +416,7 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/the_handover.md/</loc>
+    <loc>https://trishagee.github.io/post/the_handover/</loc>
     <lastmod>2014-06-30T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -2417,7 +2424,7 @@
   
   <url>
     <loc>https://trishagee.github.io/post/</loc>
-    <lastmod>2019-07-03T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2661,6 +2668,13 @@
   </url>
   
   <url>
+    <loc>https://trishagee.github.io/tags/therese/</loc>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/tags/thoughtworks/</loc>
     <lastmod>2011-05-23T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -2697,7 +2711,7 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2019-09-10T00:00:00+00:00</lastmod>
+    <lastmod>2019-09-27T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
