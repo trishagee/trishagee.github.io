@@ -6,10 +6,19 @@
     <description>Recent content in Presentations on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 08 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/presentation/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Fully Reactive: Spring, Kotlin, and JavaFX Playing Together</title>
+      <link>https://trishagee.github.io/presentation/coding_duel/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/coding_duel/</guid>
+      <description>Spring Framework 5 brings full reactive support to developers everywhere. What better way to demo reactive programming than to actually build something live? Trisha will live code an end-to-end application using Spring Framework 5, Spring Boot, Reactor, Kotlin, JavaFX, and maybe even some MongoDB, all built using IntelliJ IDEA. During this session, we’ll see how these different components can work together really easily using Spring. What could possibly go wrong?</description>
+    </item>
     
     <item>
       <title>Reading Code Is Harder Than Writing It</title>
@@ -56,15 +65,6 @@ this page should list my confirmed upcoming events.&lt;/p&gt;</description>
       <guid>https://trishagee.github.io/presentation/speaking_credentials/</guid>
       <description>I&amp;rsquo;ve spoken at JavaOne (2011, 2012, 2013, 2014, 2016) and have received the JavaOne Rock Star award several times. I&amp;rsquo;ve presented many times at QCon London, and other notable conferences include QCon New York, Devoxx BE and UK, JavaZone, CraftConf OSCON and various GOTO conferences. I also regularly present to user groups around the world, and am a leader of the Sevilla Java User Group.
 See my full list of past presentations here (includes links to videos).</description>
-    </item>
-    
-    <item>
-      <title>Fully Reactive: Spring, Kotlin, JavaFX, and MongoDB Playing Together</title>
-      <link>https://trishagee.github.io/presentation/coding_duel/</link>
-      <pubDate>Tue, 23 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/coding_duel/</guid>
-      <description>Spring Framework 5 brings full reactive support to developers everywhere. What better way to demo reactive programming than to actually build something live? This session’s presenters perform a daring feat of pair programming/dueling coding to create an end-to-end application by using Spring Framework 5, Spring Boot, Reactor, Kotlin, JavaFX, REST, and MongoDB, all built with IntelliJ IDEA. What could possibly go wrong?</description>
     </item>
     
     <item>
