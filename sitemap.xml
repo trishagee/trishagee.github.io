@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/presentation/coding_duel/</loc>
     <lastmod>2019-10-08T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -33,13 +40,6 @@
   <url>
     <loc>https://trishagee.github.io/post/code_review_best_practices/</loc>
     <lastmod>2019-07-03T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1899,7 +1899,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/conferences/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2004,7 +2004,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/events/</loc>
-    <lastmod>2019-07-02T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2445,7 +2445,7 @@
   
   <url>
     <loc>https://trishagee.github.io/presentation/</loc>
-    <lastmod>2019-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2718,7 +2718,7 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2019-10-08T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
