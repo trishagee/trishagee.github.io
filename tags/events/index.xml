@@ -6,10 +6,19 @@
     <description>Recent content in Events on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/tags/events/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bio and Abstracts</title>
+      <link>https://trishagee.github.io/presentation/abstracts/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/abstracts/</guid>
+      <description>Bio Trisha has developed Java applications for a range of industries, including finance, manufacturing, software and non-profit, for companies of all sizes. She has expertise in Java high performance systems, is passionate about enabling developer productivity, and dabbles with Open Source development. Trisha is a leader of the Sevilla Java User Group and a Java Champion, she believes healthy communities and sharing ideas help us to learn from mistakes and build on successes.</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -19,15 +28,6 @@
       <guid>https://trishagee.github.io/presentation/upcoming_events/</guid>
       <description>&lt;p&gt;While the list in the &lt;a href=&#34;https://trishagee.github.io/presentation/public_appearances/&#34;&gt;talks section&lt;/a&gt; of my blog covers past presentations,
 this page should list my confirmed upcoming events.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Bio and Abstracts</title>
-      <link>https://trishagee.github.io/presentation/abstracts/</link>
-      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/abstracts/</guid>
-      <description>Bio Trisha has developed Java applications for a range of industries, including finance, manufacturing, software and non-profit, for companies of all sizes. She has expertise in Java high performance systems, is passionate about enabling developer productivity, and dabbles with Open Source development. Trisha is a leader of the Sevilla Java User Group and a Java Champion, she believes healthy communities and sharing ideas help us to learn from mistakes and build on successes.</description>
     </item>
     
     <item>

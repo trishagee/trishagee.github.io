@@ -3,6 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://trishagee.github.io/presentation/abstracts/</loc>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://trishagee.github.io/presentation/upcoming_events/</loc>
     <lastmod>2019-12-13T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -68,13 +75,6 @@
   <url>
     <loc>https://trishagee.github.io/post/st_mic_fitting/</loc>
     <lastmod>2019-03-14T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/presentation/abstracts/</loc>
-    <lastmod>2018-12-15T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -1899,7 +1899,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/conferences/</loc>
-    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2004,7 +2004,7 @@
   
   <url>
     <loc>https://trishagee.github.io/tags/events/</loc>
-    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2445,7 +2445,7 @@
   
   <url>
     <loc>https://trishagee.github.io/presentation/</loc>
-    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>
@@ -2718,7 +2718,7 @@
   
   <url>
     <loc>https://trishagee.github.io/</loc>
-    <lastmod>2019-12-13T00:00:00+00:00</lastmod>
+    <lastmod>2020-01-14T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0</priority>
   </url>

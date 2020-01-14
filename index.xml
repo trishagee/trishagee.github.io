@@ -6,10 +6,19 @@
     <description>Recent content on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 13 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Bio and Abstracts</title>
+      <link>https://trishagee.github.io/presentation/abstracts/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/abstracts/</guid>
+      <description>Bio Trisha has developed Java applications for a range of industries, including finance, manufacturing, software and non-profit, for companies of all sizes. She has expertise in Java high performance systems, is passionate about enabling developer productivity, and dabbles with Open Source development. Trisha is a leader of the Sevilla Java User Group and a Java Champion, she believes healthy communities and sharing ideas help us to learn from mistakes and build on successes.</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -129,15 +138,6 @@ long and hard about what to wear the next day at work, and I know that&amp;rsquo
       <guid>https://trishagee.github.io/post/st_mic_fitting/</guid>
       <description>I realise I have a bunch of experience and advice for speakers and potential speakers that I simply haven&amp;rsquo;t written down or shared. Here&amp;rsquo;s the first piece on things to consider that you might not have thought about.
 Note: as usual, my advice is from the point of view of a woman (me) and is aimed mostly at women, but also as usual it&amp;rsquo;s probably useful for others to know too.</description>
-    </item>
-    
-    <item>
-      <title>Bio and Abstracts</title>
-      <link>https://trishagee.github.io/presentation/abstracts/</link>
-      <pubDate>Sat, 15 Dec 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/abstracts/</guid>
-      <description>Bio Trisha has developed Java applications for a range of industries, including finance, manufacturing, software and non-profit, for companies of all sizes. She has expertise in Java high performance systems, is passionate about enabling developer productivity, and dabbles with Open Source development. Trisha is a leader of the Sevilla Java User Group and a Java Champion, she believes healthy communities and sharing ideas help us to learn from mistakes and build on successes.</description>
     </item>
     
     <item>
