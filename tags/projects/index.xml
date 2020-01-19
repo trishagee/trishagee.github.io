@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Trisha Gee</title>
+    <title>projects on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/projects/</link>
-    <description>Recent content in Projects on Trisha Gee</description>
+    <description>Recent content in projects on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 20 Mar 2014 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/atom-to-hugo/</guid>
-      <description>I&amp;rsquo;ve been using Blogger happily for three years or so, since I migrated the blog from LiveJournal and decided to actually invest some time writing. I&amp;rsquo;m happy with it because I just type stuff into Blogger and It Just Works. I&amp;rsquo;m happy because I can use my Google credentials to sign in. I&amp;rsquo;m happy because now I can pretend my two Google+ accounts exist for a purpose, by getting Blogger to automatically share my content there.</description>
+      <description>I&#39;ve been using Blogger happily for three years or so, since I migrated the blog from LiveJournal and decided to actually invest some time writing. I&#39;m happy with it because I just type stuff into Blogger and It Just Works. I&#39;m happy because I can use my Google credentials to sign in. I&#39;m happy because now I can pretend my two Google+ accounts exist for a purpose, by getting Blogger to automatically share my content there.</description>
     </item>
     
   </channel>

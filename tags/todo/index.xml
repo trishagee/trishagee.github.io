@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Todo on Trisha Gee</title>
+    <title>todo on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/todo/</link>
-    <description>Recent content in Todo on Trisha Gee</description>
+    <description>Recent content in todo on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 23 Mar 2007 00:00:00 +0000</lastBuildDate>
@@ -18,7 +18,7 @@
       
       <guid>https://trishagee.github.io/post/agile_infection_growing/</guid>
       <description>This is a bloody good idea.
-It builds upon my own Virgoen tendancies to write lists and tick things off, but what the list model lacks is the &amp;ldquo;in progress&amp;rdquo; state. Plus occasionally my lists get confused. See today&amp;rsquo;s notebook page:ThursdayFix bugs in Test DirectorMerge fixes upDo buildMerge downRead terms of contractE-mail solicitorGo to Robert DyasOrder DAB RadioFinish business analysis docsCarry on with QCon note consolidationHow do I know which ones I&amp;rsquo;ve started?</description>
+It builds upon my own Virgoen tendancies to write lists and tick things off, but what the list model lacks is the &amp;ldquo;in progress&amp;rdquo; state. Plus occasionally my lists get confused. See today&#39;s notebook page:ThursdayFix bugs in Test DirectorMerge fixes upDo buildMerge downRead terms of contractE-mail solicitorGo to Robert DyasOrder DAB RadioFinish business analysis docsCarry on with QCon note consolidationHow do I know which ones I&#39;ve started?</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Tue, 20 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference/</guid>
-      <description>Investigate Maven 2Have a glance at TestNGPotentially play with JMock for current testing frameworkPlay with GWTSign up for Pragmatic Architect eventCheck out JavaBlackBelt site - what is provided, and what are the feelings of professionals (or, more importantly, recruiters) towards these qualifications?Look into getting Visual Studio .NET again so you can have a go at GUI development in it.Go to technorati. Investigate JUnit 4 changes/improvements </description>
+      <description></description>
     </item>
     
   </channel>

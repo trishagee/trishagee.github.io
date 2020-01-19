@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Trisha Gee  | Spock passes the next test - Painless Stubbing</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -17,7 +14,7 @@
 
     
     
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
     
 
     
@@ -29,40 +26,24 @@
     
 
     
-
+    
     <meta property="og:title" content="Spock passes the next test - Painless Stubbing" />
-<meta property="og:description" content="In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter." />
+<meta property="og:description" content="In the last postI talked about our need for some improved testing tools, our choice of Spockas something to spike, and how mocking looks in Spock.As that blog got rather long, I saved the next installment for a separate post.Today I want to look at stubbing.StubbingMocking is great for checking outputs- in the example in the last post, we&#39;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/" />
-<meta property="article:published_time" content="2013-07-10T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2013-07-10T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2013-07-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2013-07-10T00:00:00+00:00" />
 <meta itemprop="name" content="Spock passes the next test - Painless Stubbing">
-<meta itemprop="description" content="In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.">
-
-
+<meta itemprop="description" content="In the last postI talked about our need for some improved testing tools, our choice of Spockas something to spike, and how mocking looks in Spock.As that blog got rather long, I saved the next installment for a separate post.Today I want to look at stubbing.StubbingMocking is great for checking outputs- in the example in the last post, we&#39;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.">
 <meta itemprop="datePublished" content="2013-07-10T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2013-07-10T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="582">
+<meta itemprop="wordCount" content="559">
 
 
 
-<meta itemprop="keywords" content="java,spock,testing,groovy," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="java,spock,testing,groovy," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Spock passes the next test - Painless Stubbing"/>
-<meta name="twitter:description" content="In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter."/>
+<meta name="twitter:description" content="In the last postI talked about our need for some improved testing tools, our choice of Spockas something to spike, and how mocking looks in Spock.As that blog got rather long, I saved the next installment for a separate post.Today I want to look at stubbing.StubbingMocking is great for checking outputs- in the example in the last post, we&#39;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter."/>
 
       
 <script type="application/javascript">
@@ -125,6 +106,7 @@ if (!doNotTrack) {
 
 
 
+
 <a href="https://twitter.com/trisha_gee" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
   <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
@@ -169,6 +151,7 @@ if (!doNotTrack) {
 
 
 
+
     </div>
   </div>
 </nav>
@@ -190,12 +173,13 @@ if (!doNotTrack) {
       </p>
       <h1 class="f1 athelas mb1">Spock passes the next test - Painless Stubbing</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2013-07-10T00:00:00Z">July 10, 2013</time>      
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-07-10T00:00:00Z">July 10, 2013</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>In the <a href="http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html">last post</a> I talked about our need for some improved testing tools, our choice of <a href="https://code.google.com/p/spock/">Spock</a> as something to spike, and how mocking looks in Spock.<br /><br />As that blog got rather long, I saved the next installment for a separate post.<br /><br />Today I want to look at stubbing.<br /><br /><b>Stubbing</b><br />Mocking is great for checking <i>outputs</i> - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the <code>bsonWriter</code>.<br /><br />Stubbing is great for faking your <i>inputs</i> (I don&rsquo;t know why this difference never occurred to me before, but&nbsp;<a href="http://www.devoxx.com/display/UK13/I+hate+writing+unit+tests%2C+how+come+everybody+else+enjoys+it">Colin&rsquo;s talk at Devoxx UK</a>&nbsp;made this really clear to me). <br /><br />One of the things we need to do in the compatibility layer of the new driver is to wrap all the new style Exceptions that can be thrown by the new architecture layer and turn them into old-style Exceptions, for backwards compatibility purposes. &nbsp;Sometimes testing the exceptional cases is&hellip; challenging. &nbsp;So I opted to do this with Spock.<br /><br /><script src="https://gist.github.com/trishagee/5935645.js"></script>So here we can use a real <code>DB</code> class, but with a mock <code>Mongo</code> that will return us a &ldquo;mock&rdquo; <code>Session</code>. &nbsp;It&rsquo;s not actually a mock though, it&rsquo;s more of a stub because we want to tell it how to behave when it&rsquo;s called - in this test, we want to force it to throw an <code>org.mongodb.MongoException</code> whenever <code>execute</code> is called. &nbsp;It doesn&rsquo;t matter to us what get passed in to the execute method (that&rsquo;s what the underscore means on line 16), what matters is that when it gets called it throws the correct type of Exception.<br /><br />Like before, the <code>when</code>: section shows the bit we&rsquo;re actually trying to test. In this case, we want to call <code>rename</code>.<br /><br />Then finally the <code>then:</code> section asserts that we received the correct sort of Exception. &nbsp;It&rsquo;s not enormously clear, although I&rsquo;ve kept the full namespace in to try and clarify, but the aim is that any <code><b>org</b>.mongodb.MongoException</code> that gets thrown by the new architecture gets turned into the appropriate <code><b>com</b>.mongodb.MongoException</code>. &nbsp;We&rsquo;re sort of &ldquo;lucky&rdquo; because the old code is in the wrong package structure, and in the new architecture we&rsquo;ve got a chance to fix this and put stuff into the right place.<br /><br />Once I&rsquo;d tracked down all the places Exceptions can escape and started writing these sorts of tests to exercise those code paths, not only did I feel more secure that we wouldn&rsquo;t break backwards compatibility by leaking the wrong Exceptions, but we also found our test coverage went up - and more importantly, in the <i>un</i>happy paths, which are often harder to test.<br /><br />I mentioned in the last post that we already did some simple stubbing to help us test the data driver. Why not just keep using that approach?  <br /><br />Well, these stubs end up looking like this:<br /><br /><script src="https://gist.github.com/trishagee/5935655.js"></script>Ick.<br /><br />And you end up extending them so you can just override the method you&rsquo;re interested in (particularly in the case of forcing a method to throw an exception). &nbsp;Most irritatingly to me, these stubs live away from the actual tests, so you can&rsquo;t easily see what the expected behaviour is. &nbsp;In the Spock test, the expected stubbed behaviour is defined on line 16, the call that will provoke it is on line 19 and the code that checks the expectation is on line 22. &nbsp;It&rsquo;s all within even the smallest monitor&rsquo;s window.<br /><br />So stubbing in Spock is painless. &nbsp;Next:<br /><ul><li><a href="http://mechanitis.blogspot.com.es/2013/12/spock-data-driven-testing.html">Data Driven Testing</a></li></ul><br /></p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>In the <!-- raw HTML omitted -->last post<!-- raw HTML omitted --> I talked about our need for some improved testing tools, our choice of <!-- raw HTML omitted -->Spock<!-- raw HTML omitted --> as something to spike, and how mocking looks in Spock.<!-- raw HTML omitted --><!-- raw HTML omitted -->As that blog got rather long, I saved the next installment for a separate post.<!-- raw HTML omitted --><!-- raw HTML omitted -->Today I want to look at stubbing.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Stubbing<!-- raw HTML omitted --><!-- raw HTML omitted -->Mocking is great for checking <!-- raw HTML omitted -->outputs<!-- raw HTML omitted --> - in the example in the last post, we're checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the <!-- raw HTML omitted -->bsonWriter<!-- raw HTML omitted -->.<!-- raw HTML omitted --><!-- raw HTML omitted -->Stubbing is great for faking your <!-- raw HTML omitted -->inputs<!-- raw HTML omitted --> (I don't know why this difference never occurred to me before, but <!-- raw HTML omitted -->Colin's talk at Devoxx UK<!-- raw HTML omitted --> made this really clear to me). <!-- raw HTML omitted --><!-- raw HTML omitted -->One of the things we need to do in the compatibility layer of the new driver is to wrap all the new style Exceptions that can be thrown by the new architecture layer and turn them into old-style Exceptions, for backwards compatibility purposes.  Sometimes testing the exceptional cases is&hellip; challenging.  So I opted to do this with Spock.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->So here we can use a real <!-- raw HTML omitted -->DB<!-- raw HTML omitted --> class, but with a mock <!-- raw HTML omitted -->Mongo<!-- raw HTML omitted --> that will return us a &ldquo;mock&rdquo; <!-- raw HTML omitted -->Session<!-- raw HTML omitted -->.  It's not actually a mock though, it's more of a stub because we want to tell it how to behave when it's called - in this test, we want to force it to throw an <!-- raw HTML omitted -->org.mongodb.MongoException<!-- raw HTML omitted --> whenever <!-- raw HTML omitted -->execute<!-- raw HTML omitted --> is called.  It doesn't matter to us what get passed in to the execute method (that's what the underscore means on line 16), what matters is that when it gets called it throws the correct type of Exception.<!-- raw HTML omitted --><!-- raw HTML omitted -->Like before, the <!-- raw HTML omitted -->when<!-- raw HTML omitted -->: section shows the bit we're actually trying to test. In this case, we want to call <!-- raw HTML omitted -->rename<!-- raw HTML omitted -->.<!-- raw HTML omitted --><!-- raw HTML omitted -->Then finally the <!-- raw HTML omitted -->then:<!-- raw HTML omitted --> section asserts that we received the correct sort of Exception.  It's not enormously clear, although I've kept the full namespace in to try and clarify, but the aim is that any <!-- raw HTML omitted --><!-- raw HTML omitted -->org<!-- raw HTML omitted -->.mongodb.MongoException<!-- raw HTML omitted --> that gets thrown by the new architecture gets turned into the appropriate <!-- raw HTML omitted --><!-- raw HTML omitted -->com<!-- raw HTML omitted -->.mongodb.MongoException<!-- raw HTML omitted -->.  We're sort of &ldquo;lucky&rdquo; because the old code is in the wrong package structure, and in the new architecture we've got a chance to fix this and put stuff into the right place.<!-- raw HTML omitted --><!-- raw HTML omitted -->Once I'd tracked down all the places Exceptions can escape and started writing these sorts of tests to exercise those code paths, not only did I feel more secure that we wouldn't break backwards compatibility by leaking the wrong Exceptions, but we also found our test coverage went up - and more importantly, in the <!-- raw HTML omitted -->un<!-- raw HTML omitted -->happy paths, which are often harder to test.<!-- raw HTML omitted --><!-- raw HTML omitted -->I mentioned in the last post that we already did some simple stubbing to help us test the data driver. Why not just keep using that approach?  <!-- raw HTML omitted --><!-- raw HTML omitted -->Well, these stubs end up looking like this:<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Ick.<!-- raw HTML omitted --><!-- raw HTML omitted -->And you end up extending them so you can just override the method you're interested in (particularly in the case of forcing a method to throw an exception).  Most irritatingly to me, these stubs live away from the actual tests, so you can't easily see what the expected behaviour is.  In the Spock test, the expected stubbed behaviour is defined on line 16, the call that will provoke it is on line 19 and the code that checks the expectation is on line 22.  It's all within even the smallest monitor's window.<!-- raw HTML omitted --><!-- raw HTML omitted -->So stubbing in Spock is painless.  Next:<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Data Driven Testing<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <ul class="pa0">
   
    <li class="list">
@@ -216,6 +200,7 @@ if (!doNotTrack) {
   
 </ul>
 <div class="mt6">
+      
         <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -236,6 +221,8 @@ if (!doNotTrack) {
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
       </div>
     </section>
 
@@ -319,9 +306,10 @@ if (!doNotTrack) {
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://trishagee.github.io" >
-    &copy; 2020 Trisha Gee
+    &copy;  Trisha Gee 2020 
   </a>
     <div>
+
 
 
 
@@ -364,6 +352,7 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
 
 
 

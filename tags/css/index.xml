@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Css on Trisha Gee</title>
+    <title>css on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/css/</link>
-    <description>Recent content in Css on Trisha Gee</description>
+    <description>Recent content in css on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 03 Mar 2014 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_my_day/</guid>
-      <description>Web development has changed a lot.
-I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool.I used to be a web developer.</description>
+      <description>Web development has changed a lot.I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool.I used to be a web developer. Sort of.</description>
     </item>
     
     <item>
@@ -27,8 +26,7 @@ I was aware that there have been many changes in the last few years, and I’ve 
       <pubDate>Tue, 12 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_horizontal_and_vertical_centring/</guid>
-      <description>First, an apology. &amp;nbsp;I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&amp;rsquo;m British. &amp;nbsp;But it gets really confusing because you have to use the American spelling in the code. &amp;nbsp;And doesn&amp;rsquo;t &amp;ldquo;Centring&amp;rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. &amp;nbsp;In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&amp;rsquo;t.</description>
+      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&#39;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&#39;t &amp;ldquo;Centring&amp;rdquo; just look wrong?Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&#39;t.</description>
     </item>
     
     <item>
@@ -37,10 +35,7 @@ Part Five: Horizontal and Vertical CentringOne of the most common things you wan
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_cross_browser_table_border_behaviour/</guid>
-      <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.
-Today&amp;rsquo;s gotcha is table borders.
-Yes, yes, I said don&amp;rsquo;t use tables. &amp;nbsp;What I means is, don&amp;rsquo;t use tables for layout. But you can use tables for, you know, tabular data. &amp;nbsp;Like, for examples, lists of instruments and their bid and ask prices.
-But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
+      <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.Today&#39;s gotcha is table borders.Yes, yes, I said don&#39;t use tables. What I means is, don&#39;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
     </item>
     
     <item>
@@ -49,9 +44,7 @@ But you should know that even when you use strict mode, Internet Explorer has sl
       <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_column_layout_using_css/</guid>
-      <description>This is a continuation of my series of CSS hints / tips / cheats for developers (and other technical-but-not-UI people).
-The screenshots are in Chrome on a Mac. &amp;nbsp;The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.
-Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&amp;rsquo;s example is a simple one, but worth knowing all the same. &amp;nbsp;The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
+      <description>This is a continuation of my series of CSShints / tips / cheats for developers (and other technical-but-not-UI people).The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&#39;s example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
     </item>
     
     <item>
@@ -60,9 +53,7 @@ Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&amp
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_the_joy_of_floats/</guid>
-      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&amp;rsquo;re as afflicted with NADD as I am.
-Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. &amp;nbsp;It&amp;rsquo;s primarily aimed at developers, although I would hope it&amp;rsquo;s comprehensible to a range of tech-savvy people.
-(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).</description>
+      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&#39;re as afflicted with NADDas I am.Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It&#39;s primarily aimed at developers, although I would hope it&#39;s comprehensible to a range of tech-savvy people.(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).</description>
     </item>
     
     <item>
@@ -71,7 +62,7 @@ Quick recap - the aim of this series is to provide a quick and easy how-to aroun
       <pubDate>Mon, 17 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_horizontal_layout_using_css/</guid>
-      <description>I&amp;rsquo;m a Java Developer. &amp;nbsp;But I&amp;rsquo;m also a Web Developer. &amp;nbsp;Web Developers have been so badly maligned over the last decade or so that I always feel wary (and sometimes slightly ashamed) admitting this. &amp;nbsp;There&amp;rsquo;s some sort of assumption that Web Developers (and Front End Developers) aren&amp;rsquo;t real programmers. Similarly, &amp;ldquo;real&amp;rdquo; developers don&amp;rsquo;t like to be tainted by coming into contact with that nasty &amp;ldquo;front end stuff&amp;rdquo; in case someone mistakes them for a designer.</description>
+      <description>I&#39;m a Java Developer. But I&#39;m also a Web Developer. Web Developers have been so badly maligned over the last decade or so that I always feel wary (and sometimes slightly ashamed) admitting this. There&#39;s some sort of assumption that Web Developers (and Front End Developers) aren&#39;t real programmers. Similarly, &amp;ldquo;real&amp;rdquo; developers don&#39;t like to be tainted by coming into contact with that nasty &amp;ldquo;front end stuff&amp;rdquo; in case someone mistakes them for a designer.</description>
     </item>
     
   </channel>

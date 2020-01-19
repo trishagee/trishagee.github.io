@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Yow on Trisha Gee</title>
+    <title>YOW on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/yow/</link>
-    <description>Recent content in Yow on Trisha Gee</description>
+    <description>Recent content in YOW on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 22 Apr 2014 00:00:00 +0000</lastBuildDate>
@@ -29,7 +29,7 @@ around where we want the API to go.&lt;/p&gt;</description>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
-      <description>Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example, by creating CVs that don&amp;rsquo;t suck, and by staying ahead of the curve), Dave Thomas asked me to speak for a mere 50 minutes on the subject at GOTO Aarhus, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short time.</description>
+      <description>Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example, by creating CVs that don&#39;t suck, and by staying ahead of the curve), Dave Thomas asked me to speak for a mere 50 minutes on the subject at [GOTO Aarhus](http://gotocon .com/video#36), a talk I wasn&#39;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short time.</description>
     </item>
     
     <item>
@@ -38,8 +38,7 @@ around where we want the API to go.&lt;/p&gt;</description>
       <pubDate>Mon, 23 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/yow/</guid>
-      <description>December disappeared in a rush of vacation and a fleeting tour of Australia. &amp;nbsp;It&amp;rsquo;s hard to believe that it&amp;rsquo;s the eve of Christmas Eve already, it&amp;rsquo;s almost impossible to feel Christmassy when you&amp;rsquo;re getting sunburnt on a boat and seeing people in swim-suits wearing santa hats. &amp;nbsp;A mid-winter festival (complete with trees and fake snow) just feels very odd in summer.
-I cannot take Christmas seriously in this weatherYOW!&amp;nbsp;is a unique conference, in that it&amp;rsquo;s the same agenda in three different cities: Melbourne, Brisbane and Sydney.</description>
+      <description>December disappeared in a rush of vacation and a fleeting tour of Australia. It&#39;s hard to believe that it&#39;s the eve of Christmas Eve already, it&#39;s almost impossible to feel Christmassy when you&#39;re getting sunburnt on a boat and seeing people in swim-suits wearing santa hats. A mid-winter festival (complete with trees and fake snow) just feels very odd in summer.I cannot take Christmas seriously in this weatherYOW!is a unique conference, in that it&#39;s the same agenda in three different cities: Melbourne, Brisbane and Sydney.</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Video on Trisha Gee</title>
+    <title>video on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/video/</link>
-    <description>Recent content in Video on Trisha Gee</description>
+    <description>Recent content in video on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 23 Jul 2015 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Thu, 23 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/the_extraordinary_team_of_developers/</guid>
-      <description>&lt;p&gt;Daniel Bryant and I did a keynote at Devoxx UK about how individuals can add something to a team to make the team
+      <description>&lt;p&gt;Daniel Bryant and I did a keynote at Devoxx UK about how individuals can add something to a team to make the team 
 more productive, and overall more awesome.&lt;/p&gt;</description>
     </item>
     
@@ -27,11 +27,10 @@ more productive, and overall more awesome.&lt;/p&gt;</description>
       <pubDate>Sat, 18 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_for_infoq/</guid>
-      <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was
-interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time,
+      <description>&lt;p&gt;While I was at QCon New York (probably my business conference this year!) I was 
+interviewed by Ralph Winzinger for InfoQ. It felt like a short interview at the time, 
 but we covered a lot of ground - Java 8, Java vs other JVM languages, the effectiveness
 of the JCP, and the future of Java.&lt;/p&gt;
-
 &lt;p&gt;Video and the transcript are &lt;a href=&#34;http://www.infoq.com/interviews/trisha-gee-java-eco-system&#34;&gt;available on InfoQ&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -41,8 +40,8 @@ of the JCP, and the future of Java.&lt;/p&gt;
       <pubDate>Tue, 12 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/interview_at_goto_chicago/</guid>
-      <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving,
-which happens to be the same one I&amp;rsquo;m giving at a number of conferences this year (although of course I&amp;rsquo;m evolving it as I go along).&lt;/p&gt;</description>
+      <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving, 
+which happens to be the same one I&#39;m giving at a number of conferences this year (although of course I&#39;m evolving it as I go along).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -51,9 +50,9 @@ which happens to be the same one I&amp;rsquo;m giving at a number of conferences
       <pubDate>Wed, 23 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
-      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
-for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
-and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
+      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet 
+for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend, 
+and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana 
 Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -75,7 +74,7 @@ around where we want the API to go.&lt;/p&gt;</description>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
-      <description>Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example, by creating CVs that don&amp;rsquo;t suck, and by staying ahead of the curve), Dave Thomas asked me to speak for a mere 50 minutes on the subject at GOTO Aarhus, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short time.</description>
+      <description>Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example, by creating CVs that don&#39;t suck, and by staying ahead of the curve), Dave Thomas asked me to speak for a mere 50 minutes on the subject at [GOTO Aarhus](http://gotocon .com/video#36), a talk I wasn&#39;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short time.</description>
     </item>
     
     <item>
@@ -84,7 +83,7 @@ around where we want the API to go.&lt;/p&gt;</description>
       <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/infoq-interview-march-2014/</guid>
-      <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&amp;rsquo;s always a pleasure to be interviewed by Charles,
+      <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&#39;s always a pleasure to be interviewed by Charles,
 I think he brings out the best in me.&lt;/p&gt;</description>
     </item>
     
@@ -94,7 +93,7 @@ I think he brings out the best in me.&lt;/p&gt;</description>
       <pubDate>Fri, 22 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</guid>
-      <description>Yesterday I had the privilege of presenting the very first session for vJUG, a new virtual Java User Group that allows us to span geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have a local user group to go to.</description>
+      <description>Yesterday I had the privilege of presenting the very first session for vJUG, a new virtual Java User Group that allows us to span geographies when sharing talks and stories. I&#39;m really interested in the vJUG idea, especially now I&#39;m not in London - if we can find good ways to share knowledge without having to travel, that will help us reach people who don&#39;t normally go to conferences or don&#39;t have a local user group to go to.</description>
     </item>
     
     <item>
@@ -103,7 +102,7 @@ I think he brings out the best in me.&lt;/p&gt;</description>
       <pubDate>Wed, 09 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/make_the_future_java/</guid>
-      <description>I think this is a nice example of how to showcase technology and make it relevant and exciting for people. &amp;nbsp;Something with this approach could do more for increasing the number of people interested in programming as a career than any of the traditional approaches of getting kids and &amp;ldquo;minorities&amp;rdquo; interested in IT.</description>
+      <description></description>
     </item>
     
     <item>
@@ -112,8 +111,7 @@ I think he brings out the best in me.&lt;/p&gt;</description>
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
-      <description>Yesterday Stephen Chin, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.
-It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. &amp;nbsp;There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.</description>
+      <description>Yesterday Stephen Chin, one of Oracle&#39;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. There&#39;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&#39;s not a great platform for doing live demos, but I think I&#39;d like to do more code demos in this way, if I can find a suitable platform.</description>
     </item>
     
     <item>
@@ -122,7 +120,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
-      <description>InfoQ has posted the video of Dan North and I opining on the subject of hiring. &amp;nbsp;Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. &amp;nbsp;We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.</description>
+      <description>InfoQ has posted the video of Dan North and I opining on the subject of hiring. Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. We spend less time on how to do well as an interviewee, but in theory if you know what&#39;s going through the interviewer&#39;s mind, you should be in a much better position to take control of the interview and shine.</description>
     </item>
     
     <item>
@@ -131,7 +129,8 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
-      <description>Last week I was in Krakow, Poland for GeeCON. &amp;nbsp;Which was excellent! &amp;nbsp;I find it really interesting that conferences all have their own personalities, that they are not all the same.  GeeCON had its own distinct personality. &amp;nbsp;If you&amp;rsquo;re a Java/JVM person based in Poland, I would highly recommend it - more than 90% of the attendees were Polish (probably the remainder were largely speakers) so this conference is very much for you.</description>
+      <description>Last week I was in Krakow, Poland for GeeCON. Which was excellent! I find it really interesting that conferences all have their own personalities, that they are not all the same.
+From a speaker&#39;s point of view, there were some cultural things which took a bit of getting used to. One of the good things was that the audience was very keen on asking questions, they were much more interactive than a typical London audience (for example).</description>
     </item>
     
     <item>
@@ -140,8 +139,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
-      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. &amp;nbsp;Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.
-Skillsmatter recorded the whole thing, as usual, so you can watch the presentation for yourself. &amp;nbsp;I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.</description>
+      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&#39;re already bought into a NoSQL technology, or you&#39;re just wondering what all the noise is about, it&#39;s worth an hour out of your day to see Akmal Chaudhri&#39;s comprehensive summary of the technologies out there.Skillsmatter recorded the whole thing, as usual, so you can watch the presentation for yourself. I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.</description>
     </item>
     
     <item>
@@ -151,7 +149,7 @@ Skillsmatter recorded the whole thing, as usual, so you can watch the presentati
       
       <guid>https://trishagee.github.io/post/devoxx_uk_2013/</guid>
       <description>Last week was the first Devoxx UK, bringing the brand from Belgium and, more recently, France. And I think it was a HUGE success.
-Of course, disclaimers first - I was on the programme committee, so I might say that the whole thing was awesome. Although in all honesty, even being slightly involved in the organisation of a conference is a lot of work, and you can&amp;rsquo;t wait to see the back of it (and I didn&amp;rsquo;t do half as much as some people).</description>
+Of course, disclaimers first - I was on the programme committee, so I might say that the whole thing was awesome. Although in all honesty, even being slightly involved in the organisation of a conference is a lot of work, and you can&#39;t wait to see the back of it (and I didn&#39;t do half as much as some people).</description>
     </item>
     
     <item>
@@ -160,8 +158,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
-      <description>I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series, as it moves over to Europe. In this video I talk about going to Mars, education, planning your career, being a developer, and the impact of technology on our lives. So, not much&amp;hellip;
- </description>
+      <description>I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&#39;s series, as it moves over to Europe. In this video I talk about going to Mars, education, planning your career, being a developer, and the impact of technology on our lives. So, not much&amp;hellip;</description>
     </item>
     
     <item>
@@ -170,7 +167,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Sat, 12 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/interviewed_at_devoxx/</guid>
-      <description>Yolande Poirier from OTN interviewed me at Devoxx about my new job at 10gen, Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.</description>
+      <description>Yolande Poirier from OTNinterviewed me at Devoxx about my new job at 10gen, Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.</description>
     </item>
     
     <item>
@@ -179,7 +176,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Tue, 18 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</guid>
-      <description>As well as talking about, you know, actual work-type-stuff, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. &amp;nbsp;This went so well at JavaOne that I thought it would be difficult to top. &amp;nbsp;Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.</description>
+      <description>As well as talking about, you know, actual work-type-stuff, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. This went so well at JavaOne that I thought it would be difficult to top. Also, I wasn&#39;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.</description>
     </item>
     
     <item>
@@ -188,8 +185,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nighthacking_tour_the_ljc/</guid>
-      <description>On the same day Stephen Chin came to see me at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. &amp;nbsp;Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.
-Expect Raspberry Pis and JavaFX.</description>
+      <description>On the same day Stephen Chin came to see meat the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.Expect Raspberry Pis and JavaFX.</description>
     </item>
     
     <item>
@@ -198,7 +194,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!</description>
+      <description></description>
     </item>
     
     <item>
@@ -207,7 +203,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Thu, 23 Aug 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_at_goto_copenhagen/</guid>
-      <description>I was interviewed at GOTO Copenhagen, about Java, the Disruptor, the Graduate Developer Community &amp;amp; London Java Community, and a whole host of other things. &amp;nbsp;So to make up for the lack of blogging this month, here it is:</description>
+      <description>I was interviewed at GOTO Copenhagen, about Java, the Disruptor, the Graduate Developer Community &amp;amp; London Java Community, and a whole host of other things. So to make up for the lack of blogging this month, here it is:</description>
     </item>
     
     <item>
@@ -216,7 +212,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Wed, 06 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_disruptor_presentation_video/</guid>
-      <description>The &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; presentation I gave at QCon London is now available on the&amp;nbsp;InfoQ site. &amp;nbsp;This is the same presentation as the one I gave at Skillsmatter in March, but the questions are different. &amp;nbsp;Plus since I&amp;rsquo;m winging it every time, I probably cover slightly different things or explain some stuff better / worse.</description>
+      <description>The &amp;ldquo;User&#39;s Guide to the Disruptor&amp;rdquo; presentation I gave at QCon London is now available on the InfoQ site. This is the same presentation as the one I gave at Skillsmatter in March, but the questions are different. Plus since I&#39;m winging it every time, I probably cover slightly different things or explain some stuff better / worse.</description>
     </item>
     
     <item>
@@ -225,7 +221,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london/</guid>
-      <description>I was flattered to be interviewed for InfoQ at QCon London. It was a fun interview actually, and didn&amp;rsquo;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).</description>
+      <description>I was flattered to be interviewed for InfoQ at QCon London. It was a fun interview actually, and didn&#39;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).</description>
     </item>
     
     <item>
@@ -234,7 +230,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Thu, 22 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/video_why_we_shouldnt_target_women/</guid>
-      <description>If you have a Parleys subscription, you can watch the whole &amp;ldquo;Why we shouldn&amp;rsquo;t target women&amp;rdquo; panel from Devoxx 2011 a month or so ago. &amp;nbsp;Watch me attempt to monopolise the whole panel as if it was my idea or something&amp;hellip;</description>
+      <description>If you have a Parleyssubscription, you can watch the whole &amp;ldquo;Why we shouldn&#39;t target women&amp;rdquo; panel from Devoxx 2011 a month or so ago. Watch me attempt to monopolise the whole panel as if it was my idea or something&amp;hellip;</description>
     </item>
     
     <item>
@@ -243,7 +239,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Mon, 05 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/video_of_our_jax_london_session/</guid>
-      <description>At JAX London Mike and I presented &amp;ldquo;Understanding the Disruptor - A Beginner&amp;rsquo;s Guide to Hardcore Concurrency&amp;rdquo;. This is the session we initially previewed to the London Java Community a few weeks earlier. The content is the same, but the feel of the presentation was quite different to us - the venue for the LJC event was more intimate, and it was easier to interact with the audience. At JAX, we were up on stage, which was pretty cool actually, but meant that it felt more like a lecture and it was less easy to connect with the audience.</description>
+      <description>At JAX London Mike and I presented &amp;ldquo;Understanding the Disruptor - A Beginner&#39;s Guide to Hardcore Concurrency&amp;rdquo;. This is the session we initially previewed to the London Java Community a few weeks earlier. The content is the same, but the feel of the presentation was quite different to us - the venue for the LJC event was more intimate, and it was easier to interact with the audience. At JAX, we were up on stage, which was pretty cool actually, but meant that it felt more like a lecture and it was less easy to connect with the audience.</description>
     </item>
     
     <item>
@@ -252,8 +248,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
-      <description>Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. &amp;nbsp;Because I was there to be on the Why We Shouldn&amp;rsquo;t Target Women panel, the interview is just another platform for me to air my views on this subject again. 
-Yes, I am actually wearing pink&amp;hellip;.</description>
+      <description>Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. Because I was there to be on the Why We Shouldn&#39;t Target Womenpanel, the interview is just another platform for me to air my views on this subject again. Yes, I am actually wearing pink&amp;hellip;.</description>
     </item>
     
     <item>
@@ -262,9 +257,7 @@ Yes, I am actually wearing pink&amp;hellip;.</description>
       <pubDate>Sun, 06 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/more_videos_from_java_one_2011/</guid>
-      <description>It must be time for me to move on from talking about Java One, it has dominated my blog of late. &amp;nbsp;But also I want to talk about JAX London from this week.
-But before I move on, it&amp;rsquo;s probably worth rounding off with the last two resources from the conference.
-1) Martin Thompson and I are interviewed about the Disruptor winning the Duke Award (we come in halfway through):</description>
+      <description>It must be time for me to move on from talking about Java One, it has dominated my blog of late. But also I want to talk about JAX London from this week.But before I move on, it&#39;s probably worth rounding off with the last two resources from the conference.1) Martin Thompsonand I are interviewed about the Disruptor winning the Duke Award (we come in halfway through):2) I&#39;m interviewed by Duchessabout life, the universe and everything (well, the London Java Community, the JCP, the LMAX Disruptor and Duke Award, and women programmers).</description>
     </item>
     
     <item>
@@ -273,8 +266,7 @@ But before I move on, it&amp;rsquo;s probably worth rounding off with the last t
       <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/first_public_appearance_caught_on_video/</guid>
-      <description>Remember a while back I talked about my first public appearance?
-Well, I chased down the video, because I&amp;rsquo;m masochistic, and here it is for you all to enjoy. &amp;nbsp;Pleasingly my mannerisms are slightly less of a camp man trapped in a woman&amp;rsquo;s body, which was my impression the last time I saw myself presenting. &amp;nbsp;It helps that YouTube has made the video so dark you can&amp;rsquo;t see me.</description>
+      <description></description>
     </item>
     
     <item>
@@ -283,7 +275,7 @@ Well, I chased down the video, because I&amp;rsquo;m masochistic, and here it is
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/public_appearances/</guid>
-      <description>&lt;p&gt;For blatant self-publicity, I&amp;rsquo;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&amp;rsquo;ve
+      <description>&lt;p&gt;For blatant self-publicity, I&#39;m making a note of all the presentations, panels, interviews, articles and other public-facing events I&#39;ve
 been involved in.&lt;/p&gt;</description>
     </item>
     

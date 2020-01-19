@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javafx on Trisha Gee</title>
+    <title>javafx on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/javafx/</link>
-    <description>Recent content in Javafx on Trisha Gee</description>
+    <description>Recent content in javafx on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 08 Oct 2019 00:00:00 +0000</lastBuildDate>
@@ -18,10 +18,10 @@
       
       <guid>https://trishagee.github.io/presentation/coding_duel/</guid>
       <description>&lt;p&gt;&lt;em&gt;Spring Framework 5 brings full reactive support to developers everywhere. What better way to demo reactive
- programming than to actually build something live? Trisha will live code an end-to-end application using Spring
-  Framework 5, Spring Boot, Reactor, Kotlin, JavaFX, and maybe even some MongoDB, all built using IntelliJ IDEA.
-  During this session, we’ll see how these different components can work together really easily using Spring. What
-   could possibly go wrong?&lt;/em&gt;&lt;/p&gt;</description>
+programming than to actually build something live? Trisha will live code an end-to-end application using Spring
+Framework 5, Spring Boot, Reactor, Kotlin, JavaFX, and maybe even some MongoDB, all built using IntelliJ IDEA. 
+During this session, we’ll see how these different components can work together really easily using Spring. What
+could possibly go wrong?&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -30,8 +30,7 @@
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nighthacking_tour_the_ljc/</guid>
-      <description>On the same day Stephen Chin came to see me at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. &amp;nbsp;Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.
-Expect Raspberry Pis and JavaFX.</description>
+      <description>On the same day Stephen Chin came to see meat the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.Expect Raspberry Pis and JavaFX.</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Intellij on Trisha Gee</title>
+    <title>intellij on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/intellij/</link>
-    <description>Recent content in Intellij on Trisha Gee</description>
+    <description>Recent content in intellij on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
@@ -26,7 +26,7 @@
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/boilerplate/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
+      <description>&lt;p&gt;It&#39;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
 do modern languages give us?&lt;/p&gt;</description>
     </item>
     
@@ -45,7 +45,7 @@ do modern languages give us?&lt;/p&gt;</description>
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
-      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&#39;s support (current and future) for it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,12 +63,11 @@ do modern languages give us?&lt;/p&gt;</description>
       <pubDate>Fri, 09 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/stuff_i_learnt_about_intellij_2/</guid>
-      <description>&lt;p&gt;Apparently, I&amp;rsquo;m all about Continuous Learning - after I wrote the
+      <description>&lt;p&gt;Apparently, I&#39;m all about Continuous Learning - after I wrote the
 &lt;a href=&#34;post/stuff_i_learnt_about_intellij&#34;&gt;last post about IntelliJ Tips&lt;/a&gt;, I carried on through my trawl of the documentation
-and, of course, discovered a load more things I didn&amp;rsquo;t know.  And this is all just in the
+and, of course, discovered a load more things I didn&#39;t know.  And this is all just in the
 &lt;a href=&#34;https://confluence.jetbrains.com/display/IntelliJIDEA/Quick+Start&#34;&gt;Quick Start&lt;/a&gt; section!&lt;/p&gt;
-
-&lt;p&gt;So here&amp;rsquo;s the next batch (although once again I&amp;rsquo;m not sure how many are only applicable to IntelliJ 14).  All shortcuts
+&lt;p&gt;So here&#39;s the next batch (although once again I&#39;m not sure how many are only applicable to IntelliJ 14).  All shortcuts
 are for Windows unless otherwise stated, and Mac users should be able to replace the Ctrl key with Cmd in all these
 cases.&lt;/p&gt;</description>
     </item>
@@ -80,15 +79,14 @@ cases.&lt;/p&gt;</description>
       
       <guid>https://trishagee.github.io/post/stuff_i_learnt_about_intellij/</guid>
       <description>&lt;p&gt;Day three of my &lt;a href=&#34;https://trishagee.github.io/post/new_year_new_adventures&#34;&gt;brand new job&lt;/a&gt; - woohoo!  One of my first tasks is checking the documentation
-of IntelliJ, since I&amp;rsquo;m
-already a &amp;ldquo;Power User&amp;rdquo;, to see if there&amp;rsquo;s stuff missing that someone like me might want to see. Firstly, a confession -
-I&amp;rsquo;m not sure I&amp;rsquo;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&amp;rsquo;ve dipped
-into it when I needed to know something, I&amp;rsquo;ve searched for help with specific items, but like many developers, I tend to
+of IntelliJ, since I&#39;m
+already a &amp;ldquo;Power User&amp;rdquo;, to see if there&#39;s stuff missing that someone like me might want to see. Firstly, a confession -
+I&#39;m not sure I&#39;ve actually read the IntelliJ documentation before.  I mean, &lt;em&gt;really&lt;/em&gt; read it.  Of course, I&#39;ve dipped
+into it when I needed to know something, I&#39;ve searched for help with specific items, but like many developers, I tend to
 use something first rather than read the documentation first.&lt;/p&gt;
-
-&lt;p&gt;But I&amp;rsquo;ll tell you what, today I&amp;rsquo;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&amp;rsquo;t previously known,
-and they&amp;rsquo;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
-else using the tool and saw them doing something you didn&amp;rsquo;t know was possible.&lt;/p&gt;</description>
+&lt;p&gt;But I&#39;ll tell you what, today I&#39;ve learnt a whole bunch of useful things IntelliJ can do that I hadn&#39;t previously known,
+and they&#39;re the sorts of things you would only stumble over if a) you read the docs (pah!) or b) you watched someone
+else using the tool and saw them doing something you didn&#39;t know was possible.&lt;/p&gt;</description>
     </item>
     
     <item>

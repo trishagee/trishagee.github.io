@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Openjdk on Trisha Gee</title>
+    <title>openJDK on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/openjdk/</link>
-    <description>Recent content in Openjdk on Trisha Gee</description>
+    <description>Recent content in openJDK on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 08 Nov 2012 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Thu, 08 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</guid>
-      <description>This month&amp;rsquo;s Java Magazine features an article by me, Ben Evans and Martijn Verburg about the new lambdas&amp;nbsp;coming in Java 8.
-The aim of the article is to give an overview to normal, human Java developers, who don&amp;rsquo;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and try them now).</description>
+      <description>This month&#39;s Java Magazine features an article by me, Ben Evansand Martijn Verburgabout the new lambdascoming in Java 8.The aim of the article is to give an overview to normal, human Java developers, who don&#39;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and try them now).</description>
     </item>
     
   </channel>

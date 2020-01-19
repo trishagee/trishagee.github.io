@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javaone13 on Trisha Gee</title>
+    <title>JavaOne13 on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/javaone13/</link>
-    <description>Recent content in Javaone13 on Trisha Gee</description>
+    <description>Recent content in JavaOne13 on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 05 Nov 2013 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 05 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2013/</guid>
-      <description>So, I thought a few months ago that my blog would become more of a travel blog than a tech blog because of the amount of conferences I was going to. &amp;nbsp;Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&amp;rsquo;d been to.
-
-So, JavaOne, again, my third year there.</description>
+      <description>So, I thought a few months ago that my blog would become more of a travel blogthan a tech blog because of the amount of conferences I was going to. Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&#39;d been to.So, JavaOne, again, my third year there. I&#39;ll always have a fondness for it - because of Martin Thompson, it was the first conference I presented at.</description>
     </item>
     
     <item>
@@ -28,7 +26,7 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Wed, 09 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/make_the_future_java/</guid>
-      <description>I think this is a nice example of how to showcase technology and make it relevant and exciting for people. &amp;nbsp;Something with this approach could do more for increasing the number of people interested in programming as a career than any of the traditional approaches of getting kids and &amp;ldquo;minorities&amp;rdquo; interested in IT.</description>
+      <description></description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Code on Trisha Gee</title>
+    <title>code on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/code/</link>
-    <description>Recent content in Code on Trisha Gee</description>
+    <description>Recent content in code on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 02 Jul 2014 00:00:00 +0000</lastBuildDate>
@@ -18,12 +18,9 @@
       
       <guid>https://trishagee.github.io/post/short_vs_readable.md/</guid>
       <description>&lt;p&gt;Which is more readable?&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;releaseVersion = version.substring(0, version.indexOf(&#39;-SNAPSHOT&#39;))
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;or&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;releaseVersion = version[0..-10]
 &lt;/code&gt;&lt;/pre&gt;</description>
     </item>
@@ -34,7 +31,7 @@
       <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/atom-to-hugo/</guid>
-      <description>I&amp;rsquo;ve been using Blogger happily for three years or so, since I migrated the blog from LiveJournal and decided to actually invest some time writing. I&amp;rsquo;m happy with it because I just type stuff into Blogger and It Just Works. I&amp;rsquo;m happy because I can use my Google credentials to sign in. I&amp;rsquo;m happy because now I can pretend my two Google+ accounts exist for a purpose, by getting Blogger to automatically share my content there.</description>
+      <description>I&#39;ve been using Blogger happily for three years or so, since I migrated the blog from LiveJournal and decided to actually invest some time writing. I&#39;m happy with it because I just type stuff into Blogger and It Just Works. I&#39;m happy because I can use my Google credentials to sign in. I&#39;m happy because now I can pretend my two Google+ accounts exist for a purpose, by getting Blogger to automatically share my content there.</description>
     </item>
     
     <item>
@@ -43,7 +40,7 @@
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!</description>
+      <description></description>
     </item>
     
     <item>
@@ -52,9 +49,7 @@
       <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</guid>
-      <description>Remember I posted about having to write .NET?
-Well, the code and the tutorial are available for you, my lucky readers, to rip to pieces view.
-I am not the only person responsible for this code though, so be kind.</description>
+      <description>Remember I posted about having to write .NET?Well, the code and the tutorialare available for you, my lucky readers, to rip to piecesview.I am not the only person responsible for this code though, so be kind.</description>
     </item>
     
     <item>
@@ -63,9 +58,7 @@ I am not the only person responsible for this code though, so be kind.</descript
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET.&amp;nbsp; Actually, I have been fighting pitched battles with it.
-All I want to do is take our existing Java client example code and write an equivalent in C#.&amp;nbsp; Easy, right?
-Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward.&amp;nbsp; Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
+      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.</description>
     </item>
     
     <item>
@@ -74,7 +67,7 @@ Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C#
       <pubDate>Mon, 16 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/validation_with_spring_modules_validation/</guid>
-      <description>So if java generics slightly disappointed me lately, what have I found cool?I&amp;rsquo;m currently working on a web application using Spring MVC, which probably doesn&amp;rsquo;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&amp;rsquo;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge if statement.</description>
+      <description>So if java generics slightly disappointed me lately, what have I found cool?I&#39;m currently working on a web application using Spring MVC, which probably doesn&#39;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&#39;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge ifstatement.</description>
     </item>
     
     <item>
@@ -83,7 +76,7 @@ Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C#
       <pubDate>Sat, 07 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_specifics/</guid>
-      <description>When I first started playing with Java 1.5, I thought generics were the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code: List list = new ArrayList(); list.add(new Integer(1)); Integer integer = (Integer)list.get(0); for (Iterator i = list.iterator(); i.hasNext(); ) { Integer number = (Integer)i.</description>
+      <description>When I first started playing with Java 1.5, I thought genericswere the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code:List list = new ArrayList();list.add(new Integer(1));Integer integer = (Integer)list.get(0);for (Iterator i = list.iterator(); i.hasNext(); ) {Integer number = (Integer)i.next();number.intValue();}And the new:List&amp;lt;Integer&amp;gt; list = new ArrayList&amp;lt;Integer&amp;gt;();list.</description>
     </item>
     
   </channel>

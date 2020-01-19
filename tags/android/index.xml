@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Android on Trisha Gee</title>
+    <title>android on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/android/</link>
-    <description>Recent content in Android on Trisha Gee</description>
+    <description>Recent content in android on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 21 May 2015 00:00:00 +0000</lastBuildDate>
@@ -26,8 +26,7 @@
       <pubDate>Thu, 27 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_experiences_with_android_development/</guid>
-      <description>Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&amp;rsquo;d try my hand at developing an Android application this week.
-I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&amp;rsquo;ve got more than 10 years Java experience, but any UI for the applications I&amp;rsquo;ve worked on was always a web UI.</description>
+      <description>Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&#39;d try my hand at developing an Android application this week.I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&#39;ve got more than 10 years Java experience, but any UI for the applications I&#39;ve worked on was always a web UI.</description>
     </item>
     
   </channel>

@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Trisha Gee  | Using Groovy to import XML into MongoDB</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -17,7 +14,7 @@
 
     
     
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
     
 
     
@@ -29,30 +26,26 @@
     
 
     
-
+    
     <meta property="og:title" content="Using Groovy to import XML into MongoDB" />
-<meta property="og:description" content="This year I&rsquo;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
+<meta property="og:description" content="This year I&#39;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
 Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use, so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/groovy_import_to_mongodb/" />
-<meta property="article:published_time" content="2014-10-07T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2014-10-07T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2014-10-07T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-10-07T00:00:00+00:00" />
 <meta itemprop="name" content="Using Groovy to import XML into MongoDB">
-<meta itemprop="description" content="This year I&rsquo;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
+<meta itemprop="description" content="This year I&#39;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
 Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use, so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.">
-
-
 <meta itemprop="datePublished" content="2014-10-07T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-10-07T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="1311">
 
 
 
-<meta itemprop="keywords" content="groovy,mongodb,demo," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="groovy,mongodb,demo," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Using Groovy to import XML into MongoDB"/>
-<meta name="twitter:description" content="This year I&rsquo;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
+<meta name="twitter:description" content="This year I&#39;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
 Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use, so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail."/>
 
       
@@ -116,6 +109,7 @@ if (!doNotTrack) {
 
 
 
+
 <a href="https://twitter.com/trisha_gee" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
   <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
@@ -160,6 +154,7 @@ if (!doNotTrack) {
 
 
 
+
     </div>
   </div>
 </nav>
@@ -181,65 +176,50 @@ if (!doNotTrack) {
       </p>
       <h1 class="f1 athelas mb1">Using Groovy to import XML into MongoDB</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2014-10-07T00:00:00Z">October 7, 2014</time>      
+      
+      <time class="f6 mv4 dib tracked" datetime="2014-10-07T00:00:00Z">October 7, 2014</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l">
-
-<p>This year I&rsquo;ve been demonstrating how easy it is to <a href="https://www.youtube.com/watch?v=MRrSAkEAnZQ">create modern web apps using AngularJS,
-Java and MongoDB</a>.  I also use Groovy during this demo to do the sorts of things Groovy is
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This year I've been demonstrating how easy it is to <a href="https://www.youtube.com/watch?v=MRrSAkEAnZQ">create modern web apps using AngularJS, 
+Java and MongoDB</a>.  I also use Groovy during this demo to do the sorts of things Groovy is 
 really good at - writing descriptive tests, and creating scripts.</p>
-
-<p>Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use,
+<p>Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use, 
 so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.</p>
-
-<p>Firstly I want to clarify that this is not my original work - I <strike>stole</strike> borrowed most of the ideas for the demo from my
-colleague Ross Lawley. In <a href="http://rosslawley.co.uk/posts/the-most-popular-pub-name/">this blog post</a> he goes into detail of how he built
-up an application that
-finds the most popular pub names in the UK.  There&rsquo;s a <a href="http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1">section in there</a>
-where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it&rsquo;s
+<p>Firstly I want to clarify that this is not my original work - I <!-- raw HTML omitted -->stole<!-- raw HTML omitted --> borrowed most of the ideas for the demo from my 
+colleague Ross Lawley. In <a href="http://rosslawley.co.uk/posts/the-most-popular-pub-name/">this blog post</a> he goes into detail of how he built 
+up an application that 
+finds the most popular pub names in the UK.  There's a <a href="http://rosslawley.co.uk/posts/the-most-popular-pub-name/#toc_1">section in there</a>
+where he talks about downloading the open street map data and using python to convert the XML into something more MongoDB-friendly - it's
 this process that I basically stole, re-worked for coffee shops, and re-wrote for the JVM.</p>
-
-<p>I&rsquo;m assuming if you&rsquo;ve worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
-demo is supposed to be all about how easy it is to work with Java, I did <em>not</em> want to do this. When I wrote the demo I wasn&rsquo;t really all
-that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML,
-which is exactly what I wanted to do. In addition, creating <a href="http://groovy.codehaus.org/Collections#Collections-Mapsmaps">Maps</a> (the
-data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into
+<p>I'm assuming if you've worked with Java for any period of time, there has come a moment where you needed to use it to parse XML. Since my
+demo is supposed to be all about how easy it is to work with Java, I did <em>not</em> want to do this. When I wrote the demo I wasn't really all
+that familiar with Groovy, but what I did know was that it has built in support for parsing and manipulating XML, 
+which is exactly what I wanted to do. In addition, creating <a href="http://groovy.codehaus.org/Collections#Collections-Mapsmaps">Maps</a> (the 
+data structures, not the geographical ones) with Groovy is really easy, and this is effectively what we need to insert into 
 <a href="http://www.mongodb.org/">MongoDB</a>.</p>
-
 <h3 id="goal-of-the-script">Goal of the Script</h3>
-
 <ul>
 <li>Parse an XML file containing open street map data of all coffee shops.</li>
-<li>Extract latitude and longitude XML attributes and transform into
+<li>Extract latitude and longitude XML attributes and transform into 
 <a href="http://docs.mongodb.org/manual/reference/glossary/#term-geojson">MongoDB GeoJSON</a>.</li>
 <li>Perform some basic validation on the coffee shop data from the XML.</li>
 <li>Insert into MongoDB.</li>
-<li>Make sure MongoDB knows this contains query-able geolocation data.
-<br /></li>
+<li>Make sure MongoDB knows this contains query-able geolocation data.</li>
 </ul>
-
-<p>The script is <a href="https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy">PopulateDatabase.groovy</a>,
+<p>The script is <a href="https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy">PopulateDatabase.groovy</a>, 
 that link will take you to the version I presented at JavaOne:</p>
-
-<p><img src="/static/images/GroovyScript.png" alt="PopulateDatabase.groovy" title="PopulateDatabase.groovy" /></p>
-
+<p><img src="/static/images/GroovyScript.png" alt="PopulateDatabase.groovy" title="PopulateDatabase.groovy"></p>
 <h3 id="firstly-we-need-data">Firstly, we need data</h3>
-
-<p>I used the same service Ross used in his blog post to obtain the XML file containing &ldquo;all&rdquo; coffee shops around the world. Now,
-the open street map data is somewhat&hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it),
-so I&rsquo;m not sure I really have <em>all</em> the coffee shops, but I obtained enough data for an interesting demo using</p>
-
+<p>I used the same service Ross used in his blog post to obtain the XML file containing &ldquo;all&rdquo; coffee shops around the world. Now, 
+the open street map data is somewhat&hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it), 
+so I'm not sure I really have <em>all</em> the coffee shops, but I obtained enough data for an interesting demo using</p>
 <pre><code>http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
 </code></pre>
-
-<p>The <a href="https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml">resulting XML file</a> is in the
+<p>The <a href="https://github.com/trishagee/cafelito/blob/master/src/main/scripts/resources/all-coffee-shops.xml">resulting XML file</a> is in the 
 github project, but if you try this yourself you might (in fact, probably will) get different results.</p>
-
 <p>Each XML record looks something like:</p>
-
 <pre><code>&lt;node id=&quot;178821166&quot; lat=&quot;40.4167226&quot; lon=&quot;-3.7069112&quot;&gt;
     &lt;tag k=&quot;amenity&quot; v=&quot;cafe&quot;/&gt;
     &lt;tag k=&quot;cuisine&quot; v=&quot;coffee_shop&quot;/&gt;
@@ -248,96 +228,71 @@ github project, but if you try this yourself you might (in fact, probably will) 
     &lt;tag k=&quot;wikipedia&quot; v=&quot;es:Chocolatería San Ginés&quot;/&gt;
 &lt;/node&gt;
 </code></pre>
-
 <p>Each coffee shop has a unique identifier and a latitude and longitude as attributes of a <code>node</code> element.  Within this node is a series
-of <code>tag</code> elements, all with <code>k</code> and <code>v</code> attributes. Each coffee shop has a varying number of these attributes,
+of <code>tag</code> elements, all with <code>k</code> and <code>v</code> attributes. Each coffee shop has a varying number of these attributes, 
 and they are not consistent from shop to shop (other than <code>amenity</code> and <code>cuisine</code> which we used to select this data).</p>
-
 <h3 id="initialisation">Initialisation</h3>
-
-<p><img src="/static/images/GroovyScript1.png" alt="Script Initialisation" title="Script Initialisation" /></p>
-
-<p>Before doing anything else we want to prepare the database.  The assumption of this script is that either the
-collection we want to store the coffee shops in is empty, or full of stale data.  So we&rsquo;re going to use the <a href="http://docs.mongodb.org/ecosystem/drivers/java/">MongoDB Java Driver</a> to get the collection that we&rsquo;re interested in, and then drop it.</p>
-
-<p>There&rsquo;s two interesting things to note here:</p>
-
+<p><img src="/static/images/GroovyScript1.png" alt="Script Initialisation" title="Script Initialisation"></p>
+<p>Before doing anything else we want to prepare the database.  The assumption of this script is that either the 
+collection we want to store the coffee shops in is empty, or full of stale data.  So we're going to use the [MongoDB Java Driver]
+(<a href="http://docs.mongodb.org/ecosystem/drivers/java/">http://docs.mongodb.org/ecosystem/drivers/java/</a>) to get the collection that we're interested in, and then drop it.</p>
+<p>There's two interesting things to note here:</p>
 <ul>
-<li>This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java,
-it doesn&rsquo;t need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the
+<li>This Groovy script is simply using the basic Java driver.  Groovy can talk quite happily to vanilla Java, 
+it doesn't need to use a Groovy library.  There are Groovy-specific libraries for talking to MongoDB (e.g. the 
 <a href="http://grails.org/plugin/mongodb">MongoDB GORM Plugin</a>), but the Java driver works perfectly well.</li>
-<li>You don&rsquo;t need to create <a href="http://docs.mongodb.org/manual/reference/glossary/#term-database">databases</a> or
+<li>You don't need to create <a href="http://docs.mongodb.org/manual/reference/glossary/#term-database">databases</a> or 
 <a href="http://docs.mongodb.org/manual/reference/glossary/#term-collection">collections</a> (collections are
-a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you&rsquo;re interested in,
-and if it doesn&rsquo;t already exist, the server will create them for you.</li>
+a bit like tables, but less structured) explicitly in MongoDB.  You simply use the database and collection you're interested in, 
+and if it doesn't already exist, the server will create them for you.</li>
 </ul>
-
-<p>In this example, we&rsquo;re just using the default constructor for the <code>MongoClient</code>, the class that represents the connection to the database
-server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own
+<p>In this example, we're just using the default constructor for the <code>MongoClient</code>, the class that represents the connection to the database 
+server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own 
 address and port - for more details on this see <a href="http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i">Getting Started With MongoDB and Java</a>.</p>
-
 <h3 id="turn-the-xml-into-something-mongodb-shaped">Turn the XML into something MongoDB-shaped</h3>
-
-<p><img src="/static/images/GroovyScript2.png" alt="Parse &amp; Transform XML" title="Parse &amp; Transform XML" /></p>
-
-<p>So next we&rsquo;re going to use Groovy&rsquo;s <a href="http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html">XmlSlurper</a> to read the open street map
-XML data that we talked about earlier.  To iterate over every node we use: <code>xmlSlurper.node.each</code>.  For those of you who are new to
+<p><img src="/static/images/GroovyScript2.png" alt="Parse & Transform XML" title="Parse &amp; Transform XML"></p>
+<p>So next we're going to use Groovy's <a href="http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html">XmlSlurper</a> to read the open street map
+XML data that we talked about earlier.  To iterate over every node we use: <code>xmlSlurper.node.each</code>.  For those of you who are new to 
 Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &ldquo;node&rdquo; element in the XML.</p>
-
 <h4 id="create-geojson">Create GeoJSON</h4>
-
-<p><img src="/static/images/GroovyScript3.png" alt="Create GeoJSON" title="Create GeoJSON" />
-Since MongoDB documents are effectively just maps of key-value pairs, we&rsquo;re going to create a Map <code>coffeeShop</code> that contains the
-document structure that represents the coffee shop that we want to save into the database.  Firstly,
+<p><img src="/static/images/GroovyScript3.png" alt="Create GeoJSON" title="Create GeoJSON">
+Since MongoDB documents are effectively just maps of key-value pairs, we're going to create a Map <code>coffeeShop</code> that contains the 
+document structure that represents the coffee shop that we want to save into the database.  Firstly, 
 we initialise this map with the attributes of the <code>node</code>. Remember these attributes are something like:</p>
-
 <pre><code>&lt;node id=&quot;18464077&quot; lat=&quot;-33.8911183&quot; lon=&quot;151.1958773&quot;&gt;
 </code></pre>
-
-<p>We&rsquo;re going to save the ID as a value for a new field called <code>openStreetMapId</code>. We need to do something a bit more
+<p>We're going to save the ID as a value for a new field called <code>openStreetMapId</code>. We need to do something a bit more 
 complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:</p>
-
 <pre><code>{ 'location' : { 'coordinates': [&lt;longitude&gt;, &lt;latitude&gt;],
                  'type'       : 'Point' } }
 </code></pre>
-
 <p>In lines 12-14 you can see that we create a <code>Map</code> that looks like the GeoJSON, pulling the <code>lat</code> and <code>lon</code> attributes into the appropriate
 places.</p>
-
 <h4 id="insert-remaining-fields">Insert Remaining Fields</h4>
-
-<p><img src="/static/images/GroovyScript4.png" alt="Insert Remaining Fields" title="Insert Remaining Fields" />
-<img src="/static/images/GroovyScript5.png" alt="Validate Field Name" title="Validate Field Name" />
-Now for every <code>tag</code> element in the XML, we get the <code>k</code> attribute and check if it&rsquo;s a valid field name for MongoDB (it won&rsquo;t let us
-insert fields with a dot in, and we don&rsquo;t want to override our carefully constructed <code>location</code> field). If so we simply add this key as the
+<p><img src="/static/images/GroovyScript4.png" alt="Insert Remaining Fields" title="Insert Remaining Fields">
+<img src="/static/images/GroovyScript5.png" alt="Validate Field Name" title="Validate Field Name">
+Now for every <code>tag</code> element in the XML, we get the <code>k</code> attribute and check if it's a valid field name for MongoDB (it won't let us 
+insert fields with a dot in, and we don't want to override our carefully constructed <code>location</code> field). If so we simply add this key as the
 field and its the matching <code>v</code> attribute as the value into the map. This effectively copies the
-<a href="http://www.openstreetmap.org/">OpenStreetMap</a> key/value data into key/value pairs in the MongoDB document so we don&rsquo;t lose any data,
-but we also don&rsquo;t do anything particularly interesting to transform it.</p>
-
+<a href="http://www.openstreetmap.org/">OpenStreetMap</a> key/value data into key/value pairs in the MongoDB document so we don't lose any data, 
+but we also don't do anything particularly interesting to transform it.</p>
 <h4 id="save-into-mongodb">Save Into MongoDB</h4>
-
-<p><img src="/static/images/GroovyScript6.png" alt="Save Into MongoDB" title="Save Into MongoDB" />
-Finally, once we&rsquo;ve created a simple <code>coffeeShop</code> Map representing the document we want to save into MongoDB,
-we insert it into MongoDB if the map has a field called <code>name</code>.  We could have checked this when we were reading the XML and putting it
-into the map, but it&rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called <code>name</code> in <code>coffeeShop</code>.</p>
-
-<p>When we want to insert the Map we need to turn this into a <code>BasicDBObject</code>, the Java Driver&rsquo;s document type,
-but this is easily done by calling the constructor that takes a Map.  Alternatively, there&rsquo;s a Groovy syntax which would effectively do
+<p><img src="/static/images/GroovyScript6.png" alt="Save Into MongoDB" title="Save Into MongoDB">
+Finally, once we've created a simple <code>coffeeShop</code> Map representing the document we want to save into MongoDB, 
+we insert it into MongoDB if the map has a field called <code>name</code>.  We could have checked this when we were reading the XML and putting it 
+into the map, but it's actually much easier just to use the pretty Groovy syntax to check for a key called <code>name</code> in <code>coffeeShop</code>.</p>
+<p>When we want to insert the Map we need to turn this into a <code>BasicDBObject</code>, the Java Driver's document type, 
+but this is easily done by calling the constructor that takes a Map.  Alternatively, there's a Groovy syntax which would effectively do 
 the same thing, which you might prefer:</p>
-
 <pre><code>collection.insert(coffeeShop as BasicDBObject)
 </code></pre>
-
 <h3 id="tell-mongodb-that-we-want-to-perform-geo-queries-on-this-data">Tell MongoDB that we want to perform Geo queries on this data</h3>
-
-<p><img src="/static/images/GroovyScript7.png" alt="Add Geo Index" title="Add Geo Index" />
-Because we&rsquo;re going to do a <a href="http://docs.mongodb.org/manual/reference/operator/query/nearSphere/">nearSphere</a> query on this data,
-we need to add a &ldquo;2dsphere&rdquo; index on our location field. We created the <code>location</code> field as GeoJSON,
+<p><img src="/static/images/GroovyScript7.png" alt="Add Geo Index" title="Add Geo Index">
+Because we're going to do a <a href="http://docs.mongodb.org/manual/reference/operator/query/nearSphere/">nearSphere</a> query on this data, 
+we need to add a &ldquo;2dsphere&rdquo; index on our location field. We created the <code>location</code> field as GeoJSON, 
 so all we need to do is call <code>createIndex</code> for this field.</p>
-
 <h3 id="conclusion">Conclusion</h3>
-
-<p>So that&rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language,
+<p>So that's it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language, 
 but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data
 and transforming it into something that can be inserted into a MongoDB collection.</p>
 <ul class="pa0">
@@ -356,6 +311,7 @@ and transforming it into something that can be inserted into a MongoDB collectio
   
 </ul>
 <div class="mt6">
+      
         <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -376,6 +332,8 @@ and transforming it into something that can be inserted into a MongoDB collectio
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
       </div>
     </section>
 
@@ -435,9 +393,10 @@ and transforming it into something that can be inserted into a MongoDB collectio
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://trishagee.github.io" >
-    &copy; 2020 Trisha Gee
+    &copy;  Trisha Gee 2020 
   </a>
     <div>
+
 
 
 
@@ -480,6 +439,7 @@ and transforming it into something that can be inserted into a MongoDB collectio
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
 
 
 

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Open Source on Trisha Gee</title>
+    <title>open source on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/open-source/</link>
-    <description>Recent content in Open Source on Trisha Gee</description>
+    <description>Recent content in open source on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 11 Mar 2013 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Mon, 11 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_coalescing_ring_buffer/</guid>
-      <description>For anyone who is interested in what LMAX is up to, and is still following my blog, have a look at this post about the latest tool they&amp;rsquo;ve open sourced: the Coalescing Ring Buffer.</description>
+      <description>For anyone who is interested in what LMAX is up to, and is still following my blog, have a look at this post about the latest tool they&#39;ve open sourced: the Coalescing Ring Buffer.</description>
     </item>
     
   </channel>

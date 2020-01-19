@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javaone on Trisha Gee</title>
+    <title>javaone on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/javaone/</link>
-    <description>Recent content in Javaone on Trisha Gee</description>
+    <description>Recent content in javaone on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 30 Sep 2014 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,8 @@
       <pubDate>Tue, 30 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_one_2014_day_one/</guid>
-      <description>&lt;p&gt;Well, I&amp;rsquo;m at JavaOne again, and after only one day I&amp;rsquo;ve already learnt stuff.  And, of course,
-had a great time catching up with interesting people.  Here&amp;rsquo;s a summary of the first day.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Well, I&#39;m at JavaOne again, and after only one day I&#39;ve already learnt stuff.  And, of course, 
+had a great time catching up with interesting people.  Here&#39;s a summary of the first day.&lt;/p&gt;</description>
     </item>
     
   </channel>

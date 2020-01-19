@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Qcon London on Trisha Gee</title>
+    <title>qcon london on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/qcon-london/</link>
-    <description>Recent content in Qcon London on Trisha Gee</description>
+    <description>Recent content in qcon london on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 11 Mar 2014 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_2014/</guid>
-      <description>Wow. My 4th QCon London.&amp;nbsp; That’s not bad.&amp;nbsp; And every time, it’s a different experience (if you must, see my blogs for&amp;nbsp;2013,&amp;nbsp;2012, and even 2007 (part 1 &amp;amp; part 2 - how cute was I? &amp;ldquo;agile seems like a jolly good idea; automated testing appears to be important&amp;rdquo;)).
-I can’t even tell you what I did on the first day, I was mostly panicking about my presentation - I was inspired after my trip to New York last month to change my talk at the last (responsible?</description>
+      <description>Wow. My 4th QCon London. That’s not bad. And every time, it’s a different experience (if you must, see my blogs for 2013, 2012, and even 2007 (part 1&amp;amp; part 2- how cute was I? &amp;ldquo;agile seems like a jolly good idea; automated testing appears to be important&amp;rdquo;)).I can’t even tell you what I did on the first day, I was mostly panicking about my presentation - I was inspired after my trip to New York last month to change my talk at the last (responsible?</description>
     </item>
     
     <item>
@@ -27,7 +26,7 @@ I can’t even tell you what I did on the first day, I was mostly panicking abou
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
-      <description>InfoQ has posted the video of Dan North and I opining on the subject of hiring. &amp;nbsp;Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. &amp;nbsp;We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.</description>
+      <description>InfoQ has posted the video of Dan North and I opining on the subject of hiring. Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. We spend less time on how to do well as an interviewee, but in theory if you know what&#39;s going through the interviewer&#39;s mind, you should be in a much better position to take control of the interview and shine.</description>
     </item>
     
     <item>
@@ -36,9 +35,7 @@ I can’t even tell you what I did on the first day, I was mostly panicking abou
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_day_one/</guid>
-      <description>I like QCon London, I really do. &amp;nbsp;Not only is it on home turf, but, as I&amp;rsquo;ve said before, it doesn&amp;rsquo;t just focus on technology, or a set of technologies.
-
-Full disclosure: I&amp;rsquo;ve been involved in planning QCon this year. &amp;nbsp;So this time I know all the thinking, hard work, planning and last-minute changes that go into a conference like this. &amp;nbsp;And it&amp;rsquo;s a joy to be able to sit in the audience and see the conference that you&amp;rsquo;ve helped build.</description>
+      <description>I like QCon London, I really do. Not only is it on home turf, but, as I&#39;ve said before, it doesn&#39;t just focus on technology, or a set of technologies.Full disclosure: I&#39;ve been involved in planning QCon this year. So this time I know all the thinking, hard work, planning and last-minute changes that go into a conference like this. And it&#39;s a joy to be able to sit in the audience and see the conference that you&#39;ve helped build.</description>
     </item>
     
     <item>
@@ -47,8 +44,7 @@ Full disclosure: I&amp;rsquo;ve been involved in planning QCon this year. &amp;n
       <pubDate>Tue, 27 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_2012/</guid>
-      <description>I&amp;rsquo;m late with my write-up of QCon, and what&amp;rsquo;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it.&amp;nbsp; A sacrifice I had to make for 7 days in the sunshine….
-Firstly, me me meI presented the talk I previewed at Skillsmatter the previous week, something I was calling the User&amp;rsquo;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
+      <description>I&#39;m late with my write-up of QCon, and what&#39;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….Firstly, me me meI presented the talk I previewed at Skillsmatterthe previous week, something I was calling the User&#39;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
     </item>
     
     <item>
@@ -66,7 +62,7 @@ Firstly, me me meI presented the talk I previewed at Skillsmatter the previous w
       <pubDate>Tue, 20 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference/</guid>
-      <description>Investigate Maven 2Have a glance at TestNGPotentially play with JMock for current testing frameworkPlay with GWTSign up for Pragmatic Architect eventCheck out JavaBlackBelt site - what is provided, and what are the feelings of professionals (or, more importantly, recruiters) towards these qualifications?Look into getting Visual Studio .NET again so you can have a go at GUI development in it.Go to technorati. Investigate JUnit 4 changes/improvements </description>
+      <description></description>
     </item>
     
     <item>
@@ -75,8 +71,7 @@ Firstly, me me meI presented the talk I previewed at Skillsmatter the previous w
       <pubDate>Mon, 19 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_initial_thoughts/</guid>
-      <description>Things I took out of QCon:
-I want to play with Ajax.&amp;nbsp; Maybe I&#39;ve &#34;grown out&#34; of front end development but that doesn&#39;t prevent it from being (potentially) extremely coolSelenium looks like a good place to start for automated website testingIt can take up to 7 years to move away from a legacy architecture.&amp;nbsp; Depressing, but at least it shows it can be done and it&#39;s worth the effortI&#39;m going to become a certified Scrum Master Mistress.</description>
+      <description></description>
     </item>
     
     <item>
@@ -85,7 +80,7 @@ I want to play with Ajax.&amp;nbsp; Maybe I&#39;ve &#34;grown out&#34; of front 
       <pubDate>Sun, 18 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london/</guid>
-      <description>Last week saw the first QCon London conference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.
+      <description>Last week saw the first QCon Londonconference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.
 The conference consisted of two days of tutorials followed by three days of talks covering technologies, vendor products, and processes. In addition there were numerous &amp;ldquo;networking&amp;rdquo; opportunities with plenty of break times to both absorb information and meet other people, plus evening events.</description>
     </item>
     

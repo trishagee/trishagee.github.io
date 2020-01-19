@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Articles on Trisha Gee</title>
+    <title>articles on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/articles/</link>
-    <description>Recent content in Articles on Trisha Gee</description>
+    <description>Recent content in articles on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 14 Aug 2014 00:00:00 +0000</lastBuildDate>
@@ -17,12 +17,11 @@
       <pubDate>Thu, 14 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
-documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
+      <description>&lt;p&gt;We&#39;ve been missing an introduction to using MongoDB from Java for a little while now - there&#39;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the 
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java 
 developer.&lt;/p&gt;
-
-&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
-Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from 
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD 
 operations using the Java driver:&lt;/p&gt;</description>
     </item>
     
@@ -32,8 +31,7 @@ operations using the Java driver:&lt;/p&gt;</description>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/introduction_to_mongodb_and_big_data/</guid>
-      <description>I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&amp;rsquo;s good in the &amp;ldquo;Big Data&amp;rdquo; space.
-Look inside &amp;gt;MongoDB and Big Data</description>
+      <description>I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&#39;s good in the &amp;ldquo;Big Data&amp;rdquo; space.Look inside &amp;gt;MongoDB and Big Data</description>
     </item>
     
   </channel>

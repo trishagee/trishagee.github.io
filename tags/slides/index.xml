@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Slides on Trisha Gee</title>
+    <title>slides on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/slides/</link>
-    <description>Recent content in Slides on Trisha Gee</description>
+    <description>Recent content in slides on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 10 Nov 2014 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,9 @@
       <pubDate>Mon, 10 Nov 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/staying_ahead_of_the_curve/</guid>
-      <description>&lt;p&gt;Last Thursday I gave a keynote at
-&lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;GOTO Berlin&lt;/a&gt; to address the problems
-of deciding how to learn a new technology/framework/process (Spoiler Alert: it&amp;rsquo;s not by putting it into production).&lt;/p&gt;</description>
+      <description>&lt;p&gt;Last Thursday I gave a keynote at 
+&lt;a href=&#34;http://gotocon.com/berlin-2014/presentation/Party%20Keynote:%20Staying%20Ahead%20of%20the%20Curve&#34;&gt;GOTO Berlin&lt;/a&gt; to address the problems 
+of deciding how to learn a new technology/framework/process (Spoiler Alert: it&#39;s not by putting it into production).&lt;/p&gt;</description>
     </item>
     
   </channel>

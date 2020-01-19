@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Awards on Trisha Gee</title>
+    <title>awards on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/awards/</link>
-    <description>Recent content in Awards on Trisha Gee</description>
+    <description>Recent content in awards on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 14 Jun 2011 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Tue, 14 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/vote_for_the_ljc/</guid>
-      <description>I nominated LMAX for a couple of JAX Innovation Awards, but unfortunately we did not get shortlisted :(
-
-However, the London Java Community did! &amp;nbsp;So if you have a second please vote for the LJC for Top Java Ambassador</description>
+      <description>I nominated LMAXfor a couple of JAX Innovation Awards, but unfortunately we did not get shortlisted :(However, the London Java Communitydid! So if you have a second please vote for the LJC for Top Java Ambassador</description>
     </item>
     
   </channel>

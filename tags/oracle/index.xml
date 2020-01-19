@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oracle on Trisha Gee</title>
+    <title>oracle on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/oracle/</link>
-    <description>Recent content in Oracle on Trisha Gee</description>
+    <description>Recent content in oracle on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 29 Jan 2015 00:00:00 +0000</lastBuildDate>
@@ -20,9 +20,8 @@
       <description>&lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
 find people unusually keen to come and visit us on the pretence of presenting at the Sevilla Java User Group (and please,
 DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
-
 &lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
-an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;</description>
+an update on where Java is now and where it looks like it&#39;s going in the future.&lt;/p&gt;</description>
     </item>
     
   </channel>

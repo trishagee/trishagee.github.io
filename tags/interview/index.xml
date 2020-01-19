@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Interview on Trisha Gee</title>
+    <title>interview on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/interview/</link>
-    <description>Recent content in Interview on Trisha Gee</description>
+    <description>Recent content in interview on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 12 Aug 2014 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,8 @@
       <pubDate>Tue, 12 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/interview_at_goto_chicago/</guid>
-      <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving,
-which happens to be the same one I&amp;rsquo;m giving at a number of conferences this year (although of course I&amp;rsquo;m evolving it as I go along).&lt;/p&gt;</description>
+      <description>&lt;p&gt;At &lt;a href=&#34;http://gotocon.com/chicago-2014/&#34;&gt;GOTO Chicago&lt;/a&gt;, I was given the chance to chat a bit about the presentation I was giving, 
+which happens to be the same one I&#39;m giving at a number of conferences this year (although of course I&#39;m evolving it as I go along).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -27,7 +27,7 @@ which happens to be the same one I&amp;rsquo;m giving at a number of conferences
       <pubDate>Tue, 15 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/infoq-interview-march-2014/</guid>
-      <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&amp;rsquo;s always a pleasure to be interviewed by Charles,
+      <description>&lt;p&gt;While I was at &lt;a href=&#34;http://localhost:1313/post/qcon_london_2014/&#34;&gt;QCon London&lt;/a&gt;, I was grabbed for an interview with InfoQ.  It&#39;s always a pleasure to be interviewed by Charles,
 I think he brings out the best in me.&lt;/p&gt;</description>
     </item>
     
@@ -37,8 +37,7 @@ I think he brings out the best in me.&lt;/p&gt;</description>
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
-      <description>Yesterday Stephen Chin, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.
-It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. &amp;nbsp;There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.</description>
+      <description>Yesterday Stephen Chin, one of Oracle&#39;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. There&#39;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&#39;s not a great platform for doing live demos, but I think I&#39;d like to do more code demos in this way, if I can find a suitable platform.</description>
     </item>
     
     <item>
@@ -47,8 +46,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
-      <description>I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series, as it moves over to Europe. In this video I talk about going to Mars, education, planning your career, being a developer, and the impact of technology on our lives. So, not much&amp;hellip;
- </description>
+      <description>I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&#39;s series, as it moves over to Europe. In this video I talk about going to Mars, education, planning your career, being a developer, and the impact of technology on our lives. So, not much&amp;hellip;</description>
     </item>
     
     <item>
@@ -57,7 +55,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Sat, 12 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/interviewed_at_devoxx/</guid>
-      <description>Yolande Poirier from OTN interviewed me at Devoxx about my new job at 10gen, Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.</description>
+      <description>Yolande Poirier from OTNinterviewed me at Devoxx about my new job at 10gen, Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.</description>
     </item>
     
     <item>
@@ -66,7 +64,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!</description>
+      <description></description>
     </item>
     
     <item>
@@ -75,7 +73,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Thu, 23 Aug 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_at_goto_copenhagen/</guid>
-      <description>I was interviewed at GOTO Copenhagen, about Java, the Disruptor, the Graduate Developer Community &amp;amp; London Java Community, and a whole host of other things. &amp;nbsp;So to make up for the lack of blogging this month, here it is:</description>
+      <description>I was interviewed at GOTO Copenhagen, about Java, the Disruptor, the Graduate Developer Community &amp;amp; London Java Community, and a whole host of other things. So to make up for the lack of blogging this month, here it is:</description>
     </item>
     
     <item>
@@ -84,8 +82,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_do_you_do_and_how_did_you_get_there/</guid>
-      <description>So yet another interview with me is available, but this one is in written form. &amp;nbsp;It&amp;rsquo;s for the Graduate Developer Community, the aim is to show undergraduates and graduates what real techies jobs are like, and how people doing them they got there.
-It&amp;rsquo;s long, but if you know anyone just starting out their career who wants to get a feel for where they might want to go, please point them at it.</description>
+      <description>So yet another interviewwith me is available, but this one is in written form. It&#39;s for the Graduate Developer Community, the aim is to show undergraduates and graduates what real techies jobs are like, and how people doing them they got there.It&#39;s long, but if you know anyone just starting out their career who wants to get a feel for where they might want to go, please point them at it.</description>
     </item>
     
     <item>
@@ -94,7 +91,7 @@ It&amp;rsquo;s long, but if you know anyone just starting out their career who w
       <pubDate>Fri, 18 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/interviewed_for_infoq_at_qcon_london/</guid>
-      <description>I was flattered to be interviewed for InfoQ at QCon London. It was a fun interview actually, and didn&amp;rsquo;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).</description>
+      <description>I was flattered to be interviewed for InfoQ at QCon London. It was a fun interview actually, and didn&#39;t feel anything like the half an hour it actually took. In it, I get to talk about Agile at LMAX, the Disruptor (of course) and diversity in IT (again).</description>
     </item>
     
     <item>
@@ -103,8 +100,7 @@ It&amp;rsquo;s long, but if you know anyone just starting out their career who w
       <pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/update_on_events/</guid>
-      <description>Just a quick note to say I was interviewed for another podcast, again to talk about all-female events. &amp;nbsp;It&amp;rsquo;s only a short one and there&amp;rsquo;s probably not much in there that I haven&amp;rsquo;t said before, either on here or in person.
-From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. &amp;nbsp;I&amp;rsquo;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology.</description>
+      <description>Just a quick note to say I was interviewed for another podcast, again to talk about all-female events. It&#39;s only a short one and there&#39;s probably not much in there that I haven&#39;t said before, either on here or in person.From the 21st May, I&#39;m at GOTO, both Copenhagen and Amsterdam. I&#39;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology.</description>
     </item>
     
     <item>
@@ -113,8 +109,7 @@ From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. &amp;nb
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</guid>
-      <description>This week&amp;rsquo;s BBC Outriders podcast features yours truly venting about The Subject That Won&amp;rsquo;t Go Away, Women in Technology. &amp;nbsp;I was interviewed at Sunday&amp;rsquo;s Girl Geek conference, and got a chance to voice my opinions once again. &amp;nbsp;For those who can&amp;rsquo;t be bothered to listen, they can probably be summarised as:
-There are genuine problems that face people in our industry, let&amp;rsquo;s talk about those that you have actually faced, not ones that you imagine exist.</description>
+      <description>This week&#39;s BBC Outriders podcastfeatures yours truly venting about The Subject That Won&#39;t Go Away, Women in Technology. I was interviewed at Sunday&#39;s Girl Geek conference, and got a chance to voice my opinions once again. For those who can&#39;t be bothered to listen, they can probably be summarised as:There are genuine problems that face people in our industry, let&#39;s talk about those that you have actually faced, not ones that you imagine exist.</description>
     </item>
     
     <item>
@@ -123,8 +118,7 @@ There are genuine problems that face people in our industry, let&amp;rsquo;s tal
       <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
-      <description>Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. &amp;nbsp;Because I was there to be on the Why We Shouldn&amp;rsquo;t Target Women panel, the interview is just another platform for me to air my views on this subject again. 
-Yes, I am actually wearing pink&amp;hellip;.</description>
+      <description>Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. Because I was there to be on the Why We Shouldn&#39;t Target Womenpanel, the interview is just another platform for me to air my views on this subject again. Yes, I am actually wearing pink&amp;hellip;.</description>
     </item>
     
   </channel>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ide on Trisha Gee</title>
+    <title>ide on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/ide/</link>
-    <description>Recent content in Ide on Trisha Gee</description>
+    <description>Recent content in ide on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 20 May 2011 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET.&amp;nbsp; Actually, I have been fighting pitched battles with it.
-All I want to do is take our existing Java client example code and write an equivalent in C#.&amp;nbsp; Easy, right?
-Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward.&amp;nbsp; Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
+      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.</description>
     </item>
     
   </channel>

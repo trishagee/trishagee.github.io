@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jax London on Trisha Gee</title>
+    <title>jax london on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/jax-london/</link>
-    <description>Recent content in Jax London on Trisha Gee</description>
+    <description>Recent content in jax london on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 07 Nov 2013 00:00:00 +0000</lastBuildDate>
@@ -27,8 +27,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/upcoming_events/</guid>
-      <description>So yeah&amp;hellip; in keeping with this year&amp;rsquo;s theme of basically only blogging about the exciting conferences I&amp;rsquo;ve been to, I&amp;rsquo;m going to blog about the exciting conferences I am attending in the future. I haven&amp;rsquo;t been great at doing that, the disconnect between the time I submit a presentation and the actual announcement means that I often forget I haven&amp;rsquo;t told anyone about what I&amp;rsquo;m up to.
-Firstly, I&amp;rsquo;m back in the States this month to present my very first workshop - An Introduction to the Disruptor&amp;nbsp;at Strangeloop.</description>
+      <description>So yeah&amp;hellip; in keeping with this year&#39;s theme of basically only blogging about the exciting conferences I&#39;ve been to, I&#39;m going to blog about the exciting conferences I am attending in the future. I haven&#39;t been great at doing that, the disconnect between the time I submit a presentation and the actual announcement means that I often forget I haven&#39;t told anyone about what I&#39;m up to.Firstly, I&#39;m back in the States this month to present my very first workshop - An Introduction to the Disruptorat Strangeloop.</description>
     </item>
     
     <item>
@@ -37,7 +36,7 @@ Firstly, I&amp;rsquo;m back in the States this month to present my very first wo
       <pubDate>Mon, 05 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/video_of_our_jax_london_session/</guid>
-      <description>At JAX London Mike and I presented &amp;ldquo;Understanding the Disruptor - A Beginner&amp;rsquo;s Guide to Hardcore Concurrency&amp;rdquo;. This is the session we initially previewed to the London Java Community a few weeks earlier. The content is the same, but the feel of the presentation was quite different to us - the venue for the LJC event was more intimate, and it was easier to interact with the audience. At JAX, we were up on stage, which was pretty cool actually, but meant that it felt more like a lecture and it was less easy to connect with the audience.</description>
+      <description>At JAX London Mike and I presented &amp;ldquo;Understanding the Disruptor - A Beginner&#39;s Guide to Hardcore Concurrency&amp;rdquo;. This is the session we initially previewed to the London Java Community a few weeks earlier. The content is the same, but the feel of the presentation was quite different to us - the venue for the LJC event was more intimate, and it was easier to interact with the audience. At JAX, we were up on stage, which was pretty cool actually, but meant that it felt more like a lecture and it was less easy to connect with the audience.</description>
     </item>
     
     <item>
@@ -46,8 +45,7 @@ Firstly, I&amp;rsquo;m back in the States this month to present my very first wo
       <pubDate>Tue, 15 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__i_learn_stuff_and_meet_people/</guid>
-      <description>A couple of weeks ago, I was at JAX London along with a number of the London Java Community regulars (Martijn/Ben/John/Sandro/Simon/Zoe I&amp;rsquo;m looking at you&amp;hellip;.)
-My purpose for attending was largely to present the Hardcore Concurrency for Beginners talk that Mike and I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me.</description>
+      <description>A couple of weeks ago, I was at JAX Londonalong with a number of the London Java Communityregulars (Martijn/Ben/John/Sandro/Simon/ZoeI&#39;m looking at you&amp;hellip;.)My purpose for attending was largely to present the Hardcore Concurrency for Beginnerstalk that Mikeand I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me. After the disappointment of the sessions at Java One, sitting in a room being talked at was quite low down on my list of priorities.</description>
     </item>
     
   </channel>

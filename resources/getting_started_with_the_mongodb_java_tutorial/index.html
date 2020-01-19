@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Trisha Gee  | Getting started with the MongoDB Java Driver Tutorial</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -17,7 +14,7 @@
 
     
     
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
     
 
     
@@ -29,26 +26,22 @@
     
 
     
-
+    
     <meta property="og:title" content="Getting started with the MongoDB Java Driver Tutorial" />
 <meta property="og:description" content="Brief guide to running the MongoDB tutorial from QCon London and JAX London." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/" />
-<meta property="article:published_time" content="2013-10-24T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2013-10-24T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2013-10-24T00:00:00+00:00" />
+<meta property="article:modified_time" content="2013-10-24T00:00:00+00:00" />
 <meta itemprop="name" content="Getting started with the MongoDB Java Driver Tutorial">
 <meta itemprop="description" content="Brief guide to running the MongoDB tutorial from QCon London and JAX London.">
-
-
 <meta itemprop="datePublished" content="2013-10-24T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2013-10-24T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="179">
+<meta itemprop="wordCount" content="164">
 
 
 
-<meta itemprop="keywords" content="tutorial,workshop," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="tutorial,workshop," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Getting started with the MongoDB Java Driver Tutorial"/>
 <meta name="twitter:description" content="Brief guide to running the MongoDB tutorial from QCon London and JAX London."/>
 
@@ -113,6 +106,7 @@ if (!doNotTrack) {
 
 
 
+
 <a href="https://twitter.com/trisha_gee" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
   <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
@@ -152,6 +146,7 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
 
 
 
@@ -178,52 +173,34 @@ if (!doNotTrack) {
       </p>
       <h1 class="f1 athelas mb1">Getting started with the MongoDB Java Driver Tutorial</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2013-10-24T00:00:00Z">October 24, 2013</time>      
+      
+      <time class="f6 mv4 dib tracked" datetime="2013-10-24T00:00:00Z">October 24, 2013</time>
       
       
     </header>
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Brief guide to running the MongoDB tutorial from QCon London and JAX London.</p>
-
 <h2 id="setup">Setup</h2>
-
-<p>Create a new work area for this tutorial. For the rest of these instructions I&rsquo;ll refer to it as <code>&lt;location&gt;</code>.  I&rsquo;ve put
- mine in <code>~/Documents/workshops/jax</code></p>
-
+<p>Create a new work area for this tutorial. For the rest of these instructions I'll refer to it as <!-- raw HTML omitted -->&lt;location&gt;<!-- raw HTML omitted -->.  I've put
+mine in <!-- raw HTML omitted -->~/Documents/workshops/jax<!-- raw HTML omitted --></p>
 <h2 id="installing-mongodb">Installing MongoDB</h2>
-
-<p><a href="http://www.mongodb.org/downloads">Download MongoDB</a> or get it off the USB stick Unzip to an appropriate location,
-let&rsquo;s say <code>&lt;location&gt;/mongodb</code></p>
-
-<p>Then we&rsquo;ll have to create the directory for the data to go into:</p>
-
-<p><code>cd &lt;location&gt;</code><br /><code>mkdir data</code><br /><div><br /></div>And then start MongoDB:<div></p>
-
-<p><code>./mongodb/bin/mongod &ndash;dbpath data</code></p>
-
+<p><!-- raw HTML omitted -->Download MongoDB<!-- raw HTML omitted --> or get it off the USB stick Unzip to an appropriate location,
+let's say <!-- raw HTML omitted -->&lt;location&gt;/mongodb<!-- raw HTML omitted --></p>
+<p>Then we'll have to create the directory for the data to go into:</p>
+<p><!-- raw HTML omitted -->cd &lt;location&gt;<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->mkdir data<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->And then start MongoDB:<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->./mongodb/bin/mongod &ndash;dbpath data<!-- raw HTML omitted --></p>
 <p>Now MongoDB should be running on localhost and port 27017</p>
-
 <p>If you want, you can connect to the shell - this is not necessary for this workshop:</p>
-
-<p><span style="font-family: monospace;">./mongodb/bin/mongo</span></p>
-
+<p><!-- raw HTML omitted -->./mongodb/bin/mongo<!-- raw HTML omitted --></p>
 <h2 id="creating-your-project">Creating your project</h2>
-
-<p>Put <a href="https://github.com/trishagee/mongodb-java-tutorial">the Java project</a> into <code>&lt;location&gt;/java3.0</code></p>
-
-<p><code>cd &lt; location&gt;/java3.0</code></p>
-
-<p>Run:<br /><code>./gradlew idea</code><br /><div>or</div><code>./gradlew eclipse</code></p>
-
+<p>Put <a href="https://github.com/trishagee/mongodb-java-tutorial">the Java project</a> into <!-- raw HTML omitted -->&lt;location&gt;/java3.0<!-- raw HTML omitted --></p>
+<p><!-- raw HTML omitted -->cd &lt; location&gt;/java3.0<!-- raw HTML omitted --></p>
+<p>Run:<!-- raw HTML omitted --><!-- raw HTML omitted -->./gradlew idea<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->or<!-- raw HTML omitted --><!-- raw HTML omitted -->./gradlew eclipse<!-- raw HTML omitted --></p>
 <p>Open in your favourite IDE and you should be ready to start playing.</p>
-
 <h2 id="more-help">More help:</h2>
-
-<p><a href="http://docs.mongodb.org/manual/tutorial/">MongoDB Tutorials</a></p>
-
+<p><!-- raw HTML omitted -->MongoDB Tutorials<!-- raw HTML omitted --></p>
 <h2 id="emergency-gradle-procedure">Emergency Gradle Procedure:</h2>
-
-<p><a href="http://www.gradle.org/">Download Gradle</a>&nbsp;or get it off the USB stick<br />Extract to some suitable location. &nbsp;Mine&rsquo;s in&nbsp;<code>/Library/Tools/gradle/</code><br />Put gradle on your path. &nbsp;On the Mac, that means adding the following line to&nbsp;<code>~/.bash_profile</code>:<br /><code>export PATH=&ldquo;/Library/Tools/gradle/bin:$PATH&rdquo;</code><br /><div><code><br /></code></div></div></p><ul class="pa0">
+<p><!-- raw HTML omitted -->Download Gradle<!-- raw HTML omitted --> or get it off the USB stick<!-- raw HTML omitted -->Extract to some suitable location.  Mine's in <!-- raw HTML omitted -->/Library/Tools/gradle/<!-- raw HTML omitted --><!-- raw HTML omitted -->Put gradle on your path.  On the Mac, that means adding the following line to <!-- raw HTML omitted -->~/.bash_profile<!-- raw HTML omitted -->:<!-- raw HTML omitted --><!-- raw HTML omitted -->export PATH=&rdquo;/Library/Tools/gradle/bin:$PATH&quot;<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/tutorial" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tutorial</a>
@@ -235,6 +212,7 @@ let&rsquo;s say <code>&lt;location&gt;/mongodb</code></p>
   
 </ul>
 <div class="mt6">
+      
         <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -255,6 +233,8 @@ let&rsquo;s say <code>&lt;location&gt;/mongodb</code></p>
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
       </div>
     </section>
 
@@ -271,9 +251,10 @@ let&rsquo;s say <code>&lt;location&gt;/mongodb</code></p>
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://trishagee.github.io" >
-    &copy; 2020 Trisha Gee
+    &copy;  Trisha Gee 2020 
   </a>
     <div>
+
 
 
 
@@ -316,6 +297,7 @@ let&rsquo;s say <code>&lt;location&gt;/mongodb</code></p>
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
 
 
 

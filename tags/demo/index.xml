@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Demo on Trisha Gee</title>
+    <title>demo on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/demo/</link>
-    <description>Recent content in Demo on Trisha Gee</description>
+    <description>Recent content in demo on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 07 Oct 2014 00:00:00 +0000</lastBuildDate>
@@ -17,7 +17,7 @@
       <pubDate>Tue, 07 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/groovy_import_to_mongodb/</guid>
-      <description>This year I&amp;rsquo;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
+      <description>This year I&#39;ve been demonstrating how easy it is to create modern web apps using AngularJS, Java and MongoDB. I also use Groovy during this demo to do the sorts of things Groovy is really good at - writing descriptive tests, and creating scripts.
 Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use, so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.</description>
     </item>
     

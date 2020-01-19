@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gradle on Trisha Gee</title>
+    <title>gradle on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/gradle/</link>
-    <description>Recent content in Gradle on Trisha Gee</description>
+    <description>Recent content in gradle on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sat, 31 Aug 2013 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</guid>
-      <description>The second in my short series of blogs about the new Java driver is now available for your perusal. &amp;nbsp;In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.
-The post also shows that Gradle is prettier than Maven. &amp;nbsp;Sorry Maven.
-If you are going to play with the new driver, please read all the caveats carefully.</description>
+      <description>The second in my short series of blogsabout the new Java driver is now available for your perusal. In it, there&#39;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.The post also shows that Gradleis prettier than Maven. Sorry Maven.If you are going to play with the new driver, please read all the caveats carefully.</description>
     </item>
     
   </channel>

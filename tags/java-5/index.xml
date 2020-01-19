@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java 5 on Trisha Gee</title>
+    <title>java 5 on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/java-5/</link>
-    <description>Recent content in Java 5 on Trisha Gee</description>
+    <description>Recent content in java 5 on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 14 Apr 2008 00:00:00 +0000</lastBuildDate>
@@ -17,10 +17,7 @@
       <pubDate>Mon, 14 Apr 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/aop_caching/</guid>
-      <description>Today I would like to document my experiences implementing caching with Aspect Oriented Programming (AOP) and annotations.&amp;nbsp;
-
-Background context&amp;nbsp;
-Caching may need to be implemented in your application for a number of reasons. OK, actually usually only one: performance. I would like to add my own tuppence-worth to this though - if you can get away without caching (specifically in application that provide the ability to view and change data) then do so, unless you are using a cache implementation that will handle as much of the pain as possible for you.</description>
+      <description></description>
     </item>
     
     <item>
@@ -29,7 +26,7 @@ Caching may need to be implemented in your application for a number of reasons. 
       <pubDate>Sat, 07 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_specifics/</guid>
-      <description>When I first started playing with Java 1.5, I thought generics were the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code: List list = new ArrayList(); list.add(new Integer(1)); Integer integer = (Integer)list.get(0); for (Iterator i = list.iterator(); i.hasNext(); ) { Integer number = (Integer)i.</description>
+      <description>When I first started playing with Java 1.5, I thought genericswere the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code:List list = new ArrayList();list.add(new Integer(1));Integer integer = (Integer)list.get(0);for (Iterator i = list.iterator(); i.hasNext(); ) {Integer number = (Integer)i.next();number.intValue();}And the new:List&amp;lt;Integer&amp;gt; list = new ArrayList&amp;lt;Integer&amp;gt;();list.</description>
     </item>
     
   </channel>

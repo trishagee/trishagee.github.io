@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Trisha Gee  | Strangeloop Disruptor Workshop Materials</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -17,7 +14,7 @@
 
     
     
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
     
 
     
@@ -29,31 +26,24 @@
     
 
     
-
+    
     <meta property="og:title" content="Strangeloop Disruptor Workshop Materials" />
-<meta property="og:description" content="On Sunday I gave my very first workshop on the Disruptor. &nbsp;The aim was to give people some hands-on coding experience using the syntax. &nbsp;Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. &nbsp;But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example." />
+<meta property="og:description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&#39;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:Give an overview of the DisruptorShow how to create a simple one producer, one consumer example." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/strangeloop_disruptor_workshop_materials/" />
-<meta property="article:published_time" content="2012-09-26T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2012-09-26T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2012-09-26T00:00:00+00:00" />
+<meta property="article:modified_time" content="2012-09-26T00:00:00+00:00" />
 <meta itemprop="name" content="Strangeloop Disruptor Workshop Materials">
-<meta itemprop="description" content="On Sunday I gave my very first workshop on the Disruptor. &nbsp;The aim was to give people some hands-on coding experience using the syntax. &nbsp;Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. &nbsp;But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.">
-
-
+<meta itemprop="description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&#39;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.">
 <meta itemprop="datePublished" content="2012-09-26T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2012-09-26T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="208">
+<meta itemprop="wordCount" content="207">
 
 
 
-<meta itemprop="keywords" content="disruptor," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="disruptor," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Strangeloop Disruptor Workshop Materials"/>
-<meta name="twitter:description" content="On Sunday I gave my very first workshop on the Disruptor. &nbsp;The aim was to give people some hands-on coding experience using the syntax. &nbsp;Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. &nbsp;But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example."/>
+<meta name="twitter:description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&#39;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:Give an overview of the DisruptorShow how to create a simple one producer, one consumer example."/>
 
       
 <script type="application/javascript">
@@ -116,6 +106,7 @@ if (!doNotTrack) {
 
 
 
+
 <a href="https://twitter.com/trisha_gee" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
   <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
@@ -160,6 +151,7 @@ if (!doNotTrack) {
 
 
 
+
     </div>
   </div>
 </nav>
@@ -181,12 +173,13 @@ if (!doNotTrack) {
       </p>
       <h1 class="f1 athelas mb1">Strangeloop Disruptor Workshop Materials</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2012-09-26T00:00:00Z">September 26, 2012</time>      
+      
+      <time class="f6 mv4 dib tracked" datetime="2012-09-26T00:00:00Z">September 26, 2012</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>On Sunday I gave my very first workshop on the Disruptor. &nbsp;The aim was to give people some hands-on coding experience using the syntax. &nbsp;Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. &nbsp;But the workshop should:<br /><ol><li>Give an overview of the Disruptor</li><li>Show how to create a simple one producer, one consumer example.</li><li>Show how to wire up a parallel event handler</li><li>Show how to how (and why) to create a diamond dependency graph.</li><li>Extrapolate beyond these very simple examples to something closer to a real world architecture.</li></ol><div>Requirements are:</div><div><ol><li>Basic Java skills</li><li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java 7 update 7</a></li><li>(Optionally) <a href="http://www.jetbrains.com/idea/">IntelliJ</a>.</li></ol><div>The slides (not all that useful, I&rsquo;ll grant you, without me talking) are available, and you can <a href="http://db.tt/9AjcSh1m">download the code</a>.</div></div><div><br /></div><div>If you want to work through the examples yourself, start with <span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense.TowerDefence</span>. &nbsp;The starting point code for the workshop is in package&nbsp;<span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense</span>. &nbsp;<span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense1</span> shows a solution to exercise one,&nbsp;<span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense2</span> to exercise 2 and so forth. &nbsp;The final package,&nbsp;<span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense4</span>, has some different towers you can play with to see the effects. &nbsp;They don&rsquo;t really show anything special about the Disruptor, but they were fun to write and are interesting to play with.</div><br /><br /><br /><div align="center"><iframe frameborder="0" height="400" marginheight="0" marginwidth="0" scrolling="no" src="http://www.slideshare.net/slideshow/embed_code/14458348?hostedIn=slideshare&amp;page=upload" width="476"></iframe></div><br /><div><br /></div><div><br /></div></p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>On Sunday I gave my very first workshop on the Disruptor.  The aim was to give people some hands-on coding experience using the syntax.  Because time was limited (you can't get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context.  But the workshop should:<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Give an overview of the Disruptor<!-- raw HTML omitted --><!-- raw HTML omitted -->Show how to create a simple one producer, one consumer example.<!-- raw HTML omitted --><!-- raw HTML omitted -->Show how to wire up a parallel event handler<!-- raw HTML omitted --><!-- raw HTML omitted -->Show how to how (and why) to create a diamond dependency graph.<!-- raw HTML omitted --><!-- raw HTML omitted -->Extrapolate beyond these very simple examples to something closer to a real world architecture.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Requirements are:<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Basic Java skills<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->Java 7 update 7<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->(Optionally) <!-- raw HTML omitted -->IntelliJ<!-- raw HTML omitted -->.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->The slides (not all that useful, I'll grant you, without me talking) are available, and you can <!-- raw HTML omitted -->download the code<!-- raw HTML omitted -->.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->If you want to work through the examples yourself, start with <!-- raw HTML omitted -->com.mechanitis.towerdefense.TowerDefence<!-- raw HTML omitted -->.  The starting point code for the workshop is in package <!-- raw HTML omitted -->com.mechanitis.towerdefense<!-- raw HTML omitted -->.  <!-- raw HTML omitted -->com.mechanitis.towerdefense1<!-- raw HTML omitted --> shows a solution to exercise one, <!-- raw HTML omitted -->com.mechanitis.towerdefense2<!-- raw HTML omitted --> to exercise 2 and so forth.  The final package, <!-- raw HTML omitted -->com.mechanitis.towerdefense4<!-- raw HTML omitted -->, has some different towers you can play with to see the effects.  They don't really show anything special about the Disruptor, but they were fun to write and are interesting to play with.<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 <ul class="pa0">
   
    <li class="list">
@@ -195,6 +188,7 @@ if (!doNotTrack) {
   
 </ul>
 <div class="mt6">
+      
         <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -215,6 +209,8 @@ if (!doNotTrack) {
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
       </div>
     </section>
 
@@ -298,9 +294,10 @@ if (!doNotTrack) {
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://trishagee.github.io" >
-    &copy; 2020 Trisha Gee
+    &copy;  Trisha Gee 2020 
   </a>
     <div>
+
 
 
 
@@ -343,6 +340,7 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
 
 
 

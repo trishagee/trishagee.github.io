@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Design on Trisha Gee</title>
+    <title>design on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/design/</link>
-    <description>Recent content in Design on Trisha Gee</description>
+    <description>Recent content in design on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 18 Mar 2013 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Mon, 18 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/it_depends/</guid>
-      <description>Don&amp;rsquo;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?
-It&amp;rsquo;s so frustrating to think that in a world of ones and zeros, people can&amp;rsquo;t give absolute answers and you can&amp;rsquo;t rely on &amp;ldquo;best practice&amp;rdquo;.
-It&amp;rsquo;s an answer I&amp;rsquo;ve given so many times, especially when someone asks about performance. &amp;nbsp;Well, I&amp;rsquo;ve had my&amp;nbsp;comeuppance. &amp;nbsp;The entire exercise of designing the new Java driver for MongoDB has been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:</description>
+      <description>Don&#39;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?It&#39;s so frustrating to think that in a world of ones and zeros, people can&#39;t give absolute answers and you can&#39;t rely on &amp;ldquo;best practice&amp;rdquo;.It&#39;s an answer I&#39;ve given so many times, especially when someone asks about performance. Well, I&#39;ve had my comeuppance. The entire exercise of designing the new Java driver for MongoDBhas been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:Which Java version are our users, um, using?</description>
     </item>
     
   </channel>

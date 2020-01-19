@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java on Trisha Gee</title>
+    <title>java on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/java/</link>
-    <description>Recent content in Java on Trisha Gee</description>
+    <description>Recent content in java on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
@@ -35,7 +35,7 @@
       <pubDate>Wed, 21 Feb 2018 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/boilerplate/</guid>
-      <description>&lt;p&gt;It&amp;rsquo;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
+      <description>&lt;p&gt;It&#39;s exhausting staying up to date with the evolution of Java and the myriad other JVM languages.  Is it worth it? What
 do modern languages give us?&lt;/p&gt;</description>
     </item>
     
@@ -54,7 +54,7 @@ do modern languages give us?&lt;/p&gt;</description>
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
-      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&#39;s support (current and future) for it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,9 +86,9 @@ supporting material.&lt;/p&gt;</description>
       <pubDate>Tue, 04 Aug 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_8_mooc_session3/</guid>
-      <description>&lt;p&gt;Last night was the final get-together to discuss the
-&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any
-event hosted in August in a city that is regularly over 40&amp;deg;C is going to face challenges, so it was great that
+      <description>&lt;p&gt;Last night was the final get-together to discuss the 
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt;. Any 
+event hosted in August in a city that is regularly over 40°C is going to face challenges, so it was great that 
 we had attendees from earlier sessions plus new people too.&lt;/p&gt;</description>
     </item>
     
@@ -98,10 +98,10 @@ we had attendees from earlier sessions plus new people too.&lt;/p&gt;</descripti
       <pubDate>Fri, 31 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_8_mooc_session2/</guid>
-      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;https://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt;
-is working towards completing the
-&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
-lambdas and streams. We&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+      <description>&lt;p&gt;As I mentioned &lt;a href=&#34;https://trishagee.github.io/post/java_8_mooc_session1&#34;&gt;last week&lt;/a&gt;, the &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; 
+is working towards completing the 
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on 
+lambdas and streams. We&#39;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
 to share knowledge between people who are doing the course.&lt;/p&gt;</description>
     </item>
     
@@ -111,10 +111,10 @@ to share knowledge between people who are doing the course.&lt;/p&gt;</descripti
       <pubDate>Tue, 21 Jul 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_8_mooc_session1/</guid>
-      <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the
-&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on
-lambdas and streams. As part of this, we&amp;rsquo;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
-during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&amp;rsquo;re
+      <description>&lt;p&gt;The &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla Java User Group&lt;/a&gt; is working together towards completing the 
+&lt;a href=&#34;https://apexapps.oracle.com/pls/apex/f?p=44785:145:0::::P145_EVENT_ID,P145_PREV_PAGE:4887,143&#34;&gt;Java 8 MOOC&lt;/a&gt; on 
+lambdas and streams. As part of this, we&#39;re running &lt;a href=&#34;http://www.meetup.com/SVQJUG/events/223677436/&#34;&gt;three sessions&lt;/a&gt;
+during the course so we can, as a group, ask  questions about the lectures, get help with the homework, and (if we&#39;re
 feeling very smart!) help people who may be struggling (or might not have watched the videos).&lt;/p&gt;</description>
     </item>
     
@@ -124,9 +124,9 @@ feeling very smart!) help people who may be struggling (or might not have watche
       <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_at_20/</guid>
-      <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
+      <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a 
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
- No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;</description>
+No wonder I can&#39;t seem to find the time to write these days.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -147,9 +147,8 @@ feeling very smart!) help people who may be struggling (or might not have watche
       <description>&lt;p&gt;I think living in a beautiful city in a fantastic climate has its advantages.  Not just the obvious ones, but we
 find people unusually keen to come and visit us on the pretence of presenting at the Sevilla Java User Group (and please,
 DO come and present at our JUG, we &lt;em&gt;love&lt;/em&gt; visitors).&lt;/p&gt;
-
 &lt;p&gt;This week we were really lucky, we had &lt;a href=&#34;https://twitter.com/gsaab&#34;&gt;Georges Saab&lt;/a&gt; and Aurelio Garcia-Ribeyro giving us
-an update on where Java is now and where it looks like it&amp;rsquo;s going in the future.&lt;/p&gt;</description>
+an update on where Java is now and where it looks like it&#39;s going in the future.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -168,8 +167,8 @@ Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;</description>
       <pubDate>Mon, 20 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
-      <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
-mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
+      <description>&lt;p&gt;This year I&#39;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant, 
+mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example, 
 where these popular technologies sit in your architecture, and how they interact with each other.&lt;/p&gt;</description>
     </item>
     
@@ -179,12 +178,11 @@ where these popular technologies sit in your architecture, and how they interact
       <pubDate>Thu, 14 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
-documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
+      <description>&lt;p&gt;We&#39;ve been missing an introduction to using MongoDB from Java for a little while now - there&#39;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the 
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java 
 developer.&lt;/p&gt;
-
-&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
-Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from 
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD 
 operations using the Java driver:&lt;/p&gt;</description>
     </item>
     
@@ -195,11 +193,8 @@ operations using the Java driver:&lt;/p&gt;</description>
       
       <guid>https://trishagee.github.io/post/svq_java8_launch_party/</guid>
       <description>&lt;p&gt;Last night at the Sevilla JUG we officially celebrated the launch of &lt;a href=&#34;http://docs.oracle.com/javase/8/&#34;&gt;Java 8&lt;/a&gt; - yay!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Don&amp;rsquo;t be fooled by the picture, people had more fun than it looks.  Honest.&lt;/p&gt;
-
+&lt;p&gt;&lt;img src=&#34;https://pbs.twimg.com/media/Bt48HX7IQAAQBQq.jpg:large&#34; alt=&#34;Partay&#34;&gt;&lt;/p&gt;
+&lt;p&gt;Don&#39;t be fooled by the picture, people had more fun than it looks.  Honest.&lt;/p&gt;
 &lt;p&gt;For anyone who missed the session, or who was there and wants access to the materials, here they are:&lt;/p&gt;</description>
     </item>
     
@@ -209,9 +204,9 @@ operations using the Java driver:&lt;/p&gt;</description>
       <pubDate>Wed, 23 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nighthacking_jug_sevilla/</guid>
-      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet
-for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend,
-and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana
+      <description>&lt;p&gt;Last Saturday &lt;a href=&#34;http://steveonjava.com/&#34;&gt;Mr Stephen Chin&lt;/a&gt; came to Sevilla on his crazy European tour to show us Lego and Robots.  This was our largest turnout yet 
+for a &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Java User Group&lt;/a&gt; event in Sevilla, which surprised me as it was on a weekend, 
+and the weekend before the spectacle that is &lt;a href=&#34;http://en.wikipedia.org/wiki/Holy_Week_in_Seville&#34;&gt;Semana 
 Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
@@ -221,8 +216,7 @@ Santa&lt;/a&gt; &lt;a href=&#34;http://youtu.be/I5rnDZGNJW8&#34;&gt;in Sevilla&l
       <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_my_day/</guid>
-      <description>Web development has changed a lot.
-I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool.I used to be a web developer.</description>
+      <description>Web development has changed a lot.I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool.I used to be a web developer. Sort of.</description>
     </item>
     
     <item>
@@ -231,8 +225,7 @@ I was aware that there have been many changes in the last few years, and I’ve 
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/introduction_to_mongodb_and_big_data/</guid>
-      <description>I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&amp;rsquo;s good in the &amp;ldquo;Big Data&amp;rdquo; space.
-Look inside &amp;gt;MongoDB and Big Data</description>
+      <description>I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&#39;s good in the &amp;ldquo;Big Data&amp;rdquo; space.Look inside &amp;gt;MongoDB and Big Data</description>
     </item>
     
     <item>
@@ -241,8 +234,7 @@ Look inside &amp;gt;MongoDB and Big Data</description>
       <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_data_driven_testing/</guid>
-      <description>In the last two articles on Spock I&amp;rsquo;ve covered mocking and stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there&amp;rsquo;s a killer feature: &amp;nbsp;Data Driven Testing.
-All developers have a tendency to think of and test the happy path. Not least of all because that&amp;rsquo;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.</description>
+      <description>In the last two articles on Spock I&#39;ve covered mockingand stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there&#39;s a killer feature: Data Driven Testing.All developers have a tendency to think of and test the happy path. Not least of all because that&#39;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -260,9 +252,7 @@ All developers have a tendency to think of and test the happy path. Not least of
       <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</guid>
-      <description>The second in my short series of blogs about the new Java driver is now available for your perusal. &amp;nbsp;In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.
-The post also shows that Gradle is prettier than Maven. &amp;nbsp;Sorry Maven.
-If you are going to play with the new driver, please read all the caveats carefully.</description>
+      <description>The second in my short series of blogsabout the new Java driver is now available for your perusal. In it, there&#39;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.The post also shows that Gradleis prettier than Maven. Sorry Maven.If you are going to play with the new driver, please read all the caveats carefully.</description>
     </item>
     
     <item>
@@ -271,8 +261,7 @@ If you are going to play with the new driver, please read all the caveats carefu
       <pubDate>Tue, 13 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_30_java_driver__design_goals/</guid>
-      <description>I feel slightly like a traitor to my own blog, as I&amp;rsquo;ve written a blog post for Somewhere Else. &amp;nbsp;I&amp;rsquo;ve written about the design goals for the 3.0 MongoDB Java Driver in the official MongoDB blog (seems sensible, right?). &amp;nbsp;I&amp;rsquo;m not sure how I feel about cross-posting the entire contents, so I&amp;rsquo;m just linking you to them instead.
-Anyone who&amp;rsquo;s been to my Backwards Compatibility presentation this year might notice something familiar about the content.</description>
+      <description>I feel slightly like a traitor to my own blog, as I&#39;ve written a blog post for Somewhere Else. I&#39;ve written about the design goals for the 3.0 MongoDB Java Driverin the official MongoDB blog (seems sensible, right?). I&#39;m not sure how I feel about cross-posting the entire contents, so I&#39;m just linking you to them instead.Anyone who&#39;s been to my Backwards Compatibility presentation this year might notice something familiar about the content.</description>
     </item>
     
     <item>
@@ -281,11 +270,7 @@ Anyone who&amp;rsquo;s been to my Backwards Compatibility presentation this year
       <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</guid>
-      <description>In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&amp;rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.</description>
+      <description>In the last postI talked about our need for some improved testing tools, our choice of Spockas something to spike, and how mocking looks in Spock.As that blog got rather long, I saved the next installment for a separate post.Today I want to look at stubbing.StubbingMocking is great for checking outputs- in the example in the last post, we&#39;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.</description>
     </item>
     
     <item>
@@ -294,8 +279,7 @@ Mocking is great for checking outputs - in the example in the last post, we&amp;
       <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</guid>
-      <description>We&amp;rsquo;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. &amp;nbsp;Ideally, we want the number of dependencies to be zero.
-This is not going to be the case when it comes to testing, however. &amp;nbsp;At the very least, we&amp;rsquo;re going to use JUnit or TestNG (we used testng in the previous version, we&amp;rsquo;ve switched to JUnit for 3.</description>
+      <description>We&#39;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.This is not going to be the case when it comes to testing, however. At the very least, we&#39;re going to use JUnit or TestNG (we used testng in the previous version, we&#39;ve switched to JUnit for 3.</description>
     </item>
     
     <item>
@@ -304,8 +288,7 @@ This is not going to be the case when it comes to testing, however. &amp;nbsp;At
       <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_are_you_using_mongodb_with_java/</guid>
-      <description>So, like one of my presentations, I have a question for you. &amp;nbsp;Actually, I have more than one question for you. &amp;nbsp;I&amp;rsquo;m not going to bother with survey monkey or whatever, I want to share the answers so please, answers in the comments:
-Are you using the Java driver for MongoDB in your application?Are you using the Java driver directly, or are you using a third party library like Morphia, Spring Data, the Scala driver, your own abstraction layer, etc?</description>
+      <description>So, like one of my presentations, I have a question for you. Actually, I have more than one question for you. I&#39;m not going to bother with survey monkey or whatever, I want to share the answers so please, answers in the comments:Are you using the Java driver for MongoDB in your application?Are you using the Java driver directly, or are you using a third party library like Morphia, Spring Data, the Scala driver, your own abstraction layer, etc?</description>
     </item>
     
     <item>
@@ -314,9 +297,7 @@ Are you using the Java driver for MongoDB in your application?Are you using the 
       <pubDate>Mon, 18 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/it_depends/</guid>
-      <description>Don&amp;rsquo;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?
-It&amp;rsquo;s so frustrating to think that in a world of ones and zeros, people can&amp;rsquo;t give absolute answers and you can&amp;rsquo;t rely on &amp;ldquo;best practice&amp;rdquo;.
-It&amp;rsquo;s an answer I&amp;rsquo;ve given so many times, especially when someone asks about performance. &amp;nbsp;Well, I&amp;rsquo;ve had my&amp;nbsp;comeuppance. &amp;nbsp;The entire exercise of designing the new Java driver for MongoDB has been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:</description>
+      <description>Don&#39;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?It&#39;s so frustrating to think that in a world of ones and zeros, people can&#39;t give absolute answers and you can&#39;t rely on &amp;ldquo;best practice&amp;rdquo;.It&#39;s an answer I&#39;ve given so many times, especially when someone asks about performance. Well, I&#39;ve had my comeuppance. The entire exercise of designing the new Java driver for MongoDBhas been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:Which Java version are our users, um, using?</description>
     </item>
     
     <item>
@@ -325,8 +306,7 @@ It&amp;rsquo;s an answer I&amp;rsquo;ve given so many times, especially when som
       <pubDate>Thu, 08 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</guid>
-      <description>This month&amp;rsquo;s Java Magazine features an article by me, Ben Evans and Martijn Verburg about the new lambdas&amp;nbsp;coming in Java 8.
-The aim of the article is to give an overview to normal, human Java developers, who don&amp;rsquo;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and try them now).</description>
+      <description>This month&#39;s Java Magazine features an article by me, Ben Evansand Martijn Verburgabout the new lambdascoming in Java 8.The aim of the article is to give an overview to normal, human Java developers, who don&#39;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and try them now).</description>
     </item>
     
     <item>
@@ -335,8 +315,7 @@ The aim of the article is to give an overview to normal, human Java developers, 
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nighthacking_tour_the_ljc/</guid>
-      <description>On the same day Stephen Chin came to see me at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. &amp;nbsp;Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.
-Expect Raspberry Pis and JavaFX.</description>
+      <description>On the same day Stephen Chin came to see meat the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.Expect Raspberry Pis and JavaFX.</description>
     </item>
     
     <item>
@@ -345,7 +324,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!</description>
+      <description></description>
     </item>
     
     <item>
@@ -354,7 +333,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one/</guid>
-      <description>This month&amp;rsquo;s Java Magazine&amp;nbsp;features an article by yours truly, which is yet another intro to the Disruptor. &amp;nbsp;It&amp;rsquo;s basically a summary of the stuff I&amp;rsquo;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. &amp;nbsp;If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
+      <description>This month&#39;s Java Magazinefeatures an article by yours truly, which is yet another intro to the Disruptor. It&#39;s basically a summary of the stuff I&#39;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
     </item>
     
     <item>
@@ -363,8 +342,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/london_java_community_open_conference/</guid>
-      <description>Saturday was, hopefully, my last conference of the year. &amp;nbsp;My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.
-Who wants to propose a session?In many ways the London Java Community Open Conference was my favourite one so far, and not just because it&amp;rsquo;s near home and I helped to organise it.</description>
+      <description>Saturday was, hopefully, my last conference of the year. My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.Who wants to propose a session?In many ways the London Java CommunityOpen Conference was my favourite one so far, and not just because it&#39;s near home and I helped to organise it. One of the awesome things about both Java Oneand Devoxxwas the opportunity to travel, to see new places and to meet people you might not meet in London.</description>
     </item>
     
     <item>
@@ -373,8 +351,7 @@ Who wants to propose a session?In many ways the London Java Community Open Confe
       <pubDate>Tue, 15 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__i_learn_stuff_and_meet_people/</guid>
-      <description>A couple of weeks ago, I was at JAX London along with a number of the London Java Community regulars (Martijn/Ben/John/Sandro/Simon/Zoe I&amp;rsquo;m looking at you&amp;hellip;.)
-My purpose for attending was largely to present the Hardcore Concurrency for Beginners talk that Mike and I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me.</description>
+      <description>A couple of weeks ago, I was at JAX Londonalong with a number of the London Java Communityregulars (Martijn/Ben/John/Sandro/Simon/ZoeI&#39;m looking at you&amp;hellip;.)My purpose for attending was largely to present the Hardcore Concurrency for Beginnerstalk that Mikeand I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me. After the disappointment of the sessions at Java One, sitting in a room being talked at was quite low down on my list of priorities.</description>
     </item>
     
     <item>
@@ -383,8 +360,7 @@ My purpose for attending was largely to present the Hardcore Concurrency for Beg
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
-      <description>Last Tuesday&amp;nbsp;Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency. &amp;nbsp;This was a preview of the talk we&amp;rsquo;ll be doing at JAX London on the 2nd November.
-A video of the session is available, as are the slides. &amp;nbsp;I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
+      <description>Last Tuesday Mikeand I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX Londonon the 2nd November.A video of the sessionis available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
     </item>
     
     <item>
@@ -393,8 +369,7 @@ A video of the session is available, as are the slides. &amp;nbsp;I promise not 
       <pubDate>Tue, 04 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_initial_observations/</guid>
-      <description>So I&amp;rsquo;ve been at JavaOne for the better part of three days, it&amp;rsquo;s time to record some of my observations so far:
-The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. &amp;nbsp;Makes me feel better about the presentations I&amp;rsquo;m going to be giving (see A Beginner&amp;rsquo;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. &amp;nbsp;I&amp;rsquo;ve had a really excellent time, I&amp;rsquo;ve met: people from other Java User Groups; the Duchess girls; other Duke Award winners; the Azul guys; guys (well, girls) from O&amp;rsquo;Reilly books; JCP members and many random and awesome people.</description>
+      <description>So I&#39;ve been at JavaOne for the better part of three days, it&#39;s time to record some of my observations so far:The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. Makes me feel better about the presentations I&#39;m going to be giving (see A Beginner&#39;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&#39;ve had a really excellent time, I&#39;ve met: people from other Java User Groups; the Duchessgirls; other Duke Award winners; the Azulguys; guys (well, girls) from O&#39;Reilly books; JCP members and many random and awesome people.</description>
     </item>
     
     <item>
@@ -403,9 +378,7 @@ The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical pe
       <pubDate>Tue, 20 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/are_you_an_awesome_developer/</guid>
-      <description>We are hiring!
-If you think we&amp;rsquo;re doing something interesting, or if you think you can help us do our thing even better, come join us. &amp;nbsp;Your boss will be the dude who wrote Continuous Delivery, you&amp;rsquo;ll get a chance to experience what Danny calls meta-Agile (or Agile Agile), and you&amp;rsquo;ll really start to care about Domain-Driven Design.
-Ideally we&amp;rsquo;re after Java people, but at the heart of it we want people who are dead passionate about development.</description>
+      <description>We are hiring!If you think we&#39;re doing something interesting, or if you think you can help us do our thing even better, come join us. Your boss will be the dude who wrote Continuous Delivery, you&#39;ll get a chance to experience what Dannycalls meta-Agile (or Agile Agile), and you&#39;ll really start to care about Domain-Driven Design.Ideally we&#39;re after Java people, but at the heart of it we want people who are dead passionate about development.</description>
     </item>
     
     <item>
@@ -414,7 +387,7 @@ Ideally we&amp;rsquo;re after Java people, but at the heart of it we want people
       <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/disruptor_20__all_change_please/</guid>
-      <description>Martin recently announced version 2.0 of the Disruptor&amp;nbsp;- basically there have been so many changes since we first open-sourced it that it&amp;rsquo;s time to mark that officially. &amp;nbsp;His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&amp;rsquo;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
+      <description>Martin recently announced version 2.0of the Disruptor- basically there have been so many changes since we first open-sourced it that it&#39;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&#39;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
     </item>
     
     <item>
@@ -423,7 +396,7 @@ Ideally we&amp;rsquo;re after Java people, but at the heart of it we want people
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&amp;rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&amp;rsquo;t intuitively grasp the subject. I guess I don&amp;rsquo;t have the deep background knowledge required to fully understand.</description>
+      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don&#39;t really get, I&#39;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.</description>
     </item>
     
     <item>
@@ -432,8 +405,7 @@ Ideally we&amp;rsquo;re after Java people, but at the heart of it we want people
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&amp;rsquo;s even Martin&amp;rsquo;s blog title. &amp;nbsp;It&amp;rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
-We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. &amp;nbsp;Since this lends itself to pretty pictures, it&amp;rsquo;s the next thing I thought I would tackle.</description>
+      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
     </item>
     
     <item>
@@ -442,9 +414,7 @@ We get a number of comments and questions about the mysterious cache line paddin
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. &amp;nbsp;This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;rdquo;.
-I&amp;rsquo;m working up to answering that. &amp;nbsp;I&amp;rsquo;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;rdquo;.
-These questions do go hand in hand, however, because I can&amp;rsquo;t talk about why it&amp;rsquo;s fast without saying what it does, and I can&amp;rsquo;t talk about what it is without saying why it is that way.</description>
+      <description>Martin Fowler has written a really good articledescribing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
     </item>
     
     <item>
@@ -453,9 +423,7 @@ These questions do go hand in hand, however, because I can&amp;rsquo;t talk abou
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/</guid>
-      <description>So now I&amp;rsquo;ve covered the ring buffer itself, reading from it and writing to it.
-Logically the next thing to do is to wire everything up together.
-I talked about multiple producers - they have the producer barrier to keep them in order and under control. &amp;nbsp;I&amp;rsquo;ve talked about consumers in a simple situation. &amp;nbsp;Multiple consumers can get a little more involved. &amp;nbsp;We&amp;rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
+      <description>So now I&#39;ve covered the ring bufferitself, readingfrom it and writingto it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;vedone some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
     </item>
     
     <item>
@@ -464,10 +432,7 @@ I talked about multiple producers - they have the producer barrier to keep them 
       <pubDate>Mon, 04 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/</guid>
-      <description>This is the missing piece in the end-to-end view of the Disruptor. &amp;nbsp;Brace yourselves, it&#39;s quite long. &amp;nbsp;But I decided to keep it in a single blog so you could have the context in one place.
-The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
-ProducerBarriers
-The Disruptor code has interfaces and helper classes for the Consumers, but there&#39;s no interface for your producer, the thing that writes to the ring buffer.</description>
+      <description></description>
     </item>
     
     <item>
@@ -476,10 +441,7 @@ The Disruptor code has interfaces and helper classes for the Consumers, but ther
       <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/</guid>
-      <description>The next in the series of understanding the Disruptor pattern developed at LMAX.
-After the last post we all understand ring buffers and how awesome they are. &amp;nbsp;Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&amp;rsquo;re using the Disruptor.
-ConsumerBarriers and Consumers
-I&amp;rsquo;m going to approach this slightly backwards, because it&amp;rsquo;s probably easier to understand in the long run. &amp;nbsp;Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
+      <description>The next in the series of understanding the Disruptor patterndeveloped at LMAX.After the last postwe all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.ConsumerBarriers and ConsumersI&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
     </item>
     
     <item>
@@ -488,8 +450,7 @@ I&amp;rsquo;m going to approach this slightly backwards, because it&amp;rsquo;s 
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. &amp;nbsp;Why did we open source it? &amp;nbsp;Well, we&amp;rsquo;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&amp;rsquo;ve come up with a better, faster way to share data between threads, and it&amp;nbsp;would be selfish not to share it with the world. &amp;nbsp;Plus it makes us look dead clever.
-On the site you can download a technical article explaining what the Disruptor is and why it&amp;rsquo;s so clever and fast.</description>
+      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.On the site you can download a technical articleexplaining what the Disruptor is and why it&#39;s so clever and fast.</description>
     </item>
     
     <item>
@@ -498,9 +459,7 @@ On the site you can download a technical article explaining what the Disruptor i
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET.&amp;nbsp; Actually, I have been fighting pitched battles with it.
-All I want to do is take our existing Java client example code and write an equivalent in C#.&amp;nbsp; Easy, right?
-Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward.&amp;nbsp; Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
+      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.</description>
     </item>
     
     <item>
@@ -509,8 +468,7 @@ Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C#
       <pubDate>Mon, 16 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_london_java_community_elected_to_the_jcp_seee_executive_committee/</guid>
-      <description>As an associate member of the London Java Community (LJC), I&amp;rsquo;m very pleased with the news that we won an Open seat on the Java SE/EE executive committee. &amp;nbsp;The results show that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &amp;ldquo;landslide&amp;rdquo;.
-It&amp;rsquo;s quite exciting to be one of the two user groups involved.</description>
+      <description>As an associate member of the London Java Community(LJC), I&#39;m very pleased with the news that we won an Open seat on the Java SE/EE executive committee. The resultsshow that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &amp;ldquo;landslide&amp;rdquo;.It&#39;s quite exciting to be one of the two user groups involved. We hope to balance some of the larger corporate organisations, we&#39;re the voice of real life Java developers who use the language every day, for enterprise development or open source projects.</description>
     </item>
     
     <item>
@@ -519,7 +477,7 @@ It&amp;rsquo;s quite exciting to be one of the two user groups involved.</descri
       <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/gwt_why_verticalpanel_is_evil/</guid>
-      <description>At LMAX we adopted Google Web Toolkit pretty early on. &amp;nbsp;One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. &amp;nbsp;Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.</description>
+      <description>At LMAXwe adopted Google Web Toolkitpretty early on. One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.</description>
     </item>
     
   </channel>

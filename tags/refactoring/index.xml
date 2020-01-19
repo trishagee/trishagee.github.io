@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Refactoring on Trisha Gee</title>
+    <title>refactoring on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/refactoring/</link>
-    <description>Recent content in Refactoring on Trisha Gee</description>
+    <description>Recent content in refactoring on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 03 Jun 2016 00:00:00 +0000</lastBuildDate>

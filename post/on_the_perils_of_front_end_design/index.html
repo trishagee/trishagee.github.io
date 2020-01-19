@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
     <title>Trisha Gee  | On the perils of Front End Design</title>
-    <meta name="HandheldFriendly" content="True">
-    <meta name="MobileOptimized" content="320">
-
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.54.0" />
+    <meta name="generator" content="Hugo 0.62.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -17,7 +14,7 @@
 
     
     
-      <link href="/dist/css/app.d98f2eb6bcd1eaedb7edf166bd16af26.css" rel="stylesheet">
+      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
     
 
     
@@ -29,28 +26,24 @@
     
 
     
-
+    
     <meta property="og:title" content="On the perils of Front End Design" />
-<meta property="og:description" content="I&rsquo;m reading Joel Spolsky&rsquo;s User Interface Design for Programmers. A thought that&rsquo;s struck me is about architecture. It&rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&rsquo;m going to start from the easy point, the stuff you can see. There&rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;." />
+<meta property="og:description" content="I&#39;m reading Joel Spolsky&#39;s User Interface Design for Programmers. A thought that&#39;s struck me is about architecture. It&#39;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&#39;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&#39;m going to start from the easy point, the stuff you can see. There&#39;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/on_the_perils_of_front_end_design/" />
-<meta property="article:published_time" content="2008-09-01T00:00:00&#43;00:00"/>
-<meta property="article:modified_time" content="2008-09-01T00:00:00&#43;00:00"/>
-
+<meta property="article:published_time" content="2008-09-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2008-09-01T00:00:00+00:00" />
 <meta itemprop="name" content="On the perils of Front End Design">
-<meta itemprop="description" content="I&rsquo;m reading Joel Spolsky&rsquo;s User Interface Design for Programmers. A thought that&rsquo;s struck me is about architecture. It&rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&rsquo;m going to start from the easy point, the stuff you can see. There&rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;.">
-
-
+<meta itemprop="description" content="I&#39;m reading Joel Spolsky&#39;s User Interface Design for Programmers. A thought that&#39;s struck me is about architecture. It&#39;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&#39;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&#39;m going to start from the easy point, the stuff you can see. There&#39;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;.">
 <meta itemprop="datePublished" content="2008-09-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2008-09-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="378">
+<meta itemprop="wordCount" content="377">
 
 
 
-<meta itemprop="keywords" content="ui," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="ui," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="On the perils of Front End Design"/>
-<meta name="twitter:description" content="I&rsquo;m reading Joel Spolsky&rsquo;s User Interface Design for Programmers. A thought that&rsquo;s struck me is about architecture. It&rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&rsquo;m going to start from the easy point, the stuff you can see. There&rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;."/>
+<meta name="twitter:description" content="I&#39;m reading Joel Spolsky&#39;s User Interface Design for Programmers. A thought that&#39;s struck me is about architecture. It&#39;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&#39;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&#39;m going to start from the easy point, the stuff you can see. There&#39;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;."/>
 
       
 <script type="application/javascript">
@@ -113,6 +106,7 @@ if (!doNotTrack) {
 
 
 
+
 <a href="https://twitter.com/trisha_gee" target="_blank" class="link-transition twitter link dib z-999 pt3 pt0-l mr1" title="Twitter link" rel="noopener" aria-label="follow on Twitter——Opens in a new window">
   <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
 
@@ -152,6 +146,7 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
 
 
 
@@ -178,12 +173,13 @@ if (!doNotTrack) {
       </p>
       <h1 class="f1 athelas mb1">On the perils of Front End Design</h1>
       
-      <time class="f6 mv4 dib tracked" datetime="2008-09-01T00:00:00Z">September 1, 2008</time>      
+      
+      <time class="f6 mv4 dib tracked" datetime="2008-09-01T00:00:00Z">September 1, 2008</time>
       
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I&rsquo;m reading <a href="http://joelonsoftware.com/">Joel Spolsky</a>&rsquo;s <a href="http://www.amazon.com/User-Interface-Design-Programmers-Spolsky/dp/1893115941/ref=pd_bbs_sr_1?ie=UTF8&amp;s=books&amp;qid=1220319238&amp;sr=8-1">User Interface Design for Programmers</a>. A thought that&rsquo;s struck me is about architecture. It&rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&rsquo;m going to start from the easy point, the stuff you can see. <br /><br />There&rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;. I, too, with my <a href="http://en.wikipedia.org/wiki/Desktop_publishing">DTP</a> background, occasionally fall into that camp. You know, slicker fonts, curvy edges, funky this, fancy that. <br /><br />And you can look at buildings like the <a href="http://www.nyc-architecture.com/SCC/SCC019.htm">Woolworth Building</a>, and think, &ldquo;I want my software to be the equivalent of the Cathedral of Commerce&rdquo;.&nbsp; <br /><div style="margin-bottom: 0in;">But for all its Gothic detailing, its flying buttresses and gargoyles, you can still find the entrance. You can still find your way to the elevator and up to the floor you desire. The magnificent detail does not obscure the use of the building. <br /><br />The same cannot be said of user interface design. You don&rsquo;t simply wander past / through an impressive facade, whatever you think the &ldquo;skip&rdquo; button on your flash intro is supposed to do. The decoration, the clutter, is right there in front of the user, the whole time they&rsquo;re trying to DO something. <br /><br />Do architects design their entrances flush with the walls and the same colour? <br />Are entrances to basilicas hidden behind flying buttresses? <br /><br />No (generally). Because the design of a building is supposed to enhance the &ldquo;user&rdquo;&rsquo;s experience, not get in the way of it. <br /><br />If you&rsquo;re playing with acres of land there&rsquo;s a lot of detail you can fit in that won&rsquo;t hinder the ordinary person. In fact, rather sadly, many of them won&rsquo;t even notice it. If, however, you&rsquo;re coding for 800x600, or even if you&rsquo;re coding for a wide-screen Mega Television of Doom, there&rsquo;s limited space available. You want to make sure the &ldquo;nice-to-haves&rdquo; don&rsquo;t get in the way of the user&rsquo;s &ldquo;must-dos&rdquo;. You want to make sure your entrances (buttons, links etc) are well marked. <br /><br />You don&rsquo;t want to find you&rsquo;ve spent an awful lot of money on <a href="http://theshapeofdays.com/2004/09/07/the-ryugyong-hotel.html">something that goes unused</a>.</div></p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I'm reading <!-- raw HTML omitted -->Joel Spolsky<!-- raw HTML omitted -->'s <!-- raw HTML omitted -->User Interface Design for Programmers<!-- raw HTML omitted -->. A thought that's struck me is about architecture. It's easy to get fooled into thinking building software is a bit like being the architect for a building. I'm not even going to go into the differences between engineering practices à la building design and good practice software design. I'm going to start from the easy point, the stuff you can see. <!-- raw HTML omitted --><!-- raw HTML omitted -->There's often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &ldquo;pretty&rdquo;. I, too, with my <!-- raw HTML omitted -->DTP<!-- raw HTML omitted --> background, occasionally fall into that camp. You know, slicker fonts, curvy edges, funky this, fancy that. <!-- raw HTML omitted --><!-- raw HTML omitted -->And you can look at buildings like the <!-- raw HTML omitted -->Woolworth Building<!-- raw HTML omitted -->, and think, &ldquo;I want my software to be the equivalent of the Cathedral of Commerce&rdquo;.  <!-- raw HTML omitted --><!-- raw HTML omitted -->But for all its Gothic detailing, its flying buttresses and gargoyles, you can still find the entrance. You can still find your way to the elevator and up to the floor you desire. The magnificent detail does not obscure the use of the building. <!-- raw HTML omitted --><!-- raw HTML omitted -->The same cannot be said of user interface design. You don't simply wander past / through an impressive facade, whatever you think the &ldquo;skip&rdquo; button on your flash intro is supposed to do. The decoration, the clutter, is right there in front of the user, the whole time they're trying to DO something. <!-- raw HTML omitted --><!-- raw HTML omitted -->Do architects design their entrances flush with the walls and the same colour? <!-- raw HTML omitted -->Are entrances to basilicas hidden behind flying buttresses? <!-- raw HTML omitted --><!-- raw HTML omitted -->No (generally). Because the design of a building is supposed to enhance the &ldquo;user&rdquo;&lsquo;s experience, not get in the way of it. <!-- raw HTML omitted --><!-- raw HTML omitted -->If you're playing with acres of land there's a lot of detail you can fit in that won't hinder the ordinary person. In fact, rather sadly, many of them won't even notice it. If, however, you're coding for 800x600, or even if you're coding for a wide-screen Mega Television of Doom, there's limited space available. You want to make sure the &ldquo;nice-to-haves&rdquo; don't get in the way of the user's &ldquo;must-dos&rdquo;. You want to make sure your entrances (buttons, links etc) are well marked. <!-- raw HTML omitted --><!-- raw HTML omitted -->You don't want to find you've spent an awful lot of money on <!-- raw HTML omitted -->something that goes unused<!-- raw HTML omitted -->.<!-- raw HTML omitted --></p>
 <ul class="pa0">
   
    <li class="list">
@@ -192,6 +188,7 @@ if (!doNotTrack) {
   
 </ul>
 <div class="mt6">
+      
         <div id="disqus_thread"></div>
 <script type="application/javascript">
     var disqus_config = function () {
@@ -212,6 +209,8 @@ if (!doNotTrack) {
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+      
+      
       </div>
     </section>
 
@@ -228,9 +227,10 @@ if (!doNotTrack) {
     <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
   <div class="flex justify-between">
   <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="https://trishagee.github.io" >
-    &copy; 2020 Trisha Gee
+    &copy;  Trisha Gee 2020 
   </a>
     <div>
+
 
 
 
@@ -273,6 +273,7 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
 
 
 

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java9 on Trisha Gee</title>
+    <title>java9 on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/java9/</link>
-    <description>Recent content in Java9 on Trisha Gee</description>
+    <description>Recent content in java9 on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Thu, 28 Sep 2017 00:00:00 +0000</lastBuildDate>
@@ -26,7 +26,7 @@
       <pubDate>Mon, 03 Apr 2017 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/java_9_are_we_there_yet/</guid>
-      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&amp;rsquo;s support (current and future) for it.&lt;/p&gt;</description>
+      <description>&lt;p&gt;Looking ahead to what functionality is available in Java 9, and IntelliJ IDEA&#39;s support (current and future) for it.&lt;/p&gt;</description>
     </item>
     
   </channel>

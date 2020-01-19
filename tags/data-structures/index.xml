@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Data Structures on Trisha Gee</title>
+    <title>data structures on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/data-structures/</link>
-    <description>Recent content in Data Structures on Trisha Gee</description>
+    <description>Recent content in data structures on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Wed, 22 Jun 2011 00:00:00 +0000</lastBuildDate>
@@ -17,8 +17,7 @@
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. &amp;nbsp;Why did we open source it? &amp;nbsp;Well, we&amp;rsquo;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&amp;rsquo;ve come up with a better, faster way to share data between threads, and it&amp;nbsp;would be selfish not to share it with the world. &amp;nbsp;Plus it makes us look dead clever.
-On the site you can download a technical article explaining what the Disruptor is and why it&amp;rsquo;s so clever and fast.</description>
+      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.On the site you can download a technical articleexplaining what the Disruptor is and why it&#39;s so clever and fast.</description>
     </item>
     
   </channel>

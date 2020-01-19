@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>User Groups on Trisha Gee</title>
+    <title>user groups on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/user-groups/</link>
-    <description>Recent content in User Groups on Trisha Gee</description>
+    <description>Recent content in user groups on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 31 Jan 2014 00:00:00 +0000</lastBuildDate>
@@ -17,9 +17,7 @@
       <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/sevilla_mug_first_event/</guid>
-      <description>Last night was the inaugural meeting of the Sevilla MongoDN User Group. &amp;nbsp;An event organised with just over 48 hours notice, in a city where I don&amp;rsquo;t speak the language and where even my best-connected contacts aren&amp;rsquo;t sure they&amp;rsquo;re fully plugged in to the tech scene.
-I&amp;rsquo;ll admit, I had some reservations:
-a lightning talk? Will people come all that way for beer and 15 minutes of presentation?in English? Whilst I&amp;rsquo;m desperately learning Spanish to get closer to presenting in Spanish, at this point I&amp;rsquo;m just not ready and have to hope people want to listen to me ramble in a foreign languagea MUG?</description>
+      <description></description>
     </item>
     
     <item>
@@ -28,8 +26,7 @@ a lightning talk? Will people come all that way for beer and 15 minutes of prese
       <pubDate>Sat, 09 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_birth_of_a_new_community/</guid>
-      <description>Topping off my mini-tour at the end of May, I was invited to Rotterdam to&amp;nbsp;present to a brand new community of developers. &amp;nbsp;I was really interested in attending because my experience with user groups is pretty much limited to the London Java Community, and I knew this would be different due to being a) across a wider range of technologies and b) shiny and new.
-It was hosted (rather awesomely) in a brewery, and until then I&amp;rsquo;d never given a presentation in a pub.</description>
+      <description>Topping off my mini-tour at the end of May, I was invited to Rotterdam to present to a brand new communityof developers. I was really interested in attending because my experience with user groups is pretty much limited to the London Java Community, and I knew this would be different due to being a) across a wider range of technologies and b) shiny and new.It was hosted (rather awesomely) in a brewery, and until then I&#39;d never given a presentation in a pub.</description>
     </item>
     
   </channel>
