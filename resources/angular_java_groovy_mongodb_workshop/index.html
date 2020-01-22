@@ -39,7 +39,7 @@ Sign up with code SPEAKGEE100 for £100 off the price!" />
 Sign up with code SPEAKGEE100 for £100 off the price!">
 <meta itemprop="datePublished" content="2015-01-19T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2015-01-19T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="524">
+<meta itemprop="wordCount" content="547">
 
 
 
@@ -193,7 +193,7 @@ but this is <em>not</em> an introduction to Java and familiarity with server-sid
 <p>The workshop is not suitable for people who have no programming experience.</p>
 <p>This is a hands-on workshop, bring a laptop set up according to the following instructions - you will be writing code!</p>
 <h2 id="overview">Overview</h2>
-<!-- raw HTML omitted -->
+<iframe width="420" height="315" src="https://www.youtube.com/embed/klw9pIuTICM" frameborder="0" allowfullscreen></iframe>
 <p>I've created my very first screencast! This video takes you through all the steps you need to go through in order to be
 setup for the workshop.</p>
 <p>The setup instructions below are the same process, so you can copy &amp; paste where appropriate.</p>
@@ -201,10 +201,10 @@ setup for the workshop.</p>
 <p>I am assuming you already have a version of the Java SDK downloaded. For this workshop, Java 7 or above should work, but
 I recommend you <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">download the latest version of Java 8</a> if you're not already using it.</p>
 <p>Create a new work area for this tutorial. For the rest of these instructions I'll refer to it as <code>&lt;location&gt;</code>.  I've put
-mine in <!-- raw HTML omitted -->~/Projects/workshops/qcon2015<!-- raw HTML omitted --></p>
+mine in <code>~/Projects/workshops/qcon2015</code></p>
 <h2 id="installing-mongodb">Installing MongoDB</h2>
 <p>I'm going to be using <a href="http://www.mongodb.org/downloads">MongoDB 3.0.0-rc8</a>, but version 2.6 will be fine too.</p>
-<p><!-- raw HTML omitted -->Download MongoDB<!-- raw HTML omitted --> for your operating system and unzip/install it.  Unless you prefer to put it
+<p><a href="http://www.mongodb.org/downloads">Download MongoDB</a> for your operating system and unzip/install it.  Unless you prefer to put it
 somewhere else, I suggest you unzip it to <code>&lt;location&gt;/mongodb</code></p>
 <p>Now we have to create the directory for the data to go into. Create a <code>data</code> directory in <code>&lt;location&gt;</code>, so that you
 have a folder at <code>&lt;location&gt;/data</code></p>
@@ -215,7 +215,8 @@ have a folder at <code>&lt;location&gt;/data</code></p>
 <h5 id="windows">Windows:</h5>
 <pre><code>monogdb\bin\mongod.exe --dbpath data
 </code></pre>
-<!-- raw HTML omitted -->
+<br/>
+MongoDB should be running on localhost and port 27017
 <p>Connect to the shell to make sure it's working:</p>
 <h5 id="linuxosx-1">Linux/OSX</h5>
 <pre><code>./mongodb/bin/mongo
@@ -223,7 +224,8 @@ have a folder at <code>&lt;location&gt;/data</code></p>
 <h5 id="windows-1">Windows</h5>
 <pre><code>monogdb\bin\mongo.exe
 </code></pre>
-<!-- raw HTML omitted -->
+<br/>
+You should see something like:
 <pre><code>~\Projects\workshops\qcon2015&gt;monogdb\bin\mongo.exe
 MongoDB shell version: 2.8.0-rc5
 connecting to: test
@@ -244,7 +246,8 @@ Questions? Try the support group
 <h5 id="windows-2">Windows</h5>
 <pre><code>gradlew.bat check
 </code></pre>
-<!-- raw HTML omitted -->
+<br/>
+This should download all the required dependencies.
 <p>Open in your favourite IDE and import this directory as a new project. I'll be using
 <a href="https://www.jetbrains.com/idea/">IntelliJ IDEA 14</a> and showing a number of its tricks. If you're using IntelliJ IDEA and you
 import this project as a Gradle project, you don't even need to do the above step, IntelliJ will download and import

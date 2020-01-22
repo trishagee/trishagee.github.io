@@ -183,7 +183,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Last Tuesday Mikeand I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner's Guide to Hardcore Concurrency. This was a preview of the talk we'll be doing at JAX Londonon the 2nd November.A video of the sessionis available, as are the slides. I promise not to say &ldquo;so&rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?
+      Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner's Guide to Hardcore Concurrency. This was a preview of the talk we'll be doing at JAX London on the 2nd November.
+A video of the session is available, as are the slides. I promise not to say &ldquo;so&rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?
     </div>
   </div>
 </div>
@@ -200,7 +201,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Martin recently announced version 2.0of the Disruptor- basically there have been so many changes since we first open-sourced it that it's time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it's going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.
+      Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it's time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it's going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.
     </div>
   </div>
 </div>
@@ -217,7 +218,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      My recent slow-down in posting is because I've been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don't intuitively grasp the subject. I guess I don't have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don't really get, I'm going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.
+      My recent slow-down in posting is because I've been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don't intuitively grasp the subject. I guess I don't have the deep background knowledge required to fully understand.
     </div>
   </div>
 </div>
@@ -234,7 +235,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We mention the phrase Mechanical Sympathy quite a lot, in fact it's even Martin's blog title. It's about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it's the next thing I thought I would tackle.
+      We mention the phrase Mechanical Sympathy quite a lot, in fact it's even Martin's blog title. It's about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it's the next thing I thought I would tackle.
     </div>
   </div>
 </div>
@@ -251,7 +253,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Martin Fowler has written a really good articledescribing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&quot;.I'm working up to answering that. I'm currently on question number two: &ldquo;Why is it so fast?&quot;.These questions do go hand in hand, however, because I can't talk about why it's fast without saying what it does, and I can't talk about what it is without saying why it is that way.
+      Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&quot;.
+I'm working up to answering that. I'm currently on question number two: &ldquo;Why is it so fast?&quot;.
+These questions do go hand in hand, however, because I can't talk about why it's fast without saying what it does, and I can't talk about what it is without saying why it is that way.
     </div>
   </div>
 </div>
@@ -268,7 +272,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      So now I've covered the ring bufferitself, readingfrom it and writingto it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. I've talked about consumers in a simple situation. Multiple consumers can get a little more involved. We'vedone some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
+      So now I've covered the ring buffer itself, reading from it and writing to it.
+Logically the next thing to do is to wire everything up together.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. I've talked about consumers in a simple situation. Multiple consumers can get a little more involved. We've done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
     </div>
   </div>
 </div>
@@ -285,7 +291,10 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
+      This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.
+The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
+ProducerBarriers
+The Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.
     </div>
   </div>
 </div>
@@ -302,7 +311,10 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      The next in the series of understanding the Disruptor patterndeveloped at LMAX.After the last postwe all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you're using the Disruptor.ConsumerBarriers and ConsumersI'm going to approach this slightly backwards, because it's probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
+      The next in the series of understanding the Disruptor pattern developed at LMAX.
+After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you're using the Disruptor.
+ConsumerBarriers and Consumers
+I'm going to approach this slightly backwards, because it's probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
     </div>
   </div>
 </div>

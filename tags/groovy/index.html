@@ -275,7 +275,8 @@ Due to the time pressures in the demo, I never really get a chance to go into th
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      In the last two articles on Spock I've covered mockingand stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there's a killer feature: Data Driven Testing.All developers have a tendency to think of and test the happy path. Not least of all because that's usually the path in the User Story - &ldquo;As a customer I want to withdraw money and have the correct amount in my hand&rdquo;.
+      In the last two articles on Spock I've covered mocking and stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there's a killer feature: Data Driven Testing.
+All developers have a tendency to think of and test the happy path. Not least of all because that's usually the path in the User Story - &ldquo;As a customer I want to withdraw money and have the correct amount in my hand&rdquo;.
     </div>
   </div>
 </div>
@@ -292,7 +293,11 @@ Due to the time pressures in the demo, I never really get a chance to go into th
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      In the last postI talked about our need for some improved testing tools, our choice of Spockas something to spike, and how mocking looks in Spock.As that blog got rather long, I saved the next installment for a separate post.Today I want to look at stubbing.StubbingMocking is great for checking outputs- in the example in the last post, we're checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.
+      In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
+As that blog got rather long, I saved the next installment for a separate post.
+Today I want to look at stubbing.
+Stubbing
+Mocking is great for checking outputs - in the example in the last post, we're checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.
     </div>
   </div>
 </div>
@@ -309,7 +314,8 @@ Due to the time pressures in the demo, I never really get a chance to go into th
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We're constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.This is not going to be the case when it comes to testing, however. At the very least, we're going to use JUnit or TestNG (we used testng in the previous version, we've switched to JUnit for 3.
+      We're constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.
+This is not going to be the case when it comes to testing, however. At the very least, we're going to use JUnit or TestNG (we used testng in the previous version, we've switched to JUnit for 3.
     </div>
   </div>
 </div>

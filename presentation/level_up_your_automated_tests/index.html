@@ -45,7 +45,7 @@ Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.">
 <meta itemprop="datePublished" content="2015-06-26T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2015-06-26T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="3737">
+<meta itemprop="wordCount" content="3740">
 
 
 
@@ -196,8 +196,8 @@ talk covers the same case study as
 <a href="/presentation/groovy_vs_java">Groovy vs Java for Testing</a>, adopting 
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3fEnq6JuwuI" frameborder="0" allowfullscreen></iframe>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/zUhtb6nqz7IgdO" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
 <h3 id="other-videos">Other Videos</h3>
 <p>First version: <a href="https://www.youtube.com/watch?v=D-xra_X9Nwg">GOTO Chicago</a> ( <a href="https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW">slides</a>)</p>
 <h2 id="questions">Questions</h2>
@@ -309,7 +309,7 @@ you need to rip your design apart to test it, there's a smell there somewhere</p
 test the wrong things.</li>
 </ul>
 <p>Of course, the common example here is testing private methods - how do you test 
-these without exposing secrets<!-- raw HTML omitted -->1<!-- raw HTML omitted -->? I think for me, if it's important 
+these without exposing secrets<sup>1</sup>? I think for me, if it's important 
 enough
 to be tested 
 it's important enough to be exposed in some way - it might belong in some 
@@ -463,7 +463,7 @@ to do what I wanted.</li>
 <li>Find carrots and sticks that work.  At LMAX, a short e-mail at the start 
 of the day summarising the errors that had happened overnight, who seemed to
 be responsible, and whether they looked like real errors or 
-intermittencies, was enough to get people to fix their problems<!-- raw HTML omitted -->2<!-- raw HTML omitted --> - 
+intermittencies, was enough to get people to fix their problems<sup>2</sup> - 
 they didn't like to look bad, but they also had enough information to get right 
 on it, they didn't have to wade through all the build info.  On occasion, 
 when people were ignoring this, I'd turn up to work with bags of chocolate 
@@ -475,15 +475,15 @@ number of ways, if you've tried to show examples of the benefits, if you've
 tried to work the results you want into a process, but it's still not 
 getting done, just accept the fact that this isn't working for the team. 
 Move on to something else, or find a new angle.
-<!-- raw HTML omitted --><!-- raw HTML omitted -->
-<!-- raw HTML omitted -->1<!-- raw HTML omitted --> I had a colleague at LMAX who was  working with a hypothesis that
+<br/><br/>
+<sup>1</sup> I had a colleague at LMAX who was  working with a hypothesis that
 All Private Methods Were Evil - they were clearly only sharable within 
 single class, so provided no reuse elsewhere, and if you have the same bit 
 of code being called multiple times from within the same class (but it's 
 not valuable elsewhere) then maybe your design is wrong. I'm still 
 pondering this specific hypothesis 4 years on, and I admit I see its pros 
 and cons.<br>
-<!-- raw HTML omitted -->2<!-- raw HTML omitted --> This worked so well that this process was automated by
+<sup>2</sup> This worked so well that this process was automated by
 one of the guys and turned into a tool called AutoTrish, which as far as I 
 know is still used at LMAX.  Dave Farley talks about it in some of his 
 <a href="https://www.parleys.com/tutorial/continuous-delivery-part-2-2">Continuous Delivery talks</a>.</li>
@@ -503,7 +503,10 @@ DSL</a>
 and
 <a href="https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/">Making End-to-End Tests Work</a></li>
 <li>If you can't make it all the way through Dave Farley and Jez Humble's 
-excellent <!-- raw HTML omitted -->Continuous Delivery book<!-- raw HTML omitted -->, do take a look at one of 
+excellent <a href="http://www.amazon
+.com/gp/product/0321601912/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789
+&creative=9325&creativeASIN=0321601912&linkCode=as2&tag=trissramb-20&linkId
+=I7ZAO2TETBFJIPHL">Continuous Delivery book</a>, do take a look at one of 
 Dave's presentations on the subject, for example <a href="http://www.infoq.com/presentations/cd-success">The Rationale for Continuous 
 Delivery</a> or <a href="http://www.infoq.com/presentations/technology-practice-continuous-delivery">The Process, 
 Technology and Practice of Continuous 
@@ -515,7 +518,7 @@ testing</a>.</li>
 </ul>
 <hr>
 <h2 id="abstract">Abstract</h2>
-<p><!-- raw HTML omitted -->What can you do to help developers a) write tests b) write meaningful tests 
+<p><i>What can you do to help developers a) write tests b) write meaningful tests 
 and c) write readable tests?</p>
 <p>Trisha will talk about her experiences of working in a team that wanted to 
 build quality into their new software version without a painful overhead - 
@@ -537,7 +540,7 @@ this effort, and how they evaluated whether this tool would meet the team’s
 needs. And now, two years after starting to use Spock, Trisha can talk 
 about how both the tool and the shift in the focus of the purpose of tests
 has affected the quality of the code. And, interestingly, the happiness 
-of the developers.<!-- raw HTML omitted --></p><ul class="pa0">
+of the developers.</i></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/testing" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">testing</a>

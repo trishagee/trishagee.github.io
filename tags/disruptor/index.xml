@@ -17,7 +17,9 @@
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/introduction_to_the_disruptor_slides/</guid>
-      <description>I&#39;ve produced a very cut down version of the presentation I&#39;ve been giving at a lot of conferences, giving a high level overview to the Disruptor. This serves as a quick intro to the concepts behind it.Introduction to the Disruptorfrom Trisha GeeMy slides are usually pretty useless without me (or someone else) talking over them, so for more context don&#39;t forget there&#39;s always my original blog posts (the Magic Ring Buffer, Reading from it, Writing to it, Wiring it up), which are now pretty dated, and the Java Magazinearticle I wrote at the start of the year.</description>
+      <description>I&#39;ve produced a very cut down version of the presentation I&#39;ve been giving at a lot of conferences, giving a high level overview to the Disruptor. This serves as a quick intro to the concepts behind it.
+  Introduction to the Disruptor  from Trisha Gee 
+My slides are usually pretty useless without me (or someone else) talking over them, so for more context don&#39;t forget there&#39;s always my original blog posts (the Magic Ring Buffer, Reading from it, Writing to it, Wiring it up), which are now pretty dated, and the Java Magazine article I wrote at the start of the year.</description>
     </item>
     
     <item>
@@ -26,7 +28,8 @@
       <pubDate>Wed, 26 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/strangeloop_disruptor_workshop_materials/</guid>
-      <description>On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&#39;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.</description>
+      <description>On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&#39;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:
+Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.</description>
     </item>
     
     <item>
@@ -53,7 +56,9 @@
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_open_source_your_secrets/</guid>
-      <description>Here&#39;s a video of my Open Conference session on the business benefits of open sourcing your software. Given that the conference was at a weekend and had a very intimate feel, I think I was a teeny bit more honest than I usually am. Enjoy.Why Open Source Your SecretsView more presentationsfrom Trisha Gee.</description>
+      <description>Here&#39;s a video of my Open Conference session on the business benefits of open sourcing your software. Given that the conference was at a weekend and had a very intimate feel, I think I was a teeny bit more honest than I usually am. Enjoy.
+ Why Open Source Your Secrets
+View more presentations from Trisha Gee.</description>
     </item>
     
     <item>
@@ -62,7 +67,8 @@
       <pubDate>Tue, 27 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_2012/</guid>
-      <description>I&#39;m late with my write-up of QCon, and what&#39;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….Firstly, me me meI presented the talk I previewed at Skillsmatterthe previous week, something I was calling the User&#39;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
+      <description>I&#39;m late with my write-up of QCon, and what&#39;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….
+Firstly, me me meI presented the talk I previewed at Skillsmatter the previous week, something I was calling the User&#39;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
     </item>
     
     <item>
@@ -71,7 +77,7 @@
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one/</guid>
-      <description>This month&#39;s Java Magazinefeatures an article by yours truly, which is yet another intro to the Disruptor. It&#39;s basically a summary of the stuff I&#39;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
+      <description>This month&#39;s Java Magazine features an article by yours truly, which is yet another intro to the Disruptor. It&#39;s basically a summary of the stuff I&#39;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
     </item>
     
     <item>
@@ -80,7 +86,9 @@
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/new_disruptor_presentation_unveiled_to_the_ljc/</guid>
-      <description>A few weeks ago, I presented my new &amp;ldquo;User&#39;s Guide to the Disruptor&amp;rdquo; talk to the London Java Community. Since it was very kindly hosted at Skillsmatter, there is a video of the presentationavailable, and the slides are below.Concurrent Programming Using the DisruptorView more presentationsfrom Trisha GeeThe presentation is a little different to the ones we&#39;ve done before. Previously we&#39;ve gone into how it works and why it&#39;s fast. This time I wanted to step back a little from the internals and show how real developers might actually use it.</description>
+      <description>A few weeks ago, I presented my new &amp;ldquo;User&#39;s Guide to the Disruptor&amp;rdquo; talk to the London Java Community. Since it was very kindly hosted at Skillsmatter, there is a video of the presentation available, and the slides are below.
+Concurrent Programming Using the Disruptor  View more presentations from Trisha Gee  
+The presentation is a little different to the ones we&#39;ve done before. Previously we&#39;ve gone into how it works and why it&#39;s fast.</description>
     </item>
     
     <item>
@@ -89,7 +97,8 @@
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/upcoming_speaking_events/</guid>
-      <description>In theory, I am busy writing material for my upcoming speaking events, rather than writing terribly illuminatingposts on my blog (see what I did there?). In actuality I am being lazy and have pretty much taken January off for a recharge.In the spirit of doing something which ticks both the event-speaking and blogging boxes, this is a quick update on the conferences I&#39;m confirmed for so far. Put the following dates in your diary - these are my first international solo speaking events:7th March - QCon London - Concurrent Programming Using The Disruptor(sadly I can&#39;t stay for the whole conference as it clashes with the only holiday I had booked for 2012).</description>
+      <description>In theory, I am busy writing material for my upcoming speaking events, rather than writing terribly illuminating posts on my blog (see what I did there?). In actuality I am being lazy and have pretty much taken January off for a recharge.
+In the spirit of doing something which ticks both the event-speaking and blogging boxes, this is a quick update on the conferences I&#39;m confirmed for so far. Put the following dates in your diary - these are my first international solo speaking events:</description>
     </item>
     
     <item>
@@ -107,7 +116,8 @@
       <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/london_java_community_open_conference/</guid>
-      <description>Saturday was, hopefully, my last conference of the year. My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.Who wants to propose a session?In many ways the London Java CommunityOpen Conference was my favourite one so far, and not just because it&#39;s near home and I helped to organise it. One of the awesome things about both Java Oneand Devoxxwas the opportunity to travel, to see new places and to meet people you might not meet in London.</description>
+      <description>Saturday was, hopefully, my last conference of the year. My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.
+Who wants to propose a session?In many ways the London Java Community Open Conference was my favourite one so far, and not just because it&#39;s near home and I helped to organise it.</description>
     </item>
     
     <item>
@@ -116,7 +126,8 @@
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
-      <description>Last Tuesday Mikeand I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX Londonon the 2nd November.A video of the sessionis available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
+      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX London on the 2nd November.
+A video of the session is available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
     </item>
     
     <item>
@@ -125,7 +136,9 @@
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2011_roundup/</guid>
-      <description>Having been back in London for a few days I&#39;ve had some time to digest the madness that was last week.My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&#39;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my last post):First and foremost, the people. I don&#39;t remember meeting a single grumpy person.</description>
+      <description>Having been back in London for a few days I&#39;ve had some time to digest the madness that was last week.
+My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&#39;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my last post):
+First and foremost, the people. I don&#39;t remember meeting a single grumpy person.</description>
     </item>
     
     <item>
@@ -134,7 +147,8 @@
       <pubDate>Tue, 04 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_initial_observations/</guid>
-      <description>So I&#39;ve been at JavaOne for the better part of three days, it&#39;s time to record some of my observations so far:The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. Makes me feel better about the presentations I&#39;m going to be giving (see A Beginner&#39;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&#39;ve had a really excellent time, I&#39;ve met: people from other Java User Groups; the Duchessgirls; other Duke Award winners; the Azulguys; guys (well, girls) from O&#39;Reilly books; JCP members and many random and awesome people.</description>
+      <description>So I&#39;ve been at JavaOne for the better part of three days, it&#39;s time to record some of my observations so far:
+The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. Makes me feel better about the presentations I&#39;m going to be giving (see A Beginner&#39;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&#39;ve had a really excellent time, I&#39;ve met: people from other Java User Groups; the Duchess girls; other Duke Award winners; the Azul guys; guys (well, girls) from O&#39;Reilly books; JCP members and many random and awesome people.</description>
     </item>
     
     <item>
@@ -143,7 +157,7 @@
       <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/disruptor_20__all_change_please/</guid>
-      <description>Martin recently announced version 2.0of the Disruptor- basically there have been so many changes since we first open-sourced it that it&#39;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&#39;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
+      <description>Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it&#39;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&#39;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
     </item>
     
     <item>
@@ -152,7 +166,7 @@
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don&#39;t really get, I&#39;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.</description>
+      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.</description>
     </item>
     
     <item>
@@ -161,7 +175,8 @@
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
+      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
     </item>
     
     <item>
@@ -170,7 +185,9 @@
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good articledescribing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
+      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.
+I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.
+These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
     </item>
     
     <item>
@@ -179,7 +196,9 @@
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/</guid>
-      <description>So now I&#39;ve covered the ring bufferitself, readingfrom it and writingto it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;vedone some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
+      <description>So now I&#39;ve covered the ring buffer itself, reading from it and writing to it.
+Logically the next thing to do is to wire everything up together.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
     </item>
     
     <item>
@@ -188,7 +207,10 @@
       <pubDate>Mon, 04 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/</guid>
-      <description></description>
+      <description>This is the missing piece in the end-to-end view of the Disruptor. &amp;nbsp;Brace yourselves, it&#39;s quite long. &amp;nbsp;But I decided to keep it in a single blog so you could have the context in one place.
+The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
+ProducerBarriers
+The Disruptor code has interfaces and helper classes for the Consumers, but there&#39;s no interface for your producer, the thing that writes to the ring buffer.</description>
     </item>
     
     <item>
@@ -197,7 +219,10 @@
       <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/</guid>
-      <description>The next in the series of understanding the Disruptor patterndeveloped at LMAX.After the last postwe all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.ConsumerBarriers and ConsumersI&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
+      <description>The next in the series of understanding the Disruptor pattern developed at LMAX.
+After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.
+ConsumerBarriers and Consumers
+I&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
     </item>
     
     <item>
@@ -206,7 +231,8 @@
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.On the site you can download a technical articleexplaining what the Disruptor is and why it&#39;s so clever and fast.</description>
+      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
+On the site you can download a technical article explaining what the Disruptor is and why it&#39;s so clever and fast.</description>
     </item>
     
   </channel>

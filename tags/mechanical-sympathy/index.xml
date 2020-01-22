@@ -17,7 +17,7 @@
       <pubDate>Fri, 12 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_mechanical_sympathy_got_me_to_the_airport_on_time/</guid>
-      <description>Lets talk about mechanical sympathy. Martin Thompson has been making this term very popular in software development, so it&#39;s best to read his description of why he used the term.I had a perfect example yesterday. I&#39;m about to drive to the airport and the car won&#39;t move (I&#39;m a modern tomboy, I can write stories about hairand stories about cars). Not at all. It&#39;s stuck. I can&#39;t reverse out of my parking space.</description>
+      <description>Lets talk about mechanical sympathy. Martin Thompson has been making this term very popular in software development, so it&#39;s best to read his description of why he used the term.I had a perfect example yesterday. I&#39;m about to drive to the airport and the car won&#39;t move (I&#39;m a modern tomboy, I can write stories about hair and stories about cars). Not at all. It&#39;s stuck. I can&#39;t reverse out of my parking space.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don&#39;t really get, I&#39;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.</description>
+      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.</description>
     </item>
     
     <item>
@@ -35,7 +35,8 @@
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
+      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
     </item>
     
   </channel>

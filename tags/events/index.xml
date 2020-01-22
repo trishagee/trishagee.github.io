@@ -75,7 +75,9 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Wed, 12 Jun 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/trishas_world_tour_2013/</guid>
-      <description>Quick update on my scheduled events this year. Please feel free to suggest your MUG or JUG or other tech group as somewhere for me to visit on this Grand World Tour if I&#39;m in your city.17-21st June - In New York - woohoo! Getting to know Justin Lee, the newest member of the Java team, doing some pair programming (hopefully) and meeting people at the MongoDB Masters&amp;rsquo; Summit on Thursday.</description>
+      <description>Quick update on my scheduled events this year. Please feel free to suggest your MUG or JUG or other tech group as somewhere for me to visit on this Grand World Tour if I&#39;m in your city.
+
+17-21st June - In New York - woohoo! Getting to know Justin Lee, the newest member of the Java team, doing some pair programming (hopefully) and meeting people at the MongoDB Masters&amp;rsquo; Summit on Thursday.</description>
     </item>
     
     <item>
@@ -84,7 +86,11 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/2013_is_looking_a_lot_busier_than_i_planned/</guid>
-      <description>So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&#39;m going to be a bit busier than that.In case you&#39;re wondering what I&#39;m up to (or, even better, hoping to see me talk or meet me), here are my confirmed engagements:15-17 May - GeeCon, Poland18-20 June - GOTO Amsterdam- whole day tutorial on the new (unfinished) MongoDB Java driver.</description>
+      <description>So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&#39;m going to be a bit busier than that.
+
+In case you&#39;re wondering what I&#39;m up to (or, even better, hoping to see me talk or meet me), here are my confirmed engagements:
+15-17 May - GeeCon, Poland
+18-20 June - GOTO Amsterdam - whole day tutorial on the new (unfinished) MongoDB Java driver.</description>
     </item>
     
     <item>
@@ -93,7 +99,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
-      <description>Last Tuesday Mikeand I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX Londonon the 2nd November.A video of the sessionis available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
+      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX London on the 2nd November.
+A video of the session is available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
     </item>
     
     <item>
@@ -102,7 +109,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_public_appearance/</guid>
-      <description>I&#39;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&#39;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&#39;s postgives a little more background on the subject.Another LMAXLJC member Mikewill also be giving a lightning talk, on Project Coin.</description>
+      <description>I&#39;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&#39;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&#39;s post gives a little more background on the subject.
+Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.</description>
     </item>
     
   </channel>

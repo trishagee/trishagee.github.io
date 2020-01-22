@@ -17,7 +17,7 @@
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one/</guid>
-      <description>This month&#39;s Java Magazinefeatures an article by yours truly, which is yet another intro to the Disruptor. It&#39;s basically a summary of the stuff I&#39;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
+      <description>This month&#39;s Java Magazine features an article by yours truly, which is yet another intro to the Disruptor. It&#39;s basically a summary of the stuff I&#39;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/disruptor_20__all_change_please/</guid>
-      <description>Martin recently announced version 2.0of the Disruptor- basically there have been so many changes since we first open-sourced it that it&#39;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&#39;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
+      <description>Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it&#39;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&#39;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don&#39;t really get, I&#39;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.</description>
+      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.</description>
     </item>
     
     <item>
@@ -44,7 +44,8 @@
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
+      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
     </item>
     
     <item>
@@ -53,7 +54,9 @@
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good articledescribing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
+      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.
+I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.
+These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
     </item>
     
     <item>
@@ -62,7 +65,9 @@
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/</guid>
-      <description>So now I&#39;ve covered the ring bufferitself, readingfrom it and writingto it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;vedone some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
+      <description>So now I&#39;ve covered the ring buffer itself, reading from it and writing to it.
+Logically the next thing to do is to wire everything up together.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
     </item>
     
     <item>
@@ -71,7 +76,10 @@
       <pubDate>Mon, 04 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/</guid>
-      <description></description>
+      <description>This is the missing piece in the end-to-end view of the Disruptor. &amp;nbsp;Brace yourselves, it&#39;s quite long. &amp;nbsp;But I decided to keep it in a single blog so you could have the context in one place.
+The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
+ProducerBarriers
+The Disruptor code has interfaces and helper classes for the Consumers, but there&#39;s no interface for your producer, the thing that writes to the ring buffer.</description>
     </item>
     
     <item>
@@ -80,7 +88,10 @@
       <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/</guid>
-      <description>The next in the series of understanding the Disruptor patterndeveloped at LMAX.After the last postwe all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.ConsumerBarriers and ConsumersI&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
+      <description>The next in the series of understanding the Disruptor pattern developed at LMAX.
+After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.
+ConsumerBarriers and Consumers
+I&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
     </item>
     
     <item>
@@ -89,7 +100,8 @@
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.On the site you can download a technical articleexplaining what the Disruptor is and why it&#39;s so clever and fast.</description>
+      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
+On the site you can download a technical article explaining what the Disruptor is and why it&#39;s so clever and fast.</description>
     </item>
     
   </channel>

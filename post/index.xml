@@ -221,7 +221,7 @@ of the JCP, and the future of Java.&lt;/p&gt;
       
       <guid>https://trishagee.github.io/post/becoming_an_evangelist/</guid>
       <description>&lt;p&gt;So, I get asked a lot about how I got into technical advocacy / 
-evangelism&lt;!-- raw HTML omitted --&gt;1&lt;!-- raw HTML omitted --&gt;, 
+evangelism&lt;sup&gt;1&lt;/sup&gt;, 
 so it seems like the most cost-effective way to answer this question is to 
 write a post about it. Warning: it&#39;s a long one!&lt;/p&gt;</description>
     </item>
@@ -504,7 +504,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Tue, 11 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_2014/</guid>
-      <description>Wow. My 4th QCon London. That’s not bad. And every time, it’s a different experience (if you must, see my blogs for 2013, 2012, and even 2007 (part 1&amp;amp; part 2- how cute was I? &amp;ldquo;agile seems like a jolly good idea; automated testing appears to be important&amp;rdquo;)).I can’t even tell you what I did on the first day, I was mostly panicking about my presentation - I was inspired after my trip to New York last month to change my talk at the last (responsible?</description>
+      <description>Wow. My 4th QCon London. That’s not bad. And every time, it’s a different experience (if you must, see my blogs for 2013, 2012, and even 2007 (part 1 &amp;amp; part 2 - how cute was I? &amp;ldquo;agile seems like a jolly good idea; automated testing appears to be important&amp;rdquo;)).
+I can’t even tell you what I did on the first day, I was mostly panicking about my presentation - I was inspired after my trip to New York last month to change my talk at the last (responsible?</description>
     </item>
     
     <item>
@@ -513,7 +514,7 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/sparking_innovation_in_an_established_company/</guid>
-      <description></description>
+      <description>I’ve been running into BSkyB a bunch this week - firstly I was invited to kick off their innovation tech talks series last Monday, then I kept meeting Sky people (that makes it sound like they’re aliens) at QCon.It seems Sky is keen to create/foster a culture of innovation, which is an ambitious goal for such a large company.&amp;nbsp; So I was given a very vague brief for Monday’s presentation (“Can you do something Mongo-ish, maybe a bit of performance and concurrency stuff, and talk about overall best practice?</description>
     </item>
     
     <item>
@@ -522,7 +523,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_joy_of_coding/</guid>
-      <description></description>
+      <description>Dick Wall -&amp;nbsp;The Tao, of the Joy, of Coding
+I’m on a plane (there’s a surprise) on my way back from The Joy of Coding.&amp;nbsp; It’s the title that attracted me to this conference, and it was a great little one day event with awesome people like Dan North, Erik Meijer and Dick Wall presenting.&amp;nbsp; What I liked about the themes is they were broadly technology agnostic, pulling back to a level which made me remember why I’m a developer.</description>
     </item>
     
     <item>
@@ -531,7 +533,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Mon, 03 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_my_day/</guid>
-      <description>Web development has changed a lot.I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool.I used to be a web developer. Sort of.</description>
+      <description>Web development has changed a lot.
+I was aware that there have been many changes in the last few years, and I’ve seen maturity come to web platforms in the form of standardisation and common reusable libraries and frameworks - and I don’t mean reusable in the way we used to “reuse” stuff by nicking it off other people’s websites when we saw something cool.I used to be a web developer.</description>
     </item>
     
     <item>
@@ -540,7 +543,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</guid>
-      <description>So, following on from my observations of being an outsiderat FOSDEM because I&#39;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.I&#39;m going to give specifics, but it&#39;s not to name and shame or anything like that, it&#39;s just that anonymising it will probably erase some of the subtleties. But I&#39;m not telling this to make anyone feel bad, because this is not an oh-poor-me story, this is just the way it goes sometimes and I want to share what it feels like.</description>
+      <description>So, following on from my observations of being an outsider at FOSDEM because I&#39;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.
+I&#39;m going to give specifics, but it&#39;s not to name and shame or anything like that, it&#39;s just that anonymising it will probably erase some of the subtleties. But I&#39;m not telling this to make anyone feel bad, because this is not an oh-poor-me story, this is just the way it goes sometimes and I want to share what it feels like.</description>
     </item>
     
     <item>
@@ -549,7 +553,7 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Sat, 08 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/feel_like_an_outsider/</guid>
-      <description></description>
+      <description>So, FOSDEM.I&#39;ve heard great things about this conference, so I was pretty exited to goThe Java dev roomNow I know people talk about impostor syndrome whenever they mention the woeful lack of diversity at tech conferences.&amp;nbsp; Interestingly, I felt like an impostor at FOSDEM - not because I&#39;m a woman (there were quite a few techy women around at FOSDEM, more than I expected) but because I&#39;m not an open source person.</description>
     </item>
     
     <item>
@@ -558,7 +562,9 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Fri, 31 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/sevilla_mug_first_event/</guid>
-      <description></description>
+      <description>Last night was the inaugural meeting of the Sevilla MongoDN User Group. &amp;nbsp;An event organised with just over 48 hours notice, in a city where I don&#39;t speak the language and where even my best-connected contacts aren&#39;t sure they&#39;re fully plugged in to the tech scene.
+I&#39;ll admit, I had some reservations:
+a lightning talk? Will people come all that way for beer and 15 minutes of presentation?in English? Whilst I&#39;m desperately learning Spanish to get closer to presenting in Spanish, at this point I&#39;m just not ready and have to hope people want to listen to me ramble in a foreign languagea MUG?</description>
     </item>
     
     <item>
@@ -567,7 +573,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Thu, 23 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/introduction_to_mongodb_and_big_data/</guid>
-      <description>I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&#39;s good in the &amp;ldquo;Big Data&amp;rdquo; space.Look inside &amp;gt;MongoDB and Big Data</description>
+      <description>I wrote an article for the latest edition of Java Magazine which is an introduction to MongoDB for Java developers, and a nod to why it&#39;s good in the &amp;ldquo;Big Data&amp;rdquo; space.
+Look inside &amp;gt;MongoDB and Big Data</description>
     </item>
     
     <item>
@@ -576,7 +583,7 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Mon, 20 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_is_it_news_when_a_woman_becomes_ceo/</guid>
-      <description>I&#39;m pleased to see that GM has hired the &amp;ldquo;best person for the job&amp;rdquo; as their new CEO- that does seem like a good idea. I&#39;m happy her gender did not get in the way. What makes me uncomfortable is the international news coverage of the decision of this large manufacturer to hire a woman as their CEO - if she were a man (and/or black/gay/disabled) would the headline read &amp;ldquo;The camera loves her.</description>
+      <description>I&#39;m pleased to see that GM has hired the &amp;ldquo;best person for the job&amp;rdquo; as their new CEO - that does seem like a good idea. I&#39;m happy her gender did not get in the way. What makes me uncomfortable is the international news coverage of the decision of this large manufacturer to hire a woman as their CEO - if she were a man (and/or black/gay/disabled) would the headline read &amp;ldquo;The camera loves her.</description>
     </item>
     
     <item>
@@ -585,7 +592,9 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Thu, 02 Jan 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/goodbye_2013_you_were_good_to_me/</guid>
-      <description>Well, if I thought 2012 was the fastest disappearing year on record, that record was smashed into the ground by 2013. What a year! And because I didn&#39;t manage to write this on time to publish elsewhere, I can do a more personal reflection of the year here on my very own blog.Apparently, reading over last year&#39;s article, I had goals for 2013:Get more involved in schools/mentoring. Yeah&amp;hellip; That didn&#39;t happen.</description>
+      <description>Well, if I thought 2012 was the fastest disappearing year on record, that record was smashed into the ground by 2013. What a year! And because I didn&#39;t manage to write this on time to publish elsewhere, I can do a more personal reflection of the year here on my very own blog.
+Apparently, reading over last year&#39;s article, I had goals for 2013:
+Get more involved in schools/mentoring.</description>
     </item>
     
     <item>
@@ -594,7 +603,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Mon, 23 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/yow/</guid>
-      <description>December disappeared in a rush of vacation and a fleeting tour of Australia. It&#39;s hard to believe that it&#39;s the eve of Christmas Eve already, it&#39;s almost impossible to feel Christmassy when you&#39;re getting sunburnt on a boat and seeing people in swim-suits wearing santa hats. A mid-winter festival (complete with trees and fake snow) just feels very odd in summer.I cannot take Christmas seriously in this weatherYOW!is a unique conference, in that it&#39;s the same agenda in three different cities: Melbourne, Brisbane and Sydney.</description>
+      <description>December disappeared in a rush of vacation and a fleeting tour of Australia. It&#39;s hard to believe that it&#39;s the eve of Christmas Eve already, it&#39;s almost impossible to feel Christmassy when you&#39;re getting sunburnt on a boat and seeing people in swim-suits wearing santa hats. A mid-winter festival (complete with trees and fake snow) just feels very odd in summer.
+I cannot take Christmas seriously in this weatherYOW! is a unique conference, in that it&#39;s the same agenda in three different cities: Melbourne, Brisbane and Sydney.</description>
     </item>
     
     <item>
@@ -603,7 +613,8 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_data_driven_testing/</guid>
-      <description>In the last two articles on Spock I&#39;ve covered mockingand stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there&#39;s a killer feature: Data Driven Testing.All developers have a tendency to think of and test the happy path. Not least of all because that&#39;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.</description>
+      <description>In the last two articles on Spock I&#39;ve covered mocking and stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there&#39;s a killer feature: Data Driven Testing.
+All developers have a tendency to think of and test the happy path. Not least of all because that&#39;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -622,7 +633,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Wed, 06 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/linkedin_etiquette/</guid>
-      <description>For no reason other than LinkedIncommunications are starting to irritate me, here&#39;s my personal LinkedIn Etiquette guide. Feel free to disagree with it all.
+      <description>For no reason other than LinkedIn communications are starting to irritate me, here&#39;s my personal LinkedIn Etiquette guide. Feel free to disagree with it all.
  I&#39;m not going to accept invitations from recruiters. Not just because I&#39;m not looking for a job (who knows what the future holds?), but because I believe it shows a lack of respect to my network to bring recruiters one step closer to being able to contact them all.</description>
     </item>
     
@@ -632,7 +643,9 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 05 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2013/</guid>
-      <description>So, I thought a few months ago that my blog would become more of a travel blogthan a tech blog because of the amount of conferences I was going to. Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&#39;d been to.So, JavaOne, again, my third year there. I&#39;ll always have a fondness for it - because of Martin Thompson, it was the first conference I presented at.</description>
+      <description>So, I thought a few months ago that my blog would become more of a travel blog than a tech blog because of the amount of conferences I was going to. Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&#39;d been to.
+
+So, JavaOne, again, my third year there.</description>
     </item>
     
     <item>
@@ -641,7 +654,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Wed, 09 Oct 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/make_the_future_java/</guid>
-      <description></description>
+      <description> I think this is a nice example of how to showcase technology and make it relevant and exciting for people. &amp;nbsp;Something with this approach could do more for increasing the number of people interested in programming as a career than any of the traditional approaches of getting kids and &#34;minorities&#34; interested in IT.</description>
     </item>
     
     <item>
@@ -650,7 +663,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/kids_these_days/</guid>
-      <description></description>
+      <description>I&#39;m a great believer in getting kids to code early - after all, I&#39;m of that generation that was taught&amp;nbsp; at the age of 9.&amp;nbsp; There are quite a few approaches to teaching today&#39;s kids in an engaging way, but I&#39;m a bit wary of the sandbox solutions that teach kids things like how to navigate a virtual thingie around the screen, or lets them create things in a limited virtual world.</description>
     </item>
     
     <item>
@@ -659,7 +672,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Mon, 16 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javazone_oslo/</guid>
-      <description></description>
+      <description>For the rest of 2013, this blog will mostly be masquerading as a travel blog.This week I&#39;ve been in Oslo, and I liked it.&amp;nbsp; Actually, you&#39;ll be hard-pushed to find somewhere I&#39;ve visited that I didn&#39;t like in one way or another, but Oslo does make my &#34;definitely going back there&#34; list.&amp;nbsp; If Seville, where I&#39;ve been for the last month, is stuffed full of History, Oslo is overflowing with Geography.</description>
     </item>
     
     <item>
@@ -668,7 +681,9 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</guid>
-      <description>The second in my short series of blogsabout the new Java driver is now available for your perusal. In it, there&#39;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.The post also shows that Gradleis prettier than Maven. Sorry Maven.If you are going to play with the new driver, please read all the caveats carefully.</description>
+      <description>The second in my short series of blogs about the new Java driver is now available for your perusal. In it, there&#39;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.
+The post also shows that Gradle is prettier than Maven. Sorry Maven.
+If you are going to play with the new driver, please read all the caveats carefully.</description>
     </item>
     
     <item>
@@ -677,7 +692,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
-      <description>Yesterday Stephen Chin, one of Oracle&#39;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. There&#39;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&#39;s not a great platform for doing live demos, but I think I&#39;d like to do more code demos in this way, if I can find a suitable platform.</description>
+      <description>Yesterday Stephen Chin, one of Oracle&#39;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.
+It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. There&#39;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&#39;s not a great platform for doing live demos, but I think I&#39;d like to do more code demos in this way, if I can find a suitable platform.</description>
     </item>
     
     <item>
@@ -695,7 +711,9 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 27 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/autumn_world_tour/</guid>
-      <description>It&#39;s nearly the end of August already (how is summer allowed to go by so fast?) so it&#39;s time to start thinking about the autumn conference scene. It feels like I&#39;m going to be at most of them this year, so hopefully I&#39;ll see you at one of them?11-12th Sept - JavaZone, Oslo - Design is a Process, not a Document16-20th Sept - New York - meeting and working with the MongoDB JVM and .</description>
+      <description>It&#39;s nearly the end of August already (how is summer allowed to go by so fast?) so it&#39;s time to start thinking about the autumn conference scene. It feels like I&#39;m going to be at most of them this year, so hopefully I&#39;ll see you at one of them?
+11-12th Sept - JavaZone, Oslo - Design is a Process, not a Document
+16-20th Sept - New York - meeting and working with the MongoDB JVM and .</description>
     </item>
     
     <item>
@@ -704,7 +722,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 13 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_30_java_driver__design_goals/</guid>
-      <description>I feel slightly like a traitor to my own blog, as I&#39;ve written a blog post for Somewhere Else. I&#39;ve written about the design goals for the 3.0 MongoDB Java Driverin the official MongoDB blog (seems sensible, right?). I&#39;m not sure how I feel about cross-posting the entire contents, so I&#39;m just linking you to them instead.Anyone who&#39;s been to my Backwards Compatibility presentation this year might notice something familiar about the content.</description>
+      <description>I feel slightly like a traitor to my own blog, as I&#39;ve written a blog post for Somewhere Else. I&#39;ve written about the design goals for the 3.0 MongoDB Java Driver in the official MongoDB blog (seems sensible, right?). I&#39;m not sure how I feel about cross-posting the entire contents, so I&#39;m just linking you to them instead.
+Anyone who&#39;s been to my Backwards Compatibility presentation this year might notice something familiar about the content.</description>
     </item>
     
     <item>
@@ -713,7 +732,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Wed, 31 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_shanghai/</guid>
-      <description></description>
+      <description>I was expecting this...So, I was in China last week. &amp;nbsp;It&#39;s not really what I expected, but then my knowledge of China comes almost entirely from visiting various Chinatowns and watching martial arts movies, so I guess I wasn&#39;t all that well prepared for a modern Asian city like Shanghai.
+...and found this insteadThe city is, in my opinion, clean, modern, and attractive. &amp;nbsp;I was surprised by American-looking early skyscrapers, and really surprised that the city overall felt more European than American - with Marks &amp;amp; Spencer, Tesco, Carrefour, H &amp;amp; M, Zara, Costa Coffee, as well as the inevitable McDonalds, KFC and Pizza Hut.</description>
     </item>
     
     <item>
@@ -722,7 +742,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 30 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/cant_take_much_more/</guid>
-      <description>Inspired by Your App Makes Me Fat, I was going to write a blog post about decision fatigue. It&#39;s a topic very close to my heart right now as I try to plan for my upcoming speaking engagements,continue working on the new Java driver, try to finish the last couple of blogs on Spock, and last but not least plan for moving home this week.But since my cognitive resources are at a low point right now, I&#39;ll just leave you with a gif instead:What programming is like</description>
+      <description>Inspired by Your App Makes Me Fat, I was going to write a blog post about decision fatigue. It&#39;s a topic very close to my heart right now as I try to plan for my upcoming speaking engagements, continue working on the new Java driver, try to finish the last couple of blogs on Spock, and last but not least plan for moving home this week.
+But since my cognitive resources are at a low point right now, I&#39;ll just leave you with a gif instead:</description>
     </item>
     
     <item>
@@ -731,7 +752,11 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</guid>
-      <description>In the last postI talked about our need for some improved testing tools, our choice of Spockas something to spike, and how mocking looks in Spock.As that blog got rather long, I saved the next installment for a separate post.Today I want to look at stubbing.StubbingMocking is great for checking outputs- in the example in the last post, we&#39;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.</description>
+      <description>In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
+As that blog got rather long, I saved the next installment for a separate post.
+Today I want to look at stubbing.
+Stubbing
+Mocking is great for checking outputs - in the example in the last post, we&#39;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.</description>
     </item>
     
     <item>
@@ -740,7 +765,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</guid>
-      <description>We&#39;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.This is not going to be the case when it comes to testing, however. At the very least, we&#39;re going to use JUnit or TestNG (we used testng in the previous version, we&#39;ve switched to JUnit for 3.</description>
+      <description>We&#39;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.
+This is not going to be the case when it comes to testing, however. At the very least, we&#39;re going to use JUnit or TestNG (we used testng in the previous version, we&#39;ve switched to JUnit for 3.</description>
     </item>
     
     <item>
@@ -749,7 +775,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Fri, 05 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/developers_hate_support_dont_they/</guid>
-      <description></description>
+      <description>This is Dublin. &amp;nbsp;Honest.I&#39;m at the end of my first official week doing support for 10gen. &amp;nbsp;My major achievements are:
+Learning how to work the coffee machine in the Dublin office. &amp;nbsp;It&#39;s taken me a week to get it, but now I can understand the machine&#39;s needs. &amp;nbsp;Even if my coffee did taste a bit of cleaning fluid this morning.Navigating around Dublin - I led the way to the pub, followed by two people who live here.</description>
     </item>
     
     <item>
@@ -758,7 +785,9 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Wed, 12 Jun 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/trishas_world_tour_2013/</guid>
-      <description>Quick update on my scheduled events this year. Please feel free to suggest your MUG or JUG or other tech group as somewhere for me to visit on this Grand World Tour if I&#39;m in your city.17-21st June - In New York - woohoo! Getting to know Justin Lee, the newest member of the Java team, doing some pair programming (hopefully) and meeting people at the MongoDB Masters&amp;rsquo; Summit on Thursday.</description>
+      <description>Quick update on my scheduled events this year. Please feel free to suggest your MUG or JUG or other tech group as somewhere for me to visit on this Grand World Tour if I&#39;m in your city.
+
+17-21st June - In New York - woohoo! Getting to know Justin Lee, the newest member of the Java team, doing some pair programming (hopefully) and meeting people at the MongoDB Masters&amp;rsquo; Summit on Thursday.</description>
     </item>
     
     <item>
@@ -767,7 +796,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 04 Jun 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/calling_dublin_tech_user_groups/</guid>
-      <description>I&#39;m going to be in Dublin 1st-5th July. While I&#39;m there, I thought I&#39;d visit appropriate user groups if there are any. I can&#39;t see a JUG registered on the JUG Map, but I was thinking a city like Dublin must have a few tech meetup groups.Any suggestions? Anyone out there and keen for me to gatecrash their party?</description>
+      <description>I&#39;m going to be in Dublin 1st-5th July. While I&#39;m there, I thought I&#39;d visit appropriate user groups if there are any. I can&#39;t see a JUG registered on the JUG Map, but I was thinking a city like Dublin must have a few tech meetup groups.
+Any suggestions? Anyone out there and keen for me to gatecrash their party?</description>
     </item>
     
     <item>
@@ -776,7 +806,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Fri, 31 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/adjusting_to_working_remotely/</guid>
-      <description></description>
+      <description>One of the most obvious differences I faced when I moved from LMAX to 10gen were the working conditions. I don&#39;t mean like being deep underground in some dangerous situation vs being pampered bybeautiful slave boys and girls. What I mean is that the working practices at one company necessitated being in the office for corehours, and at the other flexible hours and remote-working are practically mandatory.At at LMAX wepair-programmed most days, and that meant that being co-located: being in the same office, at the same computer,was pretty important.</description>
     </item>
     
     <item>
@@ -785,7 +815,8 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Thu, 23 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/be_an_ambassador/</guid>
-      <description>You know how I keep banging on about attracting different types of people into programming? You know how we say we need to get them young?Typical Mathematician?A little while back I decided to put my money where my mouth was, so I signed up to be a STEM Ambassador. STEMNET is an organisation that aims to inspire children to go into Science, Technology, Engineering and Maths careers, and it does this by creating a network of mentors (people like you and me) and schools.</description>
+      <description>You know how I keep banging on about attracting different types of people into programming? You know how we say we need to get them young?
+Typical Mathematician?A little while back I decided to put my money where my mouth was, so I signed up to be a STEM Ambassador. STEMNET is an organisation that aims to inspire children to go into Science, Technology, Engineering and Maths careers, and it does this by creating a network of mentors (people like you and me) and schools.</description>
     </item>
     
     <item>
@@ -795,7 +826,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       
       <guid>https://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
       <description>Last week I was in Krakow, Poland for GeeCON. Which was excellent! I find it really interesting that conferences all have their own personalities, that they are not all the same.
-From a speaker&#39;s point of view, there were some cultural things which took a bit of getting used to. One of the good things was that the audience was very keen on asking questions, they were much more interactive than a typical London audience (for example).</description>
+GeeCON had its own distinct personality. &amp;nbsp;If you&#39;re a Java/JVM person based in Poland, I would highly recommend it - more than 90%of the attendees were Polish (probably the remainder were largely speakers) so this conference is very much for you.</description>
     </item>
     
     <item>
@@ -804,7 +835,8 @@ From a speaker&#39;s point of view, there were some cultural things which took a
       <pubDate>Thu, 16 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_are_you_using_mongodb_with_java/</guid>
-      <description>So, like one of my presentations, I have a question for you. Actually, I have more than one question for you. I&#39;m not going to bother with survey monkey or whatever, I want to share the answers so please, answers in the comments:Are you using the Java driver for MongoDB in your application?Are you using the Java driver directly, or are you using a third party library like Morphia, Spring Data, the Scala driver, your own abstraction layer, etc?</description>
+      <description>So, like one of my presentations, I have a question for you. Actually, I have more than one question for you. I&#39;m not going to bother with survey monkey or whatever, I want to share the answers so please, answers in the comments:
+Are you using the Java driver for MongoDB in your application?Are you using the Java driver directly, or are you using a third party library like Morphia, Spring Data, the Scala driver, your own abstraction layer, etc?</description>
     </item>
     
     <item>
@@ -813,7 +845,8 @@ From a speaker&#39;s point of view, there were some cultural things which took a
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
-      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&#39;re already bought into a NoSQL technology, or you&#39;re just wondering what all the noise is about, it&#39;s worth an hour out of your day to see Akmal Chaudhri&#39;s comprehensive summary of the technologies out there.Skillsmatter recorded the whole thing, as usual, so you can watch the presentation for yourself. I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.</description>
+      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&#39;re already bought into a NoSQL technology, or you&#39;re just wondering what all the noise is about, it&#39;s worth an hour out of your day to see Akmal Chaudhri&#39;s comprehensive summary of the technologies out there.
+Skillsmatter recorded the whole thing, as usual, so you can watch the presentation for yourself. I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.</description>
     </item>
     
     <item>
@@ -822,7 +855,11 @@ From a speaker&#39;s point of view, there were some cultural things which took a
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/2013_is_looking_a_lot_busier_than_i_planned/</guid>
-      <description>So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&#39;m going to be a bit busier than that.In case you&#39;re wondering what I&#39;m up to (or, even better, hoping to see me talk or meet me), here are my confirmed engagements:15-17 May - GeeCon, Poland18-20 June - GOTO Amsterdam- whole day tutorial on the new (unfinished) MongoDB Java driver.</description>
+      <description>So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&#39;m going to be a bit busier than that.
+
+In case you&#39;re wondering what I&#39;m up to (or, even better, hoping to see me talk or meet me), here are my confirmed engagements:
+15-17 May - GeeCon, Poland
+18-20 June - GOTO Amsterdam - whole day tutorial on the new (unfinished) MongoDB Java driver.</description>
     </item>
     
     <item>
@@ -831,7 +868,7 @@ From a speaker&#39;s point of view, there were some cultural things which took a
       <pubDate>Fri, 12 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_mechanical_sympathy_got_me_to_the_airport_on_time/</guid>
-      <description>Lets talk about mechanical sympathy. Martin Thompson has been making this term very popular in software development, so it&#39;s best to read his description of why he used the term.I had a perfect example yesterday. I&#39;m about to drive to the airport and the car won&#39;t move (I&#39;m a modern tomboy, I can write stories about hairand stories about cars). Not at all. It&#39;s stuck. I can&#39;t reverse out of my parking space.</description>
+      <description>Lets talk about mechanical sympathy. Martin Thompson has been making this term very popular in software development, so it&#39;s best to read his description of why he used the term.I had a perfect example yesterday. I&#39;m about to drive to the airport and the car won&#39;t move (I&#39;m a modern tomboy, I can write stories about hair and stories about cars). Not at all. It&#39;s stuck. I can&#39;t reverse out of my parking space.</description>
     </item>
     
     <item>
@@ -850,7 +887,9 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Mon, 18 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/it_depends/</guid>
-      <description>Don&#39;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?It&#39;s so frustrating to think that in a world of ones and zeros, people can&#39;t give absolute answers and you can&#39;t rely on &amp;ldquo;best practice&amp;rdquo;.It&#39;s an answer I&#39;ve given so many times, especially when someone asks about performance. Well, I&#39;ve had my comeuppance. The entire exercise of designing the new Java driver for MongoDBhas been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:Which Java version are our users, um, using?</description>
+      <description>Don&#39;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?
+It&#39;s so frustrating to think that in a world of ones and zeros, people can&#39;t give absolute answers and you can&#39;t rely on &amp;ldquo;best practice&amp;rdquo;.
+It&#39;s an answer I&#39;ve given so many times, especially when someone asks about performance. Well, I&#39;ve had my comeuppance. The entire exercise of designing the new Java driver for MongoDB has been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:</description>
     </item>
     
     <item>
@@ -868,7 +907,9 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_day_one/</guid>
-      <description>I like QCon London, I really do. Not only is it on home turf, but, as I&#39;ve said before, it doesn&#39;t just focus on technology, or a set of technologies.Full disclosure: I&#39;ve been involved in planning QCon this year. So this time I know all the thinking, hard work, planning and last-minute changes that go into a conference like this. And it&#39;s a joy to be able to sit in the audience and see the conference that you&#39;ve helped build.</description>
+      <description>I like QCon London, I really do. Not only is it on home turf, but, as I&#39;ve said before, it doesn&#39;t just focus on technology, or a set of technologies.
+
+Full disclosure: I&#39;ve been involved in planning QCon this year. So this time I know all the thinking, hard work, planning and last-minute changes that go into a conference like this. And it&#39;s a joy to be able to sit in the audience and see the conference that you&#39;ve helped build.</description>
     </item>
     
     <item>
@@ -877,7 +918,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Wed, 20 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/staying_ahead_of_the_curve/</guid>
-      <description>&lt;p&gt;I had an interesting discussion last night at the &lt;!-- raw HTML omitted --&gt;LJC&lt;!-- raw HTML omitted --&gt; developer sessions, and
+      <description>&lt;p&gt;I had an interesting discussion last night at the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;LJC&lt;/a&gt; developer sessions, and
 it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
     </item>
     
@@ -896,7 +937,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Fri, 11 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/wrap_up_of_2012/</guid>
-      <description>Fortunately for me, the guys at JAXenter chased me for a summary of 2012 and my predictions for 2013 - I say &amp;ldquo;fortunately&amp;rdquo; because otherwise I never would have got around to doing it, and that would be another year slipping away silently into the abyss.Here it is in all its glory.</description>
+      <description>Fortunately for me, the guys at JAXenter chased me for a summary of 2012 and my predictions for 2013 - I say &amp;ldquo;fortunately&amp;rdquo; because otherwise I never would have got around to doing it, and that would be another year slipping away silently into the abyss.
+Here it is in all its glory.</description>
     </item>
     
     <item>
@@ -914,7 +956,7 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Wed, 12 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/agile_when_agile_goes_well/</guid>
-      <description>If you see anything about LMAX- the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&#39;ll see that LMAX is pretty keen on Agile. However, no-one&#39;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&#39;s because I&#39;m not sure it&#39;s a process that would work very well for another team, in another company, working in another business.</description>
+      <description>If you see anything about LMAX - the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&#39;ll see that LMAX is pretty keen on Agile. However, no-one&#39;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&#39;s because I&#39;m not sure it&#39;s a process that would work very well for another team, in another company, working in another business.</description>
     </item>
     
     <item>
@@ -923,7 +965,7 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Wed, 05 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb/</guid>
-      <description>Hot on the heels of my very first MongoDB webinar,I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10genwe&#39;ve been running a series of webinarsaround using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24- John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.video platformvideo managementvideo solutionsvideo player(Slides and webinar available here- and you&#39;re not going deaf, the sound doesn&#39;t start until about 3:44 into the video)It was a fun webinar to do, actually - I didn&#39;t know anything about C24&#39;s iOtool, so I learnt quite a lot as I watched John navigate the demo.</description>
+      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&#39;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
     </item>
     
     <item>
@@ -932,7 +974,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_official_mongodb_appearance/</guid>
-      <description>Yesterday I had the nerve-wrackingdubiousalarminggreat pleasure of presenting my first official MongoDB-shaped talk. This was in the form of a webinar, which is an interesting and different format.I naïvely assumed it would be like a presentation but without the visible hand-waving, but it isn&#39;t really. For a start, you can&#39;t easily poll the audience to find out what their level of experience is, and taking questions is quite tricky, even with the technology to support it.</description>
+      <description>Yesterday I had the nerve-wracking dubious alarming great pleasure of presenting my first official MongoDB-shaped talk. This was in the form of a webinar, which is an interesting and different format.
+I naïvely assumed it would be like a presentation but without the visible hand-waving, but it isn&#39;t really. For a start, you can&#39;t easily poll the audience to find out what their level of experience is, and taking questions is quite tricky, even with the technology to support it.</description>
     </item>
     
     <item>
@@ -941,7 +984,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Mon, 26 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/ljc_open_conference_2012/</guid>
-      <description>Saturday I had the pleasure of being part of the 5th London Java Community Open Conference. This is a great event to end the conference season on - it made me feel good about being part of the LJC, and got me excited about the prospects for 2013.The fantastic thing about an open conference is that a) you don&#39;t have to prepare like mad for it and b) the short sessions and wide variety of subjects mean that you learn stuff you didn&#39;t expect to.</description>
+      <description>Saturday I had the pleasure of being part of the 5th London Java Community Open Conference. This is a great event to end the conference season on - it made me feel good about being part of the LJC, and got me excited about the prospects for 2013.
+The fantastic thing about an open conference is that a) you don&#39;t have to prepare like mad for it and b) the short sessions and wide variety of subjects mean that you learn stuff you didn&#39;t expect to.</description>
     </item>
     
     <item>
@@ -950,7 +994,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Thu, 22 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/summary_of_devoxx_2012/</guid>
-      <description></description>
+      <description>Devoxx topped off a crazy two months of conferences. I&#39;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting. &amp;nbsp;I&#39;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding. &amp;nbsp;I hope.
+Neal Ford&#39;s When Geek LeaksSo, how was Devoxx? &amp;nbsp;Well for starters, the calibre of the speakers and talks was excellent.</description>
     </item>
     
     <item>
@@ -959,7 +1004,14 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/brain_overload/</guid>
-      <description>The moral of today&#39;s story - be careful what you wish for.This is my brainDuring the normal course of my life, it&#39;s filled with Stuff.Early in November, 10gen ordered me to go to New York to learn about MongoDB(Oh No! My Life Is So Hard!). I was looking forward to shopping and taking photos of the devastation wrought by Sandy, but actually I spent the whole time drinking from the firehose of MongoDB information provided by my ridiculously smart, ridiculously well-informed colleagues.</description>
+      <description>The moral of today&#39;s story - be careful what you wish for.
+
+This is my brain
+
+During the normal course of my life, it&#39;s filled with Stuff.
+
+
+Early in November, 10gen ordered me to go to New York to learn about MongoDB (Oh No! My Life Is So Hard!). I was looking forward to shopping and taking photos of the devastation wrought by Sandy, but actually I spent the whole time drinking from the firehose of MongoDB information provided by my ridiculously smart, ridiculously well-informed colleagues.</description>
     </item>
     
     <item>
@@ -968,7 +1020,9 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_2012/</guid>
-      <description>This week I&#39;m at Devoxx for the whole week, and already I&#39;ve achieved two things I didn&#39;t manage last year: I drank Belgian Beer and I&#39;ve spent some time in Antwerp itself.It&#39;s going to be another busy conference, I&#39;m presenting three times (thankfully one is just a quickie):Wed 13:35 - Why Open Source Your Secrets(Quickie)Wed 17:50 - Agile++: When Agile Goes Well- Co-presenting with one of my ex-colleagues from LMAX.Thu 17:50 - The Problem With Women: A Technical Approach.</description>
+      <description>This week I&#39;m at Devoxx for the whole week, and already I&#39;ve achieved two things I didn&#39;t manage last year: I drank Belgian Beer and I&#39;ve spent some time in Antwerp itself.
+It&#39;s going to be another busy conference, I&#39;m presenting three times (thankfully one is just a quickie):
+Wed 13:35 - Why Open Source Your Secrets (Quickie)Wed 17:50 - Agile++: When Agile Goes Well - Co-presenting with one of my ex-colleagues from LMAX.</description>
     </item>
     
     <item>
@@ -977,7 +1031,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Thu, 08 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</guid>
-      <description>This month&#39;s Java Magazine features an article by me, Ben Evansand Martijn Verburgabout the new lambdascoming in Java 8.The aim of the article is to give an overview to normal, human Java developers, who don&#39;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and try them now).</description>
+      <description>This month&#39;s Java Magazine features an article by me, Ben Evans and Martijn Verburg about the new lambdas coming in Java 8.
+The aim of the article is to give an overview to normal, human Java developers, who don&#39;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and try them now).</description>
     </item>
     
     <item>
@@ -986,7 +1041,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nighthacking_tour_the_ljc/</guid>
-      <description>On the same day Stephen Chin came to see meat the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.Expect Raspberry Pis and JavaFX.</description>
+      <description>On the same day Stephen Chin came to see me at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.
+Expect Raspberry Pis and JavaFX.</description>
     </item>
     
     <item>
@@ -995,7 +1051,7 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description></description>
+      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&#39;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&#39;s scary being live-streamed and recorded!</description>
     </item>
     
     <item>
@@ -1004,7 +1060,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nosql_is_a_stupid_name/</guid>
-      <description>So, I&#39;ve finished my first full week in the new job and I&#39;ve learnt lots of new stuff. Which is great, because that&#39;s usually why you change jobs.I&#39;m learning a lot about these new-fangled NoSQLdatabase thingies. The LMAX architecturewas based on keeping everything in memory and reducing the waits for IO - messages were journalled to disk, and reads and writes to the MySQL database were off the critical path. Therefore doing anything radical to the storage side of the architecture was just not high on the list of priorities.</description>
+      <description>So, I&#39;ve finished my first full week in the new job and I&#39;ve learnt lots of new stuff. Which is great, because that&#39;s usually why you change jobs.
+I&#39;m learning a lot about these new-fangled NoSQL database thingies. The LMAX architecture was based on keeping everything in memory and reducing the waits for IO - messages were journalled to disk, and reads and writes to the MySQL database were off the critical path.</description>
     </item>
     
     <item>
@@ -1013,7 +1070,8 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Wed, 17 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london_2012/</guid>
-      <description>Seemed like a quiet conference this year. Not really sure why, maybe it was the layout of the massive (and extremely dark) main room; maybe it was the awkward L-shape of the communal space; or maybe this year people were more interested in listening to the (really very good) sessions rather than participating or meeting other people. Whatever the reason, it felt quiet and almost low-key.Performance seemed pretty high on the agenda, as you&#39;d expect from a London conference, with a number of things on offer:A great keynote from Kirk Pepperdineand Martijn Verburg, covering a massive range of things to care about when thinking about performance on the first nightA high-level talk about Java Performance from yours truly (which I may run again for the LJC if there&#39;s interest, but it&#39;s more likely to be a one-off)A deep dive into writing lock-free coding by Mike BarkerAnd a talk from Kirk exploring your GC logs.</description>
+      <description>Seemed like a quiet conference this year. Not really sure why, maybe it was the layout of the massive (and extremely dark) main room; maybe it was the awkward L-shape of the communal space; or maybe this year people were more interested in listening to the (really very good) sessions rather than participating or meeting other people. Whatever the reason, it felt quiet and almost low-key.
+Performance seemed pretty high on the agenda, as you&#39;d expect from a London conference, with a number of things on offer:</description>
     </item>
     
     <item>
@@ -1023,7 +1081,7 @@ it&#39;s a topic that comes up again and again:&lt;/p&gt;</description>
       
       <guid>https://trishagee.github.io/post/and_for_my_next_trick/</guid>
       <description>The time has come, and I&#39;m moving on from LMAX. I&#39;ve had an incredible (nearly) four years working for one of the most radical finance firms in the world, during which time I feel I&#39;ve learnt more than the rest of my work experience put together, and had the pleasure to work with some of the smartest and most interesting people I&#39;ve ever met.
-I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I am really looking forward to.</description>
+I&#39;ve been invited to join 10gen and their MongoDB driver team, a challenge I am really looking forward to.</description>
     </item>
     
     <item>
@@ -1032,7 +1090,9 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/introduction_to_the_disruptor_slides/</guid>
-      <description>I&#39;ve produced a very cut down version of the presentation I&#39;ve been giving at a lot of conferences, giving a high level overview to the Disruptor. This serves as a quick intro to the concepts behind it.Introduction to the Disruptorfrom Trisha GeeMy slides are usually pretty useless without me (or someone else) talking over them, so for more context don&#39;t forget there&#39;s always my original blog posts (the Magic Ring Buffer, Reading from it, Writing to it, Wiring it up), which are now pretty dated, and the Java Magazinearticle I wrote at the start of the year.</description>
+      <description>I&#39;ve produced a very cut down version of the presentation I&#39;ve been giving at a lot of conferences, giving a high level overview to the Disruptor. This serves as a quick intro to the concepts behind it.
+  Introduction to the Disruptor  from Trisha Gee 
+My slides are usually pretty useless without me (or someone else) talking over them, so for more context don&#39;t forget there&#39;s always my original blog posts (the Magic Ring Buffer, Reading from it, Writing to it, Wiring it up), which are now pretty dated, and the Java Magazine article I wrote at the start of the year.</description>
     </item>
     
     <item>
@@ -1041,7 +1101,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Fri, 05 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_the_summary/</guid>
-      <description></description>
+      <description>So, JavaOne.
+Taylor Street CafeI&#39;m going to be controversial. &amp;nbsp;I think this was my favourite conference of this year. &amp;nbsp;I know that&#39;s not trendy, and that Oracle-bashing is still a popular pastime. &amp;nbsp;And I know I&#39;ve also made a big deal about how much fun it is to meet people who program in different languages. &amp;nbsp;But there is something very special about being surrounded by thousands of people from all around the world who use the same technology as you, some facing the same problems, some solving very different issues.</description>
     </item>
     
     <item>
@@ -1050,7 +1111,7 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 04 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_the_problem_with_women__a_technical_approach/</guid>
-      <description>Yesterday dawned, with a sense of foreboding (actually it dawned with me coughing my lungs out, but we&#39;ve heard enough about the sub-optimal state of my respiratory system this week). On this day, I was giving the talk I was dreadingwhen I got asked to do it. It&#39;s the talk I actually put more work into than any of the other sessions I was presenting at this JavaOne. It was the Women In IT talk.</description>
+      <description>Yesterday dawned, with a sense of foreboding (actually it dawned with me coughing my lungs out, but we&#39;ve heard enough about the sub-optimal state of my respiratory system this week). On this day, I was giving the talk I was dreading when I got asked to do it. It&#39;s the talk I actually put more work into than any of the other sessions I was presenting at this JavaOne. It was the Women In IT talk.</description>
     </item>
     
     <item>
@@ -1059,7 +1120,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Tue, 02 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/tips_for_presenters/</guid>
-      <description>&amp;hellip;or, tips-for-Trisha-because-she-has-the-memory-of-a-goldfish.Do not drink too much coffee beforehand.Do not replace coffee with Diet Coke, it is not better&amp;hellip;Do not drink too much coffee and drink diet coke and forget to eat.Check skirt length before prancing around on stage.Check desktop background for public-display-appropriateness.Close down applications that have popup notifications. Do you really want hundreds of people seeing that tweet&amp;hellip;?Plug in your laptop power. Re-typing your password every time the screen powers down is boring.</description>
+      <description>&amp;hellip;or, tips-for-Trisha-because-she-has-the-memory-of-a-goldfish.
+Do not drink too much coffee beforehand.Do not replace coffee with Diet Coke, it is not better&amp;hellip;Do not drink too much coffee and drink diet coke and forget to eat.Check skirt length before prancing around on stage.Check desktop background for public-display-appropriateness.Close down applications that have popup notifications. Do you really want hundreds of people seeing that tweet&amp;hellip;?Plug in your laptop power. Re-typing your password every time the screen powers down is boring.</description>
     </item>
     
     <item>
@@ -1068,7 +1130,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_user_group_sunday/</guid>
-      <description>Well this is exciting! JavaOne 2011 is the first conference I spoke at, so this the first time I&#39;ve covered the same conference two years running. I think.It&#39;s very nice to be back at JavaOne. Last yearit was my first opportunity to meet so many people - the guys at Oracle who work really hard to make sure Java has its own identity; the JUG Leaders and Duchessfolk; the JCP EC committee members; and loads of people who live and work in the area who I wouldn&#39;t normally get a chance to speak to in person.</description>
+      <description>Well this is exciting! JavaOne 2011 is the first conference I spoke at, so this the first time I&#39;ve covered the same conference two years running. I think.
+It&#39;s very nice to be back at JavaOne. Last year it was my first opportunity to meet so many people - the guys at Oracle who work really hard to make sure Java has its own identity; the JUG Leaders and Duchess folk; the JCP EC committee members; and loads of people who live and work in the area who I wouldn&#39;t normally get a chance to speak to in person.</description>
     </item>
     
     <item>
@@ -1077,7 +1140,9 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Sun, 30 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_strange_loop/</guid>
-      <description>Last week (was it only last week?) I was at Strange Loop, presenting a workshop on the Disruptor.I didn&#39;t really have any expectations from the conference, I&#39;ve never been before and, if I&#39;m honest, hadn&#39;t heard of it before. So everything was a pleasant surprise.It&#39;s a very geeky conference. I mean that as a compliment, of course. Lots of very smart people talking about stuff that&#39;s waaaay more advanced than you frequently get in the conferences employers would be happy to pay for.</description>
+      <description>Last week (was it only last week?) I was at Strange Loop, presenting a workshop on the Disruptor.
+I didn&#39;t really have any expectations from the conference, I&#39;ve never been before and, if I&#39;m honest, hadn&#39;t heard of it before. So everything was a pleasant surprise.
+It&#39;s a very geeky conference. I mean that as a compliment, of course. Lots of very smart people talking about stuff that&#39;s waaaay more advanced than you frequently get in the conferences employers would be happy to pay for.</description>
     </item>
     
     <item>
@@ -1086,7 +1151,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Wed, 26 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/strangeloop_disruptor_workshop_materials/</guid>
-      <description>On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&#39;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.</description>
+      <description>On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&#39;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:
+Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.</description>
     </item>
     
     <item>
@@ -1104,7 +1170,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/upcoming_events/</guid>
-      <description>So yeah&amp;hellip; in keeping with this year&#39;s theme of basically only blogging about the exciting conferences I&#39;ve been to, I&#39;m going to blog about the exciting conferences I am attending in the future. I haven&#39;t been great at doing that, the disconnect between the time I submit a presentation and the actual announcement means that I often forget I haven&#39;t told anyone about what I&#39;m up to.Firstly, I&#39;m back in the States this month to present my very first workshop - An Introduction to the Disruptorat Strangeloop.</description>
+      <description>So yeah&amp;hellip; in keeping with this year&#39;s theme of basically only blogging about the exciting conferences I&#39;ve been to, I&#39;m going to blog about the exciting conferences I am attending in the future. I haven&#39;t been great at doing that, the disconnect between the time I submit a presentation and the actual announcement means that I often forget I haven&#39;t told anyone about what I&#39;m up to.
+Firstly, I&#39;m back in the States this month to present my very first workshop - An Introduction to the Disruptor at Strangeloop.</description>
     </item>
     
     <item>
@@ -1122,7 +1189,7 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Fri, 27 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_the_evil_of_stereotypes/</guid>
-      <description></description>
+      <description>I attended (one way or another) two events last week that got me thinkingThe first was&amp;nbsp;Girl Developers will Save the World&amp;nbsp;- a session that had me a little confused as to whether that referred to me, or&amp;nbsp;actual&amp;nbsp;girls, i.e. those that are not yet legally classed as adults.&amp;nbsp; The second was the&amp;nbsp;Remarkable Women Twitter&amp;nbsp;party the following day.Firstly, a caveat/disclaimer (as usual) - both events were useful, thought-provoking and overall worthwhile.&amp;nbsp; But the alarming thing to me was the number of times I heard &#34;</description>
     </item>
     
     <item>
@@ -1131,7 +1198,9 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 19 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/oscon_day_one/</guid>
-      <description>So, my first day at my very first OSCON. I have to say that when Benand Martijntold me I hadto do OSCON, that it was one of theconferences to go to, I was sceptical - not because I thought it would be rubbish, but because I have enjoyed all the conferences I&#39;ve been to for different reasons.But I&#39;m really impressed so far.The programis packed with great topics and speakers, and so many things I want to see that clash with each other.</description>
+      <description>So, my first day at my very first OSCON. I have to say that when Ben and Martijn told me I had to do OSCON, that it was one of the conferences to go to, I was sceptical - not because I thought it would be rubbish, but because I have enjoyed all the conferences I&#39;ve been to for different reasons.
+But I&#39;m really impressed so far.
+The program is packed with great topics and speakers, and so many things I want to see that clash with each other.</description>
     </item>
     
     <item>
@@ -1149,7 +1218,11 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Sat, 16 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/overheard_development_myths/</guid>
-      <description>Continuing the theme of Things I Have Heard I Don&#39;t Think I Agree With.To developers technologies are everythingI can&#39;t remember the context of this but I hear the same sentiment in different guises over and over again. Often from non-techies, but more alarmingly from developers.Is this true?It&#39;s true for a certain tribe of techies, sure. And creating and effectively using new technologies is an important part of what drives the current information age forward.</description>
+      <description>Continuing the theme of Things I Have Heard I Don&#39;t Think I Agree With.
+To developers technologies are everything
+I can&#39;t remember the context of this but I hear the same sentiment in different guises over and over again. Often from non-techies, but more alarmingly from developers.
+Is this true?
+It&#39;s true for a certain tribe of techies, sure. And creating and effectively using new technologies is an important part of what drives the current information age forward.</description>
     </item>
     
     <item>
@@ -1158,7 +1231,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Sat, 09 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_birth_of_a_new_community/</guid>
-      <description>Topping off my mini-tour at the end of May, I was invited to Rotterdam to present to a brand new communityof developers. I was really interested in attending because my experience with user groups is pretty much limited to the London Java Community, and I knew this would be different due to being a) across a wider range of technologies and b) shiny and new.It was hosted (rather awesomely) in a brewery, and until then I&#39;d never given a presentation in a pub.</description>
+      <description>Topping off my mini-tour at the end of May, I was invited to Rotterdam to present to a brand new community of developers. I was really interested in attending because my experience with user groups is pretty much limited to the London Java Community, and I knew this would be different due to being a) across a wider range of technologies and b) shiny and new.
+It was hosted (rather awesomely) in a brewery, and until then I&#39;d never given a presentation in a pub.</description>
     </item>
     
     <item>
@@ -1176,7 +1250,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 31 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/goto_amsterdam/</guid>
-      <description>Three airports and three hotels in a week, and I don&#39;t know whether I&#39;m coming or going. Add to that a mere four hours sleep last night, and this might resemble the ramblings of a mad woman (more than usual that is).GOTO Amsterdam was a different affair to GOTO Copenhagen, which is not necessarily a bad thing - it&#39;s great that the events have their own personalities and aren&#39;t cookie cutter versions of the same thing.</description>
+      <description>Three airports and three hotels in a week, and I don&#39;t know whether I&#39;m coming or going. Add to that a mere four hours sleep last night, and this might resemble the ramblings of a mad woman (more than usual that is).
+GOTO Amsterdam was a different affair to GOTO Copenhagen, which is not necessarily a bad thing - it&#39;s great that the events have their own personalities and aren&#39;t cookie cutter versions of the same thing.</description>
     </item>
     
     <item>
@@ -1185,7 +1260,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 24 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/goto_copenhagen/</guid>
-      <description></description>
+      <description>So, &amp;nbsp;before everything gets pushed out of my head, GOTO Copenhagen.
+It was my first conference &#34;alone&#34;, in that I didn&#39;t have friends and colleagues from LMAX or the London Java Community there with me. &amp;nbsp;And certainly at the start of the conference, I wasn&#39;t the only one who was standing around, hoping someone would talk to me (in all honesty some of the photos above are a little unfair - the schedule was a very nice, simple phone app so most people spent a lot of time playing with their phones).</description>
     </item>
     
     <item>
@@ -1194,7 +1270,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_do_you_do_and_how_did_you_get_there/</guid>
-      <description>So yet another interviewwith me is available, but this one is in written form. It&#39;s for the Graduate Developer Community, the aim is to show undergraduates and graduates what real techies jobs are like, and how people doing them they got there.It&#39;s long, but if you know anyone just starting out their career who wants to get a feel for where they might want to go, please point them at it.</description>
+      <description>So yet another interview with me is available, but this one is in written form. It&#39;s for the Graduate Developer Community, the aim is to show undergraduates and graduates what real techies jobs are like, and how people doing them they got there.
+It&#39;s long, but if you know anyone just starting out their career who wants to get a feel for where they might want to go, please point them at it.</description>
     </item>
     
     <item>
@@ -1203,7 +1280,9 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 17 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_open_source_your_secrets/</guid>
-      <description>Here&#39;s a video of my Open Conference session on the business benefits of open sourcing your software. Given that the conference was at a weekend and had a very intimate feel, I think I was a teeny bit more honest than I usually am. Enjoy.Why Open Source Your SecretsView more presentationsfrom Trisha Gee.</description>
+      <description>Here&#39;s a video of my Open Conference session on the business benefits of open sourcing your software. Given that the conference was at a weekend and had a very intimate feel, I think I was a teeny bit more honest than I usually am. Enjoy.
+ Why Open Source Your Secrets
+View more presentations from Trisha Gee.</description>
     </item>
     
     <item>
@@ -1212,7 +1291,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/update_on_events/</guid>
-      <description>Just a quick note to say I was interviewed for another podcast, again to talk about all-female events. It&#39;s only a short one and there&#39;s probably not much in there that I haven&#39;t said before, either on here or in person.From the 21st May, I&#39;m at GOTO, both Copenhagen and Amsterdam. I&#39;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology.</description>
+      <description>Just a quick note to say I was interviewed for another podcast, again to talk about all-female events. It&#39;s only a short one and there&#39;s probably not much in there that I haven&#39;t said before, either on here or in person.
+From the 21st May, I&#39;m at GOTO, both Copenhagen and Amsterdam. I&#39;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology.</description>
     </item>
     
     <item>
@@ -1221,7 +1301,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 03 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</guid>
-      <description>This week&#39;s BBC Outriders podcastfeatures yours truly venting about The Subject That Won&#39;t Go Away, Women in Technology. I was interviewed at Sunday&#39;s Girl Geek conference, and got a chance to voice my opinions once again. For those who can&#39;t be bothered to listen, they can probably be summarised as:There are genuine problems that face people in our industry, let&#39;s talk about those that you have actually faced, not ones that you imagine exist.</description>
+      <description>This week&#39;s BBC Outriders podcast features yours truly venting about The Subject That Won&#39;t Go Away, Women in Technology. I was interviewed at Sunday&#39;s Girl Geek conference, and got a chance to voice my opinions once again. For those who can&#39;t be bothered to listen, they can probably be summarised as:
+There are genuine problems that face people in our industry, let&#39;s talk about those that you have actually faced, not ones that you imagine exist.</description>
     </item>
     
     <item>
@@ -1230,7 +1311,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_which_i_defend_the_male_species_at_an_all_female_event/</guid>
-      <description></description>
+      <description>Google Campus is an awesome spaceToday I was at the Girl Geek Meetup conference. &amp;nbsp;I didn&#39;t advertise it much because I&#39;ve said in the past I don&#39;t really agree with women-only events, and actually I felt quite uncomfortable telling you guys I was going to be there, knowing the majority of my readers weren&#39;t allowed to attend.
+It&#39;s probably worth explaining why I went, so a) I can give you guys and excuse but b) conference organisers can see what people like me are looking for in a conference.</description>
     </item>
     
     <item>
@@ -1239,7 +1321,9 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Fri, 20 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/overheard_agile_truths/</guid>
-      <description>After attending a number of conferences and events, and performing numerous interviews, I&#39;m starting to hear the same things again and again. Since Dan Northchallenged all my assumptions at QCon, I&#39;m reluctant to outright ridicule them, but I will put forward my personal opinion.Note: these are things I have heard from multiple sources, so with any luck I am not breaking the sanctity of the confessionalinterview.I&#39;ve never pair programmed, but I&#39;ve frequently worked with a partner on critical production problemsI find this fascinating.</description>
+      <description>After attending a number of conferences and events, and performing numerous interviews, I&#39;m starting to hear the same things again and again. Since Dan North challenged all my assumptions at QCon, I&#39;m reluctant to outright ridicule them, but I will put forward my personal opinion.
+Note: these are things I have heard from multiple sources, so with any luck I am not breaking the sanctity of the confessional interview.
+I&#39;ve never pair programmed, but I&#39;ve frequently worked with a partner on critical production problems</description>
     </item>
     
     <item>
@@ -1248,7 +1332,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Tue, 27 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_2012/</guid>
-      <description>I&#39;m late with my write-up of QCon, and what&#39;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….Firstly, me me meI presented the talk I previewed at Skillsmatterthe previous week, something I was calling the User&#39;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
+      <description>I&#39;m late with my write-up of QCon, and what&#39;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….
+Firstly, me me meI presented the talk I previewed at Skillsmatter the previous week, something I was calling the User&#39;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
     </item>
     
     <item>
@@ -1257,7 +1342,7 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one/</guid>
-      <description>This month&#39;s Java Magazinefeatures an article by yours truly, which is yet another intro to the Disruptor. It&#39;s basically a summary of the stuff I&#39;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
+      <description>This month&#39;s Java Magazine features an article by yours truly, which is yet another intro to the Disruptor. It&#39;s basically a summary of the stuff I&#39;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
     </item>
     
     <item>
@@ -1266,7 +1351,9 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/new_disruptor_presentation_unveiled_to_the_ljc/</guid>
-      <description>A few weeks ago, I presented my new &amp;ldquo;User&#39;s Guide to the Disruptor&amp;rdquo; talk to the London Java Community. Since it was very kindly hosted at Skillsmatter, there is a video of the presentationavailable, and the slides are below.Concurrent Programming Using the DisruptorView more presentationsfrom Trisha GeeThe presentation is a little different to the ones we&#39;ve done before. Previously we&#39;ve gone into how it works and why it&#39;s fast. This time I wanted to step back a little from the internals and show how real developers might actually use it.</description>
+      <description>A few weeks ago, I presented my new &amp;ldquo;User&#39;s Guide to the Disruptor&amp;rdquo; talk to the London Java Community. Since it was very kindly hosted at Skillsmatter, there is a video of the presentation available, and the slides are below.
+Concurrent Programming Using the Disruptor  View more presentations from Trisha Gee  
+The presentation is a little different to the ones we&#39;ve done before. Previously we&#39;ve gone into how it works and why it&#39;s fast.</description>
     </item>
     
     <item>
@@ -1284,7 +1371,8 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/upcoming_speaking_events/</guid>
-      <description>In theory, I am busy writing material for my upcoming speaking events, rather than writing terribly illuminatingposts on my blog (see what I did there?). In actuality I am being lazy and have pretty much taken January off for a recharge.In the spirit of doing something which ticks both the event-speaking and blogging boxes, this is a quick update on the conferences I&#39;m confirmed for so far. Put the following dates in your diary - these are my first international solo speaking events:7th March - QCon London - Concurrent Programming Using The Disruptor(sadly I can&#39;t stay for the whole conference as it clashes with the only holiday I had booked for 2012).</description>
+      <description>In theory, I am busy writing material for my upcoming speaking events, rather than writing terribly illuminating posts on my blog (see what I did there?). In actuality I am being lazy and have pretty much taken January off for a recharge.
+In the spirit of doing something which ticks both the event-speaking and blogging boxes, this is a quick update on the conferences I&#39;m confirmed for so far. Put the following dates in your diary - these are my first international solo speaking events:</description>
     </item>
     
     <item>
@@ -1293,7 +1381,10 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Tue, 17 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/christmas_decorations_teach_me_a_lesson_about_troubleshooting/</guid>
-      <description>And now, after an absence of several weeks, you get to see how long it takes me to write some of these posts.I was putting up the Christmas decorations one Saturday when my worst fear was realised1- one of my three strings of lights was not working.The first two went up fine. The third lit up when I plugged it in, and in less than a second went out. Curses. This is not what I wanted, this was supposed to be a short exercise in making my tiny little flat look festive.</description>
+      <description>And now, after an absence of several weeks, you get to see how long it takes me to write some of these posts.
+
+I was putting up the Christmas decorations one Saturday when my worst fear was realised1 - one of my three strings of lights was not working.
+The first two went up fine. The third lit up when I plugged it in, and in less than a second went out.</description>
     </item>
     
     <item>
@@ -1302,7 +1393,7 @@ I&#39;ve been invited to join 10genand their MongoDBdriver team, a challenge I a
       <pubDate>Thu, 22 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/video_why_we_shouldnt_target_women/</guid>
-      <description>If you have a Parleyssubscription, you can watch the whole &amp;ldquo;Why we shouldn&#39;t target women&amp;rdquo; panel from Devoxx 2011 a month or so ago. Watch me attempt to monopolise the whole panel as if it was my idea or something&amp;hellip;</description>
+      <description>If you have a Parleys subscription, you can watch the whole &amp;ldquo;Why we shouldn&#39;t target women&amp;rdquo; panel from Devoxx 2011 a month or so ago. Watch me attempt to monopolise the whole panel as if it was my idea or something&amp;hellip;</description>
     </item>
     
     <item>
@@ -1322,7 +1413,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 04 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_by_the_oracle_technology_network_at_devoxx/</guid>
-      <description>Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. Because I was there to be on the Why We Shouldn&#39;t Target Womenpanel, the interview is just another platform for me to air my views on this subject again. Yes, I am actually wearing pink&amp;hellip;.</description>
+      <description>Tori Wieldt from the Oracle Technology Network interviewed me at Devoxx. Because I was there to be on the Why We Shouldn&#39;t Target Women panel, the interview is just another platform for me to air my views on this subject again. 
+Yes, I am actually wearing pink&amp;hellip;.</description>
     </item>
     
     <item>
@@ -1331,7 +1423,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/london_java_community_open_conference/</guid>
-      <description>Saturday was, hopefully, my last conference of the year. My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.Who wants to propose a session?In many ways the London Java CommunityOpen Conference was my favourite one so far, and not just because it&#39;s near home and I helped to organise it. One of the awesome things about both Java Oneand Devoxxwas the opportunity to travel, to see new places and to meet people you might not meet in London.</description>
+      <description>Saturday was, hopefully, my last conference of the year. My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.
+Who wants to propose a session?In many ways the London Java Community Open Conference was my favourite one so far, and not just because it&#39;s near home and I helped to organise it.</description>
     </item>
     
     <item>
@@ -1340,7 +1433,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 20 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_we_shouldnt_target_women/</guid>
-      <description>I&#39;m back from Devoxx, having had lots of food for thought. In particular, my panel on Why We Shouldn&#39;t Target Womengenerated a lot of discussion and I&#39;m still trying to process it all.Martijn Verburg; Regina ten Bruggencate; Trisha Gee; Antonio Goncalves; Claude Falguière; Kim Ross The panel went really well, we got decent interaction from the audience, and of course my fellow panel members were awesome. I managed to restrain myself from using the opportunity as my own personal soap box and allowed other people to speak occasionally.</description>
+      <description>I&#39;m back from Devoxx, having had lots of food for thought. In particular, my panel on Why We Shouldn&#39;t Target Women generated a lot of discussion and I&#39;m still trying to process it all.
+Martijn Verburg; Regina ten Bruggencate; Trisha Gee; Antonio Goncalves; Claude Falguière; Kim Ross The panel went really well, we got decent interaction from the audience, and of course my fellow panel members were awesome. I managed to restrain myself from using the opportunity as my own personal soap box and allowed other people to speak occasionally.</description>
     </item>
     
     <item>
@@ -1349,7 +1443,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_the_story_so_far/</guid>
-      <description></description>
+      <description>Stephan wearing the Brazilian flag at the opening keynoteEuropean conferences are different (and cool) because you get to hear even more languages spoken than you usually do in London (apparently the most diverse city in the world for spoken languages). &amp;nbsp;I think the idea of a Paris Devoxx with 75% of the talks in French is brilliant - I&#39;m always banging on about diversity, we shouldn&#39;t expect developers to learn&amp;nbsp;in English only.</description>
     </item>
     
     <item>
@@ -1358,7 +1452,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 15 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__i_learn_stuff_and_meet_people/</guid>
-      <description>A couple of weeks ago, I was at JAX Londonalong with a number of the London Java Communityregulars (Martijn/Ben/John/Sandro/Simon/ZoeI&#39;m looking at you&amp;hellip;.)My purpose for attending was largely to present the Hardcore Concurrency for Beginnerstalk that Mikeand I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me. After the disappointment of the sessions at Java One, sitting in a room being talked at was quite low down on my list of priorities.</description>
+      <description>A couple of weeks ago, I was at JAX London along with a number of the London Java Community regulars (Martijn/Ben/John/Sandro/Simon/Zoe I&#39;m looking at you&amp;hellip;.)
+My purpose for attending was largely to present the Hardcore Concurrency for Beginners talk that Mike and I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me.</description>
     </item>
     
     <item>
@@ -1367,7 +1462,13 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/a_nyse_product_manager_and_an_lmax_developer_walk_into_a_low_latency_trading_seminar/</guid>
-      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&#39;s event? Because&amp;hellip;&amp;ldquo;&amp;quot;Because we&#39;re girls?&amp;ldquo;&amp;quot;Um&amp;hellip; yes&amp;hellip;&amp;ldquo;Kim impetuously opts for The Truth: &amp;ldquo;We&#39;re here to meet men.&amp;ldquo;Our interrogator looks round dubiously. &amp;quot;No, really, why are you here?&amp;ldquo;Phew. My reputation is intact1Kim eloquently describes what her situation is as Product Manager and the criteria she&#39;s measuring third party products against. I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.</description>
+      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&#39;s event? Because&amp;hellip;&amp;ldquo;
+&amp;quot;Because we&#39;re girls?&amp;ldquo;
+&amp;quot;Um&amp;hellip; yes&amp;hellip;&amp;ldquo;
+Kim impetuously opts for The Truth: &amp;ldquo;We&#39;re here to meet men.&amp;ldquo;
+Our interrogator looks round dubiously. &amp;quot;No, really, why are you here?&amp;ldquo;
+Phew. My reputation is intact1
+Kim eloquently describes what her situation is as Product Manager and the criteria she&#39;s measuring third party products against. I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.</description>
     </item>
     
     <item>
@@ -1376,7 +1477,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 06 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/more_videos_from_java_one_2011/</guid>
-      <description>It must be time for me to move on from talking about Java One, it has dominated my blog of late. But also I want to talk about JAX London from this week.But before I move on, it&#39;s probably worth rounding off with the last two resources from the conference.1) Martin Thompsonand I are interviewed about the Disruptor winning the Duke Award (we come in halfway through):2) I&#39;m interviewed by Duchessabout life, the universe and everything (well, the London Java Community, the JCP, the LMAX Disruptor and Duke Award, and women programmers).</description>
+      <description>It must be time for me to move on from talking about Java One, it has dominated my blog of late. But also I want to talk about JAX London from this week.
+But before I move on, it&#39;s probably worth rounding off with the last two resources from the conference.
+1) Martin Thompson and I are interviewed about the Disruptor winning the Duke Award (we come in halfway through):</description>
     </item>
     
     <item>
@@ -1385,7 +1488,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 28 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_the_similarities_between_girls_and_aliens/</guid>
-      <description>I discovered, through the power of the search words that lead to my blog, that there was an incident at JavaOnethat once again opens the can of worms that is Sexism In IT.This Makes Me Sad. I had a really positive experience at JavaOne. In fact, I would say it was the one conference I&#39;ve been to in the last 12 months where I felt like my gender wasn&#39;ta problem - I even got away with wearing hotpants (tweed is business-casual, right?</description>
+      <description>I discovered, through the power of the search words that lead to my blog, that there was an incident at JavaOne that once again opens the can of worms that is Sexism In IT.
+This Makes Me Sad. I had a really positive experience at JavaOne. In fact, I would say it was the one conference I&#39;ve been to in the last 12 months where I felt like my gender wasn&#39;t a problem - I even got away with wearing hotpants (tweed is business-casual, right?</description>
     </item>
     
     <item>
@@ -1394,7 +1498,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
-      <description>Last Tuesday Mikeand I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX Londonon the 2nd November.A video of the sessionis available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
+      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX London on the 2nd November.
+A video of the session is available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
     </item>
     
     <item>
@@ -1403,7 +1508,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2011_roundup/</guid>
-      <description>Having been back in London for a few days I&#39;ve had some time to digest the madness that was last week.My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&#39;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my last post):First and foremost, the people. I don&#39;t remember meeting a single grumpy person.</description>
+      <description>Having been back in London for a few days I&#39;ve had some time to digest the madness that was last week.
+My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&#39;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my last post):
+First and foremost, the people. I don&#39;t remember meeting a single grumpy person.</description>
     </item>
     
     <item>
@@ -1412,7 +1519,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 04 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_initial_observations/</guid>
-      <description>So I&#39;ve been at JavaOne for the better part of three days, it&#39;s time to record some of my observations so far:The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. Makes me feel better about the presentations I&#39;m going to be giving (see A Beginner&#39;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&#39;ve had a really excellent time, I&#39;ve met: people from other Java User Groups; the Duchessgirls; other Duke Award winners; the Azulguys; guys (well, girls) from O&#39;Reilly books; JCP members and many random and awesome people.</description>
+      <description>So I&#39;ve been at JavaOne for the better part of three days, it&#39;s time to record some of my observations so far:
+The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. Makes me feel better about the presentations I&#39;m going to be giving (see A Beginner&#39;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&#39;ve had a really excellent time, I&#39;ve met: people from other Java User Groups; the Duchess girls; other Duke Award winners; the Azul guys; guys (well, girls) from O&#39;Reilly books; JCP members and many random and awesome people.</description>
     </item>
     
     <item>
@@ -1421,7 +1529,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 27 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2011/</guid>
-      <description>So, I&#39;m off to JavaOnenext week!This is an unexpected and very pleasant surprise. I&#39;ll be there with Martin(of the Disruptorfame), and Martijn(that&#39;s not going to get confusing at all). Martin will be talking about the Disruptor on Thursday, and Martijn is busy talking about&amp;hellip; everything. Most importantly for the LJChe&#39;s representing us in our shiny new JCP Executive Committeerole.I&#39;m really looking forward to meeting pretty much anyone and everyone who&#39;ll talk to me.</description>
+      <description>So, I&#39;m off to JavaOne next week!
+This is an unexpected and very pleasant surprise. I&#39;ll be there with Martin (of the Disruptor fame), and Martijn (that&#39;s not going to get confusing at all). Martin will be talking about the Disruptor on Thursday, and Martijn is busy talking about&amp;hellip; everything. Most importantly for the LJC he&#39;s representing us in our shiny new JCP Executive Committee role.
+I&#39;m really looking forward to meeting pretty much anyone and everyone who&#39;ll talk to me.</description>
     </item>
     
     <item>
@@ -1430,7 +1540,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 23 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/first_public_appearance_caught_on_video/</guid>
-      <description></description>
+      <description>Remember a while back I talked about my first public appearance?
+Well, I chased down the video, because I&#39;m masochistic, and here it is for you all to enjoy. &amp;nbsp;Pleasingly my mannerisms are slightly less of a camp man trapped in a woman&#39;s body, which was my impression the last time I saw myself presenting. &amp;nbsp;It helps that YouTube has made the video so dark you can&#39;t see me.</description>
     </item>
     
     <item>
@@ -1439,7 +1550,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 20 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/are_you_an_awesome_developer/</guid>
-      <description>We are hiring!If you think we&#39;re doing something interesting, or if you think you can help us do our thing even better, come join us. Your boss will be the dude who wrote Continuous Delivery, you&#39;ll get a chance to experience what Dannycalls meta-Agile (or Agile Agile), and you&#39;ll really start to care about Domain-Driven Design.Ideally we&#39;re after Java people, but at the heart of it we want people who are dead passionate about development.</description>
+      <description>We are hiring!
+If you think we&#39;re doing something interesting, or if you think you can help us do our thing even better, come join us. Your boss will be the dude who wrote Continuous Delivery, you&#39;ll get a chance to experience what Danny calls meta-Agile (or Agile Agile), and you&#39;ll really start to care about Domain-Driven Design.
+Ideally we&#39;re after Java people, but at the heart of it we want people who are dead passionate about development.</description>
     </item>
     
     <item>
@@ -1448,7 +1561,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sat, 17 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_my_hangovers_can_teach_you_about_agile/</guid>
-      <description>As a survival trait for living and working in the cites1of London, I have a set of rituals to avoid hangovers. If you are not a single person living in a city like London, you might not understand how vital this is. Most networking, particularly in the financial services industry, is done in the presence of alcohol.So preventing the inevitable hangover is quite important to the other part of the job – the actual working bit.</description>
+      <description>As a survival trait for living and working in the cites1 of London, I have a set of rituals to avoid hangovers. If you are not a single person living in a city like London, you might not understand how vital this is. Most networking, particularly in the financial services industry, is done in the presence of alcohol.
+So preventing the inevitable hangover is quite important to the other part of the job – the actual working bit.</description>
     </item>
     
     <item>
@@ -1457,7 +1571,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 04 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/effective_sketches/</guid>
-      <description>On Thursday I was at Simon Brown&#39;s Effective Sketchessession at Skillsmatter. Just because my pictures are pretty awesome doesn&#39;t mean there&#39;s no opportunity for continuous learning.The points Simon made in the session really made sense to me, and I wish I could have had something like that as a primer when they taught us UML at university. Without the context of what the diagrams were supposed to mean, to convey, all the boxes and lines made no sense to me back then.</description>
+      <description>On Thursday I was at Simon Brown&#39;s Effective Sketches session at Skillsmatter. Just because my pictures are pretty awesome doesn&#39;t mean there&#39;s no opportunity for continuous learning.
+The points Simon made in the session really made sense to me, and I wish I could have had something like that as a primer when they taught us UML at university. Without the context of what the diagrams were supposed to mean, to convey, all the boxes and lines made no sense to me back then.</description>
     </item>
     
     <item>
@@ -1466,7 +1581,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/disruptor_20__all_change_please/</guid>
-      <description>Martin recently announced version 2.0of the Disruptor- basically there have been so many changes since we first open-sourced it that it&#39;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&#39;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
+      <description>Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it&#39;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&#39;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
     </item>
     
     <item>
@@ -1475,7 +1590,11 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sat, 13 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_i_did_on_my_holidays/</guid>
-      <description>And now, a post for my long-neglected, less technical readers.I took a week off in July to try and avoid that Oh My God I Missed Summer Again feeling. Granted, it&#39;s easy to get that in the UK even if you&#39;re not stuck in an office the entire time.Really this is just an excuse to post some photos on the blog.MondayHopped on the bike and explored from Kensington to Westminster.Felt distinctly smug when I grabbed my lunch from Victoria amongst all the less fortunate people who had to go back to their offices.</description>
+      <description>And now, a post for my long-neglected, less technical readers.
+I took a week off in July to try and avoid that Oh My God I Missed Summer Again feeling. Granted, it&#39;s easy to get that in the UK even if you&#39;re not stuck in an office the entire time.
+Really this is just an excuse to post some photos on the blog.
+Monday
+Hopped on the bike and explored from Kensington to Westminster.</description>
     </item>
     
     <item>
@@ -1484,7 +1603,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don&#39;t really get, I&#39;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.</description>
+      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.</description>
     </item>
     
     <item>
@@ -1493,7 +1612,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
+      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
     </item>
     
     <item>
@@ -1502,7 +1622,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good articledescribing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
+      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.
+I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.
+These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
     </item>
     
     <item>
@@ -1511,7 +1633,12 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 12 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_answer_to_one_of_the_search_terms_which_led_to_my_blog/</guid>
-      <description>&amp;hellip;&amp;ldquo;what do female programmers look like&amp;rdquo;:Well, sometimes&amp;hellip;If there are any girl programmers out there who are interested in being part of a montage showing who we are, I&#39;d be dead (see what I did there&amp;hellip;?) interested in putting us all on one page. And not just because I&#39;m narcissistic. Although that helps.</description>
+      <description>&amp;hellip;&amp;ldquo;what do female programmers look like&amp;rdquo;:
+
+
+
+Well, sometimes&amp;hellip;
+If there are any girl programmers out there who are interested in being part of a montage showing who we are, I&#39;d be dead (see what I did there&amp;hellip;?) interested in putting us all on one page. And not just because I&#39;m narcissistic. Although that helps.</description>
     </item>
     
     <item>
@@ -1520,7 +1647,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/</guid>
-      <description>So now I&#39;ve covered the ring bufferitself, readingfrom it and writingto it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;vedone some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
+      <description>So now I&#39;ve covered the ring buffer itself, reading from it and writing to it.
+Logically the next thing to do is to wire everything up together.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
     </item>
     
     <item>
@@ -1529,7 +1658,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 04 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/</guid>
-      <description></description>
+      <description>This is the missing piece in the end-to-end view of the Disruptor. &amp;nbsp;Brace yourselves, it&#39;s quite long. &amp;nbsp;But I decided to keep it in a single blog so you could have the context in one place.
+The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
+ProducerBarriers
+The Disruptor code has interfaces and helper classes for the Consumers, but there&#39;s no interface for your producer, the thing that writes to the ring buffer.</description>
     </item>
     
     <item>
@@ -1538,7 +1670,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/</guid>
-      <description>The next in the series of understanding the Disruptor patterndeveloped at LMAX.After the last postwe all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.ConsumerBarriers and ConsumersI&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
+      <description>The next in the series of understanding the Disruptor pattern developed at LMAX.
+After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.
+ConsumerBarriers and Consumers
+I&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
     </item>
     
     <item>
@@ -1547,7 +1682,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.On the site you can download a technical articleexplaining what the Disruptor is and why it&#39;s so clever and fast.</description>
+      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
+On the site you can download a technical article explaining what the Disruptor is and why it&#39;s so clever and fast.</description>
     </item>
     
     <item>
@@ -1556,7 +1692,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</guid>
-      <description>Remember I posted about having to write .NET?Well, the code and the tutorialare available for you, my lucky readers, to rip to piecesview.I am not the only person responsible for this code though, so be kind.</description>
+      <description>Remember I posted about having to write .NET?
+Well, the code and the tutorial are available for you, my lucky readers, to rip to pieces view.
+I am not the only person responsible for this code though, so be kind.</description>
     </item>
     
     <item>
@@ -1565,7 +1703,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 14 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/vote_for_the_ljc/</guid>
-      <description>I nominated LMAXfor a couple of JAX Innovation Awards, but unfortunately we did not get shortlisted :(However, the London Java Communitydid! So if you have a second please vote for the LJC for Top Java Ambassador</description>
+      <description>I nominated LMAX for a couple of JAX Innovation Awards, but unfortunately we did not get shortlisted :(
+
+However, the London Java Community did! So if you have a second please vote for the LJC for Top Java Ambassador</description>
     </item>
     
     <item>
@@ -1574,7 +1714,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 12 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/stac_london_summit/</guid>
-      <description>On Wednesday I tagged along to the STAC London Summitto provide backup for Mike, who was on the &amp;ldquo;The Future of Messaging Middleware&amp;rdquo; panel.The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &amp;ldquo;users&amp;rdquo;, Citihub and LMAX. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.</description>
+      <description>On Wednesday I tagged along to the STAC London Summit to provide backup for Mike, who was on the &amp;ldquo;The Future of Messaging Middleware&amp;rdquo; panel.
+The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &amp;ldquo;users&amp;rdquo;, Citihub and LMAX. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.</description>
     </item>
     
     <item>
@@ -1583,7 +1724,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_public_appearance/</guid>
-      <description>I&#39;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&#39;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&#39;s postgives a little more background on the subject.Another LMAXLJC member Mikewill also be giving a lightning talk, on Project Coin.</description>
+      <description>I&#39;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&#39;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&#39;s post gives a little more background on the subject.
+Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.</description>
     </item>
     
     <item>
@@ -1592,7 +1734,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 23 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_around_a_bit/</guid>
-      <description>I&#39;m honoured to now be listed on three aggregated blog feeds:The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&#39;s on to try and write useful stuff. Oh OK, I&#39;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
+      <description>I&#39;m honoured to now be listed on three aggregated blog feeds:
+The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&#39;s on to try and write useful stuff. Oh OK, I&#39;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -1601,7 +1744,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.</description>
+      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
+All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
+Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
     </item>
     
     <item>
@@ -1610,7 +1755,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 16 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_london_java_community_elected_to_the_jcp_seee_executive_committee/</guid>
-      <description>As an associate member of the London Java Community(LJC), I&#39;m very pleased with the news that we won an Open seat on the Java SE/EE executive committee. The resultsshow that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &amp;ldquo;landslide&amp;rdquo;.It&#39;s quite exciting to be one of the two user groups involved. We hope to balance some of the larger corporate organisations, we&#39;re the voice of real life Java developers who use the language every day, for enterprise development or open source projects.</description>
+      <description>As an associate member of the London Java Community (LJC), I&#39;m very pleased with the news that we won an Open seat on the Java SE/EE executive committee. The results show that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &amp;ldquo;landslide&amp;rdquo;.
+It&#39;s quite exciting to be one of the two user groups involved.</description>
     </item>
     
     <item>
@@ -1619,7 +1765,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 26 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/cyclist_tribes/</guid>
-      <description>Living and working in central London, you quickly learn that the fastest way around town is to cycle.My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.</description>
+      <description>Living and working in central London, you quickly learn that the fastest way around town is to cycle.
+My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.</description>
     </item>
     
     <item>
@@ -1628,7 +1775,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 18 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/tradetech_2011__not_like_a_developer_conference/</guid>
-      <description>I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.The fascinating thing to me was how different this is from the sorts of technology conferences I&#39;ve been to. For example, I popped into JAXthis week (albeit in the evening for drinks). At technology conferences (&amp;lt;gross-generalisation&amp;gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.</description>
+      <description>I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.
+The fascinating thing to me was how different this is from the sorts of technology conferences I&#39;ve been to. For example, I popped into JAX this week (albeit in the evening for drinks). At technology conferences (&amp;lt;gross-generalisation&amp;gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.</description>
     </item>
     
     <item>
@@ -1637,7 +1785,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 12 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_horizontal_and_vertical_centring/</guid>
-      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&#39;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&#39;t &amp;ldquo;Centring&amp;rdquo; just look wrong?Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&#39;t.</description>
+      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&#39;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&#39;t &amp;ldquo;Centring&amp;rdquo; just look wrong?
+Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&#39;t.</description>
     </item>
     
     <item>
@@ -1646,7 +1795,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 04 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_to_show_your_employees_how_much_you_hate_them/</guid>
-      <description>Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I&#39;ve had the dubious honour of working in a variety of environments.Today I will teach you, the employer, how to show your staff just how much you hate them.The Kitchen Is Not For Eating InSince eating and drinking is unfortunately a fundamental part of being human and staying alive, you will need to provide your staff with a space that pretends to address these needs.</description>
+      <description>Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I&#39;ve had the dubious honour of working in a variety of environments.
+Today I will teach you, the employer, how to show your staff just how much you hate them.
+The Kitchen Is Not For Eating In
+Since eating and drinking is unfortunately a fundamental part of being human and staying alive, you will need to provide your staff with a space that pretends to address these needs.</description>
     </item>
     
     <item>
@@ -1655,7 +1807,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/for_those_who_might_want_to_make_the_leap_from_developer_to_architect/</guid>
-      <description>The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &amp;ldquo;the beach&amp;rdquo; already.It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with Marc McNeill. Simon Brown at Coding the Architectureis much better at talking about this stuff than I am, but I need to update the blog with something!1. Ask dumb questionsSomeone&#39;s called you in because they want your help, and presumably if their problem was simple they would have fixed it already.</description>
+      <description>The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &amp;ldquo;the beach&amp;rdquo; already.
+It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with Marc McNeill. Simon Brown at Coding the Architecture is much better at talking about this stuff than I am, but I need to update the blog with something!</description>
     </item>
     
     <item>
@@ -1664,7 +1817,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_cross_browser_table_border_behaviour/</guid>
-      <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.Today&#39;s gotcha is table borders.Yes, yes, I said don&#39;t use tables. What I means is, don&#39;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
+      <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.
+Today&#39;s gotcha is table borders.
+Yes, yes, I said don&#39;t use tables. What I means is, don&#39;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.
+But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
     </item>
     
     <item>
@@ -1673,7 +1829,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Thu, 27 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_experiences_with_android_development/</guid>
-      <description>Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&#39;d try my hand at developing an Android application this week.I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&#39;ve got more than 10 years Java experience, but any UI for the applications I&#39;ve worked on was always a web UI.</description>
+      <description>Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&#39;d try my hand at developing an Android application this week.
+I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&#39;ve got more than 10 years Java experience, but any UI for the applications I&#39;ve worked on was always a web UI.</description>
     </item>
     
     <item>
@@ -1682,7 +1839,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_column_layout_using_css/</guid>
-      <description>This is a continuation of my series of CSShints / tips / cheats for developers (and other technical-but-not-UI people).The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&#39;s example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
+      <description>This is a continuation of my series of CSS hints / tips / cheats for developers (and other technical-but-not-UI people).
+The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.
+Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&#39;s example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
     </item>
     
     <item>
@@ -1691,7 +1850,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 24 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_changing_the_image_of_programmers/</guid>
-      <description>Gah!! This is exactlywhat I was talking about- it&#39;s pink, it mentions shoes, and it&#39;s about as patronising as you can get.Would the chart be different if your possible outcomes were Bill Gates, Steve Jobs, Mark Zuckerberg, and Linus Torvalds? I bet for a start it wouldn&#39;t mention Jimmy Choos or choice of handbags. And it probably wouldn&#39;t be in baby blue either.Which leads me nicely onto the next subject I have strong opinions on: Role models.</description>
+      <description>Gah!! This is exactly what I was talking about - it&#39;s pink, it mentions shoes, and it&#39;s about as patronising as you can get.
+Would the chart be different if your possible outcomes were Bill Gates, Steve Jobs, Mark Zuckerberg, and Linus Torvalds? I bet for a start it wouldn&#39;t mention Jimmy Choos or choice of handbags. And it probably wouldn&#39;t be in baby blue either.
+Which leads me nicely onto the next subject I have strong opinions on: Role models.</description>
     </item>
     
     <item>
@@ -1700,7 +1861,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/gwt_why_verticalpanel_is_evil/</guid>
-      <description>At LMAXwe adopted Google Web Toolkitpretty early on. One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.</description>
+      <description>At LMAX we adopted Google Web Toolkit pretty early on. One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.</description>
     </item>
     
     <item>
@@ -1709,7 +1870,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Thu, 20 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_how_not_to_target_girl_geeks/</guid>
-      <description>(First, let me say this post contains opinion, stereotyping and sweeping generalisations. But that&#39;s sort of the point. Also I don&#39;t pretend for one moment to speak for all girl programmers, I can only speak for myself)When I first started this blog, I wanted to just post &amp;ldquo;proper&amp;rdquo; technical information. I wanted to prove that there are girls out there doing &amp;ldquo;real&amp;rdquo; programming.I specifically didn&#39;t want to talk about my gender.</description>
+      <description>(First, let me say this post contains opinion, stereotyping and sweeping generalisations. But that&#39;s sort of the point. Also I don&#39;t pretend for one moment to speak for all girl programmers, I can only speak for myself)
+When I first started this blog, I wanted to just post &amp;ldquo;proper&amp;rdquo; technical information. I wanted to prove that there are girls out there doing &amp;ldquo;real&amp;rdquo; programming.
+I specifically didn&#39;t want to talk about my gender.</description>
     </item>
     
     <item>
@@ -1718,7 +1881,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_the_joy_of_floats/</guid>
-      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&#39;re as afflicted with NADDas I am.Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It&#39;s primarily aimed at developers, although I would hope it&#39;s comprehensible to a range of tech-savvy people.(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).</description>
+      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&#39;re as afflicted with NADD as I am.
+Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It&#39;s primarily aimed at developers, although I would hope it&#39;s comprehensible to a range of tech-savvy people.
+(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).</description>
     </item>
     
     <item>
@@ -1727,7 +1892,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 18 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/fogbugs_and_kiln_world_tour/</guid>
-      <description>Last Thursday I was fortunate enough to get a place on the FogBugz and Kiln World Tour. I booked it before I moved jobs, and I&#39;ll be honest I had no real interest in the software. I&#39;ve been reading Joel&#39;s books and blogs since my friend Brent bought me Joel on Softwareand made me read it (he had the foresight to know I&#39;d want to hang on to his copy if he&#39;d lent it to me!</description>
+      <description>Last Thursday I was fortunate enough to get a place on the FogBugz and Kiln World Tour. I booked it before I moved jobs, and I&#39;ll be honest I had no real interest in the software. I&#39;ve been reading Joel&#39;s books and blogs since my friend Brent bought me Joel on Software and made me read it (he had the foresight to know I&#39;d want to hang on to his copy if he&#39;d lent it to me!</description>
     </item>
     
     <item>
@@ -1754,7 +1919,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 09 Jul 2010 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/lean_software_and_systems_conference_2010_bletchley_park/</guid>
-      <description>This is just a summary of the points I took from the Lean conference at Bletchley. They all need expanding, this is just the stuff that struck me that I want to record.A Kanban Multiverse – Karl ScotlandPoints from his talkMeaning = visualise; interact; persistKanban provides the translation between communitiesRemove columns from the Kanban board - no more chucking things over the wall to peopleFlip charts for design modelsDots on cards for every day in dev, crosses for every day in testExploration of UI is part of the cardIdeas applicable for my projectAdd broken acceptance tests to the Kanban Board?</description>
+      <description>This is just a summary of the points I took from the Lean conference at Bletchley. They all need expanding, this is just the stuff that struck me that I want to record.
+A Kanban Multiverse – Karl Scotland
+Points from his talk
+Meaning = visualise; interact; persistKanban provides the translation between communitiesRemove columns from the Kanban board - no more chucking things over the wall to peopleFlip charts for design modelsDots on cards for every day in dev, crosses for every day in testExploration of UI is part of the cardIdeas applicable for my project</description>
     </item>
     
     <item>
@@ -1763,7 +1931,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 15 May 2009 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/comments_on_representations_of_our_industry/</guid>
-      <description>I have not (yet) seen the presentation this post is referring to. But I think many of the comments Ted makes are very valid, and our industry as a whole should occasionally stop and think. I&#39;ve seen Ted speak at QCon, and I&#39;ve had a lot of time for his comments ever since.I&#39;m aware that this blog is rapidly filling with comments about gender and perceptions and people-y stuff, when I originally wanted it to be a purely technical blog.</description>
+      <description>I have not (yet) seen the presentation this post is referring to. But I think many of the comments Ted makes are very valid, and our industry as a whole should occasionally stop and think. I&#39;ve seen Ted speak at QCon, and I&#39;ve had a lot of time for his comments ever since.
+I&#39;m aware that this blog is rapidly filling with comments about gender and perceptions and people-y stuff, when I originally wanted it to be a purely technical blog.</description>
     </item>
     
     <item>
@@ -1781,7 +1950,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 30 Mar 2009 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/sexism_in_it/</guid>
-      <description>Let&#39;s celebrate our IT women&amp;quot;Everyone&amp;quot; knows that there are more men than women in IT. That it&#39;s a &amp;quot;boys&amp;quot; job. Not a lot of people know that the first programmer was a woman. Not a lot of people realise the number of women in IT is DECREASING. And has been since the 80s. In a working world where I honestly believe that in general there are more opportunities for women (OK, inline with the other stuff I&#39;ve been reading I&#39;ll caveat this with white, middle-class women), it seems shocking that such a growth industry as IT is actually losing women, and appears unable to determine why, or stop the flow.</description>
+      <description>Let&#39;s celebrate our IT women
+&amp;quot;Everyone&amp;quot; knows that there are more men than women in IT. That it&#39;s a &amp;quot;boys&amp;quot; job. Not a lot of people know that the first programmer was a woman. Not a lot of people realise the number of women in IT is DECREASING. And has been since the 80s. In a working world where I honestly believe that in general there are more opportunities for women (OK, inline with the other stuff I&#39;ve been reading I&#39;ll caveat this with white, middle-class women), it seems shocking that such a growth industry as IT is actually losing women, and appears unable to determine why, or stop the flow.</description>
     </item>
     
     <item>
@@ -1790,7 +1960,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/scrum_but/</guid>
-      <description>Having experience Flaccid Scrum, I find this article interesting, and agree with most of it.I&#39;d also like to add though, that if you do the scrum practices (story cards, stand ups, retrospectives, etc) but don&#39;t buy into the fundamental principals, you will not succeed. And that means everyone on the team, not just the people in charge. In particular, if the team is not empowered, is not committing to the estimates and the iteration plan in its heart, and and does not trust, then you are probably better off using traditional processes.</description>
+      <description>Having experience Flaccid Scrum, I find this article interesting, and agree with most of it.
+I&#39;d also like to add though, that if you do the scrum practices (story cards, stand ups, retrospectives, etc) but don&#39;t buy into the fundamental principals, you will not succeed. And that means everyone on the team, not just the people in charge. In particular, if the team is not empowered, is not committing to the estimates and the iteration plan in its heart, and and does not trust, then you are probably better off using traditional processes.</description>
     </item>
     
     <item>
@@ -1808,7 +1979,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 16 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/gender_stereotyping/</guid>
-      <description>I&#39;m very interested in the subject of gender stereotyping, which probably isn&#39;t surprising as I&#39;m a girl in a predominantly male industry. And I like cars, and sports, and get irritated if people assume I&#39;m not &amp;quot;allowed&amp;quot; to be interested in these things.Far from being discriminated against, however, I find many people ask me why there aren&#39;t more women in the industry and what can be done to encourage girls into IT.</description>
+      <description>I&#39;m very interested in the subject of gender stereotyping, which probably isn&#39;t surprising as I&#39;m a girl in a predominantly male industry. And I like cars, and sports, and get irritated if people assume I&#39;m not &amp;quot;allowed&amp;quot; to be interested in these things.
+Far from being discriminated against, however, I find many people ask me why there aren&#39;t more women in the industry and what can be done to encourage girls into IT.</description>
     </item>
     
     <item>
@@ -1817,7 +1989,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Thu, 11 Dec 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nine_things_developers_want_more_than_money/</guid>
-      <description>Nine Things Developer Want More Than MoneyRead if you&#39;re a developer and wondering what&#39;s missing from your job.Read if you&#39;re a manager and you&#39;re looking to recruit the right types of developers. In particular be honest with yourself over whether your organisation is more aligned to &amp;quot;hygiene&amp;quot; or &amp;quot;motivation&amp;quot;. At least one of the poor job decisions I have made is because the role was mis-sold as one and turned out to be the other.</description>
+      <description>Nine Things Developer Want More Than Money
+Read if you&#39;re a developer and wondering what&#39;s missing from your job.
+Read if you&#39;re a manager and you&#39;re looking to recruit the right types of developers. In particular be honest with yourself over whether your organisation is more aligned to &amp;quot;hygiene&amp;quot; or &amp;quot;motivation&amp;quot;. At least one of the poor job decisions I have made is because the role was mis-sold as one and turned out to be the other.</description>
     </item>
     
     <item>
@@ -1835,7 +2009,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 08 Oct 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/amazing/</guid>
-      <description>Today, I found my own blog useful. I was configuring Spring validation on my new project, and had to remind myself how to do it. We configured validation on the new project in less than an hour, which beats the two days it took me to work out how to do it the first time.And I impressed one of my new work collegues. Apparently I am now the Spring Guru. Oooops.</description>
+      <description>Today, I found my own blog useful. I was configuring Spring validation on my new project, and had to remind myself how to do it. We configured validation on the new project in less than an hour, which beats the two days it took me to work out how to do it the first time.
+And I impressed one of my new work collegues. Apparently I am now the Spring Guru.</description>
     </item>
     
     <item>
@@ -1844,7 +2019,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 06 Oct 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/multiple_environment_configuration_in_maven/</guid>
-      <description>Today, I found this blog postvery useful.</description>
+      <description>Today, I found this blog post very useful.</description>
     </item>
     
     <item>
@@ -1862,7 +2037,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 30 Jul 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/job_hunting/</guid>
-      <description>I&#39;ve learnt a lot professionally and personally during my time here in New York, but the time has come to go back &amp;ldquo;home&amp;rdquo;.I&#39;ll be relocating to London in September. I guess it won&#39;t hurt to mention on here that I&#39;ll be looking for an exciting new job when I get back there. Check out my LinkedIn profileif you are in the market for a Java tech team lead.</description>
+      <description>I&#39;ve learnt a lot professionally and personally during my time here in New York, but the time has come to go back &amp;ldquo;home&amp;rdquo;.I&#39;ll be relocating to London in September. I guess it won&#39;t hurt to mention on here that I&#39;ll be looking for an exciting new job when I get back there. Check out my LinkedIn profile if you are in the market for a Java tech team lead.</description>
     </item>
     
     <item>
@@ -1871,7 +2046,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 21 May 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/scrum/</guid>
-      <description>I think the statement that struck me the most when I was on the Certified Scrum Master course was: the start of the project is when you know the least about what you&#39;re doing.Which of course is absolutely true.So why do we come up with extensive requirements, detailed design, and fixed plans at this point of time? We haven&#39;t put anything into place yet, we haven&#39;t played with the code, the customer hasn&#39;t seen anything of what we&#39;re promising to deliver.</description>
+      <description>I think the statement that struck me the most when I was on the Certified Scrum Master course was: the start of the project is when you know the least about what you&#39;re doing.
+Which of course is absolutely true.
+So why do we come up with extensive requirements, detailed design, and fixed plans at this point of time? We haven&#39;t put anything into place yet, we haven&#39;t played with the code, the customer hasn&#39;t seen anything of what we&#39;re promising to deliver.</description>
     </item>
     
     <item>
@@ -1880,7 +2057,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 20 May 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/bsc_hons_scjp_scwcd_csm/</guid>
-      <description></description>
+      <description>What are our thoughts on putting all the letters after your name in a CV/resume?&amp;nbsp;&amp;nbsp;
+Pretentious?&amp;nbsp; Or the only reasonable time to use all those letters?</description>
     </item>
     
     <item>
@@ -1898,7 +2076,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Thu, 17 Apr 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/metrics_and_incentives/</guid>
-      <description>Thisis a great example of what happens when you try to incentivise intelligent people on very simple metrics.They cheat.This was well described in Freakonomics, and something Mr On Softwarebangs on about regularly. It&#39;s clear that there isn&#39;t really a good answer to the problem - actually that&#39;s not true. The answer to the problem is to have everyone working in a job they are happy in and proud of, one where they are intrinsically motivated, and give them enough information to allow them to make the correct calls when it comes to prioritising work.</description>
+      <description>This is a great example of what happens when you try to incentivise intelligent people on very simple metrics.
+They cheat.
+This was well described in Freakonomics, and something Mr On Software bangs on about regularly. It&#39;s clear that there isn&#39;t really a good answer to the problem - actually that&#39;s not true. The answer to the problem is to have everyone working in a job they are happy in and proud of, one where they are intrinsically motivated, and give them enough information to allow them to make the correct calls when it comes to prioritising work.</description>
     </item>
     
     <item>
@@ -1907,7 +2087,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 16 Apr 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/certification/</guid>
-      <description>I know there are arguments against certification, and I definitely think that using certifictionto determine whether to interview or recruit people is downright daft, because frankly learning a bunch of answers isn&#39;t all that difficult. But I personally find that completing a certification really helps to round out my knowledge in an area. I guess my thoughts are that a fairly recent certification combined with the work experience to back it up is something that would make your CV more interesting to recruiters.</description>
+      <description>I know there are arguments against certification, and I definitely think that using certifiction to determine whether to interview or recruit people is downright daft, because frankly learning a bunch of answers isn&#39;t all that difficult. But I personally find that completing a certification really helps to round out my knowledge in an area. I guess my thoughts are that a fairly recent certification combined with the work experience to back it up is something that would make your CV more interesting to recruiters.</description>
     </item>
     
     <item>
@@ -1916,7 +2096,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 14 Apr 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/aop_caching/</guid>
-      <description></description>
+      <description>Today I would like to document my experiences implementing caching with Aspect Oriented Programming (AOP) and annotations.&amp;nbsp;
+
+Background context&amp;nbsp;
+Caching may need to be implemented in your application for a number of reasons. OK, actually usually only one: performance. I would like to add my own tuppence-worth to this though - if you can get away without caching (specifically in application that provide the ability to view and change data) then do so, unless you are using a cache implementation that will handle as much of the pain as possible for you.</description>
     </item>
     
     <item>
@@ -1943,7 +2126,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 16 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/validation_with_spring_modules_validation/</guid>
-      <description>So if java generics slightly disappointed me lately, what have I found cool?I&#39;m currently working on a web application using Spring MVC, which probably doesn&#39;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&#39;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge ifstatement.</description>
+      <description>So if java generics slightly disappointed me lately, what have I found cool?I&#39;m currently working on a web application using Spring MVC, which probably doesn&#39;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&#39;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge if statement.</description>
     </item>
     
     <item>
@@ -1952,7 +2135,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sat, 07 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_specifics/</guid>
-      <description>When I first started playing with Java 1.5, I thought genericswere the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code:List list = new ArrayList();list.add(new Integer(1));Integer integer = (Integer)list.get(0);for (Iterator i = list.iterator(); i.hasNext(); ) {Integer number = (Integer)i.next();number.intValue();}And the new:List&amp;lt;Integer&amp;gt; list = new ArrayList&amp;lt;Integer&amp;gt;();list.</description>
+      <description>When I first started playing with Java 1.5, I thought generics were the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code:	List list = new ArrayList();	list.add(new Integer(1));	Integer integer = (Integer)list.get(0);	for (Iterator i = list.iterator(); i.hasNext(); ) {	Integer number = (Integer)i.</description>
     </item>
     
     <item>
@@ -1961,7 +2144,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 23 Apr 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/excuses_excuses/</guid>
-      <description>Isn&#39;t a shame that actual day-to-day work always seems to get in the way of progress? How you&#39;re always too busy fire-fighting to actually perform the critical thing that might actually improve affairs.All this is basically a setup for a roundabout excuse for why this blog has been neglected so shortly after it was begun. I was a bit too busy doing the day job.Still, people like Joeland Scottmanage regular pronouncements and I&#39;m sure they&#39;re much busier than I!</description>
+      <description>Isn&#39;t a shame that actual day-to-day work always seems to get in the way of progress? How you&#39;re always too busy fire-fighting to actually perform the critical thing that might actually improve affairs.
+All this is basically a setup for a roundabout excuse for why this blog has been neglected so shortly after it was begun. I was a bit too busy doing the day job.
+Still, people like Joel and Scott manage regular pronouncements and I&#39;m sure they&#39;re much busier than I!</description>
     </item>
     
     <item>
@@ -1989,7 +2174,7 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Wed, 21 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/certifiction/</guid>
-      <description>From spellfeckertoday:Certifiction (n.) : a professional endorsement which states only that the holder had the money to pay for the exam.&amp;hellip;which reminded me of this debate, particularly the first comment.</description>
+      <description>From spellfecker today:Certifiction (n.) : a professional endorsement which states only that the holder had the money to pay for the exam.&amp;hellip;which reminded me of this debate, particularly the first comment.</description>
     </item>
     
     <item>
@@ -1998,7 +2183,7 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Tue, 20 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/continuing_the_agile_froth/</guid>
-      <description>&amp;hellip;there are a number of points in this interviewwith Paul Oldfield which are interesting to consider when thinking about &amp;ldquo;doing Agile right&amp;rdquo;. It seems to be compatible with my &amp;ldquo;people over process&amp;rdquo; view - I&#39;m not stating that having good people negates the need for any form of process or discipline, I have seen that this is simply not the case. I do however think that agile techniques in particular rely heavily upon the &amp;ldquo;right&amp;rdquo; people / team, for some nebulous definition of &amp;ldquo;right&amp;rdquo;.</description>
+      <description>&amp;hellip;there are a number of points in this interview with Paul Oldfield which are interesting to consider when thinking about &amp;ldquo;doing Agile right&amp;rdquo;. It seems to be compatible with my &amp;ldquo;people over process&amp;rdquo; view - I&#39;m not stating that having good people negates the need for any form of process or discipline, I have seen that this is simply not the case. I do however think that agile techniques in particular rely heavily upon the &amp;ldquo;right&amp;rdquo; people / team, for some nebulous definition of &amp;ldquo;right&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -2007,7 +2192,7 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Tue, 20 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference/</guid>
-      <description></description>
+      <description>Investigate Maven 2Have a glance at TestNGPotentially play with JMock for current testing frameworkPlay with GWTSign up for Pragmatic Architect eventCheck out JavaBlackBelt site - what is provided, and what are the feelings of professionals (or, more importantly, recruiters) towards these qualifications?Look into getting Visual Studio .NET again so you can have a go at GUI development in it.Go to technorati. Investigate JUnit 4 changes/improvements</description>
     </item>
     
     <item>
@@ -2016,7 +2201,8 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Mon, 19 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_initial_thoughts/</guid>
-      <description></description>
+      <description>Things I took out of QCon:
+I want to play with Ajax.&amp;nbsp; Maybe I&#39;ve &#34;grown out&#34; of front end development but that doesn&#39;t prevent it from being (potentially) extremely coolSelenium looks like a good place to start for automated website testingIt can take up to 7 years to move away from a legacy architecture.&amp;nbsp; Depressing, but at least it shows it can be done and it&#39;s worth the effortI&#39;m going to become a certified Scrum Master Mistress.</description>
     </item>
     
     <item>
@@ -2025,7 +2211,7 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Sun, 18 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london/</guid>
-      <description>Last week saw the first QCon Londonconference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.
+      <description>Last week saw the first QCon London conference, an event &amp;ldquo;designed with the technical depth and enterprise focus of interest to technical team leads, architects, and project managers&amp;rdquo;.
 The conference consisted of two days of tutorials followed by three days of talks covering technologies, vendor products, and processes. In addition there were numerous &amp;ldquo;networking&amp;rdquo; opportunities with plenty of break times to both absorb information and meet other people, plus evening events.</description>
     </item>
     

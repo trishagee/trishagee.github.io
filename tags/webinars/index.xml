@@ -26,7 +26,7 @@
       <pubDate>Wed, 05 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb/</guid>
-      <description>Hot on the heels of my very first MongoDB webinar,I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10genwe&#39;ve been running a series of webinarsaround using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24- John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.video platformvideo managementvideo solutionsvideo player(Slides and webinar available here- and you&#39;re not going deaf, the sound doesn&#39;t start until about 3:44 into the video)It was a fun webinar to do, actually - I didn&#39;t know anything about C24&#39;s iOtool, so I learnt quite a lot as I watched John navigate the demo.</description>
+      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&#39;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
     </item>
     
     <item>
@@ -35,7 +35,8 @@
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_official_mongodb_appearance/</guid>
-      <description>Yesterday I had the nerve-wrackingdubiousalarminggreat pleasure of presenting my first official MongoDB-shaped talk. This was in the form of a webinar, which is an interesting and different format.I naïvely assumed it would be like a presentation but without the visible hand-waving, but it isn&#39;t really. For a start, you can&#39;t easily poll the audience to find out what their level of experience is, and taking questions is quite tricky, even with the technology to support it.</description>
+      <description>Yesterday I had the nerve-wracking dubious alarming great pleasure of presenting my first official MongoDB-shaped talk. This was in the form of a webinar, which is an interesting and different format.
+I naïvely assumed it would be like a presentation but without the visible hand-waving, but it isn&#39;t really. For a start, you can&#39;t easily poll the audience to find out what their level of experience is, and taking questions is quite tricky, even with the technology to support it.</description>
     </item>
     
   </channel>

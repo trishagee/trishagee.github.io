@@ -186,7 +186,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      My recent slow-down in posting is because I've been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don't intuitively grasp the subject. I guess I don't have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don't really get, I'm going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.
+      My recent slow-down in posting is because I've been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don't intuitively grasp the subject. I guess I don't have the deep background knowledge required to fully understand.
     </div>
   </div>
 
@@ -206,7 +206,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We mention the phrase Mechanical Sympathy quite a lot, in fact it's even Martin's blog title. It's about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it's the next thing I thought I would tackle.
+      We mention the phrase Mechanical Sympathy quite a lot, in fact it's even Martin's blog title. It's about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it's the next thing I thought I would tackle.
     </div>
   </div>
 
@@ -226,7 +227,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Martin Fowler has written a really good articledescribing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&quot;.I'm working up to answering that. I'm currently on question number two: &ldquo;Why is it so fast?&quot;.These questions do go hand in hand, however, because I can't talk about why it's fast without saying what it does, and I can't talk about what it is without saying why it is that way.
+      Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&quot;.
+I'm working up to answering that. I'm currently on question number two: &ldquo;Why is it so fast?&quot;.
+These questions do go hand in hand, however, because I can't talk about why it's fast without saying what it does, and I can't talk about what it is without saying why it is that way.
     </div>
   </div>
 
@@ -246,7 +249,12 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      &hellip;&ldquo;what do female programmers look like&rdquo;:Well, sometimes&hellip;If there are any girl programmers out there who are interested in being part of a montage showing who we are, I'd be dead (see what I did there&hellip;?) interested in putting us all on one page. And not just because I'm narcissistic. Although that helps.
+      &hellip;&ldquo;what do female programmers look like&rdquo;:
+
+
+
+Well, sometimes&hellip;
+If there are any girl programmers out there who are interested in being part of a montage showing who we are, I'd be dead (see what I did there&hellip;?) interested in putting us all on one page. And not just because I'm narcissistic. Although that helps.
     </div>
   </div>
 
@@ -266,7 +274,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      So now I've covered the ring bufferitself, readingfrom it and writingto it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. I've talked about consumers in a simple situation. Multiple consumers can get a little more involved. We'vedone some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
+      So now I've covered the ring buffer itself, reading from it and writing to it.
+Logically the next thing to do is to wire everything up together.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. I've talked about consumers in a simple situation. Multiple consumers can get a little more involved. We've done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
     </div>
   </div>
 
@@ -286,7 +296,10 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      
+      This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.
+The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
+ProducerBarriers
+The Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.
     </div>
   </div>
 
@@ -306,7 +319,10 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      The next in the series of understanding the Disruptor patterndeveloped at LMAX.After the last postwe all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you're using the Disruptor.ConsumerBarriers and ConsumersI'm going to approach this slightly backwards, because it's probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
+      The next in the series of understanding the Disruptor pattern developed at LMAX.
+After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you're using the Disruptor.
+ConsumerBarriers and Consumers
+I'm going to approach this slightly backwards, because it's probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
     </div>
   </div>
 
@@ -326,7 +342,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we've realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We've come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.On the site you can download a technical articleexplaining what the Disruptor is and why it's so clever and fast.
+      Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we've realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We've come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
+On the site you can download a technical article explaining what the Disruptor is and why it's so clever and fast.
     </div>
   </div>
 
@@ -346,7 +363,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Remember I posted about having to write .NET?Well, the code and the tutorialare available for you, my lucky readers, to rip to piecesview.I am not the only person responsible for this code though, so be kind.
+      Remember I posted about having to write .NET?
+Well, the code and the tutorial are available for you, my lucky readers, to rip to pieces view.
+I am not the only person responsible for this code though, so be kind.
     </div>
   </div>
 
@@ -366,7 +385,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I nominated LMAXfor a couple of JAX Innovation Awards, but unfortunately we did not get shortlisted :(However, the London Java Communitydid! So if you have a second please vote for the LJC for Top Java Ambassador
+      I nominated LMAX for a couple of JAX Innovation Awards, but unfortunately we did not get shortlisted :(
+
+However, the London Java Community did! So if you have a second please vote for the LJC for Top Java Ambassador
     </div>
   </div>
 
@@ -386,7 +407,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      On Wednesday I tagged along to the STAC London Summitto provide backup for Mike, who was on the &ldquo;The Future of Messaging Middleware&rdquo; panel.The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &ldquo;users&rdquo;, Citihub and LMAX. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.
+      On Wednesday I tagged along to the STAC London Summit to provide backup for Mike, who was on the &ldquo;The Future of Messaging Middleware&rdquo; panel.
+The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &ldquo;users&rdquo;, Citihub and LMAX. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.
     </div>
   </div>
 
@@ -406,7 +428,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I'm finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I'm going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin's postgives a little more background on the subject.Another LMAXLJC member Mikewill also be giving a lightning talk, on Project Coin.
+      I'm finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I'm going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin's post gives a little more background on the subject.
+Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.
     </div>
   </div>
 
@@ -426,7 +449,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I'm honoured to now be listed on three aggregated blog feeds:The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure's on to try and write useful stuff. Oh OK, I'll settle for &ldquo;entertaining&rdquo;.
+      I'm honoured to now be listed on three aggregated blog feeds:
+The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure's on to try and write useful stuff. Oh OK, I'll settle for &ldquo;entertaining&rdquo;.
     </div>
   </div>
 
@@ -446,7 +470,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I have been struggling with .NET. Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?Trisha's Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.
+      I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
+All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
+Trisha's Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:
     </div>
   </div>
 
@@ -466,7 +492,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      As an associate member of the London Java Community(LJC), I'm very pleased with the news that we won an Open seat on the Java SE/EE executive committee. The resultsshow that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &ldquo;landslide&rdquo;.It's quite exciting to be one of the two user groups involved. We hope to balance some of the larger corporate organisations, we're the voice of real life Java developers who use the language every day, for enterprise development or open source projects.
+      As an associate member of the London Java Community (LJC), I'm very pleased with the news that we won an Open seat on the Java SE/EE executive committee. The results show that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &ldquo;landslide&rdquo;.
+It's quite exciting to be one of the two user groups involved.
     </div>
   </div>
 
@@ -486,7 +513,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Living and working in central London, you quickly learn that the fastest way around town is to cycle.My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.
+      Living and working in central London, you quickly learn that the fastest way around town is to cycle.
+My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.
     </div>
   </div>
 
@@ -506,7 +534,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.The fascinating thing to me was how different this is from the sorts of technology conferences I've been to. For example, I popped into JAXthis week (albeit in the evening for drinks). At technology conferences (&lt;gross-generalisation&gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.
+      I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.
+The fascinating thing to me was how different this is from the sorts of technology conferences I've been to. For example, I popped into JAX this week (albeit in the evening for drinks). At technology conferences (&lt;gross-generalisation&gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.
     </div>
   </div>
 
@@ -526,7 +555,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I'm British. But it gets really confusing because you have to use the American spelling in the code. And doesn't &ldquo;Centring&rdquo; just look wrong?Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn't.
+      First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I'm British. But it gets really confusing because you have to use the American spelling in the code. And doesn't &ldquo;Centring&rdquo; just look wrong?
+Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn't.
     </div>
   </div>
 
@@ -546,7 +576,10 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I've had the dubious honour of working in a variety of environments.Today I will teach you, the employer, how to show your staff just how much you hate them.The Kitchen Is Not For Eating InSince eating and drinking is unfortunately a fundamental part of being human and staying alive, you will need to provide your staff with a space that pretends to address these needs.
+      Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I've had the dubious honour of working in a variety of environments.
+Today I will teach you, the employer, how to show your staff just how much you hate them.
+The Kitchen Is Not For Eating In
+Since eating and drinking is unfortunately a fundamental part of being human and staying alive, you will need to provide your staff with a space that pretends to address these needs.
     </div>
   </div>
 
@@ -566,7 +599,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &ldquo;the beach&rdquo; already.It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with Marc McNeill. Simon Brown at Coding the Architectureis much better at talking about this stuff than I am, but I need to update the blog with something!1. Ask dumb questionsSomeone's called you in because they want your help, and presumably if their problem was simple they would have fixed it already.
+      The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &ldquo;the beach&rdquo; already.
+It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with Marc McNeill. Simon Brown at Coding the Architecture is much better at talking about this stuff than I am, but I need to update the blog with something!
     </div>
   </div>
 
@@ -586,7 +620,10 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.Today's gotcha is table borders.Yes, yes, I said don't use tables. What I means is, don't use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.But you should know that even when you use strict mode, Internet Explorer has slightly&hellip; eccentric&hellip; rendering behaviour for tables.
+      One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.
+Today's gotcha is table borders.
+Yes, yes, I said don't use tables. What I means is, don't use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.
+But you should know that even when you use strict mode, Internet Explorer has slightly&hellip; eccentric&hellip; rendering behaviour for tables.
     </div>
   </div>
 
@@ -606,7 +643,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I'd try my hand at developing an Android application this week.I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I've got more than 10 years Java experience, but any UI for the applications I've worked on was always a web UI.
+      Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I'd try my hand at developing an Android application this week.
+I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I've got more than 10 years Java experience, but any UI for the applications I've worked on was always a web UI.
     </div>
   </div>
 
@@ -626,7 +664,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      This is a continuation of my series of CSShints / tips / cheats for developers (and other technical-but-not-UI people).The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today's example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.
+      This is a continuation of my series of CSS hints / tips / cheats for developers (and other technical-but-not-UI people).
+The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.
+Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today's example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.
     </div>
   </div>
 
@@ -646,7 +686,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Gah!! This is exactlywhat I was talking about- it's pink, it mentions shoes, and it's about as patronising as you can get.Would the chart be different if your possible outcomes were Bill Gates, Steve Jobs, Mark Zuckerberg, and Linus Torvalds? I bet for a start it wouldn't mention Jimmy Choos or choice of handbags. And it probably wouldn't be in baby blue either.Which leads me nicely onto the next subject I have strong opinions on: Role models.
+      Gah!! This is exactly what I was talking about - it's pink, it mentions shoes, and it's about as patronising as you can get.
+Would the chart be different if your possible outcomes were Bill Gates, Steve Jobs, Mark Zuckerberg, and Linus Torvalds? I bet for a start it wouldn't mention Jimmy Choos or choice of handbags. And it probably wouldn't be in baby blue either.
+Which leads me nicely onto the next subject I have strong opinions on: Role models.
     </div>
   </div>
 
@@ -666,7 +708,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      At LMAXwe adopted Google Web Toolkitpretty early on. One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.
+      At LMAX we adopted Google Web Toolkit pretty early on. One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.
     </div>
   </div>
 
@@ -686,7 +728,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      (First, let me say this post contains opinion, stereotyping and sweeping generalisations. But that's sort of the point. Also I don't pretend for one moment to speak for all girl programmers, I can only speak for myself)When I first started this blog, I wanted to just post &ldquo;proper&rdquo; technical information. I wanted to prove that there are girls out there doing &ldquo;real&rdquo; programming.I specifically didn't want to talk about my gender.
+      (First, let me say this post contains opinion, stereotyping and sweeping generalisations. But that's sort of the point. Also I don't pretend for one moment to speak for all girl programmers, I can only speak for myself)
+When I first started this blog, I wanted to just post &ldquo;proper&rdquo; technical information. I wanted to prove that there are girls out there doing &ldquo;real&rdquo; programming.
+I specifically didn't want to talk about my gender.
     </div>
   </div>
 
@@ -706,7 +750,9 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you're as afflicted with NADDas I am.Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It's primarily aimed at developers, although I would hope it's comprehensible to a range of tech-savvy people.(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).
+      As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you're as afflicted with NADD as I am.
+Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It's primarily aimed at developers, although I would hope it's comprehensible to a range of tech-savvy people.
+(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).
     </div>
   </div>
 
@@ -726,7 +772,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Last Thursday I was fortunate enough to get a place on the FogBugz and Kiln World Tour. I booked it before I moved jobs, and I'll be honest I had no real interest in the software. I've been reading Joel's books and blogs since my friend Brent bought me Joel on Softwareand made me read it (he had the foresight to know I'd want to hang on to his copy if he'd lent it to me!
+      Last Thursday I was fortunate enough to get a place on the FogBugz and Kiln World Tour. I booked it before I moved jobs, and I'll be honest I had no real interest in the software. I've been reading Joel's books and blogs since my friend Brent bought me Joel on Software and made me read it (he had the foresight to know I'd want to hang on to his copy if he'd lent it to me!
     </div>
   </div>
 

@@ -17,7 +17,8 @@
       <pubDate>Tue, 12 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_horizontal_and_vertical_centring/</guid>
-      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&#39;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&#39;t &amp;ldquo;Centring&amp;rdquo; just look wrong?Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&#39;t.</description>
+      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&#39;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&#39;t &amp;ldquo;Centring&amp;rdquo; just look wrong?
+Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&#39;t.</description>
     </item>
     
     <item>
@@ -26,7 +27,10 @@
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_cross_browser_table_border_behaviour/</guid>
-      <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.Today&#39;s gotcha is table borders.Yes, yes, I said don&#39;t use tables. What I means is, don&#39;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
+      <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.
+Today&#39;s gotcha is table borders.
+Yes, yes, I said don&#39;t use tables. What I means is, don&#39;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.
+But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
     </item>
     
     <item>
@@ -35,7 +39,9 @@
       <pubDate>Tue, 25 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_column_layout_using_css/</guid>
-      <description>This is a continuation of my series of CSShints / tips / cheats for developers (and other technical-but-not-UI people).The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&#39;s example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
+      <description>This is a continuation of my series of CSS hints / tips / cheats for developers (and other technical-but-not-UI people).
+The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.
+Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&#39;s example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
     </item>
     
     <item>
@@ -44,7 +50,9 @@
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_the_joy_of_floats/</guid>
-      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&#39;re as afflicted with NADDas I am.Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It&#39;s primarily aimed at developers, although I would hope it&#39;s comprehensible to a range of tech-savvy people.(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).</description>
+      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&#39;re as afflicted with NADD as I am.
+Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It&#39;s primarily aimed at developers, although I would hope it&#39;s comprehensible to a range of tech-savvy people.
+(Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).</description>
     </item>
     
     <item>

@@ -40,7 +40,7 @@
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description></description>
+      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&#39;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&#39;s scary being live-streamed and recorded!</description>
     </item>
     
     <item>
@@ -49,7 +49,9 @@
       <pubDate>Mon, 20 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/a_chance_to_see_some_of_my_actual_code_even_if_it_is_c/</guid>
-      <description>Remember I posted about having to write .NET?Well, the code and the tutorialare available for you, my lucky readers, to rip to piecesview.I am not the only person responsible for this code though, so be kind.</description>
+      <description>Remember I posted about having to write .NET?
+Well, the code and the tutorial are available for you, my lucky readers, to rip to pieces view.
+I am not the only person responsible for this code though, so be kind.</description>
     </item>
     
     <item>
@@ -58,7 +60,9 @@
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.</description>
+      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
+All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
+Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
     </item>
     
     <item>
@@ -67,7 +71,7 @@
       <pubDate>Mon, 16 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/validation_with_spring_modules_validation/</guid>
-      <description>So if java generics slightly disappointed me lately, what have I found cool?I&#39;m currently working on a web application using Spring MVC, which probably doesn&#39;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&#39;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge ifstatement.</description>
+      <description>So if java generics slightly disappointed me lately, what have I found cool?I&#39;m currently working on a web application using Spring MVC, which probably doesn&#39;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&#39;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge if statement.</description>
     </item>
     
     <item>
@@ -76,7 +80,7 @@
       <pubDate>Sat, 07 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_specifics/</guid>
-      <description>When I first started playing with Java 1.5, I thought genericswere the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code:List list = new ArrayList();list.add(new Integer(1));Integer integer = (Integer)list.get(0);for (Iterator i = list.iterator(); i.hasNext(); ) {Integer number = (Integer)i.next();number.intValue();}And the new:List&amp;lt;Integer&amp;gt; list = new ArrayList&amp;lt;Integer&amp;gt;();list.</description>
+      <description>When I first started playing with Java 1.5, I thought generics were the best thing since sliced bread. No more untidy casting, lovely type-safe Collections, and when combined with the new for loop, a lot of the tedious tasks associated with Collections became easier and, most importantly, aesthetically pleasing.Consider the old code:	List list = new ArrayList();	list.add(new Integer(1));	Integer integer = (Integer)list.get(0);	for (Iterator i = list.iterator(); i.hasNext(); ) {	Integer number = (Integer)i.</description>
     </item>
     
   </channel>

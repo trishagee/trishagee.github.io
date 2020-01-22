@@ -26,7 +26,7 @@
       <pubDate>Wed, 12 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/agile_when_agile_goes_well/</guid>
-      <description>If you see anything about LMAX- the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&#39;ll see that LMAX is pretty keen on Agile. However, no-one&#39;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&#39;s because I&#39;m not sure it&#39;s a process that would work very well for another team, in another company, working in another business.</description>
+      <description>If you see anything about LMAX - the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&#39;ll see that LMAX is pretty keen on Agile. However, no-one&#39;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&#39;s because I&#39;m not sure it&#39;s a process that would work very well for another team, in another company, working in another business.</description>
     </item>
     
     <item>
@@ -35,7 +35,8 @@
       <pubDate>Thu, 22 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/summary_of_devoxx_2012/</guid>
-      <description></description>
+      <description>Devoxx topped off a crazy two months of conferences. I&#39;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting. &amp;nbsp;I&#39;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding. &amp;nbsp;I hope.
+Neal Ford&#39;s When Geek LeaksSo, how was Devoxx? &amp;nbsp;Well for starters, the calibre of the speakers and talks was excellent.</description>
     </item>
     
     <item>
@@ -44,7 +45,8 @@
       <pubDate>Tue, 27 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_2012/</guid>
-      <description>I&#39;m late with my write-up of QCon, and what&#39;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….Firstly, me me meI presented the talk I previewed at Skillsmatterthe previous week, something I was calling the User&#39;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
+      <description>I&#39;m late with my write-up of QCon, and what&#39;s worse, it will be partial - &amp;ldquo;sadly&amp;rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….
+Firstly, me me meI presented the talk I previewed at Skillsmatter the previous week, something I was calling the User&#39;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.</description>
     </item>
     
     <item>
@@ -64,7 +66,13 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/a_nyse_product_manager_and_an_lmax_developer_walk_into_a_low_latency_trading_seminar/</guid>
-      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&#39;s event? Because&amp;hellip;&amp;ldquo;&amp;quot;Because we&#39;re girls?&amp;ldquo;&amp;quot;Um&amp;hellip; yes&amp;hellip;&amp;ldquo;Kim impetuously opts for The Truth: &amp;ldquo;We&#39;re here to meet men.&amp;ldquo;Our interrogator looks round dubiously. &amp;quot;No, really, why are you here?&amp;ldquo;Phew. My reputation is intact1Kim eloquently describes what her situation is as Product Manager and the criteria she&#39;s measuring third party products against. I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.</description>
+      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&#39;s event? Because&amp;hellip;&amp;ldquo;
+&amp;quot;Because we&#39;re girls?&amp;ldquo;
+&amp;quot;Um&amp;hellip; yes&amp;hellip;&amp;ldquo;
+Kim impetuously opts for The Truth: &amp;ldquo;We&#39;re here to meet men.&amp;ldquo;
+Our interrogator looks round dubiously. &amp;quot;No, really, why are you here?&amp;ldquo;
+Phew. My reputation is intact1
+Kim eloquently describes what her situation is as Product Manager and the criteria she&#39;s measuring third party products against. I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.</description>
     </item>
     
     <item>
@@ -73,7 +81,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 04 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_initial_observations/</guid>
-      <description>So I&#39;ve been at JavaOne for the better part of three days, it&#39;s time to record some of my observations so far:The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. Makes me feel better about the presentations I&#39;m going to be giving (see A Beginner&#39;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&#39;ve had a really excellent time, I&#39;ve met: people from other Java User Groups; the Duchessgirls; other Duke Award winners; the Azulguys; guys (well, girls) from O&#39;Reilly books; JCP members and many random and awesome people.</description>
+      <description>So I&#39;ve been at JavaOne for the better part of three days, it&#39;s time to record some of my observations so far:
+The wireless access is rubbish.&amp;lt;Gross generalisation&amp;gt; technical people are not natural public speakers. Makes me feel better about the presentations I&#39;m going to be giving (see A Beginner&#39;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&#39;ve had a really excellent time, I&#39;ve met: people from other Java User Groups; the Duchess girls; other Duke Award winners; the Azul guys; guys (well, girls) from O&#39;Reilly books; JCP members and many random and awesome people.</description>
     </item>
     
     <item>
@@ -82,7 +91,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 27 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2011/</guid>
-      <description>So, I&#39;m off to JavaOnenext week!This is an unexpected and very pleasant surprise. I&#39;ll be there with Martin(of the Disruptorfame), and Martijn(that&#39;s not going to get confusing at all). Martin will be talking about the Disruptor on Thursday, and Martijn is busy talking about&amp;hellip; everything. Most importantly for the LJChe&#39;s representing us in our shiny new JCP Executive Committeerole.I&#39;m really looking forward to meeting pretty much anyone and everyone who&#39;ll talk to me.</description>
+      <description>So, I&#39;m off to JavaOne next week!
+This is an unexpected and very pleasant surprise. I&#39;ll be there with Martin (of the Disruptor fame), and Martijn (that&#39;s not going to get confusing at all). Martin will be talking about the Disruptor on Thursday, and Martijn is busy talking about&amp;hellip; everything. Most importantly for the LJC he&#39;s representing us in our shiny new JCP Executive Committee role.
+I&#39;m really looking forward to meeting pretty much anyone and everyone who&#39;ll talk to me.</description>
     </item>
     
     <item>
@@ -91,7 +102,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriersand their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martinand Mikequestions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.So, rather than make an idiot of myself trying to explain something I don&#39;t really get, I&#39;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.</description>
+      <description>My recent slow-down in posting is because I&#39;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&#39;t intuitively grasp the subject. I guess I don&#39;t have the deep background knowledge required to fully understand.</description>
     </item>
     
     <item>
@@ -100,7 +111,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
+      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&#39;s even Martin&#39;s blog title. It&#39;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&#39;s the next thing I thought I would tackle.</description>
     </item>
     
     <item>
@@ -109,7 +121,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good articledescribing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
+      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.
+I&#39;m working up to answering that. I&#39;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.
+These questions do go hand in hand, however, because I can&#39;t talk about why it&#39;s fast without saying what it does, and I can&#39;t talk about what it is without saying why it is that way.</description>
     </item>
     
     <item>
@@ -118,7 +132,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/</guid>
-      <description>So now I&#39;ve covered the ring bufferitself, readingfrom it and writingto it.Logically the next thing to do is to wire everything up together.I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;vedone some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
+      <description>So now I&#39;ve covered the ring buffer itself, reading from it and writing to it.
+Logically the next thing to do is to wire everything up together.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&#39;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&#39;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
     </item>
     
     <item>
@@ -127,7 +143,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 04 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/</guid>
-      <description></description>
+      <description>This is the missing piece in the end-to-end view of the Disruptor. &amp;nbsp;Brace yourselves, it&#39;s quite long. &amp;nbsp;But I decided to keep it in a single blog so you could have the context in one place.
+The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
+ProducerBarriers
+The Disruptor code has interfaces and helper classes for the Consumers, but there&#39;s no interface for your producer, the thing that writes to the ring buffer.</description>
     </item>
     
     <item>
@@ -136,7 +155,10 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/</guid>
-      <description>The next in the series of understanding the Disruptor patterndeveloped at LMAX.After the last postwe all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.ConsumerBarriers and ConsumersI&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
+      <description>The next in the series of understanding the Disruptor pattern developed at LMAX.
+After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&#39;re using the Disruptor.
+ConsumerBarriers and Consumers
+I&#39;m going to approach this slightly backwards, because it&#39;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
     </item>
     
     <item>
@@ -145,7 +167,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.On the site you can download a technical articleexplaining what the Disruptor is and why it&#39;s so clever and fast.</description>
+      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&#39;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&#39;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
+On the site you can download a technical article explaining what the Disruptor is and why it&#39;s so clever and fast.</description>
     </item>
     
     <item>
@@ -154,7 +177,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Sun, 12 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/stac_london_summit/</guid>
-      <description>On Wednesday I tagged along to the STAC London Summitto provide backup for Mike, who was on the &amp;ldquo;The Future of Messaging Middleware&amp;rdquo; panel.The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &amp;ldquo;users&amp;rdquo;, Citihub and LMAX. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.</description>
+      <description>On Wednesday I tagged along to the STAC London Summit to provide backup for Mike, who was on the &amp;ldquo;The Future of Messaging Middleware&amp;rdquo; panel.
+The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &amp;ldquo;users&amp;rdquo;, Citihub and LMAX. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.</description>
     </item>
     
     <item>
@@ -163,7 +187,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 23 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_around_a_bit/</guid>
-      <description>I&#39;m honoured to now be listed on three aggregated blog feeds:The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&#39;s on to try and write useful stuff. Oh OK, I&#39;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
+      <description>I&#39;m honoured to now be listed on three aggregated blog feeds:
+The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&#39;s on to try and write useful stuff. Oh OK, I&#39;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -172,7 +197,9 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:1.</description>
+      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
+All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
+Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
     </item>
     
     <item>
@@ -181,7 +208,8 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Mon, 18 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/tradetech_2011__not_like_a_developer_conference/</guid>
-      <description>I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.The fascinating thing to me was how different this is from the sorts of technology conferences I&#39;ve been to. For example, I popped into JAXthis week (albeit in the evening for drinks). At technology conferences (&amp;lt;gross-generalisation&amp;gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.</description>
+      <description>I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.
+The fascinating thing to me was how different this is from the sorts of technology conferences I&#39;ve been to. For example, I popped into JAX this week (albeit in the evening for drinks). At technology conferences (&amp;lt;gross-generalisation&amp;gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.</description>
     </item>
     
     <item>
@@ -190,7 +218,7 @@ to call you for a technical phone screen.&lt;/p&gt;
       <pubDate>Fri, 21 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/gwt_why_verticalpanel_is_evil/</guid>
-      <description>At LMAXwe adopted Google Web Toolkitpretty early on. One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.</description>
+      <description>At LMAX we adopted Google Web Toolkit pretty early on. One of the motivations for using it was so we only had to worry about recruiting Java guys, and then we could all work on every part of the application including the web UI. Sure, you can learn a bunch of different skills if you want to, but it reduced context-switching and kept the skill set we were hiring for to a nice short list.</description>
     </item>
     
     <item>

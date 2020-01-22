@@ -17,7 +17,7 @@
       <pubDate>Wed, 12 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/agile_when_agile_goes_well/</guid>
-      <description>If you see anything about LMAX- the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&#39;ll see that LMAX is pretty keen on Agile. However, no-one&#39;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&#39;s because I&#39;m not sure it&#39;s a process that would work very well for another team, in another company, working in another business.</description>
+      <description>If you see anything about LMAX - the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&#39;ll see that LMAX is pretty keen on Agile. However, no-one&#39;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&#39;s because I&#39;m not sure it&#39;s a process that would work very well for another team, in another company, working in another business.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description></description>
+      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&#39;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&#39;s scary being live-streamed and recorded!</description>
     </item>
     
     <item>
@@ -44,7 +44,9 @@
       <pubDate>Fri, 20 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/overheard_agile_truths/</guid>
-      <description>After attending a number of conferences and events, and performing numerous interviews, I&#39;m starting to hear the same things again and again. Since Dan Northchallenged all my assumptions at QCon, I&#39;m reluctant to outright ridicule them, but I will put forward my personal opinion.Note: these are things I have heard from multiple sources, so with any luck I am not breaking the sanctity of the confessionalinterview.I&#39;ve never pair programmed, but I&#39;ve frequently worked with a partner on critical production problemsI find this fascinating.</description>
+      <description>After attending a number of conferences and events, and performing numerous interviews, I&#39;m starting to hear the same things again and again. Since Dan North challenged all my assumptions at QCon, I&#39;m reluctant to outright ridicule them, but I will put forward my personal opinion.
+Note: these are things I have heard from multiple sources, so with any luck I am not breaking the sanctity of the confessional interview.
+I&#39;ve never pair programmed, but I&#39;ve frequently worked with a partner on critical production problems</description>
     </item>
     
     <item>
@@ -62,7 +64,9 @@
       <pubDate>Tue, 20 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/are_you_an_awesome_developer/</guid>
-      <description>We are hiring!If you think we&#39;re doing something interesting, or if you think you can help us do our thing even better, come join us. Your boss will be the dude who wrote Continuous Delivery, you&#39;ll get a chance to experience what Dannycalls meta-Agile (or Agile Agile), and you&#39;ll really start to care about Domain-Driven Design.Ideally we&#39;re after Java people, but at the heart of it we want people who are dead passionate about development.</description>
+      <description>We are hiring!
+If you think we&#39;re doing something interesting, or if you think you can help us do our thing even better, come join us. Your boss will be the dude who wrote Continuous Delivery, you&#39;ll get a chance to experience what Danny calls meta-Agile (or Agile Agile), and you&#39;ll really start to care about Domain-Driven Design.
+Ideally we&#39;re after Java people, but at the heart of it we want people who are dead passionate about development.</description>
     </item>
     
     <item>
@@ -71,7 +75,8 @@
       <pubDate>Sat, 17 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_my_hangovers_can_teach_you_about_agile/</guid>
-      <description>As a survival trait for living and working in the cites1of London, I have a set of rituals to avoid hangovers. If you are not a single person living in a city like London, you might not understand how vital this is. Most networking, particularly in the financial services industry, is done in the presence of alcohol.So preventing the inevitable hangover is quite important to the other part of the job – the actual working bit.</description>
+      <description>As a survival trait for living and working in the cites1 of London, I have a set of rituals to avoid hangovers. If you are not a single person living in a city like London, you might not understand how vital this is. Most networking, particularly in the financial services industry, is done in the presence of alcohol.
+So preventing the inevitable hangover is quite important to the other part of the job – the actual working bit.</description>
     </item>
     
     <item>
@@ -80,7 +85,8 @@
       <pubDate>Tue, 24 Feb 2009 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/scrum_but/</guid>
-      <description>Having experience Flaccid Scrum, I find this article interesting, and agree with most of it.I&#39;d also like to add though, that if you do the scrum practices (story cards, stand ups, retrospectives, etc) but don&#39;t buy into the fundamental principals, you will not succeed. And that means everyone on the team, not just the people in charge. In particular, if the team is not empowered, is not committing to the estimates and the iteration plan in its heart, and and does not trust, then you are probably better off using traditional processes.</description>
+      <description>Having experience Flaccid Scrum, I find this article interesting, and agree with most of it.
+I&#39;d also like to add though, that if you do the scrum practices (story cards, stand ups, retrospectives, etc) but don&#39;t buy into the fundamental principals, you will not succeed. And that means everyone on the team, not just the people in charge. In particular, if the team is not empowered, is not committing to the estimates and the iteration plan in its heart, and and does not trust, then you are probably better off using traditional processes.</description>
     </item>
     
     <item>
@@ -99,7 +105,7 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Tue, 20 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/continuing_the_agile_froth/</guid>
-      <description>&amp;hellip;there are a number of points in this interviewwith Paul Oldfield which are interesting to consider when thinking about &amp;ldquo;doing Agile right&amp;rdquo;. It seems to be compatible with my &amp;ldquo;people over process&amp;rdquo; view - I&#39;m not stating that having good people negates the need for any form of process or discipline, I have seen that this is simply not the case. I do however think that agile techniques in particular rely heavily upon the &amp;ldquo;right&amp;rdquo; people / team, for some nebulous definition of &amp;ldquo;right&amp;rdquo;.</description>
+      <description>&amp;hellip;there are a number of points in this interview with Paul Oldfield which are interesting to consider when thinking about &amp;ldquo;doing Agile right&amp;rdquo;. It seems to be compatible with my &amp;ldquo;people over process&amp;rdquo; view - I&#39;m not stating that having good people negates the need for any form of process or discipline, I have seen that this is simply not the case. I do however think that agile techniques in particular rely heavily upon the &amp;ldquo;right&amp;rdquo; people / team, for some nebulous definition of &amp;ldquo;right&amp;rdquo;.</description>
     </item>
     
   </channel>

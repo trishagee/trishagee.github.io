@@ -37,7 +37,7 @@
 <meta itemprop="description" content="Brief guide to running the MongoDB tutorial from QCon London and JAX London.">
 <meta itemprop="datePublished" content="2013-10-24T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2013-10-24T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="164">
+<meta itemprop="wordCount" content="182">
 
 
 
@@ -181,26 +181,26 @@ if (!doNotTrack) {
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Brief guide to running the MongoDB tutorial from QCon London and JAX London.</p>
 <h2 id="setup">Setup</h2>
-<p>Create a new work area for this tutorial. For the rest of these instructions I'll refer to it as <!-- raw HTML omitted -->&lt;location&gt;<!-- raw HTML omitted -->.  I've put
-mine in <!-- raw HTML omitted -->~/Documents/workshops/jax<!-- raw HTML omitted --></p>
+<p>Create a new work area for this tutorial. For the rest of these instructions I'll refer to it as <code>&lt;location&gt;</code>.  I've put
+mine in <code>~/Documents/workshops/jax</code></p>
 <h2 id="installing-mongodb">Installing MongoDB</h2>
-<p><!-- raw HTML omitted -->Download MongoDB<!-- raw HTML omitted --> or get it off the USB stick Unzip to an appropriate location,
-let's say <!-- raw HTML omitted -->&lt;location&gt;/mongodb<!-- raw HTML omitted --></p>
+<p><a href="http://www.mongodb.org/downloads">Download MongoDB</a> or get it off the USB stick Unzip to an appropriate location,
+let's say <code>&lt;location&gt;/mongodb</code></p>
 <p>Then we'll have to create the directory for the data to go into:</p>
-<p><!-- raw HTML omitted -->cd &lt;location&gt;<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->mkdir data<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->And then start MongoDB:<!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->./mongodb/bin/mongod &ndash;dbpath data<!-- raw HTML omitted --></p>
+<p><code>cd &lt;location&gt;</code><br /><code>mkdir data</code><br /><div><br /></div>And then start MongoDB:<div></p>
+<p><code>./mongodb/bin/mongod &ndash;dbpath data</code></p>
 <p>Now MongoDB should be running on localhost and port 27017</p>
 <p>If you want, you can connect to the shell - this is not necessary for this workshop:</p>
-<p><!-- raw HTML omitted -->./mongodb/bin/mongo<!-- raw HTML omitted --></p>
+<p><span style="font-family: monospace;">./mongodb/bin/mongo</span></p>
 <h2 id="creating-your-project">Creating your project</h2>
-<p>Put <a href="https://github.com/trishagee/mongodb-java-tutorial">the Java project</a> into <!-- raw HTML omitted -->&lt;location&gt;/java3.0<!-- raw HTML omitted --></p>
-<p><!-- raw HTML omitted -->cd &lt; location&gt;/java3.0<!-- raw HTML omitted --></p>
-<p>Run:<!-- raw HTML omitted --><!-- raw HTML omitted -->./gradlew idea<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted -->or<!-- raw HTML omitted --><!-- raw HTML omitted -->./gradlew eclipse<!-- raw HTML omitted --></p>
+<p>Put <a href="https://github.com/trishagee/mongodb-java-tutorial">the Java project</a> into <code>&lt;location&gt;/java3.0</code></p>
+<p><code>cd &lt; location&gt;/java3.0</code></p>
+<p>Run:<br /><code>./gradlew idea</code><br /><div>or</div><code>./gradlew eclipse</code></p>
 <p>Open in your favourite IDE and you should be ready to start playing.</p>
 <h2 id="more-help">More help:</h2>
-<p><!-- raw HTML omitted -->MongoDB Tutorials<!-- raw HTML omitted --></p>
+<p><a href="http://docs.mongodb.org/manual/tutorial/">MongoDB Tutorials</a></p>
 <h2 id="emergency-gradle-procedure">Emergency Gradle Procedure:</h2>
-<p><!-- raw HTML omitted -->Download Gradle<!-- raw HTML omitted --> or get it off the USB stick<!-- raw HTML omitted -->Extract to some suitable location.  Mine's in <!-- raw HTML omitted -->/Library/Tools/gradle/<!-- raw HTML omitted --><!-- raw HTML omitted -->Put gradle on your path.  On the Mac, that means adding the following line to <!-- raw HTML omitted -->~/.bash_profile<!-- raw HTML omitted -->:<!-- raw HTML omitted --><!-- raw HTML omitted -->export PATH=&rdquo;/Library/Tools/gradle/bin:$PATH&quot;<!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --><!-- raw HTML omitted --></p><ul class="pa0">
+<p><a href="http://www.gradle.org/">Download Gradle</a> or get it off the USB stick<br />Extract to some suitable location.  Mine's in <code>/Library/Tools/gradle/</code><br />Put gradle on your path.  On the Mac, that means adding the following line to <code>~/.bash_profile</code>:<br /><code>export PATH=&rdquo;/Library/Tools/gradle/bin:$PATH&quot;</code><br /><div><code><br /></code></div></div></p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/tutorial" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tutorial</a>

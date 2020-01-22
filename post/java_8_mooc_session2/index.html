@@ -45,7 +45,7 @@ lambdas and streams. We&#39;re running three sessions
 to share knowledge between people who are doing the course.">
 <meta itemprop="datePublished" content="2015-07-31T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2015-07-31T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1045">
+<meta itemprop="wordCount" content="1105">
 
 
 
@@ -297,7 +297,12 @@ cut down the number of items you process in each step of the stream. Therefore o
     .map(String::toLowerCase)
     .collect(toList());
 </code></pre>
-<!-- raw HTML omitted -->
+ <br/>
+**Flat Map**: what...? 
+[`flatMap()`](https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html#flatMap-java.util.function.Function-) 
+is one of those methods that makes total sense once you get the hang of it, and you don't 
+understand why it was so confusing. But the first time you encounter it, it's confusing - how is `flatMap()` 
+different to `map()`?
 <p>Well, <code>flatMap</code> is used to squish (for example) a stream of streams into just a simple stream. It's like turning a 
 2-dimensional array into a single dimension so that you can iterate over all the items without needing nested 
 for-loops. There's <a href="http://stackoverflow.com/a/22384132/653519">an example on StackOverflow</a>, and some more examples 
@@ -329,7 +334,8 @@ this is one of those places where method references suddenly make loads of sense
 </code></pre>
 <p>(Here we're actually using the <code>comparingInt</code> method as we're going to compare on a primitive value). Personally this
 is one of my favourite new features in Java 8.</p>
-<!-- raw HTML omitted --><ul class="pa0">
+<br/>
+Join us next week for the [last session on Java 8 - Lambdas and Streams](http://www.meetup.com/SVQJUG/events/223910762/).<ul class="pa0">
   
    <li class="list">
      <a href="/tags/java" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">java</a>
