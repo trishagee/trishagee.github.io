@@ -6,7 +6,7 @@
     
     <title>Trisha Gee  | JavaOne 2014, Day One</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.63.1" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -28,15 +28,15 @@
     
     
     <meta property="og:title" content="JavaOne 2014, Day One" />
-<meta property="og:description" content="Well, I&#39;m at JavaOne again, and after only one day I&#39;ve already learnt stuff.  And, of course, 
-had a great time catching up with interesting people.  Here&#39;s a summary of the first day." />
+<meta property="og:description" content="Well, I&rsquo;m at JavaOne again, and after only one day I&rsquo;ve already learnt stuff.  And, of course,
+had a great time catching up with interesting people.  Here&rsquo;s a summary of the first day." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/java_one_2014_day_one/" />
 <meta property="article:published_time" content="2014-09-30T00:00:00+00:00" />
 <meta property="article:modified_time" content="2014-09-30T00:00:00+00:00" />
 <meta itemprop="name" content="JavaOne 2014, Day One">
-<meta itemprop="description" content="Well, I&#39;m at JavaOne again, and after only one day I&#39;ve already learnt stuff.  And, of course, 
-had a great time catching up with interesting people.  Here&#39;s a summary of the first day.">
+<meta itemprop="description" content="Well, I&rsquo;m at JavaOne again, and after only one day I&rsquo;ve already learnt stuff.  And, of course,
+had a great time catching up with interesting people.  Here&rsquo;s a summary of the first day.">
 <meta itemprop="datePublished" content="2014-09-30T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2014-09-30T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="569">
@@ -45,8 +45,8 @@ had a great time catching up with interesting people.  Here&#39;s a summary of t
 
 <meta itemprop="keywords" content="conference,javaone,spock," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="JavaOne 2014, Day One"/>
-<meta name="twitter:description" content="Well, I&#39;m at JavaOne again, and after only one day I&#39;ve already learnt stuff.  And, of course, 
-had a great time catching up with interesting people.  Here&#39;s a summary of the first day."/>
+<meta name="twitter:description" content="Well, I&rsquo;m at JavaOne again, and after only one day I&rsquo;ve already learnt stuff.  And, of course,
+had a great time catching up with interesting people.  Here&rsquo;s a summary of the first day."/>
 
       
 <script type="application/javascript">
@@ -182,43 +182,43 @@ if (!doNotTrack) {
       
     </header>
 
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Well, I'm at JavaOne again, and after only one day I've already learnt stuff.  And, of course, 
-had a great time catching up with interesting people.  Here's a summary of the first day.</p>
+    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Well, I&rsquo;m at JavaOne again, and after only one day I&rsquo;ve already learnt stuff.  And, of course,
+had a great time catching up with interesting people.  Here&rsquo;s a summary of the first day.</p>
 <p><strong><a href="https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=10289">Superpowered CI with Git - Sarah Goff-Dupont</a></strong><br>
-The Continuous Integration we did at LMAX is quite different to what we do at MongoDB, and I was hoping to get some tips on better CI with 
-Git, especially given feature branches.  There was a good overview of development process using branch-per-feature, 
-and a comment that it's nearly impossible to do &ldquo;pure&rdquo; CI in this sort of environment.  But there was pragmatic advice on how to manage 
+The Continuous Integration we did at LMAX is quite different to what we do at MongoDB, and I was hoping to get some tips on better CI with
+Git, especially given feature branches.  There was a good overview of development process using branch-per-feature,
+and a comment that it&rsquo;s nearly impossible to do &ldquo;pure&rdquo; CI in this sort of environment.  But there was pragmatic advice on how to manage
 the process and run automated builds in this environment.</p>
-<p>The take-home point for me is that I'm going to investigate <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks">git hooks</a> to try and
+<p>The take-home point for me is that I&rsquo;m going to investigate <a href="http://git-scm.com/book/en/Customizing-Git-Git-Hooks">git hooks</a> to try and
 streamline our process and run some fast checks more frequently.</p>
-<p>Also, Sarah showed using <a href="https://www.hipchat.com">Hipchat</a> in anger - I've now heard this mentioned enough that I'm going to look into it more.</p>
+<p>Also, Sarah showed using <a href="https://www.hipchat.com">Hipchat</a> in anger - I&rsquo;ve now heard this mentioned enough that I&rsquo;m going to look into it more.</p>
 <p><strong><a href="https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=2276">Advanced Unit Testing with Spock</a></strong><br>
-I've [spoken before about Spock](</p>
-<p>/tags/spock/), and how much I love it.  The first section of this talk was a recap 
-of some of the basics, but the second part went on to some features I either previously ignored or wasn't aware of.  For example, in the 
-<a href="https://github.com/mongodb/mongo-java-driver/">MongoDB Java Driver</a>, we do use annotations to denote slower-running tests so we can select which environments to run in, 
-but we're not using Spock annotations for this.  I think there's a lot more we could do with both custom annotations like our 
-<a href="https://github.com/mongodb/mongo-java-driver/blob/3.0.x/util/src/main/category/Slow.java">@Slow</a> annotation, 
-Spock's built in annotations like <code>@Issue</code>, and some others which may not yet be in maven central like <code>@Requires</code> for running 
+I&rsquo;ve [spoken before about Spock](</p>
+<p>/tags/spock/), and how much I love it.  The first section of this talk was a recap
+of some of the basics, but the second part went on to some features I either previously ignored or wasn&rsquo;t aware of.  For example, in the
+<a href="https://github.com/mongodb/mongo-java-driver/">MongoDB Java Driver</a>, we do use annotations to denote slower-running tests so we can select which environments to run in,
+but we&rsquo;re not using Spock annotations for this.  I think there&rsquo;s a lot more we could do with both custom annotations like our
+<a href="https://github.com/mongodb/mongo-java-driver/blob/3.0.x/util/src/main/category/Slow.java">@Slow</a> annotation,
+Spock&rsquo;s built in annotations like <code>@Issue</code>, and some others which may not yet be in maven central like <code>@Requires</code> for running
 language-version tests ([e.g. Java 8 tests](<a href="https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/JavaLanguageSpec">https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/JavaLanguageSpec</a>
 .groovy)) and <code>@IgnoreRest</code>.</p>
-<p>I also liked the example of <a href="https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/OldExampleSpec.groovy">checking the new value against an old 
-value</a>, 
+<p>I also liked the example of <a href="https://github.com/kensipe/spock-javaone2014/blob/master/test/com/example/OldExampleSpec.groovy">checking the new value against an old
+value</a>,
 I can totally see this being useful.</p>
-<p>There were other bits and pieces in this talk I'd like to dig into in more detail that I think will be very useful for the Java Driver. 
+<p>There were other bits and pieces in this talk I&rsquo;d like to dig into in more detail that I think will be very useful for the Java Driver.
 But even more importantly, I learnt how to zoom into my screen so I can use that in my own presentation. Pro presentation top tips.</p>
-<p>Honestly, if you have even minor testing pains, it's worth finding Ken's talks on Spock, they're great! And a source of inspiration for 
+<p>Honestly, if you have even minor testing pains, it&rsquo;s worth finding Ken&rsquo;s talks on Spock, they&rsquo;re great! And a source of inspiration for
 better testing, as well as a sneaky way to understand why Groovy is awesome.</p>
 <p><strong>JCP Awards and Party</strong><br>
-But it's not all work at these events.  For me, the highlight was the music at at the JCP Awards party.  Firstly, 
-we had an award-winning beat-box guy from the UK (sadly I don't remember his name so I can't link to his stuff).  An unusual choice for 
-an event like this, but it was a lot of fun. Then there was the live super-band, The Null Pointers, made up of JUG leaders from around the 
-world (including <a href="https://twitter.com/matkar">@matkar</a>, <a href="https://twitter.com/frankgreco">@frankgreco</a>, <a href="https://twitter.com/fguime">@fguime</a>. I'll admit,
-I was a little concerned about this idea, but the guys were fantastic, and it was a lot of fun singing along to Free's Alright Now and 
-Radiohead's Creep. <a href="https://www.oracle.com/openworld/appreciation-event/index.html">Aerosmith</a> is going to have to work hard to compete with that.</p>
+But it&rsquo;s not all work at these events.  For me, the highlight was the music at at the JCP Awards party.  Firstly,
+we had an award-winning beat-box guy from the UK (sadly I don&rsquo;t remember his name so I can&rsquo;t link to his stuff).  An unusual choice for
+an event like this, but it was a lot of fun. Then there was the live super-band, The Null Pointers, made up of JUG leaders from around the
+world (including <a href="https://twitter.com/matkar">@matkar</a>, <a href="https://twitter.com/frankgreco">@frankgreco</a>, <a href="https://twitter.com/fguime">@fguime</a>. I&rsquo;ll admit,
+I was a little concerned about this idea, but the guys were fantastic, and it was a lot of fun singing along to Free&rsquo;s Alright Now and
+Radiohead&rsquo;s Creep. <a href="https://www.oracle.com/openworld/appreciation-event/index.html">Aerosmith</a> is going to have to work hard to compete with that.</p>
 <p><strong>&hellip;and a quick plug</strong><br>
-My <a href="https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703">main presentation is on Thursday</a>, it's a keyword-tastic live demo of AngularJS, Java &amp; MongoDB.  Something <em>always</em> goes wrong in 
-this presentation, so I'm <a href="http://doodle.com/fvrasw9vrpxyb9dm">taking bets right now on what that will be</a>.</p><ul class="pa0">
+My <a href="https://oracleus.activeevents.com/2014/connect/sessionDetail.ww?SESSION_ID=1703">main presentation is on Thursday</a>, it&rsquo;s a keyword-tastic live demo of AngularJS, Java &amp; MongoDB.  Something <em>always</em> goes wrong in
+this presentation, so I&rsquo;m <a href="http://doodle.com/fvrasw9vrpxyb9dm">taking bets right now on what that will be</a>.</p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/conference" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">conference</a>

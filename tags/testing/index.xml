@@ -17,9 +17,9 @@
       <pubDate>Fri, 26 Jun 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/level_up_your_automated_tests/</guid>
-      <description>&lt;p&gt;This presentation is about how to change a team&#39;s attitude towards writing automated tests.  The 
-talk covers the same case study as 
-&lt;a href=&#34;https://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting 
+      <description>&lt;p&gt;This presentation is about how to change a team&amp;rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+&lt;a href=&#34;https://trishagee.github.io/presentation/groovy_vs_java&#34;&gt;Groovy vs Java for Testing&lt;/a&gt;, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.&lt;/p&gt;</description>
     </item>
@@ -39,8 +39,8 @@ technical look at the merits of one language over another.&lt;/p&gt;</descriptio
       <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_data_driven_testing/</guid>
-      <description>In the last two articles on Spock I&#39;ve covered mocking and stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there&#39;s a killer feature: Data Driven Testing.
-All developers have a tendency to think of and test the happy path. Not least of all because that&#39;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.</description>
+      <description>In the last two articles on Spock I&amp;rsquo;ve covered mocking and stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there&amp;rsquo;s a killer feature: Data Driven Testing.
+All developers have a tendency to think of and test the happy path. Not least of all because that&amp;rsquo;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -53,7 +53,7 @@ All developers have a tendency to think of and test the happy path. Not least of
 As that blog got rather long, I saved the next installment for a separate post.
 Today I want to look at stubbing.
 Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&#39;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.</description>
+Mocking is great for checking outputs - in the example in the last post, we&amp;rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.</description>
     </item>
     
     <item>
@@ -62,8 +62,8 @@ Mocking is great for checking outputs - in the example in the last post, we&#39;
       <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</guid>
-      <description>We&#39;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.
-This is not going to be the case when it comes to testing, however. At the very least, we&#39;re going to use JUnit or TestNG (we used testng in the previous version, we&#39;ve switched to JUnit for 3.</description>
+      <description>We&amp;rsquo;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.
+This is not going to be the case when it comes to testing, however. At the very least, we&amp;rsquo;re going to use JUnit or TestNG (we used testng in the previous version, we&amp;rsquo;ve switched to JUnit for 3.</description>
     </item>
     
     <item>

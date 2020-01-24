@@ -17,7 +17,7 @@
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
-      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&#39;re already bought into a NoSQL technology, or you&#39;re just wondering what all the noise is about, it&#39;s worth an hour out of your day to see Akmal Chaudhri&#39;s comprehensive summary of the technologies out there.
+      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.
 Skillsmatter recorded the whole thing, as usual, so you can watch the presentation for yourself. I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.</description>
     </item>
     
@@ -27,8 +27,8 @@ Skillsmatter recorded the whole thing, as usual, so you can watch the presentati
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nosql_is_a_stupid_name/</guid>
-      <description>So, I&#39;ve finished my first full week in the new job and I&#39;ve learnt lots of new stuff. Which is great, because that&#39;s usually why you change jobs.
-I&#39;m learning a lot about these new-fangled NoSQL database thingies. The LMAX architecture was based on keeping everything in memory and reducing the waits for IO - messages were journalled to disk, and reads and writes to the MySQL database were off the critical path.</description>
+      <description>So, I&amp;rsquo;ve finished my first full week in the new job and I&amp;rsquo;ve learnt lots of new stuff. Which is great, because that&amp;rsquo;s usually why you change jobs.
+I&amp;rsquo;m learning a lot about these new-fangled NoSQL database thingies. The LMAX architecture was based on keeping everything in memory and reducing the waits for IO - messages were journalled to disk, and reads and writes to the MySQL database were off the critical path.</description>
     </item>
     
   </channel>

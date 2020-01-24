@@ -31,7 +31,7 @@
       <pubDate>Thu, 20 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/atom-to-hugo/</guid>
-      <description>I&#39;ve been using Blogger happily for three years or so, since I migrated the blog from LiveJournal and decided to actually invest some time writing. I&#39;m happy with it because I just type stuff into Blogger and It Just Works. I&#39;m happy because I can use my Google credentials to sign in. I&#39;m happy because now I can pretend my two Google+ accounts exist for a purpose, by getting Blogger to automatically share my content there.</description>
+      <description>I&amp;rsquo;ve been using Blogger happily for three years or so, since I migrated the blog from LiveJournal and decided to actually invest some time writing. I&amp;rsquo;m happy with it because I just type stuff into Blogger and It Just Works. I&amp;rsquo;m happy because I can use my Google credentials to sign in. I&amp;rsquo;m happy because now I can pretend my two Google+ accounts exist for a purpose, by getting Blogger to automatically share my content there.</description>
     </item>
     
     <item>
@@ -62,7 +62,7 @@ I am not the only person responsible for this code though, so be kind.</descript
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
       <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
 All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
-Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
+Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
     </item>
     
     <item>
@@ -71,7 +71,7 @@ Trisha&#39;s Guide to Converting Java to C#Turns out writing the actual C# is re
       <pubDate>Mon, 16 Jul 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/validation_with_spring_modules_validation/</guid>
-      <description>So if java generics slightly disappointed me lately, what have I found cool?I&#39;m currently working on a web application using Spring MVC, which probably doesn&#39;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&#39;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge if statement.</description>
+      <description>So if java generics slightly disappointed me lately, what have I found cool?I&amp;rsquo;m currently working on a web application using Spring MVC, which probably doesn&amp;rsquo;t come as a big surprise, it seems to be all the rage these days. Since this is my baby, I got to call the shots as to a lot of the framework choices. When it came to looking at implementing validation, I refused to believe I&amp;rsquo;d have to go through the primitive process of looking at all the values on the request and deciding if they pass muster, with some huge if statement.</description>
     </item>
     
     <item>

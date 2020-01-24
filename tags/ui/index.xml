@@ -27,8 +27,8 @@ I was aware that there have been many changes in the last few years, and I’ve 
       <pubDate>Tue, 12 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_horizontal_and_vertical_centring/</guid>
-      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&#39;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&#39;t &amp;ldquo;Centring&amp;rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&#39;t.</description>
+      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&amp;rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&amp;rsquo;t &amp;ldquo;Centring&amp;rdquo; just look wrong?
+Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&amp;rsquo;t.</description>
     </item>
     
     <item>
@@ -38,8 +38,8 @@ Part Five: Horizontal and Vertical CentringOne of the most common things you wan
       
       <guid>https://trishagee.github.io/post/css_for_developers_cross_browser_table_border_behaviour/</guid>
       <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.
-Today&#39;s gotcha is table borders.
-Yes, yes, I said don&#39;t use tables. What I means is, don&#39;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.
+Today&amp;rsquo;s gotcha is table borders.
+Yes, yes, I said don&amp;rsquo;t use tables. What I means is, don&amp;rsquo;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.
 But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
     </item>
     
@@ -51,7 +51,7 @@ But you should know that even when you use strict mode, Internet Explorer has sl
       <guid>https://trishagee.github.io/post/css_for_developers_column_layout_using_css/</guid>
       <description>This is a continuation of my series of CSS hints / tips / cheats for developers (and other technical-but-not-UI people).
 The screenshots are in Chrome on a Mac. The originals were on Firefox on Ubuntu so I can tell you the behaviour is identical.
-Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&#39;s example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
+Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&amp;rsquo;s example is a simple one, but worth knowing all the same. The aim is, once again, not to use HTML tables to provide any sort of layout.</description>
     </item>
     
     <item>
@@ -69,8 +69,8 @@ Part Three: Column Layout Using CSS (or: still no excuse to use tables)Today&#39
       <pubDate>Wed, 19 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_the_joy_of_floats/</guid>
-      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&#39;re as afflicted with NADD as I am.
-Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It&#39;s primarily aimed at developers, although I would hope it&#39;s comprehensible to a range of tech-savvy people.
+      <description>As promised, the Long Awaited Follow-Up to CSS for Developers Part One! Well, long-awaited if you&amp;rsquo;re as afflicted with NADD as I am.
+Quick recap - the aim of this series is to provide a quick and easy how-to around the magic that is CSS. It&amp;rsquo;s primarily aimed at developers, although I would hope it&amp;rsquo;s comprehensible to a range of tech-savvy people.
 (Note: unless otherwise stated, the screenshots are in Chrome on a Mac - given an earlier version of this guide I can tell you the behaviour is identical to Firefox on Ubuntu).</description>
     </item>
     
@@ -80,7 +80,7 @@ Quick recap - the aim of this series is to provide a quick and easy how-to aroun
       <pubDate>Mon, 17 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_horizontal_layout_using_css/</guid>
-      <description>I&#39;m a Java Developer. But I&#39;m also a Web Developer. Web Developers have been so badly maligned over the last decade or so that I always feel wary (and sometimes slightly ashamed) admitting this. There&#39;s some sort of assumption that Web Developers (and Front End Developers) aren&#39;t real programmers. Similarly, &amp;ldquo;real&amp;rdquo; developers don&#39;t like to be tainted by coming into contact with that nasty &amp;ldquo;front end stuff&amp;rdquo; in case someone mistakes them for a designer.</description>
+      <description>I&amp;rsquo;m a Java Developer. But I&amp;rsquo;m also a Web Developer. Web Developers have been so badly maligned over the last decade or so that I always feel wary (and sometimes slightly ashamed) admitting this. There&amp;rsquo;s some sort of assumption that Web Developers (and Front End Developers) aren&amp;rsquo;t real programmers. Similarly, &amp;ldquo;real&amp;rdquo; developers don&amp;rsquo;t like to be tainted by coming into contact with that nasty &amp;ldquo;front end stuff&amp;rdquo; in case someone mistakes them for a designer.</description>
     </item>
     
     <item>
@@ -89,7 +89,7 @@ Quick recap - the aim of this series is to provide a quick and easy how-to aroun
       <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_the_perils_of_front_end_design/</guid>
-      <description>I&#39;m reading Joel Spolsky&#39;s User Interface Design for Programmers. A thought that&#39;s struck me is about architecture. It&#39;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&#39;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&#39;m going to start from the easy point, the stuff you can see. There&#39;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &amp;ldquo;pretty&amp;rdquo;.</description>
+      <description>I&amp;rsquo;m reading Joel Spolsky&#39;s User Interface Design for Programmers. A thought that&amp;rsquo;s struck me is about architecture. It&amp;rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&amp;rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&amp;rsquo;m going to start from the easy point, the stuff you can see. There&amp;rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &amp;ldquo;pretty&amp;rdquo;.</description>
     </item>
     
   </channel>

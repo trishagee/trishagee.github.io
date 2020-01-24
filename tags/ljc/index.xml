@@ -28,7 +28,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       
       <guid>https://trishagee.github.io/post/ljc_open_conference_2012/</guid>
       <description>Saturday I had the pleasure of being part of the 5th London Java Community Open Conference. This is a great event to end the conference season on - it made me feel good about being part of the LJC, and got me excited about the prospects for 2013.
-The fantastic thing about an open conference is that a) you don&#39;t have to prepare like mad for it and b) the short sessions and wide variety of subjects mean that you learn stuff you didn&#39;t expect to.</description>
+The fantastic thing about an open conference is that a) you don&amp;rsquo;t have to prepare like mad for it and b) the short sessions and wide variety of subjects mean that you learn stuff you didn&amp;rsquo;t expect to.</description>
     </item>
     
     <item>
@@ -48,7 +48,7 @@ Expect Raspberry Pis and JavaFX.</description>
       
       <guid>https://trishagee.github.io/post/jax_london_2012/</guid>
       <description>Seemed like a quiet conference this year. Not really sure why, maybe it was the layout of the massive (and extremely dark) main room; maybe it was the awkward L-shape of the communal space; or maybe this year people were more interested in listening to the (really very good) sessions rather than participating or meeting other people. Whatever the reason, it felt quiet and almost low-key.
-Performance seemed pretty high on the agenda, as you&#39;d expect from a London conference, with a number of things on offer:</description>
+Performance seemed pretty high on the agenda, as you&amp;rsquo;d expect from a London conference, with a number of things on offer:</description>
     </item>
     
     <item>
@@ -57,8 +57,8 @@ Performance seemed pretty high on the agenda, as you&#39;d expect from a London 
       <pubDate>Mon, 01 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_user_group_sunday/</guid>
-      <description>Well this is exciting! JavaOne 2011 is the first conference I spoke at, so this the first time I&#39;ve covered the same conference two years running. I think.
-It&#39;s very nice to be back at JavaOne. Last year it was my first opportunity to meet so many people - the guys at Oracle who work really hard to make sure Java has its own identity; the JUG Leaders and Duchess folk; the JCP EC committee members; and loads of people who live and work in the area who I wouldn&#39;t normally get a chance to speak to in person.</description>
+      <description>Well this is exciting! JavaOne 2011 is the first conference I spoke at, so this the first time I&amp;rsquo;ve covered the same conference two years running. I think.
+It&amp;rsquo;s very nice to be back at JavaOne. Last year it was my first opportunity to meet so many people - the guys at Oracle who work really hard to make sure Java has its own identity; the JUG Leaders and Duchess folk; the JCP EC committee members; and loads of people who live and work in the area who I wouldn&amp;rsquo;t normally get a chance to speak to in person.</description>
     </item>
     
     <item>
@@ -77,7 +77,7 @@ It&#39;s very nice to be back at JavaOne. Last year it was my first opportunity
       
       <guid>https://trishagee.github.io/post/the_birth_of_a_new_community/</guid>
       <description>Topping off my mini-tour at the end of May, I was invited to Rotterdam to present to a brand new community of developers. I was really interested in attending because my experience with user groups is pretty much limited to the London Java Community, and I knew this would be different due to being a) across a wider range of technologies and b) shiny and new.
-It was hosted (rather awesomely) in a brewery, and until then I&#39;d never given a presentation in a pub.</description>
+It was hosted (rather awesomely) in a brewery, and until then I&amp;rsquo;d never given a presentation in a pub.</description>
     </item>
     
     <item>
@@ -86,9 +86,9 @@ It was hosted (rather awesomely) in a brewery, and until then I&#39;d never give
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/new_disruptor_presentation_unveiled_to_the_ljc/</guid>
-      <description>A few weeks ago, I presented my new &amp;ldquo;User&#39;s Guide to the Disruptor&amp;rdquo; talk to the London Java Community. Since it was very kindly hosted at Skillsmatter, there is a video of the presentation available, and the slides are below.
+      <description>A few weeks ago, I presented my new &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; talk to the London Java Community. Since it was very kindly hosted at Skillsmatter, there is a video of the presentation available, and the slides are below.
 Concurrent Programming Using the Disruptor  View more presentations from Trisha Gee  
-The presentation is a little different to the ones we&#39;ve done before. Previously we&#39;ve gone into how it works and why it&#39;s fast.</description>
+The presentation is a little different to the ones we&amp;rsquo;ve done before. Previously we&amp;rsquo;ve gone into how it works and why it&amp;rsquo;s fast.</description>
     </item>
     
     <item>
@@ -98,7 +98,7 @@ The presentation is a little different to the ones we&#39;ve done before. Previo
       
       <guid>https://trishagee.github.io/post/london_java_community_open_conference/</guid>
       <description>Saturday was, hopefully, my last conference of the year. My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.
-Who wants to propose a session?In many ways the London Java Community Open Conference was my favourite one so far, and not just because it&#39;s near home and I helped to organise it.</description>
+Who wants to propose a session?In many ways the London Java Community Open Conference was my favourite one so far, and not just because it&amp;rsquo;s near home and I helped to organise it.</description>
     </item>
     
     <item>
@@ -116,7 +116,7 @@ Who wants to propose a session?In many ways the London Java Community Open Confe
       <pubDate>Tue, 15 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__i_learn_stuff_and_meet_people/</guid>
-      <description>A couple of weeks ago, I was at JAX London along with a number of the London Java Community regulars (Martijn/Ben/John/Sandro/Simon/Zoe I&#39;m looking at you&amp;hellip;.)
+      <description>A couple of weeks ago, I was at JAX London along with a number of the London Java Community regulars (Martijn/Ben/John/Sandro/Simon/Zoe I&amp;rsquo;m looking at you&amp;hellip;.)
 My purpose for attending was largely to present the Hardcore Concurrency for Beginners talk that Mike and I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me.</description>
     </item>
     
@@ -126,7 +126,7 @@ My purpose for attending was largely to present the Hardcore Concurrency for Beg
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
-      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&#39;s Guide to Hardcore Concurrency. This was a preview of the talk we&#39;ll be doing at JAX London on the 2nd November.
+      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency. This was a preview of the talk we&amp;rsquo;ll be doing at JAX London on the 2nd November.
 A video of the session is available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
     </item>
     
@@ -136,9 +136,9 @@ A video of the session is available, as are the slides. I promise not to say &am
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2011_roundup/</guid>
-      <description>Having been back in London for a few days I&#39;ve had some time to digest the madness that was last week.
-My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&#39;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my last post):
-First and foremost, the people. I don&#39;t remember meeting a single grumpy person.</description>
+      <description>Having been back in London for a few days I&amp;rsquo;ve had some time to digest the madness that was last week.
+My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&amp;rsquo;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my last post):
+First and foremost, the people. I don&amp;rsquo;t remember meeting a single grumpy person.</description>
     </item>
     
     <item>
@@ -147,9 +147,9 @@ First and foremost, the people. I don&#39;t remember meeting a single grumpy per
       <pubDate>Tue, 27 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2011/</guid>
-      <description>So, I&#39;m off to JavaOne next week!
-This is an unexpected and very pleasant surprise. I&#39;ll be there with Martin (of the Disruptor fame), and Martijn (that&#39;s not going to get confusing at all). Martin will be talking about the Disruptor on Thursday, and Martijn is busy talking about&amp;hellip; everything. Most importantly for the LJC he&#39;s representing us in our shiny new JCP Executive Committee role.
-I&#39;m really looking forward to meeting pretty much anyone and everyone who&#39;ll talk to me.</description>
+      <description>So, I&amp;rsquo;m off to JavaOne next week!
+This is an unexpected and very pleasant surprise. I&amp;rsquo;ll be there with Martin (of the Disruptor fame), and Martijn (that&amp;rsquo;s not going to get confusing at all). Martin will be talking about the Disruptor on Thursday, and Martijn is busy talking about&amp;hellip; everything. Most importantly for the LJC he&amp;rsquo;s representing us in our shiny new JCP Executive Committee role.
+I&amp;rsquo;m really looking forward to meeting pretty much anyone and everyone who&amp;rsquo;ll talk to me.</description>
     </item>
     
     <item>
@@ -179,7 +179,7 @@ However, the London Java Community did! So if you have a second please vote for 
       <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_public_appearance/</guid>
-      <description>I&#39;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&#39;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&#39;s post gives a little more background on the subject.
+      <description>I&amp;rsquo;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&amp;rsquo;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&amp;rsquo;s post gives a little more background on the subject.
 Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.</description>
     </item>
     
@@ -189,8 +189,8 @@ Another LMAX LJC member Mike will also be giving a lightning talk, on Project C
       <pubDate>Mon, 23 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_around_a_bit/</guid>
-      <description>I&#39;m honoured to now be listed on three aggregated blog feeds:
-The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&#39;s on to try and write useful stuff. Oh OK, I&#39;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
+      <description>I&amp;rsquo;m honoured to now be listed on three aggregated blog feeds:
+The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&amp;rsquo;s on to try and write useful stuff. Oh OK, I&amp;rsquo;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
     </item>
     
     <item>
@@ -199,8 +199,8 @@ The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.
       <pubDate>Mon, 16 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_london_java_community_elected_to_the_jcp_seee_executive_committee/</guid>
-      <description>As an associate member of the London Java Community (LJC), I&#39;m very pleased with the news that we won an Open seat on the Java SE/EE executive committee. The results show that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &amp;ldquo;landslide&amp;rdquo;.
-It&#39;s quite exciting to be one of the two user groups involved.</description>
+      <description>As an associate member of the London Java Community (LJC), I&amp;rsquo;m very pleased with the news that we won an Open seat on the Java SE/EE executive committee. The results show that we got an astonishing 47.5% of the vote - if an MP got voted in with that percentage the newspapers would probably be using the word &amp;ldquo;landslide&amp;rdquo;.
+It&amp;rsquo;s quite exciting to be one of the two user groups involved.</description>
     </item>
     
   </channel>

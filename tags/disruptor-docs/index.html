@@ -6,7 +6,7 @@
     
     <title>Trisha Gee  | disruptor-docs</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.62.2" />
+    <meta name="generator" content="Hugo 0.63.1" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -183,7 +183,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      This month's Java Magazine features an article by yours truly, which is yet another intro to the Disruptor. It's basically a summary of the stuff I've written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.
+      This month&rsquo;s Java Magazine features an article by yours truly, which is yet another intro to the Disruptor. It&rsquo;s basically a summary of the stuff I&rsquo;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.
     </div>
   </div>
 </div>
@@ -200,7 +200,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it's time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it's going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.
+      Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it&rsquo;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&rsquo;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.
     </div>
   </div>
 </div>
@@ -217,7 +217,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      My recent slow-down in posting is because I've been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don't intuitively grasp the subject. I guess I don't have the deep background knowledge required to fully understand.
+      My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject. I guess I don&rsquo;t have the deep background knowledge required to fully understand.
     </div>
   </div>
 </div>
@@ -234,8 +234,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We mention the phrase Mechanical Sympathy quite a lot, in fact it's even Martin's blog title. It's about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
-We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it's the next thing I thought I would tackle.
+      We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even Martin&rsquo;s blog title. It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
+We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.
     </div>
   </div>
 </div>
@@ -253,8 +253,8 @@ We get a number of comments and questions about the mysterious cache line paddin
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&quot;.
-I'm working up to answering that. I'm currently on question number two: &ldquo;Why is it so fast?&quot;.
-These questions do go hand in hand, however, because I can't talk about why it's fast without saying what it does, and I can't talk about what it is without saying why it is that way.
+I&rsquo;m working up to answering that. I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&quot;.
+These questions do go hand in hand, however, because I can&rsquo;t talk about why it&rsquo;s fast without saying what it does, and I can&rsquo;t talk about what it is without saying why it is that way.
     </div>
   </div>
 </div>
@@ -271,9 +271,9 @@ These questions do go hand in hand, however, because I can't talk about why it's
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      So now I've covered the ring buffer itself, reading from it and writing to it.
+      So now I&rsquo;ve covered the ring buffer itself, reading from it and writing to it.
 Logically the next thing to do is to wire everything up together.
-I talked about multiple producers - they have the producer barrier to keep them in order and under control. I've talked about consumers in a simple situation. Multiple consumers can get a little more involved. We've done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
+I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&rsquo;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
     </div>
   </div>
 </div>
@@ -311,9 +311,9 @@ The Disruptor code has interfaces and helper classes for the Consumers, but ther
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       The next in the series of understanding the Disruptor pattern developed at LMAX.
-After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you're using the Disruptor.
+After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.
 ConsumerBarriers and Consumers
-I'm going to approach this slightly backwards, because it's probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
+I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
     </div>
   </div>
 </div>
@@ -330,8 +330,8 @@ I'm going to approach this slightly backwards, because it's probably easier to u
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we've realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We've come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
-On the site you can download a technical article explaining what the Disruptor is and why it's so clever and fast.
+      Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
+On the site you can download a technical article explaining what the Disruptor is and why it&rsquo;s so clever and fast.
     </div>
   </div>
 </div>
