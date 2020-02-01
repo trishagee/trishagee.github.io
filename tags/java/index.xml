@@ -6,10 +6,27 @@
     <description>Recent content in java on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 10 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>News from IntelliJ IDEA Community</title>
+      <link>https://trishagee.github.io/presentation/fosdem_2020/</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/fosdem_2020/</guid>
+      <description>&lt;p&gt;Resources for the Update on IntelliJ IDEA talk from FOSDEM 2020.&lt;/p&gt;
+&lt;h2 id=&#34;abstract&#34;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;&lt;em&gt;With releases of Java coming thick and fast every six months, it&amp;rsquo;s a full time job staying on top of the features. If
+your IDE can help you here, it&amp;rsquo;s one less thing to worry about. IntelliJ IDEA Community has three releases every
+year, each one improves the support for modern versions of Java, but that&amp;rsquo;s not the only thing on offer.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Join this session to see what&amp;rsquo;s new in IntelliJ IDEA Community (the free one!). This is not limited to just
+supporting new language features, which some of us might not get to use for ages, but better support for things
+developers do every day, and improved performance and stability, because an all-singing, all-dancing IDE is all well
+and good, but if it&amp;rsquo;s not usable those features mean nothing.&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Reading Code Is Harder Than Writing It</title>
