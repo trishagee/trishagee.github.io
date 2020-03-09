@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>conferences</title>
+      <link>https://trishagee.github.io/tags/conferences/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/tags/conferences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>events</title>
+      <link>https://trishagee.github.io/tags/events/</link>
+      <pubDate>Mon, 09 Mar 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/tags/events/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>intellij</title>
@@ -44,24 +62,6 @@
       <pubDate>Mon, 20 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/tags/review/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>conferences</title>
-      <link>https://trishagee.github.io/tags/conferences/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/tags/conferences/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>events</title>
-      <link>https://trishagee.github.io/tags/events/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/tags/events/</guid>
       <description></description>
     </item>
     
@@ -390,7 +390,7 @@
     </item>
     
     <item>
-      <title>mongodb</title>
+      <title>MongoDB</title>
       <link>https://trishagee.github.io/tags/mongodb/</link>
       <pubDate>Mon, 19 Jan 2015 00:00:00 +0000</pubDate>
       
