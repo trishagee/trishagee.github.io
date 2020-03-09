@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>MongoDB on Trisha Gee</title>
+    <title>mongodb on Trisha Gee</title>
     <link>https://trishagee.github.io/tags/mongodb/</link>
-    <description>Recent content in MongoDB on Trisha Gee</description>
+    <description>Recent content in mongodb on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Mon, 19 Jan 2015 00:00:00 +0000</lastBuildDate>
@@ -134,6 +134,15 @@ Look inside &amp;gt;MongoDB and Big Data</description>
       <guid>https://trishagee.github.io/post/jax_london__mongodb_tutorial/</guid>
       <description>In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get there, and not because of the Super Storm. Still, that gave me the day to finish off the tutorial I was running there on Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute, oh no&amp;hellip;.
 But as in previous years, the main benefit of this conference for me was meeting most of the usual suspects from the London Java Community.</description>
+    </item>
+    
+    <item>
+      <title>Getting started with the MongoDB Java Driver Tutorial</title>
+      <link>https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/</link>
+      <pubDate>Thu, 24 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/resources/getting_started_with_the_mongodb_java_tutorial/</guid>
+      <description>&lt;p&gt;Brief guide to running the MongoDB tutorial from QCon London and JAX London.&lt;/p&gt;</description>
     </item>
     
     <item>
