@@ -37,7 +37,7 @@
 <meta itemprop="description" content="New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?">
 <meta itemprop="datePublished" content="2019-06-20T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-06-20T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1302">
+<meta itemprop="wordCount" content="1298">
 
 
 
@@ -190,8 +190,8 @@ if (!doNotTrack) {
 <li><em>How the support and license changes that came in with Java 11 might impact us.</em></li>
 </ul>
 <h1 id="videos">Videos</h1>
-<p>There are two main versions of this. The most recent, at GOTO Amsterdam, gives the most comprehensive coverage of the
-license and support changes:</p>
+<p>There are two main versions of this. The most recent, at GOTO Amsterdam, gives the <strong>most comprehensive coverage of the
+license and support changes</strong>:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eBuFzQeiGe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p>The other version <a href="https://youtu.be/eot4kLJEnd4">was from DevoxxUK</a>.  This probably has marginally fewer errors when
 I try to demo JShell, if I recall correctly.</p>
@@ -230,7 +230,13 @@ I try to demo JShell, if I recall correctly.</p>
 </ul>
 <h2 id="migrating-from-java-8">Migrating from Java 8</h2>
 <ul>
-<li>My video course on <a href="https://www.oreilly.com/library/view/moving-to-java/9780134857664/">Moving to Java 9</a> is available on <a href="https://www.oreilly.com/library/view/moving-to-java/9780134857664/">Safari</a> or can be purchased via <a href="http://www.informit.com/store/moving-to-java-9-livelessons-better-design-and-simpler-9780134857657">InformIT</a>. This has details about the features from Java 9 that are most interesting to Java developers, and a guide on how to migrate to Java 9.</li>
+<li><a href="https://www.infoq.com/articles/upgrading-java-8-to-12">Upgrading from Java 8 to Java 12</a></li>
+<li>My video course on <a href="https://www.oreilly.com/library/view/moving-to-java/9780134857664/">Moving to Java 9</a> is
+available on <a href="https://www.oreilly.com/library/view/moving-to-java/9780134857664/">Safari</a> or can be purchased via
+<a href="http://www.informit.com/store/moving-to-java-9-livelessons-better-design-and-simpler-9780134857657">InformIT</a>.
+This has details about the features from Java 9 that are most interesting to Java developers, and a guide on
+how to migrate to Java 9. Of course, this is still valid even when migrating to Java 11, although there may be
+one or two additional gotchas now.</li>
 <li>I wrote something for Oracle&rsquo;s Java Magazine on <a href="http://www.javamagazine.mozaicreader.com/JulyAug2017/Default/17/0/3704588#&amp;pageSet=17&amp;page=0">Migrating from Java 8 to Java 9</a></li>
 <li>And I wrote a related piece for InfoQ on <a href="https://www.infoq.com/articles/Java-Jigsaw-Migration-Guide">Painlessly Migrating to Java Jigsaw Modules - a Case Study </a></li>
 <li><a href="https://docs.oracle.com/javase/9/migrate/">Java SE Oracle JDK 9 Migration Guide</a> - Oracle&rsquo;s guide</li>
@@ -307,12 +313,7 @@ IDEA can help you with the new switch expression syntax (available in IntelliJ I
 </ul>
 <h3 id="java-future">Java Future</h3>
 <ul>
-<li>Java 13: <a href="https://openjdk.java.net/jeps/355">JEP 355: Text Blocks (Preview)</a></li>
-<li>Java 13: <a href="https://openjdk.java.net/jeps/354">JEP 354: Switch Expressions (Preview)</a> has been changed from the Java
-12 version: &ldquo;To yield a value from a switch expression, the break with value statement is dropped in favor of a yield statement.&rdquo;</li>
 <li><a href="http://openjdk.java.net/jeps/302">JEP 302: Lambda Leftovers (including underscore for param)</a></li>
-<li><a href="http://openjdk.java.net/jeps/305">JEP 305: Pattern Matching (Preview)</a></li>
-<li><a href="http://cr.openjdk.java.net/~briangoetz/amber/datum.html">Data Classes for Java</a> and <a href="https://www.infoq.com/news/2018/02/data-classes-for-java">Brian Goetz on Data Classes for Java</a></li>
 <li><a href="https://openjdk.java.net/projects/amber/">Project Amber</a> - &ldquo;The goal of Project Amber is to explore and incubate smaller, productivity-oriented Java language features&rdquo;</li>
 <li><a href="https://openjdk.java.net/projects/valhalla/">Valhalla</a> - Includes Value Types</li>
 <li><a href="https://openjdk.java.net/projects/loom/">Loom</a> - Fibers, Continuations and Tail-Calls for the JVM</li>
@@ -336,6 +337,9 @@ IDEA can help you with the new switch expression syntax (available in IntelliJ I
 <li>Java 12: <a href="https://openjdk.java.net/jeps/189">JEP 189: Shenandoah: A Low-Pause-Time Garbage Collector (Experimental)</a>, see also <a href="https://wiki.openjdk.java.net/display/shenandoah/Main">Shenandoah GC Wiki</a></li>
 <li>Java 12: <a href="http://openjdk.java.net/projects/jdk/12/">More Updates to G1</a></li>
 <li>Java 13: <a href="https://openjdk.java.net/jeps/351">JEP 351: ZGC: Uncommit Unused Memory</a></li>
+<li>Java 14: <a href="https://openjdk.java.net/jeps/364">JEP 364: ZGC on macOS (Experimental)</a>
+and <a href="https://openjdk.java.net/jeps/365">JEP 365: ZGC on Windows (Experimental)</a></li>
+<li>Java 14: <a href="https://openjdk.java.net/jeps/363">JEP 363: Remove the Concurrent Mark Sweep (CMS) Garbage Collector</a></li>
 <li><a href="https://dzone.com/articles/java-garbage-collection-3">New Java Garbage Collectors</a></li>
 </ul>
 <h3 id="string-performance">String Performance</h3>
