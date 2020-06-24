@@ -29,24 +29,24 @@
     
     <meta property="og:title" content="Life Beyond Java 8 " />
 <meta property="og:description" content="New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?
-(Updated 7 May, 2020)" />
+(Updated 24 June, 2020)" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/presentation/beyond_java_8/" />
 <meta property="article:published_time" content="2019-06-20T00:00:00+00:00" />
 <meta property="article:modified_time" content="2019-06-20T00:00:00+00:00" />
 <meta itemprop="name" content="Life Beyond Java 8 ">
 <meta itemprop="description" content="New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?
-(Updated 7 May, 2020)">
+(Updated 24 June, 2020)">
 <meta itemprop="datePublished" content="2019-06-20T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2019-06-20T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1298">
+<meta itemprop="wordCount" content="1372">
 
 
 
 <meta itemprop="keywords" content="java," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Life Beyond Java 8 "/>
 <meta name="twitter:description" content="New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?
-(Updated 7 May, 2020)"/>
+(Updated 24 June, 2020)"/>
 
       
 <script type="application/javascript">
@@ -183,7 +183,7 @@ if (!doNotTrack) {
     </header>
 
     <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?</p>
-<p>(Updated 7 May, 2020)</p>
+<p>(Updated 24 June, 2020)</p>
 <h1 id="abstract">Abstract</h1>
 <p><em>Wasn’t Java 8 a fantastic update to the language? Lambdas and streams were a huge change and have helped to improve Java developers’ productivity and introduce some functional ideas to the language. Then came Java 9&hellip; and although the module system is really interesting for certain types of applications, the lack of exciting language features and uncertainty around how painful it might be to migrate to Java 9 left many applications taking a wait-and-see approach, happy with Java 8.</em></p>
 <p><em>But now Java has a new version every six months, and suddenly Java 14 is here. We’re all still on Java 8, wondering
@@ -195,10 +195,13 @@ whether we should move to a later version, which one to choose, and how painful 
 <li><em>How the support and license changes that came in with Java 11 might impact us.</em></li>
 </ul>
 <h1 id="videos">Videos</h1>
-<p>There are two main versions of this. The most recent, at GOTO Amsterdam, gives the <strong>most comprehensive coverage of the
-license and support changes</strong>:</p>
+<p>There are a few versions of this.</p>
+<p>The most recent was May 2020, an online presentation which brings this talk up-to-date to Java 14, and focuses mostly
+on the language features.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y1Jp-Q-iUt0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+<p>The version from GOTO Amsterdam 2019 gives the <strong>most comprehensive coverage of the license and support changes</strong>:</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eBuFzQeiGe0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<p>The other version <a href="https://youtu.be/eot4kLJEnd4">was from DevoxxUK</a>.  This probably has marginally fewer errors when
+<p>The version <a href="https://youtu.be/eot4kLJEnd4">from DevoxxUK</a> probably has marginally fewer errors when
 I try to demo JShell, if I recall correctly.</p>
 <p>There&rsquo;s another <a href="https://www.infoq.com/presentations/java-8-plus">older video here</a>, which contains a transcript
 (might be useful if you don&rsquo;t want to actually watch the whole thing!).</p>
@@ -252,6 +255,16 @@ one or two additional gotchas now.</li>
 <li><a href="https://medium.com/criciumadev/its-time-migrating-to-java-11-5eb3868354f9">It’s time! Migrating to Java 11</a> - a case study</li>
 </ul>
 <h2 id="features">Features</h2>
+<h3 id="java-15">Java 15</h3>
+<ul>
+<li><a href="https://openjdk.java.net/projects/jdk/15/">All JDK 15 JEPs</a></li>
+<li><a href="https://openjdk.java.net/jeps/378">JEP 378: Text Blocks (Standard)</a></li>
+<li><a href="https://openjdk.java.net/jeps/375">JEP 375: Pattern Matching for instanceof (Second Preview)</a></li>
+<li><a href="https://openjdk.java.net/jeps/384">JEP 384: Records (Second Preview)</a></li>
+<li><a href="https://openjdk.java.net/jeps/360">JEP 360: Sealed Types (Preview)</a></li>
+<li><a href="https://openjdk.java.net/jeps/371">JEP 371: Hidden Classes</a></li>
+<li><a href="https://openjdk.java.net/jeps/377">JEP 377: ZGC: A Scalable Low-Latency Garbage Collector (Production)</a></li>
+</ul>
 <h3 id="java-14">Java 14</h3>
 <ul>
 <li><a href="https://openjdk.java.net/projects/jdk/14/">All JDK 14 JEPs</a></li>
@@ -345,6 +358,7 @@ IDEA can help you with the new switch expression syntax (available in IntelliJ I
 <li>Java 14: <a href="https://openjdk.java.net/jeps/364">JEP 364: ZGC on macOS (Experimental)</a>
 and <a href="https://openjdk.java.net/jeps/365">JEP 365: ZGC on Windows (Experimental)</a></li>
 <li>Java 14: <a href="https://openjdk.java.net/jeps/363">JEP 363: Remove the Concurrent Mark Sweep (CMS) Garbage Collector</a></li>
+<li>Java 15: <a href="https://openjdk.java.net/jeps/377">JEP 377: ZGC: A Scalable Low-Latency Garbage Collector (Production)</a></li>
 <li><a href="https://dzone.com/articles/java-garbage-collection-3">New Java Garbage Collectors</a></li>
 </ul>
 <h3 id="string-performance">String Performance</h3>
