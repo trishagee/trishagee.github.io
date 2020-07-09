@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>java</title>
+      <link>https://trishagee.github.io/tags/java/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/tags/java/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>conferences</title>
@@ -35,15 +44,6 @@
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/tags/intellij/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://trishagee.github.io/tags/java/</link>
-      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/tags/java/</guid>
       <description></description>
     </item>
     

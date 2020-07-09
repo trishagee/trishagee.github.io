@@ -6,10 +6,20 @@
     <description>Recent content in java on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/tags/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Life Beyond Java 8 </title>
+      <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
+      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;
+&lt;p&gt;(Updated 9 July, 2020)&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>News from IntelliJ IDEA Community</title>
@@ -35,16 +45,6 @@ and good, but if it&amp;rsquo;s not usable those features mean nothing.&lt;/em&g
       
       <guid>https://trishagee.github.io/presentation/reading_code/</guid>
       <description>&lt;p&gt;We should invest more time in the skill of reading code.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Life Beyond Java 8 </title>
-      <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
-      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;
-&lt;p&gt;(Updated 24 June, 2020)&lt;/p&gt;</description>
     </item>
     
     <item>

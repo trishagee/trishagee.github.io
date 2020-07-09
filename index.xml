@@ -6,10 +6,20 @@
     <description>Recent content on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 09 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://trishagee.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Life Beyond Java 8 </title>
+      <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
+      <pubDate>Thu, 09 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
+      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;
+&lt;p&gt;(Updated 9 July, 2020)&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Upcoming Events</title>
@@ -139,16 +149,6 @@ more in time.  For now, I want to publish the poem my very talented cousin Izzi 
 &lt;/ul&gt;
 &lt;p&gt;The reality is that code reviews can frequently be an uncomfortable experience for everyone involved, leading to reviews that are combative, ineffective, or even worse, simply not happening.&lt;/p&gt;
 &lt;p&gt;Here is a quick guide to help you to create an effective code review process.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Life Beyond Java 8 </title>
-      <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
-      <pubDate>Thu, 20 Jun 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/presentation/beyond_java_8/</guid>
-      <description>&lt;p&gt;New versions of Java are coming out every 6 months now. What has changed, should we upgrade, and if so, how?&lt;/p&gt;
-&lt;p&gt;(Updated 24 June, 2020)&lt;/p&gt;</description>
     </item>
     
     <item>
