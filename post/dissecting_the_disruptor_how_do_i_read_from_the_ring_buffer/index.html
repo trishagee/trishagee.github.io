@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Trisha Gee  | Dissecting the Disruptor: How do I read from the ring buffer?</title>
+    <title>Dissecting the Disruptor: How do I read from the ring buffer? | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.73.0" />
     
@@ -14,7 +14,7 @@
 
     
     
-      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
     
 
     
@@ -22,6 +22,7 @@
     
       
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
 
     
 
@@ -67,6 +68,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
     
+	
   </head>
 
   <body class="ma0 avenir bg-near-white production">
@@ -161,6 +163,8 @@ if (!doNotTrack) {
 
 
 
+
+
     </div>
   </div>
 </nav>
@@ -174,21 +178,50 @@ if (!doNotTrack) {
       
   
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
-
     <header class="mt4 w-100">
-      <p class="f6 b helvetica tracked">
+      <aside class="instapaper_ignoref b helvetica tracked">
           
         POSTS
-      </p>
-      <h1 class="f1 athelas mb1">Dissecting the Disruptor: How do I read from the ring buffer?</h1>
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/&amp;text=Dissecting%20the%20Disruptor:%20How%20do%20I%20read%20from%20the%20ring%20buffer?" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/&amp;title=Dissecting%20the%20Disruptor:%20How%20do%20I%20read%20from%20the%20ring%20buffer?" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Dissecting the Disruptor: How do I read from the ring buffer?</h1>
       
       
       <time class="f6 mv4 dib tracked" datetime="2011-06-28T00:00:00Z">June 28, 2011</time>
+
       
       
     </header>
-
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>The next in the series of understanding <a href="http://code.google.com/p/disruptor/">the Disruptor pattern</a> developed at <a href="http://www.lmaxtrader.com/">LMAX</a>.<br /><br />After the <a href="http://mechanitis.blogspot.com/2011/06/dissecting-disruptor-whats-so-special.html">last post</a> we all understand ring buffers and how awesome they are.  Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.<br /><br /><b>ConsumerBarriers and Consumers</b><br />I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run.  Assuming that some magic has populated it: how do you read something from the ring buffer? <br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-XfVLYjAqNeY/TgjrImkZ-BI/AAAAAAAAIEg/_SM2EqIgATs/s1600/ConsumerWaitFor.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" height="214" src="http://1.bp.blogspot.com/-XfVLYjAqNeY/TgjrImkZ-BI/AAAAAAAAIEg/_SM2EqIgATs/s640/ConsumerWaitFor.png" width="640" /></a></div><br />(OK, I&rsquo;m starting to regret using Paint/<a href="http://www.gimp.org/">Gimp</a>.  Although it&rsquo;s an excellent excuse to purchase a graphics tablet if I do continue down this road.  Also UML gurus are probably cursing my name right now.)<br /><br />Your <code>Consumer</code> is the thread that wants to get something off the buffer.  It has access to a <code>ConsumerBarrier</code>, which is created by the <code>RingBuffer</code> and interacts with it on behalf of the <code>Consumer</code>.  While the ring buffer obviously needs a sequence number to figure out what the next available slot is, the consumer also needs to know which sequence number it&rsquo;s up to - each consumer needs to be able to figure out which sequence number it&rsquo;s expecting to see next.  So in the case above, the consumer has dealt with everything in the ring buffer up to and including 8, so it&rsquo;s expecting to see 9 next.<br /><br />The consumer calls <code>waitFor</code> on the <code>ConsumerBarrier</code> with the sequence number it wants next<br /><br /><pre><code style="font-size: 12px;">    final long availableSeq = consumerBarrier.waitFor(nextSequence);<br /></code></pre><br />and the <code>ConsumerBarrier</code> returns the highest sequence number available in the ring buffer - in the example above, 12.  The <code>ConsumerBarrier</code> has a <code>WaitStrategy</code> which it uses to decide how to wait for this sequence number - I won&rsquo;t go into details of that right now, the code has comments in outlining the advantages and disadvantages of each.<br /><br /><b>Now what?</b><br />So the consumer has been hanging around waiting for more stuff to get written to the ring buffer, and it&rsquo;s been told what has been written - entries 9, 10, 11 and 12.  Now they&rsquo;re there, the consumer can ask the <code>ConsumerBarrier</code> to fetch them.<br /><br /><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-NKI4nQgA_Co/TgjsGRyaTWI/AAAAAAAAIEk/S7fAyNrjlXQ/s1600/ConsumerRequest.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="222" src="http://2.bp.blogspot.com/-NKI4nQgA_Co/TgjsGRyaTWI/AAAAAAAAIEk/S7fAyNrjlXQ/s640/ConsumerRequest.png" width="640" /></a></div><br />As it&rsquo;s fetching them, the <code>Consumer</code> is updating its own cursor. <br /><br />You should start to get a feel for how this helps to smooth latency spikes - instead of asking &ldquo;Can I have the next one yet?  How about now?  Now?&rdquo; for every individual item, the <code>Consumer</code> simply says &ldquo;Let me know when you&rsquo;ve got more than this number&rdquo;, and is told in return how many more entries it can grab.  Because these new entries have definitely been written (the ring buffer&rsquo;s sequence has been updated), and because the only things trying to get to these entries can only read them and not write to them, this can be done without locks.  Which is nice.  Not only is it safer and easier to code against, it&rsquo;s much faster not to use a lock.<br /><br />And the added bonus - you can have multiple <code>Consumers</code> reading off the same <code>RingBuffer</code>, with no need for locks and no need for additional queues to coordinate between the different threads.  So you can really run your processing in parallel with the Disruptor coordinating the effort.<br /><br />The <a href="http://code.google.com/p/disruptor/source/browse/trunk/code/src/main/com/lmax/disruptor/BatchConsumer.java">BatchConsumer</a> is an example of consumer code, and if you implement the <a href="http://code.google.com/p/disruptor/source/browse/trunk/code/src/main/com/lmax/disruptor/BatchHandler.java">BatchHandler </a>you can get the <code>BatchConsumer</code> to do the heavy lifting I&rsquo;ve outlined above.  Then it&rsquo;s easy to deal with the whole batch of entries processed (e.g. from 9-12 above) without having to fetch each one individually.<br /><br />EDIT: Note that version 2.0 of the Disruptor uses different names to the ones in this article.  Please see <a href="http://mechanitis.blogspot.com/2011/08/disruptor-20-all-change-please.html">my summary of the changes</a> if you are confused about class names.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>The next in the series of understanding <a href="http://code.google.com/p/disruptor/">the Disruptor pattern</a> developed at <a href="http://www.lmaxtrader.com/">LMAX</a>.<br /><br />After the <a href="http://mechanitis.blogspot.com/2011/06/dissecting-disruptor-whats-so-special.html">last post</a> we all understand ring buffers and how awesome they are.  Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.<br /><br /><b>ConsumerBarriers and Consumers</b><br />I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run.  Assuming that some magic has populated it: how do you read something from the ring buffer? <br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-XfVLYjAqNeY/TgjrImkZ-BI/AAAAAAAAIEg/_SM2EqIgATs/s1600/ConsumerWaitFor.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em; text-align: center;"><img border="0" height="214" src="http://1.bp.blogspot.com/-XfVLYjAqNeY/TgjrImkZ-BI/AAAAAAAAIEg/_SM2EqIgATs/s640/ConsumerWaitFor.png" width="640" /></a></div><br />(OK, I&rsquo;m starting to regret using Paint/<a href="http://www.gimp.org/">Gimp</a>.  Although it&rsquo;s an excellent excuse to purchase a graphics tablet if I do continue down this road.  Also UML gurus are probably cursing my name right now.)<br /><br />Your <code>Consumer</code> is the thread that wants to get something off the buffer.  It has access to a <code>ConsumerBarrier</code>, which is created by the <code>RingBuffer</code> and interacts with it on behalf of the <code>Consumer</code>.  While the ring buffer obviously needs a sequence number to figure out what the next available slot is, the consumer also needs to know which sequence number it&rsquo;s up to - each consumer needs to be able to figure out which sequence number it&rsquo;s expecting to see next.  So in the case above, the consumer has dealt with everything in the ring buffer up to and including 8, so it&rsquo;s expecting to see 9 next.<br /><br />The consumer calls <code>waitFor</code> on the <code>ConsumerBarrier</code> with the sequence number it wants next<br /><br /><pre><code style="font-size: 12px;">    final long availableSeq = consumerBarrier.waitFor(nextSequence);<br /></code></pre><br />and the <code>ConsumerBarrier</code> returns the highest sequence number available in the ring buffer - in the example above, 12.  The <code>ConsumerBarrier</code> has a <code>WaitStrategy</code> which it uses to decide how to wait for this sequence number - I won&rsquo;t go into details of that right now, the code has comments in outlining the advantages and disadvantages of each.<br /><br /><b>Now what?</b><br />So the consumer has been hanging around waiting for more stuff to get written to the ring buffer, and it&rsquo;s been told what has been written - entries 9, 10, 11 and 12.  Now they&rsquo;re there, the consumer can ask the <code>ConsumerBarrier</code> to fetch them.<br /><br /><div class="separator" style="clear: both; text-align: center;"></div><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-NKI4nQgA_Co/TgjsGRyaTWI/AAAAAAAAIEk/S7fAyNrjlXQ/s1600/ConsumerRequest.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="222" src="http://2.bp.blogspot.com/-NKI4nQgA_Co/TgjsGRyaTWI/AAAAAAAAIEk/S7fAyNrjlXQ/s640/ConsumerRequest.png" width="640" /></a></div><br />As it&rsquo;s fetching them, the <code>Consumer</code> is updating its own cursor. <br /><br />You should start to get a feel for how this helps to smooth latency spikes - instead of asking &ldquo;Can I have the next one yet?  How about now?  Now?&rdquo; for every individual item, the <code>Consumer</code> simply says &ldquo;Let me know when you&rsquo;ve got more than this number&rdquo;, and is told in return how many more entries it can grab.  Because these new entries have definitely been written (the ring buffer&rsquo;s sequence has been updated), and because the only things trying to get to these entries can only read them and not write to them, this can be done without locks.  Which is nice.  Not only is it safer and easier to code against, it&rsquo;s much faster not to use a lock.<br /><br />And the added bonus - you can have multiple <code>Consumers</code> reading off the same <code>RingBuffer</code>, with no need for locks and no need for additional queues to coordinate between the different threads.  So you can really run your processing in parallel with the Disruptor coordinating the effort.<br /><br />The <a href="http://code.google.com/p/disruptor/source/browse/trunk/code/src/main/com/lmax/disruptor/BatchConsumer.java">BatchConsumer</a> is an example of consumer code, and if you implement the <a href="http://code.google.com/p/disruptor/source/browse/trunk/code/src/main/com/lmax/disruptor/BatchHandler.java">BatchHandler </a>you can get the <code>BatchConsumer</code> to do the heavy lifting I&rsquo;ve outlined above.  Then it&rsquo;s easy to deal with the whole batch of entries processed (e.g. from 9-12 above) without having to fetch each one individually.<br /><br />EDIT: Note that version 2.0 of the Disruptor uses different names to the ones in this article.  Please see <a href="http://mechanitis.blogspot.com/2011/08/disruptor-20-all-change-please.html">my summary of the changes</a> if you are confused about class names.</p>
 <ul class="pa0">
   
    <li class="list">
@@ -212,7 +245,7 @@ if (!doNotTrack) {
    </li>
   
 </ul>
-<div class="mt6">
+<div class="mt6 instapaper_ignoref">
       
         <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -237,7 +270,7 @@ if (!doNotTrack) {
       
       
       </div>
-    </section>
+    </div>
 
     <aside class="w-30-l mt6-l">
 
@@ -337,6 +370,8 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
+
 
 
 

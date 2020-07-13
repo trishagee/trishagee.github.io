@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Trisha Gee  | Dissecting the Disruptor: What&#39;s so special about a ring buffer?</title>
+    <title>Dissecting the Disruptor: What&#39;s so special about a ring buffer? | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="generator" content="Hugo 0.73.0" />
     
@@ -14,7 +14,7 @@
 
     
     
-      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
     
 
     
@@ -22,6 +22,7 @@
     
       
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
 
     
 
@@ -61,6 +62,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
     
+	
   </head>
 
   <body class="ma0 avenir bg-near-white production">
@@ -155,6 +157,8 @@ if (!doNotTrack) {
 
 
 
+
+
     </div>
   </div>
 </nav>
@@ -168,21 +172,50 @@ if (!doNotTrack) {
       
   
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
-
     <header class="mt4 w-100">
-      <p class="f6 b helvetica tracked">
+      <aside class="instapaper_ignoref b helvetica tracked">
           
         POSTS
-      </p>
-      <h1 class="f1 athelas mb1">Dissecting the Disruptor: What&#39;s so special about a ring buffer?</h1>
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/&amp;text=Dissecting%20the%20Disruptor:%20What%27s%20so%20special%20about%20a%20ring%20buffer?" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/&amp;title=Dissecting%20the%20Disruptor:%20What%27s%20so%20special%20about%20a%20ring%20buffer?" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Dissecting the Disruptor: What&#39;s so special about a ring buffer?</h1>
       
       
       <time class="f6 mv4 dib tracked" datetime="2011-06-22T00:00:00Z">June 22, 2011</time>
+
       
       
     </header>
-
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Recently we open sourced the <a href="http://code.google.com/p/disruptor/">LMAX Disruptor</a>, the key to what makes our exchange so fast.  Why did we open source it?  Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world.  Plus it makes us look dead clever.<br /><br />On the site you can <a href="https://code.google.com/p/disruptor/">download a technical article</a> explaining what the Disruptor is and why it&rsquo;s so clever and fast.  I even get a writing credit on it, which is gratifying when all I really did is insert commas and re-phrase sentences I didn&rsquo;t understand.<br /><br />However I find the whole thing a bit much to digest all at once, so I&rsquo;m going to explain it in smaller pieces, as suits my <a href="http://www.randsinrepose.com/archives/2003/07/10/nadd.html">NADD</a> audience.<br /><br />First up - the ring buffer.  Initially I was under the impression the Disruptor was just the ring buffer.  But I&rsquo;ve come to realise that while this data structure is at the heart of the pattern, the clever bit about the Disruptor is controlling access to it. <br /><br /><b>What on earth is a ring buffer?</b><br />Well, it does what it says on the tin - it&rsquo;s a ring (it&rsquo;s circular and wraps), and you use it as a buffer to pass stuff from one context (one thread) to another:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-3gtuTbWgI-Y/TgD92AhOVxI/AAAAAAAAIDE/cWsAT81B0AI/s1600/RingBuffer.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-3gtuTbWgI-Y/TgD92AhOVxI/AAAAAAAAIDE/cWsAT81B0AI/s1600/RingBuffer.png" /></a></div><br />(OK, I drew it in Paint.  I&rsquo;m experimenting with sketch styles and hoping my OCD doesn&rsquo;t kick in and demand perfect circles and straight lines at precise angles).<br /><br />So basically it&rsquo;s an array with a pointer to the next available slot.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-WCm0iWYOrfc/TgD_cVBQExI/AAAAAAAAIDI/cEohveH8LP8/s1600/RingBufferInitial.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-WCm0iWYOrfc/TgD_cVBQExI/AAAAAAAAIDI/cEohveH8LP8/s1600/RingBufferInitial.png" /></a></div><br />As you keep filling up the buffer (and presumable reading from it too), the sequence keeps incrementing, wrapping around the ring:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-cwPlKupFfks/TgEBetHtvmI/AAAAAAAAIDM/prOjrOPDo_E/s1600/RingBufferWrapped.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-cwPlKupFfks/TgEBetHtvmI/AAAAAAAAIDM/prOjrOPDo_E/s1600/RingBufferWrapped.png" /></a></div>To find the slot in the array that the current sequence points to you use a mod operation:<br /><blockquote style="padding: 5px;">sequence mod array length = array index</blockquote>So for the above ring buffer (using Java mod syntax): <code>12 % 10 = 2</code>.  Easy.<br /><br />Actually it was a total accident that the picture had ten slots.  Powers of two work better because computers think in binary.<br /><br /><b>So what?</b><br />If you look at Wikipedia&rsquo;s entry on <a href="http://en.wikipedia.org/wiki/Circular_buffer">Circular Buffers</a>, you&rsquo;ll see one major difference to the way we&rsquo;ve implemented ours - we don&rsquo;t have a pointer to the end.  We only have the next available sequence number.  This is deliberate - the original reason we chose a ring buffer was so we could support reliable messaging.  We needed a store of the messages the service had sent, so when another service sent a <a href="http://en.wikipedia.org/wiki/Nak">nak</a> to say they hadn&rsquo;t received some messages, it would be able to resend them.<br /><br />The ring buffer seems ideal for this.  It stores the sequence to show where the end of the buffer is, and if it gets a nak it can replay everything from that point to the current sequence:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-r054oYKWMAM/TgHWQjn-zTI/AAAAAAAAIEM/jH73U5AChvA/s1600/RingBufferReplay.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="149" src="http://4.bp.blogspot.com/-r054oYKWMAM/TgHWQjn-zTI/AAAAAAAAIEM/jH73U5AChvA/s320/RingBufferReplay.png" width="320" /></a></div><br />The difference between the ring buffer as we&rsquo;ve implemented it, and the queues we had traditionally been using, is that we don&rsquo;t consume the items in the buffer - they stay there until they get over-written.  Which is why we don&rsquo;t need the &ldquo;end&rdquo; pointer you see in the Wikipedia version.  Deciding whether it&rsquo;s OK to wrap or not is managed outside of the data structure itself (this is part of the producer and consumer behaviour - if you can&rsquo;t wait for me to get round to blogging about it, check out the <a href="https://code.google.com/p/disruptor/">Disruptor site</a>).<br /><br /><b>And it&rsquo;s so great because&hellip;?</b><br />So we use this data structure because it gives us some nice behaviour for reliable messaging.  It turns out though that it has some other nice characteristics. <br /><br />Firstly, it&rsquo;s faster than something like a linked list because it&rsquo;s an array, and has a predictable pattern of access.  This is nice and CPU-cache-friendly - at the hardware level the entries can be pre-loaded, so the machine is not constantly going back to main memory to load the next item in the ring.<br /><br />Secondly, it&rsquo;s an array and you can pre-allocate it up front, making the objects effectively immortal.  This means the garbage collector has pretty much nothing to do here.  Again, unlike a linked list which creates objects for every item added to the list - these then all need to be cleaned up when the item is no longer in the list.<br /><br /><b>The missing pieces</b><br />I haven&rsquo;t talked about how to prevent the ring wrapping, or specifics around how to write stuff to and read things from the ring buffer.  You&rsquo;ll also notice I&rsquo;ve been comparing it to a data structure like a linked list, which I don&rsquo;t think anyone believes is the answer to the world&rsquo;s problems.<br /><br />The interesting part comes when you compare the Disruptor with an implementation like a queue.  Queues usually take care of all the stuff like the start and end of the queue, adding and consuming items, and so forth.  All the stuff I haven&rsquo;t really touched on with the ring buffer.  That&rsquo;s because the ring buffer itself isn&rsquo;t responsible for these things, we&rsquo;ve moved these concerns outside of the data structure.<br /><br />For more details you&rsquo;re just going to have to <a href="https://code.google.com/p/disruptor/">read the paper or check out the code</a>.  Or <a href="http://www.infoq.com/presentations/LMAX">watch Mike and Martin</a> at QCon San Francisco last year.  Or wait for me to have a spare five minutes to get my head around the rest of it.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Recently we open sourced the <a href="http://code.google.com/p/disruptor/">LMAX Disruptor</a>, the key to what makes our exchange so fast.  Why did we open source it?  Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world.  Plus it makes us look dead clever.<br /><br />On the site you can <a href="https://code.google.com/p/disruptor/">download a technical article</a> explaining what the Disruptor is and why it&rsquo;s so clever and fast.  I even get a writing credit on it, which is gratifying when all I really did is insert commas and re-phrase sentences I didn&rsquo;t understand.<br /><br />However I find the whole thing a bit much to digest all at once, so I&rsquo;m going to explain it in smaller pieces, as suits my <a href="http://www.randsinrepose.com/archives/2003/07/10/nadd.html">NADD</a> audience.<br /><br />First up - the ring buffer.  Initially I was under the impression the Disruptor was just the ring buffer.  But I&rsquo;ve come to realise that while this data structure is at the heart of the pattern, the clever bit about the Disruptor is controlling access to it. <br /><br /><b>What on earth is a ring buffer?</b><br />Well, it does what it says on the tin - it&rsquo;s a ring (it&rsquo;s circular and wraps), and you use it as a buffer to pass stuff from one context (one thread) to another:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-3gtuTbWgI-Y/TgD92AhOVxI/AAAAAAAAIDE/cWsAT81B0AI/s1600/RingBuffer.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://1.bp.blogspot.com/-3gtuTbWgI-Y/TgD92AhOVxI/AAAAAAAAIDE/cWsAT81B0AI/s1600/RingBuffer.png" /></a></div><br />(OK, I drew it in Paint.  I&rsquo;m experimenting with sketch styles and hoping my OCD doesn&rsquo;t kick in and demand perfect circles and straight lines at precise angles).<br /><br />So basically it&rsquo;s an array with a pointer to the next available slot.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-WCm0iWYOrfc/TgD_cVBQExI/AAAAAAAAIDI/cEohveH8LP8/s1600/RingBufferInitial.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://4.bp.blogspot.com/-WCm0iWYOrfc/TgD_cVBQExI/AAAAAAAAIDI/cEohveH8LP8/s1600/RingBufferInitial.png" /></a></div><br />As you keep filling up the buffer (and presumable reading from it too), the sequence keeps incrementing, wrapping around the ring:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://2.bp.blogspot.com/-cwPlKupFfks/TgEBetHtvmI/AAAAAAAAIDM/prOjrOPDo_E/s1600/RingBufferWrapped.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" src="http://2.bp.blogspot.com/-cwPlKupFfks/TgEBetHtvmI/AAAAAAAAIDM/prOjrOPDo_E/s1600/RingBufferWrapped.png" /></a></div>To find the slot in the array that the current sequence points to you use a mod operation:<br /><blockquote style="padding: 5px;">sequence mod array length = array index</blockquote>So for the above ring buffer (using Java mod syntax): <code>12 % 10 = 2</code>.  Easy.<br /><br />Actually it was a total accident that the picture had ten slots.  Powers of two work better because computers think in binary.<br /><br /><b>So what?</b><br />If you look at Wikipedia&rsquo;s entry on <a href="http://en.wikipedia.org/wiki/Circular_buffer">Circular Buffers</a>, you&rsquo;ll see one major difference to the way we&rsquo;ve implemented ours - we don&rsquo;t have a pointer to the end.  We only have the next available sequence number.  This is deliberate - the original reason we chose a ring buffer was so we could support reliable messaging.  We needed a store of the messages the service had sent, so when another service sent a <a href="http://en.wikipedia.org/wiki/Nak">nak</a> to say they hadn&rsquo;t received some messages, it would be able to resend them.<br /><br />The ring buffer seems ideal for this.  It stores the sequence to show where the end of the buffer is, and if it gets a nak it can replay everything from that point to the current sequence:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-r054oYKWMAM/TgHWQjn-zTI/AAAAAAAAIEM/jH73U5AChvA/s1600/RingBufferReplay.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="149" src="http://4.bp.blogspot.com/-r054oYKWMAM/TgHWQjn-zTI/AAAAAAAAIEM/jH73U5AChvA/s320/RingBufferReplay.png" width="320" /></a></div><br />The difference between the ring buffer as we&rsquo;ve implemented it, and the queues we had traditionally been using, is that we don&rsquo;t consume the items in the buffer - they stay there until they get over-written.  Which is why we don&rsquo;t need the &ldquo;end&rdquo; pointer you see in the Wikipedia version.  Deciding whether it&rsquo;s OK to wrap or not is managed outside of the data structure itself (this is part of the producer and consumer behaviour - if you can&rsquo;t wait for me to get round to blogging about it, check out the <a href="https://code.google.com/p/disruptor/">Disruptor site</a>).<br /><br /><b>And it&rsquo;s so great because&hellip;?</b><br />So we use this data structure because it gives us some nice behaviour for reliable messaging.  It turns out though that it has some other nice characteristics. <br /><br />Firstly, it&rsquo;s faster than something like a linked list because it&rsquo;s an array, and has a predictable pattern of access.  This is nice and CPU-cache-friendly - at the hardware level the entries can be pre-loaded, so the machine is not constantly going back to main memory to load the next item in the ring.<br /><br />Secondly, it&rsquo;s an array and you can pre-allocate it up front, making the objects effectively immortal.  This means the garbage collector has pretty much nothing to do here.  Again, unlike a linked list which creates objects for every item added to the list - these then all need to be cleaned up when the item is no longer in the list.<br /><br /><b>The missing pieces</b><br />I haven&rsquo;t talked about how to prevent the ring wrapping, or specifics around how to write stuff to and read things from the ring buffer.  You&rsquo;ll also notice I&rsquo;ve been comparing it to a data structure like a linked list, which I don&rsquo;t think anyone believes is the answer to the world&rsquo;s problems.<br /><br />The interesting part comes when you compare the Disruptor with an implementation like a queue.  Queues usually take care of all the stuff like the start and end of the queue, adding and consuming items, and so forth.  All the stuff I haven&rsquo;t really touched on with the ring buffer.  That&rsquo;s because the ring buffer itself isn&rsquo;t responsible for these things, we&rsquo;ve moved these concerns outside of the data structure.<br /><br />For more details you&rsquo;re just going to have to <a href="https://code.google.com/p/disruptor/">read the paper or check out the code</a>.  Or <a href="http://www.infoq.com/presentations/LMAX">watch Mike and Martin</a> at QCon San Francisco last year.  Or wait for me to have a spare five minutes to get my head around the rest of it.</p>
 <ul class="pa0">
   
    <li class="list">
@@ -206,7 +239,7 @@ if (!doNotTrack) {
    </li>
   
 </ul>
-<div class="mt6">
+<div class="mt6 instapaper_ignoref">
       
         <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -231,7 +264,7 @@ if (!doNotTrack) {
       
       
       </div>
-    </section>
+    </div>
 
     <aside class="w-30-l mt6-l">
 
@@ -327,6 +360,8 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
+
 
 
 
