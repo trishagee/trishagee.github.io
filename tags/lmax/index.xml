@@ -121,8 +121,8 @@ We get a number of comments and questions about the mysterious cache line paddin
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;quot;.
-I&amp;rsquo;m working up to answering that. I&amp;rsquo;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;quot;.
+      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;rdquo;.
+I&amp;rsquo;m working up to answering that. I&amp;rsquo;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;rdquo;.
 These questions do go hand in hand, however, because I can&amp;rsquo;t talk about why it&amp;rsquo;s fast without saying what it does, and I can&amp;rsquo;t talk about what it is without saying why it is that way.</description>
     </item>
     
