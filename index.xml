@@ -1823,8 +1823,10 @@ value of the code review and minimise the pain.&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;The webinar recording also has &lt;a href=&#34;https://blog.jetbrains.com/upsource/2018/10/16/webinar-recording-code-review-best-practices/&#34;&gt;an associated blog post&lt;/a&gt; which covers Q&amp;amp;A raised.&lt;/p&gt;
 &lt;p&gt;Content produced by me (largely with an &lt;a href=&#34;https://www.jetbrains.com/upsource&#34;&gt;Upsource&lt;/a&gt; slant):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.fogbugz.com/blog/code-review-best-practices/&#34;&gt;Code Review Best Practice&lt;/a&gt; - a guest blog post for
-FogBugz which summarises the content of this presentation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fogbugz.com/blog/code-review-best-practices/&#34;&gt;Code Review Best Practice&lt;/a&gt; - I wrote this guest blog
+post for FogBugz which summarises the content of this presentation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.oracle.com/javamagazine/five-code-review-antipatterns&#34;&gt;Five Code Review Antipatterns&lt;/a&gt; - I wrote
+this for Java Magazine, it was a fun piece where I summarise some of my favourite anti-patterns&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;What to Look for in a Code Review (Book)&lt;/a&gt; -
 free book via LeanPub covering some of the many things to care about when reviewing code&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://trishagee.github.io/presentation/code_review_matters_and_manners&#34;&gt;Code Review Matters and Manners (video)&lt;/a&gt; - a
@@ -10540,8 +10542,7 @@ Developer&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;12–16 Nov&lt;/strong&gt;: Devoxx Belgium, Antwerp – &lt;a href=&#34;https://trishagee.github.io/presentations/boilerplate&#34;&gt;Is boilerplate code really so bad?&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;30 Oct&lt;/strong&gt;: O’Reilly Software Architecture Conference, London – &lt;a href=&#34;https://www.oreilly.com/ideas/career-advice-for-architects&#34;&gt;Keynote: Career Advice for
 Architects&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;22-25 Oct&lt;/strong&gt;: Oracle Code One - [BoF: Diversity and Inclusion: Are We There Yet?]
-(http://localhost:1313/presentation/diversity_and_inclusion/);
+&lt;p&gt;&lt;strong&gt;22-25 Oct&lt;/strong&gt;: Oracle Code One - &lt;a href=&#34;https://trishagee.github.io/presentation/diversity_and_inclusion/&#34;&gt;BoF: Diversity and Inclusion: Are We There Yet?&lt;/a&gt;;
 &lt;a href=&#34;https://trishagee.github.io/presentations/boilerplate&#34;&gt;Is boilerplate code really so bad&lt;/a&gt;;
 &lt;a href=&#34;https://trishagee.github.io/presentation/coding_duel&#34;&gt;Fully Reactive: Spring, Kotlin, JavaFX, and MongoDB Playing Together (with Josh Long)&lt;/a&gt;;
 Panel: Emerging Languages Bowl 2018: The Battle for Supremacy Rages On;
