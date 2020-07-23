@@ -34,7 +34,8 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/code_review_best_practice/</guid>
-      <description>&lt;p&gt;&lt;em&gt;We know that Code Reviews are a Good Thing. We probably have our own personal lists of things we
+      <description>&lt;p&gt;(Updated 23 July, 2020)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We know that Code Reviews are a Good Thing. We probably have our own personal lists of things we
 look for in the code we review, while also fearing what others might say about our code. How to
 we ensure that code reviews are actually benefiting the team, and the application? How do we
 decide who does the reviews? What does &amp;ldquo;done&amp;rdquo; look like?&lt;/em&gt;&lt;/p&gt;

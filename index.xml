@@ -1807,7 +1807,8 @@ employ a nanny. She lived with the guilt of this decision for many years.&lt;/p&
             <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
             
             <guid>https://trishagee.github.io/presentation/code_review_best_practice/</guid>
-            <description>&lt;p&gt;&lt;em&gt;We know that Code Reviews are a Good Thing. We probably have our own personal lists of things we
+            <description>&lt;p&gt;(Updated 23 July, 2020)&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;We know that Code Reviews are a Good Thing. We probably have our own personal lists of things we
 look for in the code we review, while also fearing what others might say about our code. How to
 we ensure that code reviews are actually benefiting the team, and the application? How do we
 decide who does the reviews? What does &amp;ldquo;done&amp;rdquo; look like?&lt;/em&gt;&lt;/p&gt;
@@ -1818,17 +1819,17 @@ value of the code review and minimise the pain.&lt;/em&gt;&lt;/p&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/jXi8h44cbQA&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 &lt;p&gt;Also &lt;a href=&#34;https://youtu.be/a9_0UUUNt-Y&#34;&gt;available as a webinar recording&lt;/a&gt;.&lt;/p&gt;
 &lt;h1 id=&#34;slides&#34;&gt;Slides&lt;/h1&gt;
-&lt;iframe src=&#34;//www.slideshare.net/slideshow/embed_code/key/m8QF1BowVVzL6e&#34; width=&#34;595&#34; height=&#34;485&#34; frameborder=&#34;0&#34; marginwidth=&#34;0&#34; marginheight=&#34;0&#34; scrolling=&#34;no&#34; style=&#34;border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;&#34; allowfullscreen&gt; &lt;/iframe&gt;
+&lt;script async class=&#34;speakerdeck-embed&#34; data-id=&#34;974c520c1e6c47c8a38a1d57cc4ad87f&#34; data-ratio=&#34;1.77777777777778&#34; src=&#34;//speakerdeck.com/assets/embed.js&#34;&gt;&lt;/script&gt; 
 &lt;h1 id=&#34;further-information&#34;&gt;Further Information&lt;/h1&gt;
 &lt;p&gt;The webinar recording also has &lt;a href=&#34;https://blog.jetbrains.com/upsource/2018/10/16/webinar-recording-code-review-best-practices/&#34;&gt;an associated blog post&lt;/a&gt; which covers Q&amp;amp;A raised.&lt;/p&gt;
-&lt;p&gt;Content produced by me (largely with an &lt;a href=&#34;https://www.jetbrains.com/upsource&#34;&gt;Upsource&lt;/a&gt; slant):&lt;/p&gt;
+&lt;p&gt;Videos and blog posts I&amp;rsquo;ve created covering the topic (largely with an &lt;a href=&#34;https://www.jetbrains.com/upsource&#34;&gt;Upsource&lt;/a&gt; slant):&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://www.fogbugz.com/blog/code-review-best-practices/&#34;&gt;Code Review Best Practice&lt;/a&gt; - I wrote this guest blog
-post for FogBugz which summarises the content of this presentation.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://blogs.oracle.com/javamagazine/five-code-review-antipatterns&#34;&gt;Five Code Review Antipatterns&lt;/a&gt; - I wrote
-this for Java Magazine, it was a fun piece where I summarise some of my favourite anti-patterns&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fogbugz.com/blog/code-review-best-practices/&#34;&gt;Code Review Best Practice&lt;/a&gt; - guest blog
+post for FogBugz in which I summarise the content of this presentation.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blogs.oracle.com/javamagazine/five-code-review-antipatterns&#34;&gt;Five Code Review Antipatterns&lt;/a&gt; - a fun piece
+for Java Magazine where I cover some of my favourite anti-patterns&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://leanpub.com/whattolookforinacodereview&#34;&gt;What to Look for in a Code Review (Book)&lt;/a&gt; -
-free book via LeanPub covering some of the many things to care about when reviewing code&lt;/li&gt;
+my free book via LeanPub covering some of the many things to care about when reviewing code&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://trishagee.github.io/presentation/code_review_matters_and_manners&#34;&gt;Code Review Matters and Manners (video)&lt;/a&gt; - a
 talk I co-presented with Maria Khalusova, covering what to look for in a code review and how to
 deliver feedback&lt;/li&gt;
@@ -1838,14 +1839,14 @@ this talk. There&amp;rsquo;s also a
 &lt;a href=&#34;https://blog.jetbrains.com/upsource/2018/08/30/code-review-best-practices/&#34;&gt;blog post covering this information&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/tag/what-to-look-for/&#34;&gt;What to Look for in a Code Review (Blogs)&lt;/a&gt; -
 the original blog posts for the content in the book, but also contains additional posts like
-what to look for in Java 8 and 9 code (Java 10 and 11 post coming soon).&lt;/li&gt;
+what to look for in Java 8 and 9 code.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.infoq.com/articles/effective-code-reviews&#34;&gt;Ways to Make Code Reviews More Effective&lt;/a&gt; - a
 summary of the &amp;ldquo;what to look for&amp;rdquo; content with a bit of detail on performance and security
 concerns.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://blog.jetbrains.com/upsource/tag/code-review-workflows/&#34;&gt;Code Review Workflows&lt;/a&gt; - a
-series of blog posts on some of the different types of processes to follow for code reviews&lt;/li&gt;
+series of blog posts on some different types of processes to follow for code reviews&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Other interesting posts:&lt;/p&gt;
+&lt;p&gt;Other interesting articles:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;http://adavis.info/2018/09/frustration-free-code-reviews.html&#34;&gt;Frustration-Free Code Reviews&lt;/a&gt; -
 this article covers the whole process, with some tips on which battles to choose and how to
@@ -1857,8 +1858,7 @@ have for code review and some guidelines you might want to apply&lt;/li&gt;
 a case study of one organisation&amp;rsquo;s approach to code reviews, including their &amp;ldquo;why&amp;rdquo;, &amp;ldquo;what&amp;rdquo;,
 &amp;ldquo;when&amp;rdquo;, &amp;ldquo;who&amp;rdquo; and &amp;ldquo;how&amp;rdquo;, with a nod to &amp;ldquo;where&amp;rdquo;. Also includes details of how they categorise
 their comments.&lt;/li&gt;
-&lt;li&gt;[Code Review Tips and Recommendations](&lt;a href=&#34;http://cr.openjdk.java&#34;&gt;http://cr.openjdk.java&lt;/a&gt;
-.net/~smarks/ocw2018/CodeReviewTips.html) - another case study, more or less in note form, of
+&lt;li&gt;&lt;a href=&#34;http://cr.openjdk.java.net/~smarks/ocw2018/CodeReviewTips.html&#34;&gt;Code Review Tips and Recommendations&lt;/a&gt; - another case study, more or less in note form, of
 code reviews for OpenJDK&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://daedtech.com/politeness-bluntness-code-review/&#34;&gt;Politeness or Bluntness in Code Review? Settling the Matter Once and for All&lt;/a&gt; - really
 interesting piece which covers cultural differences around writing feedback, sparked by a debate
