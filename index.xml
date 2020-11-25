@@ -6,11 +6,7 @@
     <description>Recent content on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 09 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Life Beyond Java 8 </title>
       <link>https://trishagee.github.io/presentation/beyond_java_8/</link>
@@ -1130,7 +1126,7 @@ Learning how to work the coffee machine in the Dublin office. &amp;nbsp;It&#39;s
       <guid>https://trishagee.github.io/post/trishas_world_tour_2013/</guid>
       <description>Quick update on my scheduled events this year. Please feel free to suggest your MUG or JUG or other tech group as somewhere for me to visit on this Grand World Tour if I&amp;rsquo;m in your city.
 
-17-21st June - In New York - woohoo! Getting to know Justin Lee, the newest member of the Java team, doing some pair programming (hopefully) and meeting people at the MongoDB Masters&amp;rsquo; Summit on Thursday.</description>
+17-21st June - In New York - woohoo! Getting to know Justin Lee, the newest member of the Java team, doing some pair programming (hopefully) and meeting people at the MongoDB Masters&#39; Summit on Thursday.</description>
     </item>
     
     <item>
@@ -1862,11 +1858,11 @@ My purpose for attending was largely to present the Hardcore Concurrency for Beg
       <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/a_nyse_product_manager_and_an_lmax_developer_walk_into_a_low_latency_trading_seminar/</guid>
-      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&amp;rsquo;s event? Because&amp;hellip;&amp;ldquo;
-&amp;quot;Because we&amp;rsquo;re girls?&amp;ldquo;
-&amp;quot;Um&amp;hellip; yes&amp;hellip;&amp;ldquo;
-Kim impetuously opts for The Truth: &amp;ldquo;We&amp;rsquo;re here to meet men.&amp;ldquo;
-Our interrogator looks round dubiously. &amp;quot;No, really, why are you here?&amp;ldquo;
+      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&amp;rsquo;s event? Because&amp;hellip;&amp;quot;
+&amp;ldquo;Because we&amp;rsquo;re girls?&amp;quot;
+&amp;ldquo;Um&amp;hellip; yes&amp;hellip;&amp;quot;
+Kim impetuously opts for The Truth: &amp;ldquo;We&amp;rsquo;re here to meet men.&amp;quot;
+Our interrogator looks round dubiously. &amp;ldquo;No, really, why are you here?&amp;quot;
 Phew. My reputation is intact1
 Kim eloquently describes what her situation is as Product Manager and the criteria she&amp;rsquo;s measuring third party products against. I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.</description>
     </item>
@@ -2033,7 +2029,7 @@ These questions do go hand in hand, however, because I can&amp;rsquo;t talk abou
       <pubDate>Tue, 12 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_answer_to_one_of_the_search_terms_which_led_to_my_blog/</guid>
-      <description>&amp;hellip;&amp;ldquo;what do female programmers look like&amp;rdquo;:
+      <description>&amp;hellip;&amp;quot;what do female programmers look like&amp;quot;:
 
 
 
@@ -2428,7 +2424,7 @@ And I impressed one of my new work collegues. Apparently I am now the Spring G
       <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_the_perils_of_front_end_design/</guid>
-      <description>I&amp;rsquo;m reading Joel Spolsky&#39;s User Interface Design for Programmers. A thought that&amp;rsquo;s struck me is about architecture. It&amp;rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&amp;rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&amp;rsquo;m going to start from the easy point, the stuff you can see. There&amp;rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &amp;ldquo;pretty&amp;rdquo;.</description>
+      <description>I&amp;rsquo;m reading Joel Spolsky&amp;rsquo;s User Interface Design for Programmers. A thought that&amp;rsquo;s struck me is about architecture. It&amp;rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&amp;rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&amp;rsquo;m going to start from the easy point, the stuff you can see. There&amp;rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &amp;ldquo;pretty&amp;rdquo;.</description>
     </item>
     
     <item>

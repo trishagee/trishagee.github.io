@@ -6,11 +6,7 @@
     <description>Recent content in NoSQL on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 13 May 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/nosql/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Good overview of the NoSQL hype for Real Developers</title>
       <link>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</link>

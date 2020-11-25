@@ -6,11 +6,7 @@
     <description>Recent content in groovy on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 06 Apr 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/groovy/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 06 Apr 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/groovy/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Groovy vs Java</title>
       <link>https://trishagee.github.io/presentation/groovy_vs_java/</link>

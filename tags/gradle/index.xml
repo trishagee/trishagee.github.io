@@ -6,11 +6,7 @@
     <description>Recent content in gradle on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 31 Aug 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/gradle/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 31 Aug 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/gradle/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to get started with the new MongoDB Java Driver</title>
       <link>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</link>

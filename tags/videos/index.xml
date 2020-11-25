@@ -6,11 +6,7 @@
     <description>Recent content in videos on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 20 Oct 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/videos/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 20 Oct 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/videos/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AngularJS, HTML5, Groovy, Java and MongoDB All Together - What Could Possibly Go Wrong??</title>
       <link>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</link>

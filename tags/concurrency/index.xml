@@ -6,11 +6,7 @@
     <description>Recent content in concurrency on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 21 Oct 2011 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 21 Oct 2011 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mike and I debut our new Disruptor presentation</title>
       <link>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</link>

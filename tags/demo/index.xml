@@ -6,11 +6,7 @@
     <description>Recent content in demo on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Tue, 07 Oct 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/demo/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Tue, 07 Oct 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/demo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Using Groovy to import XML into MongoDB</title>
       <link>https://trishagee.github.io/post/groovy_import_to_mongodb/</link>

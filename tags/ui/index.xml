@@ -6,11 +6,7 @@
     <description>Recent content in ui on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 03 Mar 2014 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 03 Mar 2014 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/ui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>In my day...</title>
       <link>https://trishagee.github.io/post/in_my_day/</link>
@@ -89,7 +85,7 @@ Quick recap - the aim of this series is to provide a quick and easy how-to aroun
       <pubDate>Mon, 01 Sep 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_the_perils_of_front_end_design/</guid>
-      <description>I&amp;rsquo;m reading Joel Spolsky&#39;s User Interface Design for Programmers. A thought that&amp;rsquo;s struck me is about architecture. It&amp;rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&amp;rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&amp;rsquo;m going to start from the easy point, the stuff you can see. There&amp;rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &amp;ldquo;pretty&amp;rdquo;.</description>
+      <description>I&amp;rsquo;m reading Joel Spolsky&amp;rsquo;s User Interface Design for Programmers. A thought that&amp;rsquo;s struck me is about architecture. It&amp;rsquo;s easy to get fooled into thinking building software is a bit like being the architect for a building. I&amp;rsquo;m not even going to go into the differences between engineering practices à la building design and good practice software design. I&amp;rsquo;m going to start from the easy point, the stuff you can see. There&amp;rsquo;s often a pressure from your designers, from your steering committee, even from your CEO, to make your software look &amp;ldquo;pretty&amp;rdquo;.</description>
     </item>
     
   </channel>

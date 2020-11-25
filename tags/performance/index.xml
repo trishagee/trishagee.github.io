@@ -6,11 +6,7 @@
     <description>Recent content in performance on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 03 Jun 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 03 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/performance/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Applying Java 8 Idioms to Existing Code</title>
       <link>https://trishagee.github.io/presentation/refactoring_to_java_8/</link>

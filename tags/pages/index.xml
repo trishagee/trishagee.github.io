@@ -6,11 +6,7 @@
     <description>Recent content in pages on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 09 Sep 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/pages/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 09 Sep 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/pages/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The New 3.0 Java Driver for MongoDB</title>
       <link>https://trishagee.github.io/resources/the_new_30_java_driver_for_mongodb/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in aop on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Mon, 14 Apr 2008 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/aop/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 14 Apr 2008 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/aop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>AOP Caching</title>
       <link>https://trishagee.github.io/post/aop_caching/</link>

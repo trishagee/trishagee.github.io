@@ -6,7 +6,7 @@
     
     <title>Trisha Gee  | Dissecting the Disruptor: Writing to the ring buffer</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.73.0" />
+    <meta name="generator" content="Hugo 0.78.2" />
     
     
       <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
@@ -41,13 +41,14 @@ The Disruptor code has interfaces and helper classes for the Consumers, but ther
 The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
 ProducerBarriers
 The Disruptor code has interfaces and helper classes for the Consumers, but there&#39;s no interface for your producer, the thing that writes to the ring buffer.">
-<meta itemprop="datePublished" content="2011-07-04T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2011-07-04T00:00:00&#43;00:00" />
+<meta itemprop="datePublished" content="2011-07-04T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2011-07-04T00:00:00+00:00" />
 <meta itemprop="wordCount" content="1549">
 
 
 
-<meta itemprop="keywords" content="java,disruptor,lmax,disruptor-docs,concurrency," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="java,disruptor,lmax,disruptor-docs,concurrency," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Dissecting the Disruptor: Writing to the ring buffer"/>
 <meta name="twitter:description" content="This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it&#39;s quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.
 The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.

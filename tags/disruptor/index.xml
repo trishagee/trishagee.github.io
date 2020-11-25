@@ -6,11 +6,7 @@
     <description>Recent content in disruptor on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Wed, 10 Oct 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/disruptor/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 10 Oct 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/disruptor/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Introduction to the Disruptor Slides</title>
       <link>https://trishagee.github.io/post/introduction_to_the_disruptor_slides/</link>

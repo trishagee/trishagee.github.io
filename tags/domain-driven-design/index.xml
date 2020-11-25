@@ -6,11 +6,7 @@
     <description>Recent content in domain driven design on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sat, 16 Jun 2012 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/domain-driven-design/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 16 Jun 2012 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/domain-driven-design/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Overheard: Development Myths</title>
       <link>https://trishagee.github.io/post/overheard_development_myths/</link>

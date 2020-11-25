@@ -6,11 +6,7 @@
     <description>Recent content in testing on Trisha Gee</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 26 Jun 2015 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://trishagee.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 26 Jun 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://trishagee.github.io/tags/testing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Level Up Your Automated Tests</title>
       <link>https://trishagee.github.io/presentation/level_up_your_automated_tests/</link>
