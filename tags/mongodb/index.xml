@@ -45,8 +45,8 @@ Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;</description>
       <pubDate>Mon, 20 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
-      <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
-mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
+      <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant, 
+mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example, 
 where these popular technologies sit in your architecture, and how they interact with each other.&lt;/p&gt;</description>
     </item>
     
@@ -66,11 +66,11 @@ Due to the time pressures in the demo, I never really get a chance to go into th
       <pubDate>Thu, 14 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
-documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the 
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java 
 developer.&lt;/p&gt;
-&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
-Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from 
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD 
 operations using the Java driver:&lt;/p&gt;</description>
     </item>
     
