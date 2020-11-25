@@ -4,8 +4,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     
-    <title>Trisha Gee  | Why Java developers hate .NET</title>
+    <title>Why Java developers hate .NET | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
+All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
+Trisha&rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:">
     <meta name="generator" content="Hugo 0.78.2" />
     
     
@@ -14,7 +17,7 @@
 
     
     
-      <link href="/dist/css/app.3f5912c237ddd38c8e76debe081c7ca7.css" rel="stylesheet">
+      <link href="/dist/css/app.4fc0b62e4b82c997bb0041217cd6b979.css" rel="stylesheet">
     
 
     
@@ -22,6 +25,7 @@
     
       
 <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+
 
     
 
@@ -65,6 +69,7 @@ if (!doNotTrack) {
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
     
+	
   </head>
 
   <body class="ma0 avenir bg-near-white production">
@@ -159,6 +164,8 @@ if (!doNotTrack) {
 
 
 
+
+
     </div>
   </div>
 </nav>
@@ -172,21 +179,50 @@ if (!doNotTrack) {
       
   
   <article class="flex-l flex-wrap justify-between mw8 center ph3">
-
     <header class="mt4 w-100">
-      <p class="f6 b helvetica tracked">
+      <aside class="instapaper_ignoref b helvetica tracked">
           
         POSTS
-      </p>
-      <h1 class="f1 athelas mb1">Why Java developers hate .NET</h1>
+      </aside>
+      
+
+
+
+
+  <div id="sharing" class="mt3">
+
+    
+    <a href="https://www.facebook.com/sharer.php?u=https://trishagee.github.io/post/why_java_developers_hate_net/" class="facebook no-underline" aria-label="share on Facebook">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M28.765,50.32h6.744V33.998h4.499l0.596-5.624h-5.095  l0.007-2.816c0-1.466,0.14-2.253,2.244-2.253h2.812V17.68h-4.5c-5.405,0-7.307,2.729-7.307,7.317v3.377h-3.369v5.625h3.369V50.32z   M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;"/></svg>
+
+    </a>
+
+    
+    
+    <a href="https://twitter.com/share?url=https://trishagee.github.io/post/why_java_developers_hate_net/&amp;text=Why%20Java%20developers%20hate%20.NET" class="twitter no-underline" aria-label="share on Twitter">
+      <svg height="32px"  style="enable-background:new 0 0 67 67;" version="1.1" viewBox="0 0 67 67" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M37.167,22.283c-2.619,0.953-4.274,3.411-4.086,6.101  l0.063,1.038l-1.048-0.127c-3.813-0.487-7.145-2.139-9.974-4.915l-1.383-1.377l-0.356,1.017c-0.754,2.267-0.272,4.661,1.299,6.271  c0.838,0.89,0.649,1.017-0.796,0.487c-0.503-0.169-0.943-0.296-0.985-0.233c-0.146,0.149,0.356,2.076,0.754,2.839  c0.545,1.06,1.655,2.097,2.871,2.712l1.027,0.487l-1.215,0.021c-1.173,0-1.215,0.021-1.089,0.467  c0.419,1.377,2.074,2.839,3.918,3.475l1.299,0.444l-1.131,0.678c-1.676,0.976-3.646,1.526-5.616,1.568  C19.775,43.256,19,43.341,19,43.405c0,0.211,2.557,1.397,4.044,1.864c4.463,1.377,9.765,0.783,13.746-1.568  c2.829-1.673,5.657-5,6.978-8.221c0.713-1.716,1.425-4.851,1.425-6.354c0-0.975,0.063-1.102,1.236-2.267  c0.692-0.678,1.341-1.419,1.467-1.631c0.21-0.403,0.188-0.403-0.88-0.043c-1.781,0.636-2.033,0.551-1.152-0.402  c0.649-0.678,1.425-1.907,1.425-2.267c0-0.063-0.314,0.042-0.671,0.233c-0.377,0.212-1.215,0.53-1.844,0.72l-1.131,0.361l-1.027-0.7  c-0.566-0.381-1.361-0.805-1.781-0.932C39.766,21.902,38.131,21.944,37.167,22.283z M33,64C16.432,64,3,50.569,3,34S16.432,4,33,4  s30,13.431,30,30S49.568,64,33,64z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/></svg>
+
+    </a>
+
+    
+    <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://trishagee.github.io/post/why_java_developers_hate_net/&amp;title=Why%20Java%20developers%20hate%20.NET" class="linkedin no-underline" aria-label="share on LinkedIn">
+      <svg  height="32px"  style="enable-background:new 0 0 65 65;" version="1.1" viewBox="0 0 65 65" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <path d="M50.837,48.137V36.425c0-6.275-3.35-9.195-7.816-9.195  c-3.604,0-5.219,1.983-6.119,3.374V27.71h-6.79c0.09,1.917,0,20.427,0,20.427h6.79V36.729c0-0.609,0.044-1.219,0.224-1.655  c0.49-1.22,1.607-2.483,3.482-2.483c2.458,0,3.44,1.873,3.44,4.618v10.929H50.837z M22.959,24.922c2.367,0,3.842-1.57,3.842-3.531  c-0.044-2.003-1.475-3.528-3.797-3.528s-3.841,1.524-3.841,3.528c0,1.961,1.474,3.531,3.753,3.531H22.959z M34,64  C17.432,64,4,50.568,4,34C4,17.431,17.432,4,34,4s30,13.431,30,30C64,50.568,50.568,64,34,64z M26.354,48.137V27.71h-6.789v20.427  H26.354z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
+</svg>
+
+    </a>
+  </div>
+
+
+      <h1 class="f1 athelas mt3 mb1">Why Java developers hate .NET</h1>
       
       
       <time class="f6 mv4 dib tracked" datetime="2011-05-20T00:00:00Z">May 20, 2011</time>
+
       
       
     </header>
-
-    <section class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I have been struggling with .NET.  Actually, I have been fighting pitched battles with it.<br /><br />All I want to do is take our existing Java client example code and write an equivalent in C#.  Easy, right?<br /><br /><h3>Trisha&rsquo;s Guide to Converting Java to C#</h3>Turns out writing the actual C# is relatively straightforward.  Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:<br /><br /><h4>1. Find-and-replace the following (only you can&rsquo;t use Ctrl+R like I expect.  Sigh.)</h4><blockquote style="line-height: 16px; size: 10px;"><code>final</code> = <code>readonly</code> (but remove from method params)<br /><code>System.out.printf</code> = <code>Console.WriteLine</code><br /><code>Map</code> = <code>Dictionary</code><br /><code>BigDecimal</code> = <code>decimal</code><br /><code>Set</code>&hellip; oh.  I have no idea. </blockquote><br /><h4>2. When using callbacks, replace anonymous inner classes with delegates</h4><br /><b>Java</b><br /><blockquote style="clear: both;"><pre><code>something.doSomething(new SomethingRequest(),<br />  new SomethingCallBack()<br />  {<br />    public void onSuccess()<br />    {<br />      System.out.println(&ldquo;Action successful&rdquo;);<br />    }<br />  <br />    public void onFailure()<br />    {<br />      System.err.println(&ldquo;Action failed&rdquo;);<br />    }<br />  });</code></pre></blockquote><br /><b>C#</b><br /><blockquote style="clear: both;"><pre><code>private void foo ()<br />{<br />  _something.DoSomething(new SomethingRequest(), <br />                         SomethingSuccess, <br />                         SomethingFailure);<br />}<br /><br />private void SomethingSuccess()<br />{<br />  Console.WriteLine(&ldquo;Action successful&rdquo;);<br />}<br /><br />private void SomethingFailure()<br />{<br />  Console.Error.WriteLine(&ldquo;Action failed&rdquo;);<br />}</code></pre></blockquote><br />I rather like this pattern actually.  You can&rsquo;t really tell in the noddy example above, but the C# code is generally shorter and more reusable.<br /><br /><h4>3. Replace getters and setters with properties</h4><br /><b>Java</b><br /><blockquote style="clear: both;"><pre><code>private class MyClass<br />{<br />  private BigDecimal myField = new BigDecimal(&quot;-1.0&quot;);<br /><br />  public BigDecimal getMyField()<br />  {<br />    return myField;<br />  }<br /><br />  public void setMyField(BigDecimal instructionId)<br />  {<br />    this.myField = myField<br />  }<br />}</code></pre></blockquote><br /><b>C#</b><br /><blockquote style="clear: both;"><pre><code>internal class MyClass<br />{<br />  public decimal MyField{ get; set; }<br />}</code></pre></blockquote><br />What the&hellip; where did all my code go??<br /><br /><h4>My Thoughts</h4>I was pleasantly surprised with the language.  In general, for what I was doing, the equivalent C# was a lot less code.  The fact that the syntax is not wildly different from Java made the transition relatively easy, even if I don&rsquo;t get all the nuances.<br /><br />I didn&rsquo;t really like the enums - I can see what purpose they serve, but I quite like the way the Java ones are pretty much classes in their own right with properties of their own - it allows you to encapsulate some of your simplest domain objects.  But it&rsquo;s a minor point, not a deal-breaker.<br /><br />The C# capitalisation makes me queasy though.  I just can&rsquo;t get my head around it.  In Java, if I say:<br /><pre>com.mechanitis.foo.Bar</pre>I know the class is Bar and the rest is the package (or namespace, or whatever).  This is more useful when you&rsquo;re using static methods and so forth:<br /><pre>com.mechanitis.foo.Bar.thatThingIWantToDo()</pre><br />In C#, I know the thing at the end is a method and the thing before that is a class, but it doesn&rsquo;t jump out at me:<br /><pre>Com.Mechanitis.Foo.Bar.ThatThingIWantToDo();</pre><br />And if you&rsquo;re using a property:<br /><pre>Com.Mechanitis.Foo.Bar.MyProperty;</pre><br />The whole thing makes me dizzy.<br /><br />You could argue that all this is redundant with modern tools and IDEs doing all the heavy lifting for you - nice colourisation etc.<br /><br />Which brings me to The Rant.<br /><br /><h3>Oh My Dear God What Is Wrong With Visual Studio?</h3>C# needs to be a shorter, more succinct language because it takes <i>three billion times longer</i> to do anything in Visual bloody Studio.<br /><br />I&rsquo;m coming at this from a Java, <a href="http://www.jetbrains.com/idea/">IntelliJ </a>point of view, so there&rsquo;s always the possibility it might be lack of familiarity with the tool, rather than the tool itself, which is the problem.  It&rsquo;s a long time since I used VS, and that was back in the 90s when I was doing ASP and COM (shhh, don&rsquo;t tell anyone).<br /><br />But things shouldn&rsquo;t be this hard.  I was ready to accept, due to my newbie status, the IDE not helping me. I didn&rsquo;t expect it to actively hinder me.<br /><br />For example: it took hours of my life that I will never get back to discover that you can&rsquo;t simply run a class that has a main method by right-clicking and selecting &ldquo;run&rdquo; (note: I&rsquo;m not even trying Ctrl+F10).  No.  I have to select, at a Solution level, which Projects are runnable.  Then I have to select at the Project level the class with the main method I actually want to run.  Then, it opens up a terminal window and runs it in there, which promptly disappears when the program errors or finishes.  What&rsquo;s wrong with outputting in the output window of the IDE? Is that not what it&rsquo;s for?<br /><br />Finally I worked out how to run the cursed program (seriously, like that&rsquo;s not the first thing everyone wants to do?  How do people write &ldquo;Hello World&rdquo;?).  Now, where are the command line arguments?  Of course, they&rsquo;re at the project properties level too, because each project only has one entry point.  I seriously had to Google that too because I couldn&rsquo;t work it out from the IDE alone.<br /><br /><br />The next day, my <a href="http://www.jetbrains.com/resharper/">ReSharper </a>licence had expired.  I decided I should attempt to limp on without it, after all hundreds of developers must be surviving with just Visual Studio.  How bad could it be?<br /><br />Very bad, it turns out.<br /><br />All those helpful little squiggles I was leaning heavily on to convert my Java to C#?<br /><br /><ul><li>The red to tell you you&rsquo;re utterly wrong.</li><li>The orange to tell you could be using less code.</li><li>The blue to remind you to stop thinking in Java and helpfully offer corrected naming.</li><li>The green to suggest stuff that C# could do differently.</li></ul><br />Yeah, all gone.<br /><br />How do people code like this?  Do they really just do a build to check if it&rsquo;s all wrong or not?<br /><br />Next, I try to find a class.  I actually have no idea how to do this, because I can&rsquo;t use Ctrl+N.  So I Ctrl<br /><br />I realise this is a waste of time anyway, because one thing that <i>really</i> annoys me about Visual Studio is that I can&rsquo;t find a way to sync the project tree to the class file I&rsquo;m looking at.  I can&rsquo;t get it to jump to highlight where I am.  When I&rsquo;m using IntelliJ, I find this dead useful when I want to see other stuff in the same package.<br /><br />Less than ten minutes after attempting to use Visual Studio without ReSharper, I&rsquo;ve abandoned the fight and tracked down a licence and installed it.<br /><br /><h3>Documentation isn&rsquo;t a standard function of .NET?</h3>What sort of message does this give developers?  Documentation isn&rsquo;t important?<br /><br />I always thought Javadoc was pretty ugly and clunky. In addition, now our IDEs generate so much, it&rsquo;s frequently meaningless.  But it is generated by standard Java tools, and HTML is a standard format that can be read on pretty much any computer with any operating system.<br /><br />I could not believe how hard it was to get the XML comments out of the C# into something the user can actually read.  Thank goodness, <a href="http://www.symphonious.net/">some enterprising member of the team</a> had already done that for us.  All I needed to do was hack/crowbar the tutorial I&rsquo;d been working on into the generated documentation, so it ended up in the Windows help files in some fashion.<br /><br />I know there&rsquo;s a way to get HTML/XML files into the end result using <a href="http://sandcastle.codeplex.com/">Sandcastle</a>, but hours of Googling only told me it <i>was</i> possible, not how to do it.  I still have no idea what the correct question is to ask to find the solution.<br /><br />Right now, this is an unsolved mystery.  Our .NET client users will have to read the plain HTML I&rsquo;m afraid.<br /><br /><h3>In Conclusion</h3>Are we lowly Java developers spoilt with our shiny IDEs?<br /><br />Or is there such a fundamentally different approach to development for .NET people that all the functionality is there, I just can&rsquo;t find it?<br /><br />I&rsquo;m disappointed if I&rsquo;m honest.  I&rsquo;m sure the .NET camp used to tout their tools as their superiority.  I ended up feeling sorry for the poor NET people.  Is there anything they can use that isn&rsquo;t Visual Studio?<br /><br /><br />In Conclusion: Despite the nasty capitalisation I found myself surprisingly taken with C#.  But until they can give me a proper development environment, I won&rsquo;t be tempted by the dark side any time soon.</p>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>I have been struggling with .NET.  Actually, I have been fighting pitched battles with it.<br /><br />All I want to do is take our existing Java client example code and write an equivalent in C#.  Easy, right?<br /><br /><h3>Trisha&rsquo;s Guide to Converting Java to C#</h3>Turns out writing the actual C# is relatively straightforward.  Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:<br /><br /><h4>1. Find-and-replace the following (only you can&rsquo;t use Ctrl+R like I expect.  Sigh.)</h4><blockquote style="line-height: 16px; size: 10px;"><code>final</code> = <code>readonly</code> (but remove from method params)<br /><code>System.out.printf</code> = <code>Console.WriteLine</code><br /><code>Map</code> = <code>Dictionary</code><br /><code>BigDecimal</code> = <code>decimal</code><br /><code>Set</code>&hellip; oh.  I have no idea. </blockquote><br /><h4>2. When using callbacks, replace anonymous inner classes with delegates</h4><br /><b>Java</b><br /><blockquote style="clear: both;"><pre><code>something.doSomething(new SomethingRequest(),<br />  new SomethingCallBack()<br />  {<br />    public void onSuccess()<br />    {<br />      System.out.println(&ldquo;Action successful&rdquo;);<br />    }<br />  <br />    public void onFailure()<br />    {<br />      System.err.println(&ldquo;Action failed&rdquo;);<br />    }<br />  });</code></pre></blockquote><br /><b>C#</b><br /><blockquote style="clear: both;"><pre><code>private void foo ()<br />{<br />  _something.DoSomething(new SomethingRequest(), <br />                         SomethingSuccess, <br />                         SomethingFailure);<br />}<br /><br />private void SomethingSuccess()<br />{<br />  Console.WriteLine(&ldquo;Action successful&rdquo;);<br />}<br /><br />private void SomethingFailure()<br />{<br />  Console.Error.WriteLine(&ldquo;Action failed&rdquo;);<br />}</code></pre></blockquote><br />I rather like this pattern actually.  You can&rsquo;t really tell in the noddy example above, but the C# code is generally shorter and more reusable.<br /><br /><h4>3. Replace getters and setters with properties</h4><br /><b>Java</b><br /><blockquote style="clear: both;"><pre><code>private class MyClass<br />{<br />  private BigDecimal myField = new BigDecimal(&quot;-1.0&quot;);<br /><br />  public BigDecimal getMyField()<br />  {<br />    return myField;<br />  }<br /><br />  public void setMyField(BigDecimal instructionId)<br />  {<br />    this.myField = myField<br />  }<br />}</code></pre></blockquote><br /><b>C#</b><br /><blockquote style="clear: both;"><pre><code>internal class MyClass<br />{<br />  public decimal MyField{ get; set; }<br />}</code></pre></blockquote><br />What the&hellip; where did all my code go??<br /><br /><h4>My Thoughts</h4>I was pleasantly surprised with the language.  In general, for what I was doing, the equivalent C# was a lot less code.  The fact that the syntax is not wildly different from Java made the transition relatively easy, even if I don&rsquo;t get all the nuances.<br /><br />I didn&rsquo;t really like the enums - I can see what purpose they serve, but I quite like the way the Java ones are pretty much classes in their own right with properties of their own - it allows you to encapsulate some of your simplest domain objects.  But it&rsquo;s a minor point, not a deal-breaker.<br /><br />The C# capitalisation makes me queasy though.  I just can&rsquo;t get my head around it.  In Java, if I say:<br /><pre>com.mechanitis.foo.Bar</pre>I know the class is Bar and the rest is the package (or namespace, or whatever).  This is more useful when you&rsquo;re using static methods and so forth:<br /><pre>com.mechanitis.foo.Bar.thatThingIWantToDo()</pre><br />In C#, I know the thing at the end is a method and the thing before that is a class, but it doesn&rsquo;t jump out at me:<br /><pre>Com.Mechanitis.Foo.Bar.ThatThingIWantToDo();</pre><br />And if you&rsquo;re using a property:<br /><pre>Com.Mechanitis.Foo.Bar.MyProperty;</pre><br />The whole thing makes me dizzy.<br /><br />You could argue that all this is redundant with modern tools and IDEs doing all the heavy lifting for you - nice colourisation etc.<br /><br />Which brings me to The Rant.<br /><br /><h3>Oh My Dear God What Is Wrong With Visual Studio?</h3>C# needs to be a shorter, more succinct language because it takes <i>three billion times longer</i> to do anything in Visual bloody Studio.<br /><br />I&rsquo;m coming at this from a Java, <a href="http://www.jetbrains.com/idea/">IntelliJ </a>point of view, so there&rsquo;s always the possibility it might be lack of familiarity with the tool, rather than the tool itself, which is the problem.  It&rsquo;s a long time since I used VS, and that was back in the 90s when I was doing ASP and COM (shhh, don&rsquo;t tell anyone).<br /><br />But things shouldn&rsquo;t be this hard.  I was ready to accept, due to my newbie status, the IDE not helping me. I didn&rsquo;t expect it to actively hinder me.<br /><br />For example: it took hours of my life that I will never get back to discover that you can&rsquo;t simply run a class that has a main method by right-clicking and selecting &ldquo;run&rdquo; (note: I&rsquo;m not even trying Ctrl+F10).  No.  I have to select, at a Solution level, which Projects are runnable.  Then I have to select at the Project level the class with the main method I actually want to run.  Then, it opens up a terminal window and runs it in there, which promptly disappears when the program errors or finishes.  What&rsquo;s wrong with outputting in the output window of the IDE? Is that not what it&rsquo;s for?<br /><br />Finally I worked out how to run the cursed program (seriously, like that&rsquo;s not the first thing everyone wants to do?  How do people write &ldquo;Hello World&rdquo;?).  Now, where are the command line arguments?  Of course, they&rsquo;re at the project properties level too, because each project only has one entry point.  I seriously had to Google that too because I couldn&rsquo;t work it out from the IDE alone.<br /><br /><br />The next day, my <a href="http://www.jetbrains.com/resharper/">ReSharper </a>licence had expired.  I decided I should attempt to limp on without it, after all hundreds of developers must be surviving with just Visual Studio.  How bad could it be?<br /><br />Very bad, it turns out.<br /><br />All those helpful little squiggles I was leaning heavily on to convert my Java to C#?<br /><br /><ul><li>The red to tell you you&rsquo;re utterly wrong.</li><li>The orange to tell you could be using less code.</li><li>The blue to remind you to stop thinking in Java and helpfully offer corrected naming.</li><li>The green to suggest stuff that C# could do differently.</li></ul><br />Yeah, all gone.<br /><br />How do people code like this?  Do they really just do a build to check if it&rsquo;s all wrong or not?<br /><br />Next, I try to find a class.  I actually have no idea how to do this, because I can&rsquo;t use Ctrl+N.  So I Ctrl<br /><br />I realise this is a waste of time anyway, because one thing that <i>really</i> annoys me about Visual Studio is that I can&rsquo;t find a way to sync the project tree to the class file I&rsquo;m looking at.  I can&rsquo;t get it to jump to highlight where I am.  When I&rsquo;m using IntelliJ, I find this dead useful when I want to see other stuff in the same package.<br /><br />Less than ten minutes after attempting to use Visual Studio without ReSharper, I&rsquo;ve abandoned the fight and tracked down a licence and installed it.<br /><br /><h3>Documentation isn&rsquo;t a standard function of .NET?</h3>What sort of message does this give developers?  Documentation isn&rsquo;t important?<br /><br />I always thought Javadoc was pretty ugly and clunky. In addition, now our IDEs generate so much, it&rsquo;s frequently meaningless.  But it is generated by standard Java tools, and HTML is a standard format that can be read on pretty much any computer with any operating system.<br /><br />I could not believe how hard it was to get the XML comments out of the C# into something the user can actually read.  Thank goodness, <a href="http://www.symphonious.net/">some enterprising member of the team</a> had already done that for us.  All I needed to do was hack/crowbar the tutorial I&rsquo;d been working on into the generated documentation, so it ended up in the Windows help files in some fashion.<br /><br />I know there&rsquo;s a way to get HTML/XML files into the end result using <a href="http://sandcastle.codeplex.com/">Sandcastle</a>, but hours of Googling only told me it <i>was</i> possible, not how to do it.  I still have no idea what the correct question is to ask to find the solution.<br /><br />Right now, this is an unsolved mystery.  Our .NET client users will have to read the plain HTML I&rsquo;m afraid.<br /><br /><h3>In Conclusion</h3>Are we lowly Java developers spoilt with our shiny IDEs?<br /><br />Or is there such a fundamentally different approach to development for .NET people that all the functionality is there, I just can&rsquo;t find it?<br /><br />I&rsquo;m disappointed if I&rsquo;m honest.  I&rsquo;m sure the .NET camp used to tout their tools as their superiority.  I ended up feeling sorry for the poor NET people.  Is there anything they can use that isn&rsquo;t Visual Studio?<br /><br /><br />In Conclusion: Despite the nasty capitalisation I found myself surprisingly taken with C#.  But until they can give me a proper development environment, I won&rsquo;t be tempted by the dark side any time soon.</p>
 <ul class="pa0">
   
    <li class="list">
@@ -214,7 +250,7 @@ if (!doNotTrack) {
    </li>
   
 </ul>
-<div class="mt6">
+<div class="mt6 instapaper_ignoref">
       
         <div id="disqus_thread"></div>
 <script type="application/javascript">
@@ -239,7 +275,7 @@ if (!doNotTrack) {
       
       
       </div>
-    </section>
+    </div>
 
     <aside class="w-30-l mt6-l">
 
@@ -331,6 +367,8 @@ if (!doNotTrack) {
 <path d="M598 128h298v298h-86v-152l-418 418-60-60 418-418h-152v-86zM810 810v-298h86v298c0 46-40 86-86 86h-596c-48 0-86-40-86-86v-596c0-46 38-86 86-86h298v86h-298v596h596z" style="fill-rule:evenodd;clip-rule:evenodd;fill:;"/>
 </svg>
 </span></a>
+
+
 
 
 
