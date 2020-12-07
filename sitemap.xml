@@ -1620,20 +1620,6 @@
   </url>
   
   <url>
-    <loc>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</loc>
-    <lastmod>2012-11-08T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://trishagee.github.io/tags/openjdk/</loc>
-    <lastmod>2012-11-08T00:00:00+00:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://trishagee.github.io/post/nighthacking_tour_the_ljc/</loc>
     <lastmod>2012-11-06T00:00:00+00:00</lastmod>
     <changefreq>monthly</changefreq>

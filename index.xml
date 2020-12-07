@@ -1145,7 +1145,7 @@ Any suggestions? Anyone out there and keen for me to gatecrash their party?</des
       <pubDate>Fri, 31 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/adjusting_to_working_remotely/</guid>
-      <description>One of the most obvious differences I faced when I moved from LMAX to 10gen were the working conditions. I don&#39;t mean like being deep underground in some dangerous situation vs being pampered bybeautiful slave boys and girls. What I mean is that the working practices at one company necessitated being in the office for corehours, and at the other flexible hours and remote-working are practically mandatory.At at LMAX wepair-programmed most days, and that meant that being co-located: being in the same office, at the same computer,was pretty important.</description>
+      <description>&lt;p&gt;One of the most obvious differences I faced when I moved from &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX&lt;/a&gt; to &lt;a href=&#34;http://www.10gen .com/&#34;&gt;10gen&lt;/a&gt; were the working conditions.  I don&amp;rsquo;t mean like being deep underground in some dangerous situation vs being pampered by beautiful slave boys and girls.  What I mean is that the working practices at one company necessitated being in the office for core hours, and at the other flexible hours and remote-working are practically mandatory.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1226,9 +1226,8 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Mon, 18 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/it_depends/</guid>
-      <description>Don&amp;rsquo;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?
-It&amp;rsquo;s so frustrating to think that in a world of ones and zeros, people can&amp;rsquo;t give absolute answers and you can&amp;rsquo;t rely on &amp;ldquo;best practice&amp;rdquo;.
-It&amp;rsquo;s an answer I&amp;rsquo;ve given so many times, especially when someone asks about performance. Well, I&amp;rsquo;ve had my comeuppance. The entire exercise of designing the new Java driver for MongoDB has been nothing but a series of questions where the answer is &amp;ldquo;it depends&amp;rdquo;:</description>
+      <description>&lt;p&gt;Don&amp;rsquo;t you hate it when you ask a perfectly good question, and someone comes back with the answer &amp;ldquo;it depends&amp;rdquo;?&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s so frustrating to think that in a world of ones and zeros, people can&amp;rsquo;t give absolute answers and you can&amp;rsquo;t rely on &amp;ldquo;best practice&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1392,16 +1391,6 @@ Early in November, 10gen ordered me to go to New York to learn about MongoDB (Oh
       <description>This week I&amp;rsquo;m at Devoxx for the whole week, and already I&amp;rsquo;ve achieved two things I didn&amp;rsquo;t manage last year: I drank Belgian Beer and I&amp;rsquo;ve spent some time in Antwerp itself.
 It&amp;rsquo;s going to be another busy conference, I&amp;rsquo;m presenting three times (thankfully one is just a quickie):
 Wed 13:35 - Why Open Source Your Secrets (Quickie)Wed 17:50 - Agile++: When Agile Goes Well - Co-presenting with one of my ex-colleagues from LMAX.</description>
-    </item>
-    
-    <item>
-      <title>Java 8 - Introduction to Lambdas Article</title>
-      <link>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</link>
-      <pubDate>Thu, 08 Nov 2012 00:00:00 +0000</pubDate>
-      
-      <guid>https://trishagee.github.io/post/java_8__introduction_to_lambdas_article/</guid>
-      <description>This month&amp;rsquo;s Java Magazine features an article by me, Ben Evans and Martijn Verburg about the new lambdas coming in Java 8.
-The aim of the article is to give an overview to normal, human Java developers, who don&amp;rsquo;t need to know the theory behind what they are or how they work under the covers, but want to know how to use them when they get the shiny new version of Java next year (or even get ahead of the curve and try them now).</description>
     </item>
     
     <item>
@@ -2463,7 +2452,10 @@ Pretentious?&amp;nbsp; Or the only reasonable time to use all those letters?</de
       <pubDate>Tue, 29 Apr 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/tales_from_the_other_side_confessions_of_an_offshore_resource/</guid>
-      <description>After the acquisition of a company with offices in New York, I pestered my company outrageously until they got fed up and finally relented – they agreed to send me to the US.To ease the transition, I chose to move onto a project which would allow me to start working in London and continue on the same team after I had moved to New York.In the extreme over-excitement that followed my relocation, it took me a little while to realise that effectively I was an offshore resource, no different really from any of our Indian test team, and the team needed to manage this appropriately.</description>
+      <description>&lt;p&gt;After the acquisition of a company with offices in New York, I pestered my company outrageously until they got fed up and finally relented – they agreed to send me to the US.&lt;/p&gt;
+&lt;p&gt;To ease the transition, I chose to move onto a project which would allow me to start working in London and continue on the same team after I had moved to New York.&lt;/p&gt;
+&lt;p&gt;In the extreme over-excitement that followed my relocation, it took me a little while to realise that effectively I was an offshore resource, no different really from any of our Indian test team, and the team needed to manage this appropriately.&lt;/p&gt;
+&lt;p&gt;I learnt a number of lessons whilst playing this game.  Some of these points are also valid for teams with remote resources (e.g. people working from home).&lt;/p&gt;</description>
     </item>
     
     <item>
