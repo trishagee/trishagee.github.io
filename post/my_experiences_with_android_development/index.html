@@ -7,7 +7,8 @@
     <title>My Experiences with Android Development | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&rsquo;d try my hand at developing an Android application this week.
-I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.">
+I want to give a quick overview of my preliminary thoughts on getting started on this endeavour.
+Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.  I am completely new to mobile app development.">
     <meta name="generator" content="Hugo 0.78.2" />
     
     
@@ -22,6 +23,8 @@ I want to give a quick overview of my preliminary thoughts on getting started on
     
 
     
+      <link rel="canonical" href="https://trishagee.com/2011/01/27/my_experiences_with_android_development/">
+    
 
     
       
@@ -34,17 +37,19 @@ I want to give a quick overview of my preliminary thoughts on getting started on
     
     <meta property="og:title" content="My Experiences with Android Development" />
 <meta property="og:description" content="Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&rsquo;d try my hand at developing an Android application this week.
-I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI." />
+I want to give a quick overview of my preliminary thoughts on getting started on this endeavour.
+Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.  I am completely new to mobile app development." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/my_experiences_with_android_development/" />
 <meta property="article:published_time" content="2011-01-27T00:00:00+00:00" />
 <meta property="article:modified_time" content="2011-01-27T00:00:00+00:00" />
 <meta itemprop="name" content="My Experiences with Android Development">
 <meta itemprop="description" content="Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&rsquo;d try my hand at developing an Android application this week.
-I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.">
+I want to give a quick overview of my preliminary thoughts on getting started on this endeavour.
+Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.  I am completely new to mobile app development.">
 <meta itemprop="datePublished" content="2011-01-27T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2011-01-27T00:00:00+00:00" />
-<meta itemprop="wordCount" content="722">
+<meta itemprop="wordCount" content="732">
 
 
 
@@ -52,7 +57,8 @@ I want to give a quick overview of my preliminary thoughts on getting started on
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My Experiences with Android Development"/>
 <meta name="twitter:description" content="Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&rsquo;d try my hand at developing an Android application this week.
-I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI."/>
+I want to give a quick overview of my preliminary thoughts on getting started on this endeavour.
+Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.  I am completely new to mobile app development."/>
 
       
 <script type="application/javascript">
@@ -220,8 +226,29 @@ if (!doNotTrack) {
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&rsquo;d try my hand at developing an Android application this week.<br /><br />I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. <br /><br />Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.  I am <i>completely</i> new to mobile app development.<br /><br /><b>Getting Started</b><br />I spent maybe a day and a half reading the excellent <a href="http://developer.android.com/guide/basics/what-is-android.html">Android developer documentation</a> and attempting to hack out a quick &lsquo;droid app.<br /><br />I was surprised to find the <a href="http://developer.android.com/guide/topics/fundamentals.html">Application Fundamentals</a> section actually made sense to me.  There appears to be a clear architecture with design guidelines laid out for developers to follow.  This shouldn&rsquo;t really be a surprise I suppose, but years of hacking around with web UIs with poorly implemented MVC architectures must have left me thinking that all frameworks are less &ldquo;frame&rdquo; and more &ldquo;work&rdquo;.<br /><br /><b>Setup</b><br />I remember the disaster of trying to get my first JDK working on my 486 - what a nightmare!  And getting Tomcat 3 installed and running?  Forget it.  I also remember the last time I made a serious stab at a learning a new technology.  I tried develop a <a href="http://www.grails.org/">Grails</a>/Groovy application in Eclipse.  The IS guys had to rescue my laptop from me during that enterprise before I could do it any serious damage.<br /><br />Installing the SDK on my mac was surprisingly simple, especially bearing in mind I&rsquo;m new both to OSX and to mobile development.  I don&rsquo;t know if it&rsquo;s because Android development has been well thought out and well supported, or if it&rsquo;s a function of both the industry&rsquo;s maturity and my own experience. <br /><br />The integration with <a href="http://www.jetbrains.com/idea/">IntelliJ</a> was much slicker than I expected, especially since I&rsquo;m using the freebie Community edition.  I don&rsquo;t remember the exact steps to tell it I wanted to create an Android project, but it must have been ridiculously easy otherwise I would remember the trauma.  I do remember a little confusion around installing the Android platform - I hadn&rsquo;t understood the difference between installing the SDK and then installing a specific API for it.  But the <a href="http://developer.android.com/guide/developing/other-ide.html">documentation</a> and the <a href="http://developer.android.com/guide/developing/tools/othertools.html#android">android</a> application got me on the right track in the end.  And then when I clicked the &ldquo;run&rdquo; button in IntelliJ, hey presto!  The emulator appeared and there was my app!<br /><br /><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">I loved the emulator.  I had some confused idea that I would have to plug my own phone into the laptop to see my application.  Instead, the emulator looks enough like my actual phone to give me decent feedback on how the app is going to behave.  The downside is I was trying to play with the camera, and I couldn&rsquo;t see how that would really work in the emulator, but I got a fair idea.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br /></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b>Did it work?</b></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">I managed to get a rudimentary application running, with a button and some descriptive text (it&rsquo;s not about to win any awards).  The button was supposed to launch the camera viewer, but my first few attempts just resulted in the crash notification.  It didn&rsquo;t take long to figure out how to use <a href="http://developer.android.com/guide/developing/debug-tasks.html">logcat</a> to see the stack trace and see I hadn&rsquo;t set the permissions correctly to use the camera, so I rooted through the <a href="http://developer.android.com/resources/samples/ApiDemos/src/com/example/android/apis/graphics/CameraPreview.html">CameraPreview</a> example in <a href="http://developer.android.com/resources/samples/ApiDemos/index.html">APIDemos </a>to figure out how to set up the AndroidManifest.xml correctly, and rather amazingly it all worked!</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br /></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b>Any downsides?</b></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">I was surprised (and slightly disappointed) at the amount of XML configuration.  I&rsquo;ve seen plenty of evil Spring and Ant XML in the enterprise and I thought frameworks were moving away from that.  The manifest I can understand I suppose, but it felt a bit weird to be defining the UI in XML.  It seemed like a bit of an afterthought tagged on after all the well-defined architecture behind the scenes.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br /></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">But maybe this will make more sense to me as I develop my application further.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br /></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><b>In Summary</b></div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"></div><ul><li>I was pleasantly surprised to be able to get an Android application (albeit a very basic one) working in only a few hours.</li><li>Development in IntelliJ was <i>much </i>easier than I expected.</li><li>The documentation is actually very good.</li></ul><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;">We&rsquo;ll see how I feel about it when I start trying to do more than a very simple example application.</div><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><br /></div></p>
-<ul class="pa0">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&rsquo;d try my hand at developing an Android application this week.</p>
+<p>I want to give a quick overview of my preliminary thoughts on getting started on this endeavour.</p>
+<p>Background: I&rsquo;ve got more than 10 years Java experience, but any UI for the applications I&rsquo;ve worked on was always a web UI.  I am <em>completely</em> new to mobile app development.</p>
+<h3 id="getting-started">Getting Started</h3>
+<p>I spent maybe a day and a half reading the excellent <a href="http://developer.android.com/guide/basics/what-is-android.html">Android developer documentation</a> and attempting to hack out a quick &lsquo;droid app.</p>
+<p>I was surprised to find the <a href="http://developer.android.com/guide/topics/fundamentals.html">Application Fundamentals</a> section actually made sense to me.  There appears to be a clear architecture with design guidelines laid out for developers to follow.  This shouldn&rsquo;t really be a surprise I suppose, but years of hacking around with web UIs with poorly implemented MVC architectures must have left me thinking that all frameworks are less &ldquo;frame&rdquo; and more &ldquo;work&rdquo;.</p>
+<h3 id="setup">Setup</h3>
+<p>I remember the disaster of trying to get my first JDK working on my 486 - what a nightmare!  And getting Tomcat 3 installed and running?  Forget it.  I also remember the last time I made a serious stab at a learning a new technology.  I tried develop a <a href="http://www.grails.org/">Grails</a>/Groovy application in Eclipse.  The IS guys had to rescue my laptop from me during that enterprise before I could do it any serious damage.</p>
+<p>Installing the SDK on my mac was surprisingly simple, especially bearing in mind I&rsquo;m new both to OSX and to mobile development.  I don&rsquo;t know if it&rsquo;s because Android development has been well thought out and well supported, or if it&rsquo;s a function of both the industry&rsquo;s maturity and my own experience.</p>
+<p>The integration with <a href="http://www.jetbrains.com/idea/">IntelliJ</a> was much slicker than I expected, especially since I&rsquo;m using the freebie Community edition.  I don&rsquo;t remember the exact steps to tell it I wanted to create an Android project, but it must have been ridiculously easy otherwise I would remember the trauma.  I do remember a little confusion around installing the Android platform - I hadn&rsquo;t understood the difference between installing the SDK and then installing a specific API for it.  But the <a href="http://developer.android.com/guide/developing/other-ide.html">documentation</a> and the <a href="http://developer.android.com/guide/developing/tools/othertools.html#android">android</a> application got me on the right track in the end.  And then when I clicked the &ldquo;run&rdquo; button in IntelliJ, hey presto!  The emulator appeared and there was my app!</p>
+<p>I loved the emulator.  I had some confused idea that I would have to plug my own phone into the laptop to see my application.  Instead, the emulator looks enough like my actual phone to give me decent feedback on how the app is going to behave.  The downside is I was trying to play with the camera, and I couldn&rsquo;t see how that would really work in the emulator, but I got a fair idea.</p>
+<h3 id="did-it-work">Did it work?</h3>
+<p>I managed to get a rudimentary application running, with a button and some descriptive text (it&rsquo;s not about to win any awards).  The button was supposed to launch the camera viewer, but my first few attempts just resulted in the crash notification.  It didn&rsquo;t take long to figure out how to use <a href="http://developer.android.com/guide/developing/debug-tasks.html">logcat</a> to see the stack trace and see I hadn&rsquo;t set the permissions correctly to use the camera, so I rooted through the <a href="http://developer.android.com/resources/samples/ApiDemos/src/com/example/android/apis/graphics/CameraPreview.html">CameraPreview</a> example in <a href="http://developer.android.com/resources/samples/ApiDemos/index.html">APIDemos </a>to figure out how to set up the AndroidManifest.xml correctly, and rather amazingly it all worked!</p>
+<h3 id="any-downsides">Any downsides?</h3>
+<p>I was surprised (and slightly disappointed) at the amount of XML configuration.  I&rsquo;ve seen plenty of evil Spring and Ant XML in the enterprise and I thought frameworks were moving away from that.  The manifest I can understand I suppose, but it felt a bit weird to be defining the UI in XML.  It seemed like a bit of an afterthought tagged on after all the well-defined architecture behind the scenes.</p>
+<p>But maybe this will make more sense to me as I develop my application further.</p>
+<h3 id="in-summary">In Summary</h3>
+<ul>
+<li>I was pleasantly surprised to be able to get an Android application (albeit a very basic one) working in only a few hours.</li>
+<li>Development in IntelliJ was _much _easier than I expected.</li>
+<li>The documentation is actually very good.</li>
+</ul>
+<p>We&rsquo;ll see how I feel about it when I start trying to do more than a very simple example application.</p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/android" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">android</a>

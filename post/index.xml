@@ -670,7 +670,12 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Wed, 25 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/kids_these_days/</guid>
-      <description>I&#39;m a great believer in getting kids to code early - after all, I&#39;m of that generation that was taught&amp;nbsp; at the age of 9.&amp;nbsp; There are quite a few approaches to teaching today&#39;s kids in an engaging way, but I&#39;m a bit wary of the sandbox solutions that teach kids things like how to navigate a virtual thingie around the screen, or lets them create things in a limited virtual world.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m a great believer in getting kids to code early - after all, I&amp;rsquo;m of that generation that was taught&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;10 PRINT &amp;quot;HELLO&amp;quot;
+20 GOTO 10
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;at the age of 9.  There are quite a few approaches to teaching today&amp;rsquo;s kids in an engaging way, but I&amp;rsquo;m a bit wary of the sandbox solutions that teach kids things like how to navigate a virtual thingie around the screen, or lets them create things in a limited virtual world.  I don&amp;rsquo;t think kids will easily make the leap between these sort of games to seeing the full potential of programming - they&amp;rsquo;re too limited and have no context for the kids.  It&amp;rsquo;s just another game.&lt;/p&gt;
+&lt;p&gt;Kids need to understand how programming fits into their world, they need to understand the context of coding, if they&amp;rsquo;re going to fall in love with it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1825,8 +1830,9 @@ But you should know that even when you use strict mode, Internet Explorer has sl
       <pubDate>Thu, 27 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_experiences_with_android_development/</guid>
-      <description>Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&amp;rsquo;d try my hand at developing an Android application this week.
-I want to give a quick overview of my preliminary thoughts on getting started on this endeavour. Background: I&amp;rsquo;ve got more than 10 years Java experience, but any UI for the applications I&amp;rsquo;ve worked on was always a web UI.</description>
+      <description>&lt;p&gt;Because I was missing coding, and because my friend and I had an awesome phone app idea at the weekend, I thought I&amp;rsquo;d try my hand at developing an Android application this week.&lt;/p&gt;
+&lt;p&gt;I want to give a quick overview of my preliminary thoughts on getting started on this endeavour.&lt;/p&gt;
+&lt;p&gt;Background: I&amp;rsquo;ve got more than 10 years Java experience, but any UI for the applications I&amp;rsquo;ve worked on was always a web UI.  I am &lt;em&gt;completely&lt;/em&gt; new to mobile app development.&lt;/p&gt;</description>
     </item>
     
     <item>
