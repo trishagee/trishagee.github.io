@@ -26,6 +26,8 @@ releaseVersion = version[0..-10]
     
 
     
+      <link rel="canonical" href="https://trishagee.com/2014/07/02/short_vs_readable-md/">
+    
 
     
       
@@ -242,35 +244,20 @@ if (!doNotTrack) {
 <p>or</p>
 <pre><code>releaseVersion = version[0..-10]
 </code></pre>
-<p>Given a value of <code>0.109-SNAPSHOT</code> for <code>version</code>, they both give the same result.  And I&rsquo;m tempted by the second, 
-because it&rsquo;s shorter.  But I&rsquo;m going to go with the first one - not because it&rsquo;s more Java-ish and I&rsquo;m scared of Groovy syntax, 
-but because it&rsquo;s easier to understand if/when something goes wrong.</p>
-<p>For example: if <code>version</code> doesn&rsquo;t conform to the expected pattern, the two code fragments fail in two different ways.  If <code>version</code> 
-doesn&rsquo;t contain <code>-SNAPSHOT</code>, the first will fail with:</p>
+<p>Given a value of <code>0.109-SNAPSHOT</code> for <code>version</code>, they both give the same result.  And I&rsquo;m tempted by the second, because it&rsquo;s shorter.  But I&rsquo;m going to go with the first one - not because it&rsquo;s more Java-ish and I&rsquo;m scared of Groovy syntax, but because it&rsquo;s easier to understand if/when something goes wrong.</p>
+<p>For example: if <code>version</code> doesn&rsquo;t conform to the expected pattern, the two code fragments fail in two different ways.  If <code>version</code> doesn&rsquo;t contain <code>-SNAPSHOT</code>, the first will fail with:</p>
 <pre><code>java.lang.StringIndexOutOfBoundsException: String index out of range: -1
 </code></pre>
-<p>whereas the second will either arbitrarily slice the last 9 characters off the end of whatever the String does contain, 
-or if it&rsquo;s too short you&rsquo;ll get something like:</p>
+<p>whereas the second will either arbitrarily slice the last 9 characters off the end of whatever the String does contain, or if it&rsquo;s too short you&rsquo;ll get something like:</p>
 <pre><code>java.lang.ArrayIndexOutOfBoundsException: Negative array index [-10] too large for array size 5
 </code></pre>
-<p>When you, the developer, see this error (or notice your mangled version number) and look at the failing line of code, 
-you&rsquo;ll have two different experiences.  When looking at the second example, if you didn&rsquo;t write it in the first place or if you have a 
-memory as shocking as mine, you won&rsquo;t get any clues from that code as to what the <em>purpose</em> is - you&rsquo;ll see what it does (chop the last 
-9 characters off the <code>version</code> string), but not why.  You can &ldquo;fix&rdquo; the problem by adding an arbitrary 9 characters onto your <code>version</code>.</p>
-<p>If you&rsquo;re looking at the first example, however, you&rsquo;ll see the intent right there - it&rsquo;s trying to chop the string <code>-SNAPSHOT</code> (and any
-characters that might happen to come after it) off the end of the <code>version</code> string.  With this line of code, 
-if you checked the value of <code>version</code> and saw it didn&rsquo;t have the correct suffix, you&rsquo;d have a good idea of what the problem is and how 
-to solve it.</p>
-<p>There&rsquo;s a third way, that potentially keeps the descriptiveness (is that a word?) of the first solution and makes it a bit shorter and 
-Groovier:</p>
+<p>When you, the developer, see this error (or notice your mangled version number) and look at the failing line of code, you&rsquo;ll have two different experiences.  When looking at the second example, if you didn&rsquo;t write it in the first place or if you have a memory as shocking as mine, you won&rsquo;t get any clues from that code as to what the <em>purpose</em> is - you&rsquo;ll see what it does (chop the last 9 characters off the <code>version</code> string), but not why.  You can &ldquo;fix&rdquo; the problem by adding an arbitrary 9 characters onto your <code>version</code>.</p>
+<p>If you&rsquo;re looking at the first example, however, you&rsquo;ll see the intent right there - it&rsquo;s trying to chop the string <code>-SNAPSHOT</code> (and any characters that might happen to come after it) off the end of the <code>version</code> string.  With this line of code, if you checked the value of <code>version</code> and saw it didn&rsquo;t have the correct suffix, you&rsquo;d have a good idea of what the problem is and how to solve it.</p>
+<p>There&rsquo;s a third way, that potentially keeps the descriptiveness (is that a word?) of the first solution and makes it a bit shorter and Groovier:</p>
 <pre><code>releaseVersion = version[0..&lt;version.indexOf('-SNAPSHOT')]
 </code></pre>
-<p>You need the less-than sign plonked in there to make it work correctly, which I find a bit jarring, 
-but it does work.  It&rsquo;s a little more succinct than the original Java syntax and retains the intent.</p>
-<p>So in conclusion: yes, shorter code is generally better (and often more readable).  But I don&rsquo;t believe in sacrificing code that 
-expresses the intent in order to reduce the number of characters used.  We&rsquo;re not living in a memory-poor world any more, 
-and code is meant to be read by humans as well as computers.  Let&rsquo;s make our code easy to understand when it goes wrong, 
-not simply the shortest way to do something when the stars are all perfectly aligned.</p><ul class="pa0">
+<p>You need the less-than sign plonked in there to make it work correctly, which I find a bit jarring, but it does work.  It&rsquo;s a little more succinct than the original Java syntax and retains the intent.</p>
+<p>So in conclusion: yes, shorter code is generally better (and often more readable).  But I don&rsquo;t believe in sacrificing code that expresses the intent in order to reduce the number of characters used.  We&rsquo;re not living in a memory-poor world any more, and code is meant to be read by humans as well as computers.  Let&rsquo;s make our code easy to understand when it goes wrong, not simply the shortest way to do something when the stars are all perfectly aligned.</p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/groovy" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">groovy</a>

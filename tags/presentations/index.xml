@@ -64,10 +64,7 @@ where these popular technologies sit in your architecture, and how they interact
       <pubDate>Tue, 22 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/yow_2013_backwards/</guid>
-      <description>&lt;p&gt;YOW recorded me, yet again, talking about the adventure that is the design of the new Java Driver for MongoDB.  This is the same talk I
-gave at &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;GeeCON&lt;/a&gt; and &lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;DevoxxUK&lt;/a&gt;,
-with some updates based on our Journey So Far.  In it, I cover the architecture of the new driver and some of our current thoughts
-around where we want the API to go.&lt;/p&gt;</description>
+      <description>&lt;p&gt;YOW recorded me, yet again, talking about the adventure that is the design of the new Java Driver for MongoDB.  This is the same talk I gave at &lt;a href=&#34;http://vimeo.com/72982916&#34;&gt;GeeCON&lt;/a&gt; and &lt;a href=&#34;http://www.parleys.com/play/51c325c3e4b0d38b54f4624f/chapter1/about&#34;&gt;DevoxxUK&lt;/a&gt;, with some updates based on our Journey So Far.  In it, I cover the architecture of the new driver and some of our current thoughts around where we want the API to go.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -76,7 +73,7 @@ around where we want the API to go.&lt;/p&gt;</description>
       <pubDate>Thu, 17 Apr 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/yow_2013_career_advice_for_programmers/</guid>
-      <description>Since I have a tendancy to bang on every now and again about how we, as developers, could do better in managing our careers (for example, by creating CVs that don&amp;rsquo;t suck, and by staying ahead of the curve), Dave Thomas asked me to speak for a mere 50 minutes on the subject at [GOTO Aarhus](http://gotocon .com/video#36), a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short time.</description>
+      <description>Since I have a tendency to bang on every now and again about how we, as developers, could do better in managing our careers (for example, by creating CVs that don&amp;rsquo;t suck, and by staying ahead of the curve), Dave Thomas asked me to speak for a mere 50 minutes on the subject at GOTO Aarhus, a talk I wasn&amp;rsquo;t enormously happy with as there was no way to cover a lifetime of hard-fought experience in such a short time.</description>
     </item>
     
     <item>
