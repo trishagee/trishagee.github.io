@@ -7,10 +7,7 @@
     <title>Spock passes the next test - Painless Stubbing | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
     <meta name="description" content="In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.">
+As that blog got rather long, I saved the next installment for a separate post.">
     <meta name="generator" content="Hugo 0.78.2" />
     
     
@@ -25,6 +22,8 @@ Mocking is great for checking outputs - in the example in the last post, we&rsqu
     
 
     
+      <link rel="canonical" href="https://trishagee.com/2013/07/10/spock_passes_the_next_test__painless_stubbing/">
+    
 
     
       
@@ -37,23 +36,17 @@ Mocking is great for checking outputs - in the example in the last post, we&rsqu
     
     <meta property="og:title" content="Spock passes the next test - Painless Stubbing" />
 <meta property="og:description" content="In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter." />
+As that blog got rather long, I saved the next installment for a separate post." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/" />
 <meta property="article:published_time" content="2013-07-10T00:00:00+00:00" />
 <meta property="article:modified_time" content="2013-07-10T00:00:00+00:00" />
 <meta itemprop="name" content="Spock passes the next test - Painless Stubbing">
 <meta itemprop="description" content="In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.">
+As that blog got rather long, I saved the next installment for a separate post.">
 <meta itemprop="datePublished" content="2013-07-10T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2013-07-10T00:00:00+00:00" />
-<meta itemprop="wordCount" content="584">
+<meta itemprop="wordCount" content="739">
 
 
 
@@ -61,10 +54,7 @@ Mocking is great for checking outputs - in the example in the last post, we&rsqu
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Spock passes the next test - Painless Stubbing"/>
 <meta name="twitter:description" content="In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter."/>
+As that blog got rather long, I saved the next installment for a separate post."/>
 
       
 <script type="application/javascript">
@@ -232,8 +222,83 @@ if (!doNotTrack) {
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>In the <a href="http://mechanitis.blogspot.co.uk/2013/07/spock-is-awesome-seriously-simplified.html">last post</a> I talked about our need for some improved testing tools, our choice of <a href="https://code.google.com/p/spock/">Spock</a> as something to spike, and how mocking looks in Spock.<br /><br />As that blog got rather long, I saved the next installment for a separate post.<br /><br />Today I want to look at stubbing.<br /><br /><b>Stubbing</b><br />Mocking is great for checking <i>outputs</i> - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the <code>bsonWriter</code>.<br /><br />Stubbing is great for faking your <i>inputs</i> (I don&rsquo;t know why this difference never occurred to me before, but <a href="http://www.devoxx.com/display/UK13/I+hate+writing+unit+tests%2C+how+come+everybody+else+enjoys+it">Colin&rsquo;s talk at Devoxx UK</a> made this really clear to me). <br /><br />One of the things we need to do in the compatibility layer of the new driver is to wrap all the new style Exceptions that can be thrown by the new architecture layer and turn them into old-style Exceptions, for backwards compatibility purposes.  Sometimes testing the exceptional cases is&hellip; challenging.  So I opted to do this with Spock.<br /><br /><script src="https://gist.github.com/trishagee/5935645.js"></script>So here we can use a real <code>DB</code> class, but with a mock <code>Mongo</code> that will return us a &ldquo;mock&rdquo; <code>Session</code>.  It&rsquo;s not actually a mock though, it&rsquo;s more of a stub because we want to tell it how to behave when it&rsquo;s called - in this test, we want to force it to throw an <code>org.mongodb.MongoException</code> whenever <code>execute</code> is called.  It doesn&rsquo;t matter to us what get passed in to the execute method (that&rsquo;s what the underscore means on line 16), what matters is that when it gets called it throws the correct type of Exception.<br /><br />Like before, the <code>when</code>: section shows the bit we&rsquo;re actually trying to test. In this case, we want to call <code>rename</code>.<br /><br />Then finally the <code>then:</code> section asserts that we received the correct sort of Exception.  It&rsquo;s not enormously clear, although I&rsquo;ve kept the full namespace in to try and clarify, but the aim is that any <code><b>org</b>.mongodb.MongoException</code> that gets thrown by the new architecture gets turned into the appropriate <code><b>com</b>.mongodb.MongoException</code>.  We&rsquo;re sort of &ldquo;lucky&rdquo; because the old code is in the wrong package structure, and in the new architecture we&rsquo;ve got a chance to fix this and put stuff into the right place.<br /><br />Once I&rsquo;d tracked down all the places Exceptions can escape and started writing these sorts of tests to exercise those code paths, not only did I feel more secure that we wouldn&rsquo;t break backwards compatibility by leaking the wrong Exceptions, but we also found our test coverage went up - and more importantly, in the <i>un</i>happy paths, which are often harder to test.<br /><br />I mentioned in the last post that we already did some simple stubbing to help us test the data driver. Why not just keep using that approach?  <br /><br />Well, these stubs end up looking like this:<br /><br /><script src="https://gist.github.com/trishagee/5935655.js"></script>Ick.<br /><br />And you end up extending them so you can just override the method you&rsquo;re interested in (particularly in the case of forcing a method to throw an exception).  Most irritatingly to me, these stubs live away from the actual tests, so you can&rsquo;t easily see what the expected behaviour is.  In the Spock test, the expected stubbed behaviour is defined on line 16, the call that will provoke it is on line 19 and the code that checks the expectation is on line 22.  It&rsquo;s all within even the smallest monitor&rsquo;s window.<br /><br />So stubbing in Spock is painless.  Next:<br /><ul><li><a href="http://mechanitis.blogspot.com.es/2013/12/spock-data-driven-testing.html">Data Driven Testing</a></li></ul><br /></p>
-<ul class="pa0">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>In the <a href="https://trishagee.com/2013/07/09/spock_is_awesome_seriously_simplified_mocking/">last post</a> I talked about our need for some improved testing tools, our choice of <a href="http://spockframework.org/">Spock</a> as something to spike, and how mocking looks in Spock.</p>
+<p>As that blog got rather long, I saved the next installment for a separate post.</p>
+<p>Today I want to look at stubbing.</p>
+<p>##Stubbing</p>
+<p>Mocking is great for checking <em>outputs</em> - in the example in the last post, we&rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the <code>bsonWriter</code>.</p>
+<p>Stubbing is great for faking your <em>inputs</em> (I don&rsquo;t know why this difference never occurred to me before, but <a href="http://www.devoxx.com/display/UK13/I+hate+writing+unit+tests%2C+how+come+everybody+else+enjoys+it">Colin&rsquo;s talk at Devoxx UK</a> made this really clear to me).</p>
+<p>One of the things we need to do in the compatibility layer of the new driver is to wrap all the new style Exceptions that can be thrown by the new architecture layer and turn them into old-style Exceptions, for backwards compatibility purposes.  Sometimes testing the exceptional cases is&hellip; challenging.  So I opted to do this with Spock.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-groovy" data-lang="groovy"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">DBCollectionSpecification</span> <span style="color:#66d9ef">extends</span> Specification <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> Mongo mongo <span style="color:#f92672">=</span> Mock<span style="color:#f92672">()</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> ServerSelectingSession session <span style="color:#f92672">=</span> Mock<span style="color:#f92672">()</span>
+
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> DB database <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DB<span style="color:#f92672">(</span>mongo<span style="color:#f92672">,</span> <span style="color:#e6db74">&#39;myDatabase&#39;</span><span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> DocumentCodec<span style="color:#f92672">())</span>
+    
+    <span style="color:#a6e22e">@Subject</span>
+    <span style="color:#66d9ef">private</span> <span style="color:#66d9ef">final</span> DBCollection collection <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> DBCollection<span style="color:#f92672">(</span><span style="color:#e6db74">&#39;collectionName&#39;</span><span style="color:#f92672">,</span> database<span style="color:#f92672">,</span> <span style="color:#66d9ef">new</span> DocumentCodec<span style="color:#f92672">())</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">setup</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        mongo<span style="color:#f92672">.</span><span style="color:#a6e22e">getSession</span><span style="color:#f92672">()</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#f92672">{</span> session <span style="color:#f92672">}</span>
+    <span style="color:#f92672">}</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#e6db74">&#39;should throw com.mongodb.MongoException if rename fails&#39;</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        setup:
+        session<span style="color:#f92672">.</span><span style="color:#a6e22e">execute</span><span style="color:#f92672">(</span>_<span style="color:#f92672">)</span> <span style="color:#f92672">&gt;&gt;</span> <span style="color:#f92672">{</span> <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> org<span style="color:#f92672">.</span><span style="color:#a6e22e">mongodb</span><span style="color:#f92672">.</span><span style="color:#a6e22e">MongoException</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;The error from the new Java layer&#39;</span><span style="color:#f92672">)</span> <span style="color:#f92672">}</span>
+
+        when:
+        collection<span style="color:#f92672">.</span><span style="color:#a6e22e">rename</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#39;newCollectionName&#39;</span><span style="color:#f92672">);</span>
+
+        then:
+        thrown<span style="color:#f92672">(</span>com<span style="color:#f92672">.</span><span style="color:#a6e22e">mongodb</span><span style="color:#f92672">.</span><span style="color:#a6e22e">MongoException</span><span style="color:#f92672">)</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>(<a href="https://gist.github.com/trishagee/5935645">view gist</a>)</p>
+<p>So here we can use a real <code>DB</code> class, but with a mock <code>Mongo</code> that will return us a &ldquo;mock&rdquo; <code>Session</code>.  It&rsquo;s not actually a mock though, it&rsquo;s more of a stub because we want to tell it how to behave when it&rsquo;s called - in this test, we want to force it to throw an <code>org.mongodb.MongoException</code> whenever <code>execute</code> is called.  It doesn&rsquo;t matter to us what get passed in to the execute method (that&rsquo;s what the underscore means on line 16), what matters is that when it gets called it throws the correct type of Exception.</p>
+<p>Like before, the <code>when</code>: section shows the bit we&rsquo;re actually trying to test. In this case, we want to call <code>rename</code>.</p>
+<p>Then finally the <code>then:</code> section asserts that we received the correct sort of Exception.  It&rsquo;s not enormously clear, although I&rsquo;ve kept the full namespace in to try and clarify, but the aim is that any <code>org.mongodb.MongoException</code> that gets thrown by the new architecture gets turned into the appropriate <code>com.mongodb.MongoException</code>.  We&rsquo;re sort of &ldquo;lucky&rdquo; because the old code is in the wrong package structure, and in the new architecture we&rsquo;ve got a chance to fix this and put stuff into the right place.</p>
+<p>Once I&rsquo;d tracked down all the places Exceptions can escape and started writing these sorts of tests to exercise those code paths, not only did I feel more secure that we wouldn&rsquo;t break backwards compatibility by leaking the wrong Exceptions, but we also found our test coverage went up - and more importantly, in the <em>un</em>happy paths, which are often harder to test.</p>
+<p>I mentioned in the last post that we already did some simple stubbing to help us test the data driver. Why not just keep using that approach?</p>
+<p>Well, these stubs end up looking like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">private</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">TestAsyncConnectionFactory</span> <span style="color:#66d9ef">implements</span> AsyncConnectionFactory <span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@Override</span>
+    <span style="color:#66d9ef">public</span> AsyncConnection <span style="color:#a6e22e">create</span><span style="color:#f92672">(</span><span style="color:#66d9ef">final</span> ServerAddress serverAddress<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> AsyncConnection<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+            <span style="color:#a6e22e">@Override</span>
+            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">sendMessage</span><span style="color:#f92672">(</span><span style="color:#66d9ef">final</span> List<span style="color:#f92672">&lt;</span>ByteBuf<span style="color:#f92672">&gt;</span> byteBuffers<span style="color:#f92672">,</span> <span style="color:#66d9ef">final</span> SingleResultCallback<span style="color:#f92672">&lt;</span>Void<span style="color:#f92672">&gt;</span> callback<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> UnsupportedOperationException<span style="color:#f92672">();</span>
+            <span style="color:#f92672">}</span>
+
+            <span style="color:#a6e22e">@Override</span>
+            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">receiveMessage</span><span style="color:#f92672">(</span><span style="color:#66d9ef">final</span> ResponseSettings responseSettings<span style="color:#f92672">,</span> <span style="color:#66d9ef">final</span> SingleResultCallback<span style="color:#f92672">&lt;</span>ResponseBuffers<span style="color:#f92672">&gt;</span> callback<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> UnsupportedOperationException<span style="color:#f92672">();</span>
+            <span style="color:#f92672">}</span>
+
+            <span style="color:#a6e22e">@Override</span>
+            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">close</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+            <span style="color:#f92672">}</span>
+
+            <span style="color:#a6e22e">@Override</span>
+            <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">boolean</span> <span style="color:#a6e22e">isClosed</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> UnsupportedOperationException<span style="color:#f92672">();</span>
+            <span style="color:#f92672">}</span>
+
+            <span style="color:#a6e22e">@Override</span>
+            <span style="color:#66d9ef">public</span> ServerAddress <span style="color:#a6e22e">getServerAddress</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+                <span style="color:#66d9ef">throw</span> <span style="color:#66d9ef">new</span> UnsupportedOperationException<span style="color:#f92672">();</span>
+            <span style="color:#f92672">}</span>
+        <span style="color:#f92672">};</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+</code></pre></div><p>(<a href="https://gist.github.com/trishagee/5935655">view gist</a>)
+Ick.</p>
+<p>And you end up extending them so you can just override the method you&rsquo;re interested in (particularly in the case of forcing a method to throw an exception).  Most irritatingly to me, these stubs live away from the actual tests, so you can&rsquo;t easily see what the expected behaviour is.  In the Spock test, the expected stubbed behaviour is defined on line 16, the call that will provoke it is on line 19 and the code that checks the expectation is on line 22.  It&rsquo;s all within even the smallest monitor&rsquo;s window.</p>
+<p>So stubbing in Spock is painless.  See also:</p>
+<ul>
+<li><a href="https://trishagee.com/2013/12/20/spock_data_driven_testing/">Data Driven Testing</a></li>
+<li><a href="https://trishagee.com/2013/07/09/spock_is_awesome_seriously_simplified_mocking/">Simplified Mocking</a></li>
+</ul><ul class="pa0">
   
    <li class="list">
      <a href="/tags/java" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">java</a>

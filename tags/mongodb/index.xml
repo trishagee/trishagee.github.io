@@ -126,8 +126,7 @@ Look inside &amp;gt;MongoDB and Big Data</description>
       <pubDate>Thu, 07 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__mongodb_tutorial/</guid>
-      <description>In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get there, and not because of the Super Storm. Still, that gave me the day to finish off the tutorial I was running there on Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute, oh no&amp;hellip;.
-But as in previous years, the main benefit of this conference for me was meeting most of the usual suspects from the London Java Community.</description>
+      <description>&lt;p&gt;In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get there, and not because of the &lt;a href=&#34;http://metro.co.uk/2013/10/27/its-ok-to-take-the-morning-off-work-if-storm-hits-michael-fish-says-so-4162862/&#34;&gt;Super Storm&lt;/a&gt;. Still, that gave me the day to finish off the tutorial I was running there on Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute, oh no&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -154,9 +153,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</guid>
-      <description>The second in my short series of blogs about the new Java driver is now available for your perusal. In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.
-The post also shows that Gradle is prettier than Maven. Sorry Maven.
-If you are going to play with the new driver, please read all the caveats carefully.</description>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.mongodb.com/blog/post/the-mongodb-java-driver-30-whats-changing&#34;&gt;second in my short series of blogs&lt;/a&gt; about the new Java driver is now available for your perusal. In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -165,8 +162,7 @@ If you are going to play with the new driver, please read all the caveats carefu
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
-      <description>Yesterday Stephen Chin, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.
-It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.</description>
+      <description>&lt;p&gt;Yesterday &lt;a href=&#34;https://twitter.com/steveonjava&#34;&gt;Stephen Chin&lt;/a&gt;, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about &lt;a href=&#34;http://www.oracle.com/javaone/index.html&#34;&gt;JavaOne&lt;/a&gt;, the new MongoDB Java driver, and my plans to Change The World.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -195,8 +191,7 @@ Are you using the Java driver for MongoDB in your application?Are you using the 
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
-      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.
-Skillsmatter recorded the whole thing, as usual, so you can watch the presentation for yourself. I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.</description>
+      <description>&lt;p&gt;Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -215,7 +210,7 @@ Skillsmatter recorded the whole thing, as usual, so you can watch the presentati
       <pubDate>Wed, 05 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb/</guid>
-      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&amp;rsquo;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
+      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&amp;rsquo;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
     </item>
     
     <item>
@@ -224,8 +219,7 @@ Skillsmatter recorded the whole thing, as usual, so you can watch the presentati
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_official_mongodb_appearance/</guid>
-      <description>Yesterday I had the nerve-wracking dubious alarming great pleasure of presenting my first official MongoDB-shaped talk. This was in the form of a webinar, which is an interesting and different format.
-I naïvely assumed it would be like a presentation but without the visible hand-waving, but it isn&amp;rsquo;t really. For a start, you can&amp;rsquo;t easily poll the audience to find out what their level of experience is, and taking questions is quite tricky, even with the technology to support it.</description>
+      <description>&lt;p&gt;Yesterday I had the &lt;strike&gt;nerve-wracking&lt;/strike&gt; &lt;strike&gt;dubious&lt;/strike&gt; &lt;strike&gt;alarming&lt;/strike&gt; great pleasure of presenting my first official &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;-shaped talk. This was in the form of a webinar, which is an interesting and different format.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -234,8 +228,9 @@ I naïvely assumed it would be like a presentation but without the visible hand-
       <pubDate>Thu, 22 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/summary_of_devoxx_2012/</guid>
-      <description>Devoxx topped off a crazy two months of conferences. I&#39;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting. &amp;nbsp;I&#39;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding. &amp;nbsp;I hope.
-Neal Ford&#39;s When Geek LeaksSo, how was Devoxx? &amp;nbsp;Well for starters, the calibre of the speakers and talks was excellent.</description>
+      <description>&lt;iframe src=&#34;https://player.vimeo.com/video/53695846&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; fullscreen&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://vimeo.com/53695846&#34;&gt;Devoxx 2012&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/royvanrijn&#34;&gt;Roy van Rijn&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Devoxx topped off a crazy two months of conferences.  I&amp;rsquo;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting.  I&amp;rsquo;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding.  I hope.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -244,8 +239,7 @@ Neal Ford&#39;s When Geek LeaksSo, how was Devoxx? &amp;nbsp;Well for starters, 
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nosql_is_a_stupid_name/</guid>
-      <description>So, I&amp;rsquo;ve finished my first full week in the new job and I&amp;rsquo;ve learnt lots of new stuff. Which is great, because that&amp;rsquo;s usually why you change jobs.
-I&amp;rsquo;m learning a lot about these new-fangled NoSQL database thingies. The LMAX architecture was based on keeping everything in memory and reducing the waits for IO - messages were journalled to disk, and reads and writes to the MySQL database were off the critical path.</description>
+      <description>&lt;p&gt;So, I&amp;rsquo;ve finished my first full week in the new job and I&amp;rsquo;ve learnt lots of new stuff. Which is great, because that&amp;rsquo;s usually why you change jobs.&lt;/p&gt;</description>
     </item>
     
   </channel>

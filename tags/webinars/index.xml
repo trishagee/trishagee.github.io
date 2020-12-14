@@ -13,7 +13,7 @@
       <pubDate>Fri, 22 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</guid>
-      <description>Yesterday I had the privilege of presenting the very first session for vJUG, a new virtual Java User Group that allows us to span geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have a local user group to go to.</description>
+      <description>&lt;p&gt;Yesterday I had the privilege of presenting the very first session for &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, a new virtual Java User Group that allows us to span geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have a local user group to go to. Not to mention cutting travel costs and saving the environment.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Wed, 05 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb/</guid>
-      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&amp;rsquo;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
+      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&amp;rsquo;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
     </item>
     
     <item>
@@ -31,8 +31,7 @@
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_official_mongodb_appearance/</guid>
-      <description>Yesterday I had the nerve-wracking dubious alarming great pleasure of presenting my first official MongoDB-shaped talk. This was in the form of a webinar, which is an interesting and different format.
-I naïvely assumed it would be like a presentation but without the visible hand-waving, but it isn&amp;rsquo;t really. For a start, you can&amp;rsquo;t easily poll the audience to find out what their level of experience is, and taking questions is quite tricky, even with the technology to support it.</description>
+      <description>&lt;p&gt;Yesterday I had the &lt;strike&gt;nerve-wracking&lt;/strike&gt; &lt;strike&gt;dubious&lt;/strike&gt; &lt;strike&gt;alarming&lt;/strike&gt; great pleasure of presenting my first official &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;-shaped talk. This was in the form of a webinar, which is an interesting and different format.&lt;/p&gt;</description>
     </item>
     
   </channel>

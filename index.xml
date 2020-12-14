@@ -813,7 +813,7 @@ I can’t even tell you what I did on the first day, I was mostly panicking abou
       <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/sparking_innovation_in_an_established_company/</guid>
-      <description>I’ve been running into BSkyB a bunch this week - firstly I was invited to kick off their innovation tech talks series last Monday, then I kept meeting Sky people (that makes it sound like they’re aliens) at QCon.It seems Sky is keen to create/foster a culture of innovation, which is an ambitious goal for such a large company.&amp;nbsp; So I was given a very vague brief for Monday’s presentation (“Can you do something Mongo-ish, maybe a bit of performance and concurrency stuff, and talk about overall best practice?</description>
+      <description>&lt;p&gt;I’ve been running into &lt;a href=&#34;https://corporate.sky.com/&#34;&gt;BSkyB&lt;/a&gt; a bunch this week - firstly I was invited to kick off their innovation tech talks series last Monday, then I kept meeting Sky people (that makes it sound like they’re aliens) at &lt;a href=&#34;http://qconlondon.com/&#34;&gt;QCon&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -822,8 +822,8 @@ I can’t even tell you what I did on the first day, I was mostly panicking abou
       <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_joy_of_coding/</guid>
-      <description>Dick Wall -&amp;nbsp;The Tao, of the Joy, of Coding
-I’m on a plane (there’s a surprise) on my way back from The Joy of Coding.&amp;nbsp; It’s the title that attracted me to this conference, and it was a great little one day event with awesome people like Dan North, Erik Meijer and Dick Wall presenting.&amp;nbsp; What I liked about the themes is they were broadly technology agnostic, pulling back to a level which made me remember why I’m a developer.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;joc14-dick-wall.jpc&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I’m on a plane (there’s a surprise) on my way back from &lt;a href=&#34;http://joyofcoding.org/&#34;&gt;The Joy of Coding&lt;/a&gt;. It’s the title that attracted me to this conference, and it was a great little one day event with awesome people like Dan North, Erik Meijer and Dick Wall presenting. What I liked about the themes is they were broadly technology agnostic, pulling back to a level which made me remember why I’m a developer. It inspired me to do more research and more thinking, and less panicking and trying to write code. That might seem odd, as someone who goes to as many conferences as I do should get loads more research and thinking time than most developers living under the whip, but I seem to spend so much time bouncing from thing to thing I don’t get space to just sit and think, or to read things in any depth.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -843,8 +843,7 @@ I used to be a web developer.</description>
       <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</guid>
-      <description>So, following on from my observations of being an outsider at FOSDEM because I&amp;rsquo;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.
-I&amp;rsquo;m going to give specifics, but it&amp;rsquo;s not to name and shame or anything like that, it&amp;rsquo;s just that anonymising it will probably erase some of the subtleties. But I&amp;rsquo;m not telling this to make anyone feel bad, because this is not an oh-poor-me story, this is just the way it goes sometimes and I want to share what it feels like.</description>
+      <description>&lt;p&gt;So, following on from my observations of &lt;a href=&#34;https://trishagee.com/2014/02/08/feel_like_an_outsider/&#34;&gt;being an outsider&lt;/a&gt; at FOSDEM because I&amp;rsquo;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -853,7 +852,9 @@ I&amp;rsquo;m going to give specifics, but it&amp;rsquo;s not to name and shame 
       <pubDate>Sat, 08 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/feel_like_an_outsider/</guid>
-      <description>So, FOSDEM.I&#39;ve heard great things about this conference, so I was pretty exited to goThe Java dev roomNow I know people talk about impostor syndrome whenever they mention the woeful lack of diversity at tech conferences.&amp;nbsp; Interestingly, I felt like an impostor at FOSDEM - not because I&#39;m a woman (there were quite a few techy women around at FOSDEM, more than I expected) but because I&#39;m not an open source person.</description>
+      <description>&lt;p&gt;So, FOSDEM.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve heard great things about this conference, so I was pretty exited to go&lt;/p&gt;
+&lt;p&gt;Now I know people talk about &lt;a href=&#34;http://en.wikipedia.org/wiki/Impostor_syndrome&#34;&gt;impostor syndrome&lt;/a&gt; whenever they mention the woeful lack of diversity at tech conferences. Interestingly, I felt like an impostor at FOSDEM - not because I&amp;rsquo;m a woman (there were quite a few techy women around at FOSDEM, more than I expected) but because I&amp;rsquo;m not an open source person.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -913,8 +914,7 @@ I cannot take Christmas seriously in this weatherYOW! is a unique conference, i
       <pubDate>Fri, 20 Dec 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_data_driven_testing/</guid>
-      <description>In the last two articles on Spock I&amp;rsquo;ve covered mocking and stubbing. And I was pretty sold on Spock just based on that. But for a database driver, there&amp;rsquo;s a killer feature: Data Driven Testing.
-All developers have a tendency to think of and test the happy path. Not least of all because that&amp;rsquo;s usually the path in the User Story - &amp;ldquo;As a customer I want to withdraw money and have the correct amount in my hand&amp;rdquo;.</description>
+      <description>&lt;p&gt;In the last two articles on Spock I&amp;rsquo;ve covered &lt;a href=&#34;https://trishagee.com/2013/07/09/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;mocking&lt;/a&gt; and &lt;a href=&#34;https://trishagee.com/2013/07/10/spock_passes_the_next_test__painless_stubbing/&#34;&gt;stubbing&lt;/a&gt;.  And I was pretty sold on Spock just based on that.  But for a database driver, there&amp;rsquo;s a killer feature: &lt;a href=&#34;http://spockframework.org/spock/docs/1.3/data_driven_testing.html&#34;&gt;Data Driven Testing&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -923,7 +923,7 @@ All developers have a tendency to think of and test the happy path. Not least of
       <pubDate>Fri, 22 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/first_presentation_at_the_virtual_jug/</guid>
-      <description>Yesterday I had the privilege of presenting the very first session for vJUG, a new virtual Java User Group that allows us to span geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have a local user group to go to.</description>
+      <description>&lt;p&gt;Yesterday I had the privilege of presenting the very first session for &lt;a href=&#34;http://www.meetup.com/virtualJUG/&#34;&gt;vJUG&lt;/a&gt;, a new virtual Java User Group that allows us to span geographies when sharing talks and stories. I&amp;rsquo;m really interested in the vJUG idea, especially now I&amp;rsquo;m not in London - if we can find good ways to share knowledge without having to travel, that will help us reach people who don&amp;rsquo;t normally go to conferences or don&amp;rsquo;t have a local user group to go to. Not to mention cutting travel costs and saving the environment.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -932,8 +932,7 @@ All developers have a tendency to think of and test the happy path. Not least of
       <pubDate>Thu, 07 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__mongodb_tutorial/</guid>
-      <description>In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get there, and not because of the Super Storm. Still, that gave me the day to finish off the tutorial I was running there on Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute, oh no&amp;hellip;.
-But as in previous years, the main benefit of this conference for me was meeting most of the usual suspects from the London Java Community.</description>
+      <description>&lt;p&gt;In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get there, and not because of the &lt;a href=&#34;http://metro.co.uk/2013/10/27/its-ok-to-take-the-morning-off-work-if-storm-hits-michael-fish-says-so-4162862/&#34;&gt;Super Storm&lt;/a&gt;. Still, that gave me the day to finish off the tutorial I was running there on Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute, oh no&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -952,9 +951,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 05 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2013/</guid>
-      <description>So, I thought a few months ago that my blog would become more of a travel blog than a tech blog because of the amount of conferences I was going to. Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&amp;rsquo;d been to.
-
-So, JavaOne, again, my third year there.</description>
+      <description>&lt;p&gt;So, I thought a few months ago that my blog &lt;a href=&#34;https://trishagee.com/2013/09/16/javazone_oslo/&#34;&gt;would become more of a travel blog&lt;/a&gt; than a tech blog because of the amount of conferences I was going to. Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&amp;rsquo;d been to.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -995,7 +992,7 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Mon, 16 Sep 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javazone_oslo/</guid>
-      <description>For the rest of 2013, this blog will mostly be masquerading as a travel blog.This week I&#39;ve been in Oslo, and I liked it.&amp;nbsp; Actually, you&#39;ll be hard-pushed to find somewhere I&#39;ve visited that I didn&#39;t like in one way or another, but Oslo does make my &#34;definitely going back there&#34; list.&amp;nbsp; If Seville, where I&#39;ve been for the last month, is stuffed full of History, Oslo is overflowing with Geography.</description>
+      <description>&lt;p&gt;For the rest of 2013, this blog will mostly be masquerading as a travel blog.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1013,9 +1010,7 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Sat, 31 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_to_get_started_with_the_new_mongodb_java_driver/</guid>
-      <description>The second in my short series of blogs about the new Java driver is now available for your perusal. In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.
-The post also shows that Gradle is prettier than Maven. Sorry Maven.
-If you are going to play with the new driver, please read all the caveats carefully.</description>
+      <description>&lt;p&gt;The &lt;a href=&#34;https://www.mongodb.com/blog/post/the-mongodb-java-driver-30-whats-changing&#34;&gt;second in my short series of blogs&lt;/a&gt; about the new Java driver is now available for your perusal. In it, there&amp;rsquo;s some guidance on how to get started using the new driver, whether you want to use the new (unfinished) API, the existing &amp;ldquo;classic&amp;rdquo; API, or a blend of both.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1024,8 +1019,7 @@ If you are going to play with the new driver, please read all the caveats carefu
       <pubDate>Fri, 30 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_by_stephen_chin_about_javaone_2013/</guid>
-      <description>Yesterday Stephen Chin, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about JavaOne, the new MongoDB Java driver, and my plans to Change The World.
-It was a fun interview to do, and I really like the format of being interviewed over Skype and streaming my desktop. There&amp;rsquo;s a slight (OK, 25 seconds, not really low latency) lag between the screen and the speaking which means it&amp;rsquo;s not a great platform for doing live demos, but I think I&amp;rsquo;d like to do more code demos in this way, if I can find a suitable platform.</description>
+      <description>&lt;p&gt;Yesterday &lt;a href=&#34;https://twitter.com/steveonjava&#34;&gt;Stephen Chin&lt;/a&gt;, one of Oracle&amp;rsquo;s Java Evangelists and the JavaOne content chair, interviewed me via a live stream about &lt;a href=&#34;http://www.oracle.com/javaone/index.html&#34;&gt;JavaOne&lt;/a&gt;, the new MongoDB Java driver, and my plans to Change The World.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1034,7 +1028,7 @@ It was a fun interview to do, and I really like the format of being interviewed 
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
-      <description>InfoQ has posted the video of Dan North and I opining on the subject of hiring. Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.</description>
+      <description>&lt;p&gt;InfoQ has posted the video of Dan North and I opining on the subject of hiring.  Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires.  We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1064,8 +1058,7 @@ Anyone who&amp;rsquo;s been to my Backwards Compatibility presentation this year
       <pubDate>Wed, 31 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_shanghai/</guid>
-      <description>I was expecting this...So, I was in China last week. &amp;nbsp;It&#39;s not really what I expected, but then my knowledge of China comes almost entirely from visiting various Chinatowns and watching martial arts movies, so I guess I wasn&#39;t all that well prepared for a modern Asian city like Shanghai.
-...and found this insteadThe city is, in my opinion, clean, modern, and attractive. &amp;nbsp;I was surprised by American-looking early skyscrapers, and really surprised that the city overall felt more European than American - with Marks &amp;amp; Spencer, Tesco, Carrefour, H &amp;amp; M, Zara, Costa Coffee, as well as the inevitable McDonalds, KFC and Pizza Hut.</description>
+      <description>&lt;p&gt;So, I was in China last week. It&amp;rsquo;s not really what I expected, but then my knowledge of China comes almost entirely from visiting various Chinatowns and watching martial arts movies, so I guess I wasn&amp;rsquo;t all that well prepared for a modern Asian city like Shanghai.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1084,11 +1077,8 @@ But since my cognitive resources are at a low point right now, I&amp;rsquo;ll ju
       <pubDate>Wed, 10 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_passes_the_next_test__painless_stubbing/</guid>
-      <description>In the last post I talked about our need for some improved testing tools, our choice of Spock as something to spike, and how mocking looks in Spock.
-As that blog got rather long, I saved the next installment for a separate post.
-Today I want to look at stubbing.
-Stubbing
-Mocking is great for checking outputs - in the example in the last post, we&amp;rsquo;re checking that the process of encoding an array calls the right things on the way out, if you like - that the right stuff gets poked onto the bsonWriter.</description>
+      <description>&lt;p&gt;In the &lt;a href=&#34;https://trishagee.com/2013/07/09/spock_is_awesome_seriously_simplified_mocking/&#34;&gt;last post&lt;/a&gt; I talked about our need for some improved testing tools, our choice of &lt;a href=&#34;http://spockframework.org/&#34;&gt;Spock&lt;/a&gt; as something to spike, and how mocking looks in Spock.&lt;/p&gt;
+&lt;p&gt;As that blog got rather long, I saved the next installment for a separate post.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1097,8 +1087,7 @@ Mocking is great for checking outputs - in the example in the last post, we&amp;
       <pubDate>Tue, 09 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/spock_is_awesome_seriously_simplified_mocking/</guid>
-      <description>We&amp;rsquo;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver. Ideally, we want the number of dependencies to be zero.
-This is not going to be the case when it comes to testing, however. At the very least, we&amp;rsquo;re going to use JUnit or TestNG (we used testng in the previous version, we&amp;rsquo;ve switched to JUnit for 3.</description>
+      <description>&lt;p&gt;We&amp;rsquo;re constantly fighting a battle when developing the new MongoDB Java driver between using tools that will do heavy lifting for us and minimising the dependencies a user has to download in order to use our driver.  Ideally, we want the number of dependencies to be zero.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1107,8 +1096,7 @@ This is not going to be the case when it comes to testing, however. At the very 
       <pubDate>Fri, 05 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/developers_hate_support_dont_they/</guid>
-      <description>This is Dublin. &amp;nbsp;Honest.I&#39;m at the end of my first official week doing support for 10gen. &amp;nbsp;My major achievements are:
-Learning how to work the coffee machine in the Dublin office. &amp;nbsp;It&#39;s taken me a week to get it, but now I can understand the machine&#39;s needs. &amp;nbsp;Even if my coffee did taste a bit of cleaning fluid this morning.Navigating around Dublin - I led the way to the pub, followed by two people who live here.</description>
+      <description>&lt;p&gt;I&amp;rsquo;m at the end of my first official week doing support for &lt;a href=&#34;http://www.10gen.com/&#34;&gt;10gen&lt;/a&gt;. My major achievements are:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1147,8 +1135,7 @@ Any suggestions? Anyone out there and keen for me to gatecrash their party?</des
       <pubDate>Thu, 23 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/be_an_ambassador/</guid>
-      <description>You know how I keep banging on about attracting different types of people into programming? You know how we say we need to get them young?
-Typical Mathematician?A little while back I decided to put my money where my mouth was, so I signed up to be a STEM Ambassador. STEMNET is an organisation that aims to inspire children to go into Science, Technology, Engineering and Maths careers, and it does this by creating a network of mentors (people like you and me) and schools.</description>
+      <description>&lt;p&gt;You know how I keep banging on about attracting different types of people into programming? You know how we say we need to get them young?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1157,8 +1144,7 @@ Typical Mathematician?A little while back I decided to put my money where my mou
       <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
-      <description>Last week I was in Krakow, Poland for GeeCON. Which was excellent! I find it really interesting that conferences all have their own personalities, that they are not all the same.
-GeeCON had its own distinct personality. &amp;nbsp;If you&#39;re a Java/JVM person based in Poland, I would highly recommend it - more than 90%of the attendees were Polish (probably the remainder were largely speakers) so this conference is very much for you.</description>
+      <description>&lt;p&gt;Last week I was in Krakow, Poland for &lt;a href=&#34;http://2013.geecon.org/&#34;&gt;GeeCON&lt;/a&gt;. Which was excellent! I find it really interesting that conferences all have their own personalities, that they are not all the same.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1177,8 +1163,7 @@ Are you using the Java driver for MongoDB in your application?Are you using the 
       <pubDate>Mon, 13 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/good_overview_of_the_nosql_hype_for_real_developers/</guid>
-      <description>Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.
-Skillsmatter recorded the whole thing, as usual, so you can watch the presentation for yourself. I promise neither I nor anyone else from 10gen paid him to mention MongoDB so much.</description>
+      <description>&lt;p&gt;Last Tuesday I went to a London Java Community talk which promised to debunk the hype around NoSQL. Whether you&amp;rsquo;re already bought into a NoSQL technology, or you&amp;rsquo;re just wondering what all the noise is about, it&amp;rsquo;s worth an hour out of your day to see Akmal Chaudhri&amp;rsquo;s comprehensive summary of the technologies out there.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1187,11 +1172,7 @@ Skillsmatter recorded the whole thing, as usual, so you can watch the presentati
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/2013_is_looking_a_lot_busier_than_i_planned/</guid>
-      <description>So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&amp;rsquo;m going to be a bit busier than that.
-
-In case you&amp;rsquo;re wondering what I&amp;rsquo;m up to (or, even better, hoping to see me talk or meet me), here are my confirmed engagements:
-15-17 May - GeeCon, Poland
-18-20 June - GOTO Amsterdam - whole day tutorial on the new (unfinished) MongoDB Java driver.</description>
+      <description>&lt;p&gt;So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&amp;rsquo;m going to be a bit busier than that.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1200,7 +1181,7 @@ In case you&amp;rsquo;re wondering what I&amp;rsquo;m up to (or, even better, ho
       <pubDate>Fri, 12 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_mechanical_sympathy_got_me_to_the_airport_on_time/</guid>
-      <description>Lets talk about mechanical sympathy. Martin Thompson has been making this term very popular in software development, so it&amp;rsquo;s best to read his description of why he used the term.I had a perfect example yesterday. I&amp;rsquo;m about to drive to the airport and the car won&amp;rsquo;t move (I&amp;rsquo;m a modern tomboy, I can write stories about hair and stories about cars). Not at all. It&amp;rsquo;s stuck. I can&amp;rsquo;t reverse out of my parking space.</description>
+      <description>&lt;p&gt;Lets talk about mechanical sympathy. Martin Thompson has been making this term very popular in software development, so it&amp;rsquo;s best to read &lt;a href=&#34;http://mechanical-sympathy.blogspot.co.uk/2011/07/why-mechanical-sympathy.html&#34;&gt;his description of why he used the term&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1209,8 +1190,7 @@ In case you&amp;rsquo;re wondering what I&amp;rsquo;m up to (or, even better, ho
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_uk_2013/</guid>
-      <description>Last week was the first Devoxx UK, bringing the brand from Belgium and, more recently, France. And I think it was a HUGE success.
-Of course, disclaimers first - I was on the programme committee, so I might say that the whole thing was awesome. Although in all honesty, even being slightly involved in the organisation of a conference is a lot of work, and you can&amp;rsquo;t wait to see the back of it (and I didn&amp;rsquo;t do half as much as some people).</description>
+      <description>&lt;p&gt;Last week was the first Devoxx UK, bringing the brand from Belgium and, more recently, France. And I think it was a HUGE success.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1238,8 +1218,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Thu, 07 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/gdl_presents_women_techmakers_with_trisha_gee/</guid>
-      <description>I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series, as it moves over to Europe. In this video I talk about going to Mars, education, planning your career, being a developer, and the impact of technology on our lives. So, not much&amp;hellip;
-</description>
+      <description>&lt;p&gt;I was flattered a couple of weeks ago to be interviewed by Google as part of their women techmaker&amp;rsquo;s series, as it moves over to Europe.  In this video I talk about going to Mars, education, planning your career, being a developer, and the impact of technology on our lives.  So, not much&amp;hellip;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1248,9 +1227,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_day_one/</guid>
-      <description>I like QCon London, I really do. Not only is it on home turf, but, as I&amp;rsquo;ve said before, it doesn&amp;rsquo;t just focus on technology, or a set of technologies.
-
-Full disclosure: I&amp;rsquo;ve been involved in planning QCon this year. So this time I know all the thinking, hard work, planning and last-minute changes that go into a conference like this. And it&amp;rsquo;s a joy to be able to sit in the audience and see the conference that you&amp;rsquo;ve helped build.</description>
+      <description>&lt;p&gt;I like QCon London, I really do. Not only is it on home turf, but, &lt;a href=&#34;https://trishagee.com/2012/03/27/qcon_london_2012/&#34;&gt;as I&amp;rsquo;ve said before&lt;/a&gt;, it doesn&amp;rsquo;t just focus on technology, or a set of technologies.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1269,7 +1246,7 @@ it&amp;rsquo;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Fri, 15 Feb 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/upcoming_events_and_trisha_freaks_out_a_bit/</guid>
-      <description>My next few talks are where I finally start speaking about MongoDB. After 4 months working for 10gen, I still feel completely under-qualified to speak with any authority on the subject. It&amp;rsquo;s very different joining a company with an established and growing product, to joining a very young company and being in on the development since practically day one. But I&amp;rsquo;ve been working on designing the Brand New Java Driver, so that&amp;rsquo;s what I&amp;rsquo;m going to talk about.</description>
+      <description>&lt;p&gt;My next few talks are where I finally start speaking about &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;. After 4 months working for 10gen, I still feel completely under-qualified to speak with any authority on the subject. It&amp;rsquo;s very different joining a company with an established and growing product, to joining a very young company and being in on the development since practically day one. But I&amp;rsquo;ve been working on designing the Brand New Java Driver, so that&amp;rsquo;s what I&amp;rsquo;m going to talk about.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1278,8 +1255,7 @@ it&amp;rsquo;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Sat, 12 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/interviewed_at_devoxx/</guid>
-      <description>Yolande Poirier from OTN interviewed me at Devoxx about my new job at 10gen, Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.
-</description>
+      <description>&lt;p&gt;Yolande Poirier from &lt;a href=&#34;http://www.oracle.com/technetwork/index.html&#34;&gt;OTN&lt;/a&gt; interviewed me at Devoxx about my new job at 10gen, Women in IT (bet that surprises you), how to be a role model, and Agile. Enjoy.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1288,8 +1264,7 @@ it&amp;rsquo;s a topic that comes up again and again:&lt;/p&gt;</description>
       <pubDate>Fri, 11 Jan 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/wrap_up_of_2012/</guid>
-      <description>Fortunately for me, the guys at JAXenter chased me for a summary of 2012 and my predictions for 2013 - I say &amp;ldquo;fortunately&amp;rdquo; because otherwise I never would have got around to doing it, and that would be another year slipping away silently into the abyss.
-Here it is in all its glory.</description>
+      <description>&lt;p&gt;Fortunately for me, the guys at JAXenter chased me for a summary of 2012 and my predictions for 2013 - I say &amp;ldquo;fortunately&amp;rdquo; because otherwise I never would have got around to doing it, and that would be another year slipping away silently into the abyss.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1308,7 +1283,7 @@ need to get out there and tell people what&amp;rsquo;s so great about what we do
       <pubDate>Tue, 18 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</guid>
-      <description>As well as talking about, you know, actual work-type-stuff, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. This went so well at JavaOne that I thought it would be difficult to top. Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.</description>
+      <description>&lt;p&gt;As well as talking about, you know, &lt;a href=&#34;https://trishagee.com/2012/12/12/agile_when_agile_goes_well/&#34;&gt;actual work-type-stuff&lt;/a&gt;, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. This went so well at JavaOne that I thought it would be difficult to top. Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1317,7 +1292,7 @@ need to get out there and tell people what&amp;rsquo;s so great about what we do
       <pubDate>Wed, 12 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/agile_when_agile_goes_well/</guid>
-      <description>If you see anything about LMAX - the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&amp;rsquo;ll see that LMAX is pretty keen on Agile. However, no-one&amp;rsquo;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&amp;rsquo;s because I&amp;rsquo;m not sure it&amp;rsquo;s a process that would work very well for another team, in another company, working in another business.</description>
+      <description>&lt;p&gt;If you see anything about &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX&lt;/a&gt; - the Disruptor, Continuous Delivery, or even the selection criteria for hiring developers, you&amp;rsquo;ll see that LMAX is pretty keen on &lt;a href=&#34;http://agilemanifesto.org/&#34;&gt;Agile&lt;/a&gt;. However, no-one&amp;rsquo;s documented the Agile process there, as far as I know. Although I personally had it on my todo list, I never had the motivation, the hook to do it. And I realised eventually that&amp;rsquo;s because I&amp;rsquo;m not sure it&amp;rsquo;s a process that would work very well for another team, in another company, working in another business.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1326,7 +1301,7 @@ need to get out there and tell people what&amp;rsquo;s so great about what we do
       <pubDate>Wed, 05 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/webinar_processing_high_volume_data_feeds_with_mongodb/</guid>
-      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&amp;rsquo;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
+      <description>Hot on the heels of my very first MongoDB webinar, I was&amp;hellip; encouraged&amp;hellip; to do another. Here at 10gen we&amp;rsquo;ve been running a series of webinars around using MongoDB in the financial services domain. Yesterday was the last in the series, and was presented in association with C24 - John Davies, their CTO, did most of the talking, and demonstrated their product for automatically turning financial messages from one format into another.</description>
     </item>
     
     <item>
@@ -1335,8 +1310,7 @@ need to get out there and tell people what&amp;rsquo;s so great about what we do
       <pubDate>Fri, 30 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_official_mongodb_appearance/</guid>
-      <description>Yesterday I had the nerve-wracking dubious alarming great pleasure of presenting my first official MongoDB-shaped talk. This was in the form of a webinar, which is an interesting and different format.
-I naïvely assumed it would be like a presentation but without the visible hand-waving, but it isn&amp;rsquo;t really. For a start, you can&amp;rsquo;t easily poll the audience to find out what their level of experience is, and taking questions is quite tricky, even with the technology to support it.</description>
+      <description>&lt;p&gt;Yesterday I had the &lt;strike&gt;nerve-wracking&lt;/strike&gt; &lt;strike&gt;dubious&lt;/strike&gt; &lt;strike&gt;alarming&lt;/strike&gt; great pleasure of presenting my first official &lt;a href=&#34;http://www.mongodb.org/&#34;&gt;MongoDB&lt;/a&gt;-shaped talk. This was in the form of a webinar, which is an interesting and different format.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1355,8 +1329,9 @@ The fantastic thing about an open conference is that a) you don&amp;rsquo;t have
       <pubDate>Thu, 22 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/summary_of_devoxx_2012/</guid>
-      <description>Devoxx topped off a crazy two months of conferences. I&#39;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting. &amp;nbsp;I&#39;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding. &amp;nbsp;I hope.
-Neal Ford&#39;s When Geek LeaksSo, how was Devoxx? &amp;nbsp;Well for starters, the calibre of the speakers and talks was excellent.</description>
+      <description>&lt;iframe src=&#34;https://player.vimeo.com/video/53695846&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; fullscreen&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://vimeo.com/53695846&#34;&gt;Devoxx 2012&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/royvanrijn&#34;&gt;Roy van Rijn&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Devoxx topped off a crazy two months of conferences.  I&amp;rsquo;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting.  I&amp;rsquo;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding.  I hope.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1365,14 +1340,7 @@ Neal Ford&#39;s When Geek LeaksSo, how was Devoxx? &amp;nbsp;Well for starters, 
       <pubDate>Tue, 20 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/brain_overload/</guid>
-      <description>The moral of today&amp;rsquo;s story - be careful what you wish for.
-
-This is my brain
-
-During the normal course of my life, it&amp;rsquo;s filled with Stuff.
-
-
-Early in November, 10gen ordered me to go to New York to learn about MongoDB (Oh No! My Life Is So Hard!). I was looking forward to shopping and taking photos of the devastation wrought by Sandy, but actually I spent the whole time drinking from the firehose of MongoDB information provided by my ridiculously smart, ridiculously well-informed colleagues.</description>
+      <description>&lt;p&gt;The moral of today&amp;rsquo;s story - be careful what you wish for.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1381,9 +1349,7 @@ Early in November, 10gen ordered me to go to New York to learn about MongoDB (Oh
       <pubDate>Mon, 12 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_2012/</guid>
-      <description>This week I&amp;rsquo;m at Devoxx for the whole week, and already I&amp;rsquo;ve achieved two things I didn&amp;rsquo;t manage last year: I drank Belgian Beer and I&amp;rsquo;ve spent some time in Antwerp itself.
-It&amp;rsquo;s going to be another busy conference, I&amp;rsquo;m presenting three times (thankfully one is just a quickie):
-Wed 13:35 - Why Open Source Your Secrets (Quickie)Wed 17:50 - Agile++: When Agile Goes Well - Co-presenting with one of my ex-colleagues from LMAX.</description>
+      <description>&lt;p&gt;This week I&amp;rsquo;m at Devoxx for the whole week, and already I&amp;rsquo;ve achieved two things I didn&amp;rsquo;t manage last year: I drank Belgian Beer and I&amp;rsquo;ve spent some time in Antwerp itself.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1392,8 +1358,7 @@ Wed 13:35 - Why Open Source Your Secrets (Quickie)Wed 17:50 - Agile++: When Agil
       <pubDate>Tue, 06 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nighthacking_tour_the_ljc/</guid>
-      <description>On the same day Stephen Chin came to see me at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community. Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.
-Expect Raspberry Pis and JavaFX.</description>
+      <description>&lt;p&gt;On the same day &lt;a href=&#34;https://trishagee.com/2012/10/31/interview_and_hacking_session_with_stephen_chin/&#34;&gt;Stephen Chin came to see me&lt;/a&gt; at the 10gen offices, we also ran a NightHacking session in the evening with the London Java Community.  Not many people turned up (maybe I need to work on my signage to the office?) but it was a great session. In fact, having less people meant we could all be involved.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1402,7 +1367,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Wed, 31 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interview_and_hacking_session_with_stephen_chin/</guid>
-      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. &amp;nbsp;In the video we talk about my sessions at JavaOne and the Agile presentation I&#39;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&#39;s scary being live-streamed and recorded!</description>
+      <description>On Monday, Stephen Chin from Oracle visited me at the 10gen offices as part of his NightHacking tour. In the video we talk about my sessions at JavaOne and the Agile presentation I&amp;rsquo;m giving at Devoxx, and I do some very basic hacking using the MongoDB Java driver, attempting to showcase gradle at the same time. It was a fun experience, even if it&amp;rsquo;s scary being live-streamed and recorded!</description>
     </item>
     
     <item>
@@ -1411,8 +1376,7 @@ Expect Raspberry Pis and JavaFX.</description>
       <pubDate>Tue, 23 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/nosql_is_a_stupid_name/</guid>
-      <description>So, I&amp;rsquo;ve finished my first full week in the new job and I&amp;rsquo;ve learnt lots of new stuff. Which is great, because that&amp;rsquo;s usually why you change jobs.
-I&amp;rsquo;m learning a lot about these new-fangled NoSQL database thingies. The LMAX architecture was based on keeping everything in memory and reducing the waits for IO - messages were journalled to disk, and reads and writes to the MySQL database were off the critical path.</description>
+      <description>&lt;p&gt;So, I&amp;rsquo;ve finished my first full week in the new job and I&amp;rsquo;ve learnt lots of new stuff. Which is great, because that&amp;rsquo;s usually why you change jobs.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1730,7 +1694,7 @@ The presentation is a little different to the ones we&amp;rsquo;ve done before. 
       <pubDate>Sun, 12 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_the_customer_isnt_always_right/</guid>
-      <description>Last week I went to get my hair cut (yes, sorry, this is a story about hair). I had thought long and hard about what I wanted. I researched, checked styles online, and bought a magazine so I could show my hairdresser exactly what I was after and there would be no confusion. I was determined I would not be spending that ridiculous amount of money on something I was not going to be happy with.</description>
+      <description>&lt;p&gt;Last week I went to get my hair cut (yes, sorry, this is a story about hair). I had thought long and hard about what I wanted. I researched, checked styles online, and bought a magazine so I could show my hairdresser exactly what I was after and there would be no confusion. I was determined I would not be spending that ridiculous amount of money on something I was not going to be happy with. I was even bold enough to ask for some changes to it at the end, which I have never ever had the courage to do before.&lt;/p&gt;</description>
     </item>
     
     <item>

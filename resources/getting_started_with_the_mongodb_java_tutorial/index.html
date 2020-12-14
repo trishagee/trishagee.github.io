@@ -21,6 +21,8 @@
     
 
     
+      <link rel="canonical" href="https://trishagee.com/2013/10/24/getting_started_with_the_mongodb_java_tutorial/">
+    
 
     
       
@@ -41,7 +43,7 @@
 <meta itemprop="description" content="Brief guide to running the MongoDB tutorial from QCon London and JAX London.">
 <meta itemprop="datePublished" content="2013-10-24T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2013-10-24T00:00:00+00:00" />
-<meta itemprop="wordCount" content="182">
+<meta itemprop="wordCount" content="183">
 
 
 
@@ -221,23 +223,42 @@ if (!doNotTrack) {
 <p>Create a new work area for this tutorial. For the rest of these instructions I&rsquo;ll refer to it as <code>&lt;location&gt;</code>.  I&rsquo;ve put
 mine in <code>~/Documents/workshops/jax</code></p>
 <h2 id="installing-mongodb">Installing MongoDB</h2>
-<p><a href="http://www.mongodb.org/downloads">Download MongoDB</a> or get it off the USB stick Unzip to an appropriate location,
-let&rsquo;s say <code>&lt;location&gt;/mongodb</code></p>
+<p><a href="http://www.mongodb.org/downloads">Download MongoDB</a> or get it off the USB stick</p>
+<p>Unzip to an appropriate location, let&rsquo;s say</p>
+<pre><code>&lt;location&gt;/mongodb
+</code></pre>
 <p>Then we&rsquo;ll have to create the directory for the data to go into:</p>
-<p><code>cd &lt;location&gt;</code><br /><code>mkdir data</code><br /><div><br /></div>And then start MongoDB:<div></p>
-<p><code>./mongodb/bin/mongod &ndash;dbpath data</code></p>
+<pre><code>cd &lt;location&gt;
+mkdir data`
+</code></pre>
+<p>And then start MongoDB:</p>
+<pre><code>./mongodb/bin/mongod --dbpath data
+</code></pre>
 <p>Now MongoDB should be running on localhost and port 27017</p>
 <p>If you want, you can connect to the shell - this is not necessary for this workshop:</p>
-<p><span style="font-family: monospace;">./mongodb/bin/mongo</span></p>
+<pre><code>./mongodb/bin/mongo
+</code></pre>
 <h2 id="creating-your-project">Creating your project</h2>
 <p>Put <a href="https://github.com/trishagee/mongodb-java-tutorial">the Java project</a> into <code>&lt;location&gt;/java3.0</code></p>
-<p><code>cd &lt; location&gt;/java3.0</code></p>
-<p>Run:<br /><code>./gradlew idea</code><br /><div>or</div><code>./gradlew eclipse</code></p>
+<pre><code>cd &lt; location&gt;/java3.0
+</code></pre>
+<p>Run:</p>
+<pre><code>./gradlew idea
+</code></pre>
+<p>or</p>
+<pre><code>./gradlew eclipse
+</code></pre>
 <p>Open in your favourite IDE and you should be ready to start playing.</p>
 <h2 id="more-help">More help:</h2>
 <p><a href="http://docs.mongodb.org/manual/tutorial/">MongoDB Tutorials</a></p>
 <h2 id="emergency-gradle-procedure">Emergency Gradle Procedure:</h2>
-<p><a href="http://www.gradle.org/">Download Gradle</a> or get it off the USB stick<br />Extract to some suitable location.  Mine&rsquo;s in <code>/Library/Tools/gradle/</code><br />Put gradle on your path.  On the Mac, that means adding the following line to <code>~/.bash_profile</code>:<br /><code>export PATH=&quot;/Library/Tools/gradle/bin:$PATH&quot;</code><br /><div><code><br /></code></div></div></p><ul class="pa0">
+<p><a href="http://www.gradle.org/">Download Gradle</a> or get it off the USB stick</p>
+<p>Extract to some suitable location.  Mine&rsquo;s in</p>
+<pre><code>/Library/Tools/gradle/
+</code></pre>
+<p>Put gradle on your path.  On the Mac, that means adding the following line to <code>~/.bash_profile</code>:</p>
+<pre><code>export PATH=&quot;/Library/Tools/gradle/bin:$PATH&quot;
+</code></pre><ul class="pa0">
   
    <li class="list">
      <a href="/tags/tutorial" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">tutorial</a>

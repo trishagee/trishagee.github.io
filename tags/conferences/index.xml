@@ -120,8 +120,8 @@ I can’t even tell you what I did on the first day, I was mostly panicking abou
       <pubDate>Sat, 08 Mar 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_joy_of_coding/</guid>
-      <description>Dick Wall -&amp;nbsp;The Tao, of the Joy, of Coding
-I’m on a plane (there’s a surprise) on my way back from The Joy of Coding.&amp;nbsp; It’s the title that attracted me to this conference, and it was a great little one day event with awesome people like Dan North, Erik Meijer and Dick Wall presenting.&amp;nbsp; What I liked about the themes is they were broadly technology agnostic, pulling back to a level which made me remember why I’m a developer.</description>
+      <description>&lt;p&gt;&lt;img src=&#34;joc14-dick-wall.jpc&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I’m on a plane (there’s a surprise) on my way back from &lt;a href=&#34;http://joyofcoding.org/&#34;&gt;The Joy of Coding&lt;/a&gt;. It’s the title that attracted me to this conference, and it was a great little one day event with awesome people like Dan North, Erik Meijer and Dick Wall presenting. What I liked about the themes is they were broadly technology agnostic, pulling back to a level which made me remember why I’m a developer. It inspired me to do more research and more thinking, and less panicking and trying to write code. That might seem odd, as someone who goes to as many conferences as I do should get loads more research and thinking time than most developers living under the whip, but I seem to spend so much time bouncing from thing to thing I don’t get space to just sit and think, or to read things in any depth.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -130,8 +130,7 @@ I’m on a plane (there’s a surprise) on my way back from The Joy of Coding.&a
       <pubDate>Mon, 10 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/should_you_notice_im_a_woman_should_i_care/</guid>
-      <description>So, following on from my observations of being an outsider at FOSDEM because I&amp;rsquo;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.
-I&amp;rsquo;m going to give specifics, but it&amp;rsquo;s not to name and shame or anything like that, it&amp;rsquo;s just that anonymising it will probably erase some of the subtleties. But I&amp;rsquo;m not telling this to make anyone feel bad, because this is not an oh-poor-me story, this is just the way it goes sometimes and I want to share what it feels like.</description>
+      <description>&lt;p&gt;So, following on from my observations of &lt;a href=&#34;https://trishagee.com/2014/02/08/feel_like_an_outsider/&#34;&gt;being an outsider&lt;/a&gt; at FOSDEM because I&amp;rsquo;m not an open source developer, I do have another story to tell where my female-ness is actually relevant.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -140,7 +139,9 @@ I&amp;rsquo;m going to give specifics, but it&amp;rsquo;s not to name and shame 
       <pubDate>Sat, 08 Feb 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/feel_like_an_outsider/</guid>
-      <description>So, FOSDEM.I&#39;ve heard great things about this conference, so I was pretty exited to goThe Java dev roomNow I know people talk about impostor syndrome whenever they mention the woeful lack of diversity at tech conferences.&amp;nbsp; Interestingly, I felt like an impostor at FOSDEM - not because I&#39;m a woman (there were quite a few techy women around at FOSDEM, more than I expected) but because I&#39;m not an open source person.</description>
+      <description>&lt;p&gt;So, FOSDEM.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve heard great things about this conference, so I was pretty exited to go&lt;/p&gt;
+&lt;p&gt;Now I know people talk about &lt;a href=&#34;http://en.wikipedia.org/wiki/Impostor_syndrome&#34;&gt;impostor syndrome&lt;/a&gt; whenever they mention the woeful lack of diversity at tech conferences. Interestingly, I felt like an impostor at FOSDEM - not because I&amp;rsquo;m a woman (there were quite a few techy women around at FOSDEM, more than I expected) but because I&amp;rsquo;m not an open source person.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -159,8 +160,7 @@ I cannot take Christmas seriously in this weatherYOW! is a unique conference, i
       <pubDate>Thu, 07 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__mongodb_tutorial/</guid>
-      <description>In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get there, and not because of the Super Storm. Still, that gave me the day to finish off the tutorial I was running there on Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute, oh no&amp;hellip;.
-But as in previous years, the main benefit of this conference for me was meeting most of the usual suspects from the London Java Community.</description>
+      <description>&lt;p&gt;In previous years, JAX London would have been an easy, local conference to go to. This time it took me most of Sunday to get there, and not because of the &lt;a href=&#34;http://metro.co.uk/2013/10/27/its-ok-to-take-the-morning-off-work-if-storm-hits-michael-fish-says-so-4162862/&#34;&gt;Super Storm&lt;/a&gt;. Still, that gave me the day to finish off the tutorial I was running there on Monday morning. Not that I would be so unprofessional as to leave preparing things until the last minute, oh no&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -169,9 +169,7 @@ But as in previous years, the main benefit of this conference for me was meeting
       <pubDate>Tue, 05 Nov 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2013/</guid>
-      <description>So, I thought a few months ago that my blog would become more of a travel blog than a tech blog because of the amount of conferences I was going to. Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&amp;rsquo;d been to.
-
-So, JavaOne, again, my third year there.</description>
+      <description>&lt;p&gt;So, I thought a few months ago that my blog &lt;a href=&#34;https://trishagee.com/2013/09/16/javazone_oslo/&#34;&gt;would become more of a travel blog&lt;/a&gt; than a tech blog because of the amount of conferences I was going to. Turned out that I was so busy writing / updating / practicing talks and workshops and, er, travelling, that I never got around to doing retrospectives on the events I&amp;rsquo;d been to.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -180,7 +178,7 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Thu, 29 Aug 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/life_on_both_sides_of_the_interview_table/</guid>
-      <description>InfoQ has posted the video of Dan North and I opining on the subject of hiring. Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires. We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.</description>
+      <description>&lt;p&gt;InfoQ has posted the video of Dan North and I opining on the subject of hiring.  Most of the talk is spent on how to be a good interviewer, and touches on how to market your company to prospective hires.  We spend less time on how to do well as an interviewee, but in theory if you know what&amp;rsquo;s going through the interviewer&amp;rsquo;s mind, you should be in a much better position to take control of the interview and shine.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -189,8 +187,7 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Wed, 31 Jul 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_shanghai/</guid>
-      <description>I was expecting this...So, I was in China last week. &amp;nbsp;It&#39;s not really what I expected, but then my knowledge of China comes almost entirely from visiting various Chinatowns and watching martial arts movies, so I guess I wasn&#39;t all that well prepared for a modern Asian city like Shanghai.
-...and found this insteadThe city is, in my opinion, clean, modern, and attractive. &amp;nbsp;I was surprised by American-looking early skyscrapers, and really surprised that the city overall felt more European than American - with Marks &amp;amp; Spencer, Tesco, Carrefour, H &amp;amp; M, Zara, Costa Coffee, as well as the inevitable McDonalds, KFC and Pizza Hut.</description>
+      <description>&lt;p&gt;So, I was in China last week. It&amp;rsquo;s not really what I expected, but then my knowledge of China comes almost entirely from visiting various Chinatowns and watching martial arts movies, so I guess I wasn&amp;rsquo;t all that well prepared for a modern Asian city like Shanghai.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -210,8 +207,7 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Wed, 22 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_summary_of_geecon_krakow/</guid>
-      <description>Last week I was in Krakow, Poland for GeeCON. Which was excellent! I find it really interesting that conferences all have their own personalities, that they are not all the same.
-GeeCON had its own distinct personality. &amp;nbsp;If you&#39;re a Java/JVM person based in Poland, I would highly recommend it - more than 90%of the attendees were Polish (probably the remainder were largely speakers) so this conference is very much for you.</description>
+      <description>&lt;p&gt;Last week I was in Krakow, Poland for &lt;a href=&#34;http://2013.geecon.org/&#34;&gt;GeeCON&lt;/a&gt;. Which was excellent! I find it really interesting that conferences all have their own personalities, that they are not all the same.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -220,11 +216,7 @@ So, JavaOne, again, my third year there.</description>
       <pubDate>Fri, 10 May 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/2013_is_looking_a_lot_busier_than_i_planned/</guid>
-      <description>So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&amp;rsquo;m going to be a bit busier than that.
-
-In case you&amp;rsquo;re wondering what I&amp;rsquo;m up to (or, even better, hoping to see me talk or meet me), here are my confirmed engagements:
-15-17 May - GeeCon, Poland
-18-20 June - GOTO Amsterdam - whole day tutorial on the new (unfinished) MongoDB Java driver.</description>
+      <description>&lt;p&gt;So, despite promising myself that I would only do one event a month for the rest of this year, looks like I&amp;rsquo;m going to be a bit busier than that.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -233,8 +225,7 @@ In case you&amp;rsquo;re wondering what I&amp;rsquo;m up to (or, even better, ho
       <pubDate>Tue, 02 Apr 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_uk_2013/</guid>
-      <description>Last week was the first Devoxx UK, bringing the brand from Belgium and, more recently, France. And I think it was a HUGE success.
-Of course, disclaimers first - I was on the programme committee, so I might say that the whole thing was awesome. Although in all honesty, even being slightly involved in the organisation of a conference is a lot of work, and you can&amp;rsquo;t wait to see the back of it (and I didn&amp;rsquo;t do half as much as some people).</description>
+      <description>&lt;p&gt;Last week was the first Devoxx UK, bringing the brand from Belgium and, more recently, France. And I think it was a HUGE success.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -243,9 +234,7 @@ Of course, disclaimers first - I was on the programme committee, so I might say 
       <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_day_one/</guid>
-      <description>I like QCon London, I really do. Not only is it on home turf, but, as I&amp;rsquo;ve said before, it doesn&amp;rsquo;t just focus on technology, or a set of technologies.
-
-Full disclosure: I&amp;rsquo;ve been involved in planning QCon this year. So this time I know all the thinking, hard work, planning and last-minute changes that go into a conference like this. And it&amp;rsquo;s a joy to be able to sit in the audience and see the conference that you&amp;rsquo;ve helped build.</description>
+      <description>&lt;p&gt;I like QCon London, I really do. Not only is it on home turf, but, &lt;a href=&#34;https://trishagee.com/2012/03/27/qcon_london_2012/&#34;&gt;as I&amp;rsquo;ve said before&lt;/a&gt;, it doesn&amp;rsquo;t just focus on technology, or a set of technologies.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -254,7 +243,7 @@ Full disclosure: I&amp;rsquo;ve been involved in planning QCon this year. So thi
       <pubDate>Tue, 18 Dec 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_the_problem_with_women__a_technical_approach/</guid>
-      <description>As well as talking about, you know, actual work-type-stuff, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. This went so well at JavaOne that I thought it would be difficult to top. Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.</description>
+      <description>&lt;p&gt;As well as talking about, you know, &lt;a href=&#34;https://trishagee.com/2012/12/12/agile_when_agile_goes_well/&#34;&gt;actual work-type-stuff&lt;/a&gt;, I was encouraged to give my &amp;ldquo;Technical Approach to Women&amp;rdquo; presentation at Devoxx. This went so well at JavaOne that I thought it would be difficult to top. Also, I wasn&amp;rsquo;t convinced it would work at Devoxx, because the theatres are not well suited to audience participation - the seats are warm and comfy, the room is dark, the speaker is on stage in front of a massive screen&amp;hellip;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -273,8 +262,9 @@ The fantastic thing about an open conference is that a) you don&amp;rsquo;t have
       <pubDate>Thu, 22 Nov 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/summary_of_devoxx_2012/</guid>
-      <description>Devoxx topped off a crazy two months of conferences. I&#39;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting. &amp;nbsp;I&#39;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding. &amp;nbsp;I hope.
-Neal Ford&#39;s When Geek LeaksSo, how was Devoxx? &amp;nbsp;Well for starters, the calibre of the speakers and talks was excellent.</description>
+      <description>&lt;iframe src=&#34;https://player.vimeo.com/video/53695846&#34; width=&#34;640&#34; height=&#34;360&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; fullscreen&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href=&#34;https://vimeo.com/53695846&#34;&gt;Devoxx 2012&lt;/a&gt; from &lt;a href=&#34;https://vimeo.com/royvanrijn&#34;&gt;Roy van Rijn&lt;/a&gt; on &lt;a href=&#34;https://vimeo.com&#34;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Devoxx topped off a crazy two months of conferences.  I&amp;rsquo;ve heard people talk about the conference season in the past, and been slightly (OK, very) jealous of all that jet-setting.  I&amp;rsquo;ll admit, however, to a slight feeling of relief that my focus until Christmas is pretty much going to be coding.  I hope.&lt;/p&gt;</description>
     </item>
     
     <item>
