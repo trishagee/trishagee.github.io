@@ -1031,8 +1031,8 @@ The fantastic thing about an open conference is that a) you don&amp;rsquo;t have
       <pubDate>Wed, 17 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london_2012/</guid>
-      <description>Seemed like a quiet conference this year. Not really sure why, maybe it was the layout of the massive (and extremely dark) main room; maybe it was the awkward L-shape of the communal space; or maybe this year people were more interested in listening to the (really very good) sessions rather than participating or meeting other people. Whatever the reason, it felt quiet and almost low-key.
-Performance seemed pretty high on the agenda, as you&amp;rsquo;d expect from a London conference, with a number of things on offer:</description>
+      <description>&lt;p&gt;Seemed like a quiet conference this year. Not really sure why, maybe it was the layout of the massive (and extremely dark) main room; maybe it was the awkward L-shape of the communal space; or maybe this year people were more interested in listening to the (really very good) sessions rather than participating or meeting other people. Whatever the reason, it felt quiet and almost low-key.&lt;/p&gt;
+&lt;p&gt;Performance seemed pretty high on the agenda, as you&amp;rsquo;d expect from a London conference, with a number of things on offer:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1041,8 +1041,7 @@ Performance seemed pretty high on the agenda, as you&amp;rsquo;d expect from a L
       <pubDate>Thu, 11 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/and_for_my_next_trick/</guid>
-      <description>The time has come, and I&amp;rsquo;m moving on from LMAX. I&amp;rsquo;ve had an incredible (nearly) four years working for one of the most radical finance firms in the world, during which time I feel I&amp;rsquo;ve learnt more than the rest of my work experience put together, and had the pleasure to work with some of the smartest and most interesting people I&amp;rsquo;ve ever met.
-I&amp;rsquo;ve been invited to join 10gen and their MongoDB driver team, a challenge I am really looking forward to.</description>
+      <description>&lt;p&gt;The time has come, and I&amp;rsquo;m moving on from &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX&lt;/a&gt;. I&amp;rsquo;ve had an incredible (nearly) four years working for one of the most radical finance firms in the world, during which time I feel I&amp;rsquo;ve learnt more than the rest of my work experience put together, and had the pleasure to work with some of the smartest and most interesting people I&amp;rsquo;ve ever met.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1051,9 +1050,7 @@ I&amp;rsquo;ve been invited to join 10gen and their MongoDB driver team, a chall
       <pubDate>Wed, 10 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/introduction_to_the_disruptor_slides/</guid>
-      <description>I&amp;rsquo;ve produced a very cut down version of the presentation I&amp;rsquo;ve been giving at a lot of conferences, giving a high level overview to the Disruptor. This serves as a quick intro to the concepts behind it.
-  Introduction to the Disruptor  from Trisha Gee 
-My slides are usually pretty useless without me (or someone else) talking over them, so for more context don&amp;rsquo;t forget there&amp;rsquo;s always my original blog posts (the Magic Ring Buffer, Reading from it, Writing to it, Wiring it up), which are now pretty dated, and the Java Magazine article I wrote at the start of the year.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve produced a very cut down version of the presentation I&amp;rsquo;ve been giving at a lot of conferences, giving a high level overview to the &lt;a href=&#34;http://lmax-exchange.github.com/disruptor/&#34;&gt;Disruptor&lt;/a&gt;. This serves as a quick intro to the concepts behind it.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1062,8 +1059,10 @@ My slides are usually pretty useless without me (or someone else) talking over t
       <pubDate>Fri, 05 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_the_summary/</guid>
-      <description>So, JavaOne.
-Taylor Street CafeI&#39;m going to be controversial. &amp;nbsp;I think this was my favourite conference of this year. &amp;nbsp;I know that&#39;s not trendy, and that Oracle-bashing is still a popular pastime. &amp;nbsp;And I know I&#39;ve also made a big deal about how much fun it is to meet people who program in different languages. &amp;nbsp;But there is something very special about being surrounded by thousands of people from all around the world who use the same technology as you, some facing the same problems, some solving very different issues.</description>
+      <description>&lt;p&gt;So, JavaOne.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-4LX8X74MR1M/UG9HT1hdisI/AAAAAAAALMs/TWP67rS4B8Q/s1600/TaylorStCafe.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Taylor Street Cafe&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m going to be controversial. I think this was my favourite conference of this year. I know that&amp;rsquo;s not trendy, and that Oracle-bashing is still a popular pastime. And I know I&amp;rsquo;ve also made a big deal about how much fun it is to meet people who program in different languages. But there is something very special about being surrounded by thousands of people from all around the world who use the same technology as you, some facing the same problems, some solving very different issues.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1072,7 +1071,7 @@ Taylor Street CafeI&#39;m going to be controversial. &amp;nbsp;I think this was 
       <pubDate>Thu, 04 Oct 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_the_problem_with_women__a_technical_approach/</guid>
-      <description>Yesterday dawned, with a sense of foreboding (actually it dawned with me coughing my lungs out, but we&amp;rsquo;ve heard enough about the sub-optimal state of my respiratory system this week). On this day, I was giving the talk I was dreading when I got asked to do it. It&amp;rsquo;s the talk I actually put more work into than any of the other sessions I was presenting at this JavaOne. It was the Women In IT talk.</description>
+      <description>&lt;p&gt;Yesterday dawned, with a sense of foreboding (actually it dawned with me coughing my lungs out, but we&amp;rsquo;ve heard enough about the sub-optimal state of my respiratory system this week).   On this day, I was giving the &lt;a href=&#34;https://trishagee.com/2012/06/24/the_subject_of_women_programmers_is_boring/&#34;&gt;talk I was dreading&lt;/a&gt; when I got asked to do it.  It&amp;rsquo;s the talk I actually put more work into than any of the other sessions I was presenting at this JavaOne.  It was the Women In IT talk.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1082,7 +1081,7 @@ Taylor Street CafeI&#39;m going to be controversial. &amp;nbsp;I think this was 
       
       <guid>https://trishagee.github.io/post/tips_for_presenters/</guid>
       <description>&amp;hellip;or, tips-for-Trisha-because-she-has-the-memory-of-a-goldfish.
-Do not drink too much coffee beforehand.Do not replace coffee with Diet Coke, it is not better&amp;hellip;Do not drink too much coffee and drink diet coke and forget to eat.Check skirt length before prancing around on stage.Check desktop background for public-display-appropriateness.Close down applications that have popup notifications. Do you really want hundreds of people seeing that tweet&amp;hellip;?Plug in your laptop power. Re-typing your password every time the screen powers down is boring.</description>
+ Do not drink too much coffee beforehand. Do not replace coffee with Diet Coke, it is not better&amp;hellip; Do not drink too much coffee and drink diet coke and forget to eat. Check skirt length before prancing around on stage. Check desktop background for public-display-appropriateness. Close down applications that have popup notifications. Do you really want hundreds of people seeing that tweet&amp;hellip;? Plug in your laptop power. Re-typing your password every time the screen powers down is boring.</description>
     </item>
     
     <item>
@@ -1092,7 +1091,7 @@ Do not drink too much coffee beforehand.Do not replace coffee with Diet Coke, it
       
       <guid>https://trishagee.github.io/post/javaone_user_group_sunday/</guid>
       <description>Well this is exciting! JavaOne 2011 is the first conference I spoke at, so this the first time I&amp;rsquo;ve covered the same conference two years running. I think.
-It&amp;rsquo;s very nice to be back at JavaOne. Last year it was my first opportunity to meet so many people - the guys at Oracle who work really hard to make sure Java has its own identity; the JUG Leaders and Duchess folk; the JCP EC committee members; and loads of people who live and work in the area who I wouldn&amp;rsquo;t normally get a chance to speak to in person.</description>
+It&amp;rsquo;s very nice to be back at JavaOne. Last year it was my first opportunity to meet so many people - the guys at Oracle who work really hard to make sure Java has its own identity; the JUG Leaders and Duchess folk; the JCP EC committee members; and loads of people who live and work in the area who I wouldn&amp;rsquo;t normally get a chance to speak to in person.</description>
     </item>
     
     <item>
@@ -1101,9 +1100,9 @@ It&amp;rsquo;s very nice to be back at JavaOne. Last year it was my first oppor
       <pubDate>Sun, 30 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_strange_loop/</guid>
-      <description>Last week (was it only last week?) I was at Strange Loop, presenting a workshop on the Disruptor.
-I didn&amp;rsquo;t really have any expectations from the conference, I&amp;rsquo;ve never been before and, if I&amp;rsquo;m honest, hadn&amp;rsquo;t heard of it before. So everything was a pleasant surprise.
-It&amp;rsquo;s a very geeky conference. I mean that as a compliment, of course. Lots of very smart people talking about stuff that&amp;rsquo;s waaaay more advanced than you frequently get in the conferences employers would be happy to pay for.</description>
+      <description>&lt;p&gt;Last week (was it only last week?) I was at &lt;a href=&#34;https://thestrangeloop.com/&#34;&gt;Strange Loop&lt;/a&gt;, presenting a &lt;a href=&#34;https://trishagee.com/2012/09/26/strangeloop_disruptor_workshop_materials/&#34;&gt;workshop on the Disruptor&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t really have any expectations from the conference, I&amp;rsquo;ve never been before and, if I&amp;rsquo;m honest, hadn&amp;rsquo;t heard of it before. So everything was a pleasant surprise.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s a very geeky conference. I mean that as a compliment, of course. Lots of very smart people talking about stuff that&amp;rsquo;s waaaay more advanced than you frequently get in the conferences employers would be happy to pay for. The themes I mostly saw were functional programming and the (insert horribly abused term) Big Data space.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1112,8 +1111,7 @@ It&amp;rsquo;s a very geeky conference. I mean that as a compliment, of course. 
       <pubDate>Wed, 26 Sep 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/strangeloop_disruptor_workshop_materials/</guid>
-      <description>On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&amp;rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.</description>
+      <description>&lt;p&gt;On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&amp;rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1141,7 +1139,7 @@ Firstly, I&amp;rsquo;m back in the States this month to present my very first wo
       <pubDate>Thu, 23 Aug 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/interviewed_at_goto_copenhagen/</guid>
-      <description>I was interviewed at GOTO Copenhagen, about Java, the Disruptor, the Graduate Developer Community &amp;amp; London Java Community, and a whole host of other things. So to make up for the lack of blogging this month, here it is:</description>
+      <description>&lt;p&gt;I was interviewed at GOTO Copenhagen, about Java, the Disruptor, the Graduate Developer Community &amp;amp; London Java Community, and a whole host of other things.  So to make up for the lack of blogging this month, here it is:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1150,7 +1148,8 @@ Firstly, I&amp;rsquo;m back in the States this month to present my very first wo
       <pubDate>Fri, 27 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_the_evil_of_stereotypes/</guid>
-      <description>I attended (one way or another) two events last week that got me thinkingThe first was&amp;nbsp;Girl Developers will Save the World&amp;nbsp;- a session that had me a little confused as to whether that referred to me, or&amp;nbsp;actual&amp;nbsp;girls, i.e. those that are not yet legally classed as adults.&amp;nbsp; The second was the&amp;nbsp;Remarkable Women Twitter&amp;nbsp;party the following day.Firstly, a caveat/disclaimer (as usual) - both events were useful, thought-provoking and overall worthwhile.&amp;nbsp; But the alarming thing to me was the number of times I heard &#34;</description>
+      <description>&lt;p&gt;I attended (one way or another) two events last week that got me thinking&lt;/p&gt;
+&lt;p&gt;The first was &lt;a href=&#34;http://www.oscon.com/oscon2012/public/schedule/detail/23066&#34;&gt;Girl Developers will Save the World&lt;/a&gt; - a session that had me a little confused as to whether that referred to me, or &lt;i&gt;actual&lt;/i&gt; girls, i.e. those that are not yet legally classed as adults. The second was the &lt;a href=&#34;http://remarkablewomen.co.uk/post/27487174154/has-social-media-given-women-a-louder-voice&#34;&gt;Remarkable Women Twitter&lt;/a&gt; party the following day.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1159,9 +1158,8 @@ Firstly, I&amp;rsquo;m back in the States this month to present my very first wo
       <pubDate>Thu, 19 Jul 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/oscon_day_one/</guid>
-      <description>So, my first day at my very first OSCON. I have to say that when Ben and Martijn told me I had to do OSCON, that it was one of the conferences to go to, I was sceptical - not because I thought it would be rubbish, but because I have enjoyed all the conferences I&amp;rsquo;ve been to for different reasons.
-But I&amp;rsquo;m really impressed so far.
-The program is packed with great topics and speakers, and so many things I want to see that clash with each other.</description>
+      <description>&lt;p&gt;So, my first day at my very first &lt;a href=&#34;http://www.oscon.com/oscon2012&#34;&gt;OSCON&lt;/a&gt;. I have to say that when &lt;a href=&#34;https://twitter.com/kittylyst&#34;&gt;Ben&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/karianna&#34;&gt;Martijn&lt;/a&gt; told me I &lt;i&gt;had&lt;/i&gt; to do OSCON, that it was one of &lt;i&gt;the&lt;/i&gt; conferences to go to, I was sceptical - not because I thought it would be rubbish, but because I have enjoyed all the conferences I&amp;rsquo;ve been to for different reasons.&lt;/p&gt;
+&lt;p&gt;But I&amp;rsquo;m really impressed so far.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1170,7 +1168,7 @@ The program is packed with great topics and speakers, and so many things I want 
       <pubDate>Sun, 24 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_subject_of_women_programmers_is_boring/</guid>
-      <description>I&amp;rsquo;ve been challenged to do a session at a very large conference around women in programming. Which leads to two reactions from me 1) wow, what an honour! and 2) sigh.The problem with these sessions is that you&amp;rsquo;re preaching to the choir. Those who turn up are a) women or b) men who are sympathetic and supportive to the cause. People who are actively discriminating against women or, more commonly, those who don&amp;rsquo;t know their actions are hurting diversity in our industry, are the least likely to receive the message.</description>
+      <description>&lt;p&gt;I&amp;rsquo;ve been challenged to do a session at a very large conference around women in programming.  Which leads to two reactions from me 1) wow, what an honour! and 2) &lt;em&gt;sigh&lt;/em&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1191,8 +1189,7 @@ It&amp;rsquo;s true for a certain tribe of techies, sure. And creating and effec
       <pubDate>Sat, 09 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/the_birth_of_a_new_community/</guid>
-      <description>Topping off my mini-tour at the end of May, I was invited to Rotterdam to present to a brand new community of developers. I was really interested in attending because my experience with user groups is pretty much limited to the London Java Community, and I knew this would be different due to being a) across a wider range of technologies and b) shiny and new.
-It was hosted (rather awesomely) in a brewery, and until then I&amp;rsquo;d never given a presentation in a pub.</description>
+      <description>&lt;p&gt;Topping off my mini-tour at the end of May, I was invited to Rotterdam to &lt;a href=&#34;http://010dev.nl/post/social-tech-event-the-disruptor-and-the-perfect-programmer&#34;&gt;present to a brand new community&lt;/a&gt; of developers. I was really interested in attending because my experience with user groups is pretty much limited to the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;London Java Community&lt;/a&gt;, and I knew this would be different due to being a) across a wider range of technologies and b) shiny and new.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1201,7 +1198,7 @@ It was hosted (rather awesomely) in a brewery, and until then I&amp;rsquo;d neve
       <pubDate>Wed, 06 Jun 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_london_disruptor_presentation_video/</guid>
-      <description>The &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; presentation I gave at QCon London is now available on the InfoQ site. This is the same presentation as the one I gave at Skillsmatter in March, but the questions are different. Plus since I&amp;rsquo;m winging it every time, I probably cover slightly different things or explain some stuff better / worse.</description>
+      <description>The &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; presentation I gave at QCon London is now available on the InfoQ site. This is the same presentation as the one I gave at Skillsmatter in March, but the questions are different. Plus since I&amp;rsquo;m winging it every time, I probably cover slightly different things or explain some stuff better / worse.</description>
     </item>
     
     <item>
@@ -1210,8 +1207,8 @@ It was hosted (rather awesomely) in a brewery, and until then I&amp;rsquo;d neve
       <pubDate>Thu, 31 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/goto_amsterdam/</guid>
-      <description>Three airports and three hotels in a week, and I don&amp;rsquo;t know whether I&amp;rsquo;m coming or going. Add to that a mere four hours sleep last night, and this might resemble the ramblings of a mad woman (more than usual that is).
-GOTO Amsterdam was a different affair to GOTO Copenhagen, which is not necessarily a bad thing - it&amp;rsquo;s great that the events have their own personalities and aren&amp;rsquo;t cookie cutter versions of the same thing.</description>
+      <description>&lt;p&gt;Three airports and three hotels in a week, and I don&amp;rsquo;t know whether I&amp;rsquo;m coming or going. Add to that a mere four hours sleep last night, and this might resemble the ramblings of a mad woman (more than usual that is).&lt;/p&gt;
+&lt;p&gt;GOTO Amsterdam was a different affair to &lt;a href=&#34;https://trishagee.com/2012/05/24/goto_copenhagen/&#34;&gt;GOTO Copenhagen&lt;/a&gt;, which is not necessarily a bad thing - it&amp;rsquo;s great that the events have their own personalities and aren&amp;rsquo;t cookie cutter versions of the same thing.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1220,8 +1217,8 @@ GOTO Amsterdam was a different affair to GOTO Copenhagen, which is not necessar
       <pubDate>Thu, 24 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/goto_copenhagen/</guid>
-      <description>So, &amp;nbsp;before everything gets pushed out of my head, GOTO Copenhagen.
-It was my first conference &#34;alone&#34;, in that I didn&#39;t have friends and colleagues from LMAX or the London Java Community there with me. &amp;nbsp;And certainly at the start of the conference, I wasn&#39;t the only one who was standing around, hoping someone would talk to me (in all honesty some of the photos above are a little unfair - the schedule was a very nice, simple phone app so most people spent a lot of time playing with their phones).</description>
+      <description>&lt;p&gt;So, before everything gets pushed out of my head, GOTO Copenhagen.&lt;/p&gt;
+&lt;p&gt;It was my first conference &amp;ldquo;alone&amp;rdquo;, in that I didn&amp;rsquo;t have friends and colleagues from &lt;a href=&#34;http://www.lmax.com/&#34;&gt;LMAX&lt;/a&gt; or the London Java Community there with me. And certainly at the start of the conference, I wasn&amp;rsquo;t the only one who was standing around, hoping someone would talk to me (in all honesty some of the photos above are a little unfair - the schedule was a very nice, simple phone app so most people spent a lot of time playing with their phones).&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1230,8 +1227,9 @@ It was my first conference &#34;alone&#34;, in that I didn&#39;t have friends an
       <pubDate>Sat, 19 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_do_you_do_and_how_did_you_get_there/</guid>
-      <description>So yet another interview with me is available, but this one is in written form. It&amp;rsquo;s for the Graduate Developer Community, the aim is to show undergraduates and graduates what real techies jobs are like, and how people doing them they got there.
-It&amp;rsquo;s long, but if you know anyone just starting out their career who wants to get a feel for where they might want to go, please point them at it.</description>
+      <description>&lt;p&gt;So &lt;a href=&#34;http://careers.grad-dc.co.uk/2012/05/18/107/&#34;&gt;yet another interview&lt;/a&gt; with me is available, but this one is in written form.  It&amp;rsquo;s for the Graduate Developer Community, the aim is to show undergraduates and graduates what real techies jobs are like, and how people doing them they got there.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s long, but if you know anyone just starting out their career who wants to get a feel for where they might want to go, please point them at it.  The site has a number of interviews with people in different roles so it&amp;rsquo;s quite a good way to showcase the diversity of what&amp;rsquo;s available.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;(Update: 15 Dec 2020: Original article doesn&amp;rsquo;t seem to be around any more, so I&amp;rsquo;ve reproduced the content here)&lt;/em&gt;&lt;/p&gt;</description>
     </item>
     
     <item>

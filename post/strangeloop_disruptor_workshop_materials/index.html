@@ -6,8 +6,7 @@
     
     <title>Strangeloop Disruptor Workshop Materials | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.">
+    <meta name="description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:">
     <meta name="generator" content="Hugo 0.78.2" />
     
     
@@ -22,6 +21,8 @@ Give an overview of the DisruptorShow how to create a simple one producer, one c
     
 
     
+      <link rel="canonical" href="https://trishagee.com/2012/09/26/strangeloop_disruptor_workshop_materials/">
+    
 
     
       
@@ -33,26 +34,23 @@ Give an overview of the DisruptorShow how to create a simple one producer, one c
     
     
     <meta property="og:title" content="Strangeloop Disruptor Workshop Materials" />
-<meta property="og:description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example." />
+<meta property="og:description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/strangeloop_disruptor_workshop_materials/" />
 <meta property="article:published_time" content="2012-09-26T00:00:00+00:00" />
 <meta property="article:modified_time" content="2012-09-26T00:00:00+00:00" />
 <meta itemprop="name" content="Strangeloop Disruptor Workshop Materials">
-<meta itemprop="description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example.">
+<meta itemprop="description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:">
 <meta itemprop="datePublished" content="2012-09-26T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2012-09-26T00:00:00+00:00" />
-<meta itemprop="wordCount" content="211">
+<meta itemprop="wordCount" content="219">
 
 
 
 <meta itemprop="keywords" content="disruptor," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Strangeloop Disruptor Workshop Materials"/>
-<meta name="twitter:description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:
-Give an overview of the DisruptorShow how to create a simple one producer, one consumer example."/>
+<meta name="twitter:description" content="On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:"/>
 
       
 <script type="application/javascript">
@@ -220,8 +218,23 @@ if (!doNotTrack) {
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>On Sunday I gave my very first workshop on the Disruptor.  The aim was to give people some hands-on coding experience using the syntax.  Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context.  But the workshop should:<br /><ol><li>Give an overview of the Disruptor</li><li>Show how to create a simple one producer, one consumer example.</li><li>Show how to wire up a parallel event handler</li><li>Show how to how (and why) to create a diamond dependency graph.</li><li>Extrapolate beyond these very simple examples to something closer to a real world architecture.</li></ol><div>Requirements are:</div><div><ol><li>Basic Java skills</li><li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java 7 update 7</a></li><li>(Optionally) <a href="http://www.jetbrains.com/idea/">IntelliJ</a>.</li></ol><div>The slides (not all that useful, I&rsquo;ll grant you, without me talking) are available, and you can <a href="http://db.tt/9AjcSh1m">download the code</a>.</div></div><div><br /></div><div>If you want to work through the examples yourself, start with <span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense.TowerDefence</span>.  The starting point code for the workshop is in package <span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense</span>.  <span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense1</span> shows a solution to exercise one, <span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense2</span> to exercise 2 and so forth.  The final package, <span style="font-family: Courier New, Courier, monospace;">com.mechanitis.towerdefense4</span>, has some different towers you can play with to see the effects.  They don&rsquo;t really show anything special about the Disruptor, but they were fun to write and are interesting to play with.</div><br /><br /><br /><div align="center"><iframe frameborder="0" height="400" marginheight="0" marginwidth="0" scrolling="no" src="http://www.slideshare.net/slideshow/embed_code/14458348?hostedIn=slideshare&amp;page=upload" width="476"></iframe></div><br /><div><br /></div><div><br /></div></p>
-<ul class="pa0">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>On Sunday I gave my very first workshop on the Disruptor. The aim was to give people some hands-on coding experience using the syntax. Because time was limited (you can&rsquo;t get people to build an entire application architecture in 2.5 hours) the example is somewhat contrived, and needs a big leap to make it into a proper application context. But the workshop should:</p>
+<ol>
+<li>Give an overview of the Disruptor</li>
+<li>Show how to create a simple one producer, one consumer example.</li>
+<li>Show how to wire up a parallel event handler</li>
+<li>Show how to how (and why) to create a diamond dependency graph.</li>
+<li>Extrapolate beyond these very simple examples to something closer to a real world architecture.</li>
+</ol>
+<p>Requirements are:</p>
+<ol>
+<li>Basic Java skills</li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">Java 7 update 7</a></li>
+<li>(Optionally) <a href="http://www.jetbrains.com/idea/">IntelliJ</a>.</li>
+</ol>
+<p>The slides (not all that useful, I&rsquo;ll grant you, without me talking) are available, and you can <a href="http://db.tt/9AjcSh1m">download the code</a>.</p>
+<p>If you want to work through the examples yourself, start with <code>com.mechanitis.towerdefense.TowerDefence</code>. The starting point code for the workshop is in package<code>com.mechanitis.towerdefense</code>. <code>com.mechanitis.towerdefense1</code> shows a solution to exercise one, <code>com.mechanitis.towerdefense2</code> to exercise 2 and so forth. The final package, <code>com.mechanitis.towerdefense4</code>, has some different towers you can play with to see the effects. They don&rsquo;t really show anything special about the Disruptor, but they were fun to write and are interesting to play with.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/qtEgOTahVXfiXR" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe><ul class="pa0">
   
    <li class="list">
      <a href="/tags/disruptor" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">disruptor</a>
