@@ -127,7 +127,7 @@ supporting material.&lt;/p&gt;</description>
       <pubDate>Fri, 22 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_at_20/</guid>
-      <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a 
+      <description>&lt;p&gt;I was asked three simple questions about my thoughts on Java turning 20, and ended up writing a
 &lt;a href=&#34;https://www.voxxed.com/blog/2015/05/the-java-birthday-diaries-part-3-trisha-gee-on-ides-jigsaw-and/&#34;&gt;guest post for Voxxed&lt;/a&gt;.
 No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;</description>
     </item>
@@ -170,8 +170,8 @@ Sign up with code SPEAKGEE100 for £100 off the price!&lt;/p&gt;</description>
       <pubDate>Mon, 20 Oct 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/angularjs_html5_groovy_java_mongodb_wcpgw/</guid>
-      <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant, 
-mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example, 
+      <description>&lt;p&gt;This year I&amp;rsquo;ve been giving an evolving live demonstration of coding a Fully Buzz Word Compliant,
+mobile-friendly web application.  The aim of the demo is to show, via a real-world application rather than snippets or a toy example,
 where these popular technologies sit in your architecture, and how they interact with each other.&lt;/p&gt;</description>
     </item>
     
@@ -181,11 +181,11 @@ where these popular technologies sit in your architecture, and how they interact
       <pubDate>Thu, 14 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the 
-documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java 
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
+documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
 developer.&lt;/p&gt;
-&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from 
-Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD 
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
+Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
 operations using the Java driver:&lt;/p&gt;</description>
     </item>
     

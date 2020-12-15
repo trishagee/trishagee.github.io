@@ -241,9 +241,9 @@ if (!doNotTrack) {
 <p>While we’re drawing ever closer to Java 9, and even hearing about features in Java 10, many of us are still working with an older version. Even if your project has technically adopted Java 8, and even if you’re using it when coding new features, it’s likely that the majority of your code base is still not making the most of what’s available in Java 8 - features like Lambda Expressions, the Streams API, and new Date/Time. And this is a shame, since Java 8 provides not only nicer syntax for developers, but (usually) better application performance.</p>
 <p>In this presentation, Trisha will:</p>
 <ul>
-<li>Highlight the performance benefits of using Java 8 - after all, you’ll probably have to persuade &ldquo;The Management&rdquo; that tampering with 
+<li>Highlight the performance benefits of using Java 8 - after all, you’ll probably have to persuade &ldquo;The Management&rdquo; that tampering with
 existing code is worthwhile</li>
-<li>Demonstrate how to identify areas of code that can be updated to use Java 8 features, and how to pick which changes will give you the 
+<li>Demonstrate how to identify areas of code that can be updated to use Java 8 features, and how to pick which changes will give you the
 most benefit</li>
 <li>Demonstrate how to automatically refactor your code to make use of features like lambdas and streams</li>
 <li>Cover some of the pros and cons of using the new features - including suggestions of when refactoring may NOT be the best idea.</li>
@@ -254,15 +254,15 @@ most benefit</li>
 <p>Other versions include:</p>
 <ul>
 <li><a href="https://youtu.be/2xOtyGUTpQU">JetBrains Webinar</a>, with all the latest IntelliJ IDEA support for Java 8 refactoring.</li>
-<li><a href="https://www.infoq.com/presentations/java8-lambda-streams">QCon New York</a>, with a nice summary of the <a href="https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721">points covered in 
+<li><a href="https://www.infoq.com/presentations/java8-lambda-streams">QCon New York</a>, with a nice summary of the <a href="https://www.infoq.com/articles/qcon-new-york-2016#_Toc456084721">points covered in
 the talk</a>.</li>
 <li><a href="https://www.youtube.com/watch?v=dlzMV83RTtw">DevoxxUK</a></li>
 </ul>
 <iframe src="//www.slideshare.net/slideshow/embed_code/key/xPhKtRN9aOsHZd" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-<p>You can purchase a more in-depth tutorial on 
-<a href="http://www.informit.com/store/refactoring-to-modern-java-livelessons-video-training-9780134653594">informIT</a>, and is also available via 
+<p>You can purchase a more in-depth tutorial on
+<a href="http://www.informit.com/store/refactoring-to-modern-java-livelessons-video-training-9780134653594">informIT</a>, and is also available via
 <a href="https://www.safaribooksonline.com/library/view/refactoring-to-modern/9780134653617/">Safari Books Online</a>.</p>
-<p>The IntelliJ-specific features of some of the refactoring shown are covered in my 
+<p>The IntelliJ-specific features of some of the refactoring shown are covered in my
 <a href="https://www.jetbrains.com/help/idea/2016.1/tutorial-migrating-to-java-8.html">Migrating to Java 8</a> tutorial.</p>
 <h2 id="background">Background</h2>
 <p>Article: <a href="https://dzone.com/articles/why-java-8-1">Why Java 8</a><br>
@@ -283,7 +283,7 @@ Video: <a href="https://youtu.be/MLksirK9nnE">Lambdas in Java: A Peek under the 
 Article: [Java performance tutorial: How fast are the Java 8 streams? - Angelika Langer](https://jaxenter
 .com/java-performance-tutorial-how-fast-are-the-java-8-streams-118830.html) Notable Quotes:</p>
 <blockquote>
-<p>Again, the for-loop is faster that the sequential stream operation, but the difference on an ArrayList is not nearly as significant as 
+<p>Again, the for-loop is faster that the sequential stream operation, but the difference on an ArrayList is not nearly as significant as
 it was on an array.</p>
 </blockquote>
 <p> </p>
@@ -293,12 +293,12 @@ bound.</p>
 </blockquote>
 <p> </p>
 <blockquote>
-<p>The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for 
+<p>The point to take home is that sequential streams are no faster than loops. If you use sequential streams then you don’t do it for
 performance reasons; you do it because you like the functional programming style.</p>
 </blockquote>
 <p> </p>
 <blockquote>
-<p>The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of 
+<p>The reality check via our benchmark yields a ratio (sequential / parallel) of only 1.6 instead of 2.0, which illustrates the amount of
 overhead that is involved in going parallel and how (well or poorly) it is overcompensated (on this particular platform).</p>
 </blockquote>
 <p> </p>
@@ -311,30 +311,30 @@ overhead that is involved in going parallel and how (well or poorly) it is overc
 </blockquote>
 <p> </p>
 <blockquote>
-<p>The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t 
+<p>The realisation is: Yes, parallel stream operations are easy to use and often they run faster than sequential operations, but don’t
 expect miracles. Also, don’t guess; instead, benchmark a lot.</p>
 </blockquote>
 <p>Article: [Benchmark: How Misusing Streams Can Make Your Code 5 Times Slower](<a href="http://blog.takipi">http://blog.takipi</a>
-.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/) - 
-interesting comparison of different iteration styles.  Also shows that things like boxing might add more cost than streams (but that you 
+.com/benchmark-how-java-8-lambdas-and-streams-can-make-your-code-5-times-slower/) -
+interesting comparison of different iteration styles.  Also shows that things like boxing might add more cost than streams (but that you
 don&rsquo;t realise you&rsquo;re boxing)</p>
-<p>Article: <a href="http://blog.codefx.org/java/stream-performance/">Stream Performance</a> - some interesting benchmarks based on Angelika Langer&rsquo;s 
+<p>Article: <a href="http://blog.codefx.org/java/stream-performance/">Stream Performance</a> - some interesting benchmarks based on Angelika Langer&rsquo;s
 article<br>
 Article: <a href="http://blog.codefx.org/java/stream-performance-your-ideas/">Follow up on Stream Performance</a></p>
 <h3 id="date-and-time">Date and Time</h3>
 <p>Article: <a href="http://java-performance.info/jsr-310-java-8-datetime-library-performance-well-joda-time-2-3-j-u-calendar/">JSR 310 – Java 8 Date/Time library performance (as well as Joda Time 2.3 and j.u.Calendar)</a></p>
 <h3 id="benchmarking">Benchmarking</h3>
-<p>I used a bunch of techniques to produce the benchmarks on the talk.  I&rsquo;d like to summarise them more thoroughly when I get a chance, but 
+<p>I used a bunch of techniques to produce the benchmarks on the talk.  I&rsquo;d like to summarise them more thoroughly when I get a chance, but
 for now here&rsquo;s my background reading:</p>
 <p>Article: <a href="http://www.oracle.com/technetwork/articles/java/architect-benchmarking-2266277.html">Avoiding Benchmarking Pitfalls on the JVM</a></p>
 <p>Tool: <a href="http://openjdk.java.net/projects/code-tools/jmh/">JMH</a><br>
 Tool: <a href="https://github.com/artyushov/idea-jmh-plugin">IntelliJ JMH Plugin</a><br>
 Article: <a href="http://java-performance.info/jmh/">Introduction to JMH</a></p>
 <h2 id="best-practice">&ldquo;Best Practice&rdquo;</h2>
-<p>I dislike the term &ldquo;Best Practice&rdquo; as it implies a &ldquo;one size fits all&rdquo; approach, and I believe that our job is to 
-make difficult decisions based on various pros and cons and differing situations.  However, here I will collect 
+<p>I dislike the term &ldquo;Best Practice&rdquo; as it implies a &ldquo;one size fits all&rdquo; approach, and I believe that our job is to
+make difficult decisions based on various pros and cons and differing situations.  However, here I will collect
 resources that may help us make some of those decisions</p>
-<p>Article: <a href="http://martinfowler.com/articles/refactoring-pipelines.html">Refactoring with Loops and Collection Pipelines</a> - 
+<p>Article: <a href="http://martinfowler.com/articles/refactoring-pipelines.html">Refactoring with Loops and Collection Pipelines</a> -
 Martin Fowler<br>
 Slides: <a href="http://martinfowler.com/articles/workflowsOfRefactoring/">Workflows of Refactoring</a> - Martin Fowler<br>
 Book: <a href="https://www.amazon.com/gp/product/0201485672/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&amp;tag=trissramb-20&amp;camp=1789&amp;creative=9325&amp;linkCode=as2&amp;creativeASIN=0201485672&amp;linkId=11d0b95e050a492112eeac6fb6b2bcb0">Refactoring: Improving the Design of Existing Code</a> - Martin Fowler</p>

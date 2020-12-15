@@ -6,9 +6,9 @@
     
     <title>Level Up Your Automated Tests | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The 
-talk covers the same case study as 
-Groovy vs Java for Testing, adopting 
+    <meta name="description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+Groovy vs Java for Testing, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.">
     <meta name="generator" content="Hugo 0.79.0" />
@@ -36,9 +36,9 @@ technical look at the merits of one language over another.">
     
     
     <meta property="og:title" content="Level Up Your Automated Tests" />
-<meta property="og:description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The 
-talk covers the same case study as 
-Groovy vs Java for Testing, adopting 
+<meta property="og:description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+Groovy vs Java for Testing, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another." />
 <meta property="og:type" content="article" />
@@ -46,9 +46,9 @@ technical look at the merits of one language over another." />
 <meta property="article:published_time" content="2015-06-26T00:00:00+00:00" />
 <meta property="article:modified_time" content="2015-06-26T00:00:00+00:00" />
 <meta itemprop="name" content="Level Up Your Automated Tests">
-<meta itemprop="description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The 
-talk covers the same case study as 
-Groovy vs Java for Testing, adopting 
+<meta itemprop="description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+Groovy vs Java for Testing, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.">
 <meta itemprop="datePublished" content="2015-06-26T00:00:00+00:00" />
@@ -60,9 +60,9 @@ technical look at the merits of one language over another.">
 <meta itemprop="keywords" content="testing," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Level Up Your Automated Tests"/>
-<meta name="twitter:description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The 
-talk covers the same case study as 
-Groovy vs Java for Testing, adopting 
+<meta name="twitter:description" content="This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+Groovy vs Java for Testing, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another."/>
 
@@ -232,9 +232,9 @@ if (!doNotTrack) {
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The 
-talk covers the same case study as 
-<a href="/presentation/groovy_vs_java">Groovy vs Java for Testing</a>, adopting 
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>This presentation is about how to change a team&rsquo;s attitude towards writing automated tests.  The
+talk covers the same case study as
+<a href="/presentation/groovy_vs_java">Groovy vs Java for Testing</a>, adopting
 Spock in MongoDB, but this is a more process/agile/people perspective, not a
 technical look at the merits of one language over another.</p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3fEnq6JuwuI" frameborder="0" allowfullscreen></iframe>
@@ -243,211 +243,211 @@ technical look at the merits of one language over another.</p>
 <p>First version: <a href="https://www.youtube.com/watch?v=D-xra_X9Nwg">GOTO Chicago</a> ( <a href="https://www.slideshare.net/slideshow/embed_code/key/dJvHtktHbiDABW">slides</a>)</p>
 <h2 id="questions">Questions</h2>
 <p>I sadly do not have a lot of time for questions during the presentation, but
-thanks to the wonders of modern technology, I have a list of unanswered 
+thanks to the wonders of modern technology, I have a list of unanswered
 questions which I will attempt to address here.</p>
-<p><strong>Is testing to find out your system works? Or is it so you know when your 
+<p><strong>Is testing to find out your system works? Or is it so you know when your
 system is broken?</strong><br>
-Excellent question. I would expect that if you have a system that&rsquo;s in 
+Excellent question. I would expect that if you have a system that&rsquo;s in
 production (which is probably the large majority of the projects we work on),
-we can assume the system is working, for some definition of working. 
-Automated testing is particularly good at catching when your system stops 
-doing the things you thought it was doing when you wrote the tests (which 
+we can assume the system is working, for some definition of working.
+Automated testing is particularly good at catching when your system stops
+doing the things you thought it was doing when you wrote the tests (which
 may, or may not, mean the system is genuinely &ldquo;broken&rdquo;). Regression testing is
-to find out when your system is no longer doing what you expect, and automated tests are 
+to find out when your system is no longer doing what you expect, and automated tests are
 really good for this.</p>
-<p>But testing can also make sure you implement code that behaves the way you 
+<p>But testing can also make sure you implement code that behaves the way you
 expect, especially if you write the tests first.  Automated tests can be used
-to determine that your code is complete, according to some pre-agreed 
+to determine that your code is complete, according to some pre-agreed
 specification (in this case, the automated tests you wrote up front).</p>
-<p>So I guess what I&rsquo;m trying to say is, when you first write the tests you 
-have tests that, when they pass, proves the system works (<em>assuming</em> your 
-tests are testing the right things and/or not giving you false positives). 
+<p>So I guess what I&rsquo;m trying to say is, when you first write the tests you
+have tests that, when they pass, proves the system works (<em>assuming</em> your
+tests are testing the right things and/or not giving you false positives).
 Subsequent passes show that you haven&rsquo;t broken anything.</p>
-<p><strong>At what level do &ldquo;tests documenting code&rdquo; actually become useful? And who 
+<p><strong>At what level do &ldquo;tests documenting code&rdquo; actually become useful? And who
 is/should the documentation be targeted to?</strong><br>
-In the presentation, my case study is the MongoDB Java Driver.  Our users 
-were Java programmers, who were going to be coding using our driver.  So in 
-this example, it makes a lot of sense to document the code using a language 
-that our users understood.  We started with Java, and ended up using Groovy 
+In the presentation, my case study is the MongoDB Java Driver.  Our users
+were Java programmers, who were going to be coding using our driver.  So in
+this example, it makes a lot of sense to document the code using a language
+that our users understood.  We started with Java, and ended up using Groovy
 because it was also understandable for our users and a bit more succinct.</p>
-<p>On a previous project we had different types of tests.  The unit and system 
-tests documented what the expected behaviour was at the class or module 
-level, and was aimed at developers in the team.  The acceptance tests were 
-written in Java, but in a <a href="https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/">friendly DSL-style way</a>. These were usually 
-written by a triad of tester, business analyst and developer, and documented to all 
-these guys and girls what the top-level behaviour should be. Our audience here 
-was fairly technical though, so there was no need to go to the extent of trying 
-to write English-language-style tests, they were readable enough for a 
+<p>On a previous project we had different types of tests.  The unit and system
+tests documented what the expected behaviour was at the class or module
+level, and was aimed at developers in the team.  The acceptance tests were
+written in Java, but in a <a href="https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/">friendly DSL-style way</a>. These were usually
+written by a triad of tester, business analyst and developer, and documented to all
+these guys and girls what the top-level behaviour should be. Our audience here
+was fairly technical though, so there was no need to go to the extent of trying
+to write English-language-style tests, they were readable enough for a
 reasonably techy (but non-programmer) audience. These were not designed to be
 read by &ldquo;the business&rdquo; - us developers might use
 them to answer questions about the behaviour of the system, but they didn&rsquo;t
 document it in a way that just anyone could understand.</p>
-<p>These are two different approaches for two different-sized 
+<p>These are two different approaches for two different-sized
 team/organisations, with different users. So I guess in summary the answer is
-&ldquo;it depends&rdquo;.  But at the very least, developers on your own team should be 
-able to read your tests and understand what the expected behaviour of the 
+&ldquo;it depends&rdquo;.  But at the very least, developers on your own team should be
+able to read your tests and understand what the expected behaviour of the
 code is.</p>
-<p><strong>How do you become a team champion? I.e. get authority and acceptance that 
+<p><strong>How do you become a team champion? I.e. get authority and acceptance that
 people listen to you?</strong><br>
-In my case, it was just by accident - I happened to care about the tests 
-being green and also being useful, so I moaned at people until it happened. But 
-it&rsquo;s not just about nagging, you get more buy-in if other people see you 
-doing the right things the right way, and it&rsquo;s not too painful for them to 
+In my case, it was just by accident - I happened to care about the tests
+being green and also being useful, so I moaned at people until it happened. But
+it&rsquo;s not just about nagging, you get more buy-in if other people see you
+doing the right things the right way, and it&rsquo;s not too painful for them to
 follow your example.</p>
-<p>There are going to be things that you care about that you&rsquo;ll never get other 
-people to care about, and this will be different from team to team. You have 
-two choices here - if you care that much, and it bothers you that much, you 
-have to do it yourself (often on your own time, especially if your boss 
-doesn&rsquo;t buy into it). Or, you have to let it go - when it comes to quality, 
-there are so many things you could care about that it might be more 
-beneficial to drop one cause and pick another that you can get people to care 
+<p>There are going to be things that you care about that you&rsquo;ll never get other
+people to care about, and this will be different from team to team. You have
+two choices here - if you care that much, and it bothers you that much, you
+have to do it yourself (often on your own time, especially if your boss
+doesn&rsquo;t buy into it). Or, you have to let it go - when it comes to quality,
+there are so many things you could care about that it might be more
+beneficial to drop one cause and pick another that you can get people to care
 about.</p>
-<p>For example, I wanted us to use <code>assertThat</code> instead of <code>assertFalse</code> (or 
-true, or equals, or whatever).  I tried to demo the advantages (as I saw 
+<p>For example, I wanted us to use <code>assertThat</code> instead of <code>assertFalse</code> (or
+true, or equals, or whatever).  I tried to demo the advantages (as I saw
 them) of my approach to the team, and tried to push this in code reviews, but
 in the end the other developers weren&rsquo;t sold on the benefits, and
-from my point of view the benefits weren&rsquo;t big enough to force the issue. 
-Those of us who cared, used <code>assertThat</code>. For the rest, I was just happy 
+from my point of view the benefits weren&rsquo;t big enough to force the issue.
+Those of us who cared, used <code>assertThat</code>. For the rest, I was just happy
 people were writing and maintaining tests.</p>
 <p>So, pick your battles. You&rsquo;ll be surprised at how many people do get on board
-with things.  I thought implementing checkstyle and setting draconian 
-formatting standards was going to be a tough battle, but in the end people 
-were just happy to have <em>any</em> standards, especially when they were enforced 
+with things.  I thought implementing checkstyle and setting draconian
+formatting standards was going to be a tough battle, but in the end people
+were just happy to have <em>any</em> standards, especially when they were enforced
 by the build.</p>
 <p><strong>Do you report test, style, coverage, etc failures separately? Why?</strong><br>
 We didn&rsquo;t fail on coverage.  Enforcing a coverage percentage is a really good
-way to end up with crappy tests, like for getters/setters and constructors 
-(by the way, if there&rsquo;s enough logic in your constructor that it <em>needs</em> a 
+way to end up with crappy tests, like for getters/setters and constructors
+(by the way, if there&rsquo;s enough logic in your constructor that it <em>needs</em> a
 test, You&rsquo;re Doing It Wrong).</p>
-<p>Generally different types of failures are found by different tools, so for 
-this reason alone they will be reported separately - for example, checkstyle 
-will fail the build if it doesn&rsquo;t conform to our style standards, codenarc 
-fails it for Groovy style failures, and Gradle will run the tests in a 
+<p>Generally different types of failures are found by different tools, so for
+this reason alone they will be reported separately - for example, checkstyle
+will fail the build if it doesn&rsquo;t conform to our style standards, codenarc
+fails it for Groovy style failures, and Gradle will run the tests in a
 different task to these two.</p>
-<p>What&rsquo;s actually important, though, is time-to-failure.  For checkstyle, for 
+<p>What&rsquo;s actually important, though, is time-to-failure.  For checkstyle, for
 example, it will fail on something silly like curly braces in the wrong place.
-You want this to fail within seconds, so you can fix the silly mistake 
+You want this to fail within seconds, so you can fix the silly mistake
 quickly. Ideally you&rsquo;d have IntelliJ (perhaps) run your checks before it even
-makes it into your CI environment. Compiler errors should, of course, fail 
-things before you run a test, short-running tests should fail before 
-long-running tests.  Basically, the easier it is to fix the problem, the 
+makes it into your CI environment. Compiler errors should, of course, fail
+things before you run a test, short-running tests should fail before
+long-running tests.  Basically, the easier it is to fix the problem, the
 sooner you want to know, I guess.</p>
-<p>Our build was relatively small and not too complex, so actually we ran all 
-our types of tests (integration and unit, both Groovy and Java) in a single 
+<p>Our build was relatively small and not too complex, so actually we ran all
+our types of tests (integration and unit, both Groovy and Java) in a single
 task, because this turned out to be much quicker in Gradle (in our case) than
 splitting things up into a simple pipeline.</p>
 <p>You might have a reason to report stuff separately, but for me it&rsquo;s much more
-important to understand how fast I need to be aware of a particular type of 
+important to understand how fast I need to be aware of a particular type of
 failure.</p>
-<p><strong>Sometimes I find myself modifying code design and architecture to enable 
+<p><strong>Sometimes I find myself modifying code design and architecture to enable
 testing. How can I avoid damaging design?</strong><br>
-This is a great question, and a common one too. The short answer is: <em>in 
-general</em> writing code that&rsquo;s easier to test leads to a cleaner design anyway 
-(for example, dependency injection at that appropriate places). If you find 
+This is a great question, and a common one too. The short answer is: <em>in
+general</em> writing code that&rsquo;s easier to test leads to a cleaner design anyway
+(for example, dependency injection at that appropriate places). If you find
 you need to rip your design apart to test it, there&rsquo;s a smell there somewhere</p>
 <ul>
-<li>either your design isn&rsquo;t following SOLID principals, or you&rsquo;re trying to 
+<li>either your design isn&rsquo;t following SOLID principals, or you&rsquo;re trying to
 test the wrong things.</li>
 </ul>
-<p>Of course, the common example here is testing private methods - how do you test 
-these without exposing secrets<sup>1</sup>? I think for me, if it&rsquo;s important 
+<p>Of course, the common example here is testing private methods - how do you test
+these without exposing secrets<sup>1</sup>? I think for me, if it&rsquo;s important
 enough
-to be tested 
-it&rsquo;s important enough to be exposed in some way - it might belong in some 
-sort of util or helper (right now I&rsquo;m not going to go into whether utils or 
-helpers are, in themselves a smell), in a smaller class that only 
-provides this sort of functionality, or simply a protected method. Or, if 
-you&rsquo;re testing with Groovy, you can access private methods anyway so this 
+to be tested
+it&rsquo;s important enough to be exposed in some way - it might belong in some
+sort of util or helper (right now I&rsquo;m not going to go into whether utils or
+helpers are, in themselves a smell), in a smaller class that only
+provides this sort of functionality, or simply a protected method. Or, if
+you&rsquo;re testing with Groovy, you can access private methods anyway so this
 becomes a moot point (i.e. your testing framework may be limiting you).</p>
-<p>In another story from LMAX, we found we had created methods just for testing. It seemed a 
+<p>In another story from LMAX, we found we had created methods just for testing. It seemed a
 bit wrong to have these methods only available for testing, but later on down
-the line, we needed access to many of these methods In Real Life (well, from 
-our Admin app), so our testing had &ldquo;found&rdquo; a missing feature. When we came 
-to implement it, it was pretty easy as we&rsquo;d already done most of it for 
+the line, we needed access to many of these methods In Real Life (well, from
+our Admin app), so our testing had &ldquo;found&rdquo; a missing feature. When we came
+to implement it, it was pretty easy as we&rsquo;d already done most of it for
 testing.</p>
 <p><strong>My co-workers often point to a lack of end-to-end testing as the reason why
-a lot of bugs get out to production even though they don&rsquo;t have much unit 
-tests nor integration tests. What, in your experience, is a good balance 
+a lot of bugs get out to production even though they don&rsquo;t have much unit
+tests nor integration tests. What, in your experience, is a good balance
 between unit tests, integration tests and end-to-end testing?</strong><br>
 Hmm, sounds to me like &ldquo;lack of tests&rdquo; is your problem!</p>
 <p>This is a big (and contentious!) topic.  [Martin Fowler has written about it]
-(<a href="http://martinfowler.com/bliki/TestPyramid.html),">http://martinfowler.com/bliki/TestPyramid.html),</a> Google wrote something I 
-completely disagree with (so I&rsquo;m not even going to link to it, 
-but you&rsquo;ll find references in the links in this paragraph), and my 
+(<a href="http://martinfowler.com/bliki/TestPyramid.html),">http://martinfowler.com/bliki/TestPyramid.html),</a> Google wrote something I
+completely disagree with (so I&rsquo;m not even going to link to it,
+but you&rsquo;ll find references in the links in this paragraph), and my
 ex-colleague Adrian [talks about what we, at LMAX, meant by end-to-end tests]
-(<a href="https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/)">https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/)</a>. I 
+(<a href="https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/)">https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/)</a>. I
 hope that&rsquo;s enough to get you started, there&rsquo;s plenty more out there too.</p>
 <p><strong>How did you go about getting buy in from the team to use Spock?</strong><br>
-I cover this in 
-<a href="/presentation/groovy_vs_java">my other presentation on the topic</a> - the 
-short version is, I did a week-long spike to investigate whether Spock would 
-make testing easier for us, showed the pros and cons to the whole team, and 
-then led by example writing tests that (I thought) were more readable than 
-what we had before and, probably most importantly, much easier to write than 
-what we were previously doing. I basically got buy-in by showing how much 
-easier it was for us to use the tool than even JUnit (which we were all 
-familiar with). It did help that we were already using Gradle, so we already 
+I cover this in
+<a href="/presentation/groovy_vs_java">my other presentation on the topic</a> - the
+short version is, I did a week-long spike to investigate whether Spock would
+make testing easier for us, showed the pros and cons to the whole team, and
+then led by example writing tests that (I thought) were more readable than
+what we had before and, probably most importantly, much easier to write than
+what we were previously doing. I basically got buy-in by showing how much
+easier it was for us to use the tool than even JUnit (which we were all
+familiar with). It did help that we were already using Gradle, so we already
 had a development dependency on Groovy. It also helped that adding Spock made
 no changes to the dependencies of the final Jar, which was very important.</p>
 <p>Over time, further buy-in (certainly from management) came when the new tests
 started catching more errors - usually regressions in our code or regressions in
 the server&rsquo;s overnight builds. I don&rsquo;t think it was Spock specifically
-that caught more problems - I think it was writing more tests, and 
+that caught more problems - I think it was writing more tests, and
 better tests, that caught the issues.</p>
 <p><strong>Can we do data driven style tests in frameworks like junit or cucumber?</strong><br>
 I don&rsquo;t think you can in JUnit (although maybe there&rsquo;s something out there). I
-believe someone told me you can do it in 
+believe someone told me you can do it in
 <a href="http://testng.org/doc/index.html">TestNG</a>.</p>
-<p><strong>Are there drawbacks to having tests that only run in ci? I.e I have Java 8 
+<p><strong>Are there drawbacks to having tests that only run in ci? I.e I have Java 8
 on my machine, but the test requires Java 7</strong><br>
-Yes, definitely - the drawback is Time.  You have to commit your code to a 
-branch that is being checked by CI and wait for CI to finish before you find 
+Yes, definitely - the drawback is Time.  You have to commit your code to a
+branch that is being checked by CI and wait for CI to finish before you find
 the error.</p>
-<p>In practice, we found very little that was different between Java 
-7 and 8, for example, but this is a valid concern (otherwise you wouldn&rsquo;t be 
+<p>In practice, we found very little that was different between Java
+7 and 8, for example, but this is a valid concern (otherwise you wouldn&rsquo;t be
 testing a complex matrix of dependencies at all).</p>
-<p>In our case, our Java 6 driver used Netty for async capabilities, as the 
-stuff we were using from Java 7 wasn&rsquo;t available. This was clearly a 
-different code path that wasn&rsquo;t tested by us locally as we were all running 
-Java 8. Probably more importantly for us is we were testing against at least 
-3 different major versions of the server, which all supported different 
-features (and had different APIs).  I would often find I&rsquo;d broken the tests 
-for version 2.2 as I&rsquo;d only been running it on 2.6, and had forgotten to 
-either turn off the new tests for the old server versions, or didn&rsquo;t realise 
+<p>In our case, our Java 6 driver used Netty for async capabilities, as the
+stuff we were using from Java 7 wasn&rsquo;t available. This was clearly a
+different code path that wasn&rsquo;t tested by us locally as we were all running
+Java 8. Probably more importantly for us is we were testing against at least
+3 different major versions of the server, which all supported different
+features (and had different APIs).  I would often find I&rsquo;d broken the tests
+for version 2.2 as I&rsquo;d only been running it on 2.6, and had forgotten to
+either turn off the new tests for the old server versions, or didn&rsquo;t realise
 the new functionality wouldn&rsquo;t work there.</p>
-<p>So the main drawback is time - it takes a lot longer to find out about these 
+<p>So the main drawback is time - it takes a lot longer to find out about these
 errors.  There are a few ways to get around this:</p>
 <ul>
 <li>Commit often!! And to a branch that&rsquo;s actually going to be run by CI</li>
-<li>Make your build as fast as possible, so you get failures fast (you 
+<li>Make your build as fast as possible, so you get failures fast (you
 should be doing this anyway)</li>
 <li>You could set up virtual machines locally or somewhere cloudy to run these
-configurations before committing, but that sounds kinda painful (and to my 
+configurations before committing, but that sounds kinda painful (and to my
 mind defeats a lot of the point of CI).</li>
-<li>I set up Travis on my fork of the project, so I could have that running a 
-different version of Java and MongoDB when I committed to my own fork - I&rsquo;d 
+<li>I set up Travis on my fork of the project, so I could have that running a
+different version of Java and MongoDB when I committed to my own fork - I&rsquo;d
 be able to see some errors before they made it into the &ldquo;real&rdquo; project.</li>
-<li>If you can, you probably want these specific tests run first so they can 
-fail fast. E.g. if you&rsquo;re running a Java 6 &amp; MongoDB 2.2 configuration on 
-CI, run those tests that only work in that environment first.  Would 
-probably need some Gradle magic, and/or might need you to separate these 
-into a different set of folders.  The advantage of this approach though is 
-if you set up some aliases on your local machine you could sanity check 
+<li>If you can, you probably want these specific tests run first so they can
+fail fast. E.g. if you&rsquo;re running a Java 6 &amp; MongoDB 2.2 configuration on
+CI, run those tests that only work in that environment first.  Would
+probably need some Gradle magic, and/or might need you to separate these
+into a different set of folders.  The advantage of this approach though is
+if you set up some aliases on your local machine you could sanity check
 <em>just</em> these special cases before checking in. For example, I had aliases to
-start MongoDB versions/configurations from a single command, and to set 
+start MongoDB versions/configurations from a single command, and to set
 JAVA_HOME to whichever version I wanted.</li>
 </ul>
-<p><strong>Do you have any tips for unit tests that pass on dev machines but not on 
-Jenkins because it&rsquo;s not as powerful as our own machines? E.g. Synchronous 
+<p><strong>Do you have any tips for unit tests that pass on dev machines but not on
+Jenkins because it&rsquo;s not as powerful as our own machines? E.g. Synchronous
 calls timeout on the Jenkins builds intermittently.</strong><br>
 Erk! Yes, not uncommon. No, not really. We had our timeouts set longer than I
-would have liked to prevent these sorts of errors, and they still 
-intermittently failed. You can also set some sort of retry on the test, and 
-get your build system to re-run those that fail to see if they pass later. 
+would have liked to prevent these sorts of errors, and they still
+intermittently failed. You can also set some sort of retry on the test, and
+get your build system to re-run those that fail to see if they pass later.
 It&rsquo;s kinda nasty though.</p>
-<p>At LMAX they were able to take testing seriously enough to <a href="https://www.symphonious.net/2015/06/24/end-to-end-tests-lmax-update/">really invest in 
-their testing 
-architecture</a>, and, of course, this is The Correct Answer. Just 
+<p>At LMAX they were able to take testing seriously enough to <a href="https://www.symphonious.net/2015/06/24/end-to-end-tests-lmax-update/">really invest in
+their testing
+architecture</a>, and, of course, this is The Correct Answer. Just
 often very difficult to sell.</p>
 <p><strong>If you ask where are tests and dev asks if code is correct? And you say yes.
 Then dev asks why you&rsquo;re delaying shipping value, how do you manage that?</strong><br>
@@ -455,120 +455,120 @@ These are my opinions:</p>
 <ul>
 <li>Your code is <em>not</em> complete without tests that show me it&rsquo;s complete.</li>
 <li>Your code might do what you think it&rsquo;s supposed to do right now, but given
-Shared Code Ownership, anyone can come in and change it at any time, you 
-want tests in place to make sure they don&rsquo;t change it to break what you 
+Shared Code Ownership, anyone can come in and change it at any time, you
+want tests in place to make sure they don&rsquo;t change it to break what you
 thought it did</li>
-<li>The tests are not so much to show it works right now, the tests are to 
+<li>The tests are not so much to show it works right now, the tests are to
 show it continues to work in future</li>
-<li>Having automated tests <em>will</em> speed you up in future. You can refactor 
-more safely, you can fix bugs and know almost immediately if you broke 
-something, you can read from the test what the author of the code thought 
+<li>Having automated tests <em>will</em> speed you up in future. You can refactor
+more safely, you can fix bugs and know almost immediately if you broke
+something, you can read from the test what the author of the code thought
 the code should do, getting you up to speed faster.</li>
-<li>You don&rsquo;t know you&rsquo;re shipping value without tests - you&rsquo;re only shipping 
+<li>You don&rsquo;t know you&rsquo;re shipping value without tests - you&rsquo;re only shipping
 code (to be honest, you never know if you&rsquo;re shipping value until much later
 on when you also analyse if people are even using the feature).</li>
 </ul>
 <p>Testing almost never slows you down in the long run. Show me the bits of your
 code base which are poorly tested, and I bet I can show you the bits of your
-code base that frequently have bugs (either because the code is not really 
+code base that frequently have bugs (either because the code is not really
 doing what the author thinks, or because subsequent changes break things in
 subtle ways).</p>
-<p><strong>If you say code is hard to understand and dev asks if you seriously don&rsquo;t 
-understand the code, how do you explain you mean easy to understand without 
+<p><strong>If you say code is hard to understand and dev asks if you seriously don&rsquo;t
+understand the code, how do you explain you mean easy to understand without
 thinking rather than &lsquo;can I compile this in my head&rsquo;?</strong><br>
-I have zero problem with saying &ldquo;I&rsquo;m too stupid to understand this code, and 
-I expect you&rsquo;re much smarter than me for writing it. Can you please write it 
-in a way so that a less smart person like myself won&rsquo;t trample all over your 
+I have zero problem with saying &ldquo;I&rsquo;m too stupid to understand this code, and
+I expect you&rsquo;re much smarter than me for writing it. Can you please write it
+in a way so that a less smart person like myself won&rsquo;t trample all over your
 beautiful code at a later date through lack of understanding?&rdquo;</p>
-<p>By definition, code should be easy to understand by someone who&rsquo;s not the 
+<p>By definition, code should be easy to understand by someone who&rsquo;s not the
 author. If someone who is not the author says the code is hard to understand,
-then the code is hard to understand. This is not negotiable. This is what 
+then the code is hard to understand. This is not negotiable. This is what
 code reviews or pair programming should address.</p>
 <p><strong>What is effective nagging like? (Whether or not you get what you want)</strong><br>
 Mmm, good question. Off the top of my head:</p>
 <ul>
-<li>Don&rsquo;t make the people who are the target of the nagging feel stupid - 
-they&rsquo;ll get defensive. If necessary, take the burden of &ldquo;stupidity&rdquo; on 
+<li>Don&rsquo;t make the people who are the target of the nagging feel stupid -
+they&rsquo;ll get defensive. If necessary, take the burden of &ldquo;stupidity&rdquo; on
 yourself. E.g. &ldquo;I&rsquo;m just not smart enough to be able to tell if this test is
 failing because the test is bad or because the code is bad. Can you walk me
 through it and help me fix it?&rdquo;</li>
-<li>Do <em>at least</em> your fair share of the work, if not more. When I wanted to 
+<li>Do <em>at least</em> your fair share of the work, if not more. When I wanted to
 get the code to a state where we could fail style errors, I fixed 99% of the
-problems, and delegated the handful of remaining ones that I just didn&rsquo;t 
-have the context to fix. In the face of three errors to fix each, the team 
+problems, and delegated the handful of remaining ones that I just didn&rsquo;t
+have the context to fix. In the face of three errors to fix each, the team
 could hardly say &ldquo;no&rdquo; after I&rsquo;d fixed over 6000.</li>
 <li>Explain <em>why</em> things need to be done. Developers are adults and don&rsquo;t want
 to be treated like children. Give them a good reason and they&rsquo;ll follow the
-rules. The few times I didn&rsquo;t have good reasons, I could not get the team 
+rules. The few times I didn&rsquo;t have good reasons, I could not get the team
 to do what I wanted.</li>
-<li>Find carrots and sticks that work.  At LMAX, a short e-mail at the start 
+<li>Find carrots and sticks that work.  At LMAX, a short e-mail at the start
 of the day summarising the errors that had happened overnight, who seemed to
-be responsible, and whether they looked like real errors or 
-intermittencies, was enough to get people to fix their problems<sup>2</sup> - 
-they didn&rsquo;t like to look bad, but they also had enough information to get right 
-on it, they didn&rsquo;t have to wade through all the build info.  On occasion, 
-when people were ignoring this, I&rsquo;d turn up to work with bags of chocolate 
-that I&rsquo;d bought with my own money, offering chocolate bars to anyone who 
-fixed up the tests. I was random with my carrot offerings so people didn&rsquo;t 
+be responsible, and whether they looked like real errors or
+intermittencies, was enough to get people to fix their problems<sup>2</sup> -
+they didn&rsquo;t like to look bad, but they also had enough information to get right
+on it, they didn&rsquo;t have to wade through all the build info.  On occasion,
+when people were ignoring this, I&rsquo;d turn up to work with bags of chocolate
+that I&rsquo;d bought with my own money, offering chocolate bars to anyone who
+fixed up the tests. I was random with my carrot offerings so people didn&rsquo;t
 game the system.</li>
-<li>Give up if it&rsquo;s not working. If you&rsquo;ve tried to phrase the &ldquo;why&rdquo; in a 
-number of ways, if you&rsquo;ve tried to show examples of the benefits, if you&rsquo;ve 
-tried to work the results you want into a process, but it&rsquo;s still not 
-getting done, just accept the fact that this isn&rsquo;t working for the team. 
+<li>Give up if it&rsquo;s not working. If you&rsquo;ve tried to phrase the &ldquo;why&rdquo; in a
+number of ways, if you&rsquo;ve tried to show examples of the benefits, if you&rsquo;ve
+tried to work the results you want into a process, but it&rsquo;s still not
+getting done, just accept the fact that this isn&rsquo;t working for the team.
 Move on to something else, or find a new angle.
 <br/><br/>
 <sup>1</sup> I had a colleague at LMAX who was  working with a hypothesis that
-All Private Methods Were Evil - they were clearly only sharable within 
-single class, so provided no reuse elsewhere, and if you have the same bit 
-of code being called multiple times from within the same class (but it&rsquo;s 
-not valuable elsewhere) then maybe your design is wrong. I&rsquo;m still 
-pondering this specific hypothesis 4 years on, and I admit I see its pros 
+All Private Methods Were Evil - they were clearly only sharable within
+single class, so provided no reuse elsewhere, and if you have the same bit
+of code being called multiple times from within the same class (but it&rsquo;s
+not valuable elsewhere) then maybe your design is wrong. I&rsquo;m still
+pondering this specific hypothesis 4 years on, and I admit I see its pros
 and cons.<br>
 <sup>2</sup> This worked so well that this process was automated by
-one of the guys and turned into a tool called AutoTrish, which as far as I 
-know is still used at LMAX.  Dave Farley talks about it in some of his 
+one of the guys and turned into a tool called AutoTrish, which as far as I
+know is still used at LMAX.  Dave Farley talks about it in some of his
 <a href="https://www.parleys.com/tutorial/continuous-delivery-part-2-2">Continuous Delivery talks</a>.</li>
 </ul>
 <h2 id="resources">Resources</h2>
 <ul>
-<li>My talk that specifically looks at the 
-<a href="presentation/groovy_vs_java/">advantages of Spock over JUnit</a>, plus some 
+<li>My talk that specifically looks at the
+<a href="presentation/groovy_vs_java/">advantages of Spock over JUnit</a>, plus some
 Spock-specific resources.</li>
-<li>I <em>love</em> Jay Fields book 
-<a href="https://leanpub.com/wewut">Working Effectively With Unit Tests</a> - if I 
-could have made the whole team read this before moving to Spock, we might 
+<li>I <em>love</em> Jay Fields book
+<a href="https://leanpub.com/wewut">Working Effectively With Unit Tests</a> - if I
+could have made the whole team read this before moving to Spock, we might
 have stuck with JUnit.</li>
 <li>Go read everything Adrian Sutton has written about testing at LMAX. If not
-everything, definitely <a href="https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/">Abstraction by 
-DSL</a> 
+everything, definitely <a href="https://www.symphonious.net/2015/06/05/testinglmax-abstraction-by-dsl/">Abstraction by
+DSL</a>
 and
 <a href="https://www.symphonious.net/2015/04/30/making-end-to-end-tests-work/">Making End-to-End Tests Work</a></li>
-<li>If you can&rsquo;t make it all the way through Dave Farley and Jez Humble&rsquo;s 
+<li>If you can&rsquo;t make it all the way through Dave Farley and Jez Humble&rsquo;s
 excellent <a href="http://www.amazon
 .com/gp/product/0321601912/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789
 &creative=9325&creativeASIN=0321601912&linkCode=as2&tag=trissramb-20&linkId
-=I7ZAO2TETBFJIPHL">Continuous Delivery book</a>, do take a look at one of 
-Dave&rsquo;s presentations on the subject, for example <a href="http://www.infoq.com/presentations/cd-success">The Rationale for Continuous 
-Delivery</a> or <a href="http://www.infoq.com/presentations/technology-practice-continuous-delivery">The Process, 
-Technology and Practice of Continuous 
-Delivery</a> - my own talk was 
-around testing, but I&rsquo;m working off the assumption that you&rsquo;re <em>at least</em> 
+=I7ZAO2TETBFJIPHL">Continuous Delivery book</a>, do take a look at one of
+Dave&rsquo;s presentations on the subject, for example <a href="http://www.infoq.com/presentations/cd-success">The Rationale for Continuous
+Delivery</a> or <a href="http://www.infoq.com/presentations/technology-practice-continuous-delivery">The Process,
+Technology and Practice of Continuous
+Delivery</a> - my own talk was
+around testing, but I&rsquo;m working off the assumption that you&rsquo;re <em>at least</em>
 running some sort of Continuous Integration, if not Continuous Delivery.</li>
-<li>Martin Fowler has loads of <a href="http://martinfowler.com/tags/testing.html">interesting and useful articles on 
+<li>Martin Fowler has loads of <a href="http://martinfowler.com/tags/testing.html">interesting and useful articles on
 testing</a>.</li>
 </ul>
 <hr>
 <h2 id="abstract">Abstract</h2>
-<p><i>What can you do to help developers a) write tests b) write meaningful tests 
+<p><i>What can you do to help developers a) write tests b) write meaningful tests
 and c) write readable tests?</p>
-<p>Trisha will talk about her experiences of working in a team that wanted to 
-build quality into their new software version without a painful overhead - 
-without a QA / Testing team, without putting in place any formal processes, 
+<p>Trisha will talk about her experiences of working in a team that wanted to
+build quality into their new software version without a painful overhead -
+without a QA / Testing team, without putting in place any formal processes,
 without slavishly improving the coverage percentage.</p>
-<p>The team had been writing automated tests and running them in a continuous 
+<p>The team had been writing automated tests and running them in a continuous
 integration environment, but they were simply writing tests as another tick
-box to check, there to verify the developer had done what the developer had 
-aimed to do. The team needed to move to a model where tests provided more 
+box to check, there to verify the developer had done what the developer had
+aimed to do. The team needed to move to a model where tests provided more
 than this. The tests needed to:</p>
 <ul>
 <li>Demonstrate that the library code was meeting the requirements</li>
@@ -576,11 +576,11 @@ than this. The tests needed to:</p>
 <li>Provide enough coverage so a developer could confidently refactor the code</li>
 </ul>
 <p>This talk will cover how the team selected a new testing framework (Spock, a
-framework written in Groovy that can be used to test JVM code) to aid with 
+framework written in Groovy that can be used to test JVM code) to aid with
 this effort, and how they evaluated whether this tool would meet the team’s
-needs. And now, two years after starting to use Spock, Trisha can talk 
+needs. And now, two years after starting to use Spock, Trisha can talk
 about how both the tool and the shift in the focus of the purpose of tests
-has affected the quality of the code. And, interestingly, the happiness 
+has affected the quality of the code. And, interestingly, the happiness
 of the developers.</i></p><ul class="pa0">
   
    <li class="list">
