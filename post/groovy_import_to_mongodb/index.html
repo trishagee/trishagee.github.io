@@ -46,7 +46,7 @@ Due to the time pressures in the demo, I never really get a chance to go into th
 Due to the time pressures in the demo, I never really get a chance to go into the details of the script I use, so the aim of this long-overdue blog post is to go over this Groovy script in a bit more detail.">
 <meta itemprop="datePublished" content="2014-10-07T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2014-10-07T00:00:00+00:00" />
-<meta itemprop="wordCount" content="1377">
+<meta itemprop="wordCount" content="1311">
 
 
 
@@ -235,7 +235,7 @@ if (!doNotTrack) {
 <li>Make sure MongoDB knows this contains query-able geolocation data.</li>
 </ul>
 <p>The script is <a href="https://github.com/trishagee/cafelito/blob/java-one/src/main/scripts/PopulateDatabase.groovy">PopulateDatabase.groovy</a>, that link will take you to the version I presented at JavaOne:</p>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript.png" alt="PopulateDatabase.groovy" title="PopulateDatabase.groovy"></p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript.png" alt="PopulateDatabase.groovy" title="PopulateDatabase.groovy"></p>
 <h3 id="firstly-we-need-data">Firstly, we need data</h3>
 <p>I used the same service Ross used in his blog post to obtain the XML file containing &ldquo;all&rdquo; coffee shops around the world. Now, the open street map data is somewhat&hellip; raw and unstructured (which is why MongoDB is such a great tool for storing it), so I&rsquo;m not sure I really have <em>all</em> the coffee shops, but I obtained enough data for an interesting demo using</p>
 <pre><code>http://www.overpass-api.de/api/xapi?*[amenity=cafe][cuisine=coffee_shop]
@@ -251,7 +251,7 @@ if (!doNotTrack) {
     <span style="color:#f92672">&lt;/node&gt;</span>
 </code></pre></div><p>Each coffee shop has a unique identifier and a latitude and longitude as attributes of a <code>node</code> element.  Within this node is a series of <code>tag</code> elements, all with <code>k</code> and <code>v</code> attributes. Each coffee shop has a varying number of these attributes, and they are not consistent from shop to shop (other than <code>amenity</code> and <code>cuisine</code> which we used to select this data).</p>
 <h3 id="initialisation">Initialisation</h3>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript1.png" alt="Script Initialisation" title="Script Initialisation"></p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript1.png" alt="Script Initialisation" title="Script Initialisation"></p>
 <p>Before doing anything else we want to prepare the database.  The assumption of this script is that either the collection we want to store the coffee shops in is empty, or full of stale data.  So we&rsquo;re going to use the <a href="http://docs.mongodb.org/ecosystem/drivers/java/">MongoDB Java Driver</a> to get the collection that we&rsquo;re interested in, and then drop it.</p>
 <p>There&rsquo;s two interesting things to note here:</p>
 <ul>
@@ -260,32 +260,27 @@ if (!doNotTrack) {
 </ul>
 <p>In this example, we&rsquo;re just using the default constructor for the <code>MongoClient</code>, the class that represents the connection to the database server(s).  This default is localhost:27017, which is where I happen to be running the database.  However you can specify your own address and port - for more details on this see <a href="http://blog.mongodb.org/post/94065240033/getting-started-with-mongodb-and-java-part-i">Getting Started With MongoDB and Java</a>.</p>
 <h3 id="turn-the-xml-into-something-mongodb-shaped">Turn the XML into something MongoDB-shaped</h3>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript2.png" alt="Parse & Transform XML" title="Parse &amp; Transform XML"></p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript2.png" alt="Parse & Transform XML" title="Parse &amp; Transform XML"></p>
 <p>So next we&rsquo;re going to use Groovy&rsquo;s <a href="http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html">XmlSlurper</a> to read the open street map XML data that we talked about earlier.  To iterate over every node we use: <code>xmlSlurper.node.each</code>.  For those of you who are new to Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &ldquo;node&rdquo; element in the XML.</p>
 <h2 id="create-geojson">Create GeoJSON</h2>
-<p>So next we&rsquo;re going to use Groovy&rsquo;s <a href="http://groovy.codehaus.org/api/groovy/util/XmlSlurper.html">XmlSlurper</a> to read the open street map
-XML data that we talked about earlier.  To iterate over every node we use: <code>xmlSlurper.node.each</code>.  For those of you who are new to
-Groovy or new to Java 8, you might notice this is using a closure to define the behaviour to apply for every &ldquo;node&rdquo; element in the XML.</p>
-<h4 id="create-geojson-1">Create GeoJSON</h4>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript3.png" alt="Create GeoJSON" title="Create GeoJSON"></p>
-<p>Since MongoDB documents are effectively just maps of key-value pairs, we&rsquo;re going to create a Map <code>coffeeShop</code> that contains the document structure that represents the coffee shop that we want to save into the database.  Firstly, we initialise this map with the attributes of the <code>node</code>. Remember these attributes are something like:</p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript3.png" alt="Create GeoJSON" title="Create GeoJSON"> Since MongoDB documents are effectively just maps of key-value pairs, we&rsquo;re going to create a Map <code>coffeeShop</code> that contains the document structure that represents the coffee shop that we want to save into the database.  Firstly, we initialise this map with the attributes of the <code>node</code>. Remember these attributes are something like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml">    <span style="color:#f92672">&lt;node</span> <span style="color:#a6e22e">id=</span><span style="color:#e6db74">&#34;18464077&#34;</span> <span style="color:#a6e22e">lat=</span><span style="color:#e6db74">&#34;-33.8911183&#34;</span> <span style="color:#a6e22e">lon=</span><span style="color:#e6db74">&#34;151.1958773&#34;</span><span style="color:#f92672">&gt;</span>
 </code></pre></div><p>We&rsquo;re going to save the ID as a value for a new field called <code>openStreetMapId</code>. We need to do something a bit more complicated with the latitude and longitude, since we need to store them as GeoJSON, which looks something like:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    { <span style="color:#960050;background-color:#1e0010">&#39;location&#39;</span> <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">{</span> <span style="color:#960050;background-color:#1e0010">&#39;coordinates&#39;:</span> <span style="color:#960050;background-color:#1e0010">[&lt;longitude&gt;,</span> <span style="color:#960050;background-color:#1e0010">&lt;latitude&gt;],</span>
                      <span style="color:#960050;background-color:#1e0010">&#39;type&#39;</span>       <span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#960050;background-color:#1e0010">&#39;Point&#39;</span> } <span style="color:#960050;background-color:#1e0010">}</span>
 </code></pre></div><p>In lines 12-14 you can see that we create a <code>Map</code> that looks like the GeoJSON, pulling the <code>lat</code> and <code>lon</code> attributes into the appropriate places.</p>
 <h2 id="insert-remaining-fields">Insert Remaining Fields</h2>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript4.png" alt="Insert Remaining Fields" title="Insert Remaining Fields"></p>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript5.png" alt="Validate Field Name" title="Validate Field Name"></p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript4.png" alt="Insert Remaining Fields" title="Insert Remaining Fields"></p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript5.png" alt="Validate Field Name" title="Validate Field Name"></p>
 <p>Now for every <code>tag</code> element in the XML, we get the <code>k</code> attribute and check if it&rsquo;s a valid field name for MongoDB (it won&rsquo;t let us insert fields with a dot in, and we don&rsquo;t want to override our carefully constructed <code>location</code> field). If so we simply add this key as the field and its the matching <code>v</code> attribute as the value into the map. This effectively copies the <a href="http://www.openstreetmap.org/">OpenStreetMap</a> key/value data into key/value pairs in the MongoDB document so we don&rsquo;t lose any data, but we also don&rsquo;t do anything particularly interesting to transform it.</p>
 <h2 id="save-into-mongodb">Save Into MongoDB</h2>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript6.png" alt="Save Into MongoDB" title="Save Into MongoDB"></p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript6.png" alt="Save Into MongoDB" title="Save Into MongoDB"></p>
 <p>Finally, once we&rsquo;ve created a simple <code>coffeeShop</code> Map representing the document we want to save into MongoDB, we insert it into MongoDB if the map has a field called <code>name</code>.  We could have checked this when we were reading the XML and putting it into the map, but it&rsquo;s actually much easier just to use the pretty Groovy syntax to check for a key called <code>name</code> in <code>coffeeShop</code>.</p>
 <p>When we want to insert the Map we need to turn this into a <code>BasicDBObject</code>, the Java Driver&rsquo;s document type, but this is easily done by calling the constructor that takes a Map.  Alternatively, there&rsquo;s a Groovy syntax which would effectively do the same thing, which you might prefer:</p>
 <pre><code>collection.insert(coffeeShop as BasicDBObject)
 </code></pre>
 <h3 id="tell-mongodb-that-we-want-to-perform-geo-queries-on-this-data">Tell MongoDB that we want to perform Geo queries on this data</h3>
-<p><img src="/static/images/groovy_import_to_mongodb/GroovyScript7.png" alt="Add Geo Index" title="Add Geo Index"></p>
+<p><img src="http://trishagee.com/wp-content/uploads/2020/12/GroovyScript7.png" alt="Add Geo Index" title="Add Geo Index"></p>
 <p>Because we&rsquo;re going to do a <a href="http://docs.mongodb.org/manual/reference/operator/query/nearSphere/">nearSphere</a> query on this data, we need to add a &ldquo;2dsphere&rdquo; index on our location field. We created the <code>location</code> field as GeoJSON, so all we need to do is call <code>createIndex</code> for this field.</p>
 <h3 id="conclusion">Conclusion</h3>
 <p>So that&rsquo;s it!  Groovy is a nice tool for this sort of script-y thing - not only is it a scripting language, but its built-in support for XML, really nice Map syntax and support for closures makes it the perfect tool for iterating over XML data and transforming it into something that can be inserted into a MongoDB collection.</p>

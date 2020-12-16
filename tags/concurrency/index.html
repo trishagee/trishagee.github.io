@@ -191,7 +191,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&rsquo;s Guide to Hardcore Concurrency. This was a preview of the talk we&rsquo;ll be doing at JAX London on the 2nd November.
+      Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&rsquo;s Guide to Hardcore Concurrency. This was a preview of the talk we&rsquo;ll be doing at JAX London on the 2nd November.
 A video of the session is available, as are the slides. I promise not to say &ldquo;so&rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?
     </div>
   </div>
@@ -280,9 +280,10 @@ These questions do go hand in hand, however, because I can&rsquo;t talk about wh
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      So now I&rsquo;ve covered the ring buffer itself, reading from it and writing to it.
-Logically the next thing to do is to wire everything up together.
-I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&rsquo;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
+      <p>So now I&rsquo;ve covered the <a href="https://trishagee.com/2011/06/22/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/">ring buffer</a> itself, <a href="https://trishagee.com/2011/06/28/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/">reading</a> from it and <a href="https://trishagee.com/2011/07/04/dissecting_the_disruptor_writing_to_the_ring_buffer/">writing</a> to it.</p>
+<p>Logically the next thing to do is to wire everything up together.</p>
+<p>I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&rsquo;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. <a href="http://www.lmaxtrader.co.uk/">We&rsquo;ve</a> done some clever stuff to allow the consumers to be dependent on each other and the ring buffer. Like a lot of applications, we have a pipeline of things that need to happen before we can actually get on with the business logic - for example, we need to make sure the messages have been journalled to disk before we can do anything.</p>
+<p>The <a href="https://lmax-exchange.github.io/disruptor/files/Disruptor-1.0.pdf">Disruptor paper</a> and the performance tests cover some basic configurations that you might want. I&rsquo;m going to go over the most interesting one, mostly because I needed the practice with the graphics tablet.</p>
     </div>
   </div>
 </div>
@@ -299,10 +300,8 @@ I talked about multiple producers - they have the producer barrier to keep them 
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.
-The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
-ProducerBarriers
-The Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.
+      <p>This is the missing piece in the end-to-end view of the Disruptor. Brace yourselves, it&rsquo;s quite long. But I decided to keep it in a single blog so you could have the context in one place.</p>
+<p>The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.</p>
     </div>
   </div>
 </div>
@@ -319,10 +318,8 @@ The Disruptor code has interfaces and helper classes for the Consumers, but ther
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      The next in the series of understanding the Disruptor pattern developed at LMAX.
-After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.
-ConsumerBarriers and Consumers
-I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
+      <p>The next in the series of understanding <a href="https://github.com/LMAX-Exchange/disruptor">the Disruptor pattern</a> developed at <a href="http://www.lmaxtrader.com/">LMAX</a>.</p>
+<p>After the <a href="https://trishagee.com/2011/06/22/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/">last post</a> we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.</p>
     </div>
   </div>
 </div>

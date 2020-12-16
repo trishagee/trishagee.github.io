@@ -24,8 +24,7 @@ this page should list my confirmed upcoming events.&lt;/p&gt;
       <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/abstracts/</guid>
-      <description>&lt;p&gt;This page contains my bio, a link to a photo, and a selection of talk titles and abstracts. For conferences that are
-interested in having me present, these are generally the talks you might want to pick from.&lt;/p&gt;</description>
+      <description>&lt;p&gt;This is a selection of talks and their abstracts. For conferences that are interested in having me present, these are generally the talks I&amp;rsquo;m available to give.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -92,7 +91,7 @@ I thought I would pass the information on.&lt;/p&gt;</description>
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
-      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency. This was a preview of the talk we&amp;rsquo;ll be doing at JAX London on the 2nd November.
+      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency. This was a preview of the talk we&amp;rsquo;ll be doing at JAX London on the 2nd November.
 A video of the session is available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
     </item>
     
@@ -102,8 +101,8 @@ A video of the session is available, as are the slides. I promise not to say &am
       <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_public_appearance/</guid>
-      <description>I&amp;rsquo;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&amp;rsquo;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&amp;rsquo;s post gives a little more background on the subject.
-Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.</description>
+      <description>I&amp;rsquo;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&amp;rsquo;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&amp;rsquo;s post gives a little more background on the subject.
+Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.</description>
     </item>
     
   </channel>

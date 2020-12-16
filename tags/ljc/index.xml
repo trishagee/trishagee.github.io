@@ -79,9 +79,7 @@ It&amp;rsquo;s very nice to be back at JavaOne. Last year it was my first opport
       <pubDate>Wed, 21 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/new_disruptor_presentation_unveiled_to_the_ljc/</guid>
-      <description>A few weeks ago, I presented my new &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; talk to the London Java Community. Since it was very kindly hosted at Skillsmatter, there is a video of the presentation available, and the slides are below.
-Concurrent Programming Using the Disruptor  View more presentations from Trisha Gee  
-The presentation is a little different to the ones we&amp;rsquo;ve done before. Previously we&amp;rsquo;ve gone into how it works and why it&amp;rsquo;s fast.</description>
+      <description>&lt;p&gt;A few weeks ago, I presented my new &amp;ldquo;User&amp;rsquo;s Guide to the Disruptor&amp;rdquo; talk to the &lt;a href=&#34;http://londonjavacommunity.co.uk/&#34;&gt;London Java Community&lt;/a&gt;. Since it was very kindly hosted at Skillsmatter, there is a &lt;a href=&#34;http://skillsmatter.com/podcast/home/the-disruptor/js-3798&#34;&gt;video of the presentation&lt;/a&gt; available, and the slides are below.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -90,8 +88,7 @@ The presentation is a little different to the ones we&amp;rsquo;ve done before. 
       <pubDate>Mon, 28 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/london_java_community_open_conference/</guid>
-      <description>Saturday was, hopefully, my last conference of the year. My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.
-Who wants to propose a session?In many ways the London Java Community Open Conference was my favourite one so far, and not just because it&amp;rsquo;s near home and I helped to organise it.</description>
+      <description>&lt;p&gt;Saturday was, hopefully, my last conference of the year.  My lucky readers should start to see some posts which are not simply me gushing about another opportunity to hang out with awesome people and learn about interesting &amp;ldquo;stuff&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -119,7 +116,7 @@ My purpose for attending was largely to present the Hardcore Concurrency for Beg
       <pubDate>Fri, 21 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/mike_and_i_debut_our_new_disruptor_presentation/</guid>
-      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency. This was a preview of the talk we&amp;rsquo;ll be doing at JAX London on the 2nd November.
+      <description>Last Tuesday Mike and I unveiled our brand shiny new presentation: Understanding the Disruptor, a Beginner&amp;rsquo;s Guide to Hardcore Concurrency. This was a preview of the talk we&amp;rsquo;ll be doing at JAX London on the 2nd November.
 A video of the session is available, as are the slides. I promise not to say &amp;ldquo;so&amp;rdquo; anywhere near as many times when I repeat my performance at JAX (is there anything more painful than watching yourself on video?</description>
     </item>
     
@@ -129,9 +126,8 @@ A video of the session is available, as are the slides. I promise not to say &am
       <pubDate>Wed, 12 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/javaone_2011_roundup/</guid>
-      <description>Having been back in London for a few days I&amp;rsquo;ve had some time to digest the madness that was last week.
-My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&amp;rsquo;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my last post):
-First and foremost, the people. I don&amp;rsquo;t remember meeting a single grumpy person.</description>
+      <description>&lt;p&gt;Having been back in London for a few days I&amp;rsquo;ve had some time to digest the madness that was last week.&lt;/p&gt;
+&lt;p&gt;My lasting impression of JavaOne is almost entirely positive. Granted, it was my first major conference, so maybe I&amp;rsquo;m just not jaded yet. But let me tell you what I loved about it (yes, I did cover some of these in my &lt;a href=&#34;https://trishagee.com/2011/10/04/javaone_initial_observations/&#34;&gt;last post&lt;/a&gt;):&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -172,8 +168,8 @@ However, the London Java Community did! So if you have a second please vote for 
       <pubDate>Mon, 30 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/my_first_public_appearance/</guid>
-      <description>I&amp;rsquo;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&amp;rsquo;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&amp;rsquo;s post gives a little more background on the subject.
-Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.</description>
+      <description>I&amp;rsquo;m finally moving up from working behind the scenes to actually doing a (short) presentation for the LJC. I&amp;rsquo;m going to be giving a lightning talk on Wednesday at the AWS Elastic Beanstalk event, on the JCP - what it is and what our election to the executive committee means. Ben and Martin&amp;rsquo;s post gives a little more background on the subject.
+Another LMAX LJC member Mike will also be giving a lightning talk, on Project Coin.</description>
     </item>
     
     <item>
@@ -183,7 +179,7 @@ Another LMAX LJC member Mike will also be giving a lightning talk, on Project C
       
       <guid>https://trishagee.github.io/post/getting_around_a_bit/</guid>
       <description>I&amp;rsquo;m honoured to now be listed on three aggregated blog feeds:
-The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&amp;rsquo;s on to try and write useful stuff. Oh OK, I&amp;rsquo;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
+ The new and somewhat embryonic blogs.lmax.com. The London Java Community Aggrity. ThoughtWorks Alumni, along with a whole host of distinguished names.  The pressure&amp;rsquo;s on to try and write useful stuff. Oh OK, I&amp;rsquo;ll settle for &amp;ldquo;entertaining&amp;rdquo;.</description>
     </item>
     
     <item>

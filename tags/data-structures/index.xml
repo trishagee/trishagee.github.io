@@ -13,8 +13,10 @@
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&amp;rsquo;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&amp;rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
-On the site you can download a technical article explaining what the Disruptor is and why it&amp;rsquo;s so clever and fast.</description>
+      <description>&lt;p&gt;Recently we open sourced the &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;LMAX Disruptor&lt;/a&gt;, the key to what makes our exchange so fast.  Why did we open source it?  Well, we&amp;rsquo;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&amp;rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world.  Plus it makes us look dead clever.&lt;/p&gt;
+&lt;p&gt;On the site you can &lt;a href=&#34;https://lmax-exchange.github.io/disruptor/files/Disruptor-1.0.pdf&#34;&gt;download a technical article&lt;/a&gt; explaining what the Disruptor is and why it&amp;rsquo;s so clever and fast.  I even get a writing credit on it, which is gratifying when all I really did is insert commas and re-phrase sentences I didn&amp;rsquo;t understand.&lt;/p&gt;
+&lt;p&gt;However, I find the whole thing a bit much to digest all at once, so I&amp;rsquo;m going to explain it in smaller pieces, as suits my &lt;a href=&#34;http://www.randsinrepose.com/archives/2003/07/10/nadd.html&#34;&gt;NADD&lt;/a&gt; audience.&lt;/p&gt;
+&lt;p&gt;First up - the ring buffer.  Initially I was under the impression the Disruptor was just the ring buffer.  But I&amp;rsquo;ve come to realise that while this data structure is at the heart of the pattern, the clever bit about the Disruptor is controlling access to it.&lt;/p&gt;</description>
     </item>
     
   </channel>

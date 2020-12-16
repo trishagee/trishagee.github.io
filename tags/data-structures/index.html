@@ -191,8 +191,10 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
-On the site you can download a technical article explaining what the Disruptor is and why it&rsquo;s so clever and fast.
+      <p>Recently we open sourced the <a href="https://github.com/LMAX-Exchange/disruptor">LMAX Disruptor</a>, the key to what makes our exchange so fast.  Why did we open source it?  Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world.  Plus it makes us look dead clever.</p>
+<p>On the site you can <a href="https://lmax-exchange.github.io/disruptor/files/Disruptor-1.0.pdf">download a technical article</a> explaining what the Disruptor is and why it&rsquo;s so clever and fast.  I even get a writing credit on it, which is gratifying when all I really did is insert commas and re-phrase sentences I didn&rsquo;t understand.</p>
+<p>However, I find the whole thing a bit much to digest all at once, so I&rsquo;m going to explain it in smaller pieces, as suits my <a href="http://www.randsinrepose.com/archives/2003/07/10/nadd.html">NADD</a> audience.</p>
+<p>First up - the ring buffer.  Initially I was under the impression the Disruptor was just the ring buffer.  But I&rsquo;ve come to realise that while this data structure is at the heart of the pattern, the clever bit about the Disruptor is controlling access to it.</p>
     </div>
   </div>
 </div>

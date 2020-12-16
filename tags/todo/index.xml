@@ -13,8 +13,7 @@
       <pubDate>Fri, 23 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/agile_infection_growing/</guid>
-      <description>This is a bloody good idea.
-It builds upon my own Virgoen tendancies to write lists and tick things off, but what the list model lacks is the &amp;ldquo;in progress&amp;rdquo; state. Plus occasionally my lists get confused. See today&amp;rsquo;s notebook page:ThursdayFix bugs in Test DirectorMerge fixes upDo buildMerge downRead terms of contractE-mail solicitorGo to Robert DyasOrder DAB RadioFinish business analysis docsCarry on with QCon note consolidationHow do I know which ones I&amp;rsquo;ve started?</description>
+      <description>&lt;p&gt;&lt;a href=&#34;http://mikemason.ca/2007/03/21/#20070321CardInfected&#34;&gt;This is a bloody good idea&lt;/a&gt;. It builds upon my own Virgoen tendancies to write lists and tick things off, but what the list model lacks is the &amp;ldquo;in progress&amp;rdquo; state.  Plus occasionally my lists get confused.  See today&amp;rsquo;s notebook page:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -23,7 +22,8 @@ It builds upon my own Virgoen tendancies to write lists and tick things off, but
       <pubDate>Tue, 20 Mar 2007 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/qcon_todo_list_inspired_by_the_conference/</guid>
-      <description>Investigate Maven 2Have a glance at TestNGPotentially play with JMock for current testing frameworkPlay with GWTSign up for Pragmatic Architect eventCheck out JavaBlackBelt site - what is provided, and what are the feelings of professionals (or, more importantly, recruiters) towards these qualifications?Look into getting Visual Studio .NET again so you can have a go at GUI development in it.Go to technorati. Investigate JUnit 4 changes/improvements </description>
+      <description>(Updated 15 Dec 2020 with correct completed status!)
+ Investigate Maven 2 for builds Have a glance at TestNG unit testing (completed 2013) Potentially play with JMock for current testing framework (completed ~2009) Play with GWT. (completed 2009-2013) Sign up for Pragmatic Architect event Check out JavaBlackBelt site - what is provided, and what are the feelings of professionals (or, more importantly, recruiters) towards these qualifications? Look into getting Visual Studio .</description>
     </item>
     
   </channel>

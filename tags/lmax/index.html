@@ -244,8 +244,7 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I&rsquo;m late with my write-up of QCon, and what&rsquo;s worse, it will be partial - &ldquo;sadly&rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine….
-Firstly, me me meI presented the talk I previewed at Skillsmatter the previous week, something I was calling the User&rsquo;s Guide to the Disruptor, but actually turned out to be how-can-Trish-fill-95-slides-with-pictures-and-finish-in-under-40-minutes.
+      <p>I&rsquo;m late with my write-up of <a href="http://qconlondon.com/london-2012/">QCon</a>, and what&rsquo;s worse, it will be partial - &ldquo;sadly&rdquo; I was in Lanzarote on a training week with the running club from the Thursday (8th) so I missed most of it. A sacrifice I had to make for 7 days in the sunshine&hellip;</p>
     </div>
   </div>
 </div>
@@ -262,8 +261,7 @@ Firstly, me me meI presented the talk I previewed at Skillsmatter the previous w
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      <p>When you&rsquo;re applying for a job at <a href="http://www.lmax.com/">LMAX</a>, your CV (or résumé, for our American readers) usually comes through me and I decide whether
-to call you for a technical phone screen.</p>
+      <p>When you&rsquo;re applying for a job at <a href="http://www.lmax.com/">LMAX</a>, your CV (or résumé, for our American readers) usually comes through me and I decide whether to call you for a technical phone screen.</p>
 <p>I&rsquo;m going to let you into a secret.</p>
     </div>
   </div>
@@ -304,8 +302,8 @@ Kim eloquently describes what her situation is as Product Manager and the criter
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      So I&rsquo;ve been at JavaOne for the better part of three days, it&rsquo;s time to record some of my observations so far:
-The wireless access is rubbish.&lt;Gross generalisation&gt; technical people are not natural public speakers. Makes me feel better about the presentations I&rsquo;m going to be giving (see A Beginner&rsquo;s Guide to Hardcore Concurrency).The sessions are less useful than getting out and chatting. I&rsquo;ve had a really excellent time, I&rsquo;ve met: people from other Java User Groups; the Duchess girls; other Duke Award winners; the Azul guys; guys (well, girls) from O&rsquo;Reilly books; JCP members and many random and awesome people.
+      <p><em>Here&rsquo;s a photo of me representing <a href="http://www.lmaxtrader.co.uk/">LMAX</a> as I pick up the <a href="http://java.com/en/dukeschoice/index.jsp">Duke Award</a> we won for the <a href="https://lmax-exchange.github.io/disruptor/">Disruptor</a> (Thanks to <a href="http://martijnverburg.blogspot.com/">Martijn</a> for taking the photo)</em></p>
+<p>So I&rsquo;ve been at JavaOne for the better part of three days, it&rsquo;s time to record some of my observations so far:</p>
     </div>
   </div>
 </div>
@@ -395,9 +393,10 @@ These questions do go hand in hand, however, because I can&rsquo;t talk about wh
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      So now I&rsquo;ve covered the ring buffer itself, reading from it and writing to it.
-Logically the next thing to do is to wire everything up together.
-I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&rsquo;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.
+      <p>So now I&rsquo;ve covered the <a href="https://trishagee.com/2011/06/22/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/">ring buffer</a> itself, <a href="https://trishagee.com/2011/06/28/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/">reading</a> from it and <a href="https://trishagee.com/2011/07/04/dissecting_the_disruptor_writing_to_the_ring_buffer/">writing</a> to it.</p>
+<p>Logically the next thing to do is to wire everything up together.</p>
+<p>I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&rsquo;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. <a href="http://www.lmaxtrader.co.uk/">We&rsquo;ve</a> done some clever stuff to allow the consumers to be dependent on each other and the ring buffer. Like a lot of applications, we have a pipeline of things that need to happen before we can actually get on with the business logic - for example, we need to make sure the messages have been journalled to disk before we can do anything.</p>
+<p>The <a href="https://lmax-exchange.github.io/disruptor/files/Disruptor-1.0.pdf">Disruptor paper</a> and the performance tests cover some basic configurations that you might want. I&rsquo;m going to go over the most interesting one, mostly because I needed the practice with the graphics tablet.</p>
     </div>
   </div>
 </div>
@@ -414,10 +413,8 @@ I talked about multiple producers - they have the producer barrier to keep them 
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      This is the missing piece in the end-to-end view of the Disruptor. &nbsp;Brace yourselves, it's quite long. &nbsp;But I decided to keep it in a single blog so you could have the context in one place.
-The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
-ProducerBarriers
-The Disruptor code has interfaces and helper classes for the Consumers, but there's no interface for your producer, the thing that writes to the ring buffer.
+      <p>This is the missing piece in the end-to-end view of the Disruptor. Brace yourselves, it&rsquo;s quite long. But I decided to keep it in a single blog so you could have the context in one place.</p>
+<p>The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.</p>
     </div>
   </div>
 </div>
@@ -434,10 +431,8 @@ The Disruptor code has interfaces and helper classes for the Consumers, but ther
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      The next in the series of understanding the Disruptor pattern developed at LMAX.
-After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.
-ConsumerBarriers and Consumers
-I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?
+      <p>The next in the series of understanding <a href="https://github.com/LMAX-Exchange/disruptor">the Disruptor pattern</a> developed at <a href="http://www.lmaxtrader.com/">LMAX</a>.</p>
+<p>After the <a href="https://trishagee.com/2011/06/22/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/">last post</a> we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&rsquo;re using the Disruptor.</p>
     </div>
   </div>
 </div>
@@ -454,8 +449,10 @@ I&rsquo;m going to approach this slightly backwards, because it&rsquo;s probably
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
-On the site you can download a technical article explaining what the Disruptor is and why it&rsquo;s so clever and fast.
+      <p>Recently we open sourced the <a href="https://github.com/LMAX-Exchange/disruptor">LMAX Disruptor</a>, the key to what makes our exchange so fast.  Why did we open source it?  Well, we&rsquo;ve realised that conventional wisdom around high performance programming is&hellip; a bit wrong. We&rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world.  Plus it makes us look dead clever.</p>
+<p>On the site you can <a href="https://lmax-exchange.github.io/disruptor/files/Disruptor-1.0.pdf">download a technical article</a> explaining what the Disruptor is and why it&rsquo;s so clever and fast.  I even get a writing credit on it, which is gratifying when all I really did is insert commas and re-phrase sentences I didn&rsquo;t understand.</p>
+<p>However, I find the whole thing a bit much to digest all at once, so I&rsquo;m going to explain it in smaller pieces, as suits my <a href="http://www.randsinrepose.com/archives/2003/07/10/nadd.html">NADD</a> audience.</p>
+<p>First up - the ring buffer.  Initially I was under the impression the Disruptor was just the ring buffer.  But I&rsquo;ve come to realise that while this data structure is at the heart of the pattern, the clever bit about the Disruptor is controlling access to it.</p>
     </div>
   </div>
 </div>
@@ -472,8 +469,8 @@ On the site you can download a technical article explaining what the Disruptor i
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      On Wednesday I tagged along to the STAC London Summit to provide backup for Mike, who was on the &ldquo;The Future of Messaging Middleware&rdquo; panel.
-The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &ldquo;users&rdquo;, Citihub and LMAX. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches.
+      <p>On Wednesday I tagged along to the <a href="http://www.stacresearch.com/node/8970">STAC London Summit</a> to provide backup for <a href="http://mikes-tech.blogspot.com/">Mike</a>, who was on the &ldquo;The Future of Messaging Middleware&rdquo; panel.</p>
+<p>The panel consisted of two messaging providers, one hardware (Solace Systems) and one software (29West/Informatica), and two &ldquo;users&rdquo;, Citihub and <a href="http://community.lmaxtrader.com/">LMAX</a>. Obviously both providers were arguing that theirs was the best solution. But what I found interesting is that I came away with the impression that everyone was really on the same side - everyone wants to use or to provide the best system, but there are different approaches. Which one you adopt is likely to be influenced by how your team work and the hardware you have (or can obtain).</p>
     </div>
   </div>
 </div>
@@ -491,7 +488,7 @@ The panel consisted of two messaging providers, one hardware (Solace Systems) an
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
       I&rsquo;m honoured to now be listed on three aggregated blog feeds:
-The new and somewhat embryonic blogs.lmax.com.The London Java Community Aggrity.ThoughtWorks Alumni, along with a whole host of distinguished names.The pressure&rsquo;s on to try and write useful stuff. Oh OK, I&rsquo;ll settle for &ldquo;entertaining&rdquo;.
+ The new and somewhat embryonic blogs.lmax.com. The London Java Community Aggrity. ThoughtWorks Alumni, along with a whole host of distinguished names.  The pressure&rsquo;s on to try and write useful stuff. Oh OK, I&rsquo;ll settle for &ldquo;entertaining&rdquo;.
     </div>
   </div>
 </div>
@@ -562,7 +559,8 @@ The fascinating thing to me was how different this is from the sorts of technolo
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We went live with &quot;real&quot; customers this week just gone. It&rsquo;s the culmination of nearly two years work for me personally, and three years for our company.It&rsquo;s really nice to be live at last, and to have our name out there. It might (in fact, should) change the focus of our work. Without paying customers it&rsquo;s much more difficult to prioritise work based on what they might need or want.Exciting times for LMAX!
+      We went live with &lsquo;real&rsquo; customers this week just gone. It&rsquo;s the culmination of nearly two years work for me personally, and three years for our company.
+It&rsquo;s really nice to be live at last, and to have our name out there. It might (in fact, should) change the focus of our work. Without paying customers it&rsquo;s much more difficult to prioritise work based on what they might need or want.
     </div>
   </div>
 </div>

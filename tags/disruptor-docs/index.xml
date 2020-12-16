@@ -13,7 +13,7 @@
       <pubDate>Thu, 22 Mar 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/java_magazine_intro_to_the_disruptor_part_one/</guid>
-      <description>This month&amp;rsquo;s Java Magazine features an article by yours truly, which is yet another intro to the Disruptor. It&amp;rsquo;s basically a summary of the stuff I&amp;rsquo;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
+      <description>This month&amp;rsquo;s Java Magazine features an article by yours truly, which is yet another intro to the Disruptor. It&amp;rsquo;s basically a summary of the stuff I&amp;rsquo;ve written in this blog, updated for version 2.7 - so the names of the classes should be up to date and the responsibilities follow the simplified pattern we use now. If you were looking for an more recent version of my introduction blog posts, this article gives a reasonable overview.</description>
     </item>
     
     <item>
@@ -61,9 +61,10 @@ These questions do go hand in hand, however, because I can&amp;rsquo;t talk abou
       <pubDate>Sun, 10 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_wiring_up_the_dependencies/</guid>
-      <description>So now I&amp;rsquo;ve covered the ring buffer itself, reading from it and writing to it.
-Logically the next thing to do is to wire everything up together.
-I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&amp;rsquo;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. We&amp;rsquo;ve done some clever stuff to allow the consumers to be dependent on each other and the ring buffer.</description>
+      <description>&lt;p&gt;So now I&amp;rsquo;ve covered the &lt;a href=&#34;https://trishagee.com/2011/06/22/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/&#34;&gt;ring buffer&lt;/a&gt; itself, &lt;a href=&#34;https://trishagee.com/2011/06/28/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/&#34;&gt;reading&lt;/a&gt; from it and &lt;a href=&#34;https://trishagee.com/2011/07/04/dissecting_the_disruptor_writing_to_the_ring_buffer/&#34;&gt;writing&lt;/a&gt; to it.&lt;/p&gt;
+&lt;p&gt;Logically the next thing to do is to wire everything up together.&lt;/p&gt;
+&lt;p&gt;I talked about multiple producers - they have the producer barrier to keep them in order and under control. I&amp;rsquo;ve talked about consumers in a simple situation. Multiple consumers can get a little more involved. &lt;a href=&#34;http://www.lmaxtrader.co.uk/&#34;&gt;We&amp;rsquo;ve&lt;/a&gt; done some clever stuff to allow the consumers to be dependent on each other and the ring buffer. Like a lot of applications, we have a pipeline of things that need to happen before we can actually get on with the business logic - for example, we need to make sure the messages have been journalled to disk before we can do anything.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&#34;https://lmax-exchange.github.io/disruptor/files/Disruptor-1.0.pdf&#34;&gt;Disruptor paper&lt;/a&gt; and the performance tests cover some basic configurations that you might want. I&amp;rsquo;m going to go over the most interesting one, mostly because I needed the practice with the graphics tablet.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,10 +73,8 @@ I talked about multiple producers - they have the producer barrier to keep them 
       <pubDate>Mon, 04 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_writing_to_the_ring_buffer/</guid>
-      <description>This is the missing piece in the end-to-end view of the Disruptor. &amp;nbsp;Brace yourselves, it&#39;s quite long. &amp;nbsp;But I decided to keep it in a single blog so you could have the context in one place.
-The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.
-ProducerBarriers
-The Disruptor code has interfaces and helper classes for the Consumers, but there&#39;s no interface for your producer, the thing that writes to the ring buffer.</description>
+      <description>&lt;p&gt;This is the missing piece in the end-to-end view of the Disruptor. Brace yourselves, it&amp;rsquo;s quite long. But I decided to keep it in a single blog so you could have the context in one place.&lt;/p&gt;
+&lt;p&gt;The important areas are: not wrapping the ring; informing the consumers; batching for producers; and how multiple producers work.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -84,10 +83,8 @@ The Disruptor code has interfaces and helper classes for the Consumers, but ther
       <pubDate>Tue, 28 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_how_do_i_read_from_the_ring_buffer/</guid>
-      <description>The next in the series of understanding the Disruptor pattern developed at LMAX.
-After the last post we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&amp;rsquo;re using the Disruptor.
-ConsumerBarriers and Consumers
-I&amp;rsquo;m going to approach this slightly backwards, because it&amp;rsquo;s probably easier to understand in the long run. Assuming that some magic has populated it: how do you read something from the ring buffer?</description>
+      <description>&lt;p&gt;The next in the series of understanding &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;the Disruptor pattern&lt;/a&gt; developed at &lt;a href=&#34;http://www.lmaxtrader.com/&#34;&gt;LMAX&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;After the &lt;a href=&#34;https://trishagee.com/2011/06/22/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/&#34;&gt;last post&lt;/a&gt; we all understand ring buffers and how awesome they are. Unfortunately for you, I have not said anything about how to actually populate them or read from them when you&amp;rsquo;re using the Disruptor.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -96,8 +93,10 @@ I&amp;rsquo;m going to approach this slightly backwards, because it&amp;rsquo;s 
       <pubDate>Wed, 22 Jun 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_whats_so_special_about_a_ring_buffer/</guid>
-      <description>Recently we open sourced the LMAX Disruptor, the key to what makes our exchange so fast. Why did we open source it? Well, we&amp;rsquo;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&amp;rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world. Plus it makes us look dead clever.
-On the site you can download a technical article explaining what the Disruptor is and why it&amp;rsquo;s so clever and fast.</description>
+      <description>&lt;p&gt;Recently we open sourced the &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;LMAX Disruptor&lt;/a&gt;, the key to what makes our exchange so fast.  Why did we open source it?  Well, we&amp;rsquo;ve realised that conventional wisdom around high performance programming is&amp;hellip; a bit wrong. We&amp;rsquo;ve come up with a better, faster way to share data between threads, and it would be selfish not to share it with the world.  Plus it makes us look dead clever.&lt;/p&gt;
+&lt;p&gt;On the site you can &lt;a href=&#34;https://lmax-exchange.github.io/disruptor/files/Disruptor-1.0.pdf&#34;&gt;download a technical article&lt;/a&gt; explaining what the Disruptor is and why it&amp;rsquo;s so clever and fast.  I even get a writing credit on it, which is gratifying when all I really did is insert commas and re-phrase sentences I didn&amp;rsquo;t understand.&lt;/p&gt;
+&lt;p&gt;However, I find the whole thing a bit much to digest all at once, so I&amp;rsquo;m going to explain it in smaller pieces, as suits my &lt;a href=&#34;http://www.randsinrepose.com/archives/2003/07/10/nadd.html&#34;&gt;NADD&lt;/a&gt; audience.&lt;/p&gt;
+&lt;p&gt;First up - the ring buffer.  Initially I was under the impression the Disruptor was just the ring buffer.  But I&amp;rsquo;ve come to realise that while this data structure is at the heart of the pattern, the clever bit about the Disruptor is controlling access to it.&lt;/p&gt;</description>
     </item>
     
   </channel>

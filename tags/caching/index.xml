@@ -13,10 +13,7 @@
       <pubDate>Mon, 14 Apr 2008 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/aop_caching/</guid>
-      <description>Today I would like to document my experiences implementing caching with Aspect Oriented Programming (AOP) and annotations.&amp;nbsp;
-
-Background context&amp;nbsp;
-Caching may need to be implemented in your application for a number of reasons. OK, actually usually only one: performance. I would like to add my own tuppence-worth to this though - if you can get away without caching (specifically in application that provide the ability to view and change data) then do so, unless you are using a cache implementation that will handle as much of the pain as possible for you.</description>
+      <description>&lt;p&gt;Today I would like to document my experiences implementing caching with Aspect Oriented Programming (AOP) and annotations.&lt;/p&gt;</description>
     </item>
     
   </channel>
