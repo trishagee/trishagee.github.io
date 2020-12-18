@@ -427,7 +427,13 @@ No wonder I can&amp;rsquo;t seem to find the time to write these days.&lt;/p&gt;
       <pubDate>Thu, 21 May 2015 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/android_xtended/</guid>
-      <description>You may have noticed that the more I go to conferences, the less I write about them. I could claim lack of time, but the fact is that all my write-ups will be something along the lines of &amp;ldquo;Loved &amp;lt;city&amp;gt;, went to talks that made me think, met interesting people, gave a talk or two that seemed to go well&amp;rdquo;. Not sure if people get bored of reading that, but I get bored of writing it.</description>
+      <description>&lt;div style=&#34;text-align:center&#34;&gt; &lt;img src=&#34;https://trishagee.github.io/static/images/androidxtended/xt15-calm.jpg&#34; width=&#34;300px&#34; alt=&#34;The calm before the storm&#34; title=&#34;The calm before the storm&#34;&gt;&lt;/div&gt;
+&lt;p&gt;You may have noticed that the more I go to conferences, the less I write about them.  I could claim lack of time, but the fact is that all my write-ups will be something along the lines of &amp;ldquo;Loved &amp;lt;city&amp;gt;, went to talks that made me think, met interesting people, gave a talk or two that seemed to go well&amp;rdquo;. Not sure if people get bored of reading that, but I get bored of writing it.&lt;/p&gt;
+&lt;div&gt; &lt;img src=&#34;https://trishagee.github.io/static/images/androidxtended/xt15-fun.jpg&#34; alt=&#34;Conferences are fun&#34; title=&#34;Conferences are fun&#34;&gt;&lt;/div&gt;
+&lt;p&gt;That&amp;rsquo;s not to say I&amp;rsquo;m bored of conferences. On the contrary - since I work from home, travelling to new places and meeting Real Human Beings keeps me sane. Plus conferences are fun.&lt;/p&gt;
+&lt;div style=&#34;float:right; padding: 10px&#34;&gt; &lt;img src=&#34;https://trishagee.github.io/static/images/androidxtended/xt15-setup.jpg&#34; width=&#34;200px&#34; alt=&#34;The 
+setup&#34; title=&#34;The setup&#34;&gt;&lt;/div&gt;
+&lt;p&gt;But I went to a conference on Saturday that makes me feel compelled to write something, and not just because it was organised by my two fellow &lt;a href=&#34;http://www.meetup.com/SVQJUG/&#34;&gt;Sevilla JUG&lt;/a&gt; organisers. &lt;a href=&#34;https://twitter.com/israkaos&#34;&gt;@IsraKaos&lt;/a&gt; and &lt;a href=&#34;https://twitter.com/rgdav&#34;&gt;@RGDav&lt;/a&gt; are both doing more Android day-to-day than server-side Java, so this is an area they&amp;rsquo;re interested in learning more about. Not content with organising Android events every other month, they decided they had so many interesting speakers they wanted to have speaking here in Sevilla that they wanted to run a whole day, single track conference, on behalf of &lt;a href=&#34;https://plus.google.com/communities/114997118727600981533&#34;&gt;GDG Sevilla&lt;/a&gt;. &lt;a href=&#34;http://www.androidxtended.com/&#34;&gt;Android Xtended&lt;/a&gt; was born.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -627,12 +633,8 @@ Due to the time pressures in the demo, I never really get a chance to go into th
       <pubDate>Thu, 14 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
-documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
-developer.&lt;/p&gt;
-&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
-Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
-operations using the Java driver:&lt;/p&gt;</description>
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java developer.&lt;/p&gt;
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD operations using the Java driver:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1573,7 +1575,7 @@ It&amp;rsquo;s true for a certain tribe of techies, sure. And creating and effec
       <pubDate>Sat, 12 May 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/update_on_events/</guid>
-      <description>Just a quick note to say I was interviewed for another podcast, again to talk about all-female events. It&amp;rsquo;s only a short one and there&amp;rsquo;s probably not much in there that I haven&amp;rsquo;t said before, either on here or in person.
+      <description>Just a quick note to say I was interviewed for another podcast (Update 2020: apparently no longer available), again to talk about all-female events. It&amp;rsquo;s only a short one and there&amp;rsquo;s probably not much in there that I haven&amp;rsquo;t said before, either on here or in person.
 From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. I&amp;rsquo;ll be talking about code &amp;amp; the Disruptor, thank goodness, and will be trying not to rant about the subject of women in technology.</description>
     </item>
     
@@ -1584,7 +1586,7 @@ From the 21st May, I&amp;rsquo;m at GOTO, both Copenhagen and Amsterdam. I&amp;r
       
       <guid>https://trishagee.github.io/post/featured_on_a_bbc_podcast/</guid>
       <description>This week&amp;rsquo;s BBC Outriders podcast features yours truly venting about The Subject That Won&amp;rsquo;t Go Away, Women in Technology. I was interviewed at Sunday&amp;rsquo;s Girl Geek conference, and got a chance to voice my opinions once again. For those who can&amp;rsquo;t be bothered to listen, they can probably be summarised as:
-There are genuine problems that face people in our industry, let&amp;rsquo;s talk about those that you have actually faced, not ones that you imagine exist.</description>
+ There are genuine problems that face people in our industry, let&amp;rsquo;s talk about those that you have actually faced, not ones that you imagine exist.</description>
     </item>
     
     <item>
@@ -1593,8 +1595,8 @@ There are genuine problems that face people in our industry, let&amp;rsquo;s tal
       <pubDate>Sun, 29 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_which_i_defend_the_male_species_at_an_all_female_event/</guid>
-      <description>Google Campus is an awesome spaceToday I was at the Girl Geek Meetup conference. &amp;nbsp;I didn&#39;t advertise it much because I&#39;ve said in the past I don&#39;t really agree with women-only events, and actually I felt quite uncomfortable telling you guys I was going to be there, knowing the majority of my readers weren&#39;t allowed to attend.
-It&#39;s probably worth explaining why I went, so a) I can give you guys and excuse but b) conference organisers can see what people like me are looking for in a conference.</description>
+      <description>&lt;p&gt;Today I was at the &lt;a href=&#34;http://www.geekgirlmeetup.co.uk/2012/03/29th-of-april-geekgirlmeetup-is-held-in-london-theme-code-is-queen/&#34;&gt;Girl Geek Meetup&lt;/a&gt; conference. I didn&amp;rsquo;t advertise it much because I&amp;rsquo;ve said in the past &lt;a href=&#34;https://trishagee.com/2011/01/20/on_how_not_to_target_girl_geeks/&#34;&gt;I don&amp;rsquo;t really agree with women-only events&lt;/a&gt;, and actually I felt quite uncomfortable telling you guys I was going to be there, knowing the majority of my readers weren&amp;rsquo;t allowed to attend.&lt;/p&gt;
+&lt;p&gt;It&amp;rsquo;s probably worth explaining why I went, so a) I can give you guys and excuse but b) conference organisers can see what people like me are looking for in a conference.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1603,9 +1605,8 @@ It&#39;s probably worth explaining why I went, so a) I can give you guys and exc
       <pubDate>Fri, 20 Apr 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/overheard_agile_truths/</guid>
-      <description>After attending a number of conferences and events, and performing numerous interviews, I&amp;rsquo;m starting to hear the same things again and again. Since Dan North challenged all my assumptions at QCon, I&amp;rsquo;m reluctant to outright ridicule them, but I will put forward my personal opinion.
-Note: these are things I have heard from multiple sources, so with any luck I am not breaking the sanctity of the confessional interview.
-I&amp;rsquo;ve never pair programmed, but I&amp;rsquo;ve frequently worked with a partner on critical production problems</description>
+      <description>&lt;p&gt;After attending a number of conferences and events, and performing numerous interviews, I&amp;rsquo;m starting to hear the same things again and again. Since &lt;a href=&#34;http://twitter.com/#!/tastapod&#34;&gt;Dan North&lt;/a&gt; &lt;a href=&#34;http://qconlondon.com/london-2012/presentation/Decisions,%20decisions&#34;&gt;challenged all my assumptions at QCon&lt;/a&gt;, I&amp;rsquo;m reluctant to outright ridicule them, but I will put forward my personal opinion.&lt;/p&gt;
+&lt;p&gt;Note: these are things I have heard from multiple sources, so with any luck I am not breaking the sanctity of the &lt;strike&gt;confessional&lt;/strike&gt; interview.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1650,8 +1651,8 @@ I&amp;rsquo;ve never pair programmed, but I&amp;rsquo;ve frequently worked with 
       <pubDate>Wed, 01 Feb 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/upcoming_speaking_events/</guid>
-      <description>In theory, I am busy writing material for my upcoming speaking events, rather than writing terribly illuminating posts on my blog (see what I did there?). In actuality I am being lazy and have pretty much taken January off for a recharge.
-In the spirit of doing something which ticks both the event-speaking and blogging boxes, this is a quick update on the conferences I&amp;rsquo;m confirmed for so far. Put the following dates in your diary - these are my first international solo speaking events:</description>
+      <description>&lt;p&gt;In theory, I am busy writing material for my upcoming speaking events, rather than writing terribly &lt;a href=&#34;https://trishagee.com/2012/01/17/christmas_decorations_teach_me_a_lesson_about_troubleshooting/&#34;&gt;illuminating&lt;/a&gt; posts on my blog (see what I did there?).  In actuality I am being lazy and have pretty much taken January off for a recharge.&lt;/p&gt;
+&lt;p&gt;In the spirit of doing something which ticks both the event-speaking and blogging boxes, this is a quick update on the conferences I&amp;rsquo;m confirmed for so far.  Put the following dates in your diary - these are my first international solo speaking events:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1660,10 +1661,11 @@ In the spirit of doing something which ticks both the event-speaking and bloggin
       <pubDate>Tue, 17 Jan 2012 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/christmas_decorations_teach_me_a_lesson_about_troubleshooting/</guid>
-      <description>And now, after an absence of several weeks, you get to see how long it takes me to write some of these posts.
-
-I was putting up the Christmas decorations one Saturday when my worst fear was realised1 - one of my three strings of lights was not working.
-The first two went up fine. The third lit up when I plugged it in, and in less than a second went out.</description>
+      <description>&lt;p&gt;And now, after an absence of several weeks, you get to see how long it takes me to write some of these posts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-_IL9JCpG-YI/TxUujcWyp3I/AAAAAAAAIvg/uMQCtOKGPcs/s1600/DSC_0037.JPG&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;I was putting up the Christmas decorations one Saturday when my worst fear was realised&lt;sup&gt;1&lt;/sup&gt; - one of my three strings of lights was not working.&lt;/p&gt;
+&lt;p&gt;The first two went up fine. The third lit up when I plugged it in, and in less than a second went out. Curses. This is not what I wanted, this was supposed to be a short exercise in making my tiny little flat look festive.&lt;/p&gt;
+&lt;p&gt;So I set about the tedious task of starting from the end closest to the plug and replacing every bulb, one by one, with a spare one to see if it magically lit up again. When it doesn&amp;rsquo;t, you take the spare back out and replace it with the original bulb. I remember my parents going through this ritual every Christmas, the tediousness of this activity is more memorable than the fleeting joy of shinies.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1691,11 +1693,7 @@ The first two went up fine. The third lit up when I plugged it in, and in less t
       <pubDate>Mon, 05 Dec 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/presentation/video_of_our_jax_london_session/</guid>
-      <description>&lt;p&gt;At &lt;a href=&#34;http://jaxlondon.com/&#34;&gt;JAX London&lt;/a&gt; Mike and I presented &amp;ldquo;Understanding the Disruptor - A Beginner&amp;rsquo;s Guide to Hardcore Concurrency&amp;rdquo;.
-This is the session we &lt;a href=&#34;http://mechanitis.blogspot.com/2011/10/mike-and-i-debut-our-new-disruptor.html&#34;&gt;initially previewed&lt;/a&gt; to the
-London Java Community a few weeks earlier. The content is the same, but the feel of the presentation was quite different to us - the
-venue for the LJC event was more intimate, and it was easier to interact with the audience. At JAX, we were up on stage,
-which was pretty cool actually, but meant that it felt more like a lecture and it was less easy to connect with the audience.&lt;/p&gt;</description>
+      <description>&lt;p&gt;At &lt;a href=&#34;http://jaxlondon.com/&#34;&gt;JAX London&lt;/a&gt; Mike and I presented &amp;ldquo;Understanding the Disruptor - A Beginner&amp;rsquo;s Guide to Hardcore Concurrency&amp;rdquo;. This is the session we &lt;a href=&#34;https://trishagee.com/2011/10/21/mike_and_i_debut_our_new_disruptor_presentation/&#34;&gt;initially previewed&lt;/a&gt; to the London Java Community a few weeks earlier. The content is the same, but the feel of the presentation was quite different to us - the venue for the LJC event was more intimate, and it was easier to interact with the audience. At JAX, we were up on stage, which was pretty cool actually, but meant that it felt more like a lecture and it was less easy to connect with the audience.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1733,7 +1731,8 @@ Martijn Verburg; Regina ten Bruggencate; Trisha Gee; Antonio Goncalves; Claude F
       <pubDate>Wed, 16 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/devoxx_the_story_so_far/</guid>
-      <description>Stephan wearing the Brazilian flag at the opening keynoteEuropean conferences are different (and cool) because you get to hear even more languages spoken than you usually do in London (apparently the most diverse city in the world for spoken languages). &amp;nbsp;I think the idea of a Paris Devoxx with 75% of the talks in French is brilliant - I&#39;m always banging on about diversity, we shouldn&#39;t expect developers to learn&amp;nbsp;in English only.</description>
+      <description>Stephan wearing the Brazilian flag at the opening keynote
+ European conferences are different (and cool) because you get to hear even more languages spoken than you usually do in London (apparently the most diverse city in the world for spoken languages). I think the idea of a Paris Devoxx with 75% of the talks in French is brilliant - I&amp;rsquo;m always banging on about diversity, we shouldn&amp;rsquo;t expect developers to learn in English only.</description>
     </item>
     
     <item>
@@ -1742,8 +1741,8 @@ Martijn Verburg; Regina ten Bruggencate; Trisha Gee; Antonio Goncalves; Claude F
       <pubDate>Tue, 15 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/jax_london__i_learn_stuff_and_meet_people/</guid>
-      <description>A couple of weeks ago, I was at JAX London along with a number of the London Java Community regulars (Martijn/Ben/John/Sandro/Simon/Zoe I&amp;rsquo;m looking at you&amp;hellip;.)
-My purpose for attending was largely to present the Hardcore Concurrency for Beginners talk that Mike and I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me.</description>
+      <description>&lt;p&gt;A couple of weeks ago, I was at &lt;a href=&#34;http://jaxlondon.com/&#34;&gt;JAX London&lt;/a&gt; along with a number of the &lt;a href=&#34;http://www.meetup.com/Londonjavacommunity/&#34;&gt;London Java Community&lt;/a&gt; regulars (&lt;a href=&#34;http://martijnverburg.blogspot.com/&#34;&gt;Martijn&lt;/a&gt;/&lt;a href=&#34;https://twitter.com/#!/kittylyst&#34;&gt;Ben&lt;/a&gt;/&lt;a href=&#34;http://jr0cket.com/&#34;&gt;John&lt;/a&gt;/&lt;a href=&#34;http://www.meetup.com/london-software-craftsmanship/members/5737653/&#34;&gt;Sandro&lt;/a&gt;/&lt;a href=&#34;http://devangelist.blogspot.com/&#34;&gt;Simon&lt;/a&gt;/&lt;a href=&#34;http://zoah.co.uk/jax-london&#34;&gt;Zoe&lt;/a&gt; I&amp;rsquo;m looking at you&amp;hellip;.)&lt;/p&gt;
+&lt;p&gt;My purpose for attending was largely to present the &lt;a href=&#34;https://trishagee.com/2011/10/21/mike_and_i_debut_our_new_disruptor_presentation/&#34;&gt;Hardcore Concurrency for Beginners&lt;/a&gt; talk that &lt;a href=&#34;http://mikes-tech.blogspot.com/&#34;&gt;Mike&lt;/a&gt; and I debuted at an LJC event a few weeks back. Almost as important was catching up with the aforementioned LJCers and meeting with as many people as would talk to me. After the disappointment of the sessions at Java One, sitting in a room being talked at was quite low down on my list of priorities. Sometimes it&amp;rsquo;s nice to be wrong.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1752,11 +1751,12 @@ My purpose for attending was largely to present the Hardcore Concurrency for Beg
       <pubDate>Wed, 09 Nov 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/a_nyse_product_manager_and_an_lmax_developer_walk_into_a_low_latency_trading_seminar/</guid>
-      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&amp;rsquo;s event? Because&amp;hellip;&amp;quot;
-&amp;ldquo;Because we&amp;rsquo;re girls?&amp;quot;
-&amp;ldquo;Um&amp;hellip; yes&amp;hellip;&amp;quot;
-Kim impetuously opts for The Truth: &amp;ldquo;We&amp;rsquo;re here to meet men.&amp;quot;
-Our interrogator looks round dubiously. &amp;ldquo;No, really, why are you here?&amp;quot;
+      <description>&amp;ldquo;What&amp;hellip; exactly&amp;hellip; were you guys looking to get out of today&amp;rsquo;s event? Because&amp;hellip;&amp;rdquo;
+&amp;ldquo;Because we&amp;rsquo;re girls?&amp;rdquo;
+&amp;ldquo;Um&amp;hellip; yes&amp;hellip;&amp;rdquo;
+Kim impetuously opts for The Truth: &amp;ldquo;We&amp;rsquo;re here to meet men.&amp;rdquo;
+Our interrogator looks round dubiously.
+&amp;ldquo;No, really, why are you here?&amp;rdquo;
 Phew. My reputation is intact1
 Kim eloquently describes what her situation is as Product Manager and the criteria she&amp;rsquo;s measuring third party products against. I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.</description>
     </item>
@@ -1778,8 +1778,8 @@ But before I move on, it&amp;rsquo;s probably worth rounding off with the last t
       <pubDate>Fri, 28 Oct 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/on_the_similarities_between_girls_and_aliens/</guid>
-      <description>I discovered, through the power of the search words that lead to my blog, that there was an incident at JavaOne that once again opens the can of worms that is Sexism In IT.
-This Makes Me Sad. I had a really positive experience at JavaOne. In fact, I would say it was the one conference I&amp;rsquo;ve been to in the last 12 months where I felt like my gender wasn&amp;rsquo;t a problem - I even got away with wearing hotpants (tweed is business-casual, right?</description>
+      <description>&lt;p&gt;I discovered, through the power of the search words that lead to my blog, that there was &lt;a href=&#34;https://plus.google.com/110635974610895095726/posts/fTygidL33cx&#34;&gt;an incident at JavaOne&lt;/a&gt; that once again opens the can of worms that is Sexism In IT.&lt;/p&gt;
+&lt;p&gt;This Makes Me Sad. I had a really positive experience at JavaOne. In fact, I would say it was the one conference I&amp;rsquo;ve been to in the last 12 months where I felt like my gender &lt;i&gt;wasn&amp;rsquo;t&lt;/i&gt; a problem - I even got away with wearing hotpants (tweed is business-casual, right??) without being mistaken for anything other than a developer.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1850,8 +1850,8 @@ Ideally we&amp;rsquo;re after Java people, but at the heart of it we want people
       <pubDate>Sat, 17 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_my_hangovers_can_teach_you_about_agile/</guid>
-      <description>As a survival trait for living and working in the cites1 of London, I have a set of rituals to avoid hangovers. If you are not a single person living in a city like London, you might not understand how vital this is. Most networking, particularly in the financial services industry, is done in the presence of alcohol.
-So preventing the inevitable hangover is quite important to the other part of the job – the actual working bit.</description>
+      <description>&lt;p&gt;As a survival trait for living and working in the cites&lt;sup&gt;1&lt;/sup&gt; of London, I have a set of rituals to avoid hangovers.  If you are not a single person living in a city like London, you might not understand how vital this is.  Most networking, particularly in the financial services industry, is done in the presence of alcohol.&lt;/p&gt;
+&lt;p&gt;So preventing the inevitable hangover is quite important to the other part of the job – the actual working bit.  I&amp;rsquo;ll let you into a secret and tell you my nightly ritual:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1860,8 +1860,9 @@ So preventing the inevitable hangover is quite important to the other part of th
       <pubDate>Sun, 04 Sep 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/effective_sketches/</guid>
-      <description>On Thursday I was at Simon Brown&amp;rsquo;s Effective Sketches session at Skillsmatter. Just because my pictures are pretty awesome doesn&amp;rsquo;t mean there&amp;rsquo;s no opportunity for continuous learning.
-The points Simon made in the session really made sense to me, and I wish I could have had something like that as a primer when they taught us UML at university. Without the context of what the diagrams were supposed to mean, to convey, all the boxes and lines made no sense to me back then.</description>
+      <description>&lt;p&gt;On Thursday I was at &lt;a href=&#34;http://www.codingthearchitecture.com/2011/09/02/effective_sketches_at_skills_matter.html&#34;&gt;Simon Brown&amp;rsquo;s Effective Sketches&lt;/a&gt; session at &lt;a href=&#34;http://skillsmatter.com/&#34;&gt;Skillsmatter&lt;/a&gt;. Just because my pictures are pretty awesome doesn&amp;rsquo;t mean there&amp;rsquo;s no opportunity for continuous learning.&lt;/p&gt;
+&lt;p&gt;The points Simon made in the session really made sense to me, and I wish I could have had something like that as a primer when they taught us UML at university. Without the context of what the diagrams were supposed to mean, to convey, all the boxes and lines made no sense to me back then. I&amp;rsquo;m still not a fan of large chunks of UML because I think the convention sometimes gets in the way of real meaning.&lt;/p&gt;
+&lt;p&gt;My take-away points were:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1870,7 +1871,7 @@ The points Simon made in the session really made sense to me, and I wish I could
       <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/disruptor_20__all_change_please/</guid>
-      <description>Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it&amp;rsquo;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&amp;rsquo;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
+      <description>&lt;p&gt;Martin recently &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/2011/08/disruptor-20-released.html&#34;&gt;announced version 2.0&lt;/a&gt; of &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;the Disruptor&lt;/a&gt; - basically there have been so many changes since we first open-sourced it that it&amp;rsquo;s time to mark that officially.  His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&amp;rsquo;s going to take a long time to re-write each of them all over again.  Now I see the disadvantage of hand-drawing everything.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1879,11 +1880,9 @@ The points Simon made in the session really made sense to me, and I wish I could
       <pubDate>Sat, 13 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/what_i_did_on_my_holidays/</guid>
-      <description>And now, a post for my long-neglected, less technical readers.
-I took a week off in July to try and avoid that Oh My God I Missed Summer Again feeling. Granted, it&amp;rsquo;s easy to get that in the UK even if you&amp;rsquo;re not stuck in an office the entire time.
-Really this is just an excuse to post some photos on the blog.
-Monday
-Hopped on the bike and explored from Kensington to Westminster.</description>
+      <description>&lt;p&gt;And now, a post for my long-neglected, less technical readers.&lt;/p&gt;
+&lt;p&gt;I took a week off in July to try and avoid that Oh My God I Missed Summer Again feeling. Granted, it&amp;rsquo;s easy to get that in the UK even if you&amp;rsquo;re not stuck in an office the entire time.&lt;/p&gt;
+&lt;p&gt;Really this is just an excuse to post some photos on the blog.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1892,7 +1891,8 @@ Hopped on the bike and explored from Kensington to Westminster.</description>
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&amp;rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&amp;rsquo;t intuitively grasp the subject. I guess I don&amp;rsquo;t have the deep background knowledge required to fully understand.</description>
+      <description>&lt;p&gt;My recent slow-down in posting is because I&amp;rsquo;ve been trying to write a post explaining &lt;a href=&#34;http://en.wikipedia.org/wiki/Memory_barrier&#34;&gt;memory barriers&lt;/a&gt; and their applicability in &lt;a href=&#34;http://code.google.com/p/disruptor&#34;&gt;the Disruptor&lt;/a&gt;.  The problem is, no matter how much I read and no matter how many times I ask the ever-patient &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/&#34;&gt;Martin&lt;/a&gt; and &lt;a href=&#34;http://mikes-tech.blogspot.com/&#34;&gt;Mike&lt;/a&gt; questions trying to clarify some point, I just don&amp;rsquo;t intuitively grasp the subject.  I guess I don&amp;rsquo;t have the deep background knowledge required to fully understand.&lt;/p&gt;
+&lt;p&gt;So, rather than make an idiot of myself trying to explain something I don&amp;rsquo;t really get, I&amp;rsquo;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.  Martin has written a post &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/2011/07/memory-barriersfences.html&#34;&gt;going into memory barriers&lt;/a&gt; in some detail, so hopefully I can get away with skimming the subject.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1901,8 +1901,8 @@ Hopped on the bike and explored from Kensington to Westminster.</description>
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&amp;rsquo;s even Martin&amp;rsquo;s blog title. It&amp;rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
-We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&amp;rsquo;s the next thing I thought I would tackle.</description>
+      <description>&lt;p&gt;We mention the phrase Mechanical Sympathy quite a lot, in fact it&amp;rsquo;s even &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/&#34;&gt;Martin&amp;rsquo;s blog title&lt;/a&gt;.  It&amp;rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.&lt;/p&gt;
+&lt;p&gt;We get a number of comments and questions about the mysterious cache line padding in the &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptorsource/browse/trunk/code/src/main/com/lmax/disruptor/RingBuffer.java&#34;&gt;RingBuffer&lt;/a&gt;, and I referred to it in the &lt;a href=&#34;https://trishagee.com/2011/07/16/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/&#34;&gt;last post&lt;/a&gt;.  Since this lends itself to pretty pictures, it&amp;rsquo;s the next thing I thought I would tackle.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1911,9 +1911,8 @@ We get a number of comments and questions about the mysterious cache line paddin
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;rdquo;.
-I&amp;rsquo;m working up to answering that. I&amp;rsquo;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;rdquo;.
-These questions do go hand in hand, however, because I can&amp;rsquo;t talk about why it&amp;rsquo;s fast without saying what it does, and I can&amp;rsquo;t talk about what it is without saying why it is that way.</description>
+      <description>&lt;p&gt;Martin Fowler has written a &lt;a href=&#34;http://martinfowler.com/articles/lmax.html&#34;&gt;&lt;span id=&#34;goog_1736243820&#34;&gt;&lt;/span&gt;really good article&lt;span id=&#34;goog_1736243821&#34;&gt;&lt;/span&gt;&lt;/a&gt; describing not only &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;the Disruptor&lt;/a&gt;, but also how it fits into the architecture at &lt;a href=&#34;http://www.lmaxtrader.co.uk/&#34;&gt;LMAX&lt;/a&gt;.  This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m working up to answering that.  I&amp;rsquo;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -1922,10 +1921,7 @@ These questions do go hand in hand, however, because I can&amp;rsquo;t talk abou
       <pubDate>Tue, 12 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/in_answer_to_one_of_the_search_terms_which_led_to_my_blog/</guid>
-      <description>&amp;hellip;&amp;quot;what do female programmers look like&amp;quot;:
-
-
-
+      <description>&amp;hellip;&amp;ldquo;what do female programmers look like&amp;rdquo;:
 Well, sometimes&amp;hellip;
 If there are any girl programmers out there who are interested in being part of a montage showing who we are, I&amp;rsquo;d be dead (see what I did there&amp;hellip;?) interested in putting us all on one page. And not just because I&amp;rsquo;m narcissistic. Although that helps.</description>
     </item>
@@ -2032,9 +2028,10 @@ Another LMAX LJC member Mike will also be giving a lightning talk, on Project Co
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
-All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
-Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
+      <description>&lt;p&gt;I have been struggling with .NET. Actually, I have been fighting pitched battles with it.&lt;/p&gt;
+&lt;p&gt;All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?&lt;/p&gt;
+&lt;h2 id=&#34;trishas-guide-to-converting-java-to-c&#34;&gt;Trisha&amp;rsquo;s Guide to Converting Java to C#&lt;/h2&gt;
+&lt;p&gt;Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2053,8 +2050,8 @@ It&amp;rsquo;s quite exciting to be one of the two user groups involved.</descri
       <pubDate>Tue, 26 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/cyclist_tribes/</guid>
-      <description>Living and working in central London, you quickly learn that the fastest way around town is to cycle.
-My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.</description>
+      <description>&lt;p&gt;Living and working in central London, you quickly learn that the fastest way around town is to cycle.&lt;/p&gt;
+&lt;p&gt;My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2063,8 +2060,8 @@ My extensive research into this activity has shown there are a number of differe
       <pubDate>Mon, 18 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/tradetech_2011__not_like_a_developer_conference/</guid>
-      <description>I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.
-The fascinating thing to me was how different this is from the sorts of technology conferences I&amp;rsquo;ve been to. For example, I popped into JAX this week (albeit in the evening for drinks). At technology conferences (&amp;lt;gross-generalisation&amp;gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.</description>
+      <description>&lt;p&gt;I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://2.bp.blogspot.com/-bWCpxKcxqUo/TahF0DBHxII/AAAAAAAAIAc/XXZzeNj_4K0/s1600/DSC_0009.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2073,8 +2070,7 @@ The fascinating thing to me was how different this is from the sorts of technolo
       <pubDate>Tue, 12 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_horizontal_and_vertical_centring/</guid>
-      <description>First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&amp;rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&amp;rsquo;t &amp;ldquo;Centring&amp;rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&amp;rsquo;t.</description>
+      <description>&lt;p&gt;First, an apology. I will be using the British spelling for &amp;ldquo;centre&amp;rdquo;, because, well, I&amp;rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&amp;rsquo;t &amp;ldquo;Centring&amp;rdquo; just look wrong?&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2083,10 +2079,8 @@ Part Five: Horizontal and Vertical CentringOne of the most common things you wan
       <pubDate>Mon, 04 Apr 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/how_to_show_your_employees_how_much_you_hate_them/</guid>
-      <description>Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I&amp;rsquo;ve had the dubious honour of working in a variety of environments.
-Today I will teach you, the employer, how to show your staff just how much you hate them.
-The Kitchen Is Not For Eating In
-Since eating and drinking is unfortunately a fundamental part of being human and staying alive, you will need to provide your staff with a space that pretends to address these needs.</description>
+      <description>&lt;p&gt;Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I&amp;rsquo;ve had the dubious honour of working in a variety of environments.&lt;/p&gt;
+&lt;p&gt;Today I will teach you, the employer, how to show your staff just how much you hate them.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2095,8 +2089,8 @@ Since eating and drinking is unfortunately a fundamental part of being human and
       <pubDate>Mon, 14 Feb 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/for_those_who_might_want_to_make_the_leap_from_developer_to_architect/</guid>
-      <description>The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &amp;ldquo;the beach&amp;rdquo; already.
-It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with Marc McNeill. Simon Brown at Coding the Architecture is much better at talking about this stuff than I am, but I need to update the blog with something!</description>
+      <description>&lt;p&gt;The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &amp;ldquo;the beach&amp;rdquo; already.&lt;/p&gt;
+&lt;p&gt;It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with &lt;a href=&#34;http://www.dancingmango.com/blog/&#34;&gt;Marc McNeill&lt;/a&gt;. Simon Brown at &lt;a href=&#34;http://www.codingthearchitecture.com/&#34;&gt;Coding the Architecture&lt;/a&gt; is much better at talking about this stuff than I am, but I need to update the blog with something!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -2105,10 +2099,10 @@ It seems only fair to summarise the lessons I have learnt whilst masquerading as
       <pubDate>Fri, 28 Jan 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/css_for_developers_cross_browser_table_border_behaviour/</guid>
-      <description>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.
-Today&amp;rsquo;s gotcha is table borders.
-Yes, yes, I said don&amp;rsquo;t use tables. What I means is, don&amp;rsquo;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.
-But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables.</description>
+      <description>&lt;p&gt;One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.&lt;/p&gt;
+&lt;p&gt;Today&amp;rsquo;s gotcha is table borders.&lt;/p&gt;
+&lt;p&gt;Yes, yes, I said don&amp;rsquo;t use tables. What I means is, don&amp;rsquo;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, &lt;a href=&#34;http://www.lmaxtrader.co.uk/&#34;&gt;lists of instruments and their bid and ask prices&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;But you should know that even when you use strict mode, Internet Explorer has slightly&amp;hellip; eccentric&amp;hellip; rendering behaviour for tables. Actually to be specific, it&amp;rsquo;s IE7 only.&lt;/p&gt;</description>
     </item>
     
     <item>

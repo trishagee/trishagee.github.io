@@ -6,8 +6,7 @@
     
     <title>CSS for Developers: Horizontal and Vertical Centring | Trisha Gee</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&rsquo;t.">
+    <meta name="description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?">
     <meta name="generator" content="Hugo 0.79.0" />
     
     
@@ -22,6 +21,8 @@ Part Five: Horizontal and Vertical CentringOne of the most common things you wan
     
 
     
+      <link rel="canonical" href="https://trishagee.com/2011/04/12/css_for_developers_horizontal_and_vertical_centring/">
+    
 
     
       
@@ -33,26 +34,23 @@ Part Five: Horizontal and Vertical CentringOne of the most common things you wan
     
     
     <meta property="og:title" content="CSS for Developers: Horizontal and Vertical Centring" />
-<meta property="og:description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&rsquo;t." />
+<meta property="og:description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://trishagee.github.io/post/css_for_developers_horizontal_and_vertical_centring/" />
 <meta property="article:published_time" content="2011-04-12T00:00:00+00:00" />
 <meta property="article:modified_time" content="2011-04-12T00:00:00+00:00" />
 <meta itemprop="name" content="CSS for Developers: Horizontal and Vertical Centring">
-<meta itemprop="description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&rsquo;t.">
+<meta itemprop="description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?">
 <meta itemprop="datePublished" content="2011-04-12T00:00:00+00:00" />
 <meta itemprop="dateModified" content="2011-04-12T00:00:00+00:00" />
-<meta itemprop="wordCount" content="788">
+<meta itemprop="wordCount" content="791">
 
 
 
 <meta itemprop="keywords" content="reference,ui,css," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="CSS for Developers: Horizontal and Vertical Centring"/>
-<meta name="twitter:description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&rsquo;t."/>
+<meta name="twitter:description" content="First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?"/>
 
       
 <script type="application/javascript">
@@ -220,8 +218,146 @@ if (!doNotTrack) {
       
       
     </header>
-    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>First, an apology.  I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British.  But it gets really confusing because you have to use the American spelling in the code.  And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?<br /><br /><div style="margin-bottom: 0px; margin-left: 0px; margin-right: 0px; margin-top: 0px;"><span class="Apple-style-span" style="color: #333333; font-family: Arial, Tahoma, Helvetica, FreeSans, sans-serif; font-size: 18px; font-weight: bold; line-height: 20px;">Part Five: Horizontal and Vertical Centring</span></div>One of the most common things you want to do with blocks of content is to centre it.  In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&rsquo;t.<br /><br /><b>5.1 Horizontal Centring</b><br />Centring a paragraph of text is clearly easy - all you need is <code>text-align: center</code>.  However, sometimes you want to centre a block, something like a div, without having all the text centred as well.  This is slightly trickier than you might expect, because the only CSS attributes you have are for centring text.<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-s_aPLxH1lO0/TZ85v7cEiDI/AAAAAAAAH-s/f6Glb4ynFq8/s1600/Horizontal+Centering.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="310" src="http://1.bp.blogspot.com/-s_aPLxH1lO0/TZ85v7cEiDI/AAAAAAAAH-s/f6Glb4ynFq8/s400/Horizontal+Centering.png" width="400" /></a></div><br /><blockquote style="clear: both;"><pre><code>&lt;html&gt;<br />&lt;head&gt;<br />    &lt;title&gt;Horizontal Centering&lt;/title&gt;<br />    &lt;style type=&ldquo;text/css&rdquo;&gt;<br />        #div1, #div13 {<br />            background-color: #DDDDDD;<br />        }<br /><br />        #div2, #div14 {<br />            background-color: #BBBBBB;<br />        }<br /><br />        #div3, #div15 {<br />            background-color: #999999;<br />        }<br /><br />        #container, #container5 {<br />            border: 1px solid black;<br />            margin: 5px;<br />        }<br /><br />        #container5 {<br />            text-align: center;<br />        }<br /><br />        #to-center {<br />            margin-left: auto;<br />            margin-right: auto;<br />            width: 200px;<br />            border: 5px solid red;<br />        }<br /><br />        #to-center2 {<br />            margin-left: auto;<br />            margin-right: auto;<br />            width: 200px;<br />            border: 5px solid red;<br />            display: block;<br />            position: relative;<br />            text-align: left;<br />        }<br /><br />    &lt;/style&gt;<br />&lt;/head&gt;<br /><br />&lt;body&gt;<br />&lt;div id=&ldquo;container&rdquo;&gt;<br />    &lt;div id=&ldquo;to-center&rdquo;&gt;<br />        &lt;div id=&ldquo;div1&rdquo;&gt;One&lt;/div&gt;<br />        &lt;div id=&ldquo;div2&rdquo;&gt;Two&lt;/div&gt;<br />        &lt;div id=&ldquo;div3&rdquo;&gt;Three&lt;/div&gt;<br />    &lt;/div&gt;<br />&lt;/div&gt;<br />&lt;div id=&ldquo;container5&rdquo;&gt;<br />    &lt;div id=&ldquo;to-center2&rdquo;&gt;<br />        &lt;div id=&ldquo;div13&rdquo;&gt;One&lt;/div&gt;<br />        &lt;div id=&ldquo;div14&rdquo;&gt;Two&lt;/div&gt;<br />        &lt;div id=&ldquo;div15&rdquo;&gt;Three&lt;/div&gt;<br />    &lt;/div&gt;<br />&lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;</code></pre></blockquote>Using <code>margin-left: auto</code> and <code>margin-right: auto</code> on the block you want to centre is a neat trick for doing this.  And it works fine in Chrome and Firefox.  However, it&rsquo;s not so great in IE 7:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://3.bp.blogspot.com/-7CjwdD0e5Zs/TaQMBDIixyI/AAAAAAAAH-0/pr1B7IG1ZTw/s1600/centering-in-ie.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="173" src="http://3.bp.blogspot.com/-7CjwdD0e5Zs/TaQMBDIixyI/AAAAAAAAH-0/pr1B7IG1ZTw/s400/centering-in-ie.png" width="400" /></a></div><br />The trick for getting it centred here (the second block) is to set <code>text-align: centre</code> on the div containing the block to centre (<code>container5</code>), then reset the <code>text-align</code> to <code>left</code> on the centred block (<code>to-center2</code>) so the text isn&rsquo;t centred.  Yes, a total faff.<br /><br />However, there is some good news.  You can get IE to behave the same way as the more sane browsers by setting it into Strict Mode:<br /><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://1.bp.blogspot.com/-leiXBjTwj-Q/TaQN9OV5ToI/AAAAAAAAH-4/qKj3Kr8nOxc/s1600/strict-mode-ie.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="173" src="http://1.bp.blogspot.com/-leiXBjTwj-Q/TaQN9OV5ToI/AAAAAAAAH-4/qKj3Kr8nOxc/s400/strict-mode-ie.png" width="400" /></a></div><br />Remember kids: Strict Mode Is Your Friend.  And all you need to do is add the following to the top of your HTML file:<br /><blockquote style="clear: both;"><pre><code>&lt;!DOCTYPE HTML PUBLIC &ldquo;-//W3C//DTD HTML 4.01//EN&rdquo; &ldquo;<a href="http://www.w3.org/TR/html4/strict.dtd%22">http://www.w3.org/TR/html4/strict.dtd&quot;</a>&gt;</code></pre></blockquote><b>5.2 Vertical Centring</b><br /><div class="separator" style="clear: both; text-align: center;"><a href="http://4.bp.blogspot.com/-MfC3Bqvoif4/TaQQafZOJWI/AAAAAAAAH-8/f-Micc1inTU/s1600/Screenshot-Vertical+Centering+-+Google+Chrome.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="311" src="http://4.bp.blogspot.com/-MfC3Bqvoif4/TaQQafZOJWI/AAAAAAAAH-8/f-Micc1inTU/s400/Screenshot-Vertical+Centering+-+Google+Chrome.png" width="400" /></a></div><blockquote style="clear: both;"><pre><code>&lt;html&gt;<br />&lt;head&gt;<br />    &lt;title&gt;Vertical Centering&lt;/title&gt;<br />    &lt;style type=&ldquo;text/css&rdquo;&gt;<br />        #div1, #div4, #div7 {<br />            background-color: #DDDDDD;<br />        }<br /><br />        #div3, #div6, #div9 {<br />            background-color: #999999;<br />        }<br /><br />        #div5 {<br />            height: 40px;<br />            line-height: 40px;<br />            background-color: yellow;<br />        }<br /><br />        #div2 {<br />            height: 50px;<br />            background-color: orange;<br />            vertical-align: middle;<br />        }<br /><br />        #div8 {<br />            height: 40px;<br />            line-height: 40px;<br />            background-color: cyan;<br />            font-weight: bolder;<br />        }<br /><br />        #container1, #container2, #container3 {<br />            border: 1px solid black;<br />            margin: 5px;<br />        }<br /><br />    &lt;/style&gt;<br />&lt;/head&gt;<br /><br />&lt;body&gt;<br />&lt;div id=&ldquo;container2&rdquo;&gt;<br />    &lt;div id=&ldquo;div4&rdquo;&gt;One&lt;/div&gt;<br />    &lt;div id=&ldquo;div5&rdquo;&gt;Two&lt;/div&gt;<br />    &lt;div id=&ldquo;div6&rdquo;&gt;Three&lt;/div&gt;<br />&lt;/div&gt;<br />&lt;div id=&ldquo;container1&rdquo;&gt;<br />    &lt;div id=&ldquo;div1&rdquo;&gt;One&lt;/div&gt;<br />    &lt;div id=&ldquo;div2&rdquo;&gt;Two&lt;/div&gt;<br />    &lt;div id=&ldquo;div3&rdquo;&gt;Three&lt;/div&gt;<br />&lt;/div&gt;<br />&lt;div id=&ldquo;container3&rdquo;&gt;<br />    &lt;div id=&ldquo;div7&rdquo;&gt;One&lt;/div&gt;<br />    &lt;div id=&ldquo;div8&rdquo;&gt;Massive line of text that needs to wrap to show the centering totally doesn&rsquo;t work when you have more than one line of text.&lt;/div&gt;<br />    &lt;div id=&ldquo;div9&rdquo;&gt;Three&lt;/div&gt;<br />&lt;/div&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;<br /></code></pre></blockquote>Given some of the problems with horizontal alignment, it shouldn&rsquo;t come as a surprise to find vertical alignment is not simple at all.<br /><br />Us straightforward developer types would expect to be able to put <code>vertical-align: middle</code> on a div and expect all content inside that div to be, well, vertically aligned in the middle.  However this is not the case - see the orange block above.  A quick Google will tell you why this doesn&rsquo;t work, and I don&rsquo;t intend to duplicate the explanation here.<br /><br />There is a nice hack which works for single lines of text though: if you set the <code>height</code> of the container and the <code>line-height</code> to the same value, the text will be vertically centred within that container (see the yellow panel, <code>div5</code>, above). This works really well for things like buttons or icons.<br /><br />However, it doesn&rsquo;t work so well for paragraphs of text or sentences that might wrap, <code>line-height</code> is for a single line of text only.  See the cyan panel above for what happens if your text wraps.<br /><br />I&rsquo;d love to give you an answer on how to get this to work for text that wraps, but I haven&rsquo;t found a satisfactory solution yet.  What I usually do is set a fixed height on the container and then set the margin on the text so that it sits in a way that looks vaguely centred.  Not a solution I&rsquo;m happy with, because a) it can sometimes render slightly differently on different browsers b) it&rsquo;s a very fragile solution if you&rsquo;re going to internationalise your page as some languages will have longer or shorter paragraphs and c) it feels like a massive hack.<br /><br />If anyone has a nice solution for vertically centring paragraphs of text I&rsquo;d love to hear it.</p>
-<ul class="pa0">
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links nested-img mid-gray pr4-l w-two-thirds-l"><p>First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?</p>
+<h1 id="part-five-horizontal-and-vertical-centring">Part Five: Horizontal and Vertical Centring</h1>
+<p>One of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&rsquo;t.</p>
+<h2 id="51-horizontal-centring">5.1 Horizontal Centring</h2>
+<p>Centring a paragraph of text is clearly easy - all you need is <code>text-align: center</code>. However, sometimes you want to centre a block, something like a div, without having all the text centred as well. This is slightly trickier than you might expect, because the only CSS attributes you have are for centring text.</p>
+<p><img src="http://1.bp.blogspot.com/-s_aPLxH1lO0/TZ85v7cEiDI/AAAAAAAAH-s/f6Glb4ynFq8/s1600/Horizontal+Centering.png" alt=""></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">html</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Horizontal Centering&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">style</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css”&gt;
+</span><span style="color:#e6db74">        #div1, #div13 {
+</span><span style="color:#e6db74">            background-color: #DDDDDD;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #div2, #div14 {
+</span><span style="color:#e6db74">            background-color: #BBBBBB;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #div3, #div15 {
+</span><span style="color:#e6db74">            background-color: #999999;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #container, #container5 {
+</span><span style="color:#e6db74">            border: 1px solid black;
+</span><span style="color:#e6db74">            margin: 5px;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #container5 {
+</span><span style="color:#e6db74">            text-align: center;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #to-center {
+</span><span style="color:#e6db74">            margin-left: auto;
+</span><span style="color:#e6db74">            margin-right: auto;
+</span><span style="color:#e6db74">            width: 200px;
+</span><span style="color:#e6db74">            border: 5px solid red;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #to-center2 {
+</span><span style="color:#e6db74">            margin-left: auto;
+</span><span style="color:#e6db74">            margin-right: auto;
+</span><span style="color:#e6db74">            width: 200px;
+</span><span style="color:#e6db74">            border: 5px solid red;
+</span><span style="color:#e6db74">            display: block;
+</span><span style="color:#e6db74">            position: relative;
+</span><span style="color:#e6db74">            text-align: left;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    &lt;/style&gt;
+</span><span style="color:#e6db74">&lt;/head&gt;
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">&lt;body&gt;
+</span><span style="color:#e6db74">&lt;div id=&#34;</span><span style="color:#a6e22e">container</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;to-center”&gt;
+</span><span style="color:#e6db74">        &lt;div id=&#34;</span><span style="color:#a6e22e">div1</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;One&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div2”&gt;Two&lt;/div&gt;
+</span><span style="color:#e6db74">        &lt;div id=&#34;</span><span style="color:#a6e22e">div3</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;Three&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;container5”&gt;
+</span><span style="color:#e6db74">    &lt;div id=&#34;</span><span style="color:#a6e22e">to-center2</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div13”&gt;One&lt;/div&gt;
+</span><span style="color:#e6db74">        &lt;div id=&#34;</span><span style="color:#a6e22e">div14</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;Two&lt;/<span style="color:#f92672">div</span>&gt;
+        &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div15”</span>&gt;Three&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p>Using <code>margin-left: auto</code> and <code>margin-right: auto</code> on the block you want to centre is a neat trick for doing this. And it works fine in Chrome and Firefox. However, it&rsquo;s not so great in IE 7:</p>
+<p><img src="http://3.bp.blogspot.com/-7CjwdD0e5Zs/TaQMBDIixyI/AAAAAAAAH-0/pr1B7IG1ZTw/s1600/centering-in-ie.png" alt=""></p>
+<p>The trick for getting it centred here (the second block) is to set <code>text-align: centre</code> on the div containing the block to centre (<code>container5</code>), then reset the <code>text-align</code> to <code>left</code> on the centred block (<code>to-center2</code>) so the text isn&rsquo;t centred. Yes, a total faff.</p>
+<p>However, there is some good news. You can get IE to behave the same way as the more sane browsers by setting it into Strict Mode:</p>
+<p><img src="http://1.bp.blogspot.com/-leiXBjTwj-Q/TaQN9OV5ToI/AAAAAAAAH-4/qKj3Kr8nOxc/s1600/strict-mode-ie.png" alt=""></p>
+<p>Remember kids: Strict Mode Is Your Friend. And all you need to do is add the following to the top of your HTML file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"><span style="color:#75715e">&lt;!DOCTYPE HTML PUBLIC “-//W3C//DTD HTML 4.01//EN” “http://www.w3.org/TR/html4/strict.dtd&#34;&gt;</span>
+</code></pre></div><h2 id="52-vertical-centring">5.2 Vertical Centring</h2>
+<p><img src="http://4.bp.blogspot.com/-MfC3Bqvoif4/TaQQafZOJWI/AAAAAAAAH-8/f-Micc1inTU/s1600/Screenshot-Vertical+Centering+-+Google+Chrome.png" alt=""></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">html</span>&gt;
+&lt;<span style="color:#f92672">head</span>&gt;
+    &lt;<span style="color:#f92672">title</span>&gt;Vertical Centering&lt;/<span style="color:#f92672">title</span>&gt;
+    &lt;<span style="color:#f92672">style</span> <span style="color:#a6e22e">type</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;text/css”&gt;
+</span><span style="color:#e6db74">        #div1, #div4, #div7 {
+</span><span style="color:#e6db74">            background-color: #DDDDDD;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #div3, #div6, #div9 {
+</span><span style="color:#e6db74">            background-color: #999999;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #div5 {
+</span><span style="color:#e6db74">            height: 40px;
+</span><span style="color:#e6db74">            line-height: 40px;
+</span><span style="color:#e6db74">            background-color: yellow;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #div2 {
+</span><span style="color:#e6db74">            height: 50px;
+</span><span style="color:#e6db74">            background-color: orange;
+</span><span style="color:#e6db74">            vertical-align: middle;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #div8 {
+</span><span style="color:#e6db74">            height: 40px;
+</span><span style="color:#e6db74">            line-height: 40px;
+</span><span style="color:#e6db74">            background-color: cyan;
+</span><span style="color:#e6db74">            font-weight: bolder;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">        #container1, #container2, #container3 {
+</span><span style="color:#e6db74">            border: 1px solid black;
+</span><span style="color:#e6db74">            margin: 5px;
+</span><span style="color:#e6db74">        }
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">    &lt;/style&gt;
+</span><span style="color:#e6db74">&lt;/head&gt;
+</span><span style="color:#e6db74">
+</span><span style="color:#e6db74">&lt;body&gt;
+</span><span style="color:#e6db74">&lt;div id=&#34;</span><span style="color:#a6e22e">container2</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div4”&gt;One&lt;/div&gt;
+</span><span style="color:#e6db74">    &lt;div id=&#34;</span><span style="color:#a6e22e">div5</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;Two&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div6”&gt;Three&lt;/div&gt;
+</span><span style="color:#e6db74">&lt;/div&gt;
+</span><span style="color:#e6db74">&lt;div id=&#34;</span><span style="color:#a6e22e">container1</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div1”&gt;One&lt;/div&gt;
+</span><span style="color:#e6db74">    &lt;div id=&#34;</span><span style="color:#a6e22e">div2</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;Two&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div3”&gt;Three&lt;/div&gt;
+</span><span style="color:#e6db74">&lt;/div&gt;
+</span><span style="color:#e6db74">&lt;div id=&#34;</span><span style="color:#a6e22e">container3</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div7”&gt;One&lt;/div&gt;
+</span><span style="color:#e6db74">    &lt;div id=&#34;</span><span style="color:#a6e22e">div8</span><span style="color:#960050;background-color:#1e0010">”</span>&gt;Massive line of text that needs to wrap to show the centering totally doesn’t work when you have more than one line of text.&lt;/<span style="color:#f92672">div</span>&gt;
+    &lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;div9”</span>&gt;Three&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;/<span style="color:#f92672">body</span>&gt;
+&lt;/<span style="color:#f92672">html</span>&gt;
+</code></pre></div><p>Given some of the problems with horizontal alignment, it shouldn&rsquo;t come as a surprise to find vertical alignment is not simple at all.</p>
+<p>Us straightforward developer types would expect to be able to put <code>vertical-align: middle</code> on a div and expect all content inside that div to be, well, vertically aligned in the middle. However this is not the case - see the orange block above. A quick Google will tell you why this doesn&rsquo;t work, and I don&rsquo;t intend to duplicate the explanation here.</p>
+<p>There is a nice hack which works for single lines of text though: if you set the <code>height</code> of the container and the <code>line-height</code> to the same value, the text will be vertically centred within that container (see the yellow panel, <code>div5</code>, above). This works really well for things like buttons or icons.</p>
+<p>However, it doesn&rsquo;t work so well for paragraphs of text or sentences that might wrap, <code>line-height</code> is for a single line of text only. See the cyan panel above for what happens if your text wraps.</p>
+<p>I&rsquo;d love to give you an answer on how to get this to work for text that wraps, but I haven&rsquo;t found a satisfactory solution yet. What I usually do is set a fixed height on the container and then set the margin on the text so that it sits in a way that looks vaguely centred. Not a solution I&rsquo;m happy with, because a) it can sometimes render slightly differently on different browsers b) it&rsquo;s a very fragile solution if you&rsquo;re going to internationalise your page as some languages will have longer or shorter paragraphs and c) it feels like a massive hack.</p>
+<p>If anyone has a nice solution for vertically centring paragraphs of text I&rsquo;d love to hear it.</p><ul class="pa0">
   
    <li class="list">
      <a href="/tags/reference" class="link f5 grow no-underline br-pill ba ph3 pv2 mb2 dib black sans-serif">reference</a>

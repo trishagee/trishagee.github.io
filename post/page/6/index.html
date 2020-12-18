@@ -194,7 +194,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject. I guess I don&rsquo;t have the deep background knowledge required to fully understand.
+      <p>My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining <a href="http://en.wikipedia.org/wiki/Memory_barrier">memory barriers</a> and their applicability in <a href="http://code.google.com/p/disruptor">the Disruptor</a>.  The problem is, no matter how much I read and no matter how many times I ask the ever-patient <a href="http://mechanical-sympathy.blogspot.com/">Martin</a> and <a href="http://mikes-tech.blogspot.com/">Mike</a> questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject.  I guess I don&rsquo;t have the deep background knowledge required to fully understand.</p>
+<p>So, rather than make an idiot of myself trying to explain something I don&rsquo;t really get, I&rsquo;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.  Martin has written a post <a href="http://mechanical-sympathy.blogspot.com/2011/07/memory-barriersfences.html">going into memory barriers</a> in some detail, so hopefully I can get away with skimming the subject.</p>
     </div>
   </div>
 
@@ -214,8 +215,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even Martin&rsquo;s blog title. It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
-We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.
+      <p>We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even <a href="http://mechanical-sympathy.blogspot.com/">Martin&rsquo;s blog title</a>.  It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.</p>
+<p>We get a number of comments and questions about the mysterious cache line padding in the <a href="https://github.com/LMAX-Exchange/disruptorsource/browse/trunk/code/src/main/com/lmax/disruptor/RingBuffer.java">RingBuffer</a>, and I referred to it in the <a href="https://trishagee.com/2011/07/16/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/">last post</a>.  Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.</p>
     </div>
   </div>
 
@@ -235,9 +236,8 @@ We get a number of comments and questions about the mysterious cache line paddin
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;.
-I&rsquo;m working up to answering that. I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;.
-These questions do go hand in hand, however, because I can&rsquo;t talk about why it&rsquo;s fast without saying what it does, and I can&rsquo;t talk about what it is without saying why it is that way.
+      <p>Martin Fowler has written a <a href="http://martinfowler.com/articles/lmax.html"><span id="goog_1736243820"></span>really good article<span id="goog_1736243821"></span></a> describing not only <a href="https://github.com/LMAX-Exchange/disruptor">the Disruptor</a>, but also how it fits into the architecture at <a href="http://www.lmaxtrader.co.uk/">LMAX</a>.  This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;.</p>
+<p>I&rsquo;m working up to answering that.  I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;.</p>
     </div>
   </div>
 
@@ -257,10 +257,7 @@ These questions do go hand in hand, however, because I can&rsquo;t talk about wh
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      &hellip;&quot;what do female programmers look like&quot;:
-
-
-
+      &hellip;&ldquo;what do female programmers look like&rdquo;:
 Well, sometimes&hellip;
 If there are any girl programmers out there who are interested in being part of a montage showing who we are, I&rsquo;d be dead (see what I did there&hellip;?) interested in putting us all on one page. And not just because I&rsquo;m narcissistic. Although that helps.
     </div>
@@ -477,9 +474,10 @@ Another LMAX LJC member Mike will also be giving a lightning talk, on Project Co
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
-All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
-Trisha&rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:
+      <p>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.</p>
+<p>All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?</p>
+<h2 id="trishas-guide-to-converting-java-to-c">Trisha&rsquo;s Guide to Converting Java to C#</h2>
+<p>Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</p>
     </div>
   </div>
 
@@ -520,8 +518,8 @@ It&rsquo;s quite exciting to be one of the two user groups involved.
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Living and working in central London, you quickly learn that the fastest way around town is to cycle.
-My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.
+      <p>Living and working in central London, you quickly learn that the fastest way around town is to cycle.</p>
+<p>My extensive research into this activity has shown there are a number of different cycling tribes. Of course, I have split them into the two groups that are most appropriate to me: 1) slower than me and 2) faster than me. You can probably tell what sort of a cyclist I am by my attitude to the two groups.</p>
     </div>
   </div>
 
@@ -541,8 +539,8 @@ My extensive research into this activity has shown there are a number of differe
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.
-The fascinating thing to me was how different this is from the sorts of technology conferences I&rsquo;ve been to. For example, I popped into JAX this week (albeit in the evening for drinks). At technology conferences (&lt;gross-generalisation&gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.
+      <p>I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.</p>
+<p><img src="http://2.bp.blogspot.com/-bWCpxKcxqUo/TahF0DBHxII/AAAAAAAAIAc/XXZzeNj_4K0/s1600/DSC_0009.jpg" alt=""></p>
     </div>
   </div>
 
@@ -562,8 +560,7 @@ The fascinating thing to me was how different this is from the sorts of technolo
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?
-Part Five: Horizontal and Vertical CentringOne of the most common things you want to do with blocks of content is to centre it. In particular, you would think that vertically centring content would be straightforward, but it turns out that in HTML/CSS it just isn&rsquo;t.
+      <p>First, an apology. I will be using the British spelling for &ldquo;centre&rdquo;, because, well, I&rsquo;m British. But it gets really confusing because you have to use the American spelling in the code. And doesn&rsquo;t &ldquo;Centring&rdquo; just look wrong?</p>
     </div>
   </div>
 
@@ -583,10 +580,8 @@ Part Five: Horizontal and Vertical CentringOne of the most common things you wan
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I&rsquo;ve had the dubious honour of working in a variety of environments.
-Today I will teach you, the employer, how to show your staff just how much you hate them.
-The Kitchen Is Not For Eating In
-Since eating and drinking is unfortunately a fundamental part of being human and staying alive, you will need to provide your staff with a space that pretends to address these needs.
+      <p>Due to a combination of my restlessness, my consulting experience, and employers that insist on moving offices frequently, I&rsquo;ve had the dubious honour of working in a variety of environments.</p>
+<p>Today I will teach you, the employer, how to show your staff just how much you hate them.</p>
     </div>
   </div>
 
@@ -606,8 +601,8 @@ Since eating and drinking is unfortunately a fundamental part of being human and
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &ldquo;the beach&rdquo; already.
-It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with Marc McNeill. Simon Brown at Coding the Architecture is much better at talking about this stuff than I am, but I need to update the blog with something!
+      <p>The last two weeks, actual work has conspired to keep me away from the blog. How rude. I miss &ldquo;the beach&rdquo; already.</p>
+<p>It seems only fair to summarise the lessons I have learnt whilst masquerading as an architect on a short consulting stint with <a href="http://www.dancingmango.com/blog/">Marc McNeill</a>. Simon Brown at <a href="http://www.codingthearchitecture.com/">Coding the Architecture</a> is much better at talking about this stuff than I am, but I need to update the blog with something!</p>
     </div>
   </div>
 
@@ -627,10 +622,10 @@ It seems only fair to summarise the lessons I have learnt whilst masquerading as
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.
-Today&rsquo;s gotcha is table borders.
-Yes, yes, I said don&rsquo;t use tables. What I means is, don&rsquo;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, lists of instruments and their bid and ask prices.
-But you should know that even when you use strict mode, Internet Explorer has slightly&hellip; eccentric&hellip; rendering behaviour for tables.
+      <p>One of the aims of this series is to highlight some stupid gotchas in support for CSS in the different browsers.</p>
+<p>Today&rsquo;s gotcha is table borders.</p>
+<p>Yes, yes, I said don&rsquo;t use tables. What I means is, don&rsquo;t use tables for layout. But you can use tables for, you know, tabular data. Like, for examples, <a href="http://www.lmaxtrader.co.uk/">lists of instruments and their bid and ask prices</a>.</p>
+<p>But you should know that even when you use strict mode, Internet Explorer has slightly&hellip; eccentric&hellip; rendering behaviour for tables. Actually to be specific, it&rsquo;s IE7 only.</p>
     </div>
   </div>
 

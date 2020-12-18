@@ -208,7 +208,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject. I guess I don&rsquo;t have the deep background knowledge required to fully understand.
+      <p>My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining <a href="http://en.wikipedia.org/wiki/Memory_barrier">memory barriers</a> and their applicability in <a href="http://code.google.com/p/disruptor">the Disruptor</a>.  The problem is, no matter how much I read and no matter how many times I ask the ever-patient <a href="http://mechanical-sympathy.blogspot.com/">Martin</a> and <a href="http://mikes-tech.blogspot.com/">Mike</a> questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject.  I guess I don&rsquo;t have the deep background knowledge required to fully understand.</p>
+<p>So, rather than make an idiot of myself trying to explain something I don&rsquo;t really get, I&rsquo;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.  Martin has written a post <a href="http://mechanical-sympathy.blogspot.com/2011/07/memory-barriersfences.html">going into memory barriers</a> in some detail, so hopefully I can get away with skimming the subject.</p>
     </div>
   </div>
 </div>
@@ -225,8 +226,8 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even Martin&rsquo;s blog title. It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
-We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.
+      <p>We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even <a href="http://mechanical-sympathy.blogspot.com/">Martin&rsquo;s blog title</a>.  It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.</p>
+<p>We get a number of comments and questions about the mysterious cache line padding in the <a href="https://github.com/LMAX-Exchange/disruptorsource/browse/trunk/code/src/main/com/lmax/disruptor/RingBuffer.java">RingBuffer</a>, and I referred to it in the <a href="https://trishagee.com/2011/07/16/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/">last post</a>.  Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.</p>
     </div>
   </div>
 </div>

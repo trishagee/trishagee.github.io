@@ -13,12 +13,8 @@
       <pubDate>Thu, 14 Aug 2014 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/getting_started_with_mongodb_and_java/</guid>
-      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the
-documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java
-developer.&lt;/p&gt;
-&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from
-Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD
-operations using the Java driver:&lt;/p&gt;</description>
+      <description>&lt;p&gt;We&amp;rsquo;ve been missing an introduction to using MongoDB from Java for a little while now - there&amp;rsquo;s plenty of information in &lt;a href=&#34;http://docs.mongodb.org/ecosystem/drivers/java/&#34;&gt;the documentation&lt;/a&gt;, but we were lacking a step-by-step guide to getting started as a Java developer.&lt;/p&gt;
+&lt;p&gt;I sought to rectify this with a couple of blog posts for the MongoDB official blog: the first, an introduction to using MongoDB from Java, including a non-comprehensive list of some of the libraries you can use; the second, an introductory guide to simple CRUD operations using the Java driver:&lt;/p&gt;</description>
     </item>
     
     <item>

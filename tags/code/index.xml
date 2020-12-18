@@ -56,9 +56,10 @@ I am not the only person responsible for this code though, so be kind.</descript
       <pubDate>Fri, 20 May 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/why_java_developers_hate_net/</guid>
-      <description>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
-All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
-Trisha&amp;rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</description>
+      <description>&lt;p&gt;I have been struggling with .NET. Actually, I have been fighting pitched battles with it.&lt;/p&gt;
+&lt;p&gt;All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?&lt;/p&gt;
+&lt;h2 id=&#34;trishas-guide-to-converting-java-to-c&#34;&gt;Trisha&amp;rsquo;s Guide to Converting Java to C#&lt;/h2&gt;
+&lt;p&gt;Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:&lt;/p&gt;</description>
     </item>
     
     <item>

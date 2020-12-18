@@ -22,7 +22,7 @@
       <pubDate>Tue, 30 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/disruptor_20__all_change_please/</guid>
-      <description>Martin recently announced version 2.0 of the Disruptor - basically there have been so many changes since we first open-sourced it that it&amp;rsquo;s time to mark that officially. His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&amp;rsquo;s going to take a long time to re-write each of them all over again. Now I see the disadvantage of hand-drawing everything.</description>
+      <description>&lt;p&gt;Martin recently &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/2011/08/disruptor-20-released.html&#34;&gt;announced version 2.0&lt;/a&gt; of &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;the Disruptor&lt;/a&gt; - basically there have been so many changes since we first open-sourced it that it&amp;rsquo;s time to mark that officially.  His post goes over all the changes, the aim of this article is to attempt to translate my previous blog posts into new-world-speak, since it&amp;rsquo;s going to take a long time to re-write each of them all over again.  Now I see the disadvantage of hand-drawing everything.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +31,8 @@
       <pubDate>Sun, 07 Aug 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_demystifying_memory_barriers/</guid>
-      <description>My recent slow-down in posting is because I&amp;rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&amp;rsquo;t intuitively grasp the subject. I guess I don&amp;rsquo;t have the deep background knowledge required to fully understand.</description>
+      <description>&lt;p&gt;My recent slow-down in posting is because I&amp;rsquo;ve been trying to write a post explaining &lt;a href=&#34;http://en.wikipedia.org/wiki/Memory_barrier&#34;&gt;memory barriers&lt;/a&gt; and their applicability in &lt;a href=&#34;http://code.google.com/p/disruptor&#34;&gt;the Disruptor&lt;/a&gt;.  The problem is, no matter how much I read and no matter how many times I ask the ever-patient &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/&#34;&gt;Martin&lt;/a&gt; and &lt;a href=&#34;http://mikes-tech.blogspot.com/&#34;&gt;Mike&lt;/a&gt; questions trying to clarify some point, I just don&amp;rsquo;t intuitively grasp the subject.  I guess I don&amp;rsquo;t have the deep background knowledge required to fully understand.&lt;/p&gt;
+&lt;p&gt;So, rather than make an idiot of myself trying to explain something I don&amp;rsquo;t really get, I&amp;rsquo;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.  Martin has written a post &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/2011/07/memory-barriersfences.html&#34;&gt;going into memory barriers&lt;/a&gt; in some detail, so hopefully I can get away with skimming the subject.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -40,8 +41,8 @@
       <pubDate>Fri, 22 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_two__magic_cache_line_padding/</guid>
-      <description>We mention the phrase Mechanical Sympathy quite a lot, in fact it&amp;rsquo;s even Martin&amp;rsquo;s blog title. It&amp;rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
-We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&amp;rsquo;s the next thing I thought I would tackle.</description>
+      <description>&lt;p&gt;We mention the phrase Mechanical Sympathy quite a lot, in fact it&amp;rsquo;s even &lt;a href=&#34;http://mechanical-sympathy.blogspot.com/&#34;&gt;Martin&amp;rsquo;s blog title&lt;/a&gt;.  It&amp;rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.&lt;/p&gt;
+&lt;p&gt;We get a number of comments and questions about the mysterious cache line padding in the &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptorsource/browse/trunk/code/src/main/com/lmax/disruptor/RingBuffer.java&#34;&gt;RingBuffer&lt;/a&gt;, and I referred to it in the &lt;a href=&#34;https://trishagee.com/2011/07/16/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/&#34;&gt;last post&lt;/a&gt;.  Since this lends itself to pretty pictures, it&amp;rsquo;s the next thing I thought I would tackle.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -50,9 +51,8 @@ We get a number of comments and questions about the mysterious cache line paddin
       <pubDate>Sat, 16 Jul 2011 00:00:00 +0000</pubDate>
       
       <guid>https://trishagee.github.io/post/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/</guid>
-      <description>Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;rdquo;.
-I&amp;rsquo;m working up to answering that. I&amp;rsquo;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;rdquo;.
-These questions do go hand in hand, however, because I can&amp;rsquo;t talk about why it&amp;rsquo;s fast without saying what it does, and I can&amp;rsquo;t talk about what it is without saying why it is that way.</description>
+      <description>&lt;p&gt;Martin Fowler has written a &lt;a href=&#34;http://martinfowler.com/articles/lmax.html&#34;&gt;&lt;span id=&#34;goog_1736243820&#34;&gt;&lt;/span&gt;really good article&lt;span id=&#34;goog_1736243821&#34;&gt;&lt;/span&gt;&lt;/a&gt; describing not only &lt;a href=&#34;https://github.com/LMAX-Exchange/disruptor&#34;&gt;the Disruptor&lt;/a&gt;, but also how it fits into the architecture at &lt;a href=&#34;http://www.lmaxtrader.co.uk/&#34;&gt;LMAX&lt;/a&gt;.  This gives some of the context that has been missing so far, but the most frequently asked question is still &amp;ldquo;What is the Disruptor?&amp;rdquo;.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m working up to answering that.  I&amp;rsquo;m currently on question number two: &amp;ldquo;Why is it so fast?&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     
     <item>

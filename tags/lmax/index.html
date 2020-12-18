@@ -279,11 +279,12 @@ if (!doNotTrack) {
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      &ldquo;What&hellip; exactly&hellip; were you guys looking to get out of today&rsquo;s event? Because&hellip;&quot;
-&ldquo;Because we&rsquo;re girls?&quot;
-&ldquo;Um&hellip; yes&hellip;&quot;
-Kim impetuously opts for The Truth: &ldquo;We&rsquo;re here to meet men.&quot;
-Our interrogator looks round dubiously. &ldquo;No, really, why are you here?&quot;
+      &ldquo;What&hellip; exactly&hellip; were you guys looking to get out of today&rsquo;s event? Because&hellip;&rdquo;
+&ldquo;Because we&rsquo;re girls?&rdquo;
+&ldquo;Um&hellip; yes&hellip;&rdquo;
+Kim impetuously opts for The Truth: &ldquo;We&rsquo;re here to meet men.&rdquo;
+Our interrogator looks round dubiously.
+&ldquo;No, really, why are you here?&rdquo;
 Phew. My reputation is intact1
 Kim eloquently describes what her situation is as Product Manager and the criteria she&rsquo;s measuring third party products against. I explain how LMAX aims to be the fastest retail exchange in the world, and therefore low latency is a tiny bit important to us.
     </div>
@@ -339,7 +340,8 @@ I&rsquo;m really looking forward to meeting pretty much anyone and everyone who&
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining memory barriers and their applicability in the Disruptor. The problem is, no matter how much I read and no matter how many times I ask the ever-patient Martin and Mike questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject. I guess I don&rsquo;t have the deep background knowledge required to fully understand.
+      <p>My recent slow-down in posting is because I&rsquo;ve been trying to write a post explaining <a href="http://en.wikipedia.org/wiki/Memory_barrier">memory barriers</a> and their applicability in <a href="http://code.google.com/p/disruptor">the Disruptor</a>.  The problem is, no matter how much I read and no matter how many times I ask the ever-patient <a href="http://mechanical-sympathy.blogspot.com/">Martin</a> and <a href="http://mikes-tech.blogspot.com/">Mike</a> questions trying to clarify some point, I just don&rsquo;t intuitively grasp the subject.  I guess I don&rsquo;t have the deep background knowledge required to fully understand.</p>
+<p>So, rather than make an idiot of myself trying to explain something I don&rsquo;t really get, I&rsquo;m going to try and cover, at an abstract / massive-simplification level, what I do understand in the area.  Martin has written a post <a href="http://mechanical-sympathy.blogspot.com/2011/07/memory-barriersfences.html">going into memory barriers</a> in some detail, so hopefully I can get away with skimming the subject.</p>
     </div>
   </div>
 </div>
@@ -356,8 +358,8 @@ I&rsquo;m really looking forward to meeting pretty much anyone and everyone who&
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even Martin&rsquo;s blog title. It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.
-We get a number of comments and questions about the mysterious cache line padding in the RingBuffer, and I referred to it in the last post. Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.
+      <p>We mention the phrase Mechanical Sympathy quite a lot, in fact it&rsquo;s even <a href="http://mechanical-sympathy.blogspot.com/">Martin&rsquo;s blog title</a>.  It&rsquo;s about understanding how the underlying hardware operates and programming in a way that works with that, not against it.</p>
+<p>We get a number of comments and questions about the mysterious cache line padding in the <a href="https://github.com/LMAX-Exchange/disruptorsource/browse/trunk/code/src/main/com/lmax/disruptor/RingBuffer.java">RingBuffer</a>, and I referred to it in the <a href="https://trishagee.com/2011/07/16/dissecting_the_disruptor_why_its_so_fast_part_one__locks_are_bad/">last post</a>.  Since this lends itself to pretty pictures, it&rsquo;s the next thing I thought I would tackle.</p>
     </div>
   </div>
 </div>
@@ -374,9 +376,8 @@ We get a number of comments and questions about the mysterious cache line paddin
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      Martin Fowler has written a really good article describing not only the Disruptor, but also how it fits into the architecture at LMAX. This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;.
-I&rsquo;m working up to answering that. I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;.
-These questions do go hand in hand, however, because I can&rsquo;t talk about why it&rsquo;s fast without saying what it does, and I can&rsquo;t talk about what it is without saying why it is that way.
+      <p>Martin Fowler has written a <a href="http://martinfowler.com/articles/lmax.html"><span id="goog_1736243820"></span>really good article<span id="goog_1736243821"></span></a> describing not only <a href="https://github.com/LMAX-Exchange/disruptor">the Disruptor</a>, but also how it fits into the architecture at <a href="http://www.lmaxtrader.co.uk/">LMAX</a>.  This gives some of the context that has been missing so far, but the most frequently asked question is still &ldquo;What is the Disruptor?&rdquo;.</p>
+<p>I&rsquo;m working up to answering that.  I&rsquo;m currently on question number two: &ldquo;Why is it so fast?&rdquo;.</p>
     </div>
   </div>
 </div>
@@ -505,9 +506,10 @@ These questions do go hand in hand, however, because I can&rsquo;t talk about wh
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I have been struggling with .NET. Actually, I have been fighting pitched battles with it.
-All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?
-Trisha&rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:
+      <p>I have been struggling with .NET. Actually, I have been fighting pitched battles with it.</p>
+<p>All I want to do is take our existing Java client example code and write an equivalent in C#. Easy, right?</p>
+<h2 id="trishas-guide-to-converting-java-to-c">Trisha&rsquo;s Guide to Converting Java to C#</h2>
+<p>Turns out writing the actual C# is relatively straightforward. Putting to one side the question of writing optimal code (these are very basic samples after all), to get the examples to compile and run was a simple process:</p>
     </div>
   </div>
 </div>
@@ -524,8 +526,8 @@ Trisha&rsquo;s Guide to Converting Java to C#Turns out writing the actual C# is 
       </a>
     </h1>
     <div class="nested-links f5 lh-copy nested-copy-line-height">
-      I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.
-The fascinating thing to me was how different this is from the sorts of technology conferences I&rsquo;ve been to. For example, I popped into JAX this week (albeit in the evening for drinks). At technology conferences (&lt;gross-generalisation&gt;) people tend to subscribe to a variety of dress codes and fashion clans, usually from jeans through the range of business casual, including your fair share of goths and alternatives.
+      <p>I attended TradeTech last week, an annual event about Equities and Derivatives trading. I assumed from the title that there would be a reasonable focus on technology, but I found it was more “Trade” and less “Tech”.</p>
+<p><img src="http://2.bp.blogspot.com/-bWCpxKcxqUo/TahF0DBHxII/AAAAAAAAIAc/XXZzeNj_4K0/s1600/DSC_0009.jpg" alt=""></p>
     </div>
   </div>
 </div>
